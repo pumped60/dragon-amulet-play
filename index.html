@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791310618"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791310618"><link rel="manifest" href="manifest.webmanifest?v=1791310618"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791316120"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791316120"><link rel="manifest" href="manifest.webmanifest?v=1791316120"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -7807,11 +7807,11 @@ function closedRanks(){ const now=performance.now(); if(now-ranksCache.t<500) re
 // the whole garrison turns out against a lone attacker, instead of meeting you one guard at a time
 { let rallyT=2; const _u=update; update=function(dt){ _u(dt); rallyT-=dt; if(rallyT>0||!player||player.dead||state!=='play') return; rallyT=2; if(typeof MP!=='undefined'&&MP.guest) return;
     const c=closedRanks(); if(!(c.k>=0.6&&c.b)) return; let fighting=false;
-    for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&Math.abs(cxOf(e)-cxOf(player))<10*T&&Math.abs(cyOf(e)-cyOf(player))<8*T){ fighting=true; break; }
+    for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&Math.abs(cxOf(e)-cxOf(player))<25*T&&Math.abs(cyOf(e)-cyOf(player))<12*T){ fighting=true; break; }   // within bowshot of any defender
     if(!fighting) return; for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&!e.worker&&e.role!=='miner'&&Math.abs(cxOf(e)-cxOf(player))<45*T) e.provoked=true; }; }
 { const _dmg=damage; damage=function(t,amt,src,kb){ try{ if(player&&t&&amt>0&&!(typeof MP!=='undefined'&&MP.guest)){ const k=killerOf(src);
-      if(k===player&&t.kind==='human'&&t.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&t.team===c.b.f) amt*=1-0.7*c.k; }   // alone, only 30% of your damage gets through
-      else if(t===player&&k&&k.kind==='human'&&k.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&k.team===c.b.f) amt*=1+3*c.k; } }   // alone, they hit you four times as hard
+      if(k===player&&t.kind==='human'&&t.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&t.team===c.b.f) amt*=1-0.75*c.k; }   // alone, only a quarter of your damage gets through
+      else if(t===player&&k&&k.kind==='human'&&k.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&k.team===c.b.f) amt*=1+4*c.k; } }   // alone, they hit you five times as hard
     }catch(e){} return _dmg(t,amt,src,kb); }; }
 
 // ---- Vorthax: only a full army can bring the dragon down ----
