@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791316728"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791316728"><link rel="manifest" href="manifest.webmanifest?v=1791316728"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791329356"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791329356"><link rel="manifest" href="manifest.webmanifest?v=1791329356"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -2909,6 +2909,7 @@ function updateProjs(dt){
     if(BLOCKS[tid].solid&&!BLOCKS[tid].glass){ pr.dead=true; if(pr.splash) splash(pr); if(pr.kind!=='arrow') puff(pr.x,pr.y,pr.kind==='magic'?pr.col:'#ff9f43',pr.kind==='fireball'?10:3,80); continue; }
     const box={x:pr.x-pr.r,y:pr.y-pr.r,w:pr.r*2,h:pr.r*2};
     for(const o of ents){ if(!targetable(o)||!hostile(pr.team,o.team)||(pr.hitSet&&pr.hitSet.has(o))) continue;
+      if(overlap(box,o)&&pr.visual){ pr.dead=true; break; }   // another player's shot, shown only: their own game already counted the hit
       if(overlap(box,o)){ const srcE=pr.src&&!pr.src.dead?pr.src:null; const s={x:pr.x-pr.vx*0.01-o.w/2,w:o.w,team:pr.team,kind:'proj',owner:pr.src};
         damage(o,pr.dmg,s,pr.kind==='fireball'?240:110); if(pr.src&&pr.src.mtype==='frost_archer'&&!o.dead){ o.slowT=3; addFloat(cxOf(o),o.y-10,'slowed','#bfe6ff'); } if(pr.burn&&!o.dead) o.burnT=3; if(pr.chain) chainZap(o,pr); if(srcE&&o.kind!=='player'&&!o.dead&&o.kind!=='dragon') o.target=srcE;
         if(pr.pierce>0&&pr.hitSet&&o.kind!=='dragon'){ pr.pierce--; pr.hitSet.add(o); pr.dmg=Math.round(pr.dmg*0.75); break; }
@@ -5490,7 +5491,7 @@ function applySnapshot(o){ const p=player; const roster=mySoldiers().map(e=>({na
   bases=o.bases.map(b=>Object.assign({rt:30},b)); lair=o.lair; tower=o.tower; sky=o.sky; islands=o.islands||islands; camps=o.camps||[]; fort=o.fort; magma=o.magma; magmaY=o.magmaY; fishv=o.fishv; ruins=o.ruins||[]; gcamps=o.gcamps||[]; chests=o.chests||{}; home=o.home; oresSky=!!(o.ores&&o.ores.sky); oresMagma=!!(o.ores&&o.ores.magma); oresBig=!!(o.ores&&o.ores.big);
   myStructures=(o.myStructures||[]).map(st=>Object.assign(st,{posts:(st.posts||[]).map(q=>({x:q.x,gy:q.gy,who:null}))}));
   populate(o.dragonHp||99999,roster,pets); mpClearLocalEnemies(); computeForestCols(); buildMap(); wakeAllWater();
-  MP.facApplied=Math.max(MP.facApplied||0,o.facSeq||0); MP.hostEdSeq=o.edSeq||0; for(const k in MP.applied) delete MP.applied[k];
+  MP.facApplied=Math.max(MP.facApplied||0,o.facSeq||0); MP.hostEdSeq=o.edSeq||0; for(const k in MP.applied) delete MP.applied[k]; if(MP.seenSets) for(const k in MP.seenSets) if(k.startsWith('ed|')) delete MP.seenSets[k];
   mpRestorePos(); if(collides(player)) freeSpotFor(player); revealAround(); invDirty=true; }
 function mpEdit(x,y){ if(!MP.on||MP.applying) return; MP.seq++; MP.edits.push([MP.seq,x,y,tileAt(x,y)]); if(MP.edits.length>40) MP.edits.shift(); }
 { const _bt=breakTile; breakTile=function(x,y,...a){ const r=_bt(x,y,...a); mpEdit(x,y); return r; }; const _tp=tryPlace; tryPlace=function(x,y,id){ const r=_tp(x,y,id); if(tileAt(x,y)===id) mpEdit(x,y); return r; }; }
@@ -5498,7 +5499,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round((p.atkAng||0)*100)/100||0, sold, ed:MP.edits, rid:p.cust?1:0 };
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round((p.atkAng||0)*100)/100||0, tw:mpThrownOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
@@ -5508,9 +5509,12 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(MP.guest){ MP.posT=(MP.posT||0)-0.1; if(MP.posT<=0){ MP.posT=5; try{ localStorage.setItem('dragonamulet-mppos-'+seed,JSON.stringify({x:Math.round(p.x),y:Math.round(p.y)})); }catch(e){} } }
   // stay inside the room's 4 KB limit (measured in bytes): trim the extras, never the player's own position and name
   const enc=new TextEncoder(), BUDGET=3600; const size=()=>enc.encode(JSON.stringify(pr)).length;
-  const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ pr[k]=pr[k].slice(0,Math.floor(pr[k].length/2)); } };
+  // lists of numbered events (block edits, hits, hurts, gifts) send the older and the newer half by turns, so nothing waits forever;
+  // the logs that must arrive in order (ge, fe) always send their oldest part first
+  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch']);
+  const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
   if(size()>BUDGET){ for(const k of ['ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
-  if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
+  if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
 function mpHostName(){ for(const r of MP.remote.values()) if(r.isHost) return r.nm||'your friend'; return MP.hostNm||'your friend'; }
@@ -5526,8 +5530,8 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
     if(now-MP.hostSeen<2000) MP.waitSaid=false; }
   for(const pe of peers){ if(pe.sameTab||pe.kind!=='viewer') continue; const d=pe.presence||{}; if(d.x==null||d.y==null||d.joining) continue;
     let r=MP.remote.get(pe.peer); if(!r){ r={peer:pe.peer,kind:'human',remote:true,w:12,h:29,x:d.x,y:d.y,team:d.team||player.team,cls:d.cls||'knight',facing:1,anim:0,hp:1,maxHp:1,hurtT:0,atkT:0,role:'guard',soldiers:[]}; MP.remote.set(pe.peer,r); }
-    r.fa=d.fa||0; r.nm=d.nm||''; r.isHost=!!d.host; r.mine=d.mine||0; r.dl=!!d.dl; r.tx=d.x; r.ty=d.y; mpFromPeer(r,d,pe.peer); r.facing=d.f||1; r.cls=d.cls||'knight'; r.team=d.team||player.team; r.weapon=d.w||0; r.vx=d.vx||0; r.anim=d.an||0; r.hp=d.hp||1; r.maxHp=d.mhp||1; r.upArmor=0; r.by=pe.by; r.seen=now; r.riding=!!d.rd&&!!BOATS[d.rd]; r.boat=d.rd||0; r.grounded=!((d.st||0)&2); r.inWater=!!((d.st||0)&1); r.fly=!!((d.st||0)&4);
-    for(const [sq,to,id,n] of (d.gv||[])){ if(to!==MP.myKey||sq<=(MP.giveSeen[pe.peer]||0)||!ITEMS[id]) continue; MP.giveSeen[pe.peer]=sq; obtain(id,n,true); invDirty=true; toast(`${d.nm||'A friend'} gave you ${n>1?n+' × ':''}${ITEMS[id].name}`,3); if(typeof sfx==='function') sfx('pickup'); }
+    r.fa=d.fa||0; r.nm=d.nm||''; r.isHost=!!d.host; r.mine=d.mine||0; r.dl=!!d.dl; r.tx=d.x; r.ty=d.y; mpFromPeer(r,d,pe.peer); r.facing=d.f||1; r.cls=d.cls||'knight'; r.team=d.team||player.team; r.weapon=d.tw?0:(d.w||0); r.tw=d.tw||0; r.vx=d.vx||0; r.anim=d.an||0; r.hp=d.hp||1; r.maxHp=d.mhp||1; r.upArmor=0; r.by=pe.by; r.seen=now; r.riding=!!d.rd&&!!BOATS[d.rd]; r.boat=d.rd||0; r.grounded=!((d.st||0)&2); r.inWater=!!((d.st||0)&1); r.fly=!!((d.st||0)&4);
+    for(const [sq,to,id,n] of (d.gv||[])){ if(to!==MP.myKey||!ITEMS[id]||!mpFresh('gv',pe.peer,sq,MP.giveSeen[pe.peer]||0)) continue; MP.giveSeen[pe.peer]=Math.max(MP.giveSeen[pe.peer]||0,sq); obtain(id,n,true); invDirty=true; toast(`${d.nm||'A friend'} gave you ${n>1?n+' × ':''}${ITEMS[id].name}`,3); if(typeof sfx==='function') sfx('pickup'); }
     for(const c of (d.ch||[])) mpApplyChest(c);
     if(d.host&&MP.applied[pe.peer]==null&&MP.hostEdSeq) MP.applied[pe.peer]=MP.hostEdSeq;
     if(MP.guest&&d.host&&d.fl!=null){ tower.cleared=d.fl.includes('t'); fort.cleared=d.fl.includes('f'); if(d.fl.includes('s')) sky.castle.cleared=true; if(d.fl.includes('m')) magma.keep.cleared=true; if(d.fl.includes('d')&&!dragonSlain){ dragonSlain=true; if(dragon) dragon.dead=true; } if(d.fl.includes('k')) krakenSlain=true; }
@@ -5538,17 +5542,19 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
         keep.add(o); o.uid=uid||0; o.tx=x; o.ty=y; if(isA){ o.atype=c; o.mode=k==='f'?'fight':'pet'; } else { o.cls=c; o.weapon=w; } o.facing=f; o.team=r.team; o.hp=hp||100; o.maxHp=100; o.dead=false; o.vx=Math.abs(x-(o.x||x))>1?40:0; return o; });
       for(const o of old) if(!keep.has(o)&&o.proxy) o.dead=true; }
     // replay their block changes
-    const last=MP.applied[pe.peer]||0; let mx=last; MP.applying=true; for(const [sq,x,y,id] of (d.ed||[])){ if(sq>last){ if(tileAt(x,y)!==id&&!(BLOCKS[tileAt(x,y)]&&BLOCKS[tileAt(x,y)].hard===Infinity)) setTile(x,y,id); if(sq>mx) mx=sq; } } MP.applying=false; MP.applied[pe.peer]=mx;
+    const last=MP.applied[pe.peer]||0; let mx=last; MP.applying=true; for(const [sq,x,y,id] of (d.ed||[])){ if(mpFresh('ed',pe.peer,sq,last)){ if(tileAt(x,y)!==id&&!(BLOCKS[tileAt(x,y)]&&BLOCKS[tileAt(x,y)].hard===Infinity)) setTile(x,y,id); if(sq>mx) mx=sq; } } MP.applying=false; MP.applied[pe.peer]=mx;
     // their attacks hurt the enemies in your copy of the world
-    r.wpnOverride=d.w||0;
+    r.wpnOverride=d.tw?0:(d.w||0);
     if(d.a!=null&&d.a!==MP.atkSeen[pe.peer]){ const first=MP.atkSeen[pe.peer]==null; MP.atkSeen[pe.peer]=d.a; if(!first){ mpRemoteAttack(r,d); const ang=d.aa||0; r.atkAng=ang; r.atkT=0.3; r.atkDur=0.3; const wi=ITEMS[d.w]; r.atkMode=wi&&wi.shape==='spear'?'stab':'swing'; r.facing=Math.cos(ang)>=0?1:-1; r.showFaceT=0.35; } }
     if(MP.guest&&d.host&&d.t!=null&&Math.abs(d.t-time)>0.02) time=d.t; }
   for(const [k,r] of MP.remote) if(now-r.seen>8000){ if(r.proxy) r.proxy.dead=true; for(const o of r.soldiers||[]) if(o.proxy) o.dead=true; MP.remote.delete(k); } }
 function mpRemoteAttack(r,d){ const w=ITEMS[d.w]; if(!w||w.kind!=='weapon') return; const ang=d.aa||0; const sx=r.tx+6, sy=r.ty+12;
-  if(w.type==='bow'||w.type==='magic'){ if(w.ward) return; projs.push({x:sx,y:sy,vx:Math.cos(ang)*(w.speed||500),vy:Math.sin(ang)*(w.speed||500),team:player.team,dmg:w.dmg,kind:w.type==='magic'?'magic':'arrow',col:w.gem||'#c8a0ff',life:2.5,grav:w.type==='magic'?0:170,r:w.type==='magic'?7:4,homing:!!w.homing}); return; }
-  const reach=(w.reach||24)+16; for(const o of ents){ if(o.dead||!hostile(player.team,o.team)||o.kind==='player') continue; const dx=cxOf(o)-sx, dy=cyOf(o)-sy; if(Math.hypot(dx,dy)>reach) continue; if(Math.sign(dx)!==Math.sign(Math.cos(ang))&&Math.abs(dx)>8) continue; damage(o,w.dmg,{x:sx,w:1,team:player.team,kind:'proj'},w.kb||120); } }
+  if(w.type==='bow'||w.type==='magic'){ if(w.ward) return; projs.push({visual:true,x:sx,y:sy,vx:Math.cos(ang)*(w.speed||500),vy:Math.sin(ang)*(w.speed||500),team:player.team,dmg:w.dmg,kind:w.type==='magic'?'magic':'arrow',col:w.gem||'#c8a0ff',life:2.5,grav:w.type==='magic'?0:170,r:w.type==='magic'?7:4,homing:!!w.homing}); return; }
+  // a melee swing is only shown here: the player who swung already dealt the damage (the host to its enemies, a guest through its hits),
+  // so dealing it again here would count every swing near another player twice
+}
 function drawRemotes(){ const t=0.25; for(const r of MP.remote.values()){ if(r.atkT>0) r.atkT=Math.max(0,r.atkT-1/60); if(r.showFaceT>0){ r.showFaceT-=1/60; r.facing=Math.cos(r.atkAng||0)>=0?1:-1; } if(!isFinite(r.x)) r.x=r.tx; if(!isFinite(r.y)) r.y=r.ty; if(!isFinite(r.x)||!isFinite(r.y)) continue; if(r.proxy){ r.proxy.x=r.tx; r.proxy.y=r.ty; r.proxy.hp=Math.max(1,r.hp); r.proxy.maxHp=r.maxHp; r.proxy.dead=false; } r.x+=(r.tx-r.x)*t; r.y+=(r.ty-r.y)*t; for(const o of r.soldiers){ o.x+=(o.tx-o.x)*t; o.y+=(o.ty-o.y)*t; o.anim=(o.anim||0)+0.05; try{ if(o.kind==='animal') drawAnimal(o); else drawEntity(o); }catch(e){} }
-    { const hp=r.hp, mh=r.maxHp; r.hp=1; r.maxHp=1; try{ if(r.riding) drawBoat(r); else drawEntity(r); }catch(e){} r.hp=hp; r.maxHp=mh; } const nm=r.nm||(r.by&&MP.names[r.by])||'Friend'; ctx.font='6px "Press Start 2P", monospace'; ctx.textAlign='center'; ctx.fillStyle='#000'; ctx.fillText(nm,Math.round(r.x+6)+1,Math.round(r.y)-9); ctx.fillStyle='#ffe066'; ctx.fillText(nm,Math.round(r.x+6),Math.round(r.y)-10);
+    { const hp=r.hp, mh=r.maxHp; r.hp=1; r.maxHp=1; try{ if(r.riding) drawBoat(r); else drawEntity(r); }catch(e){} r.hp=hp; r.maxHp=mh; } try{ drawRemoteThrown(r); }catch(e){} const nm=r.nm||(r.by&&MP.names[r.by])||'Friend'; ctx.font='6px "Press Start 2P", monospace'; ctx.textAlign='center'; ctx.fillStyle='#000'; ctx.fillText(nm,Math.round(r.x+6)+1,Math.round(r.y)-9); ctx.fillStyle='#ffe066'; ctx.fillText(nm,Math.round(r.x+6),Math.round(r.y)-10);
     ctx.fillStyle='#3f3150'; ctx.fillRect(Math.round(r.x-3),Math.round(r.y)-7,18,3); ctx.fillStyle='#6ad86a'; ctx.fillRect(Math.round(r.x-2),Math.round(r.y)-6,Math.round(16*clamp(r.hp/r.maxHp,0,1)),1); } }
 $('#btnMP').addEventListener('click',()=>{ hide('scrTitle'); mpStatus(''); show('scrMP'); });
 $('#mpBack').addEventListener('click',()=>{ hide('scrMP'); show('scrTitle'); });
@@ -5559,6 +5565,11 @@ $('#mpHostSaved').addEventListener('click',()=>{ hide('scrMP'); MP.pendingHostSa
 $('#slotsBack').addEventListener('click',()=>{ MP.pendingHostSaved=false; });
 $('#mpCode').addEventListener('keydown',e=>{ e.stopPropagation(); if(e.key==='Enter') $('#mpJoin').click(); });
 $('#mpBadge').addEventListener('click',()=>toast(`Room code ${MP.code}. Friends open this game's link, choose Multiplayer, then Join with this code.`,5));
+
+// remembers which numbered events from each sender were already applied, so they can arrive in any order and none is applied twice
+function mpFresh(kind,from,sq,floor0){ const B=MP.seenSets||(MP.seenSets={}), id=kind+'|'+from; let s=B[id]; if(!s) s=B[id]={floor:floor0||0,set:new Set(),max:0};
+  if(sq<=s.floor||s.set.has(sq)) return false; s.set.add(sq); if(sq>s.max) s.max=sq;
+  if(s.set.size>500){ s.floor=Math.max(s.floor,s.max-250); for(const v of s.set) if(v<=s.floor) s.set.delete(v); } return true; }
 // ================= characters: up to 3, separate from worlds =================
 let curChar=1; const heroPick={mode:'',cb:null,state:null};
 const charKey=n=>'dragonamulet-char-'+n;
@@ -5666,9 +5677,9 @@ function mpFromPeer(r,d,peerId){ r.key=mpKeyOf(peerId);
     if(d.hm!=null&&home&&(home.miners||0)<d.hm){ MP.syncing=true; try{ while((home.miners||0)<d.hm) addHomeMiner(); }finally{ MP.syncing=false; } } }
   if(MP.host&&d.hq!=null){ const seen=MP.hireSeen[r.key]||0; if(d.hq>seen){ for(let k=seen;k<d.hq;k++) addHomeMiner(); MP.hireSeen[r.key]=d.hq; toast((r.nm||'A friend')+' hired a miner for the village',2.5); } }
   if(MP.host&&d.ge&&d.ge.length){ let got=MP.gApplied[r.key]||0; const run=()=>{ for(const [sq,x,y,id,isBg] of d.ge){ if(sq<=got) continue; if(sq>got+1) break; if(isBg){ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=id; if(facCap) facCap.push([x,y,id,1]); } } else setTile(x,y,id); got=sq; } }; facRun(run); MP.gApplied[r.key]=got; }
-  if(MP.host){ mpProxy(r); const seen=MP.hitsSeen[r.key]||0; let mx=seen; for(const [nid,amt,sq] of (d.hits||[])){ if(sq<=seen) continue; mx=Math.max(mx,sq); const e=ents.find(o=>o.nid===nid&&!o.dead); if(e){ const real=e.iframes; damage(e,amt,r.proxy,120); } } MP.hitsSeen[r.key]=mx; }
+  if(MP.host){ mpProxy(r); const seen=MP.hitsSeen[r.key]||0; let mx=seen; for(const [nid,amt,sq] of (d.hits||[])){ if(!mpFresh('hit',r.key,sq,seen)) continue; mx=Math.max(mx,sq); const e=ents.find(o=>o.nid===nid&&!o.dead); if(e){ const real=e.iframes; damage(e,amt,r.proxy,120); } } MP.hitsSeen[r.key]=mx; }
   if(MP.guest&&d.host){ for(const [k,v] of (d.ga||[])) if(k===MP.myKey) MP.gAck=Math.max(MP.gAck,v); if(d.fs&&MP.facApplied<d.fs-1) MP.facApplied=d.fs-1; MP.applying=true; for(const [sq,x,y,id,isBg] of (d.fe||[])){ if(sq<=MP.facApplied) continue; if(sq>MP.facApplied+1) break; if(isBg){ if(x>=0&&x<W&&y>=0&&y<H) bg[y*W+x]=id; } else { setTile(x,y,id); if(id===0&&y>skyOff) reveal(x,y); } MP.facApplied=sq; } MP.applying=false;
-    for(const [key,sq,amt,dir,uid] of (d.hurt||[])){ if(key!==MP.myKey||sq<=MP.hurtSeen) continue; MP.hurtSeen=sq;
+    for(const [key,sq,amt,dir,uid] of (d.hurt||[])){ if(key!==MP.myKey||!mpFresh('hurt','host',sq,MP.hurtSeen)) continue; MP.hurtSeen=Math.max(MP.hurtSeen,sq);
       if(uid){ const u=ents.find(e=>!e.dead&&e.mpUid===uid); if(u){ damage(u,amt,null); if(dir&&!u.dead){ u.vx=dir*140; u.vy=Math.min(u.vy,-120); u.kbT=0.2; } } continue; }
       player.iframes=0; damage(player,amt,null); if(dir){ player.vx=dir*160; player.vy=Math.min(player.vy,-150); } }
     mpGhosts(d.mobs||[]); } }
@@ -7792,28 +7803,33 @@ function closeWetDoor(x,y){ const id=doorIdAt(x,y), s=DOOR_SET_OF[id]; if(!s) re
 // Enemy villages close ranks against a lone attacker, and Vorthax can only be brought down by a full army.
 
 // how many of your soldiers and fighting pets are with you (within 16 blocks)
-function armyNear(range){ if(!player) return 0; const R=(range||16)*T; let n=0; for(const e of ents){ if(e.dead||e===player||e.team!==player.team||e.aboard) continue; if(!(e.kind==='human'||e.tamed)) continue; if(e.kind==='human'&&(e.role==='miner'||e.worker)) continue; if(Math.abs(cxOf(e)-cxOf(player))<R&&Math.abs(cyOf(e)-cyOf(player))<R) n++; } return n; }
+function armyNear(range,who){ who=who||player; if(!who) return 0; const R=(range||16)*T; let n=0;
+  for(const e of ents){ if(e.dead||e===who||e.team!==player.team||e.aboard) continue; if(!(e.kind==='human'||e.tamed||e===player)) continue; if(e.kind==='human'&&(e.role==='miner'||e.worker)) continue;
+    if(Math.abs(cxOf(e)-cxOf(who))<R&&Math.abs(cyOf(e)-cyOf(who))<R) n++; } return n; }   // in multiplayer the other players and their soldiers count too
 
 // ---- enemy villages and outposts: with fewer than 5 of your fighters beside you, the defenders close ranks ----
 const RANKS_NEED=5;
 function factionHome(x){ for(const b of bases){ if(b.f===player.team||conquered[b.f]) continue; const isl=b.isl; if(isl&&x>=isl[0]-4&&x<=isl[1]+4) return b;
     for(const o of [...(b.outposts||[]),...(b.keeps||[])]) if(Math.abs(x-o.x)<30) return b; } return null; }
-let ranksCache={t:-1,k:0,b:null}, ranksHint=false;
-function closedRanks(){ const now=performance.now(); if(now-ranksCache.t<500) return ranksCache; const b=player&&!player.dead?factionHome(cxOf(player)/T):null;
-  const k=b?Math.max(0,Math.min(1,(RANKS_NEED-armyNear(16))/RANKS_NEED)):0; ranksCache={t:now,k,b};
-  if(k>=0.6&&b&&!ranksHint&&ents.some(e=>!e.dead&&e.kind==='human'&&e.team===b.f&&Math.abs(cxOf(e)-cxOf(player))<14*T)){ ranksHint=true; toast(`The ${FNAME[b.f].toLowerCase()} close ranks against a lone attacker: they hit harder and shrug off your blows. Bring at least ${RANKS_NEED} soldiers.`,6); }
-  return ranksCache; }
+let ranksCache=new Map(), ranksHint=false;
+// who: you, or (on the host) the stand-in for a friend, so the rule holds for everyone in a shared world
+function closedRanks(who){ who=who||player; const now=performance.now(); const c0=ranksCache.get(who); if(c0&&now-c0.t<500) return c0; const b=who&&!who.dead?factionHome(cxOf(who)/T):null;
+  const k=b?Math.max(0,Math.min(1,(RANKS_NEED-armyNear(16,who))/RANKS_NEED)):0; const c={t:now,k,b}; ranksCache.set(who,c); if(ranksCache.size>40) ranksCache.clear();
+  if(who===player&&k>=0.6&&b&&!ranksHint&&ents.some(e=>!e.dead&&e.kind==='human'&&e.team===b.f&&Math.abs(cxOf(e)-cxOf(player))<14*T)){ ranksHint=true; toast(`The ${FNAME[b.f].toLowerCase()} close ranks against a lone attacker: they hit harder and shrug off your blows. Bring at least ${RANKS_NEED} soldiers.`,6); }
+  return c; }
+const friendProxies=()=>typeof MP!=='undefined'&&MP.host?[...MP.remote.values()].map(r=>r.proxy).filter(x=>x&&!x.dead):[];
 // dying at an enemy village gives its garrison time to regroup: they are back at full health when you return
 { let wasDead=false; const _u=update; update=function(dt){ _u(dt); if(!player||(typeof MP!=='undefined'&&MP.guest)) return; if(player.dead&&!wasDead){ const b=factionHome(cxOf(player)/T);
       if(b) for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===b.f&&b.isl&&cxOf(e)/T>=b.isl[0]-4&&cxOf(e)/T<=b.isl[1]+4){ e.hp=e.maxHp; e.provoked=false; } } wasDead=!!player.dead; }; }
 // the whole garrison turns out against a lone attacker, instead of meeting you one guard at a time
 { let rallyT=2; const _u=update; update=function(dt){ _u(dt); rallyT-=dt; if(rallyT>0||!player||player.dead||state!=='play') return; rallyT=2; if(typeof MP!=='undefined'&&MP.guest) return;
-    const c=closedRanks(); if(!(c.k>=0.6&&c.b)) return; let fighting=false;
-    for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&Math.abs(cxOf(e)-cxOf(player))<25*T&&Math.abs(cyOf(e)-cyOf(player))<12*T){ fighting=true; break; }   // within bowshot of any defender
-    if(!fighting) return; for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&!e.worker&&e.role!=='miner'&&Math.abs(cxOf(e)-cxOf(player))<45*T) e.provoked=true; }; }
+    for(const who of [player,...friendProxies()]){ const c=closedRanks(who); if(!(c.k>=0.6&&c.b)) continue; let fighting=false;
+      for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&Math.abs(cxOf(e)-cxOf(who))<25*T&&Math.abs(cyOf(e)-cyOf(who))<12*T){ fighting=true; break; }   // within bowshot of any defender
+      if(fighting) for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&!e.worker&&e.role!=='miner'&&Math.abs(cxOf(e)-cxOf(who))<45*T) e.provoked=true; } }; }
 { const _dmg=damage; damage=function(t,amt,src,kb){ try{ if(player&&t&&amt>0&&!(typeof MP!=='undefined'&&MP.guest)){ const k=killerOf(src);
-      if(k===player&&t.kind==='human'&&t.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&t.team===c.b.f) amt*=1-0.75*c.k; }   // alone, only a quarter of your damage gets through
-      else if(t===player&&k&&k.kind==='human'&&k.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&k.team===c.b.f) amt*=1+4*c.k; } }   // alone, they hit you five times as hard
+      const me=x=>x===player||(x&&x.proxy&&!x.uid&&x.kind==='human');   // you, or a friend's stand-in (not their soldiers)
+      if(me(k)&&t.kind==='human'&&t.team!==player.team){ const c=closedRanks(k); if(c.k>0&&c.b&&t.team===c.b.f) amt*=1-0.75*c.k; }   // alone, only a quarter of your damage gets through
+      else if(me(t)&&k&&k.kind==='human'&&k.team!==player.team){ const c=closedRanks(t); if(c.k>0&&c.b&&k.team===c.b.f) amt*=1+4*c.k; } }   // alone, they hit you five times as hard
     }catch(e){} return _dmg(t,amt,src,kb); }; }
 
 // ---- Vorthax: only a full army can bring the dragon down ----
@@ -7915,6 +7931,16 @@ function drawThrown(){ if(!thrown||!player) return; const s=thrown, tex=iconTex(
 ITEMS[I.ADAMANT_SWORD].desc='Thrown: attack to hurl it spinning up to 7 blocks; it stops, then flies back to your hand, cutting every enemy it passes on the way out and back';
 ITEMS[I.MAGMA_BLADE].desc='Thrown like a boomerang: it spins out up to 7 blocks and back, cutting and burning every enemy it passes';
 ITEMS[I.ADAMANT_MACE].desc='On a chain: tap to hurl the head up to 6 blocks and reel it back; hold to whirl it in a circle above your head, hitting anything it touches, and let go to hurl it';
+
+// ---- multiplayer: the others see your thrown sword or chained mace (sent with your position, about ten times a second) ----
+// [kind 1 sword / 2 chain throw / 3 chain spin, item, x, y]
+function mpThrownOut(){ if(!thrown||!player) return 0; return [thrown.kind==='sword'?1:thrown.phase==='spin'?3:2, thrown.id, Math.round(thrown.x), Math.round(thrown.y)]; }
+function drawRemoteThrown(r){ const tw=r.tw; if(!tw||!tw[1]) return; const tex=iconTex(tw[1]); if(!tex) return;
+  if(r.twx==null||Math.abs(r.twx-tw[2])>200) { r.twx=tw[2]; r.twy=tw[3]; } r.twx+=(tw[2]-r.twx)*0.35; r.twy+=(tw[3]-r.twy)*0.35; const x=r.twx, y=r.twy;
+  if(tw[0]===1){ r.twSpin=(r.twSpin||0)+0.37; ctx.save(); ctx.translate(Math.round(x),Math.round(y)); ctx.rotate(r.twSpin); ctx.drawImage(tex,-10,-10,20,20); ctx.restore(); return; }
+  const hx=tw[0]===3?r.x+6+(r.facing||1)*3:r.x+6+(r.facing||1)*4, hy=tw[0]===3?r.y+2:r.y+12; const dx=x-hx, dy=y-hy, d=Math.hypot(dx,dy), n=Math.max(2,Math.floor(d/5));
+  for(let i=1;i<n;i++){ ctx.fillStyle=i%2?'#8a909a':'#c8ccd4'; ctx.fillRect(Math.round(hx+dx*i/n)-1,Math.round(hy+dy*i/n)-1,3,3); }
+  ctx.save(); ctx.translate(Math.round(x),Math.round(y)); ctx.rotate(Math.atan2(dy,dx)+Math.PI/4); ctx.drawImage(tex,-10,-10,20,20); ctx.restore(); }
 })();
 </script>
 </body>
