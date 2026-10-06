@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791308217"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791308217"><link rel="manifest" href="manifest.webmanifest?v=1791308217"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791309222"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791309222"><link rel="manifest" href="manifest.webmanifest?v=1791309222"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -413,7 +413,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Enemy villages live like colonies. Their woodcutters fell trees and plant saplings, quarrymen dig, farmers harvest and replant, and everyone carries their load home. Builders put up houses, farms, walls, castle expansions and watchtowers one block at a time, so you can watch a village grow, or stop it. Each new house brings more villagers, workers and soldiers. The Quartermaster in your castle can grow your own village. On phones, tapping the hotbar shows an item's name, and tapping an item in your bag shows its full stats for a few seconds.</p>
     <h3>Beta 0.6.0</h3>
     <p>Enemy armies sail. They march to the shore, launch a ship, cross the sea and land, island by island, so you can meet them at sea. Sink an enemy ship for its coins and gold. Sail near an enemy island and they send a patrol ship after you. Deck cannons (siege workshop, or tier I from the shipwright) let your longships and warships fire back. Enemy workers carry their goods home, so stopping them hurts their faction.</p>
-    <p>Grow your village from a hamlet into a town and a city in the Army panel, for more houses, room for more soldiers, a jeweler, and later the war engineer and warships. Conquered villages grow loyal and send tribute, or rebel if you neglect them. Set runes into your weapons (fire, frost, life, mana or keen). Your soldiers rank up as they fight and learn shield wall, volley or pack hunter. Your bestiary makes you stronger against monsters you hunt. Send soldiers on expeditions for loot. Seasons change every 6 days: in winter the sea freezes and anyone can walk across it, and storms make sailing slow. Bosses drop trophies to mount in your village for small permanent bonuses.</p>
+    <p>Grow your village from a hamlet into a town and a city in the Army panel, for more houses, room for more soldiers, a jeweler, and later the war engineer and warships. Conquered villages grow loyal and send tribute, or rebel if you neglect them. Set runes into your weapons (fire, frost, life, mana or keen), and add more of the same rune to level it up from I to V. Your soldiers rank up as they fight and learn shield wall, volley or pack hunter. Your bestiary makes you stronger against monsters you hunt. Send soldiers on expeditions for loot. Seasons change every 6 days: in winter the sea freezes and anyone can walk across it, and storms make sailing slow. Bosses drop trophies to mount in your village for small permanent bonuses.</p>
     <p>Doors come in every wood. Archers hit harder with bows and their arrows fly through a second enemy. The test world lets you pick your class. In multiplayer, enemies fight your friends' soldiers and pets, and friends can save the shared world as Friend's world and keep playing it if the host leaves.</p>
     <h3>Beta 0.5.1</h3>
     <p>The sky realm's cloud islands sit closer together, with small cloud stepping stones between them. Mythril ore now looks like a pale teal cloud block, and its veins are three times bigger. The magma realm is twice as wide, with much more adamantite. The Sky Ranger and the Magma Knight drop the top permanent upgrades you don't have yet: Swiftness III first, then Sprint III, then hearts of vigor and of the arcane. The test world always gives you a recall mirror.</p>
@@ -996,11 +996,11 @@ Object.assign(ITEMS, {
   [I.MUSHROOM_SOUP]:{name:'Mushroom soup',kind:'food',heal:35,cooked:'#6aa8c0'}, [I.BERRY_PIE]:{name:'Berry pie',kind:'food',heal:60,cooked:'#9a3a8a'},
   [I.OMELETTE]:{name:'Omelette',kind:'food',heal:40,cooked:'#f0d060'}, [I.HONEY_CAKE]:{name:'Honey cake',kind:'food',heal:65,cooked:'#d8a040'},
   [I.FIN_SOUP]:{name:'Shark fin soup',kind:'food',heal:80,cooked:'#a8b8c0'}, [I.HUNTERS_FEAST]:{name:"Hunter's feast",kind:'food',heal:120,cooked:'#8a4a2a'},
-  [I.BONE_DAGGERS]:W_('Bone daggers','melee',{dmg:9,cd:0.19,reach:20,kb:80,m:'silver',shape:'dagger'}),
-  [I.IRON_DAGGERS]:W_('Iron daggers','melee',{dmg:15,cd:0.18,reach:21,kb:90,m:'iron',shape:'dagger'}),
-  [I.GOLD_DAGGERS]:W_('Gold daggers','melee',{dmg:22,cd:0.17,reach:22,kb:100,m:'gold',shape:'dagger'}),
-  [I.MYTHRIL_DAGGERS]:W_('Mythril daggers','melee',{dmg:31,cd:0.16,reach:24,kb:110,m:'mythril',shape:'dagger'}),
-  [I.ADAMANT_DAGGERS]:W_('Adamantite daggers','melee',{dmg:43,cd:0.15,reach:26,kb:120,m:'adamant',shape:'dagger'}),
+  [I.BONE_DAGGERS]:W_('Bone daggers','melee',{dmg:8,cd:0.19,reach:20,kb:80,m:'silver',shape:'dagger'}),
+  [I.IRON_DAGGERS]:W_('Iron daggers','melee',{dmg:12,cd:0.18,reach:21,kb:90,m:'iron',shape:'dagger'}),
+  [I.GOLD_DAGGERS]:W_('Gold daggers','melee',{dmg:18,cd:0.17,reach:22,kb:100,m:'gold',shape:'dagger'}),
+  [I.MYTHRIL_DAGGERS]:W_('Mythril daggers','melee',{dmg:25,cd:0.16,reach:24,kb:110,m:'mythril',shape:'dagger'}),
+  [I.ADAMANT_DAGGERS]:W_('Adamantite daggers','melee',{dmg:35,cd:0.15,reach:26,kb:120,m:'adamant',shape:'dagger'}),
   [I.FISHING_ROD]:{name:'Wooden rod',kind:'rod',line:'rod',tier:1,m:'wood',desc:'Common fish and junk'},
   [I.IRON_ROD]:{name:'Iron rod',kind:'rod',line:'rod',tier:2,m:'iron',desc:'Bass, cod, pufferfish and small treasures'},
   [I.GOLD_ROD]:{name:'Gold rod',kind:'rod',line:'rod',tier:3,m:'gold',desc:'Tuna, anglerfish and better treasure. Faster bites'},
@@ -1080,7 +1080,7 @@ Object.assign(ITEMS, {
   [462]:{name:'Baked potato',kind:'food',heal:38,cooked:'#d8a860'}, [463]:{name:'Sugar',kind:'mat',ing:['#f8f8f8','#ffffff']},
   [464]:{name:'Growth dust',kind:'dust',desc:'Sprinkle on a plant, crop or sapling: it grows a stage now and 50% faster from then on'},
   [487]:{name:'Beef stew',kind:'food',heal:95,cooked:'#7a3a1a'}, [488]:{name:'Mutton pie',kind:'food',heal:85,cooked:'#c8904a'},
-  [486]:Object.assign(W_('Kraken fang daggers','melee',{dmg:34,cd:0.2,reach:22,kb:90,m:'mythril',shape:'dagger'}),{desc:'From the Kraken\'s treasure. Beastmasters who hold them gain a permanent bond: companions hit 25% harder'}),
+  [486]:Object.assign(W_('Kraken fang daggers','melee',{dmg:28,cd:0.2,reach:22,kb:90,m:'mythril',shape:'dagger'}),{desc:'From the Kraken\'s treasure. Beastmasters who hold them gain a permanent bond: companions hit 25% harder'}),
   [480]:{name:'Sticks',kind:'mat',ing:['#8a5c2d','#b7834a'],desc:'Handles for every tool and weapon'},
   [481]:{name:'Raw beef',kind:'food',heal:6,ing:['#c8484a','#f0a0a0']}, [482]:{name:'Raw mutton',kind:'food',heal:5,ing:['#d05a5a','#f4b0a8']}, [483]:{name:'Wool',kind:'mat',ing:['#f4f0e8','#ffffff']},
   [484]:{name:'Steak',kind:'food',heal:45,cooked:'#8a4a2a'}, [485]:{name:'Roast mutton',kind:'food',heal:38,cooked:'#9a5a3a'},
@@ -1091,17 +1091,17 @@ Object.assign(ITEMS, {
   [490]:{name:'Deck cannons I',kind:'acc',slot:'guns',tier:1,desc:'Your longships and warships fire cannons at enemy ships and sea monsters (warships fire two at a time)'},
   [491]:{name:'Deck cannons II',kind:'acc',slot:'guns',tier:2,desc:'Deck cannons fire faster and hit harder'},
   [492]:{name:'Deck cannons III',kind:'acc',slot:'guns',tier:3,desc:'The fastest, strongest deck cannons'},
-  [493]:{name:'Fire rune',kind:'rune',rune:'fire',col:'#e0115f',desc:'Socket it into a weapon: a quarter of your hits set enemies on fire'},
-  [494]:{name:'Frost rune',kind:'rune',rune:'frost',col:'#3a6ad8',desc:'Socket it into a weapon: your hits slow enemies to half speed for a moment'},
-  [495]:{name:'Life rune',kind:'rune',rune:'life',col:'#2ecc71',desc:'Socket it into a weapon: you heal 10% of the damage you deal'},
-  [496]:{name:'Mana rune',kind:'rune',rune:'mana',col:'#b066ff',desc:'Socket it into a weapon: each hit gives you 3 mana'},
-  [497]:{name:'Keen rune',kind:'rune',rune:'keen',col:'#8ae8ff',desc:'Socket it into a weapon: it deals 12% more damage'},
+  [493]:{name:'Fire rune',kind:'rune',rune:'fire',col:'#e0115f',desc:'Set it in a weapon: 10% of your hits set enemies on fire at level I, up to 25% at level V. Add more fire runes to level it up'},
+  [494]:{name:'Frost rune',kind:'rune',rune:'frost',col:'#3a6ad8',desc:'Set it in a weapon: 25% of your hits slow enemies for 1s at level I, up to every hit for 2.5s at level V. Add more frost runes to level it up'},
+  [495]:{name:'Life rune',kind:'rune',rune:'life',col:'#2ecc71',desc:'Set it in a weapon: you heal 3% of the damage you deal at level I, up to 10% at level V. Add more life runes to level it up'},
+  [496]:{name:'Mana rune',kind:'rune',rune:'mana',col:'#b066ff',desc:'Set it in a weapon: each hit gives you 1 mana at level I, up to 3 at level V. Add more mana runes to level it up'},
+  [497]:{name:'Keen rune',kind:'rune',rune:'keen',col:'#8ae8ff',desc:'Set it in a weapon: 4% more damage at level I, up to 12% at level V. Add more keen runes to level it up'},
   [I.HERBAL_TONIC]:{name:'Herbal tonic',kind:'food',heal:45,ing:['#6ac070','#d8ffd0']},
   [I.WRAITH_BLADE]:W_('Wraith blade','melee',{dmg:48,cd:0.33,reach:32,kb:180,m:'spectral',shape:'sword',rare:true}),
   [I.GRAVE_MAUL]:W_('Grave maul','melee',{dmg:80,cd:0.72,reach:30,kb:380,m:'spectral',shape:'mace',rare:true}),
   [I.PHANTOM_BOW]:W_('Phantom bow','bow',{dmg:42,cd:0.4,speed:650,m:'spectral',rare:true}),
   [I.SOUL_STAFF]:W_('Soul staff','magic',{dmg:45,cd:0.36,mana:8,speed:520,gem:'#a8e0ff',rare:true}),
-  [I.SHADE_DAGGERS]:W_('Shade daggers','melee',{dmg:36,cd:0.14,reach:26,kb:110,m:'spectral',shape:'dagger',rare:true}),
+  [I.SHADE_DAGGERS]:W_('Shade daggers','melee',{dmg:30,cd:0.14,reach:26,kb:110,m:'spectral',shape:'dagger',rare:true}),
   [I.SKY_STAFF]:W_('Sky staff','magic',{dmg:58,cd:0.34,mana:9,speed:560,gem:'#bfe6ff',rare:true}),
   [I.MAGMA_STAFF]:W_('Magma staff','magic',{dmg:52,cd:0.36,mana:9,speed:520,gem:'#ff6a1a',burn:true,rare:true}),
   [I.RANGER_BOW]:W_("Sky Ranger's bow",'bow',{dmg:62,cd:0.36,speed:720,m:'sky',rare:true}),
@@ -1356,7 +1356,7 @@ const SELL = { [I.CORAL]:8, [I.PEARL]:25, [I.BLACK_PEARL]:90, [I.ANCIENT_COIN]:4
 const CLASSES = {
   beast: { name:'Beastmaster', hp:105, mana:60, npcHp:85, def:2, speed:100, weapon:I.BONE_DAGGERS, hire:55, desc:'Tames any animal with just food. Fights with twin daggers: twice as fast as a sword, a bit shorter reach.' },
   knight:{ name:'Knight', hp:130, mana:40, npcHp:100, def:4, speed:92, weapon:I.SQUIRE_SWORD, hire:40, desc:'Sword and shield. The most health and armor.' },
-  archer:{ name:'Archer', hp:100, mana:50, npcHp:75, def:2, speed:108, weapon:I.SHORT_BOW, hire:35, desc:'Quick on their feet. Bows hit 20% harder in an archer\'s hands, and every arrow flies on through a second enemy.' },
+  archer:{ name:'Archer', hp:100, mana:50, npcHp:75, def:2, speed:108, weapon:I.SHORT_BOW, hire:35, desc:'Quick on their feet. Bows hit 30% harder in an archer\'s hands, and every arrow flies on through a second enemy.' },
   mace:  { name:'Macebearer', hp:115, mana:40, npcHp:90, def:2, speed:88, weapon:I.WOOD_MACE, hire:45, desc:'Slow, heavy swings that send enemies flying.' },
   wizard:{ name:'Wizard', hp:80, mana:120, npcHp:65, def:0, speed:98, weapon:I.APPRENTICE_STAFF, hire:60, desc:'Casts magic bolts with a staff. Most mana, strongest spells, least health.' },
 };
@@ -2632,7 +2632,7 @@ function updatePlayer(dt){
           if(def.type==='melee'){ const pv=pivotOf(p); const ang=Math.atan2(aim.y-pv.y,aim.x-pv.x); const mode=def.shape==='spear'?'stab':def.shape==='mace'?'swing':settings.swordStyle;
             if(Math.abs(Math.cos(ang))>0.15) p.facing=Math.cos(ang)>0?1:-1; startMelee(p,def,ang,mode); p.atkCd=Math.max(def.cd*(mode==='stab'?0.8:1)*facBonus(p.team,p.cls).cd,p.atkDur+0.02); }
           else { const ang=Math.atan2(aim.y-cyOf(p),aim.x-cxOf(p)); const angs=def.tri?[-0.12,0,0.12]:[0]; if(typeof sfx==='function') sfx('bow');
-            for(const o of angs){ shoot(p,ang+o,def.speed*1.25*facBonus(p.team,p.cls).shot,Math.round(def.dmg*(p.cls==='archer'?1.2:0.9)),'arrow',def.fire?'#ff7b1c':undefined,def.fire); const pr=projs[projs.length-1]; pr.grav=170; if(p.cls==='archer'&&!def.blast){ pr.pierce=1; pr.hitSet=new Set(); } if(def.homing) pr.homing=true; if(def.blast){ pr.splash=40; pr.kind='arrow'; pr.blast=true; } if(def.fire) pr.firey=true; } } } }
+            for(const o of angs){ shoot(p,ang+o,def.speed*1.25*facBonus(p.team,p.cls).shot,Math.round(def.dmg*(p.cls==='archer'?1.3:0.9)),'arrow',def.fire?'#ff7b1c':undefined,def.fire); const pr=projs[projs.length-1]; pr.grav=170; if(p.cls==='archer'&&!def.blast){ pr.pierce=1; pr.hitSet=new Set(); } if(def.homing) pr.homing=true; if(def.blast){ pr.splash=40; pr.kind='arrow'; pr.blast=true; } if(def.fire) pr.firey=true; } } } }
     } else if(def.kind==='hammer'&&isSolid(atx,aty)){
       if(p.placeCd<=0&&inReach&&isSolid(atx,aty)&&BLOCKS[tileAt(atx,aty)].hard!==Infinity&&!DOOR_IDS.has(tileAt(atx,aty))){ const i=aty*W+atx; shape[i]=(shape[i]+1)%6; p.placeCd=0.28; puff(atx*T+8,aty*T+8,BLOCKS[world[i]].col,4,40); }
     } else if(def.kind==='shape'){
@@ -3205,7 +3205,7 @@ function tryTame(a){ const beast=player.cls==='beast'; if(!beast&&!hasWhistle())
   let chance=1; if(!beast){ const need=TAME_SIZE[a.atype]||2; const have=TAME_FOOD.reduce((s,id)=>s+countItem(id),0); if(have<need){ toast(`Taming a ${a.atype} takes ${need} food (apples, meat, bread, carrots or fish). You have ${have}.`,3.5); return; }
     let left=need; for(const id of TAME_FOOD){ const k=Math.min(left,countItem(id)); if(k>0){ takeItem(id,k); left-=k; } if(left<=0) break; } }
   if(Math.random()<chance){ Object.assign(a,{tamed:true,team:player.team,mode:'pet',temper:'good',angry:false,target:null}); a.hp=a.maxHp; applyPetUp(a); puff(cxOf(a),a.y,'#ff9ac8',10,80); toast(`You tamed the ${a.atype}${beast?' with a Beastmaster\'s touch':''}! Set its job in the Army panel.`,3.5); }
-  else { puff(cxOf(a),a.y,'#9aa0a8',6,60); toast(`The ${a.atype} ate the ${ITEMS[food].name.toLowerCase()} but isn't tamed yet. Try again.`,3); } }
+  else { puff(cxOf(a),a.y,'#9aa0a8',6,60); toast(`The ${a.atype} ate the food but isn't tamed yet. Try again.`,3); } }
 function tamedAct(e,dt){ const p=player; if(!p||p.dead){ physics(e,dt); return; }
   const dx=cxOf(p)-cxOf(e), dy=cyOf(p)-cyOf(e); let mv=0;
   e.stuckT=e.stuckT||0; if((Math.abs(dx)>5*T||Math.abs(dy)>4*T)&&Math.abs(cxOf(e)-(e.lastX??0))<3&&Math.abs(cyOf(e)-(e.lastY??0))<3) e.stuckT+=dt; else e.stuckT=0; if(Math.random()<0.1){ e.lastX=cxOf(e); e.lastY=cyOf(e); }
@@ -4030,7 +4030,7 @@ function serialize(){
     machines:ents.filter(e=>e.kind==='machine'&&!e.dead).map(m=>({mtype:m.mtype,hp:Math.round(m.hp),crew:m.crew?m.crew.name:null})),
     pets:ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,pen:e.pen||null,fpen:e.fpen||null,px:(e.pen||e.fpen)?Math.round(e.x):null,py:(e.pen||e.fpen)?Math.round(e.y):null})),
     chests, roster:mySoldiers().map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e),kills:e.kills||0})),
-    player:{ bestiary:p.bestiary||{}, runes:p.runes||{}, stormV:p.stormV||0, charm:p.charm||0, boatMods:p.boatMods||{}, locker:p.locker||[], quests:p.quests||[], godCraft:!!p.godCraft, level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, recent:p.recent||[], found:p.found||{}, wingLvl:p.wingLvl||0, swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, heartsBought:p.heartsBought||{}, extraJumps:p.extraJumps||0, bed:p.bed, cust:p.cust, name:p.name, flyOn:p.flyOn, team:p.team, cls:p.cls, x:p.x, y:p.y, hp:Math.max(1,Math.round(p.hp)), mana:Math.round(p.mana), gear:p.gear, bonusHp:p.bonusHp, bonusMana:p.bonusMana, armorDef:p.armorDef, inv:p.inv, sel:p.sel, coins:p.coins },
+    player:{ bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, stormV:p.stormV||0, charm:p.charm||0, boatMods:p.boatMods||{}, locker:p.locker||[], quests:p.quests||[], godCraft:!!p.godCraft, level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, recent:p.recent||[], found:p.found||{}, wingLvl:p.wingLvl||0, swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, heartsBought:p.heartsBought||{}, extraJumps:p.extraJumps||0, bed:p.bed, cust:p.cust, name:p.name, flyOn:p.flyOn, team:p.team, cls:p.cls, x:p.x, y:p.y, hp:Math.max(1,Math.round(p.hp)), mana:Math.round(p.mana), gear:p.gear, bonusHp:p.bonusHp, bonusMana:p.bonusMana, armorDef:p.armorDef, inv:p.inv, sel:p.sel, coins:p.coins },
     surf:Array.from(surf), wet:[...wetDeco], ores:{sky:!!oresSky,magma:!!oresMagma,big:!!oresBig}, world:rleEnc(world), shape:rleEnc(shape), bg:rleEnc(bg), explored:rleEnc(explored), liq:rleEnc(liq), ocean:rleEnc(oceanCol), home, rules };
   return { str:JSON.stringify(obj), savedAt, summary:{ sizeKey, team:p.team, cls:p.cls, dayCount } };
 }
@@ -4042,7 +4042,7 @@ function deserialize(str){
   bases=o.bases.map(b=>Object.assign({rt:30},b)); lair=o.lair; tower=o.tower; sky=o.sky; skyOff=o.skyOff||72; barrierY=skyOff-4; islands=o.islands||[]; camps=o.camps||[]; fort=o.fort; magma=o.magma; magmaY=o.magmaY; fishv=o.fishv; ghoulNext=o.ghoulNext??null; ruins=o.ruins||[]; gcamps=o.gcamps||[]; chests=o.chests||{};
   const sp=o.player; player=makePlayer(sp.team,sp.cls); player.x=sp.x; player.y=sp.y; player.bonusHp=sp.bonusHp||0; player.bonusMana=sp.bonusMana||0; if(sp.gear) player.gear=Object.assign(player.gear,sp.gear); recompute(player); player.hp=Math.min(sp.hp,player.maxHp); player.mana=Math.min(sp.mana||0,player.maxMana); player.coins=sp.coins||0; player.order=o.order||'follow';
   player.inv=sp.inv.map(s=>s&&ITEMS[s.id]?{id:s.id,n:s.n}:null); while(player.inv.length<INV_N) player.inv.push(null); player.sel=sp.sel||0;
-  buildMap(); player.cust=o.player.cust||null; player.name=o.player.name; player.flyOn=o.player.flyOn; player.bed=o.player.bed||null; player.extraJumps=o.player.extraJumps||0; player.swiftLvl=o.player.swiftLvl||0; player.wingLvl=o.player.wingLvl||0; player.found=o.player.found||{}; player.recent=o.player.recent||[]; player.krakenBond=!!o.player.krakenBond; player.godCraft=!!o.player.godCraft; player.level=o.player.level||1; player.xp=o.player.xp||0; player.skillPts=o.player.skillPts||0; player.skills=o.player.skills||{}; player.food=o.player.food??100; player.locker=Array.isArray(o.player.locker)?o.player.locker.filter(id=>ITEMS[id]):[]; player.quests=Array.isArray(o.player.quests)?o.player.quests:[]; player.bestiary=o.player.bestiary||{}; player.runes=o.player.runes||{}; player.charm=o.player.charm||0; player.stormV=o.player.stormV||0; player.boatMods=o.player.boatMods||{}; recompute(player); player.sprintLvl=o.player.sprintLvl||0; player.heartsBought=o.player.heartsBought||{}; recompute(player); if(o.armyUp) player.armyUp=o.armyUp; if(o.petUp) player.petUp=o.petUp; populate(o.dragonHp||99999,o.roster,o.pets); computeForestCols();
+  buildMap(); player.cust=o.player.cust||null; player.name=o.player.name; player.flyOn=o.player.flyOn; player.bed=o.player.bed||null; player.extraJumps=o.player.extraJumps||0; player.swiftLvl=o.player.swiftLvl||0; player.wingLvl=o.player.wingLvl||0; player.found=o.player.found||{}; player.recent=o.player.recent||[]; player.krakenBond=!!o.player.krakenBond; player.godCraft=!!o.player.godCraft; player.level=o.player.level||1; player.xp=o.player.xp||0; player.skillPts=o.player.skillPts||0; player.skills=o.player.skills||{}; player.food=o.player.food??100; player.locker=Array.isArray(o.player.locker)?o.player.locker.filter(id=>ITEMS[id]):[]; player.quests=Array.isArray(o.player.quests)?o.player.quests:[]; player.bestiary=o.player.bestiary||{}; player.runes=o.player.runes||{}; player.runeLv=o.player.runeLv||{}; player.charm=o.player.charm||0; player.stormV=o.player.stormV||0; player.boatMods=o.player.boatMods||{}; recompute(player); player.sprintLvl=o.player.sprintLvl||0; player.heartsBought=o.player.heartsBought||{}; recompute(player); if(o.armyUp) player.armyUp=o.armyUp; if(o.petUp) player.petUp=o.petUp; populate(o.dragonHp||99999,o.roster,o.pets); computeForestCols();
   for(const md of (o.machines||[])){ const m=makeMachine(md.mtype,player.x+(Math.random()*60-30),player.y-6); m.hp=md.hp; ents.push(m); if(md.crew){ const c=player.party.find(e=>e&&e.name===md.crew&&!e.crewing); if(c){ c.crewing=m; m.crew=c; } } } wakeAllWater();
 }
 let curSlot=1, saving=false;
@@ -5559,7 +5559,7 @@ $('#mpBadge').addEventListener('click',()=>toast(`Room code ${MP.code}. Friends 
 let curChar=1; const heroPick={mode:'',cb:null,state:null};
 const charKey=n=>'dragonamulet-char-'+n;
 function charRead(n){ try{ return JSON.parse(localStorage.getItem(charKey(n))||'null'); }catch(e){ return null; } }
-function charState(){ const p=player; return { v:1, bestiary:p.bestiary||{}, runes:p.runes||{}, charm:p.charm||0, boatMods:p.boatMods||{}, stormV:p.stormV||0, locker:p.locker||[], quests:p.quests||[], level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, savedAt:Date.now(), name:p.name||'', cls:p.cls, cust:p.cust||null, inv:p.inv, gear:p.gear, coins:p.coins, armyUp:p.armyUp, petUp:p.petUp, bonusHp:p.bonusHp||0, bonusMana:p.bonusMana||0,
+function charState(){ const p=player; return { v:1, bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, charm:p.charm||0, boatMods:p.boatMods||{}, stormV:p.stormV||0, locker:p.locker||[], quests:p.quests||[], level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, savedAt:Date.now(), name:p.name||'', cls:p.cls, cust:p.cust||null, inv:p.inv, gear:p.gear, coins:p.coins, armyUp:p.armyUp, petUp:p.petUp, bonusHp:p.bonusHp||0, bonusMana:p.bonusMana||0,
   swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, wingLvl:p.wingLvl||0, extraJumps:p.extraJumps||0, heartsBought:p.heartsBought||{}, found:p.found||{}, recent:p.recent||[],
   soldiers:p.party.map((e,i)=>e&&!e.dead?{name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:i,kills:e.kills||0}:null).filter(Boolean),
   pets:ents.filter(e=>e.tamed&&!e.dead&&!e.pen&&!e.fpen).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp})) }; }
@@ -5567,7 +5567,7 @@ function charSave(){ if(!player||curSlot===4||!curChar) return; try{ localStorag
 function charApply(st){ if(!st) return; let p=player;
   if(st.cls&&st.cls!==p.cls){ const np=makePlayer(p.team,st.cls); np.x=p.x; np.y=p.y; np.bed=p.bed; np.party=p.party; const i=ents.indexOf(p); if(i>=0) ents[i]=np; player=np; p=np; }
   for(const e of p.party) if(e) e.dead=true; for(const e of ents) if(e.tamed&&!e.pen&&!e.fpen) e.dead=true; p.party=new Array(PARTY_MAX).fill(null);
-  for(const k of ['inv','gear','coins','armyUp','petUp','bonusHp','bonusMana','swiftLvl','sprintLvl','wingLvl','extraJumps','heartsBought','found','recent','krakenBond','level','xp','skillPts','skills','food','locker','quests','bestiary','runes','charm','boatMods','stormV']) if(st[k]!=null) p[k]=JSON.parse(JSON.stringify(st[k]));
+  for(const k of ['inv','gear','coins','armyUp','petUp','bonusHp','bonusMana','swiftLvl','sprintLvl','wingLvl','extraJumps','heartsBought','found','recent','krakenBond','level','xp','skillPts','skills','food','locker','quests','bestiary','runes','runeLv','charm','boatMods','stormV']) if(st[k]!=null) p[k]=JSON.parse(JSON.stringify(st[k]));
   if(st.cust) p.cust=st.cust; if(st.name) p.name=st.name; while(p.inv.length<INV_N) p.inv.push(null); if(!Array.isArray(p.locker)) p.locker=[]; recompute(p); p.hp=p.maxHp; p.mana=p.maxMana; invDirty=true;
   for(const sd of st.soldiers||[]){ const e=makeHuman(p.team,sd.cls,p.x+(Math.random()*40-20),p.y-4,'guard',home); e.name=sd.name; e.kills=sd.kills||0; e.maxHp=Math.max(e.maxHp,sd.maxHp||e.maxHp); e.hp=Math.min(e.maxHp,sd.hp||e.maxHp); ents.push(e); const sl=sd.slot<partyCap()&&!p.party[sd.slot]?sd.slot:freeSlot(); if(sl>=0) putInSlot(e,sl); }
   for(const pt of st.pets||[]){ const a=makeAnimal(pt.atype,p.x+(Math.random()*40-20),p.y); Object.assign(a,{tamed:true,team:p.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp}); applyPetUp(a); ents.push(a); } }
@@ -5960,13 +5960,31 @@ function inHomeVillage(x,y){ return !!home&&!!home.claimed&&x>=home.x0-8&&x<=hom
 function bossKey(e){ if(e.kind==='dragon') return 'dragon'; if(e.kind==='kraken') return 'kraken'; if(e.mtype==='ogre_king') return 'grukk'; if(e.mtype==='goblin_chief') return 'goblin'; if(e.magmaLord) return 'magmaknight'; if(e.skyBoss) return 'ranger'; if(e.magmaBoss) return 'magmawiz'; if(e.boss&&e.team==='a') return 'archmage'; return null; }
 
 // ---- runes in weapons ----
-function runeOf(){ const it=heldItem(); const d=it&&ITEMS[it.id]; if(!d||d.kind!=='weapon') return null; const ln=d.line||('w'+it.id); const r=player.runes&&player.runes[ln]; return r?ITEMS[r].rune:null; }
+// runes have five levels. A rune starts at level I; setting more of the same rune into that weapon builds it up,
+// and every level needs more runes than the last (2 for level II, 3 for III, 4 for IV, 5 for V: 15 runes in all).
+const RUNE_MAX=5, RUNE_NEED=lv=>lv+1;
+const RUNE_FX={ // value at levels I..V; level V is the full strength runes had before levels
+  fire:{p:[0.10,0.14,0.18,0.22,0.25], t:[2,2.5,3,3,3]}, frost:{p:[0.25,0.4,0.55,0.75,1], t:[1,1.4,1.8,2.2,2.5]},
+  life:{p:[0.03,0.05,0.07,0.085,0.10], cap:[5,7,10,12,15]}, mana:{p:[1,1.5,2,2.5,3]}, keen:{p:[0.04,0.06,0.08,0.10,0.12]} };
+const ROMAN=['','I','II','III','IV','V'];
+function runeLevel(ln){ const r=player.runeLv&&player.runeLv[ln]; return r?Math.max(1,Math.min(RUNE_MAX,r.lv|0)):1; }
+function runeText(kind,lv){ const f=RUNE_FX[kind], i=lv-1, pc=v=>Math.round(v*100)+'%';
+  return kind==='fire'?`${pc(f.p[i])} of your hits set enemies on fire`:kind==='frost'?`${pc(f.p[i])} of your hits slow enemies to half speed for ${f.t[i]}s`:kind==='life'?`you heal ${pc(f.p[i])} of the damage you deal (up to ${f.cap[i]} a hit)`:kind==='mana'?`each hit gives you ${f.p[i]} mana`:`it deals ${pc(f.p[i])} more damage`; }
+function runeOf(){ const it=heldItem(); const d=it&&ITEMS[it.id]; if(!d||d.kind!=='weapon') return null; const ln=d.line||('w'+it.id); const r=player.runes&&player.runes[ln]; return r?{kind:ITEMS[r].rune,lv:runeLevel(ln)}:null; }
 function weaponLinesOwned(){ const seen=new Map(); const add=id=>{ const d=ITEMS[id]; if(!d||d.kind!=='weapon') return; const ln=d.line||('w'+id); if(!seen.has(ln)||(d.tier||0)>(ITEMS[seen.get(ln)].tier||0)) seen.set(ln,id); };
   for(const s of player.inv) if(s) add(s.id); for(const id of player.locker||[]) add(id); return [...seen.entries()]; }
-function useRune(it){ const d=ITEMS[it.id]; const L=weaponLinesOwned(); if(!L.length){ toast('You need a weapon to set a rune in',2.5); return; } player.runes=player.runes||{};
-  showPickList(L.map(([ln,id])=>{ const cur=player.runes[ln]; return { label:`Set it in your ${ITEMS[id].name.toLowerCase()}${cur?` (replaces its ${ITEMS[cur].name.toLowerCase()})`:''}`, go:()=>{ if(countItem(it.id)<1) return; takeItem(it.id,1); player.runes[ln]=it.id; invDirty=true; puff(cxOf(player),cyOf(player),d.col,14,90); if(typeof sfx==='function') sfx('ward'); toast(`${d.name} set in your ${ITEMS[id].name.toLowerCase()}: ${d.desc.split(': ')[1]||''}`,4); } }; })); }
-function runesHtml(){ const r=player.runes||{}; const rows=Object.entries(r).filter(([ln,id])=>ITEMS[id]).map(([ln,id])=>{ const w=LINES[ln]?ITEMS[LINES[ln][Math.max(0,lineTier(ln)-1)]]:ITEMS[+ln.slice(1)]; return `<div class="lockrow"><img alt="" src="${iconUrl(id)}"><span>${ITEMS[id].name} in your ${(w?w.name:'weapon').toLowerCase()}<br><span class="muted">${ITEMS[id].desc.split(': ')[1]||''}</span></span><span></span></div>`; });
-  return '<h3 style="margin:12px 0 4px">Runes</h3>'+(rows.join('')||'<p class="muted" style="font-size:8px">Craft runes from 3 gems at a workbench (or buy them from a jeweler), then use one to set it into a weapon. It works with every tier of that weapon.</p>'); }
+function useRune(it){ const d=ITEMS[it.id]; const L=weaponLinesOwned(); if(!L.length){ toast('You need a weapon to set a rune in',2.5); return; } player.runes=player.runes||{}; player.runeLv=player.runeLv||{};
+  showPickList(L.map(([ln,id])=>{ const cur=player.runes[ln], wn=ITEMS[id].name.toLowerCase(), same=cur===it.id, lv=same?runeLevel(ln):0, st=player.runeLv[ln]||{lv:1,n:0};
+    const label=same?(lv>=RUNE_MAX?`Your ${wn}: ${d.name.toLowerCase()} is at the top level (V)`:`Add it to your ${wn}: level ${ROMAN[lv]}, ${st.n||0} of ${RUNE_NEED(lv)} runes toward level ${ROMAN[lv+1]}`)
+      :`Set it in your ${wn}${cur?` (replaces its ${ITEMS[cur].name.toLowerCase()} level ${ROMAN[runeLevel(ln)]}; you start again at level I)`:''}`;
+    return { label, go:()=>{ if(countItem(it.id)<1) return;
+      if(same){ if(lv>=RUNE_MAX){ toast(`Your ${d.name.toLowerCase()} is already at level V`,2.5); return; } takeItem(it.id,1); const r=player.runeLv[ln]={lv,n:(st.n||0)+1};
+        if(r.n>=RUNE_NEED(lv)){ r.lv=lv+1; r.n=0; toast(`${d.name} in your ${wn} is now level ${ROMAN[r.lv]}: ${runeText(d.rune,r.lv)}`,4); puff(cxOf(player),cyOf(player),d.col,24,120); if(typeof sfx==='function') sfx('ward'); }
+        else { toast(`${d.name} level ${ROMAN[lv]}: ${r.n} of ${RUNE_NEED(lv)} runes toward level ${ROMAN[lv+1]}`,3); puff(cxOf(player),cyOf(player),d.col,8,60); }
+        invDirty=true; return; }
+      takeItem(it.id,1); player.runes[ln]=it.id; player.runeLv[ln]={lv:1,n:0}; invDirty=true; puff(cxOf(player),cyOf(player),d.col,14,90); if(typeof sfx==='function') sfx('ward'); toast(`${d.name} (level I) set in your ${wn}: ${runeText(d.rune,1)}`,4); } }; })); }
+function runesHtml(){ const r=player.runes||{}; const rows=Object.entries(r).filter(([ln,id])=>ITEMS[id]).map(([ln,id])=>{ const w=LINES[ln]?ITEMS[LINES[ln][Math.max(0,lineTier(ln)-1)]]:ITEMS[+ln.slice(1)]; const lv=runeLevel(ln), st=(player.runeLv||{})[ln]||{n:0}; return `<div class="lockrow"><img alt="" src="${iconUrl(id)}"><span>${ITEMS[id].name} level ${ROMAN[lv]} in your ${(w?w.name:'weapon').toLowerCase()}<br><span class="muted">${runeText(ITEMS[id].rune,lv)}${lv<RUNE_MAX?` · ${st.n||0} of ${RUNE_NEED(lv)} runes toward level ${ROMAN[lv+1]}`:' · top level'}</span></span><span></span></div>`; });
+  return '<h3 style="margin:12px 0 4px">Runes</h3>'+(rows.join('')||'<p class="muted" style="font-size:8px">Craft runes from 3 gems at a workbench (or buy them from a jeweler), then use one to set it into a weapon. It works with every tier of that weapon. Add more of the same rune to level it up, from I to V; each level needs more runes than the last.</p>'); }
 
 // ---- soldiers gain rank and traits as they win fights ----
 const RANKS=[[0,'Recruit'],[5,'Veteran'],[15,'Elite'],[35,'Champion']];
@@ -5988,14 +6006,17 @@ function bestiaryHtml(){ const b=player.bestiary||{}; const rows=Object.entries(
 { const _dmg=damage; damage=function(t,amt,src,kb){ if(!t||t.dead) return _dmg(t,amt,src,kb);
   const mine=fromPlayer(src); let rune=null;
   if(player&&amt>0){
-    if(mine){ const k=bestKey(t); if(k&&player.bestiary) amt*=1+0.1*bestLevel(player.bestiary[k]||0); if(trophyOn('dragon')) amt*=1.1; rune=runeOf(); if(rune==='keen') amt*=1.12; }
+    if(mine){ const k=bestKey(t); if(k&&player.bestiary) amt*=1+0.1*bestLevel(player.bestiary[k]||0); if(trophyOn('dragon')) amt*=1.1; rune=runeOf(); if(rune&&rune.kind==='keen') amt*=1+RUNE_FX.keen.p[rune.lv-1]; }
     if(src&&src.tamed&&src.team===player.team&&trophyOn('goblin')) amt*=1.15;
     if(t===player&&!src&&trophyOn('magmawiz')&&(t.burnT>0||touchesTile(t,B.LAVA))) amt*=0.6;
     const k2=killerOf(src); if(k2&&k2.kind==='human'&&k2.team===player.team&&TRAIT[k2.cls]==='pack'&&rankIdx(k2)>0&&ents.some(a=>a.tamed&&!a.dead&&withinT(a,k2,6))) amt*=1.2;
     if(t.kind==='human'&&t.team===player.team&&TRAIT[t.cls]==='wall'&&rankIdx(t)>0&&ents.some(o=>o!==t&&!o.dead&&o.kind==='human'&&o.team===t.team&&withinT(o,t,3))) amt*=0.75; }
   const hp0=t.hp; const r=_dmg(t,amt,src,kb);
-  if(rune&&!t.ghost&&!t.proxy){ const dealt=Math.max(0,hp0-(t.dead?0:t.hp)); if(rune==='fire'&&!t.dead&&Math.random()<0.25) t.burnT=3; else if(rune==='frost'&&!t.dead){ t.slowT=2.5; if(Math.random()<0.3) addFloat(cxOf(t),t.y-10,'slowed','#bfe6ff'); }
-    else if(rune==='life'&&dealt>0){ const h=Math.min(15,Math.max(1,Math.round(dealt*0.1))); player.hp=Math.min(player.maxHp,player.hp+h); } else if(rune==='mana'&&dealt>0) player.mana=Math.min(player.maxMana,player.mana+3); }
+  if(rune&&!t.ghost&&!t.proxy){ const dealt=Math.max(0,hp0-(t.dead?0:t.hp)), i=rune.lv-1, F=RUNE_FX[rune.kind];
+    if(rune.kind==='fire'&&!t.dead&&Math.random()<F.p[i]) t.burnT=Math.max(t.burnT||0,F.t[i]);
+    else if(rune.kind==='frost'&&!t.dead&&Math.random()<F.p[i]){ t.slowT=Math.max(t.slowT||0,F.t[i]); if(Math.random()<0.3) addFloat(cxOf(t),t.y-10,'slowed','#bfe6ff'); }
+    else if(rune.kind==='life'&&dealt>0){ const h=Math.min(F.cap[i],Math.max(1,Math.round(dealt*F.p[i]))); player.hp=Math.min(player.maxHp,player.hp+h); }
+    else if(rune.kind==='mana'&&dealt>0){ player.runeMana=(player.runeMana||0)+F.p[i]; const g=Math.floor(player.runeMana); player.runeMana-=g; player.mana=Math.min(player.maxMana,player.mana+g); } }
   return r; }; }
 { const _k=kill; kill=function(e,src){ if(!e||e.dead) return _k(e,src); const bk=bossKey(e); const k=killerOf(src);
   if(player&&!(typeof MP!=='undefined'&&MP.guest)){
