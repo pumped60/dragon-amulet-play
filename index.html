@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791309222"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791309222"><link rel="manifest" href="manifest.webmanifest?v=1791309222"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791310618"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791310618"><link rel="manifest" href="manifest.webmanifest?v=1791310618"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -436,6 +436,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Your bag holds the hotbar plus 6 rows of 9; anything extra stays on the ground. Drag items between slots with the mouse or a finger; hover an item to see its picture and stats. Press F with several things nearby to pick one from a list. Tools and weapons are crafted with sticks (from planks), and any wood works in wooden recipes. The first tier of every tool is now wood (copper is gone). Adamantite ore is only found in the magma realm, mythril only in the sky realm's clouds, and only after their bosses fall. Cows give beef, sheep give mutton and wool (wool makes beds). Enemy faction islands have watchtowers full of archers and mages at both ends, and the goblins keep a wooden lookout on their forest shore. You can give up to 5 villagers of a conquered village new jobs. A second great ocean on the far side of the world hides the Kraken and its sunken treasure.</p>
     <h3>Portals, realms and factions</h3>
     <p>Your faction is the abandoned castle you claim; the other two colors are your enemies. Claiming your village, conquering a castle or freeing a camp prisoner opens a portal (on castle roofs). Click a portal to open the map, then tap another portal to travel with your army to your home, freed camps, allied or conquered castles, the wizard tower, the magma fortress, and (once their wizards are dead) the sky and magma realms. Each trip costs a few coins. Each realm has a huge castle with 20 to 30 soldiers and its boss in a throne room at the far end. The Sky Ranger (5,000 health) and the Magma Knight (6,000 health, twice the reach, burning blade) need an army to beat. You start in wooden armor; every armor set changes your look, with a crest in your faction's color. Cannon, blast-bow and other explosions break blocks (75% drop), and fire arrows scorch grass, trees and wooden buildings. In the test world, the Speed button runs the world at 2x, 5x or 10x.</p>
+    <h3>Armies</h3>
+    <p>Bring soldiers. Enemy villages and outposts gang up on anyone who comes alone: with fewer than 5 of your soldiers or pets beside you, the whole garrison turns out, hits you much harder and shrugs off most of your blows. Vorthax needs your whole army: the more of your 20 soldiers fight beside you in the lair, the harder your blows land and the less it heals, and the more often it lands where swords can reach it. The boss bar shows how many of your fighters are with you.</p>
     <h3>New this update</h3>
     <p>Test world (title screen) starts a normal world in save slot 4, with a God menu for giving any item, upgrading gear, recruiting soldiers and spawning enemies or animals, plus a world speed button. It starts with a prepped farm nearby, and the God menu's World tab builds more farms, ripens crops, skips to morning and sets the weather (rain, thunderstorm, snowstorm, flash flood, lightning, any strength). Ice islands are all snow, with small ice huts guarded by frost archers (slowing arrows) and frost brutes (shatter into ice); neither burns in the sun. Big caverns have rock islands and pillars. Penguins and polar bears gather fish. Growth dust from the herbalist makes a plant grow a stage and 50% faster afterwards. A war engineer arrives once the Sky Ranger and Magma Knight are both defeated. Mini-bosses now use set attack patterns.</p>
     <h3>Farming and trees</h3>
@@ -2873,11 +2875,11 @@ function updateDragon(d,dt){
   const mx=(tx,ty,sp)=>{ const dx=tx-cxOf(d), dy=ty-cyOf(d), m=Math.hypot(dx,dy)||1; const v=Math.min(sp,m*3); d.vx=lerp(d.vx,dx/m*v,Math.min(1,dt*4)); d.vy=lerp(d.vy,dy/m*v,Math.min(1,dt*4)); };
   if(!inRoom){ d.dstate='hover'; mx((RX0+RX1)/2,RY0+120+Math.sin(d.t)*16,80); }
   else {
-    const px=cxOf(p), py=cyOf(p); if(d.dstate!=='dive') d.facing=px>cxOf(d)?1:-1;
+    const tg=dragonFoe(d,dt), px=cxOf(tg), py=cyOf(tg); if(d.dstate!=='dive') d.facing=px>cxOf(d)?1:-1; // it fights your soldiers too, not only you
     if(!lairWarned){ lairWarned=true; toast('The dragon looks unbeatable… for now.',4); }
     if(d.dstate==='hover'){ mx(px-d.facing*170,Math.max(RY0+50,py-100)+Math.sin(d.t*1.3)*24,150); d.atkT-=dt;
-      if(d.atkT<=0){ const r=Math.random(); d.dstate=r<0.38?'breath':r<0.62?'fireballs':r<0.8?'dive':'perch'; d.st=0; d.fireT=0; } }
-    else if(d.dstate==='perch'){ d.st+=dt; mx(clamp(px-d.facing*80,RX0+60,RX1-60),RY1-d.h/2-2,160); if(d.st>3.5){ d.dstate='hover'; d.atkT=1.5; } }
+      if(d.atkT<=0){ const r=Math.random(); const pl=dragonPerchChance(); d.dstate=r<pl?'perch':r<pl+(1-pl)*0.45?'breath':r<pl+(1-pl)*0.75?'fireballs':'dive'; d.st=0; d.fireT=0; } }
+    else if(d.dstate==='perch'){ d.st+=dt; mx(clamp(px-d.facing*80,RX0+60,RX1-60),RY1-d.h/2-2,160); if(d.st>3.5+dragonPerchExtra()){ d.dstate='hover'; d.atkT=1.5; } }
     else if(d.dstate==='breath'){ d.st+=dt; mx(px-d.facing*150,py-60,90); d.fireT-=dt;
       while(d.fireT<=0){ d.fireT+=0.045; const mxp=cxOf(d)+d.facing*46, myp=d.y+24; const ang=Math.atan2(py-myp,px-mxp)+(Math.random()-.5)*0.35;
         const sp=250+Math.random()*80; projs.push({x:mxp,y:myp,vx:Math.cos(ang)*sp,vy:Math.sin(ang)*sp,team:'dragon',dmg:8,kind:'fire',life:0.95,grav:0,r:4,src:d}); }
@@ -7784,6 +7786,60 @@ function closeWetDoor(x,y){ const id=doorIdAt(x,y), s=DOOR_SET_OF[id]; if(!s) re
   for(const yy of [by,by-1]) wetDeco.delete(yy*W+x);
   setTile(x,by,s.base); setTile(x,by-1,s.top); openDoors=openDoors.filter(d=>!(d.x===x&&d.y===by));
   if(typeof mpEdit==='function'){ mpEdit(x,by); mpEdit(x,by-1); } puff(x*T+8,by*T,'#9ad0ff',8,60); if(typeof sfx==='function') sfx('pickup'); return true; }
+// ===================== armies matter =====================
+// Enemy villages close ranks against a lone attacker, and Vorthax can only be brought down by a full army.
+
+// how many of your soldiers and fighting pets are with you (within 16 blocks)
+function armyNear(range){ if(!player) return 0; const R=(range||16)*T; let n=0; for(const e of ents){ if(e.dead||e===player||e.team!==player.team||e.aboard) continue; if(!(e.kind==='human'||e.tamed)) continue; if(e.kind==='human'&&(e.role==='miner'||e.worker)) continue; if(Math.abs(cxOf(e)-cxOf(player))<R&&Math.abs(cyOf(e)-cyOf(player))<R) n++; } return n; }
+
+// ---- enemy villages and outposts: with fewer than 5 of your fighters beside you, the defenders close ranks ----
+const RANKS_NEED=5;
+function factionHome(x){ for(const b of bases){ if(b.f===player.team||conquered[b.f]) continue; const isl=b.isl; if(isl&&x>=isl[0]-4&&x<=isl[1]+4) return b;
+    for(const o of [...(b.outposts||[]),...(b.keeps||[])]) if(Math.abs(x-o.x)<30) return b; } return null; }
+let ranksCache={t:-1,k:0,b:null}, ranksHint=false;
+function closedRanks(){ const now=performance.now(); if(now-ranksCache.t<500) return ranksCache; const b=player&&!player.dead?factionHome(cxOf(player)/T):null;
+  const k=b?Math.max(0,Math.min(1,(RANKS_NEED-armyNear(16))/RANKS_NEED)):0; ranksCache={t:now,k,b};
+  if(k>=0.6&&b&&!ranksHint&&ents.some(e=>!e.dead&&e.kind==='human'&&e.team===b.f&&Math.abs(cxOf(e)-cxOf(player))<14*T)){ ranksHint=true; toast(`The ${FNAME[b.f].toLowerCase()} close ranks against a lone attacker: they hit harder and shrug off your blows. Bring at least ${RANKS_NEED} soldiers.`,6); }
+  return ranksCache; }
+// dying at an enemy village gives its garrison time to regroup: they are back at full health when you return
+{ let wasDead=false; const _u=update; update=function(dt){ _u(dt); if(!player||(typeof MP!=='undefined'&&MP.guest)) return; if(player.dead&&!wasDead){ const b=factionHome(cxOf(player)/T);
+      if(b) for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===b.f&&b.isl&&cxOf(e)/T>=b.isl[0]-4&&cxOf(e)/T<=b.isl[1]+4){ e.hp=e.maxHp; e.provoked=false; } } wasDead=!!player.dead; }; }
+// the whole garrison turns out against a lone attacker, instead of meeting you one guard at a time
+{ let rallyT=2; const _u=update; update=function(dt){ _u(dt); rallyT-=dt; if(rallyT>0||!player||player.dead||state!=='play') return; rallyT=2; if(typeof MP!=='undefined'&&MP.guest) return;
+    const c=closedRanks(); if(!(c.k>=0.6&&c.b)) return; let fighting=false;
+    for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&Math.abs(cxOf(e)-cxOf(player))<10*T&&Math.abs(cyOf(e)-cyOf(player))<8*T){ fighting=true; break; }
+    if(!fighting) return; for(const e of ents) if(!e.dead&&e.kind==='human'&&e.team===c.b.f&&!e.worker&&e.role!=='miner'&&Math.abs(cxOf(e)-cxOf(player))<45*T) e.provoked=true; }; }
+{ const _dmg=damage; damage=function(t,amt,src,kb){ try{ if(player&&t&&amt>0&&!(typeof MP!=='undefined'&&MP.guest)){ const k=killerOf(src);
+      if(k===player&&t.kind==='human'&&t.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&t.team===c.b.f) amt*=1-0.7*c.k; }   // alone, only 30% of your damage gets through
+      else if(t===player&&k&&k.kind==='human'&&k.team!==player.team){ const c=closedRanks(); if(c.k>0&&c.b&&k.team===c.b.f) amt*=1+3*c.k; } }   // alone, they hit you four times as hard
+    }catch(e){} return _dmg(t,amt,src,kb); }; }
+
+// ---- Vorthax: only a full army can bring the dragon down ----
+// Your fighters in the lair (soldiers and pets) set how much your own blows bite, how fast the dragon heals,
+// and how often it lands where swords can reach it. With all 20 it fights fair; alone it is all but unbeatable.
+const DRAGON_ARMY=20;
+function lairArmy(){ if(!lair||!player) return 0; const x0=lair.rx0*T, x1=(lair.rx1+1)*T, y0=(lair.ry0-2)*T, y1=(lair.ry1+1)*T; let n=0;
+  for(const e of ents){ if(e.dead||e===player||e.team!==player.team||e.aboard) continue; if(!(e.kind==='human'||e.tamed)) continue; const cx=cxOf(e), cy=cyOf(e); if(cx>x0&&cx<x1&&cy>y0&&cy<y1) n++; } return n; }
+let lairArmyC={t:-1,n:0}; function lairArmyNow(){ const now=performance.now(); if(now-lairArmyC.t>400) lairArmyC={t:now,n:lairArmy()}; return lairArmyC.n; }
+const armyShare=()=>Math.min(1,lairArmyNow()/DRAGON_ARMY);
+// your blows count the most fighters you brought into this fight, so losing a few soldiers doesn't undo the army you came with
+let lairPeak=0, lairAwayT=0; const peakShare=()=>Math.min(1,Math.max(lairPeak,lairArmyNow())/DRAGON_ARMY);
+function dragonBite(){ return Math.max(0.06,Math.pow(peakShare(),2.5)); }   // 20 fighters: full damage; 15: about half; 10: under a fifth; alone: 6%
+function dragonPerchChance(){ return 0.2+0.35*peakShare(); }
+function dragonPerchExtra(){ return 2.5*peakShare(); }
+function dragonFoe(d,dt){ d.foeT=(d.foeT||0)-dt; if(d.foe&&(d.foe.dead||d.foe!==player&&d.foeT<=0)) d.foe=null;
+  if(!d.foe&&d.foeT<=0){ d.foeT=2.5; const x0=lair.rx0*T, x1=(lair.rx1+1)*T; const L=ents.filter(e=>!e.dead&&e!==player&&e.team===player.team&&(e.kind==='human'||e.tamed)&&cxOf(e)>x0&&cxOf(e)<x1);
+    d.foe=L.length&&Math.random()<0.3?L[(Math.random()*L.length)|0]:player; }
+  return d.foe&&!d.foe.dead?d.foe:player; }
+// a blade that reaches the dragon strikes between its scales: melee hits on Vorthax (yours and your soldiers') do double damage,
+// which makes up for the few moments a flying dragon is in reach of a sword
+const meleeSrc=src=>{ if(!src||src.vx!=null&&src.life!=null) return false; if(src===player){ const it=heldItem(), d=it&&ITEMS[it.id]; return !!d&&d.kind==='weapon'&&d.type==='melee'; } return src.kind==='human'&&ITEMS[src.weapon]&&ITEMS[src.weapon].type==='melee'; };
+{ const _dmg=damage; damage=function(t,amt,src,kb){ try{ if(t&&t.kind==='dragon'&&!t.raid&&amt>0){ if(meleeSrc(src)) amt*=2; if(killerOf(src)===player) amt*=dragonBite(); } }catch(e){} return _dmg(t,amt,src,kb); }; }
+{ const _ud=updateDragon; updateDragon=function(d,dt){ const r=_ud(d,dt); try{ if(!d.raid&&!d.dead&&player&&lair){ const inRoom=cxOf(player)>lair.rx0*T&&cxOf(player)<(lair.rx1+1)*T&&cyOf(player)>(lair.ry0-2)*T&&cyOf(player)<(lair.ry1+1)*T;
+      if(inRoom){ lairAwayT=0; lairPeak=Math.max(lairPeak,lairArmyNow()); } else if((lairAwayT+=dt)>30) lairPeak=0;   // the fight is over once you have been away for half a minute
+      if(inRoom&&d.hp<d.maxHp) d.hp=Math.min(d.maxHp,d.hp+60*(1-peakShare())*dt);   // it heals unless you came with your whole army
+      if(inRoom&&!d.armyHint){ d.armyHint=true; toast(`Vorthax's scales turn aside a small band, and it heals unless you came with your whole army. Bring all ${DRAGON_ARMY} soldiers: then it takes full damage, never heals and lands more often.`,7); } } }catch(e){} return r; }; }
+{ const _uh=updateHUD; updateHUD=function(dt){ const r=_uh(dt); try{ const d=ents.find(e=>e.kind==='dragon'&&!e.dead&&!e.raid); const bb=$('#bossname'); if(d&&bb&&!$('#bossbar').hidden&&lair&&Math.abs(cxOf(player)/T-(lair.rx0+lair.rx1)/2)<(lair.rx1-lair.rx0)/2+10){ const n=lairArmyNow(), txt=`${d.name||'Vorthax'} · your army here: ${Math.min(n,DRAGON_ARMY)}/${DRAGON_ARMY}`; if(bb.textContent!==txt) bb.textContent=txt; } }catch(e){} return r; }; }
 })();
 </script>
 </body>
