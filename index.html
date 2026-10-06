@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791269609"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791269609"><link rel="manifest" href="manifest.webmanifest?v=1791269609"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791270290"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791270290"><link rel="manifest" href="manifest.webmanifest?v=1791270290"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -28,7 +28,7 @@ button:focus-visible{ outline:3px solid var(--gold); outline-offset:2px; }
 [hidden]{ display:none !important; }
 
 .overlay{ position:fixed; inset:0; display:flex; align-items:center; justify-content:center; z-index:20;
-  padding:calc(var(--st) + 12px) 12px calc(var(--sb) + 12px); background:rgba(10,8,20,.55); }
+  padding:calc(var(--st) + 12px) calc(env(safe-area-inset-right,0px) + 12px) calc(var(--sb) + 12px) calc(env(safe-area-inset-left,0px) + 12px); background:rgba(10,8,20,.55); }
 .panel{ background:var(--panel); border:4px solid var(--edge); box-shadow:0 0 0 4px var(--ink), 8px 8px 0 4px rgba(0,0,0,.45);
   padding:20px; max-width:560px; width:100%; max-height:100%; overflow:auto; }
 .panel.wide{ max-width:900px; }
@@ -193,7 +193,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 .panel.title h1{ margin-bottom:20px; }
 /* short landscape screens (phones): title on the left, buttons on the right, everything fits */
 @media (max-height:520px) and (orientation:landscape){
-  .overlay{ padding:calc(var(--st) + 6px) 8px calc(var(--sb) + 6px); }
+  .overlay{ padding:calc(var(--st) + 6px) calc(env(safe-area-inset-right,0px) + 8px) calc(var(--sb) + 6px) calc(env(safe-area-inset-left,0px) + 8px); }
   .panel{ padding:12px 14px; }
   .panel.title{ max-width:760px; display:grid; grid-template-columns:1fr 1.15fr; gap:18px; align-items:center; }
   .panel.title h1{ font-size:clamp(20px,4.2vw,32px); margin:0 0 10px; }
@@ -260,6 +260,13 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   #gearList{ font-size:7px; }
   #invInfo p, #invInfo div{ max-width:none; }
   #scrInv.craftmode #craftSide>h3{ display:none; }
+  .panel{ max-width:min(760px,100%); } .panel.wide{ max-width:100%; } .panel h3{ margin:10px 0 6px; } .panel p{ max-width:none; }
+  #scrChest .panel{ display:grid; grid-template-columns:auto auto; column-gap:18px; justify-content:start; align-content:start; }
+  #scrChest .phead, #chestCoins{ grid-column:1 / -1; } #chestCoins:empty{ display:none; }
+  #scrChest .panel>h3:nth-of-type(1){ grid-column:1; grid-row:3; margin-top:0; } #chestGrid{ grid-column:1; grid-row:4; }
+  #scrChest .panel>h3:nth-of-type(2){ grid-column:2; grid-row:3; margin-top:0; font-size:8px; } #chestBag{ grid-column:2; grid-row:4; align-self:start; align-content:start; }
+  #scrChest .closebar{ grid-column:1 / -1; grid-row:5; }
+  .gridbox{ grid-template-columns:repeat(9,28px); gap:2px; } .gridbox .slot{ width:28px; height:28px; } .gridbox .slot img{ width:20px; height:20px; }
   #craftTabs{ grid-template-columns:repeat(8,minmax(0,1fr)); gap:3px; margin-bottom:5px; } #craftTabs .choice{ font-size:6px; padding:5px 1px; }
   #craftShow{ gap:3px; padding:3px 4px; margin-bottom:5px; } #craftShow span, #craftShow button{ font-size:6px; } #craftShow button{ padding:3px 4px; }
   #craftSearch{ font-size:8px; padding:5px; margin-bottom:5px; border-width:2px; }
@@ -4159,6 +4166,7 @@ function render(){
     else if(isChestId(id)&&!isSolid(x+1,y)&&!isChestId(tileAt(x+1,y))){ lateQ.push([wideChest(id),X,Y-4]); }
     else if(isChestId(id)&&!isSolid(x-1,y)&&!isChestId(tileAt(x-1,y))){ lateQ.push([wideChest(id),X-16,Y-4]); }
     else if(id===B.LAVA){ const lv=liq[row+x]||8, full=lv>=8||world[row+x-W]===B.LAVA, h=full?T:Math.max(2,lv*2); ctx.drawImage(TEX[id],0,T-h,T,h,X,Y+T-h,T,h); }
+    else if(LOG_IDS.has(id)){ ctx.drawImage(TEX[id],X,Y); const lc=logCoverTex(x,y); if(lc) ctx.drawImage(lc,X,Y); } // drawn with the blocks, so you always walk in front of tree wood
     else if(id&&id!==B.WATER) ctx.drawImage(TEX[id],X,Y);
     if(b.solid){ // dark outline on faces open to air, so terrain reads as solid chunks
       const up=!solidAt(x,y-1), dn=!solidAt(x,y+1), lf=!solidAt(x-1,y), rt=!solidAt(x+1,y);
@@ -6983,6 +6991,8 @@ function treeOrder(f){ if(f.ord) return f.ord; const at=new Map(f.tiles.map(p=>[
 // the first solid block any part of the falling tree touches stops it, and it breaks apart right there
 function treeHits(f,ang){ const c=Math.cos(ang), s=Math.sin(ang); for(const p of f.tiles){ const lx=p.dx+8, ly=p.dy+8; if(Math.hypot(lx,ly)<T*1.6) continue; const X=f.bx+lx*c-ly*s, Y=f.by+lx*s+ly*c;
     for(const [ox,oy] of [[0,0],[-6,0],[6,0],[0,6]]){ const tx=Math.floor((X+ox)/T), ty=Math.floor((Y+oy)/T); const id=tileAt(tx,ty); if(BLOCKS[id]&&BLOCKS[id].solid&&id!==B.WATER) return true; } } return false; }
+const L_OF=f=>{ const w=f.tiles.find(p=>!LEAF_IDS.has(p.id)); return w?w.id:B.LOG; };
+function dropCarry(p){ let x=p.x, y=p.y; for(let k=0;k<12&&isSolid(Math.floor(x/T),Math.floor(y/T));k++) y-=4; for(const [id,n] of p.carry){ spawnDrop(x,y-2,id,n); const d=drops[drops.length-1]; if(d){ d.vx*=0.25; d.vy=-40; } } p.carry=null; }
 drawTreeFx=function(dt){ for(const f of treeFx){ f.t+=dt; const TIP=0.7;
     if(f.t<TIP&&f.hitAng==null){ const k=f.t/TIP, ang=f.dir*k*k*Math.PI*0.42; if(f.t>0.05&&treeHits(f,ang)){ f.hitAng=ang; } else { ctx.save(); ctx.translate(f.bx,f.by); ctx.rotate(ang); for(const p of treeOrder(f)) if(TEX[p.id]) ctx.drawImage(TEX[p.id],p.dx,p.dy); ctx.restore(); continue; } }
     if(f.hitAng==null) f.hitAng=f.dir*Math.PI*0.42;
@@ -6991,12 +7001,17 @@ drawTreeFx=function(dt){ for(const f of treeFx){ f.t+=dt; const TIP=0.7;
         if(leaf&&Math.random()<0.5) leafBurst(X,Y,(WOOD_OF[p.id]||WOODS.oak).leafCol[(Math.random()*3)|0],1);
         for(let q=0;q<4;q++){ if(leaf&&Math.random()<0.3) continue; const qx=(q&1)*8, qy=(q>>1)*8; f.pc.push({id:p.id,sx:qx,sy:qy,x:X+(qx-4)*c-(qy-4)*s,y:Y+(qx-4)*s+(qy-4)*c,vx:(Math.random()-0.5)*90+f.dir*30,vy:-40-Math.random()*110,a:ang,va:(Math.random()-0.5)*9,d:dl+Math.random()*0.08,life:1.1+Math.random()*0.4}); } }
       f.pc.sort((a,b)=>(LEAF_IDS.has(a.id)?1:0)-(LEAF_IDS.has(b.id)?1:0)); // wood pieces underneath, leaves on top
+      // the logs (and any apples or saplings) are carried by random pieces of the rubble and left where those pieces end up
+      if(f.loot){ const wood=f.pc.filter(p=>!LEAF_IDS.has(p.id)), leafy=f.pc.filter(p=>LEAF_IDS.has(p.id));
+        for(const [id,n] of f.loot){ const pool=(id===L_OF(f)?wood:leafy).length?(id===L_OF(f)?wood:leafy):f.pc; for(let k=0;k<n;k++){ const p=pool[(Math.random()*pool.length)|0]; p.carry=p.carry||[]; const c=p.carry.find(c=>c[0]===id); if(c) c[1]++; else p.carry.push([id,1]); } }
+        f.loot=null; }
       for(const p of f.pc){ for(let k=0;k<10&&isSolid(Math.floor(p.x/T),Math.floor(p.y/T));k++) p.y-=4; } // nothing starts inside the ground
       if(typeof sfx==='function') sfx('mine',f.bx,f.by); }
     for(const p of f.pc){ if(p.d>0){ p.d-=dt; } else { p.vy+=900*dt; p.x+=p.vx*dt; if(isSolid(Math.floor(p.x/T),Math.floor(p.y/T))){ p.x-=p.vx*dt; p.vx*=-0.3; } p.y+=p.vy*dt; if(p.vy<0&&isSolid(Math.floor(p.x/T),Math.floor((p.y-3)/T))){ p.y-=p.vy*dt; p.vy=0; } p.a+=p.va*dt; p.life-=dt; if(p.vy>0&&isSolid(Math.floor(p.x/T),Math.floor((p.y+3)/T))){ p.y=Math.floor((p.y+3)/T)*T-3; p.vy*=-0.3; p.vx*=0.6; p.va*=0.5; } }
+      if(p.carry&&(p.life<=0.15||f.t>3.9)) dropCarry(p);
       if(p.life<=0||!TEX[p.id]) continue; ctx.save(); ctx.globalAlpha=Math.min(1,p.life/0.4); ctx.translate(p.x,p.y); ctx.rotate(p.a); const sc=p.d>0?1:Math.max(0.4,Math.min(1,p.life/0.6)); ctx.drawImage(TEX[p.id],p.sx,p.sy,8,8,-4*sc,-4*sc,8*sc,8*sc); ctx.restore(); }
     f.done=f.pc.every(p=>p.life<=0); }
-  for(let i=treeFx.length-1;i>=0;i--) if(treeFx[i].done||treeFx[i].t>4) treeFx.splice(i,1);
+  for(let i=treeFx.length-1;i>=0;i--) if(treeFx[i].done||treeFx[i].t>4){ const f=treeFx[i]; if(f.pc) f.pc.forEach(p=>{ if(p.carry) dropCarry(p); }); else if(f.loot) f.loot.forEach(([id,n])=>n>0&&spawnDrop(f.bx,f.by-T,id,n)); treeFx.splice(i,1); }
   for(const l of leafFx){ l.t-=dt; l.ph+=dt*3; l.x+=(l.vx+Math.sin(l.ph)*22)*dt; l.y+=l.vy*dt; l.vx*=0.98; if(isSolid(Math.floor(l.x/T),Math.floor((l.y+2)/T))){ l.vy=0; l.vx=0; l.t=Math.min(l.t,0.6); }
     ctx.globalAlpha=Math.max(0,Math.min(1,l.t)); ctx.fillStyle=l.col; const w=Math.abs(Math.sin(l.ph))>0.5?3:2; ctx.fillRect(Math.round(l.x),Math.round(l.y),w,2); }
   ctx.globalAlpha=1; for(let i=leafFx.length-1;i>=0;i--) if(leafFx[i].t<=0) leafFx.splice(i,1); };
@@ -7019,10 +7034,13 @@ function treeTextures(){ const R=mulberry(9091);
     else if(R()<0.9){ const ky=4+((R()*7)|0), kx=5+((R()*5)|0); lp(kx-1,ky-1,3,3,b1); lp(kx,ky,1,1,b3); lp(kx-1,ky-2,3,1,b2); }
     TEX[w.log]=L; } }
 try{ treeTextures(); }catch(e){ console.warn(e); }
+// a trunk inside the crown is covered by leaves; this is drawn with the blocks (behind you), not over you
+function logCoverTex(x,y){ if(x<1||x>=W-1||y<1) return null; const l=world[y*W+x-1], r=world[y*W+x+1], u=world[(y-1)*W+x]; const L=LEAF_IDS.has(l)&&l!==B.PALM_LEAF, Rr=LEAF_IDS.has(r)&&r!==B.PALM_LEAF, U=LEAF_IDS.has(u)&&u!==B.PALM_LEAF;
+  return (L&&Rr)||(U&&(L||Rr))?TEX[L?l:Rr?r:u]||null:null; }
 // leaf edges are drawn bumpy where they meet the open air, so tree crowns look round instead of square
 function drawLeafEdges(){ if(!world) return; const x0=Math.max(1,Math.floor(camX/T)), x1=Math.min(W-2,Math.ceil((camX+viewW)/T)), y0=Math.max(1,Math.floor(camY/T)), y1=Math.min(H-2,Math.ceil((camY+viewH)/T));
   for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x];
-    if(LOG_IDS.has(id)){ const l=world[y*W+x-1], r=world[y*W+x+1]; const u=world[(y-1)*W+x]; const L=LEAF_IDS.has(l)&&l!==B.PALM_LEAF, Rr=LEAF_IDS.has(r)&&r!==B.PALM_LEAF, U=LEAF_IDS.has(u)&&u!==B.PALM_LEAF; if((L&&Rr)||(U&&(L||Rr))){ const lt=TEX[L?l:Rr?r:u]; if(lt) ctx.drawImage(lt,x*T,y*T); } continue; }
+    if(LOG_IDS.has(id)) continue;
     if(!LEAF_IDS.has(id)||id===B.PALM_LEAF) continue; const w=WOOD_OF[id]; if(!w) continue; const c=w.leafCol, X=x*T, Y=y*T, hsh=(x*73856093^y*19349663)>>>0;
     if(world[(y-1)*W+x]===0){ for(let i=0;i<3;i++){ const ox=((hsh>>(i*3))&7)+i*4; ctx.fillStyle=c[i%3]; ctx.fillRect(X+ox,Y-2,4,2); ctx.fillRect(X+ox+1,Y-3,2,1); } }
     if(world[y*W+x-1]===0){ ctx.fillStyle=c[1]; ctx.fillRect(X-2,Y+3+(hsh&3),2,4); ctx.fillRect(X-3,Y+4+(hsh&3),1,2); }
@@ -7114,7 +7132,7 @@ function drawRaptor(e){ const cx=Math.round(cxOf(e)), by=Math.round(e.y+e.h), f=
     if(flying){ const ph=Math.sin(e.anim*(e.swoop?4:10)); if(e.swoop){ R(-6,-10,9,2,c('d')); } else if(ph>0){ R(-4,-14,7,7,c('d')); R(-2,-15,4,2,c('b')); } else { R(-4,-4,8,5,c('d')); } }
     else { R(-5,-8,8,3,c('d')); R(-2,-2,1,2,c('k')); R(1,-2,1,2,c('k')); } }
   ctx.restore(); }
-{ const _da=drawAnimal; drawAnimal=function(e){ if(ANIMALS[e.atype]&&ANIMALS[e.atype].raptor) return drawRaptor(e); return _da(e); }; }
+{ const _da=drawAnimal; drawAnimal=function(e){ if(ANIMALS[e.atype]&&ANIMALS[e.atype].raptor){ drawRaptor(e); drawHealth(e); return; } return _da(e); }; } // birds of prey show a health bar once hurt, like everything else
 
 // ---- water and plants: rain, floods and flowing water cover plants and pass through fences, leaving them in place under the water.
 // Torches and other lights that water reaches are knocked loose and drop as items ----
@@ -7265,9 +7283,10 @@ fellTree=function(x,y){ const startWet=tileAt(x,y)===B.WATER?wetDeco.get(y*W+x):
   const tiles=[]; let logs=0, apples=0, saps=0;
   for(const k of mine){ const a=k%W, b=(k/W)|0; if(tileAt(a,b)===B.WATER){ wetDeco.delete(k); } else { tiles.push([a,b,tileAt(a,b)]); setTile(a,b,0); } logs++; }
   for(const [k,id] of owner){ if(id!==0) continue; const a=k%W, b=(k/W)|0; const lid=tileAt(a,b); if(!LEAF_IDS.has(lid)) continue; tiles.push([a,b,lid]); setTile(a,b,0); if(Math.random()<0.03) saps++; if(Math.random()<0.04) apples++; }
-  give(L,logs); if(apples&&L===B.LOG) give(I.APPLE,apples); if(saps) give(B.SAPLING,Math.min(3,saps));
-  const fall=tiles.filter(t=>t[1]<=y);
-  if(fall.length&&treeFx.length<6){ const dir=player&&cxOf(player)>x*T+8?-1:1; treeFx.push({bx:x*T+8,by:(y+1)*T,dir,t:0,tiles:fall.slice(0,300).map(([tx,ty,id])=>({dx:tx*T-x*T-8,dy:ty*T-(y+1)*T,id}))}); sfx('timber',x*T,y*T); } };
+  const loot=[[L,logs]]; if(apples&&L===B.LOG) loot.push([I.APPLE,apples]); if(saps) loot.push([B.SAPLING,Math.min(3,saps)]);
+  const fall=tiles.filter(t=>t[1]<=y), guest=typeof MP!=='undefined'&&MP.guest;
+  if(guest||!fall.length||treeFx.length>=6){ for(const [id,n] of loot) if(n>0) give(id,n); } // no falling tree to drop them from: straight into the bag
+  if(fall.length&&treeFx.length<6){ const dir=player&&cxOf(player)>x*T+8?-1:1; treeFx.push({loot:guest?null:loot,bx:x*T+8,by:(y+1)*T,dir,t:0,tiles:fall.slice(0,300).map(([tx,ty,id])=>({dx:tx*T-x*T-8,dy:ty*T-(y+1)*T,id}))}); sfx('timber',x*T,y*T); } };
 
 // ---- miners walk smoothly along their tunnel, walk back to the shaft and climb it, instead of jumping from block to block ----
 minerAct=function(e,dt){ e.minerT-=dt; e.anim+=dt; const shaftX=home.mineX*T+2, topY=home.gy*T-e.h-1;
@@ -7529,7 +7548,12 @@ function grappleUp(){ if(!hook||hook.phase!=='charge') return; const t=grappleTi
   hook={phase:'fly',x:hx,y:hy,vx:dx*sp,vy:dy*sp,reach:GRAPPLE_REACH[t]*T,len:6,rope,ft:0}; if(typeof sfx==='function') sfx('swing'); }
 // when the hook bit near the top of a block with open space above, you climb up onto it
 function climbLedge(p,h){ if(h.ty==null) return false; let ty=h.ty; while(ty>1&&BLOCKS[tileAt(h.tx,ty-1)].solid) ty--; if(h.ty-ty>1) return false;
-  const ox=p.x, oy=p.y; p.x=h.tx*T+8-p.w/2; p.y=ty*T-p.h-0.5; if(collides(p)||Math.abs(cyOf(p)-oy-p.h/2)>3*T){ p.x=ox; p.y=oy; return false; } p.vx=0; p.vy=0; p.grounded=true; return true; }
+  const ox=p.x, oy=p.y; p.x=h.tx*T+8-p.w/2; p.y=ty*T-p.h-0.5; const bad=collides(p)||Math.abs(cyOf(p)-oy-p.h/2)>3*T; const x1=p.x, y1=p.y; p.x=ox; p.y=oy; if(bad) return false;
+  p.climb={x0:ox,y0:oy,x1,y1,t:0}; p.vx=0; p.vy=0; return true; } // you climb up and over it in a moment instead of jumping there
+// climbing onto a ledge: straight up the face first, then over the top
+function climbTick(p,dt){ const c=p.climb; c.t+=dt/0.32; const k=Math.min(1,c.t), up=Math.min(1,k/0.6), over=Math.max(0,(k-0.6)/0.4);
+  p.y=c.y0+(Math.min(c.y1,c.y0)-c.y0)*up+(c.y1-Math.min(c.y1,c.y0))*over; p.x=c.x0+(c.x1-c.x0)*over; p.vx=p.vy=0; p.anim+=dt; p.grounded=false;
+  if(k>=1){ p.x=c.x1; p.y=c.y1; p.climb=null; p.grounded=true; } }
 const hookSolid=(x,y)=>{ const id=tileAt(Math.floor(x/T),Math.floor(y/T)); return BLOCKS[id]&&(BLOCKS[id].solid||BLOCKS[id].platform)&&id!==B.WATER; };
 // the rope: a loose chain of points between your hand and the hook; it is paid out behind the hook, sags, and lies on the ground
 function ropeTick(dt){ const r=hook.rope; if(!r) return; const [hx,hy]=handPos(); const n=r.length, seg=Math.max(0.5,hook.len/(n-1)), g=900*dt*dt;
@@ -7556,13 +7580,15 @@ function grappleTick(dt){ if(!hook) return; const p=player; if(!p||p.dead||state
   if(hook.phase==='reel'){ const tx=hx-hook.x, ty=hy-hook.y, d=Math.hypot(tx,ty); if(d<12){ hook=null; return false; } const m=Math.min(d,700*dt); hook.x+=tx/d*m; hook.y+=ty/d*m; if(hookSolid(hook.x,hook.y)) hook.y-=4; hook.len=Math.max(6,Math.min(hook.len,d+8)-500*dt); ropeTick(dt); return false; }
   // the hook has bitten: the loose line draws tight, then pulls you in
   if(hook.phase==='tight'){ hook.tt+=dt; const d=Math.hypot(hook.ax-hx,hook.ay-hy); hook.len=Math.max(d,hook.len-400*dt); ropeTick(dt); if(hook.tt>=0.18||hook.len<=d+1) hook.phase='pull'; return false; }
+  // jumping while hooked lets go and jumps off (a fresh press: holding jump from before doesn't count)
+  if(hook.phase==='hang'||hook.phase==='pull'){ if(!input.jump) hook.jumpReady=true; else if(hook.jumpReady){ hook=null; p.vy=-JUMP*0.95; p.grounded=false; p.airJumps=Math.max(0,(p.airJumps||0)); if(typeof puff==='function') puff(cxOf(p),p.y+p.h,'#ffffff',5,50); return false; } }
   if(hook.phase==='hang'){ p.x=hook.hx; p.y=hook.hy; p.vx=p.vy=0; p.grounded=false; p.facing=Math.sign(hook.ax-cxOf(p))||p.facing; hook.len=Math.hypot(hook.ax-hx,hook.ay-hy); ropeTick(dt); return true; }
   if(hook.phase==='pull'){ const tx=hook.ax-cxOf(p), ty=hook.ay-(p.y+p.h*0.5), d=Math.hypot(tx,ty);
     if(d<14){ hook.phase='hang'; hook.hx=p.x; hook.hy=p.y; p.vx=p.vy=0; return true; }
     hook.t=(hook.t||0)+dt; if(d>hook.lastD-0.5){ hook.stuckT+=dt; if(hook.stuckT>0.35){ hook.phase='hang'; hook.hx=p.x; hook.hy=p.y; p.vx=p.vy=0; return true; } } else hook.stuckT=0; hook.lastD=d;
     const sp=GRAPPLE_PULL[grappleTier()]||320; p.vx=tx/d*sp; p.vy=ty/d*sp; const fl=p.fly; p.fly=true; physics(p,dt); p.fly=fl; p.facing=Math.sign(tx)||p.facing; p.grounded=false;
     hook.len=Math.hypot(hook.ax-hx,hook.ay-hy); ropeTick(dt); return true; } }
-{ const _up=updatePlayer; updatePlayer=function(dt){ let pulled=false; try{ pulled=grappleTick(dt); }catch(e){ console.warn(e); hook=null; } if(pulled){ player.anim+=dt; player.iframes-=dt; player.atkCd-=dt; return; } return _up(dt); }; }
+{ const _up=updatePlayer; updatePlayer=function(dt){ let pulled=false; if(player&&player.climb){ try{ climbTick(player,dt); }catch(e){ player.climb=null; } player.iframes-=dt; player.atkCd-=dt; return; } try{ pulled=grappleTick(dt); }catch(e){ console.warn(e); hook=null; } if(pulled){ player.anim+=dt; player.iframes-=dt; player.atkCd-=dt; return; } return _up(dt); }; }
 // drawing: the wind-up bar, the rope along its points, and the claw at the end
 function drawGrapple(){ if(!hook||!player) return;
   if(hook.phase==='charge'){ const x=Math.round(cxOf(player))-12, y=Math.round(player.y)-14; ctx.fillStyle='#17111f'; ctx.fillRect(x-1,y-1,26,5); ctx.fillStyle=hook.ch>0.9?'#ff7b1c':'#9ad0ff'; ctx.fillRect(x,y,Math.round(24*hook.ch),3); return; }
@@ -7576,7 +7602,7 @@ addEventListener('keyup',e=>{ if(e.code===(settings.keys.grapple||'KeyX')) grapp
 // phones: a small Hook joystick just left of the right stick. Touch it to wind up, drag to aim, let go to throw.
 // Touching it while the hook is out reels the hook in, or lets go if it is holding you.
 const hookStick={on:false,x:0,y:0,mag:0,id:null};
-{ const el=document.createElement('div'); el.className='stick'; el.id='stick_h'; el.innerHTML='<span class="lbl">Hook</span><div class="knob"></div>';
+{ const el=document.createElement('div'); el.className='stick'; el.id='stick_h'; el.hidden=true; el.innerHTML='<span class="lbl">Hook</span><div class="knob"></div>';
   const sr=$('#stick_r'); sr.parentNode.insertBefore(el,sr);
   const st=document.createElement('style'); st.textContent='#stick_h{ margin-bottom:8px; --s:84px; background:radial-gradient(circle, rgba(40,70,90,.35) 0 55%, rgba(40,70,90,.6) 56% 100%); } body[data-stick="s"] #stick_h{ --s:70px; } body[data-stick="l"] #stick_h{ --s:100px; } #stick_h.on{ border-color:var(--gold); } #stick_h.none{ opacity:.45; }'; document.head.appendChild(st);
   const knob=el.querySelector('.knob');
@@ -7587,7 +7613,7 @@ const hookStick={on:false,x:0,y:0,mag:0,id:null};
   el.addEventListener('pointermove',ev=>{ if(hookStick.on&&ev.pointerId===hookStick.id){ ev.preventDefault(); move(ev); } });
   const up=ev=>{ if(!hookStick.on||ev.pointerId!==hookStick.id) return; ev.stopPropagation(); grappleUp(); hookStick.on=false; hookStick.id=null; hookStick.mag=0; knob.style.transform=''; el.classList.remove('on'); };
   el.addEventListener('pointerup',up); el.addEventListener('pointercancel',up);
-  setInterval(()=>{ const none=!grappleTier(); if(el.classList.contains('none')!==none) el.classList.toggle('none',none); },700); }
+  setInterval(()=>{ const none=!grappleTier(); if(el.hidden!==none) el.hidden=none; /* only shown once you own a grappling hook */ },700); }
 { const _ga=grappleAim; grappleAim=function(){ if(hookStick.on&&hookStick.mag>0.25){ const m=Math.hypot(hookStick.x,hookStick.y); return [hookStick.x/m,hookStick.y/m]; }
     if(hookStick.on){ const f=(player&&player.facing)||1; return [f*0.6,-0.8]; } return _ga(); }; } // a quick tap throws up and forward
 // while winding up, a dotted line shows where the hook will fly
@@ -7617,7 +7643,7 @@ function drawBabyAnimal(e){ const cx=Math.round(cxOf(e)), by=Math.round(e.y+e.h)
     default: ctx.restore(); { const cx2=Math.round(cxOf(e)), bot=Math.round(e.y+e.h); ctx.save(); ctx.translate(cx2,bot); ctx.scale(0.6,0.6); ctx.translate(-cx2,-bot); drawAnimal0(e); ctx.restore(); } return; }
   ctx.restore();
   if(e.love>0&&Math.floor(e.anim*3)%2) { ctx.fillStyle='#ff7ab8'; ctx.fillRect(cx-1,by-18,3,2); ctx.fillRect(cx,by-17,1,2); } }
-{ const _da=drawAnimal; drawAnimal=function(e){ if(e.baby&&!(ANIMALS[e.atype]&&ANIMALS[e.atype].raptor)) return drawBabyAnimal(e); return _da(e); }; }
+{ const _da=drawAnimal; drawAnimal=function(e){ if(e.baby&&!(ANIMALS[e.atype]&&ANIMALS[e.atype].raptor)){ drawBabyAnimal(e); drawHealth(e); return; } return _da(e); }; }
 // ===================== lava =====================
 // Lava flows exactly like water (it fills in levels, falls, and spreads out until it is level) but at half the speed.
 // It burns the plants, wood and grass it touches, destroys items dropped into it, turns to obsidian where it meets water,
