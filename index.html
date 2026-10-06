@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791270290"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791270290"><link rel="manifest" href="manifest.webmanifest?v=1791270290"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791308217"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791308217"><link rel="manifest" href="manifest.webmanifest?v=1791308217"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -5202,6 +5202,7 @@ cv.addEventListener('pointerdown',ev=>{ if(ev.pointerType==='touch') enableTouch
   for(const v of ents){ if((v.kind!=='villager'&&v.kind!=='captive'&&v.kind!=='drifter')||v.dead) continue; if(input.ax>v.x-6&&input.ax<v.x+v.w+6&&input.ay>v.y-12&&input.ay<v.y+v.h+4&&Math.hypot(cxOf(v)-cxOf(player),cyOf(v)-cyOf(player))<7*T){ openShop(v); return; } }
   { const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); const it=heldItem();
     if(tileAt(tx,ty)===B.FENCE&&Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))<=REACH&&!(it&&['pick','axe','hammer'].includes(ITEMS[it.id].kind))){ const pn=fenceRun(tx,ty); if(pn){ offerPen(pn,true); return; } }
+    if(wetDoorAt(tx,ty)&&Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))<=REACH&&!(it&&ITEMS[it.id].kind==='pick')){ closeWetDoor(tx,ty); return; }
     if(DOOR_IDS.has(tileAt(tx,ty))&&Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))<=REACH&&!(it&&ITEMS[it.id].kind==='pick')){ const by=doorBottom(tx,ty); const open=isClosedDoor(tileAt(tx,by)); if(open||!ents.some(o=>!o.dead&&overlap({x:tx*T,y:(by-1)*T,w:T,h:2*T},o))){ setDoor(tx,ty,open); const d=openDoors.find(d=>d.x===tx&&d.y===by); if(d) d.manual=true; } return; }
     if(tileAt(tx,ty)===B.BERRY_RIPE&&Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))<=REACH&&!(it&&ITEMS[it.id].kind==='pick')){ harvest(tx,ty); return; }
     { let cx=tx; if(!isChestId(tileAt(cx,ty))&&!isSolid(cx,ty)){ if(isChestId(tileAt(cx-1,ty))) cx--; else if(isChestId(tileAt(cx+1,ty))) cx++; }
@@ -7753,6 +7754,15 @@ function bucketUse(p,aim,it){ p.atkT=0.2; const t=bucketTarget(p,aim,it.id===WAT
   else if(cur===0||TORCH_REPL(cur)||cur===B.SNOW_LAYER||cur===B.MIST){ if(cur&&cur!==B.SNOW_LAYER&&cur!==B.MIST){ breakTile(tx,ty); if(tileAt(tx,ty)!==0) return; } setTile(tx,ty,B.WATER); edit(); }
   else { toast('Pour the water into an open space',1.5); return; }
   takeItem(WATER_BUCKET,1); give(BUCKET,1); puff(tx*T+8,ty*T+8,'#3a8ae0',6,50); if(typeof sfx==='function') sfx('pickup'); invDirty=true; }
+
+// ---- doors with water flowing through them: tap to close them (the door pushes that water out) ----
+const doorIdAt=(x,y)=>{ const id=tileAt(x,y); return id===B.WATER&&wetDeco?(wetDeco.get(y*W+x)||0):id; };
+function wetDoorAt(x,y){ const id=doorIdAt(x,y), s=DOOR_SET_OF[id]; if(!s) return false; const by=id===s.top||id===s.openTop?y+1:y; return tileAt(x,by)===B.WATER||tileAt(x,by-1)===B.WATER; }
+function closeWetDoor(x,y){ const id=doorIdAt(x,y), s=DOOR_SET_OF[id]; if(!s) return false; const by=id===s.top||id===s.openTop?y+1:y;
+  if(ents.some(o=>!o.dead&&!o.aboard&&o.kind!=='dragon'&&overlap({x:x*T,y:(by-1)*T,w:T,h:2*T},o))){ toast('Something is standing in the doorway',1.2); return false; }
+  for(const yy of [by,by-1]) wetDeco.delete(yy*W+x);
+  setTile(x,by,s.base); setTile(x,by-1,s.top); openDoors=openDoors.filter(d=>!(d.x===x&&d.y===by));
+  if(typeof mpEdit==='function'){ mpEdit(x,by); mpEdit(x,by-1); } puff(x*T+8,by*T,'#9ad0ff',8,60); if(typeof sfx==='function') sfx('pickup'); return true; }
 })();
 </script>
 </body>
