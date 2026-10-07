@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791330121"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791330121"><link rel="manifest" href="manifest.webmanifest?v=1791330121"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791332767"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791332767"><link rel="manifest" href="manifest.webmanifest?v=1791332767"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -438,6 +438,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Your faction is the abandoned castle you claim; the other two colors are your enemies. Claiming your village, conquering a castle or freeing a camp prisoner opens a portal (on castle roofs). Click a portal to open the map, then tap another portal to travel with your army to your home, freed camps, allied or conquered castles, the wizard tower, the magma fortress, and (once their wizards are dead) the sky and magma realms. Each trip costs a few coins. Each realm has a huge castle with 20 to 30 soldiers and its boss in a throne room at the far end. The Sky Ranger (5,000 health) and the Magma Knight (6,000 health, twice the reach, burning blade) need an army to beat. You start in wooden armor; every armor set changes your look, with a crest in your faction's color. Cannon, blast-bow and other explosions break blocks (75% drop), and fire arrows scorch grass, trees and wooden buildings. In the test world, the Speed button runs the world at 2x, 5x or 10x.</p>
     <h3>Thrown weapons</h3>
     <p>The Adamantite sword and the Magma blade are thrown: attack to send the sword spinning out, and it comes back to your hand like a boomerang, cutting everything it passes both ways. The Adamantite mace swings on a chain: tap to hurl it, or hold to whirl it above your head and let go to hurl it wherever you are aiming at that moment. The Adamantite daggers and the Kraken daggers are thrown one after another, up to 3 at a time, and each comes back like the sword.</p>
+    <h3>Bosses, in order</h3>
+    <p>Beat the bosses in this order, each harder than the last: the Goblin Beastmaster (bring 3 soldiers), the Archmage (4), the Magma Wizard (5), the Sky Ranger (6), the Magma Knight (8), Grukk the Ogre King (10), the Kraken (12) and Vorthax (20). With fewer soldiers or fighting pets near a boss than it needs, only a little of your damage gets through and it heals; the boss bar shows how many you have with you. The Beastmaster vanishes into the shadows and strikes from behind. The two wizards fly, teleport around you and chase you out of their towers, landing now and then (that is your chance with a sword). The Sky Ranger's gale hurls everyone back, and a red mark on someone means a fast arrow is coming: move. The Magma Knight's armor glows white-hot and turns most blows aside until four different fighters hit it, and glowing cracks in the floor mean fire is about to erupt there.</p>
     <h3>Armies</h3>
     <p>Bring soldiers. Enemy villages and outposts gang up on anyone who comes alone: with fewer than 5 of your soldiers or pets beside you, the whole garrison turns out, hits you much harder and shrugs off most of your blows. Vorthax needs your whole army: the more of your 20 soldiers fight beside you in the lair, the harder your blows land and the less it heals, and the more often it lands where swords can reach it. The boss bar shows how many of your fighters are with you.</p>
     <h3>New this update</h3>
@@ -1395,7 +1397,7 @@ const ANIMALS = {
 const MON = {
   zombie:  { w:12, h:28, hp:45, dmg:10, speed:40, def:0, reach:12, coins:1 },
   goblin:  { w:10, h:20, hp:30, dmg:7,  speed:100, def:0, reach:10, coins:1, drops:[[I.BERRIES,0.2,1,3]] },
-  goblin_chief:{ w:12, h:22, hp:450, dmg:18, speed:95, def:4, reach:12, coins:25, drops:[[I.GOLD_BAR,1,2,4],[I.RUBY,0.6,1,2],[I.WHISTLE,1,1,1]] },
+  goblin_chief:{ w:12, h:22, hp:900, dmg:22, speed:95, def:4, reach:12, coins:25, drops:[[I.GOLD_BAR,1,2,4],[I.RUBY,0.6,1,2],[I.WHISTLE,1,1,1]] },
   skeleton:{ w:12, h:28, hp:38, dmg:8,  speed:55, def:1, ranged:true, coins:1, drops:[[I.BONE,0.45,1,2]] },
   orc:     { w:16, h:30, hp:95, dmg:18, speed:50, def:3, reach:16, coins:3 },
   shark:   { w:40, h:16, hp:120, dmg:20, speed:150, def:2, coins:4, sea:true, range:24, drops:[[I.SHARK_FIN,0.7,1,1]] },
@@ -1409,7 +1411,7 @@ const MON = {
   magma_skeleton:{ w:12, h:28, hp:90,  dmg:16, speed:60, def:5, ranged:true, fire:true, coins:3, drops:[[B.OBSIDIAN,0.4,1,2]] },
   imp:           { w:10, h:20, hp:45,  dmg:12, speed:125, def:3, reach:10, coins:2, drops:[[I.RUBY,0.1,1,1]] },
   ogre:          { w:22, h:46, hp:260, dmg:30, speed:52, def:6, reach:20, coins:8, drops:[[I.GOLD_BAR,0.35,1,2]] },
-  ogre_king:     { w:44, h:92, hp:4500, dmg:62, speed:46, def:12, reach:40, coins:150, drops:[[I.GOLD_BAR,1,4,8],[I.RUBY,1,2,4],[429,1,2,4]] },
+  ogre_king:     { w:44, h:92, hp:13000, dmg:62, speed:46, def:12, reach:40, coins:150, drops:[[I.GOLD_BAR,1,4,8],[I.RUBY,1,2,4],[429,1,2,4]] },
   orc_dagger:    { w:12, h:24, hp:60, dmg:12, speed:88, def:2, reach:12, coins:2 },
   orc_hammer:    { w:16, h:30, hp:135, dmg:26, speed:42, def:5, reach:20, coins:4 },
   orc_xbow:      { w:14, h:28, hp:80, dmg:15, speed:50, def:3, ranged:true, coins:3 },
@@ -2473,9 +2475,9 @@ function kill(e,src){ if(e.warlord&&e.cmdBase&&!e.dead){ const b=e.cmdBase, c=cm
       else toast(`${e.name} has fallen and will not return`,3); } }
     else { dropCoins(cxOf(e),cyOf(e),e.boss?200:e.captain?12:2+Math.floor(Math.random()*3));
       if(e.magmaLord){ magma.keep.cleared=true; setTimeout(realmOres,1500); spawnDrop(cxOf(e),cyOf(e),I.MAGMA_BLADE,1); for(const id of bossUpgrades()) spawnDrop(cxOf(e),cyOf(e),id,1); for(let k=0;k<4;k++) spawnDrop(cxOf(e),cyOf(e),I.GOLD_BAR,3); toast('The Magma Knight is defeated!',5); return; }
-      if(e.magmaBoss){ fort.cleared=true; const px=Math.floor(cxOf(e)/T), py=Math.floor((e.y+e.h-1)/T); facRun(()=>{ for(const yy of [py,py-1]) if(!isSolid(px,yy)) setTile(px,yy,B.PORTAL); }); fort.portal={x:px,y:py}; spawnDrop(cxOf(e),cyOf(e),I.MAGMA_STAFF,1); dropCoins(cxOf(e),cyOf(e),200); toast('The magma wizard is defeated. A portal to the magma realm opens where he fell.',6); return; }
+      if(e.magmaBoss){ fort.cleared=true; const px=Math.floor(cxOf(e)/T), py=Math.floor((e.y+e.h-1)/T); facRun(()=>{ for(const yy of [py,py-1]) if(!isSolid(px,yy)) setTile(px,yy,B.PORTAL); }); fort.portal={x:px,y:py}; spawnDrop(cxOf(e),cyOf(e),I.MAGMA_STAFF,1); dropCoins(cxOf(e),cyOf(e),200); toast('The magma wizard is defeated. A portal to the magma realm opens at the top of his fortress.',6); return; }
       if(e.skyBoss){ sky.castle.cleared=true; setTimeout(realmOres,1500); if(nextFeather()) spawnDrop(cxOf(e),cyOf(e),nextFeather(),1); spawnDrop(cxOf(e),cyOf(e),I.RANGER_BOW,1); for(const id of bossUpgrades()) spawnDrop(cxOf(e),cyOf(e),id,1); for(let k=0;k<4;k++) spawnDrop(cxOf(e),cyOf(e),I.GOLD_BAR,3); toast('The Sky Ranger is defeated!',5); return; }
-      if(e.boss){ tower.cleared=true; spawnDrop(cxOf(e),cyOf(e),I.SKY_STAFF,1); const px=Math.floor(cxOf(e)/T), py=Math.floor((e.y+e.h-1)/T); facRun(()=>{ for(const yy of [py,py-1]) if(!isSolid(px,yy)) setTile(px,yy,B.PORTAL); }); tower.portal={x:px,y:py}; for(let k=0;k<4;k++) spawnDrop(cxOf(e),cyOf(e),I.GOLD_BAR,3); spawnDrop(cxOf(e),cyOf(e),I.ARCANE_RING,1); spawnDrop(cxOf(e),cyOf(e),I.MANA_CRYSTAL,1); toast('The Archmage is defeated. A portal opens where he fell.',6); return; }
+      if(e.boss){ tower.cleared=true; spawnDrop(cxOf(e),cyOf(e),I.SKY_STAFF,1); const px=Math.floor(cxOf(e)/T), py=Math.floor((e.y+e.h-1)/T); facRun(()=>{ for(const yy of [py,py-1]) if(!isSolid(px,yy)) setTile(px,yy,B.PORTAL); }); tower.portal={x:px,y:py}; for(let k=0;k<4;k++) spawnDrop(cxOf(e),cyOf(e),I.GOLD_BAR,3); spawnDrop(cxOf(e),cyOf(e),I.ARCANE_RING,1); spawnDrop(cxOf(e),cyOf(e),I.MANA_CRYSTAL,1); toast('The Archmage is defeated. A portal to the sky realm opens at the top of his tower.',6); return; }
       if(e.team==='s'&&nextFeather()&&Math.random()<0.08) spawnDrop(cxOf(e),cyOf(e),nextFeather(),1);
       if(e.team==='s'||e.team==='m') { if(Math.random()<0.5) spawnDrop(cxOf(e),cyOf(e),I.GOLD_BAR,1+Math.floor(Math.random()*3)); return; }
       if(e.scout||!bases.some(b=>b.f===e.team)) return; const left=ents.filter(h=>h.kind==='human'&&h.team===e.team&&!h.dead&&!h.scout).length;
@@ -3083,10 +3085,10 @@ function populate(dragonHp,roster,pets){
   if(!fort.cleared){ const room={cx:fort.tx,gy:fort.gy,x0:fort.x0+1,x1:fort.x1-1};
     for(let k=0;k<6;k++){ const im=makeMonster('imp',(fort.tx-8+k*3)*T,(fort.gy-[0,8,16][k%3])*T-22); im.camp={x:fort.tx,gy:fort.gy}; im.elite=false; ents.push(im); }
     { const g=3+Math.floor(Math.random()*3); for(let k=0;k<g;k++){ const mk=makeHuman('m','magmaknight',(fort.tx-5+k*2.5)*T,(fort.gy-24)*T-29,'guard',{cx:fort.tx,gy:fort.gy-24,x0:fort.x0+2,x1:fort.x1-2}); mk.hold=true; mk.post={x:Math.round(fort.tx-5+k*2.5),gy:fort.gy-24}; ents.push(mk); } }
-    const w=makeHuman('m','archmage',fort.tx*T,(fort.gy-24)*T-29,'guard',{cx:fort.tx,gy:fort.gy-24,x0:fort.x0+2,x1:fort.x1-2}); w.hp=w.maxHp=700; w.magmaBoss=true; w.dmgMul=3; w.floorY=fort.gy-24; w.name='The Magma Wizard'; ents.push(w); }
+    const w=makeHuman('m','archmage',fort.tx*T,(fort.gy-24)*T-29,'guard',{cx:fort.tx,gy:fort.gy-24,x0:fort.x0+2,x1:fort.x1-2}); w.hp=w.maxHp=4000; w.magmaBoss=true; w.dmgMul=2.6; w.floorY=fort.gy-24; w.name='The Magma Wizard'; ents.push(w); }
   const garrison=(c,team,cls)=>{ const n=20+Math.floor(Math.random()*11); for(let k=0;k<n;k++){ const r=c.rooms[k%c.rooms.length]; const x=r.x0+1+Math.random()*Math.max(1,r.x1-r.x0-2); ents.push(makeHuman(team,cls[(Math.random()*cls.length)|0],x*T,r.gy*T-29,'guard',{cx:Math.round((r.x0+r.x1)/2),gy:r.gy,x0:r.x0,x1:r.x1})); } };
   const kp=magma.keep; if(!kp.cleared&&kp.rooms){ const th=kp.throne; const room={cx:kp.cx,gy:kp.gy,x0:th.x0+1,x1:th.x1-1};
-    const b=makeHuman('m','magmalord',kp.cx*T,(th.gy)*T-44,'guard',room,true); b.hp=b.maxHp=6000; b.magmaLord=true; b.bigBoss=true; b.big=1.5; b.w=18; b.h=42; b.def=16; b.dmgMul=2.6; b.reachMul=2; b.name='The Magma Knight'; ents.push(b);
+    const b=makeHuman('m','magmalord',kp.cx*T,(th.gy)*T-44,'guard',room,true); b.hp=b.maxHp=6500; b.magmaLord=true; b.bigBoss=true; b.big=1.5; b.w=18; b.h=42; b.def=16; b.dmgMul=1.6; b.reachMul=2; b.name='The Magma Knight'; ents.push(b);
     garrison(kp,'m',MAGMA_CLS); }
   for(const h of magma.huts) for(let k=0;k<2;k++) ents.push(makeHuman('m',MAGMA_CLS[(Math.random()*4)|0],(h.x-2+k*4)*T,h.gy*T-29,'guard',{cx:h.x,gy:h.gy,x0:h.x-8,x1:h.x+8}));
   const sc=sky.castle; if(!sc.cleared&&sc.rooms){ const th=sc.throne; const room={cx:sc.cx,gy:sc.gy,x0:th.x0+1,x1:th.x1-1};
@@ -3095,8 +3097,8 @@ function populate(dragonHp,roster,pets){
   for(const gc of gcamps){ let types; const gis=islandAt(gc.x); if(gis&&!gis.forest){ const pool=nativePool(gc.x,'camp'); const n=3+Math.floor(Math.random()*3); for(let k=0;k<n;k++){ const ty=pool[k%pool.length]; const m=makeMonster(ty,(gc.x-8+k*4)*T,gc.gy*T-MON[ty].h-1); m.camp={x:gc.x,gy:gc.gy}; ents.push(m); } continue; } if(gc.war){ types=[]; const nd=3+((Math.random()*2)|0), na=2+((Math.random()*2)|0); for(let k=0;k<nd;k++) types.push('goblin_dagger'); for(let k=0;k<na;k++) types.push('goblin_archer'); types.push('goblin','goblin'); }
     else { const n=2+Math.floor(Math.random()*4); types=[]; for(let k=0;k<n;k++) types.push(['goblin','goblin_dagger','goblin_archer'][k%3]); }
     types.forEach((ty,k)=>{ const spread=gc.war?20:10; const m=makeMonster(ty,(gc.x-spread+k*(2*spread)/Math.max(1,types.length-1))*T,gc.gy*T-MON[ty].h-1); m.camp={x:gc.x,gy:gc.gy}; ents.push(m); });
-    if(gc.war&&!gc.cleared){ const c=makeMonster('goblin_chief',gc.x*T,gc.gy*T-MON.goblin_chief.h-1); c.elite=false; c.hp=c.maxHp=450; c.camp={x:gc.x,gy:gc.gy}; c.chief=gc; c.name='The Goblin Beastmaster'; ents.push(c);
-      const bear=makeAnimal('bear',(gc.x+3)*T,gc.gy*T-24); Object.assign(bear,{temper:'bad',hp:650,maxHp:650,scar:true,team:'monster',dmg:30,chiefPet:true}); ents.push(bear); } }
+    if(gc.war&&!gc.cleared){ const c=makeMonster('goblin_chief',gc.x*T,gc.gy*T-MON.goblin_chief.h-1); c.elite=false; c.hp=c.maxHp=900; c.camp={x:gc.x,gy:gc.gy}; c.chief=gc; c.name='The Goblin Beastmaster'; ents.push(c);
+      const bear=makeAnimal('bear',(gc.x+3)*T,gc.gy*T-24); Object.assign(bear,{temper:'bad',hp:900,maxHp:900,scar:true,team:'monster',dmg:30,chiefPet:true}); ents.push(bear); } }
   for(const is of islands.filter(i=>i.orc)){ const OT=['orc','orc_dagger','orc_hammer','orc_xbow'];
     if(is.orcCave){ const cv=is.orcCave; for(let y=cv.hallY-12;y<=cv.hallY+28;y++) for(let x=cv.px-50;x<=cv.px+50;x++){ if(x<0||x>=W||y<0||y>=H) continue; const i=y*W+x; if(world[i]===B.WATER||world[i]===B.LAVA){ world[i]=bg[i]===2?0:B.STONE; liq[i]=0; } } }
     const at=(ty,x,gy,camp)=>{ const m=makeMonster(ty,x*T,gy*T-MON[ty].h-1); m.camp=camp; ents.push(m); return m; };
@@ -3104,7 +3106,7 @@ function populate(dragonHp,roster,pets){
       for(let k=0;k<n;k++) at(OT[k%4],c.x-c.half+k*(2*c.half)/Math.max(1,n-1),c.gy,{x:c.x,gy:c.gy}); const og=oa+Math.floor(Math.random()*(ob-oa+1)); for(let k=0;k<og;k++) at('ogre',c.x+(k?4:-4),c.gy,{x:c.x,gy:c.gy}); }
     const cv=is.orcCave; if(cv){ const n=20+Math.floor(Math.random()*6); for(let k=0;k<n;k++){ const r=cv.rooms[k%3]; const slot=Math.floor(k/3); at(OT[k%4],r.x-r.half+((slot*5)%(2*r.half+1)),r.gy,{x:r.x,gy:r.gy}); }
       const og=5+Math.floor(Math.random()*2); for(let k=0;k<og;k++){ const r=cv.rooms[k%3]; at('ogre',r.x+(k%2?6:-6),r.gy,{x:r.x,gy:r.gy}); }
-      if(!is.orcBossDead){ const b=at('ogre_king',cv.boss.x-2,cv.boss.gy,{x:cv.boss.x,gy:cv.boss.gy}); b.elite=false; b.hp=b.maxHp=4500; b.bigBoss=true; b.name='Grukk the Ogre King'; b.orcIsland=is; } }
+      if(!is.orcBossDead){ const b=at('ogre_king',cv.boss.x-2,cv.boss.gy,{x:cv.boss.x,gy:cv.boss.gy}); b.elite=false; b.hp=b.maxHp=13000; b.bigBoss=true; b.name='Grukk the Ogre King'; b.orcIsland=is; } }
     for(const tw of is.orcTowers||[]) snapGuards(tw,3,(k,x,gy)=>{ const m=makeMonster('orc_xbow',x*T,gy*T-MON.orc_xbow.h-1); m.camp={x,gy}; return m; }); }
   for(const t of sky.temples) for(let k=0;k<2;k++){ const e=makeHuman('s',SKY_CLS[(Math.random()*4)|0],(t.x-3+k*6)*T,t.gy*T-29,'guard',{cx:t.x,gy:t.gy,x0:t.x-7,x1:t.x+7}); e.hp=e.maxHp=320; ents.push(e); }
   for(const pt of (pets||[])){ const a=makeAnimal(pt.atype,(pt.pen||pt.fpen)&&pt.px!=null?pt.px:player.x+(Math.random()*40-20),(pt.pen||pt.fpen)&&pt.py!=null?pt.py:player.y); Object.assign(a,{tamed:true,team:player.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp,pen:pt.pen||null,fpen:pt.fpen||null}); applyPetUp(a); ents.push(a); }
@@ -3113,7 +3115,7 @@ function populate(dragonHp,roster,pets){
 function spawnTower(){ const t=tower; const room={cx:t.tx,gy:t.gy,x0:t.tx-4,x1:t.tx+4};
   let k=0; for(let y=t.gy-6;y>t.top+9&&k<4;y-=12,k++){ const m=makeHuman('a','wizard',(t.tx-2+k)*T,y*T-29,'guard',room); m.hold=true; m.post={x:t.tx-2+k,gy:y}; ents.push(m); }
   { const g=3+Math.floor(Math.random()*3); for(let k=0;k<g;k++) ents.push(makeHuman('s','skyknight',(t.tx-3+k*1.5)*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4})); }
-  const a=makeHuman('a','archmage',t.tx*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); a.hp=a.maxHp=700; a.boss=true; a.dmgMul=3; a.name='The Archmage'; ents.push(a); }
+  const a=makeHuman('a','archmage',t.tx*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); a.hp=a.maxHp=3000; a.boss=true; a.dmgMul=3; a.name='The Archmage'; ents.push(a); }
 function bolt(e,ang,sp,dmg,col,extra){ projs.push(Object.assign({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*sp,vy:Math.sin(ang)*sp,team:e.team,dmg,kind:'magic',col,life:3,grav:0,r:7,src:e},extra||{})); }
 // wizards: fan volley, ring nova, homing orbs, then a blink to a random spot away from you
 function archmageAct(e,t,dt){ const col=e.team==='m'?'#ff7a2a':'#c8a0ff', burn=e.team==='m'; e.patT=(e.patT??2)-dt; e.blinkT=(e.blinkT??5)-dt;
@@ -3565,7 +3567,7 @@ function spawnForest(dt){ forestT-=dt; if(forestT>0||!player||player.dead) retur
 // ---- the Kraken (29) ----
 let krakenSlain=false; var inkT=0;
 function krakenTick(dt){ if(!player||krakenSlain||!krakenX) return; const d=Math.abs(cxOf(player)/T-krakenX); let k=ents.find(e=>e.kind==='kraken'&&!e.dead);
-  if(!k&&d<90){ k={kind:'kraken',x:krakenX*T-40,y:(seaY-1)*T,w:80,h:40,hp:krakenHp||14000,maxHp:14000,team:'k',name:'The Kraken',bigBoss:true,patT:3,pat:0,diveT:0,vx:0,vy:0,facing:1,anim:0,tent:[],hurtT:0}; ents.push(k); toast('Something enormous stirs beneath the waves…',3); }
+  if(!k&&d<90){ k={kind:'kraken',x:krakenX*T-40,y:(seaY-1)*T,w:80,h:40,hp:krakenHp||18000,maxHp:Math.max(18000,krakenHp||0),team:'k',name:'The Kraken',bigBoss:true,patT:3,pat:0,diveT:0,vx:0,vy:0,facing:1,anim:0,tent:[],hurtT:0}; ents.push(k); toast('Something enormous stirs beneath the waves…',3); }
   if(k&&d>150){ krakenHp=k.hp; k.dead=true; k.silent=true; } inkT=Math.max(0,inkT-dt); }
 let krakenHp=0;
 function krakenAct(k,dt){ const p=player; k.anim+=dt; k.hurtT=Math.max(0,k.hurtT-dt);
@@ -4557,7 +4559,7 @@ function drawEntity(e){ if(e.carry&&e.kind==='human') drawCarry(e);
   const md=meleeActive(e); if(md){ o.wpn=0; o.atk=true; o.melee=true; }
   const s=sprite(humanKey(o)+(o.elite?'|e':''),SW,SH,g=>drawHumanFig(g,o));
   const img=e.hurtT>0?flashOf(s):s.n; const cx=Math.round(cxOf(e)), top=Math.round(e.y+e.h)-SFY+(o.frame===1||o.frame===3?1:0);
-  ctx.save(); ctx.translate(cx,0); if(e.big){ const fy=e.y+e.h; ctx.translate(0,fy); ctx.scale(e.big,e.big); ctx.translate(0,-fy); ctx.translate(0,(e.h/e.big-e.h)); } if(e.facing<0) ctx.scale(-1,1); ctx.drawImage(img,-SCX,top); ctx.restore();
+  ctx.save(); ctx.translate(cx,0); if(e.big){ const fy=e.y+e.h; ctx.translate(0,fy); ctx.scale(e.big,e.big); ctx.translate(0,-fy); } if(e.facing<0) ctx.scale(-1,1); ctx.drawImage(img,-SCX,top); ctx.restore();
   if(md) drawSwing(e,md);
   if(e._torch) drawHandTorch(e);
   if(e.kind==='player'&&e.atkT>0){ const hi=heldItem(); const d=hi&&ITEMS[hi.id]; if(d&&['pick','axe','hoe','hammer'].includes(d.kind)){ const ang=stick.r.on&&stick.r.mag>0.2?Math.atan2(stick.r.y,stick.r.x):Math.atan2((input.ay||cyOf(e))-cyOf(e),(input.ax||cxOf(e))-cxOf(e)); const ph=clamp(e.atkT/0.25,0,1); const sw=ang+(ph-0.5)*1.8*(Math.cos(ang)>=0?-1:1);
@@ -5973,7 +5975,7 @@ function inHomeVillage(x,y){ return !!home&&!!home.claimed&&x>=home.x0-8&&x<=hom
 { const _tp=tryPlace; tryPlace=function(x,y,id){ const r=_tp(x,y,id); const t=TROPHY_OF[id]; if(t&&tileAt(x,y)===id){ if(inHomeVillage(x,y)){ home.trophies=home.trophies||{}; home.trophies[t.key]={x,y}; recompute(player); puff(x*T+8,y*T+8,'#ffe066',16,90); if(typeof sfx==='function') sfx('ward'); toast(`${t.name} mounted in your village: ${t.buff.toLowerCase()}`,4); } else toast('Mount trophies inside your home village to get their bonus',3); } return r; }; }
 { const _bt=breakTile; breakTile=function(x,y,...a){ const id=tileAt(x,y), t=TROPHY_OF[id]; const r=_bt(x,y,...a); if(t&&tileAt(x,y)!==id&&home&&home.trophies&&home.trophies[t.key]&&home.trophies[t.key].x===x&&home.trophies[t.key].y===y){ delete home.trophies[t.key]; recompute(player); toast(`${t.name} taken down: its bonus is gone until you mount it again`,3); } return r; }; }
 { const _rc=recompute; recompute=function(p){ _rc(p); if(p&&p===player&&home){ if(trophyOn('archmage')) p.maxMana+=20; if(trophyOn('grukk')) p.maxHp+=20; if(trophyOn('ranger')) p.speed*=1.08; if(trophyOn('magmaknight')) p.def+=3; } }; }
-function bossKey(e){ if(e.kind==='dragon') return 'dragon'; if(e.kind==='kraken') return 'kraken'; if(e.mtype==='ogre_king') return 'grukk'; if(e.mtype==='goblin_chief') return 'goblin'; if(e.magmaLord) return 'magmaknight'; if(e.skyBoss) return 'ranger'; if(e.magmaBoss) return 'magmawiz'; if(e.boss&&e.team==='a') return 'archmage'; return null; }
+function bossKey(e){ if(e.decoy||e.ghost) return null; if(e.kind==='dragon') return 'dragon'; if(e.kind==='kraken') return 'kraken'; if(e.mtype==='ogre_king') return 'grukk'; if(e.mtype==='goblin_chief') return 'goblin'; if(e.magmaLord) return 'magmaknight'; if(e.skyBoss) return 'ranger'; if(e.magmaBoss) return 'magmawiz'; if(e.boss&&e.team==='a') return 'archmage'; return null; }
 
 // ---- runes in weapons ----
 // runes have five levels. A rune starts at level I; setting more of the same rune into that weapon builds it up,
@@ -6613,7 +6615,7 @@ spawnTower=function(){ const t=tower; const room={cx:t.tx,gy:t.gy,x0:t.tx-4,x1:t
   { const g=3+Math.floor(Math.random()*3); for(let k=0;k<g;k++){ const e=makeHuman('s','skyknight',(t.tx-3+k*1.5)*T,(t.gy-1)*T-29,'guard',room); ents.push(e); } }
   let k=0; for(let y=t.top+9+12;y<t.gy-6&&k<3;y+=12,k++){ const m=makeHuman('a','wizard',(t.tx-1+k)*T,y*T-29,'guard',{cx:t.tx,gy:y,x0:t.tx-4,x1:t.tx+4}); m.hold=true; m.post={x:t.tx-1+k,gy:y}; ents.push(m); }
   for(let j=0;j<2;j++){ const m=makeHuman('a','wizard',(t.tx-3+j*6)*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); ents.push(m); }
-  const a=makeHuman('a','archmage',t.tx*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); a.hp=a.maxHp=700; a.boss=true; a.dmgMul=3; a.name='The Archmage'; ents.push(a);
+  const a=makeHuman('a','archmage',t.tx*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); a.hp=a.maxHp=3000; a.boss=true; a.dmgMul=3; a.name='The Archmage'; ents.push(a);
   turretGuards(t,'s','skyknight'); };
 { const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ if(fort&&!fort.cleared) turretGuards(fort,'m','magmaknight'); }catch(e){ console.warn(e); } return r; }; }
 
@@ -6670,19 +6672,20 @@ const SUMMONS={ [BI.SUM_ARCH]:{name:'Arcane tome',boss:'archmage',where:'at the 
 for(const [id,s] of Object.entries(SUMMONS)){ ITEMS[id]={name:s.name,kind:'summon',desc:`Calls the boss back to fight again. Use it ${s.where}`}; SELL[id]=50;
   customIcon(+id,(rect,px)=>{ rect(3,3,10,11,s.col); rect(4,4,8,9,'rgba(255,255,255,.18)'); rect(6,6,4,4,'#ffe066'); px(7,7,'#ffffff'); rect(3,13,10,1,'rgba(0,0,0,.3)'); }); }
 const SUMMON_OF={ archmage:BI.SUM_ARCH, magmawiz:BI.SUM_MWIZ, ranger:BI.SUM_RANGER, magmaknight:BI.SUM_KNIGHT, grukk:BI.SUM_GRUKK, kraken:BI.SUM_KRAKEN };
-function bossKey(e){ return e.boss&&!e.decoy?'archmage':e.magmaBoss?'magmawiz':e.skyBoss?'ranger':e.magmaLord?'magmaknight':e.mtype==='ogre_king'?'grukk':e.kind==='kraken'?'kraken':null; }
-{ const _kl=kill; kill=function(e,src){ const was=e&&!e.dead, key=was&&bossKey(e); const r=_kl(e,src); if(key&&e.dead&&!e.silent){ const x=cxOf(e), y=cyOf(e);
+/* which boss token a boss drops (bossKey in 35_progression names its trophy) */
+function summonKey(e){ return e.boss&&!e.decoy?'archmage':e.magmaBoss?'magmawiz':e.skyBoss?'ranger':e.magmaLord?'magmaknight':e.mtype==='ogre_king'?'grukk':e.kind==='kraken'?'kraken':null; }
+{ const _kl=kill; kill=function(e,src){ const was=e&&!e.dead, key=was&&summonKey(e); const r=_kl(e,src); if(key&&e.dead&&!e.silent){ const x=cxOf(e), y=cyOf(e);
       if(key==='grukk') spawnDrop(x,y,BI.GRUKK_MACE,1); if(key==='kraken') spawnDrop(player?cxOf(player):x,player?player.y:y,BI.KRAKEN_DAGGERS,1);
       spawnDrop(key==='kraken'&&player?cxOf(player):x,key==='kraken'&&player?player.y:y,SUMMON_OF[key],1); } return r; }; }
-function bossAlive(key){ return ents.some(o=>!o.dead&&bossKey(o)===key); }
+function bossAlive(key){ return ents.some(o=>!o.dead&&summonKey(o)===key); }
 function useSummon(id){ const s=SUMMONS[id]; if(!s||!player) return; if(typeof MP!=='undefined'&&MP.guest){ toast('Only the host can call a boss back',2); return; } if(bossAlive(s.boss)){ toast('That boss is already here',2); return; }
   const px=cxOf(player)/T, py=cyOf(player)/T; let ok=false, spawn=null;
-  if(s.boss==='archmage'&&Math.abs(px-tower.tx)<8&&py<tower.top+12&&py>tower.top-2){ ok=true; spawn=()=>{ const a=makeHuman('a','archmage',tower.tx*T,(tower.top+9)*T-29,'guard',{cx:tower.tx,gy:tower.top+9,x0:tower.tx-4,x1:tower.tx+4}); a.hp=a.maxHp=900; a.boss=true; a.dmgMul=3.2; a.name='The Archmage'; return a; }; }
-  else if(s.boss==='magmawiz'&&Math.abs(px-fort.tx)<12&&py<fort.gy-16&&py>fort.top-2){ ok=true; spawn=()=>{ const w=makeHuman('m','archmage',fort.tx*T,(fort.gy-24)*T-29,'guard',{cx:fort.tx,gy:fort.gy-24,x0:fort.x0+2,x1:fort.x1-2}); w.hp=w.maxHp=900; w.magmaBoss=true; w.dmgMul=3.2; w.floorY=fort.gy-24; w.name='The Magma Wizard'; return w; }; }
+  if(s.boss==='archmage'&&Math.abs(px-tower.tx)<8&&py<tower.top+12&&py>tower.top-2){ ok=true; spawn=()=>{ const a=makeHuman('a','archmage',tower.tx*T,(tower.top+9)*T-29,'guard',{cx:tower.tx,gy:tower.top+9,x0:tower.tx-4,x1:tower.tx+4}); a.hp=a.maxHp=3500; a.boss=true; a.dmgMul=3.2; a.name='The Archmage'; return a; }; }
+  else if(s.boss==='magmawiz'&&Math.abs(px-fort.tx)<12&&py<fort.gy-16&&py>fort.top-2){ ok=true; spawn=()=>{ const w=makeHuman('m','archmage',fort.tx*T,(fort.gy-24)*T-29,'guard',{cx:fort.tx,gy:fort.gy-24,x0:fort.x0+2,x1:fort.x1-2}); w.hp=w.maxHp=4600; w.magmaBoss=true; w.dmgMul=2.8; w.floorY=fort.gy-24; w.name='The Magma Wizard'; return w; }; }
   else if(s.boss==='ranger'){ const c=sky.castle; if(c&&c.throne&&px>=c.throne.x0&&px<=c.throne.x1&&Math.abs(py-c.gy)<14){ ok=true; spawn=()=>{ const b=makeHuman('s','skyranger',c.cx*T,c.throne.gy*T-29,'guard',{cx:c.cx,gy:c.gy,x0:c.throne.x0+1,x1:c.throne.x1-1},true); b.hp=b.maxHp=6000; b.skyBoss=true; b.bigBoss=true; b.def=12; b.dmgMul=2.5; b.speed*=1.6; b.name='The Sky Ranger'; return b; }; } }
-  else if(s.boss==='magmaknight'){ const c=magma.keep; if(c&&c.throne&&px>=c.throne.x0&&px<=c.throne.x1&&Math.abs(py-c.gy)<14){ ok=true; spawn=()=>{ const b=makeHuman('m','magmalord',c.cx*T,c.throne.gy*T-44,'guard',{cx:c.cx,gy:c.gy,x0:c.throne.x0+1,x1:c.throne.x1-1},true); Object.assign(b,{hp:7000,maxHp:7000,magmaLord:true,bigBoss:true,big:1.5,w:18,h:42,def:16,dmgMul:2.7,reachMul:2,name:'The Magma Knight'}); return b; }; } }
-  else if(s.boss==='grukk'){ const is=islands.find(i=>i.orc&&i.orcCave); const cv=is&&is.orcCave; if(cv&&Math.abs(px-cv.boss.x)<20&&Math.abs(py-cv.boss.gy)<10){ ok=true; spawn=()=>{ const b=makeMonster('ogre_king',(cv.boss.x-2)*T,cv.boss.gy*T-MON.ogre_king.h-1); Object.assign(b,{elite:false,hp:5500,maxHp:5500,bigBoss:true,name:'Grukk the Ogre King',orcIsland:is,camp:{x:cv.boss.x,gy:cv.boss.gy}}); return b; }; } }
-  else if(s.boss==='kraken'&&krakenX&&Math.abs(px-krakenX)<60&&player.y<(seaY+10)*T&&player.y>(seaY-6)*T){ ok=true; spawn=()=>{ krakenSlain=false; krakenHp=16000; return null; }; }
+  else if(s.boss==='magmaknight'){ const c=magma.keep; if(c&&c.throne&&px>=c.throne.x0&&px<=c.throne.x1&&Math.abs(py-c.gy)<14){ ok=true; spawn=()=>{ const b=makeHuman('m','magmalord',c.cx*T,c.throne.gy*T-44,'guard',{cx:c.cx,gy:c.gy,x0:c.throne.x0+1,x1:c.throne.x1-1},true); Object.assign(b,{hp:7500,maxHp:7500,magmaLord:true,bigBoss:true,big:1.5,w:18,h:42,def:16,dmgMul:1.7,reachMul:2,name:'The Magma Knight'}); return b; }; } }
+  else if(s.boss==='grukk'){ const is=islands.find(i=>i.orc&&i.orcCave); const cv=is&&is.orcCave; if(cv&&Math.abs(px-cv.boss.x)<20&&Math.abs(py-cv.boss.gy)<10){ ok=true; spawn=()=>{ const b=makeMonster('ogre_king',(cv.boss.x-2)*T,cv.boss.gy*T-MON.ogre_king.h-1); Object.assign(b,{elite:false,hp:15000,maxHp:15000,bigBoss:true,name:'Grukk the Ogre King',orcIsland:is,camp:{x:cv.boss.x,gy:cv.boss.gy}}); return b; }; } }
+  else if(s.boss==='kraken'&&krakenX&&Math.abs(px-krakenX)<60&&player.y<(seaY+10)*T&&player.y>(seaY-6)*T){ ok=true; spawn=()=>{ krakenSlain=false; krakenHp=21000; return null; }; }
   if(!ok){ toast(`Use the ${s.name.toLowerCase()} ${s.where}`,3); return; }
   takeItem(id,1); invDirty=true; const b=spawn(); if(b){ ents.push(b); puff(cxOf(b),cyOf(b),'#ffffff',30,200); } if(typeof sfx==='function') sfx('roar'); toast(`${s.name}: the boss returns to fight you!`,3); }
 
@@ -7526,7 +7529,7 @@ function assignCastleRooms(){ for(const [realm,team] of [['sky','s'],['magma','m
 // ---- every world gets the new castles: the old ones are torn down and rebuilt, and their lords and guards return ----
 function spawnCastleFolk(realm){ const c=castleOf(realm); if(!c||c.cleared) return; const th=c.throne, room={cx:c.cx,gy:c.gy,x0:th.x0+1,x1:th.x1-1};
   if(realm==='sky'){ const b=makeHuman('s','skyranger',c.cx*T,th.gy*T-29,'guard',room,true); b.hp=b.maxHp=5000; b.skyBoss=true; b.bigBoss=true; b.def=12; b.dmgMul=2.4; b.speed*=1.6; b.name='The Sky Ranger'; ents.push(b); }
-  else { const b=makeHuman('m','magmalord',c.cx*T,th.gy*T-44,'guard',room,true); b.hp=b.maxHp=6000; b.magmaLord=true; b.bigBoss=true; b.big=1.5; b.w=18; b.h=42; b.def=16; b.dmgMul=2.6; b.reachMul=2; b.name='The Magma Knight'; ents.push(b); }
+  else { const b=makeHuman('m','magmalord',c.cx*T,th.gy*T-44,'guard',room,true); b.hp=b.maxHp=6500; b.magmaLord=true; b.bigBoss=true; b.big=1.5; b.w=18; b.h=42; b.def=16; b.dmgMul=1.6; b.reachMul=2; b.name='The Magma Knight'; ents.push(b); }
   const team=realm==='sky'?'s':'m', cls=realm==='sky'?SKY_CLS:MAGMA_CLS; const n=20+Math.floor(Math.random()*11);
   for(let k=0;k<n;k++){ const r=c.rooms[k%c.rooms.length]; const x=r.x0+1+Math.random()*Math.max(1,r.x1-r.x0-2); ents.push(makeHuman(team,cls[(Math.random()*cls.length)|0],x*T,r.gy*T-29,'guard',{cx:Math.round((r.x0+r.x1)/2),gy:r.gy,x0:r.x0,x1:r.x1})); }
   const tcls=realm==='sky'?['skyknight','skyarcher']:['magmaknight','magmaknight'];
@@ -7980,7 +7983,7 @@ function trophyModel(key){ const at=(e)=>{ e.facing=1; e.anim=0; e.hurtT=0; e.at
     if(key==='ranger') return {e:at(Object.assign(makeHuman('s','skyranger',0,0,'guard',null,true),{skyBoss:true})), s:0.8};
     if(key==='magmaknight') return {e:at(Object.assign(makeHuman('m','magmalord',0,0,'guard',null,true),{magmaLord:true})), s:0.8};
     if(key==='grukk') return {e:at(Object.assign(makeMonster('ogre_king',0,0),{elite:false})), s:0.3};
-    if(key==='goblin') return {e:at(Object.assign(makeMonster('goblin_chief',0,0),{elite:false})), s:0.95};
+    if(key==='goblin') return {e:at(Object.assign(makeMonster('goblin_chief',0,0),{elite:false})), s:0.95, pair:at(Object.assign(makeAnimal('bear',0,0),{scar:true,temper:'bad'}))};   /* the Beastmaster with his bear */
     if(key==='kraken') return {e:at({kind:'kraken',x:0,y:0,w:80,h:40,hp:1,maxHp:1,tent:[],hurtT:0,diveT:0,patT:0,pat:0,anim:0,facing:1,team:'k'}), s:0.3, kraken:true};
     if(key==='dragon') return {e:at({kind:'dragon',x:0,y:0,w:96,h:56,hp:1,maxHp:1,def:0,flap:0.6,t:0,dstate:'hover',team:'dragon'}), s:0.27, dragon:true};
   }catch(e){ console.warn(e); } return null; }
@@ -7989,6 +7992,7 @@ function paintPlaque(g){ const r=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,
 function makeTrophyArt(){ if(!world||!lair) return false; const N=64; ctx.save(); ctx.setTransform(1,0,0,1,0,0);
   for(const t of TROPHIES){ const m=trophyModel(t.key); const art=mkCanvas(32,32), g=art.getContext('2d'); g.imageSmoothingEnabled=false; paintPlaque(g);
     if(m){ ctx.clearRect(0,0,N*2,N*2); ctx.save(); const k0=Math.max(1,Math.round(m.s*2)); ctx.translate(N,N*1.7); ctx.scale(k0,k0); const e=m.e; e.x=-e.w/2; e.y=-e.h;
+      if(m.pair){ const b=m.pair; e.x=-e.w-1; b.x=1; b.y=-b.h; b.facing=-1; try{ drawAnimal(b); }catch(err){ console.warn('trophy pair',err); } }
       try{ if(m.dragon) drawDragon(e); else if(m.kraken) drawKraken(e); else if(e.kind==='monster'&&typeof drawOgre==='function'&&/ogre/.test(e.mtype)) drawOgre(e); else drawEntity(e); }catch(err){ console.warn('trophy',t.key,err); }
       ctx.restore();
       /* fit the figure into the space above the plaque, standing on it */
@@ -8017,6 +8021,155 @@ let trophyHintT=0;
     else if(!id&&trophyAt(x,y)){ const [ax,ay]=trophyAt(x,y); if(ax!==x||ay!==y) breakTile(ax,ay); }   // tapping any part of a trophy takes it down
     return r; }; }
 for(const t of TROPHIES) ITEMS[t.id].desc=`A replica of the boss you beat. Stand it on two trophy shelves (hung on a back wall) in your home village: ${t.buff.toLowerCase()}`;
+// ===================== the boss ladder =====================
+// The bosses form one ladder, in the order they are meant to be beaten, each harder than the last and each needing a
+// band of soldiers. With fewer of your soldiers or fighting pets near a boss than it needs, your own blows barely
+// scratch it and it heals while the fight goes on. Vorthax keeps its own rule (all 20 soldiers, 50_army.js).
+const BOSS_LADDER=[
+  {key:'goblin',      name:'The Goblin Beastmaster', need:3},
+  {key:'archmage',    name:'The Archmage',           need:4},
+  {key:'magmawiz',    name:'The Magma Wizard',       need:5},
+  {key:'ranger',      name:'The Sky Ranger',         need:6},
+  {key:'magmaknight', name:'The Magma Knight',       need:8},
+  {key:'grukk',       name:'Grukk the Ogre King',    need:10},
+  {key:'kraken',      name:'The Kraken',             need:12},
+  {key:'dragon',      name:'Vorthax',                need:20} ];
+const BOSS_NEED=Object.fromEntries(BOSS_LADDER.map(b=>[b.key,b.need]));
+const ladderKey=e=>{ const k=e&&!e.dead&&!e.ghost&&bossKey(e); return k&&k!=='dragon'?k:null; };
+// your fighters near a boss: soldiers (yours and your friends'), other players, and tamed animals that aren't penned
+function bossArmy(e){ if(!player) return 0; const kr=e.kind==='kraken', R=(kr?30:20)*T; let n=0;
+  for(const o of ents){ if(o.dead||o===player||o.team!==player.team||o.pen||o.fpen) continue; if(!(o.kind==='human'||o.tamed)) continue; if(o.kind==='human'&&(o.role==='miner'||o.worker)) continue; if(o.aboard&&!kr) continue;
+    if(Math.abs(cxOf(o)-cxOf(e))<R&&Math.abs(cyOf(o)-cyOf(e))<R*0.75) n++; } return n; }
+let ladderClock=0;   /* game seconds, so the counts hold at any game speed */
+function bossShare(e){ const k=ladderKey(e); if(!k) return 1; const now=ladderClock; if(!(now-(e._armyAt??-9)<0.4)){ e._armyAt=now; e._army=bossArmy(e);
+    /* the most fighters you brought into this fight count, so soldiers who fall don't undo the army you came with; the fight ends after 20 quiet seconds */
+    if(!(now-(e.lastHurtAt??-1e9)<20)) e._peak=0; e._peak=Math.max(e._peak||0,e._army); }
+  return Math.min(1,(e._peak||0)/BOSS_NEED[k]); }
+const isMe=x=>x===player||(x&&x.proxy&&!x.uid&&x.kind==='human');   // you, or a friend in a shared world (not their soldiers)
+let ladderHint={};
+{ const _dmg=damage; damage=function(t,amt,src,kb){ try{ if(t&&amt>0&&!t.dead&&!(typeof MP!=='undefined'&&MP.guest)){ const key=ladderKey(t);
+      if(key){ t.lastHurtAt=ladderClock; const k=killerOf(src); const sh=bossShare(t);
+        if(isMe(k)&&sh<1){ amt*=0.15+0.85*sh; if(k===player&&!ladderHint[key]){ ladderHint[key]=true; toast(`${t.name||'This boss'} shrugs off a small band and heals while you fight. Bring at least ${BOSS_NEED[key]} soldiers or fighting pets.`,6); } }
+        // the Magma Knight's molten armor: little gets through until it is struck from many sides
+        if(t.moltenT>0){ const who=k||src; if(who){ (t.moltenBy=t.moltenBy||new Set()).add(who); if(who.kind&&!(src&&src.life!=null&&src.vx!=null)&&Math.hypot(cxOf(who)-cxOf(t),cyOf(who)-cyOf(t))<4*T) who.burnT=Math.max(who.burnT||0,2); }
+          if(t.moltenBy&&t.moltenBy.size>=4){ t.moltenT=0; t.crackT=4; puff(cxOf(t),cyOf(t),'#3a1a10',24,180); if(typeof sfx==='function') sfx('boom',cxOf(t),cyOf(t)); toast('The molten armor cracks! Strike now.',2); } else amt*=0.2; }
+        if(t.crackT>0) amt*=1.5; } } }catch(e){} return _dmg(t,amt,src,kb); }; }
+// a boss in a fight it is winning heals: up to 1.2% of its health a second when you come alone
+{ const _u=update; update=function(dt){ _u(dt); ladderClock+=dt; if(!player||state!=='play'||(typeof MP!=='undefined'&&MP.guest)) return; const now=ladderClock;
+    for(const e of ents){ if(!ladderKey(e)||e.hp>=e.maxHp||!(now-(e.lastHurtAt??-1e9)<20)) continue; const sh=bossShare(e); if(sh>=1) continue;
+      const h=e.maxHp*0.012*(1-sh)*dt; e.hp=Math.min(e.maxHp,e.hp+h); e.healAcc=(e.healAcc||0)+h; if(e.healAcc>=Math.max(5,e.maxHp*0.01)){ addFloat(cxOf(e),e.y-8,'+'+Math.round(e.healAcc),'#7dff8a'); e.healAcc=0; } }
+    bossFxTick(dt); }; }
+// the boss bar shows every ladder boss you are fighting, with how many of your fighters are with you
+{ const _uh=updateHUD; updateHUD=function(dt){ const r=_uh(dt); try{ const bb=$('#bossbar'); if(!bb||!player) return r; let best=null, bd=40*T;
+      for(const e of ents){ const k=ladderKey(e); if(!k||!(e.bigBoss||e.awake||e.target||e.hp<e.maxHp)) continue; const d=Math.hypot(cxOf(e)-cxOf(player),cyOf(e)-cyOf(player)); if(d<bd){ bd=d; best=e; } }
+      if(best&&(bb.hidden||$('#bossname').textContent.startsWith(best.name||'#'))){ bb.hidden=false; const k=ladderKey(best), n=Math.min(bossArmyShown(best),BOSS_NEED[k]);
+        const txt=`${best.name||'Boss'} · your army: ${n}/${BOSS_NEED[k]}`; if($('#bossname').textContent!==txt) $('#bossname').textContent=txt;
+        $('#bossfill').style.width=(100*best.hp/best.maxHp)+'%'; $('#bosshp').textContent=Math.ceil(best.hp).toLocaleString()+' / '+best.maxHp.toLocaleString(); } }catch(e){} return r; }; }
+function bossArmyShown(e){ if(typeof MP!=='undefined'&&MP.guest) return bossArmy(e); bossShare(e); return Math.max(e._army||0,e._peak||0); }
+
+// ---- timed boss effects: warning marks on the ground and the blows that follow them ----
+let bossFx=[];   // {x,y,w,t,t0,col,kind,fn}
+function bossFxTick(dt){ for(const f of bossFx){ f.t-=dt; if(f.t<=0&&f.fn){ const fn=f.fn; f.fn=null; try{ fn(); }catch(e){ console.warn(e); } } } bossFx=bossFx.filter(f=>f.t>0); }
+function drawBossFx(){ const now=performance.now()/1000;
+  for(const f of bossFx){ const a=Math.max(0,Math.min(1,1-f.t/f.t0)); ctx.save();
+    if(f.kind==='crack'){ ctx.globalAlpha=0.35+0.5*a; ctx.fillStyle=f.col; ctx.fillRect(Math.round(f.x-f.w/2),Math.round(f.y-2),Math.round(f.w),3); ctx.fillStyle='#fff2a0'; ctx.fillRect(Math.round(f.x-1),Math.round(f.y-2-6*a),2,Math.round(6*a)); }
+    else if(f.kind==='mark'&&f.on&&!f.on.dead){ const x=cxOf(f.on), y=cyOf(f.on), r=10+8*(1-a); ctx.strokeStyle=f.col; ctx.globalAlpha=0.6+0.4*Math.sin(now*20); ctx.lineWidth=1.5; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.stroke(); ctx.beginPath(); ctx.moveTo(x-r-4,y); ctx.lineTo(x+r+4,y); ctx.moveTo(x,y-r-4); ctx.lineTo(x,y+r+4); ctx.stroke(); }
+    else if(f.kind==='wind'&&f.on&&!f.on.dead){ const x=cxOf(f.on), y=cyOf(f.on); ctx.strokeStyle='#e8f4ff'; ctx.globalAlpha=0.5; ctx.lineWidth=1; for(let k=0;k<6;k++){ const ang=now*6+k*Math.PI/3, r=14+18*(1-a)+k*2; ctx.beginPath(); ctx.arc(x,y,r,ang,ang+0.9); ctx.stroke(); } }
+    ctx.restore(); } }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawBossFx(); drawMolten(); }catch(e){} return r; }; }
+
+// ---- the Archmage and the Magma Wizard fly, teleport, and chase you out of their towers ----
+const WIZ_LEASH=60;   // blocks from home before they give up and go back
+const isWizBoss=e=>e.kind==='human'&&e.cls==='archmage'&&(e.boss||e.magmaBoss||e.decoy)&&!e.ghost&&!e.dead;
+function wizHomePt(e){ const h=e.home||{cx:tower.tx,gy:tower.top+9}; return {x:h.cx*T+8, y:((e.floorY??h.gy)-1.5)*T}; }
+function wizBlink(e,t){ const col=e.team==='m'?'#ff7a2a':'#c8a0ff'; let spot=null;
+  if(t) for(let k=0;k<16&&!spot;k++){ const s=Math.random()<0.5?-1:1, x=cxOf(t)+s*(3+Math.random()*5)*T, y=cyOf(t)-(1+Math.random()*4)*T; const box={x:x-e.w/2,y:y-e.h/2,w:e.w,h:e.h};
+    if(y>T*2&&!collides(box)&&lineOfSight(box,t)) spot={x,y}; }
+  if(!spot) spot=wizHomePt(e);
+  puff(cxOf(e),cyOf(e),col,16,140); e.x=spot.x-e.w/2; e.y=spot.y-e.h/2; e.vx=e.vy=0; puff(cxOf(e),cyOf(e),col,16,140); if(typeof sfx==='function') sfx('zap',cxOf(e),cyOf(e)); }
+// returns true while the wizard is in the air (awake)
+function wizTick(e,dt){ const t=e.target&&!e.target.dead&&!e.target.aboard?e.target:null, h=wizHomePt(e);
+  if(!e.awake){ if(e.decoy||e.hp<e.maxHp||(t&&Math.hypot(cxOf(t)-cxOf(e),cyOf(t)-cyOf(e))<14*T&&lineOfSight(e,t))){ e.awake=true; e.fly=true; e.tpT=1.5; if(!e.decoy) toast(`${e.name||'The wizard'} rises into the air!`,2); } else return false; }
+  const far=Math.hypot(cxOf(e)-h.x,cyOf(e)-h.y)>WIZ_LEASH*T; if(far&&t){ e.target=null; e.idleT=0; }
+  let gx, gy;
+  /* every 9 to 12 seconds it lands for a moment to gather its strength: the opening for swords */
+  if(t&&!far&&!e.decoy){ e.landCd=(e.landCd??9)-dt; if(e.landT>0){ e.landT-=dt; e.fly=false; if(e.landT<=0){ e.landCd=9+Math.random()*3; e.fly=true; puff(cxOf(e),e.y+e.h,e.team==='m'?'#ff7a2a':'#c8a0ff',10,90); } return 'land'; }
+    if(e.landCd<=0){ e.landT=2.5; e.fly=false; e.vx=0; e.vy=Math.max(e.vy,60); return 'land'; } }
+  if(t&&!far){ e.idleT=0; e.orbT=(e.orbT??0)-dt; if(e.orbT<=0){ e.orbT=2.5+Math.random()*2; e.orbS=Math.random()<0.5?-1:1; e.orbH=0.5+Math.random()*2.5; }
+    gx=cxOf(t)+e.orbS*5.5*T; gy=cyOf(t)-e.orbH*T+Math.sin(e.anim*2)*10; }
+  else { gx=h.x; gy=h.y; e.idleT=(e.idleT||0)+dt; const d=Math.hypot(cxOf(e)-gx,cyOf(e)-gy);
+    if(e.decoy){ gx=cxOf(e); gy=cyOf(e); }
+    else if(d<T||e.idleT>8){ if(d>=T) wizBlink(e,null); e.awake=false; e.fly=false; e.idleT=0; e.vx=e.vy=0; return false; } }
+  const sp=e.speed*1.4; e.vx=clamp((gx-cxOf(e))*2.5,-sp,sp); e.vy=clamp((gy-cyOf(e))*2.5,-sp,sp); e.facing=t?(cxOf(t)>cxOf(e)?1:-1):e.facing;
+  e.kbT=Math.max(e.kbT||0,dt+0.001); e.floatT=0;
+  e.stuckT=e.hitWall?(e.stuckT||0)+dt:0; if(e.stuckT>0.4&&e.orbT>0.5) e.orbT=0;   /* bumped into a wall: try another side and height */
+  e.tpT=(e.tpT??3)-dt;
+  if(t&&!far&&!e.decoy&&(e.tpT<=0||e.stuckT>2||(e.tpT<2&&!lineOfSight(e,t)))){ e.tpT=(e.phase2?2.5:4)+Math.random()*2.5; e.stuckT=0; wizBlink(e,t); }
+  return true; }
+{ const _ua=updateAI; updateAI=function(e,dt){ if(!isWizBoss(e)) return _ua(e,dt);
+    const flying=wizTick(e,dt); if(!flying){ e.fly=false; return _ua(e,dt); }
+    if(flying==='land'){ e.blinkT=99; e.floatT=0; const r=_ua(e,dt); e.blinkT=99; e.fly=false; return r; }
+    e.blinkT=99; const r=_ua(e,dt); if(e.blinkT<90&&!e.dead){ e.blinkT=99; wizBlink(e,e.target&&!e.target.dead?e.target:null); }   // its old floor blink becomes a blink through the air
+    return r; }; }
+// the portal still opens at the top of the wizard's tower, wherever in the sky it falls; its treasure drops where it fell
+{ const _k=kill; kill=function(e,src){ if(!(e&&!e.dead&&!e.decoy&&!e.ghost&&e.kind==='human'&&e.cls==='archmage'&&(e.boss||e.magmaBoss))) return _k(e,src);
+    const ox=e.x, oy=e.y, n0=drops.length, h=e.home||{cx:tower.tx,gy:tower.top+9}; e.x=h.cx*T+8-e.w/2; e.y=(e.floorY??h.gy)*T-e.h; const hx=e.x, hy=e.y;
+    const r=_k(e,src); for(let i=n0;i<drops.length;i++){ drops[i].x+=ox-hx; drops[i].y+=oy-hy; } e.x=ox; e.y=oy; return r; }; }
+
+// ---- the Goblin Beastmaster slips into the shadows, then strikes from behind ----
+function chiefTick(e,dt){ const t=e.target&&!e.target.dead?e.target:null; e.stT=(e.stT??6)-dt;
+  if(e.stealthT>0){ e.stealthT-=dt; e.peaceful=true; e.atkCd=Math.max(e.atkCd,0.1); const v=e.stOn&&!e.stOn.dead?e.stOn:null;
+    if(v){ const gx=cxOf(v)-(v.facing||1)*1.6*T; e.vx=clamp((gx-cxOf(e))*4,-e.speed*3,e.speed*3); e.kbT=Math.max(e.kbT||0,dt+0.001); e.facing=cxOf(v)>cxOf(e)?1:-1; }
+    if(Math.random()<0.2) parts.push({x:cxOf(e)+(Math.random()-.5)*10,y:cyOf(e)+(Math.random()-.5)*16,vx:0,vy:-20,life:0.5,col:'#4a5a3a',sz:2});
+    if(e.stealthT<=0){ e.peaceful=false; puff(cxOf(e),cyOf(e),'#4a5a3a',18,110); e.stT=(e.phase2?5:7.5)+Math.random()*2;
+      if(v&&Math.hypot(cxOf(v)-cxOf(e),cyOf(v)-cyOf(e))<2.8*T){ damage(v,Math.round((e.dmg||22)*2.2),e,240); addFloat(cxOf(v),v.y-12,'Backstab!','#ffcf3a'); if(typeof sfx==='function') sfx('hit',cxOf(v),cyOf(v)); } }
+    return; }
+  if(e.stT<=0&&t&&Math.abs(cxOf(t)-cxOf(e))<14*T){ e.stealthT=2.2; e.stOn=t; e.peaceful=true; puff(cxOf(e),cyOf(e),'#4a5a3a',24,130); if(t===player||Math.abs(cxOf(player)-cxOf(e))<20*T) toast('The Beastmaster vanishes into the shadows!',1.5);
+    for(const o of ents) if(o.chiefPet&&!o.dead){ o.target=t; o.charge=true; } } }
+{ const _ua=updateAI; updateAI=function(e,dt){ if(e.chief&&e.mtype==='goblin_chief'&&!e.ghost&&!e.dead){ try{ chiefTick(e,dt); }catch(err){ console.warn(err); } }
+    /* the melee bosses' moves (dash, slam, sweep; the Knight's charge, leap, armor and eruptions) only ran for ranged fighters before */
+    if((e.magmaLord||e.chief)&&!e.ghost&&!e.dead&&!(e.stealthT>0)){ const t=e.target&&!e.target.dead&&!e.target.aboard?e.target:null; if(t&&Math.abs(cxOf(t)-cxOf(e))<16*T&&Math.abs(cyOf(t)-cyOf(e))<8*T) try{ bruteBoss(e,t); }catch(err){ console.warn(err); } }
+    const cd0=e.atkCd; const r=_ua(e,dt);
+    if(e.magmaLord&&e.atkCd>cd0+0.01) e.atkCd=Math.max(e.atkCd,1.3);   /* a heavy blade: one great swing at a time, not the Magma blade's flurry */
+    return r; }; }
+{ const _de=drawEntity; drawEntity=function(e){ if(e.stealthT>0||e.stealthG){ ctx.save(); ctx.globalAlpha=0.08+0.06*Math.sin(performance.now()/70); const r=_de(e); ctx.restore(); return r; }
+    return _de(e); }; }
+/* the molten armor glows through the dark of the keep, so it is drawn after the lighting */
+function drawMolten(){ for(const e of ents){ if(e.dead||!(e.moltenT>0||e.moltenG||e.crackT>0)) continue; if(Math.abs(cxOf(e)-cxOf(player))>40*T) continue;
+    ctx.save(); const g=0.5+0.5*Math.sin(performance.now()/90), x=Math.round(e.x), y=Math.round(e.y), cr=e.crackT>0&&!(e.moltenT>0||e.moltenG);
+    ctx.lineWidth=1; for(let k=0;k<3;k++){ ctx.globalAlpha=(cr?0.6:0.4+0.5*g)*(1-k*0.3); ctx.strokeStyle=cr?'#2a0a05':k?'#ff7b1c':'#ffe9a0'; ctx.strokeRect(x-2-k*2+0.5,y-2-k*2+0.5,e.w+3+k*4,e.h+3+k*4); }
+    if(!cr&&Math.random()<0.4) parts.push({x:x+Math.random()*e.w,y:y+Math.random()*e.h,vx:(Math.random()-.5)*20,vy:-40-Math.random()*40,life:0.5,col:Math.random()<.5?'#ffd27a':'#ff7b1c',sz:2});
+    ctx.restore(); } }
+
+// ---- the Sky Ranger: a gale that hurls everyone back, and a marked shot you have to dodge ----
+{ const _ra=rangerAct; rangerAct=function(e,t){ const dt=1/60; if(!e.skyBoss) return _ra(e,t); e.galeCd=(e.galeCd??7)-dt; e.markCd=(e.markCd??4)-dt;
+    if(e.galeT>0){ e.galeT-=dt; e.vx=0; if(e.galeT<=0) rangerGale(e); return; }
+    if(e.markT>0){ e.markT-=dt; if(e.markT<=0) rangerMarkShot(e); return _ra(e,t); }
+    if(e.galeCd<=0&&Math.hypot(cxOf(t)-cxOf(e),cyOf(t)-cyOf(e))<12*T){ e.galeCd=e.phase2?8:11; e.galeT=0.9; bossFx.push({kind:'wind',on:e,t:0.9,t0:0.9}); toast('The Sky Ranger gathers the wind!',1.2); return; }
+    if(e.markCd<=0){ e.markCd=e.phase2?6:9; const foes=ents.filter(o=>targetable(o)&&hostile(e.team,o.team)&&o.kind!=='animal'&&Math.hypot(cxOf(o)-cxOf(e),cyOf(o)-cyOf(e))<20*T);
+      const v=Math.random()<0.5&&foes.includes(player)?player:foes[(Math.random()*foes.length)|0]; if(v){ e.markOn=v; e.markT=1.4; bossFx.push({kind:'mark',on:v,t:1.4,t0:1.4,col:'#ff3a3a'}); if(v===player) toast('The Sky Ranger takes aim at you: move!',1.2); } }
+    return _ra(e,t); }; }
+function rangerGale(e){ puff(cxOf(e),cyOf(e),'#e8f4ff',30,260); if(typeof sfx==='function') sfx('boom',cxOf(e),cyOf(e)); const R=12*T;
+  for(const o of ents){ if(!targetable(o)||!hostile(e.team,o.team)) continue; const dx=cxOf(o)-cxOf(e), d=Math.hypot(dx,cyOf(o)-cyOf(e)); if(d>R) continue;
+    damage(o,15,e,350+500*(1-d/R)); o.vy=Math.min(o.vy||0,-260); } }
+function rangerMarkShot(e){ const v=e.markOn; e.markOn=null; if(!v||v.dead) return; const x0=cxOf(e), y0=e.y+10, dx=cxOf(v)-x0, dy=cyOf(v)-y0, d=Math.hypot(dx,dy)||1;
+  projs.push({x:x0,y:y0,vx:dx/d*950,vy:dy/d*950,team:e.team,dmg:70,kind:'arrow',life:2,grav:0,r:5,src:e}); e.atkT=0.3; puff(x0,y0,'#ffffff',8,120); }
+
+// ---- the Magma Knight: molten armor that only an army can crack, and lines of erupting fire ----
+{ const _bb=bruteBoss; bruteBoss=function(e,t){ if(!e.magmaLord) return _bb(e,t); const dt=1/60;
+    if(e.moltenT>0){ e.moltenT-=dt; if(e.moltenT<=0) e.moltenBy=null; } if(e.crackT>0) e.crackT-=dt;
+    e.armorCd=(e.armorCd??8)-dt; e.eruptCd=(e.eruptCd??5)-dt;
+    if(e.armorCd<=0&&!(e.moltenT>0)){ e.armorCd=e.phase2?10:13; e.moltenT=6; e.moltenBy=new Set(); puff(cxOf(e),cyOf(e),'#ffd27a',24,160); toast("The Magma Knight's armor glows white-hot! Strike it from many sides at once to crack it.",2.5); }
+    if(e.eruptCd<=0&&e.grounded){ e.eruptCd=e.phase2?6:9; knightEruption(e,t); }
+    return _bb(e,t); }; }
+function knightEruption(e,t){ const dir=cxOf(t)>cxOf(e)?1:-1, y=e.y+e.h; const n=e.phase2?10:8;
+  for(let i=0;i<n;i++){ const x=cxOf(e)+dir*(2+i*1.5)*T; const fy=y; bossFx.push({kind:'crack',x,y:fy,w:12,t:0.9+i*0.12,t0:0.9+i*0.12,col:'#ff7b1c',fn:()=>{
+      for(let k=0;k<5;k++) projs.push({x:x+(k-2)*4,y:fy-4,vx:(k-2)*10,vy:-420-k*25,team:e.team,dmg:26,kind:'fire',life:0.8,grav:300,r:6,src:e,burn:true}); puff(x,fy,'#ff7b1c',8,120); }}); }
+  if(Math.abs(cxOf(player)-cxOf(e))<25*T) toast('The ground cracks open: get out of the line!',1.2); }
+
+// ---- multiplayer: friends see the Beastmaster vanish and the Knight's armor glow ----
+{ const _ml=mpMobList; mpMobList=function(){ const out=_ml(); try{ for(const m of out){ const e=ents.find(o=>o.nid===m[0]); if(e) m[6]=(m[6]?1:0)|(e.stealthT>0?2:0)|(e.moltenT>0?4:0)|(e.crackT>0?8:0); } }catch(e){} return out; }; }
+{ const _mg=mpGhosts; mpGhosts=function(list){ const r=_mg(list); try{ for(const [nid,,,,,,atk] of list){ const g=MP.ghosts.get(nid); if(!g) continue; g.atkT=atk&1?0.2:0; g.stealthG=!!(atk&2); g.moltenG=!!(atk&4); g.crackT=atk&8?0.2:0; } }catch(e){} return r; }; }
 })();
 </script>
 </body>
