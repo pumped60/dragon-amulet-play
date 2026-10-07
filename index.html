@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791414461"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791414461"><link rel="manifest" href="manifest.webmanifest?v=1791414461"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791414897"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791414897"><link rel="manifest" href="manifest.webmanifest?v=1791414897"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.15</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.16</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.15</h3>
+    <h3>New in Beta 0.9.16</h3>
+    <p>Trees are back to their original look: the trunk reaches a round crown and the leaves sit over it.</p>
+    <h3>Beta 0.9.15</h3>
     <p>The eye (under ⋯ More, or H) opens a "Show on screen" list with everything ticked: untick the item bar, health bars, info lines, mini-map or a button and it hides at once; tick it to bring it back. Hide everything hides it all in one go. In shared worlds every player sees bomb blasts and the bosses' warning marks (the Sky Ranger's wind ring and target, the Magma Knight's glowing cracks).</p>
     <h3>Beta 0.9.14</h3>
     <p>A calmer top bar: Bag, Army, Buildings, the God menu (test world), Menu and ⋯ More. Crafting is a tab at the top of the bag (C still opens it). Speed sits with the other switches in the God menu. On phones the Fly button sits beside Torch. Full screen, Hide items, Quick save and Hide the buttons are under ⋯ More.</p>
@@ -412,7 +414,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.9.9</h3>
     <p>Silver gear: a silver sword, mace, daggers, bow, staff, pickaxe, axe, hoe, hammer and fishing rod sit between wood and iron. Smelt silver ore (found just below the surface, above iron) into silver bars at a furnace and craft them at a workbench, or buy them from the Blacksmith. Each is halfway between the wooden one and the iron one; the silver rod catches the same fish as the wooden rod with less junk and quicker bites. Shops sell crafted things for half of what their materials are worth, and there is more iron in the ground. Pickaxes clear grass and plants, a double jump breaks a fall, weather can be switched off (new world or Settings), the phone move stick sits on the left (Settings moves it right for left-handed players), friends see your grappling hook, and the Dragonborn's fire (hold B on a computer) stops at the ground.</p>
     <h3>Beta 0.9.8</h3>
-    <p>Trees grow with their wood all the way up inside the leaves: trunks reach into the crown, big trees grow branches with leafy clumps, spruces are tall cones, and you can see the bark through the leaves. In a shared world everything matches for every player: a tree someone cuts falls for everyone, back walls and new village houses show up whole, a wanderer given a job by any player becomes the same shopkeeper, miner or soldier for all, and friends' arrows fly the way they were aimed. Water falls through platforms, slides down slopes and stairs, and is drawn in front of furniture standing in it. Rain and floods leave half as much water, and penned animals stay in until the water is three quarters of a block over the fence. On the surface a roof alone no longer makes it dark: only a space closed in on every side with a back wall is dark. Storms and rain last 12 hours of game time, and the water they leave drains away within the next 6. Mouse aim lock starts switched on (L or Settings turns it off). The Mac and Windows apps fetch the newest game each time they start.</p>
+    <p>In a shared world everything matches for every player: a tree someone cuts falls for everyone, back walls and new village houses show up whole, a wanderer given a job by any player becomes the same shopkeeper, miner or soldier for all, and friends' arrows fly the way they were aimed. Water falls through platforms, slides down slopes and stairs, and is drawn in front of furniture standing in it. Rain and floods leave half as much water, and penned animals stay in until the water is three quarters of a block over the fence. On the surface a roof alone no longer makes it dark: only a space closed in on every side with a back wall is dark. Storms and rain last 12 hours of game time, and the water they leave drains away within the next 6. Mouse aim lock starts switched on (L or Settings turns it off). The Mac and Windows apps fetch the newest game each time they start.</p>
     <h3>Beta 0.9.7</h3>
     <p>Every menu (bag, crafting, shops, chests, army, map, settings, help and the rest) has an X in the top right corner that stays put however far you scroll. On phones you always sprint while moving (switch it off in Settings), double-tap anywhere in the world to place a torch, and the Torch button switches your hand-held light. Joysticks are the starting touch controls again; "Stick and tap" puts a move stick on the right and lets you tap anywhere to mine, build or attack there. Every class button in the new world screen is the same size, with the Dragonborne weapon tally just under them.</p>
     <h3>Beta 0.9.6</h3>
@@ -532,7 +534,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.15</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.16</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -778,7 +780,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.15</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.16</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -797,7 +799,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.15', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.16', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -8780,51 +8782,13 @@ function mpReplayFx(list){ MP.replayFx=true; try{ for(const e of list){ const [ 
       bossFx.push({kind:k2,x,y,w,t,t0:t,col:col||'#ff7b1c',on,remote:true}); } } } finally{ MP.replayFx=false; } }
 { const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(Array.isArray(d.fx)){ MP.fxSeen=MP.fxSeen||{}; const top=d.fx.reduce((m,e)=>Math.max(m,e[0]),0);
       if(MP.fxSeen[r.key]==null){ MP.fxSeen[r.key]=top; } else { const seen=MP.fxSeen[r.key], fresh=d.fx.filter(e=>e[0]>seen); if(fresh.length){ MP.fxSeen[r.key]=top; mpReplayFx(fresh); } }   /* the first message only sets where we start */ } }catch(e){ console.warn(e); } return res; }; }
-// ===================== trees: wood all the way up inside the leaves =====================
-// Every tree's trunk runs up through its crown, bigger trees grow branches with leafy clumps at their ends,
-// spruces are tall cones around a trunk that reaches the tip, and the leaves in front of the wood are thin
-// enough to see the bark behind them.
-growTree=function(x,h,sz,R,kind='oak'){ if(kind==='birch') return growBirch(x,h,R); const w=WOODS[kind]; if(!w) return; const L=w.log, LF=w.leaf, tw=Math.max(1,sz|0);
-  const ht=sz===3?22+((R()*10)|0):sz===2?12+((R()*6)|0):5+((R()*5)|0), rad=sz===3?8:sz===2?5:3;
-  const inMap=(X,Y)=>X>=0&&X<W&&Y>=skyOff&&Y<H;
-  const log=(X,Y)=>{ if(inMap(X,Y)&&(world[Y*W+X]===0||LEAF_IDS.has(world[Y*W+X]))) world[Y*W+X]=L; };
-  const leaf=(X,Y)=>{ if(inMap(X,Y)&&world[Y*W+X]===0) world[Y*W+X]=LF; };
-  for(let k=1;k<=ht;k++){ const y=h-k; if(y<skyOff+1) break; for(let t=0;t<tw;t++) log(x+t,y); }
-  const ty=h-ht, xm=x+((tw-1)>>1), ccx=x+(tw-1)/2;
-  if(kind==='spruce'){ const top=ty-Math.max(3,Math.round(rad*0.9)), bot=h-Math.max(3,Math.round(ht*0.35));
-    for(let y=ty;y>=top;y--) log(xm,y);   // the trunk reaches the tip
-    for(let y=bot;y>=top-1;y--){ const f=(y-(top-1))/Math.max(1,bot-(top-1)); let half=Math.round(1+f*(rad+0.5)); if((bot-y)%3===2) half=Math.max(1,half-1);   // layered, like pine boughs
-      for(let X=x-half;X<=x+tw-1+half;X++) leaf(X,y); }
-    leaf(xm,top-2); }
-  else { const flat=kind==='jungle'?0.55:0.7, up=Math.max(1,Math.round(rad*flat*0.6));
-    for(let y=ty;y>ty-up;y--) log(xm,y);   // the trunk carries on up into the crown
-    const nb=sz===1?(R()<0.5?1:0):sz===2?2:3, tips=[];
-    for(let i=0;i<nb;i++){ const dir=i===0?(tips.first=R()<0.5?-1:1):(i%2?-tips.first:tips.first), by=ty+Math.round(rad*0.3)-((R()*Math.max(1,rad*0.5))|0), len=Math.max(2,Math.round(rad*(0.45+R()*0.25)));
-      let X=dir<0?x-1:x+tw, Y=Math.min(h-2,by); for(let j=0;j<len;j++){ log(X,Y); if(j%2===1){ Y--; log(X,Y); } X+=dir; }   /* each step up is joined, so the branch is felled with its tree */ tips.push([X-dir,Y]); }
-    const blob=(bx,by,r,fl)=>{ for(let dy=-Math.ceil(r*fl)-1;dy<=Math.ceil(r*fl*0.75)+1;dy++) for(let dx=-r-1;dx<=r+1;dx++){ const e=(dx*dx)/(r*r)+(dy*dy)/((r*fl)*(r*fl)); if(e>1+R()*0.2) continue; leaf(Math.round(bx+dx),by+dy); } };
-    blob(ccx,ty,rad,flat); for(const [tx,tyy] of tips) blob(tx,tyy-1,Math.max(2,Math.round(rad*0.5)),0.8); }
-  // root flare and roots down to the ground, as before
-  if(sz>1) for(let t=-1;t<=tw;t++){ const X=x+t; if(X>=0&&X<W&&world[(h-1)*W+X]===0&&(t<0||t>=tw)) world[(h-1)*W+X]=L; }
-  for(let t=(sz>1?-1:0);t<=(sz>1?tw:tw-1);t++){ const X=x+t; if(X<0||X>=W||world[(h-1)*W+X]!==L) continue; let y=h; while(y<H-2&&(world[y*W+X]===0||LEAF_IDS.has(world[y*W+X])||!BLOCKS[world[y*W+X]].solid)&&world[y*W+X]!==B.WATER){ world[y*W+X]=L; y++; } } };
-{ const _gb=growBirch; growBirch=function(x,h,R){ const r=_gb(x,h,R); let y=h-1; while(y>skyOff&&world[(y-1)*W+x]===B.BIRCH_LOG) y--;   // y = the top of the white trunk
-    for(let k=1;k<=2;k++){ const i=(y-k)*W+x; if(world[i]===B.BIRCH_LEAVES&&world[i-W]===B.BIRCH_LEAVES) world[i]=B.BIRCH_LOG; else break; } return r; }; }
-// leaves in front of wood are see-through in places: a lacy copy of each leaf texture is drawn over trunk and branch tiles
-const LACE={};
-function laceTex(id){ if(LACE[id]!==undefined) return LACE[id]; const src=TEX[id]; if(!src){ LACE[id]=null; return null; } const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); const R=mulberry(id*31+7);
-  g.clearRect(5,0,6,16);   /* the middle stays open, so the trunk shows through */ for(let i=0;i<6;i++){ const y=(R()*15)|0, x=4+((R()*2)|0), s=2+((R()*2)|0); const X=x+(i%2?5:0); g.drawImage(src,X,y,s,s,X,y,s,s); }
-  for(let i=0;i<8;i++){ const x=(R()*15)|0, y=(R()*15)|0; g.clearRect(x,y,2,2); } return LACE[id]=c; }
-logCoverTex=function(x,y){ if(x<1||x>=W-1||y<1) return null; const l=world[y*W+x-1], r=world[y*W+x+1], u=world[(y-1)*W+x]; const Lf=LEAF_IDS.has(l)&&l!==B.PALM_LEAF, Rf=LEAF_IDS.has(r)&&r!==B.PALM_LEAF, Uf=LEAF_IDS.has(u)&&u!==B.PALM_LEAF;
-  return (Lf&&Rf)||(Uf&&(Lf||Rf))?laceTex(Lf?l:Rf?r:u):null; };
-
-// older worlds: trunks are carried up into their crowns once (new worlds grow that way already)
-function treeWoodFix(){ let n=0; const own=id=>WOOD_OF[id]&&WOOD_OF[id].log;
-  for(let y=skyOff+3;y<H-2;y++) for(let x=1;x<W-2;x++){ const L=world[y*W+x]; if(!LOG_IDS.has(L)||L===B.PALM_LOG) continue; const LF=(WOOD_OF[L]||{}).leaf; if(!LF||world[(y-1)*W+x]!==LF) continue;
-    const l=world[y*W+x-1]===L, r=world[y*W+x+1]===L, r2=world[y*W+x+2]===L; if(!((!l&&!r)||(!l&&r&&!r2)||(l&&r))) continue;
-    let k=0; while(y-1-k>skyOff&&world[(y-1-k)*W+x]===LF) k++; const up=Math.floor(k*0.55); if(k<3) continue;
-    for(let j=1;j<=up&&j<=k-2;j++){ world[(y-j)*W+x]=L; n++; } }
-  return n; }
+// ===================== trees =====================
+// Trees grow and draw as they did before Beta 0.9.8: the trunk reaches the bottom of a round crown and the leaves
+// are drawn over any wood inside the crown (growTree in 04_world.js, logCoverTex in 42_beta09.js).
+// Worlds made with Beta 0.9.8 to 0.9.15 keep their taller trunks and branches, and the leaves cover them in the same way.
+// home.treeWood marks worlds that no longer need the old trunk-raising pass (removed in Beta 0.9.16).
 { const _ng=newGame; newGame=function(...a){ const r=_ng(...a); try{ if(home) home.treeWood=1; }catch(e){} return r; }; }
-{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.treeWood&&!(typeof MP!=='undefined'&&MP.guest)){ home.treeWood=1; const n=treeWoodFix(); if(n) for(let x=0;x<W;x++) updateSkyTop(x); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.treeWood) home.treeWood=1; }catch(e){} return r; }; }
 // ===================== water through platforms and in front of furniture; aim lock on =====================
 
 // ---- water falls through platforms you can drop through (the platform stays, under the water) ----
