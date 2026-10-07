@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791410146"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791410146"><link rel="manifest" href="manifest.webmanifest?v=1791410146"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791413715"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791413715"><link rel="manifest" href="manifest.webmanifest?v=1791413715"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.13</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.14</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.13</h3>
+    <h3>New in Beta 0.9.14</h3>
+    <p>A calmer top bar: Bag, Army, Buildings, the God menu (test world), Menu and ⋯ More. Crafting is a tab at the top of the bag (C still opens it). Speed sits with the other switches in the God menu. On phones the Fly button sits beside Torch. Full screen, Hide items, Quick save and Hide the buttons are under ⋯ More.</p>
+    <h3>Beta 0.9.13</h3>
     <p>Tidier item screens, especially on phones and in the test world. The God menu shows items, soldiers, enemies and animals as a grid of tiles (tap one to take or spawn it), with quick filters for weapons, tools, armor, blocks, food and materials. Creative "All items" uses the same tiles. On phones, crafting shows two recipes side by side in shorter cards, and its tabs scroll in one row. The day, coins and party lines in the corner sit on a soft dark backing, so they stay readable.</p>
     <h3>Beta 0.9.12</h3>
     <p>Settings &gt; Torches lets you choose how torches work: what a tap does with the Torch button on (place a torch, or light only), whether double-tap places a torch, whether tools rest while the torch is on, and whether holding Shift lights your torch on a computer.</p>
@@ -470,7 +472,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>This update</h3>
     <p>Your bag holds the hotbar plus 6 rows of 9; anything extra stays on the ground. Drag items between slots with the mouse or a finger; hover an item to see its picture and stats. Press F with several things nearby to pick one from a list. Tools and weapons are crafted with sticks (from planks), and any wood works in wooden recipes. The first tier of every tool is now wood (copper is gone). Adamantite ore is only found in the magma realm, mythril only in the sky realm's clouds, and only after their bosses fall. Cows give beef, sheep give mutton and wool (wool makes beds). Enemy faction islands have watchtowers full of archers and mages at both ends, and the goblins keep a wooden lookout on their forest shore. You can give up to 5 villagers of a conquered village new jobs. A second great ocean on the far side of the world hides the Kraken and its sunken treasure.</p>
     <h3>Portals, realms and factions</h3>
-    <p>Your faction is the abandoned castle you claim; the other two colors are your enemies. Claiming your village, conquering a castle or freeing a camp prisoner opens a portal (on castle roofs). Click a portal to open the map, then tap another portal to travel with your army to your home, freed camps, allied or conquered castles, the wizard tower, the magma fortress, and (once their wizards are dead) the sky and magma realms. Each trip costs a few coins. Each realm has a huge castle with 20 to 30 soldiers and its boss in a throne room at the far end. The Sky Ranger (5,000 health) and the Magma Knight (6,000 health, twice the reach, burning blade) need an army to beat. You start in wooden armor; every armor set changes your look, with a crest in your faction's color. Cannon, blast-bow and other explosions break blocks (75% drop), and fire arrows scorch grass, trees and wooden buildings. In the test world, the Speed button runs the world at 2x, 5x or 10x.</p>
+    <p>Your faction is the abandoned castle you claim; the other two colors are your enemies. Claiming your village, conquering a castle or freeing a camp prisoner opens a portal (on castle roofs). Click a portal to open the map, then tap another portal to travel with your army to your home, freed camps, allied or conquered castles, the wizard tower, the magma fortress, and (once their wizards are dead) the sky and magma realms. Each trip costs a few coins. Each realm has a huge castle with 20 to 30 soldiers and its boss in a throne room at the far end. The Sky Ranger (5,000 health) and the Magma Knight (6,000 health, twice the reach, burning blade) need an army to beat. You start in wooden armor; every armor set changes your look, with a crest in your faction's color. Cannon, blast-bow and other explosions break blocks (75% drop), and fire arrows scorch grass, trees and wooden buildings. In the test world, the Speed button in the God menu runs the world at 2x, 5x or 10x.</p>
     <h3>Thrown weapons</h3>
     <p>The Adamantite sword and the Magma blade are thrown: attack to send the sword spinning out, and it comes back to your hand like a boomerang, cutting everything it passes both ways. The Adamantite mace swings on a chain: tap to hurl it, or hold to whirl it above your head and let go to hurl it wherever you are aiming at that moment. The Adamantite daggers and the Kraken daggers are thrown one after another, up to 3 at a time, and each comes back like the sword.</p>
     <h3>Bosses, in order</h3>
@@ -492,7 +494,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Tools and farming</h3>
     <p>Pickaxes break blocks and mushrooms. Axes chop trees, bamboo, cacti and mushroom trees. Hoes till grass or dirt into soil and clear plants; plant wheat, carrot or pumpkin seeds on tilled soil and harvest ripe crops with the hoe. Saplings and berry bushes grow faster on tilled soil. Hammers break back walls and reshape blocks. Every tool upgrades from copper to adamantite.</p>
     <h3>Computer shortcuts</h3>
-    <p>Hold Shift while moving to sprint 20% faster. You can attack while sprinting. While you hold Shift with torches in your bag, light glows around you, and clicking places a torch instead of using what you hold. Alt + click also places a torch. Use the Full screen button for a bigger view. Food and potions have a 5 second cooldown.</p>
+    <p>Hold Shift while moving to sprint 20% faster. You can attack while sprinting. While you hold Shift with torches in your bag, light glows around you, and clicking places a torch instead of using what you hold. Alt + click also places a torch. Use Full screen (under ⋯ More on the top bar) for a bigger view. Food and potions have a 5 second cooldown.</p>
     <h3>Beds and wings</h3>
     <p>Craft a bed (10 planks, 2 herbs) and sleep in it at night to skip to morning; it becomes your respawn point. Sky chests hold sky wings: hold jump in the air to fly for up to 15 seconds. They recharge on the ground. Sky chests stay sealed until the Sky Ranger is defeated; walk up to any sealed chest to see what it needs. Water washes away plants, crops and torches. From the map you can travel straight to the fishing village or any of your fishermen.</p>
     <h3>Your people</h3>
@@ -528,7 +530,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.13</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.14</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -775,7 +777,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.13</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.14</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -794,7 +796,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.13', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.14', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -8922,6 +8924,44 @@ body.menux #godClose{ display:none; }
 }
 #sub{ text-shadow:none !important; background:rgba(16,12,24,.55); padding:3px 7px 2px; border-radius:3px; width:max-content; max-width:46vw; }   /* readable over sky and ground without a doubled shadow */
 #sub:empty{ display:none; }`; document.head.appendChild(st); }
+
+// ---- a calmer top bar: Bag, Army, Buildings, (God, Room), Menu and More ----
+// Crafting is a tab in the bag; Speed lives in the God menu; Fly sits by the Torch button on phones; the rest is under More (⋯).
+const MORE_IDS=['btnFull','btnItems','btnQuickSave','btnMap','btnMin'];
+{ const bar=$('#topbtns'), more=document.createElement('button'); more.className='hbtn ico'; more.id='btnMore'; more.textContent='⋯'; more.dataset.tip='More'; more.setAttribute('aria-label','More buttons');
+  bar.insertBefore(more,$('#btnMenu'));
+  const menu=document.createElement('div'); menu.id='moreMenu'; menu.hidden=true; document.body.appendChild(menu);
+  for(const id of MORE_IDS.concat(['btnCraft','btnSpeed'])){ const el=$('#'+id); if(el) el.classList.add('inmore'); }
+  const label=el=>({btnFull:'Full screen',btnItems:el.getAttribute('aria-pressed')==='false'?'Show items':'Hide items',btnQuickSave:'Quick save',btnMap:'Show the mini-map',btnMin:'Hide the buttons and mini-map',btnFly:el.dataset.tip?el.dataset.tip.replace(/ \(G\)$/,''):'Fly'})[el.id]||el.dataset.tip||el.textContent;
+  const open=()=>{ const ids=['btnFly'].filter(id=>!document.body.classList.contains('touch')).concat(MORE_IDS);
+    menu.innerHTML=ids.map(id=>$('#'+id)).filter(el=>el&&!el.hidden).map(el=>`<button class="choice" data-more="${el.id}">${label(el)}</button>`).join('')||'<p>Nothing else here right now.</p>';
+    const r=more.getBoundingClientRect(); menu.style.top=(r.bottom+6)+'px'; menu.style.right=Math.max(8,innerWidth-r.right)+'px'; menu.hidden=false; };
+  more.addEventListener('click',e=>{ e.stopPropagation(); if(menu.hidden) open(); else menu.hidden=true; });
+  menu.addEventListener('click',e=>{ const b=e.target.closest('[data-more]'); if(!b) return; menu.hidden=true; $('#'+b.dataset.more).click(); });
+  addEventListener('pointerdown',e=>{ if(!menu.hidden&&!e.target.closest('#moreMenu,#btnMore')) menu.hidden=true; },true);
+  // Fly: beside the Torch button on phones, under More on a computer (G flies too)
+  const fly=$('#btnFly'); const placeFly=()=>{ const touch=document.body.classList.contains('touch');
+    if(touch&&fly.parentElement!==$('#hud')){ $('#hud').appendChild(fly); fly.classList.remove('inmore'); fly.classList.add('sidefly'); }
+    else if(!touch&&fly.parentElement!==bar){ bar.insertBefore(fly,more); fly.classList.remove('sidefly'); }
+    if(!touch) fly.classList.add('inmore'); };
+  placeFly(); setInterval(placeFly,1000);
+  const fit=()=>{ const ref=$('#btnInv'); if(ref&&ref.offsetWidth) more.style.minWidth=ref.offsetWidth+'px', more.style.minHeight=ref.offsetHeight+'px'; }; fit(); setTimeout(fit,800); addEventListener('resize',()=>setTimeout(fit,100)); }
+// Speed joins the God menu's switches
+{ const sp=$('#btnSpeed'), hdr=$('#godKill')&&$('#godKill').parentElement; if(sp&&hdr){ const b=document.createElement('button'); b.className='xbtn'; b.id='godSpeed'; hdr.insertBefore(b,$('#godClose'));
+    const sync=()=>{ b.textContent=sp.textContent||'Speed 1x'; }; b.addEventListener('click',()=>{ sp.click(); sync(); }); $('#btnGod').addEventListener('click',sync); } }
+// Bag and Crafting share one screen: tabs at the top switch between them
+{ const hd=$('#invTitle'); if(hd){ const tabs=document.createElement('div'); tabs.id='invTabs'; tabs.innerHTML='<button class="chip" data-it="bag">Bag</button><button class="chip" data-it="craft">Crafting</button>'; hd.after(tabs);
+    tabs.addEventListener('click',e=>{ const b=e.target.closest('[data-it]'); if(!b) return; const want=b.dataset.it; if((want==='craft')===$('#scrInv').classList.contains('craftmode')) return; hide('scrInv'); state='play'; openInv(want==='craft'?'craft':undefined); });
+    const sync=()=>{ const c=$('#scrInv').classList.contains('craftmode'); for(const b of tabs.children) b.setAttribute('aria-pressed',(b.dataset.it==='craft')===c); };
+    new MutationObserver(sync).observe($('#scrInv'),{attributes:true,attributeFilter:['class','hidden']}); sync(); } }
+{ const st=document.createElement('style'); st.textContent=`
+#topbtns .inmore{ display:none !important; } body.hudmin #topbtns #btnMin.inmore{ display:inline-flex !important; }   /* minimized: its button stays to bring everything back */
+#btnMore{ font-size:18px; line-height:1; min-width:var(--more-w,auto); }
+#moreMenu{ position:fixed; z-index:60; display:flex; flex-direction:column; gap:4px; min-width:190px; padding:6px; background:var(--panel); border:3px solid var(--edge); box-shadow:4px 4px 0 var(--ink); } #moreMenu[hidden]{ display:none; }
+#moreMenu .choice{ text-align:left; font-size:8px; padding:9px 10px; } #moreMenu p{ font-size:8px; margin:6px; }
+#btnFly.sidefly{ position:absolute; right:calc(env(safe-area-inset-right,0px) + 92px); bottom:calc(var(--sb) + 170px); pointer-events:auto; }
+#invTabs{ display:flex; gap:4px; margin-left:12px; margin-right:auto; } #invTabs .chip{ font-size:8px; padding:6px 10px; }
+#scrInv .phead{ display:flex; align-items:center; gap:6px; }`; document.head.appendChild(st); }
 })();
 </script>
 </body>
