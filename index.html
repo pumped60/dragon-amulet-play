@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791401660"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791401660"><link rel="manifest" href="manifest.webmanifest?v=1791401660"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791402413"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791402413"><link rel="manifest" href="manifest.webmanifest?v=1791402413"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.11</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.12</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.11</h3>
+    <h3>New in Beta 0.9.12</h3>
+    <p>Settings &gt; Torches lets you choose how torches work: what a tap does with the Torch button on (place a torch, or light only), whether double-tap places a torch, whether tools rest while the torch is on, and whether holding Shift lights your torch on a computer.</p>
+    <h3>Beta 0.9.11</h3>
     <p>Phones: in Stick and tap, the pickaxe always mines the nearest block toward where you tap, so it never jumps between blocks. The Torch button lights your way and turns taps into torch placing: one tap puts a torch exactly where you tap, and your pickaxe, axe, hoe and hammer rest until you switch it off (weapons still swing). Double-tap still places a torch when the Torch button is off.</p>
     <h3>Beta 0.9.10</h3>
     <p>The Dragon Amulet wiki: a page for every item, recipe, class, monster, boss, animal, shop and crafting station, all linked together, with search. Open it from the title screen or at pumped60.github.io/dragon-amulet-play/wiki. The Multiplayer menu lists your recent shared worlds with their codes: tap Host again or Join to go straight back in. Arrows and spells shot by soldiers, enemies and bosses fly the right way on every player's screen.</p>
@@ -524,7 +526,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.11</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.12</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -600,6 +602,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <div class="phead"><h2>Settings</h2><button class="xbtn" id="settingsBack">Back</button></div>
     <h3 style="margin-top:0">Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
     <h3>Weather</h3><div class="choices" id="setWeather" style="grid-template-columns:repeat(2,1fr)"></div>
+    <h3>Torches</h3><p class="desc" style="min-height:0">Torch button (phones): what a tap does while it is on</p><div class="choices" id="setTorchTap" style="grid-template-columns:repeat(2,1fr)"></div>
+    <p class="desc" style="min-height:0">Double-tap to place a torch (phones)</p><div class="choices" id="setTorchDbl" style="grid-template-columns:repeat(2,1fr)"></div>
+    <p class="desc" style="min-height:0">Tools while the Torch button is on</p><div class="choices" id="setTorchTools" style="grid-template-columns:repeat(2,1fr)"></div>
+    <p class="desc" style="min-height:0">Shift lights your torch (computer)</p><div class="choices" id="setTorchShift" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Auto sprint on phones</h3><div class="choices" id="setAutoSprint" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Item info on phones</h3><div class="choices" id="setItemInfo" style="grid-template-columns:repeat(2,1fr)"></div>
     <p class="desc" style="min-height:0">Joysticks: the left stick moves (push up to jump, down to drop or dive). Drag the right stick toward where you want to mine, build or attack and hold it. You don't need to tap each block.</p>
@@ -767,7 +773,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.11</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.12</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -786,7 +792,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.11', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.12', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4346,7 +4352,7 @@ function drawLighting(tx0,tx1,ty0,ty1,dl){
     for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const dd=Math.hypot(x+0.5-lx,y+0.5-ly); if(dd>=r) continue; const v=inten*(1-dd/r); const k=(y-ty0)*lw+(x-tx0); if(v>Lg[k]) Lg[k]=v; } };
   const m=8; for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++) for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){ const id=world[y*W+x], b=BLOCKS[id]; if(b.light){ if(id===B.LANTERN&&player&&bg[y*W+x]&&Math.hypot(x-cxOf(player)/T,y-cyOf(player)/T)>12) continue; addLight(x+0.5,y+0.5,b.light,0.98); } }
   if(player&&!player.dead){ let [lr,li]=playerLight(); const hi=heldItem(); const ptx=clamp(Math.floor(cxOf(player)/T),0,W-1); const under=Math.floor(cyOf(player)/T)>skyTop[ptx]+2;
-    if(under&&!player.fx.light){ lr=1.6; li=0.12; } if(((hi&&hi.id===B.TORCH)||((input.sprint||(typeof torchMode!=='undefined'&&torchMode))&&countItem(B.TORCH)>0))&&!headWet(player)){ lr=Math.max(lr,10); li=Math.max(li,0.95); } if(player.fx.amulet){ lr=Math.max(lr,7); li=Math.max(li,0.7); } addLight(cxOf(player)/T,cyOf(player)/T,lr,li); }
+    if(under&&!player.fx.light){ lr=1.6; li=0.12; } if(((hi&&hi.id===B.TORCH)||(((input.sprint&&settings.torchShift!==false)||(typeof torchMode!=='undefined'&&torchMode))&&countItem(B.TORCH)>0))&&!headWet(player)){ lr=Math.max(lr,10); li=Math.max(li,0.95); } if(player.fx.amulet){ lr=Math.max(lr,7); li=Math.max(li,0.7); } addLight(cxOf(player)/T,cyOf(player)/T,lr,li); }
   for(const p of projs) if(p.kind!=='arrow') addLight(p.x/T,p.y/T,p.kind==='fireball'?5:3,0.9);
   if(dragon&&!dragon.dead) addLight(cxOf(dragon)/T,cyOf(dragon)/T,9,0.75);
   for(const e of ents) if(e.glow&&!e.dead) addLight(cxOf(e)/T,cyOf(e)/T,e.glow,0.8);
@@ -5297,7 +5303,7 @@ function setAim(ev){ input.sx=ev.clientX; input.sy=ev.clientY; input.ax=camX+(ev
 let aimPointer=null;
 cv.addEventListener('pointerdown',ev=>{ if(ev.pointerType==='touch') enableTouch(); if(state!=='play'||touches.size>=2) return;
   if(MP.on&&MP.arrowHits&&MP.arrowHits.length){ const h=MP.arrowHits.find(h=>Math.hypot(h.x-ev.clientX,h.y-ev.clientY)<28); if(h){ travelToFriend(h.key); ev.preventDefault(); return; } }
-  if((ev.altKey||((ev.shiftKey||input.sprint)&&countItem(B.TORCH)>0))&&ev.pointerType==='mouse'){ setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); if(countItem(B.TORCH)<=0) toast('No torches in your bag',1.2); else if(Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))<=REACH&&placeOK(tx,ty,B.TORCH)){ if(TORCH_REPL(tileAt(tx,ty))){ if(tileAt(tx,ty)===B.TALLGRASS&&Math.random()<0.25) give(I.WHEAT_SEEDS,1); breakTile(tx,ty); } if(tileAt(tx,ty)===0||tileAt(tx,ty)===B.LEAVES){ setTile(tx,ty,B.TORCH); mpEdit(tx,ty); takeItem(B.TORCH,1); invDirty=true; } } return; }
+  if((ev.altKey||((ev.shiftKey||input.sprint)&&settings.torchShift!==false&&countItem(B.TORCH)>0))&&ev.pointerType==='mouse'){ setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); if(countItem(B.TORCH)<=0) toast('No torches in your bag',1.2); else if(Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))<=REACH&&placeOK(tx,ty,B.TORCH)){ if(TORCH_REPL(tileAt(tx,ty))){ if(tileAt(tx,ty)===B.TALLGRASS&&Math.random()<0.25) give(I.WHEAT_SEEDS,1); breakTile(tx,ty); } if(tileAt(tx,ty)===0||tileAt(tx,ty)===B.LEAVES){ setTile(tx,ty,B.TORCH); mpEdit(tx,ty); takeItem(B.TORCH,1); invDirty=true; } } return; }
   setAim(ev); input.mouse=ev.pointerType==='mouse';
   for(const v of ents){ if((v.kind!=='villager'&&v.kind!=='captive'&&v.kind!=='drifter')||v.dead) continue; if(input.ax>v.x-6&&input.ax<v.x+v.w+6&&input.ay>v.y-12&&input.ay<v.y+v.h+4&&Math.hypot(cxOf(v)-cxOf(player),cyOf(v)-cyOf(player))<7*T){ openShop(v); return; } }
   { const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); const it=heldItem();
@@ -8627,7 +8633,8 @@ function touchSprint(){ return settings.autoSprint!==false&&document.body.classL
 const dtap={t:0,x:0,y:0};
 addEventListener('pointerdown',ev=>{ if(ev.pointerType!=='touch'||ev.target!==cv||state!=='play'||!player) return; const now=performance.now();
   const dbl=now-dtap.t<330&&Math.hypot(ev.clientX-dtap.x,ev.clientY-dtap.y)<30; dtap.t=dbl?0:now; dtap.x=ev.clientX; dtap.y=ev.clientY;
-  if(!(dbl||torchMode)) return; if(countItem(B.TORCH)<=0&&rules.mode!=='creative'){ if(torchMode){ ev.stopImmediatePropagation(); ev.preventDefault(); toast('No torches in your bag',1.5); } return; }   // with the Torch button on, one tap places a torch where you tap
+  const tapPlace=torchMode&&settings.torchTap!=='light', dblPlace=dbl&&settings.torchDbl!==false;   // Settings > Torches
+  if(!(dblPlace||tapPlace)) return; if(countItem(B.TORCH)<=0&&rules.mode!=='creative'){ if(tapPlace){ ev.stopImmediatePropagation(); ev.preventDefault(); toast('No torches in your bag',1.5); } return; }   // with the Torch button on, one tap places a torch where you tap
   ev.stopImmediatePropagation(); ev.preventDefault(); setAim(ev); input.use=false; placeTorchAt(Math.floor(input.ax/T),Math.floor(input.ay/T)); },true);
 { const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const on=settings.autoSprint!==false; $('#setAutoSprint').innerHTML=`<button class="choice" data-k="autoSprint" data-v="true" aria-pressed="${on}">On<small>Always sprint while moving</small></button><button class="choice" data-k="autoSprint" data-v="false" aria-pressed="${!on}">Off<small>Walk at normal speed</small></button>`; }catch(e){} return r; }; }
 
@@ -8649,7 +8656,14 @@ function menuCloser(o){ if(!o) return null; for(const sel of ['[id$="Close"]:not
 { const show=()=>{ const a=$('#appLink'); if(a) a.hidden=/Electron/i.test(navigator.userAgent)||document.body.classList.contains('touch')||matchMedia('(pointer:coarse)').matches; }; show(); setTimeout(show,1500); }
 
 // with the Torch button on, tools rest (weapons still swing)
-{ const _u=update; update=function(dt){ if(typeof torchMode!=='undefined'&&torchMode&&input.use&&player){ const h=heldItem(), d=h&&ITEMS[h.id]; if(d&&['pick','axe','hoe','hammer'].includes(d.kind)) input.use=false; } return _u(dt); }; }
+{ const _u=update; update=function(dt){ if(typeof torchMode!=='undefined'&&torchMode&&settings.torchTools!=='work'&&input.use&&player){ const h=heldItem(), d=h&&ITEMS[h.id]; if(d&&['pick','axe','hoe','hammer'].includes(d.kind)) input.use=false; } return _u(dt); }; }
+
+// Settings > Torches: how the Torch button, double-tap and Shift work
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const o=(k,v,cur,l,sm)=>`<button class="choice" data-k="${k}" data-v="${v}" aria-pressed="${cur===v}">${l}<small>${sm}</small></button>`;
+    $('#setTorchTap').innerHTML=o('torchTap','place',settings.torchTap||'place','Place torches','A tap puts a torch where you tap')+o('torchTap','light',settings.torchTap||'place','Light only','Taps keep mining and building');
+    $('#setTorchDbl').innerHTML=o('torchDbl',true,settings.torchDbl!==false,'On','Double-tap places a torch')+o('torchDbl',false,settings.torchDbl!==false,'Off','Double-tap does nothing special');
+    $('#setTorchTools').innerHTML=o('torchTools','rest',settings.torchTools||'rest','Rest','Pickaxe, axe, hoe and hammer pause')+o('torchTools','work',settings.torchTools||'rest','Keep working','Tools work with the torch on');
+    $('#setTorchShift').innerHTML=o('torchShift',true,settings.torchShift!==false,'On','Holding Shift lights your torch')+o('torchShift',false,settings.torchShift!==false,'Off','Shift only sprints'); }catch(e){} return r; }; }
 // ===================== multiplayer: one shared world, one shared village =====================
 
 // ---- every change to the world reaches every player ----
