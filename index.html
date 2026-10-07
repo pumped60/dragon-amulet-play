@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791356469"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791356469"><link rel="manifest" href="manifest.webmanifest?v=1791356469"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791401660"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791401660"><link rel="manifest" href="manifest.webmanifest?v=1791401660"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.10</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.11</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.10</h3>
+    <h3>New in Beta 0.9.11</h3>
+    <p>Phones: in Stick and tap, the pickaxe always mines the nearest block toward where you tap, so it never jumps between blocks. The Torch button lights your way and turns taps into torch placing: one tap puts a torch exactly where you tap, and your pickaxe, axe, hoe and hammer rest until you switch it off (weapons still swing). Double-tap still places a torch when the Torch button is off.</p>
+    <h3>Beta 0.9.10</h3>
     <p>The Dragon Amulet wiki: a page for every item, recipe, class, monster, boss, animal, shop and crafting station, all linked together, with search. Open it from the title screen or at pumped60.github.io/dragon-amulet-play/wiki. The Multiplayer menu lists your recent shared worlds with their codes: tap Host again or Join to go straight back in. Arrows and spells shot by soldiers, enemies and bosses fly the right way on every player's screen.</p>
     <h3>Beta 0.9.9</h3>
     <p>Silver gear: a silver sword, mace, daggers, bow, staff, pickaxe, axe, hoe, hammer and fishing rod sit between wood and iron. Smelt silver ore (found just below the surface, above iron) into silver bars at a furnace and craft them at a workbench, or buy them from the Blacksmith. Each is halfway between the wooden one and the iron one; the silver rod catches the same fish as the wooden rod with less junk and quicker bites. Shops sell crafted things for half of what their materials are worth, and there is more iron in the ground. Pickaxes clear grass and plants, a double jump breaks a fall, weather can be switched off (new world or Settings), the phone move stick sits on the left (Settings moves it right for left-handed players), friends see your grappling hook, and the Dragonborn's fire (hold B on a computer) stops at the ground.</p>
@@ -522,7 +524,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.10</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.11</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -765,7 +767,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.10</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.11</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -784,7 +786,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.10', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.11', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2719,7 +2721,8 @@ function updatePlayer(dt){
 function aimPoint(def){ if(def&&(def.kind==='axe'||def.kind==='hoe')) def={...def,kind:'pick',toolKind:def.kind}; if(def&&(def.kind==='hammer'||def.kind==='shape')) def={...def,kind:def.kind==='hammer'?'pick':'block'}; const p=player; const cx=cxOf(p), cy=cyOf(p); let dx, dy, far;
   if(stick.r.on&&stick.r.mag>0.2){ dx=stick.r.x; dy=stick.r.y; far=REACH*Math.max(0.35,stick.r.mag); }
   else { dx=input.ax-cx; dy=input.ay-cy; far=Math.hypot(dx,dy); const m=far||1; dx/=m; dy/=m; }
-  const locked=input.mouse&&settings.aimLock&&!stick.r.on&&def&&def.kind==='pick'; if(locked) far=REACH;
+  const fingerTap=settings.controls==='finger'&&document.body.classList.contains('touch')&&!stick.r.on;   // Stick and tap always mines the nearest block toward the tap
+  const locked=(input.mouse&&settings.aimLock||fingerTap)&&!stick.r.on&&def&&def.kind==='pick'; if(locked) far=REACH;
   const pt={x:cx+dx*Math.max(far,40),y:cy+dy*Math.max(far,40)};
   if(!def||(def.kind!=='pick'&&def.kind!=='block'&&def.kind!=='wall')){ if(stick.r.on) { pt.x=cx+dx*140; pt.y=cy+dy*140; } pt.tx=Math.floor(pt.x/T); pt.ty=Math.floor(pt.y/T); return pt; }
   const direct={x:cx+dx*far,y:cy+dy*far}; const dtx=Math.floor(direct.x/T), dty=Math.floor(direct.y/T);
@@ -6957,7 +6960,7 @@ let torchMode=false;
 { const btn=document.createElement('button'); btn.id='btnTorchT'; btn.className='hbtn'; btn.textContent='Torch'; btn.setAttribute('aria-label','Torch: like holding Shift. Your torch lights the way and each tap places a torch. Tap again to stop.'); btn.hidden=true;
   btn.style.cssText='position:absolute;right:calc(env(safe-area-inset-right,0px) + 14px);bottom:calc(var(--sb) + 170px);pointer-events:auto;font-size:9px;padding:10px 10px;';
   $('#hud').appendChild(btn);
-  btn.addEventListener('pointerdown',ev=>{ ev.stopPropagation(); ev.preventDefault(); torchMode=!torchMode; btn.style.background=torchMode?'var(--gold)':''; btn.style.color=torchMode?'var(--ink)':''; if(torchMode) toast(countItem(B.TORCH)>0?'Torch on: it lights the way. Double-tap anywhere to place a torch.':'No torches in your bag',2.5); });
+  btn.addEventListener('pointerdown',ev=>{ ev.stopPropagation(); ev.preventDefault(); torchMode=!torchMode; btn.style.background=torchMode?'var(--gold)':''; btn.style.color=torchMode?'var(--ink)':''; if(torchMode) toast(countItem(B.TORCH)>0?'Torch on: it lights the way, and a tap places a torch where you tap. Mining rests until you switch it off.':'No torches in your bag',3); else toast('Torch off: back to mining',1.5); });
   setInterval(()=>{ const show=document.body.classList.contains('touch')&&state==='play'; if(btn.hidden===show) btn.hidden=!show; if(!show&&torchMode){ torchMode=false; btn.style.background=''; btn.style.color=''; } },500);
 }
 // ===================== Beta 0.8 =====================
@@ -8619,11 +8622,12 @@ let itemCtx=null;
 // You always sprint while moving on a touch screen (Settings: Auto sprint on phones). It runs at your sprint speed
 // but, unlike holding Shift, doesn't light your torch or make you hungrier.
 function touchSprint(){ return settings.autoSprint!==false&&document.body.classList.contains('touch')&&!input.mouse; }
-// Double-tap a spot in the world to place a torch there (any touch mode). The Torch button only switches the hand-held light.
+// Double-tap a spot in the world to place a torch there (any touch mode). With the Torch button on, your torch lights the way,
+// a single tap places a torch exactly where you tap, and tools (pickaxe, axe, hoe, hammer) rest until you switch it off.
 const dtap={t:0,x:0,y:0};
 addEventListener('pointerdown',ev=>{ if(ev.pointerType!=='touch'||ev.target!==cv||state!=='play'||!player) return; const now=performance.now();
   const dbl=now-dtap.t<330&&Math.hypot(ev.clientX-dtap.x,ev.clientY-dtap.y)<30; dtap.t=dbl?0:now; dtap.x=ev.clientX; dtap.y=ev.clientY;
-  if(!dbl||countItem(B.TORCH)<=0) return;
+  if(!(dbl||torchMode)) return; if(countItem(B.TORCH)<=0&&rules.mode!=='creative'){ if(torchMode){ ev.stopImmediatePropagation(); ev.preventDefault(); toast('No torches in your bag',1.5); } return; }   // with the Torch button on, one tap places a torch where you tap
   ev.stopImmediatePropagation(); ev.preventDefault(); setAim(ev); input.use=false; placeTorchAt(Math.floor(input.ax/T),Math.floor(input.ay/T)); },true);
 { const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const on=settings.autoSprint!==false; $('#setAutoSprint').innerHTML=`<button class="choice" data-k="autoSprint" data-v="true" aria-pressed="${on}">On<small>Always sprint while moving</small></button><button class="choice" data-k="autoSprint" data-v="false" aria-pressed="${!on}">Off<small>Walk at normal speed</small></button>`; }catch(e){} return r; }; }
 
@@ -8643,6 +8647,9 @@ function menuCloser(o){ if(!o) return null; for(const sel of ['[id$="Close"]:not
 
 // the title screen links to the Mac and Windows apps (not shown inside the app itself, or on phones)
 { const show=()=>{ const a=$('#appLink'); if(a) a.hidden=/Electron/i.test(navigator.userAgent)||document.body.classList.contains('touch')||matchMedia('(pointer:coarse)').matches; }; show(); setTimeout(show,1500); }
+
+// with the Torch button on, tools rest (weapons still swing)
+{ const _u=update; update=function(dt){ if(typeof torchMode!=='undefined'&&torchMode&&input.use&&player){ const h=heldItem(), d=h&&ITEMS[h.id]; if(d&&['pick','axe','hoe','hammer'].includes(d.kind)) input.use=false; } return _u(dt); }; }
 // ===================== multiplayer: one shared world, one shared village =====================
 
 // ---- every change to the world reaches every player ----
