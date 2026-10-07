@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791415920"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791415920"><link rel="manifest" href="manifest.webmanifest?v=1791415920"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791417025"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791417025"><link rel="manifest" href="manifest.webmanifest?v=1791417025"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.17</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.18</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.17</h3>
+    <h3>New in Beta 0.9.18</h3>
+    <p>On phones, the ✕ in the top corner closes every menu and pop-up, including the pause menu, the ⋯ More menu and the eye's list, and never taps the button underneath. Tapping an item shows just its name; tap the name to see its picture and every stat. Settings has tabs (Controls, Screen, Sound, World, Computer). Under Screen you can choose what tapping an item shows (name only, short, everything or nothing) and stand the item bar and the health, mana, XP and hunger bars up and down instead of across.</p>
+    <h3>Beta 0.9.17</h3>
     <p>Two treasures to find in chests. The <b>Dragon compass</b> shows which way the dragon's lair lies and how far; without it you can't tell. The <b>Astrolabe</b> shows the season, the weather and the days until the next season; without it the clock shows only the day. One compass always waits in the goblin warcamp's gold chest, the Jeweler sells astrolabes, and the test world starts with both.</p>
     <h3>Beta 0.9.16</h3>
     <p>Trees are back to their original look: the trunk reaches a round crown and the leaves sit over it.</p>
@@ -536,7 +538,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.17</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.18</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -609,38 +611,52 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrSettings" hidden>
   <div class="panel">
-    <div class="phead"><h2>Settings</h2><button class="xbtn" id="settingsBack">Back</button></div>
-    <h3 style="margin-top:0">Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
-    <h3>Weather</h3><div class="choices" id="setWeather" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Torches</h3><p class="desc" style="min-height:0">Torch button (phones): what a tap does while it is on</p><div class="choices" id="setTorchTap" style="grid-template-columns:repeat(2,1fr)"></div>
-    <p class="desc" style="min-height:0">Double-tap to place a torch (phones)</p><div class="choices" id="setTorchDbl" style="grid-template-columns:repeat(2,1fr)"></div>
-    <p class="desc" style="min-height:0">Tools while the Torch button is on</p><div class="choices" id="setTorchTools" style="grid-template-columns:repeat(2,1fr)"></div>
-    <p class="desc" style="min-height:0">Shift lights your torch (computer)</p><div class="choices" id="setTorchShift" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Auto sprint on phones</h3><div class="choices" id="setAutoSprint" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Item info on phones</h3><div class="choices" id="setItemInfo" style="grid-template-columns:repeat(2,1fr)"></div>
-    <p class="desc" style="min-height:0">Joysticks: the left stick moves (push up to jump, down to drop or dive). Drag the right stick toward where you want to mine, build or attack and hold it. You don't need to tap each block.</p>
-    <h3>Joystick size</h3><div class="choices" id="setSize"></div>
-    <h3>Movement stick side (left-handed players can put it on the right)</h3><div class="choices" id="setSwap" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Smart mining and building</h3><div class="choices" id="setSmart" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Surface raid parties</h3><div class="choices" id="setRaids" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Sword attack</h3><div class="choices" id="setSword" style="grid-template-columns:repeat(2,1fr)"></div>
-    <p class="desc" style="min-height:0">Swords and maces hit in any direction you aim. Spears always stab, maces always swing.</p>
-    <h3>Screen layout</h3>
-    <div class="uiScale">
-      <div class="uiSliders">
-        <label>Hotbar size <span id="uiHotV">100%</span><input type="range" id="uiHot" min="0.6" max="2" step="0.05"></label>
-        <label>Health and mana bars <span id="uiBarsV">100%</span><input type="range" id="uiBars" min="0.6" max="2" step="0.05"></label>
-        <label>Day, coins and party info <span id="uiInfoV">100%</span><input type="range" id="uiInfo" min="0.6" max="2" step="0.05"></label>
-        <div class="uiSub">Which corner each piece sits in, and its order</div><div id="hudOrder"></div>
-        <button class="xbtn" id="uiReset">Reset layout and sizes</button>
+    <div class="phead"><h2>Settings</h2><div id="setTabs"><button class="chip" data-st="controls">Controls</button><button class="chip" data-st="screen">Screen</button><button class="chip" data-st="sound">Sound</button><button class="chip" data-st="world">World</button><button class="chip" data-st="computer">Computer</button></div><button class="xbtn" id="settingsBack">Back</button></div>
+    <section class="stab" data-tab="controls">
+      <p class="desc stip">How you move, mine and fight on a phone or tablet.</p>
+      <h3>Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
+      <p class="desc" style="min-height:0">Joysticks: the left stick moves (push up to jump, down to drop or dive). Drag the right stick toward where you want to mine, build or attack and hold it. You don't need to tap each block.</p>
+      <h3>Joystick size</h3><div class="choices" id="setSize"></div>
+      <h3>Movement stick side</h3><p class="desc" style="min-height:0">Left-handed players can put it on the right.</p><div class="choices" id="setSwap" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Smart mining and building</h3><div class="choices" id="setSmart" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Auto sprint</h3><div class="choices" id="setAutoSprint" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Sword attack</h3><p class="desc" style="min-height:0">Swords and maces hit in any direction you aim. Spears always stab, maces always swing.</p><div class="choices" id="setSword" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Torches</h3><p class="desc" style="min-height:0">Torch button: what a tap does while it is on</p><div class="choices" id="setTorchTap" style="grid-template-columns:repeat(2,1fr)"></div>
+      <p class="desc" style="min-height:0">Double-tap to place a torch</p><div class="choices" id="setTorchDbl" style="grid-template-columns:repeat(2,1fr)"></div>
+      <p class="desc" style="min-height:0">Tools while the Torch button is on</p><div class="choices" id="setTorchTools" style="grid-template-columns:repeat(2,1fr)"></div>
+    </section>
+    <section class="stab" data-tab="screen">
+      <p class="desc stip">What you see on screen and where it sits.</p>
+      <h3>Tapping an item (phones)</h3><p class="desc" style="min-height:0">What shows when you tap an item in the bag, a chest or the item bar.</p><div class="choices" id="setItemInfo" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Item bar</h3><div class="choices" id="setHudHot" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Health, mana, XP and hunger bars</h3><div class="choices" id="setHudBars" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Screen layout</h3>
+      <div class="uiScale">
+        <div class="uiSliders">
+          <label>Hotbar size <span id="uiHotV">100%</span><input type="range" id="uiHot" min="0.6" max="2" step="0.05"></label>
+          <label>Health and mana bars <span id="uiBarsV">100%</span><input type="range" id="uiBars" min="0.6" max="2" step="0.05"></label>
+          <label>Day, coins and party info <span id="uiInfoV">100%</span><input type="range" id="uiInfo" min="0.6" max="2" step="0.05"></label>
+          <div class="uiSub">Which corner each piece sits in, and its order</div><div id="hudOrder"></div>
+          <button class="xbtn" id="uiReset">Reset layout and sizes</button>
+        </div>
+        <div id="hudPreview" aria-label="Preview of the screen layout"><div class="pvHot"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="pvBar hp"><b style="width:80%"></b></div><div class="pvBar mp"><b style="width:55%"></b></div><div class="pvInfo">Day 3<br>245 coins<br>Party 6/20</div><div class="pvGround"></div></div>
       </div>
-      <div id="hudPreview" aria-label="Preview of the screen layout"><div class="pvHot"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="pvBar hp"><b style="width:80%"></b></div><div class="pvBar mp"><b style="width:55%"></b></div><div class="pvInfo">Day 3<br>245 coins<br>Party 6/20</div><div class="pvGround"></div></div>
-    </div>
-    <h3>Sound and music</h3><div class="choices" id="setSound" style="grid-template-columns:repeat(2,1fr)"></div>
-    <div class="uiSliders" style="margin-top:10px"><label>Music volume <span id="volMusicV">100%</span><input type="range" id="volMusic" min="0" max="1" step="0.05"></label><label>Sound effects volume <span id="volSfxV">100%</span><input type="range" id="volSfx" min="0" max="1" step="0.05"></label></div>
-    <h3>Mouse aim lock (computer)</h3><div class="choices" id="setAimLock" style="grid-template-columns:repeat(2,1fr)"></div>
-    <h3>Keyboard shortcuts (computer)</h3><div id="setKeys"></div><button class="xbtn" id="keysReset" style="margin-top:8px">Reset to standard keys</button>
-    <h3>Target outline</h3><div class="choices" id="setCursor" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Target outline</h3><div class="choices" id="setCursor" style="grid-template-columns:repeat(2,1fr)"></div>
+    </section>
+    <section class="stab" data-tab="sound">
+      <h3 style="margin-top:0">Sound and music</h3><div class="choices" id="setSound" style="grid-template-columns:repeat(2,1fr)"></div>
+      <div class="uiSliders" style="margin-top:10px"><label>Music volume <span id="volMusicV">100%</span><input type="range" id="volMusic" min="0" max="1" step="0.05"></label><label>Sound effects volume <span id="volSfxV">100%</span><input type="range" id="volSfx" min="0" max="1" step="0.05"></label></div>
+    </section>
+    <section class="stab" data-tab="world">
+      <h3 style="margin-top:0">Weather</h3><div class="choices" id="setWeather" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Surface raid parties</h3><div class="choices" id="setRaids" style="grid-template-columns:repeat(2,1fr)"></div>
+    </section>
+    <section class="stab" data-tab="computer">
+      <p class="desc stip">Mouse and keyboard.</p>
+      <h3>Mouse aim lock</h3><div class="choices" id="setAimLock" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Shift lights your torch</h3><div class="choices" id="setTorchShift" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Keyboard shortcuts</h3><div id="setKeys"></div><button class="xbtn" id="keysReset" style="margin-top:8px">Reset to standard keys</button>
+    </section>
   </div>
 </div>
 
@@ -782,7 +798,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.17</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.18</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -801,7 +817,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.17', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.18', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5895,7 +5911,7 @@ addEventListener('keydown',e=>{ if(buildMode&&e.key==='Escape'){ buildMode=null;
   nb.addEventListener('click',e=>{ e.stopPropagation(); pop.hidden=!pop.hidden; for(const c of pop.querySelectorAll('[data-keep]')) c.checked=!!(settings.keepVis||{})[c.dataset.keep]; });
   $('#eyeToggle').addEventListener('click',()=>{ toggleHotbar(); pop.hidden=true; });
   pop.addEventListener('change',e=>{ const c=e.target.closest('[data-keep]'); if(!c) return; settings.keepVis=settings.keepVis||{}; settings.keepVis[c.dataset.keep]=c.checked; saveSettings(); applyHide(); });
-  document.addEventListener('pointerdown',e=>{ if(!pop.hidden&&!e.target.closest('#eyePop,#btnItems')) pop.hidden=true; },true); }
+  document.addEventListener('pointerdown',e=>{ if(!pop.hidden&&!e.target.closest('#eyePop,#btnItems,#menuX')) pop.hidden=true; },true); }
 // ---- buildings window from its own icon, and from the Army menu ----
 $('#btnBuild').addEventListener('click',()=>{ if(state==='play') openBuild(); });
 $('#armyPosts').addEventListener('click',()=>{ closeArmy(); openBuild(); setTimeout(()=>{ const el=$('#postList'); if(el) el.scrollIntoView({block:'center'}); },50); });
@@ -5904,7 +5920,7 @@ for(const el of document.querySelectorAll('#topbtns .hbtn, #miniZoom .mz, #miniM
 const TIPS={ btnInv:'Bag (E)', btnCraft:'Craft (C)', btnArmy:'Army (R)', btnBuild:'Buildings', btnMap:'Show the mini-map again', btnFull:'Full screen', btnMenu:'Menu', btnMin:'Minimize the buttons and mini-map', miniMap:'Mini-map: click to open the map (M)', zoomInBtn:'Make the mini-map bigger', zoomOutBtn:'Make the mini-map smaller', btnGod:'God menu (test world)', btnFly:'Fly (G)', btnSpeed:'World speed (test world)' };
 for(const [id,t] of Object.entries(TIPS)){ const el=$('#'+id); if(el&&!el.dataset.tip) el.dataset.tip=t; else if(el&&/^(Bag|Craft|Army|Menu|Full screen)$/.test(el.dataset.tip)) el.dataset.tip=t; }
 { const tip=$('#itemTip'); document.addEventListener('mouseover',ev=>{ const el=ev.target.closest&&ev.target.closest('[data-tip]'); if(!el||!tip) return; tip.classList.add('btntip'); tip.innerHTML=`<b>${el.dataset.tip}</b>`; tip.hidden=false; const r=el.getBoundingClientRect(); tip.style.left=Math.max(8,Math.min(innerWidth-200,r.left))+'px'; tip.style.top=(r.bottom+6)+'px'; });
-  document.addEventListener('mouseout',ev=>{ const el=ev.target.closest&&ev.target.closest('[data-tip]'); if(el&&tip){ tip.hidden=true; tip.classList.remove('btntip'); } }); }
+  document.addEventListener('mouseout',ev=>{ const el=ev.target.closest&&ev.target.closest('[data-tip]'); if(el&&tip&&tip.classList.contains('btntip')){ tip.hidden=true; tip.classList.remove('btntip'); } }); }
 PX_ICONS.build=['.....##.....','....#rr#....','...#rrrr#...','..#rrrrrr#..','.#rrrrrrrr#.','############','.#llllllll#.','.#l##ll##l#.','.#l#uu#b#l#.','.#l##l#b#l#.','.#llll#b#ll#','############'];
 PX_ICONS.god=['.....##.....','....#yy#....','...#yyy#....','..#yyy#.....','.#yyyyyyy#..','.#####yyy#..','.....#yy#...','....#yy#....','...#yy#.....','..#yy#......','..#y#.......','..##........'];
 PX_ICONS.fly=['............','#...........','##..........','#w#.........','#ww##.......','.#www##.....','.#wwwww##...','..#wwwwwww#.','..#wwwwww#..','...##www#...','.....###....','............'];
@@ -8922,7 +8938,7 @@ const MORE_IDS=['btnFull','btnItems','btnQuickSave','btnMap','btnMin'];
     const r=more.getBoundingClientRect(); menu.style.top=(r.bottom+6)+'px'; menu.style.right=Math.max(8,innerWidth-r.right)+'px'; menu.hidden=false; };
   more.addEventListener('click',e=>{ e.stopPropagation(); if(menu.hidden) open(); else menu.hidden=true; });
   menu.addEventListener('click',e=>{ const b=e.target.closest('[data-more]'); if(!b) return; menu.hidden=true; $('#'+b.dataset.more).click(); });
-  addEventListener('pointerdown',e=>{ if(!menu.hidden&&!e.target.closest('#moreMenu,#btnMore')) menu.hidden=true; },true);
+  addEventListener('pointerdown',e=>{ if(!menu.hidden&&!e.target.closest('#moreMenu,#btnMore,#menuX')) menu.hidden=true; },true);
   // Fly: beside the Torch button on phones, under More on a computer (G flies too)
   const fly=$('#btnFly'); const placeFly=()=>{ const touch=document.body.classList.contains('touch');
     if(touch&&fly.parentElement!==$('#hud')){ $('#hud').appendChild(fly); fly.classList.remove('inmore'); fly.classList.add('sidefly'); }
@@ -9006,6 +9022,70 @@ function navAddTo(box,id){ if(!box) return false; const L=box.items||box; if(!Ar
       const keys=Object.keys(chests).filter(k=>chests[k]&&Array.isArray(chests[k].items)&&chests[k].items.some(s=>s)); const R=mulberry((seed|0)+8083);
       for(let n=0;n<3&&keys.length;n++){ navAddTo(chests[keys.splice((R()*keys.length)|0,1)[0]],NAV_COMPASS); if(keys.length) navAddTo(chests[keys.splice((R()*keys.length)|0,1)[0]],NAV_ASTRO); } }
     if(curSlot===4&&player){ player.gear.compass=1; player.gear.astro=1; } }catch(e){ console.warn(e); } return r; }; }
+// ===================== close buttons, settings tabs, upright HUD, item taps =====================
+
+// ---- the fixed X (59_touch_extras.js) also closes the pause menu (Resume), the More menu and the eye's list ----
+NO_X.delete('scrPause');
+const xPop=id=>{ const el=$('#'+id); return el&&!el.hidden?el:null; };
+{ const _om=openMenu; openMenu=function(...a){ const o=_om(...a); if(o) return o; return xPop('eyePop')||xPop('moreMenu'); }; }
+{ const _mc=menuCloser; menuCloser=function(o){ if(!o) return null; if(o.id==='scrPause') return $('#btnResume');
+    if(o.id==='eyePop'||o.id==='moreMenu') return { click(){ o.hidden=true; } }; return _mc(o); }; }
+
+// ---- settings: five tabs instead of one long list ----
+const SET_TABS=['controls','screen','sound','world','computer'];
+function setTab(){ const t=settings.setTab; return SET_TABS.includes(t)?t:(isTouch?'controls':'computer'); }
+function showSetTab(){ const t=setTab(); for(const s of document.querySelectorAll('#scrSettings .stab')) s.hidden=s.dataset.tab!==t;
+  for(const b of document.querySelectorAll('#setTabs [data-st]')) b.setAttribute('aria-pressed',String(b.dataset.st===t)); }
+$('#setTabs').addEventListener('click',ev=>{ const b=ev.target.closest('[data-st]'); if(!b) return; settings.setTab=b.dataset.st; saveSettings(); showSetTab(); const p=$('#scrSettings .panel'); if(p) p.scrollTop=0; });
+
+// ---- item taps on phones: just the name by default; tap the name to see the picture and every stat ----
+// settings.itemInfo: 'name' (default), 'short' (picture and a few words), 'full' (picture and every stat), 'off' (nothing)
+if(!settings.tipV){ if(settings.itemInfo!=='full') settings.itemInfo='name'; settings.tipV=1; saveSettings(); }
+const tipMode=()=>document.body.classList.contains('touch')?(settings.itemInfo||'name'):'full';
+let tipItem=null, noToast=false;
+{ const _ith=itemTipHtml; itemTipHtml=function(it){ if(tipMode()==='name'){ const d=ITEMS[it.id]; return `<b>${d.name}</b>${it.n>1?' ×'+it.n:''}`; } return _ith(it); }; }
+{ const _st=showTapTip; showTapTip=function(el,it){ const m=tipMode(); if(m==='off'){ const t=$('#itemTip'); if(t&&!t.classList.contains('btntip')) t.hidden=true; return; } tipItem=it; const r=_st(el,it); const tip=$('#itemTip'); if(tip) tip.classList.toggle('nametip',m==='name'); return r; }; }
+{ const _t=toast; toast=function(...a){ if(noToast) return; return _t(...a); }; }
+{ const _ss=selectSlot; selectSlot=function(i){ if(tipMode()==='off'&&recentTouch()){ noToast=true; try{ return _ss(i); } finally{ noToast=false; } } return _ss(i); }; }
+addEventListener('pointerdown',ev=>{ const tip=$('#itemTip'); if(!tip||tip.hidden||!tip.classList.contains('nametip')||!ev.target.closest||!ev.target.closest('#itemTip')||!tipItem) return;
+  ev.stopPropagation(); ev.preventDefault(); const sv=settings.itemInfo; settings.itemInfo='full'; try{ tip.innerHTML=itemTipHtml(tipItem); } finally{ settings.itemInfo=sv; }
+  tip.classList.remove('nametip'); const r=tip.getBoundingClientRect(); if(r.right>innerWidth-6) tip.style.left=Math.max(6,innerWidth-r.width-6)+'px'; if(r.bottom>innerHeight-6) tip.style.top=Math.max(6,innerHeight-r.height-6)+'px';
+  clearTimeout(tapTipT); tapTipT=setTimeout(()=>{ tip.hidden=true; },6000); },true);
+
+// ---- the item bar and the bars can stand upright ----
+// settings.hudHot / settings.hudBars: 'h' across (default) or 'v' up and down
+function hudDirs(){ const vh=settings.hudHot==='v', vb=settings.hudBars==='v'; document.body.classList.toggle('vhot',vh); document.body.classList.toggle('vbars',vb);
+  for(const corner of [$('#topleft'),$('#topright')]){ if(!corner) continue;
+    for(const w of [...corner.querySelectorAll('.hudcol,.vbarrow')]){ while(w.firstChild) w.parentNode.insertBefore(w.firstChild,w); w.remove(); }
+    const kids=[...corner.children]; if(vb){ const bars=kids.filter(e=>e.classList.contains('bar')); if(bars.length){ const row=document.createElement('div'); row.className='vbarrow'; corner.insertBefore(row,bars[0]); for(const b of bars) row.appendChild(b); } }
+    const hot=corner.querySelector(':scope > #hotbar'); corner.classList.toggle('hrow',!!(vh&&hot));
+    if(vh&&hot){ const col=document.createElement('div'); col.className='hudcol'; for(const e of [...corner.children]) if(e!==hot) col.appendChild(e); corner.appendChild(col); corner.insertBefore(hot,corner.firstChild); } }
+  for(const id of ['hpfill','mpfill','xpfill','foodfill']){ const f=$('#'+id); if(f) f.style.height=vb?f.style.width:''; } }
+{ const _ah=applyHudLayout; applyHudLayout=function(...a){ const r=_ah(...a); try{ hudDirs(); }catch(e){ console.warn(e); } return r; }; }
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); if(settings.hudBars==='v') for(const id of ['hpfill','mpfill','xpfill','foodfill']){ const f=document.getElementById(id); if(f&&f.style.height!==f.style.width) f.style.height=f.style.width; } return r; }; }
+
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{
+    const o=(k,v,cur,l,s)=>`<button class="choice" data-k="${k}" data-v="${v}" aria-pressed="${cur===v}">${l}<small>${s}</small></button>`, m=settings.itemInfo||'name';
+    $('#setItemInfo').innerHTML=o('itemInfo','name',m,'Name only','Tap the name to see the picture and every stat')+o('itemInfo','short',m,'Short','Picture, name and a few words')+o('itemInfo','full',m,'Everything','Picture and every stat')+o('itemInfo','off',m,'Off','Nothing pops up');
+    $('#setHudHot').innerHTML=o('hudHot','h',settings.hudHot==='v'?'v':'h','Across','A row along the top')+o('hudHot','v',settings.hudHot==='v'?'v':'h','Up and down','A column down the side');
+    $('#setHudBars').innerHTML=o('hudBars','h',settings.hudBars==='v'?'v':'h','Across','Long bars under the item bar')+o('hudBars','v',settings.hudBars==='v'?'v':'h','Up and down','Standing bars side by side');
+    showSetTab(); }catch(e){ console.warn(e); } return r; }; }
+
+{ const st=document.createElement('style'); st.textContent=`
+#scrSettings .phead{ flex-wrap:wrap; gap:6px; }
+#setTabs{ display:flex; flex-wrap:wrap; gap:4px; margin:0 auto 0 12px; } #setTabs .chip{ font-size:8px; padding:7px 10px; }
+#setTabs .chip[aria-pressed="true"]{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+#scrSettings .stab[hidden]{ display:none; } #scrSettings .stip{ min-height:0; margin:2px 0 8px; color:var(--muted); }
+body.menux .overlay:not([hidden]) .phead{ padding-right:48px; }
+#itemTip.nametip{ pointer-events:auto; padding:7px 10px; }
+body.vhot #hotbar{ flex-direction:column; }
+@media (max-height:500px){ body.vhot #hotbar .slot{ width:24px; height:24px; } body.vhot #hotbar .slot img{ width:16px; height:16px; } }
+#topleft.hrow, #topright.hrow{ flex-direction:row; align-items:flex-start; gap:6px; } #topright.hrow{ flex-direction:row-reverse; }
+.hudcol{ display:flex; flex-direction:column; gap:4px; align-items:flex-start; } #topright .hudcol{ align-items:flex-end; }
+.vbarrow{ display:flex; gap:5px; align-items:flex-end; }
+.vbarrow .bar{ width:12px; height:110px; } .vbarrow .bar > div{ inset:auto 0 0 0 !important; width:auto !important; }
+.vbarrow .bar span{ writing-mode:vertical-rl; transform:rotate(180deg); padding:4px 0 0; justify-content:flex-start; align-items:center; }
+`; document.head.appendChild(st); }
 })();
 </script>
 </body>
