@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791346480"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791346480"><link rel="manifest" href="manifest.webmanifest?v=1791346480"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791347037"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791347037"><link rel="manifest" href="manifest.webmanifest?v=1791347037"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -339,7 +339,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.4</p></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.5</p></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -396,7 +396,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.4</h3>
+    <h3>New in Beta 0.9.5</h3>
+    <p>Fire: anything that can burn (wood, planks, furniture, leaves, plants, grass) catches fire and burns with flickering flames, spreading a little to what it touches before burning out to charred wood, ash or nothing. The Dragonborn's breath, fire bombs, lava, lightning, fire arrows and raiders all start it; water and rain put it out, and it never spreads into your own village. Standing in it burns.</p>
+    <p>Every kind of tree has its own sapling (oak, spruce, birch, palm, jungle and dark oak): a felled tree drops saplings of its own kind, the Herbalist sells the ones you have found, and each grows into its own tree. On phones, tapping an item shows its name and a few words about it, and new gear says what it does in a short line; choose Full in Settings for every detail. The test world skips the opening screen, and a Dragonborn there starts with all five dragonborne weapons.</p>
+    <h3>Beta 0.9.4</h3>
     <p>Phones: two-finger controls, like Terraria. The first finger you put on the game screen moves you wherever it lands: drag left or right to walk, up to jump or fly up, down to drop or dive. A second finger aims at the spot it touches and uses what you hold (attack, mine, build) for as long as it stays down; a quick tap still talks to villagers and opens chests. The Hook and Fire dials stay at the bottom right. You can switch back to joysticks or buttons in Settings.</p>
     <p>The Dragonborn's red wings beat like the white sky wings when he is in the air, his tail sways as he moves, and on phones his fire breath has its own Fire dial next to the Hook dial: touch it to breathe, drag to aim the fire, let go to stop.</p>
     <h3>Beta 0.9.3</h3>
@@ -508,7 +511,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.4</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.5</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -583,6 +586,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   <div class="panel">
     <div class="phead"><h2>Settings</h2><button class="xbtn" id="settingsBack">Back</button></div>
     <h3 style="margin-top:0">Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
+    <h3>Item info on phones</h3><div class="choices" id="setItemInfo" style="grid-template-columns:repeat(2,1fr)"></div>
     <p class="desc" style="min-height:0">Joysticks: the left stick moves (push up to jump, down to drop or dive). Drag the right stick toward where you want to mine, build or attack and hold it. You don't need to tap each block.</p>
     <h3>Joystick size</h3><div class="choices" id="setSize"></div>
     <h3>Joystick sides</h3><div class="choices" id="setSwap" style="grid-template-columns:repeat(2,1fr)"></div>
@@ -747,7 +751,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.4</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.5</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -766,7 +770,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.4', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.5', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2707,7 +2711,7 @@ function aimPoint(def){ if(def&&(def.kind==='axe'||def.kind==='hoe')) def={...de
   if(last) return {x:last.tx*T+8,y:last.ty*T+8,tx:last.tx,ty:last.ty};
   return {x:direct.x,y:direct.y,tx:dtx,ty:dty}; }
 function headWet(e){ return !!e&&tileAt(Math.floor(cxOf(e)/T),Math.floor((e.y+3)/T))===B.WATER; }
-const TORCH_REPL=id=>id!==B.SAPLING&&(PLANTS.has(id)||GRASSY.has(id)||CROPS_STAGE[id]!=null)&&!LOG_IDS.has(id)&&!LEAF_IDS.has(id);
+const TORCH_REPL=id=>!isSapling(id)&&(PLANTS.has(id)||GRASSY.has(id)||CROPS_STAGE[id]!=null)&&!LOG_IDS.has(id)&&!LEAF_IDS.has(id);
 function placeOK(x,y,id){ if(x<0||x>=W||y<0||y>=H) return false; if(y>=magmaY&&cyOf(player)<magmaY*T&&rules.mode!=='creative') return false; const cur=world[y*W+x]; if(ITEMS[id]&&ITEMS[id].kind==='wall') return !BLOCKS[cur].solid&&!bg[y*W+x];
   const torchy=TORCH_REPL(cur)||cur===B.SNOW_LAYER||cur===B.MIST; if(cur!==0&&cur!==B.LEAVES&&cur!==B.WATER&&cur!==B.LAVA&&!torchy) return false; if((id===B.TORCH||id===B.BRIGHT_TORCH)&&(cur===B.WATER||cur===B.LAVA)) return false; if(y<=barrierY&&cyOf(player)>(barrierY+1)*T&&rules.mode!=='creative') return false;
   return [tileAt(x-1,y),tileAt(x+1,y),tileAt(x,y-1),tileAt(x,y+1)].some(t=>t!==0)||bg[y*W+x]!==0; } // lava holds a block up too, so you can build over it
@@ -2773,7 +2777,7 @@ function fellTree(x,y){
     if([[0,-1],[-1,0],[1,0],[0,1]].some(([dx,dy])=>LOG_IDS.has(tileAt(cx+dx,cy+dy)))) continue;
     setTile(cx,cy,0); if(Math.random()<0.03) saps++; if(Math.random()<0.04) apples++; if(Math.random()<.3) puff(cx*T+8,cy*T+8,w.leafCol[0],2,50);
     lq.push([cx,cy-1],[cx-1,cy],[cx+1,cy],[cx,cy+1]); }
-  give(L,logs); if(apples&&L===B.LOG) give(I.APPLE,apples); if(saps) give(B.SAPLING,Math.min(3,saps));
+  give(L,logs); if(apples&&L===B.LOG) give(I.APPLE,apples); if(saps) give(sapFor(L),Math.min(3,saps));
 }
 function fellShroom(x,y){ const st=[[x,y]], seen=new Set(); let n=0; const IDS=new Set([B.MUSH_STEM,B.CAP_B,B.CAP_G,B.CAP_R,B.CAP_O]);
   while(st.length){ const [a,b]=st.pop(); const k=b*W+a; if(seen.has(k)) continue; seen.add(k); if(!IDS.has(tileAt(a,b))) continue; setTile(a,b,0); n++; st.push([a,b-1],[a-1,b],[a+1,b],[a,b+1]); }
@@ -3383,10 +3387,10 @@ function assignCrew(m){ if(m.crew){ m.crew.crewing=null; m.crew.x=m.x; m.crew.y=
 let plantT=1;
 function growPlants(dt){ plantT-=dt; if(plantT>0||!player) return; plantT=1; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); const R=Math.random;
   for(let k=0;k<120;k++){ const x=px+Math.floor(R()*120-60), y=py+Math.floor(R()*60-30); if(x<4||x>=W-4||y<skyOff+2||y>=H-2) continue; const id=world[y*W+x];
-    if(id===B.SAPLING&&R()<0.02&&[B.GRASS,B.DIRT,B.FARMLAND].includes(tileAt(x,y+1))){ world[y*W+x]=0; growTree(x,y+1,R()<0.1?2:1,R); refreshArea(x-9,x+10,y-30,y+1); addFloat(x*T+8,y*T,'a tree grew','#b8f5a0'); }
+    if(isSapling(id)&&R()<0.02&&[B.GRASS,B.DIRT,B.FARMLAND,B.SAND,B.SNOW].includes(tileAt(x,y+1))){ world[y*W+x]=0; growSapling(x,y+1,R()<0.1?2:1,R,id); refreshArea(x-9,x+10,y-30,y+1); addFloat(x*T+8,y*T,'a tree grew','#b8f5a0'); }
     else if(id===B.BERRY_BUSH&&R()<0.06) setTile(x,y,B.BERRY_RIPE);
     else if(growCrops(x,y,id,R)){ }
-    else if(id===B.SAPLING&&tileAt(x,y+1)===B.FARMLAND&&R()<0.1){ world[y*W+x]=0; growTree(x,y+1,1,R); refreshArea(x-9,x+10,y-30,y+1); }
+    else if(isSapling(id)&&tileAt(x,y+1)===B.FARMLAND&&R()<0.1){ world[y*W+x]=0; growSapling(x,y+1,1,R,id); refreshArea(x-9,x+10,y-30,y+1); }
     else if(id===B.BERRY_BUSH&&tileAt(x,y+1)===B.FARMLAND&&R()<0.15) setTile(x,y,B.BERRY_RIPE);
     else if((id===B.BAMBOO||id===B.CACTUS)&&tileAt(x,y-1)===0&&R()<(id===B.BAMBOO?0.05:0.03)){ let h=0,yy=y; while(tileAt(x,yy)===id){ h++; yy++; } const wet=id!==B.BAMBOO||[x-1,x+1].some(X=>tileAt(X,yy-1)===B.WATER||tileAt(X,yy)===B.WATER); if(wet&&h<4) setTile(x,y-1,id); }
     else if(id===0&&tileAt(x,y+1)===B.GRASS&&R()<0.008) setTile(x,y,[B.TALLGRASS,B.FLOWER_R,B.FLOWER_Y,B.FLOWER_B,B.TALLGRASS][(R()*5)|0]); } }
@@ -3523,9 +3527,9 @@ function markFound(id){ if(!player) return; if(id===486&&!player.krakenBond){ pl
 
 const GRASSY=new Set([B.TALLGRASS,B.FLOWER_R,B.FLOWER_Y,B.FLOWER_B,B.FERN]);
 
-function useGrowthDust(x,y,it){ const id=tileAt(x,y); const ok=CROPS_STAGE[id]||[B.SAPLING,B.BERRY_BUSH,B.BAMBOO,B.CACTUS].includes(id); if(!ok){ toast('Sprinkle growth dust on a crop, sapling, bush or cane',2); return; }
+function useGrowthDust(x,y,it){ const id=tileAt(x,y); const ok=CROPS_STAGE[id]||isSapling(id)||[B.BERRY_BUSH,B.BAMBOO,B.CACTUS].includes(id); if(!ok){ toast('Sprinkle growth dust on a crop, sapling, bush or cane',2); return; }
   takeItem(it.id,1); boosted.set(y*W+x,1); puff(x*T+8,y*T+8,'#7aff8a',12,70); const R=Math.random;
-  if(id===B.SAPLING){ world[y*W+x]=0; growTree(x,y+1,1,R); refreshArea(x-9,x+10,y-30,y+1); } else if(id===B.BERRY_BUSH) setTile(x,y,B.BERRY_RIPE); else if(id===B.BAMBOO||id===B.CACTUS){ if(tileAt(x,y-1)===0) setTile(x,y-1,id); } else { const nxt={[B.WHEAT_1]:B.WHEAT_2,[B.WHEAT_2]:B.WHEAT_3,[B.CARROT_1]:B.CARROT_MID,[B.CARROT_MID]:B.CARROT_2,[B.PUMPKIN_1]:B.PUMPKIN_MID,[B.PUMPKIN_MID]:B.PUMPKIN_2,[B.POTATO_1]:B.POTATO_2,[B.POTATO_2]:B.POTATO_3}[id]; if(nxt){ setTile(x,y,nxt); boosted.set(y*W+x,1); } } }
+  if(isSapling(id)){ world[y*W+x]=0; growSapling(x,y+1,1,R,id); refreshArea(x-9,x+10,y-30,y+1); } else if(id===B.BERRY_BUSH) setTile(x,y,B.BERRY_RIPE); else if(id===B.BAMBOO||id===B.CACTUS){ if(tileAt(x,y-1)===0) setTile(x,y-1,id); } else { const nxt={[B.WHEAT_1]:B.WHEAT_2,[B.WHEAT_2]:B.WHEAT_3,[B.CARROT_1]:B.CARROT_MID,[B.CARROT_MID]:B.CARROT_2,[B.PUMPKIN_1]:B.PUMPKIN_MID,[B.PUMPKIN_MID]:B.PUMPKIN_2,[B.POTATO_1]:B.POTATO_2,[B.POTATO_2]:B.POTATO_3}[id]; if(nxt){ setTile(x,y,nxt); boosted.set(y*W+x,1); } } }
 const boosted=new Map();
 function engineerCheck(){ if(!home||!home.claimed||home.engineer) return; if(sky.castle.cleared&&magma.keep.cleared){ home.engineer=true; ents.push(makeHelper('engineer','War engineer',16)); toast('A war engineer has arrived at your village. He sells ballistas, cannons and trebuchets.',5); } }
 
@@ -3846,7 +3850,7 @@ const BLUEPRINTS=[
   {id:'pen',name:'Animal pen',fx0:-7,fx1:7,fh:4,w:15,h:4,cost:[[B.PLANK,18],[480,8],[B.DOOR,1],[B.CHEST,1]],desc:'A fenced yard with a gate and a trough chest. Put up to 8 tamed farm animals in it; each day they produce wool, meat and more, and pairs have young.'},
   {id:'keep',name:'Stone keep',fx0:-9,fx1:9,fh:14,w:19,h:14,cost:[[B.STONE,160],[B.PLANK,20],[B.DOOR,1],[B.TORCH,6]],desc:'A two-storey keep with window slits, a portal, and a quartermaster, a recruiter and a beast trainer who live there. 6 defense posts.'} ];
 // what a building may replace: only air, grass, flowers and plants, and trees (removed whole)
-function replaceable(id){ return id===0||GRASSY.has(id)||LOG_IDS.has(id)||LEAF_IDS.has(id)||(B.SAPLING!=null&&id===B.SAPLING)||(B.BERRY!=null&&id===B.BERRY)||(B.BERRY_RIPE!=null&&id===B.BERRY_RIPE); }
+function replaceable(id){ return id===0||GRASSY.has(id)||LOG_IDS.has(id)||LEAF_IDS.has(id)||isSapling(id)||(B.BERRY!=null&&id===B.BERRY)||(B.BERRY_RIPE!=null&&id===B.BERRY_RIPE); }
 function buildBlocked(bp,cx,gy){ for(let y=gy-bp.fh;y<gy;y++) for(let x=cx+bp.fx0;x<=cx+bp.fx1;x++){ if(x<1||x>=W-1||y<=skyOff) return true; if(!replaceable(world[y*W+x])) return true; } return false; }
 function clearTrees(bp,cx,gy){ const seen=new Set(), st=[]; for(let y=gy-bp.fh;y<gy;y++) for(let x=cx+bp.fx0;x<=cx+bp.fx1;x++){ const id=world[y*W+x]; if(LOG_IDS.has(id)||LEAF_IDS.has(id)) st.push([x,y]); else if(id!==0) wset(x,y,0); }
   let n=0; while(st.length&&n<1500){ const [x,y]=st.pop(); const k=y*W+x; if(seen.has(k)) continue; seen.add(k); const id=world[k]; if(!(LOG_IDS.has(id)||LEAF_IDS.has(id))) continue; wset(x,y,0); n++; for(const [a,b] of [[1,0],[-1,0],[0,1],[0,-1]]) st.push([x+a,y+b]); } }
@@ -4465,7 +4469,7 @@ function drawHumanFig(g,o){
       const tc=cu?cu.o2:col, tl=cu?shadeHex(cu.o2,0.35):lt, td=cu?shadeHex(cu.o2,-0.35):dk; legs(R,f,sc,scd); R(3,13,10,9,tc); R(3,13,10,1,tl); R(12,13,1,9,td); R(6,14,4,6,bel); R(6,16,4,1,shadeHex(bel,-0.2)); R(6,18,4,1,shadeHex(bel,-0.2)); R(3,19,10,1,'#3a2a1a'); R(7,19,2,1,'#ffcf3a');
       arms(sc,scd);
       FACE_EYE=cu?cu.eyes:'#ffcf3a'; FACE_SKIN=sc; face(R,2,3,12,sc,scd,6); R(13,7,3,3,sc); R(15,8,1,1,scd); R(2,3,12,1,scd); for(const [x,y] of [[4,5],[5,9],[7,10]]) R(x,y,1,1,scl);
-      R(1,0,14,3,scd); R(3,-1,1,1,scd); R(7,-1,1,1,scd); R(11,-1,1,1,scd); R(3,-3,2,3,horn); R(2,-5,2,2,horn); R(1,-6,1,1,horn); R(10,-3,2,3,horn); R(11,-5,2,2,horn); R(12,-6,1,1,horn);
+      R(1,0,14,3,scd); R(3,-1,1,1,scd); R(7,-1,1,1,scd); R(11,-1,1,1,scd);
       break; }
     case 'archmage': { const mg=o.team==='m'; const robe=mg?'#9a2a1a':'#5a2a9a', rl=mg?'#e0602a':'#8a5ac8', rd=mg?'#5a1410':'#3a1a6a';
       R(1,13,14,16,robe); R(0,20,16,9,robe); R(1+sw,28,14,1,'#ffcf3a'); R(7,13,2,15,rd); R(2,13,12,1,rl); for(const [x,y] of [[3,17],[11,22],[4,25],[12,16]]) R(x,y,1,1,'#ffe066');
@@ -5401,7 +5405,7 @@ $('#btnSpeed').addEventListener('click',()=>{ const L=[1,2,5,10]; worldSpeed=L[(
 let godTab='items';
 function renderGod(){ const q=($('#godSearch').value||'').toLowerCase(); $('#godSearch').hidden=godTab!=='items'; let h='';
   const row=(img,name,btn,attr)=>`<div class="recipe"><img alt="" src="${img}"><div><div class="nm">${name}</div></div><div class="acts"><button ${attr}>${btn}</button></div></div>`;
-  if(godTab==='items') h=Object.keys(ITEMS).map(Number).filter(id=>ITEMS[id]&&ITEMS[id].name&&ITEMS[id].name.toLowerCase().includes(q)).slice(0,150).map(id=>row(iconUrl(id),ITEMS[id].name,'Give',`data-gi="${id}"`)).join('')||'<p>No items match.</p>';
+  if(godTab==='items') h=[...Object.values(DB_W),...Object.keys(ITEMS).map(Number).filter(id=>!DB_OF[id])].filter(id=>ITEMS[id]&&ITEMS[id].name&&ITEMS[id].name.toLowerCase().includes(q)).slice(0,150).map(id=>row(iconUrl(id),ITEMS[id].name,'Give',`data-gi="${id}"`)).join('')||'<p>No items match.</p>';
   else if(godTab==='upgrade') h=['pick','axe','hoe','hammer','rod','sword','mace','spear','dagger','bow','staff'].map(ln=>{ const ids=LINES[ln]; if(!ids) return ''; const cur=player.inv.find(s=>s&&ITEMS[s.id].line===ln); const t=cur?ITEMS[cur.id].tier:0; const nx=ids[t]; return row(iconUrl(nx||ids[ids.length-1]),(cur?ITEMS[cur.id].name:'No '+ln)+(nx?' → '+ITEMS[nx].name:' (best)'),'Upgrade',`data-gl="${ln}" ${nx?'':'disabled'}`); }).join('')+'<p>Or upgrade any item in your bag:</p>'+player.inv.map((it,i)=>{ if(!it) return ''; const d=ITEMS[it.id]; if(!d.line) return ''; const nx=LINES[d.line][d.tier]; return row(iconUrl(it.id),d.name+(nx?' → '+ITEMS[nx].name:' (best)'),'Upgrade',`data-gu="${i}" ${nx?'':'disabled'}`); }).join('')+`<div class="recipe"><div></div><div><div class="nm">Armor: ${ITEMS[LINES.armor[player.gear.armor-1]]?.name||'none'}</div></div><div class="acts"><button data-garm="1">Upgrade armor</button></div></div>`;
   else if(godTab==='army') h=CLS_KEYS.map(k=>row(portraitUrl(CLASSES[k].look||k,player.team,false),CLASSES[k].name,'Recruit',`data-gr="${k}"`)).join('')+'<p>Soldiers join your party (up to 20) or the reserves.</p>';
   else if(godTab==='enemies') h=Object.keys(MON).map(k=>row(iconUrl(I.BONE),k.replace(/_/g,' '),'Spawn',`data-gm="${k}"`)).join('')+row(iconUrl(I.IRON_SWORD),'Enemy raider (other faction)','Spawn',`data-gh="1"`);
@@ -7353,7 +7357,7 @@ fellTree=function(x,y){ const startWet=tileAt(x,y)===B.WATER?wetDeco.get(y*W+x):
   const tiles=[]; let logs=0, apples=0, saps=0;
   for(const k of mine){ const a=k%W, b=(k/W)|0; if(tileAt(a,b)===B.WATER){ wetDeco.delete(k); } else { tiles.push([a,b,tileAt(a,b)]); setTile(a,b,0); } logs++; }
   for(const [k,id] of owner){ if(id!==0) continue; const a=k%W, b=(k/W)|0; const lid=tileAt(a,b); if(!LEAF_IDS.has(lid)) continue; tiles.push([a,b,lid]); setTile(a,b,0); if(Math.random()<0.03) saps++; if(Math.random()<0.04) apples++; }
-  const loot=[[L,logs]]; if(apples&&L===B.LOG) loot.push([I.APPLE,apples]); if(saps) loot.push([B.SAPLING,Math.min(3,saps)]);
+  const loot=[[L,logs]]; if(apples&&L===B.LOG) loot.push([I.APPLE,apples]); if(saps) loot.push([sapFor(L),Math.min(3,saps)]);
   const fall=tiles.filter(t=>t[1]<=y), guest=typeof MP!=='undefined'&&MP.guest;
   if(guest||!fall.length||treeFx.length>=6){ for(const [id,n] of loot) if(n>0) give(id,n); } // no falling tree to drop them from: straight into the bag
   if(fall.length&&treeFx.length<6){ const dir=player&&cxOf(player)>x*T+8?-1:1; treeFx.push({loot:guest?null:loot,bx:x*T+8,by:(y+1)*T,dir,t:0,tiles:fall.slice(0,300).map(([tx,ty,id])=>({dx:tx*T-x*T-8,dy:ty*T-(y+1)*T,id}))}); sfx('timber',x*T,y*T); } };
@@ -8259,7 +8263,7 @@ function bombBlast(px,py,k,owner){ const R=k.r, tx=Math.floor(px/T), ty=Math.flo
       if(d<=R){ if(!blastBreakable(x,y)) continue; const id=tileAt(x,y); const ds=DOOR_SET_OF&&DOOR_SET_OF[id];
         if(ds){ for(const yy of [y-1,y,y+1]){ const o=tileAt(x,yy); if(DOOR_SET_OF[o]===ds&&!(yy===y)) blastSet(x,yy,0); } }
         broke.push([x,y,id]); blastSet(x,y,0); }
-      else if(d<=R+(k.fire?3:1.3)&&Math.random()<(k.fire?0.85:0.6)&&!blastProtected(x)){ const id=tileAt(x,y), to=burnTo(id); if(to!==null&&to!==id&&isExposed(x,y)) blastSet(x,y,to); } } };
+      else if(d<=R+(k.fire?3:1.3)&&Math.random()<(k.fire?0.85:0.6)&&!blastProtected(x)){ const id=tileAt(x,y), to=burnTo(id); if(to!==null&&to!==id&&isExposed(x,y)){ if(!igniteAt(x,y)) blastSet(x,y,to); } } } };
   if(typeof facRun==='function'&&!isGuest()) facRun(run); else run();
   if(k.fire) for(let k2=0;k2<14;k2++) parts.push({x:px+(Math.random()-.5)*R*2*T,y:py+(Math.random()-.5)*R*2*T,vx:(Math.random()-.5)*30,vy:-50-Math.random()*60,life:0.9,col:Math.random()<.5?'#ff7b1c':'#ffcf3a',sz:2});
   if(broke.length) blastPieces(px,py,R,broke); }
@@ -8429,7 +8433,7 @@ function breathTick(dt){ const p=player; if(!breathOn||!p||p.dead||state!=='play
       let da=Math.abs(Math.atan2(dy,dx)-ang); if(da>Math.PI) da=2*Math.PI-da; if(da>0.42&&d>T) continue; if(!lineOfSight({x:mx-1,y:my-8,w:2,h:2},o)) continue;
       damage(o,11,src,40); if(!o.dead) o.burnT=Math.max(o.burnT||0,3); } }
   if((breathBurnT-=dt)<=0){ breathBurnT=0.14; const d=(1.5+Math.random()*4.5)*T, a=ang+(Math.random()-0.5)*0.6; const x=Math.floor((mx+Math.cos(a)*d)/T), y=Math.floor((my+Math.sin(a)*d)/T);
-    const id=tileAt(x,y); if(id&&!STONEY.has(id)&&!blastProtected(x)){ const to=burnTo(id); if(to!==null&&to!==id){ if(!isGuest()) facRun(()=>blastSet(x,y,to)); else blastSet(x,y,to); } } }
+    igniteAt(x,y); }
   if(Math.random()<0.08&&typeof sfx==='function') sfx('magic'); }
 // phones: a Fire dial beside the Hook dial. Touch it to breathe, drag to aim the fire, let go to stop.
 const fireStick={on:false,x:0,y:0,mag:0,id:null};
@@ -8498,6 +8502,73 @@ setInterval(()=>{ if(fing.id!=null&&!fingerMode()) fingStop(); },400);
     document.body.classList.toggle('finger',fm); if(fm&&(world&&state!=='title'||world&&player)&&isTouch){ $('#touch').hidden=true; $('#sticks').hidden=false; } if(!fm&&fing.id!=null) fingStop(); return r; }; }
 // phones move to two fingers once (it can be changed back in Settings)
 if(!settings.ctlV){ settings.ctlV=1; settings.controls='finger'; try{ saveSettings(); }catch(e){} }
+// ===================== living fire, saplings for every tree, short item tips =====================
+
+// ---- fire: anything that can burn catches, flickers, spreads a little, and burns out to char, ash or nothing ----
+// The Dragonborn's breath, fire bombs, lava, lightning, fire arrows and raiders' torches all light it.
+const fires=new Map();   // tile index -> {x,y,t,life,id,hitT,sprT}
+const FIRE_MAX=180;
+function canBurn(id){ if(!id) return false; return WOODY.has(id)||PLANTS.has(id)||id===B.GRASS||isSapling(id); }
+function burnResult(id){ if(id===B.GRASS) return B.ASH; if(LOG_IDS.has(id)) return B.CHAR_PLANK;   /* a burnt trunk stands as charred wood */ if(LEAF_IDS.has(id)||PLANTS.has(id)||isSapling(id)) return 0; const b=BLOCKS[id]; return b&&b.solid?B.CHAR_PLANK:0; }
+function igniteAt(x,y,gen=0){ if(x<0||x>=W||y<0||y>=H) return false; const i=y*W+x, id=world[i]; if(fires.has(i)) return true; if(!canBurn(id)||blastProtected(x)||fires.size>=FIRE_MAX) return false;
+  const leafy=LEAF_IDS.has(id)||PLANTS.has(id)||isSapling(id), grass=id===B.GRASS; fires.set(i,{x,y,gen,t:0,life:grass?1+Math.random()*0.6:leafy?1.2+Math.random()*0.8:4+Math.random()*2,id,hitT:0,sprT:0.3+Math.random()*0.4}); return true; }
+const rainingOn=(x,y)=>typeof weather!=='undefined'&&(weather==='rain'||weather==='storm')&&y<=skyTop[x];
+function fireTick(dt){ if(!fires.size) return;
+  for(const [i,f] of [...fires]){ if(world[i]!==f.id){ fires.delete(i); continue; } f.t+=dt*(rainingOn(f.x,f.y)?2.5:1);
+    if([[0,-1],[-1,0],[1,0],[0,1]].some(([dx,dy])=>tileAt(f.x+dx,f.y+dy)===B.WATER)){ fires.delete(i); puff(f.x*T+8,f.y*T+8,'#c8c8d0',6,40); continue; }   // water puts it out
+    if((f.hitT-=dt)<=0){ f.hitT=0.4; const box={x:f.x*T,y:f.y*T-4,w:T,h:T+4}; for(const o of ents){ if(o.dead||o.observer||o.peaceful||o.kind==='dragon'||o.cls==='dragon') continue; if(overlap(box,o)){ damage(o,4,null,0); if(!o.dead) o.burnT=Math.max(o.burnT||0,2); } } }
+    if((f.sprT-=dt)<=0){ f.sprT=0.5+Math.random()*0.4; if(!rainingOn(f.x,f.y)&&f.gen<4){   /* a fire spreads at most four steps from where it was lit */ const n=[[0,-1],[0,-1],[-1,0],[1,0],[-1,-1],[1,-1],[0,1]][(Math.random()*7)|0], nid=tileAt(f.x+n[0],f.y+n[1]);
+        if(canBurn(nid)&&Math.random()<(nid===B.GRASS?0.12:0.32)) igniteAt(f.x+n[0],f.y+n[1],f.gen+1); } }
+    if(f.t>=f.life){ fires.delete(i); const to=burnResult(f.id); if(typeof MP!=='undefined'&&MP.guest) blastSet(f.x,f.y,to); else facRun(()=>setTile(f.x,f.y,to)); puff(f.x*T+8,f.y*T+6,'#3a3a3a',5,40); } } }
+function drawFires(){ if(!fires.size) return; const now=performance.now()/1000, vx0=camX-T, vx1=camX+viewW+T, vy0=camY-T, vy1=camY+viewH+T;
+  for(const f of fires.values()){ const X=f.x*T, Y=f.y*T; if(X<vx0||X>vx1||Y<vy0||Y>vy1) continue; const k=Math.min(1,f.t/f.life);
+    ctx.fillStyle=`rgba(20,8,4,${0.15+0.45*k})`; ctx.fillRect(X,Y,T,T);   /* the block chars as it burns */
+    const big=WOODY.has(f.id)&&!LEAF_IDS.has(f.id)?1:0.75, fade=f.life-f.t<0.4?Math.max(0,(f.life-f.t)/0.4):1;
+    for(let j=0;j<3;j++){ const fx=X+2+j*5, ph=now*11+j*2.1+f.x*1.7+f.y; const h=Math.round((7+Math.sin(ph)*3+Math.sin(ph*1.7)*2)*big*fade);
+      if(h<=0) continue; const by=Y+T-2;
+      ctx.fillStyle='rgba(200,40,20,.85)'; ctx.fillRect(fx,by-h,4,h); ctx.fillStyle='rgba(255,123,28,.9)'; ctx.fillRect(fx+1,by-h+2,3,h-2); ctx.fillStyle='rgba(255,224,102,.95)'; ctx.fillRect(fx+1,by-Math.max(1,h-4),2,Math.max(1,h-4));
+      if(Math.sin(ph*3)>0.6) { ctx.fillStyle='rgba(255,242,160,.9)'; ctx.fillRect(fx+1+((ph|0)%2),by-h-1,1,1); } }
+    if(Math.random()<0.05) parts.push({x:X+4+Math.random()*8,y:Y,vx:(Math.random()-.5)*16,vy:-40-Math.random()*30,life:0.7,col:Math.random()<0.6?'#ff9a3a':'#5a5a5a',sz:Math.random()<0.6?1:2}); } }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawFires(); }catch(e){} return r; }; }
+{ const _u=update; update=function(dt){ _u(dt); if(state==='play') try{ fireTick(dt); }catch(e){ console.warn(e); } }; }
+// lava, lightning, fire arrows and raiders burn through the same fire instead of blinking straight to char
+let burnCap=0;
+{ const _st=setTile; setTile=function(x,y,id,...a){ if(burnCap>0&&(id===0||id===B.CHAR_PLANK||id===B.ASH)&&canBurn(tileAt(x,y))&&igniteAt(x,y)) return; return _st(x,y,id,...a); }; }
+const capBurn=fn=>function(...a){ burnCap++; try{ return fn(...a); } finally{ burnCap--; } };
+scorch=capBurn(scorch); lavaBurn=capBurn(lavaBurn);
+
+// ---- a sapling for every kind of tree ----
+const SAP={ oak:B.SAPLING, spruce:1090, birch:1091, palm:1092, jungle:1093, dark:1094 };
+const SAP_KIND=Object.fromEntries(Object.entries(SAP).map(([k,v])=>[v,k]));
+function isSapling(id){ return id!=null&&SAP_KIND[id]!=null; }
+function sapFor(logId){ for(const [k,w] of Object.entries(WOODS)) if(w.log===logId) return SAP[k]; return B.SAPLING; }
+function growSapling(x,h,sz,R,id){ const k=SAP_KIND[id]||'oak'; if(k==='palm') return growPalm(x,h,R); return growTree(x,h,sz,R,k); }
+for(const [k,id] of Object.entries(SAP)){ if(id===B.SAPLING) continue; const w=WOODS[k], n=k==='dark'?'Dark oak':k[0].toUpperCase()+k.slice(1);
+  defB(id,Object.assign({},BLOCKS[B.SAPLING],{name:n+' sapling',col:w.leafCol[0],drop:id}));
+  ITEMS[id]=Object.assign({},ITEMS[B.SAPLING]||{kind:'block'},{name:n+' sapling',desc:`Plant it on grass or dirt and it grows into ${k==='dark'?'a dark oak':(/^[aeiou]/.test(k)?'an ':'a ')+k} tree`});
+  customIcon(id,(rect,px)=>{ const bark=w.bark[0], l0=w.leafCol[0], l1=w.leafCol[1], l2=w.leafCol[2];
+    if(k==='birch'){ rect(7,7,2,9,'#e8e4d8'); px(7,10,'#3a3a3a'); px(8,13,'#3a3a3a'); } else rect(7,8,2,8,bark);
+    if(k==='spruce'){ rect(5,7,6,2,l0); rect(6,5,4,2,l1); rect(7,3,2,2,l0); rect(4,9,8,2,l2); }
+    else if(k==='palm'){ rect(7,6,2,10,bark); rect(2,4,6,2,l0); rect(8,4,6,2,l1); rect(1,6,2,2,l2); rect(13,6,2,2,l2); rect(6,3,4,2,l0); }
+    else { rect(4,4,4,4,l0); rect(8,2,4,4,l1); rect(6,6,2,2,l2); if(k==='jungle'){ rect(3,7,2,3,l1); rect(11,6,2,3,l0); } if(k==='dark') rect(5,3,6,2,l2); } });
+  TEX[id]=ICON_TEX[id];
+  for(const S of [PLANTS,NEEDS_GROUND,GROUND_PLANTS]) S.add(id);
+  SHOPS.herbalist.stock.push([id,2,9]); }
+
+// ---- the test world: no intro screen, and a Dragonborn starts with all his weapons ----
+{ const _si=showIntro; showIntro=function(...a){ if(curSlot===4) return; return _si(...a); }; }
+{ const _ng=newGame; newGame=function(sk,fac,cls,...a){ const r=_ng(sk,fac,cls,...a); try{ if(curSlot===4&&cls==='dragon'&&player) for(const id of Object.values(DB_W)) if(!countItem(id)) give(id,1); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- item info on phones: a short blip by default, the full details if you choose ----
+const shortTips=()=>settings.itemInfo!=='full'&&document.body.classList.contains('touch');
+function itemBlip(d){ if(!d) return ''; if(d.blip) return d.blip; if(d.kind==='weapon'&&d.dmg) return `${d.dmg} damage`; if(d.kind==='armor'&&d.def) return `+${d.def} defense`; if(d.kind==='food'&&d.heal) return `Heals ${d.heal}`;
+  let s=(d.desc||'').split(/(?<=[.;:])\s|,\s(?:and\s)?/)[0].replace(/[.;:]$/,''); if(s.length>48){ s=s.slice(0,46); s=s.slice(0,s.lastIndexOf(' '))+'…'; } return s; }
+{ const _ith=itemTipHtml; itemTipHtml=function(it){ if(!shortTips()) return _ith(it); const d=ITEMS[it.id]; return `<img class="big" alt="" src="${iconUrl(it.id)}"><b>${d.name}</b>${it.n>1?' ×'+it.n:''}<br><span style="font-size:8px">${itemBlip(d)}</span>`; }; }
+let itemCtx=null;
+{ const _ob=obtain; obtain=function(id,...a){ const prev=itemCtx; itemCtx=id; try{ return _ob(id,...a); } finally{ itemCtx=prev; } }; }
+{ const _t=toast; toast=function(msg,...a){ try{ if(itemCtx!=null&&shortTips()&&typeof msg==='string'){ const d=ITEMS[itemCtx], m=msg.match(/^(.*? equipped): /); if(m&&d) msg=`${m[1]}: ${itemBlip(d).toLowerCase()}`; } }catch(e){} return _t(msg,...a); }; }
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const opt=(v,l,s)=>`<button class="choice" data-k="itemInfo" data-v="${v}" aria-pressed="${(settings.itemInfo||'short')===v}">${l}<small>${s}</small></button>`;
+      $('#setItemInfo').innerHTML=opt('short','Short','Name and a few words')+opt('full','Full','Every stat and the full description'); }catch(e){} return r; }; }
 })();
 </script>
 </body>
