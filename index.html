@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791352255"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791352255"><link rel="manifest" href="manifest.webmanifest?v=1791352255"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791355600"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791355600"><link rel="manifest" href="manifest.webmanifest?v=1791355600"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.8</p></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.9</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -374,7 +374,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <h3>Game mode</h3><div class="choices" id="chMode" style="grid-template-columns:repeat(2,1fr)"></div>
       <h3>Starting items</h3><div class="choices four" id="chKit"></div><p class="desc" id="kitDesc" style="min-height:0"></p>
       <h3>When you die</h3><div class="choices" id="chDeath"></div>
-      <h3>Weather</h3><div class="choices" id="chWx"></div><p class="desc" id="wxDesc" style="min-height:0"></p>
+      <h3>Weather</h3><div class="choices four" id="chWx"></div><p class="desc" id="wxDesc" style="min-height:0"></p>
     </div>
     <p id="overwriteNote" hidden style="color:#ff9f9f">Starting a new world here replaces the world saved in this slot.</p>
     <button class="btn primary" id="btnStart">Start game</button>
@@ -389,7 +389,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>A / D</b> move, <b>W or Space</b> jump or swim up, <b>S</b> drop or dive</li>
       <li><b>Click and hold</b> to use the held item: mine, attack or place</li>
       <li><b>1–9 or wheel</b> pick a hotbar slot</li>
-      <li><b>E</b> bag, <b>H</b> hide or show items, <b>R</b> army, <b>F</b> talk, trade, tame, cook or open chests, <b>L</b> aim lock, <b>K</b> quick save, <b>G</b> fly or walk in creative. You can change these in Settings.</li><li> <b>Q</b> cycle orders, <b>M</b> map, <b>F</b> trade or free a captive, <b>Esc</b> menu</li>
+      <li><b>E</b> bag, <b>H</b> hide or show items, <b>R</b> army, <b>F</b> talk, trade, tame, cook or open chests, <b>L</b> aim lock, <b>K</b> quick save, <b>G</b> fly or walk in creative (and as the Dragonborn), hold <b>B</b> to breathe fire as the Dragonborn. You can change these in Settings.</li><li> <b>Q</b> cycle orders, <b>M</b> map, <b>F</b> trade or free a captive, <b>Esc</b> menu</li>
     </ul>
     <h3>Touch</h3>
     <ul class="keys">
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.8</h3>
+    <h3>New in Beta 0.9.9</h3>
+    <p>Silver gear: a silver sword, mace, daggers, bow, staff, pickaxe, axe, hoe, hammer and fishing rod sit between wood and iron. Smelt silver ore (found just below the surface, above iron) into silver bars at a furnace and craft them at a workbench, or buy them from the Blacksmith. Each is halfway between the wooden one and the iron one; the silver rod catches the same fish as the wooden rod with less junk and quicker bites. Shops sell crafted things for half of what their materials are worth, and there is more iron in the ground. Pickaxes clear grass and plants, a double jump breaks a fall, weather can be switched off (new world or Settings), the phone move stick sits on the left (Settings moves it right for left-handed players), friends see your grappling hook, and the Dragonborn's fire (hold B on a computer) stops at the ground.</p>
+    <h3>Beta 0.9.8</h3>
     <p>Trees grow with their wood all the way up inside the leaves: trunks reach into the crown, big trees grow branches with leafy clumps, spruces are tall cones, and you can see the bark through the leaves. In a shared world everything matches for every player: a tree someone cuts falls for everyone, back walls and new village houses show up whole, a wanderer given a job by any player becomes the same shopkeeper, miner or soldier for all, and friends' arrows fly the way they were aimed. Water falls through platforms, slides down slopes and stairs, and is drawn in front of furniture standing in it. Rain and floods leave half as much water, and penned animals stay in until the water is three quarters of a block over the fence. On the surface a roof alone no longer makes it dark: only a space closed in on every side with a back wall is dark. Storms and rain last 12 hours of game time, and the water they leave drains away within the next 6. Mouse aim lock starts switched on (L or Settings turns it off). The Mac and Windows apps fetch the newest game each time they start.</p>
     <h3>Beta 0.9.7</h3>
     <p>Every menu (bag, crafting, shops, chests, army, map, settings, help and the rest) has an X in the top right corner that stays put however far you scroll. On phones you always sprint while moving (switch it off in Settings), double-tap anywhere in the world to place a torch, and the Torch button switches your hand-held light. Joysticks are the starting touch controls again; "Stick and tap" puts a move stick on the right and lets you tap anywhere to mine, build or attack there. Every class button in the new world screen is the same size, with the Dragonborne weapon tally just under them.</p>
@@ -518,7 +520,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.8</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.9</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -593,11 +595,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   <div class="panel">
     <div class="phead"><h2>Settings</h2><button class="xbtn" id="settingsBack">Back</button></div>
     <h3 style="margin-top:0">Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
+    <h3>Weather</h3><div class="choices" id="setWeather" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Auto sprint on phones</h3><div class="choices" id="setAutoSprint" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Item info on phones</h3><div class="choices" id="setItemInfo" style="grid-template-columns:repeat(2,1fr)"></div>
     <p class="desc" style="min-height:0">Joysticks: the left stick moves (push up to jump, down to drop or dive). Drag the right stick toward where you want to mine, build or attack and hold it. You don't need to tap each block.</p>
     <h3>Joystick size</h3><div class="choices" id="setSize"></div>
-    <h3>Joystick sides</h3><div class="choices" id="setSwap" style="grid-template-columns:repeat(2,1fr)"></div>
+    <h3>Movement stick side (left-handed players can put it on the right)</h3><div class="choices" id="setSwap" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Smart mining and building</h3><div class="choices" id="setSmart" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Surface raid parties</h3><div class="choices" id="setRaids" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Sword attack</h3><div class="choices" id="setSword" style="grid-template-columns:repeat(2,1fr)"></div>
@@ -759,7 +762,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.8</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.9</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -778,7 +781,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.8', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.9', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1193,9 +1196,21 @@ const STORM_NEW=[]; { let sid=610; for(const [ln,ids] of Object.entries(LINES)){
   const prev=ITEMS[ids[mi-1]], my=ITEMS[ids[mi]]; const d=Object.assign({},my); for(const k of ['dmg','def','speed','reach','kb','mana']) if(typeof my[k]==='number'&&typeof prev[k]==='number') d[k]=Math.round((my[k]+prev[k])/2*100)/100;
   if(typeof my.cd==='number'&&typeof prev.cd==='number') d.cd=Math.round((my.cd+prev.cd)/2*100)/100; d.name=my.name.replace('Mythril','Storm'); d.m='storm'; if(d.gem) d.gem='#7a6cff'; delete d.line; delete d.tier;
   ITEMS[sid]=d; I['STORM_'+ln.toUpperCase()]=sid; ids.splice(mi,0,sid); STORM_NEW.push([sid,ids[mi+1]]); sid++; } }
-LINES.pick.forEach((id,i)=>{ ITEMS[id].pow=i+1; });
+// silver tier: a step between wood and iron in every weapon and tool line (armor already has silver, between iron and gold).
+// Each silver item sits halfway between its neighbours; nothing else in the line changes.
+const SILVER_NEW=[], SILVER_IDS=new Set(); { let sid=650; for(const ln of ['sword','mace','dagger','bow','staff','pick','axe','hoe','hammer','rod']){ const ids=LINES[ln]; if(!ids) continue;
+    let mi=ln==='sword'?ids.indexOf(I.IRON_SWORD):ids.findIndex(id=>ITEMS[id].m==='iron'||/^Iron /.test(ITEMS[id].name)); if(mi<1) mi=1;
+    const prev=ITEMS[ids[mi-1]], nx=ITEMS[ids[mi]]; const d=Object.assign({},nx); for(const k of ['dmg','speed','reach','kb','mana','cd']) if(typeof nx[k]==='number'&&typeof prev[k]==='number') d[k]=Math.round((nx[k]+prev[k])/2*100)/100;
+    for(const k of ['homing','chain','burn','fire','tri','blast']) delete d[k]; delete d.line; delete d.tier;
+    d.name={sword:'Silver sword',mace:'Silver mace',dagger:'Silver daggers',bow:'Silver bow',staff:'Silver staff',pick:'Silver pickaxe',axe:'Silver axe',hoe:'Silver hoe',hammer:'Silver hammer',rod:'Silver rod'}[ln]; d.m='silver'; if(d.gem) d.gem='#dfe6ee';
+    if(ln==='rod') d.desc='Common fish, less junk and quicker bites';
+    while(ITEMS[sid]) sid++; ITEMS[sid]=d; I['SILVER_'+ln.toUpperCase()]=sid; ids.splice(mi,0,sid); SILVER_NEW.push([sid,ids[mi+1],ln]); SILVER_IDS.add(sid); sid++; } }
+// a line's rank ignoring silver, so pickaxe power, reach and prices of the other tiers stay as they were (silver is half a step)
+const lineRank=(ids,i)=>{ let r=i; for(let k=0;k<i;k++) if(SILVER_IDS.has(ids[k])) r--; return SILVER_IDS.has(ids[i])?r-0.5:r; };
+LINES.pick.forEach((id,i)=>{ ITEMS[id].pow=Math.floor(lineRank(LINES.pick,i))+1; });
 for(const [ln,ids] of Object.entries(LINES)) ids.forEach((id,i)=>{ ITEMS[id].line=ln; ITEMS[id].tier=i+1; });
-for(const ln of ['sword','mace','spear','dagger']) if(LINES[ln]){ const base=ITEMS[LINES[ln][0]].reach; LINES[ln].forEach((id,i)=>{ ITEMS[id].reach=Math.round(base*(1+0.05*i)*10)/10; }); }
+LINES.rod.forEach((id,i)=>{ ITEMS[id].ftier=lineRank(LINES.rod,i)+1; });   // fishing quality: silver catches like wood with less junk and quicker bites
+for(const ln of ['sword','mace','spear','dagger']) if(LINES[ln]){ const base=ITEMS[LINES[ln][0]].reach; LINES[ln].forEach((id,i)=>{ ITEMS[id].reach=Math.round(base*(1+0.05*lineRank(LINES[ln],i))*10)/10; }); }
 ITEMS[LINES.armor[LINES.armor.length-1]].desc='Top armor. Makes you immune to lava';
 // seats include you. "low" boats sit in the water, so sharks can still reach you.
 const BOATS = {
@@ -1383,6 +1398,9 @@ const SHOPS = {
 };
 for(const sh of Object.values(SHOPS)) for(const st of sh.stock){ st[2]=Math.ceil(st[2]*1.5); const d=ITEMS[st[0]]; if(d&&['weapon','armor','pick','axe','hoe','hammer','rod'].includes(d.kind)) st[2]=Math.ceil(st[2]*2.5*(1+0.3*((d.tier||1)-1))); }
 function heartPrice(id){ const n=(player&&player.heartsBought&&player.heartsBought[id])||0; return Math.round((id===406?1200:1000)*Math.pow(1.8,n)); }
+for(const [sid,nxt] of SILVER_NEW){ const r=RECIPES.find(r=>r.out===nxt); const need=r?r.need.map(([id,n])=>[id===I.IRON_BAR?I.SILVER_BAR:id,n]).filter(([id])=>id!==nxt):[]; if(!need.some(([id])=>id===I.SILVER_BAR)) need.unshift([I.SILVER_BAR,8]);
+  if(ITEMS[sid].kind==='weapon'&&ITEMS[sid].type==='magic'){ for(let k=need.length-1;k>=0;k--) if([I.EMERALD,I.RUBY].includes(need[k][0])) need.splice(k,1); need.push([I.AMETHYST_GEM,1]); }   // a silver staff takes an amethyst, not emeralds
+  RECIPES.push({ out:sid, n:1, need:need.filter(([id])=>!(ITEMS[id]&&ITEMS[id].kind==='mat'&&id!==I.SILVER_BAR&&(ITEMS[id].m==='gold'||ITEMS[id].m==='mythril'))), st:(r&&r.st)||B.WORKBENCH }); }
 const SELL = { [I.CORAL]:8, [I.PEARL]:25, [I.BLACK_PEARL]:90, [I.ANCIENT_COIN]:40, [I.SUNKEN_CROWN]:150, [I.OLD_COMPASS]:60, [I.KRAKEN_INK]:70, [I.OLD_BOOT]:1, [I.TIN_CAN]:1, [I.RUSTY_CHAIN]:1, [I.TROUT]:4, [I.BASS]:4, [I.COD]:4, [I.TUNA]:6, [I.PUFFER]:3, [I.SWORDFISH]:8, [I.ANGLER]:5, [I.RAW_FISH]:3, [I.SALMON]:6, [I.GOLDEN_FISH]:60, [I.HERB]:4, [I.SHARK_FIN]:10, [I.SILVER_BAR]:20, [I.AMETHYST_GEM]:12, [B.MARBLE]:1, [B.COAL]:2, [B.SILVER_ORE]:6, [B.IRON]:4, [B.GOLD]:8, [B.MYTHRIL_ORE]:16, [B.ADAMANT_ORE]:26, [I.IRON_BAR]:14, [I.GOLD_BAR]:28,
   [I.MYTHRIL_BAR]:55, [I.ADAMANT_BAR]:110, [429]:40, [I.EMERALD]:18, [I.RUBY]:30, [B.OBSIDIAN]:6 };
 
@@ -1651,8 +1669,9 @@ function makeItemTex(id){
   const c=mkCanvas(16,16), g=c.getContext('2d'); const d=ITEMS[id]; const m=METAL[d.m||'iron'];
   const px=(x,y,col)=>{ g.fillStyle=col; g.fillRect(x,y,1,1); };
   const rect=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
-  const pick=()=>{ for(let i=0;i<9;i++){ px(3+i,13-i,'#7a4e27'); px(4+i,13-i,'#5b3819'); }
-    for(const [x,y] of [[3,5],[4,4],[5,3],[6,2],[7,2],[8,2],[9,2],[10,3],[11,4],[12,5],[13,6],[13,7],[14,8]]){ px(x,y,m[1]); px(x,y+1,m[0]); } };
+  const pick=()=>{ for(let i=0;i<9;i++){ px(2+i,14-i,'#a8784a'); px(3+i,14-i,'#6b4422'); }   // the handle, from the bottom left up to the head
+    for(let t=-5;t<=5;t++){ const b=Math.round(2*(1-(t/5)*(t/5))), x=10+t+b, y=5+t-b; if(x<0||x>15||y<0||y>15) continue;   // the head crosses the handle's tip and bows outward, so both points curve back toward the handle
+      px(x,y,m[1]); if(y+1<16) px(x,y+1,m[0]); if(x-1>=0&&y+1<16&&Math.abs(t)<4) px(x-1,y+1,m[2]); } px(10,5,m[2]); px(11,5,m[0]); };
   const sword=()=>{ for(let i=0;i<8;i++){ px(6+i,9-i,m[1]); px(7+i,9-i,m[0]); px(6+i,10-i,m[0]); px(7+i,10-i,m[2]); }
     for(let k=-2;k<=2;k++) px(5+k,10+k,'#8a5c2d'); px(4,12,'#5b3819'); px(3,13,'#5b3819'); px(2,14,'#ffcf3a'); };
   const mace=()=>{ for(let i=0;i<8;i++) px(3+i,13-i,'#7a4e27'); rect(9,2,5,5,m[0]); rect(10,3,2,2,m[1]); rect(13,3,1,4,m[2]); px(11,1,m[0]); px(14,4,m[0]); px(11,7,m[0]); px(8,4,m[0]); };
@@ -1671,7 +1690,7 @@ function makeItemTex(id){
   const dag=()=>{ for(let i=0;i<6;i++){ px(3+i,9-i,m[1]); px(4+i,9-i,m[0]); px(7+i,14-i,m[1]); px(8+i,14-i,m[0]); } px(2,10,'#5b3819'); px(1,11,'#5b3819'); px(6,15,'#5b3819'); px(5,15,'#5b3819'); };
   const shaft=(n)=>{ for(let i=0;i<n;i++){ px(2+i,14-i,'#a8784a'); px(2+i,15-i,'#6b4422'); } };
   const axe=()=>{ shaft(9); const rows=[[1,11,14],[2,8,14],[3,8,14],[4,8,14],[5,9,14],[6,11,14],[7,12,14],[8,13,14]]; for(const [y,a,b] of rows){ rect(a,y,b-a+1,1,m[0]); px(b,y,m[1]); } rect(8,2,2,3,m[2]); rect(11,3,2,2,m[1]); px(9,1,'#6b4422'); px(9,0,'#a8784a'); };
-  const hoe=()=>{ shaft(10); rect(10,1,3,2,m[0]); px(10,1,m[1]); rect(12,2,2,2,m[0]); rect(13,4,2,2,m[0]); rect(14,6,1,4,m[0]); px(14,9,m[1]); px(13,2,m[1]); px(14,4,m[1]); px(15,7,m[2]); };
+  const hoe=()=>{ shaft(10); rect(11,2,3,2,m[0]); px(11,2,m[1]); px(12,2,m[1]); rect(13,3,3,6,m[0]); rect(13,3,1,6,m[1]); rect(15,4,1,5,m[2]); rect(13,8,3,1,m[2]); };   // neck, then a flat blade hanging down
   const ham=()=>{ shaft(8); const rows=[[1,9,13],[2,8,14],[3,8,15],[4,9,15],[5,11,15]]; for(const [y,a,b] of rows){ rect(a,y,b-a+1,1,m[0]); } rect(9,1,4,1,m[1]); rect(8,2,2,2,m[1]); rect(14,3,2,3,m[2]); px(10,0,'#6b4422'); };
   if(d.kind==='dust'){ rect(4,5,8,9,'#c8b890'); rect(4,5,8,2,'#8a5c2d'); for(const [x,y] of [[6,9],[9,8],[7,11],[10,11],[5,12]]) rect(x,y,2,2,'#7aff8a'); rect(12,2,2,2,'#e8ffe0'); rect(2,3,1,1,'#e8ffe0'); }
   if(d.kind==='feather'){ for(let i=0;i<10;i++){ px(4+i,13-i,'#ffffff'); px(5+i,13-i,'#d8e0ec'); px(3+i,12-i,'#c8d0e0'); } px(3,14,'#ffcf3a'); for(let k=0;k<d.lvl;k++) px(12,9+k,'#ffcf3a'); }
@@ -1685,7 +1704,7 @@ function makeItemTex(id){
   else if(id===I.LEAP_BOTTLE){ rect(6,1,4,3,'#8a5c2d'); rect(5,4,6,3,'#bfe6ff'); rect(3,7,10,8,'#bfe6ff'); rect(4,9,8,5,'#6ad8ff'); rect(4,8,2,2,'#ffffff'); rect(7,10,2,3,'#ffffff'); }
   else if(id===I.RECALL){ rect(4,1,8,13,'#c99a1a'); rect(5,2,6,11,'#8fd3ff'); rect(6,3,2,5,'#e8f6ff'); rect(9,8,1,3,'#b066ff'); rect(7,14,2,2,'#8a5c2d'); rect(4,1,8,1,'#ffe066'); }
   if(d.kind==='pick') pick(); else if(d.kind==='weapon'&&d.shape==='dagger') dag(); else if(d.kind==='weapon'){ if(d.type==='bow') bow(); else if(d.type==='magic') staff(); else if(d.shape==='mace') mace(); else if(d.shape==='spear') spear(); else sword(); }
-  else if(d.kind==='acc') switch(id){
+  else if(d.kind==='acc'&&![I.AMULET,I.WHISTLE,I.WINGS].includes(id)) switch(id){   /* these three are drawn below */
     case I.SWIFT_BOOTS: case I.WIND_BOOTS: { const bc=id===I.SWIFT_BOOTS?'#8a5a2e':'#39d5c9'; rect(4,3,5,9,bc); rect(4,11,9,3,bc); rect(4,3,5,1,'#fff6'); rect(4,14,10,1,'#3a2a1a'); if(id===I.WIND_BOOTS){ rect(1,6,3,1,'#fff'); rect(0,9,4,1,'#fff'); } else { rect(10,8,4,2,'#ffcf3a'); } break; }
     case I.CLOUD_CHARM: rect(3,6,10,5,'#ffffff'); rect(5,4,4,2,'#ffffff'); rect(9,5,3,2,'#ffffff'); rect(3,10,10,1,'#c8d8f0'); rect(7,11,2,4,'#b066ff'); break;
     case I.DIVE_HELM: rect(3,2,10,11,'#c87533'); rect(5,4,6,6,'#8fd3ff'); rect(5,4,2,2,'#ffffff'); rect(3,12,10,2,'#8a4a1c'); break;
@@ -1701,8 +1720,9 @@ function makeItemTex(id){
     case I.SAPPHIRE: gemI('#3a6ad8','#c8dcff','#1e3a90'); break;
     case I.SILVER_BAR: bar(); break; case I.AMETHYST_GEM: gemI('#b066ff','#f0e0ff','#6a20b0'); break;
     case I.RUBY: gemI('#e0115f','#ffc2d9','#a00c44'); break; case I.EMERALD: gemI('#2ecc71','#d4ffe6','#1b8a4a'); break;
+    case 480: for(let i=0;i<11;i++){ px(3+i,13-i,'#b7834a'); px(4+i,13-i,'#7a4e27'); px(3+i,3+i,'#a8784a'); px(3+i,4+i,'#6b4422'); } px(6,10,'#5b3819'); px(10,6,'#d9a86a'); px(5,5,'#5b3819'); px(11,11,'#d9a86a'); break;
     case I.APPLE: for(let y=-5;y<=5;y++) for(let x=-5;x<=5;x++) if(x*x+y*y<=26) px(8+x,9+y,x>2||y>2?'#a31f1f':'#d32f2f'); px(6,7,'#ff8a80'); px(6,8,'#ff8a80'); rect(8,2,1,3,'#5b3819'); rect(9,2,2,1,'#4caf3a'); break;
-    case I.FISHING_ROD: case I.IRON_ROD: case I.GOLD_ROD: case I.MYTHRIL_ROD: { const mc=METAL[d.m]||['#8a5c2d','#b7834a']; for(let i=0;i<12;i++){ px(2+i,14-i,mc[0]); if(i%3===0) px(3+i,14-i,mc[1]); } for(let y=3;y<13;y++) px(13,y,'#e8e8e8'); rect(12,12,3,2,'#e5383b'); rect(3,11,3,3,'#3f3150'); break; }
+    case I.FISHING_ROD: case I.IRON_ROD: case I.GOLD_ROD: case I.MYTHRIL_ROD: case I.SILVER_ROD: { const mc=METAL[d.m]||['#8a5c2d','#b7834a']; for(let i=0;i<12;i++){ px(2+i,14-i,mc[0]); if(i%3===0) px(3+i,14-i,mc[1]); } for(let y=3;y<13;y++) px(13,y,'#e8e8e8'); rect(12,12,3,2,'#e5383b'); rect(3,11,3,3,'#3f3150'); break; }
     case I.WINGS: for(let i=0;i<6;i++){ rect(8-i-1,4+i,1+i,2,i%2?'#e8ecf4':'#ffffff'); rect(9,4+i,1+i,2,i%2?'#e8ecf4':'#ffffff'); } rect(7,3,2,10,'#c8d0e0'); break;
     case I.BALLISTA: case I.CANNON: case I.TREBUCHET: { rect(2,11,12,3,'#8a5c2d'); rect(3,13,3,3,'#3f3150'); rect(10,13,3,3,'#3f3150');
       if(id===I.CANNON){ rect(3,6,11,5,'#3a3a44'); rect(3,6,11,1,'#6a6a74'); rect(13,5,2,7,'#23232b'); } else if(id===I.BALLISTA){ rect(4,8,10,2,'#8a5c2d'); for(let i=0;i<5;i++){ px(12-i,7-i,'#b7834a'); px(12-i,10+i,'#b7834a'); } rect(5,8,9,1,'#cfd3d8'); }
@@ -2307,7 +2327,7 @@ function buildMega(x0,gy,entryLeft,M,R){ const W2=110, x1=x0+W2, top=gy-32, put=
   return { x0, x1, gy, top, cx:tc, entryLeft, throne:{x0:thX0,x1:thX1,gy:gy-2}, rooms, cleared:false }; }
 
 const BAR_OF=d=>{ const n=d.name||''; return /Adamantite/.test(n)?I.ADAMANT_BAR:/Mythril/.test(n)?I.MYTHRIL_BAR:/Diamond/.test(n)?429:/Gold/.test(n)?I.GOLD_BAR:/Silver/.test(n)?I.SILVER_BAR:/Iron/.test(n)?I.IRON_BAR:0; };
-{ const st=[]; for(const ln of ['sword','mace','spear','dagger','bow','staff','pick','axe','hoe','hammer','rod']){ if(!LINES[ln]) continue; LINES[ln].forEach((id,i)=>{ st.push([id,1,Math.round([40,110,260,560,1100,2000,3600][Math.min(6,i)]*(ln==='rod'?0.6:1))]); }); } SHOPS.smith.stock=st; }
+{ const st=[]; for(const ln of ['sword','mace','spear','dagger','bow','staff','pick','axe','hoe','hammer','rod']){ if(!LINES[ln]) continue; LINES[ln].forEach((id,i)=>{ const P=[40,110,260,560,1100,2000,3600], r=lineRank(LINES[ln],i), lo=P[Math.min(6,Math.floor(r))], hi=P[Math.min(6,Math.ceil(r))]; st.push([id,1,Math.round((lo+hi)/2*(ln==='rod'?0.6:1))]); }); } SHOPS.smith.stock=st; }
 
 let krakenX=0, krakenChest=null;
 // a narrow tower: walls, a door, platforms every 5-6 blocks, and a lookout on top
@@ -2594,7 +2614,7 @@ function updatePlayer(dt){
   if(mv) p.facing=mv;
   const jumpEdge=input.jump&&!p.jumpHeld; p.jumpHeld=input.jump; if(p.grounded) p.airJumps=p.fx.jump+(p.extraJumps||0);
   if(jumpEdge&&p.grounded&&typeof sfx==='function') sfx('jump');
-  if(jumpEdge&&!p.grounded&&!p.inWater&&!p.riding&&p.airJumps>0){ p.airJumps--; p.vy=-JUMP*0.9; puff(cxOf(p),p.y+p.h,'#ffffff',6,60); }
+  if(jumpEdge&&!p.grounded&&!p.inWater&&!p.riding&&p.airJumps>0){ p.airJumps--; p.vy=-JUMP*0.9; p.peakY=p.y;   /* a double jump breaks the fall: no fall damage from above it */ puff(cxOf(p),p.y+p.h,'#ffffff',6,60); }
   if(input.jump&&!p.fly){
     if(p.riding){ p.riding=false; p.wasRiding=false; disembark(); p.vy=-JUMP*0.9; p.boatCd=0.4; }
     else if(p.inWater&&!p.grounded){ p.vy=Math.max(p.vy-1100*dt,-190); p.surfJump=true; }
@@ -3336,7 +3356,7 @@ const CATCH=[[I.RAW_FISH,1,'a',40],[I.SALMON,1,'of',16],[I.TROUT,1,'f',20],[I.BA
 function waterKind(x,y){ if(oceanCol[x]&&y>=seaY-1) return 'o'; if(y>surf[x]+8) return 'c'; return 'f'; }
 function rollCatch(tier,where){ const opts=CATCH.filter(([id,t,w])=>t<=tier&&(w==='a'||w.includes(where))).map(([id,t,w,wt])=>[id,ITEMS[id].junk?wt*(1.25-tier*0.25):wt]);
   let tot=opts.reduce((a,o)=>a+o[1],0), r=Math.random()*tot; for(const [id,wt] of opts){ if((r-=wt)<0) return id; } return I.RAW_FISH; }
-function fishUse(p,aim){ if(!p.useEdge) return; const tier=(ITEMS[heldItem().id].tier)||1;
+function fishUse(p,aim){ if(!p.useEdge) return; const tier=(ITEMS[heldItem().id].ftier||ITEMS[heldItem().id].tier)||1;
   if(!bob){ const cx=cxOf(p), cy=cyOf(p); const dx=Math.sign(aim.x-cx)||p.facing; let hit=null;
     for(let s=2;s<=9&&!hit;s++){ const x=Math.floor((cx+dx*s*T)/T); for(let y=Math.floor(cy/T)-2;y<Math.floor(cy/T)+8;y++) if(tileAt(x,y)===B.WATER){ hit={x,y}; break; } }
     if(!hit){ toast('Cast into nearby water',1.5); return; } let y=hit.y; while(tileAt(hit.x,y-1)===B.WATER) y--;
@@ -3443,7 +3463,7 @@ const TOOL_KINDS=new Set(['pick','axe','hoe','hammer']);
 const PLANTS=new Set([B.SAPLING,B.BERRY_BUSH,B.BERRY_RIPE,B.FLOWER_R,B.FLOWER_Y,B.FLOWER_B,B.TALLGRASS,B.FERN,B.HERB_PLANT,B.BUSH,B.VINE,B.ROOTS,B.IVY,B.WHEAT_1,B.WHEAT_2,B.WHEAT_3,B.POTATO_1,B.POTATO_2,B.POTATO_3,B.CARROT_MID,B.PUMPKIN_MID,B.CARROT_1,B.CARROT_2,B.PUMPKIN_1,B.PUMPKIN_2]);
 const TREEISH=new Set([...LOG_IDS,...LEAF_IDS,B.PINE_LEAF,B.LOG,B.LEAVES,B.PALM_LEAF,B.BAMBOO,B.CACTUS,B.MUSH_STEM,B.CAP_B,B.CAP_G,B.CAP_R,B.CAP_O]);
 const SHROOMS=new Set([B.GLOWSHROOM,B.SHROOM_G,B.SHROOM_R,B.SHROOM_O,B.MUSH_STEM,B.CAP_B,B.CAP_G,B.CAP_R,B.CAP_O]);
-function toolCan(kind,id){ if(kind==='axe') return TREEISH.has(id); if(kind==='hoe') return PLANTS.has(id); if(kind==='pick') return SHROOMS.has(id)||(!TREEISH.has(id)&&!PLANTS.has(id)); return false; }
+function toolCan(kind,id){ if(kind==='axe') return TREEISH.has(id); if(kind==='hoe') return PLANTS.has(id); if(kind==='pick') return SHROOMS.has(id)||PLANTS.has(id)||LEAF_IDS.has(id)||!TREEISH.has(id);   /* a pickaxe also clears grass, plants and leaves */ return false; }
 const ripeCrop=id=>id===B.WHEAT_3||id===B.CARROT_2||id===B.PUMPKIN_2||id===B.POTATO_3;
 function harvestCrop(x,y){ const id=tileAt(x,y); if(id===B.POTATO_3){ give(460,2+((Math.random()*3)|0)); give(461,1+((Math.random()*2)|0)); setTile(x,y,0); puff(x*T+8,y*T+8,'#b8c890',6,50); return true; } if(id===B.WHEAT_3){ give(I.WHEAT,2+((Math.random()*2)|0)); give(I.WHEAT_SEEDS,1+((Math.random()*2)|0)); } else if(id===B.CARROT_2){ give(I.CARROT,2+((Math.random()*2)|0)); if(Math.random()<0.5) give(I.CARROT_SEEDS,1); } else if(id===B.PUMPKIN_2){ give(I.PUMPKIN,1); give(I.PUMPKIN_SEEDS,1+((Math.random()*2)|0)); } else return false;
   setTile(x,y,0); puff(x*T+8,y*T+8,'#b8c890',6,50); return true; }
@@ -5075,9 +5095,9 @@ $('#btnQuickSave').addEventListener('click',async()=>{ if(!player) return; toast
 let settingsReturn='scrPause';
 function renderSettings(){
   const opt=(k,v,label,small)=>`<button class="choice" data-k="${k}" data-v="${v}" aria-pressed="${String(settings[k])===String(v)}">${label}${small?`<small>${small}</small>`:''}</button>`;
-  $('#setControls').innerHTML=opt('controls','sticks','Joysticks','Move on one side, aim on the other')+opt('controls','finger','Stick and tap','Move stick on the right, tap anywhere to mine, build or attack')+opt('controls','buttons','Buttons','Arrow pads, tap the world');
+  $('#setControls').innerHTML=opt('controls','sticks','Joysticks','Move on one side, aim on the other')+opt('controls','finger','Stick and tap','Move stick on the left, tap anywhere to mine, build or attack')+opt('controls','buttons','Buttons','Arrow pads, tap the world');
   $('#setSize').innerHTML=opt('stickSize','s','Small')+opt('stickSize','m','Medium')+opt('stickSize','l','Large');
-  $('#setSwap').innerHTML=opt('swap',false,'Move on left')+opt('swap',true,'Move on right');
+  $('#setSwap').innerHTML=opt('swap',false,'Left','The usual side')+opt('swap',true,'Right','For left-handed players');
   $('#setSmart').innerHTML=opt('smart',true,'On','Mines the next block in that direction for you')+opt('smart',false,'Off','Only the exact block you point at');
   $('#setSword').innerHTML=opt('swordStyle','swing','Swing','A wide arc toward where you aim')+opt('swordStyle','stab','Stab','A long, quick thrust');
   $('#setRaids').innerHTML=opt('raids',true,'On','Enemy scouting parties roam the surface')+opt('raids',false,'Off','Only underground scouting parties');
@@ -5191,7 +5211,7 @@ function buildChoices(){
   $('#chKit').innerHTML=ch('kit','standard','Standard')+ch('kit','recall','+ Recall mirror')+ch('kit','grapple','+ Grappling hook')+ch('kit','supplies','Extra supplies')+ch('kit','bare','Bare hands');
   $('#kitDesc').textContent=KITS[setup.kit]+'.';
   $('#chDeath').innerHTML=ch('death','keep','Keep everything')+ch('death','coins','Lose coins')+ch('death','all','Lose everything');
-  $('#chWx').innerHTML=ch('wx','light','Light')+ch('wx','medium','Medium')+ch('wx','strong','Strong'); $('#wxDesc').textContent=WX_DESC[setup.wx]||'';
+  $('#chWx').innerHTML=ch('wx','off','Off')+ch('wx','light','Light')+ch('wx','medium','Medium')+ch('wx','strong','Strong'); $('#wxDesc').textContent=WX_DESC[setup.wx]||'';
 }
 document.querySelector('#rulesBox').addEventListener('click',ev=>{ const b=ev.target.closest('[data-k]'); if(!b) return; setup[b.dataset.k]=b.dataset.v; buildChoices(); });
 for(const [id,key] of [['#chSize','size'],['#chFac','fac'],['#chCls','cls']]) $(id).addEventListener('click',ev=>{ const b=ev.target.closest('.choice'); if(!b) return; setup[key]=b.dataset.v; buildChoices(); });
@@ -5568,21 +5588,21 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
-    pr.mobs=mpMobList(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,40); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
-  if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,40); }
+    pr.mobs=mpMobList(); pr.sh=mpShotsOut(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,80); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
+  if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,80); }
   if(MP.host){ pr.host=true; pr.seed=seed; pr.size=sizeKey; pr.pf=player.team; pr.t=Math.round(time*1000)/1000; pr.ws=MP.wsId||null; pr.fl=(tower.cleared?'t':'')+(fort.cleared?'f':'')+(sky.castle.cleared?'s':'')+(magma.keep.cleared?'m':'')+(dragonSlain?'d':'')+(krakenSlain?'k':''); }
   if(MP.guest){ MP.posT=(MP.posT||0)-0.1; if(MP.posT<=0){ MP.posT=5; try{ localStorage.setItem('dragonamulet-mppos-'+seed,JSON.stringify({x:Math.round(p.x),y:Math.round(p.y)})); }catch(e){} } }
   // stay inside the room's 4 KB limit (measured in bytes): trim the extras, never the player's own position and name
   const enc=new TextEncoder(), BUDGET=3600; const size=()=>enc.encode(JSON.stringify(pr)).length;
   // lists of numbered events (block edits, hits, hurts, gifts) send the older and the newer half by turns, so nothing waits forever;
   // the logs that must arrive in order (ge, fe) always send their oldest part first
-  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch']);
+  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch','sh']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
-  if(size()>BUDGET){ for(const k of ['ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
+  if(size()>BUDGET){ for(const k of ['sh','ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
   if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
@@ -6852,7 +6872,7 @@ BIG_ST[B.CHEST_SKY]=1;
 // ================= Beta 0.7: weather that changes the world =================
 // Chosen when you make a world: light, medium or strong. Lightning sets trees alight, rain gathers in hollows
 // and drains away afterwards, snow settles on the ground in winter and melts in spring. Rain patters on roofs.
-const WX_DESC={ light:'Light: rain leaves a few puddles, a little snow settles in winter, lightning seldom strikes.', medium:'Medium: puddles fill the hollows, snow covers the ground in winter, lightning now and then burns a tree.', strong:'Strong: rain floods low ground, deep winter snow, and lightning fires that can spread to nearby trees.' };
+const WX_DESC={ off:'Off: always clear skies. No rain, storms, snow, lightning or floods.', light:'Light: rain leaves a few puddles, a little snow settles in winter, lightning seldom strikes.', medium:'Medium: puddles fill the hollows, snow covers the ground in winter, lightning now and then burns a tree.', strong:'Strong: rain floods low ground, deep winter snow, and lightning fires that can spread to nearby trees.' };
 const WX_K={ light:1, medium:2, strong:3 };
 function wxK(){ return WX_K[rules&&rules.wx]||1; }
 const isHostSide=()=>!(typeof MP!=='undefined'&&MP.guest);
@@ -7024,7 +7044,7 @@ function unstick(o,ax){ if(!o||!collides(o)) return; const x0=o.x, y0=o.y; for(l
 // ---- fishing: hold to wind up, let go to cast; the longer you hold, the farther the bobber flies ----
 let castCh=0;
 { const _fu=fishUse; fishUse=function(p,aim){ if(bob) return _fu(p,aim); if(p.useEdge&&castCh<=0){ castCh=0.001; p.castDir=Math.sign(aim.x-cxOf(p))||p.facing; } }; }
-function castNow(p,power){ const it=heldItem(); if(!it||ITEMS[it.id].kind!=='rod') return; const tier=ITEMS[it.id].tier||1, dir=p.castDir||p.facing, cx=cxOf(p), cy=cyOf(p); const want=2+power*12;
+function castNow(p,power){ const it=heldItem(); if(!it||ITEMS[it.id].kind!=='rod') return; const tier=ITEMS[it.id].ftier||ITEMS[it.id].tier||1, dir=p.castDir||p.facing, cx=cxOf(p), cy=cyOf(p); const want=2+power*12;
   let hit=null; for(let d=0;d<=3&&!hit;d++) for(const s of d?[want+d,want-d]:[want]){ if(s<1.5) continue; const x=Math.floor((cx+dir*s*T)/T); for(let y=Math.floor(cy/T)-2;y<Math.floor(cy/T)+12;y++) if(tileAt(x,y)===B.WATER){ hit={x,y}; break; } if(hit) break; }
   if(!hit){ toast(power<0.3?'Hold longer to cast farther':'No water there. Cast toward water',1.5); return; } let y=hit.y; while(tileAt(hit.x,y-1)===B.WATER) y--;
   bob={x:hit.x*T+8,y:waterTop(hit.x,y),tx:hit.x,ty:y,state:'wait',t:(3+Math.random()*5)/(1+0.25*(tier-1)),tier}; p.facing=dir; }
@@ -8460,13 +8480,15 @@ addEventListener('keyup',e=>{ if(e.code===(settings.keys.breath||'KeyB')) breath
 function breathTick(dt){ const p=player; if(!breathOn||!p||p.dead||state!=='play'||p.cls!=='dragon'){ if(p&&p.cls!=='dragon') breathOn=false; return; }
   if(p.mana<2){ if(performance.now()>breathHint){ breathHint=performance.now()+3000; toast('Out of mana: your fire breath needs mana',1.5); } return; }
   p.mana=Math.max(0,p.mana-28*dt); const ang=breathAim(); if(Math.cos(ang)!==0) p.facing=Math.cos(ang)>0?1:-1; const mx=cxOf(p)+p.facing*7, my=p.y+9;
-  for(let k=0;k<6;k++){ const a=ang+(Math.random()-0.5)*0.55, sp=240+Math.random()*180; parts.push({x:mx,y:my,vx:Math.cos(a)*sp+p.vx*0.5,vy:Math.sin(a)*sp+p.vy*0.5,life:0.32+Math.random()*0.2,col:['#ffcf3a','#ff7b1c','#e5383b','#fff2a0'][(Math.random()*4)|0],sz:2+((Math.random()*2)|0)}); }
+  // the flames stop where they meet the ground or a wall, and splash along it
+  for(let k=0;k<6;k++){ const a=ang+(Math.random()-0.5)*0.55, sp=240+Math.random()*180; let L=0.32+Math.random()*0.2; const dx=Math.cos(a), dy=Math.sin(a);
+    for(let d=6;d<sp*L;d+=4){ const hx=mx+dx*d, hy=my+dy*d; if(isSolid(Math.floor(hx/T),Math.floor(hy/T))){ L=d/sp; if(Math.random()<0.5) parts.push({x:hx-dx*3,y:hy-dy*3,vx:(Math.random()-0.5)*90-dx*20,vy:-20-Math.random()*40,life:0.18+Math.random()*0.15,col:['#ffcf3a','#ff7b1c'][(Math.random()*2)|0],sz:2}); break; } }
+    parts.push({x:mx,y:my,vx:dx*sp+p.vx*0.5,vy:dy*sp+p.vy*0.5,life:L,col:['#ffcf3a','#ff7b1c','#e5383b','#fff2a0'][(Math.random()*4)|0],sz:2+((Math.random()*2)|0)}); }
   if((breathHitT-=dt)<=0){ breathHitT=0.1; const R=6.5*T; const src={x:mx,y:my,w:1,h:1,vx:0,vy:0,life:0,team:p.team,kind:'proj',owner:p};
     for(const o of ents){ if(o===p||!targetable(o)||!hostile(p.team,o.team)||o.kind==='villager') continue; const dx=cxOf(o)-mx, dy=cyOf(o)-my, d=Math.hypot(dx,dy); if(d>R+o.w/2) continue;
       let da=Math.abs(Math.atan2(dy,dx)-ang); if(da>Math.PI) da=2*Math.PI-da; if(da>0.42&&d>T) continue; if(!lineOfSight({x:mx-1,y:my-8,w:2,h:2},o)) continue;
       damage(o,11,src,40); if(!o.dead) o.burnT=Math.max(o.burnT||0,3); } }
-  if((breathBurnT-=dt)<=0){ breathBurnT=0.14; const d=(1.5+Math.random()*4.5)*T, a=ang+(Math.random()-0.5)*0.6; const x=Math.floor((mx+Math.cos(a)*d)/T), y=Math.floor((my+Math.sin(a)*d)/T);
-    igniteAt(x,y); }
+  if((breathBurnT-=dt)<=0){ breathBurnT=0.14; const d=(1.5+Math.random()*4.5)*T, a=ang+(Math.random()-0.5)*0.6; for(let r=4;r<=d;r+=4){ const x=Math.floor((mx+Math.cos(a)*r)/T), y=Math.floor((my+Math.sin(a)*r)/T); if(canBurn(tileAt(x,y))){ igniteAt(x,y); break; } if(isSolid(x,y)) break; } }   // fire catches the first thing in its path, never through a wall
   if(Math.random()<0.08&&typeof sfx==='function') sfx('magic'); }
 // phones: a Fire dial beside the Hook dial. Touch it to breathe, drag to aim the fire, let go to stop.
 const fireStick={on:false,x:0,y:0,mag:0,id:null};
@@ -8497,6 +8519,9 @@ function dbTallyAfter(grid){ const g=$(grid); if(!g) return; let t=g.nextElement
 { const _rc=renderChars; renderChars=function(...a){ const r=_rc(...a); try{ if(prevCls==='dragon'&&!dbUnlocked()) prevCls='knight'; $('#prevCls').insertAdjacentHTML('beforeend',dbButton('data-pc="dragon"',prevCls==='dragon')); dbTallyAfter('#prevCls'); }catch(e){ console.warn(e); } return r; }; }
 { const _ra=renderArmy; renderArmy=function(...a){ const r=_ra(...a); try{ const cs=$('#classSwap'); if(cs&&dbUnlocked()){ const nc=!cs.querySelector('button[disabled]');
       cs.insertAdjacentHTML('beforeend',`<button class="choice" data-cls="dragon" aria-pressed="${player.cls==='dragon'}" ${nc?'':'disabled'}>${CLASSES.dragon.name}<small>${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana</small></button>`); } }catch(e){ console.warn(e); } return r; }; }
+
+// on a computer, tell a Dragonborn which key breathes fire (it can be changed in Settings > Keys)
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(player&&player.cls==='dragon'&&!document.body.classList.contains('touch')){ const k=(settings.keys.breath||'KeyB').replace(/^Key|^Digit/,''); setTimeout(()=>toast(`Hold ${k} to breathe fire where your mouse points (G to fly). Change keys in Settings.`,5),1500); } }catch(e){} return r; }; }
 // ===================== the Dragonborn's wings and tail; two-finger touch controls =====================
 
 // ---- red wings that beat like the white sky wings, and a tail that sways ----
@@ -8513,9 +8538,9 @@ function drawDragonTail(e){ const t=performance.now()/1000, sc=dragonScale(e), s
 { const _de=drawEntity; drawEntity=function(e){ try{ if(lookOf(e)==='dragon'&&!(e.stealthT>0)){ drawDragonTail(e); drawDragonWings(e); } }catch(err){} return _de(e); }; }
 { const _sw=drawSkyWings; drawSkyWings=function(e){ if(e&&lookOf(e)==='dragon') return; return _sw(e); }; }
 
-// ---- stick-and-tap touch controls: a move stick on the right, and a tap anywhere else uses what you hold there ----
+// ---- stick-and-tap touch controls: a move stick on the left (right in Settings for left-handed players), and a tap anywhere else uses what you hold there ----
 // (the move stick is the joysticks' left stick moved to the other side; taps go to the normal tap-to-use on the game screen)
-{ const st=document.createElement('style'); st.textContent=`body.finger #stick_r{ display:none !important; } body.finger #sticks{ flex-direction:row-reverse; } body.finger.swap #sticks{ flex-direction:row; }`; document.head.appendChild(st); }
+{ const st=document.createElement('style'); st.textContent=`body.finger #stick_r{ display:none !important; }`; document.head.appendChild(st); }
 { const _ac=applyControls; applyControls=function(...a){ const fm=settings.controls==='finger'; const r=_ac(...a);
     document.body.classList.toggle('finger',fm); if(fm&&(world&&state!=='title'||world&&player)&&isTouch){ $('#touch').hidden=true; $('#sticks').hidden=false; } return r; }; }
 // joysticks are the starting choice on phones (everyone is moved back to them once; Settings can change it)
@@ -8612,6 +8637,9 @@ function menuCloser(o){ if(!o) return null; for(const sel of ['[id$="Close"]:not
   b.addEventListener('click',ev=>{ ev.stopPropagation(); const c=menuCloser(openMenu()); if(c) c.click(); });
   const sync=()=>{ const o=openMenu(), show=!!(o&&menuCloser(o)); if(b.hidden===show) b.hidden=!show; document.body.classList.toggle('menux',show); };
   new MutationObserver(ms=>{ for(const m of ms){ const o=m.target; if(o.classList&&o.classList.contains('overlay')&&!o.hidden){ menuOrder=menuOrder.filter(x=>x!==o); menuOrder.push(o); } } sync(); }).observe(document.body,{subtree:true,attributes:true,attributeFilter:['hidden']}); setInterval(sync,500); }
+
+// the title screen links to the Mac and Windows apps (not shown inside the app itself, or on phones)
+{ const show=()=>{ const a=$('#appLink'); if(a) a.hidden=/Electron/i.test(navigator.userAgent)||document.body.classList.contains('touch')||matchMedia('(pointer:coarse)').matches; }; show(); setTimeout(show,1500); }
 // ===================== multiplayer: one shared world, one shared village =====================
 
 // ---- every change to the world reaches every player ----
@@ -8667,6 +8695,27 @@ function mpRecruitIn(r,d){ if(!Array.isArray(d.rq)) return; MP.recSeen=MP.recSee
     const dft=ents.find(e=>e.kind==='drifter'&&!e.dead&&e.name===name); if(dft){ recruitDrifter(dft,job,true); toast(`${r.nm||'A friend'}: ${name} ${['knight','archer','mace','wizard','beast'].includes(job)?'joins their army':'takes a job in the village'}`,3); } }
   MP.recSeen[r.key]=seen; }
 { const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(MP.guest&&d.host) mpVillageIn(d); if(MP.host) mpRecruitIn(r,d); }catch(e){ console.warn(e); } return res; }; }
+
+// ---- grappling hooks: everyone sees a friend's hook fly and the rope from their hand ----
+function mpHookOut(){ if(typeof hook==='undefined'||!hook||hook.phase==='charge') return 0; const att=hook.phase==='pull'||hook.phase==='tight'||hook.phase==='hang'; const x=att?hook.ax:hook.x, y=att?hook.ay:hook.y; return isFinite(x)&&isFinite(y)?[Math.round(x),Math.round(y),att?1:0]:0; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ r.hk=d.hk||0; }catch(e){} return res; }; }
+function drawRemoteHooks(){ if(typeof MP==='undefined'||!MP.on) return; for(const r of MP.remote.values()){ const h=r.hk; if(!h||!isFinite(r.x)) continue;
+    const sx=r.x+6, sy=r.y+12, ex=h[0], ey=h[1], sag=h[2]?0:Math.min(24,Math.hypot(ex-sx,ey-sy)*0.15);
+    ctx.strokeStyle='#c8a46a'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(sx,sy); ctx.quadraticCurveTo((sx+ex)/2,(sy+ey)/2+sag,ex,ey); ctx.stroke();
+    ctx.fillStyle='#9aa0a8'; ctx.fillRect(Math.round(ex)-3,Math.round(ey)-1,6,2); ctx.fillRect(Math.round(ex)-1,Math.round(ey)-3,2,5); ctx.fillStyle='#5a5f68'; ctx.fillRect(Math.round(ex)-4,Math.round(ey)-2,1,2); ctx.fillRect(Math.round(ex)+3,Math.round(ey)-2,1,2); } }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawRemoteHooks(); }catch(e){} return r; }; }
+
+// ---- arrows and spells shot by the host's soldiers and enemies fly the same way on every friend's screen ----
+let mpShotSeq=0; const mpShots=[];
+const mpShotTagged=new WeakSet();
+function mpScanShots(){ if(typeof MP==='undefined'||!MP.on||!MP.host) return; for(const q of projs){ if(mpShotTagged.has(q)) continue; mpShotTagged.add(q); if(q.visual||q.src===player||q.owner===player||q.life<=0) continue;
+    mpShots.push([++mpShotSeq,Math.round(q.x),Math.round(q.y),Math.round(q.vx||0),Math.round(q.vy||0),q.kind==='arrow'?0:q.kind==='fireball'?2:1,q.col||0,Math.round(q.grav||0)]); if(mpShots.length>24) mpShots.shift(); } }
+{ const _u=update; update=function(dt){ try{ mpScanShots(); }catch(e){} _u(dt); try{ mpScanShots(); }catch(e){} }; }   // before and after, so a shot that hits at once is still seen
+function mpShotsOut(){ return mpShots.slice(-12); }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(MP.guest&&d.host&&Array.isArray(d.sh)){ let seen=MP.shotSeen||0;
+      for(const [sq,x,y,vx,vy,k,col,grav] of d.sh){ if(sq<=seen) continue; seen=Math.max(seen,sq); if(Math.abs(x-cxOf(player))>60*T) continue;
+        projs.push({visual:true,x,y,vx,vy,team:'ghost',dmg:0,kind:['arrow','magic','fireball'][k]||'arrow',col:col||undefined,life:2.5,grav,r:k===2?7:4}); }
+      MP.shotSeen=seen; } }catch(e){} return res; }; }
 // ===================== trees: wood all the way up inside the leaves =====================
 // Every tree's trunk runs up through its crown, bigger trees grow branches with leafy clumps at their ends,
 // spruces are tall cones around a trunk that reaches the tip, and the leaves in front of the wood are thin
@@ -8749,6 +8798,39 @@ const SLOPE_LOW={2:-1,3:1,4:-1,5:1,6:-1,7:1};   // which way each shape slopes d
         const x=i%W; if(x+dir<0||x+dir>=W||(oceanCol&&oceanCol[x])) continue; const j=i+dir, id=world[j]; if(!(wetOK(id,j)||id===B.WATER)) continue;
         const L=liq[i], lj=id===B.WATER?liq[j]:0, mv=Math.min(L,8-lj); if(mv<=0) continue; if(FLOWABLE.has(id)) washAway(j);
         setWater(j,lj+mv); setWater(i,L-mv); const y=(i/W)|0; wake(x,y); wake(x+dir,y); } } }catch(e){ console.warn(e); } return _sw(budget); }; }
+
+// ---- weather off: chosen for a world (Weather: Off) or switched off in Settings; the sky stays clear ----
+const wxOff=()=>(rules&&rules.wx==='off')||settings.noWeather===true;
+{ const _ws=weatherSync; weatherSync=function(...a){ const r=_ws(...a); try{ if(wxOff()&&!godWx()) weather='clear'; }catch(e){} return r; }; }
+{ const _u=update; update=function(dt){ _u(dt); try{ if(state==='play'&&weather!=='clear'&&wxOff()&&!godWx()){ weather='clear'; if(isHostSide()) dryAllRain(); } }catch(e){} }; }
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const off=settings.noWeather===true; $('#setWeather').innerHTML=`<button class="choice" data-k="noWeather" data-v="false" aria-pressed="${!off}">On<small>Rain, storms and snow by season</small></button><button class="choice" data-k="noWeather" data-v="true" aria-pressed="${off}">Off<small>Always clear skies</small></button>`; }catch(e){} return r; }; }
+// ===================== iron and prices =====================
+
+// ---- 20% more iron ore: extra veins near the iron already in the ground (new worlds, and older worlds once) ----
+function moreIron(seedN){ const R=mulberry(seedN), at=[]; for(let i=0;i<world.length;i++) if(world[i]===B.IRON) at.push(i); if(!at.length) return 0;
+  let add=Math.round(at.length*0.2), placed=0, tries=0;
+  while(add>0&&tries++<20000){ const s=at[(R()*at.length)|0]; let x=s%W+((R()*60)|0)-30, y=((s/W)|0)+((R()*30)|0)-15; let n=4+((R()*4)|0);
+    for(let k=0;k<n*3&&n>0&&add>0;k++){ if(x>0&&x<W-1&&y>0&&y<H-3){ const i=y*W+x; if(world[i]===B.STONE||world[i]===B.DEEPSTONE){ world[i]=B.IRON; n--; add--; placed++; } } const r=R(); if(r<0.25) x++; else if(r<0.5) x--; else if(r<0.75) y++; else y--; } }
+  return placed; }
+{ const _gw=genWorld; genWorld=function(sk,sd,...a){ const r=_gw(sk,sd,...a); try{ moreIron(sd+4242); }catch(e){ console.warn(e); } return r; }; }
+{ const _ng=newGame; newGame=function(...a){ const r=_ng(...a); try{ if(home) home.ironMore=1; }catch(e){} return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.ironMore&&!(typeof MP!=='undefined'&&MP.guest)){ home.ironMore=1; moreIron(seed+4243); buildMap(); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- prices: buying anything that can be crafted costs half of what its materials are worth ----
+// A material is worth five times what a merchant pays for it (an iron bar: 14 x 5 = 70 coins); anything crafted is worth
+// the materials in its recipe. So an iron sword (8 iron bars and sticks) is worth about 565 coins to craft and sells in shops for about 285.
+const MAT_MUL=5;
+SELL[I.SILVER_BAR]=10; SELL[B.SILVER_ORE]=3;   // silver sits below iron (bar 14, ore 4) now that silver gear comes before iron
+const matValue=(()=>{ const memo=new Map(), busy=new Set();
+  const recipeOf=id=>RECIPES.find(r=>r.out===id&&r.cat!=='cook');
+  const f=id=>{ if(memo.has(id)) return memo.get(id); if(SELL[id]!=null){ memo.set(id,SELL[id]*MAT_MUL); return memo.get(id); }
+    if(busy.has(id)) return 2; busy.add(id); const r=recipeOf(id); let v=2; if(r) v=r.need.reduce((s,[m,n])=>s+f(m)*n,0)/(r.n||1); busy.delete(id); memo.set(id,v); return v; };
+  return f; })();
+function craftCost(id){ const r=RECIPES.find(r=>r.out===id&&r.cat!=='cook'); if(!r) return null; return r.need.reduce((s,[m,n])=>s+matValue(m)*n,0)/(r.n||1); }
+for(const sh of Object.values(SHOPS)) for(const st of sh.stock){ const c=craftCost(st[0]); if(c==null) continue; st[2]=Math.max(1,Math.round(c*0.5*(st[1]||1))); }
+// selling never pays more than half of the lowest price any shop asks for the same item
+const MIN_BUY=new Map(); for(const sh of Object.values(SHOPS)) for(const st of sh.stock){ const per=st[2]/(st[1]||1); if(!MIN_BUY.has(st[0])||per<MIN_BUY.get(st[0])) MIN_BUY.set(st[0],per); }
+{ const _sv=sellPrice; sellPrice=function(id,...a){ const v=_sv(id,...a); const b=MIN_BUY.get(+id); return b!=null&&v>b*0.5?Math.max(b>=2?1:0,Math.floor(b*0.5)):v; }; }
 })();
 </script>
 </body>
