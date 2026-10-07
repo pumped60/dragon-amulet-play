@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791414897"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791414897"><link rel="manifest" href="manifest.webmanifest?v=1791414897"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791415920"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791415920"><link rel="manifest" href="manifest.webmanifest?v=1791415920"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.16</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.17</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.16</h3>
+    <h3>New in Beta 0.9.17</h3>
+    <p>Two treasures to find in chests. The <b>Dragon compass</b> shows which way the dragon's lair lies and how far; without it you can't tell. The <b>Astrolabe</b> shows the season, the weather and the days until the next season; without it the clock shows only the day. One compass always waits in the goblin warcamp's gold chest, the Jeweler sells astrolabes, and the test world starts with both.</p>
+    <h3>Beta 0.9.16</h3>
     <p>Trees are back to their original look: the trunk reaches a round crown and the leaves sit over it.</p>
     <h3>Beta 0.9.15</h3>
     <p>The eye (under ⋯ More, or H) opens a "Show on screen" list with everything ticked: untick the item bar, health bars, info lines, mini-map or a button and it hides at once; tick it to bring it back. Hide everything hides it all in one go. In shared worlds every player sees bomb blasts and the bosses' warning marks (the Sky Ranger's wind ring and target, the Magma Knight's glowing cracks).</p>
@@ -534,7 +536,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.16</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.17</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -780,7 +782,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.16</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.17</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -799,7 +801,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.16', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.17', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -8962,6 +8964,48 @@ applyHide=function(){ const v=settings.showVis||{}; const hid=id=>hotbarHidden||
   $('#btnItems').addEventListener('click',()=>setTimeout(applyHide,0));
   // opened from the More menu: the list sits under the top bar
   setTimeout(applyHide,0); }
+// ===================== the dragon compass and the astrolabe =====================
+// Dragon compass: until you find one, you can't tell which way the dragon's lair lies (the corner info hides it).
+// Astrolabe: until you find one, the clock shows only the day; with it you also see the season, the weather and
+// how many days are left until the next season. Both are found in treasure chests (the compass is always in the
+// goblin warcamp's gold chest), the Jeweler sells the astrolabe, and the test world starts with both.
+let NAV_COMPASS=660, NAV_ASTRO=661; while(ITEMS[NAV_COMPASS]) NAV_COMPASS++; NAV_ASTRO=NAV_COMPASS+1; while(ITEMS[NAV_ASTRO]) NAV_ASTRO++;
+I.DRAGON_COMPASS=NAV_COMPASS; I.ASTROLABE=NAV_ASTRO;
+ITEMS[NAV_COMPASS]={name:'Dragon compass',kind:'acc',slot:'compass',tier:1,desc:'Its needle always points to the dragon\'s lair; shows which way it lies and how far'};
+ITEMS[NAV_ASTRO]={name:'Astrolabe',kind:'acc',slot:'astro',tier:1,desc:'A brass star-reckoner: shows the season, the weather and the days until the next season'};
+SELL[NAV_COMPASS]=40; SELL[NAV_ASTRO]=30;
+customIcon(NAV_COMPASS,(rect,px)=>{ rect(3,3,10,10,'#8a5c2d'); rect(4,2,8,1,'#8a5c2d'); rect(4,13,8,1,'#8a5c2d'); rect(2,4,1,8,'#8a5c2d'); rect(13,4,1,8,'#8a5c2d');
+  rect(4,4,8,8,'#e8dcb8'); rect(7,0,2,2,'#c99a1a'); for(let i=0;i<4;i++){ px(8+i,7-i,'#e5383b'); px(7-i,8+i,'#3f3150'); } px(8,8,'#c99a1a'); px(7,7,'#c99a1a'); });
+customIcon(NAV_ASTRO,(rect,px)=>{ for(let a=0;a<28;a++){ const t=a/28*Math.PI*2; px(8+Math.round(Math.cos(t)*6),9+Math.round(Math.sin(t)*6),'#c99a1a'); px(8+Math.round(Math.cos(t)*4),9+Math.round(Math.sin(t)*4),'#8a6a1a'); }
+  rect(7,1,2,2,'#c99a1a'); rect(2,9,13,1,'#e8c860'); for(let i=-4;i<=4;i++) px(8+i,9-Math.round(i*0.6),'#fff2a8'); px(8,9,'#3f7cff'); px(11,6,'#ffffff'); px(5,12,'#ffffff'); });
+const hasNav=(id,slot)=>!!player&&((player.gear&&player.gear[slot]>0)||countItem(id)>0);
+const hasCompass=()=>hasNav(NAV_COMPASS,'compass'), hasAstro=()=>hasNav(NAV_ASTRO,'astro');
+if(SHOPS.jeweler) SHOPS.jeweler.stock.push([NAV_ASTRO,1,220]);
+
+// the corner info: the lair line needs the compass; the season and weather need the astrolabe
+{ const _hud=updateHUD; updateHUD=function(...a){ const r=_hud(...a); try{ if(!player) return r;
+    const ld=$('#lairdist'); if(ld&&!hasCompass()&&ld.textContent) ld.textContent='';
+    if(ld&&hasCompass()&&!ld.textContent&&typeof lastLair!=='undefined') lastLair=null;   // put it back on the next update
+    const ck=$('#clock'); if(ck){ const night=isNight(), base=(player.name?player.name+' · ':'')+(night?'☾ Night ':'☀ Day ')+dayCount;
+      let want=base; if(hasAstro()){ const left=SEASON_DAYS-((dayCount-1)%SEASON_DAYS), nxt=SEASONS[(SEASONS.indexOf(curSeason)+1)%4];
+        want=base+', '+seasonLabel()+` · ${left===1?'last day':left+' days'} to ${nxt}`+(!night&&time>NIGHT_AT-0.08?', dusk soon':''); }
+      if(ck.textContent!==want) ck.textContent=want; } }catch(e){} return r; }; }
+
+// found in chests: a separate random stream per world, so the rest of the world grows exactly as before
+let navLootR=null;
+{ const _gw=genWorld; genWorld=function(sk,sd,...a){ navLootR=mulberry((sd|0)+8081); const r=_gw(sk,sd,...a); navLootR=null;
+    try{ const wc=(gcamps||[]).find(c=>c.war); if(wc){ const ch=chests[(wc.x-9)+','+(wc.gy-1)]; if(ch) navAddTo(ch,NAV_COMPASS); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=lootFor; lootFor=function(d,R,tier,sky,...a){ const box=_lf(d,R,tier,sky,...a); try{ const RR=navLootR||Math.random;
+    if(RR()<1/12) navAddTo(box,NAV_COMPASS); if(RR()<0.1) navAddTo(box,NAV_ASTRO); }catch(e){} return box; }; }
+function navAddTo(box,id){ if(!box) return false; const L=box.items||box; if(!Array.isArray(L)) return false; if(L.some(s=>s&&s.id===id)) return true;
+  const i=L.findIndex(s=>!s); L[i>=0?i:L.length-1]={id,n:1}; return true; }
+// the test world starts with both; older worlds get them hidden in a few chests (and the compass in the warcamp)
+{ const _ng=newGame; newGame=function(...a){ const r=_ng(...a); try{ if(home) home.navItems=1; if(curSlot===4&&player){ player.gear.compass=1; player.gear.astro=1; } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.navItems&&!(typeof MP!=='undefined'&&MP.guest)){ home.navItems=1;
+      const wc=(gcamps||[]).find(c=>c.war); if(wc) navAddTo(chests[(wc.x-9)+','+(wc.gy-1)],NAV_COMPASS);
+      const keys=Object.keys(chests).filter(k=>chests[k]&&Array.isArray(chests[k].items)&&chests[k].items.some(s=>s)); const R=mulberry((seed|0)+8083);
+      for(let n=0;n<3&&keys.length;n++){ navAddTo(chests[keys.splice((R()*keys.length)|0,1)[0]],NAV_COMPASS); if(keys.length) navAddTo(chests[keys.splice((R()*keys.length)|0,1)[0]],NAV_ASTRO); } }
+    if(curSlot===4&&player){ player.gear.compass=1; player.gear.astro=1; } }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
