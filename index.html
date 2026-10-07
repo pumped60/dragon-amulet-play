@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791402413"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791402413"><link rel="manifest" href="manifest.webmanifest?v=1791402413"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791410146"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791410146"><link rel="manifest" href="manifest.webmanifest?v=1791410146"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.12</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.13</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.12</h3>
+    <h3>New in Beta 0.9.13</h3>
+    <p>Tidier item screens, especially on phones and in the test world. The God menu shows items, soldiers, enemies and animals as a grid of tiles (tap one to take or spawn it), with quick filters for weapons, tools, armor, blocks, food and materials. Creative "All items" uses the same tiles. On phones, crafting shows two recipes side by side in shorter cards, and its tabs scroll in one row. The day, coins and party lines in the corner sit on a soft dark backing, so they stay readable.</p>
+    <h3>Beta 0.9.12</h3>
     <p>Settings &gt; Torches lets you choose how torches work: what a tap does with the Torch button on (place a torch, or light only), whether double-tap places a torch, whether tools rest while the torch is on, and whether holding Shift lights your torch on a computer.</p>
     <h3>Beta 0.9.11</h3>
     <p>Phones: in Stick and tap, the pickaxe always mines the nearest block toward where you tap, so it never jumps between blocks. The Torch button lights your way and turns taps into torch placing: one tap puts a torch exactly where you tap, and your pickaxe, axe, hoe and hammer rest until you switch it off (weapons still swing). Double-tap still places a torch when the Torch button is off.</p>
@@ -526,7 +528,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.12</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.13</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -773,7 +775,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.12</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.13</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -792,7 +794,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.12', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.13', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3581,7 +3583,7 @@ $('#endKeep').addEventListener('click',()=>{ hide('scrEnd'); state='play'; toast
 $('#endNGP').addEventListener('click',()=>{ if(typeof MP!=='undefined'&&MP.on){ toast('Leave multiplayer to start new game plus',3); return; } hide('scrEnd'); const ng=(rules.ngp||0)+1; charSave(); const st=charState(); const keepSlot=curSlot===4?1:curSlot; const sk=sizeKey, fac=player.team, cls=player.cls;
   $('#loading').hidden=false; $('#loading').textContent='Building a new world…'; hide('hud'); show('scrTitle');
   setTimeout(()=>{ curSlot=keepSlot; heroPick.state=st; newGame(sk,fac,cls,{mode:rules.mode,kit:'standard',death:rules.death,ngp:ng,cust:player.cust||null}); afterWorldReady(); $('#loading').hidden=true; startPlay(); saveLocal(); toast(`New game plus ${ng}: enemies are ${(1+0.5*ng).toFixed(1)} times tougher. You keep your gear, soldiers and pets.`,6); },60); });
-function makeTestWorld(cls){ curSlot=4; heroPick.state=null; heroPick.newCls=null; newGame('medium',['g','b','r'][(Math.random()*3)|0],CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'survival',kit:'standard',death:'keep'}); if(!countItem(I.RECALL)) give(I.RECALL,1); recallToLast(); Object.assign(player,{observer:true,godKill:true,godFly:true,godCraft:true}); const bf=$('#btnFly'); if(bf) bf.textContent='Walk'; toast('Test world: you start as a spectator with instakill, flight and free crafting. Turn them off in the God menu (top bar), where you can also give items, recruit soldiers and spawn creatures.',6); }
+function makeTestWorld(cls){ curSlot=4; heroPick.state=null; heroPick.newCls=null; newGame('medium',['g','b','r'][(Math.random()*3)|0],CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'survival',kit:'standard',death:'keep'}); if(!countItem(I.RECALL)) give(I.RECALL,1); recallToLast(); Object.assign(player,{observer:true,godKill:true,godFly:true,godCraft:true}); const bf=$('#btnFly'); if(bf) bf.textContent='Walk'; toast('Test world: instakill, flight and free crafting are on. The ⚡ God menu changes them and gives items.',4); }
 
 // ---- portal network ----
 function portalList(){ const L=[]; const add=(label,x,y,fee)=>L.push({label,x,y,fee,tx:Math.round(x/T)+2,ty:Math.round((y+29)/T)});
@@ -4897,8 +4899,8 @@ function renderInv(){
   if(craftCat==='creative'){ $('#craftList').innerHTML=Object.keys(ITEMS).map(Number).map(id=>`<div class="recipe"><img alt="" src="${iconUrl(id)}"><div><div class="nm">${ITEMS[id].name}</div></div><div class="acts"><button data-take="${id}" data-n="1">1</button>${isUpgradeItem(id)?'':`<button data-take="${id}" data-n="99">99</button>`}</div></div>`).join(''); return; }
   const q=(craftQuery||'').trim().toLowerCase(); craftOrder().forEach(([rc,ri])=>{ if(craftCat!=='all'&&rc.cat!==craftCat) return; if(q&&!ITEMS[rc.out].name.toLowerCase().includes(q)) return; if(!showOk(rc)) return; const owned=isUpgradeItem(rc.out)&&ownedTier(rc.out)>=tierOf(rc.out); const stOk=free()||!rc.st||nearStation(rc.st); const haveAll=free()||rc.need.every(([id,n])=>countNeed(id)>=n); const ok=stOk&&haveAll&&!owned;
     const ing=rc.need.map(([id,n])=>{ const have=countNeed(id); return `<span class="${have<n?'miss':''}"><img alt="" src="${iconUrl(id)}"> ${ITEMS[id].name} ${have}/${n}</span>`; }).join('  ');
-    const stn=rc.st?`<br><span class="${stOk?'':'miss'}">Needs a ${ITEMS[rc.st].name.toLowerCase()} nearby</span>`:'';
-    c+=`<div class="recipe${ok?'':' no'}"><img alt="" src="${iconUrl(rc.out)}"><div><div class="nm">${ITEMS[rc.out].name}${rc.n>1?' ×'+rc.n:''}${ITEMS[rc.out].desc?` <span style="color:var(--muted)">(${ITEMS[rc.out].desc.toLowerCase()})</span>`:''}${ITEMS[rc.out].def?` <span style="color:var(--muted)">(+${ITEMS[rc.out].def} defense)</span>`:''}${ITEMS[rc.out].dmg?` <span style="color:var(--muted)">(${ITEMS[rc.out].dmg} damage)</span>`:''}</div><div class="ing">${ing}${stn}</div></div><div class="acts"><button data-r="${ri}" ${ok?'':'disabled'}>${owned?'Owned':isUpgradeItem(rc.out)&&ownedTier(rc.out)>0?'Upgrade':'Craft'}</button>${isUpgradeItem(rc.out)?'':`<button data-r="${ri}" data-all="1" ${ok?'':'disabled'} title="Craft as many as you can">All</button>`}</div></div>`; });
+    const stn=rc.st?`<span class="stn ${stOk?'':'miss'}">${stOk?'at':'needs'} a ${ITEMS[rc.st].name.toLowerCase()}</span>`:'';
+    c+=`<div class="recipe${ok?'':' no'}"><img alt="" src="${iconUrl(rc.out)}"><div><div class="nm">${ITEMS[rc.out].name}${rc.n>1?' ×'+rc.n:''}${ITEMS[rc.out].desc?` <span class="dsc" style="color:var(--muted)">(${ITEMS[rc.out].desc.toLowerCase()})</span>`:''}${ITEMS[rc.out].def?` <span style="color:var(--muted)">(+${ITEMS[rc.out].def} defense)</span>`:''}${ITEMS[rc.out].dmg?` <span style="color:var(--muted)">(${ITEMS[rc.out].dmg} damage)</span>`:''}</div><div class="ing">${ing}${stn}</div></div><div class="acts"><button data-r="${ri}" ${ok?'':'disabled'}>${owned?'Owned':isUpgradeItem(rc.out)&&ownedTier(rc.out)>0?'Upgrade':'Craft'}</button>${isUpgradeItem(rc.out)?'':`<button data-r="${ri}" data-all="1" ${ok?'':'disabled'} title="Craft as many as you can">All</button>`}</div></div>`; });
   $('#craftList').innerHTML=c||'<p>No recipes match your search.</p>';
 }
 $('#invGrid').addEventListener('click',ev=>{ const b=ev.target.closest('.slot'); if(!b) return;
@@ -8873,6 +8875,53 @@ for(const sh of Object.values(SHOPS)) for(const st of sh.stock){ const c=craftCo
 // selling never pays more than half of the lowest price any shop asks for the same item
 const MIN_BUY=new Map(); for(const sh of Object.values(SHOPS)) for(const st of sh.stock){ const per=st[2]/(st[1]||1); if(!MIN_BUY.has(st[0])||per<MIN_BUY.get(st[0])) MIN_BUY.set(st[0],per); }
 { const _sv=sellPrice; sellPrice=function(id,...a){ const v=_sv(id,...a); const b=MIN_BUY.get(+id); return b!=null&&v>b*0.5?Math.max(b>=2?1:0,Math.floor(b*0.5)):v; }; }
+// ===================== tidier item screens: tile grids, compact crafting on phones =====================
+// Long one-item-per-row lists (the God menu, creative "All items") become grids of tiles: tap a tile to take it.
+const tileHtml=(img,name,attr)=>`<button class="tile" ${attr}><img alt="" src="${img}"><span>${name}</span></button>`;
+const GOD_CATS=[['all','All'],['weapon','Weapons'],['tool','Tools'],['armor','Armor and gear'],['block','Blocks'],['food','Food'],['mat','Materials'],['other','Other']];
+let godCat='all';
+const godCatOf=d=>d.kind==='weapon'?'weapon':['pick','axe','hoe','hammer','rod'].includes(d.kind)?'tool':(d.kind==='armor'||d.kind==='acc')?'armor':['block','wall','shape'].includes(d.kind)?'block':d.kind==='food'?'food':d.kind==='mat'?'mat':'other';
+{ const _rg=renderGod; renderGod=function(...a){ const r=_rg(...a); try{
+    let chips=$('#godCats'); if(!chips){ chips=document.createElement('div'); chips.id='godCats'; chips.className='chiprow'; $('#godSearch').after(chips);
+      chips.addEventListener('click',e=>{ const b=e.target.closest('[data-gc]'); if(!b) return; godCat=b.dataset.gc; renderGod(); }); }
+    chips.hidden=godTab!=='items'; chips.innerHTML=GOD_CATS.map(([k,l])=>`<button class="chip" data-gc="${k}" aria-pressed="${k===godCat}">${l}</button>`).join('');
+    const q=($('#godSearch').value||'').toLowerCase(); let h=null;
+    if(godTab==='items') h=[...Object.values(DB_W),...Object.keys(ITEMS).map(Number).filter(id=>!DB_OF[id])].filter(id=>{ const d=ITEMS[id]; return d&&d.name&&d.name.toLowerCase().includes(q)&&(godCat==='all'||godCatOf(d)===godCat); }).slice(0,400).map(id=>tileHtml(iconUrl(id),ITEMS[id].name,`data-gi="${id}"`)).join('')||'<p>No items match.</p>';
+    else if(godTab==='army') h=CLS_KEYS.map(k=>tileHtml(portraitUrl(CLASSES[k].look||k,player.team,false),CLASSES[k].name,`data-gr="${k}"`)).join('');
+    else if(godTab==='enemies') h=Object.keys(MON).map(k=>tileHtml(iconUrl(I.BONE),k.replace(/_/g,' '),`data-gm="${k}"`)).join('')+tileHtml(iconUrl(I.IRON_SWORD),'Enemy raider',`data-gh="1"`);
+    else if(godTab==='animals') h=Object.keys(ANIMALS).map(k=>tileHtml(iconUrl(I.APPLE),k==='polarbear'?'polar bear':k,`data-ga="${k}"`)).join('');
+    if(h!=null){ const hint={items:'Tap an item to add it to your bag.',army:'Tap a class to recruit a soldier (up to 20 in your party, the rest go to the reserves).',enemies:'Tap to spawn one next to you.',animals:'Tap to spawn one next to you.'}[godTab];
+      $('#godList').innerHTML=`<p class="tilehint">${hint}</p><div class="tiles">${h}</div>`; } }catch(e){ console.warn(e); } return r; }; }
+// creative "All items" in crafting: the same tiles, a tap takes a stack (or one of a tool or weapon)
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ if($('#craftList')) $('#craftList').classList.toggle('tilemode',typeof craftCat!=='undefined'&&craftCat==='creative'); if(typeof craftCat!=='undefined'&&craftCat==='creative'&&$('#craftList')){ const q=(craftQuery||'').trim().toLowerCase();
+      $('#craftList').innerHTML=`<p class="tilehint">Tap an item to take it${q?'':' (search above to narrow the list)'}.</p><div class="tiles">`+Object.keys(ITEMS).map(Number).filter(id=>ITEMS[id]&&ITEMS[id].name&&(!q||ITEMS[id].name.toLowerCase().includes(q))).map(id=>tileHtml(iconUrl(id),ITEMS[id].name,`data-take="${id}" data-n="${isUpgradeItem(id)?1:99}"`)).join('')+'</div>'; } }catch(e){ console.warn(e); } return r; }; }
+{ const st=document.createElement('style'); st.textContent=`
+.tiles{ display:grid; grid-template-columns:repeat(auto-fill,minmax(86px,1fr)); gap:5px; }
+.tile{ display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:4px; padding:7px 3px 6px; background:var(--panel2); border:2px solid #5b4f7c; color:var(--text); font-family:var(--font); font-size:7px; line-height:1.5; text-align:center; cursor:pointer; min-height:62px; }
+.tile:hover,.tile:active{ border-color:var(--gold); } .tile img{ width:28px; height:28px; image-rendering:pixelated; } .tile span{ overflow-wrap:anywhere; }
+#craftList.tilemode{ display:block !important; }
+.tilehint{ font-size:8px; color:var(--muted); margin:2px 0 6px; }
+.chiprow{ display:flex; gap:4px; overflow-x:auto; padding-bottom:4px; margin-bottom:6px; scrollbar-width:thin; } .chiprow[hidden]{ display:none; }
+.chip{ flex:0 0 auto; background:var(--panel2); color:var(--text); border:2px solid #5b4f7c; font-family:var(--font); font-size:7px; padding:6px 9px; }
+.chip[aria-pressed="true"]{ border-color:var(--gold); color:var(--gold); }
+.recipe .stn{ display:inline-block; margin-left:6px; font-size:0.95em; color:var(--muted); } .recipe .stn.miss{ color:#ff8a8a; }
+#scrGod .phead{ flex-wrap:wrap; row-gap:6px; } #scrGod .phead>div{ flex-wrap:wrap; }
+body.menux #godClose{ display:none; }
+@media (max-height:520px) and (orientation:landscape), (max-width:600px){
+  .tiles{ grid-template-columns:repeat(auto-fill,minmax(66px,1fr)); gap:4px; } .tile{ font-size:6px; min-height:52px; padding:5px 2px 4px; } .tile img{ width:24px; height:24px; }
+  #craftTabs{ display:flex !important; overflow-x:auto; flex-wrap:nowrap; gap:3px; } #craftTabs .choice{ flex:0 0 auto; padding:6px 9px; font-size:7px; }
+  #craftShow{ display:flex; flex-wrap:nowrap; overflow-x:auto; }
+  #stations{ font-size:7px; margin-bottom:4px; }
+  #craftList{ display:grid !important; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:4px; }
+  .recipe .dsc{ display:none; } .recipe .ing{ line-height:1.6; }
+  #godTabs{ display:flex !important; overflow-x:auto; gap:3px; } #godTabs .choice{ flex:0 0 auto; padding:7px 10px; font-size:7px; }
+  #scrGod .phead .xbtn{ font-size:7px; padding:6px 7px; } #godSearch{ font-size:8px !important; padding:6px !important; margin-bottom:5px !important; }
+  #godList{ max-height:none !important; }
+  #scrGod .phead{ padding-right:56px; } #scrGod .phead>div{ flex-basis:100%; gap:4px !important; }   /* the setting buttons get their own row, clear of the X */
+  .recipe{ padding:3px 5px; gap:6px; } .recipe img{ width:22px; height:22px; } .recipe .nm{ font-size:7.5px; } .recipe .ing{ font-size:6.5px; margin-top:1px; } .recipe button{ padding:5px 7px; font-size:7px; }
+}
+#sub{ text-shadow:none !important; background:rgba(16,12,24,.55); padding:3px 7px 2px; border-radius:3px; width:max-content; max-width:46vw; }   /* readable over sky and ground without a doubled shadow */
+#sub:empty{ display:none; }`; document.head.appendChild(st); }
 })();
 </script>
 </body>
