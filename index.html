@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791338963"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791338963"><link rel="manifest" href="manifest.webmanifest?v=1791338963"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791345805"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791345805"><link rel="manifest" href="manifest.webmanifest?v=1791345805"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -339,7 +339,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.2</p></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.3</p></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -396,8 +396,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.2</h3>
-    <p>The Dragonborn, a sixth class: half dragon, he flies whenever he likes and breathes fire (hold B, or the Breath button on phones), burning enemies and scorching wood and grass, using mana. He has the most health, armor and mana of any class. He shows in the class list from the start, greyed out until you defeat Vorthax; after that he is unlocked on this device for every new character.</p>
+    <h3>New in Beta 0.9.3</h3>
+    <p>The Dragonborn can always be tried out in the test world. For new survival and creative games he stays greyed out until you defeat Vorthax in a survival world; wins in the test world or in creative never unlock him or the dragonborne weapons (Vorthax still drops the weapon there).</p>
+    <h3>Beta 0.9.2</h3>
+    <p>The Dragonborn, a sixth class: half dragon, he flies whenever he likes and breathes fire (hold B, or the Breath button on phones), burning enemies and scorching wood and grass, using mana. He has the most health, armor and mana of any class. He shows in the class list from the start, greyed out until you defeat Vorthax in survival; after that he is unlocked on this device for every new character.</p>
     <p>Dragonborne weapons: defeating Vorthax drops the dragonborne weapon of your class (sword, bow, mace, staff or daggers), and every hit from it sets enemies burning. Each one you win is unlocked for good, and a new Dragonborn starts with all of them. Beat Vorthax with every class to collect all five; the tally under the Dragonborn shows which you have.</p>
     <h3>Beta 0.9.1</h3>
     <p>Bombs: craft black powder (2 coal and a bone), small bombs and fire bombs at a workbench, and buy big and sticky bombs from the Demolitionist. A small bomb is thrown and bounces before it blows; a fire bomb bursts where it lands and sets everything around it burning; a sticky bomb sticks to the first wall or enemy it touches; a big bomb is set down at your feet, so get clear. Every bomb breaks blocks: they burst apart in pieces, some of which land as rubble that crumbles away after three days, and the blocks around the blast are left burnt. Your own bombs hurt you and your soldiers at half strength, and they never break anything in your own village.</p>
@@ -503,7 +505,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.2</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.3</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -742,7 +744,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.2</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.3</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -761,7 +763,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.2', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.3', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -8400,9 +8402,11 @@ const dbUnlocked=()=>dbStore().unlocked;
 const dbWeapons=()=>{ const w=dbStore().weapons; return CLS_KEYS.filter(k=>w[k]).map(k=>DB_W[k]); };
 // Vorthax falls: unlock the Dragonborn, unlock and drop the slayer's dragonborne weapon (once per world for each class)
 function dbReward(){ if(!player||player.observer) return; home.dbGot=home.dbGot||{}; const cls=player.cls; if(home.dbGot[cls]) return; home.dbGot[cls]=true;
-  const s=dbStore(); const first=!s.unlocked; s.unlocked=true; const id=DB_W[cls]; const newW=id&&!s.weapons[cls]; if(id) s.weapons[cls]=true; dbSave(s);
-  if(id){ spawnDrop(cxOf(player),player.y,id,1); }
-  const msg=[first?'The Dragonborn is unlocked: choose him for your next character.':'', id?`Vorthax leaves the ${ITEMS[id].name.toLowerCase()}${newW?', and the Dragonborn can start with it from now on':''}.`:''].filter(Boolean).join(' ');
+  const id=DB_W[cls]; if(id) spawnDrop(cxOf(player),player.y,id,1);
+  /* only a survival win counts: the test world and creative worlds never unlock anything */
+  const real=rules.mode==='survival'&&curSlot!==4;
+  let first=false, newW=false; if(real){ const s=dbStore(); first=!s.unlocked; s.unlocked=true; newW=!!id&&!s.weapons[cls]; if(id) s.weapons[cls]=true; dbSave(s); }
+  const msg=[first?'The Dragonborn is unlocked: choose him for your next character, in survival or creative.':'', id?`Vorthax leaves the ${ITEMS[id].name.toLowerCase()}${newW?', and the Dragonborn can start with it from now on':''}.`:'', !real&&!dbUnlocked()?'Beat Vorthax in a survival world to unlock the Dragonborn.':''].filter(Boolean).join(' ');
   if(msg) setTimeout(()=>toast(msg,7),1500); }
 let dbSeen=null;
 { const _u=update; update=function(dt){ _u(dt); try{ if(dbSeen===null) dbSeen=!!dragonSlain; if(dragonSlain&&!dbSeen&&player&&lair&&Math.abs(cxOf(player)/T-(lair.rx0+lair.rx1)/2)<150){ dbSeen=true; dbReward(); } else if(!dragonSlain) dbSeen=false; breathTick(dt); dbUiTick(dt); }catch(e){ console.warn(e); } }; }
@@ -8440,7 +8444,7 @@ function dbUiTick(dt){ if((dbUiT-=dt)>0) return; dbUiT=0.5; const dr=player&&pla
 function dbTally(){ const w=dbStore().weapons; const n=CLS_KEYS.filter(k=>w[k]).length;
   return `<div class="dbtally" style="font-size:8px;line-height:1.5;margin-top:4px">Dragonborne weapons: ${n} of 5<br>${CLS_KEYS.map(k=>`<span style="opacity:${w[k]?1:0.35}">${w[k]?'✓':'·'} ${ITEMS[DB_W[k]].name.replace('Dragonborne ','')}</span>`).join(' ')}</div>`; }
 function dbButton(attr,pressed,extra){ const ok=dbUnlocked();
-  return `<button class="choice" ${attr} aria-pressed="${pressed}" ${ok?'':'disabled'} style="${ok?'':'opacity:.45;filter:grayscale(.6)'}">${CLASSES.dragon.name}<small>${ok?`${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana`:'Defeat Vorthax to unlock'}</small>${extra||''}</button>`; }
+  return `<button class="choice" ${attr} aria-pressed="${pressed}" ${ok?'':'disabled'} style="${ok?'':'opacity:.45;filter:grayscale(.6)'}">${CLASSES.dragon.name}<small>${ok?`${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana`:'Defeat Vorthax in survival to unlock'}</small>${extra||''}</button>`; }
 { const _bc=buildChoices; buildChoices=function(...a){ const r=_bc(...a); try{ if(setup.cls==='dragon'&&!dbUnlocked()) setup.cls='knight';
       $('#chCls').insertAdjacentHTML('beforeend',dbButton('data-v="dragon"',setup.cls==='dragon',dbTally())); if(setup.cls==='dragon') $('#clsDesc').textContent=CLASSES.dragon.desc; }catch(e){ console.warn(e); } return r; }; }
 { const _rc=renderChars; renderChars=function(...a){ const r=_rc(...a); try{ if(prevCls==='dragon'&&!dbUnlocked()) prevCls='knight'; $('#prevCls').insertAdjacentHTML('beforeend',dbButton('data-pc="dragon"',prevCls==='dragon',dbTally())); }catch(e){ console.warn(e); } return r; }; }
