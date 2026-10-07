@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791350472"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791350472"><link rel="manifest" href="manifest.webmanifest?v=1791350472"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791352255"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791352255"><link rel="manifest" href="manifest.webmanifest?v=1791352255"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.7</p></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.8</p></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.7</h3>
+    <h3>New in Beta 0.9.8</h3>
+    <p>Trees grow with their wood all the way up inside the leaves: trunks reach into the crown, big trees grow branches with leafy clumps, spruces are tall cones, and you can see the bark through the leaves. In a shared world everything matches for every player: a tree someone cuts falls for everyone, back walls and new village houses show up whole, a wanderer given a job by any player becomes the same shopkeeper, miner or soldier for all, and friends' arrows fly the way they were aimed. Water falls through platforms, slides down slopes and stairs, and is drawn in front of furniture standing in it. Rain and floods leave half as much water, and penned animals stay in until the water is three quarters of a block over the fence. On the surface a roof alone no longer makes it dark: only a space closed in on every side with a back wall is dark. Storms and rain last 12 hours of game time, and the water they leave drains away within the next 6. Mouse aim lock starts switched on (L or Settings turns it off). The Mac and Windows apps fetch the newest game each time they start.</p>
+    <h3>Beta 0.9.7</h3>
     <p>Every menu (bag, crafting, shops, chests, army, map, settings, help and the rest) has an X in the top right corner that stays put however far you scroll. On phones you always sprint while moving (switch it off in Settings), double-tap anywhere in the world to place a torch, and the Torch button switches your hand-held light. Joysticks are the starting touch controls again; "Stick and tap" puts a move stick on the right and lets you tap anywhere to mine, build or attack there. Every class button in the new world screen is the same size, with the Dragonborne weapon tally just under them.</p>
     <h3>Beta 0.9.6</h3>
     <p>Play on a Mac or Windows computer in its own window: open pumped60.github.io/dragon-amulet-play in Chrome or Edge and press "Install on this computer" on the title screen (or the install icon in the address bar). It gets its own icon, works offline and updates itself. There are also downloadable Mac and Windows apps on the Releases page of the dragon-amulet-play project on GitHub. F11 switches full screen in the downloaded app.</p>
@@ -516,7 +518,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.7</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.8</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -757,7 +759,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.7</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.8</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -776,7 +778,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.7', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.8', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2640,7 +2642,7 @@ function updatePlayer(dt){
       else if(def.kind!=='hammer'&&inReach&&tid&&!toolCan(def.kind,tid)){ if(p.useEdge) toast(tid===B.LOG||tid===B.LEAVES?'Use an axe to chop trees':PLANTS.has(tid)?'Use a hoe to clear plants':'Use a pickaxe for that',1.5); }
       else if(def.kind==='hammer'&&inReach&&!tid&&aty>=0&&bg[aty*W+atx]){ // no block here: chip away the background wall instead
         if(p.mine.x!==atx||p.mine.y!==aty) p.mine={x:atx,y:aty,p:0}; p.mine.p+=dt*def.speed/0.4;
-        if(p.mine.p>=1){ const v=bg[aty*W+atx]; bg[aty*W+atx]=0; if(explored[aty*W+atx]) mapPixel(atx,aty); const wid=Object.keys(WALLS).find(k=>WALLS[k]===v); if(wid) give(+wid,1); p.mine={x:-1,y:-1,p:0}; } }
+        if(p.mine.p>=1){ const v=bg[aty*W+atx]; mpRun(()=>bset(atx,aty,0)); if(explored[aty*W+atx]) mapPixel(atx,aty); const wid=Object.keys(WALLS).find(k=>WALLS[k]===v); if(wid) give(+wid,1); p.mine={x:-1,y:-1,p:0}; } }
       else if(def.kind==='hammer'){ }
       else if(inReach&&isChestId(tid)&&chestHasStuff(atx,aty)){ if(p.useCd<=0){ toast('Empty the chest before breaking it'); p.useCd=1.5; } }
       else if(inReach&&tid&&aty>=magmaY&&cyOf(p)<magmaY*T&&rules.mode!=='creative'){ }
@@ -2672,7 +2674,7 @@ function updatePlayer(dt){
     } else if(def.kind==='block'){
       if(p.placeCd<=0&&inReach) tryPlace(atx,aty,it.id);
     } else if(def.kind==='wall'){
-      if(p.placeCd<=0&&inReach&&atx>=0&&atx<W&&aty>=0&&aty<H&&!bg[aty*W+atx]&&!BLOCKS[world[aty*W+atx]].solid){ bg[aty*W+atx]=WALLS[it.id]; if(explored[aty*W+atx]) mapPixel(atx,aty); takeItem(it.id,1); p.placeCd=0.08; }
+      if(p.placeCd<=0&&inReach&&atx>=0&&atx<W&&aty>=0&&aty<H&&!bg[aty*W+atx]&&!BLOCKS[world[aty*W+atx]].solid){ mpRun(()=>bset(atx,aty,WALLS[it.id])); if(explored[aty*W+atx]) mapPixel(atx,aty); takeItem(it.id,1); p.placeCd=0.08; }
     } else if(p.useCd<=0){ p.useCd=0.6;
       if(def.kind==='elixir'||def.kind==='heart'){ if(p.useEdge) drinkUpgrade(it); }
       else if(def.kind==='feather'){ if(p.useEdge) drinkFeather(it); }
@@ -2740,7 +2742,7 @@ function sweepMelee(e){ const s=e.swing; if(!s) return; if(!(e.atkT>0)){ e.swing
   for(const o of ents){ if(o===e||s.hit.has(o)||!targetable(o)||!hostile(e.team,o.team)) continue;
     const qx=clamp(pv.x,o.x-pad,o.x+o.w+pad), qy=clamp(pv.y,o.y-pad,o.y+o.h+pad); const dx=qx-pv.x, dy=qy-pv.y, dist=Math.hypot(dx,dy);
     if(dist>R) continue; if(!meleeClear(pv.x,pv.y,cxOf(o),cyOf(o))) continue; if(dist<10||angDiff(Math.atan2(dy,dx),mid)<=half){ s.hit.add(o); damage(o,d.dmg,e,d.kb); if(d.burn) o.burnT=3; } } }
-function shoot(e,ang,speed,dmg,kind,col,burn){
+function shoot(e,ang,speed,dmg,kind,col,burn){ if(e===player) e.shotAng=ang;   // sent to friends so they see the shot fly the right way
   projs.push({ x:cxOf(e), y:e.y+10, vx:Math.cos(ang)*speed, vy:Math.sin(ang)*speed, team:e.team, dmg, kind, col, life:kind==='fire'?0.9:3, grav:kind==='arrow'?300:0, r:kind==='fireball'?7:kind==='arrow'?4:kind==='magic'?7:4, src:e, burn:!!burn });
 }
 function harvest(x,y){ const id=tileAt(x,y); if(id===B.BERRY_RIPE){ setTile(x,y,B.BERRY_BUSH); give(I.BERRIES,2+Math.floor(Math.random()*2)); return true; } return false; }
@@ -3076,6 +3078,7 @@ function rescue(cap){
   const c=cap.camp; const guards=ents.filter(e=>!e.dead&&((e.kind==='monster'&&(e.camp===c||Math.abs(cxOf(e)/T-c.x)<10))||(e.kind==='human'&&e.team!==player.team&&Math.abs(cxOf(e)/T-c.x)<14)));
   if(guards.length){ toast(`Defeat the ${guards.length} guard${guards.length>1?'s':''} nearby first`,3); return; }
   cap.dead=true; c.rescued=true; for(let y=c.gy-4;y<c.gy;y++) for(let x=c.x-1;x<=c.x+1;x++) if(tileAt(x,y)===B.CAGE) setTile(x,y,0);
+  if(c.villager&&home&&typeof MP!=='undefined'&&MP.guest){ MP.recReq=MP.recReq||[]; MP.recSeq=(MP.recSeq||0)+1; MP.recReq.push([MP.recSeq,'','+']); toast('The villager thanks you and heads to the village to find work',3.5); return; }
   if(c.villager&&home){ const d=makeDrifter(ents.filter(e=>e.kind==='drifter'||e.kind==='villager').length+3); d.x=cap.x; d.y=cap.y; ents.push(d); toast('The villager thanks you and heads to your village to find work',3.5); return; }
   const s=makeHuman(player.team,cap.cls,cap.x,cap.y,'guard',home); ents.push(s); const slot=freeSlot();
   if(slot>=0){ putInSlot(s,slot); toast(`${s.name} the ${CLASSES[s.cls].name.toLowerCase()} joins your party!`,3.5); }
@@ -3195,23 +3198,23 @@ const SKY_CLS=['skyknight','skyarcher','skywizard','skymace'];
 function spawnEnemyMiners(b){ const mx=b.cx+8; for(let k=0;k<2;k++){ const m=makeHuman(b.f,'miner',(mx+k)*T,(b.gy+3)*T-29,'guard',{cx:mx,gy:b.gy,x0:mx-1,x1:mx+2}); m.miner=true; ents.push(m); } }
 function stampBase(b){ const put=(x,y,id)=>{ if(tileAt(x,y)!==id) setTile(x,y,id); }; const S=B.STONE_BLOCK, gy=b.gy;
   if(b.lvl===1||b.lvl===2){ const [s0,e0]=b.isl||[b.x0-120,b.x1+160]; const c=facSite(b.lvl===1?b.x0-14:b.x1+20,b.lvl===1?-1:1,4,s0+8,e0-8); if(c==null) return; const x0=c-2; b.stamped=(b.stamped||[]).concat([[x0-1,x0+5]]);
-    for(let y=gy-14;y<gy;y++){ put(x0,y,S); put(x0+4,y,S); for(let x=x0+1;x<x0+4;x++){ put(x,y,0); bg[y*W+x]=11; } }
+    for(let y=gy-14;y<gy;y++){ put(x0,y,S); put(x0+4,y,S); for(let x=x0+1;x<x0+4;x++){ put(x,y,0); bset(x,y,11); } }
     for(const py of [gy-4,gy-8,gy-12]) for(let x=x0+1;x<x0+4;x++) put(x,py,B.PLATFORM);
     for(let x=x0-1;x<=x0+5;x++) put(x,gy-14,S); for(let k=0;k<3;k++) for(let x=x0+k;x<=x0+4-k;x++) put(x,gy-15-k,b.f==='r'?B.ROOF:B.SHINGLE_B); put(x0+2,gy-18,banOf(b.f));
     door(put,x0,gy); door(put,x0+4,gy); put(x0+2,gy-6,B.TORCH); for(const wy of [gy-6,gy-10]){ put(x0,wy,B.WINDOW); put(x0+4,wy,B.WINDOW); } }
-  if(b.lvl===3){ const mx=b.cx+8; for(let y=gy;y<gy+10;y++) for(const x of [mx,mx+1]){ put(x,y,(y-gy)%4===3?B.PLATFORM:0); bg[y*W+x]=2; } b.mineDepth=10; spawnEnemyMiners(b); } }
+  if(b.lvl===3){ const mx=b.cx+8; for(let y=gy;y<gy+10;y++) for(const x of [mx,mx+1]){ put(x,y,(y-gy)%4===3?B.PLATFORM:0); bset(x,y,2); } b.mineDepth=10; spawnEnemyMiners(b); } }
 function growBases(dt){ for(const b of bases){ if(conquered[b.f]) continue; const far=Math.abs(cxOf(player)/T-b.cx)>90;
 
-    if((b.lvl||0)>=3&&far){ b.digT=(b.digT??25)-dt; if(b.digT<=0&&(b.mineDepth||10)<45){ b.digT=25; const mx=b.cx+8, y=b.gy+(b.mineDepth||10); for(const x of [mx,mx+1]){ if(tileAt(x,y)!==B.BEDROCK) setTile(x,y,(y-b.gy)%4===3?B.PLATFORM:0); bg[y*W+x]=2; } b.mineDepth=(b.mineDepth||10)+1; } } } }
+    if((b.lvl||0)>=3&&far){ b.digT=(b.digT??25)-dt; if(b.digT<=0&&(b.mineDepth||10)<45){ b.digT=25; const mx=b.cx+8, y=b.gy+(b.mineDepth||10); for(const x of [mx,mx+1]){ if(tileAt(x,y)!==B.BEDROCK) setTile(x,y,(y-b.gy)%4===3?B.PLATFORM:0); bset(x,y,2); } b.mineDepth=(b.mineDepth||10)+1; } } } }
 // your own miners bring ore to the village chest
 function makeMinerVillager(i){ const hx=home.mineX; const h={x0:hx-2,x1:hx+3,gy:home.gy,role:'miner'}; const v=makeVillager(player.team,h); v.name=(home.minerNames&&home.minerNames[i])||rname(); v.mi=i??0; v.minerT=10+Math.random()*20; v.phase='up'; return v; }
 function addHomeMiner(){ if(!home.mineX){ const mx=home.x1+6; home.mineX=mx; const gy=home.gy; const put=(x,y,id)=>{ if(tileAt(x,y)!==id) setTile(x,y,id); };
     // a small miner's hut built over the mine shaft
-    for(let x=mx-4;x<=mx+5;x++){ for(let y=gy-9;y<gy;y++){ put(x,y,0); bg[y*W+x]=0; } put(x,gy,B.PLANK); }
-    for(let x=mx-3;x<=mx+4;x++) for(let y=gy-5;y<gy;y++) bg[y*W+x]=5;
+    for(let x=mx-4;x<=mx+5;x++){ for(let y=gy-9;y<gy;y++){ put(x,y,0); bset(x,y,0); } put(x,gy,B.PLANK); }
+    for(let x=mx-3;x<=mx+4;x++) for(let y=gy-5;y<gy;y++) bset(x,y,5);
     for(const y of [gy-5,gy-4,gy-3]){ put(mx-4,y,B.TIMBER); put(mx+5,y,B.TIMBER); } door(put,mx-4,gy); door(put,mx+5,gy);
     for(let k=0;k<4;k++) for(let x=mx-5+k;x<=mx+6-k;x++) put(x,gy-6-k,B.ROOF);
-    for(let y=gy;y<gy+18;y++) for(const x of [mx,mx+1]){ put(x,y,(y-gy)%4===3&&y>gy?B.PLATFORM:0); bg[y*W+x]=2; }
+    for(let y=gy;y<gy+18;y++) for(const x of [mx,mx+1]){ put(x,y,(y-gy)%4===3&&y>gy?B.PLATFORM:0); bset(x,y,2); }
     put(mx-2,gy-1,B.CHEST); chests[(mx-2)+','+(gy-1)]={items:new Array(CHEST_N).fill(null),coins:0}; home.minerChest=(mx-2)+','+(gy-1); put(mx+3,gy-3,B.TORCH); put(mx+3,gy+6,B.TORCH); }
   home.miners=(home.miners||0)+1; home.minerNames=home.minerNames||[]; const v=makeMinerVillager(home.miners-1); home.minerNames[home.miners-1]=v.name; ents.push(v); if(!home.foreman){ home.foreman=true; ents.push(makeForeman()); } }
 function makeForeman(){ const hx=home.mineX; const v=makeVillager(player.team,{x0:hx-3,x1:hx-1,gy:home.gy,role:'foreman'}); v.name='Mine foreman'; return v; }
@@ -3258,7 +3261,7 @@ function tamedAct(e,dt){ const p=player; if(!p||p.dead){ physics(e,dt); return; 
       else if(f){ const [id,n]=f[(Math.random()*f.length)|0]; give(id,n); addFloat(cxOf(e),e.y-8,'found '+ITEMS[id].name.toLowerCase(),'#b8f5a0'); } } } }
 // once a day: maybe a raid, maybe a new villager
 function newDayEvents(){ raidAt=(settings.raids&&dayCount>=3&&Math.random()<0.2)?0.08+Math.random()*0.5:null;
-  if(home&&home.claimed&&Math.random()<0.25){ home.drifters++; ents.push(makeDrifter(home.drifters-1)); toast('A wanderer has arrived at your village and wants to help. Talk to them.',4); } }
+  if(home&&home.claimed&&!(typeof MP!=='undefined'&&MP.guest)&&Math.random()<0.25){ home.drifters++; ents.push(makeDrifter(home.drifters-1)); toast('A wanderer has arrived at your village and wants to help. Talk to them.',4); } }
 
 const KITS={ standard:'Standard: your weapon, a copper pickaxe, torches, planks, apples and 20 coins', recall:'Standard plus a recall mirror',
   supplies:'Standard plus a recall mirror, a raft, an iron pickaxe, potions and 100 coins', bare:'Just your weapon and a copper pickaxe' };
@@ -3281,7 +3284,7 @@ function makeHelper(role,name,dx){ const v=makeVillager(player.team,{x0:home.cas
 function makeQuartermaster(){ const q=makeVillager(player.team,{x0:home.castleCx-8,x1:home.castleCx+8,gy:home.gy,role:'quarter'}); q.name='Quartermaster'; return q; }
 function rebuildHome(){ const ban=banOf(player.team); if(!home.quarter){ home.quarter=true; ents.push(makeQuartermaster()); ents.push(makeHelper('trainer','Beast trainer',-10)); ents.push(makeHelper('recruiter','Recruiter',10)); }
   const put=(x,y,id)=>{ if(x<0||x>=W||y<0||y>=H) return; if(tileAt(x,y)===B.CHEST&&id!==B.CHEST) return; if(tileAt(x,y)!==id) setTile(x,y,id); };
-  const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+  const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
   buildCastle(player.team,home.castleCx,put,bput,home.gy);
   home.houses.forEach((h,k)=>{ buildHouse(h.x0-1,h.gy,k,ban,put,bput); });
   const ck=(home.hx0+31)+','+(home.gy-1); if(tileAt(home.hx0+31,home.gy-1)!==B.CHEST) setTile(home.hx0+31,home.gy-1,B.CHEST); chests[ck]=chests[ck]||{items:new Array(CHEST_N).fill(null),coins:0};
@@ -3403,7 +3406,7 @@ function growPlants(dt){ plantT-=dt; if(plantT>0||!player) return; plantT=1; con
 function refreshArea(x0,x1,y0,y1){ for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++){ updateSkyTop(x); for(let y=Math.max(0,y0);y<=Math.min(H-1,y1);y++) if(explored[y*W+x]) mapPixel(x,y); } }
 // villagers need somewhere to live: build a new house beside the castle when all are taken
 function newHomeHouse(){ const k=home.extra=(home.extra||0)+1; const hx=home.castleCx-17-2-13*k; const gy=home.gy;
-  const put=(x,y,id)=>{ if(x<0||x>=W||y<0||y>=H) return; if(tileAt(x,y)!==id) setTile(x,y,id); }; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+  const put=(x,y,id)=>{ if(x<0||x>=W||y<0||y>=H) return; if(tileAt(x,y)!==id) setTile(x,y,id); }; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
   for(let x=hx-2;x<=hx+10;x++) for(let y=gy+1;y<gy+6;y++) if(!isSolid(x,y)) put(x,y,B.DIRT);
   const h=buildHouse(hx,gy,k,banOf(player.team),put,bput); home.houses.push(h); home.x0=Math.min(home.x0,hx-2); try{ fixStations(); }catch(_){} return h; }
 // pet upgrades from the beast trainer
@@ -3925,7 +3928,9 @@ function penDay(){ for(const st of myStructures){ if(st.kind!=='pen') continue; 
     const x0=(st.x-6)*T, x1=(st.x+6)*T-e.w; if(e.x<x0){ e.x=x0; e.wDir=1; } if(e.x>x1){ e.x=x1; e.wDir=-1; } }; }
 { const _nd=newDayEvents; newDayEvents=function(){ _nd(); try{ penDay(); }catch(e){} try{ fencePenDay(); }catch(e){} }; }
 // ---- fence pens: a row of 4 or more fences on the ground; animals inside stay and produce goods ----
-function fenceRun(tx,ty){ if(tileAt(tx,ty)!==B.FENCE) return null; let a=tx,b=tx; while(tileAt(a-1,ty)===B.FENCE&&tx-a<80) a--; while(tileAt(b+1,ty)===B.FENCE&&b-tx<80) b++; if(b-a+1<4) return null; let gy=ty+1; while(gy<H-2&&tileAt(a,gy)===B.FENCE) gy++; return {x0:a,x1:b,ty,gy,key:a+','+ty}; }
+// a fence under water is still a fence (the pen holds)
+function fenceAt(x,y){ return tileAt(x,y)===B.FENCE||(x>=0&&x<W&&y>=0&&y<H&&world[y*W+x]===B.WATER&&wetDeco.get(y*W+x)===B.FENCE); }
+function fenceRun(tx,ty){ if(!fenceAt(tx,ty)) return null; let a=tx,b=tx; while(fenceAt(a-1,ty)&&tx-a<80) a--; while(fenceAt(b+1,ty)&&b-tx<80) b++; if(b-a+1<4) return null; let gy=ty+1; while(gy<H-2&&fenceAt(a,gy)) gy++; return {x0:a,x1:b,ty,gy,key:a+','+ty}; }
 function penAt(e){ const tx=Math.floor(cxOf(e)/T), fy=Math.floor((e.y+e.h-1)/T); for(const ty of [fy,fy-1,fy-2]){ const p=fenceRun(tx,ty); if(p) return p; } return null; }
 function offerPen(p,clicked){ const near=ents.filter(a=>a.kind==='animal'&&a.tamed&&!a.dead&&!a.fpen&&!a.pen&&Math.hypot(cxOf(a)-cxOf(player),cyOf(a)-cyOf(player))<12*T); const inPen=ents.filter(a=>a.fpen&&a.fpen.key===p.key&&!a.dead);
   if(!near.length&&!(clicked&&inPen.length)){ if(clicked) toast(`A pen ${p.x1-p.x0+1} blocks wide. Bring tamed animals here and they can stay. Animals on the Farm job settle in by themselves.`,4); return; }
@@ -3934,6 +3939,8 @@ function offerPen(p,clicked){ const near=ents.filter(a=>a.kind==='animal'&&a.tam
   opts.push({label:near.length?'Keep them with me':'Close',go:()=>{}}); showPickList(opts); }
 let penCheckT=0, lastPenKey=null;
 function penPlayerTick(dt){ penCheckT-=dt; if(penCheckT>0||!player||player.dead||state!=='play') return; penCheckT=0.5; const p=penAt(player); const key=p?p.key:null; if(key&&key!==lastPenKey) offerPen(p,false); lastPenKey=key; }
+// penned animals stay in until the water is three quarters of a block above the top of the fence; then they can float out (and go back in once it drops)
+function penFlooded(p){ if(p.ty==null) return false; const over=x=>{ const i=(p.ty-1)*W+x; return x>=0&&x<W&&p.ty>0&&world[i]===B.WATER&&liq[i]>=6; }; return over(p.x0)||over(p.x1); }
 function fencePenDay(){ const groups={}; for(const a of ents) if(a.fpen&&!a.dead&&a.tamed){ (groups[a.fpen.key]=groups[a.fpen.key]||{p:a.fpen,as:[]}).as.push(a); }
   for(const g of Object.values(groups)){ const p=g.p; let chest=null; for(let x=p.x0-2;x<=p.x1+2&&!chest;x++) for(let y=p.gy-3;y<p.gy;y++){ if(isChestId(tileAt(x,y))&&chests[x+','+y]){ chest=chests[x+','+y]; break; } } let made=0;
     for(const a of g.as) for(const [id,n] of FARM_YIELD[a.atype]||[]){ if(Math.random()<0.8){ if(!(chest&&putInChest(chest,{id,n}))) spawnDrop((p.x0+p.x1+1)/2*T,(p.gy-1)*T,id,n); made+=n; } }
@@ -3941,8 +3948,8 @@ function fencePenDay(){ const groups={}; for(const a of ents) if(a.fpen&&!a.dead
     if(made) toast(`Your fenced pen produced ${made} item${made>1?'s':''}${chest?' (in the chest beside it)':''}`,3); } }
 { const _ua2=updateAnimal; updateAnimal=function(e,dt){
     if(e.tamed&&e.fpen){ const p=e.fpen; e.anim+=dt; e.hurtT-=dt; e.wT-=dt; if(e.wT<=0){ e.wT=1.5+Math.random()*3; e.wDir=Math.random()<0.35?0:(Math.random()<.5?-1:1); } e.vx=(e.wDir||0)*22; if(e.wDir) e.facing=e.wDir; physics(e,dt);
-      const x0=p.x0*T, x1=(p.x1+1)*T-e.w; if(e.x<x0){ e.x=x0; e.wDir=1; } if(e.x>x1){ e.x=x1; e.wDir=-1; } if(Math.abs(e.y+e.h-p.gy*T)>3*T){ e.x=clamp(e.x,x0,x1); e.y=p.gy*T-e.h-1; e.vy=0; }
-      e.chkT=(e.chkT||0)-dt; if(e.chkT<=0){ e.chkT=2; if(tileAt(p.x0,p.ty)!==B.FENCE&&tileAt(p.x1,p.ty)!==B.FENCE){ e.fpen=null; e.mode='pet'; toast(`The pen is gone, so your ${e.atype} follows you again`,2.5); } } return; }
+      const x0=p.x0*T, x1=(p.x1+1)*T-e.w, flood=penFlooded(p); if(!flood){ if(e.x<x0){ e.x=x0; e.wDir=1; } if(e.x>x1){ e.x=x1; e.wDir=-1; } } if(!flood&&Math.abs(e.y+e.h-p.gy*T)>3*T){ e.x=clamp(e.x,x0,x1); e.y=p.gy*T-e.h-1; e.vy=0; }
+      e.chkT=(e.chkT||0)-dt; if(e.chkT<=0){ e.chkT=2; if(!fenceAt(p.x0,p.ty)&&!fenceAt(p.x1,p.ty)){ e.fpen=null; e.mode='pet'; toast(`The pen is gone, so your ${e.atype} follows you again`,2.5); } } return; }
     if(e.tamed&&e.mode==='farm'){ e.penT=(e.penT||0)-dt; if(e.penT<=0){ e.penT=0.5; const p=penAt(e); if(p){ e.fpen=p; toast(`Your ${e.atype} settles into the pen`,2); return; } } }
     return _ua2(e,dt); }; }
 
@@ -4286,11 +4293,28 @@ function render(){
   ctx.globalAlpha=1;
 }
 let savedMpCode=null, lastCharSlot=1; let lightData=null, liqShow=null, BGW={ice:0,forest:0,lair:0}, bgFade={t:1}, bgFx={ice:0,forest:0,lair:0}; const ATTACH=new Set([B.AMETHYST,B.GLOWSHROOM,B.SHROOM_G,B.SHROOM_R,B.SHROOM_O,B.LIFE_CR,B.MANA_CR,B.FIRE_FERN,B.EMBER_BLOOM]);
+// on the surface a roof alone doesn't make it dark: a space goes dark only when it is closed in on every side and has a back wall
+// on every tile. Open air under a roof, overhang or tree (above the ground line) is lit like the sky, and so are the blocks around it.
+function openAirMask(tx0,tx1,ty0,ty1){ const lw=tx1-tx0+1, lh=ty1-ty0+1, M=new Uint8Array(lw*lh); if(!surf) return M; const m=14, X0=Math.max(0,tx0-m), X1=Math.min(W-1,tx1+m), Y0=Math.max(skyOff+1,ty0-m), Y1=Math.min(H-1,ty1+m), ww=X1-X0+1, hh=Y1-Y0+1;
+  if(ww<=0||hh<=0) return M; const zone=(x,y)=>y<=surf[x]+1&&!(oceanCol&&oceanCol[x]&&y>=seaY), air=(x,y)=>!BLOCKS[world[y*W+x]].solid;
+  const lab=new Int32Array(ww*hh), open=[0]; let n=0;
+  for(let y=Y0;y<=Y1;y++) for(let x=X0;x<=X1;x++){ const k=(y-Y0)*ww+x-X0; if(lab[k]||!zone(x,y)||!air(x,y)||y<skyTop[x]) continue;
+    n++; let isOpen=false; const st=[k]; lab[k]=n;
+    while(st.length){ const q=st.pop(), qx=X0+q%ww, qy=Y0+((q/ww)|0); if(!bg[qy*W+qx]||qx===X0||qx===X1||qy===Y0||qy===Y1) isOpen=true;
+      for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=qx+dx, ay=qy+dy; if(ax<X0||ax>X1||ay<Y0||ay>Y1) continue; const kk=(ay-Y0)*ww+ax-X0; if(lab[kk]||!air(ax,ay)) continue;
+        if(ay<skyTop[ax]||!zone(ax,ay)){ isOpen=true; continue; } lab[kk]=n; st.push(kk); } }
+    open[n]=isOpen?1:0; }
+  for(let y=ty0;y<=ty1;y++) for(let x=tx0;x<=tx1;x++){ if(y<=skyOff||y>=H||x<0||x>=W) continue; const l=y>=Y0&&y<=Y1?lab[(y-Y0)*ww+x-X0]:0; const k=(y-ty0)*lw+x-tx0;
+    if(l&&open[l]){ M[k]=1; continue; }
+    if(!air(x,y)&&zone(x,y)) for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=x+dx, ay=y+dy; if(ax<X0||ax>X1||ay<Y0||ay>Y1) continue; const l2=lab[(ay-Y0)*ww+ax-X0]; if(l2&&open[l2]){ M[k]=2; break; } } }
+  return M; }
 function drawLighting(tx0,tx1,ty0,ty1,dl){
   const lw=tx1-tx0+1, lh=ty1-ty0+1; if(lightCv.width!==lw||lightCv.height!==lh||!lightData){ lightCv.width=lw; lightCv.height=lh; lightData=lightCtx.createImageData(lw,lh); }
   const Lg=new Float32Array(lw*lh); const skyL=0.35+0.65*((dl-0.25)/0.75);
+  const openM=openAirMask(tx0,tx1,ty0,ty1);
   for(let cy=0;cy<lh;cy++) for(let cx=0;cx<lw;cx++){ const x=tx0+cx, y=ty0+cy; const d=y-skyTop[x]; let v=d<0?skyL:skyL*Math.max(0,1-d/3); { const top=oceanCol&&oceanCol[x]?seaY:Math.min(surf[x],skyTop[x]); const dd=y-top; if(y>skyOff&&dd>7) v*=Math.max(0,1-(dd-7)/4); } if(v<skyL*0.8&&bg[y*W+x]&&y>skyOff){ if(home&&home.claimed&&BUILD_BG.has(bg[y*W+x])) v=Math.max(v,skyL*0.8); else if(y<=surf[x]+1&&!(oceanCol&&oceanCol[x])) v=Math.max(v,skyL*0.72); }
     if(d<0&&y>skyOff&&forestCol&&forestCol[x]){ let cov=0; for(let dx=-6;dx<=6;dx++){ for(let k=1;k<=22;k++){ const id=world[(y-k)*W+x+dx]; if(LEAF_IDS.has(id)){ cov++; break; } } } v*=Math.max(0,1-cov/10); }
+    { const om=openM[cy*lw+cx]; if(om) v=Math.max(v,skyL*(om===2?0.85:1)); }
     if(world[y*W+x]===B.WATER) v*=Math.max(0.3,1-(y-seaY)/34); Lg[cy*lw+cx]=v; }
   const addLight=(lx,ly,r,inten)=>{ const x0=Math.max(tx0,Math.floor(lx-r)), x1=Math.min(tx1,Math.ceil(lx+r)), y0=Math.max(ty0,Math.floor(ly-r)), y1=Math.min(ty1,Math.ceil(ly+r));
     for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const dd=Math.hypot(x+0.5-lx,y+0.5-ly); if(dd>=r) continue; const v=inten*(1-dd/r); const k=(y-ty0)*lw+(x-tx0); if(v>Lg[k]) Lg[k]=v; } };
@@ -4723,7 +4747,7 @@ const MON_WPN={ orc_dagger:I.IRON_DAGGERS, orc_hammer:I.IRON_MACE, orc_xbow:I.SH
 // ================= settings =================
 const SETTINGS_KEY='dragonhold-settings';
 const STD_KEYS={ craft:'KeyC', bag:'KeyE', army:'KeyR', map:'KeyM', use:'KeyF', orders:'KeyQ', items:'KeyH', aimlock:'KeyL', save:'KeyK', fly:'KeyG', grapple:'KeyX', breath:'KeyB' };
-const settings=Object.assign({ keys:{...STD_KEYS}, aimLock:false, controls:'sticks', stickSize:'m', swap:false, smart:true, cursor:true, swordStyle:'swing', raids:true, sound:true, vol:0.7, uiHot:1, uiBars:1, uiInfo:1 }, (()=>{ try{ return JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'); }catch(e){ return {}; } })());
+const settings=Object.assign({ keys:{...STD_KEYS}, aimLock:true, controls:'sticks', stickSize:'m', swap:false, smart:true, cursor:true, swordStyle:'swing', raids:true, sound:true, vol:0.7, uiHot:1, uiBars:1, uiInfo:1 }, (()=>{ try{ return JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'); }catch(e){ return {}; } })());
 settings.keys=Object.assign({...STD_KEYS},settings.keys||{});
 function saveSettings(){ if(master) master.gain.value=settings.sound?settings.vol:0; if(settings.sound) audioInit(); try{ localStorage.setItem(SETTINGS_KEY,JSON.stringify(settings)); }catch(e){} }
 const stick={ l:{on:false,x:0,y:0,mag:0,id:null}, r:{on:false,x:0,y:0,mag:0,id:null} };
@@ -5061,7 +5085,7 @@ function renderSettings(){
   const kn=c=>!c?'(none)':c.replace(/^Key/,'').replace(/^Digit/,'').replace('Arrow','');
   $('#setKeys').innerHTML=Object.keys(STD_KEYS).map(k=>`<div class="keyrow"><span>${KEYNAMES[k]}</span><button class="xbtn" data-bind="${k}">${rebinding===k?'Press a key…':kn(settings.keys[k])}</button></div>`).join('');
   $('#setSound').innerHTML=opt('sound',true,'On','Music and sound effects')+opt('sound',false,'Off','Silent');
-  $('#setAimLock').innerHTML=opt('aimLock',false,'Off','Click the exact block')+opt('aimLock',true,'On','Point a direction; the nearest block is targeted');
+  $('#setAimLock').innerHTML=opt('aimLock',true,'On','Point a direction; the nearest block is targeted')+opt('aimLock',false,'Off','Click the exact block');
   $('#setCursor').innerHTML=opt('cursor',true,'Show')+opt('cursor',false,'Hide');
 }
 document.querySelector('#scrSettings').addEventListener('click',ev=>{ const b=ev.target.closest('[data-k]'); if(!b) return; const k=b.dataset.k; let v=b.dataset.v; if(v==='true') v=true; else if(v==='false') v=false;
@@ -5114,12 +5138,15 @@ function renderRecruit(){ const ds=ents.filter(e=>e.kind==='drifter'&&!e.dead); 
   const shopTaken=r=>home.houses.some(h=>h.role===r);
   $('#recruitList').innerHTML=ds.map((d,i)=>`<div class="rrow" style="grid-template-columns:30px 1fr;cursor:default"><img alt="" src="${portraitUrl('drifter','w',false)}"><div><b>${d.name}</b> wants to join you. What should they do?
     <div class="jobs">${JOBS.map(([k,l])=>`<button class="choice" data-d="${i}" data-job="${k}" ${['smith','cook','trader','herbalist','fisher'].includes(k)&&shopTaken(k)?'disabled':''}>${l}</button>`).join('')}</div></div></div>`).join(''); }
-$('#recruitList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-job]'); if(!b||b.disabled) return; const ds=ents.filter(e=>e.kind==='drifter'&&!e.dead); const d=ds[+b.dataset.d]; if(!d) return; const job=b.dataset.job;
+$('#recruitList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-job]'); if(!b||b.disabled) return; const ds=ents.filter(e=>e.kind==='drifter'&&!e.dead); const d=ds[+b.dataset.d]; if(!d) return; recruitDrifter(d,b.dataset.job); renderRecruit(); });
+// in a shared world a guest's choice goes to the host, who builds the house and moves the shopkeeper in for everyone
+function recruitDrifter(d,job,forGuest){ const soldier=!['smith','cook','trader','herbalist','fisher','miner'].includes(job);
   d.dead=true; home.drifters=Math.max(0,home.drifters-1);
-  if(job==='miner'){ addHomeMiner(); toast(`${d.name} becomes a miner and will bring ore to your village chest`,3); renderRecruit(); return; }
-  if(['smith','cook','trader','herbalist','fisher'].includes(job)){ const h=home.houses.find(h=>!h.role)||newHomeHouse(); h.role=job; const v=makeVillager(player.team,h); v.homeHouse=h; v.x=d.x; v.y=d.y; ents.push(v); toast(`${d.name} opens a ${SHOPS[job].name.toLowerCase()} shop in your village`,3); }
-  else { const e=makeHuman(player.team,job,d.x,d.y,'guard',home,false,d.name); ents.push(e); const sl=freeSlot(); if(sl>=0) putInSlot(e,sl); toast(`${d.name} becomes a ${CLASSES[job].name.toLowerCase()}`,3); }
-  renderRecruit(); });
+  if(typeof MP!=='undefined'&&MP.on&&MP.guest){ MP.recReq=MP.recReq||[]; MP.recSeq=(MP.recSeq||0)+1; MP.recReq.push([MP.recSeq,d.name,job]); if(MP.recReq.length>10) MP.recReq.shift();
+    if(!soldier){ toast(`${d.name} ${job==='miner'?'becomes a miner':'opens a '+SHOPS[job].name.toLowerCase()+' shop'} in the village`,3); return; } }
+  if(job==='miner'){ addHomeMiner(); if(!forGuest) toast(`${d.name} becomes a miner and will bring ore to your village chest`,3); return; }
+  if(['smith','cook','trader','herbalist','fisher'].includes(job)){ const h=home.houses.find(h=>!h.role)||newHomeHouse(); h.role=job; const v=makeVillager(player.team,h); v.homeHouse=h; v.x=d.x; v.y=d.y; ents.push(v); if(!forGuest) toast(`${d.name} opens a ${SHOPS[job].name.toLowerCase()} shop in your village`,3); }
+  else if(!forGuest){ const e=makeHuman(player.team,job,d.x,d.y,'guard',home,false,d.name); ents.push(e); const sl=freeSlot(); if(sl>=0) putInSlot(e,sl); toast(`${d.name} becomes a ${CLASSES[job].name.toLowerCase()}`,3); } }
 $('#recruitClose').addEventListener('click',closeRecruit);
 // hide or show the item bar
 let hotbarHidden=false;
@@ -5541,9 +5568,9 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round((p.atkAng||0)*100)/100||0, tw:mpThrownOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
-  if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; }
-  if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; }
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
+  if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
+  if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
     pr.mobs=mpMobList(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,40); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
   if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,40); }
@@ -5555,7 +5582,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   // the logs that must arrive in order (ge, fe) always send their oldest part first
   MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
-  if(size()>BUDGET){ for(const k of ['ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
+  if(size()>BUDGET){ for(const k of ['ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
   if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
@@ -5718,7 +5745,7 @@ function mpFromPeer(r,d,peerId){ r.key=mpKeyOf(peerId);
     if(d.hc&&home&&!home.claimed){ home.claimed=true; } if(d.cq!=null){ for(const f of ['g','b','r']) conquered[f]=d.cq.includes(f); }
     if(d.hm!=null&&home&&(home.miners||0)<d.hm){ MP.syncing=true; try{ while((home.miners||0)<d.hm) addHomeMiner(); }finally{ MP.syncing=false; } } }
   if(MP.host&&d.hq!=null){ const seen=MP.hireSeen[r.key]||0; if(d.hq>seen){ for(let k=seen;k<d.hq;k++) addHomeMiner(); MP.hireSeen[r.key]=d.hq; toast((r.nm||'A friend')+' hired a miner for the village',2.5); } }
-  if(MP.host&&d.ge&&d.ge.length){ let got=MP.gApplied[r.key]||0; const run=()=>{ for(const [sq,x,y,id,isBg] of d.ge){ if(sq<=got) continue; if(sq>got+1) break; if(isBg){ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=id; if(facCap) facCap.push([x,y,id,1]); } } else setTile(x,y,id); got=sq; } }; facRun(run); MP.gApplied[r.key]=got; }
+  if(MP.host&&d.ge&&d.ge.length){ let got=MP.gApplied[r.key]||0; const run=()=>{ MP.applyingG=true; try{ for(const [sq,x,y,id,isBg] of d.ge){ if(sq<=got) continue; if(sq>got+1) break; if(isBg){ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=id; if(facCap) facCap.push([x,y,id,1]); } } else setTile(x,y,id); got=sq; } }finally{ MP.applyingG=false; } }; facRun(run); MP.gApplied[r.key]=got; }
   if(MP.host){ mpProxy(r); const seen=MP.hitsSeen[r.key]||0; let mx=seen; for(const [nid,amt,sq] of (d.hits||[])){ if(!mpFresh('hit',r.key,sq,seen)) continue; mx=Math.max(mx,sq); const e=ents.find(o=>o.nid===nid&&!o.dead); if(e){ const real=e.iframes; damage(e,amt,r.proxy,120); } } MP.hitsSeen[r.key]=mx; }
   if(MP.guest&&d.host){ for(const [k,v] of (d.ga||[])) if(k===MP.myKey) MP.gAck=Math.max(MP.gAck,v); if(d.fs&&MP.facApplied<d.fs-1) MP.facApplied=d.fs-1; MP.applying=true; for(const [sq,x,y,id,isBg] of (d.fe||[])){ if(sq<=MP.facApplied) continue; if(sq>MP.facApplied+1) break; if(isBg){ if(x>=0&&x<W&&y>=0&&y<H) bg[y*W+x]=id; } else { setTile(x,y,id); if(id===0&&y>skyOff) reveal(x,y); } MP.facApplied=sq; } MP.applying=false;
     for(const [key,sq,amt,dir,uid] of (d.hurt||[])){ if(key!==MP.myKey||!mpFresh('hurt','host',sq,MP.hurtSeen)) continue; MP.hurtSeen=Math.max(MP.hurtSeen,sq);
@@ -6663,7 +6690,7 @@ function bossLegacy(){ if(typeof MP!=='undefined'&&MP.guest) return; facRun(()=>
   for(const [c,M] of [[sky&&sky.castle,{realm:true}],[magma&&magma.keep,{realm:'magma'}]]){ if(!c||!c.rooms) continue;
     if(!c.throne2){ c.throne2=true; const tc=c.cx, gy=c.gy; for(let y=gy-6;y<gy-2;y++) for(const x of [tc-3,tc+3]) if(tileAt(x,y)===B.GOLD_BLOCK) setTile(x,y,0); if([0,1,2,3].every(k=>tileAt(tc+(k&1),gy-3-(k>>1))===0)) placeThrone(setPut,tc,gy-3); }
     if(!c.decor2){ c.decor2=true; castleDecor(c,M,setPut); } }
-  const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+  const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
   if(tower&&!tower.turrets){ addTurrets(tower,B.STONE_BLOCK,11,9,setPut,bput); if(!tower.cleared) turretGuards(tower,'s','skyknight'); }
   if(fort&&!fort.turrets){ for(const x of [fort.x0-2,fort.x1+2]) for(let y=fort.gy-6;y<fort.gy;y++) if(tileAt(x,y)===B.MAGMA_ROCK) setTile(x,y,0); addTurrets(fort,B.OBSIDIAN,13,13,setPut,bput); if(!fort.cleared) turretGuards(fort,'m','magmaknight'); }
   for(const t of [tower,fort]) if(t&&t.turrets) for(const tr of t.turrets) for(let x=tr.x-4;x<=tr.x+4;x++) updateSkyTop(x); }); }
@@ -6804,7 +6831,7 @@ function buildCastleUpper(put,bput,cx,gy,f){ const L=cx-17, Rr=cx+16, S=B.STONE_
   ufl(cx-4,B.BED); ufl(cx-12,B.BED); ufl(cx+9,B.BOOKSHELF); ufl(cx+11,B.BOOKSHELF); ufl(cx-2,B.RUG); ufl(cx+2,B.RUG);
   for(const x of [cx-10,cx-3,cx+3,cx+10]) if(tileAt(x,gy-16)===0) put(x,gy-16,B.LANTERN);
   for(const x of [cx-9,cx-4,cx+4,cx+9]) put(x,gy-15,B.WINDOW); }
-function raiseHome(){ if(!home||!home.claimed||home.tall) return; home.tall=true; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+function raiseHome(){ if(!home||!home.claimed||home.tall) return; home.tall=true; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
   facRun(()=>{ buildCastleUpper(setPut,bput,home.castleCx,home.gy,player.team); placePortal(home.castleCx,home.gy-10); for(let x=home.castleCx-20;x<=home.castleCx+20;x++) updateSkyTop(x); }); try{ fixStations(); }catch(_){} }
 { const _rh=rebuildHome; rebuildHome=function(...a){ const was=home&&home.tall; if(home) home.tall=false; const r=_rh(...a); if(home){ home.tall=false; raiseHome(); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.claimed&&!home.tall&&!(typeof MP!=='undefined'&&MP.guest)){ raiseHome(); toast('Your castle has grown a second floor. The portal is upstairs.',4); } }catch(e){ console.warn(e); } return r; }; }
@@ -6841,9 +6868,9 @@ function burnTree(x,y,spread){ const seen=new Set(), st=[[x,y]]; let n=0, logX=n
       for(const [dx,dy] of [[0,1],[0,-1],[1,0],[-1,0]]) st.push([a+dx,b+dy]); } });
   if(spread>0&&logX!=null) setTimeout(()=>{ if(!world) return; for(const dx of [-8,-7,-6,-5,6,7,8,9]){ const xx=logX+dx; for(let yy=skyTop[clamp(xx,0,W-1)]-1;yy<skyTop[clamp(xx,0,W-1)]+20;yy++){ const id=tileAt(xx,yy); if(LOG_IDS.has(id)||LEAF_IDS.has(id)){ if(Math.random()<0.5) burnTree(xx,yy,spread-1); return; } } } },1500); }
 // rain fills hollows; afterwards the water drains away
-function rainTick(){ const k=wxK(), cap=[0,25,80,220][k]; if(rainCells.size>=cap) return; const [a,b]=nearCols(50);
+function rainTick(){ const k=wxK(), cap=[0,12,40,110][k]; if(rainCells.size>=cap) return; const [a,b]=nearCols(50);
   for(let n=0;n<k*2;n++){ const x=a+((Math.random()*(b-a))|0); if(oceanCol&&oceanCol[x]) continue; const y=skyTop[x]-1; if(y<=skyOff||y>=H-1) continue; const below=tileAt(x,y+1);
-    if(!BLOCKS[below].solid||tileAt(x,y)!==0||bg[y*W+x]) continue; const dip=skyTop[x-1]<skyTop[x]||skyTop[x+1]<skyTop[x]; if(!dip&&k<3) continue; const i=y*W+x; setWater(i,Math.min(8,2+k)); wake(x,y); rainCells.add(i); } }
+    if(!BLOCKS[below].solid||tileAt(x,y)!==0||bg[y*W+x]) continue; const dip=skyTop[x-1]<skyTop[x]||skyTop[x+1]<skyTop[x]; if(!dip&&k<3) continue; const i=y*W+x; setWater(i,Math.max(1,Math.round((2+k)/2))); wake(x,y); rainCells.add(i); } }
 function drainTick(){ if(!rainCells.size) return; const [a,b]=nearCols(80); let n=0; for(const i of [...rainCells]){ if(n>40) break; const x=i%W; if(x<a-40||x>b+40) continue; n++;
     if(world[i]!==B.WATER){ rainCells.delete(i); continue; } liq[i]--; if(liq[i]<=0){ setWater(i,0); rainCells.delete(i); } else wake(x,(i/W)|0); }
   // water that ran off into neighbouring low spots dries up too
@@ -6957,7 +6984,7 @@ function addSafeRoom(put,cx,gy){ const S=B.STONE_BLOCK; for(let y=gy-19;y<=gy-11
 // ---- enemy castles have a second floor too ----
 function raiseBase(b,put,bput){ buildCastleUpper(put,bput,b.cx,b.gy,b.f); b.tall=true; for(let x=b.cx-20;x<=b.cx+20;x++) if(x>=0&&x<W) updateSkyTop(x); }
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ for(const b of bases) if(!b.tall) raiseBase(b,wset,bset); }catch(e){ console.warn(e); } return r; }; }
-{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(!(typeof MP!=='undefined'&&MP.guest)){ const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } }; for(const b of bases) if(!b.tall) facRun(()=>raiseBase(b,setPut,bput)); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(!(typeof MP!=='undefined'&&MP.guest)){ const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } }; for(const b of bases) if(!b.tall) facRun(()=>raiseBase(b,setPut,bput)); } }catch(e){ console.warn(e); } return r; }; }
 // roof guards stand on the higher roof
 castleRoofGuards=function(){ for(const b of bases){ const gy=b.gy, cx=b.cx, ry=b.tall?gy-20:gy-10; if(tileAt(cx,ry)!==B.STONE_BLOCK) continue;
     if(conquered[b.f]||ents.some(e=>!e.dead&&e.roofGuard===b.f)) continue;
@@ -7030,7 +7057,7 @@ function flashFloodTick(dt){ if(!player||!world||state!=='play'||(typeof MP!=='u
   if((weather==='rain'||weather==='storm')&&floodDay!==dayCount){ floodDay=dayCount; const k=wxK(); const ch=[0,0.10,0.20,0.35][k]*(weather==='storm'?1.5:1); if(Math.random()<ch){ floodT=45+k*15; toast('Flash flood! Water is rushing over the low ground. Get to higher ground.',5); if(typeof sfx==='function') sfx('splash'); } }
   if(floodT<=0) return; floodT-=dt; const k=wxK(); const [a,b]=nearCols(55);
   for(let n=0;n<k*3;n++){ const x=a+((Math.random()*(b-a))|0); if(oceanCol&&oceanCol[x]) continue; const y=skyTop[x]-1; if(y<=skyOff||y>=H-1||bg[y*W+x]) continue; if(!(skyTop[x-1]<=skyTop[x]||skyTop[x+1]<=skyTop[x])) continue; const id=tileAt(x,y);
-    if(id===0||FLOWABLE.has(id)){ if(id) washAway(y*W+x); setWater(y*W+x,8); wake(x,y); rainCells.add(y*W+x); const L=rainColsOf(); if(!L.includes(x)&&L.length<600) L.push(x); } } }
+    if(id===0||FLOWABLE.has(id)){ if(id) washAway(y*W+x); setWater(y*W+x,4); wake(x,y); rainCells.add(y*W+x); const L=rainColsOf(); if(!L.includes(x)&&L.length<600) L.push(x); } } }
 { const _u=update; update=function(dt){ _u(dt); try{ flashFloodTick(dt); }catch(e){ console.warn(e); } }; }
 
 // ---- pens: click a penned animal while holding food to feed it. Fed animals give twice the goods next morning, and two fed animals of a kind always have a baby ----
@@ -7223,14 +7250,14 @@ for(const id of WATER_BREAKS) FLOWABLE.add(id);
 { const _wa=washAway; washAway=function(j){ const id=world[j]; if(WATER_BREAKS.has(id)&&id!==B.TORCH&&typeof spawnDrop==='function'&&player){ const d=BLOCKS[id].drop||id; world[j]=0; if(d&&ITEMS[d]) spawnDrop((j%W)*T+8,((j/W)|0)*T+8,d,1); puff((j%W)*T+8,((j/W)|0)*T+8,'#9aa0a8',4,40); return; } return _wa(j); }; }
 const rainOK=id=>id===0||SUBMERGE.has(id)||WATER_BREAKS.has(id);
 // rain puddles and flash floods may now land on plants, fences and lights too
-rainTick=function(){ const k=wxK(), cap=[0,25,80,220][k]; if(rainCells.size>=cap) return; const [a,b]=nearCols(50);
+rainTick=function(){ const k=wxK(), cap=[0,12,40,110][k]; if(rainCells.size>=cap) return; const [a,b]=nearCols(50);
   for(let n=0;n<k*2;n++){ const x=a+((Math.random()*(b-a))|0); if(oceanCol&&oceanCol[x]) continue; const y=skyTop[x]-1; if(y<=skyOff||y>=H-1) continue; const below=tileAt(x,y+1);
-    const id=tileAt(x,y); if(!BLOCKS[below].solid||below===B.WATER||!rainOK(id)||bg[y*W+x]) continue; const dip=skyTop[x-1]<skyTop[x]||skyTop[x+1]<skyTop[x]; if(!dip&&k<3) continue; const i=y*W+x; if(WATER_BREAKS.has(id)) washAway(i); setWater(i,Math.min(8,2+k)); wake(x,y); rainCells.add(i); } };
+    const id=tileAt(x,y); if(!BLOCKS[below].solid||below===B.WATER||!rainOK(id)||bg[y*W+x]) continue; const dip=skyTop[x-1]<skyTop[x]||skyTop[x+1]<skyTop[x]; if(!dip&&k<3) continue; const i=y*W+x; if(WATER_BREAKS.has(id)) washAway(i); setWater(i,Math.max(1,Math.round((2+k)/2))); wake(x,y); rainCells.add(i); } };
 flashFloodTick=function(dt){ if(!player||!world||state!=='play'||(typeof MP!=='undefined'&&MP.guest)) return; if(player.y<skyOff*T||player.y>magmaY*T) return;
   if((weather==='rain'||weather==='storm')&&floodDay!==dayCount){ floodDay=dayCount; const k=wxK(); const ch=[0,0.10,0.20,0.35][k]*(weather==='storm'?1.5:1); if(Math.random()<ch){ floodT=45+k*15; toast('Flash flood! Water is rushing over the low ground. Get to higher ground.',5); if(typeof sfx==='function') sfx('splash'); } }
   if(floodT<=0) return; floodT-=dt; const k=wxK(); const [a,b]=nearCols(55);
   for(let n=0;n<k*3;n++){ const x=a+((Math.random()*(b-a))|0); if(oceanCol&&oceanCol[x]) continue; const y=skyTop[x]-1; if(y<=skyOff||y>=H-1||bg[y*W+x]) continue; if(!(skyTop[x-1]<=skyTop[x]||skyTop[x+1]<=skyTop[x])) continue; const id=tileAt(x,y);
-    if(rainOK(id)){ if(WATER_BREAKS.has(id)) washAway(y*W+x); setWater(y*W+x,8); wake(x,y); rainCells.add(y*W+x); const L=rainColsOf(); if(!L.includes(x)&&L.length<600) L.push(x); } } };
+    if(rainOK(id)){ if(WATER_BREAKS.has(id)) washAway(y*W+x); setWater(y*W+x,4); wake(x,y); rainCells.add(y*W+x); const L=rainColsOf(); if(!L.includes(x)&&L.length<600) L.push(x); } } };
 
 // ---- the cold: on ice islands all year, and everywhere in winter, plants out in the open die and snow takes their place.
 // Snow builds up and doesn't melt there. Plants under a roof are safe. In spring wild plants slowly sprout again; crops must be replanted ----
@@ -7410,7 +7437,7 @@ function farmSpot(sx,dir){ const homeL=home&&home.x0!=null?home.x0-12:-1e9, home
       if(x>=x0&&x<x0+FARM_W){ lo=Math.min(lo,s); hi=Math.max(hi,s); sum+=s; } }
     if(ok&&hi-lo<=10) return {x0,gy:Math.round(sum/FARM_W)}; } return null; }
 function buildTestFarm(sx,dir){ const sp=farmSpot(sx,dir||1); if(!sp){ toast('No open ground near here for a farm. Try somewhere flatter.',3); return null; } const {x0,gy}=sp, x1=x0+FARM_W-1;
-  const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+  const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
   facRun(()=>{
     // level the ground and clear whole trees
     for(let x=x0-2;x<=x1+2;x++){ for(let y=gy-34;y<gy;y++){ const id=tileAt(x,y); if(y>=gy-14||LOG_IDS.has(id)||LEAF_IDS.has(id)){ if(id) setPut(x,y,0); bput(x,y,0); } }
@@ -7574,7 +7601,7 @@ function spawnCastleFolk(realm){ const c=castleOf(realm); if(!c||c.cleared) retu
   const tcls=realm==='sky'?['skyknight','skyarcher']:['magmaknight','magmaknight'];
   for(let k=0;k<6;k++){ const x=c.cx+(k%2?1:-1)*(4+(k>>1)*3); const e=makeHuman(team,tcls[k%2],x*T,c.gy*T-30,'guard',room); e.throneGuard=true; ents.push(e); } }
 function needsRebuild(realm){ const c=castleOf(realm); return !!c&&(!c.v2||(realm==='sky'&&!c.v3)); }
-function rebuildCastle(realm){ const old=castleOf(realm); if(!needsRebuild(realm)) return; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+function rebuildCastle(realm){ const old=castleOf(realm); if(!needsRebuild(realm)) return; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
   const x0=old.x0, x1=old.x1, gy=old.gate?old.gate.gy:old.gy, yTop=Math.max(1,(old.top||gy-32)-8), yBot=realm==='sky'?gy+3:gy+12, tx=old.v2?old.x0:old.x0+32;
   // clear the people and the old building
   for(let i=ents.length-1;i>=0;i--){ const e=ents[i]; if(e.kind==='human'&&e.team===(realm==='sky'?'s':'m')&&cxOf(e)/T>=x0-8&&cxOf(e)/T<=x1+8&&cyOf(e)/T>=yTop-4&&cyOf(e)/T<=yBot+2) ents.splice(i,1); }
@@ -8585,6 +8612,143 @@ function menuCloser(o){ if(!o) return null; for(const sel of ['[id$="Close"]:not
   b.addEventListener('click',ev=>{ ev.stopPropagation(); const c=menuCloser(openMenu()); if(c) c.click(); });
   const sync=()=>{ const o=openMenu(), show=!!(o&&menuCloser(o)); if(b.hidden===show) b.hidden=!show; document.body.classList.toggle('menux',show); };
   new MutationObserver(ms=>{ for(const m of ms){ const o=m.target; if(o.classList&&o.classList.contains('overlay')&&!o.hidden){ menuOrder=menuOrder.filter(x=>x!==o); menuOrder.push(o); } } sync(); }).observe(document.body,{subtree:true,attributes:true,attributeFilter:['hidden']}); setInterval(sync,500); }
+// ===================== multiplayer: one shared world, one shared village =====================
+
+// ---- every change to the world reaches every player ----
+// The host sends each block and back wall that changes while friends are in its world, whatever changed it
+// (felled trees, falling leaves, new village houses, castle floors, growing crops, fire, base growth...).
+// A guest sends the changes it makes itself (mining, building, back walls, felling, its own crops and saplings).
+let mpAutoDepth=0, mpAutoBuf=[];
+function mpAutoOn(){ return typeof MP!=='undefined'&&MP.on&&MP.host&&!facCap&&!MP.applying&&!!world; }
+function mpNoteTile(x,y,isBg){ if(x<0||x>=W||y<0||y>=H) return; const v=isBg?bg[y*W+x]:world[y*W+x];
+  if(facCap) facCap.push([x,y,v,isBg?1:0]); else if(mpAutoOn()) mpAutoBuf.push([x,y,v,isBg?1:0]); }
+{ const _st=setTile; setTile=function(x,y,...a){ mpAutoDepth++; let r; try{ r=_st(x,y,...a); } finally{ mpAutoDepth--; } if(!mpAutoDepth&&mpAutoOn()) mpNoteTile(x,y,0); return r; }; }
+{ const _ws=wset; wset=function(x,y,...a){ mpAutoDepth++; let r; try{ r=_ws(x,y,...a); } finally{ mpAutoDepth--; } if(!mpAutoDepth&&mpAutoOn()) mpNoteTile(x,y,0); return r; }; }
+{ const _bs=bset; bset=function(x,y,...a){ mpAutoDepth++; let r; try{ r=_bs(x,y,...a); } finally{ mpAutoDepth--; } if(!mpAutoDepth&&mpAutoOn()) mpNoteTile(x,y,1); return r; }; }
+function mpAutoFlush(){ if(!mpAutoBuf.length) return; const last=new Map(); for(const e of mpAutoBuf) last.set(e[0]+','+e[1]+','+e[3],e); mpAutoBuf=[]; if(MP.host) mpQueueFac([...last.values()]); }
+// runs a player's action so that what it changes is shared: the host logs it for every guest, a guest sends it to the host
+function mpRun(fn){ if(typeof MP==='undefined'||!MP.on||facCap) return fn(); if(MP.host) return facRun(fn); return mpGuestRun(fn); }
+// growth that writes the world directly (a sapling becoming a tree) is compared before and after, and the difference is shared
+function mpDiffRun(x0,x1,y0,y1,fn){ if(typeof MP==='undefined'||!MP.on) return fn(); x0=Math.max(0,x0); x1=Math.min(W-1,x1); y0=Math.max(0,y0); y1=Math.min(H-1,y1);
+  const w=x1-x0+1, before=new Uint16Array(w*(y1-y0+1)); for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) before[(y-y0)*w+x-x0]=world[y*W+x];
+  const r=fn(); for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) if(world[y*W+x]!==before[(y-y0)*w+x-x0]) mpNoteTile(x,y,0); return r; }
+{ const _gs=growSapling; growSapling=function(x,h,...a){ return mpDiffRun(x-14,x+14,h-40,h+3,()=>_gs(x,h,...a)); }; }
+{ const _bt=breakTile; breakTile=function(...a){ return mpRun(()=>_bt(...a)); }; }
+{ const _tp=tryPlace; tryPlace=function(...a){ return mpRun(()=>_tp(...a)); }; }
+{ const _gp=growPlants; growPlants=function(...a){ return mpRun(()=>_gp(...a)); }; }
+{ const _gd=useGrowthDust; useGrowthDust=function(...a){ return mpRun(()=>_gd(...a)); }; }
+{ const _nh=newHomeHouse; newHomeHouse=function(...a){ return facRun(()=>_nh(...a)); }; }
+{ const _ds=decorShopHouse; decorShopHouse=function(...a){ return facRun(()=>_ds(...a)); }; }
+{ const _am=addHomeMiner; addHomeMiner=function(...a){ return facRun(()=>_am(...a)); }; }
+{ const _u=update; update=function(dt){ _u(dt); try{ mpAutoFlush(); mpRemoteFellTick(dt); }catch(e){ console.warn(e); } }; }
+
+// ---- a tree cut by a friend: you hear it fall and see its leaves scatter ----
+let mpFell=[], mpFellT=0;
+function mpNoteRemoteFell(x,y,old){ if(LOG_IDS.has(old)||LEAF_IDS.has(old)) mpFell.push([x,y,old]); }
+function mpRemoteFellTick(dt){ if(!mpFell.length) return; mpFellT-=dt; const logs=mpFell.filter(f=>LOG_IDS.has(f[2]));
+  for(const [x,y,id] of mpFell) if(LEAF_IDS.has(id)&&Math.random()<0.5) leafBurst(x*T,y*T,(WOOD_OF[id]||WOODS.oak).leafCol[(Math.random()*3)|0],1); else if(LOG_IDS.has(id)) puff(x*T+8,y*T+8,'#8a6a4a',2,40);
+  if(logs.length>=3&&mpFellT<=0){ mpFellT=1.2; const b=logs.reduce((a,f)=>f[1]>a[1]?f:a); sfx('timber',b[0]*T,b[1]*T); } mpFell=[]; }
+{ const _st=setTile; setTile=function(x,y,id,...a){ const remote=typeof MP!=='undefined'&&MP.on&&(MP.applying||MP.applyingG); const old=remote&&x>=0&&x<W&&y>=0&&y<H?world[y*W+x]:0; const r=_st(x,y,id,...a); if(remote&&!id&&old) mpNoteRemoteFell(x,y,old); return r; }; }
+
+// ---- the village is the host's: houses, shopkeepers and wanderers are the same for everyone ----
+// The host sends its village houses (with their jobs) and the names of the wanderers waiting for work;
+// a guest who gives a wanderer a job asks the host, so every player sees the same new shopkeeper, miner or soldier.
+function mpVillageOut(){ if(!home||!home.houses) return {}; return { vh:home.houses.slice(0,24).map(h=>[h.x0|0,h.x1|0,h.gy|0,h.role||'']), dn:ents.filter(e=>e.kind==='drifter'&&!e.dead).slice(0,8).map(d=>(d.name||'').slice(0,14)) }; }
+function mpVillageIn(d){ if(!home||!player) return; let added=0;
+  if(Array.isArray(d.vh)) for(const [x0,x1,gy,role] of d.vh){ let h=home.houses.find(h=>(h.x0|0)===x0&&(h.gy|0)===gy); if(!h){ h={x0,x1,gy,role:role||null}; home.houses.push(h); added++; } else if((h.role||'')!==role){ h.role=role||null; const v=ents.find(v=>!v.dead&&v.kind==='villager'&&(v.homeHouse===h||v.house===h)); if(v) v.role=h.role; } }
+  if(added||Array.isArray(d.vh)) for(const h of home.houses) if(h.role&&SHOPS[h.role]&&!ents.some(v=>!v.dead&&v.kind==='villager'&&(v.homeHouse===h||v.house===h))){ const v=makeVillager(d.pf||player.team,h); v.homeHouse=h; if(h.role==='demo') v.name='Demolitionist'; try{ placeShopkeeper(v,h); }catch(e){} ents.push(v); }
+  if(Array.isArray(d.dn)){ const want=d.dn.slice(), have=ents.filter(e=>e.kind==='drifter'&&!e.dead);
+    for(const e of have){ const i=want.indexOf(e.name); if(i>=0) want.splice(i,1); else e.dead=true; }
+    for(const nm of want){ const e=makeDrifter(ents.filter(e=>(e.kind==='drifter'||e.kind==='villager')&&!e.dead).length); e.name=nm; ents.push(e); }
+    home.drifters=d.dn.length; if(state==='recruit') try{ renderRecruit(); }catch(e){} } }
+// a guest's choices for wanderers, handled by the host as if it had made them (a soldier joins the guest's own party)
+function mpRecruitIn(r,d){ if(!Array.isArray(d.rq)) return; MP.recSeen=MP.recSeen||{}; let seen=MP.recSeen[r.key]||0;
+  for(const [sq,name,job] of d.rq){ if(sq<=seen) continue; seen=sq; if(job==='+'){ home.drifters++; ents.push(makeDrifter(home.drifters-1)); continue; }
+    const dft=ents.find(e=>e.kind==='drifter'&&!e.dead&&e.name===name); if(dft){ recruitDrifter(dft,job,true); toast(`${r.nm||'A friend'}: ${name} ${['knight','archer','mace','wizard','beast'].includes(job)?'joins their army':'takes a job in the village'}`,3); } }
+  MP.recSeen[r.key]=seen; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(MP.guest&&d.host) mpVillageIn(d); if(MP.host) mpRecruitIn(r,d); }catch(e){ console.warn(e); } return res; }; }
+// ===================== trees: wood all the way up inside the leaves =====================
+// Every tree's trunk runs up through its crown, bigger trees grow branches with leafy clumps at their ends,
+// spruces are tall cones around a trunk that reaches the tip, and the leaves in front of the wood are thin
+// enough to see the bark behind them.
+growTree=function(x,h,sz,R,kind='oak'){ if(kind==='birch') return growBirch(x,h,R); const w=WOODS[kind]; if(!w) return; const L=w.log, LF=w.leaf, tw=Math.max(1,sz|0);
+  const ht=sz===3?22+((R()*10)|0):sz===2?12+((R()*6)|0):5+((R()*5)|0), rad=sz===3?8:sz===2?5:3;
+  const inMap=(X,Y)=>X>=0&&X<W&&Y>=skyOff&&Y<H;
+  const log=(X,Y)=>{ if(inMap(X,Y)&&(world[Y*W+X]===0||LEAF_IDS.has(world[Y*W+X]))) world[Y*W+X]=L; };
+  const leaf=(X,Y)=>{ if(inMap(X,Y)&&world[Y*W+X]===0) world[Y*W+X]=LF; };
+  for(let k=1;k<=ht;k++){ const y=h-k; if(y<skyOff+1) break; for(let t=0;t<tw;t++) log(x+t,y); }
+  const ty=h-ht, xm=x+((tw-1)>>1), ccx=x+(tw-1)/2;
+  if(kind==='spruce'){ const top=ty-Math.max(3,Math.round(rad*0.9)), bot=h-Math.max(3,Math.round(ht*0.35));
+    for(let y=ty;y>=top;y--) log(xm,y);   // the trunk reaches the tip
+    for(let y=bot;y>=top-1;y--){ const f=(y-(top-1))/Math.max(1,bot-(top-1)); let half=Math.round(1+f*(rad+0.5)); if((bot-y)%3===2) half=Math.max(1,half-1);   // layered, like pine boughs
+      for(let X=x-half;X<=x+tw-1+half;X++) leaf(X,y); }
+    leaf(xm,top-2); }
+  else { const flat=kind==='jungle'?0.55:0.7, up=Math.max(1,Math.round(rad*flat*0.6));
+    for(let y=ty;y>ty-up;y--) log(xm,y);   // the trunk carries on up into the crown
+    const nb=sz===1?(R()<0.5?1:0):sz===2?2:3, tips=[];
+    for(let i=0;i<nb;i++){ const dir=i===0?(tips.first=R()<0.5?-1:1):(i%2?-tips.first:tips.first), by=ty+Math.round(rad*0.3)-((R()*Math.max(1,rad*0.5))|0), len=Math.max(2,Math.round(rad*(0.45+R()*0.25)));
+      let X=dir<0?x-1:x+tw, Y=Math.min(h-2,by); for(let j=0;j<len;j++){ log(X,Y); if(j%2===1){ Y--; log(X,Y); } X+=dir; }   /* each step up is joined, so the branch is felled with its tree */ tips.push([X-dir,Y]); }
+    const blob=(bx,by,r,fl)=>{ for(let dy=-Math.ceil(r*fl)-1;dy<=Math.ceil(r*fl*0.75)+1;dy++) for(let dx=-r-1;dx<=r+1;dx++){ const e=(dx*dx)/(r*r)+(dy*dy)/((r*fl)*(r*fl)); if(e>1+R()*0.2) continue; leaf(Math.round(bx+dx),by+dy); } };
+    blob(ccx,ty,rad,flat); for(const [tx,tyy] of tips) blob(tx,tyy-1,Math.max(2,Math.round(rad*0.5)),0.8); }
+  // root flare and roots down to the ground, as before
+  if(sz>1) for(let t=-1;t<=tw;t++){ const X=x+t; if(X>=0&&X<W&&world[(h-1)*W+X]===0&&(t<0||t>=tw)) world[(h-1)*W+X]=L; }
+  for(let t=(sz>1?-1:0);t<=(sz>1?tw:tw-1);t++){ const X=x+t; if(X<0||X>=W||world[(h-1)*W+X]!==L) continue; let y=h; while(y<H-2&&(world[y*W+X]===0||LEAF_IDS.has(world[y*W+X])||!BLOCKS[world[y*W+X]].solid)&&world[y*W+X]!==B.WATER){ world[y*W+X]=L; y++; } } };
+{ const _gb=growBirch; growBirch=function(x,h,R){ const r=_gb(x,h,R); let y=h-1; while(y>skyOff&&world[(y-1)*W+x]===B.BIRCH_LOG) y--;   // y = the top of the white trunk
+    for(let k=1;k<=2;k++){ const i=(y-k)*W+x; if(world[i]===B.BIRCH_LEAVES&&world[i-W]===B.BIRCH_LEAVES) world[i]=B.BIRCH_LOG; else break; } return r; }; }
+// leaves in front of wood are see-through in places: a lacy copy of each leaf texture is drawn over trunk and branch tiles
+const LACE={};
+function laceTex(id){ if(LACE[id]!==undefined) return LACE[id]; const src=TEX[id]; if(!src){ LACE[id]=null; return null; } const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); const R=mulberry(id*31+7);
+  g.clearRect(5,0,6,16);   /* the middle stays open, so the trunk shows through */ for(let i=0;i<6;i++){ const y=(R()*15)|0, x=4+((R()*2)|0), s=2+((R()*2)|0); const X=x+(i%2?5:0); g.drawImage(src,X,y,s,s,X,y,s,s); }
+  for(let i=0;i<8;i++){ const x=(R()*15)|0, y=(R()*15)|0; g.clearRect(x,y,2,2); } return LACE[id]=c; }
+logCoverTex=function(x,y){ if(x<1||x>=W-1||y<1) return null; const l=world[y*W+x-1], r=world[y*W+x+1], u=world[(y-1)*W+x]; const Lf=LEAF_IDS.has(l)&&l!==B.PALM_LEAF, Rf=LEAF_IDS.has(r)&&r!==B.PALM_LEAF, Uf=LEAF_IDS.has(u)&&u!==B.PALM_LEAF;
+  return (Lf&&Rf)||(Uf&&(Lf||Rf))?laceTex(Lf?l:Rf?r:u):null; };
+
+// older worlds: trunks are carried up into their crowns once (new worlds grow that way already)
+function treeWoodFix(){ let n=0; const own=id=>WOOD_OF[id]&&WOOD_OF[id].log;
+  for(let y=skyOff+3;y<H-2;y++) for(let x=1;x<W-2;x++){ const L=world[y*W+x]; if(!LOG_IDS.has(L)||L===B.PALM_LOG) continue; const LF=(WOOD_OF[L]||{}).leaf; if(!LF||world[(y-1)*W+x]!==LF) continue;
+    const l=world[y*W+x-1]===L, r=world[y*W+x+1]===L, r2=world[y*W+x+2]===L; if(!((!l&&!r)||(!l&&r&&!r2)||(l&&r))) continue;
+    let k=0; while(y-1-k>skyOff&&world[(y-1-k)*W+x]===LF) k++; const up=Math.floor(k*0.55); if(k<3) continue;
+    for(let j=1;j<=up&&j<=k-2;j++){ world[(y-j)*W+x]=L; n++; } }
+  return n; }
+{ const _ng=newGame; newGame=function(...a){ const r=_ng(...a); try{ if(home) home.treeWood=1; }catch(e){} return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.treeWood&&!(typeof MP!=='undefined'&&MP.guest)){ home.treeWood=1; const n=treeWoodFix(); if(n) for(let x=0;x<W;x++) updateSkyTop(x); } }catch(e){ console.warn(e); } return r; }; }
+// ===================== water through platforms and in front of furniture; aim lock on =====================
+
+// ---- water falls through platforms you can drop through (the platform stays, under the water) ----
+for(let id=1;id<BLOCKS.length;id++){ const b=BLOCKS[id]; if(b&&b.platform&&id!==B.BRIDGE){ PASS.add(id); WET_SHOW.add(id); } }
+
+// ---- water in front of furniture: a workbench, furnace, bed or table standing in water is drawn behind the water,
+// level with the water beside it (or full when water sits on top of it) ----
+function dryFurn(id){ return id&&id!==B.WATER&&id!==B.LAVA&&BLOCKS[id]&&!BLOCKS[id].solid&&!BLOCKS[id].platform; }
+function drawWaterFront(){ if(!world||!liq) return; const tx0=Math.max(1,Math.floor(camX/T)), tx1=Math.min(W-2,Math.ceil((camX+viewW)/T)), ty0=Math.max(1,Math.floor(camY/T)), ty1=Math.min(H-2,Math.ceil((camY+viewH)/T));
+  for(let y=ty0;y<=ty1;y++){ const row=y*W; let x=tx0;
+    while(x<=tx1){ if(!dryFurn(world[row+x])){ x++; continue; } let e=x; while(e+1<W-1&&dryFurn(world[row+e+1])) e++;   // a run of furniture tiles x..e
+      const lv=j=>world[j]===B.WATER?liq[j]:0; let L=Math.max(lv(row+x-1),lv(row+e+1)); let full=false;
+      for(let k=x;k<=e;k++) if(world[row+k-W]===B.WATER){ L=8; full=true; }
+      if(L>0&&e-x<12){ const h=full?T:Math.max(1,Math.round(L*2)); ctx.fillStyle=y-seaY>6?'rgba(22,70,160,0.8)':'rgba(38,98,200,0.66)'; ctx.fillRect(x*T,y*T+T-h,(e-x+1)*T,h);
+        if(!full){ ctx.fillStyle='rgba(170,220,255,0.85)'; ctx.fillRect(x*T,y*T+T-h,(e-x+1)*T,1); } }
+      x=e+1; } } }
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ drawWaterFront(); }catch(e){} return _dl(...a); }; }
+
+// ---- mouse aim lock is on from the start (every player is switched on once; L or Settings turns it off) ----
+if(!settings.aimV){ settings.aimV=1; settings.aimLock=true; try{ saveSettings(); }catch(e){} }
+
+// ---- storms and rain last 12 hours of game time (the first half of the day); the water they left is gone 6 hours later ----
+const WX_END=0.5, WX_DRY=0.75;   // fractions of a day: 12 and 18 hours after the day begins
+const wetWx=()=>weather==='rain'||weather==='storm', godWx=()=>curSlot===4&&home&&home.godWx;
+{ const _ws=weatherSync; weatherSync=function(...a){ const r=_ws(...a); try{ if(wetWx()&&time>=WX_END&&!godWx()) weather='clear'; }catch(e){} return r; }; }
+let wxDriedDay=-1;
+{ const _u=update; update=function(dt){ _u(dt); if(state!=='play'||!world) return;
+    try{ if(wetWx()&&time>=WX_END&&!godWx()){ const st=weather==='storm'; weather='clear'; toast(st?'The storm has passed. The water will soon drain away.':'The rain has stopped',3); }
+      if(!wetWx()&&time>=WX_DRY&&wxDriedDay!==dayCount&&!(typeof MP!=='undefined'&&MP.guest)){ wxDriedDay=dayCount; dryAllRain(); } }catch(e){ console.warn(e); } }; }
+
+// ---- water slides down slopes and stairs: water resting on a sloped block runs off toward its low side ----
+const SLOPE_LOW={2:-1,3:1,4:-1,5:1,6:-1,7:1};   // which way each shape slopes down
+{ const _sw=stepWater; stepWater=function(budget){ try{ if(wact.size&&shape){ let n=0;
+      for(const i of [...wact]){ if(n++>400) break; if(world[i]!==B.WATER) continue; const b=i+W; if(b>=W*H) continue; const dir=SLOPE_LOW[shape[b]]; if(!dir||!BLOCKS[world[b]].solid) continue;
+        const x=i%W; if(x+dir<0||x+dir>=W||(oceanCol&&oceanCol[x])) continue; const j=i+dir, id=world[j]; if(!(wetOK(id,j)||id===B.WATER)) continue;
+        const L=liq[i], lj=id===B.WATER?liq[j]:0, mv=Math.min(L,8-lj); if(mv<=0) continue; if(FLOWABLE.has(id)) washAway(j);
+        setWater(j,lj+mv); setWater(i,L-mv); const y=(i/W)|0; wake(x,y); wake(x+dir,y); } } }catch(e){ console.warn(e); } return _sw(budget); }; }
 })();
 </script>
 </body>
