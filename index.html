@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791347037"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791347037"><link rel="manifest" href="manifest.webmanifest?v=1791347037"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f">
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791349150"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791349150"><link rel="manifest" href="manifest.webmanifest?v=1791349150"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -339,7 +339,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.5</p></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.6</p></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -396,7 +396,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.5</h3>
+    <h3>New in Beta 0.9.6</h3>
+    <p>Play on a Mac or Windows computer in its own window: open pumped60.github.io/dragon-amulet-play in Chrome or Edge and press "Install on this computer" on the title screen (or the install icon in the address bar). It gets its own icon, works offline and updates itself. There are also downloadable Mac and Windows apps on the Releases page of the dragon-amulet-play project on GitHub. F11 switches full screen in the downloaded app.</p>
+    <h3>Beta 0.9.5</h3>
     <p>Fire: anything that can burn (wood, planks, furniture, leaves, plants, grass) catches fire and burns with flickering flames, spreading a little to what it touches before burning out to charred wood, ash or nothing. The Dragonborn's breath, fire bombs, lava, lightning, fire arrows and raiders all start it; water and rain put it out, and it never spreads into your own village. Standing in it burns.</p>
     <p>Every kind of tree has its own sapling (oak, spruce, birch, palm, jungle and dark oak): a felled tree drops saplings of its own kind, the Herbalist sells the ones you have found, and each grows into its own tree. On phones, tapping an item shows its name and a few words about it, and new gear says what it does in a short line; choose Full in Settings for every detail. The test world skips the opening screen, and a Dragonborn there starts with all five dragonborne weapons.</p>
     <h3>Beta 0.9.4</h3>
@@ -511,7 +513,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.5</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.6</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -751,7 +753,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.5</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.6</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -770,7 +772,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.5', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.6', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };

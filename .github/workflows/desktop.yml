@@ -1,0 +1,63 @@
+# Builds the desktop apps (Mac and Windows) whenever a new version of the game is pushed, and puts them on the
+# Releases page: https://github.com/pumped60/dragon-amulet-play/releases/latest
+name: Desktop apps
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'desktop/**', '.github/workflows/desktop.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Put the game and icon into the app
+        shell: bash
+        run: |
+          mkdir -p desktop/app desktop/build
+          cp index.html desktop/app/index.html
+          cp icon-512.png desktop/build/icon.png
+      - name: Build
+        working-directory: desktop
+        shell: bash
+        env: { CSC_IDENTITY_AUTO_DISCOVERY: 'false' }
+        run: |
+          npm pkg set version="$(grep -o 'Beta [0-9.]*' ../index.html | head -1 | cut -d' ' -f2)"
+          npm install --no-audit --no-fund
+          npx electron-builder --publish never
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-${{ matrix.os }}
+          path: |
+            desktop/release/*.dmg
+            desktop/release/*-mac.zip
+            desktop/release/*.exe
+          if-no-files-found: error
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the game version
+        id: v
+        run: echo "ver=$(grep -o 'Beta [0-9.]*' index.html | head -1 | cut -d' ' -f2)" >> "$GITHUB_OUTPUT"
+      - uses: actions/download-artifact@v4
+        with: { path: out, merge-multiple: true }
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.v.outputs.ver }}
+          name: Dragon Amulet Beta ${{ steps.v.outputs.ver }} for Mac and Windows
+          make_latest: true
+          body: |
+            Dragon Amulet Beta ${{ steps.v.outputs.ver }} as a desktop app.
+            - Mac: download the .dmg, open it and drag Dragon Amulet into Applications. The first time, right-click the app and choose Open (it is not signed by Apple yet).
+            - Windows: download Dragon-Amulet-Setup (installs with a Start menu icon) or the portable .exe (runs without installing). If Windows SmartScreen warns, choose More info, then Run anyway.
+            F11 switches full screen. Saves stay on this computer.
+          files: out/*

@@ -4,6 +4,11 @@
  "start_url": "./",
  "scope": "./",
  "display": "fullscreen",
+ "display_override": [
+  "fullscreen",
+  "standalone"
+ ],
+ "description": "A 2D sandbox adventure: mine, build, raise an army and slay the dragon.",
  "orientation": "landscape",
  "background_color": "#16121f",
  "theme_color": "#16121f",

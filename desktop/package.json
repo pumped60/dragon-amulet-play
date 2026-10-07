@@ -1,0 +1,23 @@
+{
+  "name": "dragon-amulet",
+  "productName": "Dragon Amulet",
+  "version": "0.9.6",
+  "repository": "github:pumped60/dragon-amulet-play",
+  "description": "Dragon Amulet, a 2D sandbox adventure by Kinard Sproles",
+  "author": "Kinard Sproles",
+  "main": "main.js",
+  "private": true,
+  "scripts": { "start": "electron .", "dist": "electron-builder --publish never" },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "com.kinardsproles.dragonamulet",
+    "productName": "Dragon Amulet",
+    "files": ["main.js", "app/**", "build/icon.png"],
+    "directories": { "output": "release" },
+    "mac": { "target": [{ "target": "dmg", "arch": ["universal"] }, { "target": "zip", "arch": ["universal"] }], "category": "public.app-category.games", "icon": "build/icon.png" },
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }, { "target": "portable", "arch": ["x64"] }], "icon": "build/icon.png" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true, "artifactName": "Dragon-Amulet-Setup-${version}.exe" },
+    "portable": { "artifactName": "Dragon-Amulet-${version}-portable.exe" },
+    "dmg": { "artifactName": "Dragon-Amulet-${version}-mac.dmg" }
+  }
+}
