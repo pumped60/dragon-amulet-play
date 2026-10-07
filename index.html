@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791413715"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791413715"><link rel="manifest" href="manifest.webmanifest?v=1791413715"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791414461"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791414461"><link rel="manifest" href="manifest.webmanifest?v=1791414461"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.14</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.15</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.14</h3>
+    <h3>New in Beta 0.9.15</h3>
+    <p>The eye (under ⋯ More, or H) opens a "Show on screen" list with everything ticked: untick the item bar, health bars, info lines, mini-map or a button and it hides at once; tick it to bring it back. Hide everything hides it all in one go. In shared worlds every player sees bomb blasts and the bosses' warning marks (the Sky Ranger's wind ring and target, the Magma Knight's glowing cracks).</p>
+    <h3>Beta 0.9.14</h3>
     <p>A calmer top bar: Bag, Army, Buildings, the God menu (test world), Menu and ⋯ More. Crafting is a tab at the top of the bag (C still opens it). Speed sits with the other switches in the God menu. On phones the Fly button sits beside Torch. Full screen, Hide items, Quick save and Hide the buttons are under ⋯ More.</p>
     <h3>Beta 0.9.13</h3>
     <p>Tidier item screens, especially on phones and in the test world. The God menu shows items, soldiers, enemies and animals as a grid of tiles (tap one to take or spawn it), with quick filters for weapons, tools, armor, blocks, food and materials. Creative "All items" uses the same tiles. On phones, crafting shows two recipes side by side in shorter cards, and its tabs scroll in one row. The day, coins and party lines in the corner sit on a soft dark backing, so they stay readable.</p>
@@ -530,7 +532,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.14</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.15</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -751,11 +753,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   </div>
 </div>
 <div id="eyePop" hidden>
-  <button class="btn primary" id="eyeToggle">Hide items</button>
-  <div class="muted" style="margin:8px 0 4px">Keep these visible while hidden:</div>
-  <label><input type="checkbox" data-keep="hotbar"> Hotbar</label><label><input type="checkbox" data-keep="btnInv"> Bag</label><label><input type="checkbox" data-keep="btnCraft"> Craft</label>
-  <label><input type="checkbox" data-keep="btnArmy"> Army</label><label><input type="checkbox" data-keep="btnBuild"> Buildings</label><label><input type="checkbox" data-keep="mini"> Mini-map</label>
-  <label><input type="checkbox" data-keep="btnFull"> Full screen</label><label><input type="checkbox" data-keep="bars"> Health and mana bars</label><label><input type="checkbox" data-keep="sub"> Day, coins and party info</label>
+  <div class="muted" style="margin:0 0 4px">Show on screen (untick to hide):</div>
+  <label><input type="checkbox" data-show="hotbar"> Item bar</label><label><input type="checkbox" data-show="bars"> Health and mana bars</label><label><input type="checkbox" data-show="sub"> Day, coins and party info</label>
+  <label><input type="checkbox" data-show="mini"> Mini-map</label><label><input type="checkbox" data-show="btnInv"> Bag button</label><label><input type="checkbox" data-show="btnArmy"> Army button</label><label><input type="checkbox" data-show="btnBuild"> Buildings button</label>
+  <button class="btn" id="eyeToggle" style="margin-top:8px">Hide everything</button>
 </div>
 <div id="pickList" hidden></div>
 <div id="watchBar" hidden><span id="watchName"></span><button class="xbtn" id="watchStop">Stop watching</button></div>
@@ -777,7 +778,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.14</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.15</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -796,7 +797,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.14', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.15', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5604,7 +5605,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
@@ -5616,9 +5617,9 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   const enc=new TextEncoder(), BUDGET=3600; const size=()=>enc.encode(JSON.stringify(pr)).length;
   // lists of numbered events (block edits, hits, hurts, gifts) send the older and the newer half by turns, so nothing waits forever;
   // the logs that must arrive in order (ge, fe) always send their oldest part first
-  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch','sh']);
+  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch','sh','fx']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
-  if(size()>BUDGET){ for(const k of ['sh','ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
+  if(size()>BUDGET){ for(const k of ['fx','sh','ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
   if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
@@ -8762,6 +8763,23 @@ $('#mpRecent').addEventListener('click',ev=>{ const del=ev.target.closest('[data
   hide('scrMP'); MP.pendingHostSaved=true; renderSlots(); show('scrSlots'); const pb=$(`#slotList [data-play="${r.slot}"]`); if(pb) pb.click(); });
 { const _h=mpHost; mpHost=async function(...a){ const r=await _h(...a); try{ if(MP.on&&MP.host&&MP.code) mpRecentAdd({code:MP.code,role:'host',slot:curSlot,name:(curSlot===5?"Friend's world":'World '+curSlot)+((player&&player.name)?` (${player.name})`:'')}); }catch(e){} return r; }; }
 { const _j=mpJoin; mpJoin=async function(code,...a){ const r=await _j(code,...a); try{ const c=(code||'').trim().toUpperCase(); setTimeout(()=>{ if(MP.on&&MP.guest) mpRecentAdd({code:MP.code||c,role:'guest',name:`${MP.hostNm||'A friend'}'s world`}); },4000); }catch(e){} return r; }; }
+
+// ---- bomb blasts and boss warning marks are seen by every player ----
+// Each player sends the effects that start on their screen; the others replay them as pictures and sound only.
+let mpFxSeq=0; const mpFxList=[];
+const mpFxPush=e=>{ if(typeof MP==='undefined'||!MP.on||MP.replayFx) return; mpFxList.push([++mpFxSeq,...e]); if(mpFxList.length>20) mpFxList.shift(); };
+function mpFxOut(){ return mpFxList.slice(-10); }
+{ const _bb=bombBlast; bombBlast=function(px,py,k,...a){ try{ mpFxPush(['boom',Math.round(px),Math.round(py),k.r||2,k.fire?1:0]); }catch(e){} return _bb(px,py,k,...a); }; }
+{ const hook=()=>{ if(bossFx.push.__mp) return; const arr=bossFx; const orig=arr.push.bind(arr); arr.push=function(...items){ try{ if(MP&&MP.on&&MP.host) for(const f of items){ if(f.remote) continue; const on=f.on; mpFxPush(['bfx',f.kind,Math.round(on?cxOf(on):f.x),Math.round(on?cyOf(on):f.y),Math.round(f.w||0),Math.round((f.t0||f.t||1)*100),f.col||'']); } }catch(e){} return orig(...items); }; arr.push.__mp=1; };
+  hook(); { const _u=update; update=function(dt){ const r=_u(dt); hook(); return r; }; } }   // bossFx is replaced by a filtered copy each frame, so the hook is put back
+function mpReplayFx(list){ MP.replayFx=true; try{ for(const e of list){ const [ , kind]=e;
+    if(kind==='boom'){ const [, , x, y, r, fire]=e; if(Math.abs(x-cxOf(player))>60*T) continue; if(typeof sfx==='function') sfx('boom',x,y); puff(x,y,'#ffb347',26,220); puff(x,y,'#8a8a94',18,150); puff(x,y,'#fff2a0',10,90);
+      if(fire) for(let k=0;k<14;k++) parts.push({x:x+(Math.random()-.5)*r*2*T,y:y+(Math.random()-.5)*r*2*T,vx:(Math.random()-.5)*30,vy:-50-Math.random()*60,life:0.9,col:Math.random()<.5?'#ff7b1c':'#ffcf3a',sz:2}); }
+    else if(kind==='bfx'){ const [, , k2, x, y, w, t100, col]=e; const t=t100/100; const mine=Math.hypot(x-cxOf(player),y-cyOf(player))<2.5*T;
+      const on=k2==='crack'?null:(mine?player:{x:x-1,y:y-1,w:2,h:2,dead:false});   // a mark on you follows you
+      bossFx.push({kind:k2,x,y,w,t,t0:t,col:col||'#ff7b1c',on,remote:true}); } } } finally{ MP.replayFx=false; } }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(Array.isArray(d.fx)){ MP.fxSeen=MP.fxSeen||{}; const top=d.fx.reduce((m,e)=>Math.max(m,e[0]),0);
+      if(MP.fxSeen[r.key]==null){ MP.fxSeen[r.key]=top; } else { const seen=MP.fxSeen[r.key], fresh=d.fx.filter(e=>e[0]>seen); if(fresh.length){ MP.fxSeen[r.key]=top; mpReplayFx(fresh); } }   /* the first message only sets where we start */ } }catch(e){ console.warn(e); } return res; }; }
 // ===================== trees: wood all the way up inside the leaves =====================
 // Every tree's trunk runs up through its crown, bigger trees grow branches with leafy clumps at their ends,
 // spruces are tall cones around a trunk that reaches the tip, and the leaves in front of the wood are thin
@@ -8932,7 +8950,7 @@ const MORE_IDS=['btnFull','btnItems','btnQuickSave','btnMap','btnMin'];
   bar.insertBefore(more,$('#btnMenu'));
   const menu=document.createElement('div'); menu.id='moreMenu'; menu.hidden=true; document.body.appendChild(menu);
   for(const id of MORE_IDS.concat(['btnCraft','btnSpeed'])){ const el=$('#'+id); if(el) el.classList.add('inmore'); }
-  const label=el=>({btnFull:'Full screen',btnItems:el.getAttribute('aria-pressed')==='false'?'Show items':'Hide items',btnQuickSave:'Quick save',btnMap:'Show the mini-map',btnMin:'Hide the buttons and mini-map',btnFly:el.dataset.tip?el.dataset.tip.replace(/ \(G\)$/,''):'Fly'})[el.id]||el.dataset.tip||el.textContent;
+  const label=el=>({btnFull:'Full screen',btnItems:'Show or hide parts of the screen',btnQuickSave:'Quick save',btnMap:'Show the mini-map',btnMin:'Hide the buttons and mini-map',btnFly:el.dataset.tip?el.dataset.tip.replace(/ \(G\)$/,''):'Fly'})[el.id]||el.dataset.tip||el.textContent;
   const open=()=>{ const ids=['btnFly'].filter(id=>!document.body.classList.contains('touch')).concat(MORE_IDS);
     menu.innerHTML=ids.map(id=>$('#'+id)).filter(el=>el&&!el.hidden).map(el=>`<button class="choice" data-more="${el.id}">${label(el)}</button>`).join('')||'<p>Nothing else here right now.</p>';
     const r=more.getBoundingClientRect(); menu.style.top=(r.bottom+6)+'px'; menu.style.right=Math.max(8,innerWidth-r.right)+'px'; menu.hidden=false; };
@@ -8962,6 +8980,24 @@ const MORE_IDS=['btnFull','btnItems','btnQuickSave','btnMap','btnMin'];
 #btnFly.sidefly{ position:absolute; right:calc(env(safe-area-inset-right,0px) + 92px); bottom:calc(var(--sb) + 170px); pointer-events:auto; }
 #invTabs{ display:flex; gap:4px; margin-left:12px; margin-right:auto; } #invTabs .chip{ font-size:8px; padding:6px 10px; }
 #scrInv .phead{ display:flex; align-items:center; gap:6px; }`; document.head.appendChild(st); }
+
+// ---- the eye: a "Show on screen" list, everything ticked to start; unticking hides that part at once ----
+// H (or Hide everything) still hides all of it in one go and shows it again.
+applyHide=function(){ const v=settings.showVis||{}; const hid=id=>hotbarHidden||v[id]===false;
+  for(const id of ['btnInv','btnArmy','btnBuild']){ const el=$('#'+id); if(el) el.style.display=hid(id)?'none':''; }
+  $('#hotbar').style.display=hid('hotbar')?'none':''; for(const id of ['hpbar','xpbar','mpbar','foodbar']){ const el=$('#'+id); if(el&&(id!=='xpbar'||FEATURE_XP)) el.style.visibility=hid('bars')?'hidden':''; }
+  $('#sub').style.visibility=hid('sub')?'hidden':''; document.body.classList.toggle('minihide',hid('mini'));
+  const anyOff=hotbarHidden||Object.values(v).some(x=>x===false), eye=$('#btnItems');
+  if(eye){ eye.innerHTML=`<img class="pxi" alt="" src="${pxIcon(anyOff?'eyeoff':'eye')}">`; eye.dataset.tip='Show or hide parts of the screen (H)'; }
+  const t=$('#eyeToggle'); if(t) t.textContent=hotbarHidden?'Show everything':'Hide everything';
+  for(const c of document.querySelectorAll('#eyePop [data-show]')) c.checked=!hotbarHidden&&v[c.dataset.show]!==false; };
+{ const pop=$('#eyePop');
+  pop.addEventListener('change',e=>{ const c=e.target.closest('[data-show]'); if(!c) return; settings.showVis=settings.showVis||{};
+    if(hotbarHidden){ hotbarHidden=false; for(const x of pop.querySelectorAll('[data-show]')) if(x!==c) settings.showVis[x.dataset.show]=false; }   // coming back from Hide everything: only what you tick shows
+    settings.showVis[c.dataset.show]=c.checked; saveSettings(); applyHide(); });
+  $('#btnItems').addEventListener('click',()=>setTimeout(applyHide,0));
+  // opened from the More menu: the list sits under the top bar
+  setTimeout(applyHide,0); }
 })();
 </script>
 </body>
