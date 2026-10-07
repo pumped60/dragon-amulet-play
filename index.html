@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791349150"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791349150"><link rel="manifest" href="manifest.webmanifest?v=1791349150"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791350472"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791350472"><link rel="manifest" href="manifest.webmanifest?v=1791350472"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -42,6 +42,7 @@ button:focus-visible{ outline:3px solid var(--gold); outline-offset:2px; }
 .btn.primary{ background:var(--gold); color:var(--ink); }
 .btn small{ display:block; font-size:8px; color:inherit; opacity:.75; margin-top:6px; }
 .choices{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+#chCls,#prevCls,#testCls{ grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:1fr; } #chCls .choice,#prevCls .choice,#testCls .choice{ min-width:0; overflow-wrap:anywhere; }
 .choice{ background:var(--panel2); color:var(--text); border:3px solid var(--edge-dim); padding:10px 6px; font-size:10px; line-height:1.7; text-align:center; box-shadow:3px 3px 0 var(--ink); }
 .choice small{ display:block; font-size:7px; color:var(--muted); margin-top:4px; line-height:1.6; }
 .choice[aria-pressed="true"]{ border-color:var(--gold); background:#46396b; color:var(--gold); }
@@ -339,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.6</p></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.7</p></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -396,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.6</h3>
+    <h3>New in Beta 0.9.7</h3>
+    <p>Every menu (bag, crafting, shops, chests, army, map, settings, help and the rest) has an X in the top right corner that stays put however far you scroll. On phones you always sprint while moving (switch it off in Settings), double-tap anywhere in the world to place a torch, and the Torch button switches your hand-held light. Joysticks are the starting touch controls again; "Stick and tap" puts a move stick on the right and lets you tap anywhere to mine, build or attack there. Every class button in the new world screen is the same size, with the Dragonborne weapon tally just under them.</p>
+    <h3>Beta 0.9.6</h3>
     <p>Play on a Mac or Windows computer in its own window: open pumped60.github.io/dragon-amulet-play in Chrome or Edge and press "Install on this computer" on the title screen (or the install icon in the address bar). It gets its own icon, works offline and updates itself. There are also downloadable Mac and Windows apps on the Releases page of the dragon-amulet-play project on GitHub. F11 switches full screen in the downloaded app.</p>
     <h3>Beta 0.9.5</h3>
     <p>Fire: anything that can burn (wood, planks, furniture, leaves, plants, grass) catches fire and burns with flickering flames, spreading a little to what it touches before burning out to charred wood, ash or nothing. The Dragonborn's breath, fire bombs, lava, lightning, fire arrows and raiders all start it; water and rain put it out, and it never spreads into your own village. Standing in it burns.</p>
@@ -513,7 +516,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.6</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.7</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -588,6 +591,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   <div class="panel">
     <div class="phead"><h2>Settings</h2><button class="xbtn" id="settingsBack">Back</button></div>
     <h3 style="margin-top:0">Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
+    <h3>Auto sprint on phones</h3><div class="choices" id="setAutoSprint" style="grid-template-columns:repeat(2,1fr)"></div>
     <h3>Item info on phones</h3><div class="choices" id="setItemInfo" style="grid-template-columns:repeat(2,1fr)"></div>
     <p class="desc" style="min-height:0">Joysticks: the left stick moves (push up to jump, down to drop or dive). Drag the right stick toward where you want to mine, build or attack and hold it. You don't need to tap each block.</p>
     <h3>Joystick size</h3><div class="choices" id="setSize"></div>
@@ -753,7 +757,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.6</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.7</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -772,7 +776,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.6', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.7', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2584,7 +2588,7 @@ function updatePlayer(dt){
   if(p.fly){ p.flyBoost=moving?Math.min(3,(p.flyBoost||0)+dt):0; const boost=(1+p.flyBoost*1.1)*(p.godFly?1.6:1); p.vy=((input.down?1:0)-(input.jump?1:0))*240*boost; p.breath=10; if(rules.mode==='creative'||p.fx.amulet||p.godFly) p.hp=p.maxHp; }
   const mv=(input.right?1:0)-(input.left?1:0);
   const spd=(p.fly?1.5*(1+(p.flyBoost||0)*1.1):1)*(p.riding?BOATS[p.boat].speed*playerSeaMul():p.inWater&&!p.fly?p.speed*(p.fx.dive>=2?1.1:0.6):p.speed);
-  if(p.kbT<=0){ const target=mv*spd*(input.sprint&&mv&&!p.fly?SPRINT_MUL[p.sprintLvl||0]:1); const onIce=p.grounded&&tileAt(Math.floor(cxOf(p)/T),Math.floor((p.y+p.h+2)/T))===B.ICE; const acc=(p.fly?2600:onIce?380:p.grounded?1500:1000)*dt; p.vx=p.vx<target?Math.min(target,p.vx+acc):Math.max(target,p.vx-acc); }
+  if(p.kbT<=0){ const target=mv*spd*((input.sprint||touchSprint())&&mv&&!p.fly?SPRINT_MUL[p.sprintLvl||0]:1); const onIce=p.grounded&&tileAt(Math.floor(cxOf(p)/T),Math.floor((p.y+p.h+2)/T))===B.ICE; const acc=(p.fly?2600:onIce?380:p.grounded?1500:1000)*dt; p.vx=p.vx<target?Math.min(target,p.vx+acc):Math.max(target,p.vx-acc); }
   if(mv) p.facing=mv;
   const jumpEdge=input.jump&&!p.jumpHeld; p.jumpHeld=input.jump; if(p.grounded) p.airJumps=p.fx.jump+(p.extraJumps||0);
   if(jumpEdge&&p.grounded&&typeof sfx==='function') sfx('jump');
@@ -5047,7 +5051,7 @@ $('#btnQuickSave').addEventListener('click',async()=>{ if(!player) return; toast
 let settingsReturn='scrPause';
 function renderSettings(){
   const opt=(k,v,label,small)=>`<button class="choice" data-k="${k}" data-v="${v}" aria-pressed="${String(settings[k])===String(v)}">${label}${small?`<small>${small}</small>`:''}</button>`;
-  $('#setControls').innerHTML=opt('controls','finger','Two fingers','First finger moves, second aims and uses')+opt('controls','buttons','Buttons','Arrow pads, tap the world')+opt('controls','sticks','Joysticks','Move on one side, aim on the other');
+  $('#setControls').innerHTML=opt('controls','sticks','Joysticks','Move on one side, aim on the other')+opt('controls','finger','Stick and tap','Move stick on the right, tap anywhere to mine, build or attack')+opt('controls','buttons','Buttons','Arrow pads, tap the world');
   $('#setSize').innerHTML=opt('stickSize','s','Small')+opt('stickSize','m','Medium')+opt('stickSize','l','Large');
   $('#setSwap').innerHTML=opt('swap',false,'Move on left')+opt('swap',true,'Move on right');
   $('#setSmart').innerHTML=opt('smart',true,'On','Mines the next block in that direction for you')+opt('smart',false,'Off','Only the exact block you point at');
@@ -5085,9 +5089,9 @@ function applyControls(){ applyHudScale(); const joy=settings.controls==='sticks
   if(world&&state!=='title'||world&&player){ if(isTouch){ $('#touch').hidden=joy; $('#sticks').hidden=!joy; } }
   for(const k of ['l','r']){ stick[k].on=false; stick[k].mag=0; } syncStickInput(); }
 // virtual joysticks: left moves (push up to jump, down to drop), right aims and uses the held item
-function syncStickInput(){ const L=stick.l; if(settings.controls!=='sticks') return;
+function syncStickInput(){ const L=stick.l; if(settings.controls!=='sticks'&&settings.controls!=='finger') return;
   input.left=L.on&&L.x<-0.3; input.right=L.on&&L.x>0.3; input.down=L.on&&L.y>0.6; input.jump=(L.on&&L.y<-0.6)||jumpBtnDown;
-  input.use=stick.r.on&&stick.r.mag>0.2; }
+  if(settings.controls==='sticks') input.use=stick.r.on&&stick.r.mag>0.2; }
 let jumpBtnDown=false;
 for(const side of ['l','r']){ const base=$('#stick_'+side), knob=base.querySelector('.knob');
   const upd=ev=>{ const r=base.getBoundingClientRect(); const cx=r.left+r.width/2, cy=r.top+r.height/2, rad=r.width/2;
@@ -6903,9 +6907,9 @@ let torchMode=false;
 { const btn=document.createElement('button'); btn.id='btnTorchT'; btn.className='hbtn'; btn.textContent='Torch'; btn.setAttribute('aria-label','Torch: like holding Shift. Your torch lights the way and each tap places a torch. Tap again to stop.'); btn.hidden=true;
   btn.style.cssText='position:absolute;right:calc(env(safe-area-inset-right,0px) + 14px);bottom:calc(var(--sb) + 170px);pointer-events:auto;font-size:9px;padding:10px 10px;';
   $('#hud').appendChild(btn);
-  btn.addEventListener('pointerdown',ev=>{ ev.stopPropagation(); ev.preventDefault(); torchMode=!torchMode; btn.style.background=torchMode?'var(--gold)':''; btn.style.color=torchMode?'var(--ink)':''; if(torchMode) toast(countItem(B.TORCH)>0?'Torch on: it lights the way, and each tap places a torch. Tap Torch again to stop.':'No torches in your bag',2.5); });
+  btn.addEventListener('pointerdown',ev=>{ ev.stopPropagation(); ev.preventDefault(); torchMode=!torchMode; btn.style.background=torchMode?'var(--gold)':''; btn.style.color=torchMode?'var(--ink)':''; if(torchMode) toast(countItem(B.TORCH)>0?'Torch on: it lights the way. Double-tap anywhere to place a torch.':'No torches in your bag',2.5); });
   setInterval(()=>{ const show=document.body.classList.contains('touch')&&state==='play'; if(btn.hidden===show) btn.hidden=!show; if(!show&&torchMode){ torchMode=false; btn.style.background=''; btn.style.color=''; } },500);
-  cv.addEventListener('pointerdown',ev=>{ if(!torchMode||state!=='play'||ev.pointerType==='mouse') return; ev.stopImmediatePropagation(); ev.preventDefault(); setAim(ev); placeTorchAt(Math.floor(input.ax/T),Math.floor(input.ay/T)); input.use=false; },true); }
+}
 // ===================== Beta 0.8 =====================
 
 // ---- storm tier: armor worn in older saves keeps its place after the new tier was added ----
@@ -8456,12 +8460,14 @@ function dbUiTick(dt){ if((dbUiT-=dt)>0) return; dbUiT=0.5; const dr=player&&pla
 
 // ---- class choices: the Dragonborn is shown everywhere, dimmed until Vorthax has fallen ----
 function dbTally(){ const w=dbStore().weapons; const n=CLS_KEYS.filter(k=>w[k]).length;
-  return `<div class="dbtally" style="font-size:8px;line-height:1.5;margin-top:4px">Dragonborne weapons: ${n} of 5<br>${CLS_KEYS.map(k=>`<span style="opacity:${w[k]?1:0.35}">${w[k]?'✓':'·'} ${ITEMS[DB_W[k]].name.replace('Dragonborne ','')}</span>`).join(' ')}</div>`; }
+  return `<div class="dbtally">Dragonborne weapons: ${n} of 5<br>${CLS_KEYS.map(k=>`<span style="opacity:${w[k]?1:0.35}">${w[k]?'✓':'·'} ${ITEMS[DB_W[k]].name.replace('Dragonborne ','')}</span>`).join(' ')}</div>`; }
 function dbButton(attr,pressed,extra){ const ok=dbUnlocked();
-  return `<button class="choice" ${attr} aria-pressed="${pressed}" ${ok?'':'disabled'} style="${ok?'':'opacity:.45;filter:grayscale(.6)'}">${CLASSES.dragon.name}<small>${ok?`${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana`:'Defeat Vorthax in survival to unlock'}</small>${extra||''}</button>`; }
+  return `<button class="choice" ${attr} aria-pressed="${pressed}" ${ok?'':'disabled'} style="${ok?'':'opacity:.45;filter:grayscale(.6)'}">${CLASSES.dragon.name}<small>${ok?`${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana`:'Locked: beat Vorthax'}</small>${extra||''}</button>`; }
+// the weapon tally sits under the class grid, so every class button keeps the same size
+function dbTallyAfter(grid){ const g=$(grid); if(!g) return; let t=g.nextElementSibling; if(!t||!t.classList.contains('dbtallyrow')){ t=document.createElement('div'); t.className='dbtallyrow'; t.style.cssText='font-size:8px;color:var(--muted);margin-top:6px;line-height:1.6'; g.after(t); } t.innerHTML=dbTally(); }
 { const _bc=buildChoices; buildChoices=function(...a){ const r=_bc(...a); try{ if(setup.cls==='dragon'&&!dbUnlocked()) setup.cls='knight';
-      $('#chCls').insertAdjacentHTML('beforeend',dbButton('data-v="dragon"',setup.cls==='dragon',dbTally())); if(setup.cls==='dragon') $('#clsDesc').textContent=CLASSES.dragon.desc; }catch(e){ console.warn(e); } return r; }; }
-{ const _rc=renderChars; renderChars=function(...a){ const r=_rc(...a); try{ if(prevCls==='dragon'&&!dbUnlocked()) prevCls='knight'; $('#prevCls').insertAdjacentHTML('beforeend',dbButton('data-pc="dragon"',prevCls==='dragon',dbTally())); }catch(e){ console.warn(e); } return r; }; }
+      $('#chCls').insertAdjacentHTML('beforeend',dbButton('data-v="dragon"',setup.cls==='dragon')); dbTallyAfter('#chCls'); if(setup.cls==='dragon') $('#clsDesc').textContent=CLASSES.dragon.desc; }catch(e){ console.warn(e); } return r; }; }
+{ const _rc=renderChars; renderChars=function(...a){ const r=_rc(...a); try{ if(prevCls==='dragon'&&!dbUnlocked()) prevCls='knight'; $('#prevCls').insertAdjacentHTML('beforeend',dbButton('data-pc="dragon"',prevCls==='dragon')); dbTallyAfter('#prevCls'); }catch(e){ console.warn(e); } return r; }; }
 { const _ra=renderArmy; renderArmy=function(...a){ const r=_ra(...a); try{ const cs=$('#classSwap'); if(cs&&dbUnlocked()){ const nc=!cs.querySelector('button[disabled]');
       cs.insertAdjacentHTML('beforeend',`<button class="choice" data-cls="dragon" aria-pressed="${player.cls==='dragon'}" ${nc?'':'disabled'}>${CLASSES.dragon.name}<small>${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana</small></button>`); } }catch(e){ console.warn(e); } return r; }; }
 // ===================== the Dragonborn's wings and tail; two-finger touch controls =====================
@@ -8480,30 +8486,13 @@ function drawDragonTail(e){ const t=performance.now()/1000, sc=dragonScale(e), s
 { const _de=drawEntity; drawEntity=function(e){ try{ if(lookOf(e)==='dragon'&&!(e.stealthT>0)){ drawDragonTail(e); drawDragonWings(e); } }catch(err){} return _de(e); }; }
 { const _sw=drawSkyWings; drawSkyWings=function(e){ if(e&&lookOf(e)==='dragon') return; return _sw(e); }; }
 
-// ---- two-finger touch controls (the default on phones): the first finger moves, the second aims and uses ----
-// The first finger on the game screen is a movement stick wherever it lands: drag left or right to walk, up to jump
-// (or fly up), down to drop or dive. A second finger works like tapping the world: it aims at that spot and uses your
-// held item (attack, mine, build) for as long as it is held; a quick tap still talks to villagers and opens chests.
-{ const st=document.createElement("style"); st.textContent=`body.finger #stick_l, body.finger #stick_r{ display:none !important; } body.finger #sticks{ justify-content:flex-end; } body.finger.swap #sticks{ justify-content:flex-start; }
-  #fingRing{ position:fixed; width:96px; height:96px; margin:-48px 0 0 -48px; border-radius:50%; border:3px solid rgba(244,236,210,.35); background:rgba(42,35,64,.18); pointer-events:none; z-index:12; }
-  #fingKnob{ position:fixed; width:40px; height:40px; margin:-20px 0 0 -20px; border-radius:50%; background:rgba(244,236,210,.35); pointer-events:none; z-index:12; }`; document.head.appendChild(st);
-  for(const id of ['fingRing','fingKnob']){ const d=document.createElement('div'); d.id=id; d.hidden=true; document.body.appendChild(d); } }
-const fing={id:null,ox:0,oy:0};
-const fingerMode=()=>settings.controls==='finger'&&state==='play';
-function fingMove(x,y){ let dx=x-fing.ox, dy=y-fing.oy; const d=Math.hypot(dx,dy), MAX=60; if(d>MAX){ fing.ox+=dx*(1-MAX/d); fing.oy+=dy*(1-MAX/d); dx=x-fing.ox; dy=y-fing.oy; }   // the ring follows a long drag
-  input.left=dx<-16; input.right=dx>16; input.jump=dy<-30; input.down=dy>30;
-  const r=$('#fingRing'), k=$('#fingKnob'); r.style.left=fing.ox+'px'; r.style.top=fing.oy+'px'; k.style.left=x+'px'; k.style.top=y+'px'; }
-function fingStop(){ fing.id=null; input.left=input.right=input.jump=input.down=false; $('#fingRing').hidden=true; $('#fingKnob').hidden=true; }
-addEventListener('pointerdown',ev=>{ if(ev.pointerType!=='touch'||ev.target!==cv||!fingerMode()||fing.id!=null||(typeof torchMode!=='undefined'&&torchMode)) return;
-  ev.stopImmediatePropagation(); ev.preventDefault(); enableTouch(); fing.id=ev.pointerId; fing.ox=ev.clientX; fing.oy=ev.clientY; $('#fingRing').hidden=false; $('#fingKnob').hidden=false; fingMove(ev.clientX,ev.clientY); },true);
-addEventListener('pointermove',ev=>{ if(ev.pointerId!==fing.id) return; ev.stopImmediatePropagation(); fingMove(ev.clientX,ev.clientY); },true);
-{ const end=ev=>{ if(ev.pointerId!==fing.id) return; ev.stopImmediatePropagation(); fingStop(); }; addEventListener('pointerup',end,true); addEventListener('pointercancel',end,true); }
-setInterval(()=>{ if(fing.id!=null&&!fingerMode()) fingStop(); },400);
-// the controls switch: two fingers hides the movement and aiming joysticks but keeps the Hook and Fire dials
+// ---- stick-and-tap touch controls: a move stick on the right, and a tap anywhere else uses what you hold there ----
+// (the move stick is the joysticks' left stick moved to the other side; taps go to the normal tap-to-use on the game screen)
+{ const st=document.createElement('style'); st.textContent=`body.finger #stick_r{ display:none !important; } body.finger #sticks{ flex-direction:row-reverse; } body.finger.swap #sticks{ flex-direction:row; }`; document.head.appendChild(st); }
 { const _ac=applyControls; applyControls=function(...a){ const fm=settings.controls==='finger'; const r=_ac(...a);
-    document.body.classList.toggle('finger',fm); if(fm&&(world&&state!=='title'||world&&player)&&isTouch){ $('#touch').hidden=true; $('#sticks').hidden=false; } if(!fm&&fing.id!=null) fingStop(); return r; }; }
-// phones move to two fingers once (it can be changed back in Settings)
-if(!settings.ctlV){ settings.ctlV=1; settings.controls='finger'; try{ saveSettings(); }catch(e){} }
+    document.body.classList.toggle('finger',fm); if(fm&&(world&&state!=='title'||world&&player)&&isTouch){ $('#touch').hidden=true; $('#sticks').hidden=false; } return r; }; }
+// joysticks are the starting choice on phones (everyone is moved back to them once; Settings can change it)
+if((settings.ctlV||0)<2){ settings.ctlV=2; settings.controls='sticks'; try{ saveSettings(); }catch(e){} }
 // ===================== living fire, saplings for every tree, short item tips =====================
 
 // ---- fire: anything that can burn catches, flickers, spreads a little, and burns out to char, ash or nothing ----
@@ -8571,6 +8560,31 @@ let itemCtx=null;
 { const _t=toast; toast=function(msg,...a){ try{ if(itemCtx!=null&&shortTips()&&typeof msg==='string'){ const d=ITEMS[itemCtx], m=msg.match(/^(.*? equipped): /); if(m&&d) msg=`${m[1]}: ${itemBlip(d).toLowerCase()}`; } }catch(e){} return _t(msg,...a); }; }
 { const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const opt=(v,l,s)=>`<button class="choice" data-k="itemInfo" data-v="${v}" aria-pressed="${(settings.itemInfo||'short')===v}">${l}<small>${s}</small></button>`;
       $('#setItemInfo').innerHTML=opt('short','Short','Name and a few words')+opt('full','Full','Every stat and the full description'); }catch(e){} return r; }; }
+// ===================== phones: auto sprint and double-tap torches =====================
+// You always sprint while moving on a touch screen (Settings: Auto sprint on phones). It runs at your sprint speed
+// but, unlike holding Shift, doesn't light your torch or make you hungrier.
+function touchSprint(){ return settings.autoSprint!==false&&document.body.classList.contains('touch')&&!input.mouse; }
+// Double-tap a spot in the world to place a torch there (any touch mode). The Torch button only switches the hand-held light.
+const dtap={t:0,x:0,y:0};
+addEventListener('pointerdown',ev=>{ if(ev.pointerType!=='touch'||ev.target!==cv||state!=='play'||!player) return; const now=performance.now();
+  const dbl=now-dtap.t<330&&Math.hypot(ev.clientX-dtap.x,ev.clientY-dtap.y)<30; dtap.t=dbl?0:now; dtap.x=ev.clientX; dtap.y=ev.clientY;
+  if(!dbl||countItem(B.TORCH)<=0) return;
+  ev.stopImmediatePropagation(); ev.preventDefault(); setAim(ev); input.use=false; placeTorchAt(Math.floor(input.ax/T),Math.floor(input.ay/T)); },true);
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const on=settings.autoSprint!==false; $('#setAutoSprint').innerHTML=`<button class="choice" data-k="autoSprint" data-v="true" aria-pressed="${on}">On<small>Always sprint while moving</small></button><button class="choice" data-k="autoSprint" data-v="false" aria-pressed="${!on}">Off<small>Walk at normal speed</small></button>`; }catch(e){} return r; }; }
+
+// ---- every menu has an X in the top right corner that never scrolls away ----
+// It does what that menu's own close or back button does; menus with no way back (title, pause, death, the ending) get none.
+const NO_X=new Set(['scrTitle','scrPause','scrEnd','scrDeath']);
+let menuOrder=[];   /* the order menus were opened in: the X closes the newest */
+function openMenu(){ const os=[...document.querySelectorAll('.overlay')].filter(o=>!o.hidden&&!NO_X.has(o.id)); menuOrder=menuOrder.filter(o=>os.includes(o)); for(const o of os) if(!menuOrder.includes(o)) menuOrder.push(o); return menuOrder[menuOrder.length-1]||null; }
+function menuCloser(o){ if(!o) return null; for(const sel of ['[id$="Close"]:not(.topclose)','[id$="Back"]:not(.topclose)','#introClose','.closebar','.topclose']){ const c=o.querySelector(sel); if(c) return c; } return null; }   /* its own Close or Back button first */
+{ const st=document.createElement('style'); st.textContent=`#menuX{ position:fixed; z-index:200; top:calc(env(safe-area-inset-top,0px) + 8px); right:calc(env(safe-area-inset-right,0px) + 8px); width:42px; height:42px; padding:0; font-size:18px; line-height:1;
+    background:var(--panel); color:var(--gold); border:3px solid var(--edge); box-shadow:3px 3px 0 var(--ink); }
+  #menuX:active{ background:var(--gold); color:var(--ink); } body.menux .overlay:not([hidden]) .topclose{ display:none !important; }`; document.head.appendChild(st);
+  const b=document.createElement('button'); b.id='menuX'; b.textContent='✕'; b.setAttribute('aria-label','Close'); b.hidden=true; document.body.appendChild(b);
+  b.addEventListener('click',ev=>{ ev.stopPropagation(); const c=menuCloser(openMenu()); if(c) c.click(); });
+  const sync=()=>{ const o=openMenu(), show=!!(o&&menuCloser(o)); if(b.hidden===show) b.hidden=!show; document.body.classList.toggle('menux',show); };
+  new MutationObserver(ms=>{ for(const m of ms){ const o=m.target; if(o.classList&&o.classList.contains('overlay')&&!o.hidden){ menuOrder=menuOrder.filter(x=>x!==o); menuOrder.push(o); } } sync(); }).observe(document.body,{subtree:true,attributes:true,attributeFilter:['hidden']}); setInterval(sync,500); }
 })();
 </script>
 </body>
