@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791497800"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791497800"><link rel="manifest" href="manifest.webmanifest?v=1791497800"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791499353"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791499353"><link rel="manifest" href="manifest.webmanifest?v=1791499353"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.48</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.49</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.48</h3>
+    <h3>New in Beta 0.9.49</h3>
+    <p>Every villager needs a home with a bed, a chest and the item of their trade: an anvil for the blacksmith, a cooking pot for the cook, a herb rack, a barrel for the fisher, a gem bench, a ship's wheel, a drafting table, a powder keg, a weapon rack for the Quartermaster, a notice board, a feed trough, a composter for farmers, a chopping block for woodcutters and an ore cart for miners. Your village's buildings come furnished; if one of the three goes missing, that villager stops working until it is back. Build your own home anywhere near the village (a closed room with walls, floor, roof, back wall and a door, plus the three items) and a villager of that trade moves in; the Buildings window lists every home and lets you move villagers. A Guard post placed in any such home becomes a soldier post. Furniture comes in stone, deep stone and iron and changes with the building. Roofs are your faction's colour at the stone and iron stages, and enemy villages grow through the same stages in their own colours. Every building lays dirt under itself and levels the ground to its neighbours the same way.</p>
+    <h3>Beta 0.9.48</h3>
     <p>Your castle starts as stone, turns to dark deep stone for a Town and iron for a City. Stone doors and iron doors can be crafted at the workbench, and village buildings use them at their stone and iron stages. Woodcutters, farmers and miners now start with a wanderer: give one the job and they become its head and build the lodge, farmhouse or mine; then the Quartermaster hires up to 5 of each for 50 coins. The miners' hut grows from wood to stone to iron with your village, and the mine shaft has a platform across its top. The top shop house keeps its red tile roof without the turrets, its back walls have no gaps, and its balcony lantern hangs under a little canopy. The lodge and farmhouse stand level with your village, and the ground between neighbouring buildings is flat, with a slope only past the last one. The small tower has nothing over its hatch, so you can jump up to the roof. In the test world every building and upgrade is free.</p>
     <h3>Beta 0.9.47</h3>
     <p>Crafting is a grid of pictures: things you can make right now light up and come first, and tapping one shows what it needs, what you have, where it is made and Craft, ×5 and Max buttons. Star a recipe with Pin to keep it at the top. More tabs split the long lists: Furniture, Lights and decor, Materials, Farm and animals, Boats and machines, Potions and runes. The chest window shows your bag on the left and the chest on the right, sized to fit the screen, with Take all first. A shop house at level 3 gets a red clay tile roof with a turret on each corner instead of gold trim.</p>
@@ -598,7 +600,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.48</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.49</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -858,7 +860,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.48</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.49</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -877,7 +879,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.48', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.49', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -9299,7 +9301,7 @@ const SHOP_FURN={   // [ground floor, second floor] at level 2, then [ground, se
 const HOUSE_WORD=['','',
   'a third floor with a bedroom, lanterns and furniture for the trade',
   'a balcony with a porch lantern, a red tile roof, a roof banner, paintings, rugs and a showpiece for the trade'];
-const ROOF_IDS=()=>new Set([B.ROOF,B.SHINGLE_B,B.THATCH,B.IRON_ROOF,B.CLAY_TILE,B.CLAY_EAVE]);
+function ROOF_IDS(){ return new Set([B.ROOF,B.SHINGLE_B,B.THATCH,B.IRON_ROOF,B.CLAY_TILE,B.CLAY_EAVE]); }
 function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, gy=h.gy;
   const inW=(x,y)=>x>=0&&x<W&&y>=0&&y<H;
   const put=(x,y,id)=>{ if(inW(x,y)&&tileAt(x,y)===0) setTile(x,y,id); };           // only into empty space
@@ -10547,20 +10549,20 @@ try{ WOODY.add(B.THATCH); }catch(e){}
   BGTEX[15]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.IRON_PLATE],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.5)'; g.fillRect(0,0,16,16); return c; })(); }
 
 // what each tier is made of: [wood, stone, iron]
-const SKIN={ wall:[B.PLANK,B.STONE_BLOCK,B.IRON_PLATE], beam:[B.TIMBER,B.BRICK,B.IRON_BEAM], roof:[B.THATCH,null,B.IRON_ROOF], bg:[5,11,15], door:[null,'stone','iron'] };
+const SKIN={ wall:[B.PLANK,B.STONE_BLOCK,B.IRON_PLATE], beam:[B.TIMBER,B.BRICK,B.IRON_BEAM], roof:[B.THATCH,null,B.IRON_ROOF], bg:[5,11,15], door:[null,'stone','iron'], furn:[null,'stone','iron'] };
 // the castle is stone from the start, deep stone for a Town and iron for a City (roof null = its tile color)
-const CASTLE_SKIN={ wall:[B.STONE_BLOCK,B.DEEP_STONE,B.IRON_PLATE], beam:[B.BRICK,B.DEEP_TRIM,B.IRON_BEAM], roof:[null,null,B.IRON_ROOF], bg:[11,21,15], door:['stone','stone','iron'] };
+const CASTLE_SKIN={ wall:[B.STONE_BLOCK,B.DEEP_STONE,B.IRON_PLATE], beam:[B.BRICK,B.DEEP_TRIM,B.IRON_BEAM], roof:[null,null,B.IRON_ROOF], bg:[11,21,15], door:['stone','stone','iron'], furn:['stone','deep','iron'] };
 const SKIN_OF=new Map(); for(const role of ['wall','beam','roof']) for(const id of SKIN[role].concat(CASTLE_SKIN[role])) if(id!=null) SKIN_OF.set(id,role); SKIN_OF.set(B.ROOF,'roof'); SKIN_OF.set(B.SHINGLE_B,'roof');
 const SKIN_BG=new Set([5,10,11,15,21]);
 const TIER_WORD=['wood','stone','iron'];
 // every building of yours that changes, with its box and the tier it should have
-function skinTargets(){ if(!home||!home.claimed) return []; const vt=Math.min(2,villageTier()), L=[];
-  const cx=home.castleCx, gy=home.gy; L.push({key:'castle2',set:CASTLE_SKIN,x0:cx-20,x1:cx+19,y0:gy-36,y1:gy+2,tier:vt,roof:player&&player.team==='r'?B.ROOF:B.SHINGLE_B});
+function skinTargets(){ if(!home) return []; const L=[]; if(typeof enemySkinTargets==='function') try{ L.push(...enemySkinTargets()); }catch(e){ console.warn(e); } if(!home.claimed) return L; const vt=Math.min(2,villageTier()), pt=player&&player.team;
+  const cx=home.castleCx, gy=home.gy; L.push({key:'castle2',set:CASTLE_SKIN,x0:cx-20,x1:cx+19,y0:gy-36,y1:gy+2,tier:vt,team:pt});
   (home.houses||[]).forEach((h,k)=>{ if(!h) return; const shop=h.role&&SHOPS[h.role]; const lv=shop?((home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1):0;
     const t3=shop&&lv>=3?2:0;   /* a level 3 house's porch canopy sticks out past the wall (98e_house_roof.js) */
     L.push({key:'h'+k,x0:h.x0-2-t3,x1:h.x1+2+t3,y0:h.gy-21-t3,y1:h.gy,tier:shop?Math.max(0,Math.min(2,lv-1)):vt}); });
   // the buildings you build yourself (hut, wall, watchtower, pen, keep) and outposts you capture follow the village too
-  for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ if(!st||!isFinite(st.x)) continue; const bp=BLUEPRINTS.find(b=>b.id===st.kind)||{fx0:-9,fx1:9,fh:20};
+  for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ if(!st||!isFinite(st.x)||st.kind==='post') continue; const bp=BLUEPRINTS.find(b=>b.id===st.kind)||{fx0:-9,fx1:9,fh:20};
     L.push({key:'s'+st.id,x0:st.x+bp.fx0-1,x1:st.x+bp.fx1+1,y0:st.gy-bp.fh-7,y1:st.gy,tier:vt}); }
   if(home.mineX) L.push({key:'mine',x0:home.mineX-5,x1:home.mineX+6,y0:home.gy-10,y1:home.gy,tier:vt});   // the miners' hut
   for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)) L.push({key:k,x0:r.x0-1,x1:r.x1+1,y0:r.gy-16,y1:r.gy,tier:vt}); }
@@ -10569,10 +10571,12 @@ function skinTargets(){ if(!home||!home.claimed) return []; const vt=Math.min(2,
 function skinBuilding(t){ const x0=Math.max(0,t.x0), x1=Math.min(W-1,t.x1), y0=Math.max(0,t.y0), y1=Math.min(H-1,t.y1);
   home.skinRoof=home.skinRoof||{}; let roof=home.skinRoof[t.key];
   if(!roof){ let a=0,b=0; for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x]; if(id===B.ROOF) a++; else if(id===B.SHINGLE_B) b++; } roof=home.skinRoof[t.key]=a||b?(a>=b?B.ROOF:B.SHINGLE_B):(t.roof||B.SHINGLE_B); }
-  const K=t.set||SKIN, want={ wall:K.wall[t.tier], beam:K.beam[t.tier], roof:K.roof[t.tier]==null?roof:K.roof[t.tier] }, wbg=K.bg[t.tier], dk=K.door[t.tier]; let n=0;
+  const K=t.set||SKIN, team=t.team||(player&&player.team)||'r', tr=K.roof[t.tier]===B.THATCH?B.THATCH:typeof teamRoof==='function'?teamRoof(team,t.tier):(K.roof[t.tier]==null?roof:K.roof[t.tier]);
+  const want={ wall:K.wall[t.tier], beam:K.beam[t.tier], roof:tr }, wbg=K.bg[t.tier], dk=K.door[t.tier], fk=K.furn?K.furn[t.tier]:null; let n=0;
   for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x, id=world[i], role=SKIN_OF.get(id);
     if(role&&id!==want[role]&&!(y===y1&&role!=='wall')){ setTile(x,y,want[role]); n++; }
     else if(typeof doorSwap==='function'&&DOOR_SET_OF[id]){ const to=doorSwap(id,dk); if(to!==id){ setTile(x,y,to); n++; } }
+    else if(typeof furnSwap==='function'){ const to=furnSwap(id,fk); if(to!==id){ setTile(x,y,to); n++; } }
     const b=bg[i]; if(b&&SKIN_BG.has(b)&&b!==wbg){ bset(x,y,wbg); if(explored[i]) try{ mapPixel(x,y); }catch(e){} } }
   fillBackHoles(x0,x1,y0,y1);
   home.skin=home.skin||{}; home.skin[t.key]=t.tier; return n; }
@@ -10581,7 +10585,7 @@ function fillBackHoles(x0,x1,y0,y1){ let n=0; for(let pass=0;pass<2;pass++) for(
     if(id&&BLOCKS[id].solid&&!BLOCKS[id].platform&&id!==B.PLATFORM) continue; const u=bg[i-W], d=bg[i+W], l=bg[i-1], r=bg[i+1], ok=v=>v>2;
     const v=ok(u)&&ok(d)?u:ok(l)&&ok(r)?l:0; if(v){ bset(x,y,v); n++; if(explored[i]) try{ mapPixel(x,y); }catch(e){} } } return n; }
 // bring every building up to date (only those whose tier changed); returns the buildings that changed
-function skinAll(force){ if(!home||!home.claimed||isGuest()) return []; home.skin=home.skin||{}; const done=[];
+function skinAll(force){ if(!home||isGuest()) return []; home.skin=home.skin||{}; const done=[];
   for(const t of skinTargets()) if(force||home.skin[t.key]!==t.tier){ facRun(()=>skinBuilding(t)); done.push(t); }
   if(done.length) for(let x=home.castleCx-40;x<=home.castleCx+40;x++) if(x>=0&&x<W) try{ updateSkyTop(x); }catch(e){}
   return done; }
@@ -10594,7 +10598,7 @@ function skinAll(force){ if(!home||!home.claimed||isGuest()) return []; home.ski
 { const _rh=rebuildHome; rebuildHome=function(...a){ const r=_rh(...a); try{ if(home){ home.skin={}; skinAll(); } }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.claimed&&!isGuest()){ const first=!home.skinV; home.skinV=1; const d=skinAll(); if(first&&d.length) toast(`Your buildings show your village's size: wood for a hamlet, stone for a town, iron for a city (your castle: stone, deep stone, iron).`,5); } }catch(e){ console.warn(e); } return r; }; }
 // a claimed castle takes the look of the village right away; buildings added later catch up within a few seconds
-setInterval(()=>{ try{ if(state==='play'&&home&&home.claimed&&!isGuest()) skinAll(); }catch(e){} },4000);
+setInterval(()=>{ try{ if(state==='play'&&home&&!isGuest()) skinAll(); }catch(e){} },4000);
 // ===================== window walls, furniture in every wood, saplings for every tree =====================
 // Window wall: a back wall item (like the plank or stone walls) of framed glass panes. The sky shows through it and
 // daylight comes in, so a room with window walls is lit like the open air (openAirMask treats back wall WINDOW_BG as open).
@@ -11038,6 +11042,199 @@ function levelNear(x0,x1,gy){ if(!world||!home||isGuest()) return; const near=14
 levelHome=function(){ if(!home||!home.claimed) return; let x0=Math.min(home.x0,home.castleCx-30), x1=Math.max(home.x1,home.castleCx+30,home.mineX?home.mineX+6:-1e9);
   for(let pass=0;pass<2;pass++) for(const k of ['lodge','farmhouse']){ const r=home[k]; if(!r||!isFinite(r.x0)||r.gy!==home.gy) continue; const b=r.field?r.field[1]:r.x1; if(r.x0<=x1+16&&b>=x0-16){ x0=Math.min(x0,r.x0); x1=Math.max(x1,b); } }
   levelVillage(x0,x1,home.gy); home.flatV=1; };
+// ===================== homes: a bed, a chest and a job item; guard posts; furniture and roofs by stage and faction =====================
+// Every villager needs a home with a bed, a chest and the item of their trade (JOB_ITEM): an anvil for the blacksmith,
+// a barrel for the fisher, a composter for farmers and so on. The game's own houses, the castle, keeps, the lodge,
+// the farmhouse and the mine are furnished once (h.furn, home.furnV); a villager whose home loses one of the three stops
+// trading or working until it is put back. Players can build their own homes anywhere near the village: a closed room
+// (walls, floor, roof, a back wall everywhere and a door) holding a bed, a chest and a job item (roomAt). New villagers
+// move into a free home that has their job item, and the Buildings window lists every home so villagers can be moved.
+// A Guard post block can be placed in any valid home; each one is a soldier post in the Buildings window.
+
+// ---- the job items ----
+const JOB_DEF=[
+  ['ANVIL','Anvil','The blacksmith works here. A home with an anvil can house a blacksmith',[[I.IRON_BAR,5]],r=>{ r(3,6,10,3,'#4a4f5a'); r(1,6,4,2,'#4a4f5a'); r(3,6,10,1,'#7a808c'); r(6,9,4,3,'#3a3e48'); r(4,12,8,2,'#3a3e48'); r(5,14,6,2,'#6a4428'); r(4,15,8,1,'#4a2e18'); }],
+  ['POT','Cooking pot','The cook works here. A home with a cooking pot can house a cook',[[I.IRON_BAR,2],[B.LOG,1]],r=>{ r(3,7,10,6,'#2e2e34'); r(3,7,10,1,'#55555e'); r(2,7,1,2,'#2e2e34'); r(13,7,1,2,'#2e2e34'); r(4,8,8,1,'#c87a3a'); r(5,13,1,2,'#2e2e34'); r(10,13,1,2,'#2e2e34'); r(5,15,6,1,'#ff9a2a'); r(6,14,4,1,'#ffd04a'); r(6,2,1,3,'#e8e8f0'); r(9,1,1,4,'#e8e8f0'); }],
+  ['HERB_RACK','Herb rack','The herbalist works here. A home with a herb rack can house a herbalist',[[B.PLANK,4],[I.HERB,3]],r=>{ r(2,2,1,14,'#6a4428'); r(13,2,1,14,'#6a4428'); r(2,3,12,1,'#8a5c2d'); r(2,9,12,1,'#8a5c2d'); for(const x of [4,7,10]){ r(x,4,2,4,'#4aa04a'); r(x,5,1,2,'#2e7a2e'); } for(const x of [4,8]){ r(x,10,3,4,'#7ac04a'); r(x+1,11,1,2,'#c84a8a'); } }],
+  ['SHIP_WHEEL','Ship\'s wheel','The shipwright works here. A home with a ship\'s wheel can house a shipwright',[[B.PLANK,6],[I.IRON_BAR,1]],r=>{ r(7,1,2,14,'#8a5c2d'); r(1,7,14,2,'#8a5c2d'); r(3,3,2,2,'#8a5c2d'); r(11,3,2,2,'#8a5c2d'); r(3,11,2,2,'#8a5c2d'); r(11,11,2,2,'#8a5c2d'); r(5,4,6,1,'#b7834a'); r(5,11,6,1,'#b7834a'); r(4,5,1,6,'#b7834a'); r(11,5,1,6,'#b7834a'); r(6,6,4,4,'#c8a040'); r(7,7,2,2,'#6a4428'); }],
+  ['GEM_BENCH','Gem bench','The jeweler works here. A home with a gem bench can house a jeweler',[[B.PLANK,4],[B.GLASS,2]],r=>{ r(1,8,14,2,'#8a5c2d'); r(2,10,2,6,'#6a4428'); r(12,10,2,6,'#6a4428'); r(3,6,2,2,'#e04a6a'); r(6,6,2,2,'#4ac0e0'); r(9,5,2,3,'#7ae04a'); r(9,5,1,1,'#ffffff'); r(12,3,2,5,'#c8a040'); r(11,3,4,1,'#c8a040'); r(12,4,2,2,'#bfe6ff'); }],
+  ['DRAFT_TABLE','Drafting table','The war engineer works here. A home with a drafting table can house a war engineer',[[B.PLANK,5],[I.IRON_BAR,1]],r=>{ r(1,5,14,1,'#6a4428'); r(1,4,14,1,'#e8e0c0'); r(2,2,12,2,'#e8e0c0'); r(3,2,6,1,'#4a74b8'); r(5,3,5,1,'#4a74b8'); r(3,6,2,10,'#6a4428'); r(11,6,2,10,'#6a4428'); r(3,11,10,1,'#8a5c2d'); r(12,1,1,3,'#c8a040'); }],
+  ['POWDER_KEG','Powder keg','The demolitionist works here. A home with a powder keg can house a demolitionist',[[B.BARREL,1],[635,2]],r=>{ r(3,4,10,12,'#7a4e27'); r(3,4,10,1,'#3a2a1a'); r(3,9,10,1,'#3a3e48'); r(3,14,10,1,'#3a3e48'); r(2,6,1,8,'#6a4220'); r(13,6,1,8,'#6a4220'); r(6,6,4,6,'#c84a2a'); r(7,7,2,1,'#f4f0e0'); r(7,9,2,1,'#f4f0e0'); r(8,1,1,3,'#e8e0c0'); r(8,0,1,1,'#ff9a2a'); }],
+  ['NOTICE_BOARD','Notice board','The recruiter works here. A home with a notice board can house a recruiter',[[B.PLANK,4],[480,2]],r=>{ r(2,2,12,9,'#8a5c2d'); r(3,3,10,7,'#b7834a'); r(4,4,3,4,'#f4f0e0'); r(8,4,4,3,'#e8e0c0'); r(9,8,3,2,'#f4f0e0'); r(5,4,1,1,'#c84a2a'); r(10,4,1,1,'#c84a2a'); r(3,11,2,5,'#6a4428'); r(11,11,2,5,'#6a4428'); }],
+  ['FEED_TROUGH','Feed trough','The beast trainer works here. A home with a feed trough can house a beast trainer',[[B.PLANK,4],[I.WHEAT,4]],r=>{ r(1,8,14,5,'#8a5c2d'); r(1,8,14,1,'#b7834a'); r(2,9,12,3,'#6a4428'); r(2,7,12,2,'#e8c860'); for(const x of [3,6,9,12]) r(x,5,1,3,'#d8b45a'); r(2,13,2,3,'#6a4428'); r(12,13,2,3,'#6a4428'); }],
+  ['COMPOSTER','Composter','Farmers work here. A farmhouse or home with a composter can house farmers',[[B.PLANK,4],[B.DIRT,4]],r=>{ r(2,5,12,11,'#8a5c2d'); for(const y of [5,9,13]) r(2,y,12,1,'#6a4428'); r(3,6,10,2,'#5a3a1e'); r(4,5,3,2,'#4aa04a'); r(9,4,3,2,'#7ac04a'); r(6,4,2,1,'#c8a040'); r(2,5,1,11,'#6a4428'); r(13,5,1,11,'#6a4428'); }],
+  ['CHOP_BLOCK','Chopping block','Woodcutters work here. A lodge or home with a chopping block can house woodcutters',[[B.LOG,2],[480,1]],r=>{ r(3,8,10,8,'#8a5c2d'); r(3,8,10,2,'#d8b07a'); r(5,8,6,1,'#b7834a'); r(3,10,1,6,'#6a4428'); r(12,10,1,6,'#6a4428'); r(8,2,1,7,'#a57440'); r(6,2,4,3,'#9aa0a8'); r(6,2,1,3,'#d8dce4'); }],
+  ['ORE_CART','Ore cart','Miners work here. A mine or home with an ore cart can house miners',[[I.IRON_BAR,4],[B.COAL,2]],r=>{ r(2,6,12,7,'#5a6068'); r(2,6,12,1,'#8a9098'); r(3,4,3,3,'#2a2a30'); r(6,3,3,4,'#c8a040'); r(9,4,3,3,'#9a6ad8'); r(4,13,3,3,'#2a2a30'); r(10,13,3,3,'#2a2a30'); r(5,14,1,1,'#8a9098'); r(11,14,1,1,'#8a9098'); }],
+  ['GUARD_POST','Guard post','A soldier\'s post. Place it in a home that has a bed, a chest and a job item, then station a soldier at it from the Buildings window',[[B.PLANK,2],[I.IRON_BAR,1],[480,2]],r=>{ r(7,2,2,14,'#6a4428'); r(4,14,8,2,'#4a2e18'); r(9,3,5,5,'#c84a2a'); r(9,3,5,1,'#e8c860'); r(10,5,3,1,'#e8c860'); r(3,6,4,5,'#9aa0a8'); r(3,6,4,1,'#d8dce4'); r(4,11,2,1,'#9aa0a8'); }] ];
+{ const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
+  for(const [key,name,desc,need,draw] of JOB_DEF){ const id=freeIdFrom(); B[key]=id; defB(id,{name,solid:false,hard:0.5,col:'#8a5c2d',place:true}); ITEMS[id]={name,kind:'block',desc};
+    TEX[id]=tex(draw); RECIPES.push({ out:id, n:1, need, st:B.WORKBENCH, cat:'build', cat2:key==='GUARD_POST'?'other':'furn' }); } }
+// the job item for each villager (barrels and weapon racks of any wood count)
+const JOB_ITEM={ smith:B.ANVIL, cook:B.POT, herbalist:B.HERB_RACK, fisher:B.BARREL, jeweler:B.GEM_BENCH, trader:B.SHIP_WHEEL, engineer:B.DRAFT_TABLE, demo:B.POWDER_KEG,
+  quarter:B.WEAPON_RACK, recruiter:B.NOTICE_BOARD, trainer:B.FEED_TROUGH, headfarmer:B.COMPOSTER, farmer:B.COMPOSTER, forester:B.CHOP_BLOCK, woodcutter:B.CHOP_BLOCK, foreman:B.ORE_CART, miner:B.ORE_CART };
+const JOB_IDS=new Set(Object.values(JOB_ITEM));
+const MOVABLE=['smith','cook','herbalist','fisher','jeweler','trader','demo'];
+const jobName=role=>role==='trader'?'Shipwright':role==='demo'?'Demolitionist':role==='quarter'?'Quartermaster':role==='trainer'?'Beast trainer':role==='headfarmer'?'Head farmer':role==='forester'?'Head forester':role==='foreman'?'Mine foreman':(SHOPS[role]&&SHOPS[role].name)||(role[0].toUpperCase()+role.slice(1));
+
+// ---- what a box or room holds ----
+function homeKit(cells){ const k={bed:0,chest:0,jobs:new Set()}; for(const [x,y] of cells){ const id=tileAt(x,y); if(!id) continue;
+    if(isBedId(id)) k.bed++; else if(isChestId(id)) k.chest++; const b=typeof furnBase==='function'?furnBase(id):id; if(JOB_IDS.has(b)) k.jobs.add(b); } return k; }
+function boxCells(b){ const L=[]; for(let y=Math.max(0,b.y0);y<=Math.min(H-1,b.y1);y++) for(let x=Math.max(0,b.x0);x<=Math.min(W-1,b.x1);x++) L.push([x,y]); return L; }
+function kitMissing(k,role){ const m=[]; if(!k.bed) m.push('a bed'); if(!k.chest) m.push('a chest'); const j=role&&JOB_ITEM[role]; if(j&&!k.jobs.has(j)) m.push((/^[aeiou]/i.test(BLOCKS[j].name)?'an ':'a ')+BLOCKS[j].name.toLowerCase()); else if(!role&&!k.jobs.size) m.push('a job item'); return m; }
+// a closed room around (sx,sy): open cells joined to it, all with a back wall, bounded by solid blocks, with a door
+function roomAt(sx,sy){ const open=(x,y)=>{ const id=tileAt(x,y); return !id||!BLOCKS[id].solid||BLOCKS[id].platform||id===B.PLATFORM; };
+  if(sx<1||sy<1||sx>=W-1||sy>=H-1||!open(sx,sy)) return null; const seen=new Set([sy*W+sx]), q=[[sx,sy]], cells=[]; let door=false, x0=sx, x1=sx, y0=sy, y1=sy;
+  while(q.length){ const [x,y]=q.pop(); cells.push([x,y]); if(!bg[y*W+x]) return null; if(cells.length>700) return null;
+    x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); if(x1-x0>44||y1-y0>34) return null;
+    for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const nx=x+dx, ny=y+dy, k=ny*W+nx; if(seen.has(k)) continue; if(nx<1||ny<1||nx>=W-1||ny>=H-1) return null;
+      const id=tileAt(nx,ny); if(DOOR_IDS.has(id)){ door=true; if(!BLOCKS[id].solid) return null; continue; } if(open(nx,ny)){ seen.add(k); q.push([nx,ny]); } } }
+  if(!door||cells.length<6) return null; let gy=y1+1; const floor=cells.filter(c=>c[1]===y1); return { x0, x1, y0, y1, gy, fx0:Math.min(...floor.map(c=>c[0])), fx1:Math.max(...floor.map(c=>c[0])), cells }; }
+
+// ---- every home: the game's buildings and the rooms you build ----
+function gameBoxes(){ const L=[]; if(!home||!home.claimed) return L; const cx=home.castleCx, gy=home.gy;
+  L.push({kind:'castle',x0:cx-20,x1:cx+19,y0:gy-36,y1:gy-1,roles:['quarter','recruiter','trainer','engineer']});
+  (home.houses||[]).forEach((h,i)=>{ if(h) L.push({kind:'house',h,i,x0:h.x0-1,x1:h.x1+1,y0:h.gy-21,y1:h.gy-1}); });
+  if(home.lodge) L.push({kind:'lodge',x0:home.lodge.x0,x1:home.lodge.x1,y0:home.lodge.gy-9,y1:home.lodge.gy-1,roles:['forester','woodcutter']});
+  if(home.farmhouse) L.push({kind:'farmhouse',x0:home.farmhouse.x0,x1:home.farmhouse.x1,y0:home.farmhouse.gy-9,y1:home.farmhouse.gy-1,roles:['headfarmer','farmer']});
+  if(home.mineX) L.push({kind:'mine',x0:home.mineX-4,x1:home.mineX+5,y0:home.gy-9,y1:home.gy-1,roles:['foreman','miner']});
+  for(const st of (typeof myStructures!=='undefined'?myStructures:[])) if(st&&st.kind==='keep') L.push({kind:'keep',st,x0:st.x-9,x1:st.x+9,y0:st.gy-12,y1:st.gy-1,roles:['quarter','recruiter','trainer']});
+  return L; }
+const inBox=(b,x,y)=>x>=b.x0&&x<=b.x1&&y>=b.y0&&y<=b.y1;
+// rooms you build: scanned from beds near the village (home.rooms keeps them, with who lives there)
+function scanRooms(){ if(!home||!home.claimed||isGuest()) return; home.rooms=home.rooms||[]; const G=gameBoxes(), seen=new Set();
+  const x0=Math.max(2,home.castleCx-220), x1=Math.min(W-3,home.castleCx+220), y0=Math.max(2,home.gy-60), y1=Math.min(H-3,home.gy+40);
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ if(!isBedId(world[y*W+x])||seen.has(y*W+x)) continue; if(G.some(b=>inBox(b,x,y))) continue;
+    const R=roomAt(x,y); if(!R) continue; for(const [cx,cy] of R.cells) seen.add(cy*W+cx);
+    let rec=home.rooms.find(r=>R.cells.some(([a,b])=>a===r.bx&&b===r.by)); if(!rec){ rec={id:'r'+x+'_'+y,bx:x,by:y,role:null}; home.rooms.push(rec); }
+    rec.bx=x; rec.by=y; Object.assign(rec,{x0:R.fx0,x1:R.fx1,y0:R.y0,y1:R.y1,gy:R.gy,ok:true,custom:true}); rec.kit=homeKit(R.cells); rec.seen=dayCount; }
+  for(const r of home.rooms) if(!seen.has(r.by*W+r.bx)){ r.ok=false; r.kit=null; }
+  home.rooms=home.rooms.filter(r=>r.ok||r.role); }
+function roomOk(r,role){ return !!(r&&r.ok&&r.kit&&!kitMissing(r.kit,role||r.role).length); }
+// the box a villager lives in, and what it is missing
+function villagerBox(v){ const h=v.homeHouse||v.house; if(h&&h.custom) return null; const G=gameBoxes();
+  if(h&&h.keepId){ const b=G.find(b=>b.kind==='keep'&&b.st.id===h.keepId); if(b) return b; }
+  if(['quarter','recruiter','trainer','engineer'].includes(v.role)) return G.find(b=>b.kind==='castle');
+  if(['forester','woodcutter'].includes(v.role)||v.vjob==='woodcutter') return G.find(b=>b.kind==='lodge');
+  if(['headfarmer','farmer'].includes(v.role)||v.vjob==='farmer') return G.find(b=>b.kind==='farmhouse');
+  if(['foreman','miner'].includes(v.role)) return G.find(b=>b.kind==='mine');
+  if(h){ const hb=G.find(b=>b.h===h); if(hb) return hb; return {x0:h.x0-1,x1:h.x1+1,y0:h.gy-21,y1:h.gy-1}; } return null; }
+const missCache=new WeakMap();
+function homeMissing(v){ if(!v||v.team!==(player&&player.team)||!JOB_ITEM[v.role||v.vjob]) return []; const c=missCache.get(v), now=performance.now(); if(c&&now-c.t<1500) return c.m;
+  const role=v.vjob||v.role, h=v.homeHouse||v.house; let m;
+  if(h&&h.custom){ const r=(home.rooms||[]).find(r=>r===h||r.id===h.id); m=r&&r.ok&&r.kit?kitMissing(r.kit,role):['a home (its room is no longer closed)']; }
+  else { const b=villagerBox(v); m=b?kitMissing(homeKit(boxCells(b)),role):[]; }
+  missCache.set(v,{t:now,m}); return m; }
+const missText=m=>m.length>1?m.slice(0,-1).join(', ')+' and '+m[m.length-1]:m[0];
+
+// ---- furnish the game's own buildings once ----
+function furnishBox(b,items){ if(isGuest()) return 0; let n=0; const have=homeKit(boxCells(b));
+  const want=items.filter(id=>id===B.BED?!have.bed:id===B.CHEST?!have.chest:!have.jobs.has(id));
+  const spot=()=>{ for(let y=b.y1;y>=b.y0;y--) for(let x=b.x0+1;x<b.x1;x++){ if(tileAt(x,y)!==0||!bg[y*W+x]) continue; const below=tileAt(x,y+1); if(!below||!(BLOCKS[below].solid||below===B.PLATFORM)) continue;
+      if(DOOR_IDS.has(tileAt(x-1,y))||DOOR_IDS.has(tileAt(x+1,y))||DOOR_IDS.has(tileAt(x-1,y+1))||DOOR_IDS.has(tileAt(x+1,y+1))) continue; return [x,y]; } return null; };
+  facRun(()=>{ for(const id of want){ const p=spot(); if(!p) break; setTile(p[0],p[1],id); if(id===B.CHEST) chests[p[0]+','+p[1]]=chests[p[0]+','+p[1]]||{items:new Array(CHEST_N).fill(null),coins:0}; n++; } }); return n; }
+function furnishVillage(){ if(!home||!home.claimed||isGuest()) return; const G=gameBoxes();
+  for(const b of G){ if(b.kind==='house'){ const h=b.h; if(!h.role||h.furn===h.role) continue; furnishBox(b,[B.BED,B.CHEST,JOB_ITEM[h.role]].filter(Boolean)); h.furn=h.role; }
+    else if(b.kind==='keep'){ if(b.st.furn) continue; furnishBox(b,[B.BED,B.CHEST,...b.roles.map(r=>JOB_ITEM[r])]); b.st.furn=1; }
+    else { const k='furn_'+b.kind; if(home[k]) continue; const roles=b.kind==='castle'?b.roles.filter(r=>r!=='engineer'||home.engineer):b.roles; furnishBox(b,[B.BED,B.CHEST,...new Set(roles.map(r=>JOB_ITEM[r]))]); home[k]=1; } } }
+function furnishEnemy(b){ for(const h of (b.houses||[])){ if(!h||!h.role||h.furn===h.role) continue; furnishBox({x0:h.x0-1,x1:h.x1+1,y0:h.gy-21,y1:h.gy-1},[B.BED,B.CHEST,JOB_ITEM[h.role]].filter(Boolean)); h.furn=h.role; } }
+
+// ---- a villager missing part of their home stops trading or working ----
+{ const _os=openShop; openShop=function(v,...a){ try{ if(v&&v.kind==='villager'&&v.team===player.team&&JOB_ITEM[v.role]){ const m=homeMissing(v);
+      if(m.length){ toast(`${villagerName(v)} needs ${missText(m)} at home before getting back to work.`,4); talkTarget=undefined; return; } } }catch(e){ console.warn(e); } return _os(v,...a); }; }
+{ const _wa=villageWorkerAct; villageWorkerAct=function(e,dt,...a){ try{ if(e&&e.vjob&&homeMissing(e).length){ e.vx=0; physics(e,dt); return true; } }catch(err){} return _wa(e,dt,...a); }; }
+{ const _ma=minerAct; minerAct=function(e,dt,...a){ try{ if(e&&e.phase==='up'&&homeMissing(e).length){ e.minerT=Math.max(e.minerT,2); } }catch(err){} return _ma(e,dt,...a); }; }
+
+// ---- moving in: new shopkeepers take a free home you built with their job item ----
+function freeRoomFor(role){ scanRooms(); return (home.rooms||[]).find(r=>!r.role&&roomOk(r,role)); }
+function moveIntoRoom(v,r){ const old=v.homeHouse||v.house; if(old&&old.custom) old.role=null; else if(old&&home.houses.includes(old)) old.role=null;
+  r.role=v.role; placeShopkeeper(v,r); missCache.delete(v); }
+function moveIntoHouse(v,h){ const old=v.homeHouse||v.house; if(old&&old.custom) old.role=null; else if(old&&old!==h&&home.houses.includes(old)) old.role=null;
+  h.role=v.role; placeShopkeeper(v,h); furnishVillage(); missCache.delete(v); }
+{ const _rd=recruitDrifter; recruitDrifter=function(d,job,forGuest,...a){ try{ if(MOVABLE.includes(job)&&!(typeof MP!=='undefined'&&MP.on&&MP.guest)){ const r=freeRoomFor(job);
+      if(r){ d.dead=true; home.drifters=Math.max(0,(home.drifters||0)-1); r.role=job; const v=makeVillager(player.team,r); v.role=job; v.name=d.name; ents.push(v); placeShopkeeper(v,r); if(!forGuest) toast(`${d.name} moves into your building and opens a ${SHOPS[job].name.toLowerCase()} shop`,3.5); return; } } }catch(e){ console.warn(e); }
+    const r=_rd(d,job,forGuest,...a); try{ furnishVillage(); }catch(e){} return r; }; }
+// villagers living in your own buildings come back after a reload
+{ const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ for(const rm of (home&&home.rooms)||[]) if(rm.role&&!ents.some(e=>!e.dead&&e.kind==='villager'&&e.homeHouse===rm)){ const v=makeVillager(player.team,rm); placeShopkeeper(v,rm); ents.push(v); } }catch(e){ console.warn(e); } return r; }; }
+{ const _ds=decorShopHouse; decorShopHouse=function(h,...a){ if(h&&h.custom) return; return _ds(h,...a); }; }
+
+// a villager of a home you built who fell comes back the next morning, like the others
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ if(home&&!isGuest()) for(const rm of home.rooms||[]) if(rm.role&&rm.ok&&!ents.some(e=>!e.dead&&e.kind==='villager'&&e.homeHouse===rm)){ const v=makeVillager(player.team,rm); placeShopkeeper(v,rm); ents.push(v); } }catch(e){ console.warn(e); } return r; }; }
+// ---- guard posts: only in a valid home; each is a one-post structure ----
+function postHomeOk(x,y){ const G=gameBoxes(), b=G.find(b=>inBox(b,x,y)); if(b){ const k=homeKit(boxCells(b)); return k.bed&&k.chest&&k.jobs.size>0; }
+  const R=roomAt(x,y); if(!R) return false; const k=homeKit(R.cells); return k.bed&&k.chest&&k.jobs.size>0; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ if(id===B.GUARD_POST&&!free()&&!testFree()&&!postHomeOk(x,y)){ if(!player.postWarnT||performance.now()-player.postWarnT>2500){ player.postWarnT=performance.now(); toast('A guard post goes in a home with a bed, a chest and a job item',3); } return; }
+    const was=tileAt(x,y); const r=_tp(x,y,id,...a); try{ if(id===B.GUARD_POST&&was!==B.GUARD_POST&&tileAt(x,y)===B.GUARD_POST&&!myStructures.some(s=>s.kind==='post'&&s.x===x&&s.gy===y+1)){
+      const n=myStructures.filter(s=>s.kind==='post').length+1; myStructures.push({id:'p'+Date.now()+'_'+x,kind:'post',name:`Guard post ${n}`,x,gy:y+1,posts:[{x,gy:y+1}]}); toast('Guard post placed. Station a soldier there from the Buildings window',3); } }catch(e){ console.warn(e); } return r; }; }
+function dropLostPosts(){ for(let i=myStructures.length-1;i>=0;i--){ const s=myStructures[i]; if(s.kind!=='post'||tileAt(s.x,s.gy-1)===B.GUARD_POST) continue; try{ recallPost(s,0); }catch(e){} myStructures.splice(i,1); } }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const was=tileAt(x,y); const r=_bt(x,y,...a); try{ if(was===B.GUARD_POST&&tileAt(x,y)!==B.GUARD_POST) dropLostPosts(); }catch(e){} return r; }; }
+
+// ---- furniture in stone, deep stone and iron ----
+const FURN_MATS={ stone:{name:'Stone',col:'#a8a8a0',need:B.STONE_BLOCK}, deep:{name:'Deep stone',col:'#5a5f74',need:B.DEEP_STONE}, iron:{name:'Iron',col:'#8a98ae',need:I.IRON_BAR} };
+const FURN_MAT={}, MAT_OF={};   // FURN_MAT[base][mat] = id; MAT_OF[id] = mat
+for(const base of FURN.filter(b=>b!==B.WORKBENCH)){ FURN_MAT[base]={}; const bn=BLOCKS[base].name, rc=RECIPES.filter(r=>r.out===base);
+  for(const [m,M] of Object.entries(FURN_MATS)){ const id=freeIdFrom(), nm=`${M.name} ${bn.toLowerCase()}`;
+    defB(id,Object.assign({},BLOCKS[base],{name:nm,drop:id,col:M.col})); ITEMS[id]=Object.assign({},ITEMS[base]||{kind:'block'},{name:nm,kind:'block',desc:`${(ITEMS[base]&&ITEMS[base].desc)||bn}. Made of ${M.name.toLowerCase()}; it cannot burn.`});
+    FURN_BASE[id]=base; FURN_MAT[base][m]=id; MAT_OF[id]=m; try{ TEX[id]=tintWood(TEX[base],M.col); if(typeof outlineTex==='function') TEX[id]=outlineTex(TEX[id])||TEX[id]; }catch(e){ TEX[id]=TEX[base]; }
+    for(const r of rc) RECIPES.push(Object.assign({},r,{out:id,cat2:'furn',need:r.need.map(([nid,n])=>nid===B.PLANK?[M.need,m==='iron'?Math.max(1,Math.ceil(n/3)):n]:[nid,n])})); } }
+// the furniture that fits a building stage: kind null = wood (stone, deep stone and iron pieces go back to oak)
+function furnSwap(id,kind){ const base=FURN_BASE[id]||id; if(!FURN_MAT[base]) return id; if(kind) return FURN_MAT[base][kind]||id; return MAT_OF[id]?base:id; }
+
+// ---- roofs in the faction's colour: tiles at the stone stage, painted iron at the iron stage (hay stays hay) ----
+const ROOF_TEAM={ tile:{ r:B.ROOF, b:B.SHINGLE_B }, iron:{}, clay:{ r:B.CLAY_TILE } };
+{ const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
+  const tint=(src,col,amt)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='color'; g.fillStyle=col; g.globalAlpha=amt; g.fillRect(0,0,16,16); g.globalCompositeOperation='destination-in'; g.globalAlpha=1; g.drawImage(src,0,0); return c; };
+  const G=freeIdFrom(); defB(G,Object.assign({},BLOCKS[B.SHINGLE_B],{name:'Green roof tiles',col:'#4a8a3a',drop:G})); ITEMS[G]={name:'Green roof tiles',kind:'block',desc:'Roof tiles in the green faction\'s colour'}; TEX[G]=tint(TEX[B.SHINGLE_B],'#3a9a3a',1); ROOF_TEAM.tile.g=G;
+  RECIPES.push({ out:G, n:4, need:[[B.STONE,2],[B.LEAF||B.GRASS,1]], st:B.FURNACE, cat:'build' });
+  for(const [t,nm,col] of [['r','Red','#c84a3a'],['g','Green','#4a9a3a'],['b','Blue','#3a6ac8']]){ const id=freeIdFrom(); defB(id,Object.assign({},BLOCKS[B.IRON_ROOF],{name:`${nm} iron roof`,col,drop:id}));
+    ITEMS[id]={name:`${nm} iron roof`,kind:'block',desc:`Iron roofing painted in the ${nm.toLowerCase()} faction's colour`}; TEX[id]=tint(TEX[B.IRON_ROOF],col,0.75); ROOF_TEAM.iron[t]=id;
+    RECIPES.push({ out:id, n:4, need:[[B.IRON_ROOF,4]], st:B.WORKBENCH, cat:'build' }); }
+  for(const [t,nm,col] of [['g','Green','#3aa04a'],['b','Blue','#3a6ad8']]){ const id=freeIdFrom(); defB(id,Object.assign({},BLOCKS[B.CLAY_TILE],{name:`${nm} clay tiles`,col,drop:id}));
+    ITEMS[id]={name:`${nm} clay tiles`,kind:'block',desc:`Rounded roof tiles in the ${nm.toLowerCase()} faction's colour`}; TEX[id]=tint(TEX[B.CLAY_TILE],col,1); ROOF_TEAM.clay[t]=id;
+    RECIPES.push({ out:id, n:4, need:[[B.CLAY_TILE,4]], st:B.WORKBENCH, cat:'build' }); }
+  for(const id of [ROOF_TEAM.tile.g,...Object.values(ROOF_TEAM.iron)]) SKIN_OF.set(id,'roof'); }
+function teamRoof(team,tier){ const t=ROOF_TEAM.tile[team]?team:'r'; return tier>=2?ROOF_TEAM.iron[t]:ROOF_TEAM.tile[t]; }
+{ const _ri=ROOF_IDS; ROOF_IDS=function(){ const s=_ri(); for(const g of Object.values(ROOF_TEAM)) for(const id of Object.values(g)) s.add(id); return s; }; }
+// the top shop house's clay roof takes its village's colour
+{ const _r3=roof3; roof3=function(hx,gy,...a){ const r=_r3(hx,gy,...a); try{ const team=(home.houses||[]).some(h=>h.x0-1===hx&&h.gy===gy)?player.team:((bases||[]).find(b=>(b.houses||[]).some(h=>h.x0-1===hx&&h.gy===gy))||{}).f;
+      const to=ROOF_TEAM.clay[team]; if(to&&to!==B.CLAY_TILE) facRun(()=>{ for(let y=gy-20;y<=gy-14;y++) for(let x=hx-1;x<=hx+11;x++) if(tileAt(x,y)===B.CLAY_TILE) setTile(x,y,to); }); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- enemy villages: their castle and houses go stone/wood, then up, as the faction grows ----
+const enemyTier=b=>(b.lvl||0)>=3?2:(b.lvl||0)>=2?1:0;
+function enemySkinTargets(){ const L=[]; for(const b of (typeof bases!=='undefined'&&bases)||[]){ if(!b||!isFinite(b.cx)) continue; const t=enemyTier(b);
+    L.push({key:'e'+b.f+'c',set:CASTLE_SKIN,x0:b.cx-19,x1:b.cx+18,y0:b.gy-40,y1:b.gy+2,tier:t,team:b.f});
+    (b.houses||[]).forEach((h,k)=>{ if(h&&isFinite(h.x0)) L.push({key:'e'+b.f+'h'+k,x0:h.x0-2,x1:h.x1+2,y0:h.gy-21,y1:h.gy,tier:t,team:b.f}); }); } return L; }
+
+// ---- one ground rule for every building: dirt fills in under it, then the gaps to its neighbours are levelled ----
+function fillUnder(x0,x1,gy){ facRun(()=>{ for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++) for(let y=gy;y<gy+12&&y<H;y++){ const id=tileAt(x,y); if(id&&id!==B.WATER&&id!==B.SNOW_LAYER) break; setTile(x,y,y===gy?B.GRASS:B.DIRT); } }); }
+{ const _ln=levelNear; levelNear=function(x0,x1,gy,...a){ try{ if(!isGuest()) fillUnder(x0,x1,gy); }catch(e){} return _ln(x0,x1,gy,...a); }; }
+{ const _nh=newHomeHouse; newHomeHouse=function(...a){ const h=_nh(...a); try{ if(h&&!isGuest()) levelNear(h.x0-1,h.x1+1,h.gy); }catch(e){ console.warn(e); } return h; }; }
+{ const _bh=buildHouse; buildHouse=function(hx,gy,...a){ const r=_bh(hx,gy,...a); try{ if(state==='play'&&!isGuest()&&bases&&bases.some(b=>Math.abs(b.cx-hx)<120)) setTimeout(()=>{ try{ levelNear(hx,hx+8,gy); }catch(e){} },0); }catch(e){} return r; }; }
+
+// ---- keep it all up to date ----
+let homeTickT=0;
+function homesTick(){ if(!home||isGuest()||state!=='play') return; try{ scanRooms(); furnishVillage(); for(const b of bases||[]) furnishEnemy(b); dropLostPosts(); }catch(e){ console.warn(e); } }
+setInterval(()=>{ try{ homesTick(); }catch(e){} },3000);
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()){ furnishVillage(); for(const b of bases||[]) furnishEnemy(b);
+      if(!home.roofTeamV){ home.roofTeamV=1; home.skin={}; try{ skinAll(true); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- the Buildings window: homes ----
+function homesHtml(){ if(!home||!home.claimed) return ''; scanRooms(); const vs=ents.filter(e=>!e.dead&&e.kind==='villager'&&e.team===player.team&&JOB_ITEM[e.role]);
+  const freeH=home.houses.filter(h=>!h.role); let h=`<h3>Homes</h3><p class="muted" style="font-size:8px;margin:0 0 6px">Every villager needs a home with a bed, a chest and the item of their trade. Build a closed room (walls, floor, roof, back wall and a door) with those three and a villager can move in.</p>`;
+  h+=vs.map(v=>{ const m=homeMissing(v), hh=v.homeHouse||v.house, where=hh&&hh.custom?'your building':villagerBox(v)&&villagerBox(v).kind==='castle'?'the castle':villagerBox(v)&&villagerBox(v).kind==='keep'?'a keep':['forester','headfarmer','foreman'].includes(v.role)?'their workplace':'a village house';
+      const opts=MOVABLE.includes(v.role)?(home.rooms||[]).filter(r=>!r.role&&roomOk(r,v.role)).map(r=>`<option value="r:${r.id}">Your building at ${r.bx}</option>`).join('')+(freeH.length&&hh&&hh.custom?`<option value="h">A village house</option>`:''):'';
+      return `<div class="recipe" style="grid-template-columns:30px 1fr auto"><img alt="" src="${iconUrl(JOB_ITEM[v.role])}"><div><div class="nm">${escapeHTML(villagerName(v))}, ${jobName(v.role).toLowerCase()}</div><div class="ing">Lives in ${where}. ${m.length?`<span style="color:#ff8a8a">Needs ${missText(m)}.</span>`:'<span style="color:#8fd16a">Home is ready.</span>'}</div></div><div class="acts">${opts?`<select data-homesel="${ents.indexOf(v)}"><option value="">Move to…</option>${opts}</select>`:''}</div></div>`; }).join('');
+  const rooms=(home.rooms||[]).filter(r=>r.ok); h+=rooms.length?rooms.map(r=>{ const m=r.kit?kitMissing(r.kit,r.role):['a closed room'], who=r.role?ents.find(e=>!e.dead&&e.homeHouse===r):null;
+      const jobs=r.kit?[...r.kit.jobs].map(id=>BLOCKS[id].name.toLowerCase()).join(', '):'';
+      return `<div class="recipe" style="grid-template-columns:30px 1fr"><img alt="" src="${iconUrl(B.BED)}"><div><div class="nm">Your building at ${r.bx}</div><div class="ing">${who?`${escapeHTML(villagerName(who))} lives here. `:'Empty. '}${jobs?`Job items: ${jobs}. `:''}${m.length?`<span style="color:#ff8a8a">Needs ${missText(m)}.</span>`:'<span style="color:#8fd16a">Ready for a villager.</span>'}</div></div></div>`; }).join(''):'<p class="muted" style="font-size:8px">You have not built a home yet.</p>';
+  return h; }
+{ const _rb=renderBuild; renderBuild=function(...a){ const r=_rb(...a); try{ let box=$('#bldHomes'); if(!box){ box=document.createElement('div'); box.id='bldHomes'; const pl=$('#postList'); pl.after(box);
+      box.addEventListener('change',ev=>{ const s=ev.target.closest('[data-homesel]'); if(!s||!s.value) return; const v=ents[+s.dataset.homesel]; if(!v) return;
+        if(s.value==='h'){ const h=home.houses.find(h=>!h.role); if(h){ moveIntoHouse(v,h); toast(`${villagerName(v)} moves into a village house`,2.5); } }
+        else { const r=(home.rooms||[]).find(r=>'r:'+r.id===s.value); if(r&&roomOk(r,v.role)){ moveIntoRoom(v,r); toast(`${villagerName(v)} moves into your building`,2.5); } }
+        renderBuild(); }); }
+    box.innerHTML=homesHtml(); }catch(e){ console.warn(e); } return r; }; }
+// friends see the villagers living in the homes you built (sent with the village houses)
+{ const _mo=mpVillageOut; mpVillageOut=function(...a){ const o=_mo(...a); try{ if(o&&o.vh&&home&&home.rooms) for(const r of home.rooms) if(r.role&&r.ok&&o.vh.length<32) o.vh.push([r.x0|0,r.x1|0,r.gy|0,r.role]); }catch(e){} return o; }; }
 })();
 </script>
 </body>
