@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791421488"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791421488"><link rel="manifest" href="manifest.webmanifest?v=1791421488"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791422059"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791422059"><link rel="manifest" href="manifest.webmanifest?v=1791422059"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.21</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.22</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.21</h3>
+    <h3>New in Beta 0.9.22</h3>
+    <p>Phones: tapping a button (Bag, Army, Buildings, More and the rest) no longer pops up its name. On a computer the name still shows when you hover the mouse over it.</p>
+    <h3>Beta 0.9.21</h3>
     <p>Silver armor sits between wooden and iron armor (4.5 defense, 15 silver bars), like the silver tools and weapons. If you wear iron armor, you keep it. In shared worlds, everyone sees each other's lit bombs flying and on the ground, the pieces a blast throws, and the rubble from anyone's bomb, which crumbles away after three days.</p>
     <h3>Beta 0.9.20</h3>
     <p>Phones: swiping sideways or down on a menu or the death screen can no longer take the browser back or reload the page and drop you out of the game.</p>
@@ -544,7 +546,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.21</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.22</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -804,7 +806,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.21</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.22</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -823,7 +825,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.21', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.22', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5936,7 +5938,8 @@ $('#armyPosts').addEventListener('click',()=>{ closeArmy(); openBuild(); setTime
 for(const el of document.querySelectorAll('#topbtns .hbtn, #miniZoom .mz, #miniMap')){ if(el.title){ el.dataset.tip=el.title; el.removeAttribute('title'); } }
 const TIPS={ btnInv:'Bag (E)', btnCraft:'Craft (C)', btnArmy:'Army (R)', btnBuild:'Buildings', btnMap:'Show the mini-map again', btnFull:'Full screen', btnMenu:'Menu', btnMin:'Minimize the buttons and mini-map', miniMap:'Mini-map: click to open the map (M)', zoomInBtn:'Make the mini-map bigger', zoomOutBtn:'Make the mini-map smaller', btnGod:'God menu (test world)', btnFly:'Fly (G)', btnSpeed:'World speed (test world)' };
 for(const [id,t] of Object.entries(TIPS)){ const el=$('#'+id); if(el&&!el.dataset.tip) el.dataset.tip=t; else if(el&&/^(Bag|Craft|Army|Menu|Full screen)$/.test(el.dataset.tip)) el.dataset.tip=t; }
-{ const tip=$('#itemTip'); document.addEventListener('mouseover',ev=>{ const el=ev.target.closest&&ev.target.closest('[data-tip]'); if(!el||!tip) return; tip.classList.add('btntip'); tip.innerHTML=`<b>${el.dataset.tip}</b>`; tip.hidden=false; const r=el.getBoundingClientRect(); tip.style.left=Math.max(8,Math.min(innerWidth-200,r.left))+'px'; tip.style.top=(r.bottom+6)+'px'; });
+{ const tip=$('#itemTip'); document.addEventListener('mouseover',ev=>{ if(recentTouch()) return;   /* button names show on mouse hover only, never after a tap on a phone */
+  const el=ev.target.closest&&ev.target.closest('[data-tip]'); if(!el||!tip) return; tip.classList.add('btntip'); tip.innerHTML=`<b>${el.dataset.tip}</b>`; tip.hidden=false; const r=el.getBoundingClientRect(); tip.style.left=Math.max(8,Math.min(innerWidth-200,r.left))+'px'; tip.style.top=(r.bottom+6)+'px'; });
   document.addEventListener('mouseout',ev=>{ const el=ev.target.closest&&ev.target.closest('[data-tip]'); if(el&&tip&&tip.classList.contains('btntip')){ tip.hidden=true; tip.classList.remove('btntip'); } }); }
 PX_ICONS.build=['.....##.....','....#rr#....','...#rrrr#...','..#rrrrrr#..','.#rrrrrrrr#.','############','.#llllllll#.','.#l##ll##l#.','.#l#uu#b#l#.','.#l##l#b#l#.','.#llll#b#ll#','############'];
 PX_ICONS.god=['.....##.....','....#yy#....','...#yyy#....','..#yyy#.....','.#yyyyyyy#..','.#####yyy#..','.....#yy#...','....#yy#....','...#yy#.....','..#yy#......','..#y#.......','..##........'];
@@ -9143,6 +9146,9 @@ $('#scrChest').addEventListener('click',ev=>{ if(!recentTouch()||!chests[chestAt
     if(h&&h.tagName==='H3'){ const sp=h.querySelector('span'); if(sp) sp.textContent=recentTouch()?'(tap an item, then tap where it goes; tap it twice to move it across. Hold to drag. First row is your hotbar)':'(click to store, or drag; first row is your hotbar)'; } }catch(e){} return r; }; }
 { const _cc=closeChest; closeChest=function(...a){ chestPick=null; return _cc(...a); }; }
 document.addEventListener('pointerdown',e=>{ if(chestPick&&e.target.closest&&!e.target.closest('#scrChest')) chestPick=null; },true);
+
+// a finger on the screen clears any button name left showing
+document.addEventListener('pointerdown',e=>{ if(e.pointerType==='mouse') return; const t=$('#itemTip'); if(t&&t.classList.contains('btntip')){ t.hidden=true; t.classList.remove('btntip'); } },true);
 // ===================== silver armor between wood and iron; bombs and rubble seen by every player =====================
 
 // ---- silver armor: tier 2 of the armor line (wood, silver, iron, gold...), 4.5 defense, 15 silver bars ----
