@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791487433"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791487433"><link rel="manifest" href="manifest.webmanifest?v=1791487433"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791495470"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791495470"><link rel="manifest" href="manifest.webmanifest?v=1791495470"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.46</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.47</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.46</h3>
+    <h3>New in Beta 0.9.47</h3>
+    <p>Crafting is a grid of pictures: things you can make right now light up and come first, and tapping one shows what it needs, what you have, where it is made and Craft, ×5 and Max buttons. Star a recipe with Pin to keep it at the top. More tabs split the long lists: Furniture, Lights and decor, Materials, Farm and animals, Boats and machines, Potions and runes. The chest window shows your bag on the left and the chest on the right, sized to fit the screen, with Take all first. A shop house at level 3 gets a red clay tile roof with a turret on each corner instead of gold trim.</p>
+    <h3>Beta 0.9.46</h3>
     <p>The portal on top of the stone keep stands in the middle of the roof (keeps you already built move it there). The wiki shows every building in your village at each step: the castle as a Hamlet, a Town and a City, the village houses, a shop house at levels 1, 2 and 3, and the woodcutter's lodge and farmhouse, with what each upgrade costs.</p>
     <h3>Beta 0.9.45</h3>
     <p>Watchtowers, keeps and small towers have arrow slits on their roofs, so the soldiers posted up top shoot through them too; the watchtower has 6 posts (two on each upper floor and two on the roof). Each building in the Buildings window has its own picture, and the animal pen shows a fence with crops and a sheep. The wiki has a Buildings section: every building with its cost, size and a picture of each numbered soldier post.</p>
@@ -442,7 +444,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.9.25</h3>
     <p>The wiki is its own app at pumped60.github.io/dragon-amulet-wiki, with its own icon, and it works offline. Add it to your Home Screen beside the game. The Wiki link on the title screen opens it without closing the game: on Android it opens the wiki app, and on iPhone a Safari window with a Done button that takes you back.</p>
     <h3>Beta 0.9.24</h3>
-    <p>Hire woodcutters and farmers from the Quartermaster. Upgrading a shop changes its house: level 2 lifts the roof for a third floor with the shopkeeper's bedroom, lanterns and furniture for the trade (weapon racks and armor stands for the Blacksmith, tables and stools for the Cook, desks for the Jeweler, barrels for the Fisher and so on). Level 3 adds a balcony with a railing, gold trim, a banner on the roof, paintings, rugs and a showpiece for the trade.</p>
+    <p>Hire woodcutters and farmers from the Quartermaster. Upgrading a shop changes its house: level 2 lifts the roof for a third floor with the shopkeeper's bedroom, lanterns and furniture for the trade (weapon racks and armor stands for the Blacksmith, tables and stools for the Cook, desks for the Jeweler, barrels for the Fisher and so on). Level 3 adds a balcony with a railing, a red tile roof with a turret on each corner, a banner on the roof, paintings, rugs and a showpiece for the trade.</p>
     <h3>Beta 0.9.23</h3>
     <p>Growing your village (into a town, then a city) and the report on the opposing villages (their food, gold and army, Watch a commander, gifts to villages you conquered) are in the Buildings window, under your buildings and defense posts. The Army window keeps your party, soldiers, animals, war machines, expeditions and hiring.</p>
     <h3>Beta 0.9.22</h3>
@@ -492,7 +494,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Dragonborne weapons: defeating Vorthax drops the dragonborne weapon of your class (sword, bow, mace, staff or daggers), and every hit from it sets enemies burning. Each one you win is unlocked for good, and a new Dragonborn starts with all of them. Beat Vorthax with every class to collect all five; the tally under the Dragonborn shows which you have.</p>
     <h3>Beta 0.9.1</h3>
     <p>Bombs: craft black powder (2 coal and a bone), small bombs and fire bombs at a workbench, and buy big and sticky bombs from the Demolitionist. A small bomb is thrown and bounces before it blows; a fire bomb bursts where it lands and sets everything around it burning; a sticky bomb sticks to the first wall or enemy it touches; a big bomb is set down at your feet, so get clear. Every bomb breaks blocks: they burst apart in pieces, some of which land as rubble that crumbles away after three days, and the blocks around the blast are left burnt. Your own bombs hurt you and your soldiers at half strength, and they never break anything in your own village.</p>
-    <p>The Demolitionist moves into your village, with a house of his own, once the Goblin Beastmaster is beaten. Every shopkeeper's shop has three levels: talk to them to upgrade it with coins and building materials, and each level sells better goods. Level 2 needs a Town and level 3 a City. Upgraded houses get lanterns, then gold trim and a banner on the roof, and the shopkeeper shows gold pips over their head.</p>
+    <p>The Demolitionist moves into your village, with a house of his own, once the Goblin Beastmaster is beaten. Every shopkeeper's shop has three levels: talk to them to upgrade it with coins and building materials, and each level sells better goods. Level 2 needs a Town and level 3 a City. Upgraded houses get lanterns, then a red tile roof with turrets and a banner, and the shopkeeper shows gold pips over their head.</p>
     <h3>Beta 0.9.0</h3>
     <p>Bosses form one ladder, each harder than the last and each needing soldiers beside you: the Goblin Beastmaster (3), the Archmage (4), the Magma Wizard (5), the Sky Ranger (6), the Magma Knight (8), Grukk (10), the Kraken (12) and Vorthax (20). The wizards fly, teleport and chase you out of their towers; the Beastmaster vanishes and strikes from behind; the Sky Ranger hurls everyone back with a gale and marks a target for a fast arrow; the Magma Knight's armor glows and turns most blows aside until four fighters hit it, and fire erupts from glowing cracks in the floor. Enemy villages gang up on anyone who comes alone, so bring at least 5 soldiers.</p>
     <p>The best weapons are thrown: Adamantite swords, the Magma blade and the Adamantite and Kraken daggers fly out and come back like a boomerang, and the Adamantite mace swings on a chain (hold to whirl it, let go to throw). Runes have levels I to V. Boss trophies are 2 by 2 replicas of the boss, standing on trophy shelves hung on a back wall.</p>
@@ -594,7 +596,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.46</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.47</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -854,7 +856,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.46</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.47</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -873,7 +875,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.46', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.47', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -9279,7 +9281,8 @@ $('#shopList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-v
 
 // ---- shop houses: each level adds something you can see ----
 // Level 2: a third floor with the shopkeeper's bedroom (the roof is lifted), lanterns, and furniture for the trade.
-// Level 3: a balcony off the top floor, gold trim, a banner on the roof, paintings and rugs, and a showpiece for the trade.
+// Level 3: a balcony off the top floor, a red clay tile roof with a turret on each corner (roof3 in 98e_house_roof.js), a banner
+// on the roof, paintings and rugs, and a showpiece for the trade.
 const SHOP_FURN={   // [ground floor, second floor] at level 2, then [ground, second, top] extras at level 3
   smith:    { l2:[[B.WEAPON_RACK,B.BARREL],[B.ARMOR_STAND]],          l3:[[B.ARMOR_STAND],[B.WEAPON_RACK],[B.ARMOR_STAND]] },
   cook:     { l2:[[B.TABLE,B.STOOL,B.BARREL],[B.CUPBOARD]],           l3:[[B.CHAIR],[B.TABLE,B.CHAIR],[B.BARREL]] },
@@ -9291,8 +9294,8 @@ const SHOP_FURN={   // [ground floor, second floor] at level 2, then [ground, se
   demo:     { l2:[[B.BARREL,B.BARREL],[B.CUPBOARD]],                  l3:[[B.BARREL],[B.BARREL,B.TABLE],[B.BARREL]] } };
 const HOUSE_WORD=['','',
   'a third floor with a bedroom, lanterns and furniture for the trade',
-  'a balcony, gold trim, a roof banner, paintings, rugs and a showpiece for the trade'];
-const ROOF_IDS=()=>new Set([B.ROOF,B.SHINGLE_B]);
+  'a balcony, a red tile roof with corner turrets, a roof banner, paintings, rugs and a showpiece for the trade'];
+const ROOF_IDS=()=>new Set([B.ROOF,B.SHINGLE_B,B.THATCH,B.IRON_ROOF,B.CLAY_TILE,B.CLAY_EAVE]);
 function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, gy=h.gy;
   const inW=(x,y)=>x>=0&&x<W&&y>=0&&y<H;
   const put=(x,y,id)=>{ if(inW(x,y)&&tileAt(x,y)===0) setTile(x,y,id); };           // only into empty space
@@ -9305,7 +9308,7 @@ function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, 
     // ---- level 2: lift the roof and add a third floor ----
     const roofs=ROOF_IDS(); const roofId=[tileAt(hx+4,gy-10),tileAt(hx+4,gy-15),tileAt(hx+4,gy-20)].find(t=>roofs.has(t))||B.ROOF;
     const raised=tileAt(hx+4,gy-10)===B.PLATFORM;
-    const ok=t=>!t||roofs.has(t)||t===B.STONE_BLOCK||t===B.IVY||t===B.MIST||t===B.CLOUD||t===B.SNOW_LAYER||t===B.VINE||LOG_IDS.has(t)||t===B.LANTERN||t===B.BARREL||LEAF_IDS.has(t)||[B.BANNER_G,B.BANNER_B,B.BANNER_R].includes(t);
+    const ok=t=>!t||roofs.has(t)||t===B.STONE_BLOCK||t===B.PLANK||t===B.IRON_PLATE||t===B.IVY||t===B.MIST||t===B.CLOUD||t===B.SNOW_LAYER||t===B.VINE||LOG_IDS.has(t)||t===B.LANTERN||t===B.BARREL||LEAF_IDS.has(t)||[B.BANNER_G,B.BANNER_B,B.BANNER_R].includes(t);
     let room=raised; if(!raised){ room=true; for(let y=gy-21;y<=gy-10&&room;y++) for(let x=hx-1;x<=hx+10;x++) if(!inW(x,y)||!ok(tileAt(x,y))){ room=false; break; } }   /* only lift the roof into open sky */
     if(room&&!raised){
       for(let y=gy-21;y<=gy-10;y++) for(let x=hx-1;x<=hx+9;x++) if(tileAt(x,y)) setTile(x,y,0);
@@ -9318,9 +9321,8 @@ function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, 
     put(hx+2,gy-4,B.LANTERN); put(hx+6,gy-4,B.LANTERN);
     place(0,furn.l2[0]); place(1,furn.l2[1]);
     if(room){ put(hx+5,gy-11,B.BED); put(hx+4,gy-14,B.LAMP); place(2,[B.CHAIR]); }
-    // ---- level 3: balcony, gold trim, banner, paintings, rugs and a showpiece ----
-    if(lv>=3){ const top=room?gy-21:gy-16;
-      for(const x of [hx,hx+8]) for(const y of [gy-4,gy-3]) force(x,y,B.GOLD_BLOCK,[B.STONE_BLOCK]);
+    // ---- level 3: balcony, red tile roof with turrets, banner, paintings, rugs and a showpiece ----
+    if(lv>=3){ if(room) roof3(hx,gy); const top=room?gy-20:gy-16;
       put(hx+4,top,banOf(player.team));
       put(hx+3,gy-8,B.PAINTING); put(hx+1,gy-3,B.PAINTING); put(hx+4,gy-6,B.RUG); put(hx+3,gy-1,B.RUG);
       place(0,furn.l3[0]); place(1,furn.l3[1]);
@@ -10538,7 +10540,8 @@ const TIER_WORD=['wood','stone','iron'];
 function skinTargets(){ if(!home||!home.claimed) return []; const vt=Math.min(2,villageTier()), L=[];
   const cx=home.castleCx, gy=home.gy; L.push({key:'castle',x0:cx-20,x1:cx+19,y0:gy-36,y1:gy+2,tier:vt,roof:player&&player.team==='r'?B.ROOF:B.SHINGLE_B});
   (home.houses||[]).forEach((h,k)=>{ if(!h) return; const shop=h.role&&SHOPS[h.role]; const lv=shop?((home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1):0;
-    L.push({key:'h'+k,x0:h.x0-2,x1:h.x1+2,y0:h.gy-21,y1:h.gy,tier:shop?Math.max(0,Math.min(2,lv-1)):vt}); });
+    const t3=shop&&lv>=3?2:0;   /* a level 3 house's corner turrets stick out two more blocks each side (98e_house_roof.js) */
+    L.push({key:'h'+k,x0:h.x0-2-t3,x1:h.x1+2+t3,y0:h.gy-21-t3,y1:h.gy,tier:shop?Math.max(0,Math.min(2,lv-1)):vt}); });
   // the buildings you build yourself (hut, wall, watchtower, pen, keep) and outposts you capture follow the village too
   for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ if(!st||!isFinite(st.x)) continue; const bp=BLUEPRINTS.find(b=>b.id===st.kind)||{fx0:-9,fx1:9,fh:20};
     L.push({key:'s'+st.id,x0:st.x+bp.fx0-1,x1:st.x+bp.fx1+1,y0:st.gy-bp.fh-7,y1:st.gy,tier:vt}); }
@@ -10707,6 +10710,203 @@ const BP_ICON={};
 // keeps built before Beta 0.9.46 had their roof portal one block left of centre: move it to the middle
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.keepPortalV&&!isGuest()){ home.keepPortalV=1;
       facRun(()=>{ for(const st of myStructures) if(st.kind==='keep'&&tileAt(st.x-1,st.gy-12)===B.PORTAL&&tileAt(st.x,st.gy-12)===0&&tileAt(st.x,st.gy-13)===0){ for(const y of [st.gy-12,st.gy-13]){ setTile(st.x-1,y,0); setTile(st.x,y,B.PORTAL); } } }); } }catch(e){ console.warn(e); } return r; }; }
+// ===================== crafting as a picture grid, chest beside the bag =====================
+// Crafting shows one picture per thing you can make (items with two recipes share a picture). Things you can make
+// right now come first and light up; pinned ones (★) sit at the very top. Tap a picture and the side panel shows what it
+// needs (have/need), where it is made and Craft 1, ×5 and Max buttons. More tabs split the long lists.
+// settings.craftFav = item ids pinned to the top (kept on this device).
+const CRAFT_CATS=[['all','All'],['fav','★ Pinned'],['weapons','Weapons'],['tools','Tools'],['gear','Armor & gear'],['build','Blocks'],['furn','Furniture'],['light','Lights & decor'],
+  ['mat','Materials'],['cook','Cooking'],['farm','Farm & animals'],['boats','Boats & machines'],['magic','Potions & runes'],['other','Other'],['creative','All items']];
+const FURN_RX=/chair|stool|table|desk|bench|barrel|cupboard|\bbed\b|shelf|chest|door|furnace|workshop/;
+const LIGHT_RX=/torch|lantern|lamp|campfire|painting|rug|banner/;
+function craftCatOf(rc){ if(rc.cat2) return rc.cat2; const d=ITEMS[rc.out]||{}, k=d.kind, nm=(d.name||'').toLowerCase(); let c='other';
+  if(rc.cat==='cook') c='cook';
+  else if(k==='weapon') c='weapons';
+  else if(['pick','axe','hoe','hammer','rod','bucket','bomb'].includes(k)) c='tools';
+  else if(k==='armor'||k==='acc'||k==='charm') c='gear';
+  else if(k==='boat'||k==='machine') c='boats';
+  else if(['rune','mana','recall'].includes(k)||/potion|elixir/.test(nm)) c='magic';
+  else if(k==='mat'||PLANK_IDS.has(rc.out)) c='mat';
+  else if(rc.cat==='farm'||k==='seed'||k==='shears'||isSapling(rc.out)||/sapling|spore|cage|fence/.test(nm)) c='farm';
+  else if(LIGHT_RX.test(nm)) c='light';
+  else if(FURN_RX.test(nm)||isBedId(rc.out)) c='furn';
+  else if(['block','wall','shape'].includes(k)) c='build';
+  return rc.cat2=c; }
+let craftSel=null;
+const craftFavs=()=>(settings.craftFav=Array.isArray(settings.craftFav)?settings.craftFav:[]);
+const isFav=id=>craftFavs().includes(id);
+const recipeOwned=rc=>isUpgradeItem(rc.out)&&ownedTier(rc.out)>=tierOf(rc.out);
+const recipeStOk=rc=>free()||!rc.st||nearStation(rc.st);
+const recipeHave=rc=>free()||rc.need.every(([id,n])=>countNeed(id)>=n);
+const recipeOk=rc=>recipeStOk(rc)&&recipeHave(rc)&&!recipeOwned(rc);
+function recipeMax(rc){ if(!recipeOk(rc)) return 0; if(isUpgradeItem(rc.out)) return 1; if(free()) return 10;
+  return Math.max(0,Math.min(999,...rc.need.map(([id,n])=>Math.floor(countNeed(id)/n)))); }
+function craftOnce(rc){ if(!free()){ if(rc.st&&!nearStation(rc.st)) return false; if(!rc.need.every(([id,n])=>countNeed(id)>=n)) return false; }
+  if(recipeOwned(rc)) return false; if(!roomFor(rc.out,rc.n)&&!isUpgradeItem(rc.out)){ toast('Your bag is full',1.6); return false; }
+  if(!free()) for(const [id,n] of rc.need) takeNeed(id,n); obtain(rc.out,rc.n); return true; }
+// one entry per item made: [out, [recipe indexes]] in build order, then sorted pinned, can make, can't, owned
+function craftGroups(){ const q=(craftQuery||'').trim().toLowerCase(), m=new Map();
+  for(const [rc,ri] of craftOrder()){ const d=ITEMS[rc.out]; if(!d) continue;
+    if(craftCat==='fav'?!isFav(rc.out):(craftCat!=='all'&&craftCatOf(rc)!==craftCat)) continue;
+    if(q&&!d.name.toLowerCase().includes(q)) continue; if(!showOk(rc)) continue;
+    if(!m.has(rc.out)) m.set(rc.out,[]); m.get(rc.out).push(ri); }
+  const L=[...m.entries()].map(([out,ris],k)=>{ const rcs=ris.map(i=>RECIPES[i]); const own=recipeOwned(rcs[0]), ok=rcs.some(recipeOk);
+    return { out, ris, ok, own, k, rank:(isFav(out)?0:3)+(own?2:ok?0:1) }; });
+  return L.sort((a,b)=>a.rank-b.rank||a.k-b.k); }
+function craftTileHtml(g){ const rc=RECIPES[g.ris[0]], d=ITEMS[g.out];
+  return `<button class="ctile${g.ok?' ok':''}${g.own?' own':''}${g.out===craftSel?' sel':''}" data-o="${g.out}" aria-label="${escapeHTML(d.name)}">`+
+    `<img alt="" src="${iconUrl(g.out)}">${rc.n>1?`<span class="cn">×${rc.n}</span>`:''}${isFav(g.out)?'<i class="cfav">★</i>':''}`+
+    `${rc.st?`<img class="cst" alt="" src="${iconUrl(rc.st)}">`:''}${g.own?'<i class="cown">✓</i>':''}<span class="cnm">${escapeHTML(d.name)}</span></button>`; }
+function craftDetailHtml(g){ if(!g) return '<p class="muted cdEmpty">Nothing here yet. Try another tab or clear the search.</p>';
+  const d=ITEMS[g.out], have=countItem(g.out); const stats=itemStats(g.out).filter(s=>!/Sells for/.test(s));
+  let h=`<div class="cdHead"><img alt="" src="${iconUrl(g.out)}"><div><b>${escapeHTML(d.name)}</b><br><span class="muted">${have?`You have ${have}`:'You have none'}</span></div>`+
+    `<button class="cdPin${isFav(g.out)?' on':''}" data-pin="${g.out}" aria-label="${isFav(g.out)?'Unpin':'Pin to the top'}">${isFav(g.out)?'★ Pinned':'☆ Pin'}</button></div>`;
+  if(d.desc&&!stats.some(s=>s.includes(d.desc))) h+=`<p class="cdDesc">${escapeHTML(d.desc)}</p>`;
+  if(stats.length) h+=`<ul class="statlist">${stats.join('')}</ul>`;
+  g.ris.forEach((ri,k)=>{ const rc=RECIPES[ri], own=recipeOwned(rc), stOk=recipeStOk(rc), max=recipeMax(rc), up=isUpgradeItem(rc.out);
+    h+=`<div class="cdRec">${g.ris.length>1?`<div class="cdWay">Way ${k+1}</div>`:''}<div class="cdNeed">`+rc.need.map(([id,n])=>{ const hv=countNeed(id);
+      return `<div class="${hv<n&&!free()?'miss':''}"><img alt="" src="${iconUrl(id)}"><span>${escapeHTML(ITEMS[id].name)}</span><b>${hv}/${n}</b></div>`; }).join('')+'</div>'+
+      `<div class="cdSt ${stOk?'':'miss'}">${rc.st?`<img alt="" src="${iconUrl(rc.st)}">${stOk?`At a ${ITEMS[rc.st].name.toLowerCase()}`:`Stand near a ${ITEMS[rc.st].name.toLowerCase()}`}`:'Made by hand, anywhere'}</div>`+
+      `<div class="cdBtns">`+(up?`<button data-cr="${ri}" data-k="1" ${max?'':'disabled'}>${own?'Owned':ownedTier(rc.out)>0?'Upgrade':'Craft'}</button>`:
+        `<button data-cr="${ri}" data-k="1" ${max?'':'disabled'}>Craft${rc.n>1?' ×'+rc.n:''}</button><button data-cr="${ri}" data-k="5" ${max?'':'disabled'}>×5</button><button data-cr="${ri}" data-k="max" ${max?'':'disabled'}>Max${max>1?' ('+max*rc.n+')':''}</button>`)+'</div></div>'; });
+  return h; }
+let craftTabsSig='';
+function renderCraft(){ const side=$('#craftSide'); if(!side) return;
+  // the layout: tabs, then search and the Show chips on one row, then the grid with the details beside it
+  if(!$('#craftBody')){ const bar=document.createElement('div'); bar.id='craftBar'; $('#craftSearch').before(bar); bar.append($('#craftSearch'),$('#craftShow'));
+    const body=document.createElement('div'); body.id='craftBody'; $('#craftList').before(body); const det=document.createElement('div'); det.id='craftDetail'; body.append($('#craftList'),det);
+    det.addEventListener('click',craftDetailClick); }
+  const favN=craftFavs().length; const sig=craftCat+'|'+favN+'|'+free(); if(sig!==craftTabsSig){ craftTabsSig=sig;
+    $('#craftTabs').innerHTML=CRAFT_CATS.filter(([k])=>(k!=='fav'||favN)&&(k!=='creative'||free())).map(([k,l])=>`<button class="choice" data-c="${k}" aria-pressed="${k===craftCat}">${l}</button>`).join(''); }
+  const creative=craftCat==='creative'; $('#craftDetail').hidden=creative; $('#craftBody').classList.toggle('creative',creative); if(creative) return;
+  const G=craftGroups(); if(!G.some(g=>g.out===craftSel)) craftSel=G.length?G[0].out:null;
+  const list=$('#craftList'), top=list.scrollTop;
+  list.innerHTML=G.length?`<div class="ctiles">${G.map(craftTileHtml).join('')}</div>`:'<p>No recipes match.</p>'; list.scrollTop=top;
+  $('#craftDetail').innerHTML=craftDetailHtml(G.find(g=>g.out===craftSel)); }
+function craftDetailClick(ev){ const p=ev.target.closest('[data-pin]'); if(p){ const id=+p.dataset.pin, F=craftFavs(), i=F.indexOf(id); if(i<0) F.push(id); else F.splice(i,1);
+    if(craftCat==='fav'&&!F.length) craftCat='all'; saveSettings(); renderInv(); return; }
+  const b=ev.target.closest('button[data-cr]'); if(!b||b.disabled) return; const rc=RECIPES[+b.dataset.cr];
+  const want=b.dataset.k==='max'?(free()?10:999):+b.dataset.k; let k=0; while(k<want&&craftOnce(rc)){ k++; if(isUpgradeItem(rc.out)) break; }
+  if(k>1) toast(`Crafted ${k*rc.n} ${ITEMS[rc.out].name.toLowerCase()}`,1.8); renderInv(); }
+// the original list and its rows are skipped while the grid is shown (craftCat is swapped for that call)
+{ const _ri=renderInv; renderInv=function(...a){ const real=craftCat, grid=real!=='creative'; if(grid) craftCat='-'; let r; try{ r=_ri(...a); } finally{ craftCat=real; }
+    try{ if($('#scrInv').classList.contains('craftmode')) renderCraft(); else craftTabsSig=''; }catch(e){ console.warn(e); } return r; }; }
+$('#craftList').addEventListener('click',ev=>{ const t=ev.target.closest('[data-o]'); if(!t) return; craftSel=+t.dataset.o;
+  for(const x of $('#craftList').querySelectorAll('.ctile.sel')) x.classList.remove('sel'); t.classList.add('sel'); renderCraft(); });
+$('#craftList').addEventListener('dblclick',ev=>{ const t=ev.target.closest('[data-o]'); if(!t||recentTouch()) return; const b=$('#craftDetail button[data-k="1"]:not([disabled])'); if(b) b.click(); });
+// hold Craft to keep crafting, like the Buy buttons
+{ let holdT=null; const stop=()=>{ clearTimeout(holdT); holdT=null; };
+  document.addEventListener('pointerdown',e=>{ const b=e.target.closest&&e.target.closest('#craftDetail button[data-k="1"]'); if(!b||b.disabled) return; stop(); const ri=b.dataset.cr; let n=0;
+    const tick=()=>{ const el=$(`#craftDetail button[data-cr="${ri}"][data-k="1"]`); if(!el||el.disabled||isUpgradeItem(RECIPES[+ri].out)){ stop(); return; } el.click(); n++; holdT=setTimeout(tick,Math.max(35,120-n*6)); };
+    holdT=setTimeout(tick,380); },true);
+  for(const ev of ['pointerup','pointercancel','blur']) addEventListener(ev,stop,true); }
+
+// ---- the chest: your bag on the left, the chest on the right, Take all first ----
+{ const panel=$('#scrChest .panel'), hs=[...panel.querySelectorAll(':scope>h3')];
+  const wrap=document.createElement('div'); wrap.id='chestWrap'; const bagCol=document.createElement('div'); bagCol.className='chestcol bagcol'; const chCol=document.createElement('div'); chCol.className='chestcol';
+  hs[1].innerHTML='Your bag <span class="muted">(top row: hotbar)</span>'; hs[0].textContent='Chest'; bagCol.append(hs[1],$('#chestBag')); chCol.append(hs[0],$('#chestGrid'));
+  const cb=panel.querySelector(':scope>.closebar'); if(cb) cb.before(wrap); else panel.append(wrap); wrap.append(bagCol,chCol);
+  // the split slider and the coins sit under the bag, where there is room
+  if($('#chestSplit')) bagCol.append($('#chestSplit')); bagCol.append($('#chestCoins'));
+  const bar=panel.querySelector('.phead .mapbar'); const order=['chestTake','chestStore','chestStack','chestSortBy','chestSort'];
+  for(const id of order){ const el=$('#'+id); if(el) bar.append(el); }
+  $('#chestTake').classList.add('primary'); panel.querySelector('.phead h2').hidden=true; }
+{ const st=document.createElement('style'); st.textContent=`
+/* chest */
+#scrChest .panel{ --cs:clamp(24px, min(calc((100vw - 90px) / 18 - 3px), calc((100dvh - 150px) / 9 - 3px)), 40px); width:auto; max-width:100%; display:block !important; }
+#scrChest .phead{ margin-bottom:8px; } #scrChest .phead .mapbar{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+#chestTake.primary{ background:var(--gold); color:var(--ink); border-color:var(--gold); }
+#chestWrap{ display:flex; gap:16px; align-items:flex-start; }
+.chestcol h3{ margin:0 0 5px !important; font-size:9px !important; } .chestcol h3 .muted{ font-size:7px; }
+#chestWrap .gridbox{ grid-template-columns:repeat(9,var(--cs)); gap:3px; } #chestWrap .gridbox .slot{ width:var(--cs); height:var(--cs); }
+#chestWrap .gridbox .slot img{ width:calc(var(--cs) * .66); height:calc(var(--cs) * .66); }
+.bagcol{ max-width:calc(9 * (var(--cs) + 3px)); } #chestCoins{ margin:6px 0 0 !important; font-size:9px; } #chestCoins:empty{ display:none; }
+#scrChest .closebar, #scrInv.craftmode .closebar{ display:none !important; }
+@media (max-height:520px) and (orientation:landscape){
+  #scrChest .panel{ --cs:clamp(22px, min(calc((100vw - 70px) / 18 - 2px), calc((100dvh - 92px) / 9 - 2px)), 34px); }
+  #chestWrap{ gap:10px; } #chestWrap .gridbox{ gap:2px; } #scrChest .phead{ margin-bottom:4px; padding-right:48px; } #scrChest .phead .mapbar{ gap:4px; }
+  #scrChest .phead .xbtn, #chestSortBy{ font-size:7px; padding:5px 7px; } .chestcol h3{ font-size:7px !important; margin-bottom:3px !important; } }
+@media (max-width:600px) and (orientation:portrait){ #chestWrap{ flex-direction:column; } #scrChest .panel{ --cs:clamp(24px, calc((100vw - 70px) / 9 - 3px), 38px); } }
+/* crafting */
+#scrInv.craftmode .panel{ height:100%; display:flex; flex-direction:column; }
+#scrInv.craftmode .invwrap{ flex:1 1 auto; min-height:0; display:flex !important; }
+#scrInv.craftmode #craftSide{ flex:1 1 auto; min-height:0; min-width:0; display:flex; flex-direction:column; }
+#craftTabs{ display:flex !important; flex-wrap:wrap; gap:4px; margin-bottom:6px; } #craftTabs .choice{ flex:0 0 auto; width:auto; padding:6px 9px; font-size:8px; margin:0; }
+#craftBar{ display:flex; gap:6px; align-items:center; margin-bottom:6px; } #craftBar #craftSearch{ flex:0 1 200px; min-width:110px; margin:0; }
+#craftBar #craftShow{ flex:1 1 auto; margin:0; flex-wrap:nowrap; overflow-x:auto; padding:3px 4px; } #craftShow button{ flex:0 0 auto; white-space:nowrap; }
+#stations, #scrInv.craftmode #craftSide>h3{ display:none; }
+#craftBody{ flex:1 1 auto; min-height:0; display:grid; grid-template-columns:minmax(0,1fr) 270px; gap:10px; }
+#craftBody.creative{ grid-template-columns:1fr; }
+#craftList{ overflow-y:auto; min-height:0; display:block !important; padding-right:2px; }
+.ctiles{ display:grid; grid-template-columns:repeat(auto-fill,minmax(74px,1fr)); gap:5px; }
+.ctile{ position:relative; display:flex; flex-direction:column; align-items:center; gap:3px; padding:6px 2px 5px; min-height:66px; background:var(--panel2); border:2px solid #5b4f7c; color:var(--muted); font-family:var(--font); font-size:7px; line-height:1.4; text-align:center; cursor:pointer; opacity:.6; }
+.ctile img{ width:30px; height:30px; image-rendering:pixelated; } .ctile .cnm{ overflow-wrap:anywhere; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.ctile.ok{ opacity:1; color:var(--text); border-color:#8fd16a; box-shadow:inset 0 0 0 1px rgba(143,209,106,.35); } .ctile.own{ opacity:.45; }
+.ctile.sel{ opacity:1; border-color:var(--gold); box-shadow:0 0 0 2px var(--gold); color:var(--text); }
+.ctile .cn{ position:absolute; top:3px; right:4px; font-size:7px; color:var(--gold); } .ctile .cfav{ position:absolute; top:2px; left:4px; font-style:normal; color:var(--gold); font-size:9px; }
+.ctile .cst{ position:absolute; top:24px; right:4px; width:14px !important; height:14px !important; opacity:.9; } .ctile .cown{ position:absolute; top:22px; left:6px; font-style:normal; color:#8fd16a; font-size:10px; }
+#craftDetail{ overflow-y:auto; min-height:0; background:var(--panel2); border:2px solid var(--edge-dim,#5b4f7c); padding:8px; font-size:8px; line-height:1.7; }
+.cdHead{ display:grid; grid-template-columns:40px 1fr auto; gap:8px; align-items:center; } .cdHead img{ width:40px; height:40px; image-rendering:pixelated; } .cdHead b{ font-size:10px; color:var(--gold); }
+.cdPin{ font-family:var(--font); font-size:7px; padding:5px 6px; background:var(--panel); color:var(--text); border:2px solid #5b4f7c; } .cdPin.on{ color:var(--gold); border-color:var(--gold); }
+.cdDesc{ font-size:8px !important; margin:6px 0 2px !important; line-height:1.7 !important; } #craftDetail .statlist{ font-size:8px; margin:4px 0 4px 14px; }
+.cdRec{ border-top:2px solid #3e3458; margin-top:6px; padding-top:6px; } .cdWay{ color:var(--gold); font-size:7px; margin-bottom:2px; }
+.cdNeed>div{ display:grid; grid-template-columns:16px 1fr auto; gap:6px; align-items:center; padding:1px 0; } .cdNeed img, .cdSt img{ width:16px; height:16px; image-rendering:pixelated; }
+.cdNeed b{ color:#8fd16a; } .cdNeed .miss, .cdNeed .miss b{ color:#ff8a8a; }
+.cdSt{ display:flex; gap:6px; align-items:center; color:var(--muted); margin:4px 0; } .cdSt.miss{ color:#ff8a8a; }
+.cdBtns{ display:flex; gap:5px; } .cdBtns button{ flex:1 1 auto; background:var(--gold); color:var(--ink); border:2px solid var(--ink); font-family:var(--font); font-size:8px; padding:8px 4px; } .cdBtns button:disabled{ background:#5b4f7c; color:var(--muted); }
+.cdEmpty{ font-size:8px; }
+@media (max-height:520px) and (orientation:landscape), (max-width:600px){
+  #craftTabs{ flex-wrap:nowrap; overflow-x:auto; margin-bottom:4px; } #craftTabs .choice{ font-size:7px; padding:5px 8px; }
+  #craftBar{ margin-bottom:4px; gap:4px; } #craftBar #craftSearch{ flex-basis:120px; min-width:80px; font-size:7px; padding:4px; }
+  #craftBody{ grid-template-columns:minmax(0,1fr) 210px; gap:6px; }
+  .ctiles{ grid-template-columns:repeat(auto-fill,minmax(58px,1fr)); gap:3px; } .ctile{ min-height:52px; font-size:6px; padding:4px 1px 3px; gap:2px; } .ctile img{ width:24px; height:24px; }
+  .ctile .cst{ top:18px; width:11px !important; height:11px !important; } .ctile .cown{ top:16px; }
+  #craftDetail{ padding:5px 6px; font-size:7px; line-height:1.6; } .cdHead{ grid-template-columns:30px 1fr auto; gap:5px; } .cdHead img{ width:30px; height:30px; } .cdHead b{ font-size:8px; }
+  .cdDesc, #craftDetail .statlist{ font-size:7px !important; } .cdBtns button{ font-size:7px; padding:7px 3px; } }
+@media (max-width:600px) and (orientation:portrait){ #craftBody{ grid-template-columns:1fr; grid-template-rows:minmax(0,1fr) auto; } #craftDetail{ max-height:42vh; } }`; document.head.appendChild(st); }
+// ===================== the top shop house: a red clay tile roof with a turret on each corner =====================
+// A level 3 shop house used gold blocks as trim and kept the plain stepped roof. It gets its own roof instead: a dark eave
+// course, a red clay tile roof between two small turrets, and each turret has slits facing out, a pointed tile cap and a
+// lightning rod on top. Clay tiles are not part of the wood/stone/iron skins (98_building_tiers.js), so the roof stays red.
+B.CLAY_TILE=freeIdFrom(); B.CLAY_EAVE=freeIdFrom();
+defB(B.CLAY_TILE,{name:'Red clay tiles',hard:0.8,col:'#b5523a'});
+defB(B.CLAY_EAVE,{name:'Clay eave',hard:0.8,col:'#6e2a1e'});
+ITEMS[B.CLAY_TILE]={name:'Red clay tiles',kind:'block',desc:'Rounded red roof tiles, like the roofs of the grandest shop houses'};
+ITEMS[B.CLAY_EAVE]={name:'Clay eave',kind:'block',desc:'A dark trim course for the edge of a tile roof'};
+RECIPES.push({ out:B.CLAY_TILE, n:4, need:[[B.RED_BRICK,2]], st:B.FURNACE, cat:'build' }, { out:B.CLAY_EAVE, n:4, need:[[B.RED_BRICK,1],[B.STONE_BLOCK,1]], st:B.FURNACE, cat:'build' });
+{ const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
+  // rows of overlapping round tiles: each tile has a light top, a shaded round bottom and a dark gap below
+  TEX[B.CLAY_TILE]=tex(r=>{ r(0,0,16,16,'#a9472f'); for(let row=0;row<4;row++){ const y=row*4, off=row%2?2:0;
+      for(let x=-4+off;x<16;x+=4){ r(x,y,4,1,'#d0704f'); r(x,y+1,1,2,'#c25e40'); r(x+1,y+1,2,2,'#b5523a'); r(x+3,y+1,1,2,'#8e3524'); r(x+1,y+3,2,1,'#6e2a1e'); r(x,y+3,1,1,'#7e3022'); r(x+3,y+3,1,1,'#7e3022'); } } });
+  TEX[B.CLAY_EAVE]=tex(r=>{ r(0,0,16,16,'#6e2a1e'); r(0,0,16,2,'#9a3e2a'); r(0,2,16,1,'#c25e40'); r(0,13,16,3,'#4a1c14'); for(let x=0;x<16;x+=4){ r(x,3,1,10,'#58221a'); r(x+2,6,1,4,'#843424'); } } ); }
+try{ for(const id of [B.CLAY_TILE,B.CLAY_EAVE]) delete ICON_URL[id]; }catch(e){}
+
+// build the roof over a shop house whose third floor reaches gy-14 (hx = the house's left wall)
+function roof3(hx,gy){ if(tileAt(hx+4,gy-19)===B.CLAY_TILE&&tileAt(hx-1,gy-22)===B.CLAY_TILE) return;   // already there
+  const inW=(x,y)=>x>=0&&x<W&&y>=0&&y<H, roofs=ROOF_IDS();
+  const old=t=>t&&(roofs.has(t)||(typeof SKIN_OF!=='undefined'&&SKIN_OF.has(t))||t===B.STONE_BLOCK||t===B.SNOW_LAYER||t===B.MIST||t===B.CLOUD||t===B.IVY||t===B.VINE||
+    LEAF_IDS.has(t)||LOG_IDS.has(t)||[B.BANNER_G,B.BANNER_B,B.BANNER_R].includes(t)||t===B.ARROW_SLIT||t===B.LIGHTNING_ROD);
+  const set=(x,y,id)=>{ if(inW(x,y)&&tileAt(x,y)!==id) setTile(x,y,id); }, put=(x,y,id)=>{ if(inW(x,y)&&!tileAt(x,y)) setTile(x,y,id); };
+  // take off the old stepped roof, its chimney and banner (only roof-like blocks, inside the house's own columns)
+  for(let y=gy-23;y<=gy-15;y++) for(let x=hx-1;x<=hx+9;x++) if(inW(x,y)&&old(tileAt(x,y))) setTile(x,y,0);
+  const wl=tileAt(hx,gy-5), S=typeof SKIN_OF!=='undefined'&&SKIN_OF.get(wl)==='wall'?wl:B.STONE_BLOCK, C=B.CLAY_TILE, E=B.CLAY_EAVE;
+  for(let x=hx-1;x<=hx+9;x++) set(x,gy-15,E); put(hx-2,gy-15,E); put(hx+10,gy-15,E);          // eave course
+  [[hx+1,hx+7],[hx+2,hx+6],[hx+3,hx+5],[hx+4,hx+4]].forEach(([a,b],k)=>{ for(let x=a;x<=b;x++) set(x,gy-16-k,C); });   // the roof between the turrets
+  for(const [mid,out] of [[hx-1,hx-2],[hx+9,hx+10]]){                                           // a turret on each corner
+    for(let y=gy-19;y<=gy-16;y++) for(const x of [mid-1,mid,mid+1]) (x>=hx-1&&x<=hx+9?set:put)(x,y,S);
+    for(const y of [gy-17,gy-18]) if(tileAt(out,y)===S) setTile(out,y,B.ARROW_SLIT);   // turrets are built of the house's own wall
+    for(let x=mid-2;x<=mid+2;x++) (x>=hx-1&&x<=hx+9?set:put)(x,gy-20,E);
+    for(let x=mid-1;x<=mid+1;x++) (x>=hx-1&&x<=hx+9?set:put)(x,gy-21,C);
+    put(mid,gy-22,C); put(mid,gy-23,B.LIGHTNING_ROD); } }
+
+// worlds from before Beta 0.9.47: gold trim back to wall, and the new roof on every level 3 shop house with a top floor
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&!home.roof3V){ home.roof3V=1; const L=[];
+      for(const h of home.houses||[]) if(h&&h.role){ const lv=(home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1; if(lv>=3) L.push(h); }
+      for(const v of ents) if(v.kind==='villager'&&!v.dead&&SHOPS[v.role]&&v.team!==player.team&&v.house&&shopStore(v)&&shopLevel(v)>=3) L.push(v.house);
+      if(L.length) facRun(()=>{ for(const h of L){ const hx=h.x0-1, gy=h.gy;
+        for(const x of [hx,hx+8]) for(const y of [gy-4,gy-3]) if(tileAt(x,y)===B.GOLD_BLOCK) setTile(x,y,B.STONE_BLOCK);
+        if(tileAt(hx+4,gy-10)===B.PLATFORM){ roof3(hx,gy); if(!tileAt(hx+4,gy-20)) setTile(hx+4,gy-20,banOf(player.team)); } } });
+      if(L.length){ home.skin={}; try{ skinAll(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
