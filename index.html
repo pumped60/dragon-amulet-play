@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791480222"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791480222"><link rel="manifest" href="manifest.webmanifest?v=1791480222"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791483338"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791483338"><link rel="manifest" href="manifest.webmanifest?v=1791483338"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.42</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.43</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.42</h3>
+    <h3>New in Beta 0.9.43</h3>
+    <p>Watchtowers have no glass: the bottom room is solid wall over the doors, and every floor above has arrow slits where the guards stand, so they can shoot out. The top room of every tower, yours and every faction's, is 4 blocks tall. Keeps have slits upstairs and solid walls over their doors. Window walls are a back wall of glass panes (4 from 1 glass and 1 stick at a workbench): the sky shows through and daylight comes in. Every table, chair, bench, stool, bed, bookshelf, cupboard, desk, barrel and workbench comes in all six woods; oak pieces take any planks, the others take their own wood. Planks of every wood sell for the same, and so do logs. New saplings: a pine sapling (a spruce sapling and 2 snow) and blue, green, red and orange mushroom spores (from the caps of giant mushrooms) that grow giant mushrooms on stone, moss, dirt or grass. The Herbalist sells every sapling and spore.</p>
+    <h3>Beta 0.9.42</h3>
     <p>Every building in your village follows the same wood, stone and iron steps as the castle: the huts, battlement walls, watchtowers, animal pens and keeps you build yourself, and the outposts and keeps you capture, are wood in a Hamlet, stone in a Town and iron in a City, together with the castle, the houses, the lodge and the farmhouse. Shop houses keep following their own shop level.</p>
     <h3>Beta 0.9.41</h3>
     <p>Your buildings show how far your village has come. As a Hamlet your castle, houses, woodcutter's lodge and farmhouse are wood: plank walls, timber beams and thatch roofs. Growing into a Town rebuilds them in stone with tiled roofs, and a City rebuilds them in riveted iron with iron roofs. Each shop's house follows its own shop level instead: wood at level 1, stone at level 2, iron at level 3. Wood can catch fire in raids and storms, stone cannot, and iron plate takes an iron pickaxe to break. Furniture, doors, windows and chests stay where they are. Thatch, iron plate, iron beams and iron roofs can be crafted at a workbench too.</p>
@@ -586,7 +588,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.42</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.43</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -846,7 +848,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.42</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.43</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -865,7 +867,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.42', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.43', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1477,7 +1479,7 @@ const SHOPS = {
   herbalist: { name:'Herbalist', stock:[[464,1,160],[461,3,8],[406,1,0],[407,1,0],[I.WHEAT_SEEDS,3,6],[I.CARROT_SEEDS,3,8],[I.PUMPKIN_SEEDS,2,10],[B.SAPLING,2,6],[B.BERRY_BUSH,1,8],[B.HERB_PLANT,2,10],[B.FLOWER_R,3,5],[B.FLOWER_Y,3,5],[B.FLOWER_B,3,5],[B.FERN,3,4],[B.CACTUS,1,6],[B.BAMBOO,2,6],[I.HERBAL_TONIC,1,20],[I.POTION,1,25]] },
   fisher: { name:'Fisher', stock:[[I.FISHING_ROD,1,35],[I.IRON_ROD,1,120],[I.GOLD_ROD,1,320],[I.GRILLED_FISH,1,8],[I.COOKED_SALMON,1,14]] },
   jeweler: { name:'Jeweler', stock:[[493,1,180],[494,1,180],[495,1,220],[496,1,160],[497,1,320],[I.RUBY,1,40],[I.SAPPHIRE,1,40],[I.EMERALD,1,30],[I.AMETHYST_GEM,1,20]] },
-  trader: { name:'Shipwright', stock:[[490,1,700],[I.WARSHIP,1,700,2],[491,1,1400,2],[I.RECALL,1,150],[I.DIVE_HELM,1,120],[I.LANTERN_ACC,1,90],[B.CHEST,1,20],[I.RAFT,1,20],[I.CANOE,1,60],[I.ROWBOAT,1,130],[I.LONGSHIP,1,320],[B.TORCH,10,15],[B.PLANK,20,10],[B.PLATFORM,20,8],[B.GLASS,10,20],[B.BRICK,20,25],[B.ROOF,10,15]] },
+  trader: { name:'Shipwright', stock:[[490,1,700],[I.WARSHIP,1,700,2],[491,1,1400,2],[I.RECALL,1,150],[I.DIVE_HELM,1,120],[I.LANTERN_ACC,1,90],[B.CHEST,1,20],[I.RAFT,1,20],[I.CANOE,1,60],[I.ROWBOAT,1,130],[I.LONGSHIP,1,320],[B.TORCH,10,15],[B.PLANK,20,30],[B.PLATFORM,20,8],[B.GLASS,10,20],[B.BRICK,20,25],[B.ROOF,10,15]] },
 };
 for(const sh of Object.values(SHOPS)) for(const st of sh.stock){ st[2]=Math.ceil(st[2]*1.5); const d=ITEMS[st[0]]; if(d&&['weapon','armor','pick','axe','hoe','hammer','rod'].includes(d.kind)) st[2]=Math.ceil(st[2]*2.5*(1+0.3*((d.tier||1)-1))); }
 function heartPrice(id){ const n=(player&&player.heartsBought&&player.heartsBought[id])||0; return Math.round((id===406?1200:1000)*Math.pow(1.8,n)); }
@@ -2418,10 +2420,10 @@ const BAR_OF=d=>{ const n=d.name||''; return /Adamantite/.test(n)?I.ADAMANT_BAR:
 
 let krakenX=0, krakenChest=null;
 // a narrow tower: walls, a door, platforms every 5-6 blocks, and a lookout on top
-function buildWatchtower(x,mat,ht,inland,endsOnly){ inland=inland||1; const gy=surf[x]; for(let dx=-4;dx<=4;dx++){ const X=x+dx; for(let y=gy-ht-3;y<gy;y++) wset(X,y,0); for(let y=gy;y<gy+3;y++) if(!BLOCKS[world[y*W+X]]||!BLOCKS[world[y*W+X]].solid) wset(X,y,mat); }
+function buildWatchtower(x,mat,ht,inland,endsOnly){ inland=inland||1; const gy=surf[x]; { let last=gy; for(let f=gy-6;f>gy-ht;f-=6) last=f; ht=gy-last+5; }   // the top room is always 4 blocks tall
+  for(let dx=-4;dx<=4;dx++){ const X=x+dx; for(let y=gy-ht-3;y<gy;y++) wset(X,y,0); for(let y=gy;y<gy+3;y++) if(!BLOCKS[world[y*W+X]]||!BLOCKS[world[y*W+X]].solid) wset(X,y,mat); }
   for(let y=gy-ht;y<gy;y++){ wset(x-3,y,mat); wset(x+3,y,mat); for(let dx=-2;dx<=2;dx++) bset(x+dx,y,mat===B.PLANK?1:2); }
-  const dx0=inland>0?3:-3; wset(x+dx0,gy-1,B.DOOR); wset(x+dx0,gy-2,B.DOOR_T); const floors=[]; for(let f=gy-6;f>gy-ht;f-=6){ for(let dx=-2;dx<=2;dx++) wset(x+dx,f,dx===2?B.PLATFORM:mat); floors.push(f); wset(x-3,f-2,B.WINDOW); wset(x+3,f-2,B.WINDOW); bset(x-3,f-2,mat===B.PLANK?1:2); bset(x+3,f-2,mat===B.PLANK?1:2); }
-  wset(x-3,gy-4,B.WINDOW); wset(x+3,gy-4,B.WINDOW);
+  const dx0=inland>0?3:-3; wset(x+dx0,gy-1,B.DOOR); wset(x+dx0,gy-2,B.DOOR_T); const floors=[]; for(let f=gy-6;f>gy-ht;f-=6){ for(let dx=-2;dx<=2;dx++) wset(x+dx,f,dx===2?B.PLATFORM:mat); floors.push(f); for(const sx of [x-3,x+3]) for(const y of [f-1,f-2]) wset(sx,y,B.ARROW_SLIT); }   // slits where the guards on each floor stand, no glass; the lowest room has none
   for(let dx=-4;dx<=4;dx++) wset(x+dx,gy-ht,mat); for(const dx of (endsOnly?[-4,4]:[-4,-2,0,2,4])) wset(x+dx,gy-ht-1,mat); wset(x+1,gy-ht,B.PLATFORM); wset(x-1,gy-4,B.TORCH);
   return { x, gy, top:gy-ht, floors }; }
 
@@ -3115,7 +3117,7 @@ function respawns(dt){
     const n=ents.filter(e=>e.home===b&&e.role==='guard'&&!e.dead).length;
     if(n<15) ents.push(makeHuman(b.f,CLS_KEYS[(Math.random()*4)|0],(b.cx+((Math.random()*14)|0)-7)*T,b.gy*T-29,'guard',b)); } }
 }
-function spawnPoint(){ if(player&&player.bed&&tileAt(player.bed.x,player.bed.y)===B.BED) return {x:player.bed.x*T,y:(player.bed.y+1)*T-29}; return home.claimed?{x:home.castleCx*T,y:home.gy*T-29}:{x:home.startX*T,y:home.startY*T-29}; }
+function spawnPoint(){ if(player&&player.bed&&isBedId(tileAt(player.bed.x,player.bed.y))) return {x:player.bed.x*T,y:(player.bed.y+1)*T-29}; return home.claimed?{x:home.castleCx*T,y:home.gy*T-29}:{x:home.startX*T,y:home.startY*T-29}; }
 function recallHome(){ const p=player; disembark(); p.riding=false; p.wasRiding=false; puff(cxOf(p),cyOf(p),'#b066ff',16,120); const sp=spawnPoint(); p.x=sp.x; p.y=sp.y; p.vx=p.vy=0;
   for(const e of p.party) if(e&&!e.dead&&!e.leftBehind){ e.x=p.x+(Math.random()*40-20); e.y=p.y; e.vx=e.vy=0; e.aboard=false; }
   puff(cxOf(p),cyOf(p),'#b066ff',16,120); toast(home.claimed?'Teleported home':'Teleported to where you started',2); }
@@ -3504,7 +3506,7 @@ function assignCrew(m){ if(m.crew){ m.crew.crewing=null; m.crew.x=m.x; m.crew.y=
 let plantT=1;
 function growPlants(dt){ plantT-=dt; if(plantT>0||!player) return; plantT=1; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); const R=Math.random;
   for(let k=0;k<120;k++){ const x=px+Math.floor(R()*120-60), y=py+Math.floor(R()*60-30); if(x<4||x>=W-4||y<skyOff+2||y>=H-2) continue; const id=world[y*W+x];
-    if(isSapling(id)&&R()<0.02&&[B.GRASS,B.DIRT,B.FARMLAND,B.SAND,B.SNOW].includes(tileAt(x,y+1))){ world[y*W+x]=0; growSapling(x,y+1,R()<0.1?2:1,R,id); refreshArea(x-9,x+10,y-30,y+1); addFloat(x*T+8,y*T,'a tree grew','#b8f5a0'); }
+    if(isSapling(id)&&R()<0.02&&sapSoil(id,tileAt(x,y+1))){ world[y*W+x]=0; growSapling(x,y+1,R()<0.1?2:1,R,id); refreshArea(x-9,x+10,y-30,y+1); addFloat(x*T+8,y*T,'a tree grew','#b8f5a0'); }
     else if(id===B.BERRY_BUSH&&R()<0.06) setTile(x,y,B.BERRY_RIPE);
     else if(growCrops(x,y,id,R)){ }
     else if(isSapling(id)&&tileAt(x,y+1)===B.FARMLAND&&R()<0.1){ world[y*W+x]=0; growSapling(x,y+1,1,R,id); refreshArea(x-9,x+10,y-30,y+1); }
@@ -3979,8 +3981,8 @@ function buildHutAt(cx,gy){ footing(cx-4,cx+4,gy); const P=B.PLANK;
   for(const x of [cx-3,cx+3]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); } wset(cx-1,gy-4,B.TORCH); return [{x:cx-1,gy}]; }
 function buildWallAt(cx,gy){ footing(cx-3,cx+3,gy); for(let x=cx-3;x<=cx+3;x++) for(let y=gy-4;y<gy;y++) wset(x,y,B.STONE_BLOCK); wset(cx-3,gy-5,B.STONE_BLOCK); wset(cx+3,gy-5,B.STONE_BLOCK);
   return [{x:cx-2,gy:gy-4},{x:cx+2,gy:gy-4}]; }
-function buildTowerAt(cx,gy){ const old=surf[cx]; surf[cx]=gy; const tw=buildWatchtower(cx,B.STONE_BLOCK,15,player&&cxOf(player)/T<cx?-1:1,true); surf[cx]=old;
-  for(const x of [cx-3,cx+3]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); for(const y of [gy-3,gy-4,gy-5]) wset(x,y,B.GLASS); for(const f of tw.floors) for(const y of [f-2,f-3,f-4]) wset(x,y,B.GLASS); }
+function buildTowerAt(cx,gy){ const old=surf[cx]; surf[cx]=gy; const tw=buildWatchtower(cx,B.STONE_BLOCK,13,player&&cxOf(player)/T<cx?-1:1,true); surf[cx]=old;
+  for(const x of [cx-3,cx+3]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); }
   for(const f of tw.floors){ if(BLOCKS[tileAt(cx+1,f)].solid) wset(cx+1,f,B.PLATFORM); } wset(cx,tw.top,B.PLATFORM); if(BLOCKS[tileAt(cx,tw.top-1)].solid) wset(cx,tw.top-1,0);
   return towerPosts(tw).slice(0,4); }
 function buildKeepAt(cx,gy){ const L=cx-8, R=cx+8, S=B.STONE_BLOCK; footing(L,R,gy);
@@ -3988,7 +3990,7 @@ function buildKeepAt(cx,gy){ const L=cx-8, R=cx+8, S=B.STONE_BLOCK; footing(L,R,
   for(let x=L;x<=R;x++){ wset(x,gy-11,S); wset(x,gy-6,(x===cx+5||x===cx+6)?B.PLATFORM:S); } wset(L,gy-12,S); wset(R,gy-12,S);
   wset(cx-1,gy-12,B.PORTAL); wset(cx-1,gy-13,B.PORTAL);
   wset(cx+5,gy-11,B.PLATFORM); wset(cx+6,gy-11,B.PLATFORM);
-  for(const y of [gy-3,gy-4,gy-5,gy-7,gy-8,gy-9]){ wset(L,y,B.GLASS); wset(R,y,B.GLASS); }
+  for(const y of [gy-7,gy-8]){ wset(L,y,B.ARROW_SLIT); wset(R,y,B.ARROW_SLIT); }   // slits upstairs; solid wall over the doors
   for(const dx of [L,R]){ wset(dx,gy-1,B.DOOR); wset(dx,gy-2,B.DOOR_T); } wset(L+2,gy-4,B.TORCH); wset(R-2,gy-4,B.TORCH); wset(L+2,gy-9,B.TORCH); wset(R-2,gy-9,B.TORCH); wset(cx,gy-4,B.TORCH); wset(cx,gy-9,B.TORCH);
   return [{x:L+1,gy},{x:R-1,gy},{x:L+1,gy:gy-6},{x:R-1,gy:gy-6},{x:L+1,gy:gy-11},{x:R-1,gy:gy-11}]; }
 function placeBuilding(bp,cx,gy){ let posts; const run=()=>{ posts=bp.id==='pen'?buildPenAt(cx,gy):bp.id==='hut'?buildHutAt(cx,gy):bp.id==='wall'?buildWallAt(cx,gy):bp.id==='tower'?buildTowerAt(cx,gy):buildKeepAt(cx,gy); for(let x=cx-bp.w;x<=cx+bp.w;x++) if(x>=0&&x<W) updateSkyTop(x); };
@@ -5081,7 +5083,7 @@ $('#shopClose').addEventListener('click',closeShop);
 const tameCache=new WeakMap(), COOK_T={cook:true};
 const machCache=new WeakMap(), OP_OFF={opoff:true};
 const bedCache={};
-function nearestBed(){ const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); for(let y=py-2;y<=py+2;y++) for(let x=px-2;x<=px+2;x++) if(tileAt(x,y)===B.BED) return {x,y}; return null; }
+function nearestBed(){ const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); for(let y=py-2;y<=py+2;y++) for(let x=px-2;x<=px+2;x++) if(isBedId(tileAt(x,y))) return {x,y}; return null; }
 const PORTAL_T={portal:true};
 function interact(v){ if(!v) return; if(v.give){ const o=giveOptions(); if(o.length===1) o[0].go(); else if(o.length) showPickList(o); talkTarget=undefined; return; } if(v.portal){ openMap(true); talkTarget=undefined; return; } if(v.bed){ sleepIn(v.bed.x,v.bed.y); talkTarget=undefined; return; } if(v===OP_OFF||v.opoff){ toggleOperate(); talkTarget=undefined; return; } if(v.machine){ toggleOperate(v.machine); talkTarget=undefined; return; } if(v.tame) tryTame(v.tame); else if(v.cook){ craftCat='cook'; openCraft(); } else if(v.chest) openChest(v.x,v.y); else openShop(v); talkTarget=undefined; }
 $('#btnTalk').addEventListener('click',()=>{ const opts=interactOptions(); if(opts.length>1) showPickList(opts); else if(opts.length===1&&(opts[0].feed||opts[0].direct)) opts[0].go(); else interact(talkTarget); });
@@ -8694,7 +8696,7 @@ const SAP={ oak:B.SAPLING, spruce:1090, birch:1091, palm:1092, jungle:1093, dark
 const SAP_KIND=Object.fromEntries(Object.entries(SAP).map(([k,v])=>[v,k]));
 function isSapling(id){ return id!=null&&SAP_KIND[id]!=null; }
 function sapFor(logId){ for(const [k,w] of Object.entries(WOODS)) if(w.log===logId) return SAP[k]; return B.SAPLING; }
-function growSapling(x,h,sz,R,id){ const k=SAP_KIND[id]||'oak'; if(k==='palm') return growPalm(x,h,R); return growTree(x,h,sz,R,k); }
+function growSapling(x,h,sz,R,id){ const k=SAP_KIND[id]||'oak'; if(k==='palm') return growPalm(x,h,R); if(k==='pine') return growPine(x,h,R); if(k.startsWith('spore_')) return giantMushroom(x,h-1,SPORE_BI[k],R); return growTree(x,h,sz,R,k); }
 for(const [k,id] of Object.entries(SAP)){ if(id===B.SAPLING) continue; const w=WOODS[k], n=k==='dark'?'Dark oak':k[0].toUpperCase()+k.slice(1);
   defB(id,Object.assign({},BLOCKS[B.SAPLING],{name:n+' sapling',col:w.leafCol[0],drop:id}));
   ITEMS[id]=Object.assign({},ITEMS[B.SAPLING]||{kind:'block'},{name:n+' sapling',desc:`Plant it on grass or dirt and it grows into ${k==='dark'?'a dark oak':(/^[aeiou]/.test(k)?'an ':'a ')+k} tree`});
@@ -10068,7 +10070,7 @@ function mpWorkersOut(){ if(typeof MP==='undefined'||!MP.host) return 0; return 
 function lodgeGrowTick(){ try{ if(!world||!home||state==='title'||(typeof MP!=='undefined'&&MP.guest)) return; const R=Math.random, near=x=>player&&Math.abs(cxOf(player)/T-x)<62;
     const F=home.farmhouse; if(F&&F.field&&!near((F.field[0]+F.field[1])/2)) facRun(()=>{ for(let x=F.field[0];x<=F.field[1];x++){ if(R()<1/60) growCrops(x,F.gy-1,tileAt(x,F.gy-1),R); } });
     const L=home.lodge; if(L&&!near(L.x0)) facRun(()=>{ for(let x=L.x0-45;x<=L.x1+45;x++){ if(x<4||x>=W-4||R()>=1/60) continue; const y=surf[x]-1, id=tileAt(x,y);
-        if(isSapling(id)&&R()<0.02&&[B.GRASS,B.DIRT].includes(tileAt(x,y+1))){ world[y*W+x]=0; growSapling(x,y+1,R()<0.1?2:1,R,id); refreshArea(x-9,x+10,y-30,y+1); } } }); }catch(e){ console.warn(e); } }
+        if(isSapling(id)&&R()<0.02&&sapSoil(id,tileAt(x,y+1))){ world[y*W+x]=0; growSapling(x,y+1,R()<0.1?2:1,R,id); refreshArea(x-9,x+10,y-30,y+1); } } }); }catch(e){ console.warn(e); } }
 setInterval(lodgeGrowTick,1000);
 // ===================== animals: their own meats, pigs, bird cages, pens and gatherers =====================
 // Meats: boars give boar meat, beavers beaver meat, hawks, eagles, owls and penguins their own meat; each cooks at a
@@ -10543,6 +10545,71 @@ function skinAll(force){ if(!home||!home.claimed||isGuest()) return []; home.ski
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.claimed&&!isGuest()){ const first=!home.skinV; home.skinV=1; const d=skinAll(); if(first&&d.length) toast(`Your buildings show your village's size: wood for a hamlet, stone for a town, iron for a city.`,5); } }catch(e){ console.warn(e); } return r; }; }
 // a claimed castle takes the look of the village right away; buildings added later catch up within a few seconds
 setInterval(()=>{ try{ if(state==='play'&&home&&home.claimed&&!isGuest()) skinAll(); }catch(e){} },4000);
+// ===================== window walls, furniture in every wood, saplings for every tree =====================
+// Window wall: a back wall item (like the plank or stone walls) of framed glass panes. The sky shows through it and
+// daylight comes in, so a room with window walls is lit like the open air (openAirMask treats back wall WINDOW_BG as open).
+// Furniture: every piece below comes in oak (made from any planks) and in each other wood (made from that wood's planks):
+// `FURN_BASE[variant] = base piece`, so a spruce bed is still a bed and a birch workbench still a workbench.
+// Saplings: a pine sapling (the snowy pine) and four mushroom spores (blue, green, red, orange giant mushrooms) join
+// the oak, spruce, birch, palm, jungle and dark oak saplings. Spores grow on stone, moss and dirt as well as grass.
+const freeIdFrom=(()=>{ let id=1130; return ()=>{ while((BLOCKS[id]&&BLOCKS[id].name)||ITEMS[id]) id++; return id++; }; })();
+const woodName=k=>k==='dark'?'Dark oak':k[0].toUpperCase()+k.slice(1);
+
+// ---- window wall ----
+const WINDOW_BG=16; const WINDOW_WALL=(()=>{ let id=760; while(ITEMS[id]||(BLOCKS[id]&&BLOCKS[id].name)) id++; return id; })();
+WALLS[WINDOW_WALL]=WINDOW_BG; ITEMS[WINDOW_WALL]={name:'Window wall',kind:'wall',desc:'A back wall of glass panes. The sky shows through it and daylight comes in'};
+RECIPES.push({ out:WINDOW_WALL, n:4, need:[[B.GLASS,1],[480,1]], st:B.WORKBENCH, cat:'build' });
+BGTEX[WINDOW_BG]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.fillStyle='rgba(170,215,240,0.28)'; g.fillRect(0,0,16,16);
+  g.fillStyle='rgba(255,255,255,0.35)'; g.fillRect(2,2,2,5); g.fillRect(10,9,2,3); g.fillStyle='#6b4a2a'; g.fillRect(0,0,16,1); g.fillRect(0,15,16,1); g.fillRect(0,0,1,16); g.fillRect(15,0,1,16); g.fillRect(7,0,2,16); g.fillRect(0,7,16,2); return c; })();
+// daylight passes through window walls
+{ const _oa=openAirMask; openAirMask=function(...a){ const keep=[]; const [tx0,tx1,ty0,ty1]=a, m=14;
+    for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++) for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){ const i=y*W+x; if(bg[i]===WINDOW_BG){ keep.push(i); bg[i]=0; } }
+    try{ return _oa(...a); } finally{ for(const i of keep) bg[i]=WINDOW_BG; } }; }
+
+// ---- furniture in every wood ----
+const FURN=[B.TABLE,B.CHAIR,B.BENCH,B.STOOL,B.BED,B.BOOKSHELF,B.CUPBOARD,B.DESK,B.BARREL,B.WORKBENCH].filter(v=>v!=null&&BLOCKS[v]);
+const FURN_BASE={}, FURN_OF={};   // FURN_OF[base][wood] = variant id
+const hexRgb2=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+function tintWood(src,col){ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); const d=g.getImageData(0,0,16,16), p=d.data, [tr,tg,tb]=hexRgb2(col), base=0.6*183+0.3*131+0.1*74;
+  for(let i=0;i<p.length;i+=4){ const r=p[i],gg=p[i+1],b=p[i+2]; if(!p[i+3]) continue; const warm=r>gg&&gg>=b-6&&r-b>28&&r<235;   // brown wood pixels only
+    if(!warm) continue; const k=(0.6*r+0.3*gg+0.1*b)/base; p[i]=Math.min(255,tr*k); p[i+1]=Math.min(255,tg*k); p[i+2]=Math.min(255,tb*k); }
+  g.putImageData(d,0,0); return c; }
+for(const base of FURN){ FURN_OF[base]={oak:base}; const bn=BLOCKS[base].name, rc=RECIPES.filter(r=>r.out===base);
+  for(const [k,w] of Object.entries(WOODS)){ if(k==='oak') continue; const id=freeIdFrom(), nm=`${woodName(k)} ${bn.toLowerCase()}`;
+    defB(id,Object.assign({},BLOCKS[base],{name:nm,drop:id,col:w.plankCol[0]})); ITEMS[id]=Object.assign({},ITEMS[base]||{kind:'block'},{name:nm,kind:'block',desc:`${(ITEMS[base]&&ITEMS[base].desc)||bn} Made of ${woodName(k).toLowerCase()} wood.`});
+    FURN_BASE[id]=base; FURN_OF[base][k]=id; try{ TEX[id]=tintWood(TEX[base],w.plankCol[0]); }catch(e){ TEX[id]=TEX[base]; }
+    for(const r of rc) RECIPES.push(Object.assign({},r,{out:id,need:r.need.map(([nid,n])=>[nid===B.PLANK?w.plank:nid,n])}));
+    try{ WOODY.add(id); }catch(e){} } }
+const furnBase=id=>FURN_BASE[id]||id;
+function isBedId(id){ return id===B.BED||FURN_BASE[id]===B.BED; }
+// a variant works like its oak piece: stations, beds, sleeping
+{ const _ns=nearStation; nearStation=function(id){ if(_ns(id)) return true; if(!FURN_OF[id]||!player) return false; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T);
+    for(let y=py-5;y<=py+5;y++) for(let x=px-6;x<=px+6;x++) if(FURN_BASE[tileAt(x,y)]===id) return true; return false; }; }
+
+// ---- saplings for every tree ----
+const PINE_SAP=freeIdFrom(); SAP_KIND[PINE_SAP]='pine';
+defB(PINE_SAP,Object.assign({},BLOCKS[B.SAPLING],{name:'Pine sapling',col:'#2e5a44',drop:PINE_SAP}));
+ITEMS[PINE_SAP]=Object.assign({},ITEMS[B.SAPLING]||{kind:'block'},{name:'Pine sapling',kind:'block',desc:'Plant it on snow, grass or dirt and it grows into a tall snowy pine'});
+customIcon(PINE_SAP,(rect)=>{ rect(7,9,2,7,'#4a3020'); rect(6,7,4,2,'#2e5a44'); rect(5,9,6,2,'#3a6a50'); rect(7,4,2,3,'#244a38'); rect(4,11,8,2,'#2e5a44'); rect(7,4,1,1,'#f4f8ff'); rect(5,9,1,1,'#f4f8ff'); });
+TEX[PINE_SAP]=ICON_TEX[PINE_SAP];
+RECIPES.push({ out:PINE_SAP, n:1, need:[[SAP.spruce,1],[B.SNOW,2]], cat:'build' });
+const SPORES={}, SPORE_BI={};
+for(const [k,cap,bi,col] of [['blue',B.CAP_B,'cave','#4a7aff'],['green',B.CAP_G,'moss','#4ac04a'],['red',B.CAP_R,'gem','#e04a4a'],['orange',B.CAP_O,'magma','#ff8a2a']]){
+  if(cap==null) continue; const id=freeIdFrom(), nm=`${k[0].toUpperCase()+k.slice(1)} mushroom spore`; SPORES[cap]=id; SAP_KIND[id]='spore_'+k; SPORE_BI['spore_'+k]=bi;
+  defB(id,Object.assign({},BLOCKS[B.SAPLING],{name:nm,col,drop:id}));
+  ITEMS[id]=Object.assign({},ITEMS[B.SAPLING]||{kind:'block'},{name:nm,kind:'block',desc:`Plant it on stone, moss, dirt or grass and it grows into a giant ${k} mushroom`});
+  customIcon(id,(rect)=>{ rect(7,10,2,6,'#e8dcc0'); rect(4,7,8,3,col); rect(5,6,6,1,col); rect(5,8,1,1,'#ffffff'); rect(9,7,1,1,'#ffffff'); });
+  TEX[id]=ICON_TEX[id]; }
+for(const id of [PINE_SAP,...Object.values(SPORES)]) try{ NEEDS_GROUND.add(id); }catch(e){}
+function sapSoil(id,below){ const k=SAP_KIND[id]||''; if(k.startsWith('spore_')) return [B.STONE,B.MOSS,B.DIRT,B.GRASS,B.DEEPSTONE,B.MAGMA_ROCK].includes(below); return [B.GRASS,B.DIRT,B.FARMLAND,B.SAND,B.SNOW].includes(below); }
+// breaking a giant mushroom's cap sometimes gives its spore
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const id=tileAt(x,y), sp=SPORES[id]; const r=_bt(x,y,...a); try{ if(sp&&tileAt(x,y)!==id&&Math.random()<0.25) give(sp,1); }catch(e){} return r; }; }
+// the herbalist sells every sapling and spore
+try{ for(const id of [...Object.values(SAP),PINE_SAP,...Object.values(SPORES)]) if(!SHOPS.herbalist.stock.some(s=>s[0]===id)) SHOPS.herbalist.stock.push([id,1,id===B.SAPLING?6:SAP_KIND[id].startsWith('spore')?14:10]); }catch(e){ console.warn(e); }
+// ---- any planks, any wood: every plank sells for the same, and so does every log ----
+// (the shipwright sells 20 oak planks for 30 coins, so a coin a plank never turns a profit)
+const PLANK_IDS=new Set(Object.values(WOODS).map(w=>w.plank));
+{ const _sp=sellPrice; sellPrice=function(id,...a){ if(PLANK_IDS.has(+id)) return 1; if(LOG_IDS.has(+id)) return 2; return _sp(id,...a); }; }
 })();
 </script>
 </body>
