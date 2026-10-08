@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791433550"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791433550"><link rel="manifest" href="manifest.webmanifest?v=1791433550"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791435512"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791435512"><link rel="manifest" href="manifest.webmanifest?v=1791435512"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.29</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.30</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.29</h3>
+    <h3>New in Beta 0.9.30</h3>
+    <p>Trading with friends: stand within 5 blocks of a friend and press T (on a phone, the use button, then Trade with). A trade window opens for both of you: tap items in your bag to put them on the table, add coins, and both press Accept to swap. Changing an offer takes back both Accepts, and F no longer hands items over. Raids on your village are gentler: none before day 5, then a small chance each morning of 1 to 3 soldiers, growing by 1 or 2 every 5 days. Raiders land on open ground outside your village, never on a roof or inside your walls. Blocks go down over animals (they step aside), and tapping an old block while holding a different block swaps them, with the old one going into your bag. Chests have a Stack button that joins stacks of the same item. In shared worlds, enemies are just as active around every friend as around the host, and castle guards wake for whoever walks in. Hiring a woodcutter or farmer no longer freezes the game.</p>
+    <h3>Beta 0.9.29</h3>
     <p>Split stacks: select a stack in the bag (or in a chest on a phone) and a Move slider appears with 1, Half and All; tapping another slot, dragging or Drop then moves only that many. On a computer, right-click a stack to pick up half, or right-click in a chest to send half across. Charcoal: burn a log of any wood in a furnace. Torches take a stick and a charcoal (coal works too) for four. In shared worlds everyone sees trees fall, a friend's logs pop out at the stump for everyone to see, friends who join see the host's explored map, and a player who leaves disappears with a "left the game" message.</p>
     <h3>Beta 0.9.28</h3>
     <p>Worlds can have names. Type one on the New world screen (or leave it blank), rename a world any time from Continue with the Rename button, and see the name in the save list, the pause menu and the multiplayer Recent list.</p>
@@ -488,7 +490,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Your bag holds the hotbar plus 6 rows of 9, and chests hold 9 rows of 9. Drop an item by dragging it out of the bag window or onto Drop. The Gear locker in your bag keeps your tools and weapons without using bag space. Craft All makes as many as you can; hold a Buy, Sell or Craft button to repeat it. Every villager buys the goods of their trade. Chests can sit underwater. Furnaces, workbenches and chests show their full size before you place them. Torches can replace grass and flowers (not trees), and give no light underwater.</p>
     <p>The taming whistle is now a permanent upgrade (80 coins). With it, any class tames animals for 1 food (small animals), 2 (medium) or 3 (big ones). Beastmasters tame without food. A row of 4 or more fences on the ground makes a pen: walk tamed animals in and choose to let them stay, or give an animal the Farm job and it settles in by itself. Penned animals produce goods each morning. Fences are drawn in front of you.</p>
     <p>Mythril ore forms inside the sky realm's clouds once the Sky Ranger falls, and adamantite in the magma realm once both realm bosses fall; chests no longer hold those bars. Bosses enrage at half health. Enemy fighters flank you, their archers pick off the weakest target, and wounded commanders call their soldiers. Enemy factions build only on open ground, away from buildings. Capture an enemy outpost or keep by clearing its guards. Conquering a castle frees its prisoner. Your shopkeepers offer tasks. Slaying the dragon leads to an ending and new game plus.</p>
-    <p>Multiplayer: friends who join get the host's real world, see your portals and boats, can give each other items within 5 blocks (F, or Give in the bag), share chest contents, and can jump to each other by tapping a friend on the map or the arrow pointing at them. They come back where they left off.</p>
+    <p>Multiplayer: friends who join get the host's real world, see your portals and boats, can trade within 5 blocks (T opens a trade window), share chest contents, and can jump to each other by tapping a friend on the map or the arrow pointing at them. They come back where they left off.</p>
     <h3>Islands and the sea</h3>
     <p>Each faction lives on its own island across a wide sea full of sharks, jellyfish, piranhas and eels. Swim if you dare, bridge across with blocks, or build a boat. A raft carries only you and sits low enough for sharks to bite. A canoe is fast and safe. Rowboats, longships and warships carry 2, 5 and 9 soldiers. Hold a boat to pick it, otherwise your biggest one is used. Soldiers who don't fit wait on shore.</p>
     <h3>Starting out</h3>
@@ -560,7 +562,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.29</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.30</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -820,7 +822,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.29</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.30</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -839,7 +841,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.29', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.30', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3082,7 +3084,7 @@ function trySea(){
   return true; }
 function respawns(dt){
   for(const b of bases){ b.rt-=dt; if(b.rt<=0){ b.rt=40;
-    if(conquered[b.f]||Math.abs(cxOf(player)/T-b.cx)<80) continue;
+    if(conquered[b.f]||anyPlayerNear(b.cx*T,80)) continue;
     const n=ents.filter(e=>e.home===b&&e.role==='guard'&&!e.dead).length;
     if(n<15) ents.push(makeHuman(b.f,CLS_KEYS[(Math.random()*4)|0],(b.cx+((Math.random()*14)|0)-7)*T,b.gy*T-29,'guard',b)); } }
 }
@@ -5648,7 +5650,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
@@ -9471,6 +9473,193 @@ customIcon(CHARCOAL,(rect,px)=>{ rect(3,6,10,7,'#2a2428'); rect(4,5,8,1,'#2a2428
 WOOD_SETS[CHARCOAL]=()=>[CHARCOAL,B.COAL];   // either one does for a recipe that asks for charcoal
 RECIPES.push({ out:CHARCOAL, n:1, need:[[B.LOG,1]], st:B.FURNACE });
 { const t=RECIPES.find(r=>r.out===B.TORCH); if(t){ t.need=[[480,1],[CHARCOAL,1]]; t.n=4; } }
+// ===================== gentler raids on your village; raiders arrive on open ground =====================
+// Attacks on your village follow a schedule instead of coming whenever a faction has troops to spare:
+// from day 5 there is a small chance each morning (RAID_CHANCE) that one enemy faction sends a raid of 1 to 3 soldiers,
+// and every 5 days after that raids grow by 1 or 2 soldiers (home.raidAdd). Factions still go to war to win back
+// castles you conquered. Raiders never land on a roof or inside your walls: they are put down on open ground outside.
+const RAID_START=5, RAID_CHANCE=0.2, RAID_MAX=24;
+const _facWarAuto=facWar;
+facWar=function(b,size){ const won=bases.filter(o=>conquered[o.f]);
+  if(size==null) return won.length?_facWarAuto(b):false;   // on their own, factions only march to retake a castle
+  if(!home||!home.claimed) return false; const tgt={x:Math.floor((home.x0+home.x1)/2),gy:home.gy};
+  let party=spareTroops(b,size); const need=size-party.length;
+  for(let k=0;k<need;k++){ const e=makeHuman(b.f,CLS_KEYS[(Math.random()*4)|0],(b.cx+((Math.random()*6)|0)-3)*T,(b.gy-1)*T-30,'guard',b); ents.push(e); party.push(e); }
+  if(!party.length) return false;
+  party.forEach(e=>{ e.home={cx:tgt.x,gy:tgt.gy,x0:tgt.x-10,x1:tgt.x+10}; e.warParty=b; e.warTarget=tgt; e.charge=true; e.fromBase=b; });
+  if(size>=8){ const w=ents.find(o=>!o.dead&&o.warlord&&o.cmdBase===b); if(w&&Math.abs(cxOf(player)/T-cxOf(w)/T)>40){ w.home={cx:tgt.x,gy:tgt.gy,x0:tgt.x-8,x1:tgt.x+8,f:b.f}; w.warParty=b; w.warTarget=tgt; w.charge=true; party.push(w); cmdOf(b).task='leading an attack'; } }
+  const sea=islandIdx(b.cx)!==islandIdx(tgt.x); startVoyage(party,b,tgt,'war'); tgt.since=0; (b.wars=b.wars||[]).push(tgt);
+  facLog(b,`The ${FNAME[b.f].toLowerCase()} army is marching on your village${sea?' by sea':''}! (${party.length} soldier${party.length===1?'':'s'})`,true); return true; };
+function raidSize(){ return Math.min(RAID_MAX,1+((Math.random()*3)|0)+(home.raidAdd||0)); }
+function raidMorning(){ if(!home||!home.claimed||!settings.raids||dayCount<RAID_START||(typeof MP!=='undefined'&&MP.guest)) return;
+  if(dayCount>RAID_START&&(dayCount-RAID_START)%5===0&&home.raidGrowDay!==dayCount){ home.raidGrowDay=dayCount; home.raidAdd=(home.raidAdd||0)+1+(Math.random()<0.5?1:0); }
+  if(Math.random()>=RAID_CHANCE) return; const live=bases.filter(b=>!conquered[b.f]&&b.f!==player.team); if(!live.length) return;
+  facWar(live[(Math.random()*live.length)|0],raidSize()); }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ raidMorning(); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- raiders are put down on open ground, never on a roof or inside your village ----
+function builtOver(c){ c=clamp(c|0,0,W-1); return skyTop[c]<surf[c]-1; }
+function insideVillage(c){ if(home&&home.claimed&&c>=home.x0-2&&c<=home.x1+2) return true; return bases.some(b=>conquered[b.f]&&c>=b.x0-2&&c<=b.x1+2); }
+{ const _pg=placeOnGround; placeOnGround=function(e,x,...a){ try{ if(e&&(e.warParty||e.scout)&&!e.ghost){ let c=Math.round(x);
+      if(builtOver(c)||insideVillage(c)){ const back=Math.sign(cxOf(e)/T-c)||1; let found=null;
+        for(let k=1;k<=80;k++){ const cc=c+back*k; if(cc<3||cc>=W-3) break; if(!builtOver(cc)&&!insideVillage(cc)&&!deepSea(cc)){ found=cc; break; } }
+        if(found!=null) x=found; } } }catch(err){} return _pg(e,x,...a); }; }
+// ===================== trading with friends =====================
+// In a shared world, stand within 5 blocks of a friend and press T (on phones: the use button, then "Trade with ...").
+// A trade window opens for both players: each puts items and coins on the table, both press Accept, and the goods swap.
+// Changing an offer takes back both Accepts. Items stay in your bag until the swap. Pressing F no longer hands items over.
+// Each player sends their side in presence key `td`: [partner key, offer [[id,n]...], coins, accepted sig of the partner's offer, done].
+const TRADE_MAX=12, TRADE_FIN=6000;
+let TR=null;   // {w: partner key, nm, offer:[{id,n}], coins, ok: sig of their side I accepted, done: time the swap happened}
+const tradeSig=(offer,coins)=>(offer||[]).map(o=>o[0]+'x'+o[1]).join(',')+'|'+(coins|0);
+const myTradeSig=()=>TR?tradeSig(TR.offer.map(o=>[o.id,o.n]),TR.coins):'';
+function tradePartner(){ if(!TR||typeof MP==='undefined'||!MP.on) return null; return [...MP.remote.values()].find(r=>r.key===TR.w)||null; }
+function theirSide(r){ const t=r&&Array.isArray(r.td)?r.td:null; if(!t||t[0]!==MP.myKey) return null;
+  const offer=(Array.isArray(t[1])?t[1]:[]).slice(0,TRADE_MAX).filter(o=>Array.isArray(o)&&ITEMS[o[0]]&&o[1]>0&&o[1]<=99999).map(o=>[o[0]|0,o[1]|0]);
+  return {offer,coins:Math.max(0,t[2]|0),ok:t[3]||'',done:!!t[4],sig:tradeSig(offer,Math.max(0,t[2]|0))}; }
+function mpTradeOut(){ if(!TR) return 0; if(TR.done&&performance.now()-TR.done>TRADE_FIN){ TR=null; return 0; }
+  return [TR.w,TR.offer.map(o=>[o.id,o.n]),TR.coins|0,TR.ok||'',TR.done?1:0]; }
+
+function openTrade(key){ if(typeof MP==='undefined'||!MP.on){ toast('Trading is for shared worlds. Play with a friend to trade.',2.5); return; }
+  const r=[...MP.remote.values()].find(o=>o.key===key); if(!r) return;
+  if(Math.hypot(r.tx+6-cxOf(player),r.ty+14-cyOf(player))>5*T){ toast('Stand within 5 blocks of a friend to trade',2); return; }
+  if(!TR||TR.w!==key||TR.done) TR={w:key,nm:r.nm||'Friend',offer:[],coins:0,ok:'',done:0};
+  if(state==='play') state='trade'; input.use=false; renderTrade(); show('scrTrade'); }
+function closeTrade(silent){ hide('scrTrade'); if(state==='trade') state='play'; if(TR&&!TR.done){ TR=null; if(!silent) toast('Trade closed',1.4); } invDirty=true; }
+function tradeKey(){ if(typeof MP==='undefined'||!MP.on) return;
+  if(TR&&!TR.done&&!$('#scrTrade').hidden){ closeTrade(); return; }
+  const near=nearPlayers(5); if(!near.length){ toast('Stand within 5 blocks of a friend, then press T to trade',2.5); return; }
+  const asking=near.find(r=>theirSide(r)); openTrade((asking||near[0]).key); }
+addEventListener('keydown',e=>{ if(e.repeat||!player) return; if(document.activeElement&&/INPUT|TEXTAREA/.test(document.activeElement.tagName)) return;
+  if(e.code===(settings.keys.trade||'KeyT')&&(state==='play'||state==='trade')){ e.preventDefault(); tradeKey(); }
+  else if(state==='trade'&&e.code==='Escape'){ e.preventDefault(); e.stopImmediatePropagation(); closeTrade(); } },true);
+MENU_STATES.add('trade');
+
+// ---- F (and the bag) no longer give items away; on phones the use button offers a trade instead ----
+giveOptions=function(){ if(!recentTouch()) return []; return nearPlayers(5).map(r=>({direct:true,label:`Trade with ${r.nm||'Friend'}`,go:()=>openTrade(r.key)})); };
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ for(const b of document.querySelectorAll('#invInfo [data-giveto]')) b.remove(); }catch(e){} return r; }; }
+
+// ---- the window ----
+{ const o=document.createElement('div'); o.className='overlay'; o.id='scrTrade'; o.hidden=true;
+  o.innerHTML=`<div class="panel wide"><div class="phead"><h2 id="tradeTitle">Trade</h2><div class="mapbar"><button class="xbtn" id="tradeClose">Close</button></div></div>
+    <p id="tradeStatus" class="muted"></p>
+    <div class="tradecols"><div><h3>You give</h3><div id="tradeMine" class="tradelist"></div>
+      <div class="tradecoins">Coins <input id="tradeCoins" type="number" min="0" step="1" value="0" inputmode="numeric"> <span class="muted" id="tradeHave"></span></div></div>
+      <div><h3 id="tradeTheirsH">They give</h3><div id="tradeTheirs" class="tradelist"></div><p id="tradeTheirCoins" style="color:var(--gold)"></p></div></div>
+    <div style="margin:8px 0"><button class="xbtn" id="tradeAccept">Accept</button></div>
+    <h3>Your bag <span class="muted">(tap an item to put it on the table)</span></h3><div class="gridbox" id="tradeBag"></div></div>`;
+  document.body.appendChild(o); }
+function tradeRow(id,n,mine,i){ return `<div class="traderow"><img alt="" src="${iconUrl(id)}"><span>${escapeHTML(ITEMS[id].name)} ×${n}</span>`+
+  (mine?`<button class="xbtn" data-tq="${i}" data-d="-10">−10</button><button class="xbtn" data-tq="${i}" data-d="-1">−1</button><button class="xbtn" data-tq="${i}" data-d="1">+1</button><button class="xbtn" data-tq="${i}" data-d="10">+10</button><button class="xbtn" data-tq="${i}" data-d="x">✕</button>`:'')+'</div>'; }
+function tradeFix(){ if(!TR) return; for(const o of TR.offer) o.n=Math.min(o.n,countItem(o.id)); TR.offer=TR.offer.filter(o=>o.n>0); TR.coins=Math.max(0,Math.min(TR.coins|0,player.coins|0)); }
+function renderTrade(){ if(!TR) return; tradeFix(); const r=tradePartner(), th=theirSide(r), nm=TR.nm;
+  $('#tradeTitle').textContent='Trade with '+nm; $('#tradeTheirsH').textContent=nm+' gives';
+  $('#tradeMine').innerHTML=TR.offer.length?TR.offer.map((o,i)=>tradeRow(o.id,o.n,true,i)).join(''):'<p class="muted">Nothing yet</p>';
+  $('#tradeTheirs').innerHTML=!th?'<p class="muted">Waiting for them to open the trade</p>':th.offer.length?th.offer.map(o=>tradeRow(o[0],o[1],false)).join(''):'<p class="muted">Nothing yet</p>';
+  $('#tradeTheirCoins').textContent=th&&th.coins?th.coins+' coins':'';
+  const ci=$('#tradeCoins'); if(document.activeElement!==ci) ci.value=TR.coins; $('#tradeHave').textContent=`(you have ${player.coins|0})`;
+  const iOk=!!TR.ok&&th&&TR.ok===th.sig, theyOk=!!th&&th.ok===myTradeSig();
+  $('#tradeStatus').textContent=!r?`${nm} is not here any more.`:!th?`Asking ${nm} to trade. They press T (or Trade with you on a phone) to open it.`:
+    iOk&&theyOk?'Swapping…':iOk?`You accepted. Waiting for ${nm}.`:theyOk?`${nm} accepted. Press Accept to swap.`:'Put items on the table, then both press Accept.';
+  const a=$('#tradeAccept'); a.textContent=iOk?'Take back':'Accept'; a.disabled=!th;
+  $('#tradeBag').innerHTML=player.inv.map((s,i)=>`<button class="slot${i<9?' hb':''}" data-tb="${i}" aria-label="${s?ITEMS[s.id].name+' ×'+s.n:'Empty'}">${slotHTML(s,i,false)}</button>`).join('');
+  TR._shown=(th?th.sig+th.ok:'-')+'|'+myTradeSig()+TR.ok; }
+function tradeChanged(){ if(!TR) return; TR.ok=''; renderTrade(); }
+$('#tradeBag').addEventListener('click',ev=>{ const b=ev.target.closest('[data-tb]'); if(!b||!TR||TR.done) return; const s=player.inv[+b.dataset.tb]; if(!s) return;
+  if(isUpgradeItem&&isUpgradeItem(s.id)){ toast('Tools and gear that upgrade can\'t be traded',2); return; }
+  const o=TR.offer.find(o=>o.id===s.id); if(o) o.n=countItem(s.id); else { if(TR.offer.length>=TRADE_MAX){ toast('That is as many kinds of item as one trade can hold',2); return; } TR.offer.push({id:s.id,n:countItem(s.id)}); }
+  tradeChanged(); });
+$('#tradeMine').addEventListener('click',ev=>{ const b=ev.target.closest('[data-tq]'); if(!b||!TR||TR.done) return; const o=TR.offer[+b.dataset.tq]; if(!o) return;
+  if(b.dataset.d==='x') o.n=0; else o.n=Math.max(0,Math.min(countItem(o.id),o.n+(+b.dataset.d))); tradeChanged(); });
+$('#tradeCoins').addEventListener('input',()=>{ if(!TR||TR.done) return; TR.coins=Math.max(0,Math.min(player.coins|0,(+$('#tradeCoins').value)|0)); TR.ok=''; });
+$('#tradeCoins').addEventListener('change',()=>renderTrade());
+$('#tradeAccept').addEventListener('click',()=>{ if(!TR||TR.done) return; const th=theirSide(tradePartner()); if(!th) return; tradeFix(); TR.ok=TR.ok===th.sig?'':th.sig; renderTrade(); });
+$('#tradeClose').addEventListener('click',()=>closeTrade());
+
+// ---- the swap: each player hands over their own side and takes the other, once both accepted the same two offers ----
+function tradeSwap(th){ for(const o of TR.offer) takeItem(o.id,Math.min(o.n,countItem(o.id))); if(TR.coins) player.coins=Math.max(0,player.coins-TR.coins);
+  for(const [id,n] of th.offer) obtain(id,n,true); if(th.coins) player.coins+=th.coins; TR.done=performance.now(); invDirty=true;
+  const got=th.offer.map(([id,n])=>`${n>1?n+' × ':''}${ITEMS[id].name}`).concat(th.coins?[th.coins+' coins']:[]);
+  toast(`Trade done with ${TR.nm}${got.length?': you got '+got.slice(0,3).join(', ')+(got.length>3?' and more':''):''}`,3.5); if(typeof sfx==='function') sfx('pickup');
+  hide('scrTrade'); if(state==='trade') state='play'; }
+let tradeAskSeen={};
+setInterval(()=>{ try{ if(typeof MP==='undefined'||!MP.on||!player){ if(TR) TR=null; return; }
+    // a friend asking to trade with you
+    for(const r of MP.remote.values()){ const th=theirSide(r); if(th&&!th.done&&!(TR&&TR.w===r.key)&&!tradeAskSeen[r.key]){ tradeAskSeen[r.key]=1; toast(`${r.nm||'A friend'} wants to trade. Stand close and press ${recentTouch()?'the use button':'T'}.`,4); } if(!th) delete tradeAskSeen[r.key]; }
+    if(!TR) return; if(TR.done) return; const r=tradePartner(), th=theirSide(r);
+    if(!r){ toast(`${TR.nm} left, so the trade is off`,2.5); closeTrade(true); TR=null; return; }
+    if(TR._had&&!th){ toast(`${TR.nm} closed the trade`,2.5); closeTrade(true); TR=null; return; } if(th) TR._had=true;
+    if(Math.hypot(r.tx+6-cxOf(player),r.ty+14-cyOf(player))>10*T){ toast('You walked too far away, so the trade is off',2.5); closeTrade(true); TR=null; return; }
+    if(th&&TR.ok&&TR.ok!==th.sig) TR.ok='';   // they changed their side: your Accept is taken back
+    tradeFix();
+    if(th&&TR.ok&&TR.ok===th.sig&&th.ok===myTradeSig()){ tradeSwap(th); return; }
+    if(!$('#scrTrade').hidden&&state!=='trade') state='trade';
+    if(!$('#scrTrade').hidden){ const k=(th?th.sig+th.ok:'-')+'|'+myTradeSig()+TR.ok; if(k!==TR._shown) renderTrade(); } }catch(e){ console.warn(e); } },200);
+
+{ const st=document.createElement('style'); st.textContent=`
+.tradecols{ display:grid; grid-template-columns:1fr 1fr; gap:12px; } @media (max-width:640px){ .tradecols{ grid-template-columns:1fr; } }
+.tradelist{ min-height:40px; background:var(--panel2); border:2px solid var(--edge-dim,#5b4f7c); padding:6px; }
+.traderow{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; padding:3px 0; font-size:9px; } .traderow img{ width:24px; height:24px; image-rendering:pixelated; }
+.traderow span{ flex:1 1 90px; } .traderow .xbtn{ padding:5px 7px; font-size:8px; }
+.tradecoins{ margin-top:6px; font-size:9px; } .tradecoins input{ width:90px; font-family:var(--font); font-size:11px; padding:5px; }
+#tradeAccept{ background:var(--gold); color:var(--ink); padding:10px 18px; } #tradeAccept:disabled{ opacity:.5; }`; document.head.appendChild(st); }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d) r.td=Array.isArray(d.td)?d.td:0; }catch(e){} return out; }; }
+// ===================== placing blocks: over animals, over old blocks; chest Stack =====================
+// Animals no longer stop a block going down: the block is placed and the animal steps out to the nearest open spot.
+// Tap (or click) an old block while holding a different block to swap them: the old block goes into your bag, the way
+// mining it would (your best pickaxe has to be able to mine it). Chests, doors, stations, trees and crops are left alone.
+// In a chest, Stack joins every stack of the same item into as few slots as it can.
+const PLACE_PASS=e=>e&&!e.dead&&(e.kind==='animal'||e.kind==='bird'||e.raptor);
+function bestPickPow(){ let p=0; for(const s of player.inv) if(s&&ITEMS[s.id]&&ITEMS[s.id].kind==='pick') p=Math.max(p,ITEMS[s.id].pow||0); return p; }
+function swapOK(x,y,id){ if(x<0||x>=W||y<0||y>=H) return false; const cur=world[y*W+x], b=BLOCKS[cur], it=ITEMS[id];
+  if(!cur||cur===id||!b||!b.solid||b.hard===Infinity||!it||it.kind!=='block') return false;
+  if(BIG_ST[id]||BIG_ST[cur]||DOOR_SET_OF[id]||DOOR_IDS.has(cur)||isChestId(cur)||chests[x+','+y]) return false;
+  if(TREEISH.has(cur)||LOG_IDS.has(cur)||LEAF_IDS.has(cur)||CROPS_STAGE[cur]!=null||cur===B.WORKBENCH||cur===B.FURNACE) return false;
+  if((b.minPow||0)>bestPickPow()&&rules.mode!=='creative') return false;
+  if(y>=magmaY&&cyOf(player)<magmaY*T&&rules.mode!=='creative') return false; if(y<=barrierY&&cyOf(player)>(barrierY+1)*T&&rules.mode!=='creative') return false;
+  return countItem(id)>0; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){
+    // an old block under the cursor: swap it (one per tap, so dragging along a wall never eats it)
+    if(player&&player.useEdge&&swapOK(x,y,id)){ breakTile(x,y); if(tileAt(x,y)!==0) return; }
+    // animals step aside instead of blocking the block
+    const box={x:x*T,y:y*T,w:T,h:T}, moved=[];
+    if(BLOCKS[id]&&BLOCKS[id].solid) for(const o of ents) if(PLACE_PASS(o)&&!o.aboard&&overlap(box,o)){ o.aboard=true; moved.push(o); }
+    let r; try{ r=_tp(x,y,id,...a); } finally{ for(const o of moved) o.aboard=false; }
+    if(moved.length&&isSolid(x,y)) for(const o of moved){ if(!freeSpotFor(o)){ o.y-=T*2; } o.vx=0; o.vy=0; puff(cxOf(o),cyOf(o),'#cfe8ff',4,40); }
+    return r; }; }
+
+// ---- chests: Stack ----
+function stackChest(c){ if(!c) return 0; const items=c.items, out=[], before=items.filter(Boolean).length;
+  for(const s of items){ if(!s) continue; let rest=s.n; for(const t of out){ if(rest<=0) break; if(t.id===s.id&&t.n<999){ const k=Math.min(999-t.n,rest); t.n+=k; rest-=k; } } if(rest>0) out.push({id:s.id,n:rest}); }
+  for(let i=0;i<items.length;i++) items[i]=out[i]||null; return before-out.length; }
+{ const t=$('#chestTake'); if(t){ const b=document.createElement('button'); b.className='xbtn'; b.id='chestStack'; b.textContent='Stack'; b.dataset.tip='Join stacks of the same item'; t.before(b);
+    b.addEventListener('click',()=>{ const c=chests[chestAt]; if(!c) return; const n=stackChest(c); toast(n>0?`Stacked: ${n} slot${n===1?'':'s'} freed`:'Everything is already stacked',1.6); renderChest(); }); } }
+// ===================== safety: one bad label can't stop the game =====================
+// Village workers (woodcutters and farmers) have no shop, so naming them through SHOPS threw on every frame once one stood
+// near you, and the world froze while the menus still worked. They are named by their own name now, any villager without
+// a shop gets a plain name, and an error while drawing the HUD is logged once instead of stopping the game loop.
+{ const _vn=villagerName; villagerName=function(v){ if(v&&v.vjob) return (v.name||VJOB_NAMES[v.vjob]||'Village worker');
+    if(v&&v.kind==='villager'&&v.role&&!SHOPS[v.role]&&!['portal','quarter','trainer','engineer','foreman','recruiter','herbalist','fisher','miner'].includes(v.role)) return v.name||'Villager';
+    try{ return _vn(v); }catch(e){ return (v&&v.name)||'Villager'; } }; }
+{ let said=false; const _uh=updateHUD; updateHUD=function(...a){ try{ return _uh(...a); }catch(e){ if(!said){ said=true; console.warn('HUD',e); } } }; }
+// ===================== enemies come alive around every player in a shared world =====================
+// The host runs every enemy. It already updated enemies near each friend and spawned night monsters, cave monsters, sea
+// creatures and animals around them; now the forest, frozen-island, sky knight and bird spawns follow each friend too,
+// castle rooms a friend walks into wake their guards (before, only rooms the host had entered did), a friend reaching a
+// boss's chamber wakes the boss, and enemy castles don't refill their guards while a friend is fighting there.
+function anyPlayerNear(px,tiles){ if(player&&!player.dead&&Math.abs(cxOf(player)-px)<tiles*T) return true;
+  if(typeof MP!=='undefined'&&MP.host) for(const r of MP.remote.values()) if(r.proxy&&!r.proxy.dead&&Math.abs(cxOf(r.proxy)-px)<tiles*T) return true; return false; }
+function mpWakeRooms(){ for(const r of MP.remote.values()){ const p=r.proxy; if(!p||p.dead) continue; const px=cxOf(p)/T, py=cyOf(p)/T;
+    for(const c of [sky&&sky.castle,magma&&magma.keep]){ if(!c||c.cleared) continue; if(Math.abs(px-c.cx)>160) continue; c.seen=c.seen||{};
+      castleBoxes(c).forEach(([x0,x1,y0,y1],i)=>{ if(!c.seen[i]&&px>=x0-0.2&&px<=x1+1.2&&py>=y0-0.5&&py<=y1+1.2) c.seen[i]=1; }); } } }
+{ const _ms=mpSpawnAround; mpSpawnAround=function(dt,...a){ const out=_ms(dt,...a);
+    for(const r of MP.remote.values()){ const px=r.proxy; if(!px||px.dead) continue; const t=r.timers2||{f:forestT,fr:frostT,sk:skyT,ra:raptorT};
+      const real=player, saved=[forestT,frostT,skyT,raptorT]; player=px; forestT=t.f; frostT=t.fr; skyT=t.sk; raptorT=t.ra;
+      try{ spawnForest(dt); spawnFrost(dt); spawnSkyKnights(dt); spawnRaptors(dt); }catch(e){}
+      r.timers2={f:forestT,fr:frostT,sk:skyT,ra:raptorT}; player=real; [forestT,frostT,skyT,raptorT]=saved; }
+    try{ mpWakeRooms(); }catch(e){} return out; }; }
+{ const _ic=inChamber; inChamber=function(c){ if(_ic(c)) return true; if(typeof MP==='undefined'||!MP.host||!c||!c.throne) return false;
+    for(const r of MP.remote.values()){ const p=r.proxy; if(!p||p.dead) continue; const px=cxOf(p)/T, py=cyOf(p)/T; if(px>=c.throne.x0&&px<=c.throne.x1+1&&py>=c.top&&py<=c.gy+1) return true; } return false; }; }
 })();
 </script>
 </body>
