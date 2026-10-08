@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791444933"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791444933"><link rel="manifest" href="manifest.webmanifest?v=1791444933"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791445755"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791445755"><link rel="manifest" href="manifest.webmanifest?v=1791445755"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.34</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.35</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.34</h3>
+    <h3>New in Beta 0.9.35</h3>
+    <p>Grappling hooks fire straight where you aim the moment you press X (or let go of the Hook dial), bite the first wall, ceiling or ledge in their path and pull you there; each hook reaches farther (10, 16, 24 blocks) and has its own colors. New permanent accessories: a Tackle box, Angler's earring and Lucky lure for fishing; a Cooling band, Ward amulet and Dragon scale ward against burning, frost, knockback and lava; a Sprinter's anklet and Shadow cloak to dash by double-tapping left or right; the Swift and Windrunner boots are back; and a Wayfinder stone opens the travel map anywhere with free trips. Some are sold by the Jeweler and Fisher, some are crafted, and the best drop from bosses. Beating the Goblin Beastmaster opens a portal at his war camp, and beating Grukk one in the middle of the orc island.</p>
+    <h3>Beta 0.9.34</h3>
     <p>Animals: boars give boar meat and beavers beaver meat, and hawks, eagles, owls and penguins each have their own meat, raw and cooked. Pigs live in the grasslands (pork when hunted). Birds of every kind go in a bird cage (crafted at a workbench), never a fenced pen, and lay eggs there each morning; use the cage to collect them or let a bird out. As pets, only birds gather; other animals produce or collect food in a pen: cows milk, sheep wool, pigs mushrooms and carrots, boars grass and seeds, rabbits berries and carrots. Piglets, beaver kits and fluffy chicks of hawks, eagles and owls join the other babies. Runes say exactly what they do at each level.</p>
     <h3>Beta 0.9.33</h3>
     <p>Woodcutters and farmers work like the miners. The first woodcutter builds a woodcutter's lodge beside the village, and the first farmer a farmhouse with a field. Each has a chest and a head worker: talk to the Head forester or Head farmer to open it. Woodcutters fell trees, plant saplings where they cut and when trees run short, and bring the logs to the lodge. Farmers harvest and replant ripe crops, till and sow the farmhouse field, and bring the harvest in. They work wherever you are, have their own look, and friends see them too. Boats are an upgrade like an accessory: your best boat is always with you, and you sail it as soon as you walk into water. Penned and gathering animals bring produce instead of meat (cows give milk); plant eaters never bring meat, while hawks, eagles and bears can, and gatherers bring things a quarter less often. Axes and hoes have new icons.</p>
@@ -570,7 +572,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.34</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.35</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -830,7 +832,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.34</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.35</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -849,7 +851,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.34', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.35', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -10129,6 +10131,95 @@ document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.clo
 // ---- runes say exactly what they do, from level I to V ----
 for(const [id,d] of Object.entries(ITEMS)) if(d&&d.kind==='rune'&&RUNE_FX[d.rune]){ const nm=d.name.toLowerCase();
   d.desc=`Set it in a weapon: use it while holding the weapon. At level I ${runeText(d.rune,1)}; at level V ${runeText(d.rune,5)}. Every ${nm} you add raises the level, and a different rune replaces it`; }
+// ===================== straight-shot grappling hooks, more accessories, boss portals =====================
+// Hooks: pressing the hook key (or letting go of the phone Hook dial) fires the hook straight where you aim, at once,
+// and it bites the first block in its path (a wall, a ceiling, a ledge) and pulls you there; nothing in reach and the
+// line snaps back. Each hook reaches farther (10, 16, 24 blocks) and has its own rope and claw colors.
+// Accessories (permanent, worn as soon as you get them): fishing (bite sooner, better catches, double catches), wards
+// (no burning, no frost slowing, no knockback and half lava damage), dashing (double-tap left or right), the swift
+// and windrunner boots, and a wayfinder stone (open the travel map anywhere; trips are free).
+// Portals: beating the Goblin Beastmaster leaves a portal at his war camp; beating Grukk one in the middle of the
+// orc island's surface. Both join the travel network.
+
+// ---- hooks ----
+const HOOK_COL=[null,{rope:'#c8a46a',claw:'#9aa0a8',dk:'#5a5f68'},{rope:'#dfe6ee',claw:'#f2f4f6',dk:'#8e939c'},{rope:'#39d5c9',claw:'#7af5e8',dk:'#1a8a7e'}];
+grappleUp=function(){ if(!hook||hook.phase!=='charge') return; const t=grappleTier(); if(!t){ hook=null; return; }
+  const [dx,dy]=grappleAim(), [hx,hy]=handPos(), reach=GRAPPLE_REACH[t]*T; let hit=null, lx=hx, ly=hy;
+  for(let s=4;s<=reach;s+=2){ const x=hx+dx*s, y=hy+dy*s; if(hookSolid(x,y)){ hit={x:lx,y:ly,tx:Math.floor(x/T),ty:Math.floor(y/T)}; break; } lx=x; ly=y; }
+  const end=hit||{x:hx+dx*reach,y:hy+dy*reach}, rope=[]; for(let k=0;k<ROPE_N;k++){ const f=k/(ROPE_N-1), x=hx+(end.x-hx)*f, y=hy+(end.y-hy)*f; rope.push({x,y,px:x,py:y}); }
+  if(typeof sfx==='function') sfx('swing');
+  if(hit){ hook={phase:'tight',tt:0.2,x:hit.x,y:hit.y,ax:hit.x,ay:hit.y,tx:hit.tx,ty:hit.ty,stuckT:0,lastD:1e9,len:Math.hypot(hit.x-hx,hit.y-hy),rope,reach}; if(typeof sfx==='function') sfx('hit',hit.x,hit.y); }
+  else hook={phase:'miss',x:end.x,y:end.y,t:0,rope,reach,len:reach}; };
+// the key fires at once (no wind-up); the phone dial still aims while held and fires on release
+addEventListener('keydown',e=>{ if(e.repeat||state!=='play') return; if(e.code===(settings.keys.grapple||'KeyX')&&hook&&hook.phase==='charge') grappleUp(); });
+{ const _gt=grappleTick; grappleTick=function(dt,...a){ if(hook&&hook.phase==='charge'){ hook.ch=1; return false; }
+    if(hook&&hook.phase==='miss'){ hook.t+=dt; if(hook.t>0.22){ hook=null; } return false; } return _gt(dt,...a); }; }
+drawGrapple=function(){ if(!hook||!player) return; const c=HOOK_COL[grappleTier()]||HOOK_COL[1];
+  if(hook.phase==='charge'){ const [hx,hy]=handPos(), [dx,dy]=grappleAim(); ctx.strokeStyle='rgba(255,255,255,0.25)'; ctx.setLineDash([3,3]); ctx.beginPath(); ctx.moveTo(hx,hy); ctx.lineTo(hx+dx*(hook.reach||GRAPPLE_REACH[grappleTier()]*T),hy+dy*(hook.reach||GRAPPLE_REACH[grappleTier()]*T)); ctx.stroke(); ctx.setLineDash([]); return; }
+  let ex, ey; const [hx,hy]=handPos();
+  if(hook.phase==='miss'){ const k=1-Math.min(1,hook.t/0.22); ex=hx+(hook.x-hx)*k; ey=hy+(hook.y-hy)*k; ctx.strokeStyle=c.rope; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(hx,hy); ctx.lineTo(ex,ey); ctx.stroke(); }
+  else { const r=hook.rope; if(r){ ctx.strokeStyle=c.rope; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(r[0].x,r[0].y); for(let k=1;k<r.length;k++) ctx.lineTo(r[k].x,r[k].y); ctx.stroke(); }
+    const att=hook.phase==='pull'||hook.phase==='tight'||hook.phase==='hang'; ex=att?hook.ax:hook.x; ey=att?hook.ay:hook.y; }
+  ctx.fillStyle=c.claw; ctx.fillRect(Math.round(ex)-3,Math.round(ey)-1,6,2); ctx.fillRect(Math.round(ex)-1,Math.round(ey)-3,2,5); ctx.fillStyle=c.dk; ctx.fillRect(Math.round(ex)-4,Math.round(ey)-2,1,2); ctx.fillRect(Math.round(ex)+3,Math.round(ey)-2,1,2); };
+for(const [i,id] of GRAPPLE.entries()) if(ITEMS[id]) ITEMS[id].desc=`Fires straight where you aim and pulls you to the first block it hits, up to ${GRAPPLE_REACH[i+1]} blocks away. Press X (or use the Hook dial on a phone)`;
+
+// ---- accessories ----
+const ACC=[];
+function addAcc(slot,tier,name,desc,col,src){ const id=newItem({name,kind:'acc',slot,tier,desc}); SELL[id]=Math.round((src.price||400*tier)/4); ACC.push({id,slot,tier,src});
+  customIcon(id,(rect,px)=>{ if(slot==='tackle'){ rect(3,4,10,8,col[0]); rect(3,4,10,2,col[1]); rect(7,7,2,2,'#ffcf3a'); px(12,3,'#e8e8e8'); px(13,2,'#e8e8e8'); }
+    else if(slot==='ward'){ rect(7,1,2,3,'#c8a040'); rect(4,4,8,9,col[0]); rect(5,5,6,7,col[1]); rect(7,7,2,3,'#ffffff'); }
+    else if(slot==='dash'){ rect(5,3,6,11,col[0]); rect(5,3,6,2,col[1]); for(const y of [6,9,12]) rect(1,y,3,1,col[1]); }
+    else if(slot==='travel'){ rect(3,3,10,10,col[0]); rect(4,4,8,8,col[1]); rect(7,5,2,6,'#ffffff'); rect(5,7,6,2,'#ffffff'); px(7,4,'#ffcf3a'); } });
+  if(src.shop) SHOPS[src.shop].stock.push([id,1,src.price]); if(src.need) RECIPES.push({out:id,n:1,need:src.need,st:B.WORKBENCH,cat:'gear'}); return id; }
+const ACC_IDS={
+  tackle1:addAcc('tackle',1,'Tackle box','Fish bite 20% sooner',['#3a6a8a','#5a8aaa'],{shop:'fisher',price:300}),
+  tackle2:addAcc('tackle',2,"Angler's earring",'Fish bite 35% sooner, and you keep the better of two catches',['#c8a040','#ffe066'],{need:[[I.GOLD_BAR,3],[537,2],[538,1]]}),
+  tackle3:addAcc('tackle',3,'Lucky lure','Fish bite 50% sooner, you keep the better of two catches, and one catch in five comes in double',['#c8483a','#ff8a6a'],{drop:'kraken'}),
+  ward1:addAcc('ward',1,'Cooling band','You never catch fire',['#3a8ad8','#9ad0ff'],{shop:'jeweler',price:400}),
+  ward2:addAcc('ward',2,'Ward amulet','You never catch fire or get slowed by frost',['#6a4ad8','#b8a8ff'],{need:[[I.GOLD_BAR,3],[I.SAPPHIRE,2],[I.RUBY,2]]}),
+  ward3:addAcc('ward',3,'Dragon scale ward','No burning, no frost slowing, no knockback, and lava hurts half as much',['#b0442a','#ff9a4a'],{drop:'magmaknight'}),
+  dash1:addAcc('dash',1,"Sprinter's anklet",'Double-tap left or right to dash 6 blocks (once every 1.2 seconds)',['#8a5a2e','#c8955a'],{shop:'jeweler',price:600}),
+  dash2:addAcc('dash',2,'Shadow cloak','Double-tap left or right to dash 9 blocks, untouchable while dashing (once every 0.7 seconds)',['#2a2238','#6a5a8a'],{drop:'goblin'}),
+  travel1:addAcc('travel',1,'Wayfinder stone','Open the travel map anywhere (press M) and travel to any portal for free',['#2a6a5a','#4ac8a8'],{need:[[I.GOLD_BAR,2],[I.MANA_CRYSTAL,1],[I.EMERALD,2]]}) };
+// the swift and windrunner boots come back: one sold, one crafted
+SHOPS.jeweler.stock.push([I.SWIFT_BOOTS,1,350]); RECIPES.push({out:I.WIND_BOOTS,n:1,need:[[I.GOLD_BAR,4],[483,4],[I.EMERALD,2]],st:B.WORKBENCH,cat:'gear'});
+const accTier=slot=>(player&&player.gear&&player.gear[slot])||0;
+// fishing
+{ const _cf=charmFx; charmFx=function(k){ const v=_cf(k); return k==='fish'?v+[0,0.2,0.35,0.5][accTier('tackle')]:v; }; }
+{ const _rc=rollCatch; rollCatch=function(...a){ let id=_rc(...a); const t=accTier('tackle'); if(t>=2){ const b=_rc(...a); if((SELL[b]||0)>(SELL[id]||0)) id=b; }
+    if(t>=3&&Math.random()<0.2&&ITEMS[id]&&!ITEMS[id].junk) setTimeout(()=>{ try{ give(id,1); toast(`Double catch: another ${ITEMS[id].name.toLowerCase()}!`,2); }catch(e){} },400); return id; }; }
+// wards
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player, w=accTier('ward'); if(p){ if(w>=1) p.burnT=0; if(w>=2) p.slowT=0; } const r=_up(dt,...a); if(p){ if(w>=1) p.burnT=0; if(w>=2) p.slowT=0; } return r; }; }
+{ const _dm=damage; damage=function(t,amt,src,kb,...a){ if(t&&t===player){ const w=accTier('ward'); if(w>=3){ kb=0; if(!src&&inLava(player)) amt*=0.5; } } return _dm(t,amt,src,kb,...a); }; }
+// dashing: double-tap a direction
+let dashState={prev:0,lastDir:0,lastT:-9,cd:0,t:0,dir:0};
+function moveDir(){ let d=(input.right?1:0)-(input.left?1:0); if(!d&&typeof stick!=='undefined'&&stick.l&&stick.l.on&&Math.abs(stick.l.x)>0.55) d=Math.sign(stick.l.x); return d; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player, t=accTier('dash'), now=performance.now()/1000, D=dashState; D.cd-=dt;
+    const d=p&&!p.dead&&state==='play'?moveDir():0;
+    if(t&&d&&!D.prev){ if(d===D.lastDir&&now-D.lastT<0.28&&D.cd<=0&&!p.riding&&!p.climb){ D.t=0.18; D.dir=d; D.cd=t>=2?0.7:1.2; if(t>=2) p.iframes=Math.max(p.iframes||0,0.3); puff(cxOf(p),cyOf(p),'#e8e4d8',8,80); if(typeof sfx==='function') sfx('swing'); D.lastT=-9; } else { D.lastDir=d; D.lastT=now; } }
+    D.prev=d; const r=_up(dt,...a);
+    if(D.t>0&&p&&!p.dead){ D.t-=dt; const dist=(t>=2?9:6)*T; p.vx=D.dir*dist/0.18; const vy=p.vy; p.vy=Math.min(p.vy,0); physics(p,dt); p.vy=Math.min(vy,40); p.vx=0; p.facing=D.dir; if(Math.random()<0.6) parts.push({x:cxOf(p)-D.dir*6,y:cyOf(p)+Math.random()*8-4,vx:-D.dir*40,vy:0,life:0.25,col:t>=2?'#6a5a8a':'#e8e4d8',sz:2}); }
+    return r; }; }
+// travel anywhere for free with the wayfinder stone
+{ const _om=openMap; openMap=function(fromPortal,...a){ return _om(fromPortal||accTier('travel')>=1,...a); }; }
+{ const _pl=portalList; portalList=function(...a){ const L=_pl(...a); if(accTier('travel')>=1) for(const p of L) p.fee=0; return L; }; }
+
+// ---- boss drops for the strongest accessories ----
+function dropAcc(id,e){ if(!player||(player.gear&&player.gear[ITEMS[id].slot]>=ITEMS[id].tier)) return; spawnDrop(cxOf(e),cyOf(e),id,1); }
+{ const _k=kill; kill=function(e,src,...a){ const was=e&&!e.dead&&!e.ghost; const key=was&&(e.mtype==='goblin_chief'&&e.chief?'goblin':e.mtype==='ogre_king'?'grukk':e.kind==='kraken'?'kraken':e.magmaLord?'magmaknight':null);
+    const r=_k(e,src,...a); if(key&&e.dead){ try{ if(key==='kraken') dropAcc(ACC_IDS.tackle3,e); if(key==='magmaknight') dropAcc(ACC_IDS.ward3,e); if(key==='goblin'){ dropAcc(ACC_IDS.dash2,e); bossPortal('camp'); } if(key==='grukk') bossPortal('orc'); }catch(err){ console.warn(err); } } return r; }; }
+
+// ---- boss portals ----
+function bossPortal(kind,quiet){ if(!home||(typeof MP!=='undefined'&&MP.guest)) return; home.bossPortals=home.bossPortals||{}; if(home.bossPortals[kind]) return; let x, gy;
+  if(kind==='camp'){ const gc=(gcamps||[]).find(g=>g.war); if(!gc) return; x=gc.x; gy=gc.gy; }
+  else { const is=islands.find(i=>i.orc); if(!is) return; x=Math.floor((is.s+is.e)/2); gy=surf[x]; for(let k=0;k<20&&(oceanCol[x]||isSolid(x,gy-1));k++){ x++; gy=surf[x]; } }
+  facRun(()=>{ for(let dx=-2;dx<=2;dx++){ for(let y=gy-4;y<gy;y++) if(isSolid(x+dx,y)||tileAt(x+dx,y)) setTile(x+dx,y,0); if(!isSolid(x+dx,gy)) setTile(x+dx,gy,B.STONE); } setTile(x,gy-1,B.PORTAL); setTile(x,gy-2,B.PORTAL); });
+  home.bossPortals[kind]={x,gy}; if(!quiet) toast(kind==='camp'?'A portal opens at the goblin war camp':'A portal opens in the middle of the orc island',4); }
+{ const _pl=portalList; portalList=function(...a){ const L=_pl(...a); const bp=home&&home.bossPortals||{};
+    if(bp.camp) L.push({label:'Goblin war camp',x:(bp.camp.x-2)*T,y:bp.camp.gy*T-29,fee:accTier('travel')?0:25,tx:bp.camp.x,ty:bp.camp.gy});
+    if(bp.orc) L.push({label:'Orc island',x:(bp.orc.x-2)*T,y:bp.orc.gy*T-29,fee:accTier('travel')?0:25,tx:bp.orc.x,ty:bp.orc.gy}); return L; }; }
+// worlds where these bosses were beaten before this update get their portals too
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ const bs=(player&&player.bestiary)||{}; if(home&&home.demo||bs.goblin_chief) bossPortal('camp',true); if(bs.ogre_king) bossPortal('orc',true); }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
