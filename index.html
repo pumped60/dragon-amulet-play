@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791483338"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791483338"><link rel="manifest" href="manifest.webmanifest?v=1791483338"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791484958"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791484958"><link rel="manifest" href="manifest.webmanifest?v=1791484958"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.43</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.44</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.43</h3>
+    <h3>New in Beta 0.9.44</h3>
+    <p>Archers and mages posted in towers, keeps and on roofs see over the wall beside them, aim at enemies far below and reach a little farther, so they shoot at whatever comes at their side of the building. Raiders always arrive from outside your village: any enemy soldier found on a village roof is put back on open ground outside, and monsters never appear on your roofs. The battlement wall is a small tower: one room with a doorway on each side, arrow slits over the doors and a lookout roof (4 posts). The orc huts are built of solid log walls, not tree trunks you could walk through. Every wood has its own plank wall and its own furniture look: spruce grain, birch flecks, palm weave, jungle vines and dark oak gold studs, and furniture has a dark outline so it stands out against any wall. Barrels, cupboards and desks store items, and you can sit on chairs, benches and stools to heal three times as fast. The miners' chest opens like any other chest.</p>
+    <h3>Beta 0.9.43</h3>
     <p>Watchtowers have no glass: the bottom room is solid wall over the doors, and every floor above has arrow slits where the guards stand, so they can shoot out. The top room of every tower, yours and every faction's, is 4 blocks tall. Keeps have slits upstairs and solid walls over their doors. Window walls are a back wall of glass panes (4 from 1 glass and 1 stick at a workbench): the sky shows through and daylight comes in. Every table, chair, bench, stool, bed, bookshelf, cupboard, desk, barrel and workbench comes in all six woods; oak pieces take any planks, the others take their own wood. Planks of every wood sell for the same, and so do logs. New saplings: a pine sapling (a spruce sapling and 2 snow) and blue, green, red and orange mushroom spores (from the caps of giant mushrooms) that grow giant mushrooms on stone, moss, dirt or grass. The Herbalist sells every sapling and spore.</p>
     <h3>Beta 0.9.42</h3>
     <p>Every building in your village follows the same wood, stone and iron steps as the castle: the huts, battlement walls, watchtowers, animal pens and keeps you build yourself, and the outposts and keeps you capture, are wood in a Hamlet, stone in a Town and iron in a City, together with the castle, the houses, the lodge and the farmhouse. Shop houses keep following their own shop level.</p>
@@ -588,7 +590,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.43</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.44</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -848,7 +850,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.43</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.44</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -867,7 +869,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.43', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.44', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2429,7 +2431,7 @@ function buildWatchtower(x,mat,ht,inland,endsOnly){ inland=inland||1; const gy=s
 
 // ================= orc island =================
 function levelArea(x,half){ const gy=surf[x]; for(let X=x-half;X<=x+half;X++){ if(X<0||X>=W) continue; for(let y=gy-14;y<gy;y++){ world[y*W+X]=0; } if(surf[X]>gy) for(let y=gy;y<surf[X];y++) wset(X,y,B.STONE); surf[X]=gy; } return gy; }
-function orcHut(cx,gy,w,h){ const w2=w>>1; for(let dy=1;dy<=h;dy++){ wset(cx-w2,gy-dy,B.LOG); wset(cx+w2,gy-dy,B.LOG); for(let dx=-w2+1;dx<w2;dx++){ wset(cx+dx,gy-dy,0); bset(cx+dx,gy-dy,1); } }
+function orcHut(cx,gy,w,h){ const w2=w>>1; for(let dy=1;dy<=h;dy++){ wset(cx-w2,gy-dy,B.LOG_WALL); wset(cx+w2,gy-dy,B.LOG_WALL); for(let dx=-w2+1;dx<w2;dx++){ wset(cx+dx,gy-dy,0); bset(cx+dx,gy-dy,1); } }
   for(let dx=-w2-1;dx<=w2+1;dx++) wset(cx+dx,gy-h-1,B.PLANK); for(let dx=-w2+1;dx<w2;dx++) wset(cx+dx,gy-h-2,B.PLANK); wset(cx+w2,gy-1,B.DOOR); wset(cx+w2,gy-2,B.DOOR_T); wset(cx-w2+1,gy-3,B.TORCH); }
 function carve(x0,x1,y0,y1){ for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ if(x<1||x>=W-1||y<1||y>=H-2) continue; world[y*W+x]=0; bset(x,y,2); } }
 function buildOrcIsland(is,R){
@@ -2903,10 +2905,10 @@ function fellShroom(x,y){ const st=[[x,y]], seen=new Set(); let n=0; const IDS=n
 
 // ================= AI =================
 function npcShoot(e,t,kind){ const fb=e.kind==='human'?facBonus(e.team,e.cls):{shot:1}; const dx=cxOf(t)-cxOf(e), dy=cyOf(t)-cyOf(e), adx=Math.abs(dx);
-  if(kind==='magic'){ const ang=Math.atan2(dy,dx); projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*360*fb.shot,vy:Math.sin(ang)*360*fb.shot,team:e.team,dmg:Math.round(12*(e.dmgMul||1)),kind:'magic',col:FLIGHT[e.team]||'#c8a0ff',life:2.5,grav:0,r:7,src:e}); return; }
+  if(kind==='magic'){ const ang=Math.atan2(dy,dx); projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*360*fb.shot,vy:Math.sin(ang)*360*fb.shot,team:e.team,dmg:Math.round(12*(e.dmgMul||1)),kind:'magic',col:FLIGHT[e.team]||'#c8a0ff',life:2.5,grav:0,r:7,src:e,thru:e.post?3*T:0,ox:cxOf(e),oy:e.y+10}); return; }
   const dmg=Math.round((e.kind==='human'?9:e.dmg)*(e.dmgMul||1)); const sp=380*fb.shot; const tt=Math.max(0.12,adx/sp);
   const vy=dy/tt-0.5*300*tt, vx=dx/tt; const ang=Math.atan2(vy,vx); const spd2=Math.min(620*fb.shot,Math.hypot(vx,vy));
-  projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*spd2,vy:Math.sin(ang)*spd2,team:e.team,dmg,kind:'arrow',life:3,grav:300,r:4,src:e}); }
+  projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*spd2,vy:Math.sin(ang)*spd2,team:e.team,dmg,kind:'arrow',life:3,grav:300,r:4,src:e,thru:e.post?3*T:0,ox:cxOf(e),oy:e.y+10}); }
 function updateAI(e,dt){
   e.atkCd-=dt; e.atkT-=dt; e.hurtT-=dt; e.kbT-=dt; e.anim+=dt; e.think-=dt;
   const isHuman=e.kind==='human'; const ranged=isHuman?['archer','wizard','archmage','skyarcher','skywizard','skyranger'].includes(e.cls):e.ranged;
@@ -2916,7 +2918,7 @@ function updateAI(e,dt){
     if(!e.leftBehind&&dist>25*T&&overDeepWater(player)) e.leftBehind=true;
     if(e.leftBehind&&!player.riding&&!player.inWater&&(player.grounded||player.fly)) e.leftBehind=false; }
   if(e.think<=0){ e.think=0.3+Math.random()*0.25;
-    let r=(ranged?18:isHuman?13:16)*T, nt;
+    let r=(ranged?(e.post?22:18):isHuman?13:16)*T, nt;   // a guard posted up high looks farther
     if(ord==='charge') r=30*T;
     if(ord==='defend') nt=nearestHostile(e,8*T,cxOf(player),cyOf(player));
     else nt=(ranged&&!(player&&e.team===player.team)&&!e.bigBoss)?weakestHostile(e,r):nearestHostile(e,r);
@@ -2928,7 +2930,7 @@ function updateAI(e,dt){
   if(t){ const dx=cxOf(t)-cxOf(e), dy=cyOf(t)-cyOf(e), adx=Math.abs(dx); e.facing=dx>0?1:-1;
     if(ranged&&!lineOfSight(e,t)){ mv=e.facing; if(e.hitWall&&e.grounded) e.vy=-JUMP; if(dy>2*T&&e.grounded&&onPlatform(e)) e.dropping=true; }
     else if(ranged){ const keepOff=(isHuman&&['g','b','r'].includes(e.team)&&player&&e.team!==player.team)?6:4; if(adx>10*T) mv=e.facing; else if(adx<keepOff*T&&!e.bigBoss&&!e.warlord){ mv=-Math.sign(cxOf(t)-cxOf(e))||-e.facing; spd*=0.5; }
-      if(e.magmaLord||e.chief) bruteBoss(e,t); if(!lineOfSight(e,t)&&e.cls!=='archmage'){ } else if(e.cls==='archmage'){ archmageAct(e,t,dt); } else if(e.cls==='skyranger'){ rangerAct(e,t); } else if(e.atkCd<=0&&adx<18*T&&Math.abs(dy)<9*T){ npcShoot(e,t,isHuman&&(e.cls==='wizard'||e.cls==='skywizard')?'magic':'arrow'); e.atkCd=isHuman?(e.cls==='wizard'?1.4:1.1)*facBonus(e.team,e.cls).cd:1.6; e.atkT=0.2; } }
+      if(e.magmaLord||e.chief) bruteBoss(e,t); if(!lineOfSight(e,t)&&e.cls!=='archmage'){ } else if(e.cls==='archmage'){ archmageAct(e,t,dt); } else if(e.cls==='skyranger'){ rangerAct(e,t); } else if(e.atkCd<=0&&adx<(e.post?22:18)*T&&Math.abs(dy)<(e.post?20:9)*T){ npcShoot(e,t,isHuman&&(e.cls==='wizard'||e.cls==='skywizard')?'magic':'arrow'); e.atkCd=isHuman?(e.cls==='wizard'?1.4:1.1)*facBonus(e.team,e.cls).cd:1.6; e.atkT=0.2; } }
     else { let w=isHuman?ITEMS[e.weapon]:null; if(w&&w.kind==='pick') w={reach:20,dmg:6,cd:1.2,kb:80,shape:'sword'}; const reach=(w?w.reach:e.reach)*(e.reachMul||1)*(isHuman?facBonus(e.team,e.cls).reach:1);
       const foeSide=!(player&&e.team===player.team)&&!e.bigBoss&&e.role!=='companion';
       if(foeSide){ e.flankT=(e.flankT||0)-dt; if(e.flankT<=0){ e.flankT=0.8+Math.random()*0.8; let L=0,Rn=0; for(const o of ents){ if(o===e||o.dead||o.team!==e.team||o.target!==t) continue; if(cxOf(o)<cxOf(t)) L++; else Rn++; } const side=cxOf(e)<cxOf(t)?-1:1; const mine=side<0?L:Rn, other=side<0?Rn:L; e.flank=mine>=2&&other<mine-1?-side:side; }
@@ -3044,8 +3046,8 @@ function updateProjs(dt){
     pr.vy+=pr.grav*dt; pr.x+=pr.vx*dt; pr.y+=pr.vy*dt; { const gx=Math.floor(pr.x/T), gy=Math.floor(pr.y/T); if(GRASSY.has(tileAt(gx,gy))) breakTile(gx,gy); } if(pr.firey&&Math.random()<0.5) parts.push({x:pr.x,y:pr.y,vx:0,vy:-20,life:0.25,col:Math.random()<.5?'#ffcf3a':'#ff7b1c',sz:2});
     const tid=tileAt(Math.floor(pr.x/T),Math.floor(pr.y/T));
     if(tid===B.WATER&&(pr.kind==='fire'||pr.kind==='fireball')){ pr.dead=true; puff(pr.x,pr.y,'#cfe8ff',4,50); continue; }
-    if(pr.firey&&(BLOCKS[tid].solid||LEAF_IDS.has(tid)||PLANTS.has(tid))) scorch(pr.x,pr.y,pr.team);
-    if(BLOCKS[tid].solid&&!BLOCKS[tid].glass){ pr.dead=true; if(pr.splash) splash(pr); if(pr.kind!=='arrow') puff(pr.x,pr.y,pr.kind==='magic'?pr.col:'#ff9f43',pr.kind==='fireball'?10:3,80); continue; }
+    if(pr.firey&&!(pr.thru&&Math.hypot(pr.x-pr.ox,pr.y-pr.oy)<pr.thru)&&(BLOCKS[tid].solid||LEAF_IDS.has(tid)||PLANTS.has(tid))) scorch(pr.x,pr.y,pr.team);
+    if(BLOCKS[tid].solid&&!BLOCKS[tid].glass&&!(pr.thru&&Math.hypot(pr.x-pr.ox,pr.y-pr.oy)<pr.thru)){ pr.dead=true;   /* a posted guard's shot clears the wall beside its post */ if(pr.splash) splash(pr); if(pr.kind!=='arrow') puff(pr.x,pr.y,pr.kind==='magic'?pr.col:'#ff9f43',pr.kind==='fireball'?10:3,80); continue; }
     const box={x:pr.x-pr.r,y:pr.y-pr.r,w:pr.r*2,h:pr.r*2};
     for(const o of ents){ if(!targetable(o)||!hostile(pr.team,o.team)||(pr.hitSet&&pr.hitSet.has(o))) continue;
       if(overlap(box,o)&&pr.visual){ pr.dead=true; break; }   // another player's shot, shown only: their own game already counted the hit
@@ -3558,7 +3560,7 @@ const ripeCrop=id=>id===B.WHEAT_3||id===B.CARROT_2||id===B.PUMPKIN_2||id===B.POT
 function harvestCrop(x,y){ const id=tileAt(x,y); if(id===B.POTATO_3){ give(460,2+((Math.random()*3)|0)); give(461,1+((Math.random()*2)|0)); setTile(x,y,0); puff(x*T+8,y*T+8,'#b8c890',6,50); return true; } if(id===B.WHEAT_3){ give(I.WHEAT,2+((Math.random()*2)|0)); give(I.WHEAT_SEEDS,1+((Math.random()*2)|0)); } else if(id===B.CARROT_2){ give(I.CARROT,2+((Math.random()*2)|0)); if(Math.random()<0.5) give(I.CARROT_SEEDS,1); } else if(id===B.PUMPKIN_2){ give(I.PUMPKIN,1); give(I.PUMPKIN_SEEDS,1+((Math.random()*2)|0)); } else return false;
   setTile(x,y,0); puff(x*T+8,y*T+8,'#b8c890',6,50); return true; }
 function onPlatform(e){ const y=Math.floor((e.y+e.h+1)/T); for(let x=Math.floor(e.x/T);x<=Math.floor((e.x+e.w-1)/T);x++) if(BLOCKS[tileAt(x,y)].platform) return true; return false; }
-function lineOfSight(a,b){ const x0=cxOf(a)/T, y0=(a.y+8)/T, x1=cxOf(b)/T, y1=cyOf(b)/T; const n=Math.ceil(Math.hypot(x1-x0,y1-y0)*2); for(let i=1;i<n;i++){ const x=Math.floor(x0+(x1-x0)*i/n), y=Math.floor(y0+(y1-y0)*i/n); if(isSolid(x,y)&&!BLOCKS[tileAt(x,y)].platform&&!BLOCKS[tileAt(x,y)].glass) return false; } return true; }
+function lineOfSight(a,b){ const x0=cxOf(a)/T, y0=(a.y+8)/T, x1=cxOf(b)/T, y1=cyOf(b)/T; const n=Math.ceil(Math.hypot(x1-x0,y1-y0)*2); for(let i=1;i<n;i++){ const x=Math.floor(x0+(x1-x0)*i/n), y=Math.floor(y0+(y1-y0)*i/n); if(a.post&&Math.hypot(x+0.5-x0,y+0.5-y0)<3) continue;   /* a posted guard looks past the wall or slit beside its post */ if(isSolid(x,y)&&!BLOCKS[tileAt(x,y)].platform&&!BLOCKS[tileAt(x,y)].glass) return false; } return true; }
 // zombies and skeletons caught in daylight catch fire
 let sunT=0;
 function sunBurn(dt){ sunT-=dt; if(sunT>0) return; sunT=0.5; if(isNight()||daylight()<0.8) return;
@@ -3964,7 +3966,7 @@ function castleRoofGuards(){ for(const b of bases){ const gy=b.gy, L=b.cx-17, Rr
 let myStructures=[], buildMode=null, bldHover=null;
 const BLUEPRINTS=[
   {id:'hut',name:'Wooden hut',fx0:-4,fx1:4,fh:7,w:9,h:7,cost:[[B.LOG,8],[B.PLANK,12],[B.DOOR,1],[B.TORCH,1]],desc:'A small log hut with a door and a torch. 1 defense post.'},
-  {id:'wall',name:'Battlement wall',fx0:-3,fx1:3,fh:6,w:7,h:6,cost:[[B.STONE,30]],desc:'A stone wall with merlons and slits on top. 2 defense posts.'},
+  {id:'wall',name:'Small tower',fx0:-3,fx1:3,fh:7,w:7,h:7,cost:[[B.STONE,40],[B.DOOR,1],[B.TORCH,1]],desc:'A one-story stone tower with a doorway on each side, arrow slits over the doors and a lookout roof with battlements. 4 defense posts.'},
   {id:'tower',name:'Stone watchtower',fx0:-4,fx1:4,fh:19,w:9,h:19,cost:[[B.STONE,70],[B.PLANK,8],[B.DOOR,1],[B.TORCH,3]],desc:'Three floors, window slits, a roof with battlements. 4 defense posts.'},
   {id:'pen',name:'Animal pen',fx0:-7,fx1:7,fh:4,w:15,h:4,cost:[[B.PLANK,18],[480,8],[B.DOOR,1],[B.CHEST,1]],desc:'A fenced yard with a gate and a trough chest. Put up to 8 tamed farm animals in it; each day they produce wool, meat and more, and pairs have young.'},
   {id:'keep',name:'Stone keep',fx0:-9,fx1:9,fh:14,w:19,h:14,cost:[[B.STONE,160],[B.PLANK,20],[B.DOOR,1],[B.TORCH,6]],desc:'A two-storey keep with window slits, a portal, and a quartermaster, a recruiter and a beast trainer who live there. 6 defense posts.'} ];
@@ -3979,8 +3981,15 @@ function buildHutAt(cx,gy){ footing(cx-4,cx+4,gy); const P=B.PLANK;
   for(let dy=1;dy<=4;dy++){ wset(cx-3,gy-dy,P); wset(cx+3,gy-dy,P); for(let dx=-2;dx<=2;dx++){ wset(cx+dx,gy-dy,0); bset(cx+dx,gy-dy,1); } }
   for(let dx=-4;dx<=4;dx++) wset(cx+dx,gy-5,P); for(let dx=-2;dx<=2;dx++) wset(cx+dx,gy-6,P);
   for(const x of [cx-3,cx+3]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); } wset(cx-1,gy-4,B.TORCH); return [{x:cx-1,gy}]; }
-function buildWallAt(cx,gy){ footing(cx-3,cx+3,gy); for(let x=cx-3;x<=cx+3;x++) for(let y=gy-4;y<gy;y++) wset(x,y,B.STONE_BLOCK); wset(cx-3,gy-5,B.STONE_BLOCK); wset(cx+3,gy-5,B.STONE_BLOCK);
-  return [{x:cx-2,gy:gy-4},{x:cx+2,gy:gy-4}]; }
+// the small tower (blueprint id 'wall', once a battlement wall): one room with a doorway on each side and arrow slits
+// over the doors, a stone roof with battlements, and a hatch up to it. 4 posts: two inside at the slits, two on the roof
+function buildWallAt(cx,gy){ const S=B.STONE_BLOCK; footing(cx-3,cx+3,gy);
+  for(let y=gy-5;y<gy;y++){ wset(cx-3,y,S); wset(cx+3,y,S); for(let x=cx-2;x<=cx+2;x++){ wset(x,y,0); bset(x,y,2); } }
+  for(let x=cx-3;x<=cx+3;x++) wset(x,gy-5,x===cx?B.PLATFORM:S);
+  for(const x of [cx-3,cx,cx+3]) wset(x,gy-6,S); for(const x of [cx-2,cx-1,cx+1,cx+2]) wset(x,gy-6,0);
+  for(const x of [cx-3,cx+3]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); wset(x,gy-3,B.ARROW_SLIT); wset(x,gy-4,B.ARROW_SLIT); }
+  wset(cx,gy-3,B.PLATFORM); wset(cx-1,gy-4,B.TORCH);
+  return [{x:cx-2,gy},{x:cx+2,gy},{x:cx-2,gy:gy-5},{x:cx+2,gy:gy-5}]; }
 function buildTowerAt(cx,gy){ const old=surf[cx]; surf[cx]=gy; const tw=buildWatchtower(cx,B.STONE_BLOCK,13,player&&cxOf(player)/T<cx?-1:1,true); surf[cx]=old;
   for(const x of [cx-3,cx+3]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); }
   for(const f of tw.floors){ if(BLOCKS[tileAt(cx+1,f)].solid) wset(cx+1,f,B.PLATFORM); } wset(cx,tw.top,B.PLATFORM); if(BLOCKS[tileAt(cx,tw.top-1)].solid) wset(cx,tw.top-1,0);
@@ -5159,7 +5168,7 @@ let chestAt=null;
 function nearestChest(){ if(!player||player.dead) return null; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T);
   for(let y=py-2;y<=py+2;y++) for(let x=px-2;x<=px+2;x++) if(isChestId(tileAt(x,y))) return {chest:true,x,y}; return null; }
 let viaForeman=false;
-function openChest(x,y){ if(state!=='play') return; const k=x+','+y; if(home&&home.minerChest===k&&!viaForeman&&rules.mode!=='creative'){ toast('The miners\' chest is kept by the foreman. Talk to him to get your ore.',3); return; } const req=chestReq(x,y); if(req){ toast('This chest is sealed. '+req+'.',3); return; }
+function openChest(x,y){ if(state!=='play') return; const k=x+','+y; const req=chestReq(x,y); if(req){ toast('This chest is sealed. '+req+'.',3); return; }
   if(chests[k]&&chests[k].sky&&!chests[k].feather&&nextFeather()&&Math.random()<0.5){ chests[k].feather=true; putInChest(chests[k],{id:nextFeather(),n:1}); } if(!chests[k]) chests[k]={items:new Array(CHEST_N).fill(null),coins:0}; { const c0=chests[k], N=c0.shelf?9:CHEST_N; while(c0.items.length<N) c0.items.push(null); } chestAt=k; state='chest'; input.use=false; renderChest(); show('scrChest'); }
 function closeChest(){ hide('scrChest'); chestAt=null; if(state==='chest') state='play'; invDirty=true; }
 function putInChest(c,s){ for(const t of c.items) if(t&&t.id===s.id&&t.n<999){ const k=Math.min(999-t.n,s.n); t.n+=k; s.n-=k; if(!s.n) return true; }
@@ -9540,6 +9549,16 @@ function insideVillage(c){ if(home&&home.claimed&&c>=home.x0-2&&c<=home.x1+2) re
       if(builtOver(c)||insideVillage(c)){ const back=Math.sign(cxOf(e)/T-c)||1; let found=null;
         for(let k=1;k<=80;k++){ const cc=c+back*k; if(cc<3||cc>=W-3) break; if(!builtOver(cc)&&!insideVillage(cc)&&!deepSea(cc)){ found=cc; break; } }
         if(found!=null) x=found; } } }catch(err){} return _pg(e,x,...a); }; }
+// ---- a safety net: an enemy soldier found standing on a roof in your village (the castle top, a house roof) is put
+// back on open ground outside, and monsters never appear on village roofs ----
+function onVillageRoof(e){ if(!home||!home.claimed||!e||e.dead) return false; const c=clamp(Math.round(cxOf(e)/T),0,W-1); if(!insideVillage(c)) return false;
+  const feet=Math.floor((e.y+e.h+1)/T); return feet<home.gy-2&&feet<=skyTop[c]+1; }
+function outsideVillageCol(from){ for(let k=1;k<=120;k++) for(const s of [-1,1]){ const cc=from+s*k; if(cc<3||cc>=W-3) continue; if(!builtOver(cc)&&!insideVillage(cc)&&!deepSea(cc)) return cc; } return null; }
+let roofT=0;
+{ const _uh=updateHUD; updateHUD=function(dt,...a){ const r=_uh(dt,...a); try{ roofT-=dt||0.016; if(roofT<=0&&!(typeof MP!=='undefined'&&MP.guest)){ roofT=1;
+      for(const e of ents){ if(e.dead||e.kind!=='human'||!player||e.team===player.team||!['g','b','r'].includes(e.team)||e.post||e.roofGuard) continue;
+        if(!onVillageRoof(e)) continue; const side=cxOf(e)/T<(home.x0+home.x1)/2?home.x0-4:home.x1+4; const c=outsideVillageCol(clamp(side,3,W-4)); if(c!=null){ e.x=c*T+8-e.w/2; e.y=surfY(c)-e.h-1; e.vx=e.vy=0; } } } }catch(err){} return r; }; }
+{ const _sm=spawnMonsters; spawnMonsters=function(...a){ const n=ents.length; const r=_sm(...a); try{ for(let i=n;i<ents.length;i++){ const e=ents[i]; if(e&&e.kind==='monster'&&!e.bigBoss){ const c=clamp(Math.round(cxOf(e)/T),0,W-1); if(insideVillage(c)&&Math.floor((e.y+e.h)/T)<home.gy-1) e.dead=true; } } }catch(err){} return r; }; }
 // ===================== trading with friends =====================
 // In a shared world, stand within 5 blocks of a friend and press T (on phones: the use button, then "Trade with ...").
 // A trade window opens for both players: each puts items and coins on the table, both press Accept, and the goods swap.
@@ -10610,6 +10629,61 @@ try{ for(const id of [...Object.values(SAP),PINE_SAP,...Object.values(SPORES)]) 
 // (the shipwright sells 20 oak planks for 30 coins, so a coin a plank never turns a profit)
 const PLANK_IDS=new Set(Object.values(WOODS).map(w=>w.plank));
 { const _sp=sellPrice; sellPrice=function(id,...a){ if(PLANK_IDS.has(+id)) return 1; if(LOG_IDS.has(+id)) return 2; return _sp(id,...a); }; }
+
+// ---- log walls: solid stacked logs for buildings (orc huts were built of tree trunks, which you can walk through) ----
+B.LOG_WALL=freeIdFrom(); defB(B.LOG_WALL,{name:'Log wall',hard:0.6,col:'#7a4e27'});
+ITEMS[B.LOG_WALL]={name:'Log wall',kind:'block',desc:'Logs stacked into a solid wall'};
+RECIPES.push({ out:B.LOG_WALL, n:2, need:[[B.LOG,1]], st:B.WORKBENCH, cat:'build' });
+{ const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  for(let k=0;k<4;k++){ const y=k*4; r(0,y,16,4,'#7a4e27'); r(0,y,16,1,'#9a6a3a'); r(0,y+3,16,1,'#4a2e16'); r(k%2?12:1,y+1,3,2,'#c8a070'); r(k%2?13:2,y+1,1,1,'#8a5c2d'); }
+  TEX[B.LOG_WALL]=c; }
+try{ WOODY.add(B.LOG_WALL); }catch(e){}
+// older worlds: the orc huts' trunk walls turn into log walls
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(!home||home.logWalls||isGuest()) return r; home.logWalls=1;
+      facRun(()=>{ for(const is of (typeof islands!=='undefined'?islands:[])) for(const c of (is.orcCamps||[])){ if(!c||!isFinite(c.x)) continue; const gy=c.gy||surf[c.x];
+        for(let x=c.x-16;x<=c.x+16;x++) for(let y=gy-8;y<gy;y++){ if(tileAt(x,y)!==B.LOG) continue; const nb=[x-1,x+1].some(X=>X>=0&&X<W&&bg[y*W+X]===1); if(nb) setTile(x,y,B.LOG_WALL); } } }); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- each wood has its own look, not just its own color ----
+// oak plain; spruce dark vertical grain; birch pale with black flecks; palm woven cross lines; jungle green vine edges;
+// dark oak gold studs. Patterns only touch the wood pixels, so blankets, books and metal stay as they are.
+const WOOD_LOOK={ spruce:(m,set)=>{ for(let x=1;x<16;x+=3) for(let y=0;y<16;y++) if(m(x,y)) set(x,y,'#3a2414',0.55); },
+  birch:(m,set)=>{ for(const [x,y] of [[2,3],[6,9],[11,5],[13,12],[4,13],[9,2],[8,11],[1,8],[14,8]]) if(m(x,y)){ set(x,y,'#202020',0.9); if(m(x+1,y)) set(x+1,y,'#202020',0.7); } },
+  palm:(m,set)=>{ for(let y=0;y<16;y++) for(let x=0;x<16;x++) if(m(x,y)&&((x+y)%4===0||(x-y+16)%4===0)) set(x,y,'#f0d8a0',0.35); },
+  jungle:(m,set)=>{ for(let x=0;x<16;x++){ for(let y=0;y<16;y++) if(m(x,y)){ if(!m(x,y-1)) set(x,y,x%3?'#3aa83a':'#6ad86a',0.85); break; } } },
+  dark:(m,set)=>{ for(let y=0;y<16;y++) for(let x=0;x<16;x++) if(m(x,y)&&(!m(x-1,y)||!m(x+1,y))&&y%4===1) set(x,y,'#ffcf3a',0.95); } };
+function woodLook(c,k){ const f=WOOD_LOOK[k]; if(!f) return c; const g=c.getContext('2d'), d=g.getImageData(0,0,16,16), p=d.data, w=WOODS[k].plankCol[0], [tr,tg,tb]=hexRgb2(w);
+  const isWood=(x,y)=>{ if(x<0||y<0||x>15||y>15) return false; const i=(y*16+x)*4; if(!p[i+3]) return false; const r=p[i],gg=p[i+1],b=p[i+2]; return Math.abs(r-tr)+Math.abs(gg-tg)+Math.abs(b-tb)<170&&!(r>235&&gg>235&&b>235); };
+  const mask=[]; for(let y=0;y<16;y++) for(let x=0;x<16;x++) mask.push(isWood(x,y)); const m=(x,y)=>x>=0&&y>=0&&x<16&&y<16&&mask[y*16+x];
+  const set=(x,y,col,a)=>{ const i=(y*16+x)*4, [r,gg,b]=hexRgb2(col); p[i]=p[i]*(1-a)+r*a; p[i+1]=p[i+1]*(1-a)+gg*a; p[i+2]=p[i+2]*(1-a)+b*a; };
+  f(m,set); g.putImageData(d,0,0); return c; }
+// a dark outline around furniture keeps it easy to see in front of any back wall
+function outlineTex(src){ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); const d=g.getImageData(0,0,16,16), p=d.data, a=(x,y)=>x>=0&&y>=0&&x<16&&y<16&&p[(y*16+x)*4+3]>40;
+  const add=[]; for(let y=0;y<16;y++) for(let x=0;x<16;x++) if(!a(x,y)&&(a(x-1,y)||a(x+1,y)||a(x,y-1)||a(x,y+1))) add.push([x,y]);
+  for(const [x,y] of add){ const i=(y*16+x)*4; p[i]=26; p[i+1]=18; p[i+2]=16; p[i+3]=190; } g.putImageData(d,0,0); return c; }
+for(const base of FURN){ for(const [k,id] of Object.entries(FURN_OF[base])){ if(k!=='oak') TEX[id]=woodLook(tintWood(TEX[base],WOODS[k].plankCol[0]),k); } }
+for(const id of [...FURN,...Object.keys(FURN_BASE).map(Number),B.WEAPON_RACK,B.ARMOR_STAND,B.BED].filter(v=>v!=null&&TEX[v])) TEX[id]=outlineTex(TEX[id]);
+
+// ---- back walls in every wood ----
+// plank walls for spruce, birch, palm and jungle (oak and dark oak had theirs). Wooden back walls are a shade darker
+// than before so furniture in front of them stands out.
+const WOOD_WALL={}; { let v=17; for(const k of ['spruce','birch','palm','jungle']){ const w=WOODS[k]; const id=(()=>{ let i=761; while(ITEMS[i]||(BLOCKS[i]&&BLOCKS[i].name)) i++; return i; })();
+    const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[w.plank],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.62)'; g.fillRect(0,0,16,16); BGTEX[v]=c;
+    WALLS[id]=v; ITEMS[id]={name:`${woodName(k)} plank wall`,kind:'wall'}; RECIPES.push({ out:id, n:4, need:[[w.plank,1]] }); WOOD_WALL[k]=id; v++; } }
+for(const v of [5,9]){ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(BGTEX[v],0,0); g.fillStyle='rgba(8,6,14,0.25)'; g.fillRect(0,0,16,16); BGTEX[v]=c; }
+
+// ---- furniture you can use: barrels, cupboards and desks store things; chairs, benches and stools are seats ----
+const STORE_FURN=new Set([B.BARREL,B.CUPBOARD,B.DESK].filter(v=>v!=null)), SEAT_FURN=new Set([B.CHAIR,B.BENCH,B.STOOL].filter(v=>v!=null));
+function nearFurn(set,r){ if(!player) return null; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); let best=null, bd=99;
+  for(let y=py-r;y<=py+r;y++) for(let x=px-r;x<=px+r;x++){ const id=tileAt(x,y); if(set.has(furnBase(id))){ const d=Math.abs(x-px)+Math.abs(y-py); if(d<bd){ bd=d; best={x,y,id}; } } } return best; }
+function openStore(x,y){ const k=x+','+y, base=furnBase(tileAt(x,y)); if(!chests[k]) chests[k]={items:new Array(9).fill(null),coins:0,shelf:true,store:base}; openChest(x,y); }
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const st=nearFurn(STORE_FURN,2); if(st) o.push({label:`Open the ${BLOCKS[st.id].name.toLowerCase()}`,direct:true,go:()=>openStore(st.x,st.y)});
+      const se=nearFurn(SEAT_FURN,1); if(se&&!player.sitting) o.push({label:`Sit on the ${BLOCKS[se.id].name.toLowerCase()}`,direct:true,go:()=>{ player.sitting={x:se.x,y:se.y}; player.x=se.x*T+8-player.w/2; player.vx=0; toast('You sit down and rest. Move to get up.',2); }}); }catch(e){ console.warn(e); } return o; }; }
+// sitting: you stay put and heal three times as fast; any move gets you up
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; if(p&&p.sitting){ const s=p.sitting; if(input.left||input.right||input.jump||input.down||!SEAT_FURN.has(furnBase(tileAt(s.x,s.y)))||p.dead) p.sitting=null;
+      else { const r=_up(dt,...a); p.x=s.x*T+8-p.w/2; p.vx=0; if(!p.dead) p.hp=Math.min(p.maxHp,p.hp+p.maxHp*0.03*dt); return r; } } return _up(dt,...a); }; }
+// breaking a storage piece spills what is in it
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const id=tileAt(x,y), k=x+','+y, c=STORE_FURN.has(furnBase(id))&&chests[k]; const r=_bt(x,y,...a);
+    try{ if(c&&tileAt(x,y)!==id){ for(const s of c.items) if(s) spawnDrop(x*T+8,y*T+4,s.id,s.n); if(c.coins&&player) player.coins+=c.coins; delete chests[k]; } }catch(e){} return r; }; }
 })();
 </script>
 </body>
