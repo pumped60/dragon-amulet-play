@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791473858"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791473858"><link rel="manifest" href="manifest.webmanifest?v=1791473858"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791479634"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791479634"><link rel="manifest" href="manifest.webmanifest?v=1791479634"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.40</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.41</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.40</h3>
+    <h3>New in Beta 0.9.41</h3>
+    <p>Your buildings show how far your village has come. As a Hamlet your castle, houses, woodcutter's lodge and farmhouse are wood: plank walls, timber beams and thatch roofs. Growing into a Town rebuilds them in stone with tiled roofs, and a City rebuilds them in riveted iron with iron roofs. Each shop's house follows its own shop level instead: wood at level 1, stone at level 2, iron at level 3. Wood can catch fire in raids and storms, stone cannot, and iron plate takes an iron pickaxe to break. Furniture, doors, windows and chests stay where they are. Thatch, iron plate, iron beams and iron roofs can be crafted at a workbench too.</p>
+    <h3>Beta 0.9.40</h3>
     <p>Melee leaders lift the fighters around them. Every beastmaster, knight and macebearer, you or a soldier, helps everyone on their side within 8 blocks, themselves included: beastmasters make them 10% faster, knights make them take 15% less damage and macebearers make them hit 15% harder. One of each kind counts, and enemies get the same from their own leaders. The lifts you have show under your coins. Faction bonuses reach every soldier of that color: archers and wizards shoot faster and their arrows and bolts fly faster, and macebearers reach farther.</p>
     <h3>Beta 0.9.39</h3>
     <p>In a shared world every friend has a health bar over their head, under their name: a gold-framed bar with a heart that turns from green to yellow to red, and flashes when they are close to falling. Soldiers keep their thin red line, so friends are easy to tell apart.</p>
@@ -582,7 +584,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.40</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.41</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -842,7 +844,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.40</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.41</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -861,7 +863,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.40', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.41', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -10470,6 +10472,71 @@ function auraMul(e,k){ return e&&e.aura&&e.aura[k]?AURA_MUL[k]:1; }
     try{ const el=document.getElementById('auraLine'), au=player&&player.aura; const txt=au?['spd','def','atk'].filter(k=>au[k]).map(k=>({spd:'⚡ Speed +10%',def:'🛡 Defense +15%',atk:'⚔ Attack +15%'})[k]).join('  '):'';
       if(el&&el.dataset.t!==txt){ el.dataset.t=txt; el.textContent=txt; el.hidden=!txt; } }catch(e){} return r; }; }
 { const sub=document.getElementById('sub'); if(sub){ const s=document.createElement('span'); s.id='auraLine'; s.hidden=true; s.style.color='#ffd27a'; sub.appendChild(s); } }
+// ===================== your castle and houses are built of wood, then stone, then iron =====================
+// The castle, the plain village houses, the woodcutter's lodge and the farmhouse follow the village's size: a Hamlet is
+// wood (plank walls, timber beams, thatch roofs, plank back walls), a Town is stone (castle stone, stone brick beams,
+// tiled roofs) and a City is iron (riveted iron plates, iron beams, iron roofs). Each shop's house follows its own shop
+// level instead (level 1 wood, 2 stone, 3 iron). A skin swaps only the blocks that belong to a skin (STRUCT sets below)
+// inside each building's box, so furniture, doors, windows, chests and banners stay. Wood burns in raid fires and
+// lightning; stone does not; iron plate needs an iron pickaxe or better to break.
+// home.skin[key] = the tier last applied to that building; home.skinRoof[key] = its stone-tier roof color.
+const SKIN_ID=(()=>{ let id=1110; const free=()=>{ while((BLOCKS[id]&&BLOCKS[id].name)||ITEMS[id]) id++; return id++; }; return { thatch:free(), plate:free(), beam:free(), iroof:free() }; })();
+B.THATCH=SKIN_ID.thatch; B.IRON_PLATE=SKIN_ID.plate; B.IRON_BEAM=SKIN_ID.beam; B.IRON_ROOF=SKIN_ID.iroof;
+defB(B.THATCH,{name:'Thatch',hard:0.3,col:'#d8b45a'});
+defB(B.IRON_PLATE,{name:'Iron plate',hard:2.2,minPow:2,col:'#76849a'});
+defB(B.IRON_BEAM,{name:'Iron beam',hard:2.2,minPow:2,col:'#5a6068'});
+defB(B.IRON_ROOF,{name:'Iron roof',hard:2,minPow:2,col:'#4e5a6e'});
+for(const [id,desc] of [[B.THATCH,'Bundled straw for roofs. It catches fire easily'],[B.IRON_PLATE,'Riveted iron for walls. Fire cannot burn it; it takes an iron pickaxe to break'],[B.IRON_BEAM,'A dark iron beam for frames and trim'],[B.IRON_ROOF,'Iron roofing that shrugs off fire and storms']])
+  ITEMS[id]={name:BLOCKS[id].name,kind:'block',desc};
+RECIPES.push({ out:B.THATCH, n:4, need:[[I.WHEAT,3]], st:B.WORKBENCH, cat:'build' },
+  { out:B.IRON_PLATE, n:4, need:[[I.IRON_BAR,1],[B.STONE_BLOCK,2]], st:B.WORKBENCH, cat:'build' },
+  { out:B.IRON_BEAM, n:4, need:[[I.IRON_BAR,1]], st:B.WORKBENCH, cat:'build' },
+  { out:B.IRON_ROOF, n:4, need:[[I.IRON_BAR,1],[B.STONE_BLOCK,1]], st:B.WORKBENCH, cat:'build' });
+try{ WOODY.add(B.THATCH); }catch(e){}
+// textures
+{ const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
+  TEX[B.THATCH]=tex(r=>{ r(0,0,16,16,'#d8b45a'); for(let x=0;x<16;x+=2) r(x,0,1,16,'#b8923a'); for(let y=3;y<16;y+=5) r(0,y,16,1,'#a8822e'); for(let x=1;x<16;x+=4) r(x,(x*3)%16,1,3,'#f0d27a'); });
+  TEX[B.IRON_PLATE]=tex(r=>{ r(0,0,16,16,'#6f7d90'); r(1,1,14,6,'#7e8da2'); r(1,9,14,6,'#7e8da2'); r(0,0,16,1,'#b4c2d6'); r(0,0,1,16,'#a8b6ca'); r(0,15,16,1,'#3a4352'); r(15,0,1,16,'#424b5a'); r(0,7,16,1,'#3e4757'); r(0,8,16,1,'#a0aec2');
+    for(const [x,y] of [[2,2],[12,2],[2,11],[12,11]]){ r(x,y,2,2,'#2c3340'); r(x,y,1,1,'#e6eef8'); } });
+  TEX[B.IRON_BEAM]=tex(r=>{ r(0,0,16,16,'#5a6068'); r(0,0,16,2,'#7a8088'); r(0,14,16,2,'#3e434a'); r(0,0,2,16,'#6a7078'); r(14,0,2,16,'#43484f'); for(const y of [4,11]) for(const x of [4,11]){ r(x,y,2,2,'#2e3238'); r(x,y,1,1,'#9aa0a8'); } });
+  TEX[B.IRON_ROOF]=tex(r=>{ r(0,0,16,16,'#4e5a6e'); for(let x=0;x<16;x+=4){ r(x,0,1,16,'#7a889e'); r(x+2,0,1,16,'#343c4a'); } r(0,0,16,1,'#8a98ae'); r(0,15,16,1,'#2a303c'); });
+  BGTEX[15]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.IRON_PLATE],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.5)'; g.fillRect(0,0,16,16); return c; })(); }
+
+// what each tier is made of: [wood, stone, iron]
+const SKIN={ wall:[B.PLANK,B.STONE_BLOCK,B.IRON_PLATE], beam:[B.TIMBER,B.BRICK,B.IRON_BEAM], roof:[B.THATCH,null,B.IRON_ROOF], bg:[5,11,15] };
+const SKIN_OF=new Map(); for(const role of ['wall','beam','roof']) for(const id of SKIN[role]) if(id!=null) SKIN_OF.set(id,role); SKIN_OF.set(B.ROOF,'roof'); SKIN_OF.set(B.SHINGLE_B,'roof');
+const SKIN_BG=new Set([5,10,11,15]);
+const TIER_WORD=['wood','stone','iron'];
+// every building of yours that changes, with its box and the tier it should have
+function skinTargets(){ if(!home||!home.claimed) return []; const vt=Math.min(2,villageTier()), L=[];
+  const cx=home.castleCx, gy=home.gy; L.push({key:'castle',x0:cx-20,x1:cx+19,y0:gy-36,y1:gy+2,tier:vt,roof:player&&player.team==='r'?B.ROOF:B.SHINGLE_B});
+  (home.houses||[]).forEach((h,k)=>{ if(!h) return; const shop=h.role&&SHOPS[h.role]; const lv=shop?((home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1):0;
+    L.push({key:'h'+k,x0:h.x0-2,x1:h.x1+2,y0:h.gy-21,y1:h.gy,tier:shop?Math.max(0,Math.min(2,lv-1)):vt}); });
+  for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)) L.push({key:k,x0:r.x0-1,x1:r.x1+1,y0:r.gy-16,y1:r.gy,tier:vt}); }
+  return L; }
+// swap a building's skin blocks to the tier's materials
+function skinBuilding(t){ const x0=Math.max(0,t.x0), x1=Math.min(W-1,t.x1), y0=Math.max(0,t.y0), y1=Math.min(H-1,t.y1);
+  home.skinRoof=home.skinRoof||{}; let roof=home.skinRoof[t.key];
+  if(!roof){ let a=0,b=0; for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x]; if(id===B.ROOF) a++; else if(id===B.SHINGLE_B) b++; } roof=home.skinRoof[t.key]=a||b?(a>=b?B.ROOF:B.SHINGLE_B):(t.roof||B.SHINGLE_B); }
+  const want={ wall:SKIN.wall[t.tier], beam:SKIN.beam[t.tier], roof:t.tier===1?roof:SKIN.roof[t.tier] }, wbg=SKIN.bg[t.tier]; let n=0;
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x, id=world[i], role=SKIN_OF.get(id);
+    if(role&&id!==want[role]&&!(y===y1&&role!=='wall')){ setTile(x,y,want[role]); n++; }
+    const b=bg[i]; if(b&&SKIN_BG.has(b)&&b!==wbg){ bset(x,y,wbg); if(explored[i]) try{ mapPixel(x,y); }catch(e){} } }
+  home.skin=home.skin||{}; home.skin[t.key]=t.tier; return n; }
+// bring every building up to date (only those whose tier changed); returns the buildings that changed
+function skinAll(force){ if(!home||!home.claimed||isGuest()) return []; home.skin=home.skin||{}; const done=[];
+  for(const t of skinTargets()) if(force||home.skin[t.key]!==t.tier){ facRun(()=>skinBuilding(t)); done.push(t); }
+  if(done.length) for(let x=home.castleCx-40;x<=home.castleCx+40;x++) if(x>=0&&x<W) try{ updateSkyTop(x); }catch(e){}
+  return done; }
+// when the village grows, a shop is upgraded, a house is added or the village is rebuilt, and when a world loads
+{ const _ag=applyGrowth; applyGrowth=function(...a){ const r=_ag(...a); try{ const d=skinAll(); if(d.some(t=>t.key==='castle')) toast(`Your castle and houses are rebuilt in ${TIER_WORD[Math.min(2,villageTier())]}!`,4); }catch(e){ console.warn(e); } return r; }; }
+{ const _gv=growVillage; growVillage=function(...a){ const r=_gv(...a); try{ skinAll(); }catch(e){ console.warn(e); } return r; }; }
+{ const _us=upgradeShop; upgradeShop=function(v,...a){ const r=_us(v,...a); try{ const d=skinAll(); if(d.length&&v) toast(`${villagerName(v)}'s house is rebuilt in ${TIER_WORD[d[0].tier]}`,3); }catch(e){ console.warn(e); } return r; }; }
+{ const _nh=newHomeHouse; newHomeHouse=function(...a){ const r=_nh(...a); try{ skinAll(); }catch(e){ console.warn(e); } return r; }; }
+{ const _rh=rebuildHome; rebuildHome=function(...a){ const r=_rh(...a); try{ if(home){ home.skin={}; skinAll(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.claimed&&!isGuest()){ const first=!home.skinV; home.skinV=1; const d=skinAll(); if(first&&d.length) toast(`Your buildings show your village's size: wood for a hamlet, stone for a town, iron for a city.`,5); } }catch(e){ console.warn(e); } return r; }; }
+// a claimed castle takes the look of the village right away; buildings added later catch up within a few seconds
+setInterval(()=>{ try{ if(state==='play'&&home&&home.claimed&&!isGuest()) skinAll(); }catch(e){} },4000);
 })();
 </script>
 </body>
