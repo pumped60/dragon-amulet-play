@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791442272"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791442272"><link rel="manifest" href="manifest.webmanifest?v=1791442272"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791444933"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791444933"><link rel="manifest" href="manifest.webmanifest?v=1791444933"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.33</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.34</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.33</h3>
+    <h3>New in Beta 0.9.34</h3>
+    <p>Animals: boars give boar meat and beavers beaver meat, and hawks, eagles, owls and penguins each have their own meat, raw and cooked. Pigs live in the grasslands (pork when hunted). Birds of every kind go in a bird cage (crafted at a workbench), never a fenced pen, and lay eggs there each morning; use the cage to collect them or let a bird out. As pets, only birds gather; other animals produce or collect food in a pen: cows milk, sheep wool, pigs mushrooms and carrots, boars grass and seeds, rabbits berries and carrots. Piglets, beaver kits and fluffy chicks of hawks, eagles and owls join the other babies. Runes say exactly what they do at each level.</p>
+    <h3>Beta 0.9.33</h3>
     <p>Woodcutters and farmers work like the miners. The first woodcutter builds a woodcutter's lodge beside the village, and the first farmer a farmhouse with a field. Each has a chest and a head worker: talk to the Head forester or Head farmer to open it. Woodcutters fell trees, plant saplings where they cut and when trees run short, and bring the logs to the lodge. Farmers harvest and replant ripe crops, till and sow the farmhouse field, and bring the harvest in. They work wherever you are, have their own look, and friends see them too. Boats are an upgrade like an accessory: your best boat is always with you, and you sail it as soon as you walk into water. Penned and gathering animals bring produce instead of meat (cows give milk); plant eaters never bring meat, while hawks, eagles and bears can, and gatherers bring things a quarter less often. Axes and hoes have new icons.</p>
     <h3>Beta 0.9.32</h3>
     <p>Shared worlds live online: whenever a world is hosted on the game page, it is saved online every few minutes. If you join with the game ID while nobody is hosting, you open the newest copy and host it yourself; when the first host comes back, they get the newest copy too. Your hero stays your own. Every friend sees the enemies and shots around them, wherever they are, and the group shares one monster limit. Anyone can grow the village into a town or city, and it grows for everyone. Wear as many different charms as you like: their bonuses add up, and the bag's Charms worn row takes one off. Bread is made from wheat only.</p>
@@ -568,7 +570,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.33</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.34</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -828,7 +830,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.33</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.34</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -847,7 +849,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.33', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.34', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -10040,6 +10042,93 @@ function lodgeGrowTick(){ try{ if(!world||!home||state==='title'||(typeof MP!=='
     const L=home.lodge; if(L&&!near(L.x0)) facRun(()=>{ for(let x=L.x0-45;x<=L.x1+45;x++){ if(x<4||x>=W-4||R()>=1/60) continue; const y=surf[x]-1, id=tileAt(x,y);
         if(isSapling(id)&&R()<0.02&&[B.GRASS,B.DIRT].includes(tileAt(x,y+1))){ world[y*W+x]=0; growSapling(x,y+1,R()<0.1?2:1,R,id); refreshArea(x-9,x+10,y-30,y+1); } } }); }catch(e){ console.warn(e); } }
 setInterval(lodgeGrowTick,1000);
+// ===================== animals: their own meats, pigs, bird cages, pens and gatherers =====================
+// Meats: boars give boar meat, beavers beaver meat, hawks, eagles, owls and penguins their own meat; each cooks at a
+// furnace. Pigs are a farm animal of the grasslands (pork when hunted). Birds of every kind go in a bird cage (not a
+// fenced pen) and lay eggs there each morning. As pets only birds can gather; other animals produce or collect food
+// in a pen: cows milk, sheep wool, pigs mushrooms and carrots, boars grass and seeds, rabbits berries and carrots.
+// Every animal has a baby look for breeding (piglets, beaver kits and fluffy chicks of hawks, eagles and owls added).
+let NID=680; const newItem=(o)=>{ while(ITEMS[NID]) NID++; ITEMS[NID]=o; return NID++; };
+const MEATS={};
+for(const [k,nm,raw,cook,heal,ch] of [['boar','Boar meat','#a83a2a','#8a5a3a',7,22],['beaver','Beaver meat','#b0503a','#8a5c3a',6,18],['hawk','Hawk meat','#c86a5a','#a8724a',5,16],
+  ['eagle','Eagle meat','#c05a4a','#a06a42',6,20],['owl','Owl meat','#c87a6a','#b08058',5,16],['penguin','Penguin meat','#a84a4a','#8a5a48',6,20]]){
+  const r=newItem({name:'Raw '+nm.toLowerCase(),kind:'food',heal,ing:[raw,'#f0b0a0'],desc:`Meat from a ${k==='penguin'?'penguin':k}. Cook it at a furnace`});
+  const c=newItem({name:'Cooked '+nm.toLowerCase(),kind:'food',heal:ch,ing:[cook,'#e8b878'],desc:`Cooked ${nm.toLowerCase()}`});
+  SELL[r]=2; SELL[c]=5; MEATS[k]={raw:r,cooked:c}; RECIPES.push({ out:c, n:1, need:[[r,1]], st:B.FURNACE, cat:'cook' });
+  customIcon(r,(rect,px)=>{ rect(3,5,10,7,raw); rect(4,4,8,1,raw); rect(4,12,7,1,raw); rect(5,6,6,4,'#f0a0a0'); rect(11,4,3,2,'#f4f0e8'); px(13,6,'#f4f0e8'); px(6,7,'#ffffff'); });
+  customIcon(c,(rect,px)=>{ rect(3,5,10,7,cook); rect(4,4,8,1,cook); rect(4,12,7,1,cook); rect(5,6,6,4,'#d89a5a'); rect(11,4,3,2,'#f4f0e8'); px(13,6,'#f4f0e8'); px(6,7,'#ffe0a0'); }); }
+ANIMALS.boar.meatId=MEATS.boar.raw; ANIMALS.beaver.meatId=MEATS.beaver.raw; ANIMALS.penguin.meatId=MEATS.penguin.raw;
+for(const k of ['hawk','eagle','owl']) if(ANIMALS[k]) ANIMALS[k].meatId=MEATS[k].raw;
+
+// ---- pigs ----
+ANIMALS.pig={ w:18, h:13, hp:40, dmg:0, speed:60, temper:'good', meat:2, meatId:I.PORK };
+BREED_FOOD.pig=[I.CARROT,I.PUMPKIN,I.MUSHROOM]; BREED_FOOD.beaver=[B.LOG,I.APPLE]; for(const k of ['hawk','eagle','owl']) if(ANIMALS[k]) BREED_FOOD[k]=[I.RABBIT_MEAT,I.RAW_FISH];
+if(typeof TAME_SIZE!=='undefined') TAME_SIZE.pig=2;
+let pigSpawn=false;
+{ const _sa=spawnAnimals; spawnAnimals=function(...a){ pigSpawn=true; try{ return _sa(...a); } finally{ pigSpawn=false; } }; }
+{ const _ma=makeAnimal; makeAnimal=function(type,x,y,...a){ if(pigSpawn&&type==='boar'&&!isNight()&&Math.random()<0.5){ const e=_ma('boar',x,y,...a); Object.assign(e,{atype:'pig',w:ANIMALS.pig.w,h:ANIMALS.pig.h,hp:ANIMALS.pig.hp,maxHp:ANIMALS.pig.hp,dmg:0,speed:ANIMALS.pig.speed,temper:'good'}); return e; } return _ma(type,x,y,...a); }; }
+{ const _as=animalSprite; animalSprite=function(e){ if(e.atype!=='pig') return _as(e); const f=Math.abs(e.vx)>8?Math.floor(e.anim*8)%2:0, cw=e.w+14, ch=e.h+12;
+    return sprite(`a|pig|${f}|${e.atkT>0?1:0}`,cw,ch,g=>{ const R=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); }, bx=7, by=ch-2-e.h, l=f?1:0, c='#f0a8b0', d='#d07a88';
+      R(bx+1,by+3,15,8,c); R(bx+2,by+2,12,1,'#f8c8d0'); R(bx+15,by+4,5,5,c); R(bx+19,by+6,2,3,'#e88a98'); R(bx+19,by+7,1,1,'#8a3a48'); R(bx+17,by+5,1,1,'#1a1a22'); R(bx+15,by+2,2,2,d);
+      R(bx,by+3,1,1,d); R(bx-1,by+2,1,1,d); R(bx+3+l,by+11,2,2,d); R(bx+12-l,by+11,2,2,d); }); }; }
+
+// ---- babies: piglets, beaver kits and birds-of-prey chicks ----
+{ const _db=drawBabyAnimal; drawBabyAnimal=function(e){ if(e.atype!=='pig'&&e.atype!=='beaver') return _db(e);
+    const cx=Math.round(cxOf(e)), by=Math.round(e.y+e.h), f=e.facing||1, fl=e.hurtT>0, moving=Math.abs(e.vx)>6, st=moving?(Math.floor(e.anim*9)%2):0;
+    ctx.save(); ctx.translate(cx,by); ctx.scale(f,1); const R=(x,y,w,h,c)=>{ ctx.fillStyle=fl?'#ffffff':c; ctx.fillRect(x,y,w,h); };
+    if(e.atype==='pig'){ R(-5,-7,9,5,'#f8b8c0'); R(3,-9,4,4,'#f8b8c0'); R(6,-7,1,2,'#e88a98'); R(4,-8,1,1,'#1a1a22'); R(-6,-7,1,1,'#d07a88'); for(const x of [-4,-1,2]) R(x,-2-(st&&x===-1?1:0),1,2,'#d07a88'); }
+    else { R(-5,-6,8,4,'#8a5a32'); R(2,-7,4,4,'#8a5a32'); R(5,-5,1,1,'#fff6d8'); R(4,-6,1,1,'#1a1a22'); R(-8,-4,3,2,'#4a3a2a'); for(const x of [-4,0]) R(x,-2-(st?1:0),1,2,'#5b3819'); }
+    ctx.restore(); }; }
+{ const _dr=drawRaptor; drawRaptor=function(e){ if(!e.baby) return _dr(e); const cx=Math.round(cxOf(e)), by=Math.round(e.y+e.h), f=e.facing||1, fl=e.hurtT>0;
+    const col={hawk:['#a8784a','#e8d8b8'],eagle:['#6a4a2a','#f4f4f0'],owl:['#b8a888','#e8e0c8']}[e.atype]||['#a8784a','#e8d8b8'];
+    ctx.save(); ctx.translate(cx,by); ctx.scale(f,1); const R=(x,y,w,h,c)=>{ ctx.fillStyle=fl?'#ffffff':c; ctx.fillRect(x,y,w,h); };
+    R(-4,-8,8,7,col[1]); R(-3,-9,6,1,col[1]); R(-5,-6,2,3,col[0]); R(3,-6,2,3,col[0]); R(1,-7,1,1,'#1a1a22'); R(3,-6,2,1,'#e8b84a'); R(-2,-1,1,1,'#e8b84a'); R(1,-1,1,1,'#e8b84a');
+    if(e.atype==='owl'){ R(-3,-7,2,2,'#ffffff'); R(1,-7,2,2,'#ffffff'); R(-2,-6,1,1,'#1a1a22'); R(1,-6,1,1,'#1a1a22'); }
+    ctx.restore(); }; }
+
+// ---- pens: produce or collect food; birds go in cages instead ----
+const isBirdType=t=>t==='bird'||(ANIMALS[t]&&ANIMALS[t].raptor);
+Object.assign(FARM_YIELD,{ pig:[[I.MUSHROOM,1],[I.CARROT,1]], boar:[[I.WHEAT_SEEDS,2],[B.TALLGRASS,2]], rabbit:[[I.BERRIES,2],[I.CARROT,1]] });
+delete FARM_YIELD.bird;
+// as pets, only birds gather (for other animals the Gather job is gone; they produce in a pen instead)
+for(const k of Object.keys(FORAGE)) if(!isBirdType(k)) delete FORAGE[k];
+Object.assign(FORAGE,{ bird:[[I.EGG,1],[I.BERRIES,2],[I.WHEAT_SEEDS,1]] });
+setInterval(()=>{ try{ if(!ents) return; for(const e of ents) if(e.tamed&&!e.dead&&e.mode==='gather'&&!isBirdType(e.atype)) e.mode='pet'; }catch(err){} },2000);
+{ const _rp=renderPets; renderPets=function(...a){ const r=_rp(...a); try{ const pets=ents.filter(e=>e.tamed&&!e.dead);
+      for(const b of document.querySelectorAll('#petList [data-pet]')){ const a2=pets[+b.dataset.pet]; if(!a2) continue; const bird=isBirdType(a2.atype);
+        if(b.dataset.mode==='gather'&&!bird) b.remove(); if(b.dataset.mode==='farm'&&bird){ b.dataset.mode='cage'; b.textContent='Cage'; } } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- the bird cage ----
+let CAGE=1100; while((BLOCKS[CAGE]&&BLOCKS[CAGE].name)||ITEMS[CAGE]) CAGE++; B.BIRD_CAGE=CAGE;
+defB(CAGE,{name:'Bird cage',solid:false,hard:0.4,col:'#c8a040'});
+ITEMS[CAGE]={name:'Bird cage',kind:'block',desc:'Put tamed birds in it (Army: Cage). Up to 4 birds lay eggs in it each morning; use it to collect them'};
+RECIPES.push({ out:CAGE, n:1, need:[[I.IRON_BAR,2],[480,4]], st:B.WORKBENCH, cat:'build' });
+{ const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  r(7,0,2,2,'#8a6a2a'); r(3,2,10,2,'#c8a040'); r(2,4,12,1,'#c8a040'); for(const x of [2,5,8,11,13]) r(x,4,1,10,'#c8a040'); r(2,13,12,2,'#8a6a2a'); r(4,9,8,1,'#a07a30'); TEX[CAGE]=c; }
+const cageOf=(x,y)=>{ home.cages=home.cages||{}; const k=x+','+y; return home.cages[k]||(home.cages[k]={birds:[],eggs:0}); };
+function nearCage(n){ if(!player) return null; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); let best=null, bd=1e9;
+  for(let x=px-n;x<=px+n;x++) for(let y=py-n;y<=py+n;y++) if(tileAt(x,y)===CAGE){ const d=Math.abs(x-px)+Math.abs(y-py); if(d<bd){ bd=d; best=[x,y]; } } return best; }
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('#petList [data-pet][data-mode="cage"]'); if(!b) return; ev.stopPropagation();
+  const a=ents.filter(e=>e.tamed&&!e.dead)[+b.dataset.pet]; if(!a) return; const at=nearCage(15); if(!at){ toast('Place a bird cage within 15 blocks of you first (crafted at a workbench)',3); return; }
+  const c=cageOf(at[0],at[1]); if(c.birds.length>=4){ toast('That cage is full (4 birds)',2); return; }
+  c.birds.push(a.atype); a.dead=true; puff(cxOf(a),cyOf(a),'#f4ecd2',8,60); toast(`Your ${a.atype} is in the cage. It lays eggs each morning.`,3); renderPets(); },true);
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ for(const [k,c] of Object.entries((home&&home.cages)||{})){ const [x,y]=k.split(',').map(Number); if(tileAt(x,y)!==CAGE){ delete home.cages[k]; continue; } c.eggs=Math.min(40,(c.eggs||0)+c.birds.length); } }catch(e){} return r; }; }
+// collect eggs or let a bird out with the use key, or by tapping the cage
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const at=nearCage(3); if(at){ const c=cageOf(at[0],at[1]);
+      if(c.eggs>0) o.push({label:`Collect ${c.eggs} egg${c.eggs===1?'':'s'} from the bird cage`,direct:true,go:()=>{ give(I.EGG,c.eggs); toast(`You collect ${c.eggs} eggs`,2); c.eggs=0; }});
+      if(c.birds.length) o.push({label:`Let a ${c.birds[c.birds.length-1]} out of the cage`,go:()=>{ const t=c.birds.pop(); const b=makeAnimal(t,at[0]*T,(at[1]-1)*T); Object.assign(b,{tamed:true,team:player.team,mode:'pet',temper:'good'}); applyPetUp(b); ents.push(b); toast(`Your ${t} is out of the cage`,2); }}); } }catch(e){} return o; }; }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const was=tileAt(x,y)===CAGE&&home&&home.cages&&home.cages[x+','+y]; const r=_bt(x,y,...a);
+    if(was&&tileAt(x,y)!==CAGE){ const c=home.cages[x+','+y]; delete home.cages[x+','+y]; if(c.eggs) spawnDrop(x*T+8,y*T,I.EGG,c.eggs); for(const t of c.birds){ const b=makeAnimal(t,x*T,(y-1)*T); Object.assign(b,{tamed:true,team:player.team,mode:'pet',temper:'good'}); ents.push(b); } } return r; }; }
+// the birds show inside their cage
+{ const _df=drawFires; drawFires=function(...a){ try{ for(const [k,c] of Object.entries((home&&home.cages)||{})){ if(!c.birds.length) continue; const [x,y]=k.split(',').map(Number); const X=x*T, Y=y*T;
+      if(X<camX-T||X>camX+viewW||Y<camY-T||Y>camY+viewH) continue; c.birds.slice(0,4).forEach((t,i)=>{ const col=t==='bird'?'#e5a03b':t==='owl'?'#b8a888':t==='eagle'?'#6a4a2a':'#a8784a'; const bx=X+3+(i%2)*6, by=Y+5+((i/2)|0)*4;
+        ctx.fillStyle=col; ctx.fillRect(bx,by,4,3); ctx.fillStyle='#1a1a22'; ctx.fillRect(bx+3,by,1,1); }); if(c.eggs){ ctx.fillStyle='#f8f0dc'; ctx.fillRect(X+10,Y+11,2,2); } } }catch(e){} return _df(...a); }; }
+// fenced pens never take birds
+{ const _pi=penIn; penIn=function(st,...a){ const birds=ents.filter(e=>!e.dead&&e.tamed&&isBirdType(e.atype)&&Math.abs(cxOf(e)-cxOf(player))<14*T); if(birds.length) toast('Birds live in a bird cage, not a pen',2.5); return _pi(st,...a); }; }
+
+// ---- runes say exactly what they do, from level I to V ----
+for(const [id,d] of Object.entries(ITEMS)) if(d&&d.kind==='rune'&&RUNE_FX[d.rune]){ const nm=d.name.toLowerCase();
+  d.desc=`Set it in a weapon: use it while holding the weapon. At level I ${runeText(d.rune,1)}; at level V ${runeText(d.rune,5)}. Every ${nm} you add raises the level, and a different rune replaces it`; }
 })();
 </script>
 </body>
