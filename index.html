@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791486022"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791486022"><link rel="manifest" href="manifest.webmanifest?v=1791486022"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791487433"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791487433"><link rel="manifest" href="manifest.webmanifest?v=1791487433"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.45</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.46</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.45</h3>
+    <h3>New in Beta 0.9.46</h3>
+    <p>The portal on top of the stone keep stands in the middle of the roof (keeps you already built move it there). The wiki shows every building in your village at each step: the castle as a Hamlet, a Town and a City, the village houses, a shop house at levels 1, 2 and 3, and the woodcutter's lodge and farmhouse, with what each upgrade costs.</p>
+    <h3>Beta 0.9.45</h3>
     <p>Watchtowers, keeps and small towers have arrow slits on their roofs, so the soldiers posted up top shoot through them too; the watchtower has 6 posts (two on each upper floor and two on the roof). Each building in the Buildings window has its own picture, and the animal pen shows a fence with crops and a sheep. The wiki has a Buildings section: every building with its cost, size and a picture of each numbered soldier post.</p>
     <h3>Beta 0.9.44</h3>
     <p>Archers and mages posted in towers, keeps and on roofs see over the wall beside them, aim at enemies far below and reach a little farther, so they shoot at whatever comes at their side of the building. Raiders always arrive from outside your village: any enemy soldier found on a village roof is put back on open ground outside, and monsters never appear on your roofs. The battlement wall is a small tower: one room with a doorway on each side, arrow slits over the doors and a lookout roof (4 posts). The orc huts are built of solid log walls, not tree trunks you could walk through. Every wood has its own plank wall and its own furniture look: spruce grain, birch flecks, palm weave, jungle vines and dark oak gold studs, and furniture has a dark outline so it stands out against any wall. Barrels, cupboards and desks store items, and you can sit on chairs, benches and stools to heal three times as fast. The miners' chest opens like any other chest.</p>
@@ -592,7 +594,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.45</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.46</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -852,7 +854,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.45</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.46</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -871,7 +873,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.45', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.46', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3668,7 +3670,7 @@ function makeTestWorld(cls){ curSlot=4; heroPick.state=null; heroPick.newCls=nul
 // ---- portal network ----
 function portalList(){ const L=[]; const add=(label,x,y,fee)=>L.push({label,x,y,fee,tx:Math.round(x/T)+2,ty:Math.round((y+29)/T)});
   if(home&&home.claimed) add('Home village',(home.castleCx-2)*T,(home.gy-10)*T-29,15);
-  if(typeof myStructures!=='undefined') myStructures.filter(st=>st.kind==='keep').forEach((st,i)=>{ const roof=tileAt(st.x-1,st.gy-12)===B.PORTAL; add('Your keep'+(i?' '+(i+1):''),(st.x-3)*T,(roof?st.gy-11:st.gy)*T-29,15); });
+  if(typeof myStructures!=='undefined') myStructures.filter(st=>st.kind==='keep').forEach((st,i)=>{ const roof=tileAt(st.x,st.gy-12)===B.PORTAL||tileAt(st.x-1,st.gy-12)===B.PORTAL; add('Your keep'+(i?' '+(i+1):''),(st.x-3)*T,(roof?st.gy-11:st.gy)*T-29,15); });
   for(const b of bases) if(conquered[b.f]) add('Conquered '+FNAME[b.f].toLowerCase()+' castle',(b.cx-2)*T,(b.gy-10)*T-29,20);
   if(tower.cleared){ const tp=tower.portal||{x:tower.tx,y:tower.top+8}; add('Wizard tower',(tp.x-2)*T,(tp.y+1)*T-29,25); add('Sky realm (outside the sky castle)',sky.arrive.x,sky.arrive.y,50); }
   if(fort.cleared){ const fp=fort.portal||{x:fort.tx,y:fort.gy-1}; add('Magma fortress',(fp.x-2)*T,(fp.y+1)*T-29,25); add('Magma realm (outside the magma castle)',magma.arrive.x,magma.arrive.y,50); }
@@ -3999,7 +4001,7 @@ function buildTowerAt(cx,gy){ const old=surf[cx]; surf[cx]=gy; const tw=buildWat
 function buildKeepAt(cx,gy){ const L=cx-8, R=cx+8, S=B.STONE_BLOCK; footing(L,R,gy);
   for(let y=gy-11;y<gy;y++){ wset(L,y,S); wset(R,y,S); for(let x=L+1;x<R;x++) bset(x,y,2); }
   for(let x=L;x<=R;x++){ wset(x,gy-11,S); wset(x,gy-6,(x===cx+5||x===cx+6)?B.PLATFORM:S); } for(const X of [L,R]){ wset(X,gy-12,B.ARROW_SLIT); wset(X,gy-13,B.ARROW_SLIT); }   // slits on the roof corners
-  wset(cx-1,gy-12,B.PORTAL); wset(cx-1,gy-13,B.PORTAL);
+  wset(cx,gy-12,B.PORTAL); wset(cx,gy-13,B.PORTAL);   // centred on the roof
   wset(cx+5,gy-11,B.PLATFORM); wset(cx+6,gy-11,B.PLATFORM);
   for(const y of [gy-7,gy-8]){ wset(L,y,B.ARROW_SLIT); wset(R,y,B.ARROW_SLIT); }   // slits upstairs; solid wall over the doors
   for(const dx of [L,R]){ wset(dx,gy-1,B.DOOR); wset(dx,gy-2,B.DOOR_T); } wset(L+2,gy-4,B.TORCH); wset(R-2,gy-4,B.TORCH); wset(L+2,gy-9,B.TORCH); wset(R-2,gy-9,B.TORCH); wset(cx,gy-4,B.TORCH); wset(cx,gy-9,B.TORCH);
@@ -10701,6 +10703,10 @@ const BP_ICON={};
     for(const x of [2,4,13,15]){ r(x,5,1,8,'#c8a040'); r(x-1,4,3,2,'#e8c860'); } r(7,9,5,3,'#f4f0e0'); r(11,8,2,2,'#f4f0e0'); r(12,9,1,1,'#3a3a3a'); r(8,12,1,1,'#3a3a3a'); r(10,12,1,1,'#3a3a3a'); });
   draw('keep',r=>{ r(1,6,14,9,stone); r(1,6,14,1,lt); for(const x of [1,4,7,10,13]) r(x,4,2,2,stone); r(1,4,1,2,slit); r(14,4,1,2,slit); r(6,10,4,5,door); r(7,7,2,2,'#b066ff'); for(const x of [2,12]) r(x,8,1,2,slit); r(0,15,16,1,dk); }); }
 { const _rb=renderBuild; renderBuild=function(...a){ const r=_rb(...a); try{ $('#bldList').querySelectorAll('.recipe').forEach((row,i)=>{ const bp=BLUEPRINTS[i], im=row.querySelector('img'); if(bp&&im&&BP_ICON[bp.id]) im.src=BP_ICON[bp.id]; }); }catch(e){ console.warn(e); } return r; }; }
+
+// keeps built before Beta 0.9.46 had their roof portal one block left of centre: move it to the middle
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.keepPortalV&&!isGuest()){ home.keepPortalV=1;
+      facRun(()=>{ for(const st of myStructures) if(st.kind==='keep'&&tileAt(st.x-1,st.gy-12)===B.PORTAL&&tileAt(st.x,st.gy-12)===0&&tileAt(st.x,st.gy-13)===0){ for(const y of [st.gy-12,st.gy-13]){ setTile(st.x-1,y,0); setTile(st.x,y,B.PORTAL); } } }); } }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
