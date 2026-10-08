@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791470754"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791470754"><link rel="manifest" href="manifest.webmanifest?v=1791470754"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791472369"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791472369"><link rel="manifest" href="manifest.webmanifest?v=1791472369"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.38</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.39</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.38</h3>
+    <h3>New in Beta 0.9.39</h3>
+    <p>In a shared world every friend has a health bar over their head, under their name: a gold-framed bar with a heart that turns from green to yellow to red, and flashes when they are close to falling. Soldiers keep their thin red line, so friends are easy to tell apart.</p>
+    <h3>Beta 0.9.38</h3>
     <p>Checklists: every building, growing the village and each shop upgrade has a Checklist button. It pins a small list to your screen showing how many of each item you have and need, with a check mark once you have enough. When everything is there the list glows "Ready!", and it goes away once you build or upgrade. You can pin up to 3, and choose where they sit and how big they are in Settings &gt; Screen. The health, mana and hunger bars are bigger, with icons, notches every tenth, a pale trail that drains after a hit, and a flash when one runs low.</p>
     <h3>Beta 0.9.37</h3>
     <p>Bird cages work for everyone in a shared world: a friend can put a bird in any cage, every player sees the birds and the eggs they lay, and eggs one player collects are gone for the others.</p>
@@ -578,7 +580,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.38</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.39</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -838,7 +840,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.38</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.39</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -857,7 +859,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.38', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.39', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5726,8 +5728,16 @@ function mpRemoteAttack(r,d){ const w=ITEMS[d.w]; if(!w||w.kind!=='weapon') retu
   // so dealing it again here would count every swing near another player twice
 }
 function drawRemotes(){ const t=0.25; for(const r of MP.remote.values()){ if(r.atkT>0) r.atkT=Math.max(0,r.atkT-1/60); if(r.showFaceT>0){ r.showFaceT-=1/60; r.facing=Math.cos(r.atkAng||0)>=0?1:-1; } if(!isFinite(r.x)) r.x=r.tx; if(!isFinite(r.y)) r.y=r.ty; if(!isFinite(r.x)||!isFinite(r.y)) continue; if(r.proxy){ r.proxy.x=r.tx; r.proxy.y=r.ty; r.proxy.hp=Math.max(1,r.hp); r.proxy.maxHp=r.maxHp; r.proxy.dead=false; } r.x+=(r.tx-r.x)*t; r.y+=(r.ty-r.y)*t; for(const o of r.soldiers){ o.x+=(o.tx-o.x)*t; o.y+=(o.ty-o.y)*t; o.anim=(o.anim||0)+0.05; try{ if(o.kind==='animal') drawAnimal(o); else drawEntity(o); }catch(e){} }
-    { const hp=r.hp, mh=r.maxHp; r.hp=1; r.maxHp=1; try{ if(r.riding) drawBoat(r); else drawEntity(r); }catch(e){} r.hp=hp; r.maxHp=mh; } try{ drawRemoteThrown(r); }catch(e){} const nm=r.nm||(r.by&&MP.names[r.by])||'Friend'; ctx.font='6px "Press Start 2P", monospace'; ctx.textAlign='center'; ctx.fillStyle='#000'; ctx.fillText(nm,Math.round(r.x+6)+1,Math.round(r.y)-9); ctx.fillStyle='#ffe066'; ctx.fillText(nm,Math.round(r.x+6),Math.round(r.y)-10);
-    ctx.fillStyle='#3f3150'; ctx.fillRect(Math.round(r.x-3),Math.round(r.y)-7,18,3); ctx.fillStyle='#6ad86a'; ctx.fillRect(Math.round(r.x-2),Math.round(r.y)-6,Math.round(16*clamp(r.hp/r.maxHp,0,1)),1); } }
+    { const hp=r.hp, mh=r.maxHp; r.hp=1; r.maxHp=1; try{ if(r.riding) drawBoat(r); else drawEntity(r); }catch(e){} r.hp=hp; r.maxHp=mh; } try{ drawRemoteThrown(r); }catch(e){} const nm=r.nm||(r.by&&MP.names[r.by])||'Friend'; ctx.font='6px "Press Start 2P", monospace'; ctx.textAlign='center'; ctx.fillStyle='#000'; ctx.fillText(nm,Math.round(r.x+6)+1,Math.round(r.y)-14); ctx.fillStyle='#ffe066'; ctx.fillText(nm,Math.round(r.x+6),Math.round(r.y)-15);
+    drawFriendHp(r); } }
+// a friend's health over their head: a framed gold-edged bar with a heart, green, then yellow, then flashing red when low
+// (soldiers show only a thin red line, and only when hurt)
+function drawFriendHp(r){ const f=clamp(r.hp/r.maxHp,0,1), w=26, x=Math.round(r.x+6-w/2+3), y=Math.round(r.y)-10, low=f<0.25;
+  const flash=low&&Math.floor(performance.now()/250)%2===0;
+  ctx.fillStyle='#17111f'; ctx.fillRect(x-1,y-1,w+2,6); ctx.fillStyle=flash?'#ff4a4a':'#d8b04a'; ctx.fillRect(x-1,y-1,w+2,1); ctx.fillRect(x-1,y+4,w+2,1); ctx.fillRect(x-1,y-1,1,6); ctx.fillRect(x+w,y-1,1,6);
+  ctx.fillStyle='#3a1014'; ctx.fillRect(x,y,w,4); ctx.fillStyle=f>0.5?'#5ad84f':f>0.25?'#f0c030':'#e5383b'; ctx.fillRect(x,y,Math.round(w*f),4); ctx.fillStyle='rgba(255,255,255,.35)'; ctx.fillRect(x,y,Math.round(w*f),1);
+  ctx.fillStyle='rgba(0,0,0,.35)'; for(let k=1;k<4;k++) ctx.fillRect(x+Math.round(w*k/4),y,1,4);
+  const hx=x-7, hy=y-1; ctx.fillStyle='#17111f'; ctx.fillRect(hx-1,hy,7,6); ctx.fillStyle=flash?'#ffffff':'#ff5a5f'; ctx.fillRect(hx,hy+1,2,2); ctx.fillRect(hx+3,hy+1,2,2); ctx.fillRect(hx,hy+2,5,1); ctx.fillRect(hx+1,hy+3,3,1); ctx.fillRect(hx+2,hy+4,1,1); }
 $('#btnMP').addEventListener('click',()=>{ hide('scrTitle'); mpStatus(''); show('scrMP'); });
 $('#mpBack').addEventListener('click',()=>{ hide('scrMP'); show('scrTitle'); });
 $('#mpHost').addEventListener('click',()=>{ hide('scrMP'); MP.pendingHost=true; $('#btnNew').click(); });
