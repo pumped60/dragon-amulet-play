@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791472369"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791472369"><link rel="manifest" href="manifest.webmanifest?v=1791472369"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791473858"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791473858"><link rel="manifest" href="manifest.webmanifest?v=1791473858"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.39</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.40</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.39</h3>
+    <h3>New in Beta 0.9.40</h3>
+    <p>Melee leaders lift the fighters around them. Every beastmaster, knight and macebearer, you or a soldier, helps everyone on their side within 8 blocks, themselves included: beastmasters make them 10% faster, knights make them take 15% less damage and macebearers make them hit 15% harder. One of each kind counts, and enemies get the same from their own leaders. The lifts you have show under your coins. Faction bonuses reach every soldier of that color: archers and wizards shoot faster and their arrows and bolts fly faster, and macebearers reach farther.</p>
+    <h3>Beta 0.9.39</h3>
     <p>In a shared world every friend has a health bar over their head, under their name: a gold-framed bar with a heart that turns from green to yellow to red, and flashes when they are close to falling. Soldiers keep their thin red line, so friends are easy to tell apart.</p>
     <h3>Beta 0.9.38</h3>
     <p>Checklists: every building, growing the village and each shop upgrade has a Checklist button. It pins a small list to your screen showing how many of each item you have and need, with a check mark once you have enough. When everything is there the list glows "Ready!", and it goes away once you build or upgrade. You can pin up to 3, and choose where they sit and how big they are in Settings &gt; Screen. The health, mana and hunger bars are bigger, with icons, notches every tenth, a pale trail that drains after a hit, and a flash when one runs low.</p>
@@ -580,7 +582,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.39</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.40</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -840,7 +842,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.39</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.40</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -859,7 +861,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.39', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.40', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1482,10 +1484,10 @@ const SELL = { [I.CORAL]:8, [I.PEARL]:25, [I.BLACK_PEARL]:90, [I.ANCIENT_COIN]:4
   [I.MYTHRIL_BAR]:55, [I.ADAMANT_BAR]:110, [429]:40, [I.EMERALD]:18, [I.RUBY]:30, [B.OBSIDIAN]:6 };
 
 const CLASSES = {
-  beast: { name:'Beastmaster', hp:105, mana:60, npcHp:85, def:2, speed:100, weapon:I.BONE_DAGGERS, hire:55, desc:'Tames any animal with just food. Fights with twin daggers: twice as fast as a sword, a bit shorter reach.' },
-  knight:{ name:'Knight', hp:130, mana:40, npcHp:100, def:4, speed:92, weapon:I.SQUIRE_SWORD, hire:40, desc:'Sword and shield. The most health and armor.' },
+  beast: { name:'Beastmaster', hp:105, mana:60, npcHp:85, def:2, speed:100, weapon:I.BONE_DAGGERS, hire:55, desc:'Tames any animal with just food. Fights with twin daggers: twice as fast as a sword, a bit shorter reach. Everyone on your side within 8 blocks moves 10% faster.' },
+  knight:{ name:'Knight', hp:130, mana:40, npcHp:100, def:4, speed:92, weapon:I.SQUIRE_SWORD, hire:40, desc:'Sword and shield. The most health and armor. Everyone on your side within 8 blocks takes 15% less damage.' },
   archer:{ name:'Archer', hp:100, mana:50, npcHp:75, def:2, speed:108, weapon:I.SHORT_BOW, hire:35, desc:'Quick on their feet. Bows hit 30% harder in an archer\'s hands, and every arrow flies on through a second enemy.' },
-  mace:  { name:'Macebearer', hp:115, mana:40, npcHp:90, def:2, speed:88, weapon:I.WOOD_MACE, hire:45, desc:'Slow, heavy swings that send enemies flying.' },
+  mace:  { name:'Macebearer', hp:115, mana:40, npcHp:90, def:2, speed:88, weapon:I.WOOD_MACE, hire:45, desc:'Slow, heavy swings that send enemies flying. Everyone on your side within 8 blocks hits 15% harder.' },
   wizard:{ name:'Wizard', hp:80, mana:120, npcHp:65, def:0, speed:98, weapon:I.APPRENTICE_STAFF, hire:60, desc:'Casts magic bolts with a staff. Most mana, strongest spells, least health.' },
 };
 const CLS_KEYS=['knight','archer','mace','wizard','beast'];
@@ -2894,10 +2896,10 @@ function fellShroom(x,y){ const st=[[x,y]], seen=new Set(); let n=0; const IDS=n
   give(I.MUSHROOM,Math.max(1,Math.round(n/3))); }
 
 // ================= AI =================
-function npcShoot(e,t,kind){ const dx=cxOf(t)-cxOf(e), dy=cyOf(t)-cyOf(e), adx=Math.abs(dx);
-  if(kind==='magic'){ const ang=Math.atan2(dy,dx); projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*360,vy:Math.sin(ang)*360,team:e.team,dmg:Math.round(12*(e.dmgMul||1)),kind:'magic',col:FLIGHT[e.team]||'#c8a0ff',life:2.5,grav:0,r:7,src:e}); return; }
-  const dmg=Math.round((e.kind==='human'?9:e.dmg)*(e.dmgMul||1)); const sp=380; const tt=Math.max(0.12,adx/sp);
-  const vy=dy/tt-0.5*300*tt, vx=dx/tt; const ang=Math.atan2(vy,vx); const spd2=Math.min(620,Math.hypot(vx,vy));
+function npcShoot(e,t,kind){ const fb=e.kind==='human'?facBonus(e.team,e.cls):{shot:1}; const dx=cxOf(t)-cxOf(e), dy=cyOf(t)-cyOf(e), adx=Math.abs(dx);
+  if(kind==='magic'){ const ang=Math.atan2(dy,dx); projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*360*fb.shot,vy:Math.sin(ang)*360*fb.shot,team:e.team,dmg:Math.round(12*(e.dmgMul||1)),kind:'magic',col:FLIGHT[e.team]||'#c8a0ff',life:2.5,grav:0,r:7,src:e}); return; }
+  const dmg=Math.round((e.kind==='human'?9:e.dmg)*(e.dmgMul||1)); const sp=380*fb.shot; const tt=Math.max(0.12,adx/sp);
+  const vy=dy/tt-0.5*300*tt, vx=dx/tt; const ang=Math.atan2(vy,vx); const spd2=Math.min(620*fb.shot,Math.hypot(vx,vy));
   projs.push({x:cxOf(e),y:e.y+10,vx:Math.cos(ang)*spd2,vy:Math.sin(ang)*spd2,team:e.team,dmg,kind:'arrow',life:3,grav:300,r:4,src:e}); }
 function updateAI(e,dt){
   e.atkCd-=dt; e.atkT-=dt; e.hurtT-=dt; e.kbT-=dt; e.anim+=dt; e.think-=dt;
@@ -2920,8 +2922,8 @@ function updateAI(e,dt){
   if(t){ const dx=cxOf(t)-cxOf(e), dy=cyOf(t)-cyOf(e), adx=Math.abs(dx); e.facing=dx>0?1:-1;
     if(ranged&&!lineOfSight(e,t)){ mv=e.facing; if(e.hitWall&&e.grounded) e.vy=-JUMP; if(dy>2*T&&e.grounded&&onPlatform(e)) e.dropping=true; }
     else if(ranged){ const keepOff=(isHuman&&['g','b','r'].includes(e.team)&&player&&e.team!==player.team)?6:4; if(adx>10*T) mv=e.facing; else if(adx<keepOff*T&&!e.bigBoss&&!e.warlord){ mv=-Math.sign(cxOf(t)-cxOf(e))||-e.facing; spd*=0.5; }
-      if(e.magmaLord||e.chief) bruteBoss(e,t); if(!lineOfSight(e,t)&&e.cls!=='archmage'){ } else if(e.cls==='archmage'){ archmageAct(e,t,dt); } else if(e.cls==='skyranger'){ rangerAct(e,t); } else if(e.atkCd<=0&&adx<18*T&&Math.abs(dy)<9*T){ npcShoot(e,t,isHuman&&(e.cls==='wizard'||e.cls==='skywizard')?'magic':'arrow'); e.atkCd=isHuman?(e.cls==='wizard'?1.4:1.1):1.6; e.atkT=0.2; } }
-    else { let w=isHuman?ITEMS[e.weapon]:null; if(w&&w.kind==='pick') w={reach:20,dmg:6,cd:1.2,kb:80,shape:'sword'}; const reach=(w?w.reach:e.reach)*(e.reachMul||1);
+      if(e.magmaLord||e.chief) bruteBoss(e,t); if(!lineOfSight(e,t)&&e.cls!=='archmage'){ } else if(e.cls==='archmage'){ archmageAct(e,t,dt); } else if(e.cls==='skyranger'){ rangerAct(e,t); } else if(e.atkCd<=0&&adx<18*T&&Math.abs(dy)<9*T){ npcShoot(e,t,isHuman&&(e.cls==='wizard'||e.cls==='skywizard')?'magic':'arrow'); e.atkCd=isHuman?(e.cls==='wizard'?1.4:1.1)*facBonus(e.team,e.cls).cd:1.6; e.atkT=0.2; } }
+    else { let w=isHuman?ITEMS[e.weapon]:null; if(w&&w.kind==='pick') w={reach:20,dmg:6,cd:1.2,kb:80,shape:'sword'}; const reach=(w?w.reach:e.reach)*(e.reachMul||1)*(isHuman?facBonus(e.team,e.cls).reach:1);
       const foeSide=!(player&&e.team===player.team)&&!e.bigBoss&&e.role!=='companion';
       if(foeSide){ e.flankT=(e.flankT||0)-dt; if(e.flankT<=0){ e.flankT=0.8+Math.random()*0.8; let L=0,Rn=0; for(const o of ents){ if(o===e||o.dead||o.team!==e.team||o.target!==t) continue; if(cxOf(o)<cxOf(t)) L++; else Rn++; } const side=cxOf(e)<cxOf(t)?-1:1; const mine=side<0?L:Rn, other=side<0?Rn:L; e.flank=mine>=2&&other<mine-1?-side:side; }
         const goal=cxOf(t)+(e.flank||0)*(t.w/2+e.w/2+3); const gd=goal-cxOf(e); if(Math.abs(gd)>5&&(adx>reach*0.3||e.flank!==(cxOf(e)<cxOf(t)?-1:1))){ mv=Math.sign(gd); } }
@@ -10442,6 +10444,32 @@ for(const [id,[ch,col]] of Object.entries(BAR_ICO)){ const b=document.getElement
 .ckrow.ok .cknm{ color:#b8f5a0; } .ckrow.ok .ckn{ color:#7dff6a; }
 .acts .ckbtn{ font-size:7px; } .acts .ckbtn[aria-pressed="true"]{ background:#2f5a2a; border-color:#7dff6a; }
 `; document.head.appendChild(st); }
+// ===================== melee leaders lift the fighters around them =====================
+// Every beastmaster, knight (swordsman) and macebearer, hero or soldier, on any side, gives everyone on their side
+// within AURA_R blocks (themselves included) a lift: beastmasters +10% speed, knights 15% less damage taken,
+// macebearers 15% more damage dealt. One of each kind counts; several knights don't stack. Friends in a shared world
+// count for your side too. Worked out every AURA_EVERY seconds into e.aura = {spd, def, atk}.
+const AURA_R=8, AURA_EVERY=0.5, AURA={beast:'spd',knight:'def',mace:'atk'}, AURA_MUL={spd:1.1,def:0.85,atk:1.15};
+let auraT=0;
+function auraBearers(){ const L=[]; for(const e of ents) if(!e.dead&&(e.kind==='player'||e.kind==='human')&&AURA[e.cls]&&!e.aboard) L.push([cxOf(e),cyOf(e),e.team,AURA[e.cls]]);
+  if(typeof MP!=='undefined'&&MP.on&&player) for(const r of MP.remote.values()) if(AURA[r.cls]&&isFinite(r.x)) L.push([r.x+6,r.y+14,r.team||player.team,AURA[r.cls]]);
+  return L; }
+function auraTick(dt){ auraT-=dt; if(auraT>0) return; auraT=AURA_EVERY; const B_=auraBearers(), R=AURA_R*T;
+  for(const e of ents){ if(e.dead||!(e.kind==='player'||e.kind==='human'||(e.kind==='animal'&&e.tamed))){ if(e.aura) e.aura=null; continue; }
+    let a=null; const x=cxOf(e), y=cyOf(e);
+    for(const [bx,by,tm,k] of B_){ if(tm!==e.team||(a&&a[k])) continue; if(Math.abs(bx-x)<=R&&Math.abs(by-y)<=R) (a=a||{})[k]=1; }
+    e.aura=a; } }
+function auraMul(e,k){ return e&&e.aura&&e.aura[k]?AURA_MUL[k]:1; }
+{ const _d=damage; damage=function(t,amt,src,...a){ if(typeof amt==='number'&&amt>0&&t&&!t.ghost&&!t.proxy){ const s=src&&(src.src||src), m=auraMul(s,'atk')*auraMul(t,'def'); if(m!==1) amt=amt>=2?Math.max(1,Math.round(amt*m)):amt*m; } return _d(t,amt,src,...a); }; }
+// speed: the walker's speed (and, for your soldiers, who walk at your speed, yours) is raised for its own step only
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; if(!p||!p.aura||!p.aura.spd) return _up(dt,...a); const s=p.speed; p.speed=s*AURA_MUL.spd; try{ return _up(dt,...a); } finally{ if(p.speed===s*AURA_MUL.spd) p.speed=s; } }; }
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ if(!e||!e.aura||!e.aura.spd) return _ua(e,dt,...a); const s=e.speed, ps=player&&player.speed;
+    e.speed=s*AURA_MUL.spd; if(player&&e.team===player.team&&e.kind==='human') player.speed=ps*AURA_MUL.spd;
+    try{ return _ua(e,dt,...a); } finally{ e.speed=s; if(player&&e.team===player.team&&e.kind==='human') player.speed=ps; } }; }
+{ const _uh=updateHUD; updateHUD=function(dt,...a){ try{ if(player&&state==='play') auraTick(dt||0.016); }catch(e){} const r=_uh(dt,...a);
+    try{ const el=document.getElementById('auraLine'), au=player&&player.aura; const txt=au?['spd','def','atk'].filter(k=>au[k]).map(k=>({spd:'⚡ Speed +10%',def:'🛡 Defense +15%',atk:'⚔ Attack +15%'})[k]).join('  '):'';
+      if(el&&el.dataset.t!==txt){ el.dataset.t=txt; el.textContent=txt; el.hidden=!txt; } }catch(e){} return r; }; }
+{ const sub=document.getElementById('sub'); if(sub){ const s=document.createElement('span'); s.id='auraLine'; s.hidden=true; s.style.color='#ffd27a'; sub.appendChild(s); } }
 })();
 </script>
 </body>
