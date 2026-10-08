@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791429879"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791429879"><link rel="manifest" href="manifest.webmanifest?v=1791429879"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791431406"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791431406"><link rel="manifest" href="manifest.webmanifest?v=1791431406"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.27</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.28</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.27</h3>
+    <h3>New in Beta 0.9.28</h3>
+    <p>Worlds can have names. Type one on the New world screen (or leave it blank), rename a world any time from Continue with the Rename button, and see the name in the save list, the pause menu and the multiplayer Recent list.</p>
+    <h3>Beta 0.9.27</h3>
     <p>Grass slowly grows back over bare dirt that touches grass and is open to the air, so dug-up or placed dirt greens over in a few minutes and the grass keeps spreading. Tilled soil, and dirt under a block or under water, stay as they are. On a computer the top bar shows every button again (Bag, Craft, Army, Buildings, Full screen, the eye, Menu and Minimize); phones keep the shorter bar with the ⋯ More button.</p>
     <h3>Beta 0.9.26</h3>
     <p>The wiki has a phone layout: a bar along the bottom (Back, Home, Search, Contents, Play), a big search box with large results, a slide-out menu, recipes and tables shown as cards that fit the screen, long lists that show the first few with a Show all button, and long pages folded into sections you tap open.</p>
@@ -556,7 +558,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.27</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.28</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -816,7 +818,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.27</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.28</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -835,7 +837,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.27', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.28', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -9306,6 +9308,49 @@ function grassTick(dt){ if(!world||!player||(grassT-=dt)>0) return; grassT=0.5; 
     if(tileAt(x,y)!==B.DIRT||!grassNear(x,y)||!grassOpenAbove(x,y)||Math.random()>GRASS_CHANCE) continue; grow.push([x,y]); }
   if(grow.length) facRun(()=>{ for(const [x,y] of grow) if(tileAt(x,y)===B.DIRT) setTile(x,y,B.GRASS); }); }
 { const _u=update; update=function(dt){ const r=_u(dt); if(state==='play') try{ grassTick(dt); }catch(e){ console.warn(e); } return r; }; }
+// ===================== world names =====================
+// Name a world when you start it (New world screen), rename it from Continue, and see the name in the save list, the pause
+// menu and the multiplayer Recent list. The name lives on home.name (saved with the world) and in the save's summary
+// (summary.wname), so the Continue list can show and change it without loading the world.
+const WNAME_MAX=24;
+const cleanWName=s=>String(s||'').replace(/\s+/g,' ').trim().slice(0,WNAME_MAX);
+function slotWName(n){ const si=slotInfo(n); return si&&si.meta&&si.meta.summary&&si.meta.summary.wname||''; }
+
+// ---- the New world screen: an optional name box ----
+{ const note=$('#overwriteNote'); if(note){ const box=document.createElement('div');
+    box.innerHTML=`<h3>World name</h3><input id="worldName" maxlength="${WNAME_MAX}" placeholder="Name your world (optional)" autocomplete="off" style="width:100%;font-family:var(--font);font-size:12px;padding:8px">`;
+    note.before(box); } }
+let pendingWName='';
+$('#btnStart').addEventListener('click',()=>{ const el=$('#worldName'); pendingWName=cleanWName(el&&el.value); if(el) el.value=''; },true);
+{ const _ng=newGame; newGame=function(...a){ const r=_ng(...a); try{ if(home){ home.name=curSlot===4?'':pendingWName; } pendingWName=''; }catch(e){} return r; }; }
+
+// ---- saves carry the name in their summary; a name given in Continue is picked up when the world loads ----
+{ const _se=serialize; serialize=function(...a){ const r=_se(...a); try{ if(r&&r.summary) r.summary.wname=(home&&home.name)||''; }catch(e){} return r; }; }
+{ const _de=deserialize; deserialize=function(...a){ const r=_de(...a); try{ if(home){ const si=slotInfo(curSlot), s=si&&si.meta&&si.meta.summary; if(s&&typeof s.wname==='string') home.name=s.wname; } }catch(e){} return r; }; }
+
+// ---- the Continue list: names, and a Rename button on every saved world ----
+function setSlotWName(n,name){ name=cleanWName(name);
+  try{ const k=slotKey(n), raw=localStorage.getItem(k); if(raw){ const o=JSON.parse(raw); o.summary=o.summary||{}; o.summary.wname=name; localStorage.setItem(k,JSON.stringify(o)); } }catch(e){ console.warn(e); }
+  if(n===1&&typeof cloud!=='undefined'&&cloud.meta){ cloud.meta.summary=cloud.meta.summary||{}; cloud.meta.summary.wname=name; try{ if(cloud.db&&cloud.uid) cloud.db.doc(`data/users/${cloud.uid}/save`).set(cloud.meta); }catch(e){} }
+  if(home&&curSlot===n&&world) home.name=name; }
+{ const _rs=renderSlots; renderSlots=function(...a){ const r=_rs(...a); try{
+    for(const b of document.querySelectorAll('#slotList [data-play]')){ const n=+b.dataset.play, nm=slotWName(n), t=b.querySelector('b'); if(!t) continue;
+      if(nm) t.innerHTML=`${escapeHTML(nm)} <span class="muted" style="font-weight:normal">(${n===4?'test world':n===5?"friend's world":'slot '+n})</span>`;
+      const row=b.closest('.saverow'), del=row&&row.querySelector('[data-wdel]');
+      if(del&&!row.querySelector('[data-wren]')){ const rn=document.createElement('button'); rn.className='savedel'; rn.dataset.wren=n; rn.textContent='Rename'; del.before(rn); } } }catch(e){ console.warn(e); } return r; }; }
+$('#slotList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-wren],[data-wsave]'); if(!b) return; ev.stopPropagation(); ev.preventDefault();
+  if(b.dataset.wsave){ const n=+b.dataset.wsave, inp=$('#wrenIn'); setSlotWName(n,inp?inp.value:''); renderSlots(); return; }
+  const n=+b.dataset.wren, row=b.closest('.saverow'), big=row&&row.querySelector('.savebig'); if(!big) return;
+  big.outerHTML=`<div class="savebig" style="display:flex;gap:6px;align-items:center"><input id="wrenIn" maxlength="${WNAME_MAX}" value="${escapeHTML(slotWName(n))}" placeholder="World ${n}" autocomplete="off" style="flex:1;min-width:0;font-family:var(--font);font-size:12px;padding:8px"></div>`;
+  b.dataset.wsave=n; delete b.dataset.wren; b.textContent='Save'; const inp=$('#wrenIn'); if(inp){ inp.focus(); inp.select(); inp.addEventListener('keydown',e=>{ if(e.key==='Enter'){ setSlotWName(n,inp.value); renderSlots(); } else if(e.key==='Escape') renderSlots(); e.stopPropagation(); }); } },true);
+
+// ---- the pause menu shows the world's name; the multiplayer Recent list uses it too ----
+{ const ver=$('#scrPause .ver'); if(ver){ const p=document.createElement('p'); p.id='pauseWName'; p.className='ver'; p.style.cssText='text-align:left;color:var(--gold)'; ver.after(p); } }
+let lastWName=null;
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ const nm=(home&&home.name)||'', el=$('#pauseWName'); if(el&&nm!==lastWName){ lastWName=nm; el.textContent=nm?'World: '+nm:''; el.hidden=!nm; } }catch(e){} return r; }; }
+{ const _ra=mpRecentAdd; mpRecentAdd=function(o,...a){ try{ if(o&&o.role==='host'&&home&&home.name) o.name=home.name+((player&&player.name)?` (${player.name})`:''); }catch(e){} return _ra(o,...a); }; }
+{ const st=document.createElement('style'); st.textContent=`#slotList .savedel[data-wren], #slotList .savedel[data-wsave]{ background:var(--panel); border-color:var(--edge); color:var(--text); }
+#slotList .savedel[data-wsave]{ background:var(--gold); color:var(--ink); }`; document.head.appendChild(st); }
 })();
 </script>
 </body>
