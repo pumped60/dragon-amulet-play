@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791422059"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791422059"><link rel="manifest" href="manifest.webmanifest?v=1791422059"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791422523"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791422523"><link rel="manifest" href="manifest.webmanifest?v=1791422523"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.22</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.23</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.22</h3>
+    <h3>New in Beta 0.9.23</h3>
+    <p>Growing your village (into a town, then a city) and the report on the opposing villages (their food, gold and army, Watch a commander, gifts to villages you conquered) are in the Buildings window, under your buildings and defense posts. The Army window keeps your party, soldiers, animals, war machines, expeditions and hiring.</p>
+    <h3>Beta 0.9.22</h3>
     <p>Phones: tapping a button (Bag, Army, Buildings, More and the rest) no longer pops up its name. On a computer the name still shows when you hover the mouse over it.</p>
     <h3>Beta 0.9.21</h3>
     <p>Silver armor sits between wooden and iron armor (4.5 defense, 15 silver bars), like the silver tools and weapons. If you wear iron armor, you keep it. In shared worlds, everyone sees each other's lit bombs flying and on the ground, the pieces a blast throws, and the rubble from anyone's bomb, which crumbles away after three days.</p>
@@ -466,7 +468,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Enemy villages live like colonies. Their woodcutters fell trees and plant saplings, quarrymen dig, farmers harvest and replant, and everyone carries their load home. Builders put up houses, farms, walls, castle expansions and watchtowers one block at a time, so you can watch a village grow, or stop it. Each new house brings more villagers, workers and soldiers. The Quartermaster in your castle can grow your own village. On phones, tapping the hotbar shows an item's name, and tapping an item in your bag shows its full stats for a few seconds.</p>
     <h3>Beta 0.6.0</h3>
     <p>Enemy armies sail. They march to the shore, launch a ship, cross the sea and land, island by island, so you can meet them at sea. Sink an enemy ship for its coins and gold. Sail near an enemy island and they send a patrol ship after you. Deck cannons (siege workshop, or tier I from the shipwright) let your longships and warships fire back. Enemy workers carry their goods home, so stopping them hurts their faction.</p>
-    <p>Grow your village from a hamlet into a town and a city in the Army panel, for more houses, room for more soldiers, a jeweler, and later the war engineer and warships. Conquered villages grow loyal and send tribute, or rebel if you neglect them. Set runes into your weapons (fire, frost, life, mana or keen), and add more of the same rune to level it up from I to V. Your soldiers rank up as they fight and learn shield wall, volley or pack hunter. Your bestiary makes you stronger against monsters you hunt. Send soldiers on expeditions for loot. Seasons change every 6 days: in winter the sea freezes and anyone can walk across it, and storms make sailing slow. Bosses drop trophies, 2 by 2 replicas of the boss, to mount in your village for small permanent bonuses. A trophy stands on two trophy shelves side by side, and the shelves hang on a back wall.</p>
+    <p>Grow your village from a hamlet into a town and a city in the Buildings window, for more houses, room for more soldiers, a jeweler, and later the war engineer and warships. Conquered villages grow loyal and send tribute, or rebel if you neglect them. Set runes into your weapons (fire, frost, life, mana or keen), and add more of the same rune to level it up from I to V. Your soldiers rank up as they fight and learn shield wall, volley or pack hunter. Your bestiary makes you stronger against monsters you hunt. Send soldiers on expeditions for loot. Seasons change every 6 days: in winter the sea freezes and anyone can walk across it, and storms make sailing slow. Bosses drop trophies, 2 by 2 replicas of the boss, to mount in your village for small permanent bonuses. A trophy stands on two trophy shelves side by side, and the shelves hang on a back wall.</p>
     <p>Doors come in every wood. Archers hit harder with bows and their arrows fly through a second enemy. The test world lets you pick your class. In multiplayer, enemies fight your friends' soldiers and pets, and friends can save the shared world as Friend's world and keep playing it if the host leaves.</p>
     <h3>Beta 0.5.1</h3>
     <p>The sky realm's cloud islands sit closer together, with small cloud stepping stones between them. Mythril ore now looks like a pale teal cloud block, and its veins are three times bigger. The magma realm is twice as wide, with much more adamantite. The Sky Ranger and the Magma Knight drop the top permanent upgrades you don't have yet: Swiftness III first, then Sprint III, then hearts of vigor and of the arcane. The test world always gives you a recall mirror.</p>
@@ -546,7 +548,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.22</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.23</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -806,7 +808,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.22</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.23</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -825,7 +827,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.22', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.23', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3863,7 +3865,7 @@ function nativePool(x,why){ const is=islandAt(x);
 function nativeMob(x,why){ const p=nativePool(x,why); return p[(Math.random()*p.length)|0]; }
 
 function troops0(b){ let n=0; for(const e of ents) if(!e.dead&&e.kind==='human'&&e.home===b&&!e.worker&&!e.warParty) n++; return n; }
-// the Army menu's report on the opposing villages
+// the report on the opposing villages (shown in the Buildings window)
 function facReportHtml(){ return '<h3>Opposing villages</h3>'+bases.map(b=>{ if(conquered[b.f]) return loyaltyHtml(b);
     const e=facOf(b); const tr=facTroops(b); const power=Math.round(tr.reduce((a,t)=>a+t.maxHp*(t.dmgMul||1),0)/100); const war=ents.filter(o=>!o.dead&&o.warParty===b).length; const outp=ents.filter(o=>!o.dead&&o.outpost&&o.home&&o.home.f===b.f).length;
     return `<div class="recipe" style="grid-template-columns:1fr;font-size:9px;line-height:1.8"><div><b style="color:${FCOL[b.f]}">${FNAME[b.f]} village</b> (castle level ${b.lvl||0})<br>Food: <b>${Math.floor(e.food??200)}</b> · Gold: <b>${Math.floor(e.gold)}</b> · Workers: ${e.nw}<br>Army strength: <b>${power}</b> — ${tr.length} soldiers at home, ${outp} in outposts${war?`, ${war} marching`:''}<br>${cmdReport(b)}<br>${colonyHtml(b)}</div>${ents.some(o=>!o.dead&&o.warlord&&o.cmdBase===b)?`<div class="acts"><button data-watch="${b.f}">Watch</button></div>`:''}</div>`; }).join(''); }
@@ -9185,6 +9187,15 @@ function mpRemoteBombs(){ const out=[], now=performance.now(); for(const [k,v] o
         const broke=String(s||'').split(';').filter(Boolean).map(q=>{ const [dx,dy,id]=q.split(',').map(Number); return [tx+dx,ty+dy,id]; }).filter(([,,id])=>TEX[id]);
         if(broke.length){ MP.replayFx=true; try{ blastPieces(x,y,R,broke); } finally{ MP.replayFx=false; } } }catch(err){ console.warn(err); } }   /* on the host these pieces carry rubble and drops */
     return rest.length?_rf(rest,...a):undefined; }; }
+// ===================== your village and the enemy villages live in the Buildings window =====================
+// The village upgrade (Grow into a town or city) and the report on the opposing villages (food, gold, army strength,
+// Watch a commander, gifts to conquered villages) moved from the Army window to the Buildings window.
+{ const box=document.createElement('div'); box.id='bldVillage'; const pl=$('#postList'); if(pl) pl.after(box);
+  for(const id of ['villageTier','facReport']){ const el=$('#'+id); if(el) box.appendChild(el); } }
+{ const _rb=renderBuild; renderBuild=function(...a){ const r=_rb(...a); try{ $('#villageTier').innerHTML=villageHtml(); }catch(e){} try{ $('#facReport').innerHTML=facReportHtml(); }catch(e){} return r; }; }
+$('#scrBuild').addEventListener('click',ev=>{ const b=ev.target.closest('#bldVillage [data-vgrow], #bldVillage [data-gift], #bldVillage [data-watch]'); if(!b||b.disabled) return; ev.stopPropagation();
+  if(b.dataset.watch){ hide('scrBuild'); if(state!=='play') state='play'; watchCommander(b.dataset.watch); return; }
+  if(b.dataset.vgrow) growVillage(); else if(b.dataset.gift) giftVillage(b.dataset.gift); renderBuild(); });
 })();
 </script>
 </body>
