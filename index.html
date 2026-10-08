@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791426861"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791426861"><link rel="manifest" href="manifest.webmanifest?v=1791426861"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791429879"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791429879"><link rel="manifest" href="manifest.webmanifest?v=1791429879"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.26</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.27</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.26</h3>
+    <h3>New in Beta 0.9.27</h3>
+    <p>Grass slowly grows back over bare dirt that touches grass and is open to the air, so dug-up or placed dirt greens over in a few minutes and the grass keeps spreading. Tilled soil, and dirt under a block or under water, stay as they are. On a computer the top bar shows every button again (Bag, Craft, Army, Buildings, Full screen, the eye, Menu and Minimize); phones keep the shorter bar with the ⋯ More button.</p>
+    <h3>Beta 0.9.26</h3>
     <p>The wiki has a phone layout: a bar along the bottom (Back, Home, Search, Contents, Play), a big search box with large results, a slide-out menu, recipes and tables shown as cards that fit the screen, long lists that show the first few with a Show all button, and long pages folded into sections you tap open.</p>
     <h3>Beta 0.9.25</h3>
     <p>The wiki is its own app at pumped60.github.io/dragon-amulet-wiki, with its own icon, and it works offline. Add it to your Home Screen beside the game. The Wiki link on the title screen opens it without closing the game: on Android it opens the wiki app, and on iPhone a Safari window with a Done button that takes you back.</p>
@@ -554,7 +556,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.26</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.27</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -814,7 +816,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.26</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.27</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -833,7 +835,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.26', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.27', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -9276,6 +9278,34 @@ function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, 
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&!home.shopHouseV){ home.shopHouseV=1;
       for(const h of home.houses||[]) if(h.role){ const lv=(home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1; if(lv>1) decorShopHouse(h,lv); }
       for(const v of ents) if(v.kind==='villager'&&!v.dead&&SHOPS[v.role]&&v.team!==player.team&&v.house&&shopStore(v)){ const lv=shopLevel(v); if(lv>1) decorShopHouse(v.house,lv); } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== computers keep the full top bar =====================
+// Phones gather the extra buttons under ⋯ More (64_layout.js). On a computer every button sits on the top bar as before
+// Beta 0.9.14: Bag, Craft, Army, Buildings, Speed, God menu and Fly (test world), Full screen, the eye, Menu and Minimize.
+{ const st=document.createElement('style'); st.textContent=`
+body:not(.touch):not(.hudmin) #topbtns .inmore:not([hidden]){ display:inline-block !important; }
+body:not(.touch) #btnMore{ display:none !important; }
+`; document.head.appendChild(st);
+  // put the buttons back in their old order
+  const order=['btnInv','btnCraft','btnArmy','btnBuild','btnMap','btnHoe','btnSpeed','btnGod','mpBadge','btnFly','btnQuickSave','btnFull','btnItems','btnMenu','btnMin'];
+  const sortBar=()=>{ if(document.body.classList.contains('touch')) return; const bar=$('#topbtns'); if(!bar) return; const more=$('#btnMore');
+    for(const id of order){ const el=$('#'+id); if(el&&el.parentElement===bar) bar.appendChild(el); } if(more) bar.appendChild(more); };
+  sortBar(); setInterval(sortBar,2000); }
+// ===================== grass creeps onto bare dirt =====================
+// Bare dirt that is open to the air (nothing solid, no water or lava on it) and touches grass slowly turns to grass.
+// Every half second a few random spots around the player are checked; a dirt block beside grass greens in about two to
+// three minutes on average, so dug or placed dirt heals over and the grass spreads outward from there. Tilled farmland
+// never grows over. In shared worlds the host grows it and sends it to everyone.
+const GRASS_TRY=60, GRASS_CHANCE=0.35, GRASS_RX=60, GRASS_RY=30;
+let grassT=0;
+function grassOpenAbove(x,y){ const a=tileAt(x,y-1); if(a===B.WATER||a===B.LAVA) return false; if(liq&&liq[(y-1)*W+x]>0) return false; return !isSolid(x,y-1); }
+function grassNear(x,y){ for(let dy=-1;dy<=1;dy++) for(let dx=-1;dx<=1;dx++){ if(!dx&&!dy) continue; if(tileAt(x+dx,y+dy)===B.GRASS) return true; } return false; }
+function grassTick(dt){ if(!world||!player||(grassT-=dt)>0) return; grassT=0.5; if(typeof MP!=='undefined'&&MP.guest) return;
+  const cx=Math.floor(cxOf(player)/T), cy=Math.floor(cyOf(player)/T), grow=[];
+  for(let k=0;k<GRASS_TRY;k++){ const x=cx+((Math.random()*(2*GRASS_RX+1))|0)-GRASS_RX, y=cy+((Math.random()*(2*GRASS_RY+1))|0)-GRASS_RY;
+    if(x<1||x>=W-1||y<1||y>=H-1||(typeof magmaY==='number'&&y>=magmaY)) continue;
+    if(tileAt(x,y)!==B.DIRT||!grassNear(x,y)||!grassOpenAbove(x,y)||Math.random()>GRASS_CHANCE) continue; grow.push([x,y]); }
+  if(grow.length) facRun(()=>{ for(const [x,y] of grow) if(tileAt(x,y)===B.DIRT) setTile(x,y,B.GRASS); }); }
+{ const _u=update; update=function(dt){ const r=_u(dt); if(state==='play') try{ grassTick(dt); }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
