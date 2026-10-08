@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791445755"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791445755"><link rel="manifest" href="manifest.webmanifest?v=1791445755"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791447043"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791447043"><link rel="manifest" href="manifest.webmanifest?v=1791447043"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.35</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.36</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.35</h3>
+    <h3>New in Beta 0.9.36</h3>
+    <p>New worlds: the wizard tower stands alone on a small island of its own. Caves are richer: big caverns have rock pillars with ore in them, ledges with hanging stone and boulders; winding tunnels run from narrow crawlways to wide galleries; and small buildings with chests hide beside the caves: miners' camps, stone shrines, deep vaults and crystal grottos with gold chests, and mushroom huts. Worlds you already have keep their caves and tower exactly as they are.</p>
+    <h3>Beta 0.9.35</h3>
     <p>Grappling hooks fire straight where you aim the moment you press X (or let go of the Hook dial), bite the first wall, ceiling or ledge in their path and pull you there; each hook reaches farther (10, 16, 24 blocks) and has its own colors. New permanent accessories: a Tackle box, Angler's earring and Lucky lure for fishing; a Cooling band, Ward amulet and Dragon scale ward against burning, frost, knockback and lava; a Sprinter's anklet and Shadow cloak to dash by double-tapping left or right; the Swift and Windrunner boots are back; and a Wayfinder stone opens the travel map anywhere with free trips. Some are sold by the Jeweler and Fisher, some are crafted, and the best drop from bosses. Beating the Goblin Beastmaster opens a portal at his war camp, and beating Grukk one in the middle of the orc island.</p>
     <h3>Beta 0.9.34</h3>
     <p>Animals: boars give boar meat and beavers beaver meat, and hawks, eagles, owls and penguins each have their own meat, raw and cooked. Pigs live in the grasslands (pork when hunted). Birds of every kind go in a bird cage (crafted at a workbench), never a fenced pen, and lay eggs there each morning; use the cage to collect them or let a bird out. As pets, only birds gather; other animals produce or collect food in a pen: cows milk, sheep wool, pigs mushrooms and carrots, boars grass and seeds, rabbits berries and carrots. Piglets, beaver kits and fluffy chicks of hawks, eagles and owls join the other babies. Runes say exactly what they do at each level.</p>
@@ -572,7 +574,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.35</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.36</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -832,7 +834,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.35</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.36</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -851,7 +853,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.35', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.36', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1935,10 +1937,11 @@ function genWorld(sk, sd, pf){
   const kinds=new Array(slots); kinds[midS]={kind:'home'}; const pickIn=(a,b)=>a<=b?a+Math.floor(R()*(b-a+1)):null;
   const west=pickIn(0,midS-2)??0, east=pickIn(midS+2,slots-1)??(slots-1);
   for(let i=0;i<slots;i++) if(i!==midS) kinds[i]={kind:'wild'}; kinds[west]={kind:'fac',f:facs[0]}; kinds[east]={kind:'fac',f:facs[1]};
+  { const ti=1+Math.floor(R()*(kinds.length-1)); kinds.splice(ti,0,{kind:'tower'}); }   // the wizard tower stands alone on a small island of its own
   if(lairLeft) kinds.unshift({kind:'lair'}); else kinds.push({kind:'lair'});
   // the dragon mountain sits against the world edge, so there is no sea beyond it
   const EDGE=130, KRAKEN_SEA=440, LAIR_W=200; let cx=lairLeft?0:KRAKEN_SEA; islands=lairLeft?[]:[{kind:'treasure',s:14,e:74}];
-  for(let k=0;k<kinds.length;k++){ const w=kinds[k].kind==='lair'?LAIR_W:kinds[k].kind==='fac'?420:kinds[k].kind==='home'?600:Math.floor(490+R()*290);
+  for(let k=0;k<kinds.length;k++){ const w=kinds[k].kind==='lair'?LAIR_W:kinds[k].kind==='tower'?230:kinds[k].kind==='fac'?420:kinds[k].kind==='home'?600:Math.floor(490+R()*290);
     islands.push(Object.assign({s:cx,e:cx+w-1},kinds[k])); cx+=w; if(k<kinds.length-1) cx+=Math.floor(260+R()*140); }
   W=lairLeft?cx+KRAKEN_SEA:cx+EDGE; if(lairLeft) islands.push({kind:'treasure',s:W-74,e:W-14}); krakenX=lairLeft?W-Math.floor((KRAKEN_SEA+74)/2):Math.floor((KRAKEN_SEA+74)/2);
   world=new Uint16Array(W*H); shape=new Uint8Array(W*H); wetDeco=new Map(); bg=new Uint8Array(W*H); surf=new Int16Array(W); skyTop=new Int16Array(W); explored=new Uint8Array(W*H); chests={}; liq=new Uint8Array(W*H); oceanCol=new Uint8Array(W); wact=new Set();
@@ -1957,6 +1960,7 @@ function genWorld(sk, sd, pf){
   for(const is of islands){ const mid=Math.floor((is.s+is.e)/2); is.mid=mid;
     if(is.kind==='fac'){ const tg=Math.min(seaY-4,surf[mid]); flat(mid+9,53,10,tg); prot.push([mid-46,mid+64]); }
     if(is.kind==='lair'){ prot.push([is.s-2,is.e+2]); mountainProfile(is,lairLeft,sd); }
+    if(is.kind==='tower'){ prot.push([is.s,is.e]); flat(mid,60,14,Math.min(seaY-4,surf[mid])); }
     if(is.kind==='wild'){ const tg=Math.min(seaY-4,surf[mid]); flat(mid,12,8,tg); prot.push([mid-14,mid+14]);
       is.feat=[]; const sideA=R()<0.5?-1:1;
       const addF=(type,off,half)=>{ const x=mid+off; if(x-half<is.s+10||x+half>is.e-10) return; flat(x,half,8,Math.min(seaY-4,surf[x])); prot.push([x-half-2,x+half+2]); is.feat.push({type,x}); };
@@ -1997,6 +2001,7 @@ function genWorld(sk, sd, pf){
     for(let k=0;k<len;k++){ const wdt=k<3?2:1; for(let dx=-wdt;dx<=wdt;dx++){ const X=cx0+dx; if(X<1||X>=W-1||isProt(X)) continue; for(const yy of [y,y+1]){ const i=yy*W+X; if(yy<H-4&&world[i]!==B.BEDROCK){ world[i]=0; if(yy>surf[X]) bg[i]=yy-surf[X]<6?1:2; } } }
       y++; const n=noise2(x*0.13,k*0.2,sd+131); cx0+=n<0.35?-1:n>0.65?1:0;
       if(k>12&&world[(y+2)*W+cx0]===0&&world[(y+3)*W+cx0]===0) break; } }
+  caveShape(sd,isProt,deepY);   // caverns dressed, tunnels of every size (94_caves.js)
   // ore veins by 20x20 area: [ore, chance per area, vein size, shallowest depth as a fraction of the underground]
   const ORE_TABLE=[[B.COAL,0.5,6,10,0.0],[B.SILVER_ORE,0.42,5,8,0.08],[B.IRON,0.36,4,7,0.14],[B.GOLD,0.28,4,6,0.28],[B.DIAMOND_ORE,0.2,3,4,0.43],[B.EMERALD_ORE,0.22,3,5,0.38],[B.RUBY_ORE,0.18,3,4,0.48],];
   for(let cx=0;cx<W;cx+=20){ const h0=surf[Math.min(W-1,cx+10)]; for(let cy=h0+6;cy<H-64;cy+=20){ const under=(cy-h0)/Math.max(1,(H-64-h0));
@@ -2030,6 +2035,7 @@ function genWorld(sk, sd, pf){
       else if(crystal&&y>deepY-20&&BLOCKS[above].solid&&r<0.1) world[i]=B.AMETHYST;
       else if(BLOCKS[above].solid&&(world[i-W]===B.DIRT||world[i-W]===B.GRASS||d<24)&&r<0.08) world[i]=B.ROOTS;
       if(shroom&&d>14){ for(const j of [i+W,i-W]) if(world[j]===B.STONE) world[j]=B.MOSS; } } }
+  caveRooms(sd,isProt,deepY);   // small cave buildings with chests (94_caves.js)
   const forestIs=forestPick;
   const inFeat=x=>islands.some(is=>is.feat&&is.feat.some(f=>Math.abs(f.x-x)<(f.type==='warcamp'?27:23)));
   let lastT=-10;
@@ -2065,7 +2071,7 @@ function genWorld(sk, sd, pf){
     if(is.kind==='lair') buildLair(is,lairLeft);
     if(is.kind==='wild'){ camps.push(buildCamp(is.mid,R)); if(is.forest) camps[camps.length-1].villager=true; if(is.orc) buildOrcIsland(is,R); for(const f of is.feat){ if(f.type==='ruin') ruins.push(buildRuin(f.x,R)); else gcamps.push(buildGoblinCamp(f.x,f.type==='warcamp',R)); } }
   }
-  const wilds=islands.filter(is=>is.kind==='wild'); const tIs=wilds[Math.floor(R()*wilds.length)]; tower=buildTower(tIs,R); sky=buildSky(R); densifySky();
+  const wilds=islands.filter(is=>is.kind==='wild'); const tIs=islands.find(is=>is.kind==='tower')||wilds[Math.floor(R()*wilds.length)]; tower=buildTower(tIs,R); sky=buildSky(R); densifySky();
   const others=wilds.filter(is=>is!==tIs&&!is.ice); const fIs=others.length?others[Math.floor(R()*others.length)]:tIs; fort=buildFortress(fIs,R); magma=buildMagmaRealm(R);
   oresSky=false; oresMagma=false; oresBig=true; // mythril forms in the clouds once the Sky Ranger falls; adamantite in the magma realm once both realm bosses fall
   const fpool=wilds.filter(is=>is!==fIs&&is!==tIs); const fishIs=fpool.length?fpool[Math.floor(R()*fpool.length)]:wilds.find(is=>is!==fIs)||tIs; fishv=buildFishVillage(fishIs,R);
@@ -10220,6 +10226,67 @@ function bossPortal(kind,quiet){ if(!home||(typeof MP!=='undefined'&&MP.guest)) 
     if(bp.orc) L.push({label:'Orc island',x:(bp.orc.x-2)*T,y:bp.orc.gy*T-29,fee:accTier('travel')?0:25,tx:bp.orc.x,ty:bp.orc.gy}); return L; }; }
 // worlds where these bosses were beaten before this update get their portals too
 { const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ const bs=(player&&player.bestiary)||{}; if(home&&home.demo||bs.goblin_chief) bossPortal('camp',true); if(bs.ogre_king) bossPortal('orc',true); }catch(e){ console.warn(e); } return r; }; }
+// ===================== caves for new worlds: dressed caverns, tunnels of every size, small cave buildings =====================
+// Called from genWorld (new worlds only; saved worlds keep their own blocks). Uses its own random stream, so the rest
+// of a world comes out the same as before. caveShape runs after the caves are carved and before ores, caveRooms after
+// the cave plants and chests.
+//  - Big open caverns get rock pillars (with ore in them), ledges with hanging stalactites, and boulders.
+//  - Winding tunnels: narrow crawlways, ordinary passages and wide galleries, changing width as they go.
+//  - Small buildings with a chest: a miners' camp, a stone shrine, a deep vault (gold chest), a crystal grotto and a
+//    mushroom hut, each carved into the rock beside a cave with doorways on both sides.
+function caveShape(sd,isProt,deepY){ const R=mulberry((sd^0x5eed)>>>0), bottom=H-64;
+  const rock=y=>y>deepY?B.DEEPSTONE:B.STONE, air=(x,y)=>x>0&&x<W-1&&y>0&&y<H-1&&world[y*W+x]===0;
+  const sea=x=>surf[x]>seaY-2||surf[Math.max(0,x-3)]>seaY-2||surf[Math.min(W-1,x+3)]>seaY-2;
+  const okCell=(x,y)=>x>1&&x<W-2&&y>surf[x]+10&&y<bottom&&!(isProt(x)&&y<surf[x]+20)&&!(sea(x)&&y<surf[x]+14);
+  const okCarve=(x,y)=>okCell(x,y)&&Math.abs(y-seaY)>1;   // the sea fill pours into any open cell on the sea-level row
+  const set=(x,y,id)=>{ if(okCell(x,y)&&world[y*W+x]!==B.BEDROCK) world[y*W+x]=id; };
+  // 1. dress the big caverns
+  for(let rx=0;rx<W-24;rx+=24){ const top=surf[Math.min(W-1,rx+12)]+20; for(let ry=top;ry<bottom-16;ry+=16){ let open=0; for(let x=rx;x<rx+24;x++) for(let y=ry;y<ry+16;y++) if(air(x,y)) open++;
+      if(open<24*16*0.55) continue; const n=1+(R()<0.6?1:0)+(open>24*16*0.8?1:0);
+      for(let k=0;k<n;k++){ const t=R(), cx=rx+2+Math.floor(R()*20), cy=ry+2+Math.floor(R()*12); if(!air(cx,cy)) continue;
+        if(t<0.4){ // a pillar from floor to ceiling
+          let a=cy, b=cy; while(a>ry-30&&air(cx,a-1)) a--; while(b<ry+46&&air(cx,b+1)) b++; if(b-a<4||b-a>34) continue; const w=2+(R()<0.4?1:0);
+          for(let y=a;y<=b;y++){ const wob=Math.round((noise2(cx*0.3,y*0.25,sd+301)-0.5)*2); for(let dx=0;dx<w+(y-a<2||b-y<2?1:0);dx++) set(cx+dx+wob,y,rock(y)); }
+          const ores=y=>y>deepY?[B.GOLD,B.IRON,B.DIAMOND_ORE]:[B.IRON,B.COAL,B.SILVER_ORE]; for(let o=0;o<2;o++){ const y=a+Math.floor(R()*(b-a+1)); const L=ores(y); if(world[y*W+cx]===rock(y)) set(cx,y,L[Math.floor(R()*L.length)]); } }
+        else if(t<0.75){ // a ledge with stalactites under it
+          const w=5+Math.floor(R()*7); let clear=true; for(let dx=-1;dx<=w;dx++) for(let dy=-2;dy<=2;dy++) if(!air(cx+dx,cy+dy)) clear=false; if(!clear) continue;
+          for(let dx=0;dx<w;dx++){ set(cx+dx,cy,rock(cy)); if(R()<0.5) set(cx+dx,cy+1,rock(cy)); if(R()<0.25&&air(cx+dx,cy+2)) set(cx+dx,cy+2,rock(cy)); } }
+        else { // a boulder
+          const r=2+Math.floor(R()*2); for(let dx=-r;dx<=r;dx++) for(let dy=-r;dy<=r;dy++) if(dx*dx+dy*dy<=r*r+1) set(cx+dx,cy+dy,rock(cy+dy)); } } } }
+  // 2. winding tunnels of different sizes
+  const nT=Math.floor(W/80); for(let k=0;k<nT;k++){ let x=20+Math.floor(R()*(W-40)), y=surf[Math.min(W-1,x)]+18+Math.floor(R()*Math.max(10,bottom-surf[Math.min(W-1,x)]-30));
+    const kind=R(), base=kind<0.3?1:kind<0.75?2:3.5, len=60+Math.floor(R()*170); let ang=(R()<0.5?0:Math.PI)+(R()-0.5)*0.6;
+    for(let s=0;s<len;s++){ const r=Math.max(1,base+(noise2(k*3.1,s*0.07,sd+311)-0.5)*(base>2?2.4:1.2)), rr=Math.ceil(r);
+      for(let dx=-rr;dx<=rr;dx++) for(let dy=-rr;dy<=rr;dy++){ if(dx*dx/(r*r)+dy*dy/((r>1.5?r*0.8:1.2)**2)>1) continue; const X=Math.round(x+dx), Y=Math.round(y+dy); if(okCarve(X,Y)&&world[Y*W+X]!==B.BEDROCK&&world[Y*W+X]!==B.WATER) world[Y*W+X]=0; }
+      ang+=(noise2(k*1.7,s*0.05,sd+313)-0.5)*0.35; ang=Math.atan2(Math.max(-0.55,Math.min(0.55,Math.sin(ang))),Math.cos(ang)); x+=Math.cos(ang); y+=Math.sin(ang);
+      if(x<4||x>=W-4||y<surf[Math.max(0,Math.min(W-1,Math.round(x)))]+12||y>bottom-4) ang+=Math.PI*0.9; } } }
+let caveRoomSpots=[];   // where the last world's cave buildings went (for tests and screenshots)
+function caveRooms(sd,isProt,deepY){ const R=mulberry((sd^0xca7e)>>>0), bottom=H-66, placed=[];
+  const near=(x,y)=>placed.some(([a,b])=>Math.abs(a-x)<40&&Math.abs(b-y)<24);
+  const kinds=['miner','shrine','vault','grotto','shroom'];
+  for(let tries=0;tries<Math.floor(W/30);tries++){ const x=40+Math.floor(R()*(W-80)); if(isProt(x)||surf[x]>seaY-2) continue; const y0=surf[x]+22+Math.floor(R()*Math.max(8,bottom-surf[x]-40));
+    let gy=-1; for(let y=y0;y<Math.min(bottom,y0+30);y++){ if(world[y*W+x]===0&&BLOCKS[world[(y+1)*W+x]].solid){ gy=y+1; break; } } if(gy<0||near(x,gy)||(gy+1>=seaY-1&&gy-8<=seaY+1)) continue;
+    let bad=false; for(let dx=-7;dx<=7&&!bad;dx++) for(let dy=-8;dy<=1&&!bad;dy++){ const id=world[(gy+dy)*W+x+dx]; if(id===B.WATER||id===B.LAVA||id===B.BEDROCK||isChestId(id)) bad=true; } if(bad) continue;
+    const deep=gy>deepY; const kind=deep?kinds[Math.floor(R()*kinds.length)]:(R()<0.6?'miner':'shrine'); placed.push([x,gy,null]);
+    placed[placed.length-1][2]=kind;
+    const mat={ miner:{wall:B.TIMBER,floor:B.PLANK,roof:B.PLANK,bg:5}, shrine:{wall:B.BRICK,floor:B.BRICK,roof:B.BRICK,bg:3}, vault:{wall:B.BRICK,floor:B.GOLD_BLOCK,roof:B.BRICK,bg:8},
+      grotto:{wall:B.CRYSTAL_BLOCK,floor:B.CRYSTAL_BLOCK,roof:B.CRYSTAL_BLOCK,bg:14}, shroom:{wall:B.MUSH_STEM,floor:B.MOSS,roof:B.CAP_R,bg:12} }[kind];
+    const hw=kind==='vault'?5:4, hh=kind==='shrine'?6:5;
+    for(let dx=-hw;dx<=hw;dx++){ for(let dy=1;dy<=hh;dy++){ const i=(gy-dy)*W+x+dx; world[i]=0; bg[i]=mat.bg; } world[gy*W+x+dx]=mat.floor; world[(gy-hh-1)*W+x+dx]=mat.roof; }
+    for(let dy=1;dy<=hh;dy++){ world[(gy-dy)*W+x-hw-1]=mat.wall; world[(gy-dy)*W+x+hw+1]=mat.wall; }
+    if(kind==='shroom') for(let dx=-hw-2;dx<=hw+2;dx++) world[(gy-hh-2)*W+x+dx]=B.CAP_R;
+    // doorways on both sides, with a short passage out to the cave
+    for(const s of [-1,1]){ for(let k=0;k<=3;k++) for(const dy of [1,2]){ const X=x+s*(hw+1+k), i=(gy-dy)*W+X; if(world[i]!==B.BEDROCK) world[i]=0; } }
+    // what is inside
+    const put=(dx,dy,id)=>{ world[(gy-dy)*W+x+dx]=id; };
+    const tier=kind==='vault'||kind==='grotto'?2:1, cx=x+(R()<0.5?-1:1);
+    world[(gy-1)*W+cx]=tier===2?B.CHEST_GOLD:B.CHEST; const l=lootFor(gy-surf[x]+(tier===2?60:0),R,tier); if(kind==='grotto') l.items.push({id:I.AMETHYST||B.AMETHYST,n:3}); chests[cx+','+(gy-1)]=l;
+    if(kind==='miner'){ put(-hw+1,3,B.TORCH); put(hw-1,1,B.IRON); put(hw-1,2,B.COAL); put(-hw+1,1,B.BARREL||B.PLANK); }
+    if(kind==='shrine'){ put(-hw+1,1,B.BOOKSHELF); put(-hw+1,2,B.BOOKSHELF); put(hw-1,4,B.TORCH); put(-hw+2,4,B.TORCH); put(hw-1,1,B.GOLD_BLOCK); }
+    if(kind==='vault'){ put(-hw+1,1,B.GOLD_BLOCK); put(-hw+2,1,B.GOLD_BLOCK); put(hw-1,1,B.GOLD_BLOCK); put(0,4,B.LANTERN); }
+    if(kind==='grotto'){ put(-hw+1,1,B.AMETHYST); put(hw-1,1,B.AMETHYST); put(0,hh,B.AMETHYST); put(-2,3,B.TORCH); }
+    if(kind==='shroom'){ put(-hw+1,1,B.GLOWSHROOM); put(hw-1,1,B.GLOWSHROOM); put(0,3,B.TORCH); }
+  } caveRoomSpots=placed; return placed.length; }
 })();
 </script>
 </body>
