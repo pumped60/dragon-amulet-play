@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791422523"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791422523"><link rel="manifest" href="manifest.webmanifest?v=1791422523"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791424176"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791424176"><link rel="manifest" href="manifest.webmanifest?v=1791424176"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.23</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.24</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.23</h3>
+    <h3>New in Beta 0.9.24</h3>
+    <p>Hire woodcutters and farmers from the Quartermaster. Upgrading a shop changes its house: level 2 lifts the roof for a third floor with the shopkeeper's bedroom, lanterns and furniture for the trade (weapon racks and armor stands for the Blacksmith, tables and stools for the Cook, desks for the Jeweler, barrels for the Fisher and so on). Level 3 adds a balcony with a railing, gold trim, a banner on the roof, paintings, rugs and a showpiece for the trade.</p>
+    <h3>Beta 0.9.23</h3>
     <p>Growing your village (into a town, then a city) and the report on the opposing villages (their food, gold and army, Watch a commander, gifts to villages you conquered) are in the Buildings window, under your buildings and defense posts. The Army window keeps your party, soldiers, animals, war machines, expeditions and hiring.</p>
     <h3>Beta 0.9.22</h3>
     <p>Phones: tapping a button (Bag, Army, Buildings, More and the rest) no longer pops up its name. On a computer the name still shows when you hover the mouse over it.</p>
@@ -460,7 +462,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.7.1</h3>
     <p>Hold Shift and click to place a torch wherever you point, whatever you are holding (as long as you have torches). Axes, hoes and hammers have new pictures with the head across the top of the handle. On a phone, tap the Torch button, then tap where the torch should go. Craft shears (2 iron bars at a workbench) or buy them from the Beast trainer (40 coins), and use them beside a sheep for 2 to 3 wool; its wool grows back in a day.</p>
     <h3>Beta 0.7.0</h3>
-    <p>Your castle is twice as tall. The portal is on the new second floor, with a throne and beds, and when raiders reach your village your villagers run upstairs to hide. Villagers can now be hurt; a new one moves in a day after one falls. Hire woodcutters and farmers in the Army panel, and every boss you slay (+10%) or enemy warlord you kill (+5%) makes all your villagers bring in more each day, up to double. Expeditions walk home to the Recruiter, who hands you their loot.</p>
+    <p>Your castle is twice as tall. The portal is on the new second floor, with a throne and beds, and when raiders reach your village your villagers run upstairs to hide. Villagers can now be hurt; a new one moves in a day after one falls. Hire woodcutters and farmers from the Quartermaster, and every boss you slay (+10%) or enemy warlord you kill (+5%) makes all your villagers bring in more each day, up to double. Expeditions walk home to the Recruiter, who hands you their loot.</p>
     <p>Kill a faction's warlord inside their base when only a tenth of their soldiers are left and they surrender: the survivors join your army. Raiders burn wooden buildings, and siege engines blast walls on both sides. Enemy factions keep the coins from monsters they kill alone, unless you hit the monster too. Factions clear the goblin forest and the orc island before moving into their towers. Their workers dig stepped quarries, light tunnels with torches and climb out of holes.</p>
     <p>The sky castle and the magma keep are different from each other, each room stays dark until you step in, and each throne room has a real throne. The four castle bosses have new moves: the Sky Ranger dashes and shoots from mid-air, the Magma Knight charges through fire and leaps, the Archmage floats and makes mirror images, the Magma Wizard calls meteors and fire from the ground. Grukk drops a war maul and the Kraken fang daggers, and every boss drops a token to call it back for a rematch in its own lair. Wizard towers have a guard tower on each side, knights below and wizards above. The dragon's embers fill his whole cave, his gold is one heap you scoop up as you walk into it, and every 5th day he may fly out for a minute to raid a village, maybe yours.</p>
     <p>Charms: wear one at a time for a small bonus (faster attacks, longer shots, more damage, health, speed and more). They drop from strong enemies, turn up in treasure chests, and the plainer ones are sold by the jeweler. The shipwright sells boat upgrades. Fishing casts a real line, with sharks, sea finds and rare seasonal fish on the best rod. Weather is set when you make a world (light, medium or strong): lightning burns trees, rain fills hollows and drains away, snow settles in winter and melts in spring, and rain patters on your roof. Trees tip over when cut and their leaves fall; plants break with the block under them. Drag an item onto another in the bag or a chest to swap them. Hold Shift to light your way without a torch in hand, and Shift + right-click places a torch.</p>
@@ -548,7 +550,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.23</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.24</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -808,7 +810,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.23</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.24</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -827,7 +829,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.23', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.24', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -9196,6 +9198,80 @@ function mpRemoteBombs(){ const out=[], now=performance.now(); for(const [k,v] o
 $('#scrBuild').addEventListener('click',ev=>{ const b=ev.target.closest('#bldVillage [data-vgrow], #bldVillage [data-gift], #bldVillage [data-watch]'); if(!b||b.disabled) return; ev.stopPropagation();
   if(b.dataset.watch){ hide('scrBuild'); if(state!=='play') state='play'; watchCommander(b.dataset.watch); return; }
   if(b.dataset.vgrow) growVillage(); else if(b.dataset.gift) giftVillage(b.dataset.gift); renderBuild(); });
+// ===================== village workers at the Quartermaster; shop houses that grow with each upgrade =====================
+
+// ---- woodcutters and farmers are hired from the Quartermaster (they used to be in the Army window) ----
+const VW_COST=60;
+function vworkHtml(){ if(!home||!home.claimed) return ''; const vw=home.vw||{}, guest=typeof MP!=='undefined'&&MP.guest, near=nearOwnCastle();
+  return `<h3 style="margin-top:6px">Village workers</h3><p style="margin-bottom:8px">Woodcutters fell trees and farmers tend the fields; what they gather goes into your castle chest.${guest?' Only the host can hire them.':''}</p>`+
+    ['woodcutter','farmer'].map(k=>{ const ok=near&&!guest&&(free()||player.coins>=VW_COST);
+      return `<div class="recipe${ok?'':' no'}"><img alt="" src="${portraitUrl('miner','w',false)}" style="image-rendering:pixelated"><div><div class="nm">${VJOB_NAMES[k]} (you have ${vw[k]||0})</div><div class="ing">${VW_COST} coins. Brings ${k==='woodcutter'?'logs':'crops'} home every day.</div></div><div class="acts"><button data-vwork="${k}" ${ok?'':'disabled'}>Hire</button></div></div>`; }).join(''); }
+{ const _rs=renderShop; renderShop=function(...a){ const r=_rs(...a); try{ if(shopV&&shopV.role==='quarter'&&shopV.team===player.team&&shopTab!=='sell'&&home&&home.claimed){ const L=$('#shopList'); const vt=L&&L.querySelector('[data-vgrow]'); const after=vt?vt.closest('.recipe'):null;
+      if(after) after.insertAdjacentHTML('afterend',vworkHtml()); else if(L) L.insertAdjacentHTML('afterbegin',vworkHtml()); } }catch(e){ console.warn(e); } return r; }; }
+$('#shopList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-vwork]'); if(!b||b.disabled) return; ev.stopPropagation(); const k=b.dataset.vwork;
+  if(!nearOwnCastle()) return; if(typeof MP!=='undefined'&&MP.guest){ toast('Only the host can hire village workers',2.5); return; }
+  if(!free()){ if(player.coins<VW_COST) return; player.coins-=VW_COST; } hireVillageWorker(k); renderShop(); },true);
+// the Army window's hire list keeps soldiers and miners only
+{ const _ra=renderArmy; renderArmy=function(...a){ const r=_ra(...a); try{ for(const b of document.querySelectorAll('#hireList [data-hire="woodcutter"], #hireList [data-hire="farmer"]')) b.remove(); }catch(e){} return r; }; }
+
+// ---- shop houses: each level adds something you can see ----
+// Level 2: a third floor with the shopkeeper's bedroom (the roof is lifted), lanterns, and furniture for the trade.
+// Level 3: a balcony off the top floor, gold trim, a banner on the roof, paintings and rugs, and a showpiece for the trade.
+const SHOP_FURN={   // [ground floor, second floor] at level 2, then [ground, second, top] extras at level 3
+  smith:    { l2:[[B.WEAPON_RACK,B.BARREL],[B.ARMOR_STAND]],          l3:[[B.ARMOR_STAND],[B.WEAPON_RACK],[B.ARMOR_STAND]] },
+  cook:     { l2:[[B.TABLE,B.STOOL,B.BARREL],[B.CUPBOARD]],           l3:[[B.CHAIR],[B.TABLE,B.CHAIR],[B.BARREL]] },
+  herbalist:{ l2:[[B.CUPBOARD,B.TABLE],[B.BOOKSHELF]],                l3:[[B.LAMP],[B.BOOKSHELF,B.DESK],[B.CUPBOARD]] },
+  fisher:   { l2:[[B.BARREL,B.BARREL],[B.CUPBOARD]],                  l3:[[B.BARREL],[B.TABLE,B.STOOL],[B.BARREL]] },
+  jeweler:  { l2:[[B.DESK,B.STOOL],[B.CUPBOARD]],                     l3:[[B.LAMP],[B.DESK,B.LAMP],[B.CUPBOARD]] },
+  trader:   { l2:[[B.BARREL,B.TABLE],[B.BOOKSHELF]],                  l3:[[B.BARREL],[B.DESK,B.CHAIR],[B.BOOKSHELF]] },
+  engineer: { l2:[[B.DESK,B.WEAPON_RACK],[B.TABLE]],                  l3:[[B.ARMOR_STAND],[B.DESK,B.STOOL],[B.WEAPON_RACK]] },
+  demo:     { l2:[[B.BARREL,B.BARREL],[B.CUPBOARD]],                  l3:[[B.BARREL],[B.BARREL,B.TABLE],[B.BARREL]] } };
+const HOUSE_WORD=['','',
+  'a third floor with a bedroom, lanterns and furniture for the trade',
+  'a balcony, gold trim, a roof banner, paintings, rugs and a showpiece for the trade'];
+const ROOF_IDS=()=>new Set([B.ROOF,B.SHINGLE_B]);
+function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, gy=h.gy;
+  const inW=(x,y)=>x>=0&&x<W&&y>=0&&y<H;
+  const put=(x,y,id)=>{ if(inW(x,y)&&tileAt(x,y)===0) setTile(x,y,id); };           // only into empty space
+  const force=(x,y,id,from)=>{ if(inW(x,y)&&(from?from.includes(tileAt(x,y)):true)&&tileAt(x,y)!==id) setTile(x,y,id); };
+  const furn=SHOP_FURN[h.role]||{ l2:[[B.TABLE,B.BARREL],[B.CUPBOARD]], l3:[[B.LAMP],[B.TABLE,B.CHAIR],[B.CUPBOARD]] };
+  const spots=[[hx+2,hx+3,hx+7,hx+1],[hx+4,hx+6,hx+1,hx+7],[hx+3,hx+2,hx+6,hx+7]];   // free columns on each floor (the trade station sits at hx+5)
+  const rows=[gy-1,gy-6,gy-11];
+  const place=(floor,list)=>{ let k=0; for(const id of list){ while(k<spots[floor].length&&tileAt(spots[floor][k],rows[floor])!==0) k++; if(k>=spots[floor].length) return; put(spots[floor][k],rows[floor],id); k++; } };
+  facRun(()=>{
+    // ---- level 2: lift the roof and add a third floor ----
+    const roofs=ROOF_IDS(); const roofId=[tileAt(hx+4,gy-10),tileAt(hx+4,gy-15),tileAt(hx+4,gy-20)].find(t=>roofs.has(t))||B.ROOF;
+    const raised=tileAt(hx+4,gy-10)===B.PLATFORM;
+    const ok=t=>!t||roofs.has(t)||t===B.STONE_BLOCK||t===B.IVY||t===B.MIST||t===B.CLOUD||t===B.SNOW_LAYER||t===B.VINE||LOG_IDS.has(t)||t===B.LANTERN||t===B.BARREL||LEAF_IDS.has(t)||[B.BANNER_G,B.BANNER_B,B.BANNER_R].includes(t);
+    let room=raised; if(!raised){ room=true; for(let y=gy-21;y<=gy-10&&room;y++) for(let x=hx-1;x<=hx+10;x++) if(!inW(x,y)||!ok(tileAt(x,y))){ room=false; break; } }   /* only lift the roof into open sky */
+    if(room&&!raised){
+      for(let y=gy-21;y<=gy-10;y++) for(let x=hx-1;x<=hx+9;x++) if(tileAt(x,y)) setTile(x,y,0);
+      for(let y=gy-40;y<gy-21;y++) for(let x=hx-4;x<=hx+13;x++) if(inW(x,y)&&(LOG_IDS.has(tileAt(x,y))||LEAF_IDS.has(tileAt(x,y)))) setTile(x,y,0);   /* a tree in the way goes, crown and all */
+      for(let x=hx;x<=hx+8;x++) setTile(x,gy-10,x===hx||x===hx+8?B.TIMBER:B.PLATFORM);
+      for(let y=gy-14;y<=gy-11;y++){ setTile(hx,y,B.TIMBER); setTile(hx+8,y,B.TIMBER); for(let x=hx+1;x<=hx+7;x++) bset(x,y,10); }
+      for(let k=0;k<6;k++) for(let x=hx-1+k;x<=hx+9-k;x++) setTile(x,gy-15-k,roofId);
+      for(let y=gy-20;y>=gy-21;y--) setTile(hx+7,y,B.STONE_BLOCK);
+      setTile(hx+2,gy-13,B.WINDOW); setTile(hx+6,gy-13,B.WINDOW); }
+    put(hx+2,gy-4,B.LANTERN); put(hx+6,gy-4,B.LANTERN);
+    place(0,furn.l2[0]); place(1,furn.l2[1]);
+    if(room){ put(hx+5,gy-11,B.BED); put(hx+4,gy-14,B.LAMP); place(2,[B.CHAIR]); }
+    // ---- level 3: balcony, gold trim, banner, paintings, rugs and a showpiece ----
+    if(lv>=3){ const top=room?gy-21:gy-16;
+      for(const x of [hx,hx+8]) for(const y of [gy-4,gy-3]) force(x,y,B.GOLD_BLOCK,[B.STONE_BLOCK]);
+      put(hx+4,top,banOf(player.team));
+      put(hx+3,gy-8,B.PAINTING); put(hx+1,gy-3,B.PAINTING); put(hx+4,gy-6,B.RUG); put(hx+3,gy-1,B.RUG);
+      place(0,furn.l3[0]); place(1,furn.l3[1]);
+      if(room){ place(2,furn.l3[2]); put(hx+5,gy-13,B.PAINTING);
+        // a balcony with a railing off the top floor, reached through a door in the right wall
+        force(hx+8,gy-12,B.DOOR_T,[B.TIMBER]); force(hx+8,gy-11,B.DOOR,[B.TIMBER]);
+        for(const x of [hx+9,hx+10]) if(tileAt(x,gy-10)===0) setTile(x,gy-10,B.PLATFORM); put(hx+10,gy-11,B.FENCE); put(hx+10,gy-12,B.LANTERN); } }
+  }); }
+// shop upgrade rows say what the house gains
+{ const _sr=shopUpRow; shopUpRow=function(v){ let h=_sr(v); try{ const lv=shopLevel(v); if(lv<3) h=h.replace(/(Level \d sells [^.]+\.)/,`$1 The house gains ${HOUSE_WORD[lv+1]}.`); }catch(e){} return h; }; }
+// worlds from before Beta 0.9.24: upgraded shop houses get their new floors and furniture once
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&!home.shopHouseV){ home.shopHouseV=1;
+      for(const h of home.houses||[]) if(h.role){ const lv=(home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1; if(lv>1) decorShopHouse(h,lv); }
+      for(const v of ents) if(v.kind==='villager'&&!v.dead&&SHOPS[v.role]&&v.team!==player.team&&v.house&&shopStore(v)){ const lv=shopLevel(v); if(lv>1) decorShopHouse(v.house,lv); } } }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
