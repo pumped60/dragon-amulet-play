@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791417025"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791417025"><link rel="manifest" href="manifest.webmanifest?v=1791417025"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791418350"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791418350"><link rel="manifest" href="manifest.webmanifest?v=1791418350"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.18</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.19</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.18</h3>
+    <h3>New in Beta 0.9.19</h3>
+    <p>Phones: buttons and taps on the world stay lined up after you turn the phone sideways, and small buttons are easier to hit. In the bag and in chests, hold an item for a moment to pick it up and drag it to another slot, or tap it (you see its name) and then tap the slot where it should go. In a chest, tap an item twice to send it straight across.</p>
+    <h3>Beta 0.9.18</h3>
     <p>On phones, the ✕ in the top corner closes every menu and pop-up, including the pause menu, the ⋯ More menu and the eye's list, and never taps the button underneath. Tapping an item shows just its name; tap the name to see its picture and every stat. Settings has tabs (Controls, Screen, Sound, World, Computer). Under Screen you can choose what tapping an item shows (name only, short, everything or nothing) and stand the item bar and the health, mana, XP and hunger bars up and down instead of across.</p>
     <h3>Beta 0.9.17</h3>
     <p>Two treasures to find in chests. The <b>Dragon compass</b> shows which way the dragon's lair lies and how far; without it you can't tell. The <b>Astrolabe</b> shows the season, the weather and the days until the next season; without it the clock shows only the day. One compass always waits in the goblin warcamp's gold chest, the Jeweler sells astrolabes, and the test world starts with both.</p>
@@ -538,7 +540,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.18</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.19</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -798,7 +800,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.18</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.19</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -817,7 +819,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.18', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.19', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4909,7 +4911,7 @@ function renderInv(){
   const info=$('#invInfo'); const ps=pickSlot!==null?player.inv[pickSlot]:null;
   if(ps){ const d=ITEMS[ps.id]; let extra=''; if(d.kind==='weapon') extra=`, ${d.dmg} damage`; if(d.kind==='pick') extra=`, power ${d.pow}`; if(d.kind==='armor') extra=`, +${d.def} defense`; if(d.kind==='food') extra=`, heals ${d.heal}`; if(d.kind==='boat') extra=`. ${d.boat.desc}`; if(d.kind==='maxhp') extra=', +20 max health'; if(d.kind==='maxmana') extra=', +20 max mana'; if(d.type==='magic') extra+=`, ${d.mana} mana per cast`; if(SELL[ps.id]) extra+=`, sells for ${SELL[ps.id]} coins`;
     const sl=itemStats(ps.id); info.innerHTML=`<b>${d.name}</b> ×${ps.n}${sl.length?'<ul class="statlist">'+sl.join('')+'</ul>':''}`+`<span hidden>${extra}${d.desc&&!/Sells for/.test(d.desc)?` (${d.desc})`:''}${!SELL[ps.id]&&d.junk?'. Worthless: delete it':''}</span><span style="color:var(--muted)">Tap another slot to move it, or tap Delete twice to throw it away.</span>`; }
-  else { info.innerHTML=`<span style="color:var(--muted)">Tap a slot to see its stats and pick it up. Drag an item out of this window, or onto Drop, to drop it on the ground. Defense ${player.def}, ${player.coins} coins.</span>`; }
+  else { info.innerHTML=`<span style="color:var(--muted)">Tap a slot to see its stats and pick it up, then tap another slot to move it there. On a phone, hold an item for a moment to drag it. Drag an item out of this window, or onto Drop, to drop it on the ground. Defense ${player.def}, ${player.coins} coins.</span>`; }
   if(ps&&typeof MP!=='undefined'&&MP.on){ const near=nearPlayers(5); if(near.length) info.insertAdjacentHTML('beforeend','<div style="margin-top:8px">'+near.map(r=>`<button class="xbtn" data-giveto="${r.key}">Give to ${escapeHTML(r.nm||'Friend')}</button>`).join(' ')+'</div>'); }
   const gs=[]; const G=player.gear; if(G.armor) gs.push(ITEMS[LINES.armor[G.armor-1]].name);
   for(const id of [I.SWIFT_BOOTS,I.WIND_BOOTS,I.CLOUD_CHARM,I.DIVE_HELM,I.MERMAID_CHARM,I.LANTERN_ACC,I.SUN_AMULET,I.MANA_RING,I.ARCANE_RING]){ const d=ITEMS[id]; if(G[d.slot]===d.tier) gs.push(d.name); }
@@ -5324,7 +5326,8 @@ addEventListener('keyup',e=>{ if(e.key==='Shift') input.sprint=false;
   if(e.code==='KeyS'||e.code==='ArrowDown') input.down=false;
 });
 addEventListener('blur',()=>{ input.left=input.right=input.jump=input.down=input.use=false; });
-function setAim(ev){ input.sx=ev.clientX; input.sy=ev.clientY; input.ax=camX+(ev.clientX*dpr)/S; input.ay=camY+(ev.clientY*dpr)/S; }
+function setAim(ev){ const r=cv.getBoundingClientRect(), kx=r.width?cv.width/r.width/dpr:1, ky=r.height?cv.height/r.height/dpr:1;   /* measured from the canvas itself, so a notch, a scrolled page or a rotation can't shift taps */
+  input.sx=(ev.clientX-r.left)*kx; input.sy=(ev.clientY-r.top)*ky; input.ax=camX+(input.sx*dpr)/S; input.ay=camY+(input.sy*dpr)/S; }
 let aimPointer=null;
 cv.addEventListener('pointerdown',ev=>{ if(ev.pointerType==='touch') enableTouch(); if(state!=='play'||touches.size>=2) return;
   if(MP.on&&MP.arrowHits&&MP.arrowHits.length){ const h=MP.arrowHits.find(h=>Math.hypot(h.x-ev.clientX,h.y-ev.clientY)<28); if(h){ travelToFriend(h.key); ev.preventDefault(); return; } }
@@ -5741,13 +5744,23 @@ $('#uiReset').addEventListener('click',()=>{ settings.hudLayout=null; settings.u
 { let drag=null; const ghost=$('#dragGhost'); const SLOT_SEL='#invGrid .slot[data-i], .slot[data-ci], #chestBag .slot[data-bi]';
   // where a slot's item lives: the bag (data-i / data-bi) or the open chest (data-ci)
   const ref=el=>{ if(!el) return null; if(el.dataset.ci!=null) return chests[chestAt]?{arr:chests[chestAt].items,i:+el.dataset.ci,chest:true}:null; const i=el.dataset.i!=null?+el.dataset.i:el.dataset.bi!=null?+el.dataset.bi:null; return i==null?null:{arr:player.inv,i,chest:false}; };
-  const finish=()=>{ ghost.hidden=true; if(drag&&drag.src) drag.src.classList.remove('dragging'); drag=null; };
-  document.addEventListener('pointerdown',e=>{ const s=e.target.closest&&e.target.closest(SLOT_SEL); if(!s) return; const im=s.querySelector('img'); if(!im) return; drag={src:s,x:e.clientX,y:e.clientY,moved:false,id:e.pointerId}; ghost.innerHTML=`<img alt="" src="${im.src}">`; },true);
-  document.addEventListener('pointermove',e=>{ if(!drag||e.pointerId!==drag.id) return; if(!drag.moved&&Math.hypot(e.clientX-drag.x,e.clientY-drag.y)>6){ drag.moved=true; ghost.hidden=false; drag.src.classList.add('dragging'); pickSlot=null; } if(drag.moved){ ghost.style.left=(e.clientX-16)+'px'; ghost.style.top=(e.clientY-16)+'px'; e.preventDefault(); } },{passive:false});
-  document.addEventListener('touchmove',e=>{ if(drag&&e.cancelable) e.preventDefault(); },{passive:false,capture:true});
+  const finish=()=>{ if(drag) clearTimeout(drag.timer); ghost.hidden=true; if(drag&&drag.src) drag.src.classList.remove('dragging'); drag=null; };
+  // fingers: hold an item for a moment to pick it up and drag it (a quick swipe still scrolls the bag); in a bag that
+  // does not scroll the drag starts as soon as the finger moves. A plain tap selects the item: tap another slot to move it there.
+  const scroller=el=>{ for(let p=el&&el.parentElement;p&&p!==document.body;p=p.parentElement){ const cs=getComputedStyle(p); if(/(auto|scroll)/.test(cs.overflowY)&&p.scrollHeight>p.clientHeight+2) return p; } return null; };
+  const lift=(e)=>{ if(!drag||drag.moved) return; drag.moved=true; ghost.hidden=false; drag.src.classList.add('dragging'); pickSlot=null; chestPick=null; if(e){ ghost.style.left=(e.clientX-16)+'px'; ghost.style.top=(e.clientY-16)+'px'; } try{ if(navigator.vibrate) navigator.vibrate(12); }catch(_){} };
+  document.addEventListener('pointerdown',e=>{ const s=e.target.closest&&e.target.closest(SLOT_SEL); if(!s) return; const im=s.querySelector('img'); if(!im) return;
+    const touch=e.pointerType!=='mouse'; drag={src:s,x:e.clientX,y:e.clientY,moved:false,id:e.pointerId,touch,scroll:touch&&!!scroller(s),held:false}; ghost.innerHTML=`<img alt="" src="${im.src}">`;
+    if(touch){ const d=drag; d.timer=setTimeout(()=>{ if(drag===d&&!d.moved){ d.held=true; lift({clientX:d.lx??d.x,clientY:d.ly??d.y}); } },260); } },true);
+  document.addEventListener('pointermove',e=>{ if(!drag||e.pointerId!==drag.id) return; drag.lx=e.clientX; drag.ly=e.clientY; const far=Math.hypot(e.clientX-drag.x,e.clientY-drag.y);
+    if(!drag.moved&&far>(drag.touch?10:6)){ if(drag.scroll){ clearTimeout(drag.timer); drag=null; return; } lift(e); }   /* a swipe in a scrolling bag scrolls it */
+    if(drag.moved){ ghost.style.left=(e.clientX-16)+'px'; ghost.style.top=(e.clientY-16)+'px'; e.preventDefault(); } },{passive:false});
+  document.addEventListener('touchmove',e=>{ if(drag&&(drag.moved||!drag.scroll)&&e.cancelable) e.preventDefault(); },{passive:false,capture:true});
+  document.addEventListener('contextmenu',e=>{ if(e.target.closest&&e.target.closest('.slot, #hotbar, #dragGhost')) e.preventDefault(); },true);
   document.addEventListener('pointercancel',e=>{ if(drag&&e.pointerId===drag.id) finish(); },true);
   document.addEventListener('dragstart',e=>{ if(e.target.closest&&e.target.closest('.slot, #hotbar')) e.preventDefault(); },true);
   document.addEventListener('pointerup',e=>{ if(!drag||e.pointerId!==drag.id) return; const d=drag; finish(); if(!d.moved) return;
+    { const el0=document.elementFromPoint(e.clientX,e.clientY); if(d.touch&&el0&&el0.closest(SLOT_SEL)===d.src) return; }   /* held and let go in place: the tap selects it as usual */
     const sup=ev=>{ ev.stopPropagation(); ev.preventDefault(); document.removeEventListener('click',sup,true); }; document.addEventListener('click',sup,true); setTimeout(()=>document.removeEventListener('click',sup,true),60);
     const el=document.elementFromPoint(e.clientX,e.clientY); const t=el&&el.closest(SLOT_SEL); const a=ref(d.src), b=ref(t);
     if(!a||!a.arr[a.i]) return;
@@ -7885,7 +7898,7 @@ document.addEventListener('pointerdown',e=>{ if(e.pointerType==='touch'||(e.poin
 document.addEventListener('webkitfullscreenchange',()=>resize());
 // phones that cannot go full screen (iPhone browsers): keep the page pinned so the bars hide and nothing scrolls
 if(touchDevice()){ document.documentElement.style.height='100%'; document.body.style.height='100%'; document.body.style.overflow='hidden';
-  addEventListener('load',()=>setTimeout(()=>{ try{ window.scrollTo(0,1); }catch(e){} resize(); },300)); }
+  addEventListener('load',()=>setTimeout(()=>{ try{ window.scrollTo(0,0); }catch(e){} resize(); },300)); }
 // ===================== buckets =====================
 // An iron bucket scoops up a block of water; a water bucket pours it out again. Pouring water onto lava hardens it
 // (obsidian where the lava is deep, stone where it is shallow), so a bucket of water is the safe way across a lava pool.
@@ -9086,6 +9099,45 @@ body.vhot #hotbar{ flex-direction:column; }
 .vbarrow .bar{ width:12px; height:110px; } .vbarrow .bar > div{ inset:auto 0 0 0 !important; width:auto !important; }
 .vbarrow .bar span{ writing-mode:vertical-rl; transform:rotate(180deg); padding:4px 0 0; justify-content:flex-start; align-items:center; }
 `; document.head.appendChild(st); }
+// ===================== phones: taps land where the buttons are =====================
+// Turning a phone sideways could leave the page scrolled or zoomed a little (iPhones ignore "no zoom" and zoom on a
+// double tap); buttons were then drawn in one place but answered taps a few pixels away. The page now stays at the
+// top and at 1x, re-measures itself a few times after a turn, and small buttons get finger-sized hit areas.
+{ const top=()=>{ if(window.scrollX||window.scrollY) window.scrollTo(0,0); const se=document.scrollingElement; if(se&&(se.scrollTop||se.scrollLeft)){ se.scrollTop=0; se.scrollLeft=0; } };
+  addEventListener('scroll',top,{passive:true});
+  for(const g of ['gesturestart','gesturechange']) document.addEventListener(g,e=>e.preventDefault(),{passive:false});   /* iPhone pinch zoom of the page */
+  const vp=document.querySelector('meta[name=viewport]'), base=vp?vp.content:'';
+  const turned=()=>{ if(vp){ vp.content=base+', shrink-to-fit=no'; setTimeout(()=>{ vp.content=base; },60); } top(); for(const t of [80,300,700,1200]) setTimeout(()=>{ top(); try{ resize(); }catch(e){} },t); };
+  addEventListener('orientationchange',turned); if(screen.orientation&&screen.orientation.addEventListener) screen.orientation.addEventListener('change',turned);
+  if(window.visualViewport) visualViewport.addEventListener('resize',()=>{ top(); });
+  const st=document.createElement('style'); st.textContent=`
+html, body, button, .slot, canvas#game{ touch-action:manipulation; } canvas#game{ touch-action:none; }
+body.touch .slot, body.touch .slot img, body.touch #hotbar, body.touch #dragGhost, body.touch button img{ -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; -webkit-user-drag:none; }
+body.touch .slot img, body.touch button img{ pointer-events:none; }
+body.touch .slot.dragging{ opacity:.4; outline:2px dashed var(--gold); outline-offset:-4px; }
+body.touch #miniZoom .mz{ min-width:30px; min-height:30px; }
+body.touch .chip, body.touch .xbtn{ min-height:32px; }
+`; document.head.appendChild(st); }
+
+// ---- chests on phones: tap an item to select it, then tap any slot in the chest or your bag to put it there ----
+// Tapping the selected item again sends it straight across (the quick move a computer click does).
+let chestPick=null;
+const chestSlotRef=el=>el.dataset.ci!=null?{arr:chests[chestAt].items,i:+el.dataset.ci,chest:true}:{arr:player.inv,i:+el.dataset.bi,chest:false};
+function chestPickMark(){ for(const el of document.querySelectorAll('#scrChest .slot.pick')) el.classList.remove('pick'); if(!chestPick) return;
+  const el=document.querySelector(chestPick.chest?`#chestGrid [data-ci="${chestPick.i}"]`:`#chestBag [data-bi="${chestPick.i}"]`); if(el) el.classList.add('pick'); }
+$('#scrChest').addEventListener('click',ev=>{ if(!recentTouch()||!chests[chestAt]) return; const el=ev.target.closest&&ev.target.closest('#chestGrid [data-ci], #chestBag [data-bi]'); if(!el) return;
+  ev.stopPropagation(); const t=chestSlotRef(el), c=chests[chestAt];
+  if(!chestPick){ if(t.arr[t.i]){ chestPick={chest:t.chest,i:t.i}; chestPickMark(); } return; }
+  const a=chestPick.chest?{arr:c.items,i:chestPick.i,chest:true}:{arr:player.inv,i:chestPick.i,chest:false}; chestPick=null; const x=a.arr[a.i];
+  if(!x){ renderChest(); return; }
+  if(a.chest===t.chest&&a.i===t.i){ if(a.chest) takeFromChest(c,a.i); else if(putInChest(c,x)) player.inv[a.i]=null; else toast('The chest is full'); }
+  else if(a.chest&&!t.chest&&isUpgradeItem(x.id)) takeFromChest(c,a.i);
+  else { const y=t.arr[t.i]; if(y&&y.id===x.id){ const k=Math.min(999-y.n,x.n); y.n+=k; x.n-=k; if(x.n<=0) a.arr[a.i]=null; } else { a.arr[a.i]=y||null; t.arr[t.i]=x; } }
+  invDirty=true; renderChest(); },true);
+{ const _rc=renderChest; renderChest=function(...a){ const r=_rc(...a); try{ chestPickMark(); const h=document.querySelector('#chestBag')&&document.querySelector('#chestBag').previousElementSibling;
+    if(h&&h.tagName==='H3'){ const sp=h.querySelector('span'); if(sp) sp.textContent=recentTouch()?'(tap an item, then tap where it goes; tap it twice to move it across. Hold to drag. First row is your hotbar)':'(click to store, or drag; first row is your hotbar)'; } }catch(e){} return r; }; }
+{ const _cc=closeChest; closeChest=function(...a){ chestPick=null; return _cc(...a); }; }
+document.addEventListener('pointerdown',e=>{ if(chestPick&&e.target.closest&&!e.target.closest('#scrChest')) chestPick=null; },true);
 })();
 </script>
 </body>
