@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791439272"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791439272"><link rel="manifest" href="manifest.webmanifest?v=1791439272"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791441326"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791441326"><link rel="manifest" href="manifest.webmanifest?v=1791441326"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.31</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.32</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.31</h3>
+    <h3>New in Beta 0.9.32</h3>
+    <p>Shared worlds live online: whenever a world is hosted on the game page, it is saved online every few minutes. If you join with the game ID while nobody is hosting, you open the newest copy and host it yourself; when the first host comes back, they get the newest copy too. Your hero stays your own. Every friend sees the enemies and shots around them, wherever they are, and the group shares one monster limit. Anyone can grow the village into a town or city, and it grows for everyone. Wear as many different charms as you like: their bonuses add up, and the bag's Charms worn row takes one off. Bread is made from wheat only.</p>
+    <h3>Beta 0.9.31</h3>
     <p>Shared worlds: jump or swim onto a friend's boat to ride along (jump off toward land to leave), and everyone sees the soldiers sitting in a boat, the armor each player wears, and fires burning anywhere near them. Soldiers come along through realm portals. Break the frozen winter sea with a pickaxe or axe (the hole freezes over next morning). Chests have a Sort button: by type, name, value or amount. Trophies are a 2 by 2 picture of the boss and hang straight on a back wall; no shelves needed. Miners, woodcutters and farmers keep working however far away you are (woodcutters bring their logs home again, and climb over steps that blocked them). Boats say how many soldiers they carry in the shop and in crafting. The goblin forest sends a few ambushes a day instead of an endless stream, and water far from every player waits instead of flowing, so friends' games run smoother.</p>
     <h3>Beta 0.9.30</h3>
     <p>Trading with friends: stand within 5 blocks of a friend and press T (on a phone, the use button, then Trade with). A trade window opens for both of you: tap items in your bag to put them on the table, add coins, and both press Accept to swap. Changing an offer takes back both Accepts, and F no longer hands items over. Raids on your village are gentler: none before day 5, then a small chance each morning of 1 to 3 soldiers, growing by 1 or 2 every 5 days. Raiders land on open ground outside your village, never on a roof or inside your walls. Blocks go down over animals (they step aside), and tapping an old block while holding a different block swaps them, with the old one going into your bag. Chests have a Stack button that joins stacks of the same item. In shared worlds, enemies are just as active around every friend as around the host, and castle guards wake for whoever walks in. Hiring a woodcutter or farmer no longer freezes the game.</p>
@@ -564,7 +566,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.31</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.32</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -824,7 +826,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.31</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.32</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -843,7 +845,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.31', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.32', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1351,7 +1353,6 @@ const RECIPES = [
   { out:I.BEAR_ROAST, n:1, need:[[I.BEAR_MEAT,1]], st:B.FURNACE, cat:'cook' },
   { out:I.COOKED_WOLF, n:1, need:[[I.WOLF_MEAT,1]], st:B.FURNACE, cat:'cook' },
   { out:I.STEW, n:1, need:[[I.VENISON,1],[I.APPLE,2]], st:B.FURNACE, cat:'cook' },
-  { out:I.BREAD, n:2, need:[[I.APPLE,1],[B.SAND,1]], st:B.FURNACE, cat:'cook' },
   { out:I.GRILLED_FISH, n:1, need:[[I.RAW_FISH,1]], st:B.FURNACE, cat:'cook' },
   { out:I.FISH_STEW, n:1, need:[[I.RAW_FISH,1],[I.MUSHROOM,1]], st:B.FURNACE, cat:'cook' },
   { out:I.MUSHROOM_SOUP, n:1, need:[[I.MUSHROOM,2]], st:B.FURNACE, cat:'cook' },
@@ -4152,7 +4153,7 @@ function serialize(){
     machines:ents.filter(e=>e.kind==='machine'&&!e.dead).map(m=>({mtype:m.mtype,hp:Math.round(m.hp),crew:m.crew?m.crew.name:null})),
     pets:ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,pen:e.pen||null,fpen:e.fpen||null,px:(e.pen||e.fpen)?Math.round(e.x):null,py:(e.pen||e.fpen)?Math.round(e.y):null})),
     chests, roster:mySoldiers().map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e),kills:e.kills||0})),
-    player:{ bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, stormV:p.stormV||0, silverArmV:p.silverArmV||0, charm:p.charm||0, boatMods:p.boatMods||{}, locker:p.locker||[], quests:p.quests||[], godCraft:!!p.godCraft, level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, recent:p.recent||[], found:p.found||{}, wingLvl:p.wingLvl||0, swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, heartsBought:p.heartsBought||{}, extraJumps:p.extraJumps||0, bed:p.bed, cust:p.cust, name:p.name, flyOn:p.flyOn, team:p.team, cls:p.cls, x:p.x, y:p.y, hp:Math.max(1,Math.round(p.hp)), mana:Math.round(p.mana), gear:p.gear, bonusHp:p.bonusHp, bonusMana:p.bonusMana, armorDef:p.armorDef, inv:p.inv, sel:p.sel, coins:p.coins },
+    player:{ bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, stormV:p.stormV||0, silverArmV:p.silverArmV||0, charm:p.charm||0, charms:p.charms||[], boatMods:p.boatMods||{}, locker:p.locker||[], quests:p.quests||[], godCraft:!!p.godCraft, level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, recent:p.recent||[], found:p.found||{}, wingLvl:p.wingLvl||0, swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, heartsBought:p.heartsBought||{}, extraJumps:p.extraJumps||0, bed:p.bed, cust:p.cust, name:p.name, flyOn:p.flyOn, team:p.team, cls:p.cls, x:p.x, y:p.y, hp:Math.max(1,Math.round(p.hp)), mana:Math.round(p.mana), gear:p.gear, bonusHp:p.bonusHp, bonusMana:p.bonusMana, armorDef:p.armorDef, inv:p.inv, sel:p.sel, coins:p.coins },
     surf:Array.from(surf), wet:[...wetDeco], ores:{sky:!!oresSky,magma:!!oresMagma,big:!!oresBig}, world:rleEnc(world), shape:rleEnc(shape), bg:rleEnc(bg), explored:rleEnc(explored), liq:rleEnc(liq), ocean:rleEnc(oceanCol), home, rules };
   return { str:JSON.stringify(obj), savedAt, summary:{ sizeKey, team:p.team, cls:p.cls, dayCount } };
 }
@@ -4164,7 +4165,7 @@ function deserialize(str){
   bases=o.bases.map(b=>Object.assign({rt:30},b)); lair=o.lair; tower=o.tower; sky=o.sky; skyOff=o.skyOff||72; barrierY=skyOff-4; islands=o.islands||[]; camps=o.camps||[]; fort=o.fort; magma=o.magma; magmaY=o.magmaY; fishv=o.fishv; ghoulNext=o.ghoulNext??null; ruins=o.ruins||[]; gcamps=o.gcamps||[]; chests=o.chests||{};
   const sp=o.player; player=makePlayer(sp.team,sp.cls); player.x=sp.x; player.y=sp.y; player.bonusHp=sp.bonusHp||0; player.bonusMana=sp.bonusMana||0; if(sp.gear) player.gear=Object.assign(player.gear,sp.gear); recompute(player); player.hp=Math.min(sp.hp,player.maxHp); player.mana=Math.min(sp.mana||0,player.maxMana); player.coins=sp.coins||0; player.order=o.order||'follow';
   player.inv=sp.inv.map(s=>s&&ITEMS[s.id]?{id:s.id,n:s.n}:null); while(player.inv.length<INV_N) player.inv.push(null); player.sel=sp.sel||0;
-  buildMap(); player.cust=o.player.cust||null; player.name=o.player.name; player.flyOn=o.player.flyOn; player.bed=o.player.bed||null; player.extraJumps=o.player.extraJumps||0; player.swiftLvl=o.player.swiftLvl||0; player.wingLvl=o.player.wingLvl||0; player.found=o.player.found||{}; player.recent=o.player.recent||[]; player.krakenBond=!!o.player.krakenBond; player.godCraft=!!o.player.godCraft; player.level=o.player.level||1; player.xp=o.player.xp||0; player.skillPts=o.player.skillPts||0; player.skills=o.player.skills||{}; player.food=o.player.food??100; player.locker=Array.isArray(o.player.locker)?o.player.locker.filter(id=>ITEMS[id]):[]; player.quests=Array.isArray(o.player.quests)?o.player.quests:[]; player.bestiary=o.player.bestiary||{}; player.runes=o.player.runes||{}; player.runeLv=o.player.runeLv||{}; player.charm=o.player.charm||0; player.stormV=o.player.stormV||0; player.silverArmV=o.player.silverArmV||0; player.boatMods=o.player.boatMods||{}; recompute(player); player.sprintLvl=o.player.sprintLvl||0; player.heartsBought=o.player.heartsBought||{}; recompute(player); if(o.armyUp) player.armyUp=o.armyUp; if(o.petUp) player.petUp=o.petUp; populate(o.dragonHp||99999,o.roster,o.pets); computeForestCols();
+  buildMap(); player.charms=Array.isArray(o.player.charms)?o.player.charms.filter(id=>CHARMS[id]):[]; player.cust=o.player.cust||null; player.name=o.player.name; player.flyOn=o.player.flyOn; player.bed=o.player.bed||null; player.extraJumps=o.player.extraJumps||0; player.swiftLvl=o.player.swiftLvl||0; player.wingLvl=o.player.wingLvl||0; player.found=o.player.found||{}; player.recent=o.player.recent||[]; player.krakenBond=!!o.player.krakenBond; player.godCraft=!!o.player.godCraft; player.level=o.player.level||1; player.xp=o.player.xp||0; player.skillPts=o.player.skillPts||0; player.skills=o.player.skills||{}; player.food=o.player.food??100; player.locker=Array.isArray(o.player.locker)?o.player.locker.filter(id=>ITEMS[id]):[]; player.quests=Array.isArray(o.player.quests)?o.player.quests:[]; player.bestiary=o.player.bestiary||{}; player.runes=o.player.runes||{}; player.runeLv=o.player.runeLv||{}; player.charm=o.player.charm||0; player.stormV=o.player.stormV||0; player.silverArmV=o.player.silverArmV||0; player.boatMods=o.player.boatMods||{}; recompute(player); player.sprintLvl=o.player.sprintLvl||0; player.heartsBought=o.player.heartsBought||{}; recompute(player); if(o.armyUp) player.armyUp=o.armyUp; if(o.petUp) player.petUp=o.petUp; populate(o.dragonHp||99999,o.roster,o.pets); computeForestCols();
   for(const md of (o.machines||[])){ const m=makeMachine(md.mtype,player.x+(Math.random()*60-30),player.y-6); m.hp=md.hp; ents.push(m); if(md.crew){ const c=player.party.find(e=>e&&e.name===md.crew&&!e.crewing); if(c){ c.crewing=m; m.crew=c; } } } wakeAllWater();
 }
 let curSlot=1, saving=false;
@@ -5588,6 +5589,7 @@ async function mpJoin(code){ code=(code||'').trim(); if(code.length<4){ mpStatus
   try{ await room.presence({joining:true}); }catch(e){ mpStatus('Could not join the room ('+(e&&e.code||'error')+').'); return; }
   mpStatus('Looking for the host…'); const t0=performance.now(); let host=null;
   while(!host&&performance.now()-t0<12000){ host=(room.peers()||[]).find(p=>p.presence&&p.presence.host&&p.presence.seed!=null); if(!host) await new Promise(r=>setTimeout(r,300)); }
+  if(!host&&typeof mpTakeOver==='function'&&await mpTakeOver(code,room)) return;
   if(!host){ mpStatus('No host found with that game ID. Check the ID, and make sure the host is in their world with the game open.'); try{ room.leave(); }catch(e){} MP.room=null; return; }
   const hp=host.presence; hide('scrMP'); $('#loading').hidden=false; $('#loading').textContent='Building the shared world…';
   MP.guest=true; MP.hostSeen=0; MP.hostNm=hp.nm||''; setTimeout(()=>{ curSlot=0; newGame(hp.size,hp.pf,heroCls(),{mode:hp.md==='creative'?'creative':'survival',kit:hp.kit||'standard',death:hp.dth||'keep',seed:hp.seed,cust:+setup.char>=0&&chars[+setup.char]?{...chars[+setup.char]}:null});
@@ -5652,7 +5654,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h',e.upArmor||0]);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), vt:mpVillageTierOut(), vg:MP.guest?mpVillageTierOut():0, tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
@@ -5728,7 +5730,7 @@ function mpFresh(kind,from,sq,floor0){ const B=MP.seenSets||(MP.seenSets={}), id
 let curChar=1; const heroPick={mode:'',cb:null,state:null};
 const charKey=n=>'dragonamulet-char-'+n;
 function charRead(n){ try{ return JSON.parse(localStorage.getItem(charKey(n))||'null'); }catch(e){ return null; } }
-function charState(){ const p=player; return { v:1, bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, charm:p.charm||0, boatMods:p.boatMods||{}, stormV:p.stormV||0, locker:p.locker||[], quests:p.quests||[], level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, savedAt:Date.now(), name:p.name||'', cls:p.cls, cust:p.cust||null, inv:p.inv, gear:p.gear, coins:p.coins, armyUp:p.armyUp, petUp:p.petUp, bonusHp:p.bonusHp||0, bonusMana:p.bonusMana||0,
+function charState(){ const p=player; return { v:1, bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, charm:p.charm||0, charms:p.charms||[], boatMods:p.boatMods||{}, stormV:p.stormV||0, locker:p.locker||[], quests:p.quests||[], level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, savedAt:Date.now(), name:p.name||'', cls:p.cls, cust:p.cust||null, inv:p.inv, gear:p.gear, coins:p.coins, armyUp:p.armyUp, petUp:p.petUp, bonusHp:p.bonusHp||0, bonusMana:p.bonusMana||0,
   swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, wingLvl:p.wingLvl||0, extraJumps:p.extraJumps||0, heartsBought:p.heartsBought||{}, found:p.found||{}, recent:p.recent||[],
   soldiers:p.party.map((e,i)=>e&&!e.dead?{name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:i,kills:e.kills||0}:null).filter(Boolean),
   pets:ents.filter(e=>e.tamed&&!e.dead&&!e.pen&&!e.fpen).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp})) }; }
@@ -5736,7 +5738,7 @@ function charSave(){ if(!player||curSlot===4||!curChar) return; try{ localStorag
 function charApply(st){ if(!st) return; let p=player;
   if(st.cls&&st.cls!==p.cls){ const np=makePlayer(p.team,st.cls); np.x=p.x; np.y=p.y; np.bed=p.bed; np.party=p.party; const i=ents.indexOf(p); if(i>=0) ents[i]=np; player=np; p=np; }
   for(const e of p.party) if(e) e.dead=true; for(const e of ents) if(e.tamed&&!e.pen&&!e.fpen) e.dead=true; p.party=new Array(PARTY_MAX).fill(null);
-  for(const k of ['inv','gear','coins','armyUp','petUp','bonusHp','bonusMana','swiftLvl','sprintLvl','wingLvl','extraJumps','heartsBought','found','recent','krakenBond','level','xp','skillPts','skills','food','locker','quests','bestiary','runes','runeLv','charm','boatMods','stormV']) if(st[k]!=null) p[k]=JSON.parse(JSON.stringify(st[k]));
+  for(const k of ['inv','gear','coins','armyUp','petUp','bonusHp','bonusMana','swiftLvl','sprintLvl','wingLvl','extraJumps','heartsBought','found','recent','krakenBond','level','xp','skillPts','skills','food','locker','quests','bestiary','runes','runeLv','charm','charms','boatMods','stormV']) if(st[k]!=null) p[k]=JSON.parse(JSON.stringify(st[k]));
   if(st.cust) p.cust=st.cust; if(st.name) p.name=st.name; while(p.inv.length<INV_N) p.inv.push(null); if(!Array.isArray(p.locker)) p.locker=[]; recompute(p); p.hp=p.maxHp; p.mana=p.maxMana; invDirty=true;
   for(const sd of st.soldiers||[]){ const e=makeHuman(p.team,sd.cls,p.x+(Math.random()*40-20),p.y-4,'guard',home); e.name=sd.name; e.kills=sd.kills||0; e.maxHp=Math.max(e.maxHp,sd.maxHp||e.maxHp); e.hp=Math.min(e.maxHp,sd.hp||e.maxHp); ents.push(e); const sl=sd.slot<partyCap()&&!p.party[sd.slot]?sd.slot:freeSlot(); if(sl>=0) putInSlot(e,sl); }
   for(const pt of st.pets||[]){ const a=makeAnimal(pt.atype,p.x+(Math.random()*40-20),p.y); Object.assign(a,{tamed:true,team:p.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp}); applyPetUp(a); ents.push(a); } }
@@ -9811,6 +9813,106 @@ function vTree(e){ const ox=Math.round(cxOf(e)/T), bad=e.vbad||new Set(); for(le
     if(!r&&dir&&Math.abs(e.x-x0)<0.05){ e.vstuck=(e.vstuck||0)+dt; if(e.vstuck>1.2){ e.vstuck=0; const ox=e.x, oy=e.y;
         for(let k=1;k<=5;k++){ e.x=ox+dir*T; e.y=oy-k*T; if(!collides(e)){ e.vy=0; puff(cxOf(e),e.y+e.h,'#c8b090',4,40); return r; } } e.x=ox; e.y=oy; } }
     else e.vstuck=0; return r; }; }
+// ===================== a shared world anyone can open; the same enemies for every player =====================
+// Online copy: while a world is hosted on the game page (claude.ai), the host saves the shared world to the page's
+// database every SHARED_EVERY seconds and when saving, together with the world settings (seed, size, faction, mode).
+// A friend who joins when nobody is hosting opens that copy and becomes the host, with the same game ID; whoever
+// plays last leaves the newest copy. When the first host hosts the world again, a newer copy made by a friend is
+// loaded first (home.sharedAt remembers which copy a world is). Every player's hero is their own (saved on their
+// device), and a guest also keeps the world in Friend's world (slot 5). Outside claude.ai (PeerJS) there is no
+// database, so a world can only be played with its host there.
+// Enemies: each friend gets their own share of the enemy list (nearest first, always including anything attacking
+// them) and the shots fired near them, so enemies far from the host are never invisible. Night and cave monsters use
+// one limit for the whole group (as many as one player alone gets), spawning around whichever player.
+const SHARED_EVERY=150;
+const mpDb=async()=>cloud.db||(window.claude&&window.claude.use?await window.claude.use('db'):null);
+{ const _pw=mpPublishWorld; mpPublishWorld=async function(...a){ if(!MP.host||!MP.room||MP.room.peerMode) return _pw(...a);
+    const at=Date.now(); if(home) home.sharedAt=at; mpSnapCache=null; const r=await _pw(...a);
+    try{ const db=await mpDb(); if(db&&MP.code){ const k='mp/'+MP.code.toLowerCase(), m=await db.doc(k).get(); const md=m.exists?m.data():{};
+        await db.doc(k).set(Object.assign({},md,{at, seed, size:sizeKey, pf:player.team, md:rules.mode, kit:rules.kit||'standard', dth:rules.death||'keep', nm:(player&&player.name)||'', day:dayCount, wname:(home&&home.name)||''})); MP.pubAt=at; } }catch(e){ console.warn('shared world',e); }
+    return r; }; }
+let sharedT=0;
+setInterval(()=>{ if(typeof MP!=='undefined'&&MP.on&&MP.host&&MP.room&&!MP.room.peerMode&&state!=='title'&&(sharedT+=5)>=SHARED_EVERY){ sharedT=0; mpPublishWorld().catch(e=>console.warn(e)); } },5000);
+{ const _sl=saveLocal; saveLocal=async function(...a){ const r=await _sl(...a); try{ if(MP.on&&MP.host&&MP.room&&!MP.room.peerMode&&Date.now()-(MP.pubAt||0)>60000){ sharedT=0; mpPublishWorld().catch(e=>console.warn(e)); } }catch(e){} return r; }; }
+
+async function mpReadShared(code){ const db=await mpDb(); if(!db) return null; const k='mp/'+code.toLowerCase(); const m=await db.doc(k).get(); if(!m.exists) return null; const md=m.data();
+  if(md.seed==null||!md.n) return null; const ps=[]; for(let i=0;i<md.n;i++){ const c=await db.doc(`mp/${code.toLowerCase()}/w/c${i}`).get(); if(!c.exists||c.data().id!==md.id) return null; ps.push(c.data().d); }
+  return {md,z:ps.join('')}; }
+// nobody hosting: open the online copy and host it
+async function mpTakeOver(code,room){ let got=null; try{ got=await mpReadShared(code); }catch(e){ console.warn(e); } if(!got) return false; const {md,z}=got;
+  mpStatus(`Nobody is hosting right now. Opening the shared world${md.nm?` (last played by ${md.nm})`:''}…`); try{ room&&room.leave(); }catch(e){} MP.room=null;
+  hide('scrMP'); $('#loading').hidden=false; $('#loading').textContent='Opening the shared world…';
+  setTimeout(async()=>{ try{ curSlot=SHARED_SLOT; MP.on=false; MP.guest=false; MP.host=false;
+      newGame(md.size,md.pf,heroCls(),{mode:md.md==='creative'?'creative':'survival',kit:md.kit||'standard',death:md.dth||'keep',seed:md.seed,cust:+setup.char>=0&&chars[+setup.char]?{...chars[+setup.char]}:null});
+      afterWorldReady(); MP.me=player; applySnapshot(JSON.parse(await gunz(z))); if(home) home.sharedAt=md.at||Date.now(); try{ hide('scrIntro'); }catch(e){}
+      await saveLocal(); await mpHost(code); toast(`You are hosting the shared world (game ID ${code.toUpperCase()}). Friends can join with the same ID.`,5); }
+    catch(e){ console.warn(e); toast('Could not open the shared world',3); } finally{ $('#loading').hidden=true; } },40);
+  return true; }
+// hosting a world again: a newer copy a friend played is loaded first
+{ const _mh=mpHost; mpHost=async function(reuse,...a){ try{ if(reuse&&home){ const got=await mpReadShared(reuse); if(got&&(got.md.at||0)>(home.sharedAt||0)+60000){
+        applySnapshot(JSON.parse(await gunz(got.z))); home.sharedAt=got.md.at; toast(`Loaded the newest copy of this shared world${got.md.nm?`, played by ${got.md.nm}`:''}`,4); } } }catch(e){ console.warn(e); }
+    return _mh(reuse,...a); }; }
+
+// ---- every friend sees the enemies around them ----
+mpMobList=(function(){ const _base=mpMobList; return function(){ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return []; const per=Math.max(12,Math.floor(40/gs.length)), pick=new Map();
+    const cand=[]; for(const e of ents){ if(e.dead||e.proxy||e===player||e.tamed||e.aboard||e.kind==='villager'||e.kind==='drifter'||e.kind==='captive') continue; if(e.kind==='human'&&e.team===player.team) continue; if(!mpCode(e)) continue; cand.push(e); }
+    for(const e of cand) if(e.warlord) pick.set(e,0);
+    for(const r of gs){ const p=r.proxy, near=[]; for(const e of cand){ const d=Math.abs(e.x-p.x)+Math.abs(e.y-p.y)*0.5; if(e.target===p||(e.target&&e.target.proxyOwner===r)) near.push([-1,e]); else if(d<=45*T) near.push([d,e]); }
+      near.sort((a,b)=>a[0]-b[0]); for(const [d,e] of near.slice(0,per)) pick.set(e,Math.min(pick.has(e)?pick.get(e):1e9,d)); }
+    const out=[...pick].sort((a,b)=>a[1]-b[1]).slice(0,48).map(([e])=>{ if(!e.nid) e.nid=++mpNid; return [e.nid,mpCode(e),Math.round(e.x),Math.round(e.y),e.facing||1,Math.round(100*e.hp/e.maxHp),e.atkT>0?1:0]; });
+    return out; }; })();
+// the boss-ladder flags (stealth, molten armor) are added on top, as before
+{ const _ml=mpMobList; mpMobList=function(){ const out=_ml(); try{ for(const m of out){ const e=ents.find(o=>o.nid===m[0]); if(e) m[6]=(m[6]?1:0)|(e.stealthT>0?2:0)|(e.moltenT>0?4:0)|(e.crackT>0?8:0); } }catch(err){} return out; }; }
+// shots near each friend, not only the newest dozen in the world
+mpShotsOut=function(){ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return mpShots.slice(-12); const keep=new Set();
+  for(const r of gs){ let n=0; for(let i=mpShots.length-1;i>=0&&n<10;i--){ const s=mpShots[i]; if(Math.abs(s[1]-r.proxy.x)<60*T&&Math.abs(s[2]-r.proxy.y)<40*T){ keep.add(s); n++; } } }
+  return mpShots.filter(s=>keep.has(s)).slice(-24); };
+
+// ---- one monster limit for the whole group ----
+const groupCap=()=>({small:6,medium:8,large:10}[sizeKey]||8)+6;   // surface night monsters plus cave monsters, as for one player
+function nearAnyPlayer(e,n){ if(player&&Math.abs(e.x-player.x)<n*T) return true; if(typeof MP!=='undefined'&&MP.host) for(const r of MP.remote.values()) if(r.proxy&&Math.abs(e.x-r.proxy.x)<n*T) return true; return false; }
+{ const _sm=spawnMonsters; spawnMonsters=function(dt,...a){ if(typeof MP==='undefined'||!MP.host||!MP.remote.size) return _sm(dt,...a);
+    const count=()=>ents.filter(e=>e.kind==='monster'&&!e.dead&&!e.camp&&!e.forestAmbush&&nearAnyPlayer(e,70)).length; const before=count(), had=new Set(ents);
+    const r=_sm(dt,...a); if(before>=groupCap()) for(const e of ents) if(!had.has(e)&&e.kind==='monster'&&!e.camp) e.dead=true;
+    return r; }; }
+// ===================== more than one charm; a village grown by anyone is grown for everyone =====================
+// Charms: wear one of every kind at once and their bonuses add up (player.charm is the first, player.charms the rest).
+// Using a charm you already wear does nothing; the bag's "Charms worn" row takes one off and puts it back in the bag.
+function wornCharms(p){ p=p||player; if(!p) return []; return [p.charm,...(p.charms||[])].filter(id=>id&&CHARMS[id]); }
+charmFx=function(k){ let v=0; for(const id of wornCharms()) v+=CHARMS[id].fx[k]||0; return v; };
+wearCharm=function(id){ const p=player; if(!CHARMS[id]) return; if(wornCharms(p).includes(+id)){ toast(`You already wear the ${CHARMS[id].name.toLowerCase()}`,2); return; }
+  takeItem(id,1); if(!p.charm) p.charm=+id; else (p.charms=p.charms||[]).push(+id); recompute(p); invDirty=true;
+  toast(`${CHARMS[id].name} worn: ${CHARMS[id].desc.toLowerCase()}. You wear ${wornCharms(p).length} charm${wornCharms(p).length===1?'':'s'}.`,3.5); };
+function takeOffCharm(id){ const p=player; id=+id; if(p.charm===id){ p.charm=(p.charms||[]).shift()||0; } else p.charms=(p.charms||[]).filter(c=>c!==id); give(id,1); recompute(p); invDirty=true; toast(`${CHARMS[id].name} taken off`,1.6); }
+// the first charm's bonus is added by the older recompute wrapper; add the rest
+{ const _rc=recompute; recompute=function(p,...a){ _rc(p,...a); if(p===player) for(const id of (p.charms||[])){ const c=CHARMS[id]; if(!c||id===p.charm) continue; const f=c.fx; if(f.def) p.def+=f.def; if(f.hp) p.maxHp+=f.hp; if(f.mana) p.maxMana+=f.mana; if(f.speed) p.speed*=1+f.speed; } }; }
+{ const bar=document.createElement('div'); bar.id='charmBar'; const g=$('#invGrid'); if(g) g.before(bar); }
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ const bar=$('#charmBar'), L=wornCharms(); if(bar){ bar.hidden=!L.length;
+      bar.innerHTML=L.length?`<span>Charms worn:</span>`+L.map(id=>`<button class="xbtn charmoff" data-charmoff="${id}" title="Take off"><img alt="" src="${iconUrl(id)}">${escapeHTML(CHARMS[id].name)} ✕</button>`).join(''):''; } }catch(e){} return r; }; }
+document.addEventListener('click',e=>{ const b=e.target.closest&&e.target.closest('[data-charmoff]'); if(!b) return; e.stopPropagation(); takeOffCharm(b.dataset.charmoff); renderInv(); },true);
+{ const s=document.createElement('style'); s.textContent=`#charmBar{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:0 0 8px; font-size:9px; } #charmBar[hidden]{ display:none; }
+#charmBar .charmoff{ display:inline-flex; align-items:center; gap:4px; padding:4px 7px; font-size:8px; } #charmBar img{ width:16px; height:16px; image-rendering:pixelated; }`; document.head.appendChild(s); }
+
+// ---- village growth in shared worlds: anyone can grow it, and everyone's village grows ----
+// The host sends the village size in presence `vt`; a friend who pays for growth sends `vg` (the size they paid for)
+// and the host grows the village for everyone. If the host doesn't confirm within 20 seconds the friend is refunded.
+function applyGrowth(to){ const t=villageTier(); if(to!==t+1) return false; const nx=VILLAGE_TIERS[to]; if(!nx) return false;
+  home.tier=to; if(!(typeof MP!=='undefined'&&MP.guest)) facRun(()=>{ try{ newHomeHouse(); }catch(e){} houseLanterns(setPut); });
+  if(to===1&&!home.jeweler){ home.jeweler=true; ents.push(makeHelper('jeweler','Jeweler',-16)); }
+  if(to===2&&!home.engineer){ home.engineer=true; ents.push(makeHelper('engineer','War engineer',16)); }
+  puff(home.castleCx*T,home.gy*T-40,'#ffe066',40,180); if(typeof sfx==='function') sfx('coin'); invDirty=true; return true; }
+let vgPaid=null;   // a friend's payment waiting for the host: {to, cost, coins, t}
+{ const _gv=growVillage; growVillage=function(...a){ if(typeof MP==='undefined'||!MP.guest) return _gv(...a);
+    const t=villageTier(), nx=VILLAGE_TIERS[t+1]; if(!nx||!nearOwnCastle()||vgPaid) return;
+    if(!free()){ if(!canPay(nx.cost)||player.coins<nx.coins){ toast('You need the materials and coins to grow the village',2.5); return; } for(const [id,n] of nx.cost) takeNeed(id,n); player.coins-=nx.coins; }
+    vgPaid={to:t+1,cost:free()?[]:nx.cost,coins:free()?0:nx.coins,t:performance.now()}; toast(`Growing the village into a ${nx.name.toLowerCase()}…`,2.5); invDirty=true; }; }
+{ const _vh=villageHtml; villageHtml=function(...a){ if(typeof MP==='undefined'||!MP.guest) return _vh(...a); MP.guest=false; try{ return _vh(...a); } finally{ MP.guest=true; } }; }
+function mpVillageTierOut(){ if(typeof MP==='undefined'||!MP.on||!home) return 0; return MP.host?villageTier():(vgPaid?vgPaid.to:0); }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(!home||!d) return out;
+      if(MP.host&&d.vg&&d.vg===villageTier()+1){ const nx=VILLAGE_TIERS[d.vg]; if(applyGrowth(d.vg)) toast(`${r.nm||'A friend'} grew the village into a ${nx.name.toLowerCase()}! It brings ${nx.gives}.`,6); }
+      if(MP.guest&&d.host&&typeof d.vt==='number'&&d.vt>villageTier()){ while(villageTier()<d.vt) applyGrowth(villageTier()+1); const nx=VILLAGE_TIERS[villageTier()];
+        toast(`${vgPaid?'You grew':'The village has grown into'} ${vgPaid?'the village into ':''}a ${nx.name.toLowerCase()}! It brings ${nx.gives}.`,6); vgPaid=null; } }catch(e){ console.warn(e); } return out; }; }
+setInterval(()=>{ if(!vgPaid) return; if(villageTier()>=vgPaid.to){ vgPaid=null; return; } if(performance.now()-vgPaid.t>20000){ for(const [id,n] of vgPaid.cost) give(id,n); player.coins+=vgPaid.coins; vgPaid=null; invDirty=true; toast('The host did not answer, so your coins and materials are back',3); } },1000);
 })();
 </script>
 </body>
