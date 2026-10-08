@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791435512"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791435512"><link rel="manifest" href="manifest.webmanifest?v=1791435512"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791439272"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791439272"><link rel="manifest" href="manifest.webmanifest?v=1791439272"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.30</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.31</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.30</h3>
+    <h3>New in Beta 0.9.31</h3>
+    <p>Shared worlds: jump or swim onto a friend's boat to ride along (jump off toward land to leave), and everyone sees the soldiers sitting in a boat, the armor each player wears, and fires burning anywhere near them. Soldiers come along through realm portals. Break the frozen winter sea with a pickaxe or axe (the hole freezes over next morning). Chests have a Sort button: by type, name, value or amount. Trophies are a 2 by 2 picture of the boss and hang straight on a back wall; no shelves needed. Miners, woodcutters and farmers keep working however far away you are (woodcutters bring their logs home again, and climb over steps that blocked them). Boats say how many soldiers they carry in the shop and in crafting. The goblin forest sends a few ambushes a day instead of an endless stream, and water far from every player waits instead of flowing, so friends' games run smoother.</p>
+    <h3>Beta 0.9.30</h3>
     <p>Trading with friends: stand within 5 blocks of a friend and press T (on a phone, the use button, then Trade with). A trade window opens for both of you: tap items in your bag to put them on the table, add coins, and both press Accept to swap. Changing an offer takes back both Accepts, and F no longer hands items over. Raids on your village are gentler: none before day 5, then a small chance each morning of 1 to 3 soldiers, growing by 1 or 2 every 5 days. Raiders land on open ground outside your village, never on a roof or inside your walls. Blocks go down over animals (they step aside), and tapping an old block while holding a different block swaps them, with the old one going into your bag. Chests have a Stack button that joins stacks of the same item. In shared worlds, enemies are just as active around every friend as around the host, and castle guards wake for whoever walks in. Hiring a woodcutter or farmer no longer freezes the game.</p>
     <h3>Beta 0.9.29</h3>
     <p>Split stacks: select a stack in the bag (or in a chest on a phone) and a Move slider appears with 1, Half and All; tapping another slot, dragging or Drop then moves only that many. On a computer, right-click a stack to pick up half, or right-click in a chest to send half across. Charcoal: burn a log of any wood in a furnace. Torches take a stick and a charcoal (coal works too) for four. In shared worlds everyone sees trees fall, a friend's logs pop out at the stump for everyone to see, friends who join see the host's explored map, and a player who leaves disappears with a "left the game" message.</p>
@@ -562,7 +564,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.30</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.31</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -822,7 +824,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.30</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.31</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -841,7 +843,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.30', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.31', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3264,8 +3266,8 @@ function usePortal(){ const p=player; const px=cxOf(p)/T; let dest, msg;
   else if(p.y>=magmaY*T){ const fp=fort.portal||{x:fort.tx,y:fort.gy-1}; dest={x:(fp.x-2)*T,y:(fp.y+1)*T-29}; msg='You return to the magma fortress'; }
   else if(Math.abs(px-fort.tx)<20){ if(!(fort.cleared||rules.mode==='creative')){ toast('The portal is sealed. Defeat the magma wizard.',3); return; } dest={x:magma.arrive.x,y:magma.arrive.y}; msg='You enter the magma realm. You can dig your way up to leave, but never down to return.'; }
   else { if(!(tower.cleared||rules.mode==='creative')){ toast('The portal is sealed. Defeat the Archmage to open it.',3); return; } dest={x:sky.arrive.x,y:sky.arrive.y}; msg='You step into the sky realm. You can jump down, but only the portal brings you back up.'; }
-  disembark(); puff(cxOf(p),cyOf(p),'#b066ff',20,140); p.x=dest.x; p.y=dest.y; p.vx=p.vy=0; p.peakY=p.y;
-  for(const e of p.party) if(e&&!e.dead&&!e.leftBehind&&Math.hypot(cxOf(e)-cxOf(p),cyOf(e)-cyOf(p))<40*T){ e.x=p.x+(Math.random()*30-15); e.y=p.y; e.vx=e.vy=0; }
+  disembark(); puff(cxOf(p),cyOf(p),'#b066ff',20,140); const ox=cxOf(p), oy=cyOf(p); p.x=dest.x; p.y=dest.y; p.vx=p.vy=0; p.peakY=p.y;
+  for(const e of p.party) if(e&&!e.dead&&Math.hypot(cxOf(e)-ox,cyOf(e)-oy)<40*T){ e.leftBehind=false; e.aboard=false; e.x=p.x+(Math.random()*30-15); e.y=p.y; e.vx=e.vy=0; }
   for(const e of ents) if(e.tamed&&!e.dead){ e.x=p.x; e.y=p.y; }
   puff(cxOf(p),cyOf(p),'#b066ff',20,140); toast(msg,4); }
 // sky knights patrol the clouds while you are up there
@@ -4754,7 +4756,7 @@ function drawMachine(m){ drawMachineAt(m.mtype,cxOf(m),m.y+m.h,m.facing,m.anim,m
   if(player&&player.operating===m){ ctx.fillStyle='#ffe066'; ctx.fillRect(Math.round(cxOf(m))-1,Math.round(m.y)-16,2,4); } }
 function drawBoat(p){
   const bt=BOATS[p.boat]; const L=bt.len; const cx=Math.round(cxOf(p)), wl=Math.round(p.y+p.h)-5; const bob=Math.round(Math.sin(performance.now()/350));
-  const riders=p===player?player.party.filter(e=>e&&e.aboard).sort((a,b)=>a.seat-b.seat):p.kind==='ship'?(p.riders||[]).filter(e=>!e.dead):[];
+  const riders=p===player?player.party.filter(e=>e&&e.aboard).sort((a,b)=>a.seat-b.seat):p.kind==='ship'?(p.riders||[]).filter(e=>!e.dead):(p.crew||[]);
   const seatX=k=>{ const n=riders.length+1; const span=L-14; return n<=1?0:Math.round(-span/2+span*(k/(n-1))); };
   const r=(x,y,w,h,c)=>{ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); };
   ctx.save(); ctx.translate(cx,wl+bob); if(p.facing<0) ctx.scale(-1,1);
@@ -5634,7 +5636,7 @@ async function mpReadWorldDb(){ const db=cloud.db||(window.claude&&window.claude
 async function mpSyncWorld(){ if(!MP.guest) return; let z=null; try{ z=MP.room&&MP.room.fetchWorld?await MP.room.fetchWorld():await mpReadWorldDb(); }catch(e){ console.warn(e); }
   if(!z){ mpRestorePos(); toast("Could not copy the host's saved changes; you see the world as it was first made",4); return; } try{ applySnapshot(JSON.parse(await gunz(z))); toast("You are in the host's world",2.5); }catch(e){ console.warn('snapshot',e); mpRestorePos(); } }
 function mpRestorePos(){ try{ const pos=JSON.parse(localStorage.getItem('dragonamulet-mppos-'+seed)||'null'); if(pos&&isFinite(pos.x)&&isFinite(pos.y)){ player.x=pos.x; player.y=pos.y; player.vx=player.vy=0; freeSpotFor(player); for(const e of player.party) if(e&&!e.dead){ e.x=player.x+(Math.random()*30-15); e.y=player.y; } for(const a of ents) if(a.tamed&&!a.dead&&!a.fpen){ a.x=player.x; a.y=player.y-4; } revealAround(); toast('Back where you left off',2); } }catch(e){} }
-function applySnapshot(o){ const p=player; const roster=mySoldiers().map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e)})); const pets=ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp}));
+function applySnapshot(o){ const p=player; const roster=p.party.filter(e=>e&&!e.dead).map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e),kills:e.kills||0}));   /* your own party, with its veterans' kills */ const pets=ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp}));
   W=o.W; H=o.H; seaY=o.seaY; skyOff=o.skyOff||72; barrierY=skyOff-4; if(o.dayCount) dayCount=o.dayCount; if(o.time!=null) time=o.time; dragonSlain=!!o.dragonSlain; conquered=o.conquered||{};
   world=rleDec(o.world,W*H,Uint16Array); shape=o.shape?rleDec(o.shape,W*H):new Uint8Array(W*H); bg=rleDec(o.bg,W*H); liq=rleDec(o.liq,W*H); oceanCol=rleDec(o.ocean,W); wetDeco=new Map(o.wet||[]); wact=new Set();
   if(!explored||explored.length!==W*H) explored=new Uint8Array(W*H); if(o.explored){ try{ const he=rleDec(o.explored,W*H); for(let i=0;i<he.length;i++) if(he[i]) explored[i]=he[i]; }catch(e){ console.warn(e); } } skyTop=new Int16Array(W); for(let x=0;x<W;x++) updateSkyTop(x); surf=new Int16Array(W); if(Array.isArray(o.surf)&&o.surf.length===W) surf.set(o.surf); else rebuildSurf();
@@ -5646,11 +5648,11 @@ function applySnapshot(o){ const p=player; const roster=mySoldiers().map(e=>({na
   mpRestorePos(); if(collides(player)) freeSpotFor(player); revealAround(); invDirty=true; }
 function mpEdit(x,y){ if(!MP.on||MP.applying) return; MP.seq++; MP.edits.push([MP.seq,x,y,tileAt(x,y)]); if(MP.edits.length>40) MP.edits.shift(); }
 { const _bt=breakTile; breakTile=function(x,y,...a){ const r=_bt(x,y,...a); mpEdit(x,y); return r; }; const _tp=tryPlace; tryPlace=function(x,y,id){ const r=_tp(x,y,id); if(tileAt(x,y)===id) mpEdit(x,y); return r; }; }
-function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT-=dt; if(mpSaveT<=0){ mpSaveT=15; charSave(); } } MP.sendT-=dt; if(MP.sendT>0) return; MP.sendT=0.1; const p=player;
+function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT-=dt; if(mpSaveT<=0){ mpSaveT=5; charSave(); } } MP.sendT-=dt; if(MP.sendT>0) return; MP.sendT=0.1; const p=player;
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
-    .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
+    .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h',e.upArmor||0]);
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
@@ -5664,7 +5666,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   // the logs that must arrive in order (ge, fe) always send their oldest part first
   MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch','sh','fx']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
-  if(size()>BUDGET){ for(const k of ['fx','bm','sh','ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
+  if(size()>BUDGET){ for(const k of ['fi','fx','bm','sh','ch','ge','fe','ed','mobs','sold','cr','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
   if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['tk','x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
@@ -5688,10 +5690,10 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
     if(d.host&&MP.applied[pe.peer]==null&&MP.hostEdSeq) MP.applied[pe.peer]=MP.hostEdSeq;
     if(MP.guest&&d.host&&d.fl!=null){ tower.cleared=d.fl.includes('t'); fort.cleared=d.fl.includes('f'); if(d.fl.includes('s')) sky.castle.cleared=true; if(d.fl.includes('m')) magma.keep.cleared=true; if(d.fl.includes('d')&&!dragonSlain){ dragonSlain=true; if(dragon) dragon.dead=true; } if(d.fl.includes('k')) krakenSlain=true; }
     { const old=r.soldiers||[]; const keep=new Set();
-      r.soldiers=(d.sold||[]).map(([x,y,c,f,w,uid,hp,k],i)=>{ let o=uid?old.find(q=>q.uid===uid):old[i]; const isA=k==='f'||k==='p';
+      r.soldiers=(d.sold||[]).map(([x,y,c,f,w,uid,hp,k,ua],i)=>{ let o=uid?old.find(q=>q.uid===uid):old[i]; const isA=k==='f'||k==='p';
         if(!o||(o.kind==='animal')!==isA){ o=isA?{kind:'animal',atype:c,tamed:true,remote:true,w:(ANIMALS[c]||{w:14}).w,h:(ANIMALS[c]||{h:12}).h,x,y,anim:0,hp:100,maxHp:100,hurtT:0,atkT:0,variant:0,temper:'good',def:0}:{kind:'human',remote:true,w:12,h:29,x,y,anim:0,hp:100,maxHp:100,hurtT:0,atkT:0,role:'guard',def:0};
           if(MP.host){ o.proxy=true; o.proxyOwner=r; ents.push(o); } }
-        keep.add(o); o.uid=uid||0; o.tx=x; o.ty=y; if(isA){ o.atype=c; o.mode=k==='f'?'fight':'pet'; } else { o.cls=c; o.weapon=w; } o.facing=f; o.team=r.team; o.hp=hp||100; o.maxHp=100; o.dead=false; o.vx=Math.abs(x-(o.x||x))>1?40:0; return o; });
+        keep.add(o); o.uid=uid||0; o.tx=x; o.ty=y; if(isA){ o.atype=c; o.mode=k==='f'?'fight':'pet'; } else { o.cls=c; o.weapon=w; o.upArmor=ua||0; } o.facing=f; o.team=r.team; o.hp=hp||100; o.maxHp=100; o.dead=false; o.vx=Math.abs(x-(o.x||x))>1?40:0; return o; });
       for(const o of old) if(!keep.has(o)&&o.proxy) o.dead=true; }
     // replay their block changes
     const last=MP.applied[pe.peer]||0; let mx=last; MP.applying=true; for(const [sq,x,y,id] of (d.ed||[])){ if(mpFresh('ed',pe.peer,sq,last)){ if(tileAt(x,y)!==id&&!(BLOCKS[tileAt(x,y)]&&BLOCKS[tileAt(x,y)].hard===Infinity)) setTile(x,y,id); if(sq>mx) mx=sq; } } MP.applying=false; MP.applied[pe.peer]=mx;
@@ -6671,7 +6673,7 @@ function villageWorkerAct(e,dt){ e.anim+=dt; e.vT=(e.vT||0)-dt;
   return false; }
 { const _uv=updateVillager; updateVillager=function(e,dt){ if(e.shelter){ e.anim+=dt; e.vx=0; physics(e,dt); return; } if(e.vjob&&!(typeof MP!=='undefined'&&MP.guest)&&villageWorkerAct(e,dt)) return; return _uv(e,dt); }; }
 // far from home, the work still gets done: a day's share arrives each morning
-{ const _nd=newDayEvents; newDayEvents=function(){ _nd(); try{ if(home&&home.vw&&player&&Math.abs(cxOf(player)/T-home.castleCx)>150){ const c=homeChest(); if(c){ const b=1+villageBonus(); if(home.vw.woodcutter) putInChest(c,{id:B.LOG,n:Math.round(12*home.vw.woodcutter*b)}); if(home.vw.farmer) putInChest(c,{id:I.WHEAT,n:Math.round(8*home.vw.farmer*b)}); } } respawnVillagers(); }catch(e){ console.warn(e); } }; }
+{ const _nd=newDayEvents; newDayEvents=function(){ _nd(); try{ if(false&&home&&home.vw&&player){   /* since Beta 0.9.31 they work all day wherever you are, so there is no morning share */ const c=homeChest(); if(c){ const b=1+villageBonus(); if(home.vw.woodcutter) putInChest(c,{id:B.LOG,n:Math.round(12*home.vw.woodcutter*b)}); if(home.vw.farmer) putInChest(c,{id:I.WHEAT,n:Math.round(8*home.vw.farmer*b)}); } } respawnVillagers(); }catch(e){ console.warn(e); } }; }
 
 // ---- villagers can be hurt: when raiders reach a village, its people hide in the castle; the fallen are replaced after a day ----
 { const _mv=makeVillager; makeVillager=function(team,house){ const v=_mv(team,house); if(team!=='w'&&!['portal'].includes(house.role)){ v.peaceful=false; v.hp=v.maxHp=60; } return v; }; }
@@ -8124,19 +8126,19 @@ function drawRemoteThrown(r){ let tw=r.tw; if(!tw||!tw.length) return; if(!Array
     if(w[0]===1){ q.spin+=0.37; drawSpun(w[1],q.x,q.y,q.spin); return; }
     const hx=w[0]===3?r.x+6+(r.facing||1)*3:r.x+6+(r.facing||1)*4, hy=w[0]===3?r.y+2:r.y+12; drawChain(hx,hy,q.x,q.y,w[1]); }); r.twp.length=tw.length; }
 // ===================== trophies =====================
-// A boss trophy is a 2x2 replica of the boss you beat, standing on a plaque. It must stand on a trophy shelf
-// (two shelf blocks side by side), and trophy shelves hang on back walls. Mounted in your home village, a trophy
-// still gives its bonus.
+// A boss trophy is a 2x2 picture of the boss you beat, hung straight on a back wall (Beta 0.9.31: no shelves or plaque).
+// Mounted in your home village, a trophy still gives its bonus. Trophy shelves are no longer crafted; shelves already
+// in a world stay, and trophies standing on them stay too.
 B.TROPHY_SHELF=1078;
 defB(B.TROPHY_SHELF,{name:'Trophy shelf',solid:false,hard:0.4,col:'#7a4e27'});
-ITEMS[B.TROPHY_SHELF]={name:'Trophy shelf',kind:'block',desc:'Hang it on a back wall. Two shelves side by side hold a boss trophy'};
-RECIPES.push({out:B.TROPHY_SHELF,n:2,need:[[B.PLANK,4],[I.IRON_BAR,1]],st:B.WORKBENCH,cat:'build'});
+ITEMS[B.TROPHY_SHELF]={name:'Trophy shelf',kind:'block',desc:'An old shelf for boss trophies. Trophies hang straight on a back wall now'};
+
 { const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
   r(0,11,16,3,'#a0703c'); r(0,11,16,1,'#c8955a'); r(0,13,16,1,'#6b4423'); r(2,14,2,2,'#4a3020'); r(12,14,2,2,'#4a3020'); r(3,14,1,1,'#7a5a3a'); r(12,14,1,1,'#7a5a3a');
   TEX[B.TROPHY_SHELF]=c; }
 
 // ---- the replicas: painted once from the bosses' own sprites ----
-const TROPHY_ART={};   // 32x32 picture for each trophy
+const TROPHY_ART={};   // 32x32 picture for each trophy (the boss alone, filling the 2 by 2 space)
 function trophyModel(key){ const at=(e)=>{ e.facing=1; e.anim=0; e.hurtT=0; e.atkT=0; e.vx=0; e.vy=0; e.grounded=true; return e; };
   try{
     if(key==='archmage') return {e:at(makeHuman('a','archmage',0,0,'guard',null,true)), s:0.8};
@@ -8148,19 +8150,17 @@ function trophyModel(key){ const at=(e)=>{ e.facing=1; e.anim=0; e.hurtT=0; e.at
     if(key==='kraken') return {e:at({kind:'kraken',x:0,y:0,w:80,h:40,hp:1,maxHp:1,tent:[],hurtT:0,diveT:0,patT:0,pat:0,anim:0,facing:1,team:'k'}), s:0.3, kraken:true};
     if(key==='dragon') return {e:at({kind:'dragon',x:0,y:0,w:96,h:56,hp:1,maxHp:1,def:0,flap:0.6,t:0,dstate:'hover',team:'dragon'}), s:0.27, dragon:true};
   }catch(e){ console.warn(e); } return null; }
-function paintPlaque(g){ const r=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); };
-  r(3,25,26,6,'#5b3819'); r(3,25,26,1,'#ffcf3a'); r(4,26,24,4,'#7a4e27'); r(5,30,22,1,'#3a2410'); r(12,27,8,2,'#ffcf3a'); r(13,27,6,1,'#fff2a0'); }
 function makeTrophyArt(){ if(!world||!lair) return false; const N=64; ctx.save(); ctx.setTransform(1,0,0,1,0,0);
-  for(const t of TROPHIES){ const m=trophyModel(t.key); const art=mkCanvas(32,32), g=art.getContext('2d'); g.imageSmoothingEnabled=false; paintPlaque(g);
+  for(const t of TROPHIES){ const m=trophyModel(t.key); const art=mkCanvas(32,32), g=art.getContext('2d'); g.imageSmoothingEnabled=false;
     if(m){ ctx.clearRect(0,0,N*2,N*2); ctx.save(); const k0=Math.max(1,Math.round(m.s*2)); ctx.translate(N,N*1.7); ctx.scale(k0,k0); const e=m.e; e.x=-e.w/2; e.y=-e.h;
       if(m.pair){ const b=m.pair; e.x=-e.w-1; b.x=1; b.y=-b.h; b.facing=-1; try{ drawAnimal(b); }catch(err){ console.warn('trophy pair',err); } }
       try{ if(m.dragon) drawDragon(e); else if(m.kraken) drawKraken(e); else if(e.kind==='monster'&&typeof drawOgre==='function'&&/ogre/.test(e.mtype)) drawOgre(e); else drawEntity(e); }catch(err){ console.warn('trophy',t.key,err); }
       ctx.restore();
-      /* fit the figure into the space above the plaque, standing on it */
+      /* fit the figure into the whole 2 by 2 space */
       const px=ctx.getImageData(0,0,N*2,N*2).data; let x0=N*2,y0=N*2,x1=-1,y1=-1;
       for(let y=0;y<N*2;y++) for(let x=0;x<N*2;x++) if(px[(y*N*2+x)*4+3]>40){ if(x<x0)x0=x; if(x>x1)x1=x; if(y<y0)y0=y; if(y>y1)y1=y; }
-      if(x1>=0){ const bw=x1-x0+1, bh=y1-y0+1, k=Math.min(28/bw,24/bh), dw=Math.round(bw*k), dh=Math.round(bh*k);
-        g.drawImage(cv,x0,y0,bw,bh,Math.round(16-dw/2),26-dh,dw,dh); } }
+      if(x1>=0){ const bw=x1-x0+1, bh=y1-y0+1, k=Math.min(31/bw,31/bh), dw=Math.round(bw*k), dh=Math.round(bh*k);
+        g.drawImage(cv,x0,y0,bw,bh,Math.round(16-dw/2),Math.round(16-dh/2),dw,dh); } }
     TROPHY_ART[t.id]=art; const ic=mkCanvas(16,16), gi=ic.getContext('2d'); gi.imageSmoothingEnabled=false; gi.drawImage(art,0,0,32,32,0,0,16,16); TEX[t.id]=ic; ICON_TEX[t.id]=ic; delete ICON_URL[t.id]; }
   ctx.clearRect(0,0,N*2,N*2); ctx.restore(); invDirty=true; return true; }
 let trophyArtDone=false;
@@ -8171,8 +8171,8 @@ function trophyAt(x,y){ for(const [ax,ay] of [[x,y],[x-1,y],[x,y+1],[x-1,y+1]]) 
 let trophyHintT=0;
 { const _po=placeOK; placeOK=function(x,y,id){ const say=m=>{ if(performance.now()>trophyHintT){ trophyHintT=performance.now()+2500; toast(m,2.5); } return false; };
     if(id===B.TROPHY_SHELF){ if(!bg[y*W+x]) return say('Hang a trophy shelf on a back wall'); return _po(x,y,id); }
-    if(TROPHY_OF[id]){ if(tileAt(x,y+1)!==B.TROPHY_SHELF||tileAt(x+1,y+1)!==B.TROPHY_SHELF) return say('A trophy stands on two trophy shelves side by side. Hang the shelves on a back wall first');
-      for(const [cx,cy] of [[x+1,y],[x,y-1],[x+1,y-1]]){ const c=tileAt(cx,cy); if(c&&!TORCH_REPL(c)) return say('A trophy needs a clear 2 by 2 space above its shelves'); if(trophyAt(cx,cy)) return say('There is already a trophy there'); }
+    if(TROPHY_OF[id]){ const wall=[[x,y],[x+1,y],[x,y-1],[x+1,y-1]].filter(([cx,cy])=>cx>=0&&cx<W&&cy>=0&&cy<H&&bg[cy*W+cx]).length; if(wall<2) return say('Hang a trophy on a back wall: it needs a wall behind its 2 by 2 space');
+      for(const [cx,cy] of [[x+1,y],[x,y-1],[x+1,y-1]]){ const c=tileAt(cx,cy); if(c&&!TORCH_REPL(c)) return say('A trophy needs a clear 2 by 2 space on the wall'); if(trophyAt(cx,cy)) return say('There is already a trophy there'); }
       return _po(x,y,id); }
     if(trophyAt(x,y)&&!TROPHY_OF[tileAt(x,y)]) return false;   // the space a trophy fills
     return _po(x,y,id); }; }
@@ -8181,7 +8181,7 @@ let trophyHintT=0;
     if(id===B.TROPHY_SHELF&&tileAt(x,y)!==id){ for(const ax of [x,x-1]) if(TROPHY_OF[tileAt(ax,y-1)]) breakTile(ax,y-1); }
     else if(!id&&trophyAt(x,y)){ const [ax,ay]=trophyAt(x,y); if(ax!==x||ay!==y) breakTile(ax,ay); }   // tapping any part of a trophy takes it down
     return r; }; }
-for(const t of TROPHIES) ITEMS[t.id].desc=`A replica of the boss you beat. Stand it on two trophy shelves (hung on a back wall) in your home village: ${t.buff.toLowerCase()}`;
+for(const t of TROPHIES) ITEMS[t.id].desc=`A picture of the boss you beat. Hang it on a back wall (it fills 2 by 2 blocks) in your home village: ${t.buff.toLowerCase()}`;
 // ===================== the boss ladder =====================
 // The bosses form one ladder, in the order they are meant to be beaten, each harder than the last and each needing a
 // band of soldiers. With fewer of your soldiers or fighting pets near a boss than it needs, your own blows barely
@@ -9660,6 +9660,157 @@ function mpWakeRooms(){ for(const r of MP.remote.values()){ const p=r.proxy; if(
     try{ mpWakeRooms(); }catch(e){} return out; }; }
 { const _ic=inChamber; inChamber=function(c){ if(_ic(c)) return true; if(typeof MP==='undefined'||!MP.host||!c||!c.throne) return false;
     for(const r of MP.remote.values()){ const p=r.proxy; if(!p||p.dead) continue; const px=cxOf(p)/T, py=cyOf(p)/T; if(px>=c.throne.x0&&px<=c.throne.x1+1&&py>=c.top&&py<=c.gy+1) return true; } return false; }; }
+// ===================== shared boats: friends ride along, crews seen by everyone =====================
+// In a shared world, jump or swim onto a friend's boat to ride along as a passenger: you stand on the deck, walk
+// along it, fight from it, and jump to get off. Your own soldiers wait on the shore as they do when you sail.
+// Soldiers sitting in a boat are sent in presence key `cr` ([class, weapon] each) and drawn in that boat for everyone
+// (before, a friend's soldiers vanished from the others' screens as soon as they boarded).
+let ride=null;   // {key, off}: whose boat you stand on and where along the deck
+function mpCrewOut(){ const p=player; return p&&p.riding?p.party.filter(e=>e&&!e.dead&&e.aboard).slice(0,10).map(e=>[e.cls,e.weapon||0]):0; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ const c=Array.isArray(d&&d.cr)?d.cr:[];
+      r.crew=c.slice(0,10).map(([cls,w],i)=>{ const o=(r.crew&&r.crew[i])||{kind:'human',w:12,h:29,hp:1,maxHp:1,anim:0,remote:true}; o.cls=CLASSES[cls]?cls:'knight'; o.weapon=w||0; o.team=r.team||d.team||o.team; o.facing=d.f||1; o.seat=i; return o; }); }catch(e){} return out; }; }
+function boatOf(r){ return r&&r.riding&&BOATS[r.boat]?BOATS[r.boat]:null; }
+function deckY(r){ return r.y+29-9-player.h; }   // a rider sits with his feet 5 below the waterline; the deck is about 4 above it
+function rideTarget(){ if(typeof MP==='undefined'||!MP.on||!player||player.riding||player.dead) return null;
+  for(const r of MP.remote.values()){ const bt=boatOf(r); if(!bt||!isFinite(r.x)) continue; const cx=r.x+6, half=bt.len/2;
+    if(Math.abs(cxOf(player)-cx)>half) continue; const feet=player.y+player.h, deck=deckY(r)+player.h;
+    if(feet>=deck-6&&feet<=deck+T*1.5&&(player.vy>=0||player.inWater)) return r; }
+  return null; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player;
+    if(!ride&&(p.boatCd||0)<=0){ const r=rideTarget(); if(r){ ride={key:r.key,off:cxOf(p)-(r.x+6)}; p.passenger=true; for(const e of p.party) if(e&&!e.dead) e.leftBehind=true; toast(`You hop aboard ${r.nm||'your friend'}'s boat. Jump to get off.`,2.5); } }
+    const out=_up(dt,...a);
+    if(ride){ const r=[...MP.remote.values()].find(o=>o.key===ride.key), bt=boatOf(r);
+      if(!bt||p.dead||p.riding){ ride=null; p.passenger=false; }
+      else if(p.vy<-60){ ride=null; p.passenger=false; p.boatCd=0.6; }   // jumped off
+      else { const half=bt.len/2; ride.off=clamp(cxOf(p)-(r.x+6),-half+5,half-5); p.x=r.x+6+ride.off-p.w/2; p.y=deckY(r); p.vy=0; p.vx=(r.tx-r.x)*4;
+        p.grounded=true; p.onGround=true; p.inWater=false; p.breath=10; p.peakY=p.y; } }
+    return out; }; }
+// your soldiers treat riding along like sailing: they wait on the shore and come back when you land
+{ const _ow=overDeepWater; overDeepWater=function(e){ if(e===player&&player.passenger) return true; return _ow(e); }; }
+const asSailing=fn=>{ const p=player, rd=p.riding, bo=p.boat; p.riding=true; if(!BOATS[bo]) p.boat=I.RAFT; try{ return fn(); } finally{ p.riding=rd; p.boat=bo; } };
+{ const _ua=updateAI; updateAI=function(e,dt){ if(player&&player.passenger&&e.role==='companion'&&player.party.includes(e)) return asSailing(()=>_ua(e,dt)); return _ua(e,dt); }; }
+{ const _ta=tamedAct; tamedAct=function(e,dt){ if(player&&player.passenger) return asSailing(()=>_ta(e,dt)); return _ta(e,dt); }; }
+// how many soldiers each boat carries, shown in the shop, in crafting and in the item's details
+for(const [id,bt] of Object.entries(BOATS)){ const n=bt.seats-1, rest=bt.desc.replace(/^(Just you\.|You(,| and) [^.]*\.)\s*/,'');
+  bt.desc=(n>0?`Carries you and ${n} soldier${n===1?'':'s'}`:'Carries only you, no soldiers')+(bt.machines?` and ${bt.machines} war machine${bt.machines===1?'':'s'}`:'')+'.'+(rest?' '+rest:'');
+  if(ITEMS[id]) ITEMS[id].desc=bt.desc; }
+// ===================== breaking the winter sea ice =====================
+// In winter the top row of the open sea freezes into a floor (seaIce: isSolid treats oceanCol[x]===1 at seaY as solid).
+// A pickaxe or axe now breaks it like any block: the column becomes a hole (oceanCol[x]=2), you get a block of ice, and
+// every player sees the hole (fx 'ice'). Holes freeze over again the next morning while winter lasts.
+function seaIceAt(x,y){ return seaIce&&y===seaY&&x>=0&&x<W&&oceanCol[x]===1&&world[y*W+x]===B.WATER; }
+function breakSeaIce(x,mine){ if(!seaIceAt(x,seaY)) return false; oceanCol[x]=2; puff(x*T+8,seaY*T+4,'#dff4ff',12,100);
+  if(typeof sfx==='function') sfx('mine',x*T,seaY*T); if(mine){ give(B.ICE,1); try{ mpFxPush(['ice',x]); }catch(e){} } return true; }
+function refreezeSea(){ if(!seaIce||!oceanCol) return; const pc=player?Math.floor(cxOf(player)/T):-99, under=player&&player.y+player.h>seaY*T;
+  for(let x=0;x<W;x++) if(oceanCol[x]===2&&!(under&&Math.abs(x-pc)<=1)) oceanCol[x]=1; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ refreezeSea(); }catch(e){ console.warn(e); } return r; }; }
+{ const _if=iceForms; iceForms=function(...a){ for(let x=0;x<W;x++) if(oceanCol[x]===2) oceanCol[x]=1; return _if(...a); }; }
+// the ice under the cursor (or the first ice along the aim) with a pickaxe or axe in hand
+function iceTarget(def){ const p=player, cx=cxOf(p), cy=cyOf(p); let dx, dy;
+  if(stick.r.on&&stick.r.mag>0.2){ dx=stick.r.x; dy=stick.r.y; } else { dx=input.ax-cx; dy=input.ay-cy; }
+  const m=Math.hypot(dx,dy)||1; dx/=m; dy/=m;
+  const direct=!stick.r.on?[Math.floor(input.ax/T),Math.floor(input.ay/T)]:null;
+  if(direct&&seaIceAt(direct[0],direct[1])&&Math.hypot(direct[0]*T+8-cx,direct[1]*T+8-cy)<=REACH) return direct[0];
+  for(let s=6;s<=REACH;s+=3){ const tx=Math.floor((cx+dx*s)/T), ty=Math.floor((cy+dy*s)/T); if(seaIceAt(tx,ty)) return tx; if(isSolid(tx,ty)) break; }
+  return null; }
+let iceMine=null;
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const out=_up(dt,...a); try{ const p=player, it=heldItem(), def=it&&ITEMS[it.id];
+    if(!seaIce||!p||p.dead||state!=='play'||!input.use||!def||!(def.kind==='pick'||def.kind==='axe')){ iceMine=null; return out; }
+    const x=iceTarget(def); if(x==null){ iceMine=null; return out; }
+    if(!iceMine||iceMine.x!==x) iceMine={x,p:0}; iceMine.p+=dt*(def.speed||1)*(def.kind==='pick'?0.85:1.7)*(rules.mode==='creative'?5:1)/BLOCKS[B.ICE].hard;
+    p.mine={x,y:seaY,p:Math.min(0.99,iceMine.p)}; if(p.atkT<=0) p.atkT=0.2;
+    if(Math.random()<0.3) parts.push({x:x*T+8+(Math.random()-.5)*12,y:seaY*T+4,vx:(Math.random()-.5)*80,vy:-40-Math.random()*60,life:0.35,col:'#dff4ff',sz:2});
+    if(iceMine.p>=1){ iceMine=null; p.mine={x:-1,y:-1,p:0}; breakSeaIce(x,true); } }catch(e){ console.warn(e); } return out; }; }
+// friends' broken ice
+{ const _rf=mpReplayFx; mpReplayFx=function(list,...a){ const rest=[]; for(const e of list){ if(e[1]==='ice'){ try{ breakSeaIce(e[2]|0,false); }catch(err){} } else rest.push(e); } return rest.length?_rf(rest,...a):undefined; }; }
+// ===================== chests: Sort by type, name, value or amount =====================
+// A Sort button beside Stack, with a choice of order (remembered in settings.chestSort). Sorting stacks first, then
+// orders the stacks and leaves the empty slots at the end.
+const SORT_KINDS={ type:'Type', name:'Name', value:'Value', amount:'Amount' };
+const KIND_ORDER=['weapon','pick','axe','hoe','hammer','rod','armor','acc','charm','bucket','grapple','bomb','elixir','heart','feather','summon','food','seed','mat','block','wall','shape','boat','machine'];
+function itemValue(id){ try{ return sellPrice(id)||0; }catch(e){ return SELL[id]||0; } }
+function sortChest(c,by){ if(!c) return; stackChest(c); const L=c.items.filter(Boolean), nm=s=>(ITEMS[s.id]&&ITEMS[s.id].name)||'';
+  const kindRank=s=>{ const k=ITEMS[s.id]&&ITEMS[s.id].kind; const i=KIND_ORDER.indexOf(k); return i<0?KIND_ORDER.length:i; };
+  const cmp={ type:(a,b)=>kindRank(a)-kindRank(b)||nm(a).localeCompare(nm(b))||b.n-a.n,
+    name:(a,b)=>nm(a).localeCompare(nm(b))||b.n-a.n,
+    value:(a,b)=>itemValue(b.id)-itemValue(a.id)||nm(a).localeCompare(nm(b)),
+    amount:(a,b)=>b.n-a.n||nm(a).localeCompare(nm(b)) }[by]||((a,b)=>0);
+  L.sort(cmp); for(let i=0;i<c.items.length;i++) c.items[i]=L[i]||null; }
+{ const st=$('#chestStack')||$('#chestTake'); if(st){ const sel=document.createElement('select'); sel.id='chestSortBy'; sel.setAttribute('aria-label','Sort by');
+    sel.innerHTML=Object.entries(SORT_KINDS).map(([k,v])=>`<option value="${k}">${v}</option>`).join(''); sel.value=settings.chestSort||'type';
+    const b=document.createElement('button'); b.className='xbtn'; b.id='chestSort'; b.textContent='Sort'; b.dataset.tip='Sort the chest by the order you pick';
+    st.before(sel); st.before(b);
+    sel.addEventListener('change',()=>{ settings.chestSort=sel.value; saveSettings(); });
+    for(const p of ['pointerdown','touchstart','keydown']) sel.addEventListener(p,e=>e.stopPropagation(),{passive:p!=='keydown'});
+    b.addEventListener('click',()=>{ const c=chests[chestAt]; if(!c) return; sortChest(c,sel.value); toast(`Sorted by ${SORT_KINDS[sel.value].toLowerCase()}`,1.4); renderChest(); }); } }
+{ const s=document.createElement('style'); s.textContent=`#chestSortBy{ font-family:var(--font); font-size:9px; padding:6px 4px; background:var(--panel2); color:var(--text); border:2px solid var(--edge); }`; document.head.appendChild(s); }
+// ===================== less lag: water only flows near players; goblin ambushes run out =====================
+// Water far from everyone used to be stepped every frame (thousands of cells after a world copy arrived, which made
+// friends' games stutter). Now only water within WATER_NEAR columns of a player flows; the rest waits, untouched, until
+// someone comes near. The goblin forest's ambushes no longer come forever: each island sends at most FOREST_PER_DAY
+// goblins a day (fewer once the Goblin Beastmaster has fallen).
+const WATER_NEAR=90;
+let farWater=new Set(), farWaterT=0, genning=false;
+{ const _gw=genWorld; genWorld=function(...a){ genning=true; try{ return _gw(...a); } finally{ genning=false; } }; }
+function waterCols(){ const c=[]; if(player) c.push(cxOf(player)/T); if(typeof MP!=='undefined'&&MP.on) for(const r of MP.remote.values()) if(isFinite(r.tx)) c.push((r.tx+6)/T); return c; }
+{ const _sw=stepWater; stepWater=function(budget,...a){ if(!world||!wact||genning) return _sw(budget,...a); const cols=waterCols(); if(!cols.length) return _sw(budget,...a);
+    // bring back far water that someone is now near (checked twice a second)
+    if((farWaterT-=1)<=0&&farWater.size){ farWaterT=30; for(const i of farWater){ const x=i%W; if(cols.some(c=>Math.abs(c-x)<WATER_NEAR)){ farWater.delete(i); wact.add(i); } } }
+    if(wact.size>budget/4||cols.length){ const keep=new Set(); for(const i of wact){ const x=i%W; if(cols.some(c=>Math.abs(c-x)<WATER_NEAR)) keep.add(i); else farWater.add(i); } wact=keep; }
+    return _sw(budget,...a); }; }
+// a new world copy or a fresh world wakes every water cell; the far ones go straight to waiting
+{ const _wa=wakeAllWater; wakeAllWater=function(...a){ farWater=new Set(); return _wa(...a); }; }
+
+const FOREST_PER_DAY=6;
+{ const _sf=spawnForest; spawnForest=function(dt,...a){ const fI=islands&&islands.find(is=>is.forest); if(!fI||!home) return _sf(dt,...a);
+    const day=dayCount|0; if(!home.forestAmb||home.forestAmb.day!==day) home.forestAmb={day,left:(gcamps||[]).some(g=>g.war&&g.cleared)?Math.ceil(FOREST_PER_DAY/2):FOREST_PER_DAY};
+    if(home.forestAmb.left<=0){ forestT=Math.max(forestT,30); return; }
+    const before=ents.filter(e=>e.forestAmbush).length; const r=_sf(dt,...a); const made=ents.filter(e=>e.forestAmbush).length-before;
+    if(made>0) home.forestAmb.left-=made; return r; }; }
+// ===================== shared worlds: fire, armor and miners for everyone =====================
+// Fire: every player sends the fires burning near the others (presence `fi`: [x, y, burnt share 0-9], up to FIRE_SEND).
+// A friend's fire shows as flames in your world (`vis` fires): it only draws, never spreads, hurts or burns a block,
+// since the player whose fire it is changes the blocks and those changes are shared already. It goes out when their
+// message stops listing it or the block is gone.
+// Armor: friends are drawn wearing the armor tier they wear (presence `ar`), and their soldiers with their armor upgrades.
+// Miners, woodcutters and farmers: they keep working and filling their chests wherever the players are (they were
+// paused when everyone was more than 100 blocks away).
+const FIRE_SEND=40;
+function mpFiresOut(){ if(!fires.size||typeof MP==='undefined'||!MP.on) return 0; const near=[];
+  const who=[...MP.remote.values()].filter(r=>isFinite(r.tx));
+  for(const f of fires.values()){ if(f.vis) continue; let d=Infinity; for(const r of who) d=Math.min(d,Math.abs(f.x*T-r.tx)+Math.abs(f.y*T-r.ty)); if(d<80*T) near.push([d,f]); }
+  near.sort((a,b)=>a[0]-b[0]); return near.slice(0,FIRE_SEND).map(([,f])=>[f.x,f.y,Math.min(9,Math.floor(10*f.t/f.life))]); }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d){ r.ar=d.ar|0; const now=performance.now();
+      for(const e of (Array.isArray(d.fi)?d.fi:[])){ const [x,y,k]=e; if(!(x>=0&&x<W&&y>=0&&y<H)) continue; const i=y*W+x, id=world[i]; if(!id) continue; const f=fires.get(i);
+        if(f&&!f.vis) continue; if(f){ f.seen=now; f.t=Math.max(f.t,(k|0)/10); continue; }
+        fires.set(i,{x,y,gen:9,t:(k|0)/10,life:1,id,hitT:1e9,sprT:1e9,vis:true,seen:now}); } } }catch(e){} return out; }; }
+// friends' fires only draw: they leave the fire step alone and fade out when no longer sent
+{ const _ft=fireTick; fireTick=function(dt,...a){ const now=performance.now(), vis=[];
+    for(const [i,f] of fires) if(f.vis){ fires.delete(i); if(now-f.seen<1500&&world[i]&&world[i]===f.id) vis.push([i,f]); }
+    let r; try{ r=_ft(dt,...a); } finally{ for(const [i,f] of vis) if(!fires.has(i)) fires.set(i,f); } return r; }; }
+
+// armor on friends and on their soldiers
+{ const _so=specOf; specOf=function(e,...a){ const s=_so(e,...a); try{ if(e&&e.remote){
+      if(e.peer&&e.ar){ const it=ITEMS[LINES.armor[e.ar-1]]; if(it&&it.m) s.armor=it.m; }
+      else if(e.kind==='human'&&e.upArmor&&!s.armor) s.armor=['iron','silver','gold','mythril','adamant'][e.upArmor-1]||''; } }catch(err){} return s; }; }
+
+// miners, woodcutters and farmers never pause because the players are far away
+{ const _fa=farAll; farAll=function(e,n,...a){ if(e&&!e.dead&&e.kind==='villager'&&(e.role==='miner'||e.vjob)) return false; return _fa(e,n,...a); }; }
+// a worker's felled tree: its logs go into the worker's load instead of dropping on the ground. Since trees started to
+// drop their logs where they land, workers counted none and woodcutters came home empty-handed.
+fellForFaction=function(x,y){ let logs=0; const g=give, n0=treeFx.length; give=(id,n)=>{ if(LOG_IDS.has(id)) logs+=n; return 0; };
+  try{ fellTree(x,y); } finally{ give=g; }
+  for(let i=n0;i<treeFx.length;i++){ const f=treeFx[i]; if(f&&Array.isArray(f.loot)){ for(const [id,n] of f.loot) if(LOG_IDS.has(id)) logs+=n; f.loot=null; } }
+  return logs; };
+// a worker who can't reach a tree in time gives up on that tree and picks another
+function vTree(e){ const ox=Math.round(cxOf(e)/T), bad=e.vbad||new Set(); for(let r=3;r<70;r++) for(const x of [ox-r,ox+r]){ if(x<2||x>=W-2||x>home.x0-6&&x<home.x1+6||bad.has(x)) continue;
+    for(let y=surf[x]-16;y<=surf[x];y++){ if(LOG_IDS.has(tileAt(x,y))&&!LOG_IDS.has(tileAt(x,y+1))&&!bg[y*W+x]&&!ents.some(o=>o!==e&&o.vjt&&o.vjt.x===x)) return {x,y}; } } return null; }
+{ const _va=villageWorkerAct; villageWorkerAct=function(e,dt,...a){ if(e.vphase==='go'&&e.vjt&&(e.vT||0)-dt<=0){ (e.vbad=e.vbad||new Set()).add(e.vjt.x); if(e.vbad.size>30) e.vbad.clear(); } return _va(e,dt,...a); }; }
+// a worker blocked by a step too tall to jump climbs over it (up to 5 blocks) instead of walking into it all day
+{ const _vw=vWalk; vWalk=function(e,tx,dt,...a){ const x0=e.x; const r=_vw(e,tx,dt,...a); const dir=Math.sign(tx-cxOf(e)/T);
+    if(!r&&dir&&Math.abs(e.x-x0)<0.05){ e.vstuck=(e.vstuck||0)+dt; if(e.vstuck>1.2){ e.vstuck=0; const ox=e.x, oy=e.y;
+        for(let k=1;k<=5;k++){ e.x=ox+dir*T; e.y=oy-k*T; if(!collides(e)){ e.vy=0; puff(cxOf(e),e.y+e.h,'#c8b090',4,40); return r; } } e.x=ox; e.y=oy; } }
+    else e.vstuck=0; return r; }; }
 })();
 </script>
 </body>
