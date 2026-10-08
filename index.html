@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791431406"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791431406"><link rel="manifest" href="manifest.webmanifest?v=1791431406"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791433550"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791433550"><link rel="manifest" href="manifest.webmanifest?v=1791433550"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.28</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.29</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.28</h3>
+    <h3>New in Beta 0.9.29</h3>
+    <p>Split stacks: select a stack in the bag (or in a chest on a phone) and a Move slider appears with 1, Half and All; tapping another slot, dragging or Drop then moves only that many. On a computer, right-click a stack to pick up half, or right-click in a chest to send half across. Charcoal: burn a log of any wood in a furnace. Torches take a stick and a charcoal (coal works too) for four. In shared worlds everyone sees trees fall, a friend's logs pop out at the stump for everyone to see, friends who join see the host's explored map, and a player who leaves disappears with a "left the game" message.</p>
+    <h3>Beta 0.9.28</h3>
     <p>Worlds can have names. Type one on the New world screen (or leave it blank), rename a world any time from Continue with the Rename button, and see the name in the save list, the pause menu and the multiplayer Recent list.</p>
     <h3>Beta 0.9.27</h3>
     <p>Grass slowly grows back over bare dirt that touches grass and is open to the air, so dug-up or placed dirt greens over in a few minutes and the grass keeps spreading. Tilled soil, and dirt under a block or under water, stay as they are. On a computer the top bar shows every button again (Bag, Craft, Army, Buildings, Full screen, the eye, Menu and Minimize); phones keep the shorter bar with the ⋯ More button.</p>
@@ -558,7 +560,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.28</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.29</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -818,7 +820,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.28</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.29</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -837,7 +839,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.28', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.29', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5601,7 +5603,7 @@ function mpGuestLoad(){ const st=mpGuestRead(seed); if(!st) return false; const 
   return true; }
 let mpSaveT=15; addEventListener('visibilitychange',()=>{ if(document.hidden&&MP.guest) charSave(); }); addEventListener('pagehide',()=>{ if(MP.guest) charSave(); });
 function mpBadge(){ const b=$('#mpBadge'); b.hidden=true; const pi=$('#mpPauseInfo'); if(pi){ pi.hidden=!MP.on; if(MP.on){ const n=MP.room?(MP.room.peers()||[]).filter(p=>p.kind==='viewer').length:1; pi.textContent=MP.host?`Multiplayer game ID: ${MP.code} (${Math.max(1,n)} playing). Friends choose Multiplayer, then Join, and enter this ID.`:`Multiplayer game ID: ${MP.code} (${Math.max(1,n)} playing).`; } } if(false){ if(MP.on){ const n=MP.room?(MP.room.peers()||[]).filter(p=>p.kind==='viewer').length:1; b.textContent=`Room ${MP.code} · ${Math.max(1,n)}`; } } }
-function mpOnPeers(ch){ for(const p of ch.left||[]){ const r=MP.remote.get(p.peer); if(r&&r.proxy) r.proxy.dead=true; if(r) for(const o of r.soldiers||[]) if(o.proxy) o.dead=true; MP.remote.delete(p.peer); } mpBadge(); for(const p of ch.left||[]) toast('A player left the game',2); for(const p of ch.joined||[]) if(!p.isMe){ toast('A player joined the game',2); if(MP.host) mpSchedulePublish(); }
+function mpOnPeers(ch){ const leftNames=(ch.left||[]).map(p=>{ const r=MP.remote.get(p.peer); return (r&&r.nm)||'A player'; }); for(const p of ch.left||[]){ const r=MP.remote.get(p.peer); if(r&&r.proxy) r.proxy.dead=true; if(r) for(const o of r.soldiers||[]) if(o.proxy) o.dead=true; MP.remote.delete(p.peer); } mpBadge(); for(const nm of leftNames) toast(nm+' left the game',3); for(const p of ch.joined||[]) if(!p.isMe){ toast('A player joined the game',2); if(MP.host) mpSchedulePublish(); }
   const ids=(ch.peers||[]).map(p=>p.by).filter(Boolean); if(ids.length&&MP.user&&MP.user.profiles) Promise.resolve().then(()=>MP.user.profiles(ids)).then(ps=>{ for(const id of ids) MP.names[id]=(ps[id]&&ps[id].name)||''; }).catch(()=>{}); }
 function chestChanged(key){ if(typeof MP==='undefined'||!MP.on||MP.chApplying) return; const c=chests[key]; if(!c) return; c.ver=(c.ver||0)+1; c.org=MP.myKey; const enc=[]; c.items.forEach((s,i)=>{ if(s) enc.push([i,s.id,s.n]); });
   MP.chestOut.delete(key); MP.chestOut.set(key,[key,c.ver,MP.myKey,enc,c.coins||0,c.items.length,c.shelf?1:0]); while(MP.chestOut.size>6) MP.chestOut.delete(MP.chestOut.keys().next().value); }
@@ -5619,7 +5621,7 @@ function travelToFriend(key){ const r=[...MP.remote.values()].find(r=>r.key===ke
 // ---- world copy: a friend who joins gets the host's real world, not a fresh one ----
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 let mpSnapCache=null;
-async function mpSnapshotZ(){ if(mpSnapCache&&performance.now()-mpSnapCache.t<4000) return mpSnapCache.z; const o=JSON.parse(serialize().str); for(const k of ['player','roster','pets','machines','explored']) delete o[k]; o.snap=1; o.facSeq=MP.facSeq; o.edSeq=MP.seq; const z=await gz(JSON.stringify(o)); mpSnapCache={t:performance.now(),z}; return z; }
+async function mpSnapshotZ(){ if(mpSnapCache&&performance.now()-mpSnapCache.t<4000) return mpSnapCache.z; const o=JSON.parse(serialize().str); for(const k of ['player','roster','pets','machines']) delete o[k];   /* explored stays: a friend who joins sees the host's map */ o.snap=1; o.facSeq=MP.facSeq; o.edSeq=MP.seq; const z=await gz(JSON.stringify(o)); mpSnapCache={t:performance.now(),z}; return z; }
 let mpPubT=null;
 function mpSchedulePublish(ms){ if(!MP.host) return; clearTimeout(mpPubT); mpPubT=setTimeout(()=>{ mpPublishWorld().catch(e=>console.warn('world share',e)); },ms??1500); }
 async function mpPublishWorld(){ if(!MP.host||!MP.room) return; if(MP.room.peerMode){ MP.wsId=Date.now().toString(36); return; }
@@ -5633,7 +5635,7 @@ function mpRestorePos(){ try{ const pos=JSON.parse(localStorage.getItem('dragona
 function applySnapshot(o){ const p=player; const roster=mySoldiers().map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e)})); const pets=ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp}));
   W=o.W; H=o.H; seaY=o.seaY; skyOff=o.skyOff||72; barrierY=skyOff-4; if(o.dayCount) dayCount=o.dayCount; if(o.time!=null) time=o.time; dragonSlain=!!o.dragonSlain; conquered=o.conquered||{};
   world=rleDec(o.world,W*H,Uint16Array); shape=o.shape?rleDec(o.shape,W*H):new Uint8Array(W*H); bg=rleDec(o.bg,W*H); liq=rleDec(o.liq,W*H); oceanCol=rleDec(o.ocean,W); wetDeco=new Map(o.wet||[]); wact=new Set();
-  if(!explored||explored.length!==W*H) explored=new Uint8Array(W*H); skyTop=new Int16Array(W); for(let x=0;x<W;x++) updateSkyTop(x); surf=new Int16Array(W); if(Array.isArray(o.surf)&&o.surf.length===W) surf.set(o.surf); else rebuildSurf();
+  if(!explored||explored.length!==W*H) explored=new Uint8Array(W*H); if(o.explored){ try{ const he=rleDec(o.explored,W*H); for(let i=0;i<he.length;i++) if(he[i]) explored[i]=he[i]; }catch(e){ console.warn(e); } } skyTop=new Int16Array(W); for(let x=0;x<W;x++) updateSkyTop(x); surf=new Int16Array(W); if(Array.isArray(o.surf)&&o.surf.length===W) surf.set(o.surf); else rebuildSurf();
   { const kk=o.kraken||{}; krakenX=kk.x||krakenX; krakenChest=kk.chest||krakenChest; krakenSlain=!!kk.slain; }
   bases=o.bases.map(b=>Object.assign({rt:30},b)); lair=o.lair; tower=o.tower; sky=o.sky; islands=o.islands||islands; camps=o.camps||[]; fort=o.fort; magma=o.magma; magmaY=o.magmaY; fishv=o.fishv; ruins=o.ruins||[]; gcamps=o.gcamps||[]; chests=o.chests||{}; home=o.home; oresSky=!!(o.ores&&o.ores.sky); oresMagma=!!(o.ores&&o.ores.magma); oresBig=!!(o.ores&&o.ores.big);
   myStructures=(o.myStructures||[]).map(st=>Object.assign(st,{posts:(st.posts||[]).map(q=>({x:q.x,gy:q.gy,who:null}))}));
@@ -5646,7 +5648,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(p.atkT>0&&!MP.atkLive){ MP.atkLive=true; MP.atkN++; } if(p.atkT<=0) MP.atkLive=false; const hi=heldItem();
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h']);
-  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), sold, ed:MP.edits, rid:p.cust?1:0 };
+  const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
@@ -5661,7 +5663,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch','sh','fx']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
   if(size()>BUDGET){ for(const k of ['fx','bm','sh','ch','ge','fe','ed','mobs','sold','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
-  if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
+  if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['tk','x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
 function mpHostName(){ for(const r of MP.remote.values()) if(r.isHost) return r.nm||'your friend'; return MP.hostNm||'your friend'; }
@@ -5676,8 +5678,9 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
     if(sig&&sig!==MP.hostSig){ MP.hostSig=sig; MP.hostSeen=now; } else if(!MP.hostSeen) MP.hostSeen=now; else if(now-MP.hostSeen>45000) mpHostGone(); else if(now-MP.hostSeen>12000&&!MP.waitSaid){ MP.waitSaid=true; toast('Waiting for the host… If they have left, you will keep playing your own copy of this world.',5); }
     if(now-MP.hostSeen<2000) MP.waitSaid=false; }
   for(const pe of peers){ if(pe.sameTab||pe.kind!=='viewer') continue; const d=pe.presence||{}; if(d.x==null||d.y==null||d.joining) continue;
+    if(MP.gone&&MP.gone[pe.peer]!=null&&MP.gone[pe.peer]===d.tk) continue;   /* a player who left: their last message stays in the room, ignore it */
     let r=MP.remote.get(pe.peer); if(!r){ r={peer:pe.peer,kind:'human',remote:true,w:12,h:29,x:d.x,y:d.y,team:d.team||player.team,cls:d.cls||'knight',facing:1,anim:0,hp:1,maxHp:1,hurtT:0,atkT:0,role:'guard',soldiers:[]}; MP.remote.set(pe.peer,r); }
-    r.fa=d.fa||0; r.nm=d.nm||''; r.isHost=!!d.host; r.mine=d.mine||0; r.dl=!!d.dl; r.tx=d.x; r.ty=d.y; mpFromPeer(r,d,pe.peer); r.facing=d.f||1; r.cls=d.cls||'knight'; r.team=d.team||player.team; r.weapon=d.tw&&!THROW_DAGGERS.has(d.w)?0:(d.w||0); r.tw=d.tw||0; r.vx=d.vx||0; r.anim=d.an||0; r.hp=d.hp||1; r.maxHp=d.mhp||1; r.upArmor=0; r.by=pe.by; r.seen=now; r.riding=!!d.rd&&!!BOATS[d.rd]; r.boat=d.rd||0; r.grounded=!((d.st||0)&2); r.inWater=!!((d.st||0)&1); r.fly=!!((d.st||0)&4);
+    r.fa=d.fa||0; r.nm=d.nm||''; r.isHost=!!d.host; r.mine=d.mine||0; r.dl=!!d.dl; r.tx=d.x; r.ty=d.y; mpFromPeer(r,d,pe.peer); r.facing=d.f||1; r.cls=d.cls||'knight'; r.team=d.team||player.team; r.weapon=d.tw&&!THROW_DAGGERS.has(d.w)?0:(d.w||0); r.tw=d.tw||0; r.vx=d.vx||0; r.anim=d.an||0; r.hp=d.hp||1; r.maxHp=d.mhp||1; r.upArmor=0; r.by=pe.by; if(d.tk==null||d.tk!==r.tk){ r.tk=d.tk; r.seen=now; }   /* only a message that has moved on counts: a player who left stops ticking */ r.riding=!!d.rd&&!!BOATS[d.rd]; r.boat=d.rd||0; r.grounded=!((d.st||0)&2); r.inWater=!!((d.st||0)&1); r.fly=!!((d.st||0)&4);
     for(const [sq,to,id,n] of (d.gv||[])){ if(to!==MP.myKey||!ITEMS[id]||!mpFresh('gv',pe.peer,sq,MP.giveSeen[pe.peer]||0)) continue; MP.giveSeen[pe.peer]=Math.max(MP.giveSeen[pe.peer]||0,sq); obtain(id,n,true); invDirty=true; toast(`${d.nm||'A friend'} gave you ${n>1?n+' × ':''}${ITEMS[id].name}`,3); if(typeof sfx==='function') sfx('pickup'); }
     for(const c of (d.ch||[])) mpApplyChest(c);
     if(d.host&&MP.applied[pe.peer]==null&&MP.hostEdSeq) MP.applied[pe.peer]=MP.hostEdSeq;
@@ -5694,7 +5697,7 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
     r.wpnOverride=d.tw&&!THROW_DAGGERS.has(d.w)?0:(d.w||0);
     if(d.a!=null&&d.a!==MP.atkSeen[pe.peer]){ const first=MP.atkSeen[pe.peer]==null; MP.atkSeen[pe.peer]=d.a; if(!first){ mpRemoteAttack(r,d); const ang=d.aa||0; r.atkAng=ang; r.atkT=0.3; r.atkDur=0.3; const wi=ITEMS[d.w]; r.atkMode=wi&&wi.shape==='spear'?'stab':'swing'; r.facing=Math.cos(ang)>=0?1:-1; r.showFaceT=0.35; } }
     if(MP.guest&&d.host&&d.t!=null&&Math.abs(d.t-time)>0.02) time=d.t; }
-  for(const [k,r] of MP.remote) if(now-r.seen>8000){ if(r.proxy) r.proxy.dead=true; for(const o of r.soldiers||[]) if(o.proxy) o.dead=true; MP.remote.delete(k); } }
+  for(const [k,r] of MP.remote) if(now-r.seen>(r.isHost?45000:12000)){ if(!r.isHost) toast(`${r.nm||'A player'} left the game`,3); (MP.gone=MP.gone||{})[k]=r.tk; if(r.proxy) r.proxy.dead=true; for(const o of r.soldiers||[]) if(o.proxy) o.dead=true; MP.remote.delete(k); } }
 function mpRemoteAttack(r,d){ const w=ITEMS[d.w]; if(!w||w.kind!=='weapon') return; const ang=d.aa||0; const sx=r.tx+6, sy=r.ty+12;
   if(w.type==='bow'||w.type==='magic'){ if(w.ward) return; projs.push({visual:true,x:sx,y:sy,vx:Math.cos(ang)*(w.speed||500),vy:Math.sin(ang)*(w.speed||500),team:player.team,dmg:w.dmg,kind:w.type==='magic'?'magic':'arrow',col:w.gem||'#c8a0ff',life:2.5,grav:w.type==='magic'?0:170,r:w.type==='magic'?7:4,homing:!!w.homing}); return; }
   // a melee swing is only shown here: the player who swung already dealt the damage (the host to its enemies, a guest through its hits),
@@ -5766,7 +5769,7 @@ $('#uiReset').addEventListener('click',()=>{ settings.hudLayout=null; settings.u
   // fingers: hold an item for a moment to pick it up and drag it (a quick swipe still scrolls the bag); in a bag that
   // does not scroll the drag starts as soon as the finger moves. A plain tap selects the item: tap another slot to move it there.
   const scroller=el=>{ for(let p=el&&el.parentElement;p&&p!==document.body;p=p.parentElement){ const cs=getComputedStyle(p); if(/(auto|scroll)/.test(cs.overflowY)&&p.scrollHeight>p.clientHeight+2) return p; } return null; };
-  const lift=(e)=>{ if(!drag||drag.moved) return; drag.moved=true; ghost.hidden=false; drag.src.classList.add('dragging'); pickSlot=null; chestPick=null; if(e){ ghost.style.left=(e.clientX-16)+'px'; ghost.style.top=(e.clientY-16)+'px'; } try{ if(navigator.vibrate) navigator.vibrate(12); }catch(_){} };
+  const lift=(e)=>{ if(!drag||drag.moved) return; drag.moved=true; ghost.hidden=false; drag.src.classList.add('dragging'); drag.amt=splitAmtFor(drag.src); pickSlot=null; chestPick=null; if(e){ ghost.style.left=(e.clientX-16)+'px'; ghost.style.top=(e.clientY-16)+'px'; } try{ if(navigator.vibrate) navigator.vibrate(12); }catch(_){} };
   document.addEventListener('pointerdown',e=>{ const s=e.target.closest&&e.target.closest(SLOT_SEL); if(!s) return; const im=s.querySelector('img'); if(!im) return;
     const touch=e.pointerType!=='mouse'; drag={src:s,x:e.clientX,y:e.clientY,moved:false,id:e.pointerId,touch,scroll:touch&&!!scroller(s),held:false}; ghost.innerHTML=`<img alt="" src="${im.src}">`;
     if(touch){ const d=drag; d.timer=setTimeout(()=>{ if(drag===d&&!d.moved){ d.held=true; lift({clientX:d.lx??d.x,clientY:d.ly??d.y}); } },260); } },true);
@@ -5783,6 +5786,7 @@ $('#uiReset').addEventListener('click',()=>{ settings.hudLayout=null; settings.u
     const el=document.elementFromPoint(e.clientX,e.clientY); const t=el&&el.closest(SLOT_SEL); const a=ref(d.src), b=ref(t);
     if(!a||!a.arr[a.i]) return;
     if(!b){ if(!(el&&el.closest('.panel'))&&!a.chest){ dropItem(a.i); } }
+    else if((a.arr!==b.arr||a.i!==b.i)&&d.amt&&d.amt<a.arr[a.i].n){ if(!moveSome(a.arr,a.i,b.arr,b.i,d.amt)) toast('Drop part of a stack on an empty slot or the same item',2); }   /* split stack */
     else if(a.arr!==b.arr||a.i!==b.i){ const x=a.arr[a.i], y=b.arr[b.i];
       if(a.chest&&!b.chest&&isUpgradeItem(x.id)) takeFromChest(chests[chestAt],a.i);
       else if(y&&y.id===x.id){ const k=Math.min(999-y.n,x.n); y.n+=k; x.n-=k; if(x.n<=0) a.arr[a.i]=null; }
@@ -9351,6 +9355,122 @@ let lastWName=null;
 { const _ra=mpRecentAdd; mpRecentAdd=function(o,...a){ try{ if(o&&o.role==='host'&&home&&home.name) o.name=home.name+((player&&player.name)?` (${player.name})`:''); }catch(e){} return _ra(o,...a); }; }
 { const st=document.createElement('style'); st.textContent=`#slotList .savedel[data-wren], #slotList .savedel[data-wsave]{ background:var(--panel); border-color:var(--edge); color:var(--text); }
 #slotList .savedel[data-wsave]{ background:var(--gold); color:var(--ink); }`; document.head.appendChild(st); }
+// ===================== split stacks =====================
+// Select a stack of more than one item and a "Move" slider appears (with 1, Half and All). Tapping another slot, dragging it,
+// or Drop then moves only that many: into an empty slot, or onto a stack of the same item. Chests on phones get the same
+// slider once an item is selected. On a computer, right-click a stack in the bag to pick up half of it, or right-click a
+// chest or bag slot while a chest is open to send half of that stack across.
+let splitN=null, splitOf=null;   // how many to move (null = the whole stack) and which selection it belongs to
+function moveSome(src,si,dst,di,amt){ const x=src[si]; if(!x||amt<=0) return false; const y=dst[di];
+  if(!y){ dst[di]={id:x.id,n:Math.min(amt,x.n)}; x.n-=Math.min(amt,x.n); }
+  else if(y.id===x.id){ const k=Math.min(999-y.n,amt,x.n); if(k<=0) return false; y.n+=k; x.n-=k; }
+  else return false;
+  if(x.n<=0) src[si]=null; invDirty=true; return true; }
+const splitKey=()=>pickSlot!==null?'b'+pickSlot:(typeof chestPick!=='undefined'&&chestPick?(chestPick.chest?'c':'p')+chestPick.i:null);
+function splitAmt(n){ return splitN&&splitOf===splitKey()&&splitN<n?splitN:null; }
+function splitAmtFor(el){ if(!el) return null; const i=el.dataset.i!=null?+el.dataset.i:null; if(i!=null&&pickSlot===i&&player.inv[i]) return splitAmt(player.inv[i].n); return null; }
+function splitBarHtml(n){ const v=splitAmt(n)||n;
+  return `<div class="splitbar"><span>Move</span><input type="range" min="1" max="${n}" value="${v}" aria-label="How many to move"><b>${v}</b><span class="muted">of ${n}</span>`+
+    `<button class="xbtn" data-sn="1">1</button><button class="xbtn" data-sn="half">Half</button><button class="xbtn" data-sn="all">All</button></div>`; }
+function wireSplit(box,n){ const bar=box&&box.querySelector('.splitbar'); if(!bar) return; const r=bar.querySelector('input'), lab=bar.querySelector('b');
+  const set=v=>{ v=Math.max(1,Math.min(n,v|0)); splitOf=splitKey(); splitN=v>=n?null:v; r.value=v; lab.textContent=v; };
+  r.addEventListener('input',()=>set(+r.value)); for(const p of ['pointerdown','touchstart']) r.addEventListener(p,e=>e.stopPropagation(),{passive:true});
+  bar.addEventListener('click',e=>{ const b=e.target.closest('[data-sn]'); if(!b) return; e.stopPropagation(); set(b.dataset.sn==='1'?1:b.dataset.sn==='half'?Math.ceil(n/2):n); }); }
+
+// ---- the bag ----
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ if(splitOf!==splitKey()){ splitN=null; splitOf=splitKey(); }
+    const s=pickSlot!==null?player.inv[pickSlot]:null, info=$('#invInfo');
+    if(s&&s.n>1&&info){ const hint=[...info.children].filter(e=>e.tagName==='SPAN'&&!e.hidden).pop(); if(hint) hint.insertAdjacentHTML('beforebegin',splitBarHtml(s.n)); else info.insertAdjacentHTML('beforeend',splitBarHtml(s.n)); wireSplit(info,s.n); } }catch(e){ console.warn(e); } return r; }; }
+document.addEventListener('click',ev=>{ const g=ev.target.closest&&ev.target.closest('#invGrid'); if(!g||pickSlot===null) return; const a=player.inv[pickSlot]; if(!a) return; const amt=splitAmt(a.n); if(!amt) return;
+  const b=ev.target.closest('.slot'); if(!b) return;
+  if(b.id==='dropSlot'){ ev.stopPropagation(); const dir=player.facing||1; drops.push({x:cxOf(player)+dir*10,y:player.y+10,vx:dir*170,vy:-150,id:a.id,n:amt,age:-2.5}); a.n-=amt; if(a.n<=0) player.inv[pickSlot]=null;
+    toast(`Dropped ${ITEMS[a.id].name} ×${amt}`,1.6); pickSlot=null; invDirty=true; renderInv(); return; }
+  if(b.dataset.i==null) return; const i=+b.dataset.i; if(i===pickSlot) return; ev.stopPropagation();
+  if(!moveSome(player.inv,pickSlot,player.inv,i,amt)){ toast('Put part of a stack on an empty slot or the same item',2); return; }
+  pickSlot=null; renderInv(); },true);
+// right-click in the bag picks up half a stack
+document.addEventListener('contextmenu',ev=>{ const s=ev.target.closest&&ev.target.closest('#invGrid .slot[data-i]'); if(!s) return; ev.preventDefault(); const i=+s.dataset.i, it=player.inv[i]; if(!it) return;
+  pickSlot=i; splitOf='b'+i; splitN=it.n>1?Math.ceil(it.n/2):null; trashArm=false; renderInv(); },true);
+
+// ---- chests: the slider for a selected item on phones; right-click sends half across on a computer ----
+{ const box=document.createElement('div'); box.id='chestSplit'; box.hidden=true; const g=$('#chestGrid'); if(g) g.before(box); }
+{ const _rc=renderChest; renderChest=function(...a){ const r=_rc(...a); try{ const box=$('#chestSplit'); if(!box) return r; if(splitOf!==splitKey()){ splitN=null; splitOf=splitKey(); }
+    const c=chests[chestAt], it=chestPick&&c?(chestPick.chest?c.items[chestPick.i]:player.inv[chestPick.i]):null;
+    if(it&&it.n>1){ box.innerHTML=splitBarHtml(it.n); box.hidden=false; wireSplit(box,it.n); } else { box.hidden=true; box.innerHTML=''; } }catch(e){ console.warn(e); } return r; }; }
+document.addEventListener('click',ev=>{ if(!recentTouch()||typeof chestPick==='undefined'||!chestPick||!chests[chestAt]) return; const el=ev.target.closest&&ev.target.closest('#chestGrid [data-ci], #chestBag [data-bi]'); if(!el) return;
+  const c=chests[chestAt], src=chestPick.chest?c.items:player.inv, x=src[chestPick.i]; if(!x) return; const amt=splitAmt(x.n); if(!amt) return;
+  const dst=el.dataset.ci!=null?c.items:player.inv, di=el.dataset.ci!=null?+el.dataset.ci:+el.dataset.bi; if(dst===src&&di===chestPick.i) return; ev.stopPropagation();
+  if(!moveSome(src,chestPick.i,dst,di,amt)){ toast('Put part of a stack on an empty slot or the same item',2); return; } chestPick=null; renderChest(); },true);
+document.addEventListener('contextmenu',ev=>{ const el=ev.target.closest&&ev.target.closest('#chestGrid [data-ci], #chestBag [data-bi]'); if(!el||!chests[chestAt]) return; ev.preventDefault();
+  const c=chests[chestAt], fromChest=el.dataset.ci!=null, src=fromChest?c.items:player.inv, i=fromChest?+el.dataset.ci:+el.dataset.bi, x=src[i]; if(!x) return;
+  const half=Math.max(1,Math.floor(x.n/2)), dst=fromChest?player.inv:c.items;
+  let di=dst.findIndex(s=>s&&s.id===x.id&&s.n<999); if(di<0) di=dst.findIndex(s=>!s); if(di<0){ toast(fromChest?'Your bag is full':'The chest is full',1.6); return; }
+  if(fromChest&&isUpgradeItem(x.id)){ takeFromChest(c,i); renderChest(); return; }
+  moveSome(src,i,dst,di,half); renderChest(); },true);
+
+{ const st=document.createElement('style'); st.textContent=`
+.splitbar{ display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin:8px 0; padding:8px; background:var(--panel2); border:2px solid var(--edge-dim,#5b4f7c); font-size:9px; }
+.splitbar input[type=range]{ flex:1 1 120px; min-width:100px; accent-color:var(--gold); touch-action:pan-x; }
+.splitbar b{ min-width:2.5em; text-align:right; color:var(--gold); } .splitbar .xbtn{ padding:6px 9px; font-size:8px; }
+#chestSplit{ margin:0 0 8px; } #chestSplit[hidden]{ display:none; }`; document.head.appendChild(st); }
+// ===================== falling trees and their logs, seen by every player =====================
+// Whoever fells a tree sends a small 'tree' effect (stump, fall direction, wood, trunk height, leaf type). The other players
+// play the same fall: with the tree's real shape when it is still in their world as the message arrives, otherwise a tree
+// rebuilt from its height. A guest's logs (and apples and saplings) are not put straight into the guest's bag any more: the
+// host drops them at the stump when the tree lands, so every player sees them pop out and the guest picks them up.
+const mpTreeSnap=new Map();
+function treeShape(x,y,L){ const leafOf=(WOOD_OF[L]||WOODS.oak).leaf, out=[], seen=new Set(), q=[];
+  const start=tileAt(x,y)===L?[x,y]:tileAt(x,y-1)===L?[x,y-1]:null; if(!start) return null; q.push(start);
+  while(q.length&&out.length<300){ const [a,b]=q.pop(), k=b*W+a; if(seen.has(k)) continue; seen.add(k); const id=tileAt(a,b);
+    if(id===L){ out.push([a,b,id]); q.push([a,b-1],[a-1,b],[a+1,b],[a,b+1]); }
+    else if(id===leafOf&&Math.abs(a-x)<=6&&b<=y){ out.push([a,b,id]); q.push([a,b-1],[a-1,b],[a+1,b],[a,b+1]); } }
+  return out.filter(t=>t[1]<=y).map(([tx,ty,id])=>({dx:tx*T-x*T-8,dy:ty*T-(y+1)*T,id})); }
+function treeFromHeight(h,L,leaf){ const tiles=[]; h=Math.max(3,Math.min(24,h|0)); for(let k=0;k<h;k++) tiles.push({dx:-8,dy:-(k+1)*T,id:L});
+  const r=3, cy=h+1; for(let a=-r;a<=r;a++) for(let b=-r;b<=r;b++) if(a*a+b*b<=r*r+1&&!(a===0&&b<=0&&cy+b<=h)) tiles.push({dx:a*T-8,dy:-(cy+b)*T,id:leaf});
+  return tiles; }
+let mpTreeCatch=null;   // a guest's loot, caught instead of going into the bag
+{ const _g=give; give=function(id,n,...a){ if(mpTreeCatch){ mpTreeCatch.push([id,n]); return 0; } return _g(id,n,...a); }; }
+{ const _ft=fellTree; fellTree=function(x,y,...a){ if(typeof MP==='undefined'||!MP.on||MP.replayFx) return _ft(x,y,...a);
+    const wet=tileAt(x,y)===B.WATER?wetDeco.get(y*W+x):0, L=LOG_IDS.has(tileAt(x,y))?tileAt(x,y):(LOG_IDS.has(wet)?wet:B.LOG);
+    let h=0; for(let yy=y;yy>y-30&&LOG_IDS.has(tileAt(x,yy));yy--) h++;
+    const dir=player&&cxOf(player)>x*T+8?-1:1; let r, loot=null;
+    if(MP.guest){ mpTreeCatch=[]; try{ r=_ft(x,y,...a); } finally{ loot=mpTreeCatch; mpTreeCatch=null; } }
+    else r=_ft(x,y,...a);
+    try{ mpFxPush(['tree',x,y,dir,L,Math.max(h,1),(WOOD_OF[L]||WOODS.oak).leaf,loot&&loot.length?loot:0]); }catch(e){}
+    return r; }; }
+// before a message's world changes are applied, keep the real shape of any tree it says has fallen
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ try{ if(Array.isArray(d&&d.fx)&&r&&r.key&&MP.fxSeen&&MP.fxSeen[r.key]!=null){ const seen=MP.fxSeen[r.key];
+      for(const e of d.fx) if(e[1]==='tree'&&e[0]>seen){ const k=e[2]+','+e[3]; if(!mpTreeSnap.has(k)){ const s=treeShape(e[2],e[3],e[5]); if(s&&s.length) mpTreeSnap.set(k,s); } } } }catch(e){} return _fp(r,d,...a); }; }
+{ const _rf=mpReplayFx; mpReplayFx=function(list,...a){ const rest=[];
+    for(const e of list){ if(e[1]!=='tree'){ rest.push(e); continue; }
+      try{ const [, , x, y, dir, L, h, leaf, loot]=e, k=x+','+y, tiles=mpTreeSnap.get(k)||treeFromHeight(h,L,leaf); mpTreeSnap.delete(k);
+        const near=Math.abs(x*T-cxOf(player))<70*T, give2=MP.host&&Array.isArray(loot)?loot:null;
+        if(near&&treeFx.length<6){ treeFx.push({loot:give2,bx:x*T+8,by:(y+1)*T,dir,t:0,tiles}); if(typeof sfx==='function') sfx('timber',x*T,y*T); try{ mpFellT=2; }catch(_){} }
+        else if(give2) for(const [id,n] of give2) if(n>0) spawnDrop(x*T+8,y*T,id,n); }catch(err){ console.warn(err); } }
+    if(mpTreeSnap.size>40) mpTreeSnap.clear();
+    return rest.length?_rf(rest,...a):undefined; }; }
+// friends are sent the drops nearest to them first (up to 30), so the logs of a tree they just felled always show up
+mpDropList=function(){ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return []; const c=[];
+  for(const d of drops){ if(d.coins||d.ghost) continue; let best=Infinity; for(const r of gs){ const dx=Math.abs(d.x-r.proxy.x), dy=Math.abs(d.y-r.proxy.y); if(dx<40*T&&dy<25*T) best=Math.min(best,dx+dy); } if(best<Infinity) c.push([best,d]); }
+  c.sort((a,b)=>a[0]-b[0]); return c.slice(0,30).map(([,d])=>{ if(!d.did) d.did=++mpDid; return [d.did,d.id,d.n,Math.round(d.x),Math.round(d.y)]; }); };
+// resting drops of the same item next to each other join into one pile (a felled tree leaves one pile of logs, not thirty)
+let dropMergeT=0;
+{ const _ud=updateDrops; updateDrops=function(dt,...a){ const r=_ud(dt,...a); try{ if((dropMergeT-=dt)<=0&&!(typeof MP!=='undefined'&&MP.guest)){ dropMergeT=0.5;
+      const rest=drops.filter(d=>!d.ghost&&!d.coins&&d.age>0.6&&Math.abs(d.vx||0)<5&&Math.abs(d.vy||0)<5);
+      for(let i=0;i<rest.length;i++){ const a=rest[i]; if(a.gone) continue; for(let j=i+1;j<rest.length;j++){ const b=rest[j]; if(b.gone||b.id!==a.id||a.n+b.n>999) continue;
+          if(Math.abs(a.x-b.x)<14&&Math.abs(a.y-b.y)<14){ a.n+=b.n; b.gone=true; } } }
+      if(rest.some(d=>d.gone)) drops=drops.filter(d=>!d.gone); } }catch(e){} return r; }; }
+// ===================== charcoal, and torches from a stick and charcoal =====================
+// Burn one log of any wood in a furnace for one charcoal. A torch takes a stick and a piece of charcoal (4 torches);
+// mined coal counts as charcoal, so coal you already have still makes torches.
+let CHARCOAL=670; while(ITEMS[CHARCOAL]) CHARCOAL++; I.CHARCOAL=CHARCOAL;
+ITEMS[CHARCOAL]={name:'Charcoal',kind:'mat',ing:['#2a2428','#4a4046'],desc:'Wood burned in a furnace. With a stick it makes torches; coal works the same'};
+SELL[CHARCOAL]=1;
+customIcon(CHARCOAL,(rect,px)=>{ rect(3,6,10,7,'#2a2428'); rect(4,5,8,1,'#2a2428'); rect(4,13,7,1,'#2a2428'); rect(5,7,6,1,'#4a4046'); rect(4,9,8,1,'#3a3236');
+  px(6,10,'#5a5056'); px(9,8,'#5a5056'); px(10,11,'#c0402a'); px(5,12,'#ff7b1c'); });
+WOOD_SETS[CHARCOAL]=()=>[CHARCOAL,B.COAL];   // either one does for a recipe that asks for charcoal
+RECIPES.push({ out:CHARCOAL, n:1, need:[[B.LOG,1]], st:B.FURNACE });
+{ const t=RECIPES.find(r=>r.out===B.TORCH); if(t){ t.need=[[480,1],[CHARCOAL,1]]; t.n=4; } }
 })();
 </script>
 </body>
