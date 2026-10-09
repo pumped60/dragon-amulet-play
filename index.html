@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791578161"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791578161"><link rel="manifest" href="manifest.webmanifest?v=1791578161"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791585750"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791585750"><link rel="manifest" href="manifest.webmanifest?v=1791585750"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.75</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.76</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.75</h3>
+    <h3>New in Beta 0.9.76</h3>
+    <p>The abandoned village is a two-storey castle and three houses left to the weather: ragged gaps in the walls, moss over the stonework, grass, ferns and saplings on the floors, vines and ivy on the walls. The Quartermaster waits inside. Walking in no longer claims the village: talk to him and choose "Fix up the castle and the houses", and the repairs run over about a day, block by block from the ground up; the Beast trainer and the Recruiter arrive when he starts, and the drifters pick their jobs when the work is done. Burned villages are built around the fire that took each house: the roof and one upper corner are gone with ragged edges, nothing floats, wood near the fire is charred, the back walls are charred with holes where the fire burned through, and grass, ferns, bushes and saplings grow through the ash. Older worlds get the new look where nobody has explored yet.</p>
+    <h3>Beta 0.9.75</h3>
     <p>The overgrown caverns are a deeper, darker green, with glow vines hanging from the roofs and spores drifting through the air. Cave and tunnel walls vary: cobbled, cracked and mossy patches among the plain rock. Every chest in the world stands on two solid blocks, loose rock floating in caves is cleared, and sealed one-block pockets in the rock are filled, so caves read as one connected mass. Older worlds get the walls, supports and tidy-up in ground you have not explored yet.</p>
     <h3>Beta 0.9.74</h3>
     <p>Ore veins take on the rock around them: iron in the jade caves is green jade stone with iron flecks, in the shale layer it is shale with iron flecks, so caves keep their colour and you can still spot the ore. Every cave biome grows its own glowing mushroom and glowing plant (jade glowcaps and ferns, rose glowcaps and lilies, azure glowcaps and frost bells, amber glowcaps and reeds, ember glowcaps and lantern flowers, bone glowcaps and ghost orchids); break them to take them home as lights. Deep in the shale layer lie the overgrown caverns: giant glowcaps and ferns you can stand on, giant glowing blooms, hanging moss and glowing moss underfoot. Giant cave spiders, cave bears, thornback beetles and glow moths live there and hit harder than anything else in the caves, but the caverns hide gold caches with crystals, gems, gold bars and extra coins. Older worlds get the plants and the caverns in ground you have not explored yet.</p>
@@ -654,7 +656,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.75</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.76</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -875,7 +877,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   <div class="panel">
     <h2>Dragon Amulet</h2>
     <p>You wake up alone on an island the ember dragon once burned.</p>
-    <p><b>Find the abandoned buildings</b> and claim the old castle as your home. Build an army, conquer the rival factions, and <b>slay the dragon</b> to claim the Dragon Amulet.</p>
+    <p><b>Find the abandoned buildings</b> and talk to the Quartermaster waiting in the overgrown castle: he and the drifters will fix it up as your home. Build an army, conquer the rival factions, and <b>slay the dragon</b> to claim the Dragon Amulet.</p>
     <button class="btn primary" id="introClose">Close</button>
   </div>
 </div>
@@ -914,7 +916,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.75</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.76</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -933,7 +935,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.75', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.76', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12500,6 +12502,107 @@ let caveTidyFresh=false;
 // chests become two blocks wide in fixStations (startPlay), and a chest may shift one cell: hold it up again afterwards
 { const _fs=fixStations; fixStations=function(...a){ const r=_fs(...a); try{ if(world&&chests&&home&&(caveTidyFresh||home.caveTidyV)) chestSupports(!caveTidyFresh); }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ caveTidyFresh=false; if(home&&!home.caveTidyV&&!isGuest()){ home.caveTidyV=1; const n=chestSupports(true)+tidyCaves(true)+chestSupports(true)+wallVariety(true); if(n){ try{ buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.76: the overgrown abandoned village, the Quartermaster's fix-up, natural burned villages =====================
+// The abandoned village you start near is a two-storey castle and three houses left to the weather: ragged patches of
+// wall and roof have fallen (clustered by noise, not scattered one-block holes), moss creeps over the stonework, grass,
+// ferns and saplings grow on the floors, vines hang from the ceilings and ivy climbs the walls (ruinHome, overgrow).
+// The Quartermaster waits inside. Walking in no longer claims the village: talk to him and choose "Fix up the castle
+// and the houses", and the repairs run over about one in-game day, block by block from the ground up (startFixup,
+// fixupTick; home.fixup is saved with the world). The Beast trainer and the Recruiter arrive when he starts, and the
+// drifters choose their jobs when the work is done. Burned villages are built around the fire that took each house:
+// the roof and one upper corner are gone with ragged edges, wood near the fire is charred, back walls are charred
+// (back wall 38) with holes where the fire burned through, and grass, ferns, bushes and saplings grow through the ash.
+// Older worlds: an unclaimed village and burned villages nobody has explored are rebuilt in the new look (home.ruinsV).
+
+const CHAR_BG=38;
+BGTEX[CHAR_BG]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.CHAR_PLANK],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.45)'; g.fillRect(0,0,16,16);
+  g.globalCompositeOperation='source-over'; for(const [x,y] of [[3,5],[11,9],[7,13],[13,2]]){ g.fillStyle='rgba(200,80,30,0.35)'; g.fillRect(x,y,1,1); } return c; })();
+const RUIN_PLANTS=[B.TALLGRASS,B.TALLGRASS,B.FERN,B.BUSH,B.TALLGRASS,B.FLOWER_Y,B.SAPLING,B.FERN];
+// how badly a cell is wrecked, 0..1, in ragged patches
+function wreck(x,y,sd){ return noise2(x/4.5,y/3.5,sd)*0.7+noise2(x/9,y/7,sd+5)*0.3; }
+// plants over a ruin: grass and ferns on floors, vines from ceilings, ivy up the walls
+function overgrow(x0,x1,y0,y1,R,dense){ dense=dense||1; for(let y=Math.max(1,y0);y<=Math.min(H-2,y1);y++) for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++){ const i=y*W+x; if(world[i]!==0) continue;
+    const below=world[i+W], above=world[i-W], left=world[i-1], right=world[i+1];
+    if(BLOCKS[below].solid&&!BLOCKS[above].solid){ if(R()<0.32*dense){ world[i]=RUIN_PLANTS[(R()*RUIN_PLANTS.length)|0]; continue; } }
+    if(BLOCKS[above].solid&&R()<0.1*dense){ const len=1+((R()*3)|0); for(let k=0;k<len;k++){ const j=i+k*W; if(world[j]!==0) break; world[j]=B.VINE; } continue; }
+    if((BLOCKS[left].solid||BLOCKS[right].solid)&&!BLOCKS[above].solid&&R()<0.07*dense){ const len=2+((R()*3)|0); for(let k=0;k<len;k++){ const j=i+k*W; if(world[j]!==0||(j+W<W*H&&BLOCKS[world[j+W]].solid&&k>0&&false)) break; world[j]=B.IVY; } } } }
+// anything no longer joined to the ground falls: a ruin keeps only pieces that still stand on something
+function dropFloating(x0,x1,y0,y1){ x0=Math.max(1,x0); x1=Math.min(W-2,x1); y0=Math.max(1,y0); y1=Math.min(H-2,y1); const w=x1-x0+1, h=y1-y0+1, ok=new Uint8Array(w*h), st=[];
+  const part=id=>id&&(BLOCKS[id].solid||BLOCKS[id].platform||id===B.PLATFORM);
+  for(let x=x0;x<=x1;x++){ const j=(y1-y0)*w+(x-x0); if(part(world[y1*W+x])){ ok[j]=1; st.push(j); } }   // the ground row holds everything up
+  while(st.length){ const j=st.pop(); const x=x0+(j%w), y=y0+((j/w)|0); for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const xx=x+dx, yy=y+dy; if(xx<x0||xx>x1||yy<y0||yy>y1) continue; const k=(yy-y0)*w+(xx-x0); if(ok[k]||!part(world[yy*W+xx])) continue; ok[k]=1; st.push(k); } }
+  for(let y=y0;y<y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x, j=(y-y0)*w+(x-x0); if(part(world[i])&&!ok[j]) world[i]=0; } }
+// the castle and the houses as the weather left them
+function ruinHome(ccx,hx0,gy,R){ const sd=(seed|0)+771, L=ccx-17, Rr=ccx+16;
+  const keep=new Set([B.TORCH,B.BANNER_G,B.BANNER_B,B.BANNER_R,B.LANTERN]);
+  const bones=(x,y)=>x===L||x===Rr||x===L+5||x===Rr-5||y===gy-10||y===gy-17||y===gy-20||y===gy-27;   // the castle's frame still stands
+  const gone=(x,y)=>wreck(x,y,sd)>0.6;
+  const ruin=(x,y,id)=>{ if(!id){ wset(x,y,0); return; } if(keep.has(id)) return;
+    if(id===B.DOOR||id===B.DOOR_T){ if(gone(x,y)||gone(x,y+1)) return; wset(x,y,id); return; }
+    if(y<gy&&[B.BRICK,B.PLANK,B.ROOF,B.SHINGLE_B,B.GLASS,B.PLATFORM,B.WINDOW,B.STONE_BLOCK,B.BOOKSHELF,B.TABLE,B.CHAIR,B.RUG,B.BARREL].includes(id)&&gone(x,y)&&!(id===B.STONE_BLOCK&&bones(x,y))) return wset(x,y,0);   // timber posts always stand
+    if(id===B.STONE_BLOCK&&(wreck(x+3,y-2,sd+9)>0.44||R()<0.12)) id=B.MOSS;
+    else if(id===B.PLANK&&R()<0.12) id=B.CHAR_PLANK;
+    wset(x,y,id); };
+  const ruinBg=(x,y,v)=>{ if(v&&wreck(x,y,sd+3)>0.7) return bset(x,y,0); bset(x,y,v); };
+  buildCastle(null,ccx,ruin,ruinBg,gy); buildCastleUpper(ruin,ruinBg,ccx,gy,null);
+  const houses=[0,1,2].map(k=>buildHouse(hx0+k*13,gy,k,B.BANNER_G,ruin,ruinBg));
+  dropFloating(ccx-20,hx0+40,gy-37,gy); overgrow(ccx-20,hx0+40,gy-36,gy-1,R,1);
+  return houses; }
+buildAbandoned=function(is,R){
+  const gy=surf[is.vx-2]; const ccx=is.vx-24, hx0=is.vx-2;
+  const houses=ruinHome(ccx,hx0,gy,R);
+  chests[(hx0+26+5)+','+(gy-1)]={ items:new Array(CHEST_N).fill(null), coins:5 }; wset(hx0+26+5,gy-1,B.CHEST);
+  const n=3+Math.floor(R()*3); const sx=is.startX;
+  return { cx:is.vx, castleCx:ccx, hx0, gy, x0:ccx-19, x1:hx0+40, houses, drifters:n, claimed:false, startX:sx, startY:surf[sx] }; };
+// burned villages: the fire that took each house started at one upper corner and spread from there
+buildRuin=function(x,R){ const gy=surf[x], sd=(seed|0)+881+x; let fire=null;
+  const burn=(a,b)=>{ const d=Math.hypot((a-fire.x)/6.5,(b-fire.y)/5.5); return Math.max(0,1-d)*0.8+noise2(a/3,b/3,sd)*0.45; };
+  const burnt=(a,b,id)=>{ if(!id) return wset(a,b,0); const h=burn(a,b);
+    if(id===B.DOOR||id===B.DOOR_T) id=h>0.35?0:id;
+    else if([B.TORCH,B.WINDOW,B.BANNER_G,B.BANNER_B,B.BANNER_R,B.BOOKSHELF,B.WORKBENCH,B.FURNACE,B.CHEST,B.IVY].includes(id)) id=0;
+    else if(id===B.PLANK||id===B.TIMBER||id===B.PLATFORM) id=h>0.72?0:h>0.3?B.CHAR_PLANK:id;
+    else if(id===B.ROOF||id===B.SHINGLE_B) id=h>0.42?0:h>0.18?B.CHAR_PLANK:id;
+    else if(id===B.STONE_BLOCK) id=h>0.9?0:id;
+    wset(a,b,id); };
+  const bb=(a,b,v)=>{ if(!v) return bset(a,b,0); const h=burn(a,b); bset(a,b,h>0.82?0:h>0.22?CHAR_BG:v); };
+  for(let k=0;k<3;k++){ const hx=x-19+k*13; fire={x:hx+(R()<0.5?1:7),y:gy-9}; buildHouse(hx,gy,k,B.BANNER_R,burnt,bb); }
+  for(let xx=x-22;xx<=x+22;xx++){ if(world[gy*W+xx]===B.GRASS||world[gy*W+xx]===B.PLANK) world[gy*W+xx]=R()<0.7?B.ASH:B.CHAR_PLANK; }
+  dropFloating(x-22,x+22,gy-17,gy); overgrow(x-22,x+22,gy-16,gy-1,R,1.2);
+  const ck=(x+1)+','+(gy-1); wset(x+1,gy-1,B.CHEST); if(!chests[ck]) chests[ck]={ items:[R()<0.04?{id:I.LEAP_BOTTLE,n:1}:null,{id:I.APPLE,n:2+Math.floor(R()*3)},{id:B.TORCH,n:4},{id:[I.IRON_BAR,I.SILVER_BAR,B.COAL][(R()*3)|0],n:2+Math.floor(R()*3)}].concat(new Array(CHEST_N-4).fill(null)), coins:5+Math.floor(R()*15), tier:1 };
+  return { x, gy }; };
+
+// ---- the Quartermaster waits in the ruin; talking to him starts the repairs ----
+claimHomeCheck=function(){};   // walking in no longer claims the village
+{ const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ if(home&&!home.claimed&&!home.quarter&&player&&!ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&e.team===player.team&&!e.dead)) ents.push(makeQuartermaster()); }catch(e){ console.warn(e); } return r; }; }
+{ const _rh=rebuildHome; rebuildHome=function(...a){ try{ if(home&&!home.quarter&&player&&ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&e.team===player.team&&!e.dead)){ home.quarter=true; ents.push(makeHelper('trainer','Beast trainer',-10)); ents.push(makeHelper('recruiter','Recruiter',10)); } }catch(e){} return _rh(...a); }; }
+{ const _os=openShop; openShop=function(v,...a){ if(v&&v.role==='quarter'&&v.team===player.team&&home&&!home.claimed){
+      if(isGuest()){ toast('Only the host can ask the Quartermaster to fix up the village',3); return; }
+      toast('Quartermaster: "I have kept this place as best I could. Say the word and we clear the moss and rebuild."',5);
+      showPickList([{label:'Fix up the castle and the houses',go:()=>startFixup()},{label:'Not yet',go:()=>{}}]); return; }
+    if(v&&v.role==='quarter'&&v.team===player.team&&home&&home.fixup){ const f=home.fixup; toast(`Quartermaster: "The repairs are ${Math.round(100*f.i/Math.max(1,f.cells.length))}% done. Give us until tomorrow."`,3); return; }
+    return _os(v,...a); }; }
+function startFixup(){ if(!home||home.claimed||home.fixup) return;
+  const x0=Math.max(0,home.x0-6), x1=Math.min(W-1,home.x1+8), y0=Math.max(0,home.gy-40), y1=Math.min(H-1,home.gy+3), w=x1-x0+1, h=y1-y0+1;
+  const W0=new Uint16Array(w*h), B0=new Uint8Array(w*h); for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x, j=(y-y0)*w+(x-x0); W0[j]=world[i]; B0[j]=bg[i]; }
+  const dr=home.drifters; home.drifters=0; const _t=toast; toast=function(){}; try{ claimHome(); } finally{ toast=_t; home.drifters=dr; }
+  const cells=[]; for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x, j=(y-y0)*w+(x-x0); if(world[i]!==W0[j]||bg[i]!==B0[j]) cells.push([x,y,world[i],bg[i],W0[j],B0[j]]); }
+  // the ruin comes back for now; the repairs replay the difference from the ground up
+  facRun(()=>{ for(const [x,y,nw,nb,ow,ob] of cells){ if(world[y*W+x]!==ow) setTile(x,y,ow); if(bg[y*W+x]!==ob){ bg[y*W+x]=ob; if(facCap) facCap.push([x,y,ob,1]); if(explored[y*W+x]) mapPixel(x,y); } } });
+  cells.sort((a,b)=>b[1]-a[1]||a[0]-b[0]);
+  home.fixup={ cells:cells.map(c=>[c[0],c[1],c[2],c[3]]), i:0, acc:0 };
+  toast('The Quartermaster rolls up his sleeves. The village will be rebuilt by tomorrow.',5); }
+const FIXUP_DAYS=0.9;   // the repairs take about this much of a day
+function fixupTick(dt){ const f=home&&home.fixup; if(!f||isGuest()||!f.cells) return; const n=f.cells.length; f.acc=(f.acc||0)+n/(DAY_LEN*FIXUP_DAYS)*dt; let k=Math.floor(f.acc); if(k<1) return; f.acc-=k;
+  facRun(()=>{ while(k-->0&&f.i<n){ const [x,y,id,b]=f.cells[f.i++]; if(world[y*W+x]!==id) setTile(x,y,id); if(bg[y*W+x]!==b){ bg[y*W+x]=b; if(facCap) facCap.push([x,y,b,1]); if(explored[y*W+x]) mapPixel(x,y); }
+      if(f.i%5===0){ puff(x*T+8,y*T+8,'#d8c8a0',3,50); if(player&&Math.abs(x*T-cxOf(player))<30*T) sfx('hit',x*T,y*T); } } });
+  if(f.i>=n){ home.fixup=null; try{ fixStations(); for(let x=home.castleCx-20;x<=home.castleCx+20;x++) updateSkyTop(x); }catch(e){} toast('The village is rebuilt. It is your home now.',4); if(home.drifters>0) setTimeout(()=>openRecruit(),600); } }
+{ const _u=update; update=function(dt){ _u(dt); try{ if(state==='play') fixupTick(dt); }catch(e){ console.warn(e); } }; }
+// older worlds: the unclaimed village and burned villages nobody has explored get the new look
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.ruinsV&&!isGuest()){ home.ruinsV=1; let n=0;
+      const unexplored=(x0,x1,y0,y1)=>{ for(let y=Math.max(0,y0);y<=Math.min(H-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++) if(explored[y*W+x]) return false; return true; };
+      if(!home.claimed&&unexplored(home.x0-6,home.x1+8,home.gy-40,home.gy)){ ruinHome(home.castleCx,home.hx0,home.gy,mulberry((seed|0)+771)); const ck=(home.hx0+31)+','+(home.gy-1); if(!chests[ck]){ chests[ck]={items:new Array(CHEST_N).fill(null),coins:5}; } wset(home.hx0+31,home.gy-1,B.CHEST); n++; }
+      for(const rn of ruins||[]){ if(unexplored(rn.x-23,rn.x+23,rn.gy-18,rn.gy)){ buildRuin(rn.x,mulberry((seed|0)+881+rn.x)); n++; } }
+      if(n){ try{ for(let x=0;x<W;x++) updateSkyTop(x); buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
