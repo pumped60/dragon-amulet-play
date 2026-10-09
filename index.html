@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791518297"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791518297"><link rel="manifest" href="manifest.webmanifest?v=1791518297"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791519203"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791519203"><link rel="manifest" href="manifest.webmanifest?v=1791519203"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.56</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.57</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.56</h3>
+    <h3>New in Beta 0.9.57</h3>
+    <p>Bombs throw up much more smoke, and smoke hangs in the air longer (about 45 seconds); rain, storms and snow clear it from the open air two to five times faster. A ballista, cannon or trebuchet can only be set up when a free soldier in your party is with you, and that soldier works it. Press F beside a crewed machine (or use the Army window) and choose Aim, then click or tap a spot: the crew fires at enemies near the mark, or at the mark itself. "Own targets" lets it choose again. War machines are drawn at close to their real size next to you. In the test world a soldier joins you to work a machine if none is free.</p>
+    <h3>Beta 0.9.56</h3>
     <p>Sugar bakes into sugar cake, berry tart, sugar cookies and candied apples at a furnace. Sea treasures make things: eight ancient coins and a gold bar make a Lucky coin charm, an old compass becomes a Dragon compass or an Astrolabe, two golden fish with pearls make the Lucky lure (or roast one into a golden fish feast), a sunken crown with pearls becomes the Tidecrown charm (+20 health, +20 mana, faster mana), Kraken ink with a black pearl makes the Shadow cloak, and coral presses into pink coral blocks. The Sage charm's faster mana refill works.</p>
     <h3>Beta 0.9.55</h3>
     <p>Mana refills faster the more mana you have: a wizard gets back 12% of their maximum mana every second and everyone else 8% (never slower than before), so mana crystals and other mana upgrades also speed up the refill. Wizards start with 90 health. The Archmage tower has about half as many guards. Items that shared a name have their own now: the Kraken's treasure-chest daggers are Tidebond daggers, the chain-lightning staff is the Tempest staff, and the mushroom you eat is a Glowcap. Metal bars, gems, crystals, mana potions, farm goods and sea treasures all have descriptions.</p>
@@ -614,7 +616,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.56</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.57</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -874,7 +876,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.56</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.57</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -893,7 +895,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.56', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.57', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3494,12 +3496,14 @@ function openTreasure(id){ takeItem(id,1);
   else { const c=10+Math.floor(Math.random()*40); addCoins(c,cxOf(player),player.y); toast(['"Whoever finds this: the treasure is yours." A few coins are tucked inside.','"Beware the dragon of the mountain." Some coins fall out.','"The sky has a castle, and it has a moat." Coins rattle inside.'][(Math.random()*3)|0],4); } }
 // ================= war machines =================
 const MACHINES={ ballista:{ name:'Ballista', item:I.BALLISTA, hp:350, range:24, cd:2.2, dmg:60, kind:'bolt' }, cannon:{ name:'Cannon', item:I.CANNON, hp:450, range:18, cd:3.2, dmg:90, splash:44, kind:'ball' }, trebuchet:{ name:'Trebuchet', item:I.TREBUCHET, hp:520, range:36, cd:5.5, dmg:150, splash:60, kind:'boulder' } };
-function makeMachine(mt,x,y){ const m=MACHINES[mt]; return { kind:'machine', mtype:mt, team:player.team, x, y, w:mt==='trebuchet'?30:26, h:mt==='trebuchet'?30:18, vx:0, vy:0, hp:m.hp, maxHp:m.hp, def:6, facing:player.facing, grounded:false, anim:0, hurtT:0, kbT:0, atkCd:1, crew:null, speed:78, name:m.name }; }
+// sizes close to real ones next to a person (the player is 28 pixels, about 1.8 m): [width, height] of the body, and the drawing scale
+const MSIZE={ ballista:[52,32,2], cannon:[46,28,1.75], trebuchet:[64,40,2.3] };
+function makeMachine(mt,x,y){ const m=MACHINES[mt]; return { kind:'machine', mtype:mt, team:player.team, x, y, w:MSIZE[mt][0], h:MSIZE[mt][1], vx:0, vy:0, hp:m.hp, maxHp:m.hp, def:6, facing:player.facing, grounded:false, anim:0, hurtT:0, kbT:0, atkCd:1, crew:null, speed:78, name:m.name }; }
 function deployMachine(it){ const d=ITEMS[it.id]; if(ents.filter(e=>e.kind==='machine'&&!e.dead).length>=6){ toast('You can field up to 6 war machines',2.5); return; }
-  const m=makeMachine(d.mt,cxOf(player)+player.facing*30-13,player.y-4); if(collides(m)) m.x=player.x; ents.push(m); takeItem(it.id,1); puff(cxOf(m),cyOf(m),'#b7834a',10,80); toast(`${m.name} ready. Assign a soldier as crew in the Army panel, or press F to operate it yourself.`,4); }
-function fireMachine(m,tx,ty){ const M=MACHINES[m.mtype]; const sx=cxOf(m), sy=m.y+4; const dx=tx-sx, dy=ty-sy; m.facing=dx>=0?1:-1; m.atkCd=M.cd; m.atkT=0.4;
+  const m=makeMachine(d.mt,0,0); m.x=cxOf(player)+player.facing*(m.w/2+20)-m.w/2; m.y=player.y+player.h-m.h-2; if(collides(m)){ m.x=cxOf(player)-m.w/2; m.y=player.y+player.h-m.h-2; } ents.push(m); takeItem(it.id,1); puff(cxOf(m),cyOf(m),'#b7834a',10,80); toast(`${m.name} ready. Assign a soldier as crew in the Army panel, or press F to operate it yourself.`,4); }
+function fireMachine(m,tx,ty){ const M=MACHINES[m.mtype]; const sx=cxOf(m)+m.facing*m.w*0.3, sy=m.y+m.h*0.3; const dx=tx-sx, dy=ty-sy; m.facing=dx>=0?1:-1; m.atkCd=M.cd; m.atkT=0.4;
   if(M.kind==='bolt'){ const a=Math.atan2(dy,dx); projs.push({x:sx,y:sy,vx:Math.cos(a)*620,vy:Math.sin(a)*620,team:m.team,dmg:M.dmg,kind:'bolt',life:3,grav:60,r:6,src:m}); }
-  else { const g=600, tt=M.kind==='boulder'?Math.max(1.1,Math.abs(dx)/260+0.6):Math.max(0.4,Math.abs(dx)/420); projs.push({x:sx,y:m.y-(M.kind==='boulder'?20:0),vx:dx/tt,vy:dy/tt-0.5*g*tt,team:m.team,dmg:M.dmg,kind:M.kind,life:tt+2,grav:g,r:M.kind==='boulder'?9:6,splash:M.splash,src:m}); }
+  else { const g=600, tt=M.kind==='boulder'?Math.max(1.1,Math.abs(dx)/260+0.6):Math.max(0.4,Math.abs(dx)/420); projs.push({x:sx,y:m.y-(M.kind==='boulder'?36:0),vx:dx/tt,vy:dy/tt-0.5*g*tt,team:m.team,dmg:M.dmg,kind:M.kind,life:tt+2,grav:g,r:M.kind==='boulder'?9:6,splash:M.splash,src:m}); }
   puff(sx+m.facing*14,sy,'#d8d4c8',M.kind==='ball'?10:4,90); }
 function blastBlocks(px,py,r,team){ if(!player||!team||!['g','b','r'].includes(team)) return; const foe=team!==player.team; const tx=Math.floor(px/T), ty=Math.floor(py/T), rt=Math.max(1,Math.round(r/T*0.6));
   for(let y=ty-rt;y<=ty+rt;y++) for(let x=tx-rt;x<=tx+rt;x++){ if((x-tx)**2+(y-ty)**2>rt*rt) continue; const id=tileAt(x,y); if(!id||id===B.WATER||id===B.LAVA) continue; const b=BLOCKS[id]; if(!b||b.hard===Infinity||id===B.BLACK_LAYER||isChestId(id)||id===B.PORTAL||id===B.CAGE) continue;
@@ -3517,16 +3521,18 @@ function machineAct(m,dt){ m.atkCd-=dt; m.atkT-=dt; m.hurtT-=dt; m.anim+=Math.ab
   if(m.crew&&(m.crew.dead||!m.crew.crewing)) m.crew=null;
   if(player.operating===m) return;
   const p=player, dx=cxOf(p)-cxOf(m), dy=cyOf(p)-cyOf(m); const onLand=!p.inWater&&!p.riding&&p.grounded;
-  if((Math.abs(dx)>35*T||Math.abs(dy)>22*T)&&onLand){ m.x=p.x-p.facing*40; m.y=p.y-8; m.vx=m.vy=0; if(collides(m)) m.x=p.x; }
+  if((Math.abs(dx)>35*T||Math.abs(dy)>22*T)&&onLand){ m.x=cxOf(p)-p.facing*(m.w/2+24)-m.w/2; m.y=p.y+p.h-m.h-2; m.vx=m.vy=0; if(collides(m)) m.x=p.x; }
   const idx=ents.filter(o=>o.kind==='machine'&&!o.dead).indexOf(m); const gap=(6+idx*2.5)*T; let mv=0; if(player.order!=='hold'&&Math.abs(dx)>gap) mv=Math.sign(dx); else if(player.order!=='hold'&&Math.abs(dx)<gap-2*T) mv=-Math.sign(dx||1)*0.5; m.vx+=((mv*m.speed)-m.vx)*Math.min(1,dt*4); if(mv) m.facing=mv;
   if(m.hitWall&&m.grounded&&mv) m.vy=-JUMP*0.7; physics(m,dt);
-  if(m.crew&&m.atkCd<=0){ m.think=(m.think||0)-dt; const t=nearestHostile(m,MACHINES[m.mtype].range*T,cxOf(m),cyOf(m)); if(t) fireMachine(m,cxOf(t),cyOf(t)); }
-  if(m.crew){ m.crew.x=cxOf(m)-6; m.crew.y=m.y-18; m.crew.vx=m.crew.vy=0; } }
+  if(m.crew&&m.atkCd<=0){ m.think=(m.think||0)-dt; const R=MACHINES[m.mtype].range*T;
+    if(m.aim){ const ax=m.aim.x, ay=m.aim.y; if(Math.hypot(ax-cxOf(m),ay-cyOf(m))<=R){ const t=nearestHostile(m,MACHINE_AIM_R*T,ax,ay); if(t) fireMachine(m,cxOf(t),cyOf(t)); else fireMachine(m,ax,ay); } }   // aimed: enemies near the mark, or the mark itself
+    else { const t=nearestHostile(m,R,cxOf(m),cyOf(m)); if(t) fireMachine(m,cxOf(t),cyOf(t)); } }
+  if(m.crew){ const c=m.crew; c.x=cxOf(m)-m.facing*(m.w/2+3)-c.w/2; c.y=m.y+m.h-c.h; c.vx=c.vy=0; c.facing=m.facing; } }
 function nearestMachine(r){ let best=null, bd=r; for(const m of ents){ if(m.kind!=='machine'||m.dead||m.aboard) continue; const d=Math.hypot(cxOf(m)-cxOf(player),cyOf(m)-cyOf(player)); if(d<bd){ bd=d; best=m; } } return best; }
 function toggleOperate(m){ const p=player; if(p.operating){ p.operating=null; toast('You step off the war machine',1.5); return; } if(!m) return; p.operating=m; toast(`You operate the ${m.name.toLowerCase()}. Aim and fire; press F to step off.`,3); }
 function operateStep(p,dt){ const m=p.operating; if(!m||m.dead||m.aboard){ p.operating=null; return false; }
   const mv=(input.right?1:0)-(input.left?1:0); m.vx+=((mv*m.speed)-m.vx)*Math.min(1,dt*4); if(mv) m.facing=mv; physics(m,dt);
-  p.x=cxOf(m)-p.w/2; p.y=m.y-p.h+4; p.vx=p.vy=0; p.grounded=true; p.peakY=p.y;
+  p.x=cxOf(m)-m.facing*(m.w/2+3)-p.w/2; p.y=m.y+m.h-p.h; p.vx=p.vy=0; p.grounded=true; p.peakY=p.y;
   const aim=aimPoint(ITEMS[I.SQUIRE_SWORD]); p.facing=aim.x>cxOf(m)?1:-1; m.facing=p.facing;
   if(input.use&&m.atkCd<=0) fireMachine(m,aim.x,aim.y); return true; }
 function assignCrew(m){ if(m.crew){ m.crew.crewing=null; m.crew.x=m.x; m.crew.y=m.y-10; m.crew=null; return; }
@@ -4228,7 +4234,7 @@ function deserialize(str){
   const sp=o.player; player=makePlayer(sp.team,sp.cls); player.x=sp.x; player.y=sp.y; player.bonusHp=sp.bonusHp||0; player.bonusMana=sp.bonusMana||0; if(sp.gear) player.gear=Object.assign(player.gear,sp.gear); recompute(player); player.hp=Math.min(sp.hp,player.maxHp); player.mana=Math.min(sp.mana||0,player.maxMana); player.coins=sp.coins||0; player.order=o.order||'follow';
   player.inv=sp.inv.map(s=>s&&ITEMS[s.id]?{id:s.id,n:s.n}:null); while(player.inv.length<INV_N) player.inv.push(null); player.sel=sp.sel||0;
   buildMap(); player.charms=Array.isArray(o.player.charms)?o.player.charms.filter(id=>CHARMS[id]):[]; player.checklists=Array.isArray(o.player.checklists)?o.player.checklists.slice(0,3):[]; player.cust=o.player.cust||null; player.name=o.player.name; player.flyOn=o.player.flyOn; player.bed=o.player.bed||null; player.extraJumps=o.player.extraJumps||0; player.swiftLvl=o.player.swiftLvl||0; player.wingLvl=o.player.wingLvl||0; player.found=o.player.found||{}; player.recent=o.player.recent||[]; player.krakenBond=!!o.player.krakenBond; player.godCraft=!!o.player.godCraft; player.level=o.player.level||1; player.xp=o.player.xp||0; player.skillPts=o.player.skillPts||0; player.skills=o.player.skills||{}; player.food=o.player.food??100; player.locker=Array.isArray(o.player.locker)?o.player.locker.filter(id=>ITEMS[id]):[]; player.quests=Array.isArray(o.player.quests)?o.player.quests:[]; player.bestiary=o.player.bestiary||{}; player.runes=o.player.runes||{}; player.runeLv=o.player.runeLv||{}; player.charm=o.player.charm||0; player.stormV=o.player.stormV||0; player.silverArmV=o.player.silverArmV||0; player.boatMods=o.player.boatMods||{}; recompute(player); player.sprintLvl=o.player.sprintLvl||0; player.heartsBought=o.player.heartsBought||{}; recompute(player); if(o.armyUp) player.armyUp=o.armyUp; if(o.petUp) player.petUp=o.petUp; populate(o.dragonHp||99999,o.roster,o.pets); computeForestCols();
-  for(const md of (o.machines||[])){ const m=makeMachine(md.mtype,player.x+(Math.random()*60-30),player.y-6); m.hp=md.hp; ents.push(m); if(md.crew){ const c=player.party.find(e=>e&&e.name===md.crew&&!e.crewing); if(c){ c.crewing=m; m.crew=c; } } } wakeAllWater();
+  for(const md of (o.machines||[])){ const m=makeMachine(md.mtype,player.x+(Math.random()*60-30),0); m.y=player.y+player.h-m.h-2; m.hp=md.hp; ents.push(m); if(md.crew){ const c=player.party.find(e=>e&&e.name===md.crew&&!e.crewing); if(c){ c.crewing=m; m.crew=c; } } } wakeAllWater();
 }
 let curSlot=1, saving=false;
 const slotKey=n=>`dragonamulet-slot${n}`;
@@ -4806,8 +4812,8 @@ function drawSea(e){ const s=seaSprite(e); const img=e.hurtT>0?flashOf(s):s.n; c
   ctx.save(); ctx.translate(cx,cy); if(e.facing<0) ctx.scale(-1,1); ctx.drawImage(img,-Math.round(img.width/2),-Math.round(img.height/2)); ctx.restore(); drawHealth(e); }
 
 // boats with soldiers seated in slot order
-function drawMachineAt(mt,cx,by,facing,anim,atk,tint){ const r=(x,y,w,h,c)=>{ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); };
-  ctx.save(); ctx.translate(Math.round(cx),Math.round(by)); if(facing<0) ctx.scale(-1,1);
+function drawMachineAt(mt,cx,by,facing,anim,atk,tint,sc){ const r=(x,y,w,h,c)=>{ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); };
+  ctx.save(); ctx.translate(Math.round(cx),Math.round(by)); if(facing<0) ctx.scale(-1,1); { const s=sc||(MSIZE[mt]&&MSIZE[mt][2])||1; ctx.scale(s,s); }
   const wheel=(x)=>{ r(x-4,-8,8,8,'#3f3150'); r(x-3,-7,6,6,'#8a5c2d'); const a=anim%2<1; r(x-1,a?-7:-5,2,a?6:2,'#5b3819'); r(a?x-3:x-1,-5,a?6:2,2,'#5b3819'); };
   if(mt==='cannon'){ r(-12,-12,22,6,'#8a5c2d'); r(-12,-12,22,1,'#b7834a'); const lift=atk?2:0; r(-6,-20-lift,20,8,'#3f3150'); r(-5,-19-lift,18,6,'#3a3a44'); r(-5,-19-lift,18,1,'#6a6a74'); r(12,-21-lift,4,10,'#23232b'); r(-8,-18-lift,3,4,'#23232b'); wheel(-7); wheel(6); }
   else if(mt==='ballista'){ r(-13,-10,26,4,'#8a5c2d'); r(-13,-10,26,1,'#b7834a'); r(-6,-16,4,6,'#6b4422'); r(-10,-18,24,3,'#8a5c2d'); r(-10,-18,24,1,'#b7834a'); for(let i=0;i<7;i++){ r(12-i,-19-i,2,1,'#6b4422'); r(12-i,-15+i,2,1,'#6b4422'); } r(6,-26,1,16,'#e8e8e8'); if(!atk){ r(-6,-18,22,1,'#dfe3e8'); r(14,-19,3,3,'#dfe3e8'); } wheel(-8); wheel(8); }
@@ -4815,7 +4821,7 @@ function drawMachineAt(mt,cx,by,facing,anim,atk,tint){ const r=(x,y,w,h,c)=>{ ct
     ctx.save(); ctx.translate(0,-31); ctx.rotate(ang); r(-22,-1,34,3,'#7a4e27'); r(10,-4,7,9,'#5a5a64'); r(10,-4,7,1,'#8a8a94'); r(-24,-2,4,5,'#3f3150'); ctx.restore(); wheel(-10); wheel(10); }
   ctx.restore(); }
 function drawMachine(m){ drawMachineAt(m.mtype,cxOf(m),m.y+m.h,m.facing,m.anim,m.atkT>0);
-  if(m.hp<m.maxHp){ const w=24, x=Math.round(cxOf(m)-w/2), y=Math.round(m.y-8); ctx.fillStyle='#3f3150'; ctx.fillRect(x-1,y-1,w+2,4); ctx.fillStyle='#e5383b'; ctx.fillRect(x,y,Math.round(w*m.hp/m.maxHp),2); }
+  if(m.hp<m.maxHp){ const w=32, x=Math.round(cxOf(m)-w/2), y=Math.round(m.y+m.h-(MSIZE[m.mtype]?MSIZE[m.mtype][2]*(m.mtype==='trebuchet'?36:22):24)-6); ctx.fillStyle='#3f3150'; ctx.fillRect(x-1,y-1,w+2,4); ctx.fillStyle='#e5383b'; ctx.fillRect(x,y,Math.round(w*m.hp/m.maxHp),2); }
   if(player&&player.operating===m){ ctx.fillStyle='#ffe066'; ctx.fillRect(Math.round(cxOf(m))-1,Math.round(m.y)-16,2,4); } }
 function drawBoat(p){
   const bt=BOATS[p.boat]; const L=bt.len; const cx=Math.round(cxOf(p)), wl=Math.round(p.y+p.h)-5; const bob=Math.round(Math.sin(performance.now()/350));
@@ -4830,7 +4836,7 @@ function drawBoat(p){
   // soldiers sitting (drawn before the hull so the hull hides their legs)
   riders.forEach((e,k)=>{ const o=specOf(e); o.frame=Math.abs(p.vx)>8?6+((Math.floor((p.anim||0)*4)+k)%2):6; o.atk=false; const s=sprite(humanKey(o),SW,SH,g=>drawHumanFig(g,o)); const dx=seatX(k+1)*(p.facing<0?-1:1);
     ctx.save(); ctx.translate(cx+dx,0); if(p.facing<0) ctx.scale(-1,1); ctx.drawImage(s.n,-SCX,wl+bob-SFY+6); ctx.restore(); });
-  if(p===player){ const ms=ents.filter(m=>m.kind==='machine'&&m.aboard).sort((a,b)=>a.seat-b.seat); ms.forEach((m,k)=>{ const off=(k-(ms.length-1)/2)*34; drawMachineAt(m.mtype,cx+off*(p.facing<0?-1:1),wl+bob-6,p.facing,0,false); }); }
+  if(p===player){ const ms=ents.filter(m=>m.kind==='machine'&&m.aboard).sort((a,b)=>a.seat-b.seat); ms.forEach((m,k)=>{ const off=(k-(ms.length-1)/2)*34; drawMachineAt(m.mtype,cx+off*(p.facing<0?-1:1),wl+bob-6,p.facing,0,false,null,1); }); }
   if(p.kind!=='ship'){ const pdx=seatX(0)*(p.facing<0?-1:1); const saveX=p.x; p.x=saveX+pdx; drawEntity(p); p.x=saveX; }
   ctx.save(); ctx.translate(cx,wl+bob); if(p.facing<0) ctx.scale(-1,1);
   const h=L>40?9:7;
@@ -11341,7 +11347,7 @@ mpDropList=function(){ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!
         else if(ITEMS[id]){ if(roomFor(id,n)||isUpgradeItem(id)) obtain(id,n,true); else drops.push({x:cxOf(player),y:player.y,vx:0,vy:-60,id,n,age:0,mine:true}); if(typeof sfx==='function') sfx('pickup'); invDirty=true; } } } }catch(e){ console.warn(e); } return res; }; }
 
 // ---- smoke ----
-const SMK=4, SMK_FADE=7;   // cells of 4x4 blocks; density halves in about 5 s and is gone in about 20 s
+const SMK=4, SMK_FADE=16;   // cells of 4x4 blocks; density halves in about 11 s and is gone in about 45 s (faster outdoors in rain, storms and snow)
 let smokeW=0, smokeH=0, smoke=null; const smokeOn=new Set();
 function smokeGrid(){ if(!world) return false; if(!smoke||smokeW!==Math.ceil(W/SMK)||smokeH!==Math.ceil(H/SMK)){ smokeW=Math.ceil(W/SMK); smokeH=Math.ceil(H/SMK); smoke=new Float32Array(smokeW*smokeH); smokeOn.clear(); } return true; }
 function addSmoke(px,py,rad,amt){ if(!smokeGrid()) return; const cx=Math.floor(px/T/SMK), cy=Math.floor(py/T/SMK), rc=Math.max(0,Math.ceil(rad/T/SMK));
@@ -11350,8 +11356,12 @@ function smokeAt(px,py){ if(!smoke) return 0; const x=Math.floor(px/T/SMK), y=Ma
 // 0 below a thin wisp, then 5% at a light haze rising to 35% in thick smoke
 const smokeSpread=d=>d<0.05?0:Math.min(0.35,0.05+(d-0.05)*0.25);
 let smokeFireT=0;
-function smokeTick(dt){ if(!smokeGrid()) return; const k=Math.exp(-dt/SMK_FADE), up=Math.min(0.5,dt*0.06);
-  for(const i of [...smokeOn]){ let v=smoke[i]*k; if(i>=smokeW){ const m=v*up; smoke[i-smokeW]=Math.min(1.6,smoke[i-smokeW]+m); smokeOn.add(i-smokeW); v-=m; } smoke[i]=v; if(v<0.01){ smoke[i]=0; smokeOn.delete(i); } }
+// rain, storms and snow wash smoke out of the open air; fog leaves it be
+const SMOKE_WX={rain:3,storm:5,snow:2};
+function smokeWxMul(){ return (typeof weather==='string'&&SMOKE_WX[weather])||1; }
+function smokeOutdoors(i){ const x=Math.min(W-1,(i%smokeW)*SMK+2), yb=(Math.floor(i/smokeW)+1)*SMK; return typeof skyTop!=='undefined'&&skyTop[x]!=null&&yb<=skyTop[x]+1&&yb<(typeof magmaY!=='undefined'?magmaY:H); }
+function smokeTick(dt){ if(!smokeGrid()) return; const wm=smokeWxMul(), k=Math.exp(-dt/SMK_FADE), kw=Math.exp(-dt*wm/SMK_FADE), up=Math.min(0.5,dt*0.06);
+  for(const i of [...smokeOn]){ let v=smoke[i]*(wm>1&&smokeOutdoors(i)?kw:k); if(i>=smokeW){ const m=v*up; smoke[i-smokeW]=Math.min(1.6,smoke[i-smokeW]+m); smokeOn.add(i-smokeW); v-=m; } smoke[i]=v; if(v<0.01){ smoke[i]=0; smokeOn.delete(i); } }
   if((smokeFireT-=dt)<=0){ smokeFireT=0.5; if(typeof fires!=='undefined') for(const [i,f] of fires){ if(f&&f.vis) continue; addSmoke((i%W)*T+8,((i/W)|0)*T,0,0.02); } }
   // shots: a smoky muzzle or a smoky line of fire throws them off; cannon shots leave smoke where they are fired
   for(const p of projs){ if(p.smk||p.visual) continue; p.smk=true; if(p.kind==='ball'){ addSmoke(p.x,p.y,24,0.06); continue; }
@@ -11359,7 +11369,7 @@ function smokeTick(dt){ if(!smokeGrid()) return; const k=Math.exp(-dt/SMK_FADE),
     const sp=Math.hypot(p.vx,p.vy); if(!sp) continue; const ux=p.vx/sp, uy=p.vy/sp; let d=smokeAt(p.x,p.y); for(const s of [3,6,9]) d=Math.max(d,smokeAt(p.x+ux*s*T,p.y+uy*s*T));
     const f=smokeSpread(d); if(!f) continue; const a=(Math.random()*2-1)*f*0.6, c=Math.cos(a), s=Math.sin(a); const vx=p.vx*c-p.vy*s, vy=p.vx*s+p.vy*c; p.vx=vx; p.vy=vy; } }
 { const _u=update; update=function(dt){ _u(dt); if(state==='play') try{ smokeTick(dt); }catch(e){ console.warn(e); } }; }
-{ const _bb=bombBlast; bombBlast=function(px,py,k,...a){ const r=_bb(px,py,k,...a); try{ addSmoke(px,py,((k&&k.r)||3)*T*1.6,0.25); }catch(e){} return r; }; }
+{ const _bb=bombBlast; bombBlast=function(px,py,k,...a){ const r=_bb(px,py,k,...a); try{ addSmoke(px,py,((k&&k.r)||3)*T*2.4,0.55); }catch(e){} return r; }; }
 { const _sp=splash; splash=function(pr,...a){ const r=_sp(pr,...a); try{ addSmoke(pr.x,pr.y,(pr.splash||40)*1.3,pr.noBlast?0.06:0.15); }catch(e){} return r; }; }
 // drawn as soft grey clouds over the world, thicker where more smoke has gathered
 { const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ if(smoke&&smokeOn.size){ const cs=SMK*T, x0=Math.floor(camX/cs)-1, x1=Math.ceil((camX+viewW)/cs)+1, y0=Math.floor(camY/cs)-1, y1=Math.ceil((camY+viewH)/cs)+1, now=performance.now()/1000;
@@ -11547,6 +11557,49 @@ for(const r of [
     [I.OLD_COMPASS]:'A brass compass from a sunken ship. Craft it into a Dragon compass or an Astrolabe',
     [I.KRAKEN_INK]:'Dark ink from the deep sea. Two, a black pearl and silver make the Shadow cloak' };
   for(const [id,d] of Object.entries(D)) if(ITEMS[id]) ITEMS[id].desc=d; }
+// ===================== Beta 0.9.57: war machines need a crew, take aim, stand full size =====================
+// A ballista, cannon or trebuchet is only set up when a free soldier in your party is there to work it; that soldier
+// becomes its crew at once. In the test world a soldier joins you to work it if none is free. Aim a crewed machine by
+// pressing F next to it (or the talk button on a phone), choosing Aim, then clicking or tapping a spot: the crew fires at
+// enemies within MACHINE_AIM_R blocks of the mark, or at the mark itself (walls, gates) when nobody is there. "Pick its
+// own targets" clears the mark. Sizes and drawing scale are in MSIZE (12_war_machines.js).
+const MACHINE_AIM_R=6;
+let machAim=null, machAimEat=false;
+const freeCrew=()=>player.party.find(e=>e&&!e.dead&&!e.crewing&&!e.aboard);
+{ const _dm=deployMachine; deployMachine=function(it,...a){ const d=ITEMS[it.id], M=MACHINES[d.mt];
+    if(ents.filter(e=>e.kind==='machine'&&!e.dead).length>=6) return _dm(it,...a);
+    let c=freeCrew();
+    if(!c&&curSlot===4){ c=makeHuman(player.team,'knight',player.x-player.facing*20,player.y,'guard',playerBase); ents.push(c); const s=freeSlot(); if(s>=0) putInSlot(c,s); try{ applyArmyUp(c); }catch(e){} c.hp=c.maxHp; }
+    if(!c){ toast(`You need a free soldier in your party to work the ${M.name.toLowerCase()}. Bring one along, then set it up`,3.5); return; }
+    const n0=ents.length; const r=_dm(it,...a); const m=ents.slice(n0).find(e=>e.kind==='machine');
+    if(m){ c.crewing=m; m.crew=c; toast(`${m.name} set up. ${c.name} works it. Press F beside it to aim it`,4); }
+    return r; }; }
+function startMachineAim(m){ if(!m||m.dead) return; machAim=m; toast(`Click or tap where the ${m.name.toLowerCase()} should fire (it reaches ${MACHINES[m.mtype].range} blocks)`,4); }
+function freeMachineAim(m){ if(!m) return; m.aim=null; toast(`The ${m.name.toLowerCase()} picks its own targets`,2); }
+function machineMenu(m){ const nm=m.name.toLowerCase(), o=[{label:'Operate the '+nm,go:()=>toggleOperate(m)}];
+  if(m.crew) o.push({label:'Aim the '+nm,go:()=>startMachineAim(m)}); if(m.aim) o.push({label:`Let the ${nm} pick its own targets`,go:()=>freeMachineAim(m)}); return o; }
+// the next click or tap marks the spot (and does not swing the weapon in your hand)
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){
+    if(machAimEat){ if(!input.use) machAimEat=false; else { input.use=false; const r=_up(dt,...a); input.use=true; return r; } }
+    if(machAim&&input.use&&state==='play'){ const m=machAim; machAim=null; if(m&&!m.dead){ const pt=aimPoint(ITEMS[I.SQUIRE_SWORD]); m.aim={x:pt.x,y:pt.y};
+        const far=Math.hypot(pt.x-cxOf(m),pt.y-cyOf(m))>MACHINES[m.mtype].range*T; toast(far?`Marked. It is out of reach: the ${m.name.toLowerCase()} fires once it is within ${MACHINES[m.mtype].range} blocks`:`Target marked. The ${m.name.toLowerCase()} fires there`,3); }
+      machAimEat=true; input.use=false; const r=_up(dt,...a); input.use=true; return r; }
+    return _up(dt,...a); }; }
+// F next to a machine: operate, aim or free fire
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); const nm=nearestMachine(3*T); if(!nm) return o;
+    const i=o.findIndex(x=>x.label&&x.label.startsWith('Operate ')); if(i>=0) o.splice(i,1); o.push(...machineMenu(nm)); return o; }; }
+{ const _in=interact; interact=function(v,...a){ if(v&&v.machine&&!player.operating){ const o=machineMenu(v.machine); talkTarget=undefined; if(o.length===1) o[0].go(); else showPickList(o); return; } return _in(v,...a); }; }
+// Army panel: Aim and Free fire beside each machine
+{ const _rm=renderMachines; renderMachines=function(...a){ const r=_rm(...a); try{ const ms=ents.filter(e=>e.kind==='machine'&&!e.dead); const rows=$('#machList').querySelectorAll('.rrow');
+      rows.forEach((row,i)=>{ const m=ms[i]; if(!m||!m.crew) return; const d=document.createElement('div'); d.className='jobs'; d.style.cssText='grid-column:1/-1;margin-top:4px';
+        d.innerHTML=`<button class="choice" data-maim="${i}">Aim</button><button class="choice" data-mfree="${i}" aria-pressed="${!m.aim}">Own targets</button>`; row.appendChild(d); }); }catch(e){ console.warn(e); } return r; }; }
+$('#machList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-maim],[data-mfree]'); if(!b) return; ev.stopImmediatePropagation(); const ms=ents.filter(e=>e.kind==='machine'&&!e.dead);
+  if(b.dataset.maim!=null){ const m=ms[+b.dataset.maim]; closeArmy(); startMachineAim(m); } else { freeMachineAim(ms[+b.dataset.mfree]); renderArmy(); } },true);
+// the mark: a crosshair in the faction colour, dashed line from the machine while it is in reach
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ for(const m of ents){ if(m.kind!=='machine'||m.dead||!m.aim) continue; const x=Math.round(m.aim.x), y=Math.round(m.aim.y), col=FCOL[m.team]||'#ffe066', rr=MACHINE_AIM_R*T;
+      ctx.save(); ctx.globalAlpha=0.85; ctx.strokeStyle=col; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(x,y,10,0,Math.PI*2); ctx.stroke(); ctx.fillStyle=col; ctx.fillRect(x-16,y-1,10,2); ctx.fillRect(x+6,y-1,10,2); ctx.fillRect(x-1,y-16,2,10); ctx.fillRect(x-1,y+6,2,10);
+      ctx.globalAlpha=0.25; ctx.setLineDash([4,6]); ctx.beginPath(); ctx.arc(x,y,rr,0,Math.PI*2); ctx.stroke();
+      if(Math.hypot(x-cxOf(m),y-cyOf(m))<=MACHINES[m.mtype].range*T){ ctx.globalAlpha=0.35; ctx.beginPath(); ctx.moveTo(cxOf(m),cyOf(m)); ctx.lineTo(x,y); ctx.stroke(); } ctx.restore(); } }catch(e){} return r; }; }
 })();
 </script>
 </body>
