@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791539763"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791539763"><link rel="manifest" href="manifest.webmanifest?v=1791539763"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791543973"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791543973"><link rel="manifest" href="manifest.webmanifest?v=1791543973"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.67</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.68</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.67</h3>
+    <h3>New in Beta 0.9.68</h3>
+    <p>Cover and bracing are for battles between the three factions: you, your soldiers and the enemy factions' soldiers. The guards of the wizard towers and the sky and magma castles don't take cover behind walls or brace in a line.</p>
+    <h3>Beta 0.9.67</h3>
     <p>Sturdier shared worlds: when the host switches to another app or tab, their world keeps running for everyone, so friends are no longer left waiting or dropped. A friend's game no longer runs enemy village guards, scouting parties, sky knights or enemy village growth on its own (the host runs them for everyone), and the numbers that tell enemies and animals apart carry on when the host starts the world again, so a friend's tamed animals never get mixed up with new ones.</p>
     <h3>Beta 0.9.66</h3>
     <p>A deeper underground: new worlds go twice as deep below the islands, and the sea floor still reaches all the way down to the magma realm. The lowest caves, just above the magma realm, are winding tunnels with pockets of lava instead of one huge open cavern. Cave floors have rounded edges like the hills, and underground pools of water and lava are rounded bowls with ragged rims and air pockets instead of boxes. Older worlds get the tunnels, the lava pockets, the rounded edges and the rounded pools wherever nobody has explored yet. Saved worlds now go to the browser's larger storage, so bigger worlds and more of them fit.</p>
@@ -638,7 +640,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.67</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.68</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -898,7 +900,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.67</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.68</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -917,7 +919,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.67', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.68', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12043,7 +12045,7 @@ function lightRooms(){ if(!home||!home.claimed||isGuest()) return 0; home.litRoo
 // and archers and wizards stand behind you. The line holds: melee only fight what reaches them, ranged shoot from their
 // place. The front rank braces and takes less damage from the front, and so does any soldier of any side standing
 // shoulder to shoulder with two others, so a packed enemy line is harder to break too.
-// Cover: a soldier (or you) with a solid block or a door beside them, on the side a shot comes from, is harder to hit:
+// Cover (faction soldiers and you; not the realm castles' guards): a soldier with a solid block or a door beside them, on the side a shot comes from, is harder to hit:
 // one row covered turns 35% of shots aside, a full body 60%. Archers and wizards pick targets in the open over ones in cover.
 ORDERS.form={name:'Formation',desc:'Line up in ranks facing the enemy: melee three to a block in front, archers and wizards behind you. The front rank braces, the second strikes over it, and the line holds its ground.'};
 const isMeleeCls=c=>!['archer','wizard'].includes(c);
@@ -12067,14 +12069,15 @@ function coverOf(o,fromX){ if(!o||Math.abs(fromX-cxOf(o))<2*T) return 0; const s
   const top=Math.floor((o.y+3)/T), bot=Math.floor((o.y+o.h-3)/T); let rows=0, n=0;
   for(let y=top;y<=bot;y++){ n++; const a=tileAt(adj,y), here=tileAt(c,y); if((BLOCKS[a].solid&&!BLOCKS[a].glass)||DOOR_IDS.has(a)||DOOR_IDS.has(here)) rows++; }
   return !rows?0:rows>=n?0.6:0.35; }
-function coverPick(e,nt,r,ranged){ if(!ranged||!nt||coverOf(nt,cxOf(e))===0) return nt; const d0=Math.hypot(cxOf(nt)-cxOf(e),cyOf(nt)-cyOf(e)); let best=nt, bd=1e9;
+function coverPick(e,nt,r,ranged){ if(!ranged||!nt||!FAC_TEAMS.has(nt.team)||coverOf(nt,cxOf(e))===0) return nt; const d0=Math.hypot(cxOf(nt)-cxOf(e),cyOf(nt)-cyOf(e)); let best=nt, bd=1e9;
   for(const o of ents){ if(o===nt||o.dead||!targetable(o)||!hostile(e.team,o.team)||o.kind==='animal'&&!o.angry) continue; const d=Math.hypot(cxOf(o)-cxOf(e),cyOf(o)-cyOf(e)); if(d>r||d>d0*1.4+3*T||coverOf(o,cxOf(e))>0) continue; if(d<bd){ bd=d; best=o; } }
   return best; }
 // shoulder to shoulder: two allies within a block's width of this soldier
 function braced(t,src){ if(!t||t.kind!=='human'||!src) return false; const sx=src.owner&&!src.owner.dead?cxOf(src.owner):src.x!=null?src.x+(src.w||0)/2:null; if(sx==null) return false;
   const front=Math.sign(sx-cxOf(t)); if(t.fRank===0&&player&&player.order==='form'&&t.fDir===front) return true;
   let n=0; for(const o of ents){ if(o===t||o.dead||o.kind!=='human'||o.team!==t.team) continue; if(Math.abs(cxOf(o)-cxOf(t))<0.7*T&&Math.abs(cyOf(o)-cyOf(t))<T&&++n>=2) break; } return n>=2&&(t.facing||1)===front; }
-{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ try{ if(t&&!t.dead&&!t.ghost&&src&&(t.kind==='human'||t.kind==='player')&&!t.bigBoss){
+const FAC_TEAMS=new Set(['g','b','r']);   // cover and bracing are for the three factions' battles (you and your soldiers included), not the realm castles' guards
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ try{ if(t&&!t.dead&&!t.ghost&&src&&(t.kind==='human'||t.kind==='player')&&!t.bigBoss&&FAC_TEAMS.has(t.team)){
       if(src.kind==='proj'){ const fx=src.owner&&!src.owner.dead?cxOf(src.owner):src.x+(src.w||0)/2, ch=coverOf(t,fx);
         if(ch&&Math.random()<ch){ addFloat(cxOf(t),t.y-8,'cover','#cfd8e0'); puff(cxOf(t)+Math.sign(fx-cxOf(t))*10,cyOf(t),'#a8a29a',4,50); return; } }
       if(braced(t,src)){ amt=Math.max(1,Math.round(amt*0.8)); kb=(kb||0)*0.5; } } }catch(e){ console.warn(e); }
