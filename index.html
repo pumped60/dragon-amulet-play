@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791529124"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791529124"><link rel="manifest" href="manifest.webmanifest?v=1791529124"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791531028"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791531028"><link rel="manifest" href="manifest.webmanifest?v=1791531028"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.62</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.63</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.62</h3>
+    <h3>New in Beta 0.9.63</h3>
+    <p>Trap doors: doors that lie in the floor, made at a workbench from any wood's planks, castle stone, deep stone brick or iron bars. Closed, you stand on one and nothing comes up through it. Tap it to open or shut it, jump up under it, or hold down while standing on it; it opens for you and shuts as soon as you are through. Your soldiers and tamed animals can follow you through, but enemies never open one. In your castle, the ledges up from the great hall end in trap doors that match the castle's stone, deep stone or iron, and the upper floor's west doorway has a door where a bed used to stand, so the upper floor is sealed off as your safe room.</p>
+    <h3>Beta 0.9.62</h3>
     <p>Gem weapons: at a workbench, the Iron, Gold and Diamond weapon of a kind (Silver, Gold and Diamond for staffs) plus 4 gems make a special one, and the gem decides what it does. Bows and staffs: ruby burns (Fire bow, Ember staff), sapphire splits arrows or chains lightning (Tri-shot bow, Tempest staff), emerald blasts or wards (Blast bow, Ward staff), amethyst pierces every enemy in its path (Void bow, Void staff). Knights, macebearers and Beastmasters get thrown weapons, a glaive, flail or kunai for each gem: ruby burns, sapphire chills, emerald heals you a little each hit, amethyst flies farther and knocks back harder. No weapon you can have before the diamond tier beats a Diamond weapon. Grow meal (from bones, or seeds, glowcaps and berries at a composter, and left by your farmers each morning) grows a crop a stage or a sapling into a tree. Beat both wizards to unlock the Breakdown bench: next to it, any crafted item in your bag breaks back into all its materials. Your castle's arrow slits turn dark slate and then iron as it grows, nothing spawns on top of your buildings, and the chimney on a level 2 shop house sits on its roof.</p>
     <h3>Beta 0.9.61</h3>
     <p>Rugs lie flat on the floor, covering the top of the block they sit on, and come in six kinds: wool, blue, green, golden, striped and a bamboo mat. Jade, rose quartz and azure crystals hang from ceilings and grow out of cave walls like amethyst, and mining the block that holds a crystal knocks it loose. Enemies take fall damage. Accessories and charms turn up in chests half as often. Bows and staffs say their material: Wooden bow, Iron bow, Wooden staff, Gold staff. Settings, Screen layout has sliders for the checklist, the menu icons and the action buttons, and the choice list that opens with F has the X too.</p>
@@ -626,7 +628,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.62</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.63</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -886,7 +888,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.62</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.63</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -905,7 +907,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.62', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.63', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -7013,7 +7015,7 @@ function buildCastleUpper(put,bput,cx,gy,f){ const L=cx-17, Rr=cx+16, S=B.STONE_
   // the upper hall: the portal, a throne, beds for villagers who take shelter, lanterns
   const up=gy-11; const ufl=(x,id)=>{ if(tileAt(x,up)===0) put(x,up,id); };
   if(tileAt(cx+4,up)===0&&tileAt(cx+5,up)===0&&tileAt(cx+4,up-1)===0&&tileAt(cx+5,up-1)===0) placeThrone(put,cx+4,up);
-  ufl(cx-4,B.BED); ufl(cx-12,B.BED); ufl(cx+9,B.BOOKSHELF); ufl(cx+11,B.BOOKSHELF); ufl(cx-2,B.RUG); ufl(cx+2,B.RUG);
+  ufl(cx-4,B.BED); if(tileAt(cx-12,up)===0&&tileAt(cx-12,up-1)===0){ put(cx-12,up-2,S); put(cx-12,up-1,B.DOOR_T); put(cx-12,up,B.DOOR); } ufl(cx+9,B.BOOKSHELF); ufl(cx+11,B.BOOKSHELF); ufl(cx-2,B.RUG); ufl(cx+2,B.RUG);
   for(const x of [cx-10,cx-3,cx+3,cx+10]) if(tileAt(x,gy-16)===0) put(x,gy-16,B.LANTERN);
   for(const x of [cx-9,cx-4,cx+4,cx+9]) put(x,gy-15,B.WINDOW); }
 function raiseHome(){ if(!home||!home.claimed||home.tall) return; home.tall=true; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
@@ -11869,6 +11871,65 @@ const SLITS=[B.ARROW_SLIT];
 function onMyBuilding(e){ if(!home||!home.claimed) return false; const cx=cxOf(e)/T, fy=(e.y+e.h)/T; for(const [x0,x1,gy] of buildingBoxes(true)){ if(cx>=x0-1&&cx<=x1+1&&fy<=gy+0.5&&fy>=gy-45) return true; } return false; }
 { const _sm=spawnMonsters; spawnMonsters=function(...a){ const n0=ents.length; const r=_sm(...a); try{ for(let i=n0;i<ents.length;i++){ const e=ents[i]; if((e.kind==='monster'||e.kind==='animal')&&!e.boss&&!e.camp&&onMyBuilding(e)) e.dead=true; } }catch(err){} return r; }; }
 { const _sa=spawnAnimals; spawnAnimals=function(...a){ const n0=ents.length; const r=_sa(...a); try{ for(let i=n0;i<ents.length;i++){ const e=ents[i]; if(e.kind==='animal'&&!e.tamed&&onMyBuilding(e)) e.dead=true; } }catch(err){} return r; }; }
+// ===================== Beta 0.9.63: trap doors; the castle's upper floor closes off =====================
+// A trap door is a door that lies in the floor. Closed, it is solid: you stand on it and nothing comes up through it.
+// Tap it to open or shut it; jump up under a closed one, or hold down while standing on one, and it opens for you and
+// shuts as soon as you are through. Your soldiers and tamed animals open it the same way to follow you; enemies never.
+// One for every wood, stone, deep stone and iron: the materials your houses and castle are built from.
+// In your castle the ledges up from the great hall end in trap doors in the castle's own stone, and the west doorway of
+// the upper floor (where a bed stood) has a door, so the upper floor is a sealed safe room.
+const TRAPS=[], TRAP_OF={};   // TRAP_OF[id] = {closed, open, kind} for both the closed and the open block
+{ const hatch=(cols,metal)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    r(0,0,16,16,cols[1]); r(1,1,14,14,cols[0]); r(1,1,14,1,cols[2]);   // frame and face
+    if(metal){ for(const y of [5,10]) r(1,y,14,1,cols[1]); for(const [x,y] of [[2,2],[13,2],[2,13],[13,13],[2,7],[13,7]]) r(x,y,1,1,'#e8eef6'); }
+    else for(const x of [5,10]) r(x,1,1,14,cols[1]);   // boards or slabs
+    r(2,7,12,2,cols[1]); r(2,7,12,1,'#2e2e34');   // cross brace
+    g.strokeStyle='#c9a640'; g.lineWidth=1; g.beginPath(); g.arc(8,11.5,2,0,Math.PI*2); g.stroke(); r(7,8,2,2,'#c9a640');   // ring handle
+    return c; };
+  const leaf=cols=>{ const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    r(0,0,4,16,cols[0]); r(0,0,1,16,cols[2]); r(3,0,1,16,cols[1]); r(1,6,2,2,'#c9a640'); return c; };
+  const kinds=[];
+  for(const [k,w] of Object.entries(WOODS)) if(w.plank) kinds.push([k,`${woodName(k)} trap door`,w.plankCol,[[w.plank,3]],false]);
+  kinds.push(['stone','Stone trap door',['#9a9a94','#6a6a66','#bcbcb4'],[[B.STONE_BLOCK,3]],false]);
+  kinds.push(['deep','Deep stone trap door',['#3e4252','#262a36','#5a5e70'],[[B.DEEP_STONE,3]],false]);
+  kinds.push(['iron','Iron trap door',['#7a8494','#4a5262','#c8d2e0'],[[I.IRON_BAR,2]],true]);
+  for(const [k,name,cols,need,metal] of kinds){ const cl=freeIdFrom(); const stone=k==='stone'||k==='deep';
+    defB(cl,{name,hard:metal?2.2:stone?1.4:0.5,minPow:metal?2:stone?1:0,col:cols[0]});
+    ITEMS[cl]={name,kind:'block',desc:'A door that lies in the floor. Closed, you stand on it and nothing comes up through it. Tap it, jump up under it or hold down on it to open it. Enemies cannot open it.'};
+    const op=freeIdFrom(); defB(op,{name,solid:false,hard:0.5,minPow:metal?2:stone?1:0,drop:cl,col:cols[0],place:false});
+    TEX[cl]=hatch(cols,metal); TEX[op]=leaf(cols);
+    TRAP_OF[cl]=TRAP_OF[op]={closed:cl,open:op,kind:k}; TRAPS.push(cl);
+    RECIPES.push({ out:cl, n:1, need, st:B.WORKBENCH, cat:'build' }); SELL[cl]=metal?4:2; } }
+const isTrap=id=>!!TRAP_OF[id], trapOpen=id=>!!TRAP_OF[id]&&TRAP_OF[id].open===id;
+const trapFor=kind=>TRAPS.find(id=>TRAP_OF[id].kind===kind)||TRAPS[0];
+let trapTimers=[];   // open trap doors that shut by themselves: {x,y,t}
+function setTrap(x,y,open,auto){ const id=tileAt(x,y), s=TRAP_OF[id]; if(!s) return false; const want=open?s.open:s.closed; if(id===want) return false;
+  if(!open&&ents.some(o=>!o.dead&&overlap({x:x*T,y:y*T,w:T,h:T},o))) return false;
+  mpRun(()=>setTile(x,y,want)); trapTimers=trapTimers.filter(t=>!(t.x===x&&t.y===y)); if(open&&auto) trapTimers.push({x,y,t:0.6});
+  if(typeof sfx==='function') sfx('door',x*T+8,y*T+8); return true; }
+const trapAlly=e=>e===player||(player&&!e.dead&&((e.kind==='human'&&e.team===player.team&&!e.ghost)||(e.kind==='animal'&&e.tamed)));
+// tap a trap door to open or shut it (before the canvas's own tap handler)
+cv.addEventListener('pointerdown',ev=>{ if(state!=='play'||!player||player.dead||touches.size>=2) return; setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T), id=tileAt(tx,ty), it=heldItem();
+  if(!isTrap(id)||Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))>REACH||(it&&['pick','hammer'].includes(ITEMS[it.id].kind))) return;
+  if(setTrap(tx,ty,!trapOpen(id),false)){ ev.stopImmediatePropagation(); ev.preventDefault(); } },true);
+function trapTick(dt){ if(!world||!player||state!=='play') return;
+  for(const e of ents){ if(e.dead||!trapAlly(e)) continue; const x0=Math.floor((e.x+2)/T), x1=Math.floor((e.x+e.w-3)/T);
+    // up: rising toward a closed trap door just overhead (others only when you are above them)
+    const up=(e.vy<0||(e===player&&input.jump))&&(e===player||cyOf(player)<e.y-T);
+    // down: standing on one (the player holding down; others when you are below them)
+    const fy=Math.floor((e.y+e.h+3)/T), down=e===player?input.down:cyOf(player)>e.y+e.h+2*T;
+    for(let x=x0;x<=x1;x++){ if(up) for(let hy=Math.floor((e.y-1)/T);hy>=Math.floor((e.y-26)/T);hy--){ const id=tileAt(x,hy); if(isTrap(id)&&!trapOpen(id)) setTrap(x,hy,true,true); if(isSolid(x,hy)) break; } if(down){ const id=tileAt(x,fy); if(isTrap(id)&&!trapOpen(id)) setTrap(x,fy,true,true); } } }
+  for(const t of trapTimers){ if(!trapOpen(tileAt(t.x,t.y))){ t.gone=true; continue; } if(ents.some(o=>!o.dead&&overlap({x:t.x*T,y:t.y*T,w:T,h:T},o))) t.t=0.12; else if((t.t-=dt)<=0&&setTrap(t.x,t.y,false)) t.gone=true; }
+  trapTimers=trapTimers.filter(t=>!t.gone); }
+{ const _u=update; update=function(dt){ _u(dt); try{ trapTick(dt); }catch(e){ console.warn(e); } }; }
+// the castle: trap doors at the top of the hall's ledges in the castle's stone, and a door in the upper floor's west doorway
+function castleTraps(){ if(!home||!home.claimed||!home.tall||isGuest()||!TRAPS.length) return; const cx=home.castleCx, gy=home.gy, want=trapFor(['stone','deep','iron'][Math.max(0,Math.min(2,villageTier()))]);
+  facRun(()=>{ for(const x of [cx-9,cx-8]){ const id=tileAt(x,gy-10), w=trapOpen(id)?TRAP_OF[want].open:want; if((id===B.PLATFORM||isTrap(id))&&id!==w) setTile(x,gy-10,w); }
+    if(!home.castleDoorV){ home.castleDoorV=1; const dx=cx-12, up=gy-11; if(isBedId(tileAt(dx,up))) setTile(dx,up,0);
+      if(!DOOR_IDS.has(tileAt(dx,up))&&tileAt(dx,up)===0&&tileAt(dx,up-1)===0){ if(!tileAt(dx,up-2)) setTile(dx,up-2,B.STONE_BLOCK); setTile(dx,up-1,B.DOOR_T); setTile(dx,up,B.DOOR); } } }); }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ castleTraps(); }catch(e){ console.warn(e); } return r; }; }
+{ const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ castleTraps(); }catch(e){ console.warn(e); } return r; }; }
+{ const _rh=raiseHome; raiseHome=function(...a){ const r=_rh(...a); try{ castleTraps(); }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
