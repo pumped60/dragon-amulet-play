@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791501251"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791501251"><link rel="manifest" href="manifest.webmanifest?v=1791501251"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791504063"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791504063"><link rel="manifest" href="manifest.webmanifest?v=1791504063"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.52</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.53</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.52</h3>
+    <h3>New in Beta 0.9.53</h3>
+    <p>When a boss falls in a shared world, every player gets their own copy of its loot; coins and everything else on the ground go to whoever picks them up first. Blasts, cannon shots and fires leave smoke that drifts up and fades over about 20 seconds and piles up in a big battle: it greys the view, and arrows and spells shot through it spread from 5% in a light haze up to 35% in thick smoke. Rain and storms still fall but leave no water on the ground and bring no floods, and fog days come in light, normal and thick. Days and nights last twice as long (10 minutes of day, 4 of night). The castle's whole second floor is the safe room. While you are away, your world keeps going (up to 3 days): crops grow, and woodcutters, farmers and miners bring in their work. Stone buildings have light roofs in your faction's colour. Underground there are jade, rose and azure caves with glowing crystals, stalagmite caves, root caverns with glow bulbs and fossil beds.</p>
+    <h3>Beta 0.9.52</h3>
     <p>A grappling hook that has bitten holds a taut, straight line from your hand to the claw while it pulls you in and while you hang; the rope no longer folds over into a loop above you.</p>
     <h3>Beta 0.9.51</h3>
     <p>Paths run along the ground between the buildings of your village and grow with it: trampled dirt for a Hamlet, cobblestone for a Town and an iron walkway for a City. Enemy villages have them too. You can also make all three to lay your own: dirt path from dirt, cobblestone path from stone, iron walkway from iron and stone.</p>
@@ -606,7 +608,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.52</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.53</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -866,7 +868,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.52</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.53</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -883,9 +885,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 // ================= constants =================
 const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
-const DAY_LEN = 420, NIGHT_AT = 5/7, PARTY_MAX = 20; // 5 minutes of day, 2 of night
+const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.52', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.53', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2603,7 +2605,7 @@ function spawnDrop(x,y,id,n,coins){ if(!coins&&!ITEMS[id]) return; drops.push({x
 function dropCoins(x,y,total){ while(total>0){ const c=Math.min(total,total>40?25:total>8?5:1); spawnDrop(x,y,0,0,c); total-=c; } }
 function updateDrops(dt){ if(!player) return; const px=cxOf(player), py=cyOf(player);
   for(const d of drops){ d.age+=dt; const near=!player.dead&&Math.hypot(d.x-px,d.y-py)<2*T+8;
-    if(near&&d.age>0.35&&(d.coins||roomFor(d.id,d.n))){ if(d.ghost&&typeof MP!=='undefined'){ (MP.picks=MP.picks||[]).push(d.did); (MP.picked=MP.picked||new Set()).add(d.did); } d.vx=(px-d.x)*8; d.vy=(py-d.y)*8; d.x+=d.vx*dt; d.y+=d.vy*dt; if(Math.hypot(d.x-px,d.y-py)<10){ d.dead=true; if(typeof sfx==='function') sfx(d.coins?'coin':'pickup'); if(d.coins) addCoins(d.coins,px,player.y); else obtain(d.id,d.n,true); } continue; }
+    if(near&&d.age>0.35&&(d.coins||roomFor(d.id,d.n))){ if(d.ghost&&typeof MP!=='undefined'){ (MP.picks=MP.picks||[]).push(d.did); (MP.picked=MP.picked||new Set()).add(d.did); d.dead=true; continue; }   /* a friend's world: the host hands it over if nobody got it first */ d.vx=(px-d.x)*8; d.vy=(py-d.y)*8; d.x+=d.vx*dt; d.y+=d.vy*dt; if(Math.hypot(d.x-px,d.y-py)<10){ d.dead=true; if(typeof sfx==='function') sfx(d.coins?'coin':'pickup'); if(d.coins) addCoins(d.coins,px,player.y); else obtain(d.id,d.n,true); } continue; }
     d.vy=Math.min(d.vy+GRAV*dt,500); const nx=d.x+d.vx*dt, ny=d.y+d.vy*dt;
     if(isSolid(Math.floor(nx/T),Math.floor(d.y/T))) d.vx*=-0.3; else d.x=nx;
     { const tx=Math.floor(d.x/T), ty=Math.floor((ny+3)/T), b=BLOCKS[tileAt(tx,ty)]; if(isSolid(tx,ty)||(b&&b.platform&&d.vy>=0&&(d.y+3)<=ty*T+2)){ d.vy=0; d.vx*=0.8; d.y=Math.min(ny,ty*T-3); } else d.y=ny; }
@@ -5708,7 +5710,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   const sold=p.party.filter(e=>e&&!e.dead&&!e.aboard).concat(ents.filter(e=>!e.dead&&e.stationed&&e.team===p.team&&!p.party.includes(e)),ents.filter(e=>!e.dead&&e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&e.team===p.team)).slice(0,MP_CAP+4)
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h',e.upArmor||0]);
   const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), vt:mpVillageTierOut(), wk:mpWorkersOut(), cg:mpCagesOut(), vg:MP.guest?mpVillageTierOut():0, tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
-  if(MP.host){ pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
+  if(MP.host){ pr.pg=(MP.pgOut||[]).slice(-16); pr.pgs=MP.pgSid||0; pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
   if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
     pr.mobs=mpMobList(); pr.sh=mpShotsOut(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,80); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
@@ -5899,7 +5901,7 @@ function mpFromPeer(r,d,peerId){ r.key=mpKeyOf(peerId);
   // bosses: everyone's damage counts (the lower health wins)
   if(d.bh) for(const e of ents) if(!e.dead&&(e.bigBoss||e.kind==='dragon')){ const k=(e.name||e.kind).replace(/[^a-z]/gi,'').slice(0,12); if(d.bh[k]!=null&&d.bh[k]<e.hp){ e.hp=d.bh[k]; if(e.hp<=0) kill(e,player); } }
   if(MP.host&&d.vq&&d.vq.length) applyRoles(d.vq);
-  if(MP.host&&d.pk&&d.pk.length){ for(const did of d.pk){ const i=drops.findIndex(o=>o.did===did); if(i>=0) drops.splice(i,1); } }
+  if(MP.host&&d.pk&&d.pk.length){ for(const did of d.pk){ const i=drops.findIndex(o=>o.did===did&&!o.dead); if(i>=0){ const o=drops[i]; drops.splice(i,1); if(typeof mpGrant==='function') mpGrant(r.key,o.id,o.n,o.coins||0); } } }
   if(MP.guest&&d.host){ if(d.vr) applyRoles(d.vr); if(d.dr) mpGhostDrops(d.dr);
     if(d.hc&&home&&!home.claimed){ home.claimed=true; } if(d.cq!=null){ for(const f of ['g','b','r']) conquered[f]=d.cq.includes(f); }
     if(d.hm!=null&&home&&(home.miners||0)<d.hm){ MP.syncing=true; try{ while((home.miners||0)<d.hm) addHomeMiner(); }finally{ MP.syncing=false; } } }
@@ -6743,7 +6745,7 @@ function villageWorkerAct(e,dt){ e.anim+=dt; e.vT=(e.vT||0)-dt;
 function raidersNear(x0,x1,gy,team){ return ents.some(o=>!o.dead&&(o.kind==='human'||o.kind==='monster'||o.kind==='dragon')&&o.team!==team&&hostile(team,o.team)&&!o.ghost&&cxOf(o)/T>x0&&cxOf(o)/T<x1&&Math.abs(cyOf(o)/T-gy)<24&&(o.kind!=='monster'||o.warParty||o.raid||(o.target&&o.target.kind==='villager'))); }
 let shelterT=0;
 function shelterTick(dt){ shelterT-=dt; if(shelterT>0||!player) return; shelterT=1; if(typeof MP!=='undefined'&&MP.guest) return;
-  const villages=[]; if(home&&home.claimed) villages.push({team:player.team,x0:home.x0-30,x1:home.x1+30,gy:home.gy,cx:home.castleCx,floor:home.gy-(home.tall?10:0),safe:home.safeRoom?[home.castleCx+8,home.castleCx+10.4]:null});
+  const villages=[]; if(home&&home.claimed) villages.push({team:player.team,x0:home.x0-30,x1:home.x1+30,gy:home.gy,cx:home.castleCx,floor:home.gy-(home.tall?10:0),safe:home.safeRoom?(home.safeFloorV?[home.castleCx-10,home.castleCx+10]:[home.castleCx+8,home.castleCx+10.4]):null});
   for(const b of bases) if(!conquered[b.f]) villages.push({team:b.f,x0:b.x0-30,x1:b.x1+60,gy:b.gy,cx:b.cx,floor:b.gy});
   for(const v of villages){ const raid=raidersNear(v.x0,v.x1,v.gy,v.team); const ppl=ents.filter(o=>!o.dead&&o.kind==='villager'&&o.team===v.team&&o.role!=='miner'&&cxOf(o)/T>v.x0-20&&cxOf(o)/T<v.x1+20);
     for(const o of ppl){ if(raid&&!o.shelter){ o.shelter=true; o.calmT=0; puff(cxOf(o),cyOf(o),'#e8e4d8',6,60); o.x=(v.safe?v.safe[0]+Math.random()*(v.safe[1]-v.safe[0]):v.cx-6+Math.random()*12)*T; o.y=v.floor*T-o.h-1; o.vx=o.vy=0; puff(cxOf(o),cyOf(o),'#e8e4d8',6,60); if(v.team===player.team&&!v.warned){ v.warned=true; toast('Raiders! Your villagers run to the castle to hide.',3); } }
@@ -7138,7 +7140,7 @@ function addSafeRoom(put,cx,gy){ const S=B.STONE_BLOCK; for(let y=gy-19;y<=gy-11
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.tall&&!home.safeRoom&&!(typeof MP!=='undefined'&&MP.guest)){ facRun(()=>addSafeRoom(setPut,home.castleCx,home.gy)); home.safeRoom=true; } }catch(e){ console.warn(e); } return r; }; }
 // when villagers hide, the safe room doors are shut behind them
 { const _st=shelterTick; shelterTick=function(dt){ const hidden0=ents.some(o=>o.shelter&&o.team===(player&&player.team)); const r=_st(dt); const hidden1=ents.some(o=>o.shelter&&!o.dead&&o.team===(player&&player.team));
-    if(home&&home.safeRoom&&hidden1&&!hidden0) for(const x of [home.castleCx+7,home.castleCx+11]) try{ setDoor(x,home.gy-11,false); }catch(e){}
+    if(home&&home.safeRoom&&hidden1&&!hidden0) for(const x of [home.castleCx-12,home.castleCx+7,home.castleCx+11]) try{ setDoor(x,home.gy-11,false); }catch(e){}
     if(home&&hidden0&&!hidden1) toast('The raiders are gone. Your villagers come back downstairs.',3); return r; }; }
 
 // ---- enemy castles have a second floor too ----
@@ -7635,7 +7637,7 @@ function farmPen(x0,gy,animals){ const p0=x0+20, p1=x0+33, pen={x0:p0,x1:p1,ty:g
     const btn=(attr,label,on)=>`<button class="xbtn" ${attr} aria-pressed="${!!on}" style="margin:3px">${label}</button>`;
     let h='<p><b>Farm</b></p>'+btn('data-gw="farm"','Build a prepped farm here')+btn('data-gw="ripen"','Ripen crops nearby')+btn('data-gw="morning"','Skip to next morning')+
       (home&&home.testFarmAt?btn('data-gw="gofarm"','Go to the test farm'):'')+'<p style="font-size:9px">A prepped farm has 16 crop plots (some ripe), a pen with 6 tamed animals and a trough chest, and a farmhouse with a bed, workbench, furnace and a chest of seeds and food.</p>';
-    h+='<p><b>Weather</b></p>'+[['natural','Natural'],['clear','Clear sky'],['rain','Rain'],['storm','Thunderstorm'],['snow','Snowstorm']].map(([k,l])=>btn(`data-gwx="${k}"`,l,cur===k)).join('');
+    h+='<p><b>Weather</b></p>'+[['natural','Natural'],['clear','Clear sky'],['rain','Rain'],['storm','Thunderstorm'],['snow','Snowstorm'],['fog1','Light fog'],['fog2','Fog'],['fog3','Thick fog']].map(([k,l])=>btn(`data-gwx="${k}"`,l,cur===k)).join('');
     h+='<p><b>Strength</b></p>'+['light','medium','strong'].map(k=>btn(`data-gws="${k}"`,k[0].toUpperCase()+k.slice(1),wx===k)).join('');
     h+='<p><b>Right now</b></p>'+btn('data-gw="flood"','Flash flood')+btn('data-gw="bolt"','Lightning strike')+btn('data-gw="dry"','Dry up rain water');
     $('#godList').innerHTML=h; for(const b of document.querySelectorAll('#godTabs [data-g]')) b.setAttribute('aria-pressed',b.dataset.g===godTab); }; }
@@ -11277,6 +11279,175 @@ function layAllPaths(){ if(!home||isGuest()) return; try{
     for(const b of (typeof bases!=='undefined'&&bases)||[]){ if(!b||!isFinite(b.cx)) continue; let x0=b.cx-20, x1=b.cx+20; for(const h of b.houses||[]) if(h&&isFinite(h.x0)){ x0=Math.min(x0,h.x0-3); x1=Math.max(x1,h.x1+3); }
       layPaths(x0-16,x1+16,b.gy,enemyTier(b)); } }catch(e){ console.warn(e); } }
 { const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); layAllPaths(); return r; }; }
+// ===================== rain without rainwater, fog, the whole second floor as the safe room =====================
+// Rain and storms still fall and sound the same, but leave no water on the ground and bring no flash floods; rainwater
+// left in older worlds dries up once (home.noRainV). Fog days come in three strengths (weather 'fog1' light, 'fog2',
+// 'fog3' thick): a pale haze over the surface, thinner indoors and gone underground. The castle's whole second floor is
+// the safe room: the wall that boxed off a small room at its east end comes down (home.safeFloorV), and hiding villagers
+// spread out along the floor.
+rainTick=function(){};
+flashFloodTick=function(){};
+const isFog=w=>typeof w==='string'&&w.startsWith('fog');
+const fogLv=()=>isFog(weather)?(+weather[3]||1):0;
+{ const _wo=weatherOf; weatherOf=function(d){ const w=_wo(d); if(w!=='clear') return w; const s=seasonOf(d), ch={spring:0.25,summer:0.1,autumn:0.3,winter:0.15}[s]||0.15;
+    if(dayRand(d,13)>=ch) return w; const r=dayRand(d,17); return r<0.45?'fog1':r<0.8?'fog2':'fog3'; }; }
+{ const _sl=seasonLabel; seasonLabel=function(){ if(isFog(weather)) return curSeason+', '+['','light fog','fog','thick fog'][fogLv()]; return _sl(); }; }
+let fogBlobs=[];
+{ const _dw=drawWeather; drawWeather=function(...a){ if(!isFog(weather)) return _dw(...a); if(!player) return; const pc=clamp(Math.floor(cxOf(player)/T),0,W-1), py=Math.floor(cyOf(player)/T);
+    if(player.y<skyOff*T||player.y>magmaY*T||py>surf[pc]+18) return; const lv=fogLv(), base=[0,0.16,0.3,0.48][lv]*(exposedAt(pc,py)?1:0.45);
+    ctx.fillStyle=`rgba(206,212,220,${base})`; ctx.fillRect(camX,camY,viewW,viewH);
+    while(fogBlobs.length<10) fogBlobs.push({x:camX+Math.random()*viewW,y:camY+Math.random()*viewH,r:80+Math.random()*140,v:6+Math.random()*10});
+    const dt=1/60; for(const b of fogBlobs){ b.x+=b.v*dt; if(b.x-b.r>camX+viewW||b.x+b.r<camX-200||b.y<camY-300||b.y>camY+viewH+300){ b.x=camX-b.r+Math.random()*40; b.y=camY+Math.random()*viewH; }
+      const g=ctx.createRadialGradient(b.x,b.y,0,b.x,b.y,b.r); g.addColorStop(0,`rgba(220,226,232,${base*0.7})`); g.addColorStop(1,'rgba(220,226,232,0)'); ctx.fillStyle=g; ctx.fillRect(b.x-b.r,b.y-b.r,b.r*2,b.r*2); } }; }
+// the second floor as one safe room
+function openSafeFloor(){ if(!home||!home.tall||home.safeFloorV||isGuest()) return; home.safeFloorV=1; const cx=home.castleCx, gy=home.gy, x=cx+7;
+  facRun(()=>{ for(let y=gy-19;y<=gy-11;y++){ const id=tileAt(x,y); if(!id||id===B.THRONE||id===B.PART) continue; if(id===B.STONE_BLOCK||DOOR_IDS.has(id)||(typeof SKIN_OF!=='undefined'&&SKIN_OF.get(id)==='wall')) setTile(x,y,0); }
+    if(!bg[(gy-15)*W+x]) for(let y=gy-19;y<=gy-11;y++) bset(x,y,bg[y*W+x-1]||11); }); }
+{ const _as=addSafeRoom; addSafeRoom=function(put,cx,gy,...a){ if(home&&home.castleCx===cx){ home.safeFloorV=0; setTimeout(()=>{ try{ openSafeFloor(); }catch(e){} },0); } return _as(put,cx,gy,...a); }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()){ if(home.safeRoom) openSafeFloor(); if(!home.noRainV){ home.noRainV=1; try{ dryAllRain(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== boss loot for every player, one taker for everything else; battle smoke =====================
+// Shared worlds: when a boss falls, every player gets their own copy of each item it drops (straight into the bag, or at
+// their feet when the bag is full). Coins and every other item on the ground go to whoever reaches them first: a
+// friend's pickup is a claim the host answers (presence `pg`: [seq, player, id, n, coins]), and only one claim wins.
+// Smoke: blasts, cannon shots, fireballs and fire leave smoke that drifts up and fades over about 20 seconds and piles
+// up when there is a lot going on. It greys the view, and arrows and spells fired through it spread from 5% (a light
+// haze) up to 35% (thick smoke), for everyone.
+
+// ---- loot ----
+function mpGrant(key,id,n,coins){ if(!MP.pgSid) MP.pgSid=1+((Math.random()*1e9)|0); (MP.pgOut=MP.pgOut||[]).push([MP.pgSeq=(MP.pgSeq||0)+1,key,id||0,n||0,coins||0]); if(MP.pgOut.length>16) MP.pgOut.shift(); }
+const isBossEnt=e=>!!(e&&(e.bigBoss||e.boss||e.skyBoss||e.magmaBoss||e.magmaLord||e.kind==='dragon'||e.kind==='kraken'));
+{ const _k=kill; kill=function(e,src,...a){ const boss=isBossEnt(e)&&!e.dead, n0=drops.length; const r=_k(e,src,...a);
+    try{ if(boss&&typeof MP!=='undefined'&&MP.on){ const fresh=drops.slice(n0).filter(d=>!d.coins&&d.id&&!d.ghost);
+        if(MP.guest){ for(const d of fresh) d.dead=true; }   // the host hands every player their copy
+        else if(fresh.length){ for(const d of fresh){ for(const rm of MP.remote.values()) if(rm.key) mpGrant(rm.key,d.id,d.n,0);
+            if(roomFor(d.id,d.n)||isUpgradeItem(d.id)){ d.dead=true; obtain(d.id,d.n,true); } else d.mine=true; }
+          toast('Boss loot: every player gets their own copy',3.5); } } }catch(err){ console.warn(err); } return r; }; }
+// the host also sends coins on the ground, so anyone can pick them up (once)
+mpDropList=function(){ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return []; const out=[];
+  for(const d of drops){ if(d.ghost||d.mine||d.dead) continue; if(!gs.some(r=>Math.abs(d.x-r.proxy.x)<40*T&&Math.abs(d.y-r.proxy.y)<25*T)) continue; if(!d.did) d.did=++mpDid;
+    out.push([d.did,d.coins?0:d.id,d.coins?0:d.n,Math.round(d.x),Math.round(d.y),d.coins||0]); if(out.length>=24) break; } return out; };
+{ const _gd=mpGhostDrops; mpGhostDrops=function(list,...a){ const r=_gd(list,...a); try{ for(const o of list) if(o[5]){ const d=drops.find(q=>q.ghost&&q.did===o[0]); if(d){ d.coins=o[5]; d.id=0; } } }catch(e){} return r; }; }
+// a friend receives what the host hands over
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(MP.guest&&d.host&&Array.isArray(d.pg)){ if(MP.pgHost!==d.pgs){ MP.pgHost=d.pgs; MP.pgSeen=0; }
+      for(const [sq,to,id,n,c] of d.pg){ if(to!==MP.myKey||sq<=(MP.pgSeen||0)) continue; MP.pgSeen=sq;
+        if(c){ addCoins(c,cxOf(player),player.y); if(typeof sfx==='function') sfx('coin'); }
+        else if(ITEMS[id]){ if(roomFor(id,n)||isUpgradeItem(id)) obtain(id,n,true); else drops.push({x:cxOf(player),y:player.y,vx:0,vy:-60,id,n,age:0,mine:true}); if(typeof sfx==='function') sfx('pickup'); invDirty=true; } } } }catch(e){ console.warn(e); } return res; }; }
+
+// ---- smoke ----
+const SMK=4, SMK_FADE=7;   // cells of 4x4 blocks; density halves in about 5 s and is gone in about 20 s
+let smokeW=0, smokeH=0, smoke=null; const smokeOn=new Set();
+function smokeGrid(){ if(!world) return false; if(!smoke||smokeW!==Math.ceil(W/SMK)||smokeH!==Math.ceil(H/SMK)){ smokeW=Math.ceil(W/SMK); smokeH=Math.ceil(H/SMK); smoke=new Float32Array(smokeW*smokeH); smokeOn.clear(); } return true; }
+function addSmoke(px,py,rad,amt){ if(!smokeGrid()) return; const cx=Math.floor(px/T/SMK), cy=Math.floor(py/T/SMK), rc=Math.max(0,Math.ceil(rad/T/SMK));
+  for(let y=cy-rc;y<=cy+rc;y++) for(let x=cx-rc;x<=cx+rc;x++){ if(x<0||y<0||x>=smokeW||y>=smokeH) continue; const d=rc?Math.hypot(x-cx,y-cy)/(rc+0.5):0; if(d>1) continue; const i=y*smokeW+x; smoke[i]=Math.min(1.6,smoke[i]+amt*(1-d*0.6)); smokeOn.add(i); } }
+function smokeAt(px,py){ if(!smoke) return 0; const x=Math.floor(px/T/SMK), y=Math.floor(py/T/SMK); if(x<0||y<0||x>=smokeW||y>=smokeH) return 0; return smoke[y*smokeW+x]; }
+// 0 below a thin wisp, then 5% at a light haze rising to 35% in thick smoke
+const smokeSpread=d=>d<0.05?0:Math.min(0.35,0.05+(d-0.05)*0.25);
+let smokeFireT=0;
+function smokeTick(dt){ if(!smokeGrid()) return; const k=Math.exp(-dt/SMK_FADE), up=Math.min(0.5,dt*0.06);
+  for(const i of [...smokeOn]){ let v=smoke[i]*k; if(i>=smokeW){ const m=v*up; smoke[i-smokeW]=Math.min(1.6,smoke[i-smokeW]+m); smokeOn.add(i-smokeW); v-=m; } smoke[i]=v; if(v<0.01){ smoke[i]=0; smokeOn.delete(i); } }
+  if((smokeFireT-=dt)<=0){ smokeFireT=0.5; if(typeof fires!=='undefined') for(const [i,f] of fires){ if(f&&f.vis) continue; addSmoke((i%W)*T+8,((i/W)|0)*T,0,0.02); } }
+  // shots: a smoky muzzle or a smoky line of fire throws them off; cannon shots leave smoke where they are fired
+  for(const p of projs){ if(p.smk||p.visual) continue; p.smk=true; if(p.kind==='ball'){ addSmoke(p.x,p.y,24,0.06); continue; }
+    if(!p.src||!(p.kind==='arrow'||p.kind==='magic'||p.kind==='fireball'||p.kind==='fire'||p.kind==='bolt'||p.kind==='spell')) continue;
+    const sp=Math.hypot(p.vx,p.vy); if(!sp) continue; const ux=p.vx/sp, uy=p.vy/sp; let d=smokeAt(p.x,p.y); for(const s of [3,6,9]) d=Math.max(d,smokeAt(p.x+ux*s*T,p.y+uy*s*T));
+    const f=smokeSpread(d); if(!f) continue; const a=(Math.random()*2-1)*f*0.6, c=Math.cos(a), s=Math.sin(a); const vx=p.vx*c-p.vy*s, vy=p.vx*s+p.vy*c; p.vx=vx; p.vy=vy; } }
+{ const _u=update; update=function(dt){ _u(dt); if(state==='play') try{ smokeTick(dt); }catch(e){ console.warn(e); } }; }
+{ const _bb=bombBlast; bombBlast=function(px,py,k,...a){ const r=_bb(px,py,k,...a); try{ addSmoke(px,py,((k&&k.r)||3)*T*1.6,0.25); }catch(e){} return r; }; }
+{ const _sp=splash; splash=function(pr,...a){ const r=_sp(pr,...a); try{ addSmoke(pr.x,pr.y,(pr.splash||40)*1.3,pr.noBlast?0.06:0.15); }catch(e){} return r; }; }
+// drawn as soft grey clouds over the world, thicker where more smoke has gathered
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ if(smoke&&smokeOn.size){ const cs=SMK*T, x0=Math.floor(camX/cs)-1, x1=Math.ceil((camX+viewW)/cs)+1, y0=Math.floor(camY/cs)-1, y1=Math.ceil((camY+viewH)/cs)+1, now=performance.now()/1000;
+      for(let y=Math.max(0,y0);y<=Math.min(smokeH-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(smokeW-1,x1);x++){ const v=smoke[y*smokeW+x]; if(v<0.03) continue;
+        const a=Math.min(0.62,v*0.5), cx=x*cs+cs/2+Math.sin(now*0.4+x*1.7+y)*6, cy=y*cs+cs/2+Math.cos(now*0.3+x+y*2.1)*5, rr=cs*0.95;
+        const g=ctx.createRadialGradient(cx,cy,0,cx,cy,rr); g.addColorStop(0,`rgba(120,118,116,${a})`); g.addColorStop(0.6,`rgba(130,128,126,${a*0.55})`); g.addColorStop(1,'rgba(130,128,126,0)'); ctx.fillStyle=g; ctx.fillRect(cx-rr,cy-rr,rr*2,rr*2); } } }catch(e){} return r; }; }
+// ===================== light faction roofs; new underground biomes =====================
+// Stone-stage buildings wear light roof tiles in their faction's colour (light red, light green, light blue); the iron
+// stage keeps the painted iron roof. Underground, plain cave rock gives way here and there to six biomes (biome2At):
+// jade caves (light green stone and jade shards), rose caves (light red stone and rose quartz), azure caves (light blue
+// stone and azure shards, deeper down), stalagmite caves (dripstone with stalagmites and stalactites), root caverns
+// (earth with hanging roots and glowing bulbs) and fossil beds (sandstone and fossil stone). New worlds get them when
+// they are made; older worlds get them in ground nobody has explored yet (home.biomes2).
+
+// ---- blocks ----
+const BIO={};
+{ const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
+  let sd=12345; const rnd=()=>((sd=(sd*1103515245+12345)&0x7fffffff)/0x7fffffff);
+  const rock=(base,lt,dk)=>tex(r=>{ r(0,0,16,16,base); for(let k=0;k<26;k++) r((rnd()*16)|0,(rnd()*16)|0,1,1,rnd()<0.5?lt:dk); for(let k=0;k<3;k++){ const x=(rnd()*12)|0, y=(rnd()*13)|0, w=2+((rnd()*3)|0); r(x,y,w,1,lt); r(x,y+1,w,1,dk); } });
+  const def=(key,o,draw,item)=>{ const id=freeIdFrom(); BIO[key]=id; B[key]=id; defB(id,Object.assign({drop:id},o)); TEX[id]=draw(); ITEMS[id]=Object.assign({name:o.name,kind:'block'},item||{}); return id; };
+  def('JADE_STONE',{name:'Jade stone',hard:1.4,col:'#8fd0a0'},()=>rock('#8fd0a0','#b8ecc4','#62a878'),{desc:'Pale green stone from the jade caves'});
+  def('ROSE_STONE',{name:'Rose stone',hard:1.4,col:'#e2a4ac'},()=>rock('#e2a4ac','#f6c8ce','#b87882'),{desc:'Pale red stone from the rose caves'});
+  def('AZURE_STONE',{name:'Azure stone',hard:1.5,col:'#a2c8ea'},()=>rock('#a2c8ea','#cce4f8','#6e9cc8'),{desc:'Pale blue stone from the azure caves'});
+  def('DRIPSTONE',{name:'Dripstone',hard:1.2,col:'#b4a48c'},()=>tex(r=>{ r(0,0,16,16,'#b4a48c'); for(let x=0;x<16;x+=3) r(x,0,1,16,'#9a8a72'); for(let y=2;y<16;y+=5) r(0,y,16,1,'#ccbea6'); }),{desc:'Banded rock built up drop by drop in the stalagmite caves'});
+  def('FOSSIL_STONE',{name:'Fossil stone',hard:1.2,col:'#d8c8a0'},()=>tex(r=>{ r(0,0,16,16,'#d8c8a0'); r(0,0,16,1,'#e8dcbc'); r(3,5,8,2,'#f4f0e0'); r(2,4,2,1,'#f4f0e0'); r(10,4,2,1,'#f4f0e0'); r(2,7,2,1,'#f4f0e0'); r(10,7,2,1,'#f4f0e0'); r(5,11,6,1,'#e8e0c8'); r(6,10,1,3,'#e8e0c8'); r(9,10,1,3,'#e8e0c8'); }),{desc:'Sandstone holding the bones of long-gone creatures'});
+  const shard=(base,lt)=>tex(r=>{ r(7,4,2,12,base); r(4,8,2,8,base); r(10,7,2,9,base); r(7,4,1,10,lt); r(4,8,1,6,lt); r(10,7,1,7,lt); r(3,15,10,1,'#5a5a62'); });
+  def('JADE_SHARD',{name:'Jade shard',solid:false,hard:0.6,light:2,col:'#6ae08a'},()=>shard('#4ac070','#b8f4c8'),{desc:'A glowing green crystal from the jade caves'});
+  def('ROSE_QUARTZ',{name:'Rose quartz',solid:false,hard:0.6,light:2,col:'#f08aa0'},()=>shard('#e06a88','#ffd0dc'),{desc:'A glowing pink crystal from the rose caves'});
+  def('AZURE_SHARD',{name:'Azure shard',solid:false,hard:0.6,light:2,col:'#6ab0f0'},()=>shard('#3a8ae0','#c8e4ff'),{desc:'A glowing blue crystal from the azure caves'});
+  def('STALAGMITE',{name:'Stalagmite',solid:false,hard:0.5,col:'#a89880'},()=>tex(r=>{ r(6,2,4,14,'#a89880'); r(5,8,6,8,'#a89880'); r(4,12,8,4,'#a89880'); r(7,0,2,3,'#a89880'); r(6,3,1,12,'#c8baa2'); r(10,9,1,7,'#86786a'); }),{desc:'A rock spike growing up from a cave floor'});
+  def('STALACTITE',{name:'Stalactite',solid:false,hard:0.5,col:'#a89880'},()=>tex(r=>{ r(6,0,4,14,'#a89880'); r(5,0,6,8,'#a89880'); r(4,0,8,4,'#a89880'); r(7,13,2,3,'#a89880'); r(6,1,1,12,'#c8baa2'); r(10,0,1,7,'#86786a'); r(7,15,1,1,'#bfe6ff'); }),{desc:'A rock spike hanging from a cave ceiling'});
+  def('GLOW_BULB',{name:'Glow bulb',solid:false,hard:0.2,light:3,col:'#e8e070'},()=>tex(r=>{ r(7,0,2,6,'#6a4a2a'); r(5,6,6,6,'#d8c850'); r(6,7,4,4,'#fff6a0'); r(6,12,4,1,'#a8983a'); }),{desc:'A glowing bulb that hangs from roots in the root caverns. A soft light for your home'});
+  // back walls for the coloured caves (darkened copies of their stone)
+  const bgOf=src=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.55)'; g.fillRect(0,0,16,16); return c; };
+  BIO.bg={}; [['JADE_STONE',22],['ROSE_STONE',23],['AZURE_STONE',24],['DRIPSTONE',25],['FOSSIL_STONE',26]].forEach(([k,v])=>{ BGTEX[v]=bgOf(TEX[BIO[k]]); BIO.bg[k]=v; });
+  for(const k of ['JADE_SHARD','ROSE_QUARTZ','AZURE_SHARD','GLOW_BULB']){ SELL[BIO[k]]=6; }
+  for(const k of ['JADE_STONE','ROSE_STONE','AZURE_STONE','DRIPSTONE','FOSSIL_STONE']) SELL[BIO[k]]=2;
+  // polished bricks from the new stones
+  for(const [k,nm,col] of [['JADE_STONE','Jade brick','#8fd0a0'],['ROSE_STONE','Rose brick','#e2a4ac'],['AZURE_STONE','Azure brick','#a2c8ea']]){ const id=freeIdFrom(); B[k.replace('_STONE','_BRICK')]=id;
+    defB(id,{name:nm,hard:1.5,col}); ITEMS[id]={name:nm,kind:'block',desc:`Cut and polished ${nm.split(' ')[0].toLowerCase()} stone for building`};
+    TEX[id]=tex(r=>{ r(0,0,16,16,col); for(const [y,o] of [[0,0],[4,4],[8,0],[12,4]]){ r(0,y+3,16,1,'rgba(0,0,0,0.25)'); for(let x=o;x<16;x+=8) r(x,y,1,3,'rgba(0,0,0,0.25)'); r(0,y,16,1,'rgba(255,255,255,0.25)'); } });
+    RECIPES.push({ out:id, n:4, need:[[BIO[k],4]], st:B.WORKBENCH, cat:'build' }); } }
+
+// ---- light roof tiles for the stone stage ----
+{ const tint=(src,col)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='color'; g.fillStyle=col; g.fillRect(0,0,16,16); g.globalCompositeOperation='lighter'; g.fillStyle='rgba(70,70,70,1)'; g.fillRect(0,0,16,16); g.globalCompositeOperation='destination-in'; g.drawImage(src,0,0); return c; };
+  ROOF_TEAM.light={};
+  for(const [t,nm,col] of [['r','Light red','#e88a80'],['g','Light green','#8ad88a'],['b','Light blue','#8ab4ec']]){ const id=freeIdFrom(); defB(id,Object.assign({},BLOCKS[B.ROOF],{name:`${nm} roof tiles`,col,drop:id}));
+    ITEMS[id]={name:`${nm} roof tiles`,kind:'block',desc:`Light roof tiles in the ${nm.split(' ')[1]} faction's colour, for stone buildings`}; TEX[id]=tint(TEX[B.ROOF],col); ROOF_TEAM.light[t]=id; SKIN_OF.set(id,'roof');
+    RECIPES.push({ out:id, n:4, need:[[B.ROOF,4]], st:B.WORKBENCH, cat:'build' }); } }
+teamRoof=function(team,tier){ const t=ROOF_TEAM.tile[team]?team:'r'; return tier>=2?ROOF_TEAM.iron[t]:ROOF_TEAM.light[t]; };
+
+// ---- where the new biomes are (only in plain cave rock, 25 or more blocks down) ----
+function biome2At(x,y){ const d=y-surf[x]; if(d<25||y>H-48||(typeof magmaY!=='undefined'&&y>magmaY-6)) return null; if(biomeAt(x,y)!=='cave') return null;
+  const c=[['jade',noise2(x/85,y/55,seed+311),0.77],['rose',noise2(x/85,y/55,seed+313),0.77],['azure',d>50?noise2(x/85,y/55,seed+317):0,0.75],
+    ['stalag',noise2(x/70,y/45,seed+319),0.75],['roots',d<80?noise2(x/60,y/40,seed+323):0,0.74],['fossil',noise2(x/90,y/50,seed+329),0.77]];
+  let best=null, bv=0; for(const [k,v,th] of c) if(v>th&&v-th>bv){ bv=v-th; best=k; } return best; }
+const BIO_ROCK={ jade:'JADE_STONE', rose:'ROSE_STONE', azure:'AZURE_STONE', stalag:'DRIPSTONE', fossil:'FOSSIL_STONE' };
+const BIO_SHARD={ jade:'JADE_SHARD', rose:'ROSE_QUARTZ', azure:'AZURE_SHARD' };
+function paintBiomes(onlyUnexplored){ if(!world||!surf) return 0; const plain=new Set([B.STONE,B.DEEPSTONE,B.GRANITE,B.MARBLE,B.DIRT].filter(v=>v!=null)); let n=0;
+  const at=new Map(); const bioOf=(x,y)=>{ const k=((y>>2)*((W>>2)+1))+(x>>2); if(!at.has(k)) at.set(k,biome2At(x,y)); return at.get(k); };
+  for(let x=2;x<W-2;x++){ for(let y=Math.max(surf[x]+25,skyOff+2);y<H-48;y++){ const i=y*W+x; if(onlyUnexplored&&explored[i]) continue; const b=bioOf(x,y); if(!b) continue; const id=world[i], r=hash2(x,y,seed+401);
+      if(id&&plain.has(id)){ if(b==='roots'){ if(id!==B.DIRT&&r<0.7) world[i]=B.DIRT; } else if(b==='fossil'){ world[i]=r<0.16?BIO.FOSSIL_STONE:B.SANDSTONE; } else world[i]=BIO[BIO_ROCK[b]];
+        if(bg[i]&&bg[i]<=2) bg[i]=b==='roots'?1:BIO.bg[BIO_ROCK[b]]; n++; continue; }
+      if(id) continue; const above=world[i-W], below=world[i+W], floor=below&&BLOCKS[below].solid, ceil=above&&BLOCKS[above].solid;
+      if(bg[i]&&bg[i]<=2) bg[i]=b==='roots'?1:BIO.bg[BIO_ROCK[b]];
+      if(BIO_SHARD[b]){ if((floor&&r<0.07)||(ceil&&r>0.95)) world[i]=BIO[BIO_SHARD[b]]; }
+      else if(b==='stalag'){ if(floor&&r<0.22) world[i]=BIO.STALAGMITE; else if(ceil&&r>0.7) world[i]=BIO.STALACTITE; }
+      else if(b==='roots'){ if(ceil&&r<0.4){ world[i]=B.ROOTS; if(r<0.15&&world[i+W]===0) world[i+W]=B.ROOTS; } else if(ceil&&r>0.93) world[i]=BIO.GLOW_BULB; }
+      else if(b==='fossil'){ if(floor&&r<0.03) world[i]=B.FERN||0; } } }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ paintBiomes(false); biomesFresh=true; }catch(e){ console.warn(e); } return r; }; }
+let biomesFresh=false;
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.biomes2&&!isGuest()){ home.biomes2=1; if(!biomesFresh) paintBiomes(true); }
+      if(home&&(home.roofTeamV||0)<2&&!isGuest()){ home.roofTeamV=2; home.skin={}; try{ skinAll(true); }catch(e){} } }catch(e){ console.warn(e); } biomesFresh=false; return r; }; }
+// ===================== the world keeps going while you are away =====================
+// Saving notes the time (home.lastSeen). When the world is opened again, the time that passed (up to 3 in-game days) is
+// caught up at once: crops in and around the village grow, woodcutters, farmers and miners bring in a day's work for
+// each whole day, and the day count (and so the season) moves on. Host and single player only.
+const CATCHUP_MAX=3;
+{ const _se=serialize; serialize=function(...a){ try{ if(home&&!isGuest()) home.lastSeen=Date.now(); }catch(e){} return _se(...a); }; }
+function catchUp(now){ if(!home||!home.claimed||isGuest()||!home.lastSeen) return null; now=now||Date.now(); const away=(now-home.lastSeen)/1000; home.lastSeen=now;
+  if(!(away>=DAY_LEN*0.5)) return null; const days=Math.min(CATCHUP_MAX,away/DAY_LEN), whole=Math.floor(days), R=Math.random, got={crops:0,logs:0,food:0,ore:0,days:whole};
+  // crops grow about two stages a day
+  const steps=Math.max(1,Math.round(days*2)); let xa=home.x0-80, xb=home.x1+120; for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)){ xa=Math.min(xa,r.x0-50); xb=Math.max(xb,(r.field?r.field[1]:r.x1)+50); } }
+  facRun(()=>{ for(let x=Math.max(2,xa);x<=Math.min(W-3,xb);x++) for(let y=surf[x]-4;y<=surf[x]+3;y++){ if(CROPS_STAGE[tileAt(x,y)]==null) continue; for(let k=0;k<steps;k++){ const id=tileAt(x,y); if(CROPS_STAGE[id]==null||CROPS_STAGE[id]>=3) break; if(growCrops(x,y,id,()=>0)) got.crops++; else break; } } });
+  // a day's work from each worker for every whole day away
+  if(whole>0){ const vw=home.vw||{}, bonus=1+(typeof villageBonus==='function'?villageBonus():0);
+    if(vw.woodcutter&&home.lodge){ const n=Math.round(vw.woodcutter*whole*8*bonus); if(putInChest(lodgeChest('woodcutter'),{id:B.LOG,n})) got.logs=n; }
+    if(vw.farmer&&home.farmhouse){ const n=Math.round(vw.farmer*whole*6*bonus); if(putInChest(lodgeChest('farmer'),{id:I.WHEAT,n})) got.food=n; }
+    const miners=ents.filter(e=>!e.dead&&e.kind==='villager'&&e.role==='miner'); for(let d=0;d<whole;d++) for(const m of miners){ m.qDay=-1; m.load=8; const c=chests[home.minerChest], before=c?c.items.reduce((a,s)=>a+(s?s.n:0),0):0; try{ minerDeliver(m); }catch(e){} const after=c?c.items.reduce((a,s)=>a+(s?s.n:0),0):0; got.ore+=Math.max(0,after-before); }
+    dayCount+=whole; try{ weatherSync(false); }catch(e){} }
+  return got; }
+function catchUpNews(g){ if(!g) return; const L=[]; if(g.days) L.push(`${g.days} day${g.days>1?'s':''} passed`); if(g.crops) L.push('the crops grew'); if(g.logs) L.push(`woodcutters brought ${g.logs} logs`); if(g.food) L.push(`farmers brought ${g.food} wheat`); if(g.ore) L.push(`miners brought ${g.ore} ore`);
+  if(L.length) toast('While you were away: '+L.join(', ')+'.',6); }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.lastSeen&&!isGuest()) setTimeout(()=>{ try{ catchUpNews(catchUp()); }catch(e){ console.warn(e); } },1500); }catch(e){} return r; }; }
 })();
 </script>
 </body>
