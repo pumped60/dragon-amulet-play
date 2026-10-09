@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791504232"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791504232"><link rel="manifest" href="manifest.webmanifest?v=1791504232"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791515957"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791515957"><link rel="manifest" href="manifest.webmanifest?v=1791515957"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.54</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.55</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.54</h3>
+    <h3>New in Beta 0.9.55</h3>
+    <p>Mana refills faster the more mana you have: a wizard gets back 12% of their maximum mana every second and everyone else 8% (never slower than before), so mana crystals and other mana upgrades also speed up the refill. Wizards start with 90 health. The Archmage tower has about half as many guards. Items that shared a name have their own now: the Kraken's treasure-chest daggers are Tidebond daggers, the chain-lightning staff is the Tempest staff, and the mushroom you eat is a Glowcap. Metal bars, gems, crystals, mana potions, farm goods and sea treasures all have descriptions.</p>
+    <h3>Beta 0.9.54</h3>
     <p>The red faction's light roof tiles are a brighter red instead of pink.</p>
     <h3>Beta 0.9.53</h3>
     <p>When a boss falls in a shared world, every player gets their own copy of its loot; coins and everything else on the ground go to whoever picks them up first. Blasts, cannon shots and fires leave smoke that drifts up and fades over about 20 seconds and piles up in a big battle: it greys the view, and arrows and spells shot through it spread from 5% in a light haze up to 35% in thick smoke. Rain and storms still fall but leave no water on the ground and bring no floods, and fog days come in light, normal and thick. Days and nights last twice as long (10 minutes of day, 4 of night). The castle's whole second floor is the safe room. While you are away, your world keeps going (up to 3 days): crops grow, and woodcutters, farmers and miners bring in their work. Stone buildings have light roofs in your faction's colour. Underground there are jade, rose and azure caves with glowing crystals, stalagmite caves, root caverns with glow bulbs and fossil beds.</p>
@@ -610,7 +612,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.54</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.55</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -870,7 +872,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.54</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.55</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -889,7 +891,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.54', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.55', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1133,7 +1135,7 @@ Object.assign(ITEMS, {
   [I.RAFT]:{name:'Raft',kind:'boat'}, [I.CANOE]:{name:'Canoe',kind:'boat'}, [I.ROWBOAT]:{name:'Rowboat',kind:'boat'},
   [I.LONGSHIP]:{name:'Longship',kind:'boat'}, [I.WARSHIP]:{name:'Warship',kind:'boat'},
   [I.RECALL]:{name:'Recall mirror',kind:'recall',desc:'Teleports you home'}, 
-  [I.MUSHROOM]:{name:'Glow mushroom',kind:'food',heal:6,ing:['#5fd0ff','#d8f4ff']}, [I.RAW_FISH]:{name:'Raw fish',kind:'food',heal:8,ing:['#8ab0c8','#c8dce8']},
+  [I.MUSHROOM]:{name:'Glowcap',kind:'food',heal:6,ing:['#5fd0ff','#d8f4ff']}, [I.RAW_FISH]:{name:'Raw fish',kind:'food',heal:8,ing:['#8ab0c8','#c8dce8']},
   [I.SHARK_FIN]:{name:'Shark fin',kind:'mat',ing:['#6f7d8c','#dfe6ee']}, [I.EGG]:{name:'Egg',kind:'mat',ing:['#f4efe0','#ffffff']}, [I.HONEY]:{name:'Honey',kind:'food',heal:10,ing:['#e0a030','#ffd060']},
   [I.BERRIES]:{name:'Berries',kind:'food',heal:6,ing:['#8a2a8a','#d060c0']}, [I.BONE]:{name:'Bone',kind:'mat',ing:['#ece8dc','#b8b4a8']},
   [I.GRILLED_FISH]:{name:'Grilled fish',kind:'food',heal:30,cooked:'#c89060'}, [I.FISH_STEW]:{name:'Fish stew',kind:'food',heal:55,cooked:'#c8a060'},
@@ -1212,7 +1214,7 @@ Object.assign(ITEMS, {
   [410]:W_('Fire bow','bow',{dmg:36,cd:0.42,speed:620,m:'magma',fire:true}),
   [411]:W_('Blast bow','bow',{dmg:40,cd:0.7,speed:560,m:'iron',blast:true}),
   [412]:W_('Tri-shot bow','bow',{dmg:30,cd:0.5,speed:620,m:'gold',tri:true}),
-  [413]:W_('Storm staff','magic',{dmg:34,cd:0.42,mana:10,speed:600,gem:'#8ae8ff',chain:true}),
+  [413]:W_('Tempest staff','magic',{dmg:34,cd:0.42,mana:10,speed:600,gem:'#8ae8ff',chain:true}),
   [414]:W_('Ward staff','magic',{dmg:0,cd:8,mana:30,speed:0,gem:'#b8f5a0',ward:true}),
   [415]:W_('Ember staff','magic',{dmg:36,cd:0.4,mana:9,speed:480,gem:'#ff7b1c',burn:true}),
   [440]:{name:'Sky feather I',kind:'feather',lvl:1,desc:'Wings fly for 15 seconds. Needs sky wings and the previous feather'},
@@ -1224,7 +1226,7 @@ Object.assign(ITEMS, {
   [462]:{name:'Baked potato',kind:'food',heal:38,cooked:'#d8a860'}, [463]:{name:'Sugar',kind:'mat',ing:['#f8f8f8','#ffffff']},
   [464]:{name:'Growth dust',kind:'dust',desc:'Sprinkle on a plant, crop or sapling: it grows a stage now and 50% faster from then on'},
   [487]:{name:'Beef stew',kind:'food',heal:95,cooked:'#7a3a1a'}, [488]:{name:'Mutton pie',kind:'food',heal:85,cooked:'#c8904a'},
-  [486]:Object.assign(W_('Kraken fang daggers','melee',{dmg:28,cd:0.2,reach:22,kb:90,m:'mythril',shape:'dagger'}),{desc:'From the Kraken\'s treasure. Beastmasters who hold them gain a permanent bond: companions hit 25% harder'}),
+  [486]:Object.assign(W_('Tidebond daggers','melee',{dmg:28,cd:0.2,reach:22,kb:90,m:'mythril',shape:'dagger'}),{desc:'From the Kraken\'s treasure. Beastmasters who hold them gain a permanent bond: companions hit 25% harder'}),
   [480]:{name:'Sticks',kind:'mat',ing:['#8a5c2d','#b7834a'],desc:'Handles for every tool and weapon'},
   [481]:{name:'Raw beef',kind:'food',heal:6,ing:['#c8484a','#f0a0a0']}, [482]:{name:'Raw mutton',kind:'food',heal:5,ing:['#d05a5a','#f4b0a8']}, [483]:{name:'Wool',kind:'mat',ing:['#f4f0e8','#ffffff']},
   [484]:{name:'Steak',kind:'food',heal:45,cooked:'#8a4a2a'}, [485]:{name:'Roast mutton',kind:'food',heal:38,cooked:'#9a5a3a'},
@@ -1516,7 +1518,7 @@ const CLASSES = {
   knight:{ name:'Knight', hp:130, mana:40, npcHp:100, def:4, speed:92, weapon:I.SQUIRE_SWORD, hire:40, desc:'Sword and shield. The most health and armor. Everyone on your side within 8 blocks takes 15% less damage.' },
   archer:{ name:'Archer', hp:100, mana:50, npcHp:75, def:2, speed:108, weapon:I.SHORT_BOW, hire:35, desc:'Quick on their feet. Bows hit 30% harder in an archer\'s hands, and every arrow flies on through a second enemy.' },
   mace:  { name:'Macebearer', hp:115, mana:40, npcHp:90, def:2, speed:88, weapon:I.WOOD_MACE, hire:45, desc:'Slow, heavy swings that send enemies flying. Everyone on your side within 8 blocks hits 15% harder.' },
-  wizard:{ name:'Wizard', hp:80, mana:120, npcHp:65, def:0, speed:98, weapon:I.APPRENTICE_STAFF, hire:60, desc:'Casts magic bolts with a staff. Most mana, strongest spells, least health.' },
+  wizard:{ name:'Wizard', hp:90, mana:120, npcHp:65, def:0, speed:98, weapon:I.APPRENTICE_STAFF, hire:60, desc:'Casts magic bolts with a staff. Most mana, strongest spells, least health.' },
 };
 const CLS_KEYS=['knight','archer','mace','wizard','beast'];
 // NPC-only roles
@@ -2701,6 +2703,7 @@ function disembark(){ if(!player) return; let i=0; for(const m of ents) if(m.kin
 // ================= player =================
 const input={left:false,right:false,jump:false,down:false,use:false,ax:0,ay:0,mouse:false};
 function heldItem(){ const s=player.inv[player.sel]; return s?s:null; }
+function manaRegen(p){ const w=p.cls==='wizard'; return Math.max(w?7:4,(p.maxMana||0)*(w?0.12:0.08)); }   // grows with max mana; never below the old 7 (wizard) or 4
 
 function updatePlayer(dt){
   const p=player;
@@ -2748,7 +2751,7 @@ function updatePlayer(dt){
   else { p.breath=Math.min(10,p.breath+dt*4); p.drownT=0; }
   if(touchesTile(p,B.LAVA)){ if(p.lavaHopT>0) p.vx=clamp(p.vx,-75,75); else { p.vx*=Math.pow(0.004,dt); p.vx=clamp(p.vx,-45,45); p.vy=clamp(p.vy,-150,22); } if(p.gear.armor<LINES.armor.length){ p.lavaT-=dt; if(p.lavaT<=0){ p.lavaT=0.5; p.iframes=0; damage(p,18,null); } } }
   p.regenT-=dt; if(p.regenT<=0&&p.hp<p.maxHp&&(!hungerOn()||(p.food??100)>30)) p.hp=Math.min(p.maxHp,p.hp+3*dt);
-  p.mana=Math.min(p.maxMana,p.mana+(p.cls==='wizard'?7:4)*[1,1.5,2][p.fx.ring||0]*dt);
+  p.mana=Math.min(p.maxMana,p.mana+manaRegen(p)*[1,1.5,2][p.fx.ring||0]*dt);
   const it=heldItem(); const def=it?ITEMS[it.id]:null;
   const aim=aimPoint(def); p.aimTile=null;
   const atx=aim.tx, aty=aim.ty;
@@ -3666,7 +3669,7 @@ function facBonus(team,cls){ const b={cd:1,reach:1,shot:1}; const facs=player&&t
     if(f==='b'){ if(cls==='knight') b.cd=Math.min(b.cd,0.9); if(cls==='wizard'){ b.cd=Math.min(b.cd,0.9); b.shot=Math.max(b.shot,1.1); } }
     if(f==='r'&&cls==='mace'){ b.cd=Math.min(b.cd,0.9); b.reach=Math.max(b.reach,1.1); } }
   return b; }
-function markFound(id){ if(!player) return; if(id===486&&!player.krakenBond){ player.krakenBond=true; toast('Kraken fang daggers: your beast companions now hit 25% harder, permanently (beastmaster)',5); } player.found=player.found||{}; if(!player.found[id]){ player.found[id]=1; const d=ITEMS[id]; if(d&&['weapon','armor','pick','axe','hoe','hammer','rod','acc','elixir','heart','feather','boat','machine'].includes(d.kind)){ player.recent=[id,...(player.recent||[]).filter(x=>x!==id)].slice(0,6); } } }
+function markFound(id){ if(!player) return; if(id===486&&!player.krakenBond){ player.krakenBond=true; toast('Tidebond daggers: your beast companions now hit 25% harder, permanently (beastmaster)',5); } player.found=player.found||{}; if(!player.found[id]){ player.found[id]=1; const d=ITEMS[id]; if(d&&['weapon','armor','pick','axe','hoe','hammer','rod','acc','elixir','heart','feather','boat','machine'].includes(d.kind)){ player.recent=[id,...(player.recent||[]).filter(x=>x!==id)].slice(0,6); } } }
 
 const GRASSY=new Set([B.TALLGRASS,B.FLOWER_R,B.FLOWER_Y,B.FLOWER_B,B.FERN]);
 
@@ -6838,15 +6841,15 @@ function addTurrets(t,mat,bgv,half,put,bput){ if(!t||t.turrets) return; const gy
   for(const cx of turretSpots(t,half)){ if(cx<4||cx>=W-4) continue; for(let x=cx-4;x<=cx+4;x++) surf[x]=Math.min(surf[x],gy); t.turrets.push(buildTurret(put,bput,cx,gy,mat,bgv)); } }
 { const _bt=buildTower; buildTower=function(is,R){ const t=_bt(is,R); try{ addTurrets(t,B.STONE_BLOCK,11,9,wset,bset); }catch(e){ console.warn(e); } return t; }; }
 { const _bf=buildFortress; buildFortress=function(is,R){ const f=_bf(is,R); try{ for(const x of [f.x0-2,f.x1+2]) for(let y=f.gy-6;y<f.gy;y++) if(tileAt(x,y)===B.MAGMA_ROCK) wset(x,y,0); addTurrets(f,B.OBSIDIAN,13,13,wset,bset); }catch(e){ console.warn(e); } return f; }; }
-function turretGuards(t,team,cls){ for(const tr of t.turrets||[]){ for(let k=0;k<2;k++){ const e=makeHuman(team,cls,(tr.x-0.5+k)*T,tr.gy*T-30,'guard',{cx:tr.x,gy:tr.gy,x0:tr.x-1,x1:tr.x+1}); e.hold=true; e.post={x:tr.x-0.5+k,gy:tr.gy}; ents.push(e); }
+function turretGuards(t,team,cls,n=2){ for(const tr of t.turrets||[]){ for(let k=0;k<n;k++){ const e=makeHuman(team,cls,(tr.x-0.5+k)*T,tr.gy*T-30,'guard',{cx:tr.x,gy:tr.gy,x0:tr.x-1,x1:tr.x+1}); e.hold=true; e.post={x:tr.x-0.5+k,gy:tr.gy}; ents.push(e); }
     // two more patrol the ground outside, on the far side of the guard tower
-    const out=tr.x<(t.tx??tr.x)?-1:1; for(let k=0;k<2;k++){ const x=tr.x+out*(5+k*3); const gy=surf[clamp(Math.round(x),0,W-1)]; const e=makeHuman(team,cls,x*T,gy*T-30,'guard',{cx:Math.round(x),gy,x0:Math.round(x)-4,x1:Math.round(x)+4}); ents.push(e); } } }
+    const out=tr.x<(t.tx??tr.x)?-1:1; for(let k=0;k<n;k++){ const x=tr.x+out*(5+k*3); const gy=surf[clamp(Math.round(x),0,W-1)]; const e=makeHuman(team,cls,x*T,gy*T-30,'guard',{cx:Math.round(x),gy,x0:Math.round(x)-4,x1:Math.round(x)+4}); ents.push(e); } } }
 spawnTower=function(){ const t=tower; const room={cx:t.tx,gy:t.gy,x0:t.tx-4,x1:t.tx+4};
-  { const g=3+Math.floor(Math.random()*3); for(let k=0;k<g;k++){ const e=makeHuman('s','skyknight',(t.tx-3+k*1.5)*T,(t.gy-1)*T-29,'guard',room); ents.push(e); } }
-  let k=0; for(let y=t.top+9+12;y<t.gy-6&&k<3;y+=12,k++){ const m=makeHuman('a','wizard',(t.tx-1+k)*T,y*T-29,'guard',{cx:t.tx,gy:y,x0:t.tx-4,x1:t.tx+4}); m.hold=true; m.post={x:t.tx-1+k,gy:y}; ents.push(m); }
-  for(let j=0;j<2;j++){ const m=makeHuman('a','wizard',(t.tx-3+j*6)*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); ents.push(m); }
+  { const g=2+Math.floor(Math.random()*2); for(let k=0;k<g;k++){ const e=makeHuman('s','skyknight',(t.tx-3+k*1.5)*T,(t.gy-1)*T-29,'guard',room); ents.push(e); } }
+  let k=0; for(let y=t.top+9+12;y<t.gy-6&&k<2;y+=12,k++){ const m=makeHuman('a','wizard',(t.tx-1+k)*T,y*T-29,'guard',{cx:t.tx,gy:y,x0:t.tx-4,x1:t.tx+4}); m.hold=true; m.post={x:t.tx-1+k,gy:y}; ents.push(m); }
+  for(let j=0;j<1;j++){ const m=makeHuman('a','wizard',(t.tx-3+j*6)*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); ents.push(m); }
   const a=makeHuman('a','archmage',t.tx*T,(t.top+9)*T-29,'guard',{cx:t.tx,gy:t.top+9,x0:t.tx-4,x1:t.tx+4}); a.hp=a.maxHp=3000; a.boss=true; a.dmgMul=3; a.name='The Archmage'; ents.push(a);
-  turretGuards(t,'s','skyknight'); };
+  turretGuards(t,'s','skyknight',1); };
 { const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ if(fort&&!fort.cleared) turretGuards(fort,'m','magmaknight'); }catch(e){ console.warn(e); } return r; }; }
 
 // ---- old worlds get the throne, the castle furniture and the guard towers ----
@@ -6855,7 +6858,7 @@ function bossLegacy(){ if(typeof MP!=='undefined'&&MP.guest) return; facRun(()=>
     if(!c.throne2){ c.throne2=true; const tc=c.cx, gy=c.gy; for(let y=gy-6;y<gy-2;y++) for(const x of [tc-3,tc+3]) if(tileAt(x,y)===B.GOLD_BLOCK) setTile(x,y,0); if([0,1,2,3].every(k=>tileAt(tc+(k&1),gy-3-(k>>1))===0)) placeThrone(setPut,tc,gy-3); }
     if(!c.decor2){ c.decor2=true; castleDecor(c,M,setPut); } }
   const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); } };
-  if(tower&&!tower.turrets){ addTurrets(tower,B.STONE_BLOCK,11,9,setPut,bput); if(!tower.cleared) turretGuards(tower,'s','skyknight'); }
+  if(tower&&!tower.turrets){ addTurrets(tower,B.STONE_BLOCK,11,9,setPut,bput); if(!tower.cleared) turretGuards(tower,'s','skyknight',1); }
   if(fort&&!fort.turrets){ for(const x of [fort.x0-2,fort.x1+2]) for(let y=fort.gy-6;y<fort.gy;y++) if(tileAt(x,y)===B.MAGMA_ROCK) setTile(x,y,0); addTurrets(fort,B.OBSIDIAN,13,13,setPut,bput); if(!fort.cleared) turretGuards(fort,'m','magmaknight'); }
   for(const t of [tower,fort]) if(t&&t.turrets) for(const tr of t.turrets) for(let x=tr.x-4;x<=tr.x+4;x++) updateSkyTop(x); }); }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ bossLegacy(); lairLegacy(); }catch(e){ console.warn(e); } return r; }; }
@@ -8097,7 +8100,7 @@ const meleeSrc=src=>{ if(!src||src.vx!=null&&src.life!=null) return false; if(sr
 // like a boomerang, cutting everything it passes on the way out and again on the way back.
 // The Adamantite mace is swung on a chain: tap to hurl the head out and reel it back, hold to whirl it in a circle
 // above your head (it hits anything it touches), then let go to hurl it where you aim.
-const THROW_SWORDS=new Set([I.ADAMANT_SWORD,I.MAGMA_BLADE]), CHAIN_MACES=new Set([I.ADAMANT_MACE]), THROW_DAGGERS=new Set([I.ADAMANT_DAGGERS,486]);   // 486: Kraken fang daggers
+const THROW_SWORDS=new Set([I.ADAMANT_SWORD,I.MAGMA_BLADE]), CHAIN_MACES=new Set([I.ADAMANT_MACE]), THROW_DAGGERS=new Set([I.ADAMANT_DAGGERS,486]);   // 486: Tidebond daggers
 const BOOM={out:0.42, hover:0.12, speed:728, back:830, hitR:15, dmgMul:1.35};   // about 9 blocks out
 const FLAIL={reach:7.8*T, out:640, back:760, spinR:44, spinW:10, spinHit:0.35, spinMul:0.8, hold:0.28, hitR:13};
 let thrown=null;   // the sword or mace head while it is away from your hand
@@ -11450,6 +11453,51 @@ function catchUp(now){ if(!home||!home.claimed||isGuest()||!home.lastSeen) retur
 function catchUpNews(g){ if(!g) return; const L=[]; if(g.days) L.push(`${g.days} day${g.days>1?'s':''} passed`); if(g.crops) L.push('the crops grew'); if(g.logs) L.push(`woodcutters brought ${g.logs} logs`); if(g.food) L.push(`farmers brought ${g.food} wheat`); if(g.ore) L.push(`miners brought ${g.ore} ore`);
   if(L.length) toast('While you were away: '+L.join(', ')+'.',6); }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.lastSeen&&!isGuest()) setTimeout(()=>{ try{ catchUpNews(catchUp()); }catch(e){ console.warn(e); } },1500); }catch(e){} return r; }; }
+// ===================== Beta 0.9.55: the game review =====================
+// Mana refills by a share of your maximum mana (manaRegen in 09_player.js), the wizard has 90 health, the Archmage
+// tower has about half its guards (spawnTower and turretGuards in 39_bosses.js), the duplicate item names are gone
+// (Tidebond daggers, Tempest staff, Glowcap) and the bars, gems, crystals and sea treasures have descriptions.
+{ const D={
+    [120]:'Smelted from 3 iron ore at a furnace. The everyday metal for iron tools, weapons, armor and boats',
+    [121]:'Smelted from 3 gold ore at a furnace. Makes gold tools, weapons and armor, and larger boats',
+    [126]:'Smelted from 3 silver ore at a furnace. Makes silver armor and weapons, the mana ring and the recall mirror',
+    [124]:'Smelted from 3 mythril ore at the orc blast furnace. Makes mythril tools, weapons, armor and the warship',
+    [125]:'Smelted from 4 adamantite ore at the orc blast furnace. The strongest metal before storm: adamantite tools, weapons and armor',
+    [620]:'Smelted from 3 storm ore at a furnace. Makes storm tools, weapons and armor, and the lightning rod',
+    [122]:'A red gem from ruby ore, imps and golems. Used in fire weapons, the fire rune, staffs and amulets',
+    [123]:'A green gem from emerald ore and mossy skeletons. Used in mana potions, staffs, the mana ring and the life rune',
+    [127]:'A purple gem from amethyst crystals in caves. Used in the cloud charm, the sun amulet, the mana rune and the silver staff',
+    [128]:'A blue gem from sapphire ore and crystal golems. Used in the tri-shot bow, the Tempest staff, the frost rune and storm charms',
+    [429]:'A rare gem from deep diamond ore. Makes diamond tools, weapons and armor and the keen rune',
+    [134]:'Use it to raise your maximum health by 20 for good',
+    [135]:'Use it to raise your maximum mana by 20 for good. More mana also refills faster',
+    [136]:'Drink it to get 60 mana back at once. Made from an emerald and glass, or bought from the cook',
+    [216]:'Harvested from wheat fields. Bake it into bread, pies and stews, plant it as seeds, or make thatch',
+    [227]:'Dropped by sharks. Cook it into shark fin soup',
+    [228]:'Laid by birds in pens and bird cages. Cook it into omelettes, honey cake and pumpkin pie',
+    [239]:'Dropped by skeletons and frost monsters. Makes bone daggers and black powder for bombs',
+    [249]:'A rare, shining catch. Sell it for a good price',
+    [251]:'Picked from herb plants. Makes beds, herbal tonic and healing potions',
+    [330]:'Sea treasure pulled up while fishing. Sell it to a trader',
+    [331]:'Sea treasure from fishing and sea expeditions. Sell it, or use it to make a gold rod',
+    [332]:'A rare sea treasure. Sell it for a lot, or use it to make a mythril rod',
+    [333]:'An old coin from the seabed. Sell it to a trader',
+    [334]:'A jewelled crown lost at sea. One of the most valuable things you can sell',
+    [338]:'A brass compass from a sunken ship. Sell it to a trader',
+    [339]:'Dark ink from the deep sea. Sell it for a good price',
+    [463]:'Pressed from sugar cane',
+    [483]:'Shorn from sheep. Makes beds, rugs, paintings, grappling hooks and windrunner boots',
+  };
+  for(const [id,d] of Object.entries(D)) if(ITEMS[id]&&!ITEMS[id].desc) ITEMS[id].desc=d;
+  if(ITEMS[I.MUSHROOM]&&!ITEMS[I.MUSHROOM].desc) ITEMS[I.MUSHROOM].desc='A glowing mushroom picked in caves. Eat it raw or cook it into mushroom soup'; }
+// older worlds: an Archmage tower that is still standing loses about half of its guards once
+function thinTowerGuards(){ if(!tower||tower.cleared||tower.halfV||isGuest()) return 0; tower.halfV=1; const seen={}; let n=0;
+  for(let i=ents.length-1;i>=0;i--){ const e=ents[i]; if(!e||e.dead||e.kind!=='human'||e.boss) continue; if(!((e.team==='a'&&e.cls==='wizard')||(e.team==='s'&&e.cls==='skyknight'))) continue;
+    if(Math.abs(cxOf(e)/T-tower.tx)>26||e.y/T<tower.top-4||e.y/T>tower.gy+3) continue; const k=e.cls; seen[k]=(seen[k]||0)+1; if(seen[k]%2===0){ e.dead=true; ents.splice(i,1); n++; } }
+  return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ thinTowerGuards(); }catch(e){ console.warn(e); } return r; }; }
+// a tower whose guards were placed by this version already has the smaller guard
+{ const _st=spawnTower; spawnTower=function(...a){ const r=_st(...a); try{ if(tower) tower.halfV=1; }catch(e){} return r; }; }
 })();
 </script>
 </body>
