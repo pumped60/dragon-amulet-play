@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791532145"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791532145"><link rel="manifest" href="manifest.webmanifest?v=1791532145"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791537862"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791537862"><link rel="manifest" href="manifest.webmanifest?v=1791537862"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.64</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.65</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,11 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.64</h3>
+    <h3>New in Beta 0.9.65</h3>
+    <p>Smoother shared worlds: a friend in your world sees enemies and animals glide smoothly instead of jumping, even on a slow connection. Their hits show at once (the number, the sound and the push) and the host applies them with the weapon's own knockback, kills vanish as soon as the host confirms them, every enemy hit reaches them, and their game knows which enemies are after them.</p>
+    <p>Workplaces level up: the woodcutter's lodge, the farmhouse and the miners' hut go from level 1 to 3 like every shop (Buildings, Village). The head worker asks a favor first. Each level makes room for 2 more workers and they bring in more, level 2 adds a loft with a bed and level 3 lanterns, a chimney and a banner. Five new cave monsters: cave bats in every cave (swarms in the dripstone caves), armored jade crabs, glowing rose wisps that throw bolts, azure spiders whose bite slows you, and fossil raptors that pounce in packs. More monsters lurk underground.</p>
+    <p>Formations: give your party the Formation order (in the Army window, or press Q until it says Formation). Your soldiers line up in ranks facing the nearest enemy, three to a block: the toughest melee soldiers in front, the next rank right behind them striking over their shoulders with longer reach, and archers and wizards behind you. The line holds its ground instead of chasing, and the front rank braces, taking less damage and knockback from the front. Any soldier, yours or an enemy's, standing shoulder to shoulder with two others braces the same way, so a packed enemy line is harder to break. Cover: a block or a door beside you, on the side a shot comes from, turns some shots aside (about a third with a low wall, more than half with full cover), and archers and wizards prefer targets standing in the open.</p>
+    <h3>Beta 0.9.64</h3>
     <p>Favors before upgrades: before a shopkeeper upgrades their shop, they ask you for something from their own trade. The blacksmith wants ore or diamonds, the cook wants meat, eggs or honey, the fisher wants fish, the shipwright wants logs or pearls, and so on. What they ask for changes from world to world. Bring it, tap Give in their shop, and the upgrade opens. Growing your village works the same way: the quartermaster asks for supplies first (Buildings, Village). The Jeweler moves in once your village is a Town and the Archmage is beaten, and the War engineer once it is a City and you have taken an enemy castle. Rooms are lit by torches and lamps: a closed room with no torch is dim even at midday, and only windows and openings let daylight in. Every room your village built gets a torch once.</p>
     <h3>Beta 0.9.63</h3>
     <p>Trap doors: doors that lie in the floor, made at a workbench from any wood's planks, castle stone, deep stone brick or iron bars. Closed, you stand on one and nothing comes up through it. Tap it to open or shut it, jump up under it, or hold down while standing on it; it opens for you and shuts as soon as you are through. Your soldiers and tamed animals can follow you through, but enemies never open one. In your castle, the ledges up from the great hall end in trap doors that match the castle's stone, deep stone or iron, and the upper floor's west doorway has a door where a bed used to stand, so the upper floor is sealed off as your safe room.</p>
@@ -630,7 +634,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.64</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.65</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -890,7 +894,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.64</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.65</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -909,7 +913,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.64', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.65', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2964,6 +2968,8 @@ function updateAI(e,dt){
     if(ord==='defend') nt=nearestHostile(e,8*T,cxOf(player),cyOf(player));
     else nt=(ranged&&!(player&&e.team===player.team)&&!e.bigBoss)?weakestHostile(e,r):nearestHostile(e,r);
     if(ord==='hold'&&nt&&Math.abs(cxOf(nt)-e.holdX)>12*T) nt=null;
+    if(ord==='form'&&nt&&!ranged&&Math.abs(cxOf(nt)-e.holdX)>(e.fRank===1?3.5:2.5)*T) nt=null;   // a formation's melee hold the line and strike what reaches it
+    if(nt&&typeof coverPick==='function') nt=coverPick(e,nt,r,ranged);
     if(nt||!e.target||e.target.dead) e.target=nt; }
   let t=e.target&&!e.target.dead&&!e.target.aboard?e.target:null;
   if(e.charge&&!e.target&&player&&!player.dead&&!player.observer&&Math.abs(cxOf(player)-cxOf(e))<60*T) e.target=player;
@@ -2972,7 +2978,7 @@ function updateAI(e,dt){
     if(ranged&&!lineOfSight(e,t)){ mv=e.facing; if(e.hitWall&&e.grounded) e.vy=-JUMP; if(dy>2*T&&e.grounded&&onPlatform(e)) e.dropping=true; }
     else if(ranged){ const keepOff=(isHuman&&['g','b','r'].includes(e.team)&&player&&e.team!==player.team)?6:4; if(adx>10*T) mv=e.facing; else if(adx<keepOff*T&&!e.bigBoss&&!e.warlord){ mv=-Math.sign(cxOf(t)-cxOf(e))||-e.facing; spd*=0.5; }
       if(e.magmaLord||e.chief) bruteBoss(e,t); if(!lineOfSight(e,t)&&e.cls!=='archmage'){ } else if(e.cls==='archmage'){ archmageAct(e,t,dt); } else if(e.cls==='skyranger'){ rangerAct(e,t); } else if(e.atkCd<=0&&adx<(e.post?22:18)*T&&Math.abs(dy)<(e.post?20:9)*T){ npcShoot(e,t,isHuman&&(e.cls==='wizard'||e.cls==='skywizard')?'magic':'arrow'); e.atkCd=isHuman?(e.cls==='wizard'?1.4:1.1)*facBonus(e.team,e.cls).cd:1.6; e.atkT=0.2; } }
-    else { let w=isHuman?ITEMS[e.weapon]:null; if(w&&w.kind==='pick') w={reach:20,dmg:6,cd:1.2,kb:80,shape:'sword'}; const reach=(w?w.reach:e.reach)*(e.reachMul||1)*(isHuman?facBonus(e.team,e.cls).reach:1);
+    else { let w=isHuman?ITEMS[e.weapon]:null; if(w&&w.kind==='pick') w={reach:20,dmg:6,cd:1.2,kb:80,shape:'sword'}; const reach=(w?w.reach:e.reach)*(e.reachMul||1)*(e.fReach||1)*(isHuman?facBonus(e.team,e.cls).reach:1);
       const foeSide=!(player&&e.team===player.team)&&!e.bigBoss&&e.role!=='companion';
       if(foeSide){ e.flankT=(e.flankT||0)-dt; if(e.flankT<=0){ e.flankT=0.8+Math.random()*0.8; let L=0,Rn=0; for(const o of ents){ if(o===e||o.dead||o.team!==e.team||o.target!==t) continue; if(cxOf(o)<cxOf(t)) L++; else Rn++; } const side=cxOf(e)<cxOf(t)?-1:1; const mine=side<0?L:Rn, other=side<0?Rn:L; e.flank=mine>=2&&other<mine-1?-side:side; }
         const goal=cxOf(t)+(e.flank||0)*(t.w/2+e.w/2+3); const gd=goal-cxOf(e); if(Math.abs(gd)>5&&(adx>reach*0.3||e.flank!==(cxOf(e)<cxOf(t)?-1:1))){ mv=Math.sign(gd); } }
@@ -2982,9 +2988,10 @@ function updateAI(e,dt){
         if(isHuman){ e.atkCd=w.cd*1.6*facBonus(e.team,e.cls).cd; const pv=pivotOf(e); e.atkAng=Math.atan2(cyOf(t)-pv.y,cxOf(t)-pv.x); e.atkMode=w.shape==='spear'?'stab':'swing'; e.atkDur=0.3; e.atkT=0.3; if(meleeClear(cxOf(e),e.y+10,cxOf(t),cyOf(t))) damage(t,Math.round(w.dmg*0.8*e.dmgMul),e,w.kb); } else { e.atkCd=0.9; if(meleeClear(cxOf(e),e.y+10,cxOf(t),cyOf(t))) damage(t,e.dmg,e,160); } } }
     if(t.y+t.h<e.y+e.h-24&&e.grounded&&adx<4*T&&Math.random()<0.04) e.vy=-JUMP;
     if(ord==='hold'&&Math.abs(cxOf(e)-e.holdX)>12*T) mv=Math.sign(e.holdX-cxOf(e));
+    if(ord==='form'){ const lim=ranged?0.4*T:2.5*T, off=e.holdX-cxOf(e); if(Math.abs(off)>lim) mv=Math.sign(off); else if(ranged) mv=0; }
   } else if(comp){
     const dx=cxOf(player)-cxOf(e), dy=cyOf(player)-cyOf(e);
-    if(e.leftBehind||ord==='hold'){ const hx=e.leftBehind?cxOf(e):e.holdX; if(Math.abs(hx-cxOf(e))>1.5*T){ mv=Math.sign(hx-cxOf(e)); e.facing=mv; } }
+    if(e.leftBehind||ord==='hold'||ord==='form'){ const hx=e.leftBehind?cxOf(e):e.holdX, tol=ord==='form'&&!e.leftBehind?2:1.5*T; if(Math.abs(hx-cxOf(e))>tol){ mv=Math.sign(hx-cxOf(e)); e.facing=mv; if(ord==='form'&&Math.abs(hx-cxOf(e))<6) spd*=0.4; } else if(ord==='form'&&e.fDir) e.facing=e.fDir; }
     else {
       const onLand=!player.inWater&&!player.riding&&player.grounded;
       e.stuckT=e.stuckT||0; if((Math.abs(dx)>5*T||Math.abs(dy)>4*T)&&Math.abs(cxOf(e)-(e.lastX??0))<3&&Math.abs(cyOf(e)-(e.lastY??0))<3){ e.stuckT+=dt; } else e.stuckT=0; if(Math.random()<0.1){ e.lastX=cxOf(e); e.lastY=cyOf(e); }
@@ -3113,7 +3120,7 @@ function inProtected(tx){ for(const r of ruins) if(Math.abs(tx-r.x)<32) return t
   for(const c of camps) if(Math.abs(tx-c.x)<16) return true; return false; }
 function spawnUnder(){ // monsters lurk in dark caves at any time of day
   const ptx=Math.floor(cxOf(player)/T), pty=Math.floor(cyOf(player)/T); if(pty<surf[clamp(ptx,0,W-1)]+10) return false;
-  const near=ents.filter(e=>e.kind==='monster'&&e.under&&!e.dead&&Math.abs(e.x-player.x)<60*T).length; if(near>=6) return true;
+  const near=ents.filter(e=>e.kind==='monster'&&e.under&&!e.dead&&Math.abs(e.x-player.x)<60*T).length; if(near>=9) return true;
   for(let t=0;t<12;t++){ const x=ptx+(Math.random()<.5?-1:1)*(16+Math.floor(Math.random()*18)), y=pty+Math.floor(Math.random()*20)-10;
     if(x<2||x>=W-2||y<4||y>=H-3) continue; if(tileAt(x,y)!==0||tileAt(x,y-1)!==0||!BLOCKS[tileAt(x,y+1)].solid||y<skyTop[x]+8||spawnBlocked(x,y)) continue;
     const bi=biomeAt(x,y); const pool=bi==='moss'?['moss_zombie','moss_skeleton','moss_zombie']:bi==='magma'?['magma_skeleton','imp','imp']:bi==='gem'?['crystal_golem','crystal_golem','skeleton']:['skeleton','goblin','zombie','orc','skeleton','goblin'];
@@ -5648,7 +5655,7 @@ async function peerRoom(code,isHost){ await loadPeerJS(); const PID=id=>'dragona
   const peersMap=new Map(), conns=new Map(), handlers=[]; let mine={}, me=null;
   const list=()=>[...peersMap.values()];
   const fire=(joined,left)=>{ const ch={peers:list(),joined:joined||[],left:left||[],updated:[]}; for(const h of handlers) try{ h(ch); }catch(e){} };
-  const setPeer=(id,presence)=>{ const had=peersMap.has(id); const p={peer:id,by:null,isMe:false,sameTab:false,kind:'viewer',guest:false,presence:presence||{},updatedAt:Date.now()}; peersMap.set(id,p); if(!had) fire([p]); };
+  const setPeer=(id,presence)=>{ const had=peersMap.has(id); const p={peer:id,by:null,isMe:false,sameTab:false,kind:'viewer',guest:false,presence:presence||{},updatedAt:Date.now()}; peersMap.set(id,p); if(!had) fire([p]); else for(const h of handlers) try{ h({peers:list(),joined:[],left:[],updated:[p]}); }catch(e){} };
   const dropPeer=id=>{ const p=peersMap.get(id); if(!p) return; peersMap.delete(id); fire([],[p]); };
   const send=(c,msg)=>{ try{ if(c.open) c.send(msg); }catch(e){} };
   const onData=(from,msg)=>{ if(!msg||typeof msg!=='object') return;
@@ -5743,16 +5750,17 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
     pr.mobs=mpMobList(); pr.sh=mpShotsOut(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,80); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
   if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,80); }
+  pr.ts=Math.round(performance.now()); if(MP.host) pr.hr=(MP.hitRes||[]).slice(-20);
   if(MP.host){ pr.host=true; pr.seed=seed; pr.size=sizeKey; pr.pf=player.team; pr.t=Math.round(time*1000)/1000; pr.ws=MP.wsId||null; pr.fl=(tower.cleared?'t':'')+(fort.cleared?'f':'')+(sky.castle.cleared?'s':'')+(magma.keep.cleared?'m':'')+(dragonSlain?'d':'')+(krakenSlain?'k':''); }
   if(MP.guest){ MP.posT=(MP.posT||0)-0.1; if(MP.posT<=0){ MP.posT=5; try{ localStorage.setItem('dragonamulet-mppos-'+seed,JSON.stringify({x:Math.round(p.x),y:Math.round(p.y)})); }catch(e){} } }
   // stay inside the room's 4 KB limit (measured in bytes): trim the extras, never the player's own position and name
   const enc=new TextEncoder(), BUDGET=3600; const size=()=>enc.encode(JSON.stringify(pr)).length;
   // lists of numbered events (block edits, hits, hurts, gifts) send the older and the newer half by turns, so nothing waits forever;
   // the logs that must arrive in order (ge, fe) always send their oldest part first
-  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','gv','ch','sh','fx']);
+  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','hr','gv','ch','sh','fx']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
-  if(size()>BUDGET){ for(const k of ['fi','fx','bm','sh','ch','ge','fe','ed','mobs','sold','cr','hurt','hits','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
-  if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['tk','x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
+  if(size()>BUDGET){ for(const k of ['fi','fx','bm','sh','ch','ge','fe','ed','sold','cr','mobs','hurt','hits','hr','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
+  if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['tk','ts','x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
   mpReceive(); }
 function mpHostName(){ for(const r of MP.remote.values()) if(r.isHost) return r.nm||'your friend'; return MP.hostNm||'your friend'; }
@@ -10604,7 +10612,7 @@ function skinTargets(){ if(!home) return []; const L=[]; if(typeof enemySkinTarg
   // the buildings you build yourself (hut, wall, watchtower, pen, keep) and outposts you capture follow the village too
   for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ if(!st||!isFinite(st.x)||st.kind==='post') continue; const bp=BLUEPRINTS.find(b=>b.id===st.kind)||{fx0:-9,fx1:9,fh:20};
     L.push({key:'s'+st.id,x0:st.x+bp.fx0-1,x1:st.x+bp.fx1+1,y0:st.gy-bp.fh-7,y1:st.gy,tier:vt}); }
-  if(home.mineX) L.push({key:'mine',x0:home.mineX-5,x1:home.mineX+6,y0:home.gy-10,y1:home.gy,tier:vt});   // the miners' hut
+  if(home.mineX) L.push({key:'mine',x0:home.mineX-5,x1:home.mineX+6,y0:home.gy-16,y1:home.gy,tier:vt});   // the miners' hut
   for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)) L.push({key:k,x0:r.x0-1,x1:r.x1+1,y0:r.gy-16,y1:r.gy,tier:vt}); }
   return L; }
 // swap a building's skin blocks to the tier's materials
@@ -11023,7 +11031,7 @@ function workerFromWanderer(job,name,quiet){
     if(job==='miner'){ home.foremanName=name; buildMineHut(); try{ levelHome(); }catch(e){} if(!home.foreman){ home.foreman=true; ents.push(makeForeman()); } else for(const e of ents) if(!e.dead&&e.role==='foreman') e.name=name; }
     else { const r=buildLodge(job); if(!r){ if(!quiet) toast('There is no flat ground near the village for that building',3); return false; } r.headName=name; for(const e of ents) if(!e.dead&&e.kind==='villager'&&e.role===LODGE[job].head) e.name=name; }
     if(!quiet) toast(`${name} becomes your ${WORK_HEAD[job]}. Hire ${job}s from the Quartermaster now.`,4); return true; }
-  if(workCount(job)>=WORK_CAP) return false; const v=addWorker(job);
+  if(workCount(job)>=workCap(job)) return false; const v=addWorker(job);
   if(job==='miner'&&v){ v.name=name; home.minerNames[v.mi]=name; } else { const w=ents.filter(e=>!e.dead&&e.vjob===job).pop(); if(w) w.name=name; }
   if(!quiet) toast(`${name} becomes a ${job}`,3); return true; }
 // the head keeps the wanderer's name after a reload
@@ -11031,7 +11039,7 @@ function workerFromWanderer(job,name,quiet){
 // the wanderer menu offers the three jobs (only while there is room)
 JOBS.splice(JOBS.findIndex(j=>j[0]==='miner'),1,['woodcutter','Woodcutter'],['farmer','Farmer'],['miner','Miner']);
 { const _rr=renderRecruit; renderRecruit=function(...a){ const r=_rr(...a); try{ for(const b of document.querySelectorAll('#recruitList [data-job]')){ const j=b.dataset.job; if(!WORK_JOBS.includes(j)) continue;
-      const full=workOpen(j)&&workCount(j)>=WORK_CAP; b.disabled=full; b.title=workOpen(j)?(full?`You have ${WORK_CAP} ${j}s`:`Joins your ${j}s`):`Becomes your ${WORK_HEAD[j]}`; } }catch(e){ console.warn(e); } return r; }; }
+      const full=workOpen(j)&&workCount(j)>=workCap(j); b.disabled=full; b.title=workOpen(j)?(full?`You have ${workCap(j)} ${j}s`:`Joins your ${j}s`):`Becomes your ${WORK_HEAD[j]}`; } }catch(e){ console.warn(e); } return r; }; }
 { const _rd=recruitDrifter; recruitDrifter=function(d,job,forGuest,...a){ if(!WORK_JOBS.includes(job)) return _rd(d,job,forGuest,...a);
     d.dead=true; home.drifters=Math.max(0,(home.drifters||0)-1);
     if(typeof MP!=='undefined'&&MP.on&&MP.guest){ MP.recReq=MP.recReq||[]; MP.recSeq=(MP.recSeq||0)+1; MP.recReq.push([MP.recSeq,d.name,job]); if(MP.recReq.length>10) MP.recReq.shift();
@@ -11039,13 +11047,13 @@ JOBS.splice(JOBS.findIndex(j=>j[0]==='miner'),1,['woodcutter','Woodcutter'],['fa
     workerFromWanderer(job,d.name,forGuest); }; }
 // the Quartermaster: woodcutters, farmers and miners in one list
 vworkHtml=function(){ if(!home||!home.claimed) return ''; const guest=typeof MP!=='undefined'&&MP.guest, near=nearOwnCastle();
-  return `<h3 style="margin-top:6px">Village workers</h3><p style="margin-bottom:8px">Woodcutters fell trees, farmers tend the fields and miners dig for ore. Each job needs a head first: when a wanderer comes to your village, give them the job. Then hire up to ${WORK_CAP} of each here.${guest?' Only the host can hire them.':''}</p>`+
-    WORK_JOBS.map(k=>{ const open=workOpen(k), n=workCount(k), room=n<WORK_CAP, ok=open&&room&&near&&!guest&&(free()||testFree()||player.coins>=WORK_COST);
+  return `<h3 style="margin-top:6px">Village workers</h3><p style="margin-bottom:8px">Woodcutters fell trees, farmers tend the fields and miners dig for ore. Each job needs a head first: when a wanderer comes to your village, give them the job. Then hire up to ${WORK_CAP} of each here (more as their workplaces level up, in Buildings).${guest?' Only the host can hire them.':''}</p>`+
+    WORK_JOBS.map(k=>{ const open=workOpen(k), n=workCount(k), room=n<workCap(k), ok=open&&room&&near&&!guest&&(free()||testFree()||player.coins>=WORK_COST);
       const look=k==='miner'?'miner':k; const what=k==='woodcutter'?'Brings logs to the lodge':k==='farmer'?'Brings crops to the farmhouse':'Brings ore to the mine chest';
       const note=!open?`Needs a ${WORK_HEAD[k]} first: make a wanderer a ${k}.`:!room?`You have the most ${k}s a village can keep.`:`${WORK_COST} coins. ${what}.`;
-      return `<div class="recipe${ok?'':' no'}"><img alt="" src="${portraitUrl(look==='miner'?'miner':'miner','w',false)}" style="image-rendering:pixelated"><div><div class="nm">${k[0].toUpperCase()+k.slice(1)} (${n} of ${WORK_CAP})</div><div class="ing">${note}</div></div><div class="acts"><button data-vw2="${k}" ${ok?'':'disabled'}>Hire</button></div></div>`; }).join(''); };
+      return `<div class="recipe${ok?'':' no'}"><img alt="" src="${portraitUrl(look==='miner'?'miner':'miner','w',false)}" style="image-rendering:pixelated"><div><div class="nm">${k[0].toUpperCase()+k.slice(1)} (${n} of ${workCap(k)})</div><div class="ing">${note}</div></div><div class="acts"><button data-vw2="${k}" ${ok?'':'disabled'}>Hire</button></div></div>`; }).join(''); };
 $('#shopList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-vw2]'); if(!b||b.disabled) return; ev.stopPropagation(); const k=b.dataset.vw2;
-  if(!nearOwnCastle()||!workOpen(k)||workCount(k)>=WORK_CAP) return; if(typeof MP!=='undefined'&&MP.guest){ toast('Only the host can hire village workers',2.5); return; }
+  if(!nearOwnCastle()||!workOpen(k)||workCount(k)>=workCap(k)) return; if(typeof MP!=='undefined'&&MP.guest){ toast('Only the host can hire village workers',2.5); return; }
   if(!free()&&!testFree()){ if(player.coins<WORK_COST) return; player.coins-=WORK_COST; } addWorker(k); if(k==='miner') toast('A miner joins your village',2); renderShop(); },true);
 // the Army window no longer hires miners
 { const _ra=renderArmy; renderArmy=function(...a){ const r=_ra(...a); try{ for(const b of document.querySelectorAll('#hireList [data-hire="miner"]')) b.remove(); }catch(e){} return r; }; }
@@ -11136,9 +11144,9 @@ function roomAt(sx,sy){ const open=(x,y)=>{ const id=tileAt(x,y); return !id||!B
 function gameBoxes(){ const L=[]; if(!home||!home.claimed) return L; const cx=home.castleCx, gy=home.gy;
   L.push({kind:'castle',x0:cx-20,x1:cx+19,y0:gy-36,y1:gy-1,roles:['quarter','recruiter','trainer','engineer']});
   (home.houses||[]).forEach((h,i)=>{ if(h) L.push({kind:'house',h,i,x0:h.x0-1,x1:h.x1+1,y0:h.gy-21,y1:h.gy-1}); });
-  if(home.lodge) L.push({kind:'lodge',x0:home.lodge.x0,x1:home.lodge.x1,y0:home.lodge.gy-9,y1:home.lodge.gy-1,roles:['forester','woodcutter']});
-  if(home.farmhouse) L.push({kind:'farmhouse',x0:home.farmhouse.x0,x1:home.farmhouse.x1,y0:home.farmhouse.gy-9,y1:home.farmhouse.gy-1,roles:['headfarmer','farmer']});
-  if(home.mineX) L.push({kind:'mine',x0:home.mineX-4,x1:home.mineX+5,y0:home.gy-9,y1:home.gy-1,roles:['foreman','miner']});
+  if(home.lodge) L.push({kind:'lodge',x0:home.lodge.x0,x1:home.lodge.x1,y0:home.lodge.gy-15,y1:home.lodge.gy-1,roles:['forester','woodcutter']});
+  if(home.farmhouse) L.push({kind:'farmhouse',x0:home.farmhouse.x0,x1:home.farmhouse.x1,y0:home.farmhouse.gy-15,y1:home.farmhouse.gy-1,roles:['headfarmer','farmer']});
+  if(home.mineX) L.push({kind:'mine',x0:home.mineX-4,x1:home.mineX+5,y0:home.gy-15,y1:home.gy-1,roles:['foreman','miner']});
   for(const st of (typeof myStructures!=='undefined'?myStructures:[])) if(st&&st.kind==='keep') L.push({kind:'keep',st,x0:st.x-9,x1:st.x+9,y0:st.gy-12,y1:st.gy-1,roles:['quarter','recruiter','trainer']});
   return L; }
 const inBox=(b,x,y)=>x>=b.x0&&x<=b.x1&&y>=b.y0&&y<=b.y1;
@@ -11995,7 +12003,7 @@ function helperCheck(){ if(!home||!home.claimed||!player||isGuest()) return;
 
 // ---- indoor light comes from torches and lamps (23_rendering.js): every room the village built gets one torch once ----
 function lightRooms(){ if(!home||!home.claimed||isGuest()) return 0; home.litRooms=home.litRooms||{}; let n=0;
-  for(const b of gameBoxes()){ const key=b.kind+':'+b.x0+','+b.y1; if(home.litRooms[key]) continue; home.litRooms[key]=1; const seen=new Set();
+  for(const b of gameBoxes()){ const key=b.kind+':'+b.x0+','+b.y0+','+b.y1; if(home.litRooms[key]) continue; home.litRooms[key]=1; const seen=new Set();
     const room=(x,y)=>x>=b.x0&&x<=b.x1&&y>=b.y0&&y<=b.y1&&!BLOCKS[tileAt(x,y)].solid&&!isOpenDoor(tileAt(x,y))&&bg[y*W+x];
     for(let y=b.y0;y<=b.y1;y++) for(let x=b.x0;x<=b.x1;x++){ if(seen.has(y*W+x)||!room(x,y)) continue; const cells=[], st=[[x,y]]; seen.add(y*W+x);
       while(st.length){ const [cx,cy]=st.pop(); cells.push([cx,cy]); for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=cx+dx, ay=cy+dy, k=ay*W+ax; if(!seen.has(k)&&room(ax,ay)){ seen.add(k); st.push([ax,ay]); } } }
@@ -12006,6 +12014,229 @@ function lightRooms(){ if(!home||!home.claimed||isGuest()) return 0; home.litRoo
   return n; }
 { const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ lightRooms(); }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ lightRooms(); }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.65: formations and cover =====================
+// Formation (an order, Q cycles to it): your party lines up in ranks facing the enemy, three soldiers to a block. The
+// toughest melee soldiers take the front rank, the next ones stand right behind and strike over them (longer reach),
+// and archers and wizards stand behind you. The line holds: melee only fight what reaches them, ranged shoot from their
+// place. The front rank braces and takes less damage from the front, and so does any soldier of any side standing
+// shoulder to shoulder with two others, so a packed enemy line is harder to break too.
+// Cover: a soldier (or you) with a solid block or a door beside them, on the side a shot comes from, is harder to hit:
+// one row covered turns 35% of shots aside, a full body 60%. Archers and wizards pick targets in the open over ones in cover.
+ORDERS.form={name:'Formation',desc:'Line up in ranks facing the enemy: melee three to a block in front, archers and wizards behind you. The front rank braces, the second strikes over it, and the line holds its ground.'};
+const isMeleeCls=c=>!['archer','wizard'].includes(c);
+let formT=0, formDir=1, formDirT=0;
+function formSlots(dt){ const P=player&&!player.dead?player.party.filter(e=>e&&!e.dead):[];
+  if(!player||player.order!=='form'){ for(const e of P){ if(e.fRank!=null){ e.fRank=null; e.fReach=1; e.fDir=0; } } return; }
+  const live=P.filter(e=>!e.aboard&&!e.leftBehind); if(!live.length) return;
+  // face the nearest enemy within 25 blocks, else the way you face; kept at least 1.5 s so the line doesn't flip
+  formDirT-=dt; if(formDirT<=0){ let best=25*T, d=0; for(const o of ents){ if(o.dead||!targetable(o)||!hostile(player.team,o.team)||o.kind==='animal'&&!o.angry) continue; const dd=Math.abs(cxOf(o)-cxOf(player)); if(dd<best&&Math.abs(cyOf(o)-cyOf(player))<10*T){ best=dd; d=Math.sign(cxOf(o)-cxOf(player)); } }
+    const nd=d||player.facing||1; if(nd!==formDir){ formDir=nd; formDirT=1.5; } else formDirT=0.4; }
+  const pc=Math.floor(cxOf(player)/T), dir=formDir, sub=[0,-5,5];
+  const mel=live.filter(e=>isMeleeCls(e.cls)).sort((a,b)=>b.maxHp-a.maxHp), rng=live.filter(e=>!isMeleeCls(e.cls)), mr=Math.ceil(mel.length/3);
+  const put=(e,col,i,rank)=>{ e.holdX=col*T+8+sub[i%3]; e.fRank=rank; e.fDir=dir; e.fReach=rank===1?1.8:1;
+    if(!e.target&&Math.abs(cxOf(e)-e.holdX)>22*T&&player.grounded&&!player.inWater){ puff(cxOf(e),cyOf(e),'#e8e4d8',6,60); e.x=e.holdX-e.w/2; e.y=player.y-4; e.vx=e.vy=0; if(collides(e)){ e.x=player.x; e.y=player.y; } } };
+  mel.forEach((e,i)=>{ const rank=Math.floor(i/3); put(e,pc+dir*(mr-rank),i,rank===0?0:rank===1?1:2); });
+  rng.forEach((e,i)=>{ put(e,pc-dir*(1+Math.floor(i/3)),i,3); }); }
+{ const _u=update; update=function(dt){ _u(dt); if((formT-=dt)<=0){ formT=0.25; try{ formSlots(0.25); }catch(e){ console.warn(e); } } }; }
+
+// ---- cover ----
+function coverOf(o,fromX){ if(!o||Math.abs(fromX-cxOf(o))<2*T) return 0; const side=fromX<cxOf(o)?-1:1, c=Math.floor(cxOf(o)/T), adj=c+side;
+  const top=Math.floor((o.y+3)/T), bot=Math.floor((o.y+o.h-3)/T); let rows=0, n=0;
+  for(let y=top;y<=bot;y++){ n++; const a=tileAt(adj,y), here=tileAt(c,y); if((BLOCKS[a].solid&&!BLOCKS[a].glass)||DOOR_IDS.has(a)||DOOR_IDS.has(here)) rows++; }
+  return !rows?0:rows>=n?0.6:0.35; }
+function coverPick(e,nt,r,ranged){ if(!ranged||!nt||coverOf(nt,cxOf(e))===0) return nt; const d0=Math.hypot(cxOf(nt)-cxOf(e),cyOf(nt)-cyOf(e)); let best=nt, bd=1e9;
+  for(const o of ents){ if(o===nt||o.dead||!targetable(o)||!hostile(e.team,o.team)||o.kind==='animal'&&!o.angry) continue; const d=Math.hypot(cxOf(o)-cxOf(e),cyOf(o)-cyOf(e)); if(d>r||d>d0*1.4+3*T||coverOf(o,cxOf(e))>0) continue; if(d<bd){ bd=d; best=o; } }
+  return best; }
+// shoulder to shoulder: two allies within a block's width of this soldier
+function braced(t,src){ if(!t||t.kind!=='human'||!src) return false; const sx=src.owner&&!src.owner.dead?cxOf(src.owner):src.x!=null?src.x+(src.w||0)/2:null; if(sx==null) return false;
+  const front=Math.sign(sx-cxOf(t)); if(t.fRank===0&&player&&player.order==='form'&&t.fDir===front) return true;
+  let n=0; for(const o of ents){ if(o===t||o.dead||o.kind!=='human'||o.team!==t.team) continue; if(Math.abs(cxOf(o)-cxOf(t))<0.7*T&&Math.abs(cyOf(o)-cyOf(t))<T&&++n>=2) break; } return n>=2&&(t.facing||1)===front; }
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ try{ if(t&&!t.dead&&!t.ghost&&src&&(t.kind==='human'||t.kind==='player')&&!t.bigBoss){
+      if(src.kind==='proj'){ const fx=src.owner&&!src.owner.dead?cxOf(src.owner):src.x+(src.w||0)/2, ch=coverOf(t,fx);
+        if(ch&&Math.random()<ch){ addFloat(cxOf(t),t.y-8,'cover','#cfd8e0'); puff(cxOf(t)+Math.sign(fx-cxOf(t))*10,cyOf(t),'#a8a29a',4,50); return; } }
+      if(braced(t,src)){ amt=Math.max(1,Math.round(amt*0.8)); kb=(kb||0)*0.5; } } }catch(e){ console.warn(e); }
+    return _dmg(t,amt,src,kb,...a); }; }
+// ===================== Beta 0.9.66: the woodcutter's lodge, the farmhouse and the miners' hut have levels =====================
+// Like every shop, each workplace goes from level 1 to 3 (level 2 needs a Town, level 3 a City). Its head worker asks a
+// favor first, then the upgrade costs the same as a shop's. Each level makes room for 2 more workers (5, 7, 9) and the
+// workers bring in 25% more (woodcutters and farmers per load, miners per day). Level 2 adds a loft (a ledge and a
+// platform lead up to a bedroom under a taller roof); level 3 adds lanterns by the doors, a chimney and a banner.
+// Upgrades are in Buildings > Village, next to Grow. The building's stone and iron stages follow the village as before.
+const WORKPLACES={ lodge:{job:'woodcutter',head:'forester',name:'Woodcutter\'s lodge'}, farmhouse:{job:'farmer',head:'headfarmer',name:'Farmhouse'}, mine:{job:'miner',head:'foreman',name:'Miners\' hut'} };
+const WP_OF_JOB={ woodcutter:'lodge', farmer:'farmhouse', miner:'mine' };
+Object.assign(VTASKS,{
+  forester:[[[I.APPLE,15,'apples for the crew\'s lunch'],[I.BREAD,8,'bread for the crew'],[I.HONEY,6,'honey to keep the crew sweet']],
+            [[I.STEW,6,'hearty stew for long days'],[I.GOLD_BAR,6,'gold to pay a bigger crew'],[I.COOKED_PORK,8,'roast pork for the crew']]],
+  headfarmer:[[[I.BONE,15,'bones to grind for the fields'],[I.WHEAT_SEEDS,20,'seeds for new rows'],[I.EGG,10,'eggs to start a coop']],
+              [[I.PUMPKIN_SEEDS,10,'pumpkin seeds'],[I.HONEY,10,'honey for the bees\' new hives'],[I.CARROT_SEEDS,15,'carrot seeds']]],
+  foreman:[[[B.TORCH,30,'torches for the tunnels'],[I.BREAD,10,'bread for the miners'],[B.PLANK,60,'planks to shore up the shaft']],
+           [[I.IRON_BAR,20,'iron for mine rails'],[I.STEW,8,'stew for the deep shifts'],[B.TORCH,60,'torches for the deep tunnels']]] });
+function wpRec(k){ if(!home) return null; if(k==='mine') return home.mineX?{x0:home.mineX-4,x1:home.mineX+5,gy:home.gy,oc:home.mineX+3,wall:B.TIMBER}:null;
+  const r=home[k]; return r&&isFinite(r.x0)?{x0:r.x0,x1:r.x0+10,gy:r.gy,oc:r.x0+5,wall:LODGE[WORKPLACES[k].job].wall}:null; }
+function wpLevel(k){ return Math.max(1,Math.min(3,(home&&home.wpLv&&home.wpLv[k])||1)); }
+function workCap(job){ const k=WP_OF_JOB[job]; return 5+2*((k?wpLevel(k):1)-1); }
+function wpTask(k){ const lv=wpLevel(k); if(lv>=3||vtaskSkip()) return null; const key=`work:${k}:${lv+1}`; if(vtaskDone(key)) return null; return vtaskFor(WORKPLACES[k].head,lv+1,key); }
+function wpHeadName(k){ if(k==='mine') return home.foremanName||'The mine foreman'; const r=home[k]; return (r&&r.headName)||LODGE[WORKPLACES[k].job].headName; }
+function wpRow(k){ const lv=wpLevel(k), nm=WORKPLACES[k].name; if(lv>=3) return `<div class="recipe" style="grid-template-columns:1fr"><div><div class="nm">${nm}: level 3 of 3</div><div class="ing">Fully upgraded: room for ${workCap(WORKPLACES[k].job)} workers, who bring in half as much again.</div></div></div>`;
+  const t=wpTask(k); if(t) return vtaskRow(wpHeadName(k),t);
+  const up=SHOP_UP[lv+1], cap=Math.min(3,villageTier()+1), blocked=lv+1>cap, can=!blocked&&!isGuest()&&nearOwnCastle()&&(free()||testFree()||(player.coins>=up.coins&&up.need.every(([id,n])=>countItem(id)>=n)));
+  const what=up.need.map(([id,n])=>`${n} ${ITEMS[id].name.toLowerCase()} (have ${countItem(id)})`).join(', ');
+  return `<div class="recipe${can?'':' no'}"><img alt="" src="${iconUrl(B.BRICK)}"><div><div class="nm">${nm}: level ${lv} of 3, upgrade to level ${lv+1}</div><div class="ing">${blocked?`Grow your village to a ${lv+1===2?'Town':'City'} first. `:''}${up.coins} coins, ${what}. Room for ${5+2*lv} workers, who bring in ${lv===1?'a quarter':'half'} as much again${lv===1?', and a loft':', lanterns and a chimney'}.</div></div><div class="acts"><button data-wkup="${k}" ${can?'':'disabled'}>Upgrade</button></div></div>`; }
+function wpHtml(){ const ks=Object.keys(WORKPLACES).filter(k=>wpRec(k)); if(!ks.length) return ''; return '<h3 style="margin:10px 0 4px">Workplaces</h3>'+ks.map(wpRow).join(''); }
+function upgradeWorkplace(k){ const lv=wpLevel(k); if(lv>=3||!wpRec(k)) return; if(isGuest()){ toast('Only the host can upgrade workplaces',2.5); return; } if(wpTask(k)) return; if(lv+1>Math.min(3,villageTier()+1)) return;
+  const up=SHOP_UP[lv+1]; if(!free()&&!testFree()){ if(player.coins<up.coins||!up.need.every(([id,n])=>countItem(id)>=n)) return; player.coins-=up.coins; for(const [id,n] of up.need) takeItem(id,n); }
+  home.wpLv=home.wpLv||{}; home.wpLv[k]=lv+1; invDirty=true; try{ buildWpLevel(k,lv+1); }catch(e){ console.warn(e); }
+  if(home.skin) delete home.skin[k];   // reskin the taller building in the village's stage
+  if(typeof sfx==='function') sfx('ward'); toast(`${WORKPLACES[k].name} upgraded to level ${lv+1}: room for ${workCap(WORKPLACES[k].job)} workers.`,3.5); }
+// the building grows: level 2 a loft under a taller roof, level 3 lanterns, a chimney and a banner (idempotent)
+function buildWpLevel(k,lv){ const r=wpRec(k); if(!r||isGuest()) return; const {x0,x1,gy,oc,wall}=r; const put=(x,y,id)=>{ if(x>0&&x<W&&y>0&&y<H&&tileAt(x,y)!==id) setTile(x,y,id); };
+  facRun(()=>{ if(lv>=2&&tileAt(x0,gy-8)!==wall){
+      const isRoof=id=>id===B.ROOF||(typeof SKIN_OF!=='undefined'&&SKIN_OF.get(id)==='roof');
+      for(let x=x0-2;x<=x1+2;x++) for(let y=gy-16;y<=gy-6;y++){ const id=tileAt(x,y); if(id&&(isRoof(id)||(y<=gy-10&&(LOG_IDS.has(id)||LEAF_IDS.has(id)||PLANTS.has(id))))) put(x,y,0); }
+      for(let x=x0;x<=x1;x++) put(x,gy-6,x===oc||x===oc+1?B.PLATFORM:B.PLANK);
+      put(oc,gy-3,B.PLATFORM); put(oc+1,gy-3,B.PLATFORM);
+      for(let y=gy-10;y<=gy-7;y++){ put(x0,y,wall); put(x1,y,wall); for(let x=x0+1;x<x1;x++){ put(x,y,0); bset(x,y,5); } }
+      for(let k2=0;k2<4;k2++) for(let x=x0-1+k2;x<=x1+1-k2;x++) put(x,gy-11-k2,B.ROOF);
+      put(x0+3,gy-9,B.WINDOW); put(x1-2,gy-7,B.BED); put(x0+2,gy-9,B.TORCH); }
+    if(lv>=3){ if(!tileAt(x0-1,gy-4)) put(x0-1,gy-4,B.LANTERN); if(!tileAt(x1+1,gy-4)) put(x1+1,gy-4,B.LANTERN);
+      for(let y=gy-15;y>=gy-16;y--) put(x1-2,y,B.STONE_BLOCK); put(x0+5,gy-16,banOf(player.team)); } }); }
+{ const _vh=villageHtml; villageHtml=function(...a){ let h=_vh(...a); try{ h+=wpHtml(); }catch(e){ console.warn(e); } return h; }; }
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-wkup]'); if(!b||b.disabled) return; ev.stopPropagation(); ev.preventDefault(); upgradeWorkplace(b.dataset.wkup); try{ renderBuild(); }catch(e){} },true);
+// more from each level
+{ const _vd=vDeliver; vDeliver=function(e,id,n,...a){ const k=e&&WP_OF_JOB[e.vjob]; if(k&&wpLevel(k)>1) n=n*(1+0.25*(wpLevel(k)-1)); return _vd(e,id,n,...a); }; }
+{ const _mq=minerQuota; minerQuota=function(e){ const fresh=e.qDay!==dayCount; const r=_mq(e); if(fresh&&wpLevel('mine')>1){ e.qLeft=Math.round(e.qLeft*(1+0.25*(wpLevel('mine')-1))); return e.qLeft; } return r; }; }
+// ===================== Beta 0.9.67: five cave monsters, one for each kind of cave; more monsters underground =====================
+// Cave bats flit through every cave (and swarm in the dripstone caves), jade crabs scuttle in the jade caves under a thick
+// shell, rose wisps float through the rose quartz caves and throw glowing bolts, azure spiders lurk in the deep azure
+// caves and their bite slows you, and fossil raptors hunt in packs in the fossil beds. Up to 9 monsters (was 6) lurk
+// near you underground.
+Object.assign(MON,{
+  cave_bat:      { w:12, h:10, hp:18,  dmg:6,  speed:130, def:0, reach:10, coins:0, fly:true, drops:[[I.BONE,0.15,1,1]] },
+  jade_crab:     { w:18, h:14, hp:170, dmg:16, speed:38,  def:11, reach:14, coins:3, drops:[[BIO.JADE_SHARD,0.7,1,2],[I.EMERALD,0.08,1,1]] },
+  rose_wisp:     { w:12, h:14, hp:55,  dmg:11, speed:70,  def:1, ranged:true, fly:true, coins:2, drops:[[BIO.ROSE_QUARTZ,0.7,1,2]] },
+  azure_spider:  { w:20, h:12, hp:85,  dmg:13, speed:120, def:3, reach:14, coins:3, drops:[[BIO.AZURE_SHARD,0.6,1,2],[I.SAPPHIRE,0.06,1,1]] },
+  fossil_raptor: { w:18, h:20, hp:110, dmg:17, speed:135, def:3, reach:16, coins:3, drops:[[I.BONE,0.8,1,3]] } });
+const CAVE_MON={ stalag:'cave_bat', jade:'jade_crab', rose:'rose_wisp', azure:'azure_spider', fossil:'fossil_raptor' };
+const PACK={ cave_bat:2, fossil_raptor:2 };
+// which monster a cave spot calls for: the biome's own (60% of the time), and bats now and then in any plain cave
+function caveMonFor(x,y){ const b=typeof biome2At==='function'?biome2At(x,y):null; if(b&&CAVE_MON[b]&&Math.random()<0.6) return CAVE_MON[b]; if(biomeAt(x,y)==='cave'&&Math.random()<0.12) return 'cave_bat'; return null; }
+{ const _su=spawnUnder; spawnUnder=function(...a){ const n0=ents.length; const r=_su(...a);
+    try{ for(let i=n0;i<ents.length;i++){ const m=ents[i]; if(!m||m.dead||m.kind!=='monster'||!m.under||m.cmon) continue; const tx=Math.floor(cxOf(m)/T), ty=Math.floor((m.y+m.h-1)/T), type=caveMonFor(tx,ty); if(!type) continue;
+        m.dead=true; for(let k=0;k<(PACK[type]||1);k++){ const nm=makeMonster(type,m.x+k*14,(ty+1)*T-MON[type].h-1); nm.under=true; nm.cmon=true; ents.push(nm); } break; } }catch(e){ console.warn(e); }
+    return r; }; }
+{ const _mm=makeMonster; makeMonster=function(type,...a){ const m=_mm(type,...a); if(m&&type==='rose_wisp') m.glow=3; return m; }; }
+{ const _ns=npcShoot; npcShoot=function(e,t,kind,...a){ if(e&&e.mtype==='rose_wisp') kind='magic'; return _ns(e,t,kind,...a); }; }
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ const r=_dmg(t,amt,src,kb,...a); try{ if(src&&src.mtype==='azure_spider'&&t&&!t.dead&&!(t.gear&&t.gear.ward)){ t.slowT=Math.max(t.slowT||0,2); if(t===player) addFloat(cxOf(t),t.y-10,'slowed','#8ab4ec'); } }catch(e){} return r; }; }
+// fossil raptors pounce: a leap at a target 3 to 6 blocks away
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if(e.mtype==='fossil_raptor'&&!e.dead&&e.target&&e.grounded){ e.pounceT=(e.pounceT||0)-dt; const dx=cxOf(e.target)-cxOf(e); if(e.pounceT<=0&&Math.abs(dx)>3*T&&Math.abs(dx)<6*T&&Math.abs(cyOf(e.target)-cyOf(e))<2*T){ e.pounceT=3; e.vy=-JUMP*0.6; e.vx=Math.sign(dx)*320; e.kbT=0.35; } } }catch(err){} return r; }; }
+// ---- looks ----
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const L=o.look, f=o.frame||0, atk=o.atk;
+    if(L==='cave_bat'){ const R=fig(g,SCX-8,SFY-14), up=f%2===0; R(5,4,6,6,'#4a3a4a'); R(6,3,1,2,'#4a3a4a'); R(9,3,1,2,'#4a3a4a'); R(6,6,1,1,'#ff5050'); R(9,6,1,1,'#ff5050');
+      if(up){ R(0,1,5,3,'#3a2a3a'); R(11,1,5,3,'#3a2a3a'); R(1,0,3,1,'#5a4a5a'); R(12,0,3,1,'#5a4a5a'); } else { R(0,6,5,3,'#3a2a3a'); R(11,6,5,3,'#3a2a3a'); R(1,9,3,1,'#5a4a5a'); R(12,9,3,1,'#5a4a5a'); } R(7,9,2,1,'#e8e4d8'); return; }
+    if(L==='jade_crab'){ const R=fig(g,SCX-10,SFY-14), c1='#3aa860', c2='#8ae0a8', c3='#1f6a3a';
+      for(let k=0;k<3;k++){ R(3+k*4,10+((k+f)%2),2,4,c3); R(13+k*2-6,10+((k+f+1)%2),1,4,c3); } R(1,4,18,7,c1); R(3,2,14,3,c1); R(4,3,4,2,c2); R(10,4,3,2,c2); R(1,10,18,1,c3);
+      R(14,1,1,3,'#2a2a2a'); R(16,1,1,3,'#2a2a2a'); R(14,0,1,1,'#ffffff'); R(16,0,1,1,'#ffffff'); R(18,4+(atk?-2:0),4,4,c1); R(21,3+(atk?-2:0),2,2,c2); R(-2,5,4,4,c1); return; }
+    if(L==='rose_wisp'){ const R=fig(g,SCX-8,SFY-16), b=(f%2); g.globalAlpha=0.85; R(4,3,8,9,'#f0a0c0'); R(5,2,6,1,'#f8c8dc'); R(3,5,1,5,'#e080a8'); R(12,5,1,5,'#e080a8'); R(6,5,4,4,'#fff0f6');
+      R(5,12,2,2+b,'#e080a8'); R(9,12,2,3-b,'#e080a8'); R(7,14,2,2,'#f0a0c0'); R(6,6,1,2,'#7a2a5a'); R(9,6,1,2,'#7a2a5a'); if(atk) R(13,4,3,3,'#ffffff'); g.globalAlpha=1; return; }
+    if(L==='azure_spider'){ const R=fig(g,SCX-11,SFY-12), c1='#3a5ab0', c2='#8ab4ec', c3='#1f2f6a';
+      for(let k=0;k<4;k++){ const s=(k+f)%2; R(1+k*2,6+s,2,1,c3); R(0+k*2,7+s,1,5,c3); R(13+k*2,6+(1-s),2,1,c3); R(15+k*2,7+(1-s),1,5,c3); }
+      R(4,3,9,6,c1); R(5,2,7,1,c2); R(6,4,2,2,c2); R(12,4,6,5,c1); R(15,5,1,1,'#ff3060'); R(17,5,1,1,'#ff3060'); R(16,7,1,1,'#ff3060'); if(atk) R(19,7,3,2,'#e8e4d8'); return; }
+    if(L==='fossil_raptor'){ const R=fig(g,SCX-10,SFY-20), bone='#e8e0c8', dk='#a89a78', s=f%2;
+      R(5,14,2,6-s,bone); R(11,14,2,5+s,bone); R(4,19-s,3,1,dk); R(10,18+s,3,1,dk); R(3,7,12,7,bone); for(let x=4;x<14;x+=2) R(x,9,1,3,dk); R(-3,6,7,2,bone); R(-5,5,3,1,bone);
+      R(13,2,7,6,bone); R(18,4+(atk?1:0),4,2,bone); R(19,7,2,1,dk); R(15,3,2,2,'#2a2018'); R(16,3,1,1,'#ff5030'); R(13,8,1,3,dk); return; }
+    return _hf(g,o,...a); }; }
+{ const _bc=bleedColor; bleedColor=function(t){ const m=t&&t.mtype; if(m==='cave_bat') return '#7a2030'; if(m==='jade_crab') return '#8ae0a8'; if(m==='rose_wisp') return '#f8c8dc'; if(m==='azure_spider') return '#8ab4ec'; if(m==='fossil_raptor') return '#e8e0c8'; return _bc(t); }; }
+// flyers flap and bob all the time, not only when walking
+{ const _fo=frameOf; frameOf=function(e){ if(e&&(e.mtype==='cave_bat'||e.mtype==='rose_wisp')) return Math.floor((e.anim||0)*(e.mtype==='cave_bat'?10:4))%2; return _fo(e); }; }
+// ===================== Beta 0.9.66: smoother shared worlds (host authority, interpolation, replicated targets) =====================
+// See docs/MULTIPLAYER_REVIEW.md. The host stays the authority for every enemy and animal; friends see them smoothly:
+// 1. Messages are read when the room reports a change (onPeers `updated`), not only on the 10-a-second poll.
+// 2. Every message carries its sender's clock (`ts`). Each enemy, animal, friend and friend's soldier keeps a short
+//    buffer of timed positions and is drawn NET_DELAY ms in the past, sliding between the two samples around that
+//    moment (and coasting on its velocity for up to 120 ms if a sample is late), instead of jumping to each new one.
+// 3. The host sends each mob's velocity and who it is after (`mobs` fields 8-10: vx, vy, target key), so a friend's
+//    game knows which enemies are after them (combat music, Defend me) and can coast between samples.
+// 4. A friend's hit shows at once: the real damage number (the host's defense formula), the hit sound, blood and a
+//    short push, and the health bar drops; the host's next sample takes over.
+// 5. The hit goes to the host as an attack command [nid, damage, seq, weapon, x, y, knockback]: the host applies it from
+//    where the friend stood with the weapon's own knockback and answers [friend, seq, damage dealt, killed, nid] (`hr`);
+//    a kill shows at once on the friend's screen and the experience goes to the friend who landed it.
+// 6. An enemy's hits on a friend are no longer limited to one every half second (sequence numbers already stop repeats).
+const NET_DELAY=150, NET_COAST=120, NET_BUF=8;
+// ---- 1: read on change ----
+{ const _op=mpOnPeers; mpOnPeers=function(ch,...a){ const r=_op(ch,...a); try{ if(ch&&ch.updated&&ch.updated.length) MP.wantRecv=true; }catch(e){} return r; }; }
+// (read after the step, so what arrives, an arrow for example, is drawn at least once before it moves)
+{ const _u=update; update=function(dt){ _u(dt); if(typeof MP!=='undefined'&&MP.on&&MP.room&&MP.wantRecv){ MP.wantRecv=false; try{ mpReceive(); }catch(e){ console.warn(e); } } try{ netTick(dt); }catch(e){ console.warn(e); } }; }
+// ---- 2: clocks and buffers ----
+// a sender's clock against ours: the smallest delay seen wins at once, larger ones creep in slowly (clock drift)
+function netClock(c,ts){ const est=ts-performance.now(); if(c.off==null||est>c.off) c.off=est; else c.off+=(est-c.off)*0.01; }
+function netPush(o,c,ts,x,y,vx,vy){ if(ts==null||!isFinite(x)||!isFinite(y)) return; const b=o.nb||(o.nb=[]); const last=b[b.length-1]; if(last&&ts<=last.t) return; b.push({t:ts,x,y,vx:vx||0,vy:vy||0}); if(b.length>NET_BUF) b.shift(); o.nc=c; }
+// where o should be drawn now, or null with no samples
+function netPos(o){ const b=o.nb, c=o.nc; if(!b||!b.length||!c||c.off==null) return null; const rt=performance.now()+c.off-NET_DELAY;
+  if(rt<=b[0].t) return {x:b[0].x,y:b[0].y,vx:b[0].vx};
+  for(let i=b.length-1;i>0;i--){ const p=b[i-1], q=b[i]; if(rt>=p.t&&rt<=q.t){ const k=(rt-p.t)/Math.max(1,q.t-p.t); return {x:p.x+(q.x-p.x)*k,y:p.y+(q.y-p.y)*k,vx:(q.x-p.x)/Math.max(0.001,(q.t-p.t)/1000)}; } }
+  const q=b[b.length-1], ex=Math.min(NET_COAST,rt-q.t)/1000; return {x:q.x+q.vx*ex,y:q.y+q.vy*ex,vx:q.vx}; }
+// the newest position, coasted to now (what the host's enemies aim at for a friend)
+function netNow(o){ const b=o.nb, c=o.nc; if(!b||!b.length||!c||c.off==null) return null; const q=b[b.length-1], ex=clamp((performance.now()+c.off-q.t)/1000,0,0.15); return {x:q.x+q.vx*ex,y:q.y+q.vy*ex}; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,peerId,...a){ try{ if(d&&d.ts!=null){ r.clk=r.clk||{}; if(d.ts!==r.lastTs){ netClock(r.clk,d.ts); r.lastTs=d.ts; } MP.curClk=r.clk; MP.curTs=d.ts;
+        netPush(r,r.clk,d.ts,d.x,d.y,d.vx,0); } else { MP.curClk=null; MP.curTs=null; } }catch(e){ console.warn(e); }
+    // 5: the host applies a friend's attack commands itself (from where the friend stood), so the older code skips them
+    let dd=d; try{ if(MP.host&&d&&d.hits&&d.hits.length&&d.hits[0].length>3){ netHostHits(r,d.hits); dd=Object.assign({},d,{hits:[]}); } }catch(e){ console.warn(e); }
+    const res=_fp(r,dd,peerId,...a);
+    try{ if(MP.guest&&d&&d.host&&d.hr) netHitReplies(d.hr); }catch(e){ console.warn(e); }
+    return res; }; }
+// a friend's soldiers are rebuilt after mpFromPeer runs, so their samples are taken once the whole message is read
+{ const _rc=mpReceive; mpReceive=function(...a){ const r=_rc(...a); try{ for(const q of MP.remote.values()) if(q.clk&&q.lastTs!=null) for(const o of q.soldiers||[]) netPush(o,q.clk,q.lastTs,o.tx,o.ty,0,0); }catch(e){ console.warn(e); } return r; }; }
+// ghosts take their samples from the host's message
+{ const _mg=mpGhosts; mpGhosts=function(list,...a){ if(MP.netHost===undefined) MP.netHost=false; for(const m of list) if(m.length>7){ MP.netHost=true; break; }
+    if(MP.netHost) for(const g of MP.ghosts.values()) g.lastHitMe=0;   // kills now come back from the host (no local guess, no double coins)
+    const r=_mg(list,...a);
+    try{ const clk=MP.curClk, ts=MP.curTs; for(const m of list){ const g=MP.ghosts.get(m[0]); if(!g) continue;
+        if(clk&&ts!=null) netPush(g,clk,ts,m[2],m[3],m[7]||0,m[8]||0);
+        // health: a hit predicted here keeps the bar down until the host's own sample agrees
+        if(g.predHp!=null){ if(performance.now()-g.predAt<1200&&g.predHp<g.hp) g.hp=Math.max(1,g.predHp); else g.predHp=null; }
+        // 3: who it is after
+        const tg=m[9]; g.tgtKey=tg||0; g.target=!tg?null:tg===MP.myKey?player:(tg[0]==='u'?ents.find(e=>!e.dead&&e.mpUid===+tg.slice(1))||null:null); } }catch(e){ console.warn(e); }
+    return r; }; }
+{ const _gm=mpGhostMove; mpGhostMove=function(g,dt,...a){ const p=netPos(g); if(!p) return _gm(g,dt,...a);
+    g.kbo=(g.kbo||0)*Math.max(0,1-dt*7); const ox=g.x; g.x=p.x+(g.kbo||0); g.y=p.y; g.vx=Math.abs(p.vx)>4?p.vx:(g.x-ox)/Math.max(dt,1e-3);
+    g.anim=(g.anim||0)+dt*(Math.abs(g.vx)>4?1:0.2); g.grounded=true; g.hurtT=Math.max(0,(g.hurtT||0)-dt); g.iframesG=Math.max(0,(g.iframesG||0)-dt); if(g.atkT>0) g.atkT-=dt; }; }
+// friends and their soldiers slide the same way; the host's stand-in for a friend sits at their newest position
+{ const _dr=drawRemotes; drawRemotes=function(...a){ try{ for(const r of MP.remote.values()){ const p=netPos(r); if(p){ r.x=r.tx=p.x; r.y=r.ty=p.y; }
+        for(const o of r.soldiers||[]){ const q=netPos(o); if(q){ o.x=o.tx=q.x; o.y=o.ty=q.y; } } } }catch(e){ console.warn(e); }
+    const res=_dr(...a); try{ netProxies(); }catch(e){} return res; }; }
+function netProxies(){ if(!MP.host) return; for(const r of MP.remote.values()){ if(!r.proxy) continue; const q=netNow(r); if(q){ r.proxy.x=q.x; r.proxy.y=q.y; } } }
+function netTick(dt){ if(typeof MP==='undefined'||!MP.on) return; netProxies(); }
+// ---- 3: velocity and target in the host's mob list ----
+{ const _ml=mpMobList; mpMobList=function(...a){ const out=_ml(...a); try{ const by=new Map(); for(const e of ents) if(e.nid&&!e.dead) by.set(e.nid,e);
+      const keyOf=t=>{ if(!t||t.dead) return 0; if(t===player) return MP.myKey||0; if(t.proxy){ const r=t.proxyOwner||[...MP.remote.values()].find(x=>x.proxy===t); if(!r) return 0; return t.uid?'u'+t.uid:r.key; } return 0; };
+      for(const m of out){ const e=by.get(m[0]); if(!e) continue; m[7]=Math.round(e.vx||0); m[8]=Math.round(e.vy||0); m[9]=keyOf(e.target||e.aggressor); } }catch(err){ console.warn(err); } return out; }; }
+// ---- 4 and 5: a friend's hit ----
+let netHitCtx=null;
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ if(t&&t.ghost) netHitCtx={src,kb}; try{ return _dmg(t,amt,src,kb,...a); } finally{ netHitCtx=null; } }; }
+mpGhostHit=function(g,amt){ if(g.iframesG>0) return; g.iframesG=0.08; const ctx=netHitCtx||{}, src=ctx.src, kb=ctx.kb==null?120:ctx.kb;
+  const hi=typeof heldItem==='function'?heldItem():null, wid=src===player&&hi?hi.id:0, sx=src&&!src.dead&&src.x!=null?Math.round(src.x):Math.round(player.x), sy=src&&src.y!=null?Math.round(src.y):Math.round(player.y);
+  MP.hitsOut.push([g.nid,Math.round(amt),++MP.hitSeq,wid,sx,sy,Math.round(kb)]); if(MP.hitsOut.length>30) MP.hitsOut.shift();
+  // what the host will most likely deal, shown now
+  let boost=1; try{ if(src&&player&&src.team===player.team) boost=allyBoost(); }catch(e){} const d=Math.max(1,Math.round(amt*boost*30/(30+(g.def||0))));
+  g.hurtT=0.18; g.lastHit=performance.now(); g.predHp=Math.max(1,(g.predHp!=null?g.predHp:g.hp)-d); g.predAt=performance.now(); g.hp=Math.min(g.hp,g.predHp);
+  if(src&&src.x!=null) g.kbo=(g.kbo||0)+(Math.sign(cxOf(g)-cxOf(src))||1)*Math.min(14,kb/12);
+  addFloat(cxOf(g),g.y-4,String(d),'#ffe066'); if(typeof sfx==='function') sfx('hit',cxOf(g),cyOf(g)); try{ bleed(g,Math.min(8,2+d/6)); }catch(e){} };
+// host: apply each command once, from where the friend stood, with the weapon's knockback, and answer it
+function netHostHits(r,list){ const p=mpProxy(r), seen=MP.hitsSeen[r.key]||0; let mx=seen; const by=new Map(); for(const e of ents) if(e.nid&&!e.dead) by.set(e.nid,e);
+  for(const h of list){ const [nid,amt,sq,wid,gx,gy,kb]=h; if(!mpFresh('hit',r.key,sq,seen)) continue; mx=Math.max(mx,sq); const e=by.get(nid); if(!e||e.dead) { netReply(r.key,sq,0,1,nid); continue; }
+    if(gx!=null&&Math.abs(gx-e.x)>40*T) continue;   // too far from what it claims to hit
+    const px=p.x, py=p.y; if(gx!=null){ p.x=gx; p.y=gy; } const hp0=e.hp; try{ damage(e,amt,p,kb!=null?clamp(kb,0,400):120); } finally{ p.x=px; p.y=py; }
+    netReply(r.key,sq,Math.max(0,Math.round(hp0-Math.max(0,e.hp))),e.dead||e.hp<=0?1:0,nid); }
+  MP.hitsSeen[r.key]=mx; }
+function netReply(key,sq,dealt,dead,nid){ (MP.hitRes=MP.hitRes||[]).push([key,sq,dealt,dead,nid]); if(MP.hitRes.length>40) MP.hitRes.shift(); }
+// friend: the host's answers; a kill shows at once and the experience is the friend's
+function netHitReplies(list){ for(const [key,sq,dealt,dead,nid] of list){ if(key!==MP.myKey||!mpFresh('hr','host',sq,0)) continue; const g=MP.ghosts.get(nid); if(!g||!dead) continue;
+    if(!g.killShown){ g.killShown=true; try{ puff(cxOf(g),cyOf(g),'#e8e4d8',10,90); bleed(g,8); if(typeof sfx==='function') sfx('kill',cxOf(g),cyOf(g)); }catch(e){} try{ awardXp(g); }catch(e){} }
+    g.dead=true; MP.ghosts.delete(nid); } }
+// ---- 6: an enemy's every hit on a friend reaches them ----
+mpProxyHurt=function(t,amt,src){ if(t.kind==='animal'&&t.mode!=='fight') return; const r=t.proxyOwner||[...MP.remote.values()].find(x=>x.proxy===t); const now=performance.now(); if(!r||now-(t.hurtAt||0)<120) return; t.hurtAt=now; t.hurtT=0.18;
+  MP.hurtOut.push([r.key,++MP.hurtSeq,Math.round(amt),src?Math.sign(cxOf(t)-cxOf(src))||1:0,t.uid||0]); if(MP.hurtOut.length>30) MP.hurtOut.shift(); };
 })();
 </script>
 </body>
