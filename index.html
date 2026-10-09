@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791524981"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791524981"><link rel="manifest" href="manifest.webmanifest?v=1791524981"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791529124"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791529124"><link rel="manifest" href="manifest.webmanifest?v=1791529124"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.61</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.62</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.61</h3>
+    <h3>New in Beta 0.9.62</h3>
+    <p>Gem weapons: at a workbench, the Iron, Gold and Diamond weapon of a kind (Silver, Gold and Diamond for staffs) plus 4 gems make a special one, and the gem decides what it does. Bows and staffs: ruby burns (Fire bow, Ember staff), sapphire splits arrows or chains lightning (Tri-shot bow, Tempest staff), emerald blasts or wards (Blast bow, Ward staff), amethyst pierces every enemy in its path (Void bow, Void staff). Knights, macebearers and Beastmasters get thrown weapons, a glaive, flail or kunai for each gem: ruby burns, sapphire chills, emerald heals you a little each hit, amethyst flies farther and knocks back harder. No weapon you can have before the diamond tier beats a Diamond weapon. Grow meal (from bones, or seeds, glowcaps and berries at a composter, and left by your farmers each morning) grows a crop a stage or a sapling into a tree. Beat both wizards to unlock the Breakdown bench: next to it, any crafted item in your bag breaks back into all its materials. Your castle's arrow slits turn dark slate and then iron as it grows, nothing spawns on top of your buildings, and the chimney on a level 2 shop house sits on its roof.</p>
+    <h3>Beta 0.9.61</h3>
     <p>Rugs lie flat on the floor, covering the top of the block they sit on, and come in six kinds: wool, blue, green, golden, striped and a bamboo mat. Jade, rose quartz and azure crystals hang from ceilings and grow out of cave walls like amethyst, and mining the block that holds a crystal knocks it loose. Enemies take fall damage. Accessories and charms turn up in chests half as often. Bows and staffs say their material: Wooden bow, Iron bow, Wooden staff, Gold staff. Settings, Screen layout has sliders for the checklist, the menu icons and the action buttons, and the choice list that opens with F has the X too.</p>
     <h3>Beta 0.9.60</h3>
     <p>Lava lies only underground, in puddles, pools and lakes of many sizes, each a bowl with air above it; lava that sat on the surface in older worlds has cooled to stone. Friends who join a shared world can tame the host's animals (they become the friend's own pets and the host's wild one goes away) and feed them for breeding, and a friend's game no longer makes stray enemies or animals of its own that the host never sees.</p>
@@ -624,7 +626,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.61</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.62</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -884,7 +886,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.61</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.62</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -903,7 +905,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.61', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.62', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -9351,7 +9353,7 @@ function decorShopHouse(h,lv){ if(!h||isGuest()||lv<2) return; const hx=h.x0-1, 
       for(let x=hx;x<=hx+8;x++) setTile(x,gy-10,x===hx||x===hx+8?B.TIMBER:B.PLATFORM);
       for(let y=gy-14;y<=gy-11;y++){ setTile(hx,y,B.TIMBER); setTile(hx+8,y,B.TIMBER); for(let x=hx+1;x<=hx+7;x++) bset(x,y,10); }
       for(let k=0;k<6;k++) for(let x=hx-1+k;x<=hx+9-k;x++) setTile(x,gy-15-k,roofId);
-      for(let y=gy-20;y>=gy-21;y--) setTile(hx+7,y,B.STONE_BLOCK);
+      for(let y=gy-18;y>=gy-20;y--) setTile(hx+7,y,B.STONE_BLOCK);   /* the chimney sits right on the roof */
       setTile(hx+2,gy-13,B.WINDOW); setTile(hx+6,gy-13,B.WINDOW); }
     put(hx+2,gy-4,B.LANTERN); put(hx+6,gy-4,B.LANTERN);
     place(0,furn.l2[0]); place(1,furn.l2[1]);
@@ -11623,13 +11625,13 @@ logCoverTex=function(x,y){ if(x<1||x>=W-1||y<1) return null; const row=y*W;
 // ---- no slopes under buildings: leveling the ground between buildings (levelNear, levelVillage), door ramps and old
 // natural slopes could leave a slanted block under a house, a lodge or a building you placed. After any leveling, and
 // every few seconds with the building skins, the ground in each building's footprint is made flat again ----
-function buildingBoxes(){ const out=[]; if(!home) return out;
+function buildingBoxes(mineOnly){ const out=[]; if(!home) return out;
   for(const h of home.houses||[]) if(h&&isFinite(h.x0)) out.push([h.x0,h.x1,h.gy??home.gy]);
   for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)) out.push([r.x0,r.x1,r.gy]); }
   if(home.claimed&&isFinite(home.castleCx)) out.push([home.castleCx-19,home.castleCx+19,home.gy]);
   if(home.mineX) out.push([home.mineX-5,home.mineX+6,home.gy]);
   for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ const bp=BLUEPRINTS.find(b=>b.id===st.kind); if(bp&&isFinite(st.x)) out.push([st.x+bp.fx0,st.x+bp.fx1,st.gy]); }
-  for(const b of (typeof bases!=='undefined'&&bases)||[]) for(const h of (b&&b.houses)||[]) if(h&&isFinite(h.x0)) out.push([h.x0,h.x1,h.gy??b.gy]);
+  if(!mineOnly) for(const b of (typeof bases!=='undefined'&&bases)||[]) for(const h of (b&&b.houses)||[]) if(h&&isFinite(h.x0)) out.push([h.x0,h.x1,h.gy??b.gy]);
   return out; }
 function flatUnder(x0,x1,gy){ let n=0; for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++) for(let y=gy-3;y<=gy+3;y++){ if(y<1||y>=H) continue; const i=y*W+x; const sh=shape[i]; if(sh>=2&&sh<=7&&(RAMP_SOIL.has(world[i])||SLOPEABLE.has(world[i]))){ shape[i]=0; n++; } } return n; }
 function flatUnderAll(){ if(!world||isGuest()) return 0; let n=0; for(const [x0,x1,gy] of buildingBoxes()) n+=flatUnder(x0,x1,gy); return n; }
@@ -11773,6 +11775,100 @@ const isGearAcc=id=>{ const k=ITEMS[id]&&ITEMS[id].kind; return k==='acc'||k==='
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.accRareV&&!isGuest()){ home.accRareV=1; let k=0;
       for(const [key,c] of Object.entries(chests)){ if(!c||!c.items||c.opened) continue; const [x,y]=key.split(',').map(Number); if(explored[y*W+x]) continue;
         c.items=c.items.map(s=>{ if(s&&isGearAcc(s.id)){ k++; return hash2(x,y+k,seed+977)<0.5?null:s; } return s; }); } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.62: gem weapons and the weapon balance =====================
+// Every special weapon is made at a workbench from the Iron (Silver for staffs), Gold and Diamond weapon of its kind plus
+// 4 gems, and the gem decides what it does: ruby burns, sapphire chills (or splits arrows, chains lightning), emerald
+// heals you a little on each hit (or blasts, or wards), amethyst pierces every enemy in its path (thrown ones fly 40%
+// farther and knock enemies back twice as far). They sit just above the Diamond weapon they are made from and below Mythril,
+// and no weapon you can get before the diamond tier is stronger than a Diamond weapon.
+Object.assign(METAL,{ ember:['#e8402a','#ffb08a','#7a1408'], frost:['#7ad8ff','#e8f8ff','#2a6a9a'], verdant:['#3ec86a','#c8ffd8','#1a6a32'], void:['#8a4ad8','#e0c8ff','#3a1a6a'] });
+const GEMW={ ruby:{g:I.RUBY,k:'ember',w:'Ember'}, sapphire:{g:I.SAPPHIRE,k:'frost',w:'Frost'}, emerald:{g:I.EMERALD,k:'verdant',w:'Verdant'}, amethyst:{g:I.AMETHYST_GEM,k:'void',w:'Void'} };
+const GEM_WEAPONS={};   // id -> {line, gem}
+const setW=(id,o)=>{ Object.assign(ITEMS[id],o); delete ICON_URL[id]; delete ICON_TEX[id]; };
+{ const base={ sword:[I.IRON_SWORD,I.GOLD_SWORD,435], mace:[I.IRON_MACE,I.GOLD_MACE,436], dagger:[I.IRON_DAGGERS,I.GOLD_DAGGERS,433], bow:[I.LONGBOW,I.GOLD_BOW,437], staff:[654,I.CRYSTAL_STAFF,438] };
+  const recipe=(line,gem)=>({ need:[...base[line].map(id=>[id,1]),[GEMW[gem].g,4]], st:B.WORKBENCH });
+  const add=(id,line,gem)=>{ GEM_WEAPONS[id]={line,gem}; for(let i=RECIPES.length-1;i>=0;i--) if(RECIPES[i].out===id) RECIPES.splice(i,1); RECIPES.push(Object.assign({out:id,n:1},recipe(line,gem))); };
+  // bows (Diamond bow: 30 damage every 0.44 s)
+  setW(410,{dmg:32,cd:0.44,desc:'Its arrows set enemies on fire. Made with rubies'}); add(410,'bow','ruby');
+  setW(411,{dmg:44,cd:0.7,desc:'Its arrows burst where they land, hurting everything nearby and breaking blocks. Made with emeralds'}); add(411,'bow','emerald');
+  setW(412,{dmg:24,cd:0.5,desc:'Fires three arrows at once in a fan. Made with sapphires'}); add(412,'bow','sapphire');
+  const vb=newItem(W_('Void bow','bow',{dmg:31,cd:0.44,speed:620,m:'void',pierce:true})); ITEMS[vb].desc='Its arrows pass through every enemy in their path. Made with amethysts'; add(vb,'bow','amethyst');
+  // staffs (Diamond staff: 27 damage every 0.41 s)
+  setW(415,{dmg:29,cd:0.41,desc:'Its bolts set enemies on fire. Made with rubies'}); add(415,'staff','ruby');
+  setW(413,{dmg:27,cd:0.42,desc:'Its bolts jump on to two more enemies. Made with sapphires'}); add(413,'staff','sapphire');
+  if(ITEMS[414]) ITEMS[414].desc='Raises a shield of light around you and your soldiers instead of firing. Made with emeralds'; add(414,'staff','emerald');
+  const vs=newItem(W_('Void staff','magic',{dmg:28,cd:0.41,mana:8,speed:500,gem:'#b088ff',pierce:true})); ITEMS[vs].desc='Its bolts pass through every enemy in their path. Made with amethysts'; add(vs,'staff','amethyst');
+  // thrown weapons for the knight, the macebearer and the Beastmaster
+  const D={ sword:ITEMS[435], mace:ITEMS[436], dagger:ITEMS[433] }, NAME={ sword:'glaive', mace:'flail', dagger:'kunai' }, SET={ sword:THROW_SWORDS, mace:CHAIN_MACES, dagger:THROW_DAGGERS };
+  const FX={ ruby:'Sets enemies on fire', sapphire:'Chills enemies so they move slowly', emerald:'Heals you a little with every hit', amethyst:'Flies 40% farther and knocks enemies back twice as far' };
+  const HOW={ sword:'Thrown like a boomerang: it spins out and flies back to your hand', mace:'Swung on a chain: tap to hurl it, hold to whirl it', dagger:'Thrown one after another, up to three at once' };
+  for(const line of ['sword','mace','dagger']) for(const gem of Object.keys(GEMW)){ const d=D[line], G=GEMW[gem];
+    const id=newItem(W_(`${G.w} ${NAME[line]}`,'melee',{dmg:Math.round(d.dmg*1.05*10)/10,cd:d.cd,reach:d.reach,kb:Math.round(d.kb*(gem==='amethyst'?2:1)),m:G.k,shape:line,burn:gem==='ruby',chill:gem==='sapphire',leech:gem==='emerald',far:gem==='amethyst'}));
+    ITEMS[id].desc=`${HOW[line]}. ${FX[gem]}. Made with ${gem}s`; SET[line].add(id); add(id,line,gem); SELL[id]=Math.round((SELL[435]||200)*1.3); }
+  for(const id of [vb,vs]) SELL[id]=Math.round((SELL[437]||200)*1.3); }
+// the new effects: piercing shots, chill, healing and longer throws
+{ const _sh=shoot; shoot=function(e,...a){ const n0=projs.length; const r=_sh(e,...a); try{ if(e===player){ const it=heldItem(), def=it&&ITEMS[it.id]; if(def&&def.pierce) for(let i=n0;i<projs.length;i++){ projs[i].pierce=8; projs[i].hitSet=projs[i].hitSet||new Set(); } } }catch(err){} return r; }; }
+let curThrowDef=null;
+{ const _bt=boomTick; boomTick=function(s,...a){ curThrowDef=s&&s.def; try{ if(s&&s.def&&s.def.far&&!s.farDone){ s.farDone=true; s.vx*=1.4; s.vy*=1.4; } return _bt(s,...a); } finally{ curThrowDef=null; } }; }
+{ const _ft=flailTick; flailTick=function(...a){ curThrowDef=thrown&&thrown.def; try{ return _ft(...a); } finally{ curThrowDef=null; } }; }
+{ const _th=throwHits; throwHits=function(set,x,y,r,dmg,kb,burn,dirX){ const d=curThrowDef; const before=new Set(set); const res=_th(set,x,y,r,dmg,kb,burn||!!(d&&d.burn),dirX);
+    try{ if(d) for(const o of set){ if(before.has(o)) continue; if(d.chill) o.slowT=Math.max(o.slowT||0,2.5); if(d.leech&&player&&!player.dead){ player.hp=Math.min(player.maxHp,player.hp+Math.max(1,dmg*0.08)); } } }catch(e){} return res; }; }
+// ---- balance: the rare drops from ghouls (which can come early) sit between the Diamond and Mythril weapons ----
+setW(I.WRAITH_BLADE,{dmg:40,cd:0.33}); setW(I.GRAVE_MAUL,{dmg:64,cd:0.73}); setW(I.PHANTOM_BOW,{dmg:33,cd:0.43}); setW(I.SOUL_STAFF,{dmg:30,cd:0.4}); setW(I.SHADE_DAGGERS,{dmg:23,cd:0.16});
+// ===================== Beta 0.9.62: grow meal and the breakdown bench =====================
+// Grow meal: use it on a crop to grow it a stage, or on a sapling to grow it into a tree. A bone makes 3 anywhere; at a
+// composter, leaves, glowcaps or berries become grow meal; farmers who work at your farmhouse leave some in its chest each morning.
+const GROW_MEAL=newItem({name:'Grow meal',kind:'mat',desc:'Use it on a crop to grow it a stage, or on a sapling to grow a tree. Made from bones, or from wheat seeds, glowcaps and berries at a composter'});
+SELL[GROW_MEAL]=2;
+customIcon(GROW_MEAL,(rect,px)=>{ rect(4,5,8,10,'#b89a6a'); rect(5,4,6,2,'#d8bc8a'); rect(6,2,4,2,'#8a6a3a'); rect(5,8,6,5,'#9a7a4a'); for(const [x,y] of [[6,9],[9,10],[7,12],[10,8]]) px(x,y,'#6ad870'); px(8,7,'#c8ffd0'); });
+RECIPES.push({ out:GROW_MEAL, n:3, need:[[I.BONE,1]] });
+for(const need of [[[I.WHEAT_SEEDS,6]],[[I.MUSHROOM,3]],[[I.BERRIES,4]]]) RECIPES.push({ out:GROW_MEAL, n:2, need, st:B.COMPOSTER });
+let growPrev=false;
+function useGrowMeal(){ const p=player; const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); if(Math.hypot(tx*T+8-cxOf(p),ty*T+8-cyOf(p))>6*T) return false;
+  const id=tileAt(tx,ty);
+  if(CROPS_STAGE[id]!=null&&CROPS_STAGE[id]<3){ let ok=false; mpRun(()=>{ ok=growCrops(tx,ty,id,()=>0); }); if(!ok) return false; }
+  else if(isSapling(id)&&sapSoil(id,tileAt(tx,ty+1))){ const run=()=>{ world[ty*W+tx]=0; growSapling(tx,ty+1,1,Math.random,id); refreshArea(tx-9,tx+10,ty-30,ty+1); }; if(typeof mpDiffRun==='function') mpDiffRun(tx-10,tx+10,ty-32,ty+2,run); else facRun(run); }
+  else return false;
+  takeItem(GROW_MEAL,1); puff(tx*T+8,ty*T+8,'#6ad870',10,60); addFloat(tx*T+8,ty*T,'grow!','#b8f5a0'); invDirty=true; return true; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ try{ const it=heldItem(), edge=input.use&&!growPrev; growPrev=!!input.use; if(edge&&it&&it.id===GROW_MEAL&&player&&!player.dead&&state==='play'){ if(!useGrowMeal()) toast('Use grow meal on a crop or a sapling',1.5); } }catch(e){ console.warn(e); } return _up(dt,...a); }; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ const n=(home&&home.vw&&home.vw.farmer)||0; if(n>0&&home.farmhouse&&!isGuest()){ const c=lodgeChest('farmer'); if(c) putInChest(c,{id:GROW_MEAL,n:Math.min(6,n)}); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- the breakdown bench: unlocked once both wizards (the Archmage and the Magma Wizard) are beaten ----
+// Standing by it, pick an item in your bag and press Break down: you get back everything its recipe used (all of it).
+// An item made several at a time (torches, planks) breaks down in that many.
+{ const id=freeIdFrom(); B.BREAK_BENCH=id; defB(id,{name:'Breakdown bench',hard:1.5,minPow:1,col:'#6a6a7a'}); ITEMS[id]={name:'Breakdown bench',kind:'block',desc:'Stand next to it to break items in your bag back into the materials they were made from. Unlocked by beating both wizards'};
+  const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  r(1,5,14,3,'#8a8a96'); r(1,5,14,1,'#c8c8d4'); r(4,8,8,3,'#5a5a66'); r(2,11,12,5,'#7a4e27'); r(2,11,12,1,'#a06a38'); r(3,3,3,2,'#c8a040'); r(10,1,2,4,'#8a5c2d'); r(9,1,4,2,'#9aa0aa'); TEX[id]=c;
+  RECIPES.push({ out:id, n:1, need:[[I.IRON_BAR,6],[B.STONE,10],[429,1]], st:B.WORKBENCH }); SELL[id]=40; }
+const breakUnlocked=()=>!!(home&&(home.bdUnlock||curSlot===4));
+{ const _co=craftOnce; craftOnce=function(rc,...a){ if(rc&&rc.out===B.BREAK_BENCH&&!breakUnlocked()){ toast('Beat both wizards (the Archmage and the Magma Wizard) to learn the breakdown bench',3.5); return false; } return _co(rc,...a); }; }
+let bdCheckT=2;
+{ const _u=update; update=function(dt){ _u(dt); try{ if((bdCheckT-=dt)<=0){ bdCheckT=2; if(home&&!home.bdUnlock&&tower&&tower.cleared&&fort&&fort.cleared&&player&&!isGuest()){ home.bdUnlock=1; obtain(B.BREAK_BENCH,1,true); toast('Both wizards are beaten! You learned to make a Breakdown bench (one is in your bag): stand by it to break items back into their materials',6); } } }catch(e){} }; }
+function breakRecipe(id){ if(id===B.BREAK_BENCH) return null; return RECIPES.find(r=>r.out===id&&r.need&&r.need.length&&!r.need.some(([nid])=>nid===id))||null; }
+function breakDown(slot){ const s=player.inv[slot]; if(!s) return false; const r=breakRecipe(s.id); if(!r) return false; const n=r.n||1; if(s.n<n){ toast(`It takes ${n} ${ITEMS[s.id].name.toLowerCase()} to break down (they are made ${n} at a time)`,3); return false; }
+  s.n-=n; if(s.n<=0) player.inv[slot]=null; for(const [nid,k] of r.need) if(ITEMS[nid]) give(nid,k); toast(`${ITEMS[s.id].name} broken down into ${r.need.map(([nid,k])=>k+' '+ITEMS[nid].name.toLowerCase()).join(', ')}`,3); invDirty=true; return true; }
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ const info=$('#invInfo'), s=pickSlot!==null?player.inv[pickSlot]:null; if(info&&s&&nearStation(B.BREAK_BENCH)&&breakRecipe(s.id)) info.insertAdjacentHTML('beforeend','<button class="xbtn" data-bd="1">Break down</button>'); }catch(e){} return r; }; }
+$('#invInfo').addEventListener('click',ev=>{ const b=ev.target.closest('[data-bd]'); if(!b||pickSlot===null) return; ev.stopPropagation(); breakDown(pickSlot); pickSlot=null; renderInv(); },true);
+
+// ---- older worlds: a level 2 shop house's chimney floated two blocks above its roof; it is joined to the roof once ----
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.chimneyV&&!isGuest()){ home.chimneyV=1; const roofs=ROOF_IDS();
+      facRun(()=>{ for(const h of home.houses||[]){ if(!h||!isFinite(h.x0)) continue; const hx=h.x0-1, gy=h.gy, cx=hx+7; if(tileAt(hx+4,gy-10)!==B.PLATFORM) continue;
+        const top=tileAt(cx,gy-20); if(!top||roofs.has(top)||!BLOCKS[top].solid) continue; if(!roofs.has(tileAt(cx,gy-17))) continue;
+        for(const y of [gy-18,gy-19]) if(tileAt(cx,y)===0) setTile(cx,y,top); if(tileAt(cx,gy-21)===top) setTile(cx,gy-21,0); } }); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- arrow slits in dark slate (deep stone) and iron; your castle's slits match its stage ----
+const SLITS=[B.ARROW_SLIT];
+{ const tint=(src,m)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); const d=g.getImageData(0,0,16,16), p=d.data; for(let i=0;i<p.length;i+=4){ p[i]=Math.min(255,p[i]*m[0]); p[i+1]=Math.min(255,p[i+1]*m[1]); p[i+2]=Math.min(255,p[i+2]*m[2]); } g.putImageData(d,0,0); return c; };
+  for(const [key,name,col,m,need] of [['SLIT_DEEP','Dark slate arrow slit','#4a4a54',[0.55,0.55,0.62],[[B.ARROW_SLIT,1],[B.DEEPSTONE,1]]],['SLIT_IRON','Iron arrow slit','#7a8494',[0.85,0.92,1.08],[[B.ARROW_SLIT,1],[I.IRON_BAR,1]]]]){
+    const id=freeIdFrom(); B[key]=id; defB(id,Object.assign({},BLOCKS[B.ARROW_SLIT],{name,col})); ITEMS[id]={name,kind:'block',desc:'A narrow window your archers and mages can shoot through'}; TEX[id]=tint(TEX[B.ARROW_SLIT],m);
+    RECIPES.push({ out:id, n:1, need, st:B.WORKBENCH }); SLITS.push(id); } }
+{ const _sb=skinBuilding; skinBuilding=function(t,...a){ const r=_sb(t,...a); try{ if(t&&t.key==='castle2'){ const want=SLITS[Math.max(0,Math.min(2,t.tier|0))];
+      for(let y=Math.max(0,t.y0);y<=Math.min(H-1,t.y1);y++) for(let x=Math.max(0,t.x0);x<=Math.min(W-1,t.x1);x++){ const id=world[y*W+x]; if(id!==want&&SLITS.includes(id)) setTile(x,y,want); } } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- nothing spawns on top of (or inside) the buildings you own: houses, lodges, the castle, the mine and anything you placed ----
+function onMyBuilding(e){ if(!home||!home.claimed) return false; const cx=cxOf(e)/T, fy=(e.y+e.h)/T; for(const [x0,x1,gy] of buildingBoxes(true)){ if(cx>=x0-1&&cx<=x1+1&&fy<=gy+0.5&&fy>=gy-45) return true; } return false; }
+{ const _sm=spawnMonsters; spawnMonsters=function(...a){ const n0=ents.length; const r=_sm(...a); try{ for(let i=n0;i<ents.length;i++){ const e=ents[i]; if((e.kind==='monster'||e.kind==='animal')&&!e.boss&&!e.camp&&onMyBuilding(e)) e.dead=true; } }catch(err){} return r; }; }
+{ const _sa=spawnAnimals; spawnAnimals=function(...a){ const n0=ents.length; const r=_sa(...a); try{ for(let i=n0;i<ents.length;i++){ const e=ents[i]; if(e.kind==='animal'&&!e.tamed&&onMyBuilding(e)) e.dead=true; } }catch(err){} return r; }; }
 })();
 </script>
 </body>
