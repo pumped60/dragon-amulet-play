@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791537862"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791537862"><link rel="manifest" href="manifest.webmanifest?v=1791537862"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791538838"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791538838"><link rel="manifest" href="manifest.webmanifest?v=1791538838"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.65</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.66</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.65</h3>
+    <h3>New in Beta 0.9.66</h3>
+    <p>A deeper underground: new worlds go twice as deep below the islands, and the sea floor still reaches all the way down to the magma realm. The lowest caves, just above the magma realm, are winding tunnels with pockets of lava instead of one huge open cavern. Cave floors have rounded edges like the hills, and underground pools of water and lava are rounded bowls with ragged rims and air pockets instead of boxes. Older worlds get the tunnels, the lava pockets, the rounded edges and the rounded pools wherever nobody has explored yet. Saved worlds now go to the browser's larger storage, so bigger worlds and more of them fit.</p>
+    <h3>Beta 0.9.65</h3>
     <p>Smoother shared worlds: a friend in your world sees enemies and animals glide smoothly instead of jumping, even on a slow connection. Their hits show at once (the number, the sound and the push) and the host applies them with the weapon's own knockback, kills vanish as soon as the host confirms them, every enemy hit reaches them, and their game knows which enemies are after them.</p>
     <p>Workplaces level up: the woodcutter's lodge, the farmhouse and the miners' hut go from level 1 to 3 like every shop (Buildings, Village). The head worker asks a favor first. Each level makes room for 2 more workers and they bring in more, level 2 adds a loft with a bed and level 3 lanterns, a chimney and a banner. Five new cave monsters: cave bats in every cave (swarms in the dripstone caves), armored jade crabs, glowing rose wisps that throw bolts, azure spiders whose bite slows you, and fossil raptors that pounce in packs. More monsters lurk underground.</p>
     <p>Formations: give your party the Formation order (in the Army window, or press Q until it says Formation). Your soldiers line up in ranks facing the nearest enemy, three to a block: the toughest melee soldiers in front, the next rank right behind them striking over their shoulders with longer reach, and archers and wizards behind you. The line holds its ground instead of chasing, and the front rank braces, taking less damage and knockback from the front. Any soldier, yours or an enemy's, standing shoulder to shoulder with two others braces the same way, so a packed enemy line is harder to break. Cover: a block or a door beside you, on the side a shot comes from, turns some shots aside (about a third with a low wall, more than half with full cover), and archers and wizards prefer targets standing in the open.</p>
@@ -634,7 +636,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.65</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.66</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -894,7 +896,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.65</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.66</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -913,7 +915,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.65', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.66', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1990,7 +1992,7 @@ function waterTop(tx,ty){ return ty*T+16-liq[ty*W+tx]*2; }
 function wetAt(px,py){ const tx=Math.floor(px/T), ty=Math.floor(py/T); return tileAt(tx,ty)===B.WATER&&py>=waterTop(tx,ty); }
 
 function genWorld(sk, sd, pf){
-  sizeKey=sk; seed=sd; const sz=SIZES[sk]; skyOff=SKY; barrierY=SKY-4; H=sz.H+SKY; const R=mulberry(sd);
+  sizeKey=sk; seed=sd; const sz=SIZES[sk]; skyOff=SKY; barrierY=SKY-4; H=sz.H+SKY+deepExtra(sz); const R=mulberry(sd);
   const N=sz.nMin+Math.floor(R()*(sz.nMax-sz.nMin+1)), lairLeft=R()<0.5, slots=N-1;
   const facs=shuffle(['g','b','r'].filter(f=>f!==pf),R); const midS=Math.floor(slots/2); const oth=shuffle([...Array(slots).keys()].filter(i=>i!==midS),R);
   // one enemy faction to the west of your home, one to the east, never next to each other
@@ -2005,7 +2007,7 @@ function genWorld(sk, sd, pf){
     islands.push(Object.assign({s:cx,e:cx+w-1},kinds[k])); cx+=w; if(k<kinds.length-1) cx+=Math.floor(260+R()*140); }
   W=lairLeft?cx+KRAKEN_SEA:cx+EDGE; if(lairLeft) islands.push({kind:'treasure',s:W-74,e:W-14}); krakenX=lairLeft?W-Math.floor((KRAKEN_SEA+74)/2):Math.floor((KRAKEN_SEA+74)/2);
   world=new Uint16Array(W*H); shape=new Uint8Array(W*H); wetDeco=new Map(); bg=new Uint8Array(W*H); surf=new Int16Array(W); skyTop=new Int16Array(W); explored=new Uint8Array(W*H); chests={}; liq=new Uint8Array(W*H); oceanCol=new Uint8Array(W); wact=new Set();
-  seaY=SKY+Math.max(64,Math.floor(sz.H*0.3)); const floorY=H-58-1; const deepY=SKY+Math.floor(sz.H*0.6), lavaY=H-9;
+  seaY=SKY+Math.max(64,Math.floor(sz.H*0.3)); const floorY=H-58-1; const deepY=seaY+Math.floor((H-58-seaY)*0.55), lavaY=H-9, bandTop=H-58-Math.floor((H-58-seaY)*0.3);   // bandTop: the lowest caves, above the magma realm, are tunnels
   for(let x=0;x<W;x++){ let best=1e9; for(const is of islands){ if(is.kind==='lair') continue; const d=x<is.s?is.s-x:x>is.e?x-is.e:0; if(d<best) best=d; }
     const li=islands.find(is=>is.kind==='lair'); const dl=x<li.s?li.s-x:x>li.e?x-li.e:0; if(dl<best) best=dl;
     const t=Math.max(0,1-best/28), s=t*t*(3-2*t);
@@ -2039,13 +2041,15 @@ function genWorld(sk, sd, pf){
       world[i]=id; if(y>h) bg[i]=y<h+dd&&!mtn?1:(y>dj?6:2); } }
   // extensive caves in layers: tunnels near the top, big caverns lower down, and wide deep caverns near the magma
   for(let x=1;x<W-1;x++){ const h=surf[x], p=isProt(x); for(let y=h+6;y<H-2;y++){ if(p&&y<h+(onMountain(x)?40:18)) continue; const d=y-h;
-    const cav=d>20&&fbm(x/42,y/22,sd+11)>0.6;
-    const deepCav=y>deepY&&fbm(x/60,y/26,sd+13)>0.56;
+    const band=y>bandTop;
+    const cav=!band&&d>20&&fbm(x/42,y/22,sd+11)>0.6;
+    const deepCav=!band&&y>deepY&&fbm(x/60,y/26,sd+13)>0.56;
+    const t4=band&&(Math.abs(noise2(x/50,y/16,sd+33)-0.5)<0.034||Math.abs(noise2(x/26,y/44,sd+37)-0.5)<0.018);
     const t1=Math.abs(noise2(x/34,y/18,sd+17)-0.5)<0.032;
     const t2=d>12&&Math.abs(noise2(x/60,y/32,sd+19)-0.5)<0.026;
     const t3=d>40&&Math.abs(noise2(x/90,y/12,sd+27)-0.5)<0.03;
     const pk=d>8&&fbm(x/11,y/8,sd+23)>0.72;
-    if(cav||deepCav||t1||t2||t3||pk){ const i=y*W+x; if(world[i]!==B.BEDROCK) world[i]=0; } } }
+    if(cav||deepCav||t1||t2||t3||t4||(pk&&!band)){ const i=y*W+x; if(world[i]!==B.BEDROCK) world[i]=0; } } }
   // cave entrances: winding shafts from the surface down into the cave network
   for(let x=30;x<W-30;){ x+=40+Math.floor(R()*50); if(isProt(x)||surf[x]>seaY-3) continue;
     const carve=(X,yy)=>{ if(X<1||X>=W-1||isProt(X)||yy<1||yy>=H-4) return; const i=yy*W+X; if(world[i]===B.BEDROCK) return; world[i]=0; if(yy>surf[X]) bg[i]=yy-surf[X]<6?1:2; };
@@ -2147,8 +2151,7 @@ function genWorld(sk, sd, pf){
     camps.push({ x, gy, cls:CLS_KEYS[(R()*4)|0], rescued:false, where:'cave' }); caveCaps++; }
   for(let k=0;k<Math.floor(W/70);k++){ const cx=20+Math.floor(R()*(W-40)); const top=surf[cx]+25; if(islands.some(i=>i.orcCave&&Math.abs(cx-i.orcCave.px)<80)) continue; const cy=top+Math.floor(R()*Math.max(1,(H-80-top))); if(cy>=H-70) continue;
     const w=4+Math.floor(R()*7), h=3+Math.floor(R()*6); if(biomeAt(cx,cy)==='magma') continue;
-    for(let y=cy-h-1;y<=cy+1;y++) for(let x=cx-(w>>1)-1;x<=cx+(w>>1)+1;x++){ const i=y*W+x; if(x<1||x>=W-1) continue; const inside=y>=cy-h&&y<=cy&&x>=cx-(w>>1)&&x<=cx+(w>>1);
-      if(inside) world[i]=B.WATER; else if(!BLOCKS[world[i]].solid||world[i]===B.WATER) world[i]=B.STONE; } }
+    naturalPool(cx,cy,w,h,B.WATER,R,(x,y,id)=>{ if(x>0&&x<W-1&&y>0&&y<H-1) world[y*W+x]=id; },(x,y)=>world[y*W+x]); }
   { const oc=x=>surf[x]>seaY; for(let x=0;x<W;x++){ if(oc(x)) continue; let near=false; for(let d=1;d<=4&&!near;d++) if((x-d>=0&&oc(x-d))||(x+d<W&&oc(x+d))) near=true; if(!near) continue;
       for(let y=Math.max(seaY-1,surf[x]+1);y<H-62;y++){ const i=y*W+x; if(!BLOCKS[world[i]]||!BLOCKS[world[i]].solid) world[i]=B.STONE; } }
     for(let x=0;x<W;x++){ if(!oc(x)) continue; const sb=surf[x]; for(let y=sb+1;y<=sb+4&&y<H-62;y++){ const i=y*W+x; if(!BLOCKS[world[i]]||!BLOCKS[world[i]].solid) world[i]=B.STONE; } } }
@@ -2473,6 +2476,16 @@ function buildWatchtower(x,mat,ht,inland,endsOnly){ inland=inland||1; const gy=s
   for(let dx=-4;dx<=4;dx++) wset(x+dx,gy-ht,mat); for(const dx of (endsOnly?[-4,4]:[-4,-2,0,2,4])) wset(x+dx,gy-ht-1,mat); for(const dx of [-4,4]){ wset(x+dx,gy-ht-1,B.ARROW_SLIT); wset(x+dx,gy-ht-2,B.ARROW_SLIT); }   // slits on the roof for the guards up top wset(x+1,gy-ht,B.PLATFORM); wset(x-1,gy-4,B.TORCH);
   return { x, gy, top:gy-ht, floors }; }
 
+// ---- Beta 0.9.66: deeper worlds, natural pools ----
+// how much deeper a new world goes: as much underground again as the world had before 0.9.66
+function deepExtra(sz){ return Math.max(0,sz.H-58-Math.max(64,Math.floor(sz.H*0.3))); }
+// a pool of water or lava shaped like a bowl: rounded sides, a ragged rim, sometimes an air pocket under the rock above,
+// and a rock shell so it can't leak. (cx,cy) is the bottom middle; w and h its width and depth.
+function naturalPool(cx,cy,w,h,liquid,R,put,get){ const rx=w/2+0.5, ry=h+0.5, top=cy-h, air=R()<0.6?1+((R()*2)|0):0, wob=()=>(R()-0.5)*0.5;
+  const edge=[]; for(let x=Math.floor(cx-rx)-1;x<=Math.ceil(cx+rx)+1;x++) edge[x]=wob();
+  const inside=(x,y)=>{ const dx=(x-cx)/rx, dy=(y-top)/ry; return y>=top-air&&dx*dx+dy*dy*(y<top?0:1)<=1+(edge[x]||0)*(y<=top+1?0.2:1); };
+  for(let y=top-air-1;y<=cy+1;y++) for(let x=Math.floor(cx-rx)-1;x<=Math.ceil(cx+rx)+1;x++){
+    if(inside(x,y)) put(x,y,y<top?0:liquid); else if(!BLOCKS[get(x,y)].solid||get(x,y)===B.WATER||get(x,y)===B.LAVA){ const near=inside(x-1,y)||inside(x+1,y)||inside(x,y-1)||inside(x,y+1); if(near||y>top) put(x,y,B.STONE); } } }
 // ================= orc island =================
 function levelArea(x,half){ const gy=surf[x]; for(let X=x-half;X<=x+half;X++){ if(X<0||X>=W) continue; for(let y=gy-14;y<gy;y++){ world[y*W+X]=0; } if(surf[X]>gy) for(let y=gy;y<surf[X];y++) wset(X,y,B.STONE); surf[X]=gy; } return gy; }
 function orcHut(cx,gy,w,h){ const w2=w>>1; for(let dy=1;dy<=h;dy++){ wset(cx-w2,gy-dy,B.LOG_WALL); wset(cx+w2,gy-dy,B.LOG_WALL); for(let dx=-w2+1;dx<w2;dx++){ wset(cx+dx,gy-dy,0); bset(cx+dx,gy-dy,1); } }
@@ -4266,10 +4279,18 @@ async function gunz(b64){ const bin=atob(b64); const u=new Uint8Array(bin.length
 const SHARED_SLOT=5;
 async function saveLocal(){ if(!player||saving) return null; saving=true; const guest=typeof MP!=='undefined'&&MP.guest;
   try{ if(typeof charSave==='function') charSave(); const s=serialize(); s.z=await gz(s.str); if(guest||curSlot===SHARED_SLOT) s.summary.shared=(guest?mpHostName():(readLocal(SHARED_SLOT)||{summary:{}}).summary.shared)||'a friend';
-    localStorage.setItem(slotKey(guest?SHARED_SLOT:curSlot),JSON.stringify({v:SAVE_V,savedAt:s.savedAt,summary:s.summary,z:s.z})); return s; }
+    // the world itself goes to IndexedDB (room for many big worlds); the slot keeps its summary in localStorage. Without IndexedDB it all stays in localStorage as before.
+    const key=slotKey(guest?SHARED_SLOT:curSlot), inIdb=await idbPut(key,s.z);
+    localStorage.setItem(key,JSON.stringify({v:SAVE_V,savedAt:s.savedAt,summary:s.summary,z:inIdb?'idb':s.z})); return s; }
   catch(e){ console.warn('save failed',e); toast('Could not save: this device is out of storage space. Try another slot.',4); return null; } finally{ saving=false; } }
 function readLocal(n=curSlot){ try{ const r=localStorage.getItem(slotKey(n)); if(!r) return null; const o=JSON.parse(r); if(o.v!==SAVE_V||!o.z) return null; return o; }catch(e){ return null; } }
-async function loadLocal(n){ const o=readLocal(n); return o?await gunz(o.z):null; }
+async function loadLocal(n){ const o=readLocal(n); if(!o) return null; let z=o.z; if(z==='idb'){ z=await idbGet(slotKey(n)); if(!z) return null; } return await gunz(z); }
+// ---- IndexedDB: one store of saved worlds, keyed like the localStorage slots ----
+let idbP=null;
+function idbOpen(){ if(idbP) return idbP; idbP=new Promise(res=>{ try{ if(!window.indexedDB){ res(null); return; } const rq=indexedDB.open('dragonamulet',1); rq.onupgradeneeded=()=>{ try{ rq.result.createObjectStore('saves'); }catch(e){} }; rq.onsuccess=()=>res(rq.result); rq.onerror=()=>res(null); rq.onblocked=()=>res(null); setTimeout(()=>res(null),4000); }catch(e){ res(null); } }); return idbP; }
+async function idbPut(k,v){ try{ const db=await idbOpen(); if(!db) return false; return await new Promise(res=>{ const tx=db.transaction('saves','readwrite'); tx.objectStore('saves').put(v,k); tx.oncomplete=()=>res(true); tx.onerror=()=>res(false); tx.onabort=()=>res(false); }); }catch(e){ return false; } }
+async function idbGet(k){ try{ const db=await idbOpen(); if(!db) return null; return await new Promise(res=>{ const rq=db.transaction('saves','readonly').objectStore('saves').get(k); rq.onsuccess=()=>res(rq.result||null); rq.onerror=()=>res(null); }); }catch(e){ return null; } }
+async function idbDel(k){ try{ const db=await idbOpen(); if(!db) return; db.transaction('saves','readwrite').objectStore('saves').delete(k); }catch(e){} }
 const cloud={ db:null, uid:null, meta:null, busy:false };
 const CHUNK=150000;
 (async()=>{ try{ if(!window.claude||!window.claude.use) return;
@@ -5383,7 +5404,7 @@ function renderSlots(){ $('#slotList').innerHTML=[1,2,3,4,5].filter(n=>n<5||slot
     :`<div class="saverow"><div class="savebig empty"><span>${title}<br><span class="muted">Empty</span></span></div></div>`; }).join(''); }
 $('#btnContinue').addEventListener('click',()=>{ hide('scrTitle'); renderSlots(); show('scrSlots'); });
 $('#slotsBack').addEventListener('click',()=>{ hide('scrSlots'); show('scrTitle'); });
-$('#slotList').addEventListener('click',async ev=>{ const d=ev.target.closest('[data-wdel]'); if(d){ if(d.dataset.arm!=='1'){ d.dataset.arm='1'; d.textContent='Sure?'; return; } const n=+d.dataset.wdel; try{ localStorage.removeItem(slotKey(n)); }catch(e){}
+$('#slotList').addEventListener('click',async ev=>{ const d=ev.target.closest('[data-wdel]'); if(d){ if(d.dataset.arm!=='1'){ d.dataset.arm='1'; d.textContent='Sure?'; return; } const n=+d.dataset.wdel; try{ localStorage.removeItem(slotKey(n)); idbDel(slotKey(n)); }catch(e){}
     if(n===1&&cloud.db&&cloud.uid){ try{ await cloud.db.doc(`data/users/${cloud.uid}/save`).delete(); }catch(e){} cloud.meta=null; } renderSlots(); refreshTitle(); if(!anySave()){ hide('scrSlots'); show('scrTitle'); } return; }
   const b=ev.target.closest('[data-play]'); if(!b) return; const n=+b.dataset.play; const si=slotInfo(n); if(!si) return; b.textContent='Loading…';
   try{ let str=null; if(si.src==='cloud') str=await loadCloud(); if(!str) str=await loadLocal(n); if(!str) throw 0; curSlot=n; hide('scrSlots'); const loadIt=()=>{ deserialize(str); afterWorldReady(); startPlay(); toast('Welcome back',1.5); }; if(n===4) loadIt(); else pickHero('load',loadIt,lastCharFor(str)); }
@@ -12148,6 +12169,44 @@ function caveMonFor(x,y){ const b=typeof biome2At==='function'?biome2At(x,y):nul
 { const _bc=bleedColor; bleedColor=function(t){ const m=t&&t.mtype; if(m==='cave_bat') return '#7a2030'; if(m==='jade_crab') return '#8ae0a8'; if(m==='rose_wisp') return '#f8c8dc'; if(m==='azure_spider') return '#8ab4ec'; if(m==='fossil_raptor') return '#e8e0c8'; return _bc(t); }; }
 // flyers flap and bob all the time, not only when walking
 { const _fo=frameOf; frameOf=function(e){ if(e&&(e.mtype==='cave_bat'||e.mtype==='rose_wisp')) return Math.floor((e.anim||0)*(e.mtype==='cave_bat'?10:4))%2; return _fo(e); }; }
+// ===================== Beta 0.9.66: the underground: deeper, tunnels above the magma, curved caves, natural pools =====================
+// New worlds go twice as deep underground (deepExtra in 04_world.js); the sea floor still reaches the bottom.
+// The lowest caves, above the magma realm, are winding tunnels with pockets of lava instead of one huge open cavern.
+// Cave floors get the same rounded edges as the hills (slope shapes 6 and 7 on a one-block step), and water and lava
+// pools are bowls with ragged rims and air pockets. Older worlds get the tunnels, the lava, the curved edges and the
+// rounded pools in every part of the underground nobody has seen yet (home.underV).
+const CAVE_SLOPE=new Set([B.STONE,B.DEEPSTONE,B.DIRT,B.GRANITE,B.MARBLE,B.MOSS,B.SANDSTONE].filter(v=>v!=null));
+function caveSlopes(onlyUnexplored){ let n=0; const yMax=Math.min(H-3,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H)-2);
+  for(let x=2;x<W-2;x++) for(let y=surf[x]+6;y<yMax;y++){ const i=y*W+x; if(onlyUnexplored&&explored[i]) continue; if(!CAVE_SLOPE.has(world[i])||shape[i]||world[i-W]!==0) continue;
+    const L=world[i-1], R=world[i+1], LB=world[i+W-1], RB=world[i+W+1], sol=id=>BLOCKS[id].solid;
+    if(L===0&&sol(LB)&&sol(R)){ shape[i]=6; n++; } else if(R===0&&sol(RB)&&sol(L)){ shape[i]=7; n++; } }
+  return n; }
+const bandTopOf=()=>{ const mt=Math.min(H-58,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-58)); return mt-Math.floor((mt-seaY)*0.3); };
+const inTunnel=(x,y)=>Math.abs(noise2(x/50,y/16,seed+33)-0.5)<0.034||Math.abs(noise2(x/26,y/44,seed+37)-0.5)<0.018;
+// open caverns in the lowest band become rock, leaving tunnels; then small lava pockets on tunnel floors
+function deepBand(onlyUnexplored){ const top=bandTopOf(), bot=Math.min(H-60,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-58)-3); if(bot-top<10) return 0; const hh=bot-top+1; let n=0;
+  if(onlyUnexplored){ const S=new Int32Array((W+1)*(hh+1)); for(let y=0;y<hh;y++){ let row=0; for(let x=0;x<W;x++){ row+=world[(top+y)*W+x]===0?1:0; S[(y+1)*(W+1)+x+1]=S[y*(W+1)+x+1]+row; } }
+    const air=(x0,y0,x1,y1)=>S[(y1+1)*(W+1)+x1+1]-S[y0*(W+1)+x1+1]-S[(y1+1)*(W+1)+x0]+S[y0*(W+1)+x0];
+    for(let y=0;y<hh;y++) for(let x=6;x<W-6;x++){ const wy=top+y, i=wy*W+x; if(world[i]!==0||explored[i]) continue; const y0=Math.max(0,y-4), y1=Math.min(hh-1,y+4), x0=x-6, x1=x+6;
+      if(air(x0,y0,x1,y1)<0.6*(x1-x0+1)*(y1-y0+1)||inTunnel(x,wy)||nearBase(x,wy)) continue; world[i]=B.DEEPSTONE; n++; } }
+  // lava pockets: a dip in a tunnel floor filled with lava
+  const R=mulberry((seed|0)+9091); for(let k=0;k<Math.round(W/35);k++){ const x=8+((R()*(W-16))|0), y=top+((R()*hh)|0); if(world[y*W+x]!==0||!BLOCKS[world[(y+1)*W+x]].solid) continue; if(onlyUnexplored&&explored[y*W+x]) continue; if(nearBase(x,y)) continue;
+    const len=2+((R()*4)|0); let ok=true; for(let dx=0;dx<len&&ok;dx++){ const id=world[y*W+x+dx], b=world[(y+1)*W+x+dx]; if(id!==0||!BLOCKS[b].solid||isChestId(b)) ok=false; } if(!ok) continue;
+    for(let dx=0;dx<len;dx++){ world[(y+1)*W+x+dx]=B.LAVA; if(!BLOCKS[world[(y+2)*W+x+dx]].solid) world[(y+2)*W+x+dx]=B.DEEPSTONE; } world[(y+1)*W+x-1]=world[(y+1)*W+x-1]||B.DEEPSTONE; world[(y+1)*W+x+len]=world[(y+1)*W+x+len]||B.DEEPSTONE; n++; }
+  return n; }
+// old worlds: water pools that are plain rectangles (and nobody has seen) become rounded bowls
+function roundOldPools(){ const seen=new Uint8Array(W*H); let n=0; const R=mulberry((seed|0)+9093);
+  for(let y=skyOff+2;y<H-62;y++) for(let x=2;x<W-2;x++){ const i=y*W+x; if(world[i]!==B.WATER||seen[i]||(oceanCol&&oceanCol[x])||y<=surf[x]+6) continue;
+    const cells=[], st=[i]; seen[i]=1; let x0=x,x1=x,y0=y,y1=y, vis=false; while(st.length&&cells.length<400){ const j=st.pop(); cells.push(j); const cx=j%W, cy=(j/W)|0; if(explored[j]) vis=true; x0=Math.min(x0,cx); x1=Math.max(x1,cx); y0=Math.min(y0,cy); y1=Math.max(y1,cy);
+      for(const k of [j-1,j+1,j-W,j+W]) if(!seen[k]&&world[k]===B.WATER){ seen[k]=1; st.push(k); } }
+    if(vis||cells.length!==(x1-x0+1)*(y1-y0+1)||x1-x0<3||y1-y0<2) continue;   // only untouched rectangles
+    for(const j of cells){ world[j]=B.STONE; liq[j]=0; } naturalPool((x0+x1)/2,y1,x1-x0+1,y1-y0+1,B.WATER,R,(px,py,id)=>{ const k=py*W+px; world[k]=id; liq[k]=id===B.WATER?8:0; },(px,py)=>world[py*W+px]); n++; }
+  return n; }
+// new worlds
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ deepBand(false); caveSlopes(false); if(home) home.underV=1; }catch(e){ console.warn(e); } return r; }; }
+// older worlds: only ground nobody has seen
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.underV&&!isGuest()){ home.underV=1; let n=0; n+=deepBand(true); n+=roundOldPools(); n+=caveSlopes(true);
+      for(const e of ents) if(!e.dead&&(e.kind==='monster'||e.kind==='animal')&&!e.tamed&&collides(e)) e.dead=true; if(n){ try{ wakeAllWater(); buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.66: smoother shared worlds (host authority, interpolation, replicated targets) =====================
 // See docs/MULTIPLAYER_REVIEW.md. The host stays the authority for every enemy and animal; friends see them smoothly:
 // 1. Messages are read when the room reports a change (onPeers `updated`), not only on the 10-a-second poll.
