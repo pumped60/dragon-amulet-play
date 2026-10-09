@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791557905"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791557905"><link rel="manifest" href="manifest.webmanifest?v=1791557905"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791558760"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791558760"><link rel="manifest" href="manifest.webmanifest?v=1791558760"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.69</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.70</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.69</h3>
+    <h3>New in Beta 0.9.70</h3>
+    <p>One dragon, one Kraken: in a shared world the host runs Vorthax and the Kraken for everyone, like every other enemy, so all players see the same fight in the same place. They fight whichever player is nearest, so a friend alone in the lair or out at sea gets the full fight, and a friend's hits land through the host.</p>
+    <h3>Beta 0.9.69</h3>
     <p>Chests in shared worlds: two players can use the same chest at the same time and nothing is lost or doubled. The host keeps every chest; a friend's change goes to the host as "took 5 iron from slot 3, put 7 apples", the host applies it and answers. If someone else took the same item first, it comes back out of your bag with a note. What your woodcutters, farmers and miners deliver now shows for friends right away, without the host opening the chest. When a lot is happening, the host's messages keep the enemies and the world and drop the effects first.</p>
     <h3>Beta 0.9.68</h3>
     <p>Cover and bracing are for battles between the three factions: you, your soldiers and the enemy factions' soldiers. The guards of the wizard towers and the sky and magma castles don't take cover behind walls or brace in a line.</p>
@@ -642,7 +644,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.69</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.70</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -902,7 +904,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.69</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.70</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -921,7 +923,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.69', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.70', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5508,7 +5510,7 @@ function update(dt){ if(!isFinite(time)) time=0.3; if(!isFinite(dayCount)||dayCo
   const before=time; time+=dt/DAY_LEN; if(time>=1){ time-=1; dayCount++; toast('Day '+dayCount+' begins',2); newDayEvents(); }
   if(before<NIGHT_AT&&time>=NIGHT_AT) toast('Night falls. Monsters are coming.',3);
   updatePlayer(dt);
-  for(const e of ents){ if(e===player||e.dead) continue; try{ if(e.kind==='dragon'){ updateDragon(e,dt); continue; } if(e.proxy) continue; if(e.ghost){ mpGhostMove(e,dt); continue; } if(e.kind==='kraken'){ bossPhaseTick(e,dt); krakenAct(e,dt); continue; } if(e.kind==='ship'){ shipAct(e,dt); continue; } if(e.bigBoss) bossPhaseTick(e,dt); if(farAll(e,100)) continue;
+  for(const e of ents){ if(e===player||e.dead) continue; try{ if(e.kind==='dragon'&&!e.ghost){ updateDragon(e,dt); continue; } if(e.proxy) continue; if(e.ghost){ mpGhostMove(e,dt); continue; } if(e.kind==='kraken'){ bossPhaseTick(e,dt); krakenAct(e,dt); continue; } if(e.kind==='ship'){ shipAct(e,dt); continue; } if(e.bigBoss) bossPhaseTick(e,dt); if(farAll(e,100)) continue;
     if(e.aboard) continue;
     updateBurn(e,dt); shieldTick(e,dt); if(e.warlord) warlordAct(e,dt); if(e.mtype==='ghost'){ ghostAct(e,dt); continue; } if(e.kind==='machine'){ machineAct(e,dt); continue; } if(e.crewing){ e.atkCd-=dt; continue; }
     if(e.kind==='villager'||e.kind==='drifter') updateVillager(e,dt); else if(e.kind==='animal'){ breedTick(e,dt); updateAnimal(e,dt); } else if(e.kind==='sea') updateSea(e,dt); else if(e.kind==='captive'){ e.anim+=dt; physics(e,dt); } else { smartMoves(e,dt); updateAI(e,dt); } }catch(err){ if(!e._errSaid){ e._errSaid=true; console.warn('entity update failed',e.kind,e.mtype||e.cls,err); } if(e.target&&(e.target.dead||e.target.aboard)) e.target=null; } }
@@ -12359,6 +12361,33 @@ mpProxyHurt=function(t,amt,src){ if(t.kind==='animal'&&t.mode!=='fight') return;
 { const _ml=mpMobList; mpMobList=function(...a){ const out=_ml(...a); MP.sendN=(MP.sendN||0)+1; try{ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return out; const by=new Map(); for(const e of ents) if(e.nid&&!e.dead) by.set(e.nid,e);
       return out.filter(m=>{ const e=by.get(m[0]); if(!e||e.warlord||e.bigBoss) return true; let d=1e9, tg=false; for(const r of gs){ d=Math.min(d,Math.abs(e.x-r.proxy.x)+Math.abs(e.y-r.proxy.y)*0.5); if(e.target===r.proxy||(e.target&&e.target.proxyOwner===r)) tg=true; }
         return tg||d<=25*T||(m[0]%3)===(MP.sendN%3); }); }catch(err){ return out; } }; }
+// ===================== Beta 0.9.70: the dragon and the Kraken are run by the host for everyone =====================
+// (step 13 of docs/MULTIPLAYER_REVIEW.md) Before, every player had their own dragon and their own Kraken, with only the
+// lowest health shared, so friends saw two different fights. Now the host runs both like every other enemy and sends
+// them in its enemy list (`d:<state>` and `k:<diving>`); friends see them as ghosts, hit them through the host, and the
+// bosses fight whichever player is nearest (a friend alone in the lair or at sea gets the full fight). A friend's own
+// dragon and Kraken are removed when they join.
+{ const _mc=mpCode; mpCode=function(e){ if(e&&e.kind==='dragon') return 'd:'+(e.dstate||'hover')+(e.raid?':r':''); if(e&&e.kind==='kraken') return 'k:'+(e.diveT>0?1:0); return _mc(e); }; }
+// the nearest player or stand-in for a friend, so the bosses fight whoever is there
+function nearestPlayerTo(x){ let best=player, bd=player&&!player.dead?Math.abs(cxOf(player)-x):1e18; if(typeof MP!=='undefined'&&MP.host) for(const r of MP.remote.values()){ const p=r.proxy; if(!p||p.dead) continue; const d=Math.abs(cxOf(p)-x); if(d<bd){ bd=d; best=p; } } return best; }
+function asPlayer(p,fn){ if(!p||p===player) return fn(); const real=player; player=p; try{ return fn(); } finally{ player=real; } }
+{ const _ud=updateDragon; updateDragon=function(d,dt,...a){ if(!(typeof MP!=='undefined'&&MP.host&&MP.remote.size)) return _ud(d,dt,...a); const p=nearestPlayerTo(cxOf(d)); if(p&&p.proxy) p.riding=false; return asPlayer(p,()=>_ud(d,dt,...a)); }; }
+{ const _kt=krakenTick; krakenTick=function(dt,...a){ if(!(typeof MP!=='undefined'&&MP.host&&MP.remote.size)||!krakenX) return _kt(dt,...a); const p=nearestPlayerTo(krakenX*T); if(p&&p.proxy) p.riding=false; return asPlayer(p,()=>_kt(dt,...a)); }; }
+{ const _ka=krakenAct; krakenAct=function(k,dt,...a){ if(!(typeof MP!=='undefined'&&MP.host&&MP.remote.size)) return _ka(k,dt,...a); const p=nearestPlayerTo(k.x+40); if(p&&p.proxy){ p.riding=false; p.slowT=0; } return asPlayer(p,()=>_ka(k,dt,...a)); }; }
+// ---- the friend's side: ghosts of both, their own copies removed ----
+{ const _mg=mpGhosts; mpGhosts=function(list,...a){ if(typeof MP!=='undefined'&&MP.guest) for(const m of list){ const [nid,code,x,y]=m, c=String(code); if(MP.ghosts.has(nid)||c[1]!==':'||(c[0]!=='d'&&c[0]!=='k')) continue; let g;
+      if(c[0]==='d'){ g=(dragon&&!dragon.dead&&!dragon.ghost)?dragon:makeDragon(30000); if(!ents.includes(g)) ents.push(g); dragon=g; }
+      else { g={kind:'kraken',x,y,w:80,h:40,hp:18000,maxHp:18000,team:'k',name:'The Kraken',bigBoss:true,patT:3,pat:0,diveT:0,vx:0,vy:0,facing:1,anim:0,tent:[],hurtT:0}; ents.push(g); }
+      g.ghost=true; g.nid=nid; g.x=x; g.y=y; g.dead=false; MP.ghosts.set(nid,g); }
+    const r=_mg(list,...a);
+    if(typeof MP!=='undefined'&&MP.guest) for(const m of list){ const g=MP.ghosts.get(m[0]); if(!g) continue; const c=String(m[1]); if(c[1]!==':') continue;
+      if(c[0]==='d'){ const p=c.split(':'); g.dstate=p[1]||'hover'; g.raid=p[2]==='r'?(g.raid||{t:60}):null; } else if(c[0]==='k'){ g.diveT=c.split(':')[1]==='1'?1:0; g.peaceful=g.diveT>0; } }
+    return r; }; }
+{ const _gm=mpGhostMove; mpGhostMove=function(g,dt,...a){ const r=_gm(g,dt,...a); if(g.kind==='dragon'){ g.flap=(g.flap||0)+dt*6; g.t=(g.t||0)+dt; g.hitT=(g.hitT||0)-dt; g.grounded=false; } return r; }; }
+{ const _cl=mpClearLocalEnemies; mpClearLocalEnemies=function(...a){ const r=_cl(...a); try{ if(typeof MP!=='undefined'&&MP.guest){ for(const e of ents) if(!e.ghost&&(e.kind==='dragon'||e.kind==='kraken')){ e.dead=true; e.silent=true; } if(dragon&&!dragon.ghost) dragon=null; } }catch(e){} return r; }; }
+// the lowest-health merge is only for copies nobody has any more: ghosts never report, friends never apply it
+{ const _bh=mpBossHp; mpBossHp=function(...a){ const o=_bh(...a); try{ for(const e of ents) if(!e.dead&&e.ghost&&(e.bigBoss||e.kind==='dragon')) delete o[(e.name||e.kind).replace(/[^a-z]/gi,'').slice(0,12)]; }catch(err){} return o; }; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ if(typeof MP!=='undefined'&&MP.guest&&d&&d.bh) d=Object.assign({},d,{bh:null}); return _fp(r,d,...a); }; }
 // ===================== Beta 0.9.67: sturdier shared worlds (steps 8, 9 and 12 of docs/MULTIPLAYER_REVIEW.md) =====================
 // - A host whose game tab is in the background keeps the world running (enemies, animals, messages) on a timer, so
 //   friends are not left waiting or dropped after 45 seconds; it catches up at most one second at a time.
