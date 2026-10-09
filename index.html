@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791504063"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791504063"><link rel="manifest" href="manifest.webmanifest?v=1791504063"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791504232"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791504232"><link rel="manifest" href="manifest.webmanifest?v=1791504232"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.53</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.54</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.53</h3>
+    <h3>New in Beta 0.9.54</h3>
+    <p>The red faction's light roof tiles are a brighter red instead of pink.</p>
+    <h3>Beta 0.9.53</h3>
     <p>When a boss falls in a shared world, every player gets their own copy of its loot; coins and everything else on the ground go to whoever picks them up first. Blasts, cannon shots and fires leave smoke that drifts up and fades over about 20 seconds and piles up in a big battle: it greys the view, and arrows and spells shot through it spread from 5% in a light haze up to 35% in thick smoke. Rain and storms still fall but leave no water on the ground and bring no floods, and fog days come in light, normal and thick. Days and nights last twice as long (10 minutes of day, 4 of night). The castle's whole second floor is the safe room. While you are away, your world keeps going (up to 3 days): crops grow, and woodcutters, farmers and miners bring in their work. Stone buildings have light roofs in your faction's colour. Underground there are jade, rose and azure caves with glowing crystals, stalagmite caves, root caverns with glow bulbs and fossil beds.</p>
     <h3>Beta 0.9.52</h3>
     <p>A grappling hook that has bitten holds a taut, straight line from your hand to the claw while it pulls you in and while you hang; the rope no longer folds over into a loop above you.</p>
@@ -608,7 +610,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.53</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.54</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -868,7 +870,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.53</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.54</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -887,7 +889,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.53', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.54', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -11397,10 +11399,10 @@ const BIO={};
     RECIPES.push({ out:id, n:4, need:[[BIO[k],4]], st:B.WORKBENCH, cat:'build' }); } }
 
 // ---- light roof tiles for the stone stage ----
-{ const tint=(src,col)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='color'; g.fillStyle=col; g.fillRect(0,0,16,16); g.globalCompositeOperation='lighter'; g.fillStyle='rgba(70,70,70,1)'; g.fillRect(0,0,16,16); g.globalCompositeOperation='destination-in'; g.drawImage(src,0,0); return c; };
+{ const tint=(src,col,lift=70)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='color'; g.fillStyle=col; g.fillRect(0,0,16,16); g.globalCompositeOperation='lighter'; g.fillStyle=`rgba(${lift},${lift},${lift},1)`; g.fillRect(0,0,16,16); g.globalCompositeOperation='destination-in'; g.drawImage(src,0,0); return c; };
   ROOF_TEAM.light={};
-  for(const [t,nm,col] of [['r','Light red','#e88a80'],['g','Light green','#8ad88a'],['b','Light blue','#8ab4ec']]){ const id=freeIdFrom(); defB(id,Object.assign({},BLOCKS[B.ROOF],{name:`${nm} roof tiles`,col,drop:id}));
-    ITEMS[id]={name:`${nm} roof tiles`,kind:'block',desc:`Light roof tiles in the ${nm.split(' ')[1]} faction's colour, for stone buildings`}; TEX[id]=tint(TEX[B.ROOF],col); ROOF_TEAM.light[t]=id; SKIN_OF.set(id,'roof');
+  for(const [t,nm,col,lift] of [['r','Light red','#e0503a',28],['g','Light green','#8ad88a',70],['b','Light blue','#8ab4ec',70]]){ const id=freeIdFrom(); defB(id,Object.assign({},BLOCKS[B.ROOF],{name:`${nm} roof tiles`,col,drop:id}));
+    ITEMS[id]={name:`${nm} roof tiles`,kind:'block',desc:`Light roof tiles in the ${nm.split(' ')[1]} faction's colour, for stone buildings`}; TEX[id]=tint(TEX[B.ROOF],col,lift); ROOF_TEAM.light[t]=id; SKIN_OF.set(id,'roof');
     RECIPES.push({ out:id, n:4, need:[[B.ROOF,4]], st:B.WORKBENCH, cat:'build' }); } }
 teamRoof=function(team,tier){ const t=ROOF_TEAM.tile[team]?team:'r'; return tier>=2?ROOF_TEAM.iron[t]:ROOF_TEAM.light[t]; };
 
