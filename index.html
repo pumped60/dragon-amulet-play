@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791543973"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791543973"><link rel="manifest" href="manifest.webmanifest?v=1791543973"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791557905"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791557905"><link rel="manifest" href="manifest.webmanifest?v=1791557905"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.68</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.69</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.68</h3>
+    <h3>New in Beta 0.9.69</h3>
+    <p>Chests in shared worlds: two players can use the same chest at the same time and nothing is lost or doubled. The host keeps every chest; a friend's change goes to the host as "took 5 iron from slot 3, put 7 apples", the host applies it and answers. If someone else took the same item first, it comes back out of your bag with a note. What your woodcutters, farmers and miners deliver now shows for friends right away, without the host opening the chest. When a lot is happening, the host's messages keep the enemies and the world and drop the effects first.</p>
+    <h3>Beta 0.9.68</h3>
     <p>Cover and bracing are for battles between the three factions: you, your soldiers and the enemy factions' soldiers. The guards of the wizard towers and the sky and magma castles don't take cover behind walls or brace in a line.</p>
     <h3>Beta 0.9.67</h3>
     <p>Sturdier shared worlds: when the host switches to another app or tab, their world keeps running for everyone, so friends are no longer left waiting or dropped. A friend's game no longer runs enemy village guards, scouting parties, sky knights or enemy village growth on its own (the host runs them for everyone), and the numbers that tell enemies and animals apart carry on when the host starts the world again, so a friend's tamed animals never get mixed up with new ones.</p>
@@ -640,7 +642,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.68</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.69</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -900,7 +902,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.68</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.69</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -919,7 +921,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.68', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.69', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5771,22 +5773,27 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h',e.upArmor||0]);
   const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), vt:mpVillageTierOut(), wk:mpWorkersOut(), cg:mpCagesOut(), vg:MP.guest?mpVillageTierOut():0, tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.pg=(MP.pgOut||[]).slice(-16); pr.pgs=MP.pgSid||0; pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
-  if(MP.guest){ pr.aq=(MP.aqOut||[]).slice(-10); pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
+  if(MP.guest){ pr.cq=(MP.cqOut||[]).slice(-20); pr.aq=(MP.aqOut||[]).slice(-10); pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
     pr.mobs=mpMobList(); pr.sh=mpShotsOut(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,80); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
   if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,80); }
-  pr.ts=Math.round(performance.now()); if(MP.host) pr.hr=(MP.hitRes||[]).slice(-20);
+  pr.ts=Math.round(performance.now()); if(MP.host){ pr.hr=(MP.hitRes||[]).slice(-20); pr.ca=Object.entries(MP.cqSeen||{}).slice(0,20); pr.cx=(MP.cxOut||[]).slice(-20); }
   if(MP.host){ pr.host=true; pr.seed=seed; pr.size=sizeKey; pr.pf=player.team; pr.t=Math.round(time*1000)/1000; pr.ws=MP.wsId||null; pr.fl=(tower.cleared?'t':'')+(fort.cleared?'f':'')+(sky.castle.cleared?'s':'')+(magma.keep.cleared?'m':'')+(dragonSlain?'d':'')+(krakenSlain?'k':''); }
   if(MP.guest){ MP.posT=(MP.posT||0)-0.1; if(MP.posT<=0){ MP.posT=5; try{ localStorage.setItem('dragonamulet-mppos-'+seed,JSON.stringify({x:Math.round(p.x),y:Math.round(p.y)})); }catch(e){} } }
-  // stay inside the room's 4 KB limit (measured in bytes): trim the extras, never the player's own position and name
-  const enc=new TextEncoder(), BUDGET=3600; const size=()=>enc.encode(JSON.stringify(pr)).length;
+  // stay inside the room's 4 KB limit: what matters most goes last to the knife. Cosmetics (fires, effects, bombs, shots,
+  // crews, village looks) are trimmed first, then gifts and acks, then the player's lists, and the enemies, hurts, hits and
+  // the ordered world logs (ge, fe) only when nothing else is left. A refused write first drops the cosmetics for 2 seconds
+  // (`MP.lean`); only a second refusal falls back to the bare core. Sizes are counted per key, not by re-encoding everything.
+  const BUDGET=MP.budget||3600, sz={}; let total=2; const measure=k=>{ const v=pr[k]; const n=v===undefined?0:k.length+4+(typeof v==='string'?v.length+2:JSON.stringify(v).length); total+=n-(sz[k]||0); sz[k]=n; }; for(const k in pr) measure(k);
+  const size=()=>total;
+  if(MP.lean>0){ MP.lean--; for(const k of ['fi','fx','bm','sh','cr','vh','dr','wk','cg','tw']) if(pr[k]!==undefined){ pr[k]=null; measure(k); } if(Array.isArray(pr.mobs)&&pr.mobs.length>16){ pr.mobs=pr.mobs.slice(0,16); measure('mobs'); } }
   // lists of numbered events (block edits, hits, hurts, gifts) send the older and the newer half by turns, so nothing waits forever;
-  // the logs that must arrive in order (ge, fe) always send their oldest part first
-  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','hr','gv','ch','sh','fx']);
-  const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); } };
-  if(size()>BUDGET){ for(const k of ['fi','fx','bm','sh','ch','ge','fe','ed','sold','cr','mobs','hurt','hits','hr','ga','gv','vh']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; } }
+  // the logs that must arrive in order (ge, fe) and the enemies (nearest first) always keep their first part
+  MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','hr','gv','ch','sh','fx','cx']);
+  const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); measure(k); } };
+  if(size()>BUDGET){ for(const k of ['fi','fx','bm','sh','cr','vh','dr','wk','ch','gv','ga','ca','cx','ed','sold','cq','hr','hits','hurt','ge','fe','mobs']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; measure('bh'); } }
   if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['tk','ts','x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
-  try{ MP.room.presence(pr).then(()=>{ MP.err=''; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; MP.coreOnly=20; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.coreOnly=20; }
+  try{ MP.room.presence(pr).then(()=>{ MP.err=''; MP.refusedAt=0; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; const now=performance.now(); if(MP.refusedAt&&now-MP.refusedAt<4000) MP.coreOnly=20; else MP.lean=20; MP.refusedAt=now; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.lean=20; }
   mpReceive(); }
 function mpHostName(){ for(const r of MP.remote.values()) if(r.isHost) return r.nm||'your friend'; return MP.hostNm||'your friend'; }
 async function mpHostGone(){ if(!MP.guest||MP.leaving) return; MP.leaving=true; const s=await saveLocal(); try{ if(MP.room) MP.room.leave(); }catch(e){}
@@ -5804,7 +5811,7 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
     let r=MP.remote.get(pe.peer); if(!r){ r={peer:pe.peer,kind:'human',remote:true,w:12,h:29,x:d.x,y:d.y,team:d.team||player.team,cls:d.cls||'knight',facing:1,anim:0,hp:1,maxHp:1,hurtT:0,atkT:0,role:'guard',soldiers:[]}; MP.remote.set(pe.peer,r); }
     r.fa=d.fa||0; r.nm=d.nm||''; r.isHost=!!d.host; r.mine=d.mine||0; r.dl=!!d.dl; r.tx=d.x; r.ty=d.y; mpFromPeer(r,d,pe.peer); r.facing=d.f||1; r.cls=d.cls||'knight'; r.team=d.team||player.team; r.weapon=d.tw&&!THROW_DAGGERS.has(d.w)?0:(d.w||0); r.tw=d.tw||0; r.vx=d.vx||0; r.anim=d.an||0; r.hp=d.hp||1; r.maxHp=d.mhp||1; r.upArmor=0; r.by=pe.by; if(d.tk==null||d.tk!==r.tk){ r.tk=d.tk; r.seen=now; }   /* only a message that has moved on counts: a player who left stops ticking */ r.riding=!!d.rd&&!!BOATS[d.rd]; r.boat=d.rd||0; r.grounded=!((d.st||0)&2); r.inWater=!!((d.st||0)&1); r.fly=!!((d.st||0)&4);
     for(const [sq,to,id,n] of (d.gv||[])){ if(to!==MP.myKey||!ITEMS[id]||!mpFresh('gv',pe.peer,sq,MP.giveSeen[pe.peer]||0)) continue; MP.giveSeen[pe.peer]=Math.max(MP.giveSeen[pe.peer]||0,sq); obtain(id,n,true); invDirty=true; toast(`${d.nm||'A friend'} gave you ${n>1?n+' × ':''}${ITEMS[id].name}`,3); if(typeof sfx==='function') sfx('pickup'); }
-    for(const c of (d.ch||[])) mpApplyChest(c);
+    if((MP.host&&!d.cq)||(MP.guest&&d.host)) for(const c of (d.ch||[])) mpApplyChest(c);
     if(d.host&&MP.applied[pe.peer]==null&&MP.hostEdSeq) MP.applied[pe.peer]=MP.hostEdSeq;
     if(MP.guest&&d.host&&d.fl!=null){ tower.cleared=d.fl.includes('t'); fort.cleared=d.fl.includes('f'); if(d.fl.includes('s')) sky.castle.cleared=true; if(d.fl.includes('m')) magma.keep.cleared=true; if(d.fl.includes('d')&&!dragonSlain){ dragonSlain=true; if(dragon) dragon.dead=true; } if(d.fl.includes('k')) krakenSlain=true; }
     { const old=r.soldiers||[]; const keep=new Set();
@@ -12212,6 +12219,53 @@ function roundOldPools(){ const seen=new Uint8Array(W*H); let n=0; const R=mulbe
 // older worlds: only ground nobody has seen
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.underV&&!isGuest()){ home.underV=1; let n=0; n+=deepBand(true); n+=roundOldPools(); n+=caveSlopes(true);
       for(const e of ents) if(!e.dead&&(e.kind==='monster'||e.kind==='animal')&&!e.tamed&&collides(e)) e.dead=true; if(n){ try{ wakeAllWater(); buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
+// (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
+// at one chest lost items. Now the host owns every chest:
+// - A friend's change is sent as the difference per slot (`cq`: [seq, key, [[slot, item, +-amount]...], coins]); it shows
+//   at once on the friend's screen. The host takes before it puts, puts into another slot when the one asked for is
+//   taken, drops anything that fits nowhere at the chest so nothing is lost, and answers (`ca` acks, `cx` refunds: items
+//   the friend took that were already gone come out of the friend's bag again).
+// - Only the host sends chest contents (`ch`), and it sends them for every change, including the woodcutters', farmers'
+//   and miners' deliveries, so friends see full chests without the host opening them.
+// - A friend keeps a copy of the last host state of each chest it touched (`MP.cbase`, not saved) to diff against, and
+//   re-applies its unanswered changes on top of each host copy so what it did never flickers away.
+MP.cbase=MP.cbase||new Map(); MP.cqOut=MP.cqOut||[]; MP.cqSeq=MP.cqSeq||0; MP.cqSeen=MP.cqSeen||{}; MP.cxOut=MP.cxOut||[];
+const cloneChest=c=>({items:(c.items||[]).map(s=>s?{id:s.id,n:s.n}:null),coins:c.coins||0});
+function chestKeyOf(c){ for(const k in chests) if(chests[k]===c) return k; return null; }
+// the difference between a chest and its base, as operations (takes first, then puts)
+function chestDiff(base,c){ const ops=[], n=Math.max(base.items.length,c.items.length);
+  for(let i=0;i<n;i++){ const b=base.items[i], a=c.items[i];
+    if(b&&a&&b.id===a.id){ if(a.n!==b.n) ops.push([i,a.id,a.n-b.n]); }
+    else { if(b) ops.push([i,b.id,-b.n]); if(a) ops.push([i,a.id,a.n]); } }
+  ops.sort((p,q)=>p[2]-q[2]); return ops; }
+// apply operations to a chest; returns what could not be taken ([id, n], coins as id 0)
+function chestApply(c,ops,cd,key){ const back=[]; const [cx,cy]=(key||'0,0').split(',').map(Number);
+  for(const [i,id,d] of ops){ if(d>=0) continue; const s=c.items[i], have=s&&s.id===id?s.n:0, g=Math.min(-d,have); if(g){ s.n-=g; if(s.n<=0) c.items[i]=null; } if(g<-d) back.push([id,-d-g]); }
+  for(const [i,id,d] of ops){ if(d<=0||!ITEMS[id]) continue; const s=c.items[i];
+    if(!s&&i<c.items.length) c.items[i]={id,n:d}; else if(s&&s.id===id&&s.n+d<=999) s.n+=d;
+    else { const t={id,n:d}; if(!putInChest(c,t)&&t.n>0){ if(typeof spawnDrop==='function'&&MP.host) spawnDrop(cx*T+8,cy*T+8,id,t.n); else if(MP.host){} } } }
+  if(cd<0){ const g=Math.min(-cd,c.coins||0); c.coins=(c.coins||0)-g; if(g<-cd) back.push([0,-cd-g]); } else if(cd>0) c.coins=(c.coins||0)+cd;
+  return back; }
+// ---- the friend's side ----
+{ const _cc=chestChanged; chestChanged=function(key,...a){ if(!(typeof MP!=='undefined'&&MP.on&&MP.guest)) return _cc(key,...a); if(MP.chApplying) return; const c=chests[key]; if(!c) return;
+    const base=MP.cbase.get(key)||{items:[],coins:0}; const ops=chestDiff(base,c), cd=(c.coins||0)-(base.coins||0); if(!ops.length&&!cd) return;
+    MP.cqOut.push([++MP.cqSeq,key,ops,cd]); if(MP.cqOut.length>20) MP.cqOut.shift(); MP.cbase.set(key,cloneChest(c)); }; }
+{ const _ac=mpApplyChest; mpApplyChest=function(e,...a){ if(!(typeof MP!=='undefined'&&MP.guest)) return _ac(e,...a); const key=Array.isArray(e)?e[0]:null; const r=_ac(e,...a); if(!key||!chests[key]) return r;
+    const c=chests[key], pend=MP.cqOut.filter(o=>o[1]===key); if(pend.length){ for(const [,,ops,cd] of pend) chestApply(c,ops,cd,key); }
+    MP.cbase.set(key,cloneChest(c)); if(chestAt===key&&!$('#scrChest').hidden){ MP.chApplying=true; try{ c._sig=undefined; renderChest(); c._sig=JSON.stringify(c.items)+'|'+(c.coins||0); }finally{ MP.chApplying=false; } } return r; }; }
+{ const _as=applySnapshot; applySnapshot=function(...a){ const r=_as(...a); try{ MP.cbase.clear(); MP.cqOut.length=0; for(const k in chests) MP.cbase.set(k,cloneChest(chests[k])); }catch(e){} return r; }; }
+function chestAcks(d){ for(const [key,sq] of (d.ca||[])) if(key===MP.myKey){ const n=MP.cqOut.length; MP.cqOut=MP.cqOut.filter(o=>o[0]>sq); }
+  let said=false; for(const [key,sq,back] of (d.cx||[])){ if(key!==MP.myKey||!mpFresh('cx','host',sq,0)) continue;
+    for(const [id,n] of back){ if(!id){ player.coins=Math.max(0,(player.coins||0)-n); continue; } takeItem(id,n); if(!said){ said=true; toast(`${ITEMS[id]?ITEMS[id].name:'Something'} was already taken from that chest`,3); } } invDirty=true; } }
+// ---- the host's side ----
+function chestOpsIn(r,d){ let seen=MP.cqSeen[r.key]||0; for(const [sq,key,ops,cd] of (d.cq||[])){ if(sq<=seen) continue; seen=sq; const c=chests[key]||(chests[key]={items:new Array(CHEST_N).fill(null),coins:0});
+    const back=chestApply(c,ops||[],cd||0,key); if(back.length){ MP.cxOut.push([r.key,sq,back]); if(MP.cxOut.length>20) MP.cxOut.shift(); } chestChanged(key); }
+  MP.cqSeen[r.key]=seen; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(MP.host&&d&&d.cq) chestOpsIn(r,d); if(MP.guest&&d&&d.host) chestAcks(d); }catch(e){ console.warn(e); } return res; }; }
+// every change on the host reaches friends: workers' deliveries, farm produce, loot the host takes
+{ const _pc=putInChest; putInChest=function(c,s,...a){ const r=_pc(c,s,...a); try{ if(MP.host&&MP.on&&!MP.chApplying){ const k=chestKeyOf(c); if(k) chestChanged(k); } }catch(e){} return r; }; }
+{ const _tc=takeFromChest; takeFromChest=function(c,i,...a){ const r=_tc(c,i,...a); try{ if(MP.host&&MP.on&&!MP.chApplying){ const k=chestKeyOf(c); if(k) chestChanged(k); } }catch(e){} return r; }; }
 // ===================== Beta 0.9.66: smoother shared worlds (host authority, interpolation, replicated targets) =====================
 // See docs/MULTIPLAYER_REVIEW.md. The host stays the authority for every enemy and animal; friends see them smoothly:
 // 1. Messages are read when the room reports a change (onPeers `updated`), not only on the 10-a-second poll.
@@ -12301,6 +12355,10 @@ function netHitReplies(list){ for(const [key,sq,dealt,dead,nid] of list){ if(key
 // ---- 6: an enemy's every hit on a friend reaches them ----
 mpProxyHurt=function(t,amt,src){ if(t.kind==='animal'&&t.mode!=='fight') return; const r=t.proxyOwner||[...MP.remote.values()].find(x=>x.proxy===t); const now=performance.now(); if(!r||now-(t.hurtAt||0)<120) return; t.hurtAt=now; t.hurtT=0.18;
   MP.hurtOut.push([r.key,++MP.hurtSeq,Math.round(amt),src?Math.sign(cxOf(t)-cxOf(src))||1:0,t.uid||0]); if(MP.hurtOut.length>30) MP.hurtOut.shift(); };
+// ---- far enemies ride every third message (review step 6), so the near ones always fit ----
+{ const _ml=mpMobList; mpMobList=function(...a){ const out=_ml(...a); MP.sendN=(MP.sendN||0)+1; try{ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return out; const by=new Map(); for(const e of ents) if(e.nid&&!e.dead) by.set(e.nid,e);
+      return out.filter(m=>{ const e=by.get(m[0]); if(!e||e.warlord||e.bigBoss) return true; let d=1e9, tg=false; for(const r of gs){ d=Math.min(d,Math.abs(e.x-r.proxy.x)+Math.abs(e.y-r.proxy.y)*0.5); if(e.target===r.proxy||(e.target&&e.target.proxyOwner===r)) tg=true; }
+        return tg||d<=25*T||(m[0]%3)===(MP.sendN%3); }); }catch(err){ return out; } }; }
 // ===================== Beta 0.9.67: sturdier shared worlds (steps 8, 9 and 12 of docs/MULTIPLAYER_REVIEW.md) =====================
 // - A host whose game tab is in the background keeps the world running (enemies, animals, messages) on a timer, so
 //   friends are not left waiting or dropped after 45 seconds; it catches up at most one second at a time.
