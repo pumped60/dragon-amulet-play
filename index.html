@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791561563"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791561563"><link rel="manifest" href="manifest.webmanifest?v=1791561563"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791574000"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791574000"><link rel="manifest" href="manifest.webmanifest?v=1791574000"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.72</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.73</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.72</h3>
+    <h3>New in Beta 0.9.73</h3>
+    <p>The wiki's Biomes and places page has a picture of every place in the game, from the ice islands to the fossil beds, and wiki pages open faster. The shale layer has its own back wall; in 0.9.72 it borrowed the jade caves' wall.</p>
+    <h3>Beta 0.9.72</h3>
     <p>Three rock layers: stone near the surface, then shale (a layered purple-grey rock) from about a third of the way down, then deepstone from a little over halfway to the magma realm. Older worlds get the shale layer in ground you have not explored yet. Gear (weapons, armor, accessories, charms, tools and hooks) is found only in cave chests at or below the shale layer; cave chests above it hold ore, potions, food, torches and a few more coins. Chests in ruins, war camps, castles, the dragon's lair and the orc cave are as they were. Every chest in the world is filled once and never refills.</p>
     <h3>Beta 0.9.71</h3>
     <p>Shared worlds: every change to the world travels one way, in order, so a friend's block can no longer be undone by an older message, and each message is about 800 bytes lighter. A friend whose game fell behind the host's changes (a long pause, a hidden tab) gets a fresh copy of the world instead of a world with holes, and stays where they were.</p>
@@ -648,7 +650,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.72</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.73</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -908,7 +910,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.72</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.73</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -927,7 +929,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.72', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.73', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12227,23 +12229,24 @@ function roundOldPools(){ const seen=new Uint8Array(W*H); let n=0; const R=mulbe
       for(const e of ents) if(!e.dead&&(e.kind==='monster'||e.kind==='animal')&&!e.tamed&&collides(e)) e.dead=true; if(n){ try{ wakeAllWater(); buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.72: three rock layers; gear only in deeper chests; a chest is looted once =====================
 // Underground rock comes in three layers now: stone from the surface down to 30% of the way to the magma realm, shale
-// (a layered, purple-grey rock) down to 55%, and deepstone the rest of the way (B.SHALE; the boundaries wander a few
-// blocks, like the old stone/deepstone one). Older worlds get the shale layer in ground nobody has explored yet
+// (a layered, purple-grey rock) down to 55%, and deepstone the rest of the way (B.SHALE, back wall 27; the boundaries
+// wander a few blocks, like the old stone/deepstone one). Older worlds get the shale layer in ground nobody has explored yet
 // (home.layersV). Gear (weapons, armor, accessories, charms, tools, hooks) is found only in cave chests at or below the
 // shale layer; cave chests above it hold ore, potions, food, torches and a few more coins instead (deepenLoot; surface
 // ruins, war camps, castles, the dragon's lair and the orc cave keep their chests). A chest holds what the world put in
 // it once: it never refills, and it is marked opened the first time someone looks inside.
+const SHALE_BG=27;   // 22-26 are the cave biome walls (98k_biomes_roofs.js)
 B.SHALE=freeIdFrom(); defB(B.SHALE,{name:'Shale',hard:1,col:'#5e5a68'});
 ITEMS[B.SHALE]={name:'Shale',kind:'block',desc:'Layered purple-grey rock, the middle of the three rock layers: below the stone near the surface and above the deepstone. Any pickaxe mines it.'};
 { const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
   TEX[B.SHALE]=tex(r=>{ r(0,0,16,16,'#5e5a68'); for(const [y,x0,x1] of [[2,0,11],[3,13,16],[6,3,16],[9,0,7],[10,9,16],[13,0,16]]) r(x0,y,x1-x0,1,'#4a4654'); for(const [x,y] of [[1,4],[6,0],[12,7],[4,11],[14,14],[9,15],[7,5]]) r(x,y,1,1,'#6e6a78'); for(const [x,y] of [[8,3],[2,8],[13,11]]) r(x,y,2,1,'#3e3a48'); });
-  BGTEX[22]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.SHALE],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.5)'; g.fillRect(0,0,16,16); return c; })(); }
+  BGTEX[SHALE_BG]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.SHALE],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.5)'; g.fillRect(0,0,16,16); return c; })(); }
 try{ STONEY.add(B.SHALE); }catch(e){} try{ CAVE_SLOPE.add(B.SHALE); }catch(e){}
 // the row where the shale layer begins (30% of the way from sea level to the magma realm); deepstone starts at 55%
 function layerTop(){ const mt=Math.min(H-58,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-58)); return seaY+Math.floor((mt-seaY)*0.3); }
 function layShale(onlyUnexplored){ if(!world||!seaY) return 0; const top=layerTop(), bot=Math.min(H-3,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-58)), sd=(seed|0)+9; let n=0;
   for(let y=Math.max(0,top-6);y<bot;y++) for(let x=0;x<W;x++){ const i=y*W+x; if(onlyUnexplored&&explored[i]) continue; if(y<=top+Math.round((noise2(x/18,y/18,sd)-0.5)*8)) continue;
-    if(world[i]===B.STONE){ world[i]=B.SHALE; n++; } if(bg[i]===2) bg[i]=22; }
+    if(world[i]===B.STONE){ world[i]=B.SHALE; n++; } if(bg[i]===2) bg[i]=SHALE_BG; }
   return n; }
 // gear: anything you wear, wield or work with
 const GEAR_KINDS=new Set(['weapon','armor','acc','charm','pick','axe','hoe','hammer','rod','boat','machine']);
@@ -12258,6 +12261,9 @@ function deepenLoot(onlyUnexplored){ let n=0; for(const [key,c] of Object.entrie
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ layShale(false); deepenLoot(false); if(home) home.layersV=1; }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.layersV&&!isGuest()){ home.layersV=1; const n=layShale(true)+deepenLoot(true); if(n){ try{ buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
 { const _oc=openChest; openChest=function(x,y,...a){ const r=_oc(x,y,...a); try{ const c=chests[x+','+y]; if(c&&state==='chest') c.opened=1; }catch(e){} return r; }; }
+// Beta 0.9.73: 0.9.72 gave the shale its back wall as number 22, the jade caves' number; shale cells outside jade caves get their own
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.layersV&&!home.shaleBgV&&!isGuest()){ home.shaleBgV=1; const top=layerTop(), bot=Math.min(H-3,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-58));
+      for(let y=Math.max(0,top-6);y<bot;y++) for(let x=0;x<W;x++){ const i=y*W+x; if(bg[i]===22&&biome2At(x,y)!=='jade') bg[i]=SHALE_BG; } } else if(home&&!home.shaleBgV) home.shaleBgV=1; }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
