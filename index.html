@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791531028"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791531028"><link rel="manifest" href="manifest.webmanifest?v=1791531028"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791532145"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791532145"><link rel="manifest" href="manifest.webmanifest?v=1791532145"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.63</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.64</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.63</h3>
+    <h3>New in Beta 0.9.64</h3>
+    <p>Favors before upgrades: before a shopkeeper upgrades their shop, they ask you for something from their own trade. The blacksmith wants ore or diamonds, the cook wants meat, eggs or honey, the fisher wants fish, the shipwright wants logs or pearls, and so on. What they ask for changes from world to world. Bring it, tap Give in their shop, and the upgrade opens. Growing your village works the same way: the quartermaster asks for supplies first (Buildings, Village). The Jeweler moves in once your village is a Town and the Archmage is beaten, and the War engineer once it is a City and you have taken an enemy castle. Rooms are lit by torches and lamps: a closed room with no torch is dim even at midday, and only windows and openings let daylight in. Every room your village built gets a torch once.</p>
+    <h3>Beta 0.9.63</h3>
     <p>Trap doors: doors that lie in the floor, made at a workbench from any wood's planks, castle stone, deep stone brick or iron bars. Closed, you stand on one and nothing comes up through it. Tap it to open or shut it, jump up under it, or hold down while standing on it; it opens for you and shuts as soon as you are through. Your soldiers and tamed animals can follow you through, but enemies never open one. In your castle, the ledges up from the great hall end in trap doors that match the castle's stone, deep stone or iron, and the upper floor's west doorway has a door where a bed used to stand, so the upper floor is sealed off as your safe room.</p>
     <h3>Beta 0.9.62</h3>
     <p>Gem weapons: at a workbench, the Iron, Gold and Diamond weapon of a kind (Silver, Gold and Diamond for staffs) plus 4 gems make a special one, and the gem decides what it does. Bows and staffs: ruby burns (Fire bow, Ember staff), sapphire splits arrows or chains lightning (Tri-shot bow, Tempest staff), emerald blasts or wards (Blast bow, Ward staff), amethyst pierces every enemy in its path (Void bow, Void staff). Knights, macebearers and Beastmasters get thrown weapons, a glaive, flail or kunai for each gem: ruby burns, sapphire chills, emerald heals you a little each hit, amethyst flies farther and knocks back harder. No weapon you can have before the diamond tier beats a Diamond weapon. Grow meal (from bones, or seeds, glowcaps and berries at a composter, and left by your farmers each morning) grows a crop a stage or a sapling into a tree. Beat both wizards to unlock the Breakdown bench: next to it, any crafted item in your bag breaks back into all its materials. Your castle's arrow slits turn dark slate and then iron as it grows, nothing spawns on top of your buildings, and the chimney on a level 2 shop house sits on its roof.</p>
@@ -628,7 +630,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.63</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.64</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -888,7 +890,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.63</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.64</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -907,7 +909,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.63', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.64', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4472,17 +4474,18 @@ function openAirMask(tx0,tx1,ty0,ty1){ const lw=tx1-tx0+1, lh=ty1-ty0+1, M=new U
     if(l&&open[l]){ M[k]=1; continue; }
     if(!air(x,y)&&zone(x,y)) for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=x+dx, ay=y+dy; if(ax<X0||ax>X1||ay<Y0||ay>Y1) continue; const l2=lab[(ay-Y0)*ww+ax-X0]; if(l2&&open[l2]){ M[k]=2; break; } } }
   return M; }
+const INDOOR_DIM=0.3;   // how much daylight reaches a closed room without a torch
 function drawLighting(tx0,tx1,ty0,ty1,dl){
   const lw=tx1-tx0+1, lh=ty1-ty0+1; if(lightCv.width!==lw||lightCv.height!==lh||!lightData){ lightCv.width=lw; lightCv.height=lh; lightData=lightCtx.createImageData(lw,lh); }
   const Lg=new Float32Array(lw*lh); const skyL=0.35+0.65*((dl-0.25)/0.75);
   const openM=openAirMask(tx0,tx1,ty0,ty1);
-  for(let cy=0;cy<lh;cy++) for(let cx=0;cx<lw;cx++){ const x=tx0+cx, y=ty0+cy; const d=y-skyTop[x]; let v=d<0?skyL:skyL*Math.max(0,1-d/3); { const top=oceanCol&&oceanCol[x]?seaY:Math.min(surf[x],skyTop[x]); const dd=y-top; if(y>skyOff&&dd>7) v*=Math.max(0,1-(dd-7)/4); } if(v<skyL*0.8&&bg[y*W+x]&&y>skyOff){ if(home&&home.claimed&&BUILD_BG.has(bg[y*W+x])) v=Math.max(v,skyL*0.8); else if(y<=surf[x]+1&&!(oceanCol&&oceanCol[x])) v=Math.max(v,skyL*0.72); }
+  for(let cy=0;cy<lh;cy++) for(let cx=0;cx<lw;cx++){ const x=tx0+cx, y=ty0+cy; const d=y-skyTop[x]; let v=d<0?skyL:skyL*Math.max(0,1-d/3); { const top=oceanCol&&oceanCol[x]?seaY:Math.min(surf[x],skyTop[x]); const dd=y-top; if(y>skyOff&&dd>7) v*=Math.max(0,1-(dd-7)/4); } if(d>=0&&bg[y*W+x]&&y>skyOff&&(BUILD_BG.has(bg[y*W+x])||y<=surf[x]+1&&!(oceanCol&&oceanCol[x]))) v=skyL*INDOOR_DIM;   // indoors: torches and lamps light the room, daylight only through windows and openings
     if(d<0&&y>skyOff&&forestCol&&forestCol[x]){ let cov=0; for(let dx=-6;dx<=6;dx++){ for(let k=1;k<=22;k++){ const id=world[(y-k)*W+x+dx]; if(LEAF_IDS.has(id)){ cov++; break; } } } v*=Math.max(0,1-cov/10); }
     { const om=openM[cy*lw+cx]; if(om) v=Math.max(v,skyL*(om===2?0.85:1)); }
     if(world[y*W+x]===B.WATER) v*=Math.max(0.3,1-(y-seaY)/34); Lg[cy*lw+cx]=v; }
   const addLight=(lx,ly,r,inten)=>{ const x0=Math.max(tx0,Math.floor(lx-r)), x1=Math.min(tx1,Math.ceil(lx+r)), y0=Math.max(ty0,Math.floor(ly-r)), y1=Math.min(ty1,Math.ceil(ly+r));
     for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const dd=Math.hypot(x+0.5-lx,y+0.5-ly); if(dd>=r) continue; const v=inten*(1-dd/r); const k=(y-ty0)*lw+(x-tx0); if(v>Lg[k]) Lg[k]=v; } };
-  const m=8; for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++) for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){ const id=world[y*W+x], b=BLOCKS[id]; if(b.light){ if(id===B.LANTERN&&player&&bg[y*W+x]&&Math.hypot(x-cxOf(player)/T,y-cyOf(player)/T)>12) continue; addLight(x+0.5,y+0.5,b.light,0.98); } }
+  const m=8; for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++) for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){ const id=world[y*W+x], b=BLOCKS[id]; if(b.light){ addLight(x+0.5,y+0.5,b.light,0.98); } }
   if(player&&!player.dead){ let [lr,li]=playerLight(); const hi=heldItem(); const ptx=clamp(Math.floor(cxOf(player)/T),0,W-1); const under=Math.floor(cyOf(player)/T)>skyTop[ptx]+2;
     if(under&&!player.fx.light){ lr=1.6; li=0.12; } if(((hi&&hi.id===B.TORCH)||(((input.sprint&&settings.torchShift!==false)||(typeof torchMode!=='undefined'&&torchMode))&&countItem(B.TORCH)>0))&&!headWet(player)){ lr=Math.max(lr,10); li=Math.max(li,0.95); } if(player.fx.amulet){ lr=Math.max(lr,7); li=Math.max(li,0.7); } addLight(cxOf(player)/T,cyOf(player)/T,lr,li); }
   for(const p of projs) if(p.kind!=='arrow') addLight(p.x/T,p.y/T,p.kind==='fireball'?5:3,0.9);
@@ -11930,6 +11933,79 @@ function castleTraps(){ if(!home||!home.claimed||!home.tall||isGuest()||!TRAPS.l
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ castleTraps(); }catch(e){ console.warn(e); } return r; }; }
 { const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ castleTraps(); }catch(e){ console.warn(e); } return r; }; }
 { const _rh=raiseHome; raiseHome=function(...a){ const r=_rh(...a); try{ castleTraps(); }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.64: villager tasks before upgrades; the Jeweler and the War engineer are earned =====================
+// Before a shopkeeper upgrades their shop, they ask you for something from their own trade (the blacksmith wants ore,
+// the cook wants meat, the fisher wants fish...). Which request it is depends on the world, so it varies from game to game.
+// Growing the village works the same way through the Quartermaster. Bring the goods (Give in the shop, or in Buildings >
+// Village for growth), then the upgrade opens as before. The test world skips the requests.
+// The Jeweler moves in once your village is a Town and the Archmage is beaten; the War engineer once it is a City and
+// you have taken an enemy castle (beating both realm castles still brings him too). The Demolitionist still comes after
+// the Goblin Beastmaster falls. Anyone already living in your village stays.
+const VTASKS=(()=>{ const L=k=>WOODS[k].log;
+  return {
+  smith:[[[B.IRON,30,'iron ore for the forge'],[B.COAL,40,'coal to keep the forge hot'],[B.SILVER_ORE,25,'silver ore to try a new alloy']],
+         [[B.GOLD,30,'gold ore for fine work'],[B.MYTHRIL_ORE,12,'mythril ore, the hardest metal they know'],[429,3,'diamonds to edge their best blades']]],
+  cook:[[[I.PORK,8,'pork chops for a feast'],[I.VENISON,8,'venison for the stew pot'],[I.EGG,12,'eggs for baking']],
+        [[I.BEAR_MEAT,4,'bear steaks for the finest roast'],[I.PUMPKIN,10,'pumpkins for pies'],[I.HONEY,8,'honey for cakes']]],
+  herbalist:[[[I.HERB,15,'herbs to dry'],[I.BERRIES,20,'berries for tonics'],[I.MUSHROOM,10,'glowcaps for salves']],
+             [[I.HERB,30,'a big harvest of herbs'],[I.HONEY,10,'honey for healing balms'],[I.MUSHROOM,20,'glowcaps for strong potions']]],
+  fisher:[[[I.RAW_FISH,15,'fish to sell at the dock'],[I.SALMON,6,'salmon to smoke'],[I.TROUT,6,'trout to show off']],
+          [[I.TUNA,4,'tuna from deep water'],[I.SWORDFISH,2,'swordfish to hang on the wall'],[I.SHARK_FIN,3,'shark fins for soup']]],
+  trader:[[[L('oak'),60,'oak logs for hulls'],[L('spruce'),40,'spruce logs for masts'],[L('birch'),40,'birch logs for oars']],
+          [[L('palm'),40,'palm logs that float well'],[L('jungle'),40,'jungle logs for a big keel'],[I.PEARL,3,'pearls to trade overseas']]],
+  jeweler:[[[I.RUBY,4,'rubies to cut'],[I.SAPPHIRE,4,'sapphires to cut'],[I.AMETHYST_GEM,6,'amethysts for rings']],
+           [[I.PEARL,4,'pearls for a necklace'],[I.BLACK_PEARL,1,'a black pearl for a crown'],[429,2,'diamonds for the finest settings']]],
+  engineer:[[[I.IRON_BAR,25,'iron bars for frames'],[B.COAL,50,'coal for the forge']],
+            [[I.GOLD_BAR,15,'gold bars for gears'],[I.SILVER_BAR,20,'silver bars for springs']]],
+  demo:[[[B.COAL,40,'coal to grind into powder'],[I.BONE,20,'bones for bone meal fuses']],
+        [[BOMB.POWDER,20,'black powder to test'],[B.OBSIDIAN,10,'obsidian for blast-proof casings']]],
+  grow:[[[I.BREAD,10,'bread for the new families'],[L('oak'),80,'logs for new homes'],[I.APPLE,15,'apples for the market']],
+        [[I.STEW,8,'hearty stew for the barracks'],[I.VENISON,12,'venison for a city feast'],[I.RAW_FISH,25,'fish to feed a city']]] }; })();
+const vtHash=s=>{ let h=2166136261^((home&&home.castleCx)||0); for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; };
+// the request for a shop going to level lv (2 or 3), or for growth to tier lv (1 or 2)
+function vtaskFor(role,lv,key){ const P=VTASKS[role]; if(!P) return null; const set=P[Math.max(0,Math.min(1,role==='grow'?lv-1:lv-2))]; const t=set[vtHash(key)%set.length];
+  if(!t||!ITEMS[t[0]]) return null; return {id:t[0],n:t[1],why:t[2],key}; }
+const vtaskDone=key=>!!(home&&home.vtasks&&home.vtasks[key]);
+const vtaskSkip=()=>free()||testFree();
+function shopTask(v){ const lv=shopLevel(v), s=shopStore(v); if(lv>=3||!s||vtaskSkip()) return null; const key=`${s}:${v.role}:${lv+1}`; if(vtaskDone(key)) return null; return vtaskFor(v.role,lv+1,key); }
+function growTask(){ const t=villageTier(); if(!VILLAGE_TIERS[t+1]||vtaskSkip()) return null; const key='grow:'+(t+1); if(vtaskDone(key)) return null; return vtaskFor('grow',t+1,key); }
+function vtaskRow(who,t){ const have=countItem(t.id), ok=have>=t.n;
+  return `<div class="recipe${ok?'':' no'}"><img alt="" src="${iconUrl(t.id)}"><div><div class="nm">${who} asks a favor first</div><div class="ing">"Bring me ${t.n} ${ITEMS[t.id].name.toLowerCase()}: ${t.why}." You have ${have}.</div></div><div class="acts"><button data-vtask="${t.key}" data-vid="${t.id}" data-vn="${t.n}" ${ok?'':'disabled'}>Give</button></div></div>`; }
+function giveVtask(key,id,n){ if(!home||vtaskDone(key)||countItem(id)<n) return false; takeItem(id,n); home.vtasks=home.vtasks||{}; home.vtasks[key]=1; invDirty=true;
+  if(typeof sfx==='function') sfx('coin'); toast('Thank you! Now we can talk about the upgrade.',3); return true; }
+{ const _row=shopUpRow; shopUpRow=function(v){ const t=shopTask(v); if(t) return vtaskRow(villagerName(v),t); return _row(v); }; }
+{ const _up=upgradeShop; upgradeShop=function(v,...a){ const t=shopTask(v); if(t){ toast(`${villagerName(v)} wants ${t.n} ${ITEMS[t.id].name.toLowerCase()} first.`,3); return; } return _up(v,...a); }; }
+{ const _vh=villageHtml; villageHtml=function(...a){ let h=_vh(...a); const t=growTask(); if(t){ h=h.replace('data-vgrow="1"','data-vgrow="1" disabled'); h=h.replace(/(<div class="recipe)/,vtaskRow('The quartermaster',t)+'$1'); } return h; }; }
+{ const _gv=growVillage; growVillage=function(...a){ if(!isGuest()&&growTask()) return; return _gv(...a); }; }
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-vtask]'); if(!b||b.disabled) return; ev.stopPropagation(); ev.preventDefault();
+  if(giveVtask(b.dataset.vtask,+b.dataset.vid,+b.dataset.vn)){ try{ if(typeof shopV!=='undefined'&&shopV&&!$('#scrShop').hidden) renderShop(); }catch(e){} try{ if(typeof renderBuild==='function'&&!$('#scrBuild').hidden) renderBuild(); }catch(e){} } },true);
+
+// ---- the Jeweler and the War engineer are earned ----
+VILLAGE_TIERS[1].gives='a new house, room for 30 soldiers, and a jeweler who sells runes and gems once the Archmage is beaten';
+VILLAGE_TIERS[2].gives='another house, room for 45 soldiers, the war engineer once you have taken an enemy castle, and warships and better deck cannons at the shipwright';
+const tookCastle=()=>Object.keys(conquered||{}).some(f=>conquered[f]);
+// growth no longer brings them by itself
+{ const hold=fn=>function(...a){ if(!home) return fn(...a); const j=home.jeweler, e=home.engineer; home.jeweler=true; home.engineer=true; try{ return fn(...a); } finally{ home.jeweler=j; home.engineer=e; try{ helperCheck(); }catch(err){ console.warn(err); } } };
+  growVillage=hold(growVillage); applyGrowth=hold(applyGrowth); }
+let helperT=0;
+function helperCheck(){ if(!home||!home.claimed||!player||isGuest()) return;
+  if(!home.jeweler&&villageTier()>=1&&tower&&tower.cleared){ home.jeweler=true; ents.push(makeHelper('jeweler','Jeweler',-16)); toast('With the Archmage gone, a jeweler has moved into your town. She sells runes and gems.',5); }
+  if(!home.engineer&&villageTier()>=2&&tookCastle()){ home.engineer=true; ents.push(makeHelper('engineer','War engineer',16)); toast('Word of your conquest spread: a war engineer has moved into your city.',5); } }
+{ const _u=update; update=function(dt){ _u(dt); if((helperT-=dt)<=0){ helperT=2; try{ helperCheck(); }catch(e){ console.warn(e); } } }; }
+
+// ---- indoor light comes from torches and lamps (23_rendering.js): every room the village built gets one torch once ----
+function lightRooms(){ if(!home||!home.claimed||isGuest()) return 0; home.litRooms=home.litRooms||{}; let n=0;
+  for(const b of gameBoxes()){ const key=b.kind+':'+b.x0+','+b.y1; if(home.litRooms[key]) continue; home.litRooms[key]=1; const seen=new Set();
+    const room=(x,y)=>x>=b.x0&&x<=b.x1&&y>=b.y0&&y<=b.y1&&!BLOCKS[tileAt(x,y)].solid&&!isOpenDoor(tileAt(x,y))&&bg[y*W+x];
+    for(let y=b.y0;y<=b.y1;y++) for(let x=b.x0;x<=b.x1;x++){ if(seen.has(y*W+x)||!room(x,y)) continue; const cells=[], st=[[x,y]]; seen.add(y*W+x);
+      while(st.length){ const [cx,cy]=st.pop(); cells.push([cx,cy]); for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=cx+dx, ay=cy+dy, k=ay*W+ax; if(!seen.has(k)&&room(ax,ay)){ seen.add(k); st.push([ax,ay]); } } }
+      if(cells.length<6||cells.some(([cx,cy])=>BLOCKS[tileAt(cx,cy)].light)) continue;
+      // a wall torch at head height: an empty cell with an empty cell under it and a floor under that
+      const spots=cells.filter(([cx,cy])=>tileAt(cx,cy)===0&&tileAt(cx,cy+1)===0&&BLOCKS[tileAt(cx,cy+2)].solid).sort((a,c)=>a[0]-c[0]);
+      const s=spots[spots.length>>1]; if(s){ facRun(()=>setTile(s[0],s[1],B.TORCH)); n++; } } }
+  return n; }
+{ const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ lightRooms(); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ lightRooms(); }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
