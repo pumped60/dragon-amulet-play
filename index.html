@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791520829"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791520829"><link rel="manifest" href="manifest.webmanifest?v=1791520829"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791522270"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791522270"><link rel="manifest" href="manifest.webmanifest?v=1791522270"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.58</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.59</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.58</h3>
+    <h3>New in Beta 0.9.59</h3>
+    <p>The wood of medium and tall trees stays behind the leaves: their wide trunks no longer show through the crown. The ground under houses, lodges, the castle and every building you place stays flat, with no slanted blocks below them. Lava sets you on fire (a cooling band or better ward stops it), and animals that wander into lava burn and die. A new world starts without the buildings of the world you played before.</p>
+    <h3>Beta 0.9.58</h3>
     <p>Rain never builds up: it leaves no puddles and brings no floods at any weather strength, and the weather choices on the New world screen say so. Any old rainwater still lying in an older world dries up the next morning.</p>
     <h3>Beta 0.9.57</h3>
     <p>Bombs throw up much more smoke, and smoke hangs in the air longer (about 45 seconds); rain, storms and snow clear it from the open air two to five times faster. A ballista, cannon or trebuchet can only be set up when a free soldier in your party is with you, and that soldier works it. Press F beside a crewed machine (or use the Army window) and choose Aim, then click or tap a spot: the crew fires at enemies near the mark, or at the mark itself. "Own targets" lets it choose again. War machines are drawn at close to their real size next to you. In the test world a soldier joins you to work a machine if none is free.</p>
@@ -618,7 +620,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.58</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.59</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -878,7 +880,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.58</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.59</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -897,7 +899,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.58', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.59', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -11603,6 +11605,41 @@ $('#machList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-m
       ctx.save(); ctx.globalAlpha=0.85; ctx.strokeStyle=col; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(x,y,10,0,Math.PI*2); ctx.stroke(); ctx.fillStyle=col; ctx.fillRect(x-16,y-1,10,2); ctx.fillRect(x+6,y-1,10,2); ctx.fillRect(x-1,y-16,2,10); ctx.fillRect(x-1,y+6,2,10);
       ctx.globalAlpha=0.25; ctx.setLineDash([4,6]); ctx.beginPath(); ctx.arc(x,y,rr,0,Math.PI*2); ctx.stroke();
       if(Math.hypot(x-cxOf(m),y-cyOf(m))<=MACHINES[m.mtype].range*T){ ctx.globalAlpha=0.35; ctx.beginPath(); ctx.moveTo(cxOf(m),cyOf(m)); ctx.lineTo(x,y); ctx.stroke(); } ctx.restore(); } }catch(e){} return r; }; }
+// ===================== Beta 0.9.59: wood stays behind the leaves; flat ground under houses =====================
+// Medium and tall trees have trunks 2 and 3 blocks wide. The old cover only hid a log with leaves right beside it, so
+// the inner columns of a wide trunk showed through the crown. A log is inside the crown when the run of logs it sits in
+// has leaves at both ends, or leaves above it and at one end: then the leaves are drawn over it.
+const isCrownLeaf=id=>LEAF_IDS.has(id)&&id!==B.PALM_LEAF;
+logCoverTex=function(x,y){ if(x<1||x>=W-1||y<1) return null; const row=y*W;
+  let l=x-1, n=0; while(l>0&&LOG_IDS.has(world[row+l])&&n<4){ l--; n++; } let r=x+1; n=0; while(r<W-1&&LOG_IDS.has(world[row+r])&&n<4){ r++; n++; }
+  const L=world[row+l], R=world[row+r]; let u=y-1; n=0; while(u>0&&LOG_IDS.has(world[u*W+x])&&n<3){ u--; n++; } const U=world[u*W+x];
+  const lo=isCrownLeaf(L), ro=isCrownLeaf(R), uo=isCrownLeaf(U);
+  return (lo&&ro)||(uo&&(lo||ro))?TEX[lo?L:ro?R:U]||null:null; };
+
+// ---- no slopes under buildings: leveling the ground between buildings (levelNear, levelVillage), door ramps and old
+// natural slopes could leave a slanted block under a house, a lodge or a building you placed. After any leveling, and
+// every few seconds with the building skins, the ground in each building's footprint is made flat again ----
+function buildingBoxes(){ const out=[]; if(!home) return out;
+  for(const h of home.houses||[]) if(h&&isFinite(h.x0)) out.push([h.x0,h.x1,h.gy??home.gy]);
+  for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)) out.push([r.x0,r.x1,r.gy]); }
+  if(home.claimed&&isFinite(home.castleCx)) out.push([home.castleCx-19,home.castleCx+19,home.gy]);
+  if(home.mineX) out.push([home.mineX-5,home.mineX+6,home.gy]);
+  for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ const bp=BLUEPRINTS.find(b=>b.id===st.kind); if(bp&&isFinite(st.x)) out.push([st.x+bp.fx0,st.x+bp.fx1,st.gy]); }
+  for(const b of (typeof bases!=='undefined'&&bases)||[]) for(const h of (b&&b.houses)||[]) if(h&&isFinite(h.x0)) out.push([h.x0,h.x1,h.gy??b.gy]);
+  return out; }
+function flatUnder(x0,x1,gy){ let n=0; for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++) for(let y=gy-3;y<=gy+3;y++){ if(y<1||y>=H) continue; const i=y*W+x; const sh=shape[i]; if(sh>=2&&sh<=7&&(RAMP_SOIL.has(world[i])||SLOPEABLE.has(world[i]))){ shape[i]=0; n++; } } return n; }
+function flatUnderAll(){ if(!world||isGuest()) return 0; let n=0; for(const [x0,x1,gy] of buildingBoxes()) n+=flatUnder(x0,x1,gy); return n; }
+{ const _ln=levelNear; levelNear=function(...a){ const r=_ln(...a); try{ flatUnderAll(); }catch(e){ console.warn(e); } return r; }; }
+{ const _lv=levelVillage; levelVillage=function(...a){ const r=_lv(...a); try{ flatUnderAll(); }catch(e){ console.warn(e); } return r; }; }
+{ const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ flatUnderAll(); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ flatUnderAll(); }catch(e){ console.warn(e); } return r; }; }
+// a new world starts with no buildings of yours (the list used to carry over from the world played before)
+{ const _ng=newGame; newGame=function(...a){ myStructures=[]; return _ng(...a); }; }
+
+// ---- lava sets you alight and kills animals that wade in ----
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player; if(p&&!p.dead&&touchesTile(p,B.LAVA)&&!((p.gear&&p.gear.ward)>0)){ if(!(p.burnT>0)) addFloat(cxOf(p),p.y-8,'on fire!','#ff7b1c'); p.burnT=Math.max(p.burnT||0,4); } }catch(e){} return r; }; }
+{ const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if(!e.dead&&touchesTile(e,B.LAVA)){ e.burnT=Math.max(e.burnT||0,4); e.hp-=Math.max(40,e.maxHp*0.6)*dt; e.hurtT=0.2; if(e.hp<=0) kill(e,null); } }catch(err){} return r; }; }
+{ const _ai=updateAI; updateAI=function(e,dt,...a){ const r=_ai(e,dt,...a); try{ if(!e.dead&&e.team!=='m'&&e.mtype!=='imp'&&touchesTile(e,B.LAVA)) e.burnT=Math.max(e.burnT||0,3); }catch(err){} return r; }; }
 })();
 </script>
 </body>
