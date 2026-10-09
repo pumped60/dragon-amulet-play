@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791523678"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791523678"><link rel="manifest" href="manifest.webmanifest?v=1791523678"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791524981"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791524981"><link rel="manifest" href="manifest.webmanifest?v=1791524981"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.60</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.61</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.60</h3>
+    <h3>New in Beta 0.9.61</h3>
+    <p>Rugs lie flat on the floor, covering the top of the block they sit on, and come in six kinds: wool, blue, green, golden, striped and a bamboo mat. Jade, rose quartz and azure crystals hang from ceilings and grow out of cave walls like amethyst, and mining the block that holds a crystal knocks it loose. Enemies take fall damage. Accessories and charms turn up in chests half as often. Bows and staffs say their material: Wooden bow, Iron bow, Wooden staff, Gold staff. Settings, Screen layout has sliders for the checklist, the menu icons and the action buttons, and the choice list that opens with F has the X too.</p>
+    <h3>Beta 0.9.60</h3>
     <p>Lava lies only underground, in puddles, pools and lakes of many sizes, each a bowl with air above it; lava that sat on the surface in older worlds has cooled to stone. Friends who join a shared world can tame the host's animals (they become the friend's own pets and the host's wild one goes away) and feed them for breeding, and a friend's game no longer makes stray enemies or animals of its own that the host never sees.</p>
     <h3>Beta 0.9.59</h3>
     <p>The wood of medium and tall trees stays behind the leaves: their wide trunks no longer show through the crown. The ground under houses, lodges, the castle and every building you place stays flat, with no slanted blocks below them. Lava sets you on fire (a cooling band or better ward stops it), and animals that wander into lava burn and die. A new world starts without the buildings of the world you played before.</p>
@@ -622,7 +624,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.60</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.61</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -882,7 +884,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.60</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.61</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -901,7 +903,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.60', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.61', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1124,13 +1126,13 @@ Object.assign(ITEMS, {
   [I.GOLD_MACE]:W_('Gold mace','melee',{dmg:50,cd:0.75,reach:30,kb:360,m:'gold',shape:'mace'}),
   [I.MYTHRIL_MACE]:W_('Mythril mace','melee',{dmg:68,cd:0.72,reach:27,kb:380,m:'mythril',shape:'mace'}),
   [I.ADAMANT_MACE]:W_('Adamantite mace','melee',{dmg:90,cd:0.7,reach:28,kb:420,m:'adamant',shape:'mace'}),
-  [I.SHORT_BOW]:W_('Short bow','bow',{dmg:12,cd:0.5,speed:430,m:'wood'}),
-  [I.LONGBOW]:W_('Longbow','bow',{dmg:17,cd:0.5,speed:500,m:'iron'}),
+  [I.SHORT_BOW]:W_('Wooden bow','bow',{dmg:12,cd:0.5,speed:430,m:'wood'}),
+  [I.LONGBOW]:W_('Iron bow','bow',{dmg:17,cd:0.5,speed:500,m:'iron'}),
   [I.GOLD_BOW]:W_('Gold bow','bow',{dmg:25,cd:0.45,speed:560,m:'gold'}),
   [I.MYTHRIL_BOW]:W_('Mythril bow','bow',{dmg:35,cd:0.42,speed:600,m:'mythril'}),
   [I.ADAMANT_BOW]:W_('Adamantite bow','bow',{dmg:48,cd:0.4,speed:640,m:'adamant',homing:true}),
-  [I.APPRENTICE_STAFF]:W_('Apprentice staff','magic',{dmg:14,cd:0.45,mana:6,speed:380,gem:'#8ee8ff'}),
-  [I.CRYSTAL_STAFF]:W_('Crystal staff','magic',{dmg:22,cd:0.42,mana:7,speed:420,gem:'#2ecc71'}),
+  [I.APPRENTICE_STAFF]:W_('Wooden staff','magic',{dmg:14,cd:0.45,mana:6,speed:380,gem:'#8ee8ff'}),
+  [I.CRYSTAL_STAFF]:W_('Gold staff','magic',{dmg:22,cd:0.42,mana:7,speed:420,gem:'#2ecc71'}),
   [I.MYTHRIL_STAFF]:W_('Mythril staff','magic',{dmg:32,cd:0.4,mana:8,speed:460,gem:'#39d5c9'}),
   [I.ADAMANT_STAFF]:W_('Adamantite staff','magic',{dmg:45,cd:0.38,mana:10,speed:500,gem:'#ff4f8a',homing:true}),
   [I.IRON_BAR]:{name:'Iron bar',kind:'mat',m:'iron'}, [I.GOLD_BAR]:{name:'Gold bar',kind:'mat',m:'gold'},
@@ -11666,6 +11668,15 @@ function lavaPools(R,put,ok){ let n=0; const tries=Math.round(W/90);
       facRun(()=>{ for(let x=2;x<W-2;x++){ const top=Math.min(surf[x],skyTop[x]); if(!(top>skyOff+2)||top>=magmaY) continue; for(let y=top-2;y<=top+8&&y<magmaY;y++) if(tileAt(x,y)===B.LAVA) setTile(x,y,B.STONE); } });
       const px=player?cxOf(player)/T:-1e9; facRun(()=>lavaPools(mulberry((seed|0)+7719),(x,y,id)=>setTile(x,y,id),(x,y)=>Math.abs(x-px)>=40&&!explored[y*W+x])); } }catch(e){ console.warn(e); } return r; }; }
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(home) home.lavaUnderV=1; }catch(e){} return r; }; }
+
+// ---- enemies take fall damage like you do: more than 11 blocks costs 7 health for every block beyond ----
+// Flying monsters, sea creatures, bosses and the dragon are spared; a sudden jump of position (a teleport, being moved
+// off a roof) starts the fall over.
+const fallSafe=e=>e.ghost||e.proxy||e.fly||e.flying||e.kind==='sea'||e.kind==='dragon'||e.kind==='kraken'||isBossEnt(e)||(e.kind==='monster'&&MON[e.mtype]&&(MON[e.mtype].fly||MON[e.mtype].flies))||e.mtype==='ghost'||e.mtype==='bat';
+{ const _ai=updateAI; updateAI=function(e,dt,...a){ const y0=e.y; const r=_ai(e,dt,...a); try{ if(e.dead||!player||!hostile(player.team,e.team)||fallSafe(e)){ e.peakY=null; return r; }
+      if(Math.abs(e.y-y0)>3*T||e.inWater||e.riding||e.aboard){ e.peakY=e.inWater?null:e.y; return r; }
+      if(e.grounded){ if(e.peakY!=null){ const fall=(e.y-e.peakY)/T; if(fall>11){ damage(e,Math.round((fall-11)*7),null); if(!e.dead) addFloat(cxOf(e),e.y-10,'fall','#ff9a9a'); } } e.peakY=e.y; }
+      else e.peakY=Math.min(e.peakY??e.y,e.y); }catch(err){} return r; }; }
 // ===================== shared worlds: what a friend does with the host's animals =====================
 // The host runs every wild animal; a friend sees "ghost" copies. Taming, bird taming and feeding a ghost used to change
 // only the friend's copy, so a tamed animal was dragged back by the host's wild one and then vanished. Now:
@@ -11698,6 +11709,70 @@ function mpGuestSweep(dt){ if(!(typeof MP!=='undefined'&&MP.on&&MP.guest&&player
   for(const e of ents){ if(e.dead||e.ghost||e.proxy||e===player||e.tamed||e.remote) continue;
     if(e.kind==='monster'||e.kind==='sea'||(e.kind==='animal')||(e.kind==='human'&&e.team!==player.team)) e.dead=true; } }
 { const _u=update; update=function(dt){ _u(dt); try{ mpGuestSweep(dt); }catch(e){ console.warn(e); } }; }
+// ===================== Beta 0.9.61: X on the choice list, checklist and HUD sizes =====================
+// The list of choices that opens with F (or the talk button) next to several things gets the same fixed X as every menu.
+{ const _om=openMenu; openMenu=function(...a){ const pl=$('#pickList'); if(pl&&!pl.hidden) return pl; return _om(...a); }; }
+{ const _mc=menuCloser; menuCloser=function(o){ if(o&&o.id==='pickList') return o.querySelector('[data-pk="-1"]')||{ click(){ o.hidden=true; } }; return _mc(o); }; }
+// Screen layout sliders: checklist size (replaces Small/Medium/Large), menu icons (the top bar) and the action buttons on
+// the screen (Torch, Fly, Hook, Fire, Talk). Saved as settings.ckScale, settings.uiIcons and settings.uiSide (0.6-2).
+if(settings.ckScale==null) settings.ckScale={s:0.8,m:1,l:1.3}[settings.ckSize]||1;
+{ const box=document.querySelector('.uiSliders'), anchor=box&&box.querySelector('.uiSub');
+  if(box&&anchor) for(const [k,lab] of [['ckScale','Checklist'],['uiIcons','Menu icons (top bar)'],['uiSide','Action buttons (Torch, Fly, Hook...)']]){
+    const l=document.createElement('label'); l.innerHTML=`${lab} <span id="${k}V">100%</span><input type="range" id="${k}" min="0.6" max="2" step="0.05">`; box.insertBefore(l,anchor);
+    const el=l.querySelector('input'); el.value=settings[k]||1; el.addEventListener('input',()=>{ settings[k]=+el.value; applyHudScale(); saveSettings(); }); } }
+{ const _ah=applyHudScale; applyHudScale=function(...a){ const r=_ah(...a); try{ const z=(el,v)=>{ if(el) el.style.zoom=v; };
+      z($('#ckList'),settings.ckScale||1); z($('#topbtns'),settings.uiIcons||1); for(const b of document.querySelectorAll('#hud > .hbtn')) z(b,settings.uiSide||1);
+      for(const k of ['ckScale','uiIcons','uiSide']){ const e=$('#'+k+'V'); if(e) e.textContent=Math.round((settings[k]||1)*100)+'%'; } }catch(e){} return r; }; }
+// the checklist keeps the middle size class; the slider sets the scale
+{ const _cp=ckPlace; ckPlace=function(...a){ settings.ckSize='m'; const r=_cp(...a); try{ const e=$('#ckList'); if(e) e.style.zoom=settings.ckScale||1; }catch(e){} return r; }; }
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const c=$('#setCkSize'); if(c){ c.hidden=true; const h=c.previousElementSibling; if(h&&/^H3$/.test(h.tagName)) h.hidden=true; } }catch(e){} return r; }; }
+$('#uiReset').addEventListener('click',()=>{ settings.ckScale=settings.uiIcons=settings.uiSide=1; for(const k of ['ckScale','uiIcons','uiSide']){ const e=$('#'+k); if(e) e.value=1; } applyHudScale(); saveSettings(); });
+// ===================== Beta 0.9.61: rugs lie on the floor, more rugs; crystals that hang; rarer accessories =====================
+// Rugs: a rug sits in the space above a floor block and is drawn over the top quarter (4 pixels) of that block, lying flat.
+// Six kinds: the wool rug plus blue, green, golden, striped and a bamboo mat (workbench). Item icons show a folded rug.
+const RUGS=[], RUG_STRIP={}, RUG_ICON={};
+{ const strip=(base,edge,trim,patt)=>{ const c=mkCanvas(16,4), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    r(0,0,16,4,base); r(0,0,16,1,edge); r(0,3,16,1,shadeHex(base,-0.3)); if(patt) patt(r); return c; };
+  const icon=(base,edge,trim)=>(rect,px)=>{ rect(2,6,12,7,base); rect(2,6,12,1,edge); rect(2,12,12,1,shadeHex(base,-0.3)); for(let x=3;x<14;x+=3) px(x,9,trim); rect(1,7,1,5,trim); rect(14,7,1,5,trim); };
+  const kinds=[
+    [B.RUG,'Wool rug','#b8483f','#e8d8a8','#ffcf3a',r=>{ for(let x=1;x<16;x+=3) r(x,1,1,1,'#ffcf3a'); },null],
+    [null,'Blue rug','#3f6ab8','#d8e4f8','#f4ecd2',r=>{ for(let x=0;x<16;x+=4) r(x+1,1,2,2,'#2a4a8a'); },[[483,3],[B.FLOWER_B,1]]],
+    [null,'Green rug','#4a8a3f','#d8f0c8','#e8d8a8',r=>{ for(let x=0;x<16;x+=2) r(x,2,1,1,'#2e5a28'); },[[483,3],[I.HERB,1]]],
+    [null,'Golden rug','#6a2a8a','#ffcf3a','#ffcf3a',r=>{ r(0,1,16,1,'#ffcf3a'); for(let x=2;x<16;x+=4) r(x,2,1,1,'#ffe88a'); },[[483,3],[I.GOLD_BAR,1]]],
+    [null,'Striped rug','#e8d8a8','#b8483f','#ffcf3a',r=>{ for(let x=0;x<16;x+=4){ r(x,1,2,2,'#b8483f'); r(x+2,1,2,2,'#ffcf3a'); } },[[483,3],[B.FLOWER_R,1],[B.FLOWER_Y,1]]],
+    [null,'Bamboo mat','#c8b060','#e8d890','#8a7a3a',r=>{ for(let x=0;x<16;x+=3) r(x,0,1,4,'#8a7a3a'); },[[B.BAMBOO,4]]] ];
+  for(const [given,name,base,edge,trim,patt,need] of kinds){ let id=given;
+    if(id==null){ id=freeIdFrom(); defB(id,{name,solid:false,hard:0.1,col:base}); ITEMS[id]={name,kind:'block',desc:'A rug that lies flat on the floor'}; RECIPES.push({ out:id, n:2, need:need.filter(n=>n[0]!=null), st:B.WORKBENCH }); SELL[id]=2; }
+    RUGS.push(id); const s=strip(base,edge,trim,patt); RUG_STRIP[id]=s; const ic=mkCanvas(16,16); { const g=ic.getContext('2d'); const px=(x,y,col)=>{ g.fillStyle=col; g.fillRect(x,y,1,1); }, rect=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }; icon(base,edge,trim)(rect,px); } RUG_ICON[id]=ic;
+    TEX[id]=mkCanvas(16,16); delete ICON_URL[id]; }
+  if(ITEMS[B.RUG]) ITEMS[B.RUG].desc='A wool rug that lies flat on the floor'; }
+const RUG_SET=new Set(RUGS);
+{ const _it=iconTex; iconTex=function(id){ return RUG_ICON[id]||_it(id); }; }
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ const x0=Math.max(0,Math.floor(camX/T)-1), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)+1), y0=Math.max(1,Math.floor(camY/T)-1), y1=Math.min(H-2,Math.ceil((camY+viewH)/T)+1);
+    for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x]; if(RUG_SET.has(id)&&RUG_STRIP[id]) ctx.drawImage(RUG_STRIP[id],x*T,(y+1)*T); } }catch(e){} return r; }; }
+
+// ---- jade, rose quartz and azure crystals hang from ceilings and grow out of walls like amethyst ----
+// They join ATTACH (drawn turned toward the block that holds them). New worlds and unexplored ground of older ones also
+// get some on cave walls (home.shardWallV). Mining the block that holds any hanging crystal, mushroom or life/mana
+// crystal knocks it loose.
+for(const k of ['JADE_SHARD','ROSE_QUARTZ','AZURE_SHARD','GLOW_BULB']) if(BIO[k]!=null) ATTACH.add(BIO[k]);
+function wallShards(onlyUnexplored){ if(!world||!surf) return 0; let n=0; const at=new Map(); const bioOf=(x,y)=>{ const k=((y>>2)*((W>>2)+1))+(x>>2); if(!at.has(k)) at.set(k,biome2At(x,y)); return at.get(k); };
+  for(let x=3;x<W-3;x++) for(let y=Math.max(surf[x]+25,skyOff+2);y<H-48;y++){ const i=y*W+x; if(world[i]||(onlyUnexplored&&explored[i])) continue;
+    const lf=BLOCKS[world[i-1]].solid, rt=BLOCKS[world[i+1]].solid; if(!lf&&!rt) continue; if(BLOCKS[world[i+W]].solid||BLOCKS[world[i-W]].solid) continue;
+    const b=bioOf(x,y), sk=BIO_SHARD[b]; if(!sk) continue; if(hash2(x,y,seed+433)<0.06){ world[i]=BIO[sk]; n++; } }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ wallShards(false); if(home) home.shardWallV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.shardWallV&&!isGuest()){ home.shardWallV=1; wallShards(true); } }catch(e){ console.warn(e); } return r; }; }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const r=_bt(x,y,...a); try{ if(!isSolid(x,y)) for(const [dx,dy] of [[-1,0],[1,0],[0,1],[0,-1]]){ const nx=x+dx, ny=y+dy, id=tileAt(nx,ny); if(!ATTACH.has(id)) continue;
+      if(isSolid(nx,ny+1)||isSolid(nx,ny-1)||isSolid(nx-1,ny)||isSolid(nx+1,ny)) continue; const d=BLOCKS[id].drop===undefined?id:BLOCKS[id].drop; mpRun(()=>setTile(nx,ny,0)); if(d) spawnDrop(nx*T+8,ny*T+8,d,1); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- accessories and charms are rarer in chests: each one a chest would hold is kept only half the time ----
+const isGearAcc=id=>{ const k=ITEMS[id]&&ITEMS[id].kind; return k==='acc'||k==='charm'; };
+{ const _lf=lootFor; lootFor=function(d,R,...a){ const c=_lf(d,R,...a); try{ if(c&&c.items) c.items=c.items.map(s=>s&&isGearAcc(s.id)&&R()<0.5?null:s); }catch(e){} return c; }; }
+// older worlds: unopened chests in ground you have not explored lose half their accessories and charms, once
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.accRareV&&!isGuest()){ home.accRareV=1; let k=0;
+      for(const [key,c] of Object.entries(chests)){ if(!c||!c.items||c.opened) continue; const [x,y]=key.split(',').map(Number); if(explored[y*W+x]) continue;
+        c.items=c.items.map(s=>{ if(s&&isGearAcc(s.id)){ k++; return hash2(x,y+k,seed+977)<0.5?null:s; } return s; }); } } }catch(e){ console.warn(e); } return r; }; }
 })();
 </script>
 </body>
