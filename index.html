@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791515957"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791515957"><link rel="manifest" href="manifest.webmanifest?v=1791515957"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791518297"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791518297"><link rel="manifest" href="manifest.webmanifest?v=1791518297"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.55</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.56</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.55</h3>
+    <h3>New in Beta 0.9.56</h3>
+    <p>Sugar bakes into sugar cake, berry tart, sugar cookies and candied apples at a furnace. Sea treasures make things: eight ancient coins and a gold bar make a Lucky coin charm, an old compass becomes a Dragon compass or an Astrolabe, two golden fish with pearls make the Lucky lure (or roast one into a golden fish feast), a sunken crown with pearls becomes the Tidecrown charm (+20 health, +20 mana, faster mana), Kraken ink with a black pearl makes the Shadow cloak, and coral presses into pink coral blocks. The Sage charm's faster mana refill works.</p>
+    <h3>Beta 0.9.55</h3>
     <p>Mana refills faster the more mana you have: a wizard gets back 12% of their maximum mana every second and everyone else 8% (never slower than before), so mana crystals and other mana upgrades also speed up the refill. Wizards start with 90 health. The Archmage tower has about half as many guards. Items that shared a name have their own now: the Kraken's treasure-chest daggers are Tidebond daggers, the chain-lightning staff is the Tempest staff, and the mushroom you eat is a Glowcap. Metal bars, gems, crystals, mana potions, farm goods and sea treasures all have descriptions.</p>
     <h3>Beta 0.9.54</h3>
     <p>The red faction's light roof tiles are a brighter red instead of pink.</p>
@@ -612,7 +614,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.55</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.56</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -872,7 +874,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.55</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.56</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -891,7 +893,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.55', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.56', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2703,7 +2705,7 @@ function disembark(){ if(!player) return; let i=0; for(const m of ents) if(m.kin
 // ================= player =================
 const input={left:false,right:false,jump:false,down:false,use:false,ax:0,ay:0,mouse:false};
 function heldItem(){ const s=player.inv[player.sel]; return s?s:null; }
-function manaRegen(p){ const w=p.cls==='wizard'; return Math.max(w?7:4,(p.maxMana||0)*(w?0.12:0.08)); }   // grows with max mana; never below the old 7 (wizard) or 4
+function manaRegen(p){ const w=p.cls==='wizard'; return Math.max(w?7:4,(p.maxMana||0)*(w?0.12:0.08))*(1+(p===player&&typeof charmFx==='function'?charmFx('regen'):0)); }   // grows with max mana; never below the old 7 (wizard) or 4
 
 function updatePlayer(dt){
   const p=player;
@@ -11498,6 +11500,53 @@ function thinTowerGuards(){ if(!tower||tower.cleared||tower.halfV||isGuest()) re
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ thinTowerGuards(); }catch(e){ console.warn(e); } return r; }; }
 // a tower whose guards were placed by this version already has the smaller guard
 { const _st=spawnTower; spawnTower=function(...a){ const r=_st(...a); try{ if(tower) tower.halfV=1; }catch(e){} return r; }; }
+// ===================== Beta 0.9.56: sugar sweets and uses for sea treasures =====================
+// Sugar bakes into cakes, tarts, cookies and candied apples at a furnace. Sea treasures that could only be sold now make
+// things: ancient coins a Lucky coin charm, an old compass a Dragon compass or an Astrolabe, golden fish a feast and (with
+// pearls) the Lucky lure, a sunken crown the Tidecrown charm, Kraken ink the Shadow cloak, and coral a building block.
+// The Sage charm's faster mana refill works (charmFx('regen') in manaRegen).
+const SWEETS={};
+{ const food=(key,name,heal,desc,need,n,draw,sell)=>{ const id=newItem({name,kind:'food',heal,desc}); SELL[id]=sell; customIcon(id,draw); RECIPES.push({ out:id, n:n||1, need, st:B.FURNACE, cat:'cook' }); SWEETS[key]=id; return id; };
+  food('cake','Sugar cake',75,'A tall sponge cake with sweet icing. Baked from sugar, wheat, an egg and milk',[[463,2],[I.WHEAT,2],[I.EGG,1],[I.MILK,1]],1,
+    (rect,px)=>{ rect(2,7,12,7,'#e8c890'); rect(2,7,12,2,'#fff4f0'); rect(2,10,12,1,'#f0a0b0'); for(const x of [3,6,9,12]) px(x,9,'#fff4f0'); rect(7,3,2,4,'#ff4a5a'); px(7,2,'#3a8a3a'); rect(2,13,12,1,'#b8905a'); },10);
+  food('tart','Berry tart',50,'Sweet berries in a sugared crust',[[I.BERRIES,3],[463,1],[I.WHEAT,1]],1,
+    (rect,px)=>{ rect(2,8,12,5,'#d8a060'); rect(3,7,10,2,'#9a2a8a'); for(const [x,y] of [[4,7],[7,6],[10,7],[6,8],[9,8]]) rect(x,y,2,2,'#c040b0'); rect(2,12,12,1,'#a87040'); px(5,7,'#ffffff'); },6);
+  food('cookie','Sugar cookies',14,'A batch of crisp sugar cookies. Quick to eat between fights',[[463,1],[I.WHEAT,1],[I.EGG,1]],4,
+    (rect,px)=>{ for(let y=-5;y<=5;y++) for(let x=-5;x<=5;x++) if(x*x+y*y<=25) px(8+x,8+y,'#d8a868'); for(let y=-5;y<=5;y++) for(let x=-5;x<=5;x++) if(x*x+y*y<=25&&x*x+y*y>16) px(8+x,8+y,'#b8884a'); for(const [x,y] of [[6,6],[10,7],[7,10],[9,10]]) px(x,y,'#fff8f0'); },2);
+  food('apple','Candied apple',30,'An apple dipped in hot sugar',[[I.APPLE,1],[463,1]],1,
+    (rect,px)=>{ rect(7,1,2,5,'#8a5c2d'); for(let y=-5;y<=5;y++) for(let x=-5;x<=5;x++) if(x*x+y*y<=25) px(8+x,10+y,'#d02a2a'); rect(5,6,3,2,'#ff8a8a'); rect(4,13,8,1,'#a01a1a'); },4);
+  food('feast','Golden fish feast',110,'A golden fish roasted with herbs. Heals more than any other meal',[[I.GOLDEN_FISH,1],[I.HERB,2]],1,
+    (rect,px)=>{ rect(1,12,14,2,'#c8c8c0'); rect(3,7,9,5,'#ffcf3a'); rect(12,6,3,7,'#e8a820'); rect(4,8,6,2,'#ffe88a'); px(4,9,'#3a2a1a'); for(const x of [5,8,11]) px(x,6,'#4a9a3a'); },70); }
+SELL[463]=Math.max(SELL[463]||0,2);
+
+// coral: a pink building block
+{ const id=freeIdFrom(); B.CORAL_BLOCK=id; defB(id,{name:'Coral block',hard:0.8,minPow:0,col:'#f07a8a'}); ITEMS[id]={name:'Coral block',kind:'block',desc:'Pink coral pressed into a building block'};
+  const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  r(0,0,16,16,'#e86a7c'); for(const [x,y] of [[1,1],[6,2],[11,1],[3,6],[9,5],[13,7],[1,11],[6,10],[11,12],[4,14]]){ r(x,y,2,2,'#ffb0bc'); r(x+1,y+1,1,1,'#c84a5c'); } r(0,15,16,1,'#b84a5a'); r(15,0,1,16,'#c85666'); TEX[id]=c;
+  RECIPES.push({ out:id, n:4, need:[[I.CORAL,2]], cat:'build' }); SELL[id]=2; }
+
+// treasures into gear
+const TIDECROWN=newItem({name:'Tidecrown',kind:'charm',desc:'+20 maximum health, +20 maximum mana, and mana refills 15% faster'});
+CHARMS[TIDECROWN]={name:'Tidecrown',fx:{hp:20,mana:20,regen:0.15},desc:ITEMS[TIDECROWN].desc,col:'#3a9ad8'}; SELL[TIDECROWN]=300;
+customIcon(TIDECROWN,(rect,px)=>{ rect(2,8,12,5,'#ffd84a'); for(const x of [2,6,10,13]) rect(x,4,2,4,'#ffd84a'); rect(3,9,10,1,'#c99a1a'); px(5,10,'#3a9ad8'); px(8,10,'#ffffff'); px(11,10,'#3a9ad8'); px(3,4,'#f4f0f8'); px(14,4,'#f4f0f8'); });
+for(const r of [
+  { out:546, n:1, need:[[I.ANCIENT_COIN,8],[I.GOLD_BAR,1]] },                                   // Lucky coin charm
+  { out:I.DRAGON_COMPASS, n:1, need:[[I.OLD_COMPASS,1],[I.GOLD_BAR,2],[I.RUBY,1]] },
+  { out:I.ASTROLABE, n:1, need:[[I.OLD_COMPASS,1],[I.SILVER_BAR,1],[I.SAPPHIRE,1]] },
+  { out:ACC_IDS.tackle3, n:1, need:[[I.GOLDEN_FISH,2],[I.PEARL,3],[I.GOLD_BAR,2]] },            // Lucky lure
+  { out:ACC_IDS.dash2, n:1, need:[[I.KRAKEN_INK,2],[I.BLACK_PEARL,1],[I.SILVER_BAR,3]] },       // Shadow cloak
+  { out:TIDECROWN, n:1, need:[[I.SUNKEN_CROWN,1],[I.PEARL,2],[I.BLACK_PEARL,1]] } ]) RECIPES.push(Object.assign(r,{ st:B.WORKBENCH, cat:'gear' }));
+// descriptions say what each treasure makes
+{ const D={ [463]:'Pressed from sugar cane. Bake it into sugar cake, berry tart, sugar cookies and candied apples',
+    [I.GOLDEN_FISH]:'A rare, shining catch. Roast it into a golden fish feast, or craft two with pearls into the Lucky lure',
+    [I.CORAL]:'Sea treasure pulled up while fishing. Two make four coral blocks',
+    [I.PEARL]:'Sea treasure from fishing and sea expeditions. Used in the gold rod, the Lucky lure and the Tidecrown',
+    [I.BLACK_PEARL]:'A rare sea treasure. Used in the mythril rod, the Shadow cloak and the Tidecrown',
+    [I.ANCIENT_COIN]:'An old coin from the seabed. Eight and a gold bar make a Lucky coin charm',
+    [I.SUNKEN_CROWN]:'A jewelled crown lost at sea. With pearls it becomes the Tidecrown charm',
+    [I.OLD_COMPASS]:'A brass compass from a sunken ship. Craft it into a Dragon compass or an Astrolabe',
+    [I.KRAKEN_INK]:'Dark ink from the deep sea. Two, a black pearl and silver make the Shadow cloak' };
+  for(const [id,d] of Object.entries(D)) if(ITEMS[id]) ITEMS[id].desc=d; }
 })();
 </script>
 </body>
