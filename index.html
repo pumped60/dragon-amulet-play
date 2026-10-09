@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791575816"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791575816"><link rel="manifest" href="manifest.webmanifest?v=1791575816"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791578161"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791578161"><link rel="manifest" href="manifest.webmanifest?v=1791578161"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.74</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.75</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.74</h3>
+    <h3>New in Beta 0.9.75</h3>
+    <p>The overgrown caverns are a deeper, darker green, with glow vines hanging from the roofs and spores drifting through the air. Cave and tunnel walls vary: cobbled, cracked and mossy patches among the plain rock. Every chest in the world stands on two solid blocks, loose rock floating in caves is cleared, and sealed one-block pockets in the rock are filled, so caves read as one connected mass. Older worlds get the walls, supports and tidy-up in ground you have not explored yet.</p>
+    <h3>Beta 0.9.74</h3>
     <p>Ore veins take on the rock around them: iron in the jade caves is green jade stone with iron flecks, in the shale layer it is shale with iron flecks, so caves keep their colour and you can still spot the ore. Every cave biome grows its own glowing mushroom and glowing plant (jade glowcaps and ferns, rose glowcaps and lilies, azure glowcaps and frost bells, amber glowcaps and reeds, ember glowcaps and lantern flowers, bone glowcaps and ghost orchids); break them to take them home as lights. Deep in the shale layer lie the overgrown caverns: giant glowcaps and ferns you can stand on, giant glowing blooms, hanging moss and glowing moss underfoot. Giant cave spiders, cave bears, thornback beetles and glow moths live there and hit harder than anything else in the caves, but the caverns hide gold caches with crystals, gems, gold bars and extra coins. Older worlds get the plants and the caverns in ground you have not explored yet.</p>
     <h3>Beta 0.9.73</h3>
     <p>The wiki's Biomes and places page has a picture of every place in the game, from the ice islands to the fossil beds, and wiki pages open faster. The shale layer has its own back wall; in 0.9.72 it borrowed the jade caves' wall.</p>
@@ -652,7 +654,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.74</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.75</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -912,7 +914,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.74</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.75</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -931,7 +933,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.74', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.75', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12338,14 +12340,16 @@ const GLOW_FLORA={};   // biome -> [glowcap id, plant id]
 // ---------------- 3. the overgrown caverns ----------------
 { const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
   const def=(key,o,draw,item)=>{ const id=freeIdFrom(); BIO[key]=id; B[key]=id; defB(id,Object.assign({drop:id},o)); TEX[id]=draw(); ITEMS[id]=Object.assign({name:o.name,kind:'block'},item||{}); return id; };
-  def('GROVE_SOIL',{name:'Overgrown loam',hard:0.7,col:'#4a4a2e'},()=>tex(r=>{ r(0,0,16,16,'#4a4a2e'); for(const [x,y] of [[2,3],[9,1],[13,6],[5,9],[11,12],[1,13],[7,14],[14,2]]) r(x,y,2,1,'#5e6a34'); for(const [x,y] of [[4,5],[12,9],[8,7],[2,11]]) r(x,y,1,1,'#3a3a22'); r(0,0,16,1,'#55583a'); }),{desc:'Dark, root-filled earth from the overgrown caverns'});
-  def('GROVE_TURF',{name:'Glowmoss turf',hard:0.6,light:1,col:'#5a8a3a'},()=>tex(r=>{ r(0,0,16,16,'#4a4a2e'); for(const [x,y] of [[3,9],[10,11],[6,13],[13,14]]) r(x,y,2,1,'#5e6a34'); for(let x=0;x<16;x++){ const h=3+((x*5)%3); r(x,0,1,h,x%3?'#6aa040':'#8ad050'); } r(2,1,1,1,'#d8ff9a'); r(9,2,1,1,'#d8ff9a'); r(13,0,1,1,'#d8ff9a'); }),{desc:'Glowing moss on dark earth; it lines the floors of the overgrown caverns'});
-  def('GIANT_STALK',{name:'Giant stalk',solid:false,hard:0.6,col:'#5a8a3a'},()=>tex(r=>{ r(4,0,8,16,'#4a7a32'); r(4,0,1,16,'#6a9a48'); r(11,0,1,16,'#2e5a22'); for(const y of [3,10]) r(4,y,8,1,'#3a6a2a'); r(7,5,2,3,'#5a8a3a'); }),{desc:'The stem of a giant fern from the overgrown caverns'});
-  def('GIANT_LEAF',{name:'Giant leaf',solid:false,platform:true,hard:0.3,col:'#6ab040'},()=>tex(r=>{ r(0,4,16,6,'#5aa038'); r(0,4,16,1,'#8ad058'); r(0,9,16,1,'#3a7a28'); r(0,6,16,1,'#7ac048'); for(const x of [2,7,12]) r(x,5,1,4,'#4a8a30'); }),{desc:'A leaf wide enough to stand on, from the giant ferns of the overgrown caverns'});
+  def('GROVE_SOIL',{name:'Overgrown loam',hard:0.7,col:'#2a3622'},()=>tex(r=>{ r(0,0,16,16,'#2a3622'); for(const [x,y] of [[2,3],[9,1],[13,6],[5,9],[11,12],[1,13],[7,14],[14,2]]) r(x,y,2,1,'#38502c'); for(const [x,y] of [[4,5],[12,9],[8,7],[2,11],[14,13],[0,8]]) r(x,y,1,1,'#1a2214'); for(const [x,y] of [[6,2],[11,8],[3,12]]) r(x,y,1,1,'#4c6a36'); r(0,0,16,1,'#324a28'); }),{desc:'Dark, root-filled earth from the overgrown caverns'});
+  def('GROVE_TURF',{name:'Glowmoss turf',hard:0.6,light:1,col:'#2f6a2a'},()=>tex(r=>{ r(0,0,16,16,'#2a3622'); for(const [x,y] of [[3,9],[10,11],[6,13],[13,14]]) r(x,y,2,1,'#38502c'); for(let x=0;x<16;x++){ const h=3+((x*5)%3); r(x,0,1,h,x%3?'#2f6a2a':'#3f8a36'); } r(0,0,16,1,'#3a7e32'); r(2,1,1,1,'#9ae060'); r(9,2,1,1,'#9ae060'); r(13,0,1,1,'#b8ff70'); r(6,0,1,1,'#9ae060'); }),{desc:'Glowing moss on dark earth; it lines the floors of the overgrown caverns'});
+  def('GIANT_STALK',{name:'Giant stalk',solid:false,hard:0.6,col:'#2e5a28'},()=>tex(r=>{ r(4,0,8,16,'#2e5a28'); r(4,0,1,16,'#4a7e3a'); r(11,0,1,16,'#1a3a16'); for(const y of [3,10]) r(4,y,8,1,'#244a20'); r(7,5,2,3,'#3e7232'); r(6,12,1,1,'#9ae060'); }),{desc:'The stem of a giant fern from the overgrown caverns'});
+  def('GIANT_LEAF',{name:'Giant leaf',solid:false,platform:true,hard:0.3,col:'#3a7a2c'},()=>tex(r=>{ r(0,4,16,6,'#2f6a26'); r(0,4,16,1,'#4e9a3c'); r(0,9,16,1,'#1c4418'); r(0,6,16,1,'#3e8232'); for(const x of [2,7,12]) r(x,5,1,4,'#265a20'); }),{desc:'A leaf wide enough to stand on, from the giant ferns of the overgrown caverns'});
   def('GIANT_BLOOM',{name:'Giant bloom',solid:false,hard:0.3,light:4,col:'#f0e070'},()=>tex(r=>{ r(1,3,14,10,'#e8d050'); r(3,1,10,14,'#e8d050'); r(4,4,8,8,'#fff3a0'); r(6,6,4,4,'#ffffff'); r(1,3,1,10,'#c8a830'); r(14,3,1,10,'#c8a830'); }),{desc:'A huge glowing flower head from the overgrown caverns'});
-  def('GROVE_CAP',{name:'Glowcap cap',solid:false,platform:true,hard:0.3,light:3,col:'#9af04a'},()=>tex(r=>{ r(0,3,16,10,'#78c838'); r(0,3,16,2,'#a8f060'); r(0,12,16,1,'#4a8a28'); for(const [x,y] of [[3,6],[9,5],[12,9],[6,10]]) r(x,y,2,2,'#e8ffc0'); }),{desc:'The cap of a giant glowcap; you can stand on it'});
+  def('GROVE_CAP',{name:'Glowcap cap',solid:false,platform:true,hard:0.3,light:3,col:'#6ab838'},()=>tex(r=>{ r(0,3,16,10,'#4e9a34'); r(0,3,16,2,'#7ed050'); r(0,12,16,1,'#2a5a1e'); for(const [x,y] of [[3,6],[9,5],[12,9],[6,10]]) r(x,y,2,2,'#d8ffa0'); }),{desc:'The cap of a giant glowcap; you can stand on it'});
+  def('GLOW_VINE',{name:'Glow vine',solid:false,hard:0.1,light:1,col:'#5aa040',place:false},()=>tex(r=>{ r(6,0,1,16,'#2e5a28'); r(9,0,1,16,'#2e5a28'); r(4,3,2,1,'#3e7232'); r(10,7,2,1,'#3e7232'); r(5,11,1,1,'#3e7232'); for(const [x,y] of [[7,2],[8,6],[6,9],[9,13]]) r(x,y,1,1,'#c8ff80'); }),{desc:'A hanging vine from the overgrown caverns, dotted with glowing buds'});
+  try{ FLOWABLE.add(BIO.GLOW_VINE); }catch(e){}
   BIO_ROCK.grove='GROVE_SOIL'; BIO.bg.GROVE_SOIL=28;
-  BGTEX[28]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[BIO.GROVE_SOIL],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.5)'; g.fillRect(0,0,16,16); return c; })();
+  BGTEX[28]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[BIO.GROVE_SOIL],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.34)'; g.fillRect(0,0,16,16); g.globalCompositeOperation='source-over'; for(const [x,y] of [[2,2],[9,5],[13,1],[5,9],[11,12],[1,14],[7,7]]){ g.fillStyle='rgba(70,120,54,0.55)'; g.fillRect(x,y,2,1); } return c; })();
   SELL[BIO.GROVE_SOIL]=1; SELL[BIO.GROVE_TURF]=2; SELL[BIO.GIANT_STALK]=2; SELL[BIO.GIANT_LEAF]=2; SELL[BIO.GIANT_BLOOM]=6; SELL[BIO.GROVE_CAP]=3;
   try{ CAVE_SLOPE.add(BIO.GROVE_SOIL); STONEY.add(BIO.GROVE_SOIL); }catch(e){} }
 // where the overgrown caverns are: big patches of the middle (shale) layer
@@ -12372,7 +12376,7 @@ function growGrove(onlyUnexplored){ if(!world||!surf) return 0; const top=Math.m
         let head=0; while(head<24&&world[(y-head)*W+x]===0) head++;
         if(head>=10&&x-lastPlant>=7&&R()<0.3&&!skip(x,y)){ lastPlant=x; giantPlant(x,y,head,R); continue; }
         if(head>=3&&x-lastCache>=90&&R()<0.03&&!skip(x,y)){ lastCache=x; caches.push([x,y]); continue; } }
-      if(above&&BLOCKS[above].solid&&R()<0.22&&!skip(x,y)){ const len=3+((R()*8)|0); for(let k=0;k<len;k++){ const j=i+k*W; if(world[j]!==0) break; world[j]=B.VINE; } } } }
+      if(above&&BLOCKS[above].solid&&R()<0.26&&!skip(x,y)){ const len=3+((R()*8)|0), id=R()<0.35?BIO.GLOW_VINE:B.VINE; for(let k=0;k<len;k++){ const j=i+k*W; if(world[j]!==0) break; world[j]=id; } } } }
   for(const [x,y] of caches){ if(world[y*W+x]!==0) continue; world[y*W+x]=B.CHEST_GOLD; const l=lootFor(190,mulberry((seed|0)+7101+x),2); const add=(id,k)=>{ const s=l.items.findIndex(v=>!v); if(s>=0&&ITEMS[id]) l.items[s]={id,n:k}; };
     add(R()<0.5?I.LIFE_CRYSTAL:I.MANA_CRYSTAL,1); add([I.RUBY,I.SAPPHIRE,I.EMERALD][(R()*3)|0],2+((R()*3)|0)); add(I.GOLD_BAR,3+((R()*4)|0)); l.coins=(l.coins||0)+60; l.grove=1; chests[x+','+y]=l; }
   return n; }
@@ -12430,6 +12434,72 @@ Object.assign(PACK,GROVE_PACK);
     return _hf(g,o,...a); }; }
 { const _bc=bleedColor; bleedColor=function(t){ const m=t&&t.mtype; if(m==='grove_spider') return '#9aa040'; if(m==='cave_bear') return '#7a1a1a'; if(m==='thorn_beetle') return '#6ab070'; if(m==='glow_moth') return '#e8ffc0'; return _bc(t); }; }
 { const _fo=frameOf; frameOf=function(e){ if(e&&e.mtype==='glow_moth') return Math.floor((e.anim||0)*8)%2; return _fo(e); }; }
+// drifting spores: soft green motes float through the overgrown caverns around you
+let spores=[], sporeT=0;
+{ const _u=update; update=function(dt){ _u(dt); try{ if(!player||state!=='play') return; sporeT-=dt; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T);
+      if(sporeT<=0){ sporeT=0.12; if(px>=0&&px<W&&py>=0&&py<H&&biome2At(px,py)==='grove'&&spores.length<40){ const x=cxOf(player)+(Math.random()-0.5)*viewW*1.1, y=cyOf(player)+(Math.random()-0.5)*viewH*1.1; if(!isSolid(Math.floor(x/T),Math.floor(y/T))) spores.push({x,y,vx:(Math.random()-0.5)*10,vy:-4-Math.random()*8,life:4+Math.random()*4,t:Math.random()*6}); } }
+      for(const s of spores){ s.life-=dt; s.t+=dt; s.x+=(s.vx+Math.sin(s.t*1.7)*6)*dt; s.y+=s.vy*dt; } spores=spores.filter(s=>s.life>0); }catch(e){} }; }
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); if(spores.length){ for(const s of spores){ const al=Math.min(1,s.life,(8-s.life))*0.8; ctx.globalAlpha=al*(0.6+0.4*Math.sin(s.t*3)); ctx.fillStyle='#c8ff80'; ctx.fillRect(Math.round(s.x),Math.round(s.y),2,2); } ctx.globalAlpha=1; } return r; }; }
+// ===================== Beta 0.9.75: cave walls with variety; chests held up; no floating rock or sealed pockets =====================
+// 1. The back walls of caves and tunnels vary: patches of cobbled, cracked and mossy wall among the plain stone, shale and
+//    deepstone walls (back walls 29-37, three looks per layer; wallVariety). Only natural cave walls change.
+// 2. Every chest stands on two solid blocks (chestSupports): missing ones are filled with the rock around the chest.
+// 3. Underground, rock that floats loose (a clump of 1 to 3 blocks touching nothing) is cleared, and sealed air pockets
+//    of 1 to 3 cells inside rock are filled (tidyCaves), so caves read as one connected mass with no stray blocks or gaps.
+// New worlds get all three when they are made; older worlds in ground nobody has explored yet (home.caveTidyV).
+
+// ---------------- 1. wall variety ----------------
+const WALL_VAR={ 2:[29,30,31], 27:[32,33,34], 6:[35,36,37] };   // base wall -> [cobbled, cracked, mossy]
+{ const mk=(base,kind)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(BGTEX[base],0,0); const R=mulberry(base*31+kind*7+5);
+    if(kind===0){ for(let k=0;k<9;k++){ const x=(R()*13)|0, y=(R()*13)|0, w=2+((R()*2)|0), h=2; g.fillStyle='rgba(255,255,255,0.09)'; g.fillRect(x,y,w,h); g.fillStyle='rgba(0,0,0,0.3)'; g.fillRect(x,y+h,w+1,1); g.fillRect(x+w,y,1,h); } }
+    else if(kind===1){ for(let k=0;k<2;k++){ let x=(R()*12)|0, y=(R()*5)|0; g.fillStyle='rgba(0,0,0,0.42)'; for(let j=0;j<9&&y<16;j++){ g.fillRect(x,y,1,1); x+=R()<.45?1:R()<.2?-1:0; y+=1; if(x<0||x>15) break; } } g.fillStyle='rgba(255,255,255,0.05)'; g.fillRect(0,0,16,1); }
+    else { for(let k=0;k<26;k++){ const x=(R()*16)|0, y=(R()*16)|0; if(y>7&&R()<0.6) continue; g.fillStyle=R()<0.5?'rgba(74,128,54,0.7)':'rgba(96,160,70,0.6)'; g.fillRect(x,y,1,1); if(R()<0.4) g.fillRect(x+1,y,1,1); } }
+    return c; };
+  for(const [base,vs] of Object.entries(WALL_VAR)) vs.forEach((v,k)=>{ BGTEX[v]=mk(+base,k); }); }
+function wallVariety(onlyUnexplored){ if(!world||!surf) return 0; let n=0; const bot=Math.min(H-3,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-3));
+  for(let x=0;x<W;x++){ for(let y=Math.max(skyOff+2,surf[x]+5);y<bot;y++){ const i=y*W+x, v=bg[i], vs=WALL_VAR[v]; if(!vs) continue; if(onlyUnexplored&&explored[i]) continue;
+      const a=noise2(x/13,y/9,seed+421), m=noise2(x/7,y/6,seed+423); const nv=m>0.84?vs[2]:a>0.71?vs[0]:a<0.29?vs[1]:v; if(nv!==v){ bg[i]=nv; n++; } } }
+  return n; }
+
+// ---------------- 2. and 3. supports, loose rock, sealed pockets ----------------
+const CHEST_IDS=new Set([B.CHEST,B.CHEST_GOLD,B.CHEST_SKY].filter(v=>v!=null));
+const NAT_ROCK=()=>NAT_ROCK.s||(NAT_ROCK.s=new Set([B.STONE,B.SHALE,B.DEEPSTONE,B.DIRT,B.GRANITE,B.MARBLE,B.MOSS,B.SANDSTONE,B.STONE_RED,B.MAGMA_ROCK,B.SAND,B.SNOW,B.CRYSTAL_BLOCK,B.STONE_GREEN,
+  BIO.JADE_STONE,BIO.ROSE_STONE,BIO.AZURE_STONE,BIO.DRIPSTONE,BIO.FOSSIL_STONE,BIO.GROVE_SOIL,BIO.GROVE_TURF,...ORE_SET,B.DIAMOND_ORE].filter(v=>v!=null&&BLOCKS[v])));
+// the rock that belongs at (x,y): the most common natural rock next to it, else the layer's own
+function rockFor(x,y){ const hs=NAT_ROCK(), cnt=new Map(); let best=0, bn=0;
+  for(let dy=-1;dy<=1;dy++) for(let dx=-1;dx<=1;dx++){ if(!dx&&!dy) continue; const xx=x+dx, yy=y+dy; if(xx<0||xx>=W||yy<0||yy>=H) continue; const v=world[yy*W+xx]; if(!hs.has(v)) continue; const c=(cnt.get(v)||0)+1; cnt.set(v,c); if(c>bn){ bn=c; best=v; } }
+  if(best) return best; if(y<skyOff) return B.CLOUD; if(typeof magmaY!=='undefined'&&y>magmaY) return B.MAGMA_ROCK; if(y<=surf[x]+3) return B.DIRT;
+  if(typeof biome2At==='function'&&biome2At(x,y)==='grove') return BIO.GROVE_SOIL; if(y>deepYOf()) return B.DEEPSTONE; if(typeof layerTop==='function'&&y>layerTop()) return B.SHALE; return B.STONE; }
+function chestSupports(onlyUnexplored){ let n=0; for(const key of Object.keys(chests)){ const [x,y]=key.split(',').map(Number); if(!(x>=0&&x<W&&y>=0&&y<H-3)) continue; if(!CHEST_IDS.has(world[y*W+x])) continue;
+    const cols=[x]; if(x+1<W&&world[y*W+x+1]===B.PART) cols.push(x+1);   // a two-wide chest stands on both its cells
+    for(const cx of cols) for(let k=1;k<=2;k++){ const i=(y+k)*W+cx; if(BLOCKS[world[i]].solid) continue; if(onlyUnexplored&&explored[i]) continue; world[i]=rockFor(cx,y+k); if(liq) liq[i]=0; n++; } }
+  return n; }
+// a loose ore block goes into the nearest plain rock, so nothing is lost
+function moveOre(x,y,v){ const nat=NAT_ROCK(); for(let r=1;r<=5;r++) for(let dy=-r;dy<=r;dy++) for(let dx=-r;dx<=r;dx++){ if(Math.max(Math.abs(dx),Math.abs(dy))!==r) continue; const xx=x+dx, yy=y+dy; if(xx<1||xx>=W-1||yy<1||yy>=H-1) continue; const i=yy*W+xx, w=world[i]; if(!nat.has(w)||ORE_SET.has(w)||w===B.DIAMOND_ORE) continue; let solid=0; for(const j of [i-1,i+1,i-W,i+W]) if(BLOCKS[world[j]].solid) solid++; if(solid<2) continue; world[i]=v; return true; } return false; }
+function tidyCaves(onlyUnexplored){ if(!world||!surf) return 0; const nat=NAT_ROCK(), bot=Math.min(H-3,(typeof magmaY!=='undefined'&&magmaY<H?magmaY:H-3)); let n=0;
+  const under=(x,y)=>y>surf[x]+2&&y>skyOff+2&&y<bot;
+  const seen=new Uint8Array(W*H); const stack=[];
+  // a) loose rock: clumps of 1-3 natural rock blocks touching nothing solid (ore clumps stay)
+  for(let y=skyOff+3;y<bot;y++) for(let x=1;x<W-1;x++){ const i0=y*W+x; if(seen[i0]||!nat.has(world[i0])||!under(x,y)) continue;
+    const comp=[]; let ok=true, ore=false; stack.length=0; stack.push(i0); seen[i0]=1;
+    while(stack.length){ const i=stack.pop(); comp.push(i); if(comp.length>3){ ok=false; } const cx=i%W, cy=(i/W)|0; if(ORE_SET.has(world[i])||world[i]===B.DIAMOND_ORE) ore=true; if(onlyUnexplored&&explored[i]) ok=false;
+      for(const j of [i-1,i+1,i-W,i+W]){ const jx=j%W, jy=(j/W)|0; if(Math.abs(jx-cx)>1||jy<0||jy>=H) continue; const v=world[j]; if(CHEST_IDS.has(v)){ ok=false; continue; } if(!BLOCKS[v].solid) continue; if(!nat.has(v)||!under(jx,jy)){ ok=false; continue; } if(!seen[j]){ seen[j]=1; if(comp.length<=3) stack.push(j); else ok=false; } else if(!comp.includes(j)&&!stack.includes(j)) ok=false; }
+      if(!ok&&!stack.length) break; }
+    if(ok&&comp.length<=3){ for(const i of comp){ const v=world[i]; world[i]=0; if(ore&&(ORE_SET.has(v)||v===B.DIAMOND_ORE)) moveOre(i%W,(i/W)|0,v); } n+=comp.length; } }
+  // b) sealed pockets: 1-3 air cells with rock all around
+  seen.fill(0);
+  for(let y=skyOff+3;y<bot;y++) for(let x=1;x<W-1;x++){ const i0=y*W+x; if(seen[i0]||world[i0]!==0||!under(x,y)) continue; if(liq&&liq[i0]) continue; if(bg[i0]&&BUILD_BG.has(bg[i0])) continue;
+    const comp=[]; let ok=true; stack.length=0; stack.push(i0); seen[i0]=1;
+    while(stack.length){ const i=stack.pop(); comp.push(i); if(comp.length>3) ok=false; if(onlyUnexplored&&explored[i]) ok=false; const cx=i%W;
+      for(const j of [i-1,i+1,i-W,i+W]){ const jx=j%W; if(Math.abs(jx-cx)>1||j<0||j>=W*H) continue; const v=world[j]; if(v===0||(liq&&liq[j])||!BLOCKS[v].solid){ if(v===0&&!(liq&&liq[j])){ if(!seen[j]){ seen[j]=1; if(comp.length<=3) stack.push(j); else ok=false; } else if(!comp.includes(j)&&!stack.includes(j)) ok=false; } else ok=false; continue; } if(!nat.has(v)) ok=false; }
+      if(!ok&&!stack.length) break; }
+    if(ok&&comp.length<=3){ for(const i of comp){ world[i]=rockFor(i%W,(i/W)|0); } n+=comp.length; } }
+  return n; }
+let caveTidyFresh=false;
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ chestSupports(false); tidyCaves(false); chestSupports(false); wallVariety(false); if(home) home.caveTidyV=1; caveTidyFresh=true; }catch(e){ console.warn(e); } return r; }; }
+// chests become two blocks wide in fixStations (startPlay), and a chest may shift one cell: hold it up again afterwards
+{ const _fs=fixStations; fixStations=function(...a){ const r=_fs(...a); try{ if(world&&chests&&home&&(caveTidyFresh||home.caveTidyV)) chestSupports(!caveTidyFresh); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ caveTidyFresh=false; if(home&&!home.caveTidyV&&!isGuest()){ home.caveTidyV=1; const n=chestSupports(true)+tidyCaves(true)+chestSupports(true)+wallVariety(true); if(n){ try{ buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
