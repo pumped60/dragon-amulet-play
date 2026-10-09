@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791522270"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791522270"><link rel="manifest" href="manifest.webmanifest?v=1791522270"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791523573"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791523573"><link rel="manifest" href="manifest.webmanifest?v=1791523573"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -5728,7 +5728,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h',e.upArmor||0]);
   const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), vt:mpVillageTierOut(), wk:mpWorkersOut(), cg:mpCagesOut(), vg:MP.guest?mpVillageTierOut():0, tk:(MP.tk=((MP.tk||0)+1)%1e6), sold, ed:MP.edits, rid:p.cust?1:0 };
   if(MP.host){ pr.pg=(MP.pgOut||[]).slice(-16); pr.pgs=MP.pgSid||0; pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
-  if(MP.guest){ pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
+  if(MP.guest){ pr.aq=(MP.aqOut||[]).slice(-10); pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
     pr.mobs=mpMobList(); pr.sh=mpShotsOut(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,80); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
   if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,80); }
@@ -11640,6 +11640,62 @@ function flatUnderAll(){ if(!world||isGuest()) return 0; let n=0; for(const [x0,
 { const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player; if(p&&!p.dead&&touchesTile(p,B.LAVA)&&!((p.gear&&p.gear.ward)>0)){ if(!(p.burnT>0)) addFloat(cxOf(p),p.y-8,'on fire!','#ff7b1c'); p.burnT=Math.max(p.burnT||0,4); } }catch(e){} return r; }; }
 { const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if(!e.dead&&touchesTile(e,B.LAVA)){ e.burnT=Math.max(e.burnT||0,4); e.hp-=Math.max(40,e.maxHp*0.6)*dt; e.hurtT=0.2; if(e.hp<=0) kill(e,null); } }catch(err){} return r; }; }
 { const _ai=updateAI; updateAI=function(e,dt,...a){ const r=_ai(e,dt,...a); try{ if(!e.dead&&e.team!=='m'&&e.mtype!=='imp'&&touchesTile(e,B.LAVA)) e.burnT=Math.max(e.burnT||0,3); }catch(err){} return r; }; }
+
+// ---- lava only underground, in puddles, pools and lakes of many sizes ----
+// Pools sit in rock at least 20 blocks under the surface (never on the surface): half are small puddles (2-4 across,
+// 1-2 deep), a third medium pools (5-9 across, 2-4 deep) and the rest large lakes (10-18 across, 3-6 deep). Each is a
+// bowl, narrower at the bottom, with a pocket of air above it and a stone rim. Older worlds: lava left on the surface
+// cools to stone once (home.lavaUnderV), and new pools only go into ground you have not explored yet.
+function lavaPools(R,put,ok){ let n=0; const tries=Math.round(W/90);
+  for(let k=0;k<tries;k++){ const roll=R(), big=roll>0.85, mid=!big&&roll>0.5;
+    const w=big?10+((R()*9)|0):mid?5+((R()*5)|0):2+((R()*3)|0), h=big?3+((R()*4)|0):mid?2+((R()*3)|0):1+((R()*2)|0), air=big?3:2;
+    const x=12+((R()*(W-24-w))|0); let s0=0; for(let xx=x-2;xx<=x+w+2;xx++) s0=Math.max(s0,surf[xx]||0); const yMax=Math.min(magmaY-10,H-24); if(!s0||yMax-s0<36) continue;
+    const y=s0+20+((R()*(yMax-s0-26))|0); let good=true;
+    for(let yy=y-air-1;yy<=y+h+1&&good;yy++) for(let xx=x-2;xx<=x+w+1&&good;xx++){ const id=tileAt(xx,yy), i=yy*W+xx; if(id===B.WATER||id===B.BEDROCK||isChestId(id)||bg[i]>2||(ok&&!ok(xx,yy))) good=false; }
+    if(!good) continue;
+    const inset=yy=>Math.round(Math.pow((yy-y+1)/(h+1),2)*w*0.35);
+    for(let yy=y-air;yy<y;yy++) for(let xx=x;xx<x+w;xx++) put(xx,yy,0);
+    for(let yy=y;yy<y+h;yy++){ const s=inset(yy); for(let xx=x;xx<x+w;xx++){ if(xx<x+s||xx>=x+w-s){ put(xx,yy,B.STONE); continue; } put(xx,yy,B.LAVA); } }
+    for(let xx=x-1;xx<=x+w;xx++){ if(!BLOCKS[tileAt(xx,y+h)].solid||tileAt(xx,y+h)===B.LAVA) put(xx,y+h,B.STONE); }
+    for(let yy=y-air;yy<y+h;yy++) for(const xx of [x-1,x+w]) if(!BLOCKS[tileAt(xx,yy)].solid) put(xx,yy,B.STONE);
+    n++; }
+  return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.lavaUnderV&&!isGuest()){ home.lavaUnderV=1;
+      facRun(()=>{ for(let x=2;x<W-2;x++){ const top=Math.min(surf[x],skyTop[x]); if(!(top>skyOff+2)||top>=magmaY) continue; for(let y=top-2;y<=top+8&&y<magmaY;y++) if(tileAt(x,y)===B.LAVA) setTile(x,y,B.STONE); } });
+      const px=player?cxOf(player)/T:-1e9; facRun(()=>lavaPools(mulberry((seed|0)+7719),(x,y,id)=>setTile(x,y,id),(x,y)=>Math.abs(x-px)>=40&&!explored[y*W+x])); } }catch(e){ console.warn(e); } return r; }; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(home) home.lavaUnderV=1; }catch(e){} return r; }; }
+// ===================== shared worlds: what a friend does with the host's animals =====================
+// The host runs every wild animal; a friend sees "ghost" copies. Taming, bird taming and feeding a ghost used to change
+// only the friend's copy, so a tamed animal was dragged back by the host's wild one and then vanished. Now:
+// - a ghost the friend tames becomes the friend's own animal at once (a real local copy, which the host sees through the
+//   usual stand-in for a friend's pets), and the host is told to take its wild one away (presence aq, action 't');
+// - feeding a ghost for breeding is sent to the host (action 'l'), which sets the love timer on the real animal.
+// Requests are [seq, nid, action]; seq comes from the clock, so a rejoin never reuses an old number.
+MP.aqOut=MP.aqOut||[]; MP.aqSeen=MP.aqSeen||{}; MP.taken=MP.taken||new Set();
+const mpAnimalReq=(nid,act)=>{ MP.aqSeq=Math.max((MP.aqSeq||0)+1,Date.now()%1e9); MP.aqOut.push([MP.aqSeq,nid,act]); if(MP.aqOut.length>20) MP.aqOut.shift(); };
+function mpOwnAnimal(g){ const a=makeAnimal(g.atype,g.x,g.y); if(!a) return null;
+  for(const k of ['tamed','team','mode','temper','variant','baby','fly']) if(g[k]!==undefined) a[k]=g[k];
+  Object.assign(a,{tamed:true,team:player.team,mode:g.mode||'pet',temper:'good',angry:false,target:null}); a.hp=a.maxHp; try{ applyPetUp(a); }catch(e){} ents.push(a); return a; }
+function mpAnimalWatch(){ if(!(typeof MP!=='undefined'&&MP.on&&MP.guest)) return;
+  for(const [nid,g] of MP.ghosts){ if(g.kind!=='animal'||g.dead) continue;
+    if(g.tamed){ const a=mpOwnAnimal(g); g.dead=true; MP.ghosts.delete(nid); MP.taken.add(nid); mpAnimalReq(nid,'t'); if(a&&player.cls==='beast') a.mode=a.mode||'pet'; invDirty=true; continue; }
+    if((g.love||0)>0&&!g.loveSent){ g.loveSent=true; mpAnimalReq(nid,'l'); } } }
+{ const _u=update; update=function(dt){ _u(dt); try{ mpAnimalWatch(); }catch(e){ console.warn(e); } }; }
+// a taken animal's ghost is never made again while the host still lists it
+{ const _mg=mpGhosts; mpGhosts=function(list,...a){ return _mg(MP.taken&&MP.taken.size?list.filter(o=>!MP.taken.has(o[0])):list,...a); }; }
+// the host carries out the requests once each
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const res=_fp(r,d,...a); try{ if(MP.host&&Array.isArray(d.aq)&&r.key){ let seen=MP.aqSeen[r.key]||0, mx=seen;
+      for(const [sq,nid,act] of d.aq){ if(!(sq>seen)) continue; mx=Math.max(mx,sq); const e=ents.find(o=>o.nid===nid&&!o.dead&&o.kind==='animal'&&!o.tamed); if(!e) continue;
+        if(act==='t'){ e.dead=true; e.noLoot=true; } else if(act==='l'){ e.love=12; e.hp=Math.min(e.maxHp,e.hp+10); } }
+      MP.aqSeen[r.key]=mx; } }catch(e){ console.warn(e); } return res; }; }
+// A friend's game never keeps enemies or wild animals of its own: the host runs them all and sends ghosts. Systems that
+// still ran on a friend's copy (faction commanders, scouts, sky knights, babies born to ghosts) made local stand-ins the
+// host never knew about. Every second they are cleared, leaving the friend's own soldiers, tamed animals and machines.
+let mpSweepT=1;
+function mpGuestSweep(dt){ if(!(typeof MP!=='undefined'&&MP.on&&MP.guest&&player)) return; if((mpSweepT-=dt)>0) return; mpSweepT=1;
+  for(const e of ents){ if(e.dead||e.ghost||e.proxy||e===player||e.tamed||e.remote) continue;
+    if(e.kind==='monster'||e.kind==='sea'||(e.kind==='animal')||(e.kind==='human'&&e.team!==player.team)) e.dead=true; } }
+{ const _u=update; update=function(dt){ _u(dt); try{ mpGuestSweep(dt); }catch(e){ console.warn(e); } }; }
 })();
 </script>
 </body>
