@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791519203"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791519203"><link rel="manifest" href="manifest.webmanifest?v=1791519203"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791520829"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791520829"><link rel="manifest" href="manifest.webmanifest?v=1791520829"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.57</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.58</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.57</h3>
+    <h3>New in Beta 0.9.58</h3>
+    <p>Rain never builds up: it leaves no puddles and brings no floods at any weather strength, and the weather choices on the New world screen say so. Any old rainwater still lying in an older world dries up the next morning.</p>
+    <h3>Beta 0.9.57</h3>
     <p>Bombs throw up much more smoke, and smoke hangs in the air longer (about 45 seconds); rain, storms and snow clear it from the open air two to five times faster. A ballista, cannon or trebuchet can only be set up when a free soldier in your party is with you, and that soldier works it. Press F beside a crewed machine (or use the Army window) and choose Aim, then click or tap a spot: the crew fires at enemies near the mark, or at the mark itself. "Own targets" lets it choose again. War machines are drawn at close to their real size next to you. In the test world a soldier joins you to work a machine if none is free.</p>
     <h3>Beta 0.9.56</h3>
     <p>Sugar bakes into sugar cake, berry tart, sugar cookies and candied apples at a furnace. Sea treasures make things: eight ancient coins and a gold bar make a Lucky coin charm, an old compass becomes a Dragon compass or an Astrolabe, two golden fish with pearls make the Lucky lure (or roast one into a golden fish feast), a sunken crown with pearls becomes the Tidecrown charm (+20 health, +20 mana, faster mana), Kraken ink with a black pearl makes the Shadow cloak, and coral presses into pink coral blocks. The Sage charm's faster mana refill works.</p>
@@ -616,7 +618,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.57</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.58</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -876,7 +878,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.57</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.58</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -895,7 +897,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.57', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.58', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -7027,7 +7029,7 @@ BIG_ST[B.CHEST_SKY]=1;
 // ================= Beta 0.7: weather that changes the world =================
 // Chosen when you make a world: light, medium or strong. Lightning sets trees alight, rain gathers in hollows
 // and drains away afterwards, snow settles on the ground in winter and melts in spring. Rain patters on roofs.
-const WX_DESC={ off:'Off: always clear skies. No rain, storms, snow, lightning or floods.', light:'Light: rain leaves a few puddles, a little snow settles in winter, lightning seldom strikes.', medium:'Medium: puddles fill the hollows, snow covers the ground in winter, lightning now and then burns a tree.', strong:'Strong: rain floods low ground, deep winter snow, and lightning fires that can spread to nearby trees.' };
+const WX_DESC={ off:'Off: always clear skies. No rain, storms, snow, fog or lightning.', light:'Light: some rain and fog, a little snow settles in winter, lightning seldom strikes. Rain never leaves puddles or floods.', medium:'Medium: more rain and fog, snow covers the ground in winter, lightning now and then burns a tree. Rain never leaves puddles or floods.', strong:'Strong: heavy storms, deep winter snow, and lightning fires that can spread to nearby trees. Rain never leaves puddles or floods.' };
 const WX_K={ light:1, medium:2, strong:3 };
 function wxK(){ return WX_K[rules&&rules.wx]||1; }
 const isHostSide=()=>!(typeof MP!=='undefined'&&MP.guest);
@@ -7652,7 +7654,7 @@ function farmPen(x0,gy,animals){ const p0=x0+20, p1=x0+33, pen={x0:p0,x1:p1,ty:g
       (home&&home.testFarmAt?btn('data-gw="gofarm"','Go to the test farm'):'')+'<p style="font-size:9px">A prepped farm has 16 crop plots (some ripe), a pen with 6 tamed animals and a trough chest, and a farmhouse with a bed, workbench, furnace and a chest of seeds and food.</p>';
     h+='<p><b>Weather</b></p>'+[['natural','Natural'],['clear','Clear sky'],['rain','Rain'],['storm','Thunderstorm'],['snow','Snowstorm'],['fog1','Light fog'],['fog2','Fog'],['fog3','Thick fog']].map(([k,l])=>btn(`data-gwx="${k}"`,l,cur===k)).join('');
     h+='<p><b>Strength</b></p>'+['light','medium','strong'].map(k=>btn(`data-gws="${k}"`,k[0].toUpperCase()+k.slice(1),wx===k)).join('');
-    h+='<p><b>Right now</b></p>'+btn('data-gw="flood"','Flash flood')+btn('data-gw="bolt"','Lightning strike')+btn('data-gw="dry"','Dry up rain water');
+    h+='<p><b>Right now</b></p>'+btn('data-gw="bolt"','Lightning strike')+btn('data-gw="dry"','Dry up rain water');
     $('#godList').innerHTML=h; for(const b of document.querySelectorAll('#godTabs [data-g]')) b.setAttribute('aria-pressed',b.dataset.g===godTab); }; }
 $('#godList').addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b||curSlot!==4||!player) return; const d=b.dataset;
   if(d.gwx) godWeather(d.gwx);
@@ -8950,7 +8952,7 @@ const wetWx=()=>weather==='rain'||weather==='storm', godWx=()=>curSlot===4&&home
 { const _ws=weatherSync; weatherSync=function(...a){ const r=_ws(...a); try{ if(wetWx()&&time>=WX_END&&!godWx()) weather='clear'; }catch(e){} return r; }; }
 let wxDriedDay=-1;
 { const _u=update; update=function(dt){ _u(dt); if(state!=='play'||!world) return;
-    try{ if(wetWx()&&time>=WX_END&&!godWx()){ const st=weather==='storm'; weather='clear'; toast(st?'The storm has passed. The water will soon drain away.':'The rain has stopped',3); }
+    try{ if(wetWx()&&time>=WX_END&&!godWx()){ const st=weather==='storm'; weather='clear'; toast(st?'The storm has passed':'The rain has stopped',3); }
       if(!wetWx()&&time>=WX_DRY&&wxDriedDay!==dayCount&&!(typeof MP!=='undefined'&&MP.guest)){ wxDriedDay=dayCount; dryAllRain(); } }catch(e){ console.warn(e); } }; }
 
 // ---- water slides down slopes and stairs: water resting on a sloped block runs off toward its low side ----
@@ -11300,6 +11302,7 @@ function layAllPaths(){ if(!home||isGuest()) return; try{
 // spread out along the floor.
 rainTick=function(){};
 flashFloodTick=function(){};
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ if(rainCells.size||(home&&home.rainCols&&home.rainCols.length)) dryAllRain(); }catch(e){ console.warn(e); } return r; }; }
 const isFog=w=>typeof w==='string'&&w.startsWith('fog');
 const fogLv=()=>isFog(weather)?(+weather[3]||1):0;
 { const _wo=weatherOf; weatherOf=function(d){ const w=_wo(d); if(w!=='clear') return w; const s=seasonOf(d), ch={spring:0.25,summer:0.1,autumn:0.3,winter:0.15}[s]||0.15;
