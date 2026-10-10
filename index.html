@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791595707"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791595707"><link rel="manifest" href="manifest.webmanifest?v=1791595707"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791605139"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791605139"><link rel="manifest" href="manifest.webmanifest?v=1791605139"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.77</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.78</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.77</h3>
+    <h3>New in Beta 0.9.78</h3>
+    <p>Water was checked against every block. Saplings and spores, cactus, sugar cane, the glowing cave plants, the giant grove plants, wall shards, banners, paintings and rugs are covered by water and come back when it drains, instead of holding it back or being lost. Crystal blocks no longer let water through. A bucket poured onto a plant covers it instead of breaking it. A grass block with a solid block on top turns to plain dirt. A sapling only goes on an empty cell: it never replaces a plant, a crop or anything else.</p>
+    <h3>Beta 0.9.77</h3>
     <p>Eight more cave creatures, each at home in one kind of cave: dripstone golems in the stalagmite caves, root wyrms in the root caverns, jade mantises in the jade caves, rose serpents in the rose caves, bone hounds in the fossil beds, shale crawlers in the shale layer, deep stalkers in the deepstone layer and moss trolls in the moss caves. Goblins, zombies, skeletons and orcs now only roam the top quarter of the underground; deeper down, every creature belongs to the cave it lives in. A chest, shelf, barrel, cupboard or desk with anything in it can no longer be broken by any means (empty it first), and tapping a barrel, cupboard, desk or shelf opens it just like a chest.</p>
     <h3>Beta 0.9.76</h3>
     <p>The abandoned village is a two-storey castle and three houses left to the weather: ragged gaps in the walls, moss over the stonework, grass, ferns and saplings on the floors, vines and ivy on the walls. The Quartermaster waits inside. Walking in no longer claims the village: talk to him and choose "Fix up the castle and the houses", and the repairs run over about a day, block by block from the ground up; the Beast trainer and the Recruiter arrive when he starts, and the drifters pick their jobs when the work is done. Burned villages are built around the fire that took each house: the roof and one upper corner are gone with ragged edges, nothing floats, wood near the fire is charred, the back walls are charred with holes where the fire burned through, and grass, ferns, bushes and saplings grow through the ash. Older worlds get the new look where nobody has explored yet.</p>
@@ -658,7 +660,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.77</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.78</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -918,7 +920,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.77</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.78</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -937,7 +939,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.77', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.78', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12692,6 +12694,47 @@ function openStorage(x,y){ const k=storeKeyAt(x,y); if(!k) return false; const [
 cv.addEventListener('pointerdown',ev=>{ if(state!=='play'||!player||player.dead||touches.size>=2) return; setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T), it=heldItem();
   if(it&&['pick','hammer','axe'].includes(ITEMS[it.id].kind)) return; const k=storeKeyAt(tx,ty); if(!k) return; const [cx,cy]=k.split(',').map(Number); if(isChestId(tileAt(cx,cy))) return;
   if(Math.hypot(cx*T+8-cxOf(player),cy*T+8-cyOf(player))>REACH) return; openStorage(tx,ty); ev.stopImmediatePropagation(); ev.preventDefault(); },true);
+// ===================== Beta 0.9.78: water and every block; buried grass turns to dirt; saplings only on clear ground =====================
+// 1. Water. Every block was poured on and checked. Fixed: the biome glow plants were washed away without a drop; the
+//    spruce, birch, palm, jungle, dark oak and pine saplings and the mushroom spores, cactus, sugar cane, the giant grove
+//    plants, wall shards and hanging crystals, banners, paintings and rugs held water back like a wall. All of these are
+//    now covered by water and come back when it drains, like grass, flowers and the oak sapling. Crystal blocks are solid
+//    but let water flow through them; they no longer do. A bucket poured onto a plant covers it instead of breaking it.
+//    Unchanged on purpose: torches, lanterns, campfires and lamps are knocked loose and drop as items; furniture, chests,
+//    stations and trophies stand in water and are drawn behind it.
+// 2. Grass. A grass block with a solid block on top (sand, snow, stone, a wall, a floor; not a tree trunk or leaves, not a
+//    door) turns to plain dirt: at once when a player places the block, within about a minute for anything else, and once
+//    for the whole world when an older save loads (home.buriedGrassV).
+// 3. Saplings and spores only go on an empty cell: never in place of tall grass, a flower, a crop or anything else.
+{ const add=new Set([B.CACTUS,B.BAMBOO,B.BANNER_G,B.BANNER_B,B.BANNER_R,B.PAINTING,B.RUG]);
+  for(const id of Object.keys(SAP_KIND)) add.add(+id);
+  if(typeof RUGS!=='undefined') for(const id of RUGS) add.add(id);
+  if(typeof GLOW_FLORA!=='undefined') for(const pair of Object.values(GLOW_FLORA)) for(const id of pair) add.add(id);
+  if(typeof BIO!=='undefined') for(const k of ['JADE_SHARD','ROSE_QUARTZ','AZURE_SHARD','GLOW_BULB','STALAGMITE','STALACTITE','GIANT_STALK','GIANT_LEAF','GIANT_BLOOM','GROVE_CAP','GLOW_VINE']) if(BIO[k]!=null) add.add(BIO[k]);
+  for(const id of add){ const b=BLOCKS[id]; if(!b||b.solid) continue; FLOWABLE.delete(id); PASS.add(id); if(b.platform) WET_SHOW.add(id); }
+  PASS.delete(B.CRYSTAL_BLOCK); }
+// a bucket of water poured onto a plant covers it (the plant stays under the water, as flowing water leaves it)
+{ const _bu=bucketUse; bucketUse=function(p,aim,it,...a){ try{ if(it&&it.id===WATER_BUCKET){ const t=bucketTarget(p,aim,true); if(t){ const [tx,ty]=t; const cur=tileAt(tx,ty);
+        if(cur&&cur!==B.WATER&&PASS.has(cur)&&!BLOCKS[cur].solid&&!LOG_IDS.has(cur)&&!LEAF_IDS.has(cur)&&!DOOR_IDS.has(cur)){ p.atkT=0.2; setTile(tx,ty,B.WATER); wetDeco.set(ty*W+tx,cur); if(typeof mpEdit==='function') mpEdit(tx,ty);
+          takeItem(WATER_BUCKET,1); give(BUCKET,1); puff(tx*T+8,ty*T+8,'#3a8ae0',6,50); if(typeof sfx==='function') sfx('pickup'); invDirty=true; return; } } } }catch(e){ console.warn(e); } return _bu(p,aim,it,...a); }; }
+// ---- buried grass ----
+function grassBuried(x,y){ if(y<=0||x<0||x>=W) return false; const a=tileAt(x,y-1); if(!a||a===B.WATER) return false; const b=BLOCKS[a]; if(!b||!b.solid) return false;
+  if(LOG_IDS.has(a)||LEAF_IDS.has(a)||DOOR_IDS.has(a)||(typeof isTrap==='function'&&isTrap(a))) return false; return true; }
+let buryT=0;
+{ const _gt=grassTick; grassTick=function(dt,...a){ const r=_gt(dt,...a); try{ if(!world||!player||(typeof MP!=='undefined'&&MP.guest)||(buryT-=dt)>0) return r; buryT=0.5;
+      const cx=Math.floor(cxOf(player)/T), cy=Math.floor(cyOf(player)/T), hit=[];
+      for(let k=0;k<GRASS_TRY;k++){ const x=cx+((Math.random()*(2*GRASS_RX+1))|0)-GRASS_RX, y=cy+((Math.random()*(2*GRASS_RY+1))|0)-GRASS_RY; if(x<1||x>=W-1||y<1||y>=H-1) continue; if(tileAt(x,y)===B.GRASS&&grassBuried(x,y)) hit.push([x,y]); }
+      if(hit.length) facRun(()=>{ for(const [x,y] of hit) if(tileAt(x,y)===B.GRASS) setTile(x,y,B.DIRT); }); }catch(e){ console.warn(e); } return r; }; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ const r=_tp(x,y,id,...a); try{ if(tileAt(x,y)===id&&BLOCKS[id]&&BLOCKS[id].solid&&tileAt(x,y+1)===B.GRASS&&grassBuried(x,y+1)) mpRun(()=>setTile(x,y+1,B.DIRT)); }catch(e){} return r; }; }
+function buryGrassAll(){ let n=0; for(let y=1;y<H;y++) for(let x=0;x<W;x++){ const i=y*W+x; if(world[i]!==B.GRASS||!grassBuried(x,y)) continue; world[i]=B.DIRT; n++; } return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ buryGrassAll(); if(home) home.buriedGrassV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.buriedGrassV&&!(typeof MP!=='undefined'&&MP.guest)){ home.buriedGrassV=1; if(buryGrassAll()) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+// ---- saplings only on an empty cell ----
+let sapHintT=0;
+{ const _po=placeOK; placeOK=function(x,y,id,...a){ if(isSapling(id)&&x>=0&&x<W&&y>=0&&y<H&&world[y*W+x]!==0){ if(player&&performance.now()>sapHintT){ sapHintT=performance.now()+1500; toast('Clear the spot first: a sapling only goes on empty ground',2); } return false; } return _po(x,y,id,...a); }; }
+// a rug under water is still drawn (rugs are read from the world, so a covered one needs the wet record)
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ if(wetDeco.size&&typeof RUG_SET!=='undefined'){ const x0=Math.max(0,Math.floor(camX/T)-1), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)+1), y0=Math.max(1,Math.floor(camY/T)-1), y1=Math.min(H-2,Math.ceil((camY+viewH)/T)+1);
+      for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x; if(world[i]!==B.WATER) continue; const id=wetDeco.get(i); if(id&&RUG_SET.has(id)&&RUG_STRIP[id]) ctx.drawImage(RUG_STRIP[id],x*T,(y+1)*T); } } }catch(e){} return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
