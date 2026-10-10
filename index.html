@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791605139"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791605139"><link rel="manifest" href="manifest.webmanifest?v=1791605139"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791606630"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791606630"><link rel="manifest" href="manifest.webmanifest?v=1791606630"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.78</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.79</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.78</h3>
+    <h3>New in Beta 0.9.79</h3>
+    <p>Your hero works with the whole body: the arm reaches along the swing of a pick, axe, hoe or hammer with the tool in the hand, the body leans into each stroke, and placing a block reaches toward the spot with the block in hand. While the Quartermaster fixes up the village, sleeping moves the repairs along by the hours you slept, and he is the only villager there until the work is done: the Beast trainer, the Recruiter and any wanderer arrive when it is finished. The ruin looks the part before that: cobwebs in the corners and under the ceilings, crumbled stone and brick where the walls fell, broken planks and rubble on the floors. Water: sloped and stepped blocks beside water show the water in their open part; a puddle of one or two eighths standing alone, or water spread into a thin film over flat ground, dries up; a chest under water no longer pokes its lid through the water above it.</p>
+    <h3>Beta 0.9.78</h3>
     <p>Water was checked against every block. Saplings and spores, cactus, sugar cane, the glowing cave plants, the giant grove plants, wall shards, banners, paintings and rugs are covered by water and come back when it drains, instead of holding it back or being lost. Crystal blocks no longer let water through. A bucket poured onto a plant covers it instead of breaking it. A grass block with a solid block on top turns to plain dirt. A sapling only goes on an empty cell: it never replaces a plant, a crop or anything else.</p>
     <h3>Beta 0.9.77</h3>
     <p>Eight more cave creatures, each at home in one kind of cave: dripstone golems in the stalagmite caves, root wyrms in the root caverns, jade mantises in the jade caves, rose serpents in the rose caves, bone hounds in the fossil beds, shale crawlers in the shale layer, deep stalkers in the deepstone layer and moss trolls in the moss caves. Goblins, zombies, skeletons and orcs now only roam the top quarter of the underground; deeper down, every creature belongs to the cave it lives in. A chest, shelf, barrel, cupboard or desk with anything in it can no longer be broken by any means (empty it first), and tapping a barrel, cupboard, desk or shelf opens it just like a chest.</p>
@@ -660,7 +662,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.78</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.79</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -920,7 +922,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.78</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.79</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -939,7 +941,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.78', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.79', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12735,6 +12737,148 @@ let sapHintT=0;
 // a rug under water is still drawn (rugs are read from the world, so a covered one needs the wet record)
 { const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ if(wetDeco.size&&typeof RUG_SET!=='undefined'){ const x0=Math.max(0,Math.floor(camX/T)-1), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)+1), y0=Math.max(1,Math.floor(camY/T)-1), y1=Math.min(H-2,Math.ceil((camY+viewH)/T)+1);
       for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x; if(world[i]!==B.WATER) continue; const id=wetDeco.get(i); if(id&&RUG_SET.has(id)&&RUG_STRIP[id]) ctx.drawImage(RUG_STRIP[id],x*T,(y+1)*T); } } }catch(e){} return r; }; }
+// ===================== Beta 0.9.79: the body works the tool; sleeping through the repairs; the Quartermaster alone; cobwebs and crumbled walls =====================
+// 1. Mining and tool use. The hero's arm reaches along the swing of a pick, axe, hoe or hammer with the tool in the hand,
+//    the body leans into the stroke and dips with it; placing a block reaches the arm toward the spot with the block in hand.
+//    (The front arm of the cached figure is cleared while working, WORK_COL remembers its sleeve and hand colours.)
+// 2. Sleeping while the village is being fixed up advances the repairs by the hours slept (fixupAdvance, quiet).
+// 3. Until the repairs are done the Quartermaster is the only villager: the Beast trainer and the Recruiter move in when
+//    the work is finished, and a wanderer who would arrive meanwhile waits (home.fixupWait) and comes then.
+// 4. The ruin: cobwebs in the corners and under the ceilings (COBWEB_L/COBWEB_R), crumbled stone and brick near the fallen
+//    parts, broken planks, rubble on the floors (ruinDecor). The repairs clear all of it. Older unclaimed villages get it too.
+// ---- 1. the body works the tool ----
+const WORK_KINDS=new Set(['pick','axe','hoe','hammer']), PLACE_KINDS=new Set(['block','wall','shape','seed']);
+const WORK_COL={};
+function workAim(e){ return stick.r.on&&stick.r.mag>0.2?Math.atan2(stick.r.y,stick.r.x):Math.atan2((input.ay||cyOf(e))-cyOf(e),(input.ax||cxOf(e))-cxOf(e)); }
+function workState(e){ if(!e||e.kind!=='player'||e.riding||e.dead||e.passenger) return null; const hi=heldItem(); const d=hi&&ITEMS[hi.id]; if(!d) return null;
+  if(e.atkT>0&&WORK_KINDS.has(d.kind)) return {kind:'swing',id:hi.id,ph:clamp(e.atkT/0.25,0,1)};
+  if(e.placeCd>0&&PLACE_KINDS.has(d.kind)&&BLOCKS[hi.id]) return {kind:'place',id:hi.id,ph:clamp(e.placeCd/0.14,0,1)};
+  return null; }
+{ const _hk=humanKey; humanKey=function(o,...a){ return _hk(o,...a)+(o&&o.work?'|w':''); }; }
+{ const _so=specOf; specOf=function(e,...a){ const o=_so(e,...a); if(e&&e._work){ o.work=true; o.wpn=0; o.atk=false; o.melee=false; } return o; }; }
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const r=_hf(g,o,...a); if(!o||!o.work) return r;
+    try{ const f=o.frame||0; if(f>=6) return r; let x,y,w,h; if(f===5){ x=14; y=10; w=3; h=8; } else { const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0; x=13+sw; y=14-ay; w=2; h=8; }
+      const px=SCX-8+x, py=SFY-30+y; const pick=(yy)=>{ const d=g.getImageData(px,yy,1,1).data; return d[3]?`rgb(${d[0]},${d[1]},${d[2]})`:null; };
+      const sleeve=pick(py+1)||pick(py+2)||'#6b4a2a', hand=pick(py+h-1)||'#f2c79b'; WORK_COL[humanKey(o)]={sleeve,hand}; g.clearRect(px,py,w,h); }catch(e){} return r; }; }
+{ const _de=drawEntity; drawEntity=function(e,...a){ const ws=workState(e); if(!ws){ if(e) e._work=false; return _de(e,...a); }
+    const ang=workAim(e), dir=Math.cos(ang)>=0?1:-1; const at=e.atkT, pc=e.placeCd; e._work=true; e.atkT=0; e.placeCd=0;
+    const fx=Math.round(cxOf(e)), fy=Math.round(e.y+e.h); const lean=ws.kind==='swing'?dir*(0.05+0.09*(1-ws.ph)):dir*0.06, dip=ws.kind==='swing'?Math.round((1-ws.ph)*1.5):0;
+    ctx.save(); ctx.translate(fx,fy); ctx.rotate(lean); ctx.translate(-fx,-fy+dip);
+    let key=null; try{ _de(e,...a); key=humanKey(specOf(e)); } finally{ ctx.restore(); e.atkT=at; e.placeCd=pc; e._work=false; }
+    try{ const col=(key&&WORK_COL[key])||{sleeve:'#6b4a2a',hand:'#f2c79b'}; const sx=fx+dir*3, sy=Math.round(e.y)+12; const a2=ws.kind==='swing'?ang+(ws.ph-0.5)*1.8*(dir>0?-1:1):ang; const L=9;
+      ctx.save(); ctx.translate(sx,sy); ctx.rotate(lean*0.5); ctx.rotate(a2); ctx.fillStyle=col.sleeve; ctx.fillRect(0,-1,L,2); ctx.fillStyle=col.hand; ctx.fillRect(L-1,-1,2,2); ctx.restore();
+      const hx=Math.round(sx+Math.cos(a2)*L), hy=Math.round(sy+Math.sin(a2)*L); ctx.save(); ctx.translate(hx,hy);
+      if(ws.kind==='swing'){ if(dir<0){ ctx.rotate(a2-Math.PI/4); ctx.scale(1,-1); } else ctx.rotate(a2+Math.PI/4); ctx.drawImage(iconTex(ws.id),-1,-13,14,14); }
+      else { const t=TEX[ws.id]||iconTex(ws.id); if(t) ctx.drawImage(t,-4,-4,8,8); }
+      ctx.restore(); }catch(err){} }; }
+// ---- 2. and 3. repairs while you sleep; the Quartermaster alone until they are done ----
+function fixupAdvance(dt,quiet){ const f=home&&home.fixup; if(!f||isGuest()||!f.cells) return; const n=f.cells.length; f.acc=(f.acc||0)+n/(DAY_LEN*FIXUP_DAYS)*dt; let k=Math.floor(f.acc); if(k<1) return; f.acc-=k;
+  facRun(()=>{ while(k-->0&&f.i<n){ const [x,y,id,b]=f.cells[f.i++]; if(world[y*W+x]!==id) setTile(x,y,id); if(bg[y*W+x]!==b){ bg[y*W+x]=b; if(facCap) facCap.push([x,y,b,1]); if(explored[y*W+x]) mapPixel(x,y); }
+      if(!quiet&&f.i%5===0){ puff(x*T+8,y*T+8,'#d8c8a0',3,50); if(player&&Math.abs(x*T-cxOf(player))<30*T) sfx('hit',x*T,y*T); } } });
+  if(f.i>=n) fixupDone(); }
+function fixupDone(){ home.fixup=null; try{ ruinSweep(); fixStations(); for(let x=home.castleCx-20;x<=home.castleCx+20;x++) updateSkyTop(x); }catch(e){ console.warn(e); } try{ buildMap(); }catch(e){}
+  toast('The village is rebuilt. It is your home now.',4);
+  try{ home.quarter=true; const has=r=>ents.some(e=>e.kind==='villager'&&e.role===r&&e.team===player.team&&!e.dead); if(!has('trainer')) ents.push(makeHelper('trainer','Beast trainer',-10)); if(!has('recruiter')) ents.push(makeHelper('recruiter','Recruiter',10));
+    home.drifters=(home.drifters||0)+(home.fixupWait||0); home.fixupWait=0; showDrifters(); }catch(e){ console.warn(e); }
+  if(home.drifters>0) setTimeout(()=>openRecruit(),600); }
+fixupTick=function(dt){ fixupAdvance(dt,false); };
+{ const _si=sleepIn; sleepIn=function(x,y,...a){ const t0=time, d0=dayCount; const r=_si(x,y,...a); try{ if(home&&home.fixup&&(dayCount>d0||time<t0)){ const f=home.fixup, n=f.cells.length; fixupAdvance(((dayCount-d0)+time-t0)*DAY_LEN,true);
+        if(home.fixup) toast(`The Quartermaster worked through the night: the village is ${Math.round(100*home.fixup.i/n)}% rebuilt.`,4); } }catch(e){ console.warn(e); } return r; }; }
+let fixupHold=false;
+// wanderers keep away from the ruin: they come when the village is rebuilt
+function hideDrifters(){ let n=0; for(const e of ents) if(e.kind==='drifter'&&!e.dead){ e.dead=true; n++; } return n; }
+function showDrifters(){ if(!home) return; const have=ents.filter(e=>e.kind==='drifter'&&!e.dead).length; for(let i=have;i<(home.drifters||0);i++) ents.push(makeDrifter(i)); }
+{ const _sf=startFixup; startFixup=function(...a){ fixupHold=true; try{ return _sf(...a); } finally{ fixupHold=false; try{ if(home&&home.fixup) hideDrifters(); }catch(e){} } }; }
+{ const _po=populate; populate=function(...a){ const r=_po(...a); try{ if(home&&(!home.claimed||home.fixup)&&!isGuest()) hideDrifters(); }catch(e){} return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&(!home.claimed||home.fixup)&&!isGuest()) hideDrifters(); }catch(e){} return r; }; }
+{ const _rh=rebuildHome; rebuildHome=function(...a){ if(home&&(fixupHold||home.fixup)){ const q=home.quarter; home.quarter=true; try{ return _rh(...a); } finally{ home.quarter=q; } } return _rh(...a); }; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const before=new Set(ents.filter(e=>e.kind==='drifter')); const r=_nd(...a); try{ if(home&&home.fixup){ for(const e of ents) if(e.kind==='drifter'&&!before.has(e)&&!e.dead){ e.dead=true; home.drifters=Math.max(0,home.drifters-1); home.fixupWait=(home.fixupWait||0)+1; } } }catch(e){} return r; }; }
+// ---- 4. the ruin: cobwebs, crumbled walls, broken planks, rubble ----
+const RUIN_B=(()=>{ const mk=(name,o)=>{ const id=freeIdFrom(); defB(id,Object.assign({place:false},o,{name})); return id; };
+  const webTex=(flip)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.strokeStyle='rgba(236,236,244,0.9)'; g.lineWidth=1; g.lineCap='square';
+    const spokes=[[15.5,1.5],[15.5,6.5],[13.5,11.5],[9.5,14.5],[4.5,15.5],[1.5,15.5]]; for(const [x,y] of spokes){ g.beginPath(); g.moveTo(0.5,0.5); g.lineTo(x,y); g.stroke(); }
+    g.strokeStyle='rgba(236,236,244,0.75)'; for(const r of [4.5,8.5,12.5]){ g.beginPath(); let first=true; for(const [x,y] of spokes){ const d=Math.hypot(x,y), k=r/d; const px=x*k, py=y*k; if(first){ g.moveTo(px,py); first=false; } else g.lineTo(px-0.6,py-0.6); } g.stroke(); }
+    g.fillStyle='rgba(255,255,255,0.9)'; g.fillRect(0,0,2,2); g.fillRect(6,5,1,1); g.fillRect(10,9,1,1);
+    if(!flip) return c; const m=mkCanvas(16,16), mg=m.getContext('2d'); mg.translate(16,0); mg.scale(-1,1); mg.drawImage(c,0,0); return m; };
+  const crumbleTex=(base,dk)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); if(base) g.drawImage(base,0,0); for(const [x,y,w,h] of [[0,0,6,3],[13,0,3,5],[0,12,4,4],[11,13,5,3],[15,7,1,3]]) g.clearRect(x,y,w,h);
+    g.fillStyle=dk; for(const [x,y] of [[6,3],[7,4],[7,5],[8,6],[9,7],[9,8],[10,9],[10,10],[4,11],[5,10],[3,9],[12,5],[12,6],[11,7]]) g.fillRect(x,y,1,1); g.fillStyle='rgba(0,0,0,0.25)'; g.fillRect(6,0,1,3); g.fillRect(0,3,6,1); g.fillRect(4,12,1,4); g.fillRect(11,12,5,1); return c; };
+  const brokenTex=(base)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); if(base) g.drawImage(base,0,0); g.clearRect(0,9,16,2); g.clearRect(5,0,2,9); g.clearRect(12,11,4,5); g.clearRect(0,11,2,2); g.fillStyle='rgba(0,0,0,0.3)'; g.fillRect(0,8,16,1); g.fillRect(0,11,12,1); g.fillRect(4,0,1,9); g.fillRect(7,0,1,9); return c; };
+  const webL=mk('Cobweb',{solid:false,hard:0.05,drop:0,col:'#d8d8e0'}), webR=mk('Cobweb',{solid:false,hard:0.05,drop:0,col:'#d8d8e0'});
+  const stone=mk('Crumbled stone',{hard:0.5,drop:B.STONE,col:'#8a8a94'}), brick=mk('Crumbled brick',{hard:0.5,drop:B.BRICK!=null?B.BRICK:B.STONE,col:'#9a7a6a'}), plank=mk('Broken plank',{hard:0.3,drop:B.PLANK,col:'#8a6a3a'});
+  TEX[webL]=webTex(false); TEX[webR]=webTex(true); TEX[stone]=crumbleTex(TEX[B.STONE_BLOCK],'#3a3842'); TEX[brick]=crumbleTex(TEX[B.BRICK],'#4a3028'); TEX[plank]=brokenTex(TEX[B.PLANK]);
+  B.COBWEB_L=webL; B.COBWEB_R=webR; B.CRUMBLED_STONE=stone; B.CRUMBLED_BRICK=brick; B.BROKEN_PLANK=plank;
+  for(const id of [webL,webR]){ try{ FLOWABLE.add(id); GRASSY.add(id); }catch(e){} }
+  return {webL,webR,stone,brick,plank}; })();
+const RUIN_SWAP={ [RUIN_B.stone]:B.STONE_BLOCK, [RUIN_B.brick]:B.BRICK, [RUIN_B.plank]:B.PLANK, [RUIN_B.webL]:0, [RUIN_B.webR]:0 };
+function isWeb(id){ return id===RUIN_B.webL||id===RUIN_B.webR; }
+// cobwebs in the corners and under the ceilings, rubble on the floors near the fallen parts; only inside the buildings
+function ruinDecor(x0,x1,y0,y1,R,sd){ sd=sd==null?(seed|0)+771:sd; let n=0; x0=Math.max(1,x0); x1=Math.min(W-2,x1); y0=Math.max(1,y0); y1=Math.min(H-2,y1);
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x; if(world[i]!==0) continue; const up=BLOCKS[world[i-W]].solid, lf=BLOCKS[world[i-1]].solid, rt=BLOCKS[world[i+1]].solid, dn=BLOCKS[world[i+W]].solid; if(!bg[i]&&!(up&&(lf||rt))) continue;
+    if(DOOR_IDS.has(world[i-1])||DOOR_IDS.has(world[i+1])||isWeb(world[i-1])||isWeb(world[i+1])) continue;
+    if(up&&lf&&R()<0.75){ world[i]=RUIN_B.webL; n++; continue; } if(up&&rt&&R()<0.75){ world[i]=RUIN_B.webR; n++; continue; } if(up&&R()<0.16){ world[i]=R()<0.5?RUIN_B.webL:RUIN_B.webR; n++; continue; }
+    if(dn&&lf&&!up&&R()<0.3){ world[i]=RUIN_B.webL; n++; continue; } if(dn&&rt&&!up&&R()<0.3){ world[i]=RUIN_B.webR; n++; continue; }
+    if(dn&&!up&&wreck(x,y+1,sd)>0.5&&R()<0.22&&!BLOCKS[world[i-W]].solid&&world[i+W]!==B.CHEST&&world[i+W]!==B.PART){ world[i]=B.RUBBLE; n++; } }
+  return n; }
+ruinHome=function(ccx,hx0,gy,R){ const sd=(seed|0)+771, L=ccx-17, Rr=ccx+16;
+  const keep=new Set([B.TORCH,B.BANNER_G,B.BANNER_B,B.BANNER_R,B.LANTERN]);
+  const bones=(x,y)=>x===L||x===Rr||x===L+5||x===Rr-5||y===gy-10||y===gy-17||y===gy-20||y===gy-27;
+  const gone=(x,y)=>wreck(x,y,sd)>0.6, edge=(x,y)=>wreck(x,y,sd)>0.4||wreck(x-2,y+1,sd+17)>0.62;
+  const ruin=(x,y,id)=>{ if(!id){ wset(x,y,0); return; } if(keep.has(id)) return;
+    if(id===B.DOOR||id===B.DOOR_T){ if(gone(x,y)||gone(x,y+1)) return; wset(x,y,id); return; }
+    if(y<gy&&[B.BRICK,B.PLANK,B.ROOF,B.SHINGLE_B,B.GLASS,B.PLATFORM,B.WINDOW,B.STONE_BLOCK,B.BOOKSHELF,B.TABLE,B.CHAIR,B.RUG,B.BARREL].includes(id)&&gone(x,y)&&!(id===B.STONE_BLOCK&&bones(x,y))) return wset(x,y,0);
+    if(id===B.STONE_BLOCK&&!bones(x,y)&&edge(x,y)) id=RUIN_B.stone; else if(id===B.BRICK&&edge(x,y)) id=RUIN_B.brick;
+    else if(id===B.STONE_BLOCK&&(wreck(x+3,y-2,sd+9)>0.44||R()<0.12)) id=B.MOSS;
+    else if(id===B.PLANK&&R()<0.12) id=B.CHAR_PLANK; else if(id===B.PLANK&&R()<0.2) id=RUIN_B.plank;
+    wset(x,y,id); };
+  const ruinBg=(x,y,v)=>{ if(v&&wreck(x,y,sd+3)>0.7) return bset(x,y,0); bset(x,y,v); };
+  buildCastle(null,ccx,ruin,ruinBg,gy); buildCastleUpper(ruin,ruinBg,ccx,gy,null);
+  const houses=[0,1,2].map(k=>buildHouse(hx0+k*13,gy,k,B.BANNER_G,ruin,ruinBg));
+  dropFloating(ccx-20,hx0+40,gy-37,gy); overgrow(ccx-20,hx0+40,gy-36,gy-1,R,1); ruinDecor(ccx-20,hx0+40,gy-36,gy-1,R,sd);
+  return houses; };
+// when the repairs are done nothing of the ruin is left in the village box
+function ruinSweep(){ if(!home) return 0; let n=0; const x0=Math.max(0,home.x0-6), x1=Math.min(W-1,home.x1+8), y0=Math.max(0,home.gy-40), y1=Math.min(H-1,home.gy);
+  facRun(()=>{ for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x]; if(RUIN_SWAP[id]!=null){ setTile(x,y,RUIN_SWAP[id]); n++; } } }); return n; }
+// older worlds: an unclaimed village gets the cobwebs and crumbled walls (a fresh ruin where nobody has been)
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.ruinsV2&&!isGuest()){ home.ruinsV2=1; if(!home.claimed&&!home.fixup&&home.hx0!=null){
+        let seen=false; for(let y=Math.max(0,home.gy-40);y<=Math.min(H-1,home.gy)&&!seen;y++) for(let x=Math.max(0,home.x0-6);x<=Math.min(W-1,home.x1+8);x++) if(explored[y*W+x]){ seen=true; break; }
+        const R=mulberry((seed|0)+779);
+        if(!seen){ ruinHome(home.castleCx,home.hx0,home.gy,R); const ck=(home.hx0+31)+','+(home.gy-1); if(!chests[ck]) chests[ck]={items:new Array(CHEST_N).fill(null),coins:5}; wset(home.hx0+31,home.gy-1,B.CHEST); }
+        else { const sd=(seed|0)+771, L=home.castleCx-17, Rr=home.castleCx+16; for(let y=home.gy-36;y<home.gy;y++) for(let x=home.castleCx-20;x<=home.hx0+40;x++){ const i=y*W+x, id=world[i]; if(!(wreck(x,y,sd)>0.4||wreck(x-2,y+1,sd+17)>0.62)) continue;
+            if(id===B.STONE_BLOCK&&!(x===L||x===Rr||x===L+5||x===Rr-5)) world[i]=RUIN_B.stone; else if(id===B.BRICK) world[i]=RUIN_B.brick; else if(id===B.PLANK&&R()<0.4) world[i]=RUIN_B.plank; }
+          ruinDecor(home.castleCx-20,home.hx0+40,home.gy-36,home.gy-1,R,sd); }
+        try{ buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.79: water in slope cells; no tiny puddles or thin films; wet chests and furniture =====================
+// 1. A sloped or stepped block beside water shows the water in its open part, up to the level of the water next to it
+//    (full when water stands on top). Drawing only: the block itself is unchanged.
+// 2. Water that settles too thin is gone: a puddle of one or two eighths standing alone, and a thin film (a run of four or
+//    more cells at two eighths or less) when water spreads over ground too flat to pool. The open sea and water with more
+//    water above are never touched. Older worlds are swept once (home.filmV).
+// 3. A chest under water no longer pokes its lid through the water above it (its top is tinted like the rest), and a
+//    friend's half of a wide chest is tinted the same way.
+const SHAPE_OPEN={ 1:[[0,0,16,8]], 2:[[0,0,4,12],[4,0,4,8],[8,0,4,4]], 3:[[12,0,4,12],[8,0,4,8],[4,0,4,4]], 4:[[0,0,8,8]], 5:[[8,0,8,8]] };
+function shapeOpenRects(sh){ if(SHAPE_OPEN[sh]) return SHAPE_OPEN[sh]; if(sh===6||sh===7){ const r=[]; for(let c=0;c<16;c++){ const h=sh===6?15-c:c; if(h>0) r.push([c,0,1,h]); } SHAPE_OPEN[sh]=r; return r; } return null; }
+function slopeWaterLevel(i,x,y){ const lv=j=>world[j]===B.WATER?liq[j]:0; if(y>0&&world[i-W]===B.WATER) return 8; return Math.max(x>0?lv(i-1):0,x<W-1?lv(i+1):0); }
+function drawSlopeWater(){ if(!world||!liq||!shape) return; const tx0=Math.max(1,Math.floor(camX/T)), tx1=Math.min(W-2,Math.ceil((camX+viewW)/T)), ty0=Math.max(1,Math.floor(camY/T)), ty1=Math.min(H-2,Math.ceil((camY+viewH)/T));
+  for(let y=ty0;y<=ty1;y++){ const row=y*W; for(let x=tx0;x<=tx1;x++){ const i=row+x, sh=shape[i]; if(!sh) continue; const id=world[i]; if(!id||id===B.WATER||!BLOCKS[id]||!BLOCKS[id].solid) continue;
+      const L=slopeWaterLevel(i,x,y); if(L<=0) continue; const open=shapeOpenRects(sh); if(!open) continue; const wy=T-Math.max(1,Math.round(L*2)), X=x*T, Y=y*T;
+      ctx.fillStyle=y-seaY>6?'rgba(22,70,160,0.8)':'rgba(38,98,200,0.66)';
+      for(const [rx,ry,rw,rh] of open){ const y0=Math.max(ry,wy), y1=ry+rh; if(y1>y0) ctx.fillRect(X+rx,Y+y0,rw,y1-y0); }
+      if(L<8){ ctx.fillStyle='rgba(170,220,255,0.85)'; for(const [rx,ry,rw,rh] of open){ if(wy>=ry&&wy<ry+rh) ctx.fillRect(X+rx,Y+wy,rw,1); } } } } }
+// the lid of a chest under water is tinted like the water above it
+function drawWetChestTops(){ if(!wetDeco.size) return; const tx0=Math.max(1,Math.floor(camX/T)), tx1=Math.min(W-2,Math.ceil((camX+viewW)/T)), ty0=Math.max(1,Math.floor(camY/T)), ty1=Math.min(H-2,Math.ceil((camY+viewH)/T));
+  for(let y=ty0;y<=ty1;y++){ const row=y*W; for(let x=tx0;x<=tx1;x++){ const i=row+x; if(world[i]!==B.WATER) continue; const dk=wetDeco.get(i); if(!dk||!CHEST_WET.has(dk)||dk===1042) continue; if(world[i-W]!==B.WATER) continue;
+      const pr=world[i+1]===B.PART||wetDeco.get(i+1)===B.PART; ctx.fillStyle=y-seaY>6?'rgba(22,70,160,0.8)':'rgba(38,98,200,0.66)'; ctx.fillRect(pr?x*T:x*T-16,y*T-4,32,4); } } }
+{ const _wf=drawWaterFront; drawWaterFront=function(...a){ const r=_wf(...a); try{ drawSlopeWater(); drawWetChestTops(); }catch(e){} return r; }; }
+// ---- thin water is gone ----
+const FILM_LV=2, FILM_RUN=4;
+function thinRun(i){ const x=i%W, y=(i/W)|0; const ok=j=>world[j]===B.WATER&&liq[j]<=FILM_LV&&!(j-W>=0&&world[j-W]===B.WATER)&&supported(j)&&!(oceanCol[j%W]&&((j/W)|0)>=seaY);
+  if(!ok(i)) return null; let a=i, b=i; while(a%W>0&&ok(a-1)) a--; while(b%W<W-1&&ok(b+1)) b++; const n=b-a+1;
+  const edgeWater=(a%W>0&&world[a-1]===B.WATER)||(b%W<W-1&&world[b+1]===B.WATER);   // part of a bigger body: leave it
+  if(edgeWater) return null; if(n>=FILM_RUN||n<=2) return [a,b]; return null; }
+function dryThin(list){ let n=0; for(const i of list){ if(world[i]!==B.WATER) continue; const r=thinRun(i); if(!r) continue; for(let j=r[0];j<=r[1];j++){ setWater(j,0); wake(j%W,(j/W)|0); n++; } } return n; }
+{ const _sw=stepWater; stepWater=function(budget,...a){ const before=wact&&wact.size?[...wact].slice(0,400):null; const r=_sw(budget,...a); try{ if(before&&!genning) dryThin(before); }catch(e){} return r; }; }
+function dryThinAll(){ const list=[]; for(let i=W;i<W*H-W;i++) if(world[i]===B.WATER&&liq[i]<=FILM_LV) list.push(i); return dryThin(list); }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.filmV&&!isGuest()){ home.filmV=1; if(dryThinAll()) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
