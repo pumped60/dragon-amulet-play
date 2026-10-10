@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791585750"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791585750"><link rel="manifest" href="manifest.webmanifest?v=1791585750"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791595707"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791595707"><link rel="manifest" href="manifest.webmanifest?v=1791595707"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -340,7 +340,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.76</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.77</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +397,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.76</h3>
+    <h3>New in Beta 0.9.77</h3>
+    <p>Eight more cave creatures, each at home in one kind of cave: dripstone golems in the stalagmite caves, root wyrms in the root caverns, jade mantises in the jade caves, rose serpents in the rose caves, bone hounds in the fossil beds, shale crawlers in the shale layer, deep stalkers in the deepstone layer and moss trolls in the moss caves. Goblins, zombies, skeletons and orcs now only roam the top quarter of the underground; deeper down, every creature belongs to the cave it lives in. A chest, shelf, barrel, cupboard or desk with anything in it can no longer be broken by any means (empty it first), and tapping a barrel, cupboard, desk or shelf opens it just like a chest.</p>
+    <h3>Beta 0.9.76</h3>
     <p>The abandoned village is a two-storey castle and three houses left to the weather: ragged gaps in the walls, moss over the stonework, grass, ferns and saplings on the floors, vines and ivy on the walls. The Quartermaster waits inside. Walking in no longer claims the village: talk to him and choose "Fix up the castle and the houses", and the repairs run over about a day, block by block from the ground up; the Beast trainer and the Recruiter arrive when he starts, and the drifters pick their jobs when the work is done. Burned villages are built around the fire that took each house: the roof and one upper corner are gone with ragged edges, nothing floats, wood near the fire is charred, the back walls are charred with holes where the fire burned through, and grass, ferns, bushes and saplings grow through the ash. Older worlds get the new look where nobody has explored yet.</p>
     <h3>Beta 0.9.75</h3>
     <p>The overgrown caverns are a deeper, darker green, with glow vines hanging from the roofs and spores drifting through the air. Cave and tunnel walls vary: cobbled, cracked and mossy patches among the plain rock. Every chest in the world stands on two solid blocks, loose rock floating in caves is cleared, and sealed one-block pockets in the rock are filled, so caves read as one connected mass. Older worlds get the walls, supports and tidy-up in ground you have not explored yet.</p>
@@ -656,7 +658,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.76</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.77</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -916,7 +918,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.76</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.77</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -935,7 +937,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.76', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.77', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12603,6 +12605,93 @@ function fixupTick(dt){ const f=home&&home.fixup; if(!f||isGuest()||!f.cells) re
       if(!home.claimed&&unexplored(home.x0-6,home.x1+8,home.gy-40,home.gy)){ ruinHome(home.castleCx,home.hx0,home.gy,mulberry((seed|0)+771)); const ck=(home.hx0+31)+','+(home.gy-1); if(!chests[ck]){ chests[ck]={items:new Array(CHEST_N).fill(null),coins:5}; } wset(home.hx0+31,home.gy-1,B.CHEST); n++; }
       for(const rn of ruins||[]){ if(unexplored(rn.x-23,rn.x+23,rn.gy-18,rn.gy)){ buildRuin(rn.x,mulberry((seed|0)+881+rn.x)); n++; } }
       if(n){ try{ for(let x=0;x<W;x++) updateSkyTop(x); buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ===================== Beta 0.9.77: eight more cave creatures, one per biome; surface creatures stay near the top =====================
+// New underground creatures, each at home in one kind of cave: the dripstone golem (stalagmite caves), the root wyrm
+// (root caverns), the jade mantis (jade caves), the rose serpent (rose caves), the bone hound (fossil beds, packs of
+// three), the shale crawler (the shale layer, in pairs), the deep stalker (the deepstone layer) and the moss troll (moss
+// caves). Goblins, zombies, skeletons and orcs only roam the top quarter of the underground (from the surface to the
+// magma realm); below that, every spawn is a cave creature of the biome or layer it stands in (deepMonFor).
+Object.assign(MON,{
+  dripstone_golem:{ w:20, h:24, hp:230, dmg:22, speed:45,  def:12, reach:14, coins:5, drops:[[BIO.DRIPSTONE,0.7,1,2],[BIO.STALAGMITE,0.4,1,1]] },
+  root_wyrm:      { w:24, h:12, hp:150, dmg:15, speed:75,  def:4,  reach:14, coins:3, drops:[[BIO.GLOW_BULB,0.5,1,2],[GLOW_FLORA.roots[1],0.3,1,1]] },
+  jade_mantis:    { w:18, h:20, hp:130, dmg:19, speed:135, def:3,  reach:16, coins:4, drops:[[BIO.JADE_SHARD,0.5,1,2],[I.EMERALD,0.05,1,1]] },
+  rose_serpent:   { w:24, h:10, hp:120, dmg:15, speed:110, def:2,  reach:14, coins:3, drops:[[BIO.ROSE_QUARTZ,0.6,1,2]] },
+  bone_hound:     { w:20, h:14, hp:65,  dmg:12, speed:145, def:1,  reach:12, coins:2, drops:[[I.BONE,0.6,1,2]] },
+  shale_crawler:  { w:18, h:10, hp:95,  dmg:13, speed:70,  def:9,  reach:12, coins:3, drops:[[B.SHALE,0.5,1,3],[B.COAL,0.3,1,2]] },
+  deep_stalker:   { w:18, h:26, hp:240, dmg:26, speed:120, def:6,  reach:18, coins:7, drops:[[I.BONE,0.4,1,2],[I.SAPPHIRE,0.06,1,1]] },
+  moss_troll:     { w:24, h:28, hp:320, dmg:27, speed:60,  def:8,  reach:20, coins:8, drops:[[B.MOSS,0.6,1,3],[I.EMERALD,0.1,1,1]] } });
+Object.assign(PACK,{ bone_hound:3, shale_crawler:2 });
+const LAYER_MON={ jade:'jade_mantis', rose:'rose_serpent', stalag:'dripstone_golem', roots:'root_wyrm', fossil:'bone_hound' };
+const SURFACE_MOBS=new Set(['zombie','skeleton','goblin','orc']);
+const CAVE_TOP=0.25;   // surface creatures roam this much of the way from the surface to the magma realm
+function caveDepthFrac(x,y){ x=Math.max(0,Math.min(W-1,x)); const s=surf[x]||0, m=(typeof magmaY!=='undefined'&&magmaY<H)?magmaY:H-58; return (y-s)/Math.max(1,m-s); }
+// the cave creature for a spot below the top quarter: the biome's own, else the layer's
+function deepMonFor(x,y){ const b2=typeof biome2At==='function'?biome2At(x,y):null, b=biomeAt(x,y);
+  if(b2==='grove') return (typeof caveMonFor==='function'&&caveMonFor(x,y))||'grove_spider';
+  if(b2&&LAYER_MON[b2]&&Math.random()<0.5) return LAYER_MON[b2]; if(b2&&CAVE_MON[b2]) return CAVE_MON[b2];
+  if(b==='moss') return Math.random()<0.3?'moss_troll':Math.random()<0.5?'moss_zombie':'moss_skeleton';
+  if(b==='gem') return 'crystal_golem'; if(b==='magma') return Math.random()<0.5?'imp':'magma_skeleton';
+  if(y>deepYOf()) return Math.random()<0.45?'deep_stalker':'cave_bat'; if(typeof layerTop==='function'&&y>layerTop()) return Math.random()<0.5?'shale_crawler':'cave_bat'; return 'cave_bat'; }
+// a surface creature that spawned too deep becomes a cave creature (a pack where the kind calls for one); returns the kind used
+function deepReplace(m){ if(!m||m.dead||m.kind!=='monster'||!m.under||!SURFACE_MOBS.has(m.mtype)) return null; const tx=Math.floor(cxOf(m)/T), ty=Math.floor((m.y+m.h-1)/T);
+  if(caveDepthFrac(tx,ty)<=CAVE_TOP) return null; const type=deepMonFor(tx,ty); if(!type||!MON[type]) return null; m.dead=true;
+  for(let k=0;k<(PACK[type]||1);k++){ const nm=makeMonster(type,m.x+k*14,(ty+1)*T-MON[type].h-1); nm.under=true; nm.cmon=true; ents.push(nm); } return type; }
+{ const _su=spawnUnder; spawnUnder=function(...a){ const n0=ents.length; const r=_su(...a); try{ for(let i=n0;i<ents.length;i++) deepReplace(ents[i]); }catch(e){ console.warn(e); } return r; }; }
+// ---- moves ----
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ const r=_dmg(t,amt,src,kb,...a); try{
+      if(src&&src.mtype==='rose_serpent'&&t&&!t.dead&&!(t.gear&&t.gear.ward)){ t.slowT=Math.max(t.slowT||0,1.5); if(t===player) addFloat(cxOf(t),t.y-10,'venom','#e86a90'); } }catch(e){} return r; }; }
+// the jade mantis lunges; the deep stalker leaps at you from the dark
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if((e.mtype==='jade_mantis'||e.mtype==='deep_stalker')&&!e.dead&&e.target&&e.grounded){ e.pounceT=(e.pounceT||0)-dt; const dx=cxOf(e.target)-cxOf(e);
+        if(e.pounceT<=0&&Math.abs(dx)>3*T&&Math.abs(dx)<7*T&&Math.abs(cyOf(e.target)-cyOf(e))<3*T){ e.pounceT=e.mtype==='deep_stalker'?2.5:3.5; e.vy=-JUMP*0.65; e.vx=Math.sign(dx)*340; e.kbT=0.35; } } }catch(err){} return r; }; }
+// ---- looks ----
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const L=o.look, f=o.frame||0, atk=o.atk, s=f%2;
+    if(L==='dripstone_golem'){ const R=fig(g,SCX-10,SFY-24), c1='#b4a48c', c2='#8a7a62', c3='#d8c8ac';
+      R(2,18,6,6-s,c2); R(12,18,6,5+s,c2); R(1,8,18,10,c1); R(2,7,16,1,c3); R(4,10,2,2,'#ffcf3a'); R(14,10,2,2,'#ffcf3a'); for(const [x,h] of [[3,5],[8,7],[14,4]]){ R(x,8-h,2,h,c1); R(x,8-h,1,h,c3); }
+      R(0,12,2,8,c2); R(18,11+(atk?-2:0),4,8,c2); R(19,10+(atk?-2:0),2,1,c3); return; }
+    if(L==='root_wyrm'){ const R=fig(g,SCX-12,SFY-12), c1='#6b4a2a', c2='#8a6a3a', c3='#4a3018';
+      for(let k=0;k<6;k++){ const y=4+((k+f)%2?1:0); R(k*4,y,4,6,k%2?c1:c2); R(k*4,y,4,1,c3); R(k*4+1,y+6,2,1,c3); } R(20,2+(atk?1:0),5,7,c2); R(23,4,1,1,'#ff5050'); R(25,6,2,1,'#f08ab0'); R(0,6,2,3,c3); return; }
+    if(L==='jade_mantis'){ const R=fig(g,SCX-9,SFY-20), c1='#4ac070', c2='#8ae0a8', c3='#1f6a3a';
+      R(4,15,1,5-s,c3); R(8,15,1,4+s,c3); R(12,15,1,5-s,c3); R(3,8,12,7,c1); R(4,7,10,1,c2); R(13,2,6,5,c1); R(15,1,4,2,c2); R(16,3,1,1,'#1a1a1a'); R(18,3,1,1,'#1a1a1a');
+      R(10,4+(atk?3:0),3,5,c2); R(12,3+(atk?3:0),1,2,c3); R(6,4+(atk?3:0),3,5,c2); R(0,9,3,2,c3); return; }
+    if(L==='rose_serpent'){ const R=fig(g,SCX-12,SFY-10), c1='#e86a90', c2='#a03a60', c3='#ffd0e0';
+      for(let k=0;k<5;k++){ const y=5+((k+f)%2?-1:0); R(k*4,y,4,4,c1); R(k*4+1,y,2,1,c3); if(k%2) R(k*4,y+2,4,1,c2); } R(20,2+(atk?1:0),5,5,c1); R(21,3,1,1,'#1a1a1a'); R(25,4+(atk?1:0),3,1,'#c02050'); R(0,7,2,2,c2); return; }
+    if(L==='bone_hound'){ const R=fig(g,SCX-10,SFY-14), bone='#e8e0c8', dk='#a89a78';
+      R(3,10,2,4-s,bone); R(7,10,2,3+s,bone); R(12,10,2,4-s,bone); R(16,10,2,3+s,bone); R(2,5,16,5,bone); for(let x=4;x<16;x+=3) R(x,6,1,3,dk); R(15,1,6,5,bone); R(17,2,1,1,'#ff5030'); R(19,4+(atk?1:0),3,1,dk); R(0,3,3,2,bone); R(-1,2,2,1,bone); return; }
+    if(L==='shale_crawler'){ const R=fig(g,SCX-9,SFY-10), c1='#5e5a68', c2='#8a86a0', c3='#3a3644';
+      for(let k=0;k<4;k++){ R(1+k*4,7+((k+f)%2),2,3,c3); R(2+k*4,7+((k+f+1)%2),1,3,c3); } R(1,2,16,6,c1); R(2,1,14,1,c2); for(const y of [3,5]) R(1,y,16,1,c3); R(16,4,3,2,c1); R(17,4,1,1,'#ffcf3a'); if(atk) R(19,4,2,1,c2); return; }
+    if(L==='deep_stalker'){ const R=fig(g,SCX-9,SFY-26), c1='#1a2240', c2='#2e3a60', eye='#8ae8ff';
+      R(5,18,3,8-s,c1); R(10,18,3,7+s,c1); R(4,7,10,11,c1); R(5,6,8,1,c2); R(6,0,6,7,c1); R(7,2,1,1,eye); R(10,2,1,1,eye); R(7,3,4,1,c2);
+      R(14,8+(atk?-3:0),2,8,c1); R(14,16+(atk?-3:0),5,1,'#c8d8f0'); R(2,8,2,8,c1); R(-2,16,4,1,'#c8d8f0'); return; }
+    if(L==='moss_troll'){ const R=fig(g,SCX-12,SFY-28), skin='#5a7a3a', dk='#3a5224', moss='#8ac050';
+      R(4,20,5,8-s,dk); R(15,20,5,7+s,dk); R(2,8,20,12,skin); R(3,7,18,1,moss); R(2,10,4,2,moss); R(17,14,5,2,moss); R(7,1,10,8,skin); R(8,0,8,1,moss); R(9,3,2,2,'#ffcf3a'); R(13,3,2,2,'#ffcf3a'); R(10,6,5,1,dk);
+      R(22,9+(atk?-4:0),4,10,'#6a4a2a'); R(21,6+(atk?-4:0),6,3,'#4a3018'); R(-2,10,4,9,skin); return; }
+    return _hf(g,o,...a); }; }
+{ const _bc=bleedColor; bleedColor=function(t){ const m=t&&t.mtype; const c={dripstone_golem:'#b4a48c',root_wyrm:'#8a6a3a',jade_mantis:'#8ae0a8',rose_serpent:'#ffd0e0',bone_hound:'#e8e0c8',shale_crawler:'#8a86a0',deep_stalker:'#2e3a60',moss_troll:'#8ac050'}[m]; return c||_bc(t); }; }
+// ===================== Beta 0.9.77: storage keeps what is in it; tap a barrel, cupboard, desk or shelf to open it =====================
+// A chest, shelf, barrel, cupboard or desk with anything in it cannot be broken: not by a pick, not by placing a block over
+// it, not by a bomb and not by fire. Empty it first. Every cell of the piece counts (the right half of a two-wide chest, the
+// top of a cupboard), so nothing is lost by mining the other half. And a tap on any of them opens it, just like a chest.
+function isStoreId(id){ return id===B.SHELF||(typeof STORE_FURN!=='undefined'&&STORE_FURN.has(furnBase(id))); }
+// the chest key of the storage piece at (x,y), through its part cells; null when there is none
+function storeKeyAt(x,y){ const id=tileAt(x,y); if(!id) return null; if(isChestId(id)||isStoreId(id)) return x+','+y;
+  if(id===B.PART){ for(const [ax,ay] of [[x-1,y],[x,y+1],[x-1,y+1]]){ const aid=tileAt(ax,ay); if(!(isChestId(aid)||isStoreId(aid))) continue;
+      const kind=BIG_ST[aid]||BIG_ST[furnBase(aid)]; if(kind&&stationCells(ax,ay,kind===BIG_ST[aid]?aid:furnBase(aid)).some(([a,b])=>a===x&&b===y)) return ax+','+ay; } }
+  return null; }
+function storeFull(x,y){ const k=storeKeyAt(x,y); if(!k) return false; const c=chests[k]; return !!c&&(c.coins>0||(c.items||[]).some(Boolean)); }
+function storeName(x,y){ const k=storeKeyAt(x,y); if(!k) return 'chest'; const [cx,cy]=k.split(',').map(Number); const b=BLOCKS[tileAt(cx,cy)]; return (b&&b.name||'chest').toLowerCase(); }
+let storeWarnAt=0;
+function storeWarn(x,y){ const now=performance.now(); if(now-storeWarnAt<1500) return; storeWarnAt=now; toast(`Empty the ${storeName(x,y)} before breaking it`,2); }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ if(storeFull(x,y)){ storeWarn(x,y); return; } return _bt(x,y,...a); }; }
+// mining stops at once on a full piece (the chest cell already stops; this covers its other half and the furniture)
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player, m=p&&p.mine; if(m&&m.x>=0&&m.p>0&&!isChestId(tileAt(m.x,m.y))&&storeFull(m.x,m.y)){ p.mine={x:-1,y:-1,p:0}; storeWarn(m.x,m.y); } }catch(e){} return r; }; }
+{ const _bb=blastBreakable; blastBreakable=function(x,y,...a){ if(storeFull(x,y)) return false; return _bb(x,y,...a); }; }
+{ const _ig=igniteAt; igniteAt=function(x,y,...a){ if(storeFull(x,y)) return false; return _ig(x,y,...a); }; }
+// a tap opens a shelf, barrel, cupboard or desk the way it opens a chest (chests keep their own handler)
+function openStorage(x,y){ const k=storeKeyAt(x,y); if(!k) return false; const [cx,cy]=k.split(',').map(Number); const id=tileAt(cx,cy);
+  if(isChestId(id)) openChest(cx,cy); else if(id===B.SHELF){ if(!chests[k]) chests[k]={items:new Array(9).fill(null),coins:0,shelf:true}; openChest(cx,cy); } else openStore(cx,cy); return state==='chest'||state!=='play'; }
+cv.addEventListener('pointerdown',ev=>{ if(state!=='play'||!player||player.dead||touches.size>=2) return; setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T), it=heldItem();
+  if(it&&['pick','hammer','axe'].includes(ITEMS[it.id].kind)) return; const k=storeKeyAt(tx,ty); if(!k) return; const [cx,cy]=k.split(',').map(Number); if(isChestId(tileAt(cx,cy))) return;
+  if(Math.hypot(cx*T+8-cxOf(player),cy*T+8-cyOf(player))>REACH) return; openStorage(tx,ty); ev.stopImmediatePropagation(); ev.preventDefault(); },true);
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
