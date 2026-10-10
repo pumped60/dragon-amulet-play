@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791607717"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791607717"><link rel="manifest" href="manifest.webmanifest?v=1791607717"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791610083"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791610083"><link rel="manifest" href="manifest.webmanifest?v=1791610083"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -148,8 +148,8 @@ body.sticks #btnTalk{ bottom:calc(var(--sb) + 40px); }
 #hudPreview .pvInfo{ font-size:6px; line-height:1.6; color:#fff; margin-top:3px; text-shadow:1px 1px 0 #000; } #hudPreview .pvGround{ position:absolute; left:0; right:0; bottom:0; height:34px; background:#6b4422; border-top:6px solid #5a9a3a; }
 #pickList{ position:fixed; left:50%; bottom:90px; transform:translateX(-50%); z-index:40; background:#1b1530; border:3px solid var(--gold); padding:8px; display:flex; flex-direction:column; gap:6px; min-width:220px; }
 #pickList button{ font-family:var(--font); font-size:9px; padding:10px; background:var(--panel2); color:var(--text); border:2px solid var(--edge); text-align:left; cursor:pointer; } #pickList button:hover{ border-color:var(--gold); }
-/* 0.9.80: on computers the option box sits at the left, clear of the words in the middle; on phones the words move up above it */
-body:not(.touch) #pickList{ left:16px; transform:none; bottom:calc(var(--sb) + 90px); max-width:320px; }
+/* 0.9.81: on computers the option box stays centred and sits above the words; on phones the words move up above it */
+body:not(.touch) #pickList{ bottom:calc(var(--sb) + 92px + var(--toasth,0px)); max-width:360px; }
 body:not(.touch) #toast{ max-width:min(56vw,640px); }
 body.touch.pick #toast{ bottom:calc(var(--sb) + 104px + var(--pickh,0px)); }
 #dragGhost{ position:fixed; z-index:60; pointer-events:none; width:32px; height:32px; image-rendering:pixelated; opacity:.85; } #dragGhost img{ width:32px; height:32px; image-rendering:pixelated; }
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.80</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.81</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,8 +401,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.80</h3>
-    <p>Playing in a friend's world, an enemy you finish off dies on the spot instead of a moment later when the host confirms it (the loot still comes from the host right after). Every world you join is kept under Continue with its code, so you can open any of them again, not only the last one. On a computer the option box for a furnace, a villager or an animal now sits at the left of the screen, out of the way of what they say; on a phone it stays where it was and their words move up above it.</p>
+    <h3>New in Beta 0.9.81</h3>
+    <p>Playing together works the way Terraria does it: your own game runs the enemies near you, so they chase, turn and strike on your screen at once, and the host only corrects them when the two games drift apart. An enemy that reaches you hurts you right away; the number you see when you hit one is the number that counts. Bosses, the dragon and animals still follow the host. Less is sent over the network too. Mining looks calmer: the body stays still and only the arm and the tool move. Swings start at the shoulder and shots leave the hand instead of the middle of the body.</p>
+    <h3>Beta 0.9.80</h3>
+    <p>Playing in a friend's world, an enemy you finish off dies on the spot instead of a moment later when the host confirms it (the loot still comes from the host right after). Every world you join is kept under Continue with its code, so you can open any of them again, not only the last one. On a computer the option box for a furnace, a villager or an animal sits centred above what they say; on a phone it stays where it was and their words move up above it.</p>
     <h3>Beta 0.9.79</h3>
     <p>Your hero works with the whole body: the arm reaches along the swing of a pick, axe, hoe or hammer with the tool in the hand, the body leans into each stroke, and placing a block reaches toward the spot with the block in hand. While the Quartermaster fixes up the village, sleeping moves the repairs along by the hours you slept, and he is the only villager there until the work is done: the Beast trainer, the Recruiter and any wanderer arrive when it is finished. The ruin looks the part before that: cobwebs in the corners and under the ceilings, crumbled stone and brick where the walls fell, broken planks and rubble on the floors. Water: sloped and stepped blocks beside water show the water in their open part; a puddle of one or two eighths standing alone, or water spread into a thin film over flat ground, dries up; a chest under water no longer pokes its lid through the water above it.</p>
     <h3>Beta 0.9.78</h3>
@@ -668,7 +670,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.80</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.81</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -928,7 +930,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.80</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.81</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -947,7 +949,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.80', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.81', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5799,7 +5801,7 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
     .map(e=>[Math.round(e.x),Math.round(e.y),e.kind==='animal'?e.atype:e.cls,e.facing||1,e.weapon||0,e.mpUid||(e.mpUid=++mpUidSeq),Math.max(1,Math.round(100*e.hp/e.maxHp)),e.kind==='animal'?(e.mode==='fight'?'f':'p'):'h',e.upArmor||0]);
   const pr={ hits:MP.hitsOut.slice(-20), bh:mpBossHp(), nm:(p.name||'').slice(0,16), mine:p.mine&&p.mine.p>0?[p.mine.x,p.mine.y,Math.round(p.mine.p*100)/100]:0, dl:(p.diedAfterLair&&lair&&Math.abs(cxOf(p)/T-(lair.rx0+lair.rx1)/2)>=100)?1:0, md:rules.mode, x:Math.round(p.x), y:Math.round(p.y), f:p.facing||1, cls:p.cls, team:p.team, ar:p.gear.armor, w:hi?hi.id:0, an:Math.round((p.anim||0)*10)/10, vx:Math.round(p.vx), rd:p.riding?p.boat:0, st:(p.inWater?1:0)|(p.grounded?0:2)|(p.fly?4:0), gv:MP.giveOut.slice(-8), ch:[...MP.chestOut.values()].slice(-6), hp:Math.round(p.hp), mhp:p.maxHp, a:MP.atkN, aa:Math.round(((hi&&ITEMS[hi.id]&&(ITEMS[hi.id].type==='bow'||ITEMS[hi.id].type==='magic')&&p.shotAng!=null?p.shotAng:p.atkAng)||0)*100)/100||0, tw:mpThrownOut(), hk:mpHookOut(), fx:mpFxOut(), bm:mpBombsOut(), td:mpTradeOut(), cr:mpCrewOut(), fi:mpFiresOut(), vt:mpVillageTierOut(), wk:mpWorkersOut(), cg:mpCagesOut(), vg:MP.guest?mpVillageTierOut():0, tk:(MP.tk=((MP.tk||0)+1)%1e6), sold,  rid:p.cust?1:0 };
   if(MP.host){ pr.pg=(MP.pgOut||[]).slice(-16); pr.pgs=MP.pgSid||0; pr.vr=Object.entries(MP.roles||{}).slice(0,40); pr.dr=mpDropList(); pr.hm=home.miners||0; pr.hc=home.claimed?1:0; pr.cq=Object.keys(conquered).filter(k=>conquered[k]).join(''); pr.kit=rules.kit||'standard'; pr.dth=rules.death||'keep'; Object.assign(pr,mpVillageOut()); }
-  if(MP.guest){ pr.cq=(MP.cqOut||[]).slice(-20); pr.aq=(MP.aqOut||[]).slice(-10); pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
+  if(MP.guest){ pr.la=1; pr.cq=(MP.cqOut||[]).slice(-20); pr.aq=(MP.aqOut||[]).slice(-10); pr.vq=(MP.roleReq||[]).slice(-10); pr.pk=(MP.picks||[]).slice(-20); pr.hq=MP.hireReq||0; pr.rq=(MP.recReq||[]).slice(-10); }
   if(MP.host){ pr.ga=Object.entries(MP.gApplied).map(([k,v])=>[k,v]).slice(0,20);
     pr.mobs=mpMobList(); pr.sh=mpShotsOut(); pr.hurt=MP.hurtOut.slice(-20); const acks=[...MP.remote.values()].map(r=>r.fa||0); const from=acks.length?Math.min(...acks):MP.facSeq; pr.fe=MP.facLog.filter(e=>e[0]>from).slice(0,80); pr.fs=MP.facLog.length?MP.facLog[0][0]:MP.facSeq+1; }
   if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,80); if(MP.rsSeq) pr.rs=MP.rsSeq; }
@@ -12768,10 +12770,10 @@ function workState(e){ if(!e||e.kind!=='player'||e.riding||e.dead||e.passenger) 
       const sleeve=pick(py+1)||pick(py+2)||'#6b4a2a', hand=pick(py+h-1)||'#f2c79b'; WORK_COL[humanKey(o)]={sleeve,hand}; g.clearRect(px,py,w,h); }catch(e){} return r; }; }
 { const _de=drawEntity; drawEntity=function(e,...a){ const ws=workState(e); if(!ws){ if(e) e._work=false; return _de(e,...a); }
     const ang=workAim(e), dir=Math.cos(ang)>=0?1:-1; const at=e.atkT, pc=e.placeCd; e._work=true; e.atkT=0; e.placeCd=0;
-    const fx=Math.round(cxOf(e)), fy=Math.round(e.y+e.h); const lean=ws.kind==='swing'?dir*(0.05+0.09*(1-ws.ph)):dir*0.06, dip=ws.kind==='swing'?Math.round((1-ws.ph)*1.5):0;
+    const fx=Math.round(cxOf(e)), fy=Math.round(e.y+e.h); const lean=0, dip=0;   // 0.9.81: the body stays still; only the arm and the tool move
     ctx.save(); ctx.translate(fx,fy); ctx.rotate(lean); ctx.translate(-fx,-fy+dip);
     let key=null; try{ _de(e,...a); key=humanKey(specOf(e)); } finally{ ctx.restore(); e.atkT=at; e.placeCd=pc; e._work=false; }
-    try{ const col=(key&&WORK_COL[key])||{sleeve:'#6b4a2a',hand:'#f2c79b'}; const sx=fx+dir*3, sy=Math.round(e.y)+12; const a2=ws.kind==='swing'?ang+(ws.ph-0.5)*1.8*(dir>0?-1:1):ang; const L=9;
+    try{ const col=(key&&WORK_COL[key])||{sleeve:'#6b4a2a',hand:'#f2c79b'}; const sx=fx+dir*5, sy=Math.round(e.y)+12;   // the shoulder on the facing side const a2=ws.kind==='swing'?ang+(ws.ph-0.5)*1.8*(dir>0?-1:1):ang; const L=9;
       ctx.save(); ctx.translate(sx,sy); ctx.rotate(lean*0.5); ctx.rotate(a2); ctx.fillStyle=col.sleeve; ctx.fillRect(0,-1,L,2); ctx.fillStyle=col.hand; ctx.fillRect(L-1,-1,2,2); ctx.restore();
       const hx=Math.round(sx+Math.cos(a2)*L), hy=Math.round(sy+Math.sin(a2)*L); ctx.save(); ctx.translate(hx,hy);
       if(ws.kind==='swing'){ if(dir<0){ ctx.rotate(a2-Math.PI/4); ctx.scale(1,-1); } else ctx.rotate(a2+Math.PI/4); ctx.drawImage(iconTex(ws.id),-1,-13,14,14); }
@@ -12853,6 +12855,10 @@ function ruinSweep(){ if(!home) return 0; let n=0; const x0=Math.max(0,home.x0-6
             if(id===B.STONE_BLOCK&&!(x===L||x===Rr||x===L+5||x===Rr-5)) world[i]=RUIN_B.stone; else if(id===B.BRICK) world[i]=RUIN_B.brick; else if(id===B.PLANK&&R()<0.4) world[i]=RUIN_B.plank; }
           ruinDecor(home.castleCx-20,home.hx0+40,home.gy-36,home.gy-1,R,sd); }
         try{ buildMap(); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ---- 0.9.81: attacks start where the arm is ----
+// A swing pivots at the shoulder on the facing side and a shot leaves the hand, not the exact centre of the body.
+pivotOf=function(e){ const f=e.facing||1; return { x:cxOf(e)+f*5, y:e.y+e.h-17 }; };
+{ const _sh=shoot; shoot=function(e,ang,...a){ const n0=projs.length; const r=_sh(e,ang,...a); try{ if(e&&projs.length>n0){ const f=e.facing||(Math.cos(ang)>=0?1:-1); for(let i=n0;i<projs.length;i++){ const q=projs[i]; if(q&&q.src===e){ q.x=cxOf(e)+f*6; q.y=e.y+12; } } } }catch(err){} return r; }; }
 // ===================== Beta 0.9.79: water in slope cells; no tiny puddles or thin films; wet chests and furniture =====================
 // 1. A sloped or stepped block beside water shows the water in its open part, up to the level of the water next to it
 //    (full when water stands on top). Drawing only: the block itself is unchanged.
@@ -13126,8 +13132,59 @@ $('#slotList').addEventListener('click',async ev=>{ const d=ev.target.closest('[
   try{ const o=readLocal('f_'+code); if(!o) throw 0; let z=o.z; if(z==='idb') z=await idbGet(slotKey('f_'+code)); if(!z) throw 0; const inIdb=await idbPut(slotKey(SHARED_SLOT),z); localStorage.setItem(slotKey(SHARED_SLOT),JSON.stringify({v:SAVE_V,savedAt:o.savedAt,summary:o.summary,z:inIdb?'idb':z}));
     renderSlots(); const p5=$('#slotList').querySelector('[data-play="5"]'); if(p5) p5.click(); else toast('Could not open that world',2); }catch(e){ toast('Could not open that world',2); renderSlots(); } },true);
 // ---- the option box and the words: on computers the box sits at the left (CSS); on phones the words move up above it ----
-{ const _sp=showPickList; showPickList=function(...a){ const r=_sp(...a); try{ const pl=$('#pickList'); document.body.classList.add('pick'); document.documentElement.style.setProperty('--pickh',(pl.offsetHeight||0)+'px'); }catch(e){} return r; };
-  try{ const pl=$('#pickList'); new MutationObserver(()=>{ if(pl.hidden) document.body.classList.remove('pick'); }).observe(pl,{attributes:true,attributeFilter:['hidden']}); }catch(e){} }
+function pickBoxFit(){ try{ const pl=$('#pickList'), tst=$('#toast'); document.documentElement.style.setProperty('--pickh',(pl.offsetHeight||0)+'px'); const th=tst&&tst.classList.contains('show')?(tst.offsetHeight||0):0; document.documentElement.style.setProperty('--toasth',th+'px'); }catch(e){} }
+let pickFitTimer=null;
+{ const _sp=showPickList; showPickList=function(...a){ const r=_sp(...a); try{ document.body.classList.add('pick'); pickBoxFit(); if(!pickFitTimer) pickFitTimer=setInterval(()=>{ const pl=$('#pickList'); if(pl.hidden){ clearInterval(pickFitTimer); pickFitTimer=null; return; } pickBoxFit(); },250); }catch(e){} return r; };
+  try{ const pl=$('#pickList'); new MutationObserver(()=>{ if(pl.hidden){ document.body.classList.remove('pick'); document.documentElement.style.setProperty('--toasth','0px'); } }).observe(pl,{attributes:true,attributeFilter:['hidden']}); }catch(e){} }
+// ===================== Beta 0.9.81: enemies run on every player's game, the host referees (the Terraria way) =====================
+// Until now a friend only watched the host's enemies, drawn 150 ms behind the host's last message, and every blow in either
+// direction crossed the network before it counted. Now, as in Terraria:
+// 1. A friend's game runs the enemies near them itself (netLocalStep: the same movement, chase and attack code the host
+//    runs, with the host's target when it names one). The host's samples are corrections: a small drift is pulled back
+//    smoothly, a big one (over 4 blocks) snaps. Bosses, the commander, ships, animals and the dragon stay as they were.
+// 2. An enemy that reaches a friend hurts them on their own game at once. The host's "hurt" notes about an enemy the
+//    friend runs are dropped (they carry the enemy's number now), so nothing counts twice; notes about bosses still count.
+//    The host's copies of that enemy's shots are dropped near it too, since the friend's game fires them.
+// 3. The number a friend saw is the number that counts: the host applies the friend's reported damage (within three
+//    times what the weapon could do) instead of rolling its own.
+// 4. Less traffic: when every friend runs enemies locally, the host sends an enemy whose health, target and attack have
+//    not changed only every second message (5 a second); changes always go out at once.
+// A friend announces this with presence `la`. An older host or friend keeps the previous behaviour.
+const NET_LOCAL=true;
+function netLocalOK(g){ return !!(NET_LOCAL&&g&&g.ghost&&!g.dead&&!g.localBad&&(g.kind==='monster'||g.kind==='human')&&!isBossEnt(g)&&!g.warlord&&g.mtype!=='ghost'&&typeof MP!=='undefined'&&MP.guest); }
+function netLocalStep(g,dt){ const ht=g.hostTarget; if(ht&&!ht.dead) g.target=ht;
+  try{ smartMoves(g,dt); updateAI(g,dt); }catch(e){ g.localBad=true; console.warn('local enemy failed',g.mtype||g.cls,e); return false; }
+  if(ht&&!ht.dead) g.target=ht; else if(g.target&&g.target.remote) g.target=null;
+  const q=netNow(g); if(q){ const ex=q.x-g.x, ey=q.y-g.y, d=Math.hypot(ex,ey); if(d>4*T){ g.x=q.x; g.y=q.y; } else if(d>1){ const k=Math.min(1,dt*3); g.x+=ex*k; g.y+=ey*k; } }
+  g.iframesG=Math.max(0,(g.iframesG||0)-dt); return true; }
+{ const _gm=mpGhostMove; mpGhostMove=function(g,dt,...a){ if(netLocalOK(g)&&netLocalStep(g,dt)) return; return _gm(g,dt,...a); }; }
+// the host's sample keeps the local attack and facing, and names the target the local run should keep
+{ const _mg=mpGhosts; mpGhosts=function(list,...a){ const keep=[]; try{ if(Array.isArray(list)) for(const m of list){ const g=MP.ghosts.get(m[0]); if(g&&netLocalOK(g)) keep.push([g,g.atkT,g.facing]); } }catch(e){}
+    const r=_mg(list,...a); try{ for(const [g,at,f] of keep){ g.atkT=at; g.facing=f; } if(Array.isArray(list)) for(const m of list){ const g=MP.ghosts.get(m[0]); if(g&&g.ghost) g.hostTarget=g.target||null; } }catch(e){} return r; }; }
+// a locally run enemy never hurts a friend's picture of another player (that player's own game does that)
+{ const _dmg=damage; damage=function(t,amt,src,...a){ if(t&&t.remote&&src&&src.ghost) return; return _dmg(t,amt,src,...a); }; }
+// host: each hurt note names the enemy; friend: notes about enemies it runs itself, and the host's copies of their shots, are dropped
+{ const _ph=mpProxyHurt; mpProxyHurt=function(t,amt,src,...a){ const n0=MP.hurtOut.length; const r=_ph(t,amt,src,...a); try{ if(MP.hurtOut.length>n0){ const last=MP.hurtOut[MP.hurtOut.length-1]; if(last.length===5) last.push(src&&src.nid||0); } }catch(e){} return r; }; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ try{ if(d&&MP.host&&!d.host) r.la=!!d.la;
+      if(MP.guest&&d&&d.host&&NET_LOCAL){ if(Array.isArray(d.hurt)) d.hurt=d.hurt.filter(h=>{ const g=h[5]?MP.ghosts.get(h[5]):null; return !(g&&netLocalOK(g)); });
+        if(Array.isArray(d.sh)&&d.sh.length){ const local=[...MP.ghosts.values()].filter(g=>netLocalOK(g)&&(g.ranged||g.kind==='human')); if(local.length) d.sh=d.sh.filter(s=>!local.some(g=>Math.abs(cxOf(g)-s[1])<24&&Math.abs(cyOf(g)-s[2])<28)); } } }catch(e){}
+    return _fp(r,d,...a); }; }
+// the number the friend saw rides with the hit; the host counts it
+{ const _gh=mpGhostHit; mpGhostHit=function(g,amt,...a){ const n0=MP.hitsOut.length; const ctx=netHitCtx||{}, src=ctx.src; const r=_gh(g,amt,...a);
+    try{ if(MP.hitsOut.length>n0){ let boost=1; try{ if(src&&player&&src.team===player.team) boost=allyBoost(); }catch(e){} const d=Math.max(1,Math.round(amt*boost*30/(30+(g.def||0)))); const last=MP.hitsOut[MP.hitsOut.length-1]; if(last.length===7) last.push(d); } }catch(e){} return r; }; }
+netHostHits=function(r,list){ const p=mpProxy(r), seen=MP.hitsSeen[r.key]||0; let mx=seen; const by=new Map(); for(const e of ents) if(e.nid&&!e.dead) by.set(e.nid,e);
+  for(const h of list){ const [nid,amt,sq,wid,gx,gy,kb,want]=h; if(!mpFresh('hit',r.key,sq,seen)) continue; mx=Math.max(mx,sq); const e=by.get(nid); if(!e||e.dead){ netReply(r.key,sq,0,1,nid); continue; }
+    if(gx!=null&&Math.abs(gx-e.x)>40*T) continue;
+    const px=p.x, py=p.y; if(gx!=null){ p.x=gx; p.y=gy; } const hp0=e.hp; try{ damage(e,amt,p,kb!=null?clamp(kb,0,400):120);
+      if(want!=null&&want>0&&want<=amt*3&&!e.dead&&e.hp<hp0){ const tgt=Math.max(0,hp0-want); if(Math.abs(e.hp-tgt)>0.5){ e.hp=tgt; if(e.hp<=0){ e.hp=0; kill(e,p); } } } } finally{ p.x=px; p.y=py; }
+    netReply(r.key,sq,Math.max(0,Math.round(hp0-Math.max(0,e.hp))),e.dead||e.hp<=0?1:0,nid); }
+  MP.hitsSeen[r.key]=mx; };
+// host: an enemy whose health, target and attack are unchanged goes out every second message when every friend runs enemies locally
+MP.mobLast=new Map();
+{ const _ml=mpMobList; mpMobList=function(...a){ const out=_ml(...a); try{ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length||!gs.every(r=>r.la)) return out; const odd=(MP.sendN||0)%2===1, now=performance.now(), keepNids=new Set();
+      const near=m=>gs.some(r=>Math.abs(m[2]-r.proxy.x)<12*T&&Math.abs(m[3]-r.proxy.y)<12*T);   // close to a friend: every message, like Terraria's NPCs near players
+      const res=out.filter(m=>{ const nid=m[0], st=`${m[5]}|${m[6]}|${m[9]||''}`; keepNids.add(nid); const last=MP.mobLast.get(nid); if(last&&last.st===st&&odd&&now-last.t<600&&!near(m)) return false; MP.mobLast.set(nid,{st,t:now}); return true; });
+      if(MP.mobLast.size>400) for(const k of MP.mobLast.keys()){ if(!keepNids.has(k)) MP.mobLast.delete(k); } return res.length||!out.length?res:out; }catch(e){ return out; } }; }
 })();
 </script>
 </body>
