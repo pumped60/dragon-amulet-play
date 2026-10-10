@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791606630"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791606630"><link rel="manifest" href="manifest.webmanifest?v=1791606630"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791607717"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791607717"><link rel="manifest" href="manifest.webmanifest?v=1791607717"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -148,6 +148,10 @@ body.sticks #btnTalk{ bottom:calc(var(--sb) + 40px); }
 #hudPreview .pvInfo{ font-size:6px; line-height:1.6; color:#fff; margin-top:3px; text-shadow:1px 1px 0 #000; } #hudPreview .pvGround{ position:absolute; left:0; right:0; bottom:0; height:34px; background:#6b4422; border-top:6px solid #5a9a3a; }
 #pickList{ position:fixed; left:50%; bottom:90px; transform:translateX(-50%); z-index:40; background:#1b1530; border:3px solid var(--gold); padding:8px; display:flex; flex-direction:column; gap:6px; min-width:220px; }
 #pickList button{ font-family:var(--font); font-size:9px; padding:10px; background:var(--panel2); color:var(--text); border:2px solid var(--edge); text-align:left; cursor:pointer; } #pickList button:hover{ border-color:var(--gold); }
+/* 0.9.80: on computers the option box sits at the left, clear of the words in the middle; on phones the words move up above it */
+body:not(.touch) #pickList{ left:16px; transform:none; bottom:calc(var(--sb) + 90px); max-width:320px; }
+body:not(.touch) #toast{ max-width:min(56vw,640px); }
+body.touch.pick #toast{ bottom:calc(var(--sb) + 104px + var(--pickh,0px)); }
 #dragGhost{ position:fixed; z-index:60; pointer-events:none; width:32px; height:32px; image-rendering:pixelated; opacity:.85; } #dragGhost img{ width:32px; height:32px; image-rendering:pixelated; }
 #itemTip img.big{ display:block; width:48px; height:48px; image-rendering:pixelated; margin:0 auto 6px; background:#2a2140; border:2px solid var(--edge-dim); padding:4px; }
 .bar.xp{ height:9px; } .bar.xp #xpfill{ background:linear-gradient(#8dff7a,#3fbf3a); height:100%; } .bar.xp span{ font-size:7px; line-height:9px; }
@@ -340,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.79</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.80</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -397,7 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.79</h3>
+    <h3>New in Beta 0.9.80</h3>
+    <p>Playing in a friend's world, an enemy you finish off dies on the spot instead of a moment later when the host confirms it (the loot still comes from the host right after). Every world you join is kept under Continue with its code, so you can open any of them again, not only the last one. On a computer the option box for a furnace, a villager or an animal now sits at the left of the screen, out of the way of what they say; on a phone it stays where it was and their words move up above it.</p>
+    <h3>Beta 0.9.79</h3>
     <p>Your hero works with the whole body: the arm reaches along the swing of a pick, axe, hoe or hammer with the tool in the hand, the body leans into each stroke, and placing a block reaches toward the spot with the block in hand. While the Quartermaster fixes up the village, sleeping moves the repairs along by the hours you slept, and he is the only villager there until the work is done: the Beast trainer, the Recruiter and any wanderer arrive when it is finished. The ruin looks the part before that: cobwebs in the corners and under the ceilings, crumbled stone and brick where the walls fell, broken planks and rubble on the floors. Water: sloped and stepped blocks beside water show the water in their open part; a puddle of one or two eighths standing alone, or water spread into a thin film over flat ground, dries up; a chest under water no longer pokes its lid through the water above it.</p>
     <h3>Beta 0.9.78</h3>
     <p>Water was checked against every block. Saplings and spores, cactus, sugar cane, the glowing cave plants, the giant grove plants, wall shards, banners, paintings and rugs are covered by water and come back when it drains, instead of holding it back or being lost. Crystal blocks no longer let water through. A bucket poured onto a plant covers it instead of breaking it. A grass block with a solid block on top turns to plain dirt. A sapling only goes on an empty cell: it never replaces a plant, a crop or anything else.</p>
@@ -662,7 +668,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.79</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.80</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -922,7 +928,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.79</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.80</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -941,7 +947,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.79', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.80', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12876,7 +12882,7 @@ function thinRun(i){ const x=i%W, y=(i/W)|0; const ok=j=>world[j]===B.WATER&&liq
   const edgeWater=(a%W>0&&world[a-1]===B.WATER)||(b%W<W-1&&world[b+1]===B.WATER);   // part of a bigger body: leave it
   if(edgeWater) return null; if(n>=FILM_RUN||n<=2) return [a,b]; return null; }
 function dryThin(list){ let n=0; for(const i of list){ if(world[i]!==B.WATER) continue; const r=thinRun(i); if(!r) continue; for(let j=r[0];j<=r[1];j++){ setWater(j,0); wake(j%W,(j/W)|0); n++; } } return n; }
-{ const _sw=stepWater; stepWater=function(budget,...a){ const before=wact&&wact.size?[...wact].slice(0,400):null; const r=_sw(budget,...a); try{ if(before&&!genning) dryThin(before); }catch(e){} return r; }; }
+{ const _sw=stepWater; stepWater=function(budget,...a){ let before=null; if(wact&&wact.size){ const all=[...wact]; before=all.length>3000?all.slice(-3000):all; } const r=_sw(budget,...a); try{ if(before&&!genning) dryThin(before); }catch(e){} return r; }; }
 function dryThinAll(){ const list=[]; for(let i=W;i<W*H-W;i++) if(world[i]===B.WATER&&liq[i]<=FILM_LV) list.push(i); return dryThin(list); }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.filmV&&!isGuest()){ home.filmV=1; if(dryThinAll()) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
@@ -13085,6 +13091,43 @@ document.addEventListener('visibilitychange',()=>{ if(document.hidden&&typeof MP
 { const _ms=mpSend; mpSend=function(...a){ try{ if(MP.host&&home&&mpNid>(home.mpNid||0)) home.mpNid=mpNid; }catch(e){} return _ms(...a); }; }
 { const _mh=mpHost; mpHost=async function(...a){ try{ if(home&&home.mpNid) mpNid=Math.max(mpNid,home.mpNid); }catch(e){} return _mh(...a); }; }
 { const _as=applySnapshot; applySnapshot=function(...a){ const r=_as(...a); try{ if(MP.taken&&MP.taken.clear) MP.taken.clear(); else MP.taken=new Set(); for(const k of Object.keys(MP.seenSets||{})) if(k.startsWith('hr|')) delete MP.seenSets[k]; }catch(e){} return r; }; }
+// ===================== Beta 0.9.80: a friend's kills show at once; every world you join is kept under Continue =====================
+// 1. On a friend's game an enemy whose predicted health reaches zero dies on the spot (the same number the hit shows),
+//    instead of waiting for the host's answer: the kill effects and the experience come now, the ghost goes, and the host's
+//    next messages about it are ignored for 1.5 s (MP.predKills) so it does not flicker back while the answer is on its
+//    way. If the host answers that it survived (or never confirms), it comes back. Bosses and animals are never guessed.
+//    The loot still comes from the host a moment later. (Option B, chosen by Kinard over moving enemies to the nearest player.)
+// 2. A world you join is saved under its code as well as in Friend's world (slot 5): Continue lists every one of them
+//    (FW_KEY, slot keys f_<code>); Play copies it into slot 5 and opens it, Delete forgets it.
+MP.predKills=new Map();
+function predictKill(g){ const now=performance.now(); g.killShown=true; try{ puff(cxOf(g),cyOf(g),'#e8e4d8',10,90); bleed(g,8); if(typeof sfx==='function') sfx('kill',cxOf(g),cyOf(g)); }catch(e){} try{ awardXp(g); }catch(e){}
+  g.dead=true; MP.ghosts.delete(g.nid); MP.predKills.set(g.nid,{t:now,sq:MP.hitSeq}); }
+{ const _gh=mpGhostHit; mpGhostHit=function(g,amt,...a){ if(!g||g.iframesG>0) return _gh(g,amt,...a); const hp0=(g.predHp!=null&&g.predRaw!=null)?g.predRaw:g.hp; const ctx=netHitCtx||{}, src=ctx.src;
+    const r=_gh(g,amt,...a); try{ if(!MP.netHost||g.dead) return r; let boost=1; try{ if(src&&player&&src.team===player.team) boost=allyBoost(); }catch(e){} const d=Math.max(1,Math.round(amt*boost*30/(30+(g.def||0))));
+      g.predRaw=hp0-d; if(g.predRaw<=0&&g.kind!=='animal'&&!g.boss&&!g.warlord&&!g.bigBoss&&!g.isBoss) predictKill(g); }catch(e){} return r; }; }
+// the host's list skips a guessed kill for a moment; a late answer that it lived brings it back
+{ const _mg=mpGhosts; mpGhosts=function(list,...a){ try{ if(MP.predKills.size&&Array.isArray(list)){ const now=performance.now(); list=list.filter(m=>{ const rec=MP.predKills.get(m[0]); if(!rec) return true; if(now-rec.t>1500){ MP.predKills.delete(m[0]); return true; } return false; }); } }catch(e){} return _mg(list,...a); }; }
+{ const _hr=netHitReplies; netHitReplies=function(list,...a){ try{ if(MP.predKills.size) for(const [key,sq,dealt,dead,nid] of list){ if(key!==MP.myKey) continue; const rec=MP.predKills.get(nid); if(!rec) continue; if(dead) MP.predKills.delete(nid); else if(sq>=rec.sq) MP.predKills.delete(nid); } }catch(e){} return _hr(list,...a); }; }
+// ---- every joined world under Continue ----
+const FW_KEY='dragonamulet-fworlds';
+function fwList(){ try{ return JSON.parse(localStorage.getItem(FW_KEY)||'[]').filter(c=>typeof c==='string'); }catch(e){ return []; } }
+function fwRemember(code){ const L=fwList().filter(c=>c!==code); L.unshift(code); while(L.length>8) L.pop(); try{ localStorage.setItem(FW_KEY,JSON.stringify(L)); }catch(e){} }
+function fwForget(code){ try{ localStorage.setItem(FW_KEY,JSON.stringify(fwList().filter(c=>c!==code))); localStorage.removeItem(slotKey('f_'+code)); idbDel(slotKey('f_'+code)); }catch(e){} }
+{ const _sl=saveLocal; saveLocal=async function(...a){ const r=await _sl(...a); try{ if(r&&typeof MP!=='undefined'&&MP.guest&&MP.code){ const code=String(MP.code).toUpperCase(), key=slotKey('f_'+code); const inIdb=await idbPut(key,r.z);
+        localStorage.setItem(key,JSON.stringify({v:SAVE_V,savedAt:r.savedAt,summary:Object.assign({},r.summary,{code}),z:inIdb?'idb':r.z})); fwRemember(code);
+        const m5=readLocal(SHARED_SLOT); if(m5){ m5.summary=Object.assign({},m5.summary,{code}); localStorage.setItem(slotKey(SHARED_SLOT),JSON.stringify(m5)); } } }catch(e){ console.warn(e); } return r; }; }
+{ const _rs=renderSlots; renderSlots=function(...a){ const r=_rs(...a); try{ const s5=readLocal(SHARED_SLOT), c5=s5&&s5.summary&&s5.summary.code; const rows=[];
+      for(const code of fwList()){ if(code===c5) continue; const o=readLocal('f_'+code); if(!o) continue; const sm=o.summary||{};
+        const title=`<b>Friend's world: ${escapeHTML(sm.shared||'a friend')}'s${sm.wname?' '+escapeHTML(sm.wname):''}</b> <span class="muted">(code ${escapeHTML(code)}, your copy from playing together)</span>`;
+        rows.push(`<div class="saverow"><button class="savebig" data-fplay="${escapeHTML(code)}"><span>${title}<br><span class="muted">${saveLabel(o)}</span></span></button><button class="savedel" data-fdel="${escapeHTML(code)}">Delete</button></div>`); }
+      if(rows.length) $('#slotList').insertAdjacentHTML('beforeend',rows.join('')); }catch(e){ console.warn(e); } return r; }; }
+$('#slotList').addEventListener('click',async ev=>{ const d=ev.target.closest('[data-fdel]'); if(d){ ev.stopImmediatePropagation(); ev.preventDefault(); if(d.dataset.arm!=='1'){ d.dataset.arm='1'; d.textContent='Sure?'; return; } fwForget(d.dataset.fdel); renderSlots(); return; }
+  const b=ev.target.closest('[data-fplay]'); if(!b) return; ev.stopImmediatePropagation(); ev.preventDefault(); const code=b.dataset.fplay; b.textContent='Loading…';
+  try{ const o=readLocal('f_'+code); if(!o) throw 0; let z=o.z; if(z==='idb') z=await idbGet(slotKey('f_'+code)); if(!z) throw 0; const inIdb=await idbPut(slotKey(SHARED_SLOT),z); localStorage.setItem(slotKey(SHARED_SLOT),JSON.stringify({v:SAVE_V,savedAt:o.savedAt,summary:o.summary,z:inIdb?'idb':z}));
+    renderSlots(); const p5=$('#slotList').querySelector('[data-play="5"]'); if(p5) p5.click(); else toast('Could not open that world',2); }catch(e){ toast('Could not open that world',2); renderSlots(); } },true);
+// ---- the option box and the words: on computers the box sits at the left (CSS); on phones the words move up above it ----
+{ const _sp=showPickList; showPickList=function(...a){ const r=_sp(...a); try{ const pl=$('#pickList'); document.body.classList.add('pick'); document.documentElement.style.setProperty('--pickh',(pl.offsetHeight||0)+'px'); }catch(e){} return r; };
+  try{ const pl=$('#pickList'); new MutationObserver(()=>{ if(pl.hidden) document.body.classList.remove('pick'); }).observe(pl,{attributes:true,attributeFilter:['hidden']}); }catch(e){} }
 })();
 </script>
 </body>
