@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791740473"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791740473"><link rel="manifest" href="manifest.webmanifest?v=1791740473"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791759855"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791759855"><link rel="manifest" href="manifest.webmanifest?v=1791759855"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.90</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.95</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,17 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.90</h3>
+    <h3>New in Beta 0.9.95</h3>
+    <p>A building whose base is blown away crumbles straight down where it stood instead of tipping over: its blocks break apart and fall in a cloud of dust, and it lands as a heap of crumbled back walls.</p>
+    <h3>Beta 0.9.94</h3>
+    <p>Your war machines hold their ground: when an enemy comes in range they stay where they are and fire, and they reach farther (ballista 34 blocks, cannon 28, trebuchet 50). They follow you again a few seconds after the fight, without shuffling or hopping. Enemy armies fight in formation when they are three or more with two kinds of soldier: their toughest melee in the front rank (bracing against your blows), the rest in ranks behind, and their archers and mages behind the melee.</p>
+    <h3>Beta 0.9.93</h3>
+    <p>Buildings go up where the ground is clear: drifting mist, bushes and flowers are cleared away, and a small bump in the ground under the spot is dug out (tall towers used to be refused by the mist above them). On a phone, Cancel is a small button at the bottom of the screen while you place a building. Bombs, cannonballs and trebuchet boulders also break the back walls in the space they blow open: dirt, stone, wood and the rest. In the test world, the God menu's World tab sets the day and the time, claims the village at once, and sets off an enemy raid, a siege army (and brings it straight to your village), a dragon raid, enemy war machines, a monster wave, or damage to your village to try the repairs.</p>
+    <h3>Beta 0.9.92</h3>
+    <p>When the enemy damages your village (cannons, trebuchets, bombs, fire), talk to your Quartermaster: he offers to repair it and puts every broken block back over part of a day, faster while you sleep. When you beat an enemy faction, its last soldiers surrender and join you straight away. Its own helpers leave and a new Quartermaster arrives at its castle: talk to him to fix up the castle and claim it, putting back what the battle broke, and a Recruiter and a Beast trainer move in. If any of them is lost, a new one comes.</p>
+    <h3>Beta 0.9.91</h3>
+    <p>Enemy siege engines break the walls of your village: houses, shops and the castle walls can be holed by cannonballs and trebuchet boulders, and a house whose base is blown away falls down. The castle never falls down whole, and chests keep their contents. Your own bombs still never harm your village. Rebuild what they break, or stop the engines before they fire.</p>
+    <h3>Beta 0.9.90</h3>
     <p>War machines miss sometimes: a ballista hits about three shots in four, a cannon three in five, a trebuchet one in two (a little better when you work it yourself), and a miss lands a few blocks wide. Their blasts are bigger, with smaller bursts around the main one, more smoke, and battle smoke lasts half as long again. Cannonballs and boulders leave scorched ground around the crater, like bombs. Blow away the base of a building with bombs or war machines and it comes down: a tall tower topples over like a tree, a house drops onto its ruins, and what falls becomes crumbled back walls instead of dropping blocks (anything in a chest spills out). Castles and your own village never fall.</p>
     <h3>Beta 0.9.89</h3>
     <p>Siege armies: from day 15, every 5 days one enemy faction sends a bigger army against your village with a cannon and a ballista, and from day 20 a trebuchet too. Their engines set up outside your walls with archer crews; kill the crews or wreck the engines. Scouts warn you the evening before. Siege fire hurts anyone in your village but breaks none of its blocks. Ordinary raids still come on other days (from day 5, about one morning in five) and from day 15 bring a ballista. Cannonballs and trebuchet boulders burst in a fireball with a shock ring, flying debris and smoke, and nearby blasts shake the screen.</p>
@@ -692,7 +702,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.90</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.95</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -955,7 +965,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.90</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.95</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -974,7 +984,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.90', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.95', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3600,7 +3610,7 @@ function fireMachine(m,tx,ty){ const M=MACHINES[m.mtype]; const sx=cxOf(m)+m.fac
   puff(sx+m.facing*14,sy,'#d8d4c8',M.kind==='ball'?10:4,90); }
 function blastBlocks(px,py,r,team){ if(!player||!team||!['g','b','r'].includes(team)) return; const foe=team!==player.team; const tx=Math.floor(px/T), ty=Math.floor(py/T), rt=Math.max(1,Math.round(r/T*0.6));
   for(let y=ty-rt;y<=ty+rt;y++) for(let x=tx-rt;x<=tx+rt;x++){ if((x-tx)**2+(y-ty)**2>rt*rt) continue; const id=tileAt(x,y); if(!id||id===B.WATER||id===B.LAVA) continue; const b=BLOCKS[id]; if(!b||b.hard===Infinity||id===B.BLACK_LAYER||isChestId(id)||id===B.PORTAL||id===B.CAGE) continue;
-    if(foe){ if(bases.some(bb=>bb.f===team&&x>=bb.x0-12&&x<=bb.x1+70)) continue; if(home&&Math.abs(x-home.castleCx)<=19) continue; } else { if(home&&home.claimed&&x>=home.x0-4&&x<=home.x1+8) continue; if(bases.some(bb=>bb.f===player.team&&x>=bb.x0-12&&x<=bb.x1+70)) continue; }
+    if(foe){ if(bases.some(bb=>bb.f===team&&x>=bb.x0-12&&x<=bb.x1+70)) continue; }   /* 0.9.91: enemy fire breaks your village's walls, the castle's too */ else { if(home&&home.claimed&&x>=home.x0-4&&x<=home.x1+8) continue; if(bases.some(bb=>bb.f===player.team&&x>=bb.x0-12&&x<=bb.x1+70)) continue; }
     setTile(x,y,0); if(Math.random()<0.75){ const dr=b.drop===undefined?id:b.drop; if(dr) spawnDrop(x*T+8,y*T+8,dr,1); } } }
 const SCORCH={[B.GRASS]:B.ASH,[B.PLANK]:B.CHAR_PLANK,[B.TIMBER]:B.CHAR_PLANK,[B.DARK_PLANK]:B.CHAR_PLANK,[B.ROOF]:0,[B.SHINGLE_B]:0,[B.PLASTER]:B.CHAR_PLANK};
 function scorch(px,py,team){ if(!player||!team||!['g','b','r'].includes(team)) return; const foe=team!==player.team; const tx=Math.floor(px/T), ty=Math.floor(py/T);
@@ -13824,7 +13834,7 @@ function builtSet(){ if(BUILT) return BUILT; BUILT=new Set();
 const isBuilt=id=>!!id&&builtSet().has(id);
 const isStoreCell=(x,y)=>{ try{ return typeof storeKeyAt==='function'&&!!storeKeyAt(x,y); }catch(e){ return false; } };
 // places that never fall: castles, your village, realm castles, the lair, the wizard tower island
-function fallProtected(x,y){ if(home){ if(Math.abs(x-home.castleCx)<=20) return true; if(home.claimed&&x>=home.x0-4&&x<=home.x1+8) return true; }
+function fallProtected(x,y){ if(home){ if(Math.abs(x-home.castleCx)<=20) return true; }   // 0.9.91: village houses can fall; the castle never does
   if(bases.some(b=>Math.abs(x-b.cx)<=18)) return true; if(typeof inProtected==='function'&&inProtected(x)) return true;
   if(typeof lair!=='undefined'&&lair&&x>=lair.rx0-8&&x<=lair.rx1+8&&y>=lair.ry0-8&&y<=lair.ry1+8) return true;
   if(typeof skyOff!=='undefined'&&y<skyOff) return true; if(typeof magmaY!=='undefined'&&y>=magmaY) return true; return false; }
@@ -13849,7 +13859,7 @@ function collapseCheck(px,py,R){ if(!world||isGuest()) return 0; const tx=Math.f
 // the fall: take the blocks out, draw them falling, then lay crumbled back walls where they land. A tall building (a tower)
 // tips over its bottom corner like a tree; a wide one (a house) drops onto what is left beneath it, leaning a little
 function topple(cells,fromX){ let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; const bot=new Map(); for(let i=0;i<cells.length;i+=2){ const x=cells[i], y=cells[i+1]; x0=Math.min(x0,x); x1=Math.max(x1,x); y0=Math.min(y0,y); y1=Math.max(y1,y); bot.set(x,Math.max(bot.get(x)??-1,y)); }
-  const mode=(y1-y0+1)>=(x1-x0+1)*0.8?'tip':'drop';
+  const mode='drop';   // 0.9.95: every building crumbles straight down where it stood (towers no longer tip over)
   const dir=((x0+x1+1)/2*T>=fromX)?1:-1, pX=(dir>0?x1+1:x0)*T, pY=(y1+1)*T; const list=[];
   for(let i=0;i<cells.length;i+=2){ const x=cells[i], y=cells[i+1]; list.push([x*T-pX,y*T-pY,world[y*W+x]]); }
   const keys=new Set(); for(let i=0;i<cells.length;i+=2){ const k=isStoreCell(cells[i],cells[i+1])&&storeKeyAt(cells[i],cells[i+1]); if(k) keys.add(k); }
@@ -13865,13 +13875,14 @@ function startFall(pX,pY,dir,list,real,mode,drop){ FALLS.push({pX,pY,dir,list,an
 function fallTick(dt){ for(let i=FALLS.length-1;i>=0;i--){ const f=FALLS[i]; f.t+=dt;
     if(!f.landed){ let done;
       if(f.mode==='tip'){ f.av+=2.6*dt; f.ang=Math.min(Math.PI/2,f.ang+f.av*dt); done=f.ang>=Math.PI/2; }
-      else { f.vy+=900*dt; f.off=Math.min(f.drop,f.off+f.vy*dt); f.ang=Math.min(0.16,f.ang+0.5*dt); done=f.off>=f.drop&&f.t>0.35; }
+      else { f.vy+=900*dt; f.off=Math.min(f.drop,f.off+f.vy*dt); f.ang=0; f.crum=Math.min(1,f.t/0.7); done=f.off>=f.drop&&f.t>0.7;
+        if(Math.random()<dt*30){ const c=f.list[(Math.random()*f.list.length)|0]; if(c) puff(f.pX+c[0]+8,f.pY+f.off+c[1]+8,'#9a8a78',2,40); } }   // dust as it crumbles
       if(done||f.t>2.5){ f.landed=true; f.lt=0; if(f.real) landFall(f); else fallDust(f); } }
     else { f.lt+=dt; if(f.lt>0.6) FALLS.splice(i,1); } } }
 const fallPos=(f,c)=>{ const a=f.ang, cx=c[0]+T/2, cy=c[1]+T/2, s=Math.sin(a*f.dir), co=Math.cos(a*f.dir); return [f.pX+cx*co-cy*s, f.pY+f.off+cx*s+cy*co]; };
 function fallDust(f){ for(const c of f.list) if(Math.random()<0.35){ const [x,y]=fallPos(f,c); puff(x,y,'#9a8a78',3,70); } try{ shakeAmp=Math.max(shakeAmp,5); shakeT=0.4; }catch(e){} }
 // where it lands: a heap of crumbled back walls about half as tall as the pile of blocks in that column (most 6), and a hard knock for anyone under it
-const setBgF=(x,y,v)=>{ const i=y*W+x; if(bg[i]===v) return; bg[i]=v; if(facCap) facCap.push([x,y,v,1]); if(explored[i]) mapPixel(x,y); };
+const setBgF=(x,y,v)=>{ const i=y*W+x; if(bg[i]===v) return; if(typeof DMG!=='undefined'&&DMG>0) noteDmg(x,y); bg[i]=v; if(facCap) facCap.push([x,y,v,1]); if(explored[i]) mapPixel(x,y); };
 function landFall(f){ const cols=new Map(), woody=new Map();
   for(const c of f.list){ const [x,y]=fallPos(f,c); const tx=Math.floor(x/T); cols.set(tx,(cols.get(tx)||0)+1); const nm=(BLOCKS[c[2]]&&BLOCKS[c[2]].name||'').toLowerCase(); if(/plank|wood|timber|log|thatch|door|bed|table|chair|fence/.test(nm)) woody.set(tx,(woody.get(tx)||0)+1); }
   // one pass per column: a heap of crumbled back walls on the ground (about half as tall as the blocks that landed there, at
@@ -13887,7 +13898,8 @@ function landFall(f){ const cols=new Map(), woody=new Map();
   for(const e of ents){ if(e.dead||e.kind==='machine') continue; const ex=cxOf(e)/T; if(ex<x0||ex>x1+1||Math.abs(e.y+e.h-f.pY-f.off)>4*T) continue; try{ damage(e,30,{x:cxOf(e),w:1,team:'wild',kind:'proj'},160); }catch(err){} }
   fallDust(f); }
 function drawFalls(){ for(const f of FALLS){ const a=f.landed?Math.max(0,1-f.lt/0.6):1; ctx.save(); ctx.globalAlpha=a; ctx.translate(f.pX,f.pY+f.off); ctx.rotate(f.ang*f.dir);
-    for(const c of f.list){ const tex=TEX[c[2]]; if(tex) ctx.drawImage(tex,c[0],c[1],T,T); else { ctx.fillStyle=(BLOCKS[c[2]]&&BLOCKS[c[2]].col)||'#8a7a68'; ctx.fillRect(c[0],c[1],T,T); } }
+    for(const c of f.list){ const tex=TEX[c[2]]; const k=f.crum||0, h=((c[0]*73+c[1]*151)&255)/255, dx=(h-0.5)*10*k, dy=-Math.min(f.off,(-c[1]/T)*3*k*(0.4+h)); const X=c[0]+dx, Y=c[1]+dy;
+      if(tex) ctx.drawImage(tex,X,Y,T,T); else { ctx.fillStyle=(BLOCKS[c[2]]&&BLOCKS[c[2]].col)||'#8a7a68'; ctx.fillRect(X,Y,T,T); } }
     ctx.restore(); } }
 { const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ if(FALLS.length) drawFalls(); }catch(e){} return r; }; }
 { const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(FALLS.length) fallTick(dt); }catch(e){} return r; }; }
@@ -14364,6 +14376,85 @@ const MAGMA_MON=['magma_salamander','ash_wraith','obsidian_beetle'];
       for(let k=0;k<3;k++){ R(5+k*5,12+s,2,4-s,c1); R(7+k*5,12+(1-s),1,4-(1-s),c1); } R(3,4,17,9,c1); R(5,2,13,2,c1); R(6,4,4,2,c2); R(12,5,5,2,c2); R(7,5,1,1,c3); R(14,6,1,1,c3); R(11,4,1,9,'#0a060e');
       R(19,7,5,5,c1); R(22,8,1,1,'#ff5a1a'); R(23,10+(atk?1:0),3,1,c2); R(23,11+(atk?1:0),2,1,c2); return; }
     return _hf(g,o,...a); }; }
+// ===== Beta 0.9.92: the Quartermaster repairs damage; captured castles are fixed up and claimed (Kinard, 2026-10-11) =====
+// 1. Damage is remembered: whatever blasts, fire, scorching or a falling building change inside your village or an enemy
+//    base (and what you dig out of an enemy base before you claim it) is kept cell by cell in home.dmg[site], as it was.
+// 2. Your Quartermaster offers to repair it: the cells come back from the ground up over part of a day (sleeping helps).
+// 3. A captured base surrenders at once: its last soldiers join you (no choice to make). Its old helpers leave and a new
+//    Quartermaster arrives; talk to him to fix up the castle and claim it, and a Recruiter and a Beast trainer move in.
+//    Missing helpers come back by themselves.
+const DMG_MAX=8000;
+let DMG=0;   // above zero while something destructive runs
+function dmgSites(){ const L=[]; if(home&&home.claimed&&!home.fixup) L.push({key:'home',x0:home.x0-6,x1:home.x1+8,y0:home.gy-40,y1:home.gy+3});
+  for(const b of bases||[]) if(b.f!==(player&&player.team)) L.push({key:b.f,b,x0:b.x0-6,x1:b.x1+8,y0:b.gy-40,y1:b.gy+3}); return L; }
+function dmgSiteAt(x,y){ for(const s of dmgSites()) if(x>=s.x0&&x<=s.x1&&y>=s.y0&&y<=s.y1) return s; return null; }
+function noteDmg(x,y){ if(!home||!world||isGuest()||x<0||y<0||x>=W||y>=H) return; const s=dmgSiteAt(x,y); if(!s) return;
+  const D=home.dmg=home.dmg||{}, N=home.dmgN=home.dmgN||{}; const L=D[s.key]=D[s.key]||{}; const k=x+','+y; if(k in L) return; if((N[s.key]||0)>=DMG_MAX) return;
+  const i=y*W+x; L[k]=[world[i],bg[i],shape?shape[i]:0]; N[s.key]=(N[s.key]||0)+1; }
+{ const _st=setTile; setTile=function(x,y,id,...a){ if(DMG>0){ try{ noteDmg(x,y); }catch(e){} } return _st(x,y,id,...a); }; }
+const dmgWrap=fn=>function(...a){ DMG++; try{ return fn(...a); } finally{ DMG--; } };
+blastBlocks=dmgWrap(blastBlocks); bombBlast=dmgWrap(bombBlast); machineScar=dmgWrap(machineScar); scorch=dmgWrap(scorch); collapseCheck=dmgWrap(collapseCheck); fallTick=dmgWrap(fallTick); fireTick=dmgWrap(fireTick);
+// what you dig out of an enemy base before it is claimed is put back when it is fixed up
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const s=dmgSiteAt(x,y); const log=s&&s.key!=='home'&&!(home.cap&&home.cap[s.key]&&home.cap[s.key].claimed); if(log) DMG++; try{ return _bt(x,y,...a); } finally{ if(log) DMG--; } }; }
+
+// ---- 2. repairs: the logged cells that differ from how they were, put back from the ground up ----
+function repairCells(key){ const L=home&&home.dmg&&home.dmg[key]; if(!L) return []; const out=[];
+  for(const k in L){ const [x,y]=k.split(',').map(Number), [w,b,s]=L[k], i=y*W+x; if(world[i]===w&&bg[i]===b) continue; try{ if(storeKeyAt(x,y)) continue; }catch(e){} out.push([x,y,w,b,s]); }
+  return out.sort((a,b)=>b[1]-a[1]||a[0]-b[0]); }
+const repairCount=key=>repairCells(key).length;
+function startRepair(key,claim){ if(isGuest()) return 0; const cells=repairCells(key); if(home.dmg) delete home.dmg[key]; if(home.dmgN) home.dmgN[key]=0;
+  const J=home.repairs=home.repairs||{}; J[key]={cells,i:0,acc:0,days:clamp(cells.length/500,0.12,0.9),claim:!!claim};
+  if(!cells.length) repairDone(key); return cells.length; }
+function repairStep(key,dt,quiet){ const J=home.repairs[key]; const n=J.cells.length; J.acc+=n/(DAY_LEN*J.days)*dt; let k=Math.floor(J.acc); if(k<1&&J.i<n) return; J.acc-=k;
+  facRun(()=>{ while(k-->0&&J.i<n){ const [x,y,w,b,s]=J.cells[J.i++], i=y*W+x; if(world[i]!==w) setTile(x,y,w); if(shape&&shape[i]!==s){ shape[i]=s; } if(bg[i]!==b){ bg[i]=b; if(facCap) facCap.push([x,y,b,1]); } if(explored[i]) mapPixel(x,y);
+      if(!quiet&&J.i%5===0){ puff(x*T+8,y*T+8,'#d8c8a0',3,50); if(player&&Math.abs(x*T-cxOf(player))<30*T) sfx('hit',x*T,y*T); } } });
+  if(J.i>=n) repairDone(key); }
+function repairTick(dt,quiet){ if(!home||!home.repairs||isGuest()) return; for(const key of Object.keys(home.repairs)) try{ repairStep(key,dt,quiet); }catch(e){ console.warn(e); delete home.repairs[key]; } }
+function repairDone(key){ const J=home.repairs[key]; delete home.repairs[key]; const xs=J.cells.map(c=>c[0]); if(xs.length){ for(let x=Math.min(...xs);x<=Math.max(...xs);x++) updateSkyTop(x); }
+  if(key==='home'){ try{ fixStations(); }catch(e){} toast('Quartermaster: "The village is mended. Good as new."',4); return; }
+  const b=bases.find(o=>o.f===key); if(!b) return;
+  if(J.claim){ capState(key).claimed=true; capHelpers(b); toast(`The ${FNAME[key].toLowerCase()} castle is fixed up and yours. A Recruiter and a Beast trainer move in.`,5); }
+  else toast(`Quartermaster: "The ${FNAME[key].toLowerCase()} castle is mended."`,4); }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') repairTick(dt,false); }catch(e){} return r; }; }
+{ const _si=sleepIn; sleepIn=function(x,y,...a){ const t0=time, d0=dayCount; const r=_si(x,y,...a); try{ if(home&&home.repairs&&Object.keys(home.repairs).length&&(dayCount>d0||time<t0)){ repairTick(((dayCount-d0)+time-t0)*DAY_LEN,true); toast('The Quartermaster worked through the night on the repairs.',3); } }catch(e){} return r; }; }
+const repairPct=key=>{ const J=home.repairs&&home.repairs[key]; return J?Math.round(100*J.i/Math.max(1,J.cells.length)):100; };
+
+// ---- 3. captured bases: helpers, fix-up and claim ----
+function capState(f){ const C=home.cap=home.cap||{}; return C[f]=C[f]||{claimed:false}; }
+function capVillager(b,role,name,k){ const v=makeVillager(b.f,{x0:b.cx-8+k*6,x1:b.cx-5+k*6,gy:b.gy,role}); v.name=name; v.capOf=b.f; ents.push(v); puff(cxOf(v),cyOf(v),'#e8e4d8',8,60); return v; }
+const capHas=(b,role)=>ents.some(e=>!e.dead&&e.kind==='villager'&&e.role===role&&e.team===b.f&&Math.abs(cxOf(e)/T-b.cx)<70);
+function capHelpers(b){ if(!capHas(b,'recruiter')) capVillager(b,'recruiter','Recruiter',0); if(!capHas(b,'trainer')) capVillager(b,'trainer','Beast trainer',2); }
+function onConquer(b){ const st=capState(b.f); st.day=dayCount;
+  for(const e of ents) if(!e.dead&&e.kind==='villager'&&e.team===b.f&&['recruiter','quarter','trainer'].includes(e.role)&&!e.capOf){ e.dead=true; puff(cxOf(e),cyOf(e),'#e8e4d8',6,60); }   // the faction's own helpers leave
+  capVillager(b,'quarter','Quartermaster',1);
+  toast(`A Quartermaster arrives at the ${FNAME[b.f].toLowerCase()} castle. Talk to him to fix it up and claim it.`,5); }
+let capHelpT=0;
+function capTick(dt){ if((capHelpT-=dt)>0||!player||!home||isGuest()) return; capHelpT=2;
+  for(const b of bases){ if(b.f===player.team) continue; const C=home.cap||{};
+    if(!conquered[b.f]){ if(C[b.f]) delete C[b.f]; continue; }   // the village broke away: a new capture starts over
+    if(!C[b.f]){ onConquer(b); continue; }
+    if(!capHas(b,'quarter')) capVillager(b,'quarter','Quartermaster',1);   // helpers come back no matter what
+    if(C[b.f].claimed) capHelpers(b); } }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') capTick(dt); }catch(e){ console.warn(e); } return r; }; }
+// talking to a Quartermaster: fix up and claim a captured castle, or repair what the enemy broke
+{ const _os=openShop; openShop=function(v,...a){ try{ if(v&&v.kind==='villager'&&v.role==='quarter'&&player){
+        const capB=v.team!==player.team&&conquered[v.team]&&bases.find(b=>b.f===v.team);
+        if(capB){ const f=capB.f, st=capState(f);
+          if(home.repairs&&home.repairs[f]){ toast(`Quartermaster: "The work is ${repairPct(f)}% done. Give us a little longer."`,3); return; }
+          if(isGuest()){ toast('Only the host can ask the Quartermaster to fix up a castle',3); return; }
+          if(!st.claimed){ const n=repairCount(f); toast(`Quartermaster: "This castle took a beating${n?` (${n} blocks to put right)`:''}. Say the word and we fix it up for you."`,5);
+            showPickList([{label:'Fix up the castle and claim it',go:()=>{ const c=startRepair(f,true); if(c) toast(`The Quartermaster gets to work: about ${Math.round(home.repairs[f]?home.repairs[f].days*24:0)} hours.`,4); }},{label:'Not yet',go:()=>{}}]); return; }
+          const n=repairCount(f); if(n){ showPickList([{label:`Repair the castle (${n} blocks)`,go:()=>startRepair(f,false)},{label:'Trade',go:()=>_os(v,...a)}]); return; } }
+        else if(v.team===player.team&&home&&home.claimed&&!home.fixup){
+          if(home.repairs&&home.repairs.home){ toast(`Quartermaster: "The repairs are ${repairPct('home')}% done."`,3); return _os(v,...a); }
+          const n=repairCount('home'); if(n&&!isGuest()){ toast(`Quartermaster: "The enemy has done some damage (${n} blocks). Shall we put it right?"`,4);
+            showPickList([{label:`Repair the village (${n} blocks)`,go:()=>{ startRepair('home',false); toast('The Quartermaster and his crew get to work on the repairs.',3); }},{label:'Trade',go:()=>_os(v,...a)}]); return; } } } }catch(e){ console.warn(e); }
+    return _os(v,...a); }; }
+// a captured base surrenders at once: the soldiers still standing join you (you are no longer asked)
+captureTick=function(dt){ capOfferT-=dt; if(capOfferT>0||!player||player.dead||state!=='play'||isGuest()) return; capOfferT=2;
+  for(const b of bases){ if(conquered[b.f]) continue; const n=facPeopleOnIsland(b).length; if(!b.peakIsl&&b.peakAll) b.peakIsl=b.peakAll; b.peakIsl=Math.max(b.peakIsl||0,n); if(!b.peakIsl) continue;
+    const lord=ents.some(e=>!e.dead&&e.warlord&&e.cmdBase===b); if(lord||n>0.25*b.peakIsl) continue;
+    const [s,e]=islandOf(b); const sold=facSoldiers(b.f).filter(o=>{ const x=cxOf(o)/T; return x>=s-4&&x<=e+4; }); surrender(b,sold); capHelpT=0; break; } };
 // ===== Beta 0.9.89: siege armies with cannons and trebuchets, and bigger explosions (Kinard, 2026-10-11) =====
 
 // ---- 1. explosions: cannonballs and trebuchet boulders burst in a fireball with a shock ring, flying debris, smoke and a shake ----
@@ -14386,12 +14477,11 @@ function drawBlasts(){ for(const b of BLASTS){ if(b.t<0) continue; const f=b.t/b
     ctx.globalAlpha=Math.max(0,0.8*(1-f)); ctx.strokeStyle='#fff0c0'; ctx.lineWidth=Math.max(1,4*(1-f)); ctx.beginPath(); ctx.arc(b.x,b.y,b.r*(0.4+1.6*f),0,Math.PI*2); ctx.stroke();   // the shock ring
     const sa=Math.max(0,0.5*(1-f)); if(f>0.25&&sa>0){ ctx.globalAlpha=sa; ctx.fillStyle='#4a4a52'; for(let k=0;k<5;k++){ const a=k*1.26+b.x*0.01; ctx.beginPath(); ctx.arc(b.x+Math.cos(a)*b.r*0.5*f,b.y-b.r*0.9*f+Math.sin(a)*b.r*0.25,b.r*(0.25+0.35*f),0,Math.PI*2); ctx.fill(); } }   // smoke rising
     ctx.restore(); } }
-{ const _sp=splash; splash=function(pr,...a){ try{ // an enemy siege engine breaks no blocks inside your village (it still hurts whoever is there)
-      if(pr.src&&pr.src.enemy&&home&&home.claimed&&Math.floor(pr.x/T)>=home.x0-4&&Math.floor(pr.x/T)<=home.x1+8) pr.noBlast=true;
+{ const _sp=splash; splash=function(pr,...a){ try{
       const big=pr.kind==='boulder'; machineBlast(pr.x,pr.y,pr.splash||40,big); mpFxPush(['mblast',Math.round(pr.x),Math.round(pr.y),Math.round(pr.splash||40),big?1:0]); }catch(e){} return _sp(pr,...a); }; }
 // the ground around a cannon or trebuchet crater is scorched like a bomb's: grass and dirt turn to ash, stone to scorched rock, wood chars
 function machineScar(px,py,r,team){ if(!player||!team||!['g','b','r'].includes(team)) return; const foe=team!==player.team, tx=Math.floor(px/T), ty=Math.floor(py/T), rt=Math.max(1,Math.round(r/T*0.6)), ro=rt+2.2;
-  const safe=x=>foe?(bases.some(bb=>bb.f===team&&x>=bb.x0-12&&x<=bb.x1+70)||(home&&Math.abs(x-home.castleCx)<=19)||(home&&home.claimed&&x>=home.x0-4&&x<=home.x1+8)):blastProtected(x);
+  const safe=x=>foe?bases.some(bb=>bb.f===team&&x>=bb.x0-12&&x<=bb.x1+70):blastProtected(x);   // enemy fire scorches your village too (0.9.91)
   facRun(()=>{ for(let y=ty-Math.ceil(ro);y<=ty+Math.ceil(ro);y++) for(let x=tx-Math.ceil(ro);x<=tx+Math.ceil(ro);x++){ if(x<0||x>=W||y<0||y>=H) continue; const d=Math.hypot(x-tx,y-ty); if(d>ro||Math.random()<0.25||safe(x)) continue;
       const id=tileAt(x,y); if(!id||!isExposed(x,y)) continue; const to=burnTo(id); if(to===null||to===id) continue; if(!igniteAt(x,y)) setTile(x,y,to); } }); }
 { const _sp=splash; splash=function(pr,...a){ const r=_sp(pr,...a); try{ if(!pr.noBlast&&!isGuest()) machineScar(pr.x,pr.y,pr.splash||40,pr.team); }catch(e){ console.warn(e); } return r; }; }
@@ -14420,12 +14510,116 @@ function siegeFoes(){ return bases.filter(b=>!conquered[b.f]&&b.f!==player.team)
 const SIEGE_BACK={ballista:6,cannon:9,trebuchet:15};
 enemyBallistaTick=function(dt){ if((ebT-=dt)>0||!player||!home||!home.claimed||isGuest()) return; ebT=2; if(dayCount<ENEMY_BALLISTA_DAY) return;
   for(const b of bases){ if(conquered[b.f]||b.f===player.team) continue; for(const w of b.wars||[]){ if(w.done||w.ballista) continue;
-      const near=ents.find(e=>!e.dead&&e.warParty===b&&e.warTarget===w&&Math.abs(cxOf(e)/T-w.x)<50&&e.grounded); if(!near) continue; w.ballista=true;
+      const near=ents.find(e=>!e.dead&&e.warParty===b&&e.warTarget===w&&Math.abs(cxOf(e)/T-w.x)<Math.max(50,(home.x1-home.x0)/2+30)&&e.grounded); if(!near) continue; w.ballista=true;   // within 30 blocks of the village edge (0.9.93; was 50 from the middle)
       const side=Math.sign(cxOf(near)/T-w.x)||1, kit=w.kit||['ballista'];
       kit.forEach(mt=>{ let x=Math.round(cxOf(near)/T)+side*(SIEGE_BACK[mt]||6); if(typeof insideVillage==='function') for(let k=0;k<40&&insideVillage(x);k++) x+=side;
         x=clamp(x,3,W-4); const gy=groundRowBelow(x*T,(surf[x]-3)*T); const m=makeEnemyMachine(b.f,mt,x,gy); m.war=w; m.facing=-side; });
       const what=kit.length>1?kit.map(k=>MACHINES[k].name.toLowerCase()).join(', ').replace(/, ([^,]*)$/,' and $1'):'a ballista';
       facLog(b,`The ${FNAME[b.f].toLowerCase()} army has set up ${kit.length>1?'a '+what:what} outside your village!`,true); toast(`The ${FNAME[b.f].toLowerCase()} army set up ${kit.length>1?'a '+what:what}! Destroy ${kit.length>1?'them':'it'} or kill the crew${kit.length>1?'s':''}`,5); } } };
+// ===== Beta 0.9.93: buildings fit where they should, Cancel on phones, blasts break back walls, more test world tools (Kinard, 2026-10-11) =====
+
+// ---- 1. placing a building: mist clouds, bushes and other loose natural bits are cleared, and a small bump of ground
+//      in the bottom two rows is dug away (a tower used to be refused by the mist that hangs at about its height) ----
+const BUILD_DIG=2;
+{ const _rp=replaceable; replaceable=function(id,...a){ if(_rp(id,...a)) return true; const b=BLOCKS[id]; if(!b||b.solid||id===B.WATER||id===B.LAVA) return false;
+    if(isChestId&&isChestId(id)) return false; if(typeof isBuilt==='function'&&isBuilt(id)) return false; return true; }; }   // non-solid natural things: mist, bushes, flowers, vines, webs
+const digGround=id=>{ try{ if(NAT_ROCK().has(id)) return true; }catch(e){} return [B.DIRT,B.GRASS,B.SAND,B.SNOW,B.STONE,B.CLAY,B.GRAVEL,B.ASH,B.SCORCHED,B.RUBBLE].includes(id); };
+buildBlocked=function(bp,cx,gy){ for(let y=gy-bp.fh;y<gy;y++) for(let x=cx+bp.fx0;x<=cx+bp.fx1;x++){ if(x<1||x>=W-1||y<=skyOff) return true; const id=world[y*W+x]; if(replaceable(id)) continue; if(y>=gy-BUILD_DIG&&digGround(id)) continue; return true; } return false; };
+
+// ---- 2. the Cancel button: small, at the bottom middle of the screen on phones ----
+function cancelStyle(){ try{ const b=$('#bldCancel'); if(!b) return; const touch=document.body.classList.contains('touch'); if(b._touch===touch) return; b._touch=touch;
+    b.style.cssText=touch?'position:fixed;bottom:calc(10px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);z-index:60;padding:6px 12px;font-size:9px;width:auto;margin:0'
+      :'position:fixed;top:calc(8px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:60;padding:10px 18px;font-size:13px;width:auto'; b.textContent=touch?'Cancel':'Cancel building'; }catch(e){} }
+setInterval(cancelStyle,300);
+
+// ---- 3. blasts break the back walls inside them too: dirt, stone, wood and the rest ----
+function blastWalls(px,py,r,team,mine){ if(!world||isGuest()) return 0; const tx=Math.floor(px/T), ty=Math.floor(py/T), rr=Math.max(1,r); let n=0;
+  const foe=team&&player&&team!==player.team;
+  const safe=x=>mine?blastProtected(x):foe?bases.some(bb=>bb.f===team&&x>=bb.x0-12&&x<=bb.x1+70):blastProtected(x);
+  facRun(()=>{ for(let y=ty-Math.ceil(rr);y<=ty+Math.ceil(rr);y++) for(let x=tx-Math.ceil(rr);x<=tx+Math.ceil(rr);x++){ if(x<0||x>=W||y<0||y>=H) continue; const d=Math.hypot(x-tx,y-ty); if(d>rr||(d>rr-1&&Math.random()<0.5)) continue;
+      const i=y*W+x; if(!bg[i]||safe(x)) continue; try{ if(storeKeyAt(x,y)) continue; }catch(e){} if(BLOCKS[world[i]]&&BLOCKS[world[i]].solid) continue;   // only open cells: a wall still standing in front keeps its back wall
+      if(DMG>0) noteDmg(x,y); bg[i]=0; if(facCap) facCap.push([x,y,0,1]); if(explored[i]) mapPixel(x,y); n++; } }); return n; }
+{ const _bb=bombBlast; bombBlast=function(px,py,k,owner,...a){ const r=_bb(px,py,k,owner,...a); try{ DMG++; try{ blastWalls(px,py,(k&&k.r)||2,owner?owner.team:player.team,!owner||owner===player||owner.team===player.team); } finally{ DMG--; } }catch(e){ console.warn(e); } return r; }; }
+{ const _sp=splash; splash=function(pr,...a){ const r=_sp(pr,...a); try{ if(!pr.noBlast&&['g','b','r'].includes(pr.team)){ DMG++; try{ blastWalls(pr.x,pr.y,Math.max(1,Math.round((pr.splash||40)/T*0.6)),pr.team,false); } finally{ DMG--; } } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 4. test world (slot 4): set the day and the time, set off attacks, claim the village at once, damage it to try repairs ----
+function testFoe(){ const live=bases.filter(b=>!conquered[b.f]&&b.f!==player.team); return live.length?live[(Math.random()*live.length)|0]:null; }
+function testNeedHome(){ if(home&&home.claimed) return true; toast('Claim the village first (World tab: Claim the village now)',3); return false; }
+function testClaim(){ if(!home||home.claimed) return; try{ const dr=home.drifters; home.drifters=0; claimHome(); home.drifters=dr; home.fixup=null; }catch(e){ console.warn(e); } try{ fixupDone(); }catch(e){ console.warn(e); } toast('The village is yours',2); }
+function testRaid(siege){ if(!testNeedHome()) return; const b=testFoe(); if(!b){ toast('No enemy faction is left to attack you',2.5); return; }
+  const n0=(b.wars||[]).length; if(!facWar(b,siege?siegeSize():raidSize())) return; const w=b.wars[b.wars.length-1];
+  if(siege&&w&&b.wars.length>n0){ w.siege=true; w.kit=siegeKit(Math.max(dayCount,SIEGE_START+SIEGE_EVERY)); toast(`Siege! The ${FNAME[b.f].toLowerCase()} army marches on your village with cannons and trebuchets`,4); } }
+function testArrive(){ if(!testNeedHome()) return; let n=0; const side=cxOf(player)/T<home.castleCx?-1:1; const x0=(side<0?home.x0-14:home.x1+14);
+  for(const e of ents){ if(e.dead||!e.warTarget||e.team===player.team) continue; const x=clamp(x0+side*((n%8)*2),3,W-4); e.voyage=null; e.aboard=null; e.x=x*T; e.y=surf[x]*T-e.h-0.5; e.vx=e.vy=0; e.grounded=true; n++; }
+  if(n&&dayCount<ENEMY_BALLISTA_DAY){ dayCount=ENEMY_BALLISTA_DAY; toast(`Day set to ${dayCount} so the attackers bring their machines`,2.5); } ebT=0;
+  toast(n?`${n} attacker${n>1?'s':''} reached the edge of your village`:'No attackers are on the way (start a raid or a siege first)',3); }
+function testDragonRaid(){ if(!testNeedHome()) return; if(!dragon||dragon.dead||dragonSlain){ toast('Vorthax is not alive in this world',2.5); return; }
+  dragon.raid={f:player.team,cx:home.castleCx,gy:home.gy,name:'your village',t:60,startT:2}; if(!dragon.lairPos) dragon.lairPos={x:dragon.x,y:dragon.y}; dragon.homing=false; dragon.awake=false;
+  toast('The dragon Vorthax has left his lair and is flying toward your village!',4); try{ sfx('roar'); }catch(e){} }
+function testMachines(){ const f=(testFoe()||{f:'r'}).f, side=player.facing||1, px=Math.floor(cxOf(player)/T);
+  [['ballista',14],['cannon',18],['trebuchet',24]].forEach(([mt,d])=>{ const x=clamp(px+side*d,3,W-4); makeEnemyMachine(f,mt,x,groundRowBelow(x*T,(surf[x]-3)*T)).facing=-side; });
+  toast(`Enemy ${FNAME[f].toLowerCase()} war machines set up in front of you`,3); }
+function testMonsters(){ const px=cxOf(player), kinds=['zombie','skeleton','goblin','orc']; let n=0; for(let k=0;k<8;k++){ const x=Math.floor(px/T)+(k%2?1:-1)*(12+k*2); try{ const m=makeMonster(kinds[k%kinds.length],x*T,(surf[x]-3)*T); ents.push(m); n++; }catch(e){} } toast(`${n} monsters close in`,2.5); }
+function testDamage(){ if(!testNeedHome()) return; const f=(testFoe()||{f:'r'}).f; const xs=[home.x0+3,Math.floor((home.x0+home.castleCx)/2),Math.floor((home.x1+home.castleCx)/2),home.x1-3];
+  for(const x of xs) splash({x:x*T+8,y:(home.gy-4)*T,splash:76,kind:'boulder',team:f,dmg:0,src:{enemy:true}}); toast(`Four boulders hit your village: ${repairCount('home')} blocks to repair. Talk to the Quartermaster.`,4); }
+function testSetDay(d){ d=Math.max(1,Math.round(d)); if(!isFinite(d)) return; dayCount=d; toast(`Day ${dayCount}`,1.5); }
+{ const _rg=renderGod; renderGod=function(...a){ const r=_rg(...a); try{ if(godTab==='world'&&curSlot===4){ const btn=(attr,label)=>`<button class="xbtn" ${attr} style="margin:3px">${label}</button>`;
+      let h='<p><b>Day and time</b> (day '+dayCount+')</p>'+btn('data-gt="day-1"','Day -1')+btn('data-gt="day+1"','Day +1')+btn('data-gt="day+5"','Day +5')+
+        `<span style="display:inline-flex;gap:4px;align-items:center;margin:3px"><input id="godDay" type="number" min="1" max="999" value="${dayCount}" style="width:64px;font-family:var(--font);font-size:10px;padding:5px"><button class="xbtn" data-gt="setday">Set day</button></span>`+
+        btn('data-gt="t:0.02"','Dawn')+btn('data-gt="t:0.25"','Noon')+btn('data-gt="t:0.5"','Dusk')+btn('data-gt="t:0.7"','Midnight');
+      h+='<p><b>Attacks</b></p>'+btn('data-gt="claim"','Claim the village now')+btn('data-gt="raid"','Enemy raid')+btn('data-gt="siege"','Siege army (cannons, trebuchet)')+btn('data-gt="arrive"','Bring the attackers to the village')+
+        btn('data-gt="dragon"','Dragon raid on your village')+btn('data-gt="machines"','Enemy war machines here')+btn('data-gt="monsters"','Monster wave')+btn('data-gt="damage"','Damage the village (try repairs)')+
+        '<p style="font-size:9px">Raids and sieges march from an enemy village, which can take a while: "Bring the attackers to the village" puts them at your village edge at once (and makes it at least day 15 so they set up their machines). Capturing a faction is in the Army tab.</p>';
+      $('#godList').insertAdjacentHTML('afterbegin',h); } }catch(e){ console.warn(e); } return r; }; }
+$('#godList').addEventListener('click',e=>{ const b=e.target.closest('[data-gt]'); if(!b||curSlot!==4||!player) return; const k=b.dataset.gt;
+  try{ if(k==='day-1') testSetDay(dayCount-1); else if(k==='day+1') testSetDay(dayCount+1); else if(k==='day+5') testSetDay(dayCount+5); else if(k==='setday') testSetDay(+$('#godDay').value);
+    else if(k.startsWith('t:')){ time=+k.slice(2); toast('Time set',1); }
+    else if(k==='claim') testClaim(); else if(k==='raid') testRaid(false); else if(k==='siege') testRaid(true); else if(k==='arrive') testArrive();
+    else if(k==='dragon') testDragonRaid(); else if(k==='machines') testMachines(); else if(k==='monsters') testMonsters(); else if(k==='damage') testDamage(); }catch(err){ console.warn(err); toast('That did not work here',2); }
+  renderGod(); },true);
+// ===== Beta 0.9.94: war machines hold their ground and fire from farther; enemy armies fight in formation (Kinard, 2026-10-11) =====
+
+// ---- 1. your war machines: they plant themselves when an enemy is in range and shoot from there, with longer range;
+//      they only move to follow you when no fight is near, and no longer shuffle or hop back and forth ----
+MACHINES.ballista.range=34; MACHINES.cannon.range=28; MACHINES.trebuchet.range=50;   // was 24, 18, 36
+const MACH_PLANT=4;   // seconds a machine stays put after its last target
+machineAct=function(m,dt){ m.atkCd-=dt; m.atkT-=dt; m.hurtT-=dt; m.anim+=Math.abs(m.vx)*dt*0.1; m.jumpCd=(m.jumpCd||0)-dt;
+  if(m.aboard) return; if(m.enemy){ if(m.crew&&m.crew.dead) m.crew=null; return enemyMachineAct(m,dt); } if(m.crew&&(m.crew.dead||!m.crew.crewing)) m.crew=null;
+  if(player.operating===m) return;
+  const p=player, dx=cxOf(p)-cxOf(m), dy=cyOf(p)-cyOf(m); const onLand=!p.inWater&&!p.riding&&p.grounded;
+  if((Math.abs(dx)>MACH_LEASH_X*T||Math.abs(dy)>MACH_LEASH_Y*T)&&onLand){ m.x=cxOf(p)-p.facing*(m.w/2+24)-m.w/2; m.y=p.y+p.h-m.h-2; m.vx=m.vy=0; m.plantT=0; if(collides(m)) m.x=p.x; }
+  const all=ents.filter(o=>o.kind==='machine'&&!o.dead&&!o.enemy), idx=all.indexOf(m); const R=MACHINES[m.mtype].range*T; let mv=0;
+  const foe=m.crew?nearestHostile(m,R,cxOf(m),cyOf(m)):null;
+  if(foe||m.aim){ m.plantT=MACH_PLANT; if(foe) m.facing=cxOf(foe)>cxOf(m)?1:-1; }
+  else if((m.plantT=(m.plantT||0)-dt)<=0){ // no fight: follow you, stopping well short, and only start again once you are clearly farther off
+    const gap=(6+idx*2.5)*T; if(Math.abs(dx)>gap+(m.following?0:3*T)){ mv=Math.sign(dx); m.following=true; } else m.following=false; }
+  m.vx+=((mv*m.speed)-m.vx)*Math.min(1,dt*(mv?4:8)); if(mv) m.facing=mv;
+  if(m.hitWall&&m.grounded&&mv&&m.jumpCd<=0){ m.vy=-JUMP*0.7; m.jumpCd=1; } physics(m,dt);
+  if(m.crew&&m.atkCd<=0){ if(m.aim){ const ax=m.aim.x, ay=m.aim.y; if(Math.hypot(ax-cxOf(m),ay-cyOf(m))<=R){ const t=nearestHostile(m,MACHINE_AIM_R*T,ax,ay); if(t) fireMachine(m,cxOf(t),cyOf(t)); else fireMachine(m,ax,ay); } }
+    else if(foe) fireMachine(m,cxOf(foe),cyOf(foe)); }
+  if(m.crew){ const c=m.crew; c.x=cxOf(m)-m.facing*(m.w/2+3)-c.w/2; c.y=m.y+m.h-c.h; c.vx=c.vy=0; c.facing=m.facing; } };
+
+// ---- 2. enemy formations: a group of three or more enemy soldiers in a fight with at least two kinds among them lines up
+//      like yours: the toughest melee in the front rank, the other melee in ranks of three behind them (holding their place
+//      until they are needed), archers and mages behind the melee. The front rank braces against blows from the front ----
+const EF_GAP=10;   // soldiers more than this many blocks apart are separate groups
+let efT=0;
+function enemyFormTick(){ const now=gameNow(); if(!player) return;
+  for(const team of FAC_TEAMS){ if(team===player.team) continue;
+    const L=ents.filter(e=>!e.dead&&e.kind==='human'&&e.team===team&&!e.post&&!e.ghost&&!e.worker&&!e.scout&&!e.bigBoss&&!e.warlord&&e.target&&!e.target.dead&&!e.voyage).sort((a,b)=>cxOf(a)-cxOf(b));
+    let grp=[]; const groups=[]; for(const e of L){ if(grp.length&&cxOf(e)-cxOf(grp[grp.length-1])>EF_GAP*T){ groups.push(grp); grp=[]; } grp.push(e); } if(grp.length) groups.push(grp);
+    for(const g of groups){ if(g.length<3||new Set(g.map(e=>e.cls)).size<2) continue;
+      const ax=g.reduce((s,e)=>s+cxOf(e),0)/g.length, tx=g.reduce((s,e)=>s+cxOf(e.target),0)/g.length, dir=Math.sign(tx-ax)||1;
+      const melee=g.filter(e=>isMeleeCls(e.cls)).sort((a,b)=>b.maxHp-a.maxHp), ranged=g.filter(e=>!isMeleeCls(e.cls));
+      const lead=melee.length?melee.reduce((b,e)=>dir>0?Math.max(b,cxOf(e)):Math.min(b,cxOf(e)),dir>0?-1e9:1e9):ranged.reduce((b,e)=>dir>0?Math.max(b,cxOf(e)):Math.min(b,cxOf(e)),dir>0?-1e9:1e9);
+      melee.forEach((e,i)=>{ const rank=Math.floor(i/3); e.efRank=rank; e.efDir=dir; e.efX=lead-dir*rank*1.1*T+((i%3)-1)*5; e.efT=now+1; });
+      const back=melee.length?Math.ceil(melee.length/3)*1.1+3:0;
+      ranged.forEach((e,j)=>{ e.efRank=9; e.efDir=dir; e.efX=lead-dir*(back+(j%3)*1.2)*T; e.efT=now+1; e.rearOff=Math.min(9.5,Math.abs(cxOf(e.target)-e.efX)/T); }); } } }
+{ const _rt=rearTick; rearTick=function(...a){ _rt(...a); if(!isGuest()) enemyFormTick(); }; }   // every half second, with the old rule for groups that do not form up
+// back ranks, archers and mages hold their place behind the front rank (they still shoot from there)
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if(e&&!e.dead&&e.efT>gameNow()&&e.efRank>0&&e.kind==='human'){   // back ranks and the archers and mages behind them
+        const ahead=e.efDir*(cxOf(e)-e.efX); if(ahead>0.5*T){ const step=Math.min(ahead-0.5*T,(e.speed||60)*dt*1.2); e.x-=e.efDir*step; if(collides(e)) e.x+=e.efDir*step; else if(e.efDir*e.vx>0) e.vx=0; } } }catch(err){} return r; }; }
+{ const _br=braced; braced=function(t,src,...a){ if(_br(t,src,...a)) return true; try{ if(t&&t.efRank===0&&t.efT>gameNow()&&src){ const sx=src.owner&&!src.owner.dead?cxOf(src.owner):src.x!=null?src.x+(src.w||0)/2:null; if(sx!=null&&Math.sign(sx-cxOf(t))===t.efDir) return true; } }catch(e){} return false; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
