@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791657218"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791657218"><link rel="manifest" href="manifest.webmanifest?v=1791657218"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791704160"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791704160"><link rel="manifest" href="manifest.webmanifest?v=1791704160"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.82</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.83</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.82</h3>
+    <h3>New in Beta 0.9.83</h3>
+    <p>Cobwebs catch you: walk into one and you crawl and sink through it slowly, then tear free after a moment; a tap tears a web at once, with anything in hand. Enemies get caught too. Vines hang as one plant when they grow in a chain, you climb them like a ladder (up to climb, down to slide, let go to hang), and there are many more of them under cave ceilings and overhangs. The abandoned village stands up to its back walls: where a back wall remains, the house's side walls stand with it, ragged at the top, and the stone, brick, planks and back walls are cracked, crumbled and mossy. When the repairs are done a small note asks you back to the castle to choose the villagers' jobs. From inside a building you still see the rain outside. On computers the crafting menu opens at the right side of the screen and the bag at the left. There is half again as much coal and a quarter more iron and silver, mostly in the rock near the surface. Gold is a little rarer. The castle's upper floor is one room. Crafting shows what you can make where you stand: walk from the furnace to a workbench and the recipes follow. Open doors pass in front of you. Enemy scouts come into the caves only under their own island. Torches sit on slopes. Chests have a Sort button and an X. Stuck workers find their way home with what they carry. A tree struck by lightning leaves a charred silhouette behind its burnt pieces. Emptied goblin and orc camps fill up again after three days. Snow islands are snow and ice down to the shale, with snow cave walls and a Snow wall you can craft. At most three fighters stand on one block. Buildings stand on solid ground. Play with a controller: left stick moves, right stick aims, R2 uses, Cross jumps, Options pauses, and a gold frame moves through every menu. Report a bug from the pause menu or the title screen: it sends the version, your world and the last errors to the developers' bug list.</p>
+    <h3>Beta 0.9.82</h3>
     <p>Fixes from playtesting: digging no longer turns the screen bright (a swing left the picture in the wrong place), and when you play with friends the host's block changes reach them in the order they happened, so nobody ends up with the old block. Save and quit to title ends the multiplayer game, so you can host the saved world again straight away, and a friend who quits can start a world of their own. A friend alone at an enemy village meets the same closed ranks as the host: bring soldiers. A double-click on a shop row buys that item once. A shop house upgraded under a hill or another building keeps its low roof and tells you; clear the space above it and the upper floor is built. Seeds go into the soil right under your feet, or under a soldier standing beside you, the moment you click. A torch placed on a fence sits on the post and is drawn in front of you. Cobwebs in ruins come in six shapes: top corners, bottom corners, hanging from ceilings and on bare walls. A sapling only grows into the room it has. Diamonds are found only in chests of the deepstone layer and below, one or two at a time; there is a quarter more iron and silver in small pockets. On computers the bag opens as a panel under the hotbar (click the world to close it) and crafting shows the categories in a column on the left with group headings that stay while you scroll and a Top button. The Multiplayer menu has a Copy bug report button that copies the connection details and recent events as text, to paste into a message.</p>
     <h3>Beta 0.9.81</h3>
     <p>Playing together works the way Terraria does it: your own game runs the enemies near you, so they chase, turn and strike on your screen at once, and the host only corrects them when the two games drift apart. An enemy that reaches you hurts you right away; the number you see when you hit one is the number that counts. Bosses, the dragon and animals still follow the host. Less is sent over the network too. Mining looks calmer: the body stays still and only the arm and the tool move. Swings start at the shoulder and shots leave the hand instead of the middle of the body.</p>
@@ -672,7 +674,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.82</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.83</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -932,7 +934,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.82</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.83</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -951,7 +953,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.82', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.83', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -7136,6 +7138,7 @@ const isHostSide=()=>!(typeof MP!=='undefined'&&MP.guest);
 let wxT=0, rainCells=new Set(), strikeT=20, wxBolt=null;
 function nearCols(r){ const pc=Math.floor(cxOf(player)/T); return [Math.max(2,pc-r),Math.min(W-3,pc+r)]; }
 function exposedAt(x,y){ return x>=0&&x<W&&y<skyTop[x]; }
+function skyInView(){ const c0=Math.max(0,Math.floor(camX/T)), c1=Math.min(W-1,Math.ceil((camX+viewW)/T)); for(let c=c0;c<=c1;c+=2) if(skyTop[c]*T>camY+8) return true; return false; }   // some column's open sky reaches into the view
 // lightning: picks a tree near you, a crack of thunder, and the tree burns
 function lightningStrike(){ const [a,b]=nearCols(70); const cand=[]; for(let x=a;x<=b;x++){ const y=skyTop[x]; if(y>=H-1) continue; let yy=Math.max(0,y-1); for(let k=0;k<26;k++,yy++){ const id=tileAt(x,yy); if(LEAF_IDS.has(id)||LOG_IDS.has(id)){ cand.push([x,yy]); break; } if(BLOCKS[id].solid) break; } }
   if(!cand.length) return; const [x,y]=cand[(Math.random()*cand.length)|0]; wxBolt={x:x*T+8,y:y*T,t:0.35}; flashT=0.3; if(AC&&settings.sound&&performance.now()>audioQuietUntil){ noise(1.4,0.22,60,0); tone(48,1.2,'sawtooth',0.12,-12,null,0.05); }
@@ -7163,7 +7166,7 @@ function weatherWorldTick(dt){ if(!player||!world||state!=='play'||!isHostSide()
 { const _u=update; update=function(dt){ _u(dt); weatherWorldTick(dt); }; }
 
 // ---- rain and snow stop at the first roof or block they hit; indoors you only hear the patter ----
-drawWeather=function(){ if(!player||weather==='clear') return; if(player.y<skyOff*T||player.y>magmaY*T) return; const pc=clamp(Math.floor(cxOf(player)/T),0,W-1), py=Math.floor(cyOf(player)/T); if(py>skyTop[pc]+14) return;
+drawWeather=function(){ if(!player||weather==='clear') return; if(player.y<skyOff*T||player.y>magmaY*T) return; const pc=clamp(Math.floor(cxOf(player)/T),0,W-1), py=Math.floor(cyOf(player)/T); if(!skyInView()) return;   // 0.9.83: rain shows wherever the view reaches open sky, even from inside a building
   const outside=exposedAt(pc,py); const k=wxK(); const n=Math.round((weather==='storm'?150:weather==='rain'?80:100)*(0.7+0.3*k)); while(wParts.length<n) wParts.push({x:camX+Math.random()*viewW,y:camY+Math.random()*viewH,s:Math.random()}); if(wParts.length>n) wParts.length=n; const dt=1/60;
   for(const p of wParts){ if(weather==='snow'){ p.y+=(28+p.s*30)*dt; p.x+=Math.sin((p.y+p.s*99)/30)*0.4; } else { p.x+=(weather==='storm'?-150:-40)*dt; p.y+=(520+p.s*220)*dt; }
     const c=Math.floor(p.x/T); const roof=c>=0&&c<W?skyTop[c]*T:1e9;
@@ -13090,6 +13093,427 @@ drawEntity=safeDraw('entity',drawEntity);
 for(const n of ['drawDragon','drawSea','drawAnimal','drawBoat']) try{ if(typeof eval(n)==='function') eval(n+'=safeDraw("'+n.slice(4).toLowerCase()+'",'+n+')'); }catch(e){}
 if(typeof drawRemotes==='function') drawRemotes=safeDraw('friends',drawRemotes);
 if(typeof drawLighting==='function') drawLighting=safeDraw('lighting',drawLighting);
+// ===================== Beta 0.9.83: cobwebs that catch you, vines you can climb, ruins that stand up =====================
+// 1. Cobwebs: walking into one slows you to a crawl and you sink through it slowly (no fall damage); after a moment of
+//    struggling the web tears. A tap on a web tears it at once, with anything in hand or nothing. Enemies and soldiers are
+//    caught too and tear free a little later.
+// 2. Vines: a chain of vines is drawn as one plant (top, middle and bottom pieces); you climb them like a ladder (up to
+//    climb, down to slide, nothing to hang); growVines puts more of them under cave ceilings and overhangs.
+// 3. Ruins: where a back wall still stands in a ruined house, the house's side walls stand with it (ragged tops), so no
+//    back wall floats in the air; stone, brick and planks beside a gap are crumbled or broken, back walls get cracks and moss.
+// ---- 1. cobwebs ----
+const WEB_SLOW=0.15, WEB_FALL=38, WEB_RISE=-70, WEB_TEAR=1.6, WEB_TEAR_NPC=3;
+function webAt(e){ if(!e||!world) return null; const x0=Math.floor((e.x+2)/T), x1=Math.floor((e.x+e.w-2)/T), y0=Math.floor((e.y+2)/T), y1=Math.floor((e.y+e.h-2)/T); let best=null, bd=1e9; const cx=cxOf(e), cy=cyOf(e);
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ if(!isWeb(tileAt(x,y))) continue; const d=Math.hypot(x*T+8-cx,y*T+8-cy); if(d<bd){ bd=d; best=[x,y]; } } return best; }
+function tearWeb(x,y,shared){ const fn=()=>{ if(isWeb(tileAt(x,y))) setTile(x,y,0); }; if(shared&&typeof mpRun==='function') mpRun(fn); else fn(); puff(x*T+8,y*T+8,'#e8e4f0',6,50); }
+function webHold(e,dt,x0,y0,tearAfter,shared){ const w=webAt(e); if(!w){ e.webT=0; e.webbed=false; return false; }
+  e.x=x0+(e.x-x0)*WEB_SLOW; e.y=y0+(e.y-y0)*WEB_SLOW; e.vx*=WEB_SLOW; if(e.vy>WEB_FALL) e.vy=WEB_FALL; if(e.vy<WEB_RISE) e.vy=WEB_RISE;
+  e.webT=(e.webT||0)+dt; if(!e.webbed){ e.webbed=true; if(e===player) addFloat(cxOf(e),e.y-10,'caught in a web','#e8e4d8'); }
+  if(e.webT>tearAfter){ e.webT=0; tearWeb(w[0],w[1],shared); } return true; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; if(!p||p.fly||p.riding||p.dead||p.passenger) return _up(dt,...a); const x0=p.x, y0=p.y; const r=_up(dt,...a);
+    try{ if(webHold(p,dt,x0,y0,WEB_TEAR,true)) p.peakY=p.y; }catch(e){} return r; }; }
+{ const _ai=updateAI; updateAI=function(e,dt,...a){ if(!e||e.dead||(e.kind!=='human'&&e.kind!=='monster')||e.remote||e.proxy||e.fly||(e.mtype&&MON[e.mtype]&&MON[e.mtype].fly)) return _ai(e,dt,...a);
+    const x0=e.x, y0=e.y; const r=_ai(e,dt,...a); try{ webHold(e,dt,x0,y0,WEB_TEAR_NPC,false); }catch(err){} return r; }; }
+// a tap on a web tears it, whatever is in hand
+cv.addEventListener('pointerdown',ev=>{ try{ if(state!=='play'||!player||player.dead||touches.size>=2) return; setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T);
+    if(!isWeb(tileAt(tx,ty))) return; if(Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))>REACH) return; tearWeb(tx,ty,true); }catch(e){} },true);
+// ---- 2. vines ----
+const VINE_IDS=new Set([B.VINE]); if(typeof BIO!=='undefined'&&BIO.GLOW_VINE) VINE_IDS.add(BIO.GLOW_VINE);
+const isVine=id=>VINE_IDS.has(id);
+const VINE_TEX={};
+{ const draw=(cols,dark,light,glow,part)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); const R=mulberry(77+part.length*13+cols[0]);
+    for(const x of cols){ const end=part==='bot'?9+((R()*6)|0):16; for(let y=0;y<end;y++){ const sx=x+(y%4<2?0:1); g.fillStyle=y%3?dark:light; g.fillRect(sx,y,1,1); if(y%4===1){ g.fillStyle=light; g.fillRect(sx+1,y,1,1); } }
+      if(part==='bot'){ g.fillStyle=light; g.fillRect(x-1,end-1,3,1); g.fillRect(x,end,1,1); }   // the loose end: a tuft of leaves
+      if(part==='top'){ g.fillStyle=dark; g.fillRect(x-1,0,3,1); g.fillRect(x-1,1,1,1); g.fillRect(x+1,1,1,1); } }   // roots gripping the block above
+    if(glow){ g.fillStyle=glow; for(const [x,y] of [[cols[0]+1,2],[cols[1]-1,6],[cols[0],9],[cols[1]+1,13]]) g.fillRect(x,y,1,1); }
+    return c; };
+  for(const part of ['top','mid','bot']){ VINE_TEX[B.VINE]=VINE_TEX[B.VINE]||{}; VINE_TEX[B.VINE][part]=draw([3,8,12],'#6b8a4a','#8fa86a',null,part); }
+  if(typeof BIO!=='undefined'&&BIO.GLOW_VINE){ VINE_TEX[BIO.GLOW_VINE]={}; for(const part of ['top','mid','bot']) VINE_TEX[BIO.GLOW_VINE][part]=draw([6,9],'#2e5a28','#3e7232','#c8ff80',part); }
+  for(const id of VINE_IDS) ORE_LOOK.add(id);
+  const _tt=tileTex; tileTex=function(x,y,id,...a){ if(!isVine(id)) return _tt(x,y,id,...a); const up=isVine(tileAt(x,y-1)), dn=isVine(tileAt(x,y+1)); if(!up&&!dn) return TEX[id]; return VINE_TEX[id][up?(dn?'mid':'bot'):'top']; }; }
+function onVine(e){ const cx=Math.floor(cxOf(e)/T); for(let y=Math.floor((e.y+4)/T);y<=Math.floor((e.y+e.h-2)/T);y++) if(isVine(tileAt(cx,y))) return true; return false; }
+const VINE_UP=-80, VINE_DOWN=95;
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; const r=_up(dt,...a);
+    try{ if(p&&!p.fly&&!p.riding&&!p.dead&&!p.passenger&&!p.inWater&&!p.webbed&&onVine(p)){ p.climbing=true; const g=GRAV*dt; if(input.jump) p.vy=VINE_UP-g; else if(input.down) p.vy=VINE_DOWN; else p.vy=-g; /* gravity is added back next frame, so this hangs still */ p.peakY=p.y; p.airJumps=p.fx.jump+(p.extraJumps||0); } else if(p) p.climbing=false; }catch(e){} return r; }; }
+// more vines: under cave ceilings and overhangs, in patches, never in a village
+function growVines(onlyUnexplored){ if(!world||!surf) return 0; const sd=(seed|0)+1183, R=mulberry(sd); let n=0; const my=(typeof magmaY!=='undefined'&&magmaY)?magmaY:H-60;
+  const inHome=(x,y)=>home&&x>=home.x0-6&&x<=home.x1+8&&y>=home.gy-44&&y<=home.gy+2;
+  const inBase=(x,y)=>(bases||[]).some(b=>b.isl&&x>=b.isl[0]-2&&x<=b.isl[1]+2&&y>=(b.gy||0)-45&&y<=(b.gy||0)+2);
+  const inLair=(x,y)=>!!lair&&((lair.rx0!=null&&x>=lair.rx0-4&&x<=lair.rx1+4&&y>=(lair.ry0||0)-4&&y<=(lair.ry1||H)+4)||(lair.s!=null&&x>=lair.s&&x<=lair.e&&y>=(lair.gy||0)-40&&y<=(lair.gy||0)+6));
+  for(let y=4;y<my-2;y++) for(let x=2;x<W-2;x++){ const i=y*W+x; if(world[i]!==0||(liq&&liq[i])) continue; if(!BLOCKS[world[i-W]].solid||isVine(world[i-W])) continue; if(onlyUnexplored&&explored[i]) continue;
+    const under=y>surf[x]+2; if(noise2(x/14,y/9,sd)<(under?0.72:0.8)) continue; if(R()>(under?0.22:0.15)) continue; if(inHome(x,y)||inBase(x,y)||inLair(x,y)) continue;
+    let room=0; for(let k=0;k<6;k++){ const j=i+k*W; if(j>=W*H||world[j]!==0||(liq&&liq[j])) break; room++; } if(room<3) continue;
+    const len=Math.min(room,2+((R()*5)|0)); const glow=under&&typeof biome2At==='function'&&BIO.GLOW_VINE&&biome2At(x,y)==='grove'&&R()<0.3; const id=glow?BIO.GLOW_VINE:B.VINE;
+    for(let k=0;k<len;k++) world[i+k*W]=id; n++; x+=3; }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ const n=growVines(false); if(home){ home.vinesV=1; home.vinesN=n; home.ruinsV3=1; } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.vinesV&&!isGuest()){ home.vinesV=1; const n=facRun(()=>growVines(true)); if(n) console.log('vines grown in unexplored places:',n); } }catch(e){ console.warn(e); } return r; }; }
+// ---- 3. ruins that stand up, worn down ----
+const WORN_BG={ 11:[39,41], 10:[40,40] };   // stone brick wall -> cracked, mossy; timber frame -> cracked
+{ const mk=(base,kind)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(BGTEX[base],0,0); const R=mulberry(base*53+kind*11+3);
+    if(kind===0){ for(let k=0;k<2;k++){ let x=(R()*12)|0, y=(R()*5)|0; g.fillStyle='rgba(0,0,0,0.45)'; for(let j=0;j<10&&y<16;j++){ g.fillRect(x,y,1,1); x+=R()<.45?1:R()<.2?-1:0; y+=1; if(x<0||x>15) break; } } g.fillStyle='rgba(0,0,0,0.18)'; for(let k=0;k<5;k++) g.fillRect((R()*14)|0,(R()*14)|0,2,1); }
+    else { for(let k=0;k<22;k++){ const x=(R()*16)|0, y=(R()*16)|0; if(y>8&&R()<0.6) continue; g.fillStyle=R()<0.5?'rgba(74,128,54,0.7)':'rgba(96,160,70,0.6)'; g.fillRect(x,y,1,1); if(R()<0.4) g.fillRect(x+1,y,1,1); } }
+    return c; };
+  BGTEX[39]=mk(11,0); BGTEX[41]=mk(11,1); BGTEX[40]=mk(10,0); }
+const CRUMBLE_OF=()=>({ [B.STONE_BLOCK]:RUIN_B.stone, [B.BRICK]:RUIN_B.brick, [B.PLANK]:RUIN_B.plank, [B.TIMBER]:RUIN_B.plank });
+// the side walls of a ruined house stand as high as its back wall, with ragged tops
+function shoreUp(x0,x1,y0,y1,edges,matOf,sd){ let top=y1+1; for(let y=y0;y<=y1&&top>y1;y++) for(let x=x0;x<=x1;x++) if(bg[y*W+x]){ top=y; break; } if(top>y1) return 0; let n=0;
+  for(const x of edges){ const ragged=Math.round(wreck(x,top,sd+21)*2);   // 0-1 blocks shorter than the back wall, crumbled near the top
+    for(let y=y1;y>=top+ragged;y--){ const i=y*W+x, id=world[i]; if(id&&(BLOCKS[id].solid||DOOR_IDS.has(id)||id===B.DOOR_T)) continue; /* a door that survived stays; an empty doorway is walled up, the wall stands on the ground */ const m=matOf(x,y); const cr=CRUMBLE_OF()[m]; const v=wreck(x,y,sd+27);
+      world[i]=(cr&&(y-top-ragged<2?v>0.35:v>0.55))?cr:(m===B.STONE_BLOCK&&v<0.2)?B.MOSS:m; n++; } }
+  { const gy=y1+1; for(let x=x0+1;x<x1;x++){ const i=(gy-5)*W+x; if(gy-5>=top&&!world[i]&&bg[i]&&wreck(x,gy-5,sd+51)<0.5) world[i]=B.PLATFORM; }   // bits of the upper floor
+    if(top<=gy-10) for(const x of [x0-1,x0,x0+1,x1-1,x1,x1+1]){ const i=(gy-10)*W+x; if(x>0&&x<W-1&&!world[i]&&wreck(x,gy-10,sd+57)<0.55) world[i]=((x0*7)%2)?B.SHINGLE_B:B.ROOF; } }   // the eaves
+  for(let y=top;y<=top+2;y++) for(let x=x0+1;x<x1;x++){ const i=y*W+x; if(bg[i]&&wreck(x,y,sd+33)>(y===top?0.4:y===top+1?0.5:0.6)) bg[i]=0; }   // the top of the back wall is ragged too
+  return n; }
+// stone, brick and planks beside a gap are crumbled or broken; back walls get cracks and moss in patches
+function wearDown(x0,x1,y0,y1,sd){ let n=0; const cr=CRUMBLE_OF();
+  for(let y=Math.max(1,y0);y<=Math.min(H-2,y1);y++) for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++){ const i=y*W+x, id=world[i];
+    if(cr[id]){ const open=!world[i-1]||!world[i+1]||!world[i-W]; if(open&&wreck(x,y,sd+41)>0.47){ world[i]=cr[id]; n++; } }
+    const b=bg[i]; if(WORN_BG[b]){ const v=wreck(x,y,sd+45); if(v>0.62) bg[i]=WORN_BG[b][0]; else if(v<0.3&&WORN_BG[b][1]!==WORN_BG[b][0]) bg[i]=WORN_BG[b][1]; } }
+  return n; }
+{ const _rh=ruinHome; ruinHome=function(ccx,hx0,gy,R,...a){ const houses=_rh(ccx,hx0,gy,R,...a); try{ const sd=(seed|0)+771;
+      for(let k=0;k<3;k++){ const hx=hx0+k*13; shoreUp(hx,hx+8,gy-16,gy-1,[hx,hx+8],(x,y)=>y>=gy-4?B.STONE_BLOCK:B.TIMBER,sd+k); }
+      wearDown(ccx-20,hx0+40,gy-37,gy-1,sd); }catch(e){ console.warn(e); } return houses; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.ruinsV3&&!isGuest()){ home.ruinsV3=1;
+      const unexplored=(x0,x1,y0,y1)=>{ for(let y=Math.max(0,y0);y<=Math.min(H-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++) if(explored[y*W+x]) return false; return true; };
+      if(!home.claimed&&!home.fixup&&unexplored(home.x0-6,home.x1+8,home.gy-40,home.gy)){ facRun(()=>{ ruinHome(home.castleCx,home.hx0,home.gy,mulberry((seed|0)+771)); const ck=(home.hx0+31)+','+(home.gy-1); if(!chests[ck]) chests[ck]={items:new Array(CHEST_N).fill(null),coins:5}; wset(home.hx0+31,home.gy-1,B.CHEST); }); } } }catch(e){ console.warn(e); } return r; }; }
+// ---- 4. the castle is rebuilt: a small note instead of the whole screen ----
+function noteBox(title,text,btn){ let el=$('#noteBox'); if(!el){ el=document.createElement('div'); el.id='noteBox'; el.className='panel'; el.style.cssText='position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:46;max-width:380px;width:calc(100% - 32px);padding:14px 16px;'; document.body.appendChild(el);
+    el.addEventListener('click',e=>{ if(e.target.closest('[data-ok]')) el.hidden=true; }); addEventListener('keydown',e=>{ if(!el.hidden&&(e.key==='Escape'||e.key==='Enter')){ el.hidden=true; e.stopImmediatePropagation(); } },true); }
+  el.innerHTML=`<h2 style="font-size:11px;margin:0 0 8px">${title}</h2><p style="margin:0 0 10px">${text}</p><button class="btn primary" data-ok style="margin:0">${btn||'OK'}</button>`; el.hidden=false; }
+let recruitMuteUntil=0;
+{ const _or=openRecruit; openRecruit=function(...a){ if(performance.now()<recruitMuteUntil) return; return _or(...a); }; }
+{ const _fd=fixupDone; fixupDone=function(...a){ recruitMuteUntil=performance.now()+2500; const r=_fd(...a);
+    try{ noteBox('The castle is rebuilt','Come back to the castle: the drifters are waiting there. Talk to one of them to choose the jobs of your villagers.'); }catch(e){} return r; }; }
+// ---- 5. computers: the crafting menu opens as a panel at the right side, like the bag at the left ----
+{ const st=document.createElement('style'); st.textContent=`
+body:not(.touch) #scrInv.craftmode{ background:transparent; pointer-events:none; align-items:flex-start; justify-content:flex-end; padding:0; }
+body:not(.touch) #scrInv.craftmode .panel.wide{ pointer-events:auto; position:absolute; right:8px; left:auto; top:var(--crafty,60px); max-height:calc(100vh - var(--crafty,60px) - 10px); overflow:auto; width:min(900px,calc(100vw - 16px)); max-width:min(900px,calc(100vw - 16px)); padding:10px 14px 12px; box-shadow:0 0 0 3px var(--ink), 6px 6px 0 3px rgba(0,0,0,.45); }
+body:not(.touch) #scrInv.craftmode .phead{ margin-bottom:4px; }`; document.head.appendChild(st); }
+function craftPanelPlace(){ try{ const el=$('#scrInv'); if(!el||document.body.classList.contains('touch')) return; const tb=$('#topbtns'); const r=tb&&tb.offsetParent!==null?tb.getBoundingClientRect():null; const y=r?Math.round(r.bottom)+6:60; el.style.setProperty('--crafty',Math.min(y,Math.max(60,window.innerHeight-320))+'px'); }catch(e){} }
+{ const _oi=openInv; openInv=function(mode,...a){ const r=_oi(mode,...a); try{ if(mode==='craft') craftPanelPlace(); }catch(e){} return r; }; }
+window.addEventListener('resize',()=>{ if(state==='inv') craftPanelPlace(); });
+document.addEventListener('pointerdown',e=>{ try{ if(state!=='inv'||document.body.classList.contains('touch')||recentTouch()) return; const el=$('#scrInv'); if(!el||el.hidden||!el.classList.contains('craftmode')) return;
+    if(e.target.closest&&e.target.closest('#scrInv .panel, #hotbar, #menuX, #topbtns, #pickList, #toast, #craftSearch')) return; if(typeof drag!=='undefined'&&drag&&drag.i!=null) return; closeInv(); }catch(e){} },true);
+// ===== Beta 0.9.83: more coal, silver and iron in the upper rock layer (Kinard: coal +50%, silver and iron +25%, on the upper layers) =====
+const UPPER_ORE=[[()=>B.COAL,0.5,9381],[()=>B.IRON,0.25,9382],[()=>B.SILVER_ORE,0.25,9383]];
+/* The extra veins go between the surface and the top of the shale layer (the stone layer), near rock of the upper layer.
+   frac is a share of ALL the ore of that kind in the world; the new veins are 2-4 blocks and only replace plain rock. */
+function upperOre(ore,frac,seedN,onlyUnexplored){ const R=mulberry(seedN), top=typeof layerTop==='function'?layerTop():seaY+40, y0=Math.max(2,seaY-10);
+  let total=0; const at=[]; for(let i=0;i<world.length;i++){ if(world[i]!==ore) continue; total++; const y=(i/W)|0; if(y>=y0&&y<top) at.push(i); }
+  if(!total) return 0;
+  const rock=i=>(world[i]===B.STONE||world[i]===B.SHALE||world[i]===B.DEEPSTONE)&&!(onlyUnexplored&&explored[i]);
+  if(at.length<20){ for(let k=0;k<4000&&at.length<200;k++){ const x=1+((R()*(W-2))|0), y=y0+((R()*(top-y0))|0), i=y*W+x; if(rock(i)) at.push(i); } }
+  if(!at.length) return 0;
+  let add=Math.round(total*frac), placed=0, tries=0;
+  while(add>0&&tries++<40000){ const s=at[(R()*at.length)|0]; let x=s%W+((R()*40)|0)-20, y=((s/W)|0)+((R()*16)|0)-8; let n=2+((R()*3)|0);
+    for(let k=0;k<n*3&&n>0&&add>0;k++){ if(x>0&&x<W-1&&y>=y0&&y<top){ const i=y*W+x; if(rock(i)){ world[i]=ore; n--; add--; placed++; } } const r=R(); if(r<0.3) x++; else if(r<0.6) x--; else if(r<0.8) y++; else y--; } }
+  return placed; }
+function upperOreAll(seedN,onlyUnexplored){ let n=0; for(const [get,frac,k] of UPPER_ORE) n+=upperOre(get(),frac,(seedN|0)+k,onlyUnexplored); return n; }
+{ const _gw=genWorld; genWorld=function(sk,sd,...a){ const r=_gw(sk,sd,...a); try{ upperOreAll(sd,false); if(home) home.upperOreV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.upperOreV&&!(typeof MP!=='undefined'&&MP.guest)){ home.upperOreV=1; let n=0; facRun(()=>{ n=upperOreAll(seed,true); }); if(n) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.83, second batch (Kinard, 2026-10-11): rarer gold, the castle's upper floor as one room, crafting that follows the
+// station you stand by, door frames with depth, cave scouts only under their own island, torches on slopes, chest Sort button and X =====
+
+// ---- 1. gold a little less common: a fifth of the gold ore turns into the rock around it (new worlds; older worlds in unexplored rock) ----
+const GOLD_LESS=0.2;
+function lessGold(frac,seedN,onlyUnexplored){ const R=mulberry(seedN), at=[]; for(let i=0;i<world.length;i++) if(world[i]===B.GOLD&&!(onlyUnexplored&&explored[i])) at.push(i); if(!at.length) return 0;
+  let n=Math.round(at.length*frac), done=0; for(let k=at.length-1;k>0;k--){ const j=(R()*(k+1))|0; const t=at[k]; at[k]=at[j]; at[j]=t; }
+  for(let k=0;k<at.length&&done<n;k++){ const i=at[k], x=i%W, y=(i/W)|0; const r=typeof rockFor==='function'?rockFor(x,y):B.STONE; if(r&&r!==B.GOLD&&BLOCKS[r]&&BLOCKS[r].solid){ world[i]=r; done++; } }
+  return done; }
+{ const _gw=genWorld; genWorld=function(sk,sd,...a){ const r=_gw(sk,sd,...a); try{ lessGold(GOLD_LESS,(sd|0)+9391,false); if(home) home.goldLessV=1; }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 2. the castle's second floor is one room: the small-room wall and its door at cx+7 go (the fix-up replayed them after the floor was opened) ----
+function clearSafeWall(){ if(!home||!home.tall||isGuest()) return 0; const cx=home.castleCx, gy=home.gy, x=cx+7; let n=0;
+  facRun(()=>{ for(let y=gy-19;y<=gy-11;y++){ const id=tileAt(x,y); if(!id||id===B.THRONE||id===B.PART) continue;
+      const wall=id===B.STONE_BLOCK||DOOR_IDS.has(id)||id===B.DOOR_T||(typeof DOOR_SET_OF!=='undefined'&&DOOR_SET_OF[id])||(typeof SKIN_OF!=='undefined'&&SKIN_OF.get(id)==='wall')||(typeof RUIN_B!=='undefined'&&Object.values(RUIN_B).includes(id));
+      if(wall){ setTile(x,y,0); n++; } }
+    if(!bg[(gy-15)*W+x]) for(let y=gy-19;y<=gy-11;y++) bset(x,y,bg[y*W+x-1]||11); });
+  return n; }
+{ const _as=addSafeRoom; addSafeRoom=function(put,cx,gy,...a){ const r=_as(put,cx,gy,...a); try{ if(home&&home.castleCx===cx){ home.safeFloorV=1; for(let y=gy-19;y<=gy-11;y++){ const id=tileAt(cx+7,y); if(id===B.STONE_BLOCK||DOOR_IDS.has(id)||id===B.DOOR_T) put(cx+7,y,0); } } }catch(e){ console.warn(e); } return r; }; }
+{ const _fd=fixupDone; fixupDone=function(...a){ const r=_fd(...a); try{ clearSafeWall(); home.safeWallV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()){ let n=0;
+      if(!home.goldLessV){ home.goldLessV=1; facRun(()=>{ n+=lessGold(GOLD_LESS,(seed|0)+9391,true); }); }
+      if(home.tall&&!home.safeWallV&&!home.fixup){ home.safeWallV=1; n+=clearSafeWall(); }
+      if(n) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 3. crafting follows the station: recipes need their workbench or furnace within reach, the panel re-reads this as you walk, and a line says where you are ----
+const CRAFT_ST=[[()=>B.WORKBENCH,'workbench'],[()=>B.FURNACE,'furnace'],[()=>B.BLAST_FURNACE,'blast furnace'],[()=>B.WORKSHOP,'siege workshop']];
+function craftStations(){ const L=[]; if(!player) return L; for(const [get,name] of CRAFT_ST){ const id=get(); if(id!=null&&nearStation(id)) L.push(name); } return L; }
+function craftStationSig(){ return craftStations().join(','); }
+let craftStSig=null, craftStT=0;
+{ const _ok=showOk; showOk=function(rc,...a){ const r=_ok(rc,...a); if(!r) return r; try{ if(rc&&rc.st&&!free()&&craftShow!=='now'&&!nearStation(rc.st)) return false; }catch(e){} return r; }; }
+function craftAtLine(){ const L=craftStations(); if(free()) return ''; if(!L.length) return 'By hand. Stand by a workbench or a furnace to see its recipes.'; return 'At the '+L.join(' and ')+'.'; }
+{ const _rc=renderCraft; renderCraft=function(...a){ const r=_rc(...a); try{ const bar=$('#craftBar'); if(bar){ let at=$('#craftAt'); if(!at){ at=document.createElement('div'); at.id='craftAt'; at.style.cssText='flex:1 1 100%;font-size:8px;color:var(--muted);margin:2px 0 0;'; bar.append(at); } const t=craftAtLine(); at.textContent=t; at.hidden=!t; } craftStSig=craftStationSig(); }catch(e){} return r; }; }
+function craftFollowTick(dt){ if(state!=='inv'||!player) return; const el=$('#scrInv'); if(!el||el.hidden||!el.classList.contains('craftmode')) return;
+  craftStT-=dt; if(craftStT>0) return; craftStT=0.25; const sig=craftStationSig(); if(sig===craftStSig) return; const had=craftStSig; craftStSig=sig;
+  try{ if(craftCat!=='all'&&craftCat!=='fav'&&craftCat!=='creative'){ const any=craftOrder().some(([rc])=>craftCatOf(rc)===craftCat&&showOk(rc)); if(!any) craftCat='all'; }
+    craftSel=null; craftTabsSig=''; renderInv(); if(sig&&had!=null) toast(craftAtLine(),1.2); }catch(e){ console.warn(e); } }
+{ const _uh=updateHUD; updateHUD=function(dt,...a){ const r=_uh(dt,...a); try{ craftFollowTick(dt||0); }catch(e){} return r; }; }
+
+// ---- 4. door frames with depth: the open leaf stays behind you (drawn with the blocks); the frame's post and lintel are drawn in front of you ----
+function doorFrameColor(ds){ const c=(ds&&BLOCKS[ds.base]&&BLOCKS[ds.base].col)||'#8a5c2d'; return c; }
+function shade(hex,f){ const m=/^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex); if(!m) return hex; const v=[1,2,3].map(i=>Math.max(0,Math.min(255,Math.round(parseInt(m[i],16)*f)))); return '#'+v.map(n=>n.toString(16).padStart(2,'0')).join(''); }
+function drawDoorFrames(){ if(!world||typeof DOOR_SET_OF==='undefined') return; const x0=Math.max(0,Math.floor(camX/T)), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)), y0=Math.max(0,Math.floor(camY/T)), y1=Math.min(H-1,Math.ceil((camY+viewH)/T));
+  for(let y=y0;y<=y1;y++){ const row=y*W; for(let x=x0;x<=x1;x++){ const id=world[row+x]; const ds=DOOR_SET_OF[id]; if(!ds||id!==ds.open) continue; if(y<1||world[row-W+x]!==ds.openTop) continue;
+      const X=x*T, Y=(y-1)*T, col=doorFrameColor(ds), dark=shade(col,0.55), light=shade(col,1.25); const leftHinge=isSolid(x-1,y)&&!isSolid(x+1,y)?true:isSolid(x+1,y)&&!isSolid(x-1,y)?false:true; const px=leftHinge?X+13:X;
+      ctx.fillStyle=dark; ctx.fillRect(px,Y,3,32); ctx.fillRect(X,Y,16,3); ctx.fillStyle=light; ctx.fillRect(px+(leftHinge?0:2),Y+3,1,29); ctx.fillRect(X,Y+2,16,1); ctx.fillStyle='rgba(0,0,0,0.25)'; ctx.fillRect(leftHinge?X:X+3,Y+3,13,1); } } }
+
+// ---- 6. torches on sloped ground stand on the slope and lean with it ----
+function slopeSurfaceAt(sh,c){ if(sh===6) return 15-c; if(sh===7) return c; const R=SHAPE_RECTS[sh]; if(!R) return 0; let top=16; for(const [rx,ry,rw] of R) if(c>=rx&&c<rx+rw) top=Math.min(top,ry); return top===16?0:top; }
+function torchOnSlope(x,y){ if(y+1>=H) return null; const i=(y+1)*W+x; const sh=shape[i]; if(!sh||!BLOCKS[world[i]]||!BLOCKS[world[i]].solid) return null; if(sh===4) return {dx:4,drop:0,tilt:0}; if(sh===5) return {dx:-4,drop:0,tilt:0};
+  const drop=slopeSurfaceAt(sh,8); const tilt=sh===6?-0.42:sh===7?0.42:sh===2?-0.2:sh===3?0.2:0; return {dx:0,drop,tilt}; }
+const BLANK_TEX=(()=>{ const c=document.createElement('canvas'); c.width=c.height=16; return c; })();
+{ if(typeof ORE_LOOK!=='undefined') ORE_LOOK.add(B.TORCH);
+  const _tt=tileTex; tileTex=function(x,y,id,...a){ if(id===B.TORCH){ return torchOnSlope(x,y)?BLANK_TEX:TEX[id]; } return _tt(x,y,id,...a); }; }
+function drawSlopeTorches(){ if(!world) return; const tex=TEX[B.TORCH]; if(!tex) return; const x0=Math.max(0,Math.floor(camX/T)), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)), y0=Math.max(0,Math.floor(camY/T)), y1=Math.min(H-2,Math.ceil((camY+viewH)/T));
+  for(let y=y0;y<=y1;y++){ const row=y*W; for(let x=x0;x<=x1;x++){ if(world[row+x]!==B.TORCH) continue; if(!shape[row+W+x]) continue; const s=torchOnSlope(x,y); if(!s) continue;
+      ctx.save(); ctx.translate(x*T+8+s.dx,y*T+16+s.drop); ctx.rotate(s.tilt); ctx.drawImage(tex,-8,-16); ctx.restore(); } } }
+// both passes go just before the lighting, after every creature is drawn
+let doorFrameFrame=-1;
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ if(doorFrameFrame!==frameN){ doorFrameFrame=frameN; drawDoorFrames(); drawSlopeTorches(); } }catch(e){} return _dl(...a); }; }
+let frameN=0; { const _r=render; render=function(...a){ frameN++; return _r(...a); }; }
+
+// ---- 5. enemy factions send scouting parties into the caves only under an island they hold ----
+function holdsIslandAt(b,tx){ if(conquered[b.f]) return false; const [s0,e0]=b.isl||[b.x0-120,b.x1+160]; return tx>=s0&&tx<=e0; }
+{ const _ss=spawnScouts; spawnScouts=function(dt,...a){ if(!player||!world) return _ss(dt,...a); const ptx=Math.floor(cxOf(player)/T), pty=Math.floor(cyOf(player)/T); const under=pty>=surf[clamp(ptx,0,W-1)]+10;
+    if(!under) return _ss(dt,...a); const all=bases; bases=all.filter(b=>holdsIslandAt(b,ptx)); try{ return _ss(dt,...a); } finally{ bases=all; } }; }
+
+// ---- 7 and 8. chest: the Sort order is a button in the game's font (each click sorts, then offers the next order); an X at the top closes the chest ----
+{ const sel=$('#chestSortBy'), old=$('#chestSort'); if(sel&&sel.tagName==='SELECT'){ const keys=Object.keys(SORT_KINDS); let key=settings.chestSort||'type'; if(!SORT_KINDS[key]) key='type';
+    const b=document.createElement('button'); b.className='xbtn'; b.id='chestSortBy'; b.dataset.tip='Sort the chest; each click uses the next order'; const label=()=>{ b.textContent='Sort by '+SORT_KINDS[key].toLowerCase(); }; label();
+    b.addEventListener('click',()=>{ const c=chests[chestAt]; if(!c) return; sortChest(c,key); toast(`Sorted by ${SORT_KINDS[key].toLowerCase()}`,1.4); renderChest(); key=keys[(keys.indexOf(key)+1)%keys.length]; settings.chestSort=key; saveSettings(); label(); });
+    sel.replaceWith(b); if(old) old.remove(); }
+  const panel=$('#scrChest .panel'); if(panel&&!$('#chestX')){ const x=document.createElement('button'); x.id='chestX'; x.className='xbtn'; x.textContent='X'; x.setAttribute('aria-label','Close the chest'); x.dataset.tip='Close';
+    x.style.cssText='position:absolute;top:6px;right:8px;z-index:3;padding:6px 10px;font-size:10px;line-height:1;'; panel.style.position='relative'; panel.prepend(x); x.addEventListener('click',()=>closeChest());
+    const st=document.createElement('style'); st.textContent=`body.touch #chestX{ display:none; } #scrChest .phead{ padding-right:44px; }`; document.head.appendChild(st); } }
+
+// ---- 9. village workers who get stuck go back to their workplace and hand in what they carry; miners walk along their tunnel ----
+const STUCK_AFTER={ miner:45, woodcutter:30, farmer:30 }, STUCK_MOVE=6;
+function workerHome(e){ if(e.role==='miner') return {x:(home.mineX+2)*T, y:home.gy*T-29}; const job=e.vjob, r=home&&LODGE[job]&&home[LODGE[job].key]; const sx=typeof lodgeSpot==='function'?lodgeSpot(job):home.castleCx; return {x:sx*T, y:(r?r.gy:home.gy)*T-29}; }
+function workerBusy(e){ if(e.dead||e.shelter) return false; if(e.role==='miner') return e.phase==='down'; return !!e.vjob&&['go','goplant','work','plant','home'].includes(e.vphase); }
+function workerReset(e){ const h=workerHome(e); puff(cxOf(e),cyOf(e),'#ffe066',8,60); e.x=h.x; e.y=h.y; e.vx=e.vy=0; e.stuckT=0; e.stuckX=e.x; e.stuckY=e.y;
+  if(e.role==='miner'){ e.phase='up'; e.dropping=false; e.minerT=15+Math.random()*10; try{ if(e.load>0) minerDeliver(e); }catch(err){ console.warn(err); } e.load=0; }
+  else { try{ if(e.load) vDeliver(e,e.load[0],e.load[1]); }catch(err){ console.warn(err); } e.load=null; e.carry=null; e.vphase='idle'; e.vT=6+Math.random()*6; e.vjt=null; }
+  puff(cxOf(e),cyOf(e),'#ffe066',8,60); addFloat(cxOf(e),e.y-8,'back to work','#ffe066'); }
+let stuckT=0;
+function workerStuckTick(dt){ if(!home||!home.claimed||isGuest()) return; stuckT-=dt; if(stuckT>0) return; stuckT=1;
+  for(const e of ents){ if(e.kind!=='villager'||e.dead||e.team!==player.team||!(e.role==='miner'||e.vjob)) continue;
+    if(!workerBusy(e)){ e.stuckT=0; e.stuckX=e.x; e.stuckY=e.y; continue; }
+    const moved=Math.hypot(e.x-(e.stuckX??e.x),e.y-(e.stuckY??e.y)); if(moved>STUCK_MOVE){ e.stuckT=0; e.stuckX=e.x; e.stuckY=e.y; continue; }
+    e.stuckT=(e.stuckT||0)+1; if(e.stuckT>=(STUCK_AFTER[e.role==='miner'?'miner':e.vjob]||30)){ workerReset(e); if(home.stuckResets==null) home.stuckResets=0; home.stuckResets++; } } }
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ workerStuckTick(dt); }catch(e){} return r; }; }
+
+// ---- 10. a tree that catches fire (lightning or otherwise) leaves a charred-wood back wall behind its trunk and crown, so the burnt blocks do not float ----
+function treeCellsAt(x,y,max=600){ const out=[], seen=new Set(), q=[[x,y]]; const ok=id=>LOG_IDS.has(id)||LEAF_IDS.has(id);
+  while(q.length&&out.length<max){ const [cx,cy]=q.pop(); if(cx<0||cx>=W||cy<0||cy>=H) continue; const i=cy*W+cx; if(seen.has(i)) continue; seen.add(i); if(!ok(world[i])) continue; out.push(i);
+    q.push([cx+1,cy],[cx-1,cy],[cx,cy+1],[cx,cy-1]); }
+  return out; }
+function charTree(x,y){ if(!world||isGuest()) return 0; const cells=treeCellsAt(x,y); if(cells.length<3) return 0; let x0=W,x1=0,y0=H,y1=0; for(const i of cells){ const cx=i%W, cy=(i/W)|0; if(cx<x0) x0=cx; if(cx>x1) x1=cx; if(cy<y0) y0=cy; if(cy>y1) y1=cy; }
+  let n=0; const run=()=>{ for(const i of cells){ if(bg[i]) continue; bg[i]=CHAR_BG; n++; const cx=i%W, cy=(i/W)|0; if(explored[i]) try{ mapPixel(cx,cy); }catch(e){} } };
+  if(typeof mpDiffRun==='function') mpDiffRun(x0,x1,y0,y1,run); else run(); return n; }
+{ const _ig=igniteAt; igniteAt=function(x,y,...a){ const r=_ig(x,y,...a); try{ if(r&&world){ const id=world[y*W+x]; if((LOG_IDS.has(id)||LEAF_IDS.has(id))&&bg[y*W+x]!==CHAR_BG) charTree(x,y); } }catch(e){} return r; }; }
+// ===== Beta 0.9.83: goblin outposts and orc camps fill up again; snow back walls and a deeper snow biome (Kinard, 2026-10-11) =====
+
+// ---- 1. an emptied goblin outpost or orc camp fills up again after CAMP_REFILL_DAYS days with nobody near (not on a conquered island; the chiefs and the Ogre King never come back) ----
+const CAMP_REFILL_DAYS=3, CAMP_NEAR=80, CAMP_MIN=2;
+let campRefT=15;
+function campMembers(cx,gy){ return ents.filter(e=>!e.dead&&e.kind==='monster'&&e.camp&&e.camp.x===cx&&e.camp.gy===gy).length; }
+function refillGoblinCamp(gc){ let types=[]; const gis=islandAt(gc.x);
+  if(gis&&!gis.forest){ const pool=nativePool(gc.x,'camp'); const n=3+Math.floor(Math.random()*3); for(let k=0;k<n;k++){ const ty=pool[k%pool.length]; const m=makeMonster(ty,(gc.x-8+k*4)*T,gc.gy*T-MON[ty].h-1); m.camp={x:gc.x,gy:gc.gy}; ents.push(m); } return n; }
+  if(gc.war){ const nd=3+((Math.random()*2)|0), na=2+((Math.random()*2)|0); for(let k=0;k<nd;k++) types.push('goblin_dagger'); for(let k=0;k<na;k++) types.push('goblin_archer'); types.push('goblin','goblin'); }
+  else { const n=2+Math.floor(Math.random()*4); for(let k=0;k<n;k++) types.push(['goblin','goblin_dagger','goblin_archer'][k%3]); }
+  const spread=gc.war?20:10; types.forEach((ty,k)=>{ const m=makeMonster(ty,(gc.x-spread+k*(2*spread)/Math.max(1,types.length-1))*T,gc.gy*T-MON[ty].h-1); m.camp={x:gc.x,gy:gc.gy}; ents.push(m); }); return types.length; }
+function refillOrcCamp(c){ const OT=['orc','orc_dagger','orc_hammer','orc_xbow']; const [a,b,oa,ob]={fire:[3,4,0,0],hut_s:[3,5,0,1],hut_m:[5,7,1,1],site:[8,10,1,2]}[c.type]||[3,4,0,0]; const n=a+Math.floor(Math.random()*(b-a+1));
+  const at=(ty,x)=>{ const m=makeMonster(ty,x*T,c.gy*T-MON[ty].h-1); m.camp={x:c.x,gy:c.gy}; ents.push(m); };
+  for(let k=0;k<n;k++) at(OT[k%4],c.x-c.half+k*(2*c.half)/Math.max(1,n-1)); const og=oa+Math.floor(Math.random()*(ob-oa+1)); for(let k=0;k<og;k++) at('ogre',c.x+(k?4:-4)); return n+og; }
+function campRefillTick(dt){ if(!world||!player||isGuest()) return; campRefT-=dt; if(campRefT>0) return; campRefT=20; let made=0;
+  const consider=(c,cx,gy,refill)=>{ if(anyPlayerNear(cx*T,CAMP_NEAR)){ return; } if(campMembers(cx,gy)>=CAMP_MIN){ c.emptyDay=null; return; } if(c.emptyDay==null){ c.emptyDay=dayCount; return; } if(dayCount-c.emptyDay<CAMP_REFILL_DAYS) return; c.emptyDay=null; made+=refill(); };
+  for(const gc of gcamps||[]){ if(gc.cleared) continue; consider(gc,gc.x,gc.gy,()=>refillGoblinCamp(gc)); }
+  for(const is of islands||[]){ if(!is.orc||is.claimedBy) continue; for(const c of is.orcCamps||[]) consider(c,c.x,c.gy,()=>refillOrcCamp(c)); }
+  return made; }
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ campRefillTick(dt); }catch(e){} return r; }; }
+
+// ---- 2. snow back walls: a Snow wall item (4 from 1 snow at a workbench) and the natural back wall of the snow islands' caves ----
+const SNOW_BG=42;
+BGTEX[SNOW_BG]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.SNOW],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(36,48,86,0.5)'; g.fillRect(0,0,16,16); g.globalCompositeOperation='source-over'; g.fillStyle='rgba(255,255,255,0.10)'; for(let k=0;k<6;k++) g.fillRect((k*7)%16,(k*5)%16,2,1); return c; })();
+const SNOW_WALL=(()=>{ let id=760; while(ITEMS[id]||(BLOCKS[id]&&BLOCKS[id].name)) id++; return id; })();
+WALLS[SNOW_WALL]=SNOW_BG; ITEMS[SNOW_WALL]={name:'Snow wall',kind:'wall',desc:'A back wall of packed snow, like the walls of the caves under a snow island'};
+RECIPES.push({ out:SNOW_WALL, n:4, need:[[B.SNOW,1]], st:B.WORKBENCH, cat:'build' });
+if(typeof SELL!=='undefined'&&SELL[SNOW_WALL]==null) SELL[SNOW_WALL]=1;
+
+// ---- 3. the snow biome goes down through the first underground layer: under a snow island, soil becomes snow and most rock above the shale layer becomes snow or ice, and the cave walls are snow ----
+const SNOW_BG_FROM=new Set([2,6,27,29,30,31,32,33,34,35,36,37]);
+function snowDeep(onlyUnexplored){ if(!world||typeof layerTop!=='function') return 0; const top=layerTop(); let n=0;
+  for(const is of islands||[]){ if(!is.ice) continue; const x0=Math.max(1,is.s-6), x1=Math.min(W-2,is.e+6);
+    for(let x=x0;x<=x1;x++){ const h=surf[x]; if(h>=seaY-1) continue; for(let y=h;y<top&&y<H-1;y++){ const i=y*W+x; if(onlyUnexplored&&explored[i]) continue; const id=world[i]; const depth=(y-h)/Math.max(1,top-h); const v=noise2(x/9,y/9);
+        if(id===B.DIRT||id===B.GRASS||id===B.SAND||id===B.CLAY){ world[i]=B.SNOW; n++; }
+        else if(id===B.STONE){ if(depth<0.4||v>0.5){ world[i]=(v>0.8&&depth>0.15)?B.ICE:B.SNOW; n++; } }
+        if(SNOW_BG_FROM.has(bg[i])){ bg[i]=SNOW_BG; n++; } } } }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ snowDeep(false); if(home) home.snowDeepV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.snowDeepV&&!isGuest()){ home.snowDeepV=1; let n=0; facRun(()=>{ n=snowDeep(true); }); if(n) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.83: at most three fighters on one block (Kinard): a crowd spreads to the blocks beside, and the three on a block stand in
+// lanes drawn far, middle, near, so a fight is never ten soldiers in one spot. crowdOf()/e.lane are the hooks for later combat rules =====
+const CROWD_MAX=3, CROWD_PUSH=56, LANE_DX=[-4,0,4];
+let crowdT=0, laneQ=[], laneDrawing=false;
+function crowdable(e){ return !!e&&!e.dead&&(e.kind==='human'||e.kind==='monster')&&!e.fly&&!e.riding&&!e.aboard&&!e.post&&!e.shelter&&!e.sitting&&!e.observer&&!(typeof isBossEnt==='function'&&isBossEnt(e)); }
+function crowdKey(e){ return Math.floor(cxOf(e)/T)+','+Math.floor((e.y+e.h-1)/T); }
+function crowdOf(e){ return e&&e.crowdN>1?{n:e.crowdN,lane:e.lane}:null; }
+function crowdTick(dt){ crowdT-=dt; if(crowdT>0||!world) return; crowdT=0.2; const now=performance.now()/1000, groups=new Map(), list=[];
+  for(const e of ents) if(crowdable(e)){ e._own=true; list.push(e); }
+  try{ if(typeof MP!=='undefined'&&MP.on&&MP.ghosts){ const gs=MP.ghosts instanceof Map?[...MP.ghosts.values()]:Array.isArray(MP.ghosts)?MP.ghosts:Object.values(MP.ghosts); for(const g of gs) if(crowdable(g)&&!g._own) list.push(g); } }catch(e){}
+  for(const e of list){ const k=crowdKey(e); if(e.crowdKey!==k){ e.crowdKey=k; e.crowdSince=now; } let g=groups.get(k); if(!g){ g=[]; groups.set(k,g); } g.push(e); e.crowdN=1; e.lane=undefined; e.crowdPush=0; }
+  const push=!isGuest();
+  for(const [k,g] of groups){ if(g.length<2) continue; g.sort((a,b)=>(a.crowdSince-b.crowdSince)||((a.uid||0)-(b.uid||0))); const c=k.indexOf(','), kx=+k.slice(0,c), ky=+k.slice(c+1);
+    g.forEach((e,i)=>{ e.crowdN=g.length; e.lane=i<CROWD_MAX?CROWD_MAX-1-i:0;
+      if(i>=CROWD_MAX&&push&&e._own&&!e.proxy){ const L=groups.get((kx-1)+','+ky), R=groups.get((kx+1)+','+ky); const ln=L?L.length:0, rn=R?R.length:0; const dir=ln<rn?-1:rn<ln?1:(i%2?1:-1); e.crowdPush=dir;
+        /* step one block over at once when that block is free, so a block never keeps more than three */ const nx=e.x+dir*T, col=Math.floor((dir>0?nx+e.w:nx)/T), y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-1)/T), side=groups.get((kx+dir)+','+ky); if(e.grounded&&col>0&&col<W-1&&!isSolid(col,y0)&&!isSolid(col,y1)&&(!side||side.length<CROWD_MAX)){ e.x=nx; e.crowdKey=(kx+dir)+','+ky; e.crowdSince=now; if(side) side.push(e); else groups.set(e.crowdKey,[e]); } } }); }
+  for(const e of list) e._own=false; }
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ crowdTick(dt); }catch(e){} return r; }; }
+// the fourth and later fighters on a block step to the freer side
+{ const _ai=updateAI; updateAI=function(e,dt,...a){ const r=_ai(e,dt,...a); try{ if(e&&e.crowdPush&&!e.dead&&e.grounded&&!e.fly){ const dir=e.crowdPush, nx=e.x+dir*CROWD_PUSH*dt; const col=Math.floor((dir>0?nx+e.w:nx)/T), y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-1)/T); if(col>0&&col<W-1&&!isSolid(col,y0)&&!isSolid(col,y1)){ e.x=nx; if(Math.sign(e.vx||0)===-dir) e.vx=0; } } }catch(err){} return r; }; }
+// drawing: the far lane goes with everything else, the middle and near lanes are drawn after it, each shifted a little, so all three can be seen
+{ const _de=drawEntity; drawEntity=function(e,...a){ if(e&&e.crowdN>1&&e.lane>0&&!laneDrawing){ laneQ.push(e); return; } const dx=(e&&e.crowdN>1&&e.lane!=null)?LANE_DX[e.lane]:0; if(!dx) return _de(e,...a); e.x+=dx; try{ return _de(e,...a); } finally{ e.x-=dx; } }; }
+function flushLanes(){ if(!laneQ.length) return; laneDrawing=true; try{ laneQ.sort((a,b)=>a.lane-b.lane); for(const e of laneQ){ try{ drawEntity(e); }catch(err){} } } finally{ laneDrawing=false; laneQ.length=0; } }
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ flushLanes(); }catch(e){} return _dl(...a); }; }
+// ===== Beta 0.9.83: solid ground under every building you place (Kinard: the ground beneath buildings was not fully filled in) =====
+// The old footing filled four rows and stopped at the first solid block, so a cave under a thin crust, a pit deeper than four
+// blocks or a slope at the edge stayed open. Now each column is filled with stone block from the ground row down to real ground
+// (three solid rows in a row), up to FOOT_DEPTH rows, slopes are flattened, and the writes go through setTile so friends see them.
+const FOOT_DEPTH=16;
+function footingFill(id){ return !id||id===B.WATER||id===B.SNOW_LAYER||id===B.LAVA||(typeof PLANTS!=='undefined'&&PLANTS.has(id))||(typeof isWeb==='function'&&isWeb(id)); }
+/* anything else that is not solid (a platform over the mine shaft, a torch, a door) ends the column, as the old fill did */
+function footingStop(id){ return !footingFill(id)&&!(BLOCKS[id]&&BLOCKS[id].solid); }
+footing=function(x0,x1,gy){ if(!world) return; const put=(x,y,id)=>{ if(typeof setTile==='function'&&typeof state!=='undefined'&&state!=='title') setTile(x,y,id); else wset(x,y,id); };
+  for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++){ let solidRun=0; for(let y=gy;y<gy+FOOT_DEPTH&&y<H-1;y++){ const i=y*W+x; const id=world[i];
+      if(footingFill(id)){ put(x,y,B.STONE_BLOCK); if(liq) liq[i]=0; solidRun=0; } else if(footingStop(id)) break; else { solidRun++; if(shape[i]&&y<=gy+3){ shape[i]=0; } if(solidRun>=3) break; } } } };
+// every builder gets the footing over its whole blueprint box (the watchtower had none of its own, the keep and pen stopped a block short)
+function bpBox(id){ const bp=(typeof BLUEPRINTS!=='undefined'?BLUEPRINTS:[]).find(b=>b.id===id); return bp?[bp.fx0,bp.fx1]:null; }
+for(const [fn,id] of [['buildHutAt','hut'],['buildWallAt','wall'],['buildTowerAt','tower'],['buildKeepAt','keep'],['buildPenAt','pen']]){ const box=bpBox(id); if(!box) continue;
+  const orig=globalThis[fn]||null; const ref={ buildHutAt, buildWallAt, buildTowerAt, buildKeepAt, buildPenAt }[fn]; const wrapped=function(cx,gy,...a){ try{ footing(cx+box[0],cx+box[1],gy); }catch(e){} return ref(cx,gy,...a); };
+  if(fn==='buildHutAt') buildHutAt=wrapped; else if(fn==='buildWallAt') buildWallAt=wrapped; else if(fn==='buildTowerAt') buildTowerAt=wrapped; else if(fn==='buildKeepAt') buildKeepAt=wrapped; else buildPenAt=wrapped; }
+// village buildings (houses, lodge, farmhouse, shop houses) get the same rule: dirt down to real ground, grass on top
+fillUnder=function(x0,x1,gy){ facRun(()=>{ for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++){ let solidRun=0; for(let y=gy;y<gy+FOOT_DEPTH&&y<H-1;y++){ const i=y*W+x; const id=world[i];
+      if(footingFill(id)){ setTile(x,y,y===gy?B.GRASS:B.DIRT); if(liq) liq[i]=0; solidRun=0; } else if(footingStop(id)) break; else { solidRun++; if(solidRun>=3) break; } } } }); };
+// older worlds: holes of up to four rows right under your buildings and the village houses are filled once (deeper openings are left alone: they may be your own cellars)
+function groundUnderAll(){ if(!home||isGuest()||!world) return 0; let n=0; const boxes=[]; for(const h of home.houses||[]) if(h&&isFinite(h.x0)) boxes.push([h.x0,h.x1,h.gy??home.gy,B.DIRT]);
+  for(const k of ['lodge','farmhouse']){ const r=home[k]; if(r&&isFinite(r.x0)) boxes.push([r.x0,r.x1,r.gy,B.DIRT]); }
+  for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ const bp=BLUEPRINTS.find(b=>b.id===st.kind); if(bp&&isFinite(st.x)) boxes.push([st.x+bp.fx0,st.x+bp.fx1,st.gy,B.STONE_BLOCK]); }
+  facRun(()=>{ for(const [x0,x1,gy,mat] of boxes) for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++){ let open=0, stop=false; for(let y=gy+1;y<=gy+5&&y<H-1;y++){ const id=world[y*W+x]; if(footingFill(id)) open++; else { stop=footingStop(id); break; } } if(stop) continue; if(!open||open>4) continue;
+      for(let y=gy+1;y<=gy+open;y++){ setTile(x,y,mat); if(liq) liq[y*W+x]=0; n++; } } });
+  return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.footingV&&!isGuest()){ home.footingV=1; const n=groundUnderAll(); if(n) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+{ const _ng=newGame; newGame=function(...a){ const r=_ng(...a); try{ if(home) home.footingV=1; }catch(e){} return r; }; }
+// ===== Beta 0.9.83: Report a bug, from the pause menu and the title screen (Kinard: a place in the game to report bugs so several developers can fix them) =====
+// The report carries the version, where the game runs, the world and player state, the last errors the game caught, the last
+// multiplayer events, and the player's own words. It can be sent as a GitHub issue (the developers' shared list), copied, or saved
+// as a file; on the claude.ai page it is also stored in the game's cloud list when the account may write there.
+const BUG_REPO='pumped60/dragon-amulet-play', ERR_MAX=30;
+const errLog=[];
+function noteError(kind,msg,where){ try{ const t=new Date().toISOString().slice(11,19); errLog.push([t,kind,String(msg).slice(0,200),where?String(where).slice(0,120):'']); if(errLog.length>ERR_MAX) errLog.splice(0,errLog.length-ERR_MAX); }catch(e){} }
+window.addEventListener('error',e=>{ noteError('error',e.message||e.error||'error',(e.filename||'')+':'+(e.lineno||0)); });
+window.addEventListener('unhandledrejection',e=>{ noteError('promise',e.reason&&(e.reason.message||e.reason)||'rejection',''); });
+{ const _ce=console.error.bind(console); console.error=function(...a){ try{ noteError('console',a.map(x=>x&&x.stack?x.stack.split('\n').slice(0,2).join(' '):String(x)).join(' '),''); }catch(e){} return _ce(...a); }; }
+function whereRun(){ const ua=navigator.userAgent||''; if(/Electron/i.test(ua)) return 'desktop app'; if(location.protocol==='file:') return 'offline file'; if(/claude\.ai/.test(location.hostname||'')||window.claude) return 'claude.ai page'; if(/github\.io/.test(location.hostname||'')) return 'play site'; return location.hostname||'unknown'; }
+function bugReport(note){ const o={ id:Date.now().toString(36), version:GAME_VERSION, when:new Date().toISOString(), where:whereRun(), screen:innerWidth+'x'+innerHeight+(document.body.classList.contains('touch')?' touch':' mouse'), browser:(navigator.userAgent||'').slice(0,90), note:(note||'').slice(0,2000) };
+  try{ if(world){ o.world={ seed, size:sizeKey, day:dayCount, time:Math.round(time*100)/100, slot:curSlot, mode:rules.mode, name:home&&home.name||'', claimed:!!(home&&home.claimed), tier:home&&home.tier||0 }; } }catch(e){}
+  try{ if(player) o.player={ x:Math.round(player.x/T), y:Math.round(player.y/T), cls:player.cls, hp:Math.round(player.hp), dead:!!player.dead, state, coins:player.coins }; }catch(e){}
+  try{ o.multiplayer=(typeof MP!=='undefined'&&MP.on)?JSON.parse(mpBugReport()):{on:false}; }catch(e){ o.multiplayer='unavailable'; }
+  o.errors=errLog.slice(-ERR_MAX); try{ o.events=(typeof MP!=='undefined'&&MP.diag)?MP.diag.slice(-40):[]; }catch(e){}
+  return o; }
+function bugReportText(note){ return JSON.stringify(bugReport(note),null,1); }
+function bugIssueUrl(rep){ const title=`[${rep.version}] `+(rep.note.split('\n')[0].slice(0,70)||'Bug report '+rep.id); let body=rep.note+'\n\n```json\n'+JSON.stringify(rep,null,1)+'\n```'; const base=`https://github.com/${BUG_REPO}/issues/new?labels=bug&title=${encodeURIComponent(title)}&body=`; const room=7600-base.length; let enc=encodeURIComponent(body); if(enc.length>room){ const short=Object.assign({},rep,{events:(rep.events||[]).slice(-12),errors:(rep.errors||[]).slice(-8),browser:undefined}); body=rep.note+'\n\n```json\n'+JSON.stringify(short)+'\n```'; enc=encodeURIComponent(body).slice(0,room); } return base+enc; }
+let lastBugReport=null;
+async function bugCopy(txt){ try{ await navigator.clipboard.writeText(txt); return true; }catch(e){} try{ const ta=document.createElement('textarea'); ta.value=txt; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); const ok=document.execCommand('copy'); ta.remove(); return ok; }catch(e){ return false; } }
+function bugSaveFile(txt,id){ try{ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([txt],{type:'text/plain'})); a.download=`dragon-amulet-bug-${id}.txt`; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },500); return true; }catch(e){ return false; } }
+async function bugCloudStore(rep){ try{ if(!window.claude||!window.claude.use) return false; const db=await window.claude.use('db'); if(!db) return false; await db.doc('data/bugs/'+rep.id).set({ v:rep.version, when:rep.when, where:rep.where, note:rep.note, world:rep.world||null, player:rep.player||null, errors:rep.errors.slice(-10), mp:rep.multiplayer&&rep.multiplayer.on?{code:rep.multiplayer.code,role:rep.multiplayer.role}:null }); return true; }catch(e){ return false; } }
+function bugScreen(){ let el=$('#scrReport'); if(el) return el; el=document.createElement('div'); el.className='overlay'; el.id='scrReport'; el.hidden=true; el.style.zIndex='45';
+  el.innerHTML=`<div class="panel" style="position:relative;max-width:560px"><button class="xbtn" id="reportX" aria-label="Close" style="position:absolute;top:6px;right:8px;padding:6px 10px;font-size:10px;line-height:1">X</button><h2>Report a bug</h2>
+    <p class="muted" style="font-size:8px;margin:6px 0 8px">Say what happened and what you expected. The report adds the version, your world and the last errors the game caught. Nothing from your saves goes with it.</p>
+    <textarea id="reportText" rows="5" style="width:100%;box-sizing:border-box;font-family:var(--font);font-size:9px;padding:8px;background:var(--panel2);color:var(--text);border:2px solid var(--edge)" placeholder="What happened? What did you expect?"></textarea>
+    <label style="display:block;font-size:8px;margin:8px 0"><input type="checkbox" id="reportDetail" checked> Include what the game recorded (errors and the last events)</label>
+    <div class="mapbar" style="display:flex;flex-wrap:wrap;gap:6px"><button class="btn primary" id="reportSend">Send to the developers</button><button class="btn" id="reportCopy">Copy report</button><button class="btn" id="reportSave">Save as file</button></div>
+    <p id="reportStatus" style="font-size:8px;color:var(--gold);min-height:12px;margin-top:8px"></p></div>`;
+  document.body.appendChild(el);
+  const status=t=>{ $('#reportStatus').textContent=t; };
+  const make=()=>{ const rep=bugReport($('#reportText').value); if(!$('#reportDetail').checked){ rep.errors=[]; rep.events=[]; rep.multiplayer=rep.multiplayer&&rep.multiplayer.on?{on:true,code:rep.multiplayer.code,role:rep.multiplayer.role}:rep.multiplayer; } lastBugReport=rep; try{ localStorage.setItem('dragonamulet-lastbug',JSON.stringify(rep)); }catch(e){} return rep; };
+  $('#reportX').addEventListener('click',()=>closeBugReport()); for(const p of ['pointerdown','touchstart','keydown']) $('#reportText').addEventListener(p,e=>e.stopPropagation(),{passive:p!=='keydown'});
+  $('#reportSend').addEventListener('click',async()=>{ const rep=make(); const url=bugIssueUrl(rep); let opened=null; try{ opened=window.open(url,'_blank'); }catch(e){} const cloud=await bugCloudStore(rep); status((opened?'The developers\' bug list opened in a new tab: press Submit there.':'Could not open a new tab: copy the report and paste it at github.com/'+BUG_REPO+'/issues.')+(cloud?' Also stored in the game\'s cloud list.':'')); });
+  $('#reportCopy').addEventListener('click',async()=>{ const rep=make(); const ok=await bugCopy(JSON.stringify(rep,null,1)); status(ok?'Report copied. Paste it into a message to the developers.':'Could not copy here. Use Save as file.'); });
+  $('#reportSave').addEventListener('click',()=>{ const rep=make(); const ok=bugSaveFile(JSON.stringify(rep,null,1),rep.id); status(ok?'Saved as dragon-amulet-bug-'+rep.id+'.txt. Send that file to the developers.':'Could not save a file here.'); });
+  return el; }
+function openBugReport(){ const el=bugScreen(); $('#reportStatus').textContent=''; el.hidden=false; try{ $('#reportText').focus(); }catch(e){} }
+function closeBugReport(){ const el=$('#scrReport'); if(el) el.hidden=true; }
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ const el=$('#scrReport'); if(el&&!el.hidden){ closeBugReport(); e.stopPropagation(); } } },true);
+// buttons: in the pause menu above Save and quit, and on the title screen
+{ const mk=(id,label)=>{ const b=document.createElement('button'); b.className='btn'; b.id=id; b.textContent=label; b.addEventListener('click',openBugReport); return b; };
+  const q=$('#btnQuit'); if(q&&!$('#btnReportP')) q.before(mk('btnReportP','Report a bug'));
+  const title=$('#scrTitle'); if(title&&!$('#btnReportT')){ const btns=[...title.querySelectorAll('button')]; const after=btns.find(b=>/settings/i.test(b.textContent))||btns[btns.length-1]; const b=mk('btnReportT','Report a bug'); b.classList.add('small'); if(after) after.after(b); else title.querySelector('.panel')?.append(b); } }
+// ===== Beta 0.9.83: controller support (PlayStation, Xbox and other pads through the browser's Gamepad API) =====
+// In play: left stick or d-pad moves (down drops through platforms), right stick aims, R2 uses the held item (attack, dig, place),
+// L2 is the second action, Cross/A jumps, L1/R1 pick the hotbar slot, Square/X talks or uses (F), Triangle/Y opens the bag,
+// Circle/B crafting, Touchpad/Select the map, Options/Start pauses, L3 sprints, R3 the grappling hook.
+// In menus: d-pad or left stick moves a gold frame between buttons and slots, Cross/A presses, Circle/B closes.
+const GP={ on:false, prev:[], aimOff:null, navT:0, focus:null, used:false, idx:null };
+const GP_DEAD=0.28, GP_AIM_R=4.5;
+const GPB={ A:0, B:1, X:2, Y:3, L1:4, R1:5, L2:6, R2:7, SEL:8, START:9, L3:10, R3:11, UP:12, DOWN:13, LEFT:14, RIGHT:15 };
+function gpKey(code,up){ try{ const ev=new KeyboardEvent(up?'keyup':'keydown',{code,key:code==='Escape'?'Escape':code.replace(/^Key/,'').toLowerCase(),bubbles:true,cancelable:true}); (document.activeElement&&document.activeElement!==document.body?document.activeElement:document).dispatchEvent(ev); }catch(e){} }
+function gpPad(){ const list=navigator.getGamepads?navigator.getGamepads():[]; if(GP.idx!=null&&list[GP.idx]&&list[GP.idx].connected) return list[GP.idx]; for(const p of list) if(p&&p.connected&&p.buttons.some(b=>b.pressed||b.value>0.5)){ GP.idx=p.index; return p; } for(const p of list) if(p&&p.connected){ GP.idx=p.index; return p; } return null; }
+function gpOverlay(){ const ovs=[...document.querySelectorAll('.overlay')].filter(o=>!o.hidden&&o.getClientRects().length>0&&getComputedStyle(o).display!=="none"); if(!ovs.length) return null; return ovs.sort((a,b)=>(+getComputedStyle(b).zIndex||0)-(+getComputedStyle(a).zIndex||0))[0]; }
+function gpTargets(root){ return [...root.querySelectorAll('button, input, select, textarea, .slot, [data-it], [data-c], .recipe, [tabindex]')].filter(el=>{ if(el.disabled||el.hidden) return false; const r=el.getBoundingClientRect(); if(r.width<4||r.height<4) return false; const st=getComputedStyle(el); return st.visibility!=='hidden'&&st.display!=='none'; }); }
+function gpSetFocus(el){ if(GP.focus===el) return; if(GP.focus) GP.focus.classList.remove('gpfocus'); GP.focus=el; if(el){ el.classList.add('gpfocus'); try{ el.scrollIntoView({block:'nearest',inline:'nearest'}); }catch(e){} if(/INPUT|TEXTAREA|SELECT/.test(el.tagName)) try{ el.focus(); }catch(e){} } }
+function gpMove(root,dx,dy){ const T=gpTargets(root); if(!T.length) return; if(!GP.focus||!T.includes(GP.focus)){ gpSetFocus(T[0]); return; } const a=GP.focus.getBoundingClientRect(), ax=a.left+a.width/2, ay=a.top+a.height/2; let best=null, bs=1e9;
+  for(const el of T){ if(el===GP.focus) continue; const r=el.getBoundingClientRect(), x=r.left+r.width/2-ax, y=r.top+r.height/2-ay; const along=x*dx+y*dy; if(along<=4) continue; const side=Math.abs(x*dy-y*dx); const s=along+side*2.2; if(s<bs){ bs=s; best=el; } }
+  if(best) gpSetFocus(best); }
+function gpPress(i,pad){ const b=pad.buttons[i]; return !!b&&(b.pressed||b.value>0.5); }
+function gpEdge(i,pad){ return gpPress(i,pad)&&!GP.prev[i]; }
+function gpTick(){ const pad=gpPad(); if(!pad){ if(GP.on){ GP.on=false; input.left=input.right=input.jump=input.down=input.use=false; input.alt=false; gpSetFocus(null); } return; }
+  if(!GP.on){ GP.on=true; try{ toast('Controller connected',2); }catch(e){} }
+  const ax=pad.axes, lx=ax[0]||0, ly=ax[1]||0, rx=ax[2]||0, ry=ax[3]||0, now=performance.now();
+  const any=pad.buttons.some(b=>b.pressed)||Math.hypot(lx,ly)>GP_DEAD||Math.hypot(rx,ry)>GP_DEAD; if(any) GP.used=true;
+  const ov=gpOverlay(), menu=!!ov&&state!=='play';
+  if(menu||(ov&&state==='title')){
+    if(GP.wasPlay){ input.left=input.right=input.jump=input.down=input.use=false; input.alt=false; GP.wasPlay=false; }
+    const dx=(gpPress(GPB.RIGHT,pad)||lx>0.6?1:0)-(gpPress(GPB.LEFT,pad)||lx<-0.6?1:0), dy=(gpPress(GPB.DOWN,pad)||ly>0.6?1:0)-(gpPress(GPB.UP,pad)||ly<-0.6?1:0);
+    if((dx||dy)&&now>GP.navT){ gpMove(ov,dx,dx?0:dy); GP.navT=now+(GP.held?120:260); GP.held=true; } else if(!dx&&!dy) GP.held=false;
+    if(ov&&(!GP.focus||!ov.contains(GP.focus))&&(GP.used)){ const T=gpTargets(ov); if(T.length) gpSetFocus(T[0]); }
+    if(gpEdge(GPB.A,pad)&&GP.focus){ const el=GP.focus; if(el.tagName==='INPUT'&&el.type==='checkbox'){ el.click(); } else if(/INPUT|TEXTAREA/.test(el.tagName)){ try{ el.focus(); }catch(e){} } else el.click(); }
+    if(gpEdge(GPB.B,pad)){ const s0=state, h0=ov.hidden; gpKey('Escape'); setTimeout(()=>{ if(!ov.hidden&&state===s0){ const x=document.querySelector('#menuX:not([hidden])')||ov.querySelector('[id$="X"], [id$="Close"], [id$="Back"], .xbtn[aria-label="Close"]'); if(x) x.click(); } },30); }
+    if(gpEdge(GPB.START,pad)&&state==='paused') gpKey('Escape');
+    if(gpEdge(GPB.Y,pad)&&state==='inv') gpKey(settings.keys.bag||'KeyE');
+  } else if(state==='play'){
+    GP.wasPlay=true; if(GP.focus) gpSetFocus(null);
+    const mvL=lx<-GP_DEAD||gpPress(GPB.LEFT,pad), mvR=lx>GP_DEAD||gpPress(GPB.RIGHT,pad);
+    input.left=mvL; input.right=mvR; input.down=ly>0.6||gpPress(GPB.DOWN,pad); input.jump=gpPress(GPB.A,pad)||(ly<-0.75&&false);
+    input.use=gpPress(GPB.R2,pad); input.alt=gpPress(GPB.L2,pad)&&!input.use; if(gpPress(GPB.L2,pad)&&!input.use) input.use=true;
+    input.sprint=gpPress(GPB.L3,pad)||(GP.sprint&&Math.abs(lx)>0.9);
+    if(player){ const m=Math.hypot(rx,ry); if(m>GP_DEAD){ const k=Math.min(1,(m-GP_DEAD)/(1-GP_DEAD)); GP.aimOff=[rx/m*(1+k*(GP_AIM_R-1))*T, ry/m*(1+k*(GP_AIM_R-1))*T]; } else if(!GP.aimOff||GP.used&&!input.use&&Math.abs(GP.aimOff[0])<1) GP.aimOff=[(player.facing||1)*1.6*T,0.4*T];
+      if(GP.used&&GP.aimOff){ input.ax=cxOf(player)+GP.aimOff[0]; input.ay=cyOf(player)+GP.aimOff[1]; input.sx=(input.ax-camX)*S/dpr; input.sy=(input.ay-camY)*S/dpr; input.mouse=false; } }
+    if(gpEdge(GPB.L1,pad)&&player) selectSlot((player.sel+8)%9); if(gpEdge(GPB.R1,pad)&&player) selectSlot((player.sel+1)%9);
+    if(gpEdge(GPB.X,pad)) gpKey(settings.keys.use||'KeyF'); if(gpEdge(GPB.Y,pad)) gpKey(settings.keys.bag||'KeyE'); if(gpEdge(GPB.B,pad)) gpKey(settings.keys.craft||'KeyC');
+    if(gpEdge(GPB.SEL,pad)||(pad.buttons[16]&&gpEdge(16,pad))) gpKey(settings.keys.map||'KeyM'); if(gpEdge(GPB.START,pad)) gpKey('Escape');
+    if(gpEdge(GPB.R3,pad)){ gpKey(settings.keys.grapple||'KeyX'); setTimeout(()=>gpKey(settings.keys.grapple||'KeyX',true),80); }
+    if(gpEdge(GPB.UP,pad)&&player&&(player.fly||player.cls==='dragon')) gpKey(settings.keys.fly||'KeyG');
+  }
+  GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); }
+{ const st=document.createElement('style'); st.textContent='.gpfocus{ outline:3px solid #ffd447 !important; outline-offset:2px; box-shadow:0 0 0 6px rgba(255,212,71,.25) !important; }'; document.head.appendChild(st); }
+addEventListener('gamepadconnected',e=>{ GP.idx=e.gamepad.index; });
+addEventListener('gamepaddisconnected',e=>{ if(GP.idx===e.gamepad.index) GP.idx=null; });
+addEventListener('mousemove',()=>{ if(GP.used){ GP.used=false; GP.aimOff=null; gpSetFocus(null); } });
+if(navigator.getGamepads) setInterval(()=>{ try{ gpTick(); }catch(e){} },16);   /* a timer, not a second animation loop */
+// ===== Beta 0.9.83: test world tools in the Army window (Kinard): add soldiers of any class, and capture an enemy base at once =====
+function testAddSoldiers(cls,n){ let added=0; for(let k=0;k<n;k++){ const e=makeHuman(player.team,cls,player.x+(Math.random()*40-20),player.y-4,'guard',home); ents.push(e); const sl=freeSlot(); if(sl>=0) putInSlot(e,sl); else if(typeof toGarrison==='function') toGarrison(e); added++; } toast(`${added} ${CLASSES[cls].name.toLowerCase()}${added===1?'':'s'} join your army`,1.6); return added; }
+function testCapture(f){ const b=bases.find(o=>o.f===f); if(!b||conquered[f]) return false; surrender(b,facSoldiers(f)); return true; }
+function testArmyHtml(){ if(curSlot!==4||!player) return ''; const cls=CLS_KEYS.map(k=>`<div class="recipe"><img alt="" src="${portraitUrl(CLASSES[k].look||k,player.team,false)}"><div><div class="nm">${CLASSES[k].name}</div><div class="desc" style="font-size:8px">Free in the test world</div></div><div class="acts"><button class="xbtn" data-ta="${k}" data-n="1">+1</button><button class="xbtn" data-ta="${k}" data-n="5">+5</button><button class="xbtn" data-ta="${k}" data-n="10">+10</button></div></div>`).join('');
+  const live=bases.filter(b=>b.f!==player.team&&!conquered[b.f]); const caps=live.length?live.map(b=>`<button class="choice" data-tcap="${b.f}">Capture the ${FNAME[b.f].toLowerCase()} base now (${facSoldiers(b.f).length} soldiers join you)</button>`).join(''):'<p class="desc">Every enemy base is already yours.</p>';
+  return `<h3>Test world: add soldiers</h3><div class="list">${cls}</div><h3>Test world: capture a base</h3><div class="choices">${caps}</div>`; }
+{ const _ra=renderArmy; renderArmy=function(...a){ const r=_ra(...a); try{ let box=$('#testArmy'); if(!box){ box=document.createElement('div'); box.id='testArmy'; box.style.marginTop='10px'; const panel=$('#scrArmy .panel'); const closer=[...panel.querySelectorAll('.closebar, button')].reverse().find(el=>el.classList.contains('closebar')||/^close$/i.test(el.textContent.trim())); const at=closer&&closer.parentNode===panel?closer:(closer&&closer.closest('.closebar')); if(at&&at.parentNode===panel&&!at.closest('.phead')) panel.insertBefore(box,at); else panel.appendChild(box);
+      box.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b||curSlot!==4) return; if(b.dataset.ta){ testAddSoldiers(b.dataset.ta,+b.dataset.n||1); renderArmy(); } else if(b.dataset.tcap){ testCapture(b.dataset.tcap); renderArmy(); } }); }
+    box.innerHTML=testArmyHtml(); box.hidden=curSlot!==4; }catch(e){ console.warn(e); } return r; }; }
+// the God menu's Army tab gets the same capture buttons
+{ const _rg=renderGod; renderGod=function(...a){ const r=_rg(...a); try{ if(godTab==='army'&&curSlot===4){ const live=bases.filter(b=>b.f!==player.team&&!conquered[b.f]); if(live.length) $('#godList').insertAdjacentHTML('beforeend','<p><b>Capture a base</b></p>'+live.map(b=>`<button class="choice" data-tcap="${b.f}">Capture the ${FNAME[b.f].toLowerCase()} base now</button>`).join('')); } }catch(e){} return r; }; }
+$('#godList').addEventListener('click',e=>{ const b=e.target.closest('[data-tcap]'); if(!b||curSlot!==4) return; testCapture(b.dataset.tcap); renderGod(); });
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
