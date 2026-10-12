@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791766965"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791766965"><link rel="manifest" href="manifest.webmanifest?v=1791766965"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791770248"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791770248"><link rel="manifest" href="manifest.webmanifest?v=1791770248"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.100</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.104</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,15 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.100</h3>
+    <h3>New in Beta 0.9.104</h3>
+    <p>The magma realm has more kinds of rock: obsidian pockets, bands of basalt (also hanging from cavern ceilings), ember stone with glowing cracks, crumbly scoria, and magma dirt on the open floors, where the magma plants grow; the red magma rock is only part of it. Old worlds get this where you have not been yet. The Sky Ranger's tower is twice as wide with taller floors and a throne hall twice as high; the Magma Knight's maze is twice as wide with taller halls and a throne room twice as wide. Old worlds get the bigger castles rebuilt where they stand, with their lords and guards. Rooms you have not entered are hidden by thick drifting smoke, white in the tower and red in the maze, that clears room by room as you step in.</p>
+    <h3>Beta 0.9.103</h3>
+    <p>Lava burns through every plant, sapling, glow plant, cobweb and rug that water flows through, instead of stopping at them; it still stops at chests, doors and furniture, hardens on water and hurts as before. The antler rod has a white antler shaft. The bug net's rim sits across the end of the shaft and the mesh runs forward to a tip at the top.</p>
+    <h3>Beta 0.9.102</h3>
+    <p>Crystal golems take the colour of their caves: jade green, rose pink, azure blue, white quartz in dripstone caves, amber in root caves, ivory in fossil caves, moss green-gold in the overgrown caverns, and sapphire, emerald or ruby in the gem caves.</p>
+    <h3>Beta 0.9.101</h3>
+    <p>The bug net catches every insect in the path of your swing (about 3 blocks ahead, 2.5 up and down, or within 2 blocks of where you aim), counting each insect's body rather than a single point, so a near miss still catches. The net looks like a net: the handle meets the rim at its widest, and the mesh hangs down to a point. A caught insect chirps, and a killed one pops.</p>
+    <h3>Beta 0.9.100</h3>
     <p>Insects on the hook lure better catches: the catch is rolled twice and you get the better one, and the insect is kept after a catch about a third of the time. The sky realm has cloud moths, sky skimmers and sun beetles, and the magma realm ember moths, cinder beetles and ash wasps: they bring up the best fish and treasure. Each cave biome has its own insect: jade weevils, rose moths, azure midges, drip mites, root crickets, bone beetles and lantern flies. More animals roam the land. About half of the deer are bucks with big antlers; bucks in a pen shed antlers into the trough chest and hunted bucks drop them, and two antlers make the antler rod (as good as gold; insects on it bite sooner and are kept 70% of the time). A full-strength cast lands on the farthest water within reach and stays on the line.</p>
     <h3>Beta 0.9.99</h3>
     <p>Bee hives hang under the leaves of trees near flowers, and you can build one at a workbench (8 planks and a jar of honey) and hang it under any block. Bees fly between the flowers and their hive. A hive with flowers within 12 blocks fills with honey each morning and drips when it is full: tap it to take two jars. Butterflies come in ten colours and beetles in eight. The bug net swings like a pickaxe while you hold the button.</p>
@@ -712,7 +720,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.100</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.104</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -975,7 +983,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.100</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.104</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -994,7 +1002,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.100', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.104', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2403,7 +2411,8 @@ function buildSky(R){ const isles=[], temples=[]; const tx=tower.tx; const span=
   const sx0=clamp(tx-span,40,W-2*span-40), sx1=sx0+2*span;
   const isle=(cx,w,top)=>{ for(let x=cx-w;x<=cx+w;x++){ if(x<2||x>=W-2) continue; const t=Math.abs(x-cx)/w; const th=Math.max(1,Math.round((1-t*t)*6+noise2(x/5,1,seed+301)*2)); const yt=top+Math.round((t*t)*2);
     for(let y=yt;y<yt+th;y++) if(y<barrierY-2) wset(x,y,B.CLOUD); } isles.push({cx,w,top}); };
-  const cgy=barrierY-10; const cx0=clamp(tx-40,sx0+30,sx1-150); for(let x=cx0-34;x<=cx0+118;x++){ const t=Math.abs(x-(cx0+42))/78; for(let y=cgy;y<cgy+5+Math.round((1-Math.min(1,t)*Math.min(1,t))*4);y++) if(y<barrierY-1) wset(x,y,B.CLOUD); }
+  const SKX=typeof SKYW==='number'?SKYW-46:0;   /* 0.9.104: a wider castle island */
+  const cgy=barrierY-10; const cx0=clamp(tx-40,sx0+30,sx1-150-SKX); for(let x=cx0-34;x<=cx0+118+SKX;x++){ const t=Math.abs(x-(cx0+42+SKX/2))/(78+SKX/2); for(let y=cgy;y<cgy+5+Math.round((1-Math.min(1,t)*Math.min(1,t))*4);y++) if(y<barrierY-1) wset(x,y,B.CLOUD); }
   const mega=buildMega(cx0,cgy,true,{wall:B.SKY_BRICK,bg:7,light:B.LANTERN,ban:B.BANNER_B,realm:true},R);
   const apx=cx0-14; wset(apx,cgy-1,B.PORTAL); wset(apx,cgy-2,B.PORTAL); const arrive={x:(apx-6)*T,y:cgy*T-30,px:apx,py:cgy-1};
   // the Sky Ranger's castle sits at the far end of the realm
@@ -2498,7 +2507,8 @@ function buildMagmaRealm(R){ const top=H-58; magmaY=top; const span=Math.floor(W
   for(let x=mx0;x<=mx1;x++){ let y=H-15; while(y>top+5&&world[y*W+x]===0) y--; if(noise2(x/9,2,seed+503)>0.72) for(let k=0;k<2;k++) if(world[(H-15-k)*W+x]===0) world[(H-15-k)*W+x]=B.LAVA; }
   const flatAt=(cx,half,gy)=>{ for(let x=cx-half;x<=cx+half;x++){ for(let y=gy-18;y<gy;y++) wset(x,y,0); for(let y=gy;y<gy+3;y++) wset(x,y,B.MAGMA_ROCK); } };
   const aY=H-20, ax=clamp(fort.tx,mx0+30,mx1-30); flatAt(ax,14,aY); wset(ax+5,aY-1,B.PORTAL); wset(ax+5,aY-2,B.PORTAL); wset(ax-4,aY-1,B.TORCH);
-  const roomR=mx1-ax>140; const mx0c=roomR?ax+16:ax-16-110; flatAt(mx0c+55,62,aY); flatAt(ax,14,aY); wset(ax+5,aY-1,B.PORTAL); wset(ax+5,aY-2,B.PORTAL);
+  const MZ=typeof MAZE_W==='number'?MAZE_W:110;   /* 0.9.104: a wider maze */
+  const roomR=mx1-ax>MZ+30; const mx0c=roomR?ax+16:ax-16-MZ; flatAt(mx0c+(MZ>>1),(MZ>>1)+7,aY); flatAt(ax,14,aY); wset(ax+5,aY-1,B.PORTAL); wset(ax+5,aY-2,B.PORTAL);
   const megaM=buildMega(mx0c,aY,roomR,{wall:B.OBSIDIAN,bg:8,light:B.TORCH,ban:B.BANNER_R,realm:'magma'},R); const kx=megaM.cx;
   if(false){
   const L=kx-18, Rr=kx+18; for(let y=aY-14;y<aY;y++){ wset(L,y,B.OBSIDIAN); wset(Rr,y,B.OBSIDIAN); for(let x=L+1;x<Rr;x++) bset(x,y,8); }
@@ -14200,6 +14210,27 @@ AURA_MUL.regen=1;
 { const _ab=auraBearers; auraBearers=function(...a){ const L=_ab(...a); try{ if(player&&!player.dead) for(const id of wornCharms(player)){ const k=TEAM_CHARMS[id]; if(k) L.push([cxOf(player),cyOf(player),player.team,k]); } }catch(e){} return L; }; }
 let mendT=0;
 { const _at=auraTick; auraTick=function(dt,...a){ const r=_at(dt,...a); try{ mendT+=dt; if(mendT>=1){ const s=mendT; mendT=0; for(const e of ents){ if(e.dead||!e.aura||!e.aura.regen||e.hp>=e.maxHp) continue; if((e.hurtT??-9)>-3||(e.kind==='player'&&e.regenT>0)) continue; e.hp=Math.min(e.maxHp,e.hp+e.maxHp*0.02*s); } } }catch(e){} return r; }; }
+// ===== Beta 0.9.102: crystal golems in the colours of their caves (Kinard, 2026-10-12) =====
+// A golem's crystal comes from where it stands: jade (green) in jade caves, rose quartz (pink), azure (blue), quartz (white)
+// in dripstone caves, amber in root caves, bone crystal (ivory) in fossil caves, moss crystal (green-gold) in the overgrown
+// caverns, and sapphire, emerald or ruby in the gem caves. Plain caves keep the sapphire blue. A golem decides once, when
+// it first appears; a friend's copy of a golem reads the same from its own position, so friends see the same colours.
+const GOLEM_GEMS={   // [body, shine, dark] and the bleed colour
+  sapphire:['#7ac0d8','#c8f0ff','#4a90b0','#a8e0f0'], emerald:['#58b878','#b8f0c8','#2a7a48','#9ae8b0'], ruby:['#d05070','#f8b0c0','#8a2040','#f0a0b0'],
+  jade:['#4aa070','#b0f0d0','#206a48','#9ae0b8'], rose:['#e088b8','#ffd0e8','#a04080','#f8c0e0'], azure:['#5090e8','#c0e0ff','#2850a0','#a0c8ff'],
+  quartz:['#d8d8e0','#ffffff','#9898a8','#eeeef4'], amber:['#e0a040','#ffe0a0','#905820','#f8d080'], bone:['#e8e0c8','#fffaf0','#a89878','#f4ecd8'], moss:['#9ab858','#e0f0a0','#5a7a28','#c8e080'] };
+function golemGemAt(x,y){ try{ const bio=typeof biome2At==='function'?biome2At(x,y):null; if(bio&&GOLEM_GEMS[bio]) return bio; if(bio==='stalag') return 'quartz'; if(bio==='roots') return 'amber'; if(bio==='fossil') return 'bone'; if(bio==='grove') return 'moss';
+    if(biomeAt(x,y)==='gem'){ const r=noise2(x/23,y/17,seed+919); return r<0.4?'sapphire':r<0.7?'emerald':'ruby'; } }catch(e){} return 'sapphire'; }
+const golemGem=e=>{ if(!e.gem) e.gem=golemGemAt(Math.floor(cxOf(e)/T),Math.floor(cyOf(e)/T)); return e.gem; };
+{ const _mm=makeMonster; makeMonster=function(type,x,y,...a){ const e=_mm(type,x,y,...a); try{ if(e&&type==='crystal_golem') e.gem=golemGemAt(Math.floor(x/T),Math.floor(y/T)); }catch(err){} return e; }; }   // from the cell it is born in, not its centre a row lower
+{ const _so=specOf; specOf=function(e,...a){ const o=_so(e,...a); try{ if(e&&e.mtype==='crystal_golem') o.gem=golemGem(e); }catch(err){} return o; }; }
+{ const _hk=humanKey; humanKey=function(o,...a){ return _hk(o,...a)+(o&&o.gem?'|g'+o.gem:''); }; }
+function drawGolem(g,o,c){ const R2=fig(g,SCX-9,SFY-34); const [c1,c2,c3]=c; const f=o.frame, atk=o.atk;
+  R2(3,24,5,10-(f===1?1:0),c3); R2(10,24,5,10-(f===3?1:0),c3); R2(2,12,14,12,c1); R2(4,13,4,5,c2); R2(10,16,4,4,c2); R2(15,12,1,12,c3);
+  R2(-2,12,4,11,c1); R2(16,12,4,11,c1); if(atk) R2(18,14,8,6,c2); R2(3,1,12,11,c1); R2(4,2,5,3,c2); R2(8,-2,3,3,c2); R2(12,-1,2,2,c2); R2(7,6,2,2,'#ffffff'); R2(11,6,2,2,'#ffffff'); R2(14,1,1,10,c3);
+  if(o.elite) R2(5,-4,8,2,'#ffcf3a'); }
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ if(o&&o.look==='crystal_golem'&&o.gem&&o.gem!=='sapphire'&&GOLEM_GEMS[o.gem]){ drawGolem(g,o,GOLEM_GEMS[o.gem]); return; } return _hf(g,o,...a); }; }
+{ const _bc=bleedColor; bleedColor=function(t){ if(t&&t.mtype==='crystal_golem'&&t.gem&&GOLEM_GEMS[t.gem]) return GOLEM_GEMS[t.gem][3]; return _bc(t); }; }
 // ===== Beta 0.9.87: tool icons (Kinard, 2026-10-11) =====
 // Pickaxes keep their exact shape with the gaps in the curved head filled in. Hammer heads sit square to the handle with the
 // striking face to the right. Axe heads are turned clockwise until the small back piece rests against the handle and the
@@ -14520,6 +14551,52 @@ const ANTLER_ROD=newItem({name:'Antler rod',kind:'rod',ftier:4,tier:4,antler:tru
 SELL[ANTLER_ROD]=120; RECIPES.push({ out:ANTLER_ROD, n:1, need:[[ANTLER,2],[I.IRON_BAR,1],[B.PLANK,4]], st:B.WORKBENCH, cat:'tools' });
 customIcon(ANTLER_ROD,(rect,px)=>{ for(let i=0;i<10;i++){ px(2+i,14-i,'#8a5c2d'); px(3+i,14-i,'#b7834a'); } rect(11,2,2,4,'#e8dcc0'); rect(10,1,1,2,'#d8ccb0'); rect(13,1,1,2,'#d8ccb0'); for(let k=0;k<6;k++) px(13,5+k*1.5|0,'#e0e0e0'); rect(12,12,2,2,'#e5383b'); });
 { const _fu=fishUse; fishUse=function(p,aim,...a){ const had=bob; const r=_fu(p,aim,...a); try{ if(!had&&bob&&bob.bait&&isInsectBait(bob.bait)){ const it=heldItem(); if(it&&ITEMS[it.id].antler) bob.t*=0.75; } }catch(e){} return r; }; }
+// ===== Beta 0.9.101: the net catches what the swing reaches, a truer net picture, and insect sounds (Kinard, 2026-10-12) =====
+
+// ---- 1. the bug net picture: the handle meets the rim (the widest part), and the mesh hangs down to a point ----
+customIcon(BUG_NET,(rect,px)=>{ for(let i=0;i<7;i++){ px(1+i,14-i,'#8a5c2d'); px(2+i,14-i,'#b7834a'); }   // the handle, up to the rim
+  rect(7,6,9,1,'#9a9a90'); px(7,7,'#9a9a90'); px(15,7,'#9a9a90');   // the rim: the widest part of the net
+  for(let y=7;y<=13;y++){ const half=Math.max(0,Math.round((13-y)*4/6)); const x0=11-half, x1=11+half; for(let x=x0;x<=x1;x++) px(x,y,(x+y)%2?'#e8e8e0':'#c8c8c0'); }   // the mesh, narrowing to a point
+  px(11,13,'#b0b0a8'); px(11,14,'#9a9a90'); });
+
+// ---- 2. catching and killing: everything the swing reaches counts, with each insect's drawn body (not a point) ----
+// The net takes every insect in the swing's sweep (3 blocks ahead, a little behind, 2.5 up and down) or within 2.2 blocks
+// of where you aim; an insect's body is about half a block wide, so a near miss still counts.
+const NET_AIM=2.2*T, BUG_BODY=6;
+function bugInReach(b,z,p){ const f=p.facing||1, cx=cxOf(p), cy=cyOf(p); const ahead=(b.x-cx)*f;
+  const swept=ahead>=-BUG_SWEEP_BACK-BUG_BODY&&ahead<=BUG_SWEEP_FRONT+BUG_BODY&&Math.abs(b.y-cy)<=BUG_SWEEP_UP+BUG_BODY;
+  const near=Math.hypot(b.x-z.x,b.y-z.y)-BUG_BODY<NET_AIM; return swept||near; }
+bugSwingTick=function(dt){ netCd-=dt; const p=player; if(!p||p.dead||state!=='play'||!input.use||p.operating) return; const it=heldItem(); const def=it&&ITEMS[it.id]; if(!def) return;
+  if(def.kind==='net'){ if(p.atkT>0) return; p.atkT=0.25; netCd=0; const z=bugZone(); let n=0;
+    for(const b of BUGS){ if(b.dead||!bugInReach(b,z,p)) continue; b.dead=true; const ins=INSECTS[b.key]; give(ins.item,1); n++; addFloat(b.x,b.y-6,'caught a '+ins.name.toLowerCase(),'#e8d8a8'); }
+    try{ sfx(n?'bugcatch':'swing'); }catch(e){} return; }
+  if(!BUG_KILLERS.has(def.kind)) return; const z=bugZone(); for(const b of BUGS) if(!b.dead&&bugInReach(b,z,p)) bugSquish(b); };
+
+// ---- 3. sounds: a soft chirp when one is caught, a tiny pop when one dies ----
+{ const _sp=sfxPlay; sfxPlay=function(k,...a){ if(k==='bugcatch'){ tone(1500,0.05,'square',0.07,500); tone(2100,0.07,'sine',0.06,300,null,0.05); return; }
+    if(k==='bugdie'){ noise(0.04,0.14,1600); tone(240,0.05,'square',0.07,-140); return; } return _sp(k,...a); }; }
+{ const _bq=bugSquish; bugSquish=function(b,...a){ const r=_bq(b,...a); try{ if(b) sfx('bugdie',b.x,b.y); }catch(e){} return r; }; }
+// ===== Beta 0.9.103: lava flows through plants like water, an antler-white rod, a tilted net (Kinard, 2026-10-12) =====
+
+// ---- 1. lava and plants: lava burns through every plant, sapling, glow plant, cobweb, rug and other loose thing that
+//      water flows through or washes away. The list lava could enter was made when the game loaded its first blocks, so
+//      everything added since (saplings, glow plants, grove and magma plants, cobwebs, rugs, desert plants) stopped it like
+//      a wall. Lava still stops at chests, doors, hives and stations, and still hardens on water and burns you as before ----
+{ const skip=id=>id===B.WATER||id===B.LAVA||id===B.PORTAL||id===B.PART||DOOR_IDS.has(id)||(typeof isChestId==='function'&&isChestId(id))||(typeof isHive==='function'&&isHive(id));
+  for(const id of [...PASS,...FLOWABLE]){ const b=BLOCKS[id]; if(!b||b.solid||skip(id)||b.hard===Infinity) continue; LAVA_EATS.add(id); } }
+
+// ---- 2. the antler rod: the shaft is antler, white from end to end, with no tines ----
+customIcon(ANTLER_ROD,(rect,px)=>{ for(let i=0;i<11;i++){ px(2+i,14-i,'#f4ecd8'); px(3+i,14-i,'#d8ccb0'); } px(2,15,'#b8a890'); px(12,3,'#ffffff');
+  for(let k=0;k<6;k++) px(13,5+k*1.5|0,'#e0e0e0'); rect(12,12,2,2,'#e5383b'); px(12,12,'#ffffff'); });
+
+// ---- 3. the bug net: the rim sits across the end of the shaft, facing the way you swing, and the mesh runs forward to a
+//      tip at the top ----
+customIcon(BUG_NET,(rect,px)=>{ for(let i=0;i<7;i++){ px(1+i,14-i,'#8a5c2d'); px(2+i,14-i,'#b7834a'); }   // the shaft, up to the rim
+  // the mesh: a triangle standing on the rim, its tip at the top left
+  const inside=(x,y)=>y>=1&&x+y<=14&&x>=7-(8-y)*2/7-0.01&&y<=8;
+  for(let y=1;y<=8;y++) for(let x=4;x<=14;x++) if(inside(x,y)) px(x,y,(x+y)%2?'#e8e8e0':'#c8c8c0');
+  for(let k=0;k<8;k++) px(7+k,8-k,'#9a9a90');   // the rim, in line with the shaft: it faces the way you swing
+  px(5,1,'#b0b0a8'); });
 // ===== Beta 0.9.88: war machines hit harder and truer, step off, aim them all, pack them up; enemy ballistas (Kinard, 2026-10-11) =====
 
 // ---- 1. harder trebuchet boulders that smash through tree crowns into the ground ----
@@ -14687,6 +14764,128 @@ const MAGMA_MON=['magma_salamander','ash_wraith','obsidian_beetle'];
       for(let k=0;k<3;k++){ R(5+k*5,12+s,2,4-s,c1); R(7+k*5,12+(1-s),1,4-(1-s),c1); } R(3,4,17,9,c1); R(5,2,13,2,c1); R(6,4,4,2,c2); R(12,5,5,2,c2); R(7,5,1,1,c3); R(14,6,1,1,c3); R(11,4,1,9,'#0a060e');
       R(19,7,5,5,c1); R(22,8,1,1,'#ff5a1a'); R(23,10+(atk?1:0),3,1,c2); R(23,11+(atk?1:0),2,1,c2); return; }
     return _hf(g,o,...a); }; }
+// ===== Beta 0.9.104: a richer magma realm, bigger realm castles with bigger boss chambers, and thick smoke in their
+//       unseen rooms (Kinard, 2026-10-12) =====
+
+// ---- 1. the magma realm's rock: four new blocks break up the red. Obsidian pockets (dark), basalt (dark grey, in bands and
+//      hanging from ceilings), ember stone (black with glowing cracks, a faint light), scoria (porous red-black) and magma
+//      dirt (ashy soil on open floors, where the magma plants grow). Old worlds get it where you have not been ----
+const MAGMA_BLOCKS={};
+{ const mk=(key,name,o,draw)=>{ const id=freeIdFrom(); B[key]=id; defB(id,Object.assign({col:'#3a2020'},o,{name})); ITEMS[id]={name,kind:'block',desc:o.desc||''};
+    const c=mkCanvas(16,16), g=c.getContext('2d'), R=mulberry(id*31+7); const px=(x,y,col)=>{ g.fillStyle=col; g.fillRect(x,y,1,1); }, rect=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    const speck=(cols,p)=>{ for(let y=0;y<16;y++) for(let x=0;x<16;x++) if(R()<p) px(x,y,cols[(R()*cols.length)|0]); }; draw(rect,px,speck,R); TEX[id]=c; MAGMA_BLOCKS[key]=id; return id; };
+  mk('MAGMA_DIRT','Magma dirt',{hard:0.7,col:'#2e1a16',desc:'Dark, ashy soil of the magma realm. The magma plants grow on it'},(rect,px,speck,R)=>{ rect(0,0,16,16,'#2e1a16'); speck(['#3e241e','#241210','#4a2a22','#1e0e0c'],0.45); for(let k=0;k<6;k++) px((R()*16)|0,(R()*16)|0,'#6a3a2a'); });
+  mk('BASALT','Basalt',{hard:1.6,minPow:2,col:'#2a2a30',desc:'Dark grey columns of cooled lava'},(rect,px,speck)=>{ rect(0,0,16,16,'#2a2a30'); speck(['#34343a','#202024','#3c3c44'],0.35); for(const x of [0,5,10,15]) rect(x,0,1,16,'#1a1a1e'); rect(0,8,16,1,'#222226'); });
+  mk('EMBER_STONE','Ember stone',{hard:1.8,minPow:2,light:1,col:'#1a1012',desc:'Black rock veined with glowing cracks. It gives a little light'},(rect,px,speck,R)=>{ rect(0,0,16,16,'#1a1012'); speck(['#241618','#120a0c','#2a1a1c'],0.3); for(let k=0;k<3;k++){ let x=(R()*14)|0, y=(R()*8)|0; for(let j=0;j<6;j++){ px(x,y,j%2?'#ff6a1c':'#ffb040'); x+=R()<0.6?1:0; y++; if(y>15) break; } } });
+  mk('SCORIA','Scoria',{hard:1.2,minPow:1,col:'#3a1c18',desc:'Porous red-black rock, light and crumbly'},(rect,px,speck,R)=>{ rect(0,0,16,16,'#3a1c18'); speck(['#2a1210','#4a2420','#1a0a08'],0.4); for(let k=0;k<7;k++) px((R()*16)|0,(R()*16)|0,'#120606'); });
+  try{ for(const k of ['BASALT','EMBER_STONE','SCORIA']) STONEY.add(B[k]); }catch(e){} try{ const s=NAT_ROCK(); for(const k in MAGMA_BLOCKS) s.add(MAGMA_BLOCKS[k]); }catch(e){} }
+function magmaVariety(onlyUnexplored){ if(!magma||!world) return 0; const boxes=magmaKeepBoxes(), inBox=(x,y)=>boxes.some(([a,b,c,d])=>x>=a&&x<=c&&y>=b&&y<=d); let n=0; const sd=(seed|0)+9801, M=B.MAGMA_ROCK;
+  const yTop=(magma.top||magmaY)+1, yBot=H-9;
+  for(let x=magma.mx0;x<=magma.mx1;x++) for(let y=yTop;y<yBot;y++){ const i=y*W+x; if(world[i]!==M||inBox(x,y)) continue; if(onlyUnexplored&&explored[i]) continue;
+    const a=fbm(x/34,y/13,sd), b=fbm(x/17,y/8,sd+1), c=noise2(x/9,y/5,sd+2); let id=null;
+    if(a>0.6) id=B.OBSIDIAN; else if(b>0.57) id=B.BASALT; else if(c>0.66) id=B.EMBER_STONE; else if(c<0.3&&b<0.42) id=B.SCORIA;
+    const open=i-W>=0&&world[i-W]===0; if(open&&a<0.52&&noise2(x/7,y/7,sd+3)>0.33) id=B.MAGMA_DIRT;   /* ashy soil on open floors */
+    if(id){ world[i]=id; n++; } }
+  // basalt hanging from the ceilings of tall caverns
+  for(let x=magma.mx0+2;x<magma.mx1-2;x++){ if(noise2(x/5,1,sd+4)<0.76) continue; for(let y=yTop+2;y<yBot-12;y++){ const i=y*W+x; if(onlyUnexplored&&explored[i]) continue; if(world[i]!==0||!BLOCKS[world[i-W]].solid||inBox(x,y)) continue;
+      let run=0; while(run<14&&world[i+run*W]===0) run++; if(run<10) break; const len=2+((noise2(x/3,y/3,sd+5)*3)|0); for(let k=0;k<len;k++) world[i+k*W]=k===len-1&&len>2?B.EMBER_STONE:B.BASALT; n+=len; break; } }
+  return n; }
+// the magma plants grow on magma dirt as well as on magma rock
+magmaPlants=function(R,onlyUnexplored){ if(!magma||!world) return 0; R=R||Math.random; let n=0; const all=[B.FIRE_FERN,B.EMBER_BLOOM,...MAGMA_FLORA]; const soil=id=>id===B.MAGMA_ROCK||id===B.MAGMA_DIRT;
+  for(let x=magma.mx0+2;x<magma.mx1-2;x++) for(let y=magma.top+5;y<H-12;y++){ const i=y*W+x; if(world[i]!==0||!soil(world[i+W])||bg[i]===8) continue; if(onlyUnexplored&&explored[i]) continue;
+    if(R()<0.34){ world[i]=all[(R()*all.length)|0]; n++; if(world[i]===B.FLAME_GRASS&&world[i+1]===0&&soil(world[i+1+W])&&R()<0.5){ world[i+1]=B.FLAME_GRASS; n++; } } }
+  return n; };
+{ const _bm=buildMagmaRealm; buildMagmaRealm=function(R,...a){ const m=_bm(R,...a); try{ const prev=magma; magma=m; magmaVariety(false); magma=prev; }catch(e){ console.warn(e); } return m; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&magma&&!home.magmaVarV&&!isGuest()){ home.magmaVarV=1; facRun(()=>{ magmaVariety(true); }); try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 2. bigger realm castles: the sky tower is twice as wide with taller floors and a throne hall twice as high; the magma
+//      maze is twice as wide with halls 1.6x as tall and a throne room twice as wide. (The realms are not tall enough for
+//      the castles to double in height as well.) Old worlds get the new castles where they stand, as in 0.9.33 ----
+var SKYW=92, MAZE_W=220;   /* read by buildSky and buildMagmaRealm in 04_world.js when they lay the island and the flat */
+buildSkyTower=function(tx0,gy,entryLeft,R,put,bput){ const compact=skyOff<96;
+  const Wd=SKYW, x0=tx0, x1=tx0+Wd, FH=compact?10:12, TH=compact?22:26, floors=[gy,gy-FH,gy-2*FH,gy-3*FH,gy-4*FH], thFloor=floors[4], top=thFloor-TH, S=B.SKY_BRICK;
+  for(let x=x0-2;x<=x1+2;x++){ for(let y=Math.max(1,top-6);y<gy;y++){ put(x,y,0); bput(x,y,0); } for(let y=gy;y<gy+3;y++) put(x,y,y===gy?S:B.CLOUD); }
+  for(let y=top;y<gy;y++){ put(x0,y,S); put(x1,y,S); for(let x=x0+1;x<x1;x++) bput(x,y,7); }
+  for(let x=x0;x<=x1;x++){ put(x,top,S); if((x-x0)%3===0) put(x,top-1,S); }
+  for(const sx of [x0+6,x1-6,Math.round((x0+x1)/2)]){ const h=sx===Math.round((x0+x1)/2)?6:4; for(let k=0;k<h;k++) for(let x=sx-h+k+1;x<=sx+h-k-1;x++) if(top-1-k>0) put(x,top-1-k,B.GOLD_BLOCK); if(top-1-h>0) put(sx,top-1-h,B.BANNER_B); }
+  const holes=[]; for(let f=1;f<=4;f++){ const fy=floors[f], left=(f%2===0)===entryLeft; const hx=left?x0+3:x1-7; holes.push({x:hx,fy});
+    for(let x=x0+1;x<x1;x++) put(x,fy,(x>=hx&&x<hx+4)?B.PLATFORM:S);
+    for(const dy of (compact?[4,7]:[4,8])) for(let x=hx;x<hx+4;x++) put(x,fy+dy,B.PLATFORM); }
+  const mid=Math.round((x0+x1)/2), rooms=[], boxes=[];
+  const room=(a,b,fy,name)=>{ rooms.push({x0:a,x1:b,gy:fy,name}); boxes.push([a,b,fy-FH+1,fy-1]); };
+  const wallAt=(x,fy)=>{ for(let y=fy-FH+1;y<fy;y++) put(x,y,S); for(const y of [fy-1,fy-2,fy-3]) put(x,y,0); };
+  const split0=entryLeft?x0+56:x1-56; wallAt(split0,floors[0]); room(entryLeft?x0+1:split0+1,entryLeft?split0-1:x1-1,floors[0],'Entrance hall'); room(entryLeft?split0+1:x0+1,entryLeft?x1-1:split0-1,floors[0],'Armory');
+  room(x0+1,x1-1,floors[1],'Library');
+  wallAt(mid,floors[2]); room(x0+1,mid-1,floors[2],'West barracks'); room(mid+1,x1-1,floors[2],'East barracks');
+  room(x0+1,x1-1,floors[3],'Sky garden');
+  const th={x0:x0+1,x1:x1-1,gy:thFloor-2}; boxes.push([x0+1,x1-1,top+1,thFloor-1]);
+  for(let x=mid-12;x<=mid+12;x++) put(x,thFloor-1,B.GOLD_BLOCK); for(let x=mid-6;x<=mid+6;x++) put(x,thFloor-2,B.GOLD_BLOCK); placeThrone(put,mid,thFloor-3);
+  for(let x=mid-22;x<=mid+22;x++) if(Math.abs(x-mid)>12&&!world[(thFloor-1)*W+x]) put(x,thFloor-1,B.RUG);
+  for(const x of [x0+3,x1-3,mid-14,mid+14]){ put(x,thFloor-7,B.LANTERN); put(x,thFloor-14,B.BANNER_B); } for(const x of [x0+3,x1-3]) put(x,thFloor-20,B.LANTERN);
+  for(let x=mid-18;x<=mid+18;x+=9) if(x!==mid) put(x,top+1,B.LANTERN);
+  door(put,entryLeft?x0:x1,gy);
+  for(const fy of floors) for(const x of [x0,x1]) for(const y of [fy-5,fy-6]) put(x,y,B.GLASS);
+  for(const r of rooms){ for(let x=r.x0+3;x<r.x1-1;x+=8) put(x,r.gy-6,B.LANTERN); }
+  const free=(x,y)=>!world[y*W+x];
+  const deco={ 'Armory':[B.WEAPON_RACK,B.ARMOR_STAND,B.WEAPON_RACK,B.ARMOR_STAND,B.WEAPON_RACK], 'Library':[B.BOOKSHELF,B.BOOKSHELF,B.TABLE,B.BOOKSHELF,B.BOOKSHELF,B.TABLE,B.BOOKSHELF,B.BOOKSHELF], 'West barracks':[B.BED,B.BED,B.BARREL,B.BED,B.BED], 'East barracks':[B.BED,B.BED,B.WEAPON_RACK,B.BED,B.BED], 'Entrance hall':[B.ARMOR_STAND,B.ARMOR_STAND,B.ARMOR_STAND,B.ARMOR_STAND] };
+  for(const r of rooms){ const L=deco[r.name]; if(L){ const step=Math.max(3,Math.floor((r.x1-r.x0-6)/L.length)); L.forEach((id,i)=>{ const x=r.x0+3+i*step; if(x<r.x1-1&&free(x,r.gy-1)&&!holes.some(h=>x>=h.x-1&&x<=h.x+4)) put(x,r.gy-1,id); }); } }
+  { const g=rooms.find(r=>r.name==='Sky garden'); for(let x=g.x0+2;x<g.x1-1;x+=3) if(free(x,g.gy-1)&&!holes.some(h=>x>=h.x-1&&x<=h.x+4)) put(x,g.gy-1,[B.FLOWER_B,B.FLOWER_Y,B.BUSH,B.FLOWER_R][(x>>1)&3]); }
+  return { x0, x1, gy:thFloor, top, cx:mid, entryLeft, throne:th, rooms, boxes, gate:{x:entryLeft?x0:x1,gy}, cleared:false, v2:true, v3:true, v4:true, topEntry:true, decor2:true, throne2:true }; };
+buildMagmaMaze=function(x0,gy,entryLeft,R,put,bput){ const Wd=MAZE_W, x1=x0+Wd, CW=28, NC=6, CH=16, DCH=10, top=gy-2*CH, dun=gy+DCH, O=B.OBSIDIAN, RB=B.RED_BRICK;
+  for(let x=x0-2;x<=x1+2;x++){ for(let y=top-1;y<=dun;y++){ put(x,y,0); bput(x,y,0); } for(let y=dun;y<dun+3;y++) put(x,y,B.MAGMA_ROCK); }
+  for(let y=top;y<=dun;y++){ put(x0,y,O); put(x1,y,O); for(let x=x0+1;x<x1;x++) bput(x,y,8); }
+  for(let x=x0;x<=x1;x++){ put(x,top,O); put(x,dun,O); if((x-x0)%3===0) put(x,top-1,O); }
+  const mx0=entryLeft?x0+1:x1-NC*CW, thX0=entryLeft?mx0+NC*CW+1:x0+1, thX1=entryLeft?x1-1:mx0-2, divX=entryLeft?thX0-1:thX1+1;
+  const levels=[gy-CH,gy,dun], heights=[CH,CH,DCH];
+  for(const fy of [gy-CH,gy]) for(let x=mx0;x<mx0+NC*CW;x++) put(x,fy,(fy===gy-CH)?RB:O);
+  for(let y=top+1;y<gy;y++) put(divX,y,O); for(let y=gy;y<=dun;y++) put(divX,y,O);
+  for(let c=1;c<NC;c++){ const wx=mx0+c*CW-1; for(let y=top+1;y<dun;y++) put(wx,y,O); }
+  const cell=(c,l)=>({x0:mx0+c*CW,x1:mx0+c*CW+CW-2,fy:levels[l],h:heights[l]}); const key=(c,l)=>c+','+l, seen=new Set(), ent=[entryLeft?0:NC-1,1];
+  const st=[ent]; seen.add(key(...ent)); const links=[];
+  while(st.length){ const [c,l]=st[st.length-1]; const nb=[[c-1,l],[c+1,l],[c,l-1],[c,l+1]].filter(([a,b])=>a>=0&&a<NC&&b>=0&&b<3&&!seen.has(key(a,b)));
+    if(!nb.length){ st.pop(); continue; } const n=nb[(R()*nb.length)|0]; seen.add(key(...n)); links.push([[c,l],n]); st.push(n); }
+  for(let k=0;k<3;k++){ const c=(R()*(NC-1))|0, l=(R()*3)|0; links.push([[c,l],[c+1,l]]); }
+  for(const [[c,l],[c2,l2]] of links){
+    if(l===l2){ const wx=mx0+Math.max(c,c2)*CW-1, fy=levels[l]; for(const y of [fy-1,fy-2,fy-3]) put(wx,y,0); }
+    else { const up=l<l2?[c,l]:[c2,l2], dn=l<l2?[c2,l2]:[c,l]; const cl=cell(...dn), fy=levels[up[1]]; const hx=cl.x0+3+((R()*(CW-8))|0); const steps=cl.h>=14?[4,8,12]:[4,7];
+      for(let x=hx;x<hx+3;x++){ put(x,fy,B.PLATFORM); for(const dy of steps) put(x,fy+dy,B.PLATFORM); } } }
+  const rooms=[], boxes=[], names=['Upper hall','Hall','Dungeon cell'];
+  for(let l=0;l<3;l++) for(let c=0;c<NC;c++){ const cl=cell(c,l); rooms.push({x0:cl.x0,x1:cl.x1,gy:cl.fy,name:names[l]}); boxes.push([cl.x0,cl.x1,cl.fy-cl.h+1,cl.fy-1]); }
+  const tc=Math.round((thX0+thX1)/2); const th={x0:thX0,x1:thX1,gy:gy-2}; boxes.push([thX0,thX1,top+1,gy-1]);
+  for(let x=thX0;x<=thX1;x++) for(let y=gy;y<dun;y++) put(x,y,O); for(let x=tc-10;x<=tc+10;x++) put(x,gy-1,B.GOLD_BLOCK); for(let x=tc-5;x<=tc+5;x++) put(x,gy-2,B.GOLD_BLOCK); placeThrone(put,tc,gy-3);
+  for(const y of [gy-CH-1,gy-CH-2,gy-CH-3]) put(divX,y,0); const inn=entryLeft?1:-1; for(let k=1;k*3<CH;k++){ const y=gy-CH+k*3; for(let i=1;i<=3;i++) put(divX+inn*i,y,B.PLATFORM); }
+  put(divX+inn,gy-CH,B.PLATFORM); put(divX+inn*2,gy-CH,B.PLATFORM);
+  for(const k of [14,15,-14,-15,20,21,-20,-21]) if(tc+k>thX0&&tc+k<thX1) put(tc+k,gy,B.LAVA); for(const x of [thX0+2,thX1-2,tc-16,tc+16]){ put(x,gy-6,B.TORCH); put(x,gy-14,B.BANNER_R); } for(const x of [thX0+2,thX1-2]) put(x,gy-22,B.TORCH);
+  door(put,entryLeft?x0:x1,gy);
+  rooms.forEach((r,i)=>{ const mid=Math.round((r.x0+r.x1)/2); put(r.x0+1,r.gy-5,B.TORCH); put(r.x1-1,r.gy-5,B.TORCH);
+    const free=x=>!world[(r.gy-1)*W+x]&&world[r.gy*W+x]!==B.PLATFORM;
+    if(r.name==='Dungeon cell'){ if(R()<0.6){ for(let x=mid-1;x<=mid+1;x++) if(world[r.gy*W+x]===O){ put(x,r.gy,B.LAVA); put(x,r.gy+1,O); } } else for(let x=mid-2;x<=mid+2;x++) for(let y=r.gy-4;y<r.gy;y++) if((x===mid-2||x===mid+2||y===r.gy-4)&&!world[y*W+x]) put(x,y,B.CAGE); }
+    else if(r.name==='Hall'){ if(free(mid-8)) put(mid-8,r.gy-1,B.ARMOR_STAND); if(free(mid+8)) put(mid+8,r.gy-1,B.BARREL); if(free(mid)) put(mid,r.gy-1,R()<0.5?B.TABLE:B.WEAPON_RACK); }
+    else { if(free(mid-6)) put(mid-6,r.gy-1,R()<0.5?B.WEAPON_RACK:B.TABLE); if(free(mid+6)) put(mid+6,r.gy-1,B.BARREL); } });
+  return { x0, x1, gy, top, cx:tc, entryLeft, throne:th, rooms, boxes, gate:{x:entryLeft?x0:x1,gy}, cleared:false, v2:true, v4:true, topEntry:true, decor2:true, throne2:true }; };
+// old worlds: a castle without v4 is rebuilt at the new size where it stands (the magma maze grows away from the arrival
+// flat; if there is no room for it, it is left as it is)
+{ const _nr=needsRebuild; needsRebuild=function(realm){ if(_nr(realm)) return true; const c=castleOf(realm); return !!c&&!c.v4; }; }
+{ const _rb=rebuildCastle; rebuildCastle=function(realm,...a){ const old=castleOf(realm); if(!old||!needsRebuild(realm)) return; try{
+      if(realm==='magma'){ const w=MAZE_W; const nx0=old.entryLeft?old.x0:old.x1-w, nx1=nx0+w; const ax=magma.arrive?magma.arrive.px:null;
+        if(nx0<magma.mx0+3||nx1>magma.mx1-3||(ax!=null&&nx0<=ax+14&&nx1>=ax-14)){ old.v4=true; old.small=true; return; }   /* no room: it stays small */
+        old.x0=nx0; old.x1=nx1; magma.huts=(magma.huts||[]).filter(h=>h.x<nx0-12||h.x>nx1+12); }
+      else { const tx=old.v2?old.x0:old.x0+32; if(sky&&tx+SKYW>sky.sx1-4){ old.v4=true; old.small=true; return; } old.x1=tx+SKYW; } }catch(e){ console.warn(e); }
+    return _rb(realm,...a); }; }
+
+// ---- 3. the fog in rooms you have not entered: thick drifting smoke, white in the sky tower and red in the magma maze,
+//      like the smoke of a battle but dense; it clears room by room as you step in ----
+drawDarkRooms=function(){ if(!player) return; const px=cxOf(player)/T, py=cyOf(player)/T, t=performance.now()/1000;
+  for(const c of [sky&&sky.castle,magma&&magma.keep]){ if(!c||c.cleared||!c.rooms) continue; if(Math.abs(px-c.cx)>220) continue; c.seen=c.seen||{}; const sk=c===(sky&&sky.castle);
+    castleBoxes(c).forEach(([x0,x1,y0,y1],i)=>{ if(c.seen[i]) return; if(px>=x0-0.2&&px<=x1+1.2&&py>=y0-0.5&&py<=y1+1.2){ c.seen[i]=1; if(typeof sfx==='function') sfx('ward'); return; }
+      const X0=(x0-1)*T, Y0=(y0-1)*T, w=(x1-x0+3)*T, h=(y1-y0+3)*T; if(X0>camX+viewW||X0+w<camX||Y0>camY+viewH||Y0+h<camY) return;
+      ctx.save(); ctx.beginPath(); ctx.rect(X0,Y0,w,h); ctx.clip();
+      ctx.fillStyle=sk?'rgba(226,230,240,0.93)':'rgba(112,16,8,0.94)'; ctx.fillRect(X0,Y0,w,h);
+      const col=sk?'250,252,255':'205,62,28', n=Math.min(90,Math.ceil(w*h/(T*T*16))+6);
+      for(let k=0;k<n;k++){ const s=((i*131+k*71)%997)/997, s2=((i*53+k*197)%991)/991; const r=T*(1.5+1.5*s2);
+        const fx=X0+(((s+t*0.010*(1+k%3))%1+1)%1)*w, fy=Y0+(((s2-t*0.005*(1+k%2))%1+1)%1)*h; const a=0.42+0.22*Math.sin(t*0.9+k*0.7);
+        const g=ctx.createRadialGradient(fx,fy,0,fx,fy,r); g.addColorStop(0,`rgba(${col},${a})`); g.addColorStop(0.6,`rgba(${col},${a*0.5})`); g.addColorStop(1,`rgba(${col},0)`); ctx.fillStyle=g; ctx.beginPath(); ctx.arc(fx,fy,r,0,Math.PI*2); ctx.fill(); }
+      ctx.restore(); }); } };
 // ===== Beta 0.9.92: the Quartermaster repairs damage; captured castles are fixed up and claimed (Kinard, 2026-10-11) =====
 // 1. Damage is remembered: whatever blasts, fire, scorching or a falling building change inside your village or an enemy
 //    base (and what you dig out of an enemy base before you claim it) is kept cell by cell in home.dmg[site], as it was.
