@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791771779"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791771779"><link rel="manifest" href="manifest.webmanifest?v=1791771779"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791776474"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791776474"><link rel="manifest" href="manifest.webmanifest?v=1791776474"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.106</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.111</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,17 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.106</h3>
+    <h3>New in Beta 0.9.111</h3>
+    <p>On computers every menu window can be moved by the bar at its top and resized by its bottom-right corner, and the game remembers where you put it. Settings &gt; Computer chooses where the bag and the crafting window open (left, centre or right), or puts crafting in the bag's window so you craft and sort in one place. "Put every window back" undoes it all.</p>
+    <h3>Beta 0.9.110</h3>
+    <p>The 1 to 9 keys pick a hotbar slot while the bag, crafting, a chest, a shop, the army, the map or the God menu is open, unless you are typing in a search box. Tapping another menu's button while one is open switches straight to it.</p>
+    <h3>Beta 0.9.109</h3>
+    <p>The log wall is a back wall: it goes behind you like the plank and stone walls (4 from a log; the solid log walls of the orc huts stay as they are). A small Near / Exact button sits beside the hotbar: Near mines the nearest block in the direction you aim or tap, Exact only the block you point at, and it works with a mouse too.</p>
+    <h3>Beta 0.9.108</h3>
+    <p>On computers the crafting panel opens on the left, where the bag opens, instead of at the right edge. Underground, every cave biome holds the same share of coal, iron, silver, gold and gems as the plain caves (the jade, rose, azure, dripstone, fossil, overgrown and mossy caves had about half); the gem caves keep their extra gems. Old worlds get the extra ore where you have not been. Bats, rose wisps, glow moths, wraiths and vultures fly: they cruise a few blocks over the ground instead of sliding along it, and dive or hang back to shoot. Swapping a block for the one in your hand takes a short hold on it, with a gold bar filling along the block, so a stray tap never eats a wall. The music is softer: no buzzing square waves, and fights play lower and slower.</p>
+    <h3>Beta 0.9.107</h3>
+    <p>The New world screen has a starting kit with both a recall mirror and a grappling hook ("+ Mirror and hook"), beside the mirror-only and hook-only kits. A hero you made earlier gets the kit's items as well.</p>
+    <h3>Beta 0.9.106</h3>
     <p>The magma realm is mostly dark scoria and basalt now, with obsidian pockets and glowing ember stone; red magma rock only turns up in small pockets. The glow on magma rock and ember stone is little specks instead of lines. Adamant veins grow in any of the realm's rocks. Old worlds get the change where you have not been. The fog in the castle rooms you have not entered is loose and wispy: it drifts, flows across the room and spills a little past the walls, and it still clears room by room as you step in. The magma plants blend into the realm: dark stems and leaves in its own browns and reds with a spark of colour at the tips, much less glow, and they grow in patches.</p>
     <h3>Beta 0.9.105</h3>
     <p>The orc island's music no longer thuds like a drum every half second; that beat sounded like something being hit over and over. The tune itself stays.</p>
@@ -724,7 +734,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.106</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.111</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -987,7 +997,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.106</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.111</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1006,7 +1016,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.106', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.111', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2971,7 +2981,7 @@ function aimPoint(def){ if(def&&(def.kind==='axe'||def.kind==='hoe')) def={...de
   const inR=(tx,ty)=>Math.hypot(tx*T+8-cx,ty*T+8-cy)<=REACH;
   if(def.kind!=='pick'&&!stick.r.on) return {x:direct.x,y:direct.y,tx:dtx,ty:dty};
   if(!stick.r.on&&!locked&&inR(dtx,dty)&&good(dtx,dty)) return {x:direct.x,y:direct.y,tx:dtx,ty:dty};
-  if(!stick.r.on&&!locked&&input.mouse) return {x:direct.x,y:direct.y,tx:dtx,ty:dty};
+  if(!stick.r.on&&!locked&&input.mouse&&!settings.smartMouse) return {x:direct.x,y:direct.y,tx:dtx,ty:dty};   /* 0.9.109: the Near toggle covers the mouse too */
   if(!settings.smart&&!stick.r.on&&!locked) return {x:direct.x,y:direct.y,tx:dtx,ty:dty};
   let last=null;
   for(let s=6;s<=REACH;s+=3){ const tx=Math.floor((cx+dx*s)/T), ty=Math.floor((cy+dy*s)/T); const id=tileAt(tx,ty);
@@ -5495,7 +5505,7 @@ function buildChoices(){
   $('#chSlot').innerHTML=[1,2,3].map(n=>`<button class="choice" data-k="slot" data-v="${n}" aria-pressed="${+setup.slot===n}">Slot ${n}<small>${slotInfo(n)?'In use: will be replaced':'Empty'}</small></button>`).join(''); $('#overwriteNote').hidden=!slotInfo(+setup.slot);
   $('#chChar').innerHTML=`<button class="choice" data-k="char" data-v="-1" aria-pressed="${+setup.char===-1}">Default look</button>`+chars.map((c,i)=>`<button class="choice" data-k="char" data-v="${i}" aria-pressed="${+setup.char===i}"><span class="sw" style="background:${c.o1}"></span>${escapeHTML(c.name)}</button>`).join('');
   $('#chMode').innerHTML=ch('mode','survival','Survival','The normal game')+ch('mode','creative','Creative','Fly, free coins and crafting, no damage');
-  $('#chKit').innerHTML=ch('kit','standard','Standard')+ch('kit','recall','+ Recall mirror')+ch('kit','grapple','+ Grappling hook')+ch('kit','supplies','Extra supplies')+ch('kit','bare','Bare hands');
+  $('#chKit').innerHTML=ch('kit','standard','Standard')+ch('kit','recall','+ Recall mirror')+ch('kit','grapple','+ Grappling hook')+ch('kit','both','+ Mirror and hook')+ch('kit','supplies','Extra supplies')+ch('kit','bare','Bare hands');
   $('#kitDesc').textContent=KITS[setup.kit]+'.';
   $('#chDeath').innerHTML=ch('death','keep','Keep everything')+ch('death','coins','Lose coins')+ch('death','all','Lose everything');
   $('#chWx').innerHTML=ch('wx','off','Off')+ch('wx','light','Light')+ch('wx','medium','Medium')+ch('wx','strong','Strong'); $('#wxDesc').textContent=WX_DESC[setup.wx]||'';
@@ -5717,9 +5727,9 @@ function musicTick(dt){ if(!AC||!settings.sound||!player||state==='title') retur
   const want=boss?'boss':kr?'kraken':combat?'combat':isl&&isl.orc?'orc':isl&&isl.forest&&!deep?'forest':deep?'deep':isNight()?'night':'day';
   // switch moods only on a bar line (every 4 notes), or at once for danger
   if(want!==musicMood&&(musicStep%4===0||!musicMood||want==='boss'||want==='combat'||want==='kraken')){ const first=!musicMood; musicMood=want; musicStep=0; if(!first){ musicFadeTo(); musicT=0.3; return; } }
-  const mood=musicMood||want; const sc=SCALES[mood]; const root=mood==='boss'?110:mood==='kraken'?65:mood==='orc'?87:mood==='forest'?147:mood==='combat'?98:mood==='deep'?98:mood==='night'?110:131; const beat=mood==='boss'?0.22:mood==='kraken'?0.3:mood==='orc'?0.26:mood==='combat'?0.24:mood==='day'||mood==='forest'?0.34:0.46; musicT=beat;
+  const mood=musicMood||want; const sc=SCALES[mood]; const root=mood==='boss'?110:mood==='kraken'?65:mood==='orc'?87:mood==='forest'?147:mood==='combat'?98:mood==='deep'?98:mood==='night'?110:131; const beat=mood==='boss'?0.28:mood==='kraken'?0.3:mood==='orc'?0.26:mood==='combat'?0.32:mood==='day'||mood==='forest'?0.34:0.46; musicT=beat;
   /* 0.9.105: the orc island's music had a low drum thud every other note, which sounded like constant hitting; the melody stays */ if(mood==='kraken'&&musicStep%8===0) tone(41,1.4,'sine',0.5,0,musicGain); if(mood==='forest'&&Math.random()<0.08) sfx('bird');
-  const note=sc[(musicStep*3+(musicStep>>2))%sc.length]; const hot=mood==='boss'||mood==='combat'; tone(root*2*Math.pow(2,note/12),beat*1.5,hot?'square':'triangle',mood==='combat'?0.16:mood==='boss'?0.2:0.35,0,musicGain);
+  const note=sc[(musicStep*3+(musicStep>>2))%sc.length]; const hot=mood==='boss'||mood==='combat'; /* 0.9.108: softer fights: triangle waves only, an octave lower, slower */ tone(root*(hot?1:2)*Math.pow(2,note/12),beat*1.5,'triangle',mood==='combat'?0.3:mood==='boss'?0.32:0.35,0,musicGain);
   if(mood==='combat'&&musicStep%2===0) tone(root/2,beat*0.9,'triangle',0.35,-10,musicGain);
   if(musicStep%4===0) tone(root*Math.pow(2,sc[(musicStep>>2)%3]/12)/2,beat*4,'sine',0.5,0,musicGain); musicStep++;
   if(Math.random()<0.02){ const a=ents.find(e=>e.kind==='animal'&&!e.dead&&Math.abs(e.x-player.x)<18*T); if(a) sfx({bird:'bird',wolf:'wolf',bear:'bear',polarbear:'bear',boar:'boar',deer:'deer',penguin:'penguin'}[a.atype]||'bird',cxOf(a),cyOf(a)); } }
@@ -13949,6 +13959,36 @@ function drawFalls(){ for(const f of FALLS){ const a=f.landed?Math.max(0,1-f.lt/
 { const _rf=mpReplayFx; mpReplayFx=function(list,...a){ try{ for(const e of list){
       if(e[1]==='bfall'&&isGuest()&&player&&Math.abs(e[2]-cxOf(player))<80*T){ const cl=String(e[5]||'').split(';').filter(Boolean).map(s=>{ const [a,b,c]=s.split(',').map(Number); return [a*T,b*T,c]; }); if(cl.length) startFall(e[2],e[3],e[4],cl,false,e[6],e[7]); }
       else if(e[1]==='boom'&&!isGuest()) setTimeout(()=>{ try{ collapseCheck(e[2],e[3],(e[4]||2)*T+T); }catch(err){} },400); } }catch(err){} return _rf(list,...a); }; }
+// ===== Beta 0.9.108: the crafting panel on the bag's side, and the same ore in every underground biome (Kinard, 2026-10-12) =====
+
+// ---- 1. on computers the crafting panel opens at the left, where the bag opens, instead of the right edge ----
+{ const st=document.createElement('style'); st.textContent=`body:not(.touch) #scrInv.craftmode .panel.wide{ left:var(--bagx,8px); right:auto; }`; document.head.appendChild(st); }
+{ const _oi=openInv; openInv=function(mode,...a){ const r=_oi(mode,...a); try{ if(mode==='craft'&&typeof bagPanelPlace==='function') bagPanelPlace(); }catch(e){} return r; }; }
+window.addEventListener('resize',()=>{ try{ if(state==='inv'&&$('#scrInv').classList.contains('craftmode')) bagPanelPlace(); }catch(e){} });
+
+// ---- 2. ore across the biomes: the plain caves set the amount of each ore; every other cave biome (jade, rose, azure,
+//      dripstone, fossil, overgrown, mossy) is topped up to the same share of its rock with small veins. The gem caves keep
+//      their extra gems, since that is what they are for ----
+const EVEN_ORES=()=>[B.COAL,B.IRON,B.SILVER_ORE,B.GOLD,B.EMERALD_ORE,B.RUBY_ORE,B.SAPPHIRE_ORE].filter(v=>v!=null);
+const GEM_ORES=()=>new Set([B.EMERALD_ORE,B.RUBY_ORE,B.SAPPHIRE_ORE]);
+function evenRock(){ if(evenRock.s) return evenRock.s; const s=new Set(NAT_ROCK()); for(const k of ['JADE_STONE','ROSE_STONE','AZURE_STONE','DRIPSTONE','FOSSIL_STONE','GROVE_SOIL']){ const id=(typeof BIO!=='undefined'&&BIO[k])||B[k]; if(id!=null) s.add(id); } s.delete(B.SAND); s.delete(B.SNOW); s.delete(B.MAGMA_ROCK); return evenRock.s=s; }
+function oreBiome(x,y){ let b=null; try{ b=biome2At(x,y); }catch(e){} if(!b){ try{ b=biomeAt(x,y); }catch(e){} } return b||'cave'; }
+function oreEvenOut(seedN,onlyUnexplored){ let total=0; oreEvenOut.rounds=[]; for(let round=0;round<4;round++){ oreEvenOut.last=null; const n=oreEvenRound((seedN|0)+round*77,onlyUnexplored); oreEvenOut.rounds.push(oreEvenOut.last); total+=n; if(!n) break; } return total; }   /* veins spill over biome borders, so a round or two more tops up what the first one missed */
+function oreEvenRound(seedN,onlyUnexplored){ if(!world||!surf||oreEvenOut.off) return 0; const R=mulberry((seedN|0)+8108), ores=EVEN_ORES(), gems=GEM_ORES(), rock=evenRock(), isOre=new Set(ores);
+  const y0=Math.max(2,seaY-10), y1=(typeof magmaY!=='undefined'?magmaY:H)-2; const by={};
+  const bucket=b=>by[b]||(by[b]={solid:0,ore:{},cells:[],ymin:{},ymax:{}});
+  for(let y=y0;y<y1;y++) for(let x=1;x<W-1;x++){ const i=y*W+x; const id=world[i]; if(!id) continue; const o=isOre.has(id), r=rock.has(id); if(!o&&!r) continue; if(y<surf[x]+4) continue;
+    const b=oreBiome(x,y); if(b==='surface') continue; const k=bucket(b); k.solid++; if(o){ k.ore[id]=(k.ore[id]||0)+1; if(k.ymin[id]==null||y<k.ymin[id]) k.ymin[id]=y; if(k.ymax[id]==null||y>k.ymax[id]) k.ymax[id]=y; } else if(!(onlyUnexplored&&explored[i])) k.cells.push(i); }
+  const ref=by.cave; if(!ref||ref.solid<5000) return 0; let made=0; (oreEvenOut.last=oreEvenOut.last||{}).ref={solid:ref.solid, iron:ref.ore[B.IRON]||0, coal:ref.ore[B.COAL]||0};
+  for(const b in by){ if(b==='cave') continue; const k=by[b]; if(k.solid<400||!k.cells.length) continue;
+    for(const ore of ores){ if(b==='gem'&&gems.has(ore)) continue; const want=(ref.ore[ore]||0)/ref.solid; let need=Math.round(want*k.solid-(k.ore[ore]||0)); if(need<=0) continue;
+      const ymin=ref.ymin[ore]??y0, ymax=ref.ymax[ore]??y1; let tries=0; const maxTries=need*6+200, need0=need; const dbg=(oreEvenOut.last=oreEvenOut.last||{}); dbg[b]=dbg[b]||{};
+      while(need>0&&tries<maxTries){ tries++; const i=k.cells[(R()*k.cells.length)|0]; const y=(i/W)|0; if(y<ymin||y>ymax||!rock.has(world[i])) continue;
+        let x=i%W, Y=y, n=2+((R()*4)|0); for(let t=0;t<n*4&&n>0;t++){ const j=Y*W+x; if(rock.has(world[j])&&Y>=y0&&Y<y1&&!(onlyUnexplored&&explored[j])&&oreBiome(x,Y)===b){ wset(x,Y,ore);   /* a vein stays inside its biome */ if(explored[j]) mapPixel(x,Y); n--; need--; made++; } const r2=R(); if(r2<0.3) x++; else if(r2<0.6) x--; else if(r2<0.8) Y++; else Y--; if(x<1||x>=W-1) break; } } dbg[b][BLOCKS[ore].name]=[need0,need0-need,tries,ymin,ymax]; } }
+  return made; }
+{ try{ const hs=ORE_HOSTS(); for(const id of evenRock()) hs.add(id); }catch(e){} }
+// it runs when play starts (new and old worlds alike), after every older ore pass has had its turn
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.oreEvenV&&!isGuest()){ home.oreEvenV=1; facRun(()=>{ oreEvenOut(seed,true); }); try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.86: falling sand, the desert island and its creatures (Kinard, 2026-10-11) =====
 
 // ---- 1. sand falls: a sand block with nothing under it drops straight down and lands on the first thing that holds it ----
@@ -14214,6 +14254,34 @@ AURA_MUL.regen=1;
 { const _ab=auraBearers; auraBearers=function(...a){ const L=_ab(...a); try{ if(player&&!player.dead) for(const id of wornCharms(player)){ const k=TEAM_CHARMS[id]; if(k) L.push([cxOf(player),cyOf(player),player.team,k]); } }catch(e){} return L; }; }
 let mendT=0;
 { const _at=auraTick; auraTick=function(dt,...a){ const r=_at(dt,...a); try{ mendT+=dt; if(mendT>=1){ const s=mendT; mendT=0; for(const e of ents){ if(e.dead||!e.aura||!e.aura.regen||e.hp>=e.maxHp) continue; if((e.hurtT??-9)>-3||(e.kind==='player'&&e.regenT>0)) continue; e.hp=Math.min(e.maxHp,e.hp+e.maxHp*0.02*s); } } }catch(e){} return r; }; }
+// ===== Beta 0.9.108: bats and wisps fly, a block swap takes a short hold (Kinard, 2026-10-12) =====
+
+// ---- 1. the flying monsters really fly: they had no weight but nothing lifted them, so they slid along the floor. Bats,
+//      rose wisps, glow moths, ash and sand wraiths and vultures now cruise a few blocks over the ground, bob along, turn
+//      at walls and keep off the ceiling; a flyer with a target dives at it (bats, moths) or hangs back and above it to
+//      shoot (wisps, wraiths) ----
+const FLY_FREE=new Set(['cave_bat','rose_wisp','glow_moth','ash_wraith','sand_wraith','vulture']);
+function floorBelow(e,n){ const gx=Math.floor(cxOf(e)/T); let gy=Math.floor((e.y+e.h)/T); for(let k=0;k<n;k++){ if(gy+k>=H) return null; if(isSolid(gx,gy+k)) return gy+k; } return null; }
+function flyMove(e,dt){ const t=e.target&&!e.target.dead&&!e.target.aboard?e.target:null; const cx=cxOf(e), cy=cyOf(e); let tx,ty;
+  if(t){ const dx=cxOf(t)-cx; const s=Math.sign(dx)||e.facing||1; if(e.ranged){ tx=cxOf(t)-s*5*T; ty=cyOf(t)-3*T; } else { tx=cxOf(t); ty=cyOf(t)-0.8*T; } ty+=Math.sin(e.anim*3)*6; }
+  else { e.flyT=(e.flyT||0)-dt; if(e.hitWall) e.flyDir=-(e.flyDir||1); if(e.flyT<=0){ e.flyT=1.5+Math.random()*2.5; e.flyDir=Math.random()<0.5?-1:1; e.flyH=2.5+Math.random()*3; } tx=cx+(e.flyDir||1)*100; const fy=floorBelow(e,16); ty=(fy!=null?fy*T-(e.flyH||3)*T:cy-0.5*T)+Math.sin(e.anim*2)*10; }
+  const gx=Math.floor(cx/T), gy=Math.floor(e.y/T); if(isSolid(gx,gy-1)) ty=Math.max(ty,cy+T);   /* off the ceiling */
+  const dx=tx-cx, dy=ty-cy, m=Math.hypot(dx,dy)||1, sp=e.speed*(t?1:0.45), k=Math.min(1,dt*3);
+  e.vx=lerp(e.vx,dx/m*sp,k); e.vy=lerp(e.vy,dy/m*sp,k); if(Math.abs(e.vx)>5) e.facing=Math.sign(e.vx); }
+// makeMonster never copied `fly` onto the creature, so even its weightlessness was lost: it is set here (and on load)
+{ const _mm=makeMonster; makeMonster=function(type,...a){ const e=_mm(type,...a); try{ if(e&&FLY_FREE.has(type)) e.fly=true; }catch(err){} return e; }; }
+{ const _ph=physics; physics=function(e,dt,...a){ try{ if(e&&e.kind==='monster'&&!e.dead&&!e.ghost&&FLY_FREE.has(e.mtype)){ e.fly=true; if(!(e.kbT>0)) flyMove(e,dt); } }catch(err){} return _ph(e,dt,...a); }; }
+
+// ---- 2. swapping a block for the one in your hand takes a short hold on it (about a second and a half), so a stray tap
+//      or click never eats a wall; a gold bar fills along the block while you hold ----
+const SWAP_HOLD=1.5; let swapHold=null;
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ try{ if(player&&typeof swapOK==='function'&&swapOK(x,y,id)){ const now=performance.now()/1000;
+      if(!swapHold||swapHold.x!==x||swapHold.y!==y||swapHold.id!==id){ swapHold={x,y,id,t0:now}; return; } if(now-swapHold.t0<SWAP_HOLD) return;
+      swapHold=null; const ue=player.useEdge; player.useEdge=true; try{ return _tp(x,y,id,...a); } finally{ player.useEdge=ue; } } }catch(e){}
+    swapHold=null; return _tp(x,y,id,...a); }; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ if(swapHold&&(!input.use||performance.now()/1000-swapHold.t0>SWAP_HOLD+3)) swapHold=null; }catch(e){} return r; }; }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ if(swapHold&&input.use&&player){ const p=Math.min(1,(performance.now()/1000-swapHold.t0)/SWAP_HOLD); const X=swapHold.x*T-camX, Y=swapHold.y*T-camY;
+      ctx.save(); ctx.globalAlpha=0.9; ctx.strokeStyle='#ffd060'; ctx.lineWidth=2; ctx.strokeRect(X+1,Y+1,T-2,T-2); ctx.fillStyle='rgba(255,208,96,0.35)'; ctx.fillRect(X,Y,T*p,T); ctx.fillStyle='#ffd060'; ctx.fillRect(X,Y+T-3,T*p,3); ctx.restore(); } }catch(e){} return r; }; }
 // ===== Beta 0.9.102: crystal golems in the colours of their caves (Kinard, 2026-10-12) =====
 // A golem's crystal comes from where it stands: jade (green) in jade caves, rose quartz (pink), azure (blue), quartz (white)
 // in dripstone caves, amber in root caves, bone crystal (ivory) in fossil caves, moss crystal (green-gold) in the overgrown
@@ -14580,6 +14648,12 @@ bugSwingTick=function(dt){ netCd-=dt; const p=player; if(!p||p.dead||state!=='pl
 { const _sp=sfxPlay; sfxPlay=function(k,...a){ if(k==='bugcatch'){ tone(1500,0.05,'square',0.07,500); tone(2100,0.07,'sine',0.06,300,null,0.05); return; }
     if(k==='bugdie'){ noise(0.04,0.14,1600); tone(240,0.05,'square',0.07,-140); return; } return _sp(k,...a); }; }
 { const _bq=bugSquish; bugSquish=function(b,...a){ const r=_bq(b,...a); try{ if(b) sfx('bugdie',b.x,b.y); }catch(e){} return r; }; }
+// ===== Beta 0.9.107: a starting kit with both a recall mirror and a grappling hook (Kinard, 2026-10-12) =====
+KITS.both='Standard plus a recall mirror and a grappling hook';
+const KIT_HOOK=630;   /* the first grappling hook, as in the hook kit */
+{ const _ng=newGame; newGame=function(sk,fac,cls,rl,...a){ const r=_ng(sk,fac,cls,rl,...a); try{ if(rl&&rl.kit==='both'){ give(I.RECALL,1); obtain(KIT_HOOK,1,true); } }catch(e){ console.warn(e); } return r; }; }
+// a hero made earlier brings their own bag and gear, so the kit's items are handed over again after they arrive
+{ const _aw=afterWorldReady; afterWorldReady=function(...a){ const r=_aw(...a); try{ if(player&&rules){ if(rules.kit==='both'&&!countItem(I.RECALL)) give(I.RECALL,1); if((rules.kit==='both'||rules.kit==='grapple')&&!(player.gear&&player.gear.grapple)) obtain(KIT_HOOK,1,true); } }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.103: lava flows through plants like water, an antler-white rod, a tilted net (Kinard, 2026-10-12) =====
 
 // ---- 1. lava and plants: lava burns through every plant, sapling, glow plant, cobweb, rug and other loose thing that
@@ -14601,6 +14675,27 @@ customIcon(BUG_NET,(rect,px)=>{ for(let i=0;i<7;i++){ px(1+i,14-i,'#8a5c2d'); px
   for(let y=1;y<=8;y++) for(let x=4;x<=14;x++) if(inside(x,y)) px(x,y,(x+y)%2?'#e8e8e0':'#c8c8c0');
   for(let k=0;k<8;k++) px(7+k,8-k,'#9a9a90');   // the rim, in line with the shaft: it faces the way you swing
   px(5,1,'#b0b0a8'); });
+// ===== Beta 0.9.109: the log wall is a back wall; a Near/Exact aim toggle beside the hotbar (Kinard, 2026-10-12) =====
+
+// ---- 1. the log wall item places as a back wall behind you (the solid log walls of the orc huts stay as they are, and
+//      breaking one still gives you the item) ----
+const LOG_BG=44;
+BGTEX[LOG_BG]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.LOG_WALL],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(36,30,46,0.45)'; g.fillRect(0,0,16,16); g.globalCompositeOperation='source-over'; return c; })();
+WALLS[B.LOG_WALL]=LOG_BG; ITEMS[B.LOG_WALL]={name:'Log wall',kind:'wall',desc:'A back wall of stacked logs, placed behind you like the other walls'};
+{ const r=RECIPES.find(r=>r&&r.out===B.LOG_WALL); if(r) r.n=4; }
+
+// ---- 2. a small Near / Exact toggle beside the hotbar: Near mines the nearest block in the direction you aim or tap,
+//      Exact only the block under the pointer. With a mouse the game always picked the exact block; the toggle now
+//      covers the mouse too (settings.smartMouse) ----
+const aimNearOn=()=>!!settings.smart&&(!input.mouse||!!settings.smartMouse);
+function aimTogRender(){ const b=$('#aimTog'); if(!b) return; const near=aimNearOn(); b.textContent=near?'Near':'Exact'; b.setAttribute('aria-pressed',near); b.title=near?'Near: mines the nearest block in the direction you aim. Tap to switch to the exact block':'Exact: only the block you point at. Tap to switch to the nearest block';
+  const hb=$('#hotbar'); if(hb){ const r=hb.offsetWidth, l=hb.offsetLeft, t=hb.offsetTop; const fits=hb.getBoundingClientRect().right+b.offsetWidth+10<window.innerWidth; b.style.left=(fits?l+r+4:l)+'px'; b.style.top=(fits?t+2:t+hb.offsetHeight+4)+'px'; } }
+function aimTogFlip(){ const near=!aimNearOn(); settings.smart=near; settings.smartMouse=near; try{ saveSettings(); }catch(e){} aimTogRender(); toast(near?'Aim: the nearest block in the direction you point':'Aim: only the exact block you point at',2); }
+{ const st=document.createElement('style'); st.textContent=`#topleft{ position:absolute; } #aimTog{ position:absolute; z-index:3; font:inherit; font-size:11px; line-height:1; padding:4px 6px; min-width:0; background:rgba(22,18,31,.78); color:#f4e8c8; border:2px solid var(--edge); box-shadow:2px 2px 0 var(--ink); cursor:pointer; } #aimTog[aria-pressed="true"]{ color:#ffd060; } body.touch #aimTog{ font-size:12px; padding:6px 8px; }`; document.head.appendChild(st);
+  const b=document.createElement('button'); b.id='aimTog'; b.type='button'; b.textContent='Near'; const tl=$('#topleft'); if(tl) tl.appendChild(b);
+  b.addEventListener('pointerdown',e=>{ e.preventDefault(); e.stopPropagation(); }); b.addEventListener('click',e=>{ e.preventDefault(); e.stopPropagation(); aimTogFlip(); }); }
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ if((frameN|0)%24===0) aimTogRender(); }catch(e){} return r; }; }
+window.addEventListener('resize',()=>{ try{ aimTogRender(); }catch(e){} });
 // ===== Beta 0.9.88: war machines hit harder and truer, step off, aim them all, pack them up; enemy ballistas (Kinard, 2026-10-11) =====
 
 // ---- 1. harder trebuchet boulders that smash through tree crowns into the ground ----
@@ -14768,6 +14863,23 @@ const MAGMA_MON=['magma_salamander','ash_wraith','obsidian_beetle'];
       for(let k=0;k<3;k++){ R(5+k*5,12+s,2,4-s,c1); R(7+k*5,12+(1-s),1,4-(1-s),c1); } R(3,4,17,9,c1); R(5,2,13,2,c1); R(6,4,4,2,c2); R(12,5,5,2,c2); R(7,5,1,1,c3); R(14,6,1,1,c3); R(11,4,1,9,'#0a060e');
       R(19,7,5,5,c1); R(22,8,1,1,'#ff5a1a'); R(23,10+(atk?1:0),3,1,c2); R(23,11+(atk?1:0),2,1,c2); return; }
     return _hf(g,o,...a); }; }
+// ===== Beta 0.9.110: hotbar keys inside menus, and menu buttons that switch straight to the other menu (Kinard, 2026-10-12) =====
+
+// ---- 1. the 1-9 keys pick a hotbar slot while the bag, crafting, a chest, a shop, the army, the map or the God menu is
+//      open, unless you are typing in a search box or another text field ----
+const typingNow=()=>{ const a=document.activeElement; return !!a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.tagName==='SELECT'||a.isContentEditable); };
+window.addEventListener('keydown',e=>{ try{ if(!player||state==='play'||!MENU_STATES.has(state)||typingNow()||e.ctrlKey||e.metaKey||e.altKey) return; if(!/^Digit[1-9]$/.test(e.code)) return;
+    selectSlot(+e.code.slice(5)-1); if(state==='inv') renderInv(); else if(state==='chest'&&typeof renderChest==='function') renderChest(); }catch(err){} },true);
+
+// ---- 2. tapping another menu's button while one is open closes the open one and opens the other, instead of doing
+//      nothing. The top-row buttons stay above the menus so they can be reached ----
+function menuLeave(){ for(let k=0;k<4&&state!=='play'&&MENU_STATES.has(state);k++){ const o=openMenu(); const c=o&&menuCloser(o); if(c&&c.click) c.click(); else break; } return state==='play'; }
+{ const _oi=openInv; openInv=function(mode,...a){ if(state!=='play'&&MENU_STATES.has(state)) menuLeave(); return _oi(mode,...a); }; }
+{ const _oa=openArmy; openArmy=function(...a){ if(state!=='play'&&MENU_STATES.has(state)) menuLeave(); return _oa(...a); }; }
+{ const _om=openMap; openMap=function(...a){ if(state!=='play'&&MENU_STATES.has(state)) menuLeave(); return _om(...a); }; }
+{ const _or=openRecruit; openRecruit=function(...a){ if(state!=='play'&&MENU_STATES.has(state)) menuLeave(); return _or(...a); }; }
+{ const g=$('#btnGod'); if(g) g.addEventListener('click',()=>{ try{ if(state!=='play'&&state!=='god'&&MENU_STATES.has(state)) menuLeave(); }catch(e){} },true); }
+{ const st=document.createElement('style'); st.textContent=`#topbtns{ z-index:30; } #btnMore{ z-index:30; }`; document.head.appendChild(st); }
 // ===== Beta 0.9.104: a richer magma realm, bigger realm castles with bigger boss chambers, and thick smoke in their
 //       unseen rooms (Kinard, 2026-10-12) =====
 
@@ -15205,6 +15317,47 @@ function enemyFormTick(){ const now=gameNow(); if(!player) return;
 { const _ua=updateAI; updateAI=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if(e&&!e.dead&&e.efT>gameNow()&&e.efRank>0&&e.kind==='human'){   // back ranks and the archers and mages behind them
         const ahead=e.efDir*(cxOf(e)-e.efX); if(ahead>0.5*T){ const step=Math.min(ahead-0.5*T,(e.speed||60)*dt*1.2); e.x-=e.efDir*step; if(collides(e)) e.x+=e.efDir*step; else if(e.efDir*e.vx>0) e.vx=0; } } }catch(err){} return r; }; }
 { const _br=braced; braced=function(t,src,...a){ if(_br(t,src,...a)) return true; try{ if(t&&t.efRank===0&&t.efT>gameNow()&&src){ const sx=src.owner&&!src.owner.dead?cxOf(src.owner):src.x!=null?src.x+(src.w||0)/2:null; if(sx!=null&&Math.sign(sx-cxOf(t))===t.efDir) return true; } }catch(e){} return false; }; }
+// ===== Beta 0.9.111: movable, resizable menu windows on computers; where the bag and crafting open; bag and crafting
+//       together (Kinard, 2026-10-12) =====
+// Every in-game menu window gets a thin bar at its top to drag it by and a corner to resize it; places and sizes are kept
+// in the settings. The bag and the crafting window can open at the left, the centre or the right, or crafting can share
+// the bag's window so you craft and sort in one place. Phones keep their full-screen menus.
+const WIN_IDS=new Set(['scrInv','scrChest','scrShop','scrArmy','scrBuild','scrMap','scrGod','scrSkills','scrPosts','scrTrade','scrRecruit','scrSettings']);
+const isPC=()=>!document.body.classList.contains('touch');
+settings.win=settings.win||{}; if(!settings.bagPos) settings.bagPos='left'; if(!settings.craftPos) settings.craftPos='left';
+function winPanel(id){ const o=document.getElementById(id); return o?o.querySelector(':scope > .panel'):null; }
+function winClamp(p){ const r=p.getBoundingClientRect(); let x=parseFloat(p.style.left)||r.left, y=parseFloat(p.style.top)||r.top; x=Math.max(0,Math.min(x,window.innerWidth-Math.min(r.width,160))); y=Math.max(0,Math.min(y,window.innerHeight-60)); p.style.left=x+'px'; p.style.top=y+'px';
+  /* the window stays on the screen, so its resize corner can always be reached */ p.style.maxHeight=Math.max(120,window.innerHeight-y-8)+'px'; p.style.maxWidth=Math.max(200,window.innerWidth-x-8)+'px'; }
+function winApply(id){ if(!isPC()) return; const p=winPanel(id); if(!p) return; p.classList.add('winable'); const s=settings.win[id];
+  if(s&&s.w){ p.style.width=s.w+'px'; } if(s&&s.h){ p.style.height=s.h+'px'; }
+  if(s&&s.x!=null){ p.style.position='absolute'; p.style.right='auto'; p.style.transform='none'; p.style.left=s.x+'px'; p.style.top=s.y+'px'; winClamp(p); }
+  else if(id==='scrInv') winInvPlace(p); }
+function winInvPlace(p){ const o=document.getElementById('scrInv'); const craft=o.classList.contains('craftmode'); const pos=craft?settings.craftPos:settings.bagPos; if(pos==='bag'&&craft) return;
+  p.style.position='absolute'; p.style.transform='none'; if(pos==='right'){ p.style.left='auto'; p.style.right='8px'; } else if(pos==='center'){ p.style.right='auto'; p.style.left='50%'; p.style.transform='translateX(-50%)'; } else { p.style.right='auto'; p.style.left=''; } p.style.top=''; }
+// the bar at the top: drag it to move the window
+function winBar(id){ const p=winPanel(id); if(!p||p.querySelector(':scope > .winbar')) return; const bar=document.createElement('div'); bar.className='winbar'; bar.title='Drag to move this window. Drag the bottom-right corner to resize it'; bar.innerHTML='<span>⋮⋮</span>'; p.prepend(bar);
+  let drag=null; bar.addEventListener('pointerdown',e=>{ if(!isPC()) return; const r=p.getBoundingClientRect(); drag={id:e.pointerId,dx:e.clientX-r.left,dy:e.clientY-r.top}; p.style.position='absolute'; p.style.right='auto'; p.style.transform='none'; p.style.left=r.left+'px'; p.style.top=r.top+'px'; p.style.margin='0'; try{ bar.setPointerCapture(e.pointerId); }catch(err){} e.preventDefault(); e.stopPropagation(); });
+  bar.addEventListener('pointermove',e=>{ if(!drag||e.pointerId!==drag.id) return; p.style.left=(e.clientX-drag.dx)+'px'; p.style.top=(e.clientY-drag.dy)+'px'; winClamp(p); e.preventDefault(); });
+  const end=e=>{ if(!drag||e.pointerId!==drag.id) return; drag=null; const s=settings.win[id]=settings.win[id]||{}; s.x=parseFloat(p.style.left)||0; s.y=parseFloat(p.style.top)||0; try{ saveSettings(); }catch(err){} };
+  bar.addEventListener('pointerup',end); bar.addEventListener('pointercancel',end);
+  // a resize from the corner is kept too
+  let sz=null; p.addEventListener('pointerdown',e=>{ if(!isPC()) return; const r=p.getBoundingClientRect(); if(e.clientX>r.right-22&&e.clientY>r.bottom-22) sz={w:r.width,h:r.height}; },true);
+  document.addEventListener('pointerup',()=>{ if(!sz) return; const r=p.getBoundingClientRect(); if(Math.abs(r.width-sz.w)>2||Math.abs(r.height-sz.h)>2){ const s=settings.win[id]=settings.win[id]||{}; s.w=Math.round(r.width); s.h=Math.round(r.height); try{ saveSettings(); }catch(err){} } sz=null; },true); }
+function winReset(){ settings.win={}; for(const id of WIN_IDS){ const p=winPanel(id); if(p){ p.style.cssText=''; } } try{ saveSettings(); }catch(e){} try{ if(state==='inv') winApply('scrInv'); }catch(e){} toast('Menu windows are back where they started',2); }
+{ const _show=show; show=function(id,...a){ const r=_show(id,...a); try{ if(WIN_IDS.has(id)&&isPC()){ winBar(id); winApply(id); } }catch(e){} return r; }; }
+// bag and crafting in one window
+{ const _oi=openInv; openInv=function(mode,...a){ const r=_oi(mode,...a); try{ const el=$('#scrInv'); if(!el||el.hidden) return r; const both=isPC()&&settings.craftPos==='bag'; el.classList.toggle('bothmode',both); if(both){ el.classList.remove('bagmode','craftmode'); $('#invTitle').textContent='Bag and crafting'; if(typeof renderCraft==='function') renderCraft(); if(typeof bagPanelPlace==='function') bagPanelPlace(); } winApply('scrInv'); }catch(e){ console.warn(e); } return r; }; }
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ if($('#scrInv').classList.contains('bothmode')&&typeof renderCraft==='function') renderCraft(); }catch(e){} return r; }; }
+{ const st=document.createElement('style'); st.textContent=`
+body:not(.touch) .overlay .panel.winable{ resize:both; overflow:auto; min-width:280px; min-height:160px; }
+body:not(.touch) .winbar{ display:flex; justify-content:center; align-items:center; height:12px; margin:-6px -4px 6px; cursor:move; color:var(--edge); font-size:9px; letter-spacing:2px; user-select:none; touch-action:none; opacity:.8; } body:not(.touch) .winbar:hover{ opacity:1; color:var(--gold); } body.touch .winbar{ display:none; }
+body:not(.touch) #scrInv.bothmode .panel{ pointer-events:auto; position:absolute; left:var(--bagx,8px); top:var(--bagy,60px); width:min(1180px,calc(100vw - 16px)); max-width:none; max-height:calc(100vh - var(--bagy,60px) - 10px); overflow:auto; padding:10px 14px 12px; box-shadow:0 0 0 3px var(--ink), 6px 6px 0 3px rgba(0,0,0,.45); }
+body:not(.touch) #scrInv.bothmode .invwrap{ display:grid; grid-template-columns:auto minmax(380px,1fr); gap:14px; } body:not(.touch) #scrInv.bothmode #craftSide>h3{ display:none; } body:not(.touch) #scrInv.bothmode #craftSide{ min-width:0; }`; document.head.appendChild(st); }
+// the settings: where the bag and crafting open, and a reset for moved or resized windows
+{ const sec=document.querySelector('#scrSettings section.stab[data-tab="computer"]'); if(sec){ const d=document.createElement('div'); d.innerHTML='<h3>Where the bag opens</h3><div class="choices" id="setBagPos"></div><h3>Where crafting opens</h3><div class="choices four" id="setCraftPos"></div><h3>Menu windows</h3><p class="desc">Drag a window by the bar at its top; drag its bottom-right corner to resize it. Places and sizes are remembered.</p><button class="xbtn" id="winReset" style="margin-top:6px">Put every window back</button>'; sec.appendChild(d); $('#winReset').addEventListener('click',winReset); } }
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const o=(k,v,l,s)=>`<button class="choice" data-k="${k}" data-v="${v}" aria-pressed="${settings[k]===v}">${l}${s?`<small>${s}</small>`:''}</button>`;
+    const bp=$('#setBagPos'); if(bp) bp.innerHTML=o('bagPos','left','Left','Under the hotbar')+o('bagPos','center','Centre','')+o('bagPos','right','Right','');
+    const cp=$('#setCraftPos'); if(cp) cp.innerHTML=o('craftPos','left','Left','')+o('craftPos','center','Centre','')+o('craftPos','right','Right','')+o('craftPos','bag','With the bag','One window for both'); }catch(e){} return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
