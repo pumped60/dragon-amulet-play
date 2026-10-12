@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791764320"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791764320"><link rel="manifest" href="manifest.webmanifest?v=1791764320"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791766965"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791766965"><link rel="manifest" href="manifest.webmanifest?v=1791766965"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.97</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.100</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,13 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.97</h3>
+    <h3>New in Beta 0.9.100</h3>
+    <p>Insects on the hook lure better catches: the catch is rolled twice and you get the better one, and the insect is kept after a catch about a third of the time. The sky realm has cloud moths, sky skimmers and sun beetles, and the magma realm ember moths, cinder beetles and ash wasps: they bring up the best fish and treasure. Each cave biome has its own insect: jade weevils, rose moths, azure midges, drip mites, root crickets, bone beetles and lantern flies. More animals roam the land. About half of the deer are bucks with big antlers; bucks in a pen shed antlers into the trough chest and hunted bucks drop them, and two antlers make the antler rod (as good as gold; insects on it bite sooner and are kept 70% of the time). A full-strength cast lands on the farthest water within reach and stays on the line.</p>
+    <h3>Beta 0.9.99</h3>
+    <p>Bee hives hang under the leaves of trees near flowers, and you can build one at a workbench (8 planks and a jar of honey) and hang it under any block. Bees fly between the flowers and their hive. A hive with flowers within 12 blocks fills with honey each morning and drips when it is full: tap it to take two jars. Butterflies come in ten colours and beetles in eight. The bug net swings like a pickaxe while you hold the button.</p>
+    <h3>Beta 0.9.98</h3>
+    <p>Insects die from one hit of any sword, pickaxe, axe, hoe, hammer or rod: every insect in the path of your swing (about 3 blocks ahead of you, a little behind, and 2 blocks around where you aim) is killed at once. Only the bug net catches them alive.</p>
+    <h3>Beta 0.9.97</h3>
     <p>Insects live around you: butterflies and bees by flowers, dragonflies over water, fireflies over the grass at night, crickets in tall grass, beetles in the woods and in caves, sand fleas on the beach and glow flies by glowing mushrooms underground. Catch them alive with a bug net (3 sticks and 2 wool at a workbench, or from the Fisher): swing it at one and it goes in your bag. Swing anything else at an insect, or shoot it, and it dies and leaves nothing. Every insect is fishing bait. Cutting tall grass, digging beach sand or breaking a glowing mushroom can startle one out for you to net.</p>
     <h3>Beta 0.9.96</h3>
     <p>Placing a building takes two taps or clicks: the first shows a box where it would go, green when it fits and red when something is in the way, and a second tap inside the green box builds it there (tap anywhere else to move the box). Building spots follow the older rule again: trees, grass and plants are cleared, along with mist clouds, bushes, ivy and hanging moss, but bumps of ground are no longer dug away. The animal pen is a whole barn: plank walls with a door at each end, a roof, a loft and a trough chest, and your penned animals live inside.</p>
@@ -706,7 +712,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.97</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.100</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -969,7 +975,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.97</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.100</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -988,7 +994,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.97', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.100', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3310,7 +3316,7 @@ function updateAnimal(e,dt){
 let animalT=4;
 function spawnAnimals(dt){ animalT-=dt; if(animalT>0) return; animalT=5;
   for(const e of ents) if(e.kind==='animal'&&!e.tamed&&!e.chiefPet&&farAll(e,100)) e.dead=true;   // the Beastmaster's bear stays with him
-  if(player.dead) return; const near=ents.filter(e=>e.kind==='animal'&&!e.dead&&Math.abs(e.x-player.x)<80*T).length; if(near>=6) return;
+  if(player.dead) return; const near=ents.filter(e=>e.kind==='animal'&&!e.dead&&Math.abs(e.x-player.x)<80*T).length; if(near>=9) return;   /* 0.9.100: 9 animals near you, up from 6 */
   let tx=-1, ty=0; for(let k=0;k<8;k++){ const c=Math.floor(cxOf(player)/T)+(Math.random()<.5?-1:1)*(26+Math.floor(Math.random()*20)); if(c<2||c>=W-2||inProtected(c)) continue; const cy=skyTop[c]; if(cy>seaY||tileAt(c,cy-1)===B.WATER) continue; const gid=tileAt(c,cy); if(BASE_IDS.has(gid)||gid===B.ROOF||gid===B.SHINGLE_B||gid===B.GLASS||bg[(cy-1)*W+c]) continue; tx=c; ty=cy; break; }
   if(tx<0) return;
   const isl=islands.find(is=>tx>=is.s&&tx<=is.e); const r=Math.random(); const type=isl&&isl.ice?(r<0.7?'penguin':'polarbear'):isNight()?(r<0.45?'wolf':r<0.7?'bear':r<0.85?'boar':'rabbit'):(r<0.34?'bird':r<0.46?'rabbit':r<0.56?'deer':r<0.66?'cow':r<0.76?'sheep':r<0.86?'boar':r<0.95?'bear':'wolf');
@@ -4849,7 +4855,7 @@ const VLOOK={engineer:'smith',herbalist:'cook',fisher:'trader',trainer:'beast',r
 function lookOf(e){ if(e.kind==='human'&&LOOKMAP[e.cls]) return LOOKMAP[e.cls]; if(e.kind==='villager'&&VLOOK[e.role]) return VLOOK[e.role]; if(e.kind==='villager') return e.role==='miner'?'miner':e.role; if(e.kind==='captive') return 'captive'; if(e.kind==='drifter') return 'drifter'; if(e.kind==='monster') return e.mtype.startsWith('orc_')?'orc':e.mtype.startsWith('goblin_')&&e.mtype!=='goblin_chief'?'goblin':e.mtype; return e.cls; }
 function frameOf(e){ if(e.riding) return Math.abs(e.vx)>8?6+(Math.floor((e.anim||0)*4)%2):6; if(!e.grounded&&!e.riding&&!e.inWater&&(e.kind==='player'||e.kind==='human')) return 5; const moving=e.grounded&&Math.abs(e.vx)>8; return moving?1+Math.floor(e.anim*(Math.abs(e.vx)>60?10:7))%4:0; }
 function specOf(e){ const look=lookOf(e); let wpn=0, melee=false;
-  if(e.wpnOverride) wpn=e.wpnOverride; else if(e.kind==='player'){ const it=heldItem(); wpn=it?it.id:0; if(it&&e.atkT>0&&['pick','axe','hoe','hammer'].includes(ITEMS[it.id].kind)) wpn=0; if(it&&(it.id===B.TORCH||it.id===B.BRIGHT_TORCH)) wpn=0; }
+  if(e.wpnOverride) wpn=e.wpnOverride; else if(e.kind==='player'){ const it=heldItem(); wpn=it?it.id:0; if(it&&e.atkT>0&&['pick','axe','hoe','hammer','net'].includes(ITEMS[it.id].kind)) wpn=0; if(it&&(it.id===B.TORCH||it.id===B.BRIGHT_TORCH)) wpn=0; }
   else if(e.kind==='human') wpn=e.weapon;
   else if(e.kind==='monster'&&MON_WPN[e.mtype]) wpn=MON_WPN[e.mtype];
   else if(e.kind==='monster'&&e.mtype==='frost_archer') wpn=I.SHORT_BOW; else if(e.kind==='monster'&&e.mtype==='frost_brute') wpn=I.IRON_MACE;
@@ -4912,7 +4918,7 @@ function drawEntity(e){ if(e.carry&&e.kind==='human') drawCarry(e);
   ctx.save(); ctx.translate(cx,0); if(e.big){ const fy=e.y+e.h; ctx.translate(0,fy); ctx.scale(e.big,e.big); ctx.translate(0,-fy); } if(e.facing<0) ctx.scale(-1,1); ctx.drawImage(img,-SCX,top); ctx.restore();
   if(md) drawSwing(e,md);
   if(e._torch) drawHandTorch(e);
-  if(e.kind==='player'&&e.atkT>0){ const hi=heldItem(); const d=hi&&ITEMS[hi.id]; if(d&&['pick','axe','hoe','hammer'].includes(d.kind)){ const ang=stick.r.on&&stick.r.mag>0.2?Math.atan2(stick.r.y,stick.r.x):Math.atan2((input.ay||cyOf(e))-cyOf(e),(input.ax||cxOf(e))-cxOf(e)); const ph=clamp(e.atkT/0.25,0,1); const sw=ang+(ph-0.5)*1.8*(Math.cos(ang)>=0?-1:1);
+  if(e.kind==='player'&&e.atkT>0){ const hi=heldItem(); const d=hi&&ITEMS[hi.id]; if(d&&['pick','axe','hoe','hammer','net'].includes(d.kind)){ const ang=stick.r.on&&stick.r.mag>0.2?Math.atan2(stick.r.y,stick.r.x):Math.atan2((input.ay||cyOf(e))-cyOf(e),(input.ax||cxOf(e))-cxOf(e)); const ph=clamp(e.atkT/0.25,0,1); const sw=ang+(ph-0.5)*1.8*(Math.cos(ang)>=0?-1:1);
       ctx.save(); ctx.translate(Math.round(cxOf(e)),Math.round(e.y+13)); if(Math.cos(ang)<0){ ctx.rotate(sw-Math.PI/4); ctx.scale(1,-1); } else ctx.rotate(sw+Math.PI/4); ctx.drawImage(iconTex(hi.id),2,-14,14,14); ctx.restore(); } }
   if(e.kind==='player'){ const y=Math.round(e.y)-12-Math.round(Math.sin(e.anim*4)); ctx.fillStyle='#17111f'; ctx.fillRect(cx-3,y-1,7,4); ctx.fillStyle='#ffe066'; ctx.fillRect(cx-2,y,5,2); ctx.fillRect(cx-1,y+2,3,1); }
   if(e.kind==='villager'||e.kind==='captive'||e.kind==='drifter') drawBubble(e);
@@ -14324,10 +14330,14 @@ function bugZone(){ const p=player; let a; try{ a=aimPoint({kind:'net'}); }catch
 const BUG_KILLERS=new Set(['weapon','pick','axe','hoe','hammer','rod']);
 let netCd=0;
 function bugSwingTick(dt){ netCd-=dt; const p=player; if(!p||p.dead||state!=='play'||!input.use||p.operating) return; const it=heldItem(); const def=it&&ITEMS[it.id]; if(!def) return;
-  if(def.kind==='net'){ if(netCd>0) return; netCd=0.35; p.atkT=0.25; const z=bugZone(); let n=0;
+  if(def.kind==='net'){ if(p.atkT>0) return; p.atkT=0.25; netCd=0; const z=bugZone(); let n=0;   // one swing after another while the button is held, like mining (0.9.99)
     for(const b of BUGS){ if(b.dead||Math.hypot(b.x-z.x,b.y-z.y)>z.r) continue; b.dead=true; const ins=INSECTS[b.key]; give(ins.item,1); n++; addFloat(b.x,b.y-6,'caught a '+ins.name.toLowerCase(),'#e8d8a8'); }
     try{ sfx(n?'pickup':'swing'); }catch(e){} return; }
-  if(!BUG_KILLERS.has(def.kind)) return; const z=bugZone(); for(const b of BUGS) if(!b.dead&&Math.hypot(b.x-z.x,b.y-z.y)<z.r*0.85) bugSquish(b); }
+  if(!BUG_KILLERS.has(def.kind)) return; const z=bugZone(); const f=p.facing||1, cx=cxOf(p), cy=cyOf(p);
+  for(const b of BUGS){ if(b.dead) continue;   // one hit from any tool or weapon: everything in the swing's path dies (0.9.98)
+    const ahead=(b.x-cx)*f, near=Math.hypot(b.x-z.x,b.y-z.y)<BUG_SWEEP_AIM, swept=ahead>=-BUG_SWEEP_BACK&&ahead<=BUG_SWEEP_FRONT&&Math.abs(b.y-cy)<=BUG_SWEEP_UP;
+    if(near||swept) bugSquish(b); } }
+const BUG_SWEEP_FRONT=3*T, BUG_SWEEP_BACK=0.75*T, BUG_SWEEP_UP=2.5*T, BUG_SWEEP_AIM=2*T;   // the reach of a swing: 3 blocks ahead, a little behind, 2.5 up and down, and 2 blocks around the aim
 { const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'||state==='paused'){ bugSwingTick(dt); bugTick(dt); } }catch(e){ console.warn(e); } return r; }; }
 // drawn before the darkness (glowing ones also shine through it)
 function drawBug(b,glowPass){ const c=b.col||INSECT_COL[b.key], f=Math.floor(b.t*(b.key==='bee'||b.key==='dragonfly'?14:8))%2, x=Math.round(b.x), y=Math.round(b.y); let r=(dx,dy,w,h,col)=>{ ctx.fillStyle=col; ctx.fillRect(x+dx,y+dy,w,h); };
@@ -14347,6 +14357,169 @@ function drawBug(b,glowPass){ const c=b.col||INSECT_COL[b.key], f=Math.floor(b.t
     return r; }; }
 // a new world or a load starts without insects
 { const _sp=startPlay; startPlay=function(...a){ BUGS.length=0; return _sp(...a); }; }
+// ===== Beta 0.9.99: butterfly and beetle colours, bee hives with honey, the bug net swings like a tool (Kinard, 2026-10-12) =====
+
+// ---- 1. more colours: ten kinds of butterfly and eight kinds of beetle (the caught item is the same) ----
+BUTTERFLY_COLS.push(['#9a60e0','#5a2a9a'],['#60d0a0','#2a8a60'],['#ff8ab0','#c04070'],['#f07040','#a03010'],['#c8f060','#6a9a20']);
+const BEETLE_COLS=[['#2a5a3a','#1a2a1a','#8ad0a0'],['#5a2a8a','#2a1040','#c08af0'],['#8a3020','#401008','#f08060'],['#2a4a8a','#101e40','#80b0f0'],['#c8a020','#6a5010','#fff0a0'],['#1e1e22','#000000','#9a9aa8'],['#3a8a9a','#104050','#a0f0ff'],['#b06020','#5a2a08','#ffc070']];
+{ const _bs=bugSpawn; bugSpawn=function(key,x,y,...a){ const b=_bs(key,x,y,...a); if(b&&key==='beetle') b.col=BEETLE_COLS[(Math.random()*BEETLE_COLS.length)|0]; return b; }; }
+
+// ---- 2. bee hives: they hang under the leaves of trees near flowers, and you can build one (8 planks and a little honey).
+//      Bees fly between the flowers and their hive. A hive with flowers within 12 blocks fills with honey each morning;
+//      tap a full hive to take the honey (2 jars). A full hive drips. ----
+let HV=1100; while((BLOCKS[HV]&&BLOCKS[HV].name)||ITEMS[HV]) HV++; B.BEEHIVE=HV;
+let HV2=HV+1; while((BLOCKS[HV2]&&BLOCKS[HV2].name)||ITEMS[HV2]) HV2++; B.BEEHIVE_FULL=HV2;
+defB(B.BEEHIVE,{name:'Bee hive',solid:false,hard:0.4,col:'#d8a840'});
+defB(B.BEEHIVE_FULL,{name:'Bee hive (full of honey)',solid:false,hard:0.4,col:'#e8b040',drop:B.BEEHIVE,place:false});
+ITEMS[B.BEEHIVE]={name:'Bee hive',kind:'block',desc:'Hang it under a block near flowers and bees move in. With flowers within 12 blocks it fills with honey each morning; tap it to take the honey'};
+RECIPES.push({ out:B.BEEHIVE, n:1, need:[[B.PLANK,8],[I.HONEY,1]], st:B.WORKBENCH, cat:'build' });
+SELL[B.BEEHIVE]=6;
+ITEMS[I.HONEY].desc='Sweet and golden. Bees fill their hives with it; tap a full hive to take it';
+{ const hive=(full)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    r(7,0,2,2,'#6a4a1a'); r(5,2,6,1,'#c89030'); r(3,3,10,2,'#e8b040'); r(2,5,12,2,'#c89030'); r(2,7,12,2,'#e8b040'); r(3,9,10,2,'#c89030'); r(4,11,8,2,'#e8b040'); r(6,13,4,1,'#c89030');
+    for(const y of [4,6,8,10]) r(2,y,1,1,'#a87020'); r(7,9,2,2,'#3a2a10');   // the entrance
+    if(full){ r(5,13,1,2,'#ffd060'); r(9,14,1,2,'#ffd060'); r(11,12,1,2,'#ffd060'); r(6,15,1,1,'#ffe090'); r(3,8,2,1,'#fff0a0'); } return c; };
+  TEX[B.BEEHIVE]=hive(false); TEX[B.BEEHIVE_FULL]=hive(true); }
+const isHive=id=>id===B.BEEHIVE||id===B.BEEHIVE_FULL;
+// a hive hangs from the block above it
+{ const _po=placeOK; placeOK=function(x,y,id,...a){ const r=_po(x,y,id,...a); if(!r||id!==B.BEEHIVE) return r; const up=tileAt(x,y-1); return !!up&&(BLOCKS[up].solid||LEAF_IDS.has(up)); }; }
+const HIVES=new Set();   // cell indexes of every hive in the world, kept up to date
+function hiveScan(){ HIVES.clear(); if(!world) return; for(let i=0;i<world.length;i++) if(isHive(world[i])) HIVES.add(i); }
+{ const _st=setTile; setTile=function(x,y,id,...a){ const r=_st(x,y,id,...a); try{ const i=y*W+x; if(isHive(world[i])) HIVES.add(i); else HIVES.delete(i); }catch(e){} return r; }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ hiveScan(); }catch(e){} return r; }; }
+const HIVE_FLOWER_R=12;
+function flowersNear(x,y,r){ let n=0; for(let X=x-r;X<=x+r;X++){ if(X<0||X>=W) continue; for(let Y=y-8;Y<=y+10;Y++){ if(Y<0||Y>=H) continue; const id=world[Y*W+X]; if(id===B.FLOWER_R||id===B.FLOWER_Y||id===B.FLOWER_B) n++; } } return n; }
+// natural hives: roughly one for every 30-40 columns of trees, under a leaf with flowers nearby, full to begin with
+function seedHives(onlyUnexplored){ const R=mulberry((seed|0)+9411); let n=0; const spots=[];
+  for(let x=4;x<W-4;x+=2){ const s=surf[x]; if(s==null||s>=seaY) continue; for(let y=Math.max(2,s-14);y<s-2;y++){ const i=y*W+x; if(!LEAF_IDS.has(world[i])||world[i+W]!==0||(onlyUnexplored&&explored[i+W])) continue; spots.push([x,y+1]); break; } }
+  for(const [x,y] of spots){ if(R()>0.1) continue; if(flowersNear(x,y,HIVE_FLOWER_R)<2) continue; let close=false; for(const i of HIVES) if(Math.abs(i%W-x)<30){ close=true; break; } if(close) continue;
+    if(onlyUnexplored) setTile(x,y,B.BEEHIVE_FULL); else { world[y*W+x]=B.BEEHIVE_FULL; HIVES.add(y*W+x); } n++; }
+  return n; }
+{ const _gw=genWorld; genWorld=function(sk,sd,...a){ const r=_gw(sk,sd,...a); try{ hiveScan(); seedHives(false); if(home) home.hivesV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.hivesV&&!isGuest()){ home.hivesV=1; hiveScan(); facRun(()=>{ seedHives(true); }); } }catch(e){ console.warn(e); } return r; }; }
+// each morning an empty hive with flowers near it fills (host and single player)
+function hiveMorning(){ if(!world||isGuest()) return 0; let n=0; facRun(()=>{ for(const i of [...HIVES]){ if(!isHive(world[i])){ HIVES.delete(i); continue; } /* a cell changed by hand is forgotten */ if(world[i]!==B.BEEHIVE) continue; const x=i%W, y=(i/W)|0; if(flowersNear(x,y,HIVE_FLOWER_R)>=2){ setTile(x,y,B.BEEHIVE_FULL); n++; } } }); return n; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ hiveMorning(); }catch(e){ console.warn(e); } return r; }; }
+// tap a full hive within reach to take the honey
+function takeHoney(x,y){ if(tileAt(x,y)!==B.BEEHIVE_FULL||!player) return false; if(Math.hypot(x*T+8-cxOf(player),y*T+8-cyOf(player))>REACH) return false;
+  mpRun(()=>setTile(x,y,B.BEEHIVE)); give(I.HONEY,2); addFloat(x*T+8,y*T,'honey ×2','#ffd060'); try{ sfx('pickup'); }catch(e){} return true; }
+cv.addEventListener('pointerdown',ev=>{ try{ if(state!=='play'||!player||player.dead||touches.size>=2) return; setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T);
+    if(takeHoney(tx,ty)){ ev.stopImmediatePropagation(); ev.preventDefault(); } }catch(e){} },true);
+
+// ---- 3. bees and their hives: a bee born near a hive belongs to it and flies between the flowers and the hive ----
+function nearestHive(x,y,r){ let best=null, bd=1e9; const tx=Math.floor(x/T), ty=Math.floor(y/T); for(const i of HIVES){ const hx=i%W, hy=(i/W)|0; const d=Math.hypot(hx-tx,hy-ty); if(d<=r&&d<bd){ bd=d; best=[hx,hy]; } } return best; }
+{ const _bk=bugKindAt; bugKindAt=function(x,y,...a){ try{ if(airAt(x,y)&&!isNight()&&nearestHive(x*T,y*T,6)){ const wet=typeof weather!=='undefined'&&/rain|storm|snow/.test(weather||''); if(!wet&&Math.random()<0.8) return 'bee'; } }catch(e){} return _bk(x,y,...a); }; }
+{ const _bs=bugSpawn; bugSpawn=function(key,x,y,...a){ const b=_bs(key,x,y,...a); if(b&&key==='bee'){ const h=nearestHive(x,y,20); if(h){ b.hive=h; b.tripT=1+Math.random()*3; b.toHive=false; } } return b; }; }
+function flowerSpotNear(hx,hy,r){ const L=[]; for(let X=hx-r;X<=hx+r;X++){ if(X<0||X>=W) continue; for(let Y=hy-6;Y<=hy+12;Y++){ if(Y<0||Y>=H) continue; const id=world[Y*W+X]; if(id===B.FLOWER_R||id===B.FLOWER_Y||id===B.FLOWER_B) L.push([X,Y]); } } return L.length?L[(Math.random()*L.length)|0]:null; }
+{ const _bm=bugMove; bugMove=function(b,dt,...a){ if(b.key==='bee'&&b.hive){ b.tripT-=dt;
+      if(b.tripT<=0){ b.toHive=!b.toHive; if(b.toHive){ b.tripT=2+Math.random()*3; b.goal=[b.hive[0]*T+8,b.hive[1]*T+14]; } else { b.tripT=4+Math.random()*5; const f=flowerSpotNear(b.hive[0],b.hive[1],HIVE_FLOWER_R); b.goal=f?[f[0]*T+8,f[1]*T-2]:[b.hive[0]*T+8+(Math.random()-0.5)*8*T,b.hive[1]*T+3*T]; } }
+      if(b.goal){ b.hx=b.goal[0]; b.hy=b.goal[1]; } }
+    return _bm(b,dt,...a); }; }
+
+// ---- 4. the bug net swings like a pickaxe: the same arm-and-tool swing, over and over while you hold the button ----
+WORK_KINDS.add('net');
+// ===== Beta 0.9.100: insect bait that lasts and lures better catches, insects of the sky and magma realms and of every cave
+//       biome, more animals on land, bucks and antlers, the antler rod, and a fishing cast that works at full strength
+//       (Kinard, 2026-10-12) =====
+
+// ---- 1. thirteen more insects: three in the sky realm, three in the magma realm, one for each cave biome ----
+// look: how it is drawn (moth = butterfly wings, bee, fly = dragonfly, glow = a lit fly, beetle, cricket, mite = flea)
+{ const ins=(key,name,look,move,where,when,desc,speed,tier,rare,cols,icon,sell)=>{
+    const id=newItem({name,kind:'mat',bait:true,insect:key,desc:desc+'. Carry it while fishing: each cast uses one'}); SELL[id]=sell; customIcon(id,icon); BAIT[id]={key,name,speed,tier,rare}; BAIT_IDS.push(id);
+    INSECTS[key]={key,name,item:id,move,where,when,look}; INSECT_COL[key]=cols; return id; };
+  const moth=(a,b,c)=>(rect,px)=>{ rect(3,3,4,5,a); rect(9,3,4,5,a); rect(4,8,3,4,b); rect(9,8,3,4,b); rect(7,4,2,8,c); px(6,2,c); px(9,2,c); };
+  const bug=(a,b,c)=>(rect,px)=>{ rect(4,6,9,7,a); rect(5,5,7,1,b); rect(8,6,1,7,b); rect(12,7,2,4,b); for(const y of [7,9,11]){ px(3,y,b); px(13,y+1,b); } px(6,7,c); };
+  const fly=(a,b,c)=>(rect,px)=>{ rect(2,8,11,2,a); rect(12,7,3,4,b); rect(4,4,4,3,c); rect(8,4,4,3,c); rect(4,11,4,3,c); rect(8,11,4,3,c); px(14,8,'#ffffff'); };
+  const lit=(a,b,c)=>(rect,px)=>{ rect(5,5,6,5,a); rect(5,10,6,3,b); rect(6,11,4,1,'#ffffff'); rect(3,3,4,3,c); rect(9,3,4,3,c); px(7,4,'#1a1a0a'); };
+  const beel=(a,b,c)=>(rect,px)=>{ rect(4,7,8,5,a); for(const x of [6,9]) rect(x,7,1,5,b); rect(11,8,2,3,b); rect(5,3,3,4,c); rect(8,3,3,4,c); px(3,9,b); };
+  const crk=(a,b,c)=>(rect,px)=>{ rect(4,8,8,4,a); rect(11,7,3,3,b); rect(3,11,2,3,b); rect(8,11,1,3,b); rect(12,4,1,3,b); px(13,8,c); };
+  const mite=(a,b,c)=>(rect,px)=>{ rect(5,7,7,5,a); rect(4,9,9,2,c); for(const x of [5,8,11]) rect(x,12,1,2,b); px(11,8,'#2a1a0a'); };
+  // the sky realm: they lure the best catches
+  ins('cloudmoth','Cloud moth','moth','fly','in the sky realm','day and night','A moth as white as the clouds it lives in, caught with a bug net in the sky realm. The best fish rise to it',0.7,2,0.18,['#f0f4ff','#b8c8f0','#6a7aa0'],moth('#f0f4ff','#b8c8f0','#6a7aa0'),14);
+  ins('skyskimmer','Sky skimmer','fly','dart','over the clouds of the sky realm','day and night','A golden dragonfly that darts between the clouds, caught with a bug net. The best fish chase it',0.65,2,0.18,['#f0c040','#c08020','#fff0a0'],fly('#f0c040','#c08020','#fff0a0'),14);
+  ins('sunbeetle','Sun beetle','beetle','crawl','on the cloud blocks of the sky realm','day and night','A beetle with a shell like a sunrise, caught with a bug net in the sky realm. Treasure likes it',0.8,2,0.22,['#f08030','#a04010','#ffe080'],bug('#f08030','#a04010','#ffe080'),15);
+  // the magma realm
+  ins('embermoth','Ember moth','glow','glow','in the magma realm','always','A moth that glows like a coal, caught with a bug net in the magma realm. The best fish rise to its light',0.7,2,0.2,['#3a1a10','#ff6a20','#ffd080'],lit('#3a1a10','#ff6a20','#ffd080'),15);
+  ins('cinderbeetle','Cinder beetle','beetle','crawl','on the rock of the magma realm','always','A black beetle with an orange shell, caught with a bug net by the lava. Treasure likes it',0.8,2,0.22,['#1a1210','#000000','#ff8030'],bug('#1a1210','#ff8030','#ffc060'),15);
+  ins('ashwasp','Ash wasp','bee','fly','in the magma realm','always','A grey wasp with orange stripes, caught with a bug net in the magma realm. The best fish bite at once',0.55,2,0.18,['#8a8a8a','#ff8030','#d0d0d0'],beel('#8a8a8a','#ff8030','#d0d0d0'),14);
+  // one for each cave biome
+  ins('jadeweevil','Jade weevil','beetle','crawl','in jade caves','always','A small green weevil from the jade caves, caught with a bug net. Bigger fish take it',0.8,1,0.06,['#3aa060','#1a5030','#c0ffd0'],bug('#3aa060','#1a5030','#c0ffd0'),6);
+  ins('rosemoth','Rose moth','moth','fly','in rose quartz caves','always','A pink moth from the rose quartz caves, caught with a bug net. Bigger fish rise to it',0.75,1,0.06,['#f080b0','#b04080','#ffd0e8'],moth('#f080b0','#b04080','#ffd0e8'),6);
+  ins('azuremidge','Azure midge','fly','dart','in azure caves','always','A blue midge from the azure caves, caught with a bug net. Fish bite much sooner',0.6,1,0.05,['#4080f0','#2040a0','#c0e0ff'],fly('#4080f0','#2040a0','#c0e0ff'),6);
+  ins('dripmite','Drip mite','mite','hop','on the dripstone of stalactite caves','always','A grey mite from the dripstone caves, caught with a bug net. Treasure likes it',0.85,1,0.1,['#b0b0b8','#606068','#e8e8f0'],mite('#b0b0b8','#606068','#e8e8f0'),6);
+  ins('rootcricket','Root cricket','cricket','hop','among the hanging roots of root caves','always','A brown cricket from the root caves, caught with a bug net. Fish bite much sooner',0.55,1,0.05,['#7a5a30','#4a3018','#e0c080'],crk('#7a5a30','#4a3018','#e0c080'),6);
+  ins('bonebeetle','Bone beetle','beetle','crawl','in fossil caves','always','A bone-white beetle from the fossil caves, caught with a bug net. Bigger fish take it',0.8,1,0.08,['#e8e0c8','#908060','#ffffff'],bug('#e8e0c8','#908060','#ffffff'),6);
+  ins('lanternfly','Lantern fly','glow','glow','in the overgrown caverns','always','A fly with a green lantern from the overgrown caverns, caught with a bug net. Rare fish rise to its light',0.7,1,0.1,['#2a4a2a','#c8ff60','#e8f0c0'],lit('#2a4a2a','#c8ff60','#e8f0c0'),8); }
+const SKY_BUGS=['cloudmoth','skyskimmer','sunbeetle'], MAGMA_BUGS=['embermoth','cinderbeetle','ashwasp'];
+const CAVE_BUGS={ jade:'jadeweevil', rose:'rosemoth', azure:'azuremidge', stalag:'dripmite', roots:'rootcricket', fossil:'bonebeetle', grove:'lanternfly' };
+const REALM_BUGS=new Set([...SKY_BUGS,...MAGMA_BUGS]);
+const inSkyRealm=(x,y)=>typeof barrierY!=='undefined'&&y<barrierY&&sky&&x>=sky.sx0&&x<=sky.sx1;
+const inMagmaRealm=(x,y)=>typeof magmaY!=='undefined'&&y>=magmaY&&magma&&x>=magma.mx0&&x<=magma.mx1;
+{ const _bk=bugKindAt; bugKindAt=function(x,y,...a){ try{ if(!airAt(x,y)) return null;
+      if(inSkyRealm(x,y)) return Math.random()<0.5?SKY_BUGS[(Math.random()*3)|0]:null;
+      if(inMagmaRealm(x,y)) return Math.random()<0.45?MAGMA_BUGS[(Math.random()*3)|0]:null;
+      if(y>surf[x]+3&&Math.random()<0.6){ const bio=typeof biome2At==='function'?biome2At(x,y):null; if(bio&&CAVE_BUGS[bio]) return CAVE_BUGS[bio]; } }catch(e){}
+    return _bk(x,y,...a); }; }
+// one picture routine for every insect, by its look
+drawBug=function(b,glowPass){ const k=b.key, q=INSECTS[k]||{}, look=q.look||k, c=b.col||INSECT_COL[k]||['#444','#222','#888'], f=Math.floor(b.t*(look==='bee'||look==='fly'?14:8))%2, x=Math.round(b.x), y=Math.round(b.y);
+  if(glowPass){ const g=0.5+0.5*Math.sin(b.t*3+b.hx); ctx.save(); ctx.globalAlpha=0.35+0.4*g; ctx.fillStyle=c[1]; ctx.beginPath(); ctx.arc(x,y,3+2*g,0,Math.PI*2); ctx.fill(); ctx.globalAlpha=1; ctx.fillStyle='#ffffd0'; ctx.fillRect(x-1,y-1,2,2); ctx.restore(); return; }
+  ctx.save(); ctx.translate(x,y); ctx.scale(1.5,1.5); const r=(dx,dy,w,h,col)=>{ ctx.fillStyle=col; ctx.fillRect(dx,dy,w,h); };
+  if(look==='butterfly'||look==='moth'){ r(-1,-1,1,3,'#2a1a0a'); if(f){ r(-4,-3,3,3,c[0]); r(1,-3,3,3,c[0]); r(-3,0,2,2,c[1]); r(1,0,2,2,c[1]); } else { r(-2,-3,1,4,c[0]); r(1,-3,1,4,c[0]); } }
+  else if(look==='bee'){ r(-2,-1,4,3,c[0]); r(-1,-1,1,3,c[1]); r(1,-1,1,3,c[1]); r(-2,f?-3:-2,2,1,c[2]); r(0,f?-3:-2,2,1,c[2]); }
+  else if(look==='dragonfly'||look==='fly'){ const d=b.vx<0?-1:1; r(-3,0,6,1,c[0]); r(d>0?3:-4,-1,1,2,c[1]); r(-2,f?-2:-1,2,1,c[2]); r(1,f?-2:-1,2,1,c[2]); }
+  else if(look==='firefly'||look==='glowfly'||look==='glow'){ r(-1,-1,2,2,c[0]); r(-1,1,2,1,c[1]); r(-2,f?-2:-1,1,1,c[2]); r(1,f?-2:-1,1,1,c[2]); }
+  else if(look==='beetle'){ r(-2,-3,4,3,c[0]); r(b.dir>0?2:-3,-2,1,2,c[1]); r(-2,0,1,1,c[1]); r(1,0,1,1,c[1]); r(-1,-3,1,1,c[2]); }
+  else if(look==='cricket'){ r(-2,-2,4,2,c[0]); r(b.dir>0?2:-3,-3,1,2,c[1]); r(b.dir>0?-3:2,-3,1,3,c[1]); r(-1,0,1,1,c[1]); }
+  else { r(-1,-2,3,2,c[0]); r(-1,0,1,1,c[1]); r(1,0,1,1,c[1]); }   // flea, mite
+  ctx.restore(); };
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a);   // the new lit insects shine through the dark like fireflies
+    try{ if(BUGS.length){ const vx0=camX-8, vx1=camX+viewW+8, vy0=camY-8, vy1=camY+viewH+8; for(const b of BUGS) if(!b.dead&&b.key!=='firefly'&&b.key!=='glowfly'&&(INSECTS[b.key]||{}).move==='glow'&&b.x>vx0&&b.x<vx1&&b.y>vy0&&b.y<vy1) drawBug(b,true); } }catch(e){} return r; }; }
+
+// ---- 2. insect bait lasts and lures: an insect on the hook is kept after a catch 35% of the time (70% with the antler rod),
+//      and the catch is rolled twice and the better one taken (three times with a realm insect) ----
+const BAIT_KEEP=0.35, BAIT_KEEP_ANTLER=0.7;
+const isInsectBait=id=>!!(id&&ITEMS[id]&&ITEMS[id].insect);
+{ const _fu=fishUse; fishUse=function(p,aim,...a){ const b=bob; const r=_fu(p,aim,...a);
+    try{ if(b&&b.state==='bite'&&!bob&&isInsectBait(b.bait)){ const it=heldItem(); const keep=it&&ITEMS[it.id].antler?BAIT_KEEP_ANTLER:BAIT_KEEP; if(Math.random()<keep){ give(b.bait,1); addFloat(cxOf(p),p.y-20,'the '+ITEMS[b.bait].name.toLowerCase()+' is still good','#e8d8a8'); } } }catch(e){}
+    return r; }; }
+{ const _rc=rollCatch; rollCatch=function(...a){ let id=_rc(...a); try{ if(bob&&isInsectBait(bob.bait)){ const n=REALM_BUGS.has(ITEMS[bob.bait].insect)?2:1; for(let k=0;k<n;k++){ const o=_rc(...a); if((SELL[o]||0)>(SELL[id]||0)) id=o; } } }catch(e){} return id; }; }
+
+// ---- 3. the fishing cast works at full strength: it lands on the farthest water within the cast's reach (a strong cast over a
+//      small pond used to find "no water" at the exact distance), a quick tap still casts 5 blocks out, and the farthest cast
+//      stays within the line's reach (the bobber at 13-14 blocks used to be dropped at once) ----
+const CAST_MIN=5, CAST_MAX=11.5;
+castNow=function(p,power){ const it=heldItem(); if(!it||ITEMS[it.id].kind!=='rod') return; const tier=ITEMS[it.id].ftier||ITEMS[it.id].tier||1, dir=p.castDir||p.facing, cx=cxOf(p), cy=cyOf(p);
+  const want=Math.max(CAST_MIN,Math.min(CAST_MAX,2+power*12)); const col=s=>Math.floor((cx+dir*s*T)/T);
+  const waterAt=x=>{ for(let y=Math.floor(cy/T)-2;y<Math.floor(cy/T)+12;y++) if(tileAt(x,y)===B.WATER) return {x,y}; return null; };
+  let hit=null; for(let s=want;s>=1.5&&!hit;s-=1) hit=waterAt(col(s)); for(let s=want+1;s<=want+3&&!hit;s++) hit=waterAt(col(s));
+  if(!hit){ toast('No water there. Cast toward water',1.5); return; } let y=hit.y; while(tileAt(hit.x,y-1)===B.WATER) y--;
+  bob={x:hit.x*T+8,y:waterTop(hit.x,y),tx:hit.x,ty:y,state:'wait',t:(3+Math.random()*5)/(1+0.25*(tier-1)),tier}; p.facing=dir; };
+
+// ---- 4. more animals on land: the cap near you is 9 instead of 6 and the next group comes sooner ----
+{ const _sa=spawnAnimals; spawnAnimals=function(...a){ const r=_sa(...a); if(animalT>3.5) animalT=3.5; return r; }; }
+
+// ---- 5. bucks: about half of the deer are bucks with big antlers (does have none). A buck's health roll decides,
+//      so it stays a buck after a save. Penned bucks shed antlers now and then; hunted bucks drop them half the time ----
+const isBuck=e=>!!e&&e.atype==='deer'&&!e.baby&&((e.maxHp|0)%2===1);
+const ANTLER=newItem({name:'Deer antlers',kind:'mat',desc:'Shed by bucks kept in a pen, or taken from a hunted buck. Two make an antler rod at a workbench'}); SELL[ANTLER]=14;
+customIcon(ANTLER,(rect,px)=>{ for(const [x0,dx] of [[4,-1],[11,1]]){ rect(x0,6,2,8,'#e8dcc0'); rect(x0+dx*2,3,2,4,'#e8dcc0'); rect(x0-dx,2,2,3,'#d8ccb0'); rect(x0+dx*3,1,2,3,'#d8ccb0'); } rect(6,13,4,2,'#a89880'); });
+const DEER_SPR={};   // the doe and buck pictures, built once from the plain deer (sprite() returns {n: canvas, f: flash})
+{ const _as=animalSprite; animalSprite=function(e,...a){ if(!e||e.atype!=='deer'||e.baby) return _as(e,...a); const base=_as(e,...a); const buck=isBuck(e); const f=Math.abs(e.vx)>8?Math.floor(e.anim*8)%2:0;
+    const key=`${buck?'b':'d'}|${f}|${e.atkT>0?1:0}|${e.scar?1:0}|${e.temper}`; let s=DEER_SPR[key]; if(s) return s;
+    const c=mkCanvas(base.n.width,base.n.height), g=c.getContext('2d'); g.drawImage(base.n,0,0); const R=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }; const bx=7, by=base.n.height-2-e.h;
+    g.clearRect(bx+13,by-7,8,6);   // the old small antlers (and their outline)
+    if(buck){ const d='#4a2e14', l='#8a6030'; R(bx+15,by-7,1,6,d); R(bx+18,by-7,1,6,d); R(bx+13,by-6,3,1,d); R(bx+12,by-8,2,1,l); R(bx+16,by-9,1,3,d); R(bx+18,by-5,3,1,d); R(bx+20,by-8,2,1,l); R(bx+19,by-9,1,3,d); R(bx+14,by-9,1,2,l); R(bx+21,by-7,1,2,l);
+      R(bx+3,by+7,12,5,'#946030'); R(bx+3,by+11,12,1,'#e8d8b8'); }   // a darker, heavier body
+    return DEER_SPR[key]={n:c,f:null}; }; }
+{ const _pd=penDay; penDay=function(...a){ const r=_pd(...a); try{ for(const st of myStructures){ if(st.kind!=='pen') continue; const c=chests[(st.x+5)+','+(st.gy-1)]||chests[(st.x+6)+','+(st.gy-1)]||chests[(st.x+4)+','+(st.gy-1)]; if(!c) continue;
+        let n=0; for(const e of penAnimals(st)) if(isBuck(e)&&Math.random()<0.4){ putInChest(c,{id:ANTLER,n:1}); n++; } if(n) toast(`A buck shed its antlers in the pen (${n} in the trough chest)`,3); } }catch(e){ console.warn(e); } return r; }; }
+{ const _k=kill; kill=function(e,...a){ const buck=isBuck(e)&&!e.tamed&&!e.dead; const r=_k(e,...a); try{ if(buck&&Math.random()<0.5) spawnDrop(cxOf(e),cyOf(e),ANTLER,1); }catch(err){} return r; }; }
+
+// ---- 6. the antler rod: between gold and mythril; insect bait on it bites sooner and is kept 70% of the time ----
+const ANTLER_ROD=newItem({name:'Antler rod',kind:'rod',ftier:4,tier:4,antler:true,desc:'A rod tipped with buck antler. As good as a gold rod, and insects on its hook bite 25% sooner and are kept after a catch 70% of the time'});
+SELL[ANTLER_ROD]=120; RECIPES.push({ out:ANTLER_ROD, n:1, need:[[ANTLER,2],[I.IRON_BAR,1],[B.PLANK,4]], st:B.WORKBENCH, cat:'tools' });
+customIcon(ANTLER_ROD,(rect,px)=>{ for(let i=0;i<10;i++){ px(2+i,14-i,'#8a5c2d'); px(3+i,14-i,'#b7834a'); } rect(11,2,2,4,'#e8dcc0'); rect(10,1,1,2,'#d8ccb0'); rect(13,1,1,2,'#d8ccb0'); for(let k=0;k<6;k++) px(13,5+k*1.5|0,'#e0e0e0'); rect(12,12,2,2,'#e5383b'); });
+{ const _fu=fishUse; fishUse=function(p,aim,...a){ const had=bob; const r=_fu(p,aim,...a); try{ if(!had&&bob&&bob.bait&&isInsectBait(bob.bait)){ const it=heldItem(); if(it&&ITEMS[it.id].antler) bob.t*=0.75; } }catch(e){} return r; }; }
 // ===== Beta 0.9.88: war machines hit harder and truer, step off, aim them all, pack them up; enemy ballistas (Kinard, 2026-10-11) =====
 
 // ---- 1. harder trebuchet boulders that smash through tree crowns into the ground ----
