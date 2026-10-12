@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791770248"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791770248"><link rel="manifest" href="manifest.webmanifest?v=1791770248"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791771779"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791771779"><link rel="manifest" href="manifest.webmanifest?v=1791771779"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.104</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.106</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,11 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.104</h3>
+    <h3>New in Beta 0.9.106</h3>
+    <p>The magma realm is mostly dark scoria and basalt now, with obsidian pockets and glowing ember stone; red magma rock only turns up in small pockets. The glow on magma rock and ember stone is little specks instead of lines. Adamant veins grow in any of the realm's rocks. Old worlds get the change where you have not been. The fog in the castle rooms you have not entered is loose and wispy: it drifts, flows across the room and spills a little past the walls, and it still clears room by room as you step in. The magma plants blend into the realm: dark stems and leaves in its own browns and reds with a spark of colour at the tips, much less glow, and they grow in patches.</p>
+    <h3>Beta 0.9.105</h3>
+    <p>The orc island's music no longer thuds like a drum every half second; that beat sounded like something being hit over and over. The tune itself stays.</p>
+    <h3>Beta 0.9.104</h3>
     <p>The magma realm has more kinds of rock: obsidian pockets, bands of basalt (also hanging from cavern ceilings), ember stone with glowing cracks, crumbly scoria, and magma dirt on the open floors, where the magma plants grow; the red magma rock is only part of it. Old worlds get this where you have not been yet. The Sky Ranger's tower is twice as wide with taller floors and a throne hall twice as high; the Magma Knight's maze is twice as wide with taller halls and a throne room twice as wide. Old worlds get the bigger castles rebuilt where they stand, with their lords and guards. Rooms you have not entered are hidden by thick drifting smoke, white in the tower and red in the maze, that clears room by room as you step in.</p>
     <h3>Beta 0.9.103</h3>
     <p>Lava burns through every plant, sapling, glow plant, cobweb and rug that water flows through, instead of stopping at them; it still stops at chests, doors and furniture, hardens on water and hurts as before. The antler rod has a white antler shaft. The bug net's rim sits across the end of the shaft and the mesh runs forward to a tip at the top.</p>
@@ -720,7 +724,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.104</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.106</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -983,7 +987,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.104</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.106</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1002,7 +1006,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.104', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.106', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5714,7 +5718,7 @@ function musicTick(dt){ if(!AC||!settings.sound||!player||state==='title') retur
   // switch moods only on a bar line (every 4 notes), or at once for danger
   if(want!==musicMood&&(musicStep%4===0||!musicMood||want==='boss'||want==='combat'||want==='kraken')){ const first=!musicMood; musicMood=want; musicStep=0; if(!first){ musicFadeTo(); musicT=0.3; return; } }
   const mood=musicMood||want; const sc=SCALES[mood]; const root=mood==='boss'?110:mood==='kraken'?65:mood==='orc'?87:mood==='forest'?147:mood==='combat'?98:mood==='deep'?98:mood==='night'?110:131; const beat=mood==='boss'?0.22:mood==='kraken'?0.3:mood==='orc'?0.26:mood==='combat'?0.24:mood==='day'||mood==='forest'?0.34:0.46; musicT=beat;
-  if(mood==='orc'&&musicStep%2===0) noise(0.08,0.12,180); if(mood==='kraken'&&musicStep%8===0) tone(41,1.4,'sine',0.5,0,musicGain); if(mood==='forest'&&Math.random()<0.08) sfx('bird');
+  /* 0.9.105: the orc island's music had a low drum thud every other note, which sounded like constant hitting; the melody stays */ if(mood==='kraken'&&musicStep%8===0) tone(41,1.4,'sine',0.5,0,musicGain); if(mood==='forest'&&Math.random()<0.08) sfx('bird');
   const note=sc[(musicStep*3+(musicStep>>2))%sc.length]; const hot=mood==='boss'||mood==='combat'; tone(root*2*Math.pow(2,note/12),beat*1.5,hot?'square':'triangle',mood==='combat'?0.16:mood==='boss'?0.2:0.35,0,musicGain);
   if(mood==='combat'&&musicStep%2===0) tone(root/2,beat*0.9,'triangle',0.35,-10,musicGain);
   if(musicStep%4===0) tone(root*Math.pow(2,sc[(musicStep>>2)%3]/12)/2,beat*4,'sine',0.5,0,musicGain); musicStep++;
@@ -14886,6 +14890,79 @@ drawDarkRooms=function(){ if(!player) return; const px=cxOf(player)/T, py=cyOf(p
         const fx=X0+(((s+t*0.010*(1+k%3))%1+1)%1)*w, fy=Y0+(((s2-t*0.005*(1+k%2))%1+1)%1)*h; const a=0.42+0.22*Math.sin(t*0.9+k*0.7);
         const g=ctx.createRadialGradient(fx,fy,0,fx,fy,r); g.addColorStop(0,`rgba(${col},${a})`); g.addColorStop(0.6,`rgba(${col},${a*0.5})`); g.addColorStop(1,`rgba(${col},0)`); ctx.fillStyle=g; ctx.beginPath(); ctx.arc(fx,fy,r,0,Math.PI*2); ctx.fill(); }
       ctx.restore(); }); } };
+// ===== Beta 0.9.106: magma rock in small pockets, speckled glow on magma rock and ember stone, loose wispy fog in unseen
+//       castle rooms (Kinard, 2026-10-12) =====
+
+// ---- 1. the glow in magma rock and ember stone is little specks, not lines ----
+{ const paint=(id,draw)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'), R=mulberry(id*53+11); const px=(x,y,col)=>{ g.fillStyle=col; g.fillRect(x,y,1,1); }, rect=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    const speck=(cols,p)=>{ for(let y=0;y<16;y++) for(let x=0;x<16;x++) if(R()<p) px(x,y,cols[(R()*cols.length)|0]); }; draw(rect,px,speck,R); TEX[id]=c; };
+  paint(B.MAGMA_ROCK,(rect,px,speck,R)=>{ rect(0,0,16,16,'#4a1e1c'); speck(['#6a2a24','#3a1414','#7a3a2a'],0.35); for(let k=0;k<9;k++) px((R()*16)|0,(R()*16)|0,k%3?'#ff7b1c':'#ffb040'); });
+  paint(B.EMBER_STONE,(rect,px,speck,R)=>{ rect(0,0,16,16,'#1a1012'); speck(['#241618','#120a0c','#2a1a1c'],0.3); for(let k=0;k<8;k++) px((R()*16)|0,(R()*16)|0,k%3?'#ff6a1c':'#ffb040'); for(let k=0;k<2;k++) px((R()*16)|0,(R()*16)|0,'#ffd870'); });
+  try{ const hs=ORE_HOSTS(); for(const k in MAGMA_BLOCKS) hs.add(MAGMA_BLOCKS[k]); }catch(e){} }
+
+// ---- 2. the realm's rock is mostly scoria and basalt, with obsidian pockets, ember stone, and magma rock only in small
+//      pockets (about a tenth of what it was). Adamant veins grow in any of the realm's rocks ----
+const MAGMA_HOST=new Set([B.MAGMA_ROCK,B.SCORIA,B.BASALT,B.EMBER_STONE]);
+magmaVariety=function(onlyUnexplored){ if(!magma||!world) return 0; const boxes=magmaKeepBoxes().filter((b,i)=>!(magma.huts||[]).some(h=>b[0]===h.x-9&&b[1]===h.gy-10)), inBox=(x,y)=>boxes.some(([a,b,c,d])=>x>=a&&x<=c&&y>=b&&y<=d); let n=0; const sd=(seed|0)+9801, M=B.MAGMA_ROCK;   /* the huts' brick and obsidian never were magma rock, so their flats change like the rest */
+  const yTop=(magma.top||magmaY)+1, yBot=H-2;
+  for(let x=magma.mx0;x<=magma.mx1;x++) for(let y=yTop;y<yBot;y++){ const i=y*W+x; if(world[i]!==M||inBox(x,y)) continue; if(onlyUnexplored&&explored[i]) continue;
+    const a=fbm(x/34,y/13,sd), b=fbm(x/17,y/8,sd+1), c=noise2(x/9,y/5,sd+2), pk=noise2(x/5,y/3,sd+6); let id=B.SCORIA;
+    if(a>0.6) id=B.OBSIDIAN; else if(pk>0.86) id=M; else if(b>0.52) id=B.BASALT; else if(c>0.64) id=B.EMBER_STONE;
+    const open=i-W>=0&&world[i-W]===0; if(open&&a<0.52&&noise2(x/7,y/7,sd+3)>0.12) id=B.MAGMA_DIRT;   /* ashy soil on most open floors */
+    if(id!==M){ world[i]=id; n++; } }
+  for(let x=magma.mx0+2;x<magma.mx1-2;x++){ if(noise2(x/5,1,sd+4)<0.76) continue; for(let y=yTop+2;y<yBot-12;y++){ const i=y*W+x; if(onlyUnexplored&&explored[i]) continue; if(world[i]!==0||!BLOCKS[world[i-W]].solid||inBox(x,y)) continue;
+      let run=0; while(run<14&&world[i+run*W]===0) run++; if(run<10) break; const len=2+((noise2(x/3,y/3,sd+5)*3)|0); for(let k=0;k<len;k++) world[i+k*W]=k===len-1&&len>2?B.EMBER_STONE:B.BASALT; n+=len; break; } }
+  return n; };
+magmaPlants=function(R,onlyUnexplored){ if(!magma||!world) return 0; R=R||Math.random; let n=0; const all=[B.FIRE_FERN,B.EMBER_BLOOM,...MAGMA_FLORA]; const soil=id=>id===B.MAGMA_ROCK||id===B.MAGMA_DIRT||id===B.SCORIA;
+  for(let x=magma.mx0+2;x<magma.mx1-2;x++) for(let y=magma.top+5;y<H-12;y++){ const i=y*W+x; if(world[i]!==0||!soil(world[i+W])||bg[i]===8) continue; if(onlyUnexplored&&explored[i]) continue;
+    if(R()<0.34){ world[i]=all[(R()*all.length)|0]; n++; if(world[i]===B.FLAME_GRASS&&world[i+1]===0&&soil(world[i+1+W])&&R()<0.5){ world[i+1]=B.FLAME_GRASS; n++; } } }
+  return n; };
+seedAdamant=function(){ if(oresMagma) return 0; oresMagma=true; const R=mulberry(seed+883); let made=0; const x0=magma?magma.mx0+4:20, x1=magma?magma.mx1-4:W-20;
+  for(let k=0;k<Math.floor((x1-x0)/4);k++){ let x=x0+Math.floor(R()*(x1-x0)), y=magmaY+6+Math.floor(R()*44); let n=4+Math.floor(R()*5); for(let t=0;t<n*5&&n>0;t++){ const i=y*W+x; if(x>x0&&x<x1&&MAGMA_HOST.has(world[i])){ wset(x,y,B.ADAMANT_ORE); if(explored[i]) mapPixel(x,y); n--; made++; } const r2=R(); if(r2<0.25) x++; else if(r2<0.5) x--; else if(r2<0.75) y++; else y--; } } return made; };
+{ const _gv=growVeins; growVeins=function(ore,host,passes,lo,hi,sd){ if(host!==B.MAGMA_ROCK) return _gv(ore,host,passes,lo,hi,sd);
+    const R=mulberry(seed+sd); let made=0; for(let p=0;p<passes;p++){ const list=[]; for(let y=Math.max(1,lo);y<Math.min(H-1,hi);y++) for(let x=1;x<W-1;x++) if(world[y*W+x]===ore) list.push(x,y);
+      for(let k=0;k<list.length;k+=2){ const x=list[k], y=list[k+1]; for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const X=x+dx, Y=y+dy; if(Y<lo||Y>=hi) continue; if(MAGMA_HOST.has(world[Y*W+X])&&R()<0.55){ wset(X,Y,ore); if(explored[Y*W+X]) mapPixel(X,Y); made++; } } } } return made; }; }
+// old worlds (including 0.9.104 ones): the magma rock you have not seen yet shrinks to pockets
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&magma&&(home.magmaVarV|0)<2&&!isGuest()){ home.magmaVarV=2; facRun(()=>{ magmaVariety(true); }); try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 3. the fog in unseen rooms: loose, wispy and drifting, spilling a little past the walls instead of a block cut to
+//      the room; still dense enough to hide what is inside, and still cleared room by room when you step in ----
+const FOG_PUFF=new Map();
+function fogPuff(col){ let c=FOG_PUFF.get(col); if(c) return c; c=mkCanvas(64,64); const g=c.getContext('2d'); const gr=g.createRadialGradient(32,32,0,32,32,32); gr.addColorStop(0,`rgba(${col},1)`); gr.addColorStop(0.45,`rgba(${col},0.55)`); gr.addColorStop(1,`rgba(${col},0)`); g.fillStyle=gr; g.fillRect(0,0,64,64); FOG_PUFF.set(col,c); return c; }
+const FOG_SPILL=2.5;   /* blocks of fog past the walls */
+drawDarkRooms=function(){ if(!player) return; const px=cxOf(player)/T, py=cyOf(player)/T, t=performance.now()/1000;
+  for(const c of [sky&&sky.castle,magma&&magma.keep]){ if(!c||c.cleared||!c.rooms) continue; if(Math.abs(px-c.cx)>220) continue; c.seen=c.seen||{}; const sk=c===(sky&&sky.castle);
+    const col=sk?'236,240,248':'150,30,14', sp=fogPuff(col), M=FOG_SPILL*T;
+    castleBoxes(c).forEach(([x0,x1,y0,y1],i)=>{ if(c.seen[i]) return; if(px>=x0-0.2&&px<=x1+1.2&&py>=y0-0.5&&py<=y1+1.2){ c.seen[i]=1; if(typeof sfx==='function') sfx('ward'); return; }
+      const X0=x0*T-M, Y0=y0*T-M, w=(x1-x0+1)*T+2*M, h=(y1-y0+1)*T+2*M; if(X0>camX+viewW||X0+w<camX||Y0>camY+viewH||Y0+h<camY) return;
+      const hash=(k)=>{ const v=Math.sin(i*127.1+k*311.7)*43758.5453; return v-Math.floor(v); };
+      ctx.save();
+      // the body of the fog: big soft puffs on a loose grid, each drifting a little, dense where they overlap
+      const step=2.3*T, r=3.8*T; let k=0;
+      for(let gy=Y0+step*0.5;gy<Y0+h;gy+=step) for(let gx=X0+step*0.5;gx<X0+w;gx+=step){ const s1=hash(k), s2=hash(k+1000); k++;
+        const fx=gx+(s1-0.5)*step+Math.sin(t*0.35+s1*6.28)*0.6*T, fy=gy+(s2-0.5)*step+Math.cos(t*0.27+s2*6.28)*0.45*T; const rr=r*(0.8+0.5*s2);
+        ctx.globalAlpha=0.62+0.1*Math.sin(t*0.5+s1*6.28); ctx.drawImage(sp,fx-rr,fy-rr*0.8,rr*2,rr*1.6); }
+      // wisps: long thin streaks flowing across the room, each at its own pace
+      const nw=Math.min(40,Math.ceil(w*h/(T*T*18))+8);
+      for(let j=0;j<nw;j++){ const s1=hash(j+5000), s2=hash(j+9000), s3=hash(j+13000); const spd=(0.35+0.9*s3)*T*(s1<0.5?1:-1);
+        const fx=X0+((((s1+t*spd/w)%1)+1)%1)*w, fy=Y0+((s2+0.04*Math.sin(t*0.6+s2*9))%1+1)%1*h; const rr=(1.6+1.8*s2)*T;
+        ctx.globalAlpha=0.22+0.2*Math.sin(t*0.8+s3*6.28)+0.2; ctx.drawImage(sp,fx-rr*2.2,fy-rr*0.55,rr*4.4,rr*1.1); }
+      ctx.restore(); }); } };
+
+// ---- 4. the magma plants sit in their surroundings: dark stems and leaves in the realm's own browns and reds, a single
+//      ember or two of colour at the tips, far less of their own light, and they grow in patches rather than everywhere ----
+{ const paint=(id,draw)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }; draw(r); TEX[id]=c; };
+  paint(B.FIRE_FERN,r=>{ for(let k=0;k<5;k++){ const x=3+k*2; for(let y=0;y<9;y++) r(x+(y>5?(k<2?-1:1):0),7+y,1,1,y%2?'#5a2418':'#7a3424'); } r(5,7,1,1,'#ff7b1c'); r(9,7,1,1,'#ffb040'); r(11,8,1,1,'#c84a1a'); });
+  paint(B.EMBER_BLOOM,r=>{ r(7,8,2,8,'#3a1c18'); r(4,4,8,5,'#7a2a1e'); r(5,3,6,1,'#8a3424'); r(6,5,4,3,'#a84028'); r(7,6,2,1,'#ffb040'); r(8,6,1,1,'#ffd870'); r(4,9,2,1,'#5a2418'); r(10,9,2,1,'#5a2418'); });
+  paint(B.BLAZE_LILY,r=>{ r(7,9,2,7,'#2e1614'); r(4,10,3,1,'#4a2218'); r(9,12,3,1,'#4a2218'); r(4,3,8,6,'#7a2a3a'); r(3,5,10,2,'#8a3448'); r(5,2,2,2,'#9a4058'); r(9,2,2,2,'#9a4058'); r(6,4,4,3,'#b04a30'); r(7,5,2,1,'#ffb040'); r(8,5,1,1,'#ffe090'); r(2,7,2,1,'#6a2a34'); r(12,7,2,1,'#6a2a34'); });
+  paint(B.SULFUR_PUFF,r=>{ r(7,11,2,5,'#3a2a10'); r(3,6,10,6,'#6a6420'); r(4,5,8,1,'#7a7428'); r(5,7,2,2,'#9a9230'); r(9,8,2,2,'#9a9230'); r(4,10,8,1,'#4a4414'); r(7,6,1,1,'#e8f040'); r(11,4,1,1,'#d8e038'); r(3,3,1,1,'#c8d030'); });
+  paint(B.FLAME_GRASS,r=>{ for(let k=0;k<6;k++){ const x=2+k*2+(k%2); const h=6+((k*5)%5); for(let y=0;y<h;y++) r(x+(y>h-3?(k%2?1:-1):0),16-1-y,1,1,y===h-1&&k%2===0?'#ff8a1a':y>h/2?'#7a3420':'#4a2016'); } });
+  const dim={FIRE_FERN:1,EMBER_BLOOM:2,BLAZE_LILY:2,SULFUR_PUFF:1,FLAME_GRASS:1}; for(const k in dim) if(B[k]!=null&&BLOCKS[B[k]]) BLOCKS[B[k]].light=dim[k]; }
+magmaPlants=function(R,onlyUnexplored){ if(!magma||!world) return 0; R=R||Math.random; let n=0; const all=[B.FIRE_FERN,B.EMBER_BLOOM,...MAGMA_FLORA]; const soil=id=>id===B.MAGMA_ROCK||id===B.MAGMA_DIRT||id===B.SCORIA; const sd=(seed|0)+9901;
+  for(let x=magma.mx0+2;x<magma.mx1-2;x++){ const patch=noise2(x/11,0.5,sd); if(patch<0.42) continue; const p=0.18+0.3*Math.min(1,(patch-0.42)*3);   /* patches of growth, thickest in their middle */
+    for(let y=magma.top+5;y<H-12;y++){ const i=y*W+x; if(world[i]!==0||!soil(world[i+W])||bg[i]===8) continue; if(onlyUnexplored&&explored[i]) continue;
+      if(R()<p){ const kind=noise2(x/7,y/7,sd+1); world[i]=kind<0.45?B.FLAME_GRASS:all[(R()*all.length)|0]; n++; if(world[i]===B.FLAME_GRASS&&world[i+1]===0&&soil(world[i+1+W])&&R()<0.6){ world[i+1]=B.FLAME_GRASS; n++; } } } }
+  return n; };
 // ===== Beta 0.9.92: the Quartermaster repairs damage; captured castles are fixed up and claimed (Kinard, 2026-10-11) =====
 // 1. Damage is remembered: whatever blasts, fire, scorching or a falling building change inside your village or an enemy
 //    base (and what you dig out of an enemy base before you claim it) is kept cell by cell in home.dmg[site], as it was.
