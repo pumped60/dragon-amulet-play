@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791776474"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791776474"><link rel="manifest" href="manifest.webmanifest?v=1791776474"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791780168"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791780168"><link rel="manifest" href="manifest.webmanifest?v=1791780168"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.111</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.113</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,11 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.111</h3>
+    <h3>New in Beta 0.9.113</h3>
+    <p>Controller support is off for now.</p>
+    <h3>Beta 0.9.112</h3>
+    <p>The Near / Exact button sits to the right of the hotbar. Animals spawn on the ground, never inside a hill. Miners always get down the mine: the shaft is kept open (platforms on the ledges, nothing solid between), a miner starting a trip sinks straight down it to the floor, and whatever is left of a miner's daily quota at the end of the day is put into the miners' chest anyway.</p>
+    <h3>Beta 0.9.111</h3>
     <p>On computers every menu window can be moved by the bar at its top and resized by its bottom-right corner, and the game remembers where you put it. Settings &gt; Computer chooses where the bag and the crafting window open (left, centre or right), or puts crafting in the bag's window so you craft and sort in one place. "Put every window back" undoes it all.</p>
     <h3>Beta 0.9.110</h3>
     <p>The 1 to 9 keys pick a hotbar slot while the bag, crafting, a chest, a shop, the army, the map or the God menu is open, unless you are typing in a search box. Tapping another menu's button while one is open switches straight to it.</p>
@@ -462,7 +466,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.9.84</h3>
     <p>Save as file in the Report a bug screen works on the claude.ai page: the page asks you before it saves the report.</p>
     <h3>Beta 0.9.83</h3>
-    <p>Cobwebs catch you: walk into one and you crawl and sink through it slowly, then tear free after a moment; a tap tears a web at once, with anything in hand. Enemies get caught too. Vines hang as one plant when they grow in a chain, you climb them like a ladder (up to climb, down to slide, let go to hang), and there are many more of them under cave ceilings and overhangs. The abandoned village stands up to its back walls: where a back wall remains, the house's side walls stand with it, ragged at the top, and the stone, brick, planks and back walls are cracked, crumbled and mossy. When the repairs are done a small note asks you back to the castle to choose the villagers' jobs. From inside a building you still see the rain outside. On computers the crafting menu opens at the right side of the screen and the bag at the left. There is half again as much coal and a quarter more iron and silver, mostly in the rock near the surface. Gold is a little rarer. The castle's upper floor is one room. Crafting shows what you can make where you stand: walk from the furnace to a workbench and the recipes follow. Open doors pass in front of you. Enemy scouts come into the caves only under their own island. Torches sit on slopes. Chests have a Sort button and an X. Stuck workers find their way home with what they carry. A tree struck by lightning leaves a charred silhouette behind its burnt pieces. Emptied goblin and orc camps fill up again after three days. Snow islands are snow and ice down to the shale, with snow cave walls and a Snow wall you can craft. At most three fighters stand on one block. Buildings stand on solid ground. Play with a controller: left stick moves, right stick aims, R2 uses, Cross jumps, Options pauses, and a gold frame moves through every menu. Report a bug from the pause menu or the title screen: it sends the version, your world and the last errors to the developers' bug list.</p>
+    <p>Cobwebs catch you: walk into one and you crawl and sink through it slowly, then tear free after a moment; a tap tears a web at once, with anything in hand. Enemies get caught too. Vines hang as one plant when they grow in a chain, you climb them like a ladder (up to climb, down to slide, let go to hang), and there are many more of them under cave ceilings and overhangs. The abandoned village stands up to its back walls: where a back wall remains, the house's side walls stand with it, ragged at the top, and the stone, brick, planks and back walls are cracked, crumbled and mossy. When the repairs are done a small note asks you back to the castle to choose the villagers' jobs. From inside a building you still see the rain outside. On computers the crafting menu opens at the right side of the screen and the bag at the left. There is half again as much coal and a quarter more iron and silver, mostly in the rock near the surface. Gold is a little rarer. The castle's upper floor is one room. Crafting shows what you can make where you stand: walk from the furnace to a workbench and the recipes follow. Open doors pass in front of you. Enemy scouts come into the caves only under their own island. Torches sit on slopes. Chests have a Sort button and an X. Stuck workers find their way home with what they carry. A tree struck by lightning leaves a charred silhouette behind its burnt pieces. Emptied goblin and orc camps fill up again after three days. Snow islands are snow and ice down to the shale, with snow cave walls and a Snow wall you can craft. At most three fighters stand on one block. Buildings stand on solid ground. Report a bug from the pause menu or the title screen: it sends the version, your world and the last errors to the developers' bug list.</p>
     <h3>Beta 0.9.82</h3>
     <p>Fixes from playtesting: digging no longer turns the screen bright (a swing left the picture in the wrong place), and when you play with friends the host's block changes reach them in the order they happened, so nobody ends up with the old block. Save and quit to title ends the multiplayer game, so you can host the saved world again straight away, and a friend who quits can start a world of their own. A friend alone at an enemy village meets the same closed ranks as the host: bring soldiers. A double-click on a shop row buys that item once. A shop house upgraded under a hill or another building keeps its low roof and tells you; clear the space above it and the upper floor is built. Seeds go into the soil right under your feet, or under a soldier standing beside you, the moment you click. A torch placed on a fence sits on the post and is drawn in front of you. Cobwebs in ruins come in six shapes: top corners, bottom corners, hanging from ceilings and on bare walls. A sapling only grows into the room it has. Diamonds are found only in chests of the deepstone layer and below, one or two at a time; there is a quarter more iron and silver in small pockets. On computers the bag opens as a panel under the hotbar (click the world to close it) and crafting shows the categories in a column on the left with group headings that stay while you scroll and a Top button. The Multiplayer menu has a Copy bug report button that copies the connection details and recent events as text, to paste into a message.</p>
     <h3>Beta 0.9.81</h3>
@@ -734,7 +738,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.111</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.113</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -997,7 +1001,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.111</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.113</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1016,7 +1020,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.111', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.113', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -13534,6 +13538,7 @@ document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ const el=$('#scrR
 // L2 is the second action, Cross/A jumps, L1/R1 pick the hotbar slot, Square/X talks or uses (F), Triangle/Y opens the bag,
 // Circle/B crafting, Touchpad/Select the map, Options/Start pauses, L3 sprints, R3 the grappling hook.
 // In menus: d-pad or left stick moves a gold frame between buttons and slots, Cross/A presses, Circle/B closes.
+const GAMEPAD_ON=false;   /* 0.9.113: controller support is off for now (Kinard); set to true to bring it back */
 const GP={ on:false, prev:[], aimOff:null, navT:0, focus:null, used:false, idx:null };
 const GP_DEAD=0.28, GP_AIM_R=4.5;
 const GPB={ A:0, B:1, X:2, Y:3, L1:4, R1:5, L2:6, R2:7, SEL:8, START:9, L3:10, R3:11, UP:12, DOWN:13, LEFT:14, RIGHT:15 };
@@ -13577,10 +13582,11 @@ function gpTick(){ const pad=gpPad(); if(!pad){ if(GP.on){ GP.on=false; input.le
   }
   GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); }
 { const st=document.createElement('style'); st.textContent='.gpfocus{ outline:3px solid #ffd447 !important; outline-offset:2px; box-shadow:0 0 0 6px rgba(255,212,71,.25) !important; }'; document.head.appendChild(st); }
+if(GAMEPAD_ON){
 addEventListener('gamepadconnected',e=>{ GP.idx=e.gamepad.index; });
 addEventListener('gamepaddisconnected',e=>{ if(GP.idx===e.gamepad.index) GP.idx=null; });
 addEventListener('mousemove',()=>{ if(GP.used){ GP.used=false; GP.aimOff=null; gpSetFocus(null); } });
-if(navigator.getGamepads) setInterval(()=>{ try{ gpTick(); }catch(e){} },16);   /* a timer, not a second animation loop */
+if(navigator.getGamepads) setInterval(()=>{ try{ gpTick(); }catch(e){} },16); }   /* a timer, not a second animation loop */
 // ===== Beta 0.9.83: test world tools in the Army window (Kinard): add soldiers of any class, and capture an enemy base at once =====
 function testAddSoldiers(cls,n){ let added=0; for(let k=0;k<n;k++){ const e=makeHuman(player.team,cls,player.x+(Math.random()*40-20),player.y-4,'guard',home); ents.push(e); const sl=freeSlot(); if(sl>=0) putInSlot(e,sl); else if(typeof toGarrison==='function') toGarrison(e); added++; } toast(`${added} ${CLASSES[cls].name.toLowerCase()}${added===1?'':'s'} join your army`,1.6); return added; }
 function testCapture(f){ const b=bases.find(o=>o.f===f); if(!b||conquered[f]) return false; surrender(b,facSoldiers(f)); return true; }
@@ -13775,6 +13781,18 @@ function postAskTick(dt){ if((postAskT-=dt)>0||!player||player.dead) return; pos
       const acts=row.querySelector('.acts'); if(acts) acts.innerHTML=`<button data-postsopen="${si}">Place soldiers</button><button data-recall="${si}" ${st.posts.some(postWho)?'':'disabled'}>Recall all</button>`;
       const info=row.querySelector('.ing'); if(info) info.insertAdjacentHTML('afterend',replicaHtml(st,6,false)); }); }catch(e){ console.warn(e); } return r; }; }
 $('#postList').addEventListener('click',ev=>{ const b=ev.target.closest('[data-postsopen]'); if(!b) return; ev.stopPropagation(); const st=myStructures[+b.dataset.postsopen]; hide('scrBuild'); openPosts(st,'build'); },true);
+// ===== Beta 0.9.112: animals never spawn inside the ground =====
+// A herd (cows, sheep, penguins, birds) spawned at tx, tx+2, tx+4... but only the first column was checked, so beside a hill
+// or on a slope the others landed inside the rock. groundRowAt finds the soil under a column (past any tree blocks, which are
+// not solid anyway, so skyTop never stops at them), and seatAnimal puts a new animal on it or removes it.
+function groundRowAt(c){ if(c<1||c>=W-1) return -1; const id=y=>world[y*W+c]; const tree=y=>LOG_IDS.has(id(y))||LEAF_IDS.has(id(y)); let y=skyTop[c];
+  for(let g=0;g<4;g++){ while(y<H-1&&tree(y)) y++; while(y<H-1&&!BLOCKS[id(y)].solid) y++; if(!tree(y)) break; }
+  if(y>=H-1||y>seaY) return -1; if(tileAt(c,y-1)===B.WATER||tileAt(c,y-2)===B.WATER||(y>=2&&(BLOCKS[id(y-1)].solid||BLOCKS[id(y-2)].solid))) return -1;
+  const gid=id(y); if(BASE_IDS.has(gid)||gid===B.ROOF||gid===B.SHINGLE_B||gid===B.GLASS||bg[(y-1)*W+c]) return -1; return y; }
+function seatAnimal(e){ if(e.tamed||e.pen||e.fpen) return true; if(e.fly){ if(!collides(e)) return true; unstick(e); if(!collides(e)) return true; e.dead=true; return false; }
+  const c0=Math.floor(cxOf(e)/T); for(const dx of [0,1,-1,2,-2,3,-3]){ const c=c0+dx; const gy=groundRowAt(c); if(gy<0||inProtected(c)) continue; e.x=c*T+(T-e.w)/2; e.y=gy*T-e.h-1; e.vx=e.vy=0; if(!collides(e)) return true; unstick(e); if(!collides(e)) return true; }
+  e.dead=true; return false; }
+{ const _sa=spawnAnimals; spawnAnimals=function(...a){ const n0=ents.length; const r=_sa(...a); try{ for(let i=n0;i<ents.length;i++){ const e=ents[i]; if(e.kind==='animal'&&!e.dead) seatAnimal(e); } }catch(err){} return r; }; }
 // ===== Beta 0.9.86 (Kinard, 2026-10-11) =====
 
 // ---- 1. placing a building: a Cancel button at the top of the screen while you pick the spot (phones have no Esc key) ----
@@ -14689,7 +14707,9 @@ WALLS[B.LOG_WALL]=LOG_BG; ITEMS[B.LOG_WALL]={name:'Log wall',kind:'wall',desc:'A
 //      covers the mouse too (settings.smartMouse) ----
 const aimNearOn=()=>!!settings.smart&&(!input.mouse||!!settings.smartMouse);
 function aimTogRender(){ const b=$('#aimTog'); if(!b) return; const near=aimNearOn(); b.textContent=near?'Near':'Exact'; b.setAttribute('aria-pressed',near); b.title=near?'Near: mines the nearest block in the direction you aim. Tap to switch to the exact block':'Exact: only the block you point at. Tap to switch to the nearest block';
-  const hb=$('#hotbar'); if(hb){ const r=hb.offsetWidth, l=hb.offsetLeft, t=hb.offsetTop; const fits=hb.getBoundingClientRect().right+b.offsetWidth+10<window.innerWidth; b.style.left=(fits?l+r+4:l)+'px'; b.style.top=(fits?t+2:t+hb.offsetHeight+4)+'px'; } }
+  const hb=$('#hotbar'), tl=$('#topleft'); if(hb&&tl){ const hr=hb.getBoundingClientRect(), tr=tl.getBoundingClientRect(); const bw=b.offsetWidth||44; const vertical=document.body.classList.contains('vhot');
+    /* 0.9.112: always to the right of the hotbar (measured on screen, so the hotbar's zoom setting does not matter); under it when the hotbar stands upright or there is no room at the right */
+    let x=hr.right-tr.left+4, y=hr.top-tr.top+2; if(vertical||hr.right+bw+10>window.innerWidth){ x=hr.left-tr.left; y=hr.bottom-tr.top+4; } b.style.left=Math.round(x)+'px'; b.style.top=Math.round(y)+'px'; } }
 function aimTogFlip(){ const near=!aimNearOn(); settings.smart=near; settings.smartMouse=near; try{ saveSettings(); }catch(e){} aimTogRender(); toast(near?'Aim: the nearest block in the direction you point':'Aim: only the exact block you point at',2); }
 { const st=document.createElement('style'); st.textContent=`#topleft{ position:absolute; } #aimTog{ position:absolute; z-index:3; font:inherit; font-size:11px; line-height:1; padding:4px 6px; min-width:0; background:rgba(22,18,31,.78); color:#f4e8c8; border:2px solid var(--edge); box-shadow:2px 2px 0 var(--ink); cursor:pointer; } #aimTog[aria-pressed="true"]{ color:#ffd060; } body.touch #aimTog{ font-size:12px; padding:6px 8px; }`; document.head.appendChild(st);
   const b=document.createElement('button'); b.id='aimTog'; b.type='button'; b.textContent='Near'; const tl=$('#topleft'); if(tl) tl.appendChild(b);
@@ -14880,6 +14900,36 @@ function menuLeave(){ for(let k=0;k<4&&state!=='play'&&MENU_STATES.has(state);k+
 { const _or=openRecruit; openRecruit=function(...a){ if(state!=='play'&&MENU_STATES.has(state)) menuLeave(); return _or(...a); }; }
 { const g=$('#btnGod'); if(g) g.addEventListener('click',()=>{ try{ if(state!=='play'&&state!=='god'&&MENU_STATES.has(state)) menuLeave(); }catch(e){} },true); }
 { const st=document.createElement('style'); st.textContent=`#topbtns{ z-index:30; } #btnMore{ z-index:30; }`; document.head.appendChild(st); }
+// ===== Beta 0.9.112: miners always get down the shaft, and the day's quota always reaches the chest =====
+// Three things kept miners at the top of the shaft: a shaft that something filled in (footing under a building beside it,
+// a block someone placed), a trip down that relied on falling through every platform, and a quota that was only paid
+// when a miner came back up with a load. Now the shaft is checked and reopened, a miner starting a trip sinks straight
+// down the shaft to the first floor (through the platforms, like the climb back up ignores them), and whatever is left
+// of a miner's quota at the end of the day is put into the miners' chest anyway.
+const SHAFT_TEND=6, QUOTA_AT=0.985, SINK_SPEED=90;
+let shaftT=0, quotaT=0;
+function shaftBottom(){ return home.gy+18+((home.tun&&home.tun.depth)||0); }
+function shaftClearable(id){ const b=BLOCKS[id]; return !!b&&b.solid&&id!==B.BEDROCK&&id!==B.OBSIDIAN&&id!==B.PART&&!CHEST_IDS.has(id)&&!DOOR_IDS.has(id); }
+function tendShaft(){ if(!home||!home.mineX||!world||isGuest()) return 0; const gy=home.gy, yb=Math.min(H-2,shaftBottom()); let n=0;
+  facRun(()=>{ for(const x of [home.mineX,home.mineX+1]) for(let y=gy;y<yb;y++){ const id=tileAt(x,y), want=(y===gy||(y-gy)%4===3)?B.PLATFORM:0; if(id===want) continue;
+    if(want){ if(!id||id===B.WATER||shaftClearable(id)){ setTile(x,y,want); n++; } }
+    else if(id===B.WATER||shaftClearable(id)){ setTile(x,y,0); n++; } } });
+  return n; }
+function shaftTick(dt){ if((shaftT-=dt)>0) return; shaftT=SHAFT_TEND; if(!home||!home.claimed||!home.mineX) return; tendShaft(); }
+// a miner sinks down the shaft to the first floor below the hut
+function minerSink(e,dt){ const shaftX=home.mineX*T+2; e.vx=e.vy=0; e.x+=clamp(shaftX-e.x,-60*dt,60*dt); e.y+=SINK_SPEED*dt; e.facing=1; e.anim+=dt; e.minerT-=dt;
+  const feet=Math.floor((e.y+e.h-1)/T); const floor=id=>{ const b=BLOCKS[id]; return !!b&&b.solid&&!b.platform&&id!==B.PLATFORM; };
+  if(feet>=shaftBottom()-1||floor(tileAt(home.mineX,feet+1))||floor(tileAt(home.mineX+1,feet+1))){ e.y=(feet+1)*T-e.h-0.01; e.x=shaftX; e.sinking=false; e.tx=null; e.digT=1.5; if(collides(e)) unstick(e); } }
+{ const _ma=minerAct; minerAct=function(e,dt,...a){ if(!home||!home.mineX) return _ma(e,dt,...a);
+    if(e.sinking&&e.phase==='down'){ minerSink(e,dt); return; } if(e.phase!=='down') e.sinking=false;
+    const was=e.phase; const r=_ma(e,dt,...a);
+    if(was==='up'&&e.phase==='down'){ e.sinking=true; try{ tendShaft(); }catch(err){} } return r; }; }
+// the end of the day: whatever is left of a miner's quota goes into the chest (the miners dig on through the evening)
+function minerTopUp(e){ if(!home||!home.minerChest||!chests[home.minerChest]) return 0; minerQuota(e); const left=e.qLeft||0; if(left<=0||e.topDay===dayCount) return 0; e.topDay=dayCount;
+  const keep=e.load||0; e.load=left; try{ minerDeliver(e); }catch(err){ console.warn(err); } e.load=e.phase==='up'?0:keep; return left-(e.qLeft||0); }
+function quotaTick(dt){ if((quotaT-=dt)>0) return; quotaT=2; if(!home||!home.claimed||!home.mineX||isGuest()||!player||time<QUOTA_AT) return;
+  for(const e of ents) if(e.kind==='villager'&&e.role==='miner'&&!e.dead&&e.team===player.team) minerTopUp(e); }
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ if(state==='play'){ shaftTick(dt); quotaTick(dt); } }catch(e){} return r; }; }
 // ===== Beta 0.9.104: a richer magma realm, bigger realm castles with bigger boss chambers, and thick smoke in their
 //       unseen rooms (Kinard, 2026-10-12) =====
 
