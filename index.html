@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791759855"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791759855"><link rel="manifest" href="manifest.webmanifest?v=1791759855"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791764320"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791764320"><link rel="manifest" href="manifest.webmanifest?v=1791764320"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.95</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.97</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,12 +401,16 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.95</h3>
+    <h3>New in Beta 0.9.97</h3>
+    <p>Insects live around you: butterflies and bees by flowers, dragonflies over water, fireflies over the grass at night, crickets in tall grass, beetles in the woods and in caves, sand fleas on the beach and glow flies by glowing mushrooms underground. Catch them alive with a bug net (3 sticks and 2 wool at a workbench, or from the Fisher): swing it at one and it goes in your bag. Swing anything else at an insect, or shoot it, and it dies and leaves nothing. Every insect is fishing bait. Cutting tall grass, digging beach sand or breaking a glowing mushroom can startle one out for you to net.</p>
+    <h3>Beta 0.9.96</h3>
+    <p>Placing a building takes two taps or clicks: the first shows a box where it would go, green when it fits and red when something is in the way, and a second tap inside the green box builds it there (tap anywhere else to move the box). Building spots follow the older rule again: trees, grass and plants are cleared, along with mist clouds, bushes, ivy and hanging moss, but bumps of ground are no longer dug away. The animal pen is a whole barn: plank walls with a door at each end, a roof, a loft and a trough chest, and your penned animals live inside.</p>
+    <h3>Beta 0.9.95</h3>
     <p>A building whose base is blown away crumbles straight down where it stood instead of tipping over: its blocks break apart and fall in a cloud of dust, and it lands as a heap of crumbled back walls.</p>
     <h3>Beta 0.9.94</h3>
     <p>Your war machines hold their ground: when an enemy comes in range they stay where they are and fire, and they reach farther (ballista 34 blocks, cannon 28, trebuchet 50). They follow you again a few seconds after the fight, without shuffling or hopping. Enemy armies fight in formation when they are three or more with two kinds of soldier: their toughest melee in the front rank (bracing against your blows), the rest in ranks behind, and their archers and mages behind the melee.</p>
     <h3>Beta 0.9.93</h3>
-    <p>Buildings go up where the ground is clear: drifting mist, bushes and flowers are cleared away, and a small bump in the ground under the spot is dug out (tall towers used to be refused by the mist above them). On a phone, Cancel is a small button at the bottom of the screen while you place a building. Bombs, cannonballs and trebuchet boulders also break the back walls in the space they blow open: dirt, stone, wood and the rest. In the test world, the God menu's World tab sets the day and the time, claims the village at once, and sets off an enemy raid, a siege army (and brings it straight to your village), a dragon raid, enemy war machines, a monster wave, or damage to your village to try the repairs.</p>
+    <p>Buildings go up where the ground is clear: drifting mist, bushes and flowers are cleared away (tall towers used to be refused by the mist above them). On a phone, Cancel is a small button at the bottom of the screen while you place a building. Bombs, cannonballs and trebuchet boulders also break the back walls in the space they blow open: dirt, stone, wood and the rest. In the test world, the God menu's World tab sets the day and the time, claims the village at once, and sets off an enemy raid, a siege army (and brings it straight to your village), a dragon raid, enemy war machines, a monster wave, or damage to your village to try the repairs.</p>
     <h3>Beta 0.9.92</h3>
     <p>When the enemy damages your village (cannons, trebuchets, bombs, fire), talk to your Quartermaster: he offers to repair it and puts every broken block back over part of a day, faster while you sleep. When you beat an enemy faction, its last soldiers surrender and join you straight away. Its own helpers leave and a new Quartermaster arrives at its castle: talk to him to fix up the castle and claim it, putting back what the battle broke, and a Recruiter and a Beast trainer move in. If any of them is lost, a new one comes.</p>
     <h3>Beta 0.9.91</h3>
@@ -702,7 +706,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.95</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.97</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -965,7 +969,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.95</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.97</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -984,7 +988,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.95', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.97', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -6149,17 +6153,24 @@ function renderBuild(){ $('#bldList').innerHTML=BLUEPRINTS.map((bp,i)=>{ const o
   $('#postList').innerHTML=myStructures.length?myStructures.map((st,si)=>st.kind==='pen'?`<div class="recipe" style="grid-template-columns:1fr auto"><div><div class="nm">${st.name}</div><div class="ing">${penAnimals(st).map(a=>a.atype).join(', ')||'No animals yet'} (${penAnimals(st).length}/8). Tamed farm animals within 14 blocks of you can be put in.</div></div><div class="acts"><button data-penin="${si}">Put animals in</button><button data-penout="${si}" ${penAnimals(st).length?'':'disabled'}>Let them out</button></div></div>`:`<div class="recipe" style="grid-template-columns:1fr auto"><div><div class="nm">${st.name}</div><div class="ing">${st.posts.map((p,i)=>p.who&&!p.who.dead?`Post ${i+1}: ${p.who.name||CLASSES[p.who.cls].name}`:`Post ${i+1}: empty`).join(' · ')}</div></div><div class="acts" style="flex-direction:column;align-items:stretch">${postPickers(st,si)}<button data-station="${si}" ${party.length&&st.posts.some(p=>!p.who||p.who.dead)?'':'disabled'}>Station a soldier</button><button data-recall="${si}" ${st.posts.some(p=>p.who&&!p.who.dead)?'':'disabled'}>Recall all</button></div></div>`).join(''):'<p class="muted">You have not built anything yet.</p>'; }
 $('#bldClose').addEventListener('click',()=>{ hide('scrBuild'); if(state==='paused'&&$('#scrPause').hidden) state='play'; });
 $('#scrBuild').addEventListener('click',ev=>{ const b=ev.target.closest('button'); if(!b) return;
-  if(b.dataset.bld!=null){ const bp=BLUEPRINTS[+b.dataset.bld]; if(!canPay(bp.cost)) return; buildMode=bp; hide('scrBuild'); state='play'; toast(`Tap or click the ground to build the ${bp.name.toLowerCase()}. Press Esc to cancel.`,4); return; }
+  if(b.dataset.bld!=null){ const bp=BLUEPRINTS[+b.dataset.bld]; if(!canPay(bp.cost)) return; buildMode=bp; bldHover=null; hide('scrBuild'); state='play'; toast(`Tap or click the ground to see where the ${bp.name.toLowerCase()} would go, then tap the green box again to build it. Press Esc to cancel.`,5); return; }
   if(b.dataset.station!=null){ const st=myStructures[+b.dataset.station]; const i=st.posts.findIndex(p=>!p.who||p.who.dead); const e=player.party.find(e=>e&&!e.dead); if(i>=0&&e){ stationAt(st,i,e); toast(`${e.name||CLASSES[e.cls].name} is standing guard at the ${st.name.toLowerCase()}`,2.5); } renderBuild(); return; }
   if(b.dataset.penin!=null){ const n=penIn(myStructures[+b.dataset.penin]); toast(n?`${n} animal${n>1?'s':''} moved into the pen`:'No tamed farm animals nearby (tame cows, sheep, boars, deer, rabbits or birds, then stand near them)',3); renderBuild(); return; }
   if(b.dataset.penout!=null){ penOut(myStructures[+b.dataset.penout]); toast('The animals follow you again',2); renderBuild(); return; }
   if(b.dataset.recall!=null){ const st=myStructures[+b.dataset.recall]; st.posts.forEach((p,i)=>recallPost(st,i)); toast('Soldiers recalled to your party',2); renderBuild(); return; } });
 function bldAt(ev){ const r=cv.getBoundingClientRect(); const wx=camX+(ev.clientX-r.left)*(cv.width/r.width)/S, wy=camY+(ev.clientY-r.top)*(cv.height/r.height)/S; const tx=Math.floor(wx/T), g=groundBelow(tx,Math.floor(wy/T)); if(g==null) return null;
   const near=Math.abs(tx-cxOf(player)/T)<=40; const blocked=buildBlocked(buildMode,tx,g); return {x:tx,gy:g,ok:near&&!blocked,near,blocked}; }
-cv.addEventListener('pointermove',ev=>{ if(buildMode) bldHover=bldAt(ev); });
-cv.addEventListener('pointerdown',ev=>{ if(!buildMode||state!=='play') return; ev.stopImmediatePropagation(); ev.preventDefault(); const h=bldAt(ev); if(!h||!h.near){ toast('Pick a spot on the ground within 40 blocks of you',2); return; } if(h.blocked){ toast('Something is in the way. Buildings only replace trees, grass and plants; clear the area or pick flatter ground.',3.5); return; }
-  const bp=buildMode; if(!canPay(bp.cost)){ toast('Not enough materials',2); buildMode=null; return; } if(!free()&&!testFree()) for(const [id,n] of bp.cost) takeNeed(id,n); invDirty=true;
-  const st=placeBuilding(bp,h.x,h.gy); buildMode=null; bldHover=null; toast(`${bp.name} built! Open Craft → Buildings to station soldiers at its ${st.posts.length} defense post${st.posts.length>1?'s':''}.`,4); },true);
+// placing a building takes two taps: the first shows the box where it would go (green: it fits, red: something is in the way);
+// a second tap inside a green box builds it there, and a tap anywhere else moves the box (0.9.96)
+cv.addEventListener('pointermove',ev=>{ if(buildMode&&!(bldHover&&bldHover.pin)) bldHover=bldAt(ev); });
+cv.addEventListener('pointerdown',ev=>{ if(!buildMode||state!=='play') return; ev.stopImmediatePropagation(); ev.preventDefault(); const h=bldAt(ev); const bp=buildMode;
+  const p=bldHover&&bldHover.pin&&bldHover.bp===bp?bldHover:null; const inBox=p&&p.ok&&h&&h.x>=p.x+bp.fx0&&h.x<=p.x+bp.fx1;   // only a box shown green builds; a tap on a red one looks again
+  if(!inBox){ if(!h){ bldHover=null; toast('Tap the ground where the building should go',2); return; } h.pin=true; h.bp=bp; bldHover=h;
+    toast(!h.near?'Too far away: pick a spot on the ground within 40 blocks of you':h.blocked?'Something is in the way (red box). Buildings only replace trees, grass and plants; clear the area or pick flatter ground.':'The building fits here. Tap the green box again to build it.',3.5); return; }
+  const q={x:p.x,gy:p.gy}; const near=Math.abs(p.x-cxOf(player)/T)<=40, blocked=buildBlocked(bp,p.x,p.gy); p.near=near; p.blocked=blocked; p.ok=near&&!blocked;   // check again: the ground may have changed
+  if(!p.ok){ toast(!near?'Too far away: pick a spot on the ground within 40 blocks of you':'Something is in the way now (red box). Pick another spot.',3); return; }
+  if(!canPay(bp.cost)){ toast('Not enough materials',2); buildMode=null; bldHover=null; return; } if(!free()&&!testFree()) for(const [id,n] of bp.cost) takeNeed(id,n); invDirty=true;
+  const st=placeBuilding(bp,q.x,q.gy); buildMode=null; bldHover=null; toast(`${bp.name} built! Open Craft → Buildings to station soldiers at its ${st.posts.length} defense post${st.posts.length>1?'s':''}.`,4); },true);
 addEventListener('keydown',e=>{ if(buildMode&&e.key==='Escape'){ buildMode=null; bldHover=null; toast('Building cancelled',1.5); e.stopImmediatePropagation(); } },true);
 // ---- the eye button opens its options; H still toggles straight away ----
 { const pop=$('#eyePop'); const b=$('#btnItems'); const nb=b.cloneNode(true); b.parentNode.replaceChild(nb,b);
@@ -13803,14 +13814,23 @@ BLUEPRINTS.push({id:'farm',name:'Farmhouse',fx0:-13,fx1:13,fh:9,w:27,h:9,cost:[[
   r(8,7,7,6,'#c8a070'); r(7,6,9,1,'#8a5c2d'); r(8,5,7,1,'#8a5c2d'); r(9,4,5,1,'#8a5c2d'); r(10,9,2,4,'#5b3819'); r(13,8,1,2,'#ffe066');
   const big=mkCanvas(32,32), bg=big.getContext('2d'); bg.imageSmoothingEnabled=false; bg.drawImage(c,0,0,32,32); if(typeof BP_ICON!=='undefined') BP_ICON.farm=big.toDataURL(); }
 
-// ---- 2. the animal pen: taller fences at both ends with a gate, a back rail you can see, hay and a water trough ----
-buildPenAt=function(cx,gy){ footing(cx-7,cx+7,gy);
-  for(const x of [cx-7,cx+7]) for(let y=gy-3;y<gy;y++) wset(x,y,B.FENCE);
-  wset(cx-7,gy-1,B.DOOR); wset(cx-7,gy-2,B.DOOR_T);
-  for(let x=cx-6;x<=cx+6;x++){ bset(x,gy-1,5); bset(x,gy-2,0); }   // a low plank rail behind the animals
-  wset(cx+5,gy-1,B.CHEST); wset(cx+6,gy-1,B.PART); chests[(cx+5)+','+(gy-1)]={items:new Array(CHEST_N).fill(null),coins:0};
-  if(B.HAY!=null) wset(cx-5,gy-1,B.HAY); wset(cx+7,gy-4,B.TORCH);
+// ---- 2. the animal pen is a whole barn (0.9.96; it was an open yard with a fence at each end): plank walls with a door at
+//      each end, a plank back wall, a stepped roof, hay, a trough chest and a torch inside. The animals stay between the walls ----
+buildPenAt=function(cx,gy){ const P=B.PLANK; footing(cx-8,cx+8,gy);
+  for(let x=cx-7;x<=cx+7;x++) for(let y=gy-5;y<gy;y++){ if(x===cx-7||x===cx+7){ wset(x,y,P); bset(x,y,5); } else { wset(x,y,0); bset(x,y,5); } }   // walls and the room
+  for(const x of [cx-7,cx+7]){ wset(x,gy-1,B.DOOR); wset(x,gy-2,B.DOOR_T); }
+  for(let x=cx-8;x<=cx+8;x++) wset(x,gy-6,P); for(let x=cx-6;x<=cx+6;x++) wset(x,gy-7,P); for(let x=cx-4;x<=cx+4;x++) wset(x,gy-8,P); for(let x=cx-2;x<=cx+2;x++) wset(x,gy-9,P);   // the roof
+  wset(cx+4,gy-1,B.CHEST); wset(cx+5,gy-1,B.PART); chests[(cx+4)+','+(gy-1)]={items:new Array(CHEST_N).fill(null),coins:0};
+  if(B.PLATFORM!=null) for(let x=cx-6;x<=cx-3;x++) wset(x,gy-4,B.PLATFORM);   // a hay loft over the left end
+  wset(cx,gy-4,B.TORCH);
   return []; };
+{ const bp=BLUEPRINTS.find(b=>b.id==='pen'); if(bp){ bp.fx0=-8; bp.fx1=8; bp.w=17; bp.fh=9; bp.h=9; bp.cost=[[B.PLANK,40],[B.DOOR,2],[B.CHEST,1],[B.TORCH,1]];
+    bp.desc='A barn with a door at each end, a loft and a trough chest. Put up to 8 tamed farm animals in it; each day they produce wool, meat and more, and pairs have young.'; } }
+// its picture in the Buildings window: a red barn
+{ const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  r(0,14,16,2,'#5b8a3a'); r(2,7,12,7,'#a8402a'); r(1,6,14,1,'#6b3a1c'); r(3,5,10,1,'#6b3a1c'); r(5,4,6,1,'#6b3a1c'); r(7,3,2,1,'#6b3a1c');
+  r(6,9,4,5,'#5b3819'); r(6,9,4,1,'#e8e0d0'); r(6,9,1,5,'#e8e0d0'); r(9,9,1,5,'#e8e0d0'); r(7,6,2,2,'#e8c860');
+  const big=mkCanvas(32,32), bg=big.getContext('2d'); bg.imageSmoothingEnabled=false; bg.drawImage(c,0,0,32,32); if(typeof BP_ICON!=='undefined') BP_ICON.pen=big.toDataURL(); }
 // ===== Beta 0.9.90: buildings whose base is blown away topple over and crumble (Kinard, 2026-10-11) =====
 // After a bomb, cannonball or trebuchet boulder breaks blocks, every built structure near the blast is checked. A structure
 // (built blocks joined edge to edge: planks, bricks, glass, roofs, doors, furniture, torches...) that no longer rests on
@@ -14209,6 +14229,124 @@ for(const id of new Set([...(LINES.axe||[]),I.COPPER_AXE].filter(Boolean))) if(I
     const half=1.0+(v-1.3)*0.55; if(v>=1.3&&v<4.9&&Math.abs(u)<half) return v>4.0?l:(u>half-0.9?l:b);   // the blade flaring out
     if(v>=4.9&&v<5.7&&Math.abs(u)<half-0.2) return l;                      // the edge
     return null; }); });
+// ===== Beta 0.9.97: living insects, caught only with a bug net (Kinard, 2026-10-11) =====
+// Butterflies, bees, dragonflies, fireflies, crickets, beetles, sand fleas and glow flies live around the world near you.
+// Swing a bug net at one to catch it (it goes in your bag as bait you can also sell). Anything else you swing at it, and any
+// arrow or bolt that hits it, kills it and leaves nothing. Crickets, sand fleas and glow flies no longer come out of the
+// ground as items: cutting tall grass, digging beach sand or breaking a glowing mushroom can flush a live one out to net.
+// Insects are small and only on your own screen (each friend in a shared world has their own); they are not saved.
+
+// ---- 1. the insect items: the three old baits plus five new ones ----
+const INSECTS={};   // key -> {name, item, move, where, when, col}
+{ const bait=(key,name,desc,speed,tier,rare,draw,sell)=>{ const id=newItem({name,kind:'mat',bait:true,insect:key,desc:desc+'. Carry it while fishing: each cast uses one'}); SELL[id]=sell; customIcon(id,draw); BAIT[id]={key,name,speed,tier,rare}; BAIT_IDS.push(id); return id; };
+  const ins=(key,name,item,move,where,when)=>{ INSECTS[key]={key,name,item,move,where,when}; if(ITEMS[item]){ ITEMS[item].insect=key; } };
+  ins('butterfly','Butterfly',bait('butterfly','Butterfly','A bright butterfly caught with a bug net. Fish rise to its colours',0.8,0,0.03,(rect,px)=>{ rect(3,3,4,5,'#f0a030'); rect(9,3,4,5,'#f0a030'); rect(4,8,3,4,'#e07020'); rect(9,8,3,4,'#e07020'); px(4,4,'#2a1a0a'); px(11,4,'#2a1a0a'); rect(7,4,2,8,'#2a1a0a'); px(6,2,'#2a1a0a'); px(9,2,'#2a1a0a'); },4),
+    'fly','over grass and flowers on the surface','by day, not in rain');
+  ins('bee','Bee',bait('bee','Bee','A honey bee caught with a bug net. Fish bite sooner',0.7,0,0,(rect,px)=>{ rect(4,7,8,5,'#f0c030'); for(const x of [6,9]) rect(x,7,1,5,'#2a1a0a'); rect(11,8,2,3,'#2a1a0a'); rect(5,3,3,4,'#e8f0ff'); rect(8,3,3,4,'#e8f0ff'); px(3,9,'#2a1a0a'); },3),
+    'fly','around flowers on the surface','by day, not in rain');
+  ins('dragonfly','Dragonfly',bait('dragonfly','Dragonfly','A darting dragonfly caught with a bug net. Bigger fish take it',0.75,1,0,(rect,px)=>{ rect(2,8,11,2,'#3a8ab0'); rect(12,7,3,4,'#2a5a8a'); rect(4,4,4,3,'#d8f0ff'); rect(8,4,4,3,'#d8f0ff'); rect(4,11,4,3,'#d8f0ff'); rect(8,11,4,3,'#d8f0ff'); px(14,8,'#ffffff'); },6),
+    'dart','over water and the shore','by day');
+  ins('firefly','Firefly',bait('firefly','Firefly','A glowing firefly caught with a bug net. Rare fish rise to its light',0.8,0,0.06,(rect,px)=>{ rect(5,5,6,5,'#3a3020'); rect(5,10,6,3,'#e8ff70'); rect(6,11,4,1,'#ffffc0'); rect(3,3,4,3,'#c8d0e0'); rect(9,3,4,3,'#c8d0e0'); px(7,4,'#1a1a0a'); },5),
+    'glow','over grass on the surface','at night');
+  ins('beetle','Beetle',bait('beetle','Beetle','A shiny beetle caught with a bug net. Bigger fish take it',0.9,1,0,(rect,px)=>{ rect(4,6,9,7,'#2a5a3a'); rect(5,5,7,1,'#3a7a4a'); rect(8,6,1,7,'#1a3a2a'); rect(12,7,2,4,'#1a2a1a'); for(const y of [7,9,11]){ px(3,y,'#1a2a1a'); px(13,y+1,'#1a2a1a'); } px(6,7,'#8ad0a0'); },3),
+    'crawl','on the ground in woods and in caves','day and night');
+  ins('cricket','Cricket',baitOf('cricket'),'hop','in tall grass on the surface','day and night');
+  ins('flea','Sand flea',baitOf('flea'),'hop','on beach sand by the sea','day and night');
+  ins('glowfly','Glow fly',baitOf('glowfly'),'glow','near glowing mushrooms and glowing plants underground','always'); }
+for(const k of ['cricket','flea','glowfly']){ const id=baitOf(k); if(ITEMS[id]) ITEMS[id].desc=({cricket:'A cricket caught with a bug net in tall grass. Fish bite much sooner',flea:'A sand flea caught with a bug net on the beach. Treasure likes it',glowfly:'A glow fly caught with a bug net near glowing mushrooms. Rare fish rise to its light'})[k]+'. Carry it while fishing: each cast uses one'; }
+const INSECT_COL={ butterfly:['#f0a030','#e07020','#f8e0a0'], bee:['#f0c030','#2a1a0a','#e8f0ff'], dragonfly:['#3a8ab0','#2a5a8a','#d8f0ff'], firefly:['#3a3020','#e8ff70','#c8d0e0'],
+  beetle:['#2a5a3a','#1a2a1a','#8ad0a0'], cricket:['#5a4a2a','#3a2a1a','#8a7a4a'], flea:['#e8d8a8','#a89868','#d8c890'], glowfly:['#3a4a2a','#c8ff6a','#e8f0ff'] };
+const BUTTERFLY_COLS=[['#f0a030','#e07020'],['#5aa0f0','#2a60c0'],['#f0f0f0','#c0c0d0'],['#e050a0','#a02070'],['#f0e050','#c0a020']];
+
+// ---- 2. the bug net ----
+const BUG_NET=newItem({name:'Bug net',kind:'net',desc:'Swing it at an insect to catch it alive. Any other tool or weapon kills insects instead'});
+SELL[BUG_NET]=6; RECIPES.push({ out:BUG_NET, n:1, need:[[480,3],[483,2]], st:B.WORKBENCH });
+customIcon(BUG_NET,(rect,px)=>{ for(let i=0;i<8;i++){ px(2+i,14-i,'#8a5c2d'); px(3+i,14-i,'#b7834a'); } rect(9,2,6,6,'#e8e8e0'); rect(10,3,4,4,'#c8c8c0'); for(const [x,y] of [[9,2],[14,2],[9,7],[14,7]]) px(x,y,'#8a8a80'); px(11,4,'#f8f8f8'); px(13,5,'#f8f8f8'); });
+if(SHOPS.fisher){ SHOPS.fisher.stock=SHOPS.fisher.stock.filter(([id])=>id!==baitOf('cricket')); SHOPS.fisher.stock.push([BUG_NET,1,12]); }
+
+// ---- 3. no more insects straight out of the ground: they are flushed out alive instead ----
+// (the 0.9.88 breakTile wrapper hands out crickets, sand fleas and glow flies; take them back and set a live one loose)
+{ const flush={cricket:baitOf('cricket'),flea:baitOf('flea'),glowfly:baitOf('glowfly')};
+  const _bt=breakTile; breakTile=function(x,y,...a){ const before={}; for(const k in flush) before[k]=countItem(flush[k]); const r=_bt(x,y,...a);
+    try{ for(const k in flush){ const got=countItem(flush[k])-before[k]; if(got>0){ takeItem(flush[k],got); for(let i=0;i<got;i++) bugSpawn(k,x*T+8,y*T+4); } } }catch(e){} return r; }; }
+
+// ---- 4. living insects ----
+const BUGS=[]; const BUG_MAX=12, BUG_R=60;
+let bugT=0;
+function bugSpawn(key,x,y){ if(BUGS.length>=BUG_MAX+6) return null; const c=key==='butterfly'?BUTTERFLY_COLS[(Math.random()*BUTTERFLY_COLS.length)|0]:null;
+  const b={key,x,y,hx:x,hy:y,vx:0,vy:0,t:Math.random()*10,life:90+Math.random()*90,hopT:0.5+Math.random(),dir:Math.random()<0.5?-1:1,col:c,dead:false}; BUGS.push(b); return b; }
+const airAt=(x,y)=>{ const id=tileAt(x,y); return (id===0||!BLOCKS[id].solid)&&!(liq&&liq[y*W+x]>0); };
+const nearTile=(x,y,r,test)=>{ for(let dy=-r;dy<=r;dy++) for(let dx=-r;dx<=r;dx++){ const X=x+dx, Y=y+dy; if(X<0||Y<0||X>=W||Y>=H) continue; if(test(tileAt(X,Y),X,Y)) return true; } return false; };
+const GLOWY=id=>id===B.GLOWSHROOM||(typeof GLOW_FLORA!=='undefined'&&Object.values(GLOW_FLORA).some(v=>Array.isArray(v)&&v.includes(id)));
+function bugKindAt(x,y){ if(!airAt(x,y)) return null; let gy=null; for(let k=1;k<=4;k++) if(isSolid(x,y+k)){ gy=y+k; break; } const below=gy!=null?tileAt(x,gy):0;
+  const under=y>surf[x]+3, night=isNight(), wet=typeof weather!=='undefined'&&/rain|storm|snow/.test(weather||'');
+  if(nearTile(x,y,3,GLOWY)) return 'glowfly';
+  if(under) return gy!=null&&Math.random()<0.25?'beetle':null;
+  if(y<surf[x]-8) return null;
+  if(below===B.SAND&&y>=seaY-6) return Math.random()<0.6?'flea':null;
+  if(!night&&nearTile(x,y,4,(id,X,Y)=>id===B.WATER&&Y>=surf[X]-1)) return Math.random()<0.5?'dragonfly':null;
+  const flowers=nearTile(x,y,2,id=>id===B.FLOWER_R||id===B.FLOWER_Y||id===B.FLOWER_B), grass=below===B.GRASS||nearTile(x,y,1,id=>id===B.TALLGRASS);
+  if(night){ if(grass||flowers) return Math.random()<0.7?'firefly':'cricket'; return null; }
+  if(flowers&&!wet) return Math.random()<0.55?'butterfly':'bee';
+  if(nearTile(x,y,1,id=>id===B.TALLGRASS)) return Math.random()<0.6?'cricket':(wet?null:'butterfly');
+  if(nearTile(x,y,3,id=>LOG_IDS.has(id))&&gy!=null) return 'beetle';
+  if(grass&&!wet&&Math.random()<0.35) return 'butterfly';
+  return null; }
+function bugSpawnTick(){ if(!player||player.dead||state!=='play') return; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T);
+  const near=BUGS.filter(b=>Math.abs(b.x/T-px)<BUG_R).length; if(near>=BUG_MAX) return;
+  for(let k=0;k<6;k++){ const x=px+Math.round((Math.random()*2-1)*34); if(x<2||x>=W-2) continue; const y=py+Math.round((Math.random()*2-1)*14); if(y<2||y>=H-2) continue;
+    if(Math.abs(x-px)<6&&Math.abs(y-py)<4) continue; const key=bugKindAt(x,y); if(!key) continue;
+    const b=bugSpawn(key,x*T+8,y*T+8); if(b&&INSECTS[key].move!=='fly'&&INSECTS[key].move!=='glow'&&INSECTS[key].move!=='dart'){ let gy=y; while(gy<H-1&&!isSolid(x,gy+1)) gy++; b.y=(gy+1)*T-2; b.hy=b.y; } return; } }
+function bugMove(b,dt){ const m=INSECTS[b.key].move; b.t+=dt; b.life-=dt;
+  const tx=Math.floor(b.x/T), ty=Math.floor(b.y/T);
+  if(m==='fly'||m==='glow'||m==='dart'){ const sp=m==='dart'?55:m==='glow'?12:(b.key==='bee'?30:18);
+    if(m==='dart'){ b.hopT-=dt; if(b.hopT<=0){ b.hopT=0.6+Math.random()*1.4; const a=Math.random()*Math.PI*2; b.vx=Math.cos(a)*sp; b.vy=Math.sin(a)*sp*0.5; } else { b.vx*=Math.pow(0.15,dt); b.vy*=Math.pow(0.15,dt); } }
+    else { const ax=(b.hx-b.x)*0.4+Math.sin(b.t*1.3+b.hx)*sp, ay=(b.hy-b.y)*0.6+Math.sin(b.t*2.1)*sp*0.7; b.vx+=(ax-b.vx)*Math.min(1,dt*2); b.vy+=(ay-b.vy)*Math.min(1,dt*2); }
+    if(Math.random()<dt*0.2){ b.hx+=(Math.random()-0.5)*6*T; b.hy+=(Math.random()-0.5)*3*T; }
+    const nx=b.x+b.vx*dt, ny=b.y+b.vy*dt; if(airAt(Math.floor(nx/T),Math.floor(ny/T))){ b.x=nx; b.y=ny; } else { b.vx=-b.vx; b.vy=-b.vy; b.hx=b.x; b.hy=b.y-T; } }
+  else { // hoppers and crawlers walk the ground
+    if(!isSolid(tx,Math.floor((b.y+2)/T))){ b.vy=Math.min(400,b.vy+900*dt); } else if(b.vy>0){ b.vy=0; b.y=Math.floor((b.y+2)/T)*T-2; b.vx*=m==='hop'?0.2:1; }
+    if(m==='hop'){ b.hopT-=dt; const pd=player?Math.hypot(cxOf(player)-b.x,cyOf(player)-b.y):999; if(b.vy===0&&isSolid(tx,Math.floor((b.y+2)/T))&&(b.hopT<=0||(pd<2.2*T&&b.hopT<0.8))){ b.hopT=1+Math.random()*2.5; b.dir=pd<2.2*T?Math.sign(b.x-cxOf(player))||1:(Math.random()<0.5?-1:1); b.vx=b.dir*(50+Math.random()*30); b.vy=-170-Math.random()*60; b.y-=3; } }
+    else { if(Math.random()<dt*0.3) b.dir=-b.dir; b.vx=b.dir*9; }
+    const nx=b.x+b.vx*dt; if(!isSolid(Math.floor(nx/T),Math.floor((b.y-2)/T))) b.x=nx; else { b.dir=-b.dir; b.vx=-b.vx*0.5; }
+    b.y+=b.vy*dt; if(isSolid(Math.floor(b.x/T),Math.floor((b.y-3)/T))&&b.vy<0) b.vy=0; }
+  if(liq&&tx>=0&&ty>=0&&tx<W&&ty<H&&liq[ty*W+tx]>0&&tileAt(tx,ty)===B.LAVA) b.dead=true; }
+function bugTick(dt){ if(!world||!player) return; if((bugT-=dt)<=0){ bugT=1; try{ bugSpawnTick(); }catch(e){} }
+  const night=isNight(); for(const b of BUGS){ if(b.dead) continue; bugMove(b,dt);
+    const far=Math.abs(b.x-cxOf(player))>BUG_R*T*1.3||Math.abs(b.y-cyOf(player))>40*T;
+    if(far||b.life<=0||(b.key==='firefly'&&!night)||((b.key==='butterfly'||b.key==='bee'||b.key==='dragonfly')&&night)) b.dead=true; }
+  // arrows, bolts and spells kill insects they pass through
+  for(const pr of projs||[]){ for(const b of BUGS) if(!b.dead&&Math.abs(pr.x-b.x)<8&&Math.abs(pr.y-b.y)<8){ bugSquish(b); } }
+  for(let i=BUGS.length-1;i>=0;i--) if(BUGS[i].dead) BUGS.splice(i,1); }
+function bugSquish(b){ b.dead=true; const c=INSECT_COL[b.key]; for(let k=0;k<5;k++) parts.push({x:b.x,y:b.y,vx:(Math.random()-.5)*60,vy:-20-Math.random()*40,life:0.35,col:k%2?c[0]:c[1],sz:1}); }
+// what a swing reaches: within a block and a bit of the aim point, which never lies farther than your reach
+function bugZone(){ const p=player; let a; try{ a=aimPoint({kind:'net'}); }catch(e){ a={x:cxOf(p)+(p.facing||1)*T*2,y:cyOf(p)}; } const cx=cxOf(p), cy=cyOf(p); let dx=a.x-cx, dy=a.y-cy; const d=Math.hypot(dx,dy)||1; const far=Math.min(d,REACH*0.9); return {x:cx+dx/d*far,y:cy+dy/d*far,r:1.4*T}; }
+const BUG_KILLERS=new Set(['weapon','pick','axe','hoe','hammer','rod']);
+let netCd=0;
+function bugSwingTick(dt){ netCd-=dt; const p=player; if(!p||p.dead||state!=='play'||!input.use||p.operating) return; const it=heldItem(); const def=it&&ITEMS[it.id]; if(!def) return;
+  if(def.kind==='net'){ if(netCd>0) return; netCd=0.35; p.atkT=0.25; const z=bugZone(); let n=0;
+    for(const b of BUGS){ if(b.dead||Math.hypot(b.x-z.x,b.y-z.y)>z.r) continue; b.dead=true; const ins=INSECTS[b.key]; give(ins.item,1); n++; addFloat(b.x,b.y-6,'caught a '+ins.name.toLowerCase(),'#e8d8a8'); }
+    try{ sfx(n?'pickup':'swing'); }catch(e){} return; }
+  if(!BUG_KILLERS.has(def.kind)) return; const z=bugZone(); for(const b of BUGS) if(!b.dead&&Math.hypot(b.x-z.x,b.y-z.y)<z.r*0.85) bugSquish(b); }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'||state==='paused'){ bugSwingTick(dt); bugTick(dt); } }catch(e){ console.warn(e); } return r; }; }
+// drawn before the darkness (glowing ones also shine through it)
+function drawBug(b,glowPass){ const c=b.col||INSECT_COL[b.key], f=Math.floor(b.t*(b.key==='bee'||b.key==='dragonfly'?14:8))%2, x=Math.round(b.x), y=Math.round(b.y); let r=(dx,dy,w,h,col)=>{ ctx.fillStyle=col; ctx.fillRect(x+dx,y+dy,w,h); };
+  if(glowPass){ const g=0.5+0.5*Math.sin(b.t*3+b.hx); ctx.save(); ctx.globalAlpha=0.35+0.4*g; ctx.fillStyle=b.key==='firefly'?'#e8ff70':'#c8ff6a'; ctx.beginPath(); ctx.arc(x,y,3+2*g,0,Math.PI*2); ctx.fill(); ctx.globalAlpha=1; r(-1,-1,2,2,'#ffffd0'); ctx.restore(); return; }
+  const k=b.key; ctx.save(); ctx.translate(x,y); ctx.scale(1.5,1.5); r=(dx,dy,w,h,col)=>{ ctx.fillStyle=col; ctx.fillRect(dx,dy,w,h); };   // a little bigger than life so they read on a phone
+  if(k==='butterfly'){ r(-1,-1,1,3,'#2a1a0a'); if(f){ r(-4,-3,3,3,c[0]); r(1,-3,3,3,c[0]); r(-3,0,2,2,c[1]); r(1,0,2,2,c[1]); } else { r(-2,-3,1,4,c[0]); r(1,-3,1,4,c[0]); } }
+  else if(k==='bee'){ r(-2,-1,4,3,c[0]); r(-1,-1,1,3,c[1]); r(1,-1,1,3,c[1]); r(-2,f?-3:-2,2,1,c[2]); r(0,f?-3:-2,2,1,c[2]); }
+  else if(k==='dragonfly'){ const d=b.vx<0?-1:1; r(-3,0,6,1,c[0]); r(d>0?3:-4,-1,1,2,c[1]); r(-2,f?-2:-1,2,1,c[2]); r(1,f?-2:-1,2,1,c[2]); }
+  else if(k==='firefly'||k==='glowfly'){ r(-1,-1,2,2,c[0]); r(-1,1,2,1,c[1]); r(-2,f?-2:-1,1,1,c[2]); r(1,f?-2:-1,1,1,c[2]); }
+  else if(k==='beetle'){ r(-2,-3,4,3,c[0]); r(b.dir>0?2:-3,-2,1,2,c[1]); r(-2,0,1,1,c[1]); r(1,0,1,1,c[1]); r(-1,-3,1,1,c[2]); }
+  else if(k==='cricket'){ r(-2,-2,4,2,c[0]); r(b.dir>0?2:-3,-3,1,2,c[1]); r(b.dir>0?-3:2,-3,1,3,c[1]); r(-1,0,1,1,c[1]); }
+  else if(k==='flea'){ r(-1,-2,3,2,c[0]); r(-1,0,1,1,c[1]); r(1,0,1,1,c[1]); }
+  ctx.restore(); }
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ if(BUGS.length){ const vx0=camX-8, vx1=camX+viewW+8, vy0=camY-8, vy1=camY+viewH+8; for(const b of BUGS) if(!b.dead&&b.x>vx0&&b.x<vx1&&b.y>vy0&&b.y<vy1) drawBug(b,false); } }catch(e){}
+    const r=_dl(...a);
+    try{ if(BUGS.length){ const vx0=camX-8, vx1=camX+viewW+8, vy0=camY-8, vy1=camY+viewH+8; for(const b of BUGS) if(!b.dead&&(b.key==='firefly'||b.key==='glowfly')&&b.x>vx0&&b.x<vx1&&b.y>vy0&&b.y<vy1) drawBug(b,true); } }catch(e){}
+    return r; }; }
+// a new world or a load starts without insects
+{ const _sp=startPlay; startPlay=function(...a){ BUGS.length=0; return _sp(...a); }; }
 // ===== Beta 0.9.88: war machines hit harder and truer, step off, aim them all, pack them up; enemy ballistas (Kinard, 2026-10-11) =====
 
 // ---- 1. harder trebuchet boulders that smash through tree crowns into the ground ----
@@ -14518,13 +14656,11 @@ enemyBallistaTick=function(dt){ if((ebT-=dt)>0||!player||!home||!home.claimed||i
       facLog(b,`The ${FNAME[b.f].toLowerCase()} army has set up ${kit.length>1?'a '+what:what} outside your village!`,true); toast(`The ${FNAME[b.f].toLowerCase()} army set up ${kit.length>1?'a '+what:what}! Destroy ${kit.length>1?'them':'it'} or kill the crew${kit.length>1?'s':''}`,5); } } };
 // ===== Beta 0.9.93: buildings fit where they should, Cancel on phones, blasts break back walls, more test world tools (Kinard, 2026-10-11) =====
 
-// ---- 1. placing a building: mist clouds, bushes and other loose natural bits are cleared, and a small bump of ground
-//      in the bottom two rows is dug away (a tower used to be refused by the mist that hangs at about its height) ----
-const BUILD_DIG=2;
-{ const _rp=replaceable; replaceable=function(id,...a){ if(_rp(id,...a)) return true; const b=BLOCKS[id]; if(!b||b.solid||id===B.WATER||id===B.LAVA) return false;
-    if(isChestId&&isChestId(id)) return false; if(typeof isBuilt==='function'&&isBuilt(id)) return false; return true; }; }   // non-solid natural things: mist, bushes, flowers, vines, webs
-const digGround=id=>{ try{ if(NAT_ROCK().has(id)) return true; }catch(e){} return [B.DIRT,B.GRASS,B.SAND,B.SNOW,B.STONE,B.CLAY,B.GRAVEL,B.ASH,B.SCORCHED,B.RUBBLE].includes(id); };
-buildBlocked=function(bp,cx,gy){ for(let y=gy-bp.fh;y<gy;y++) for(let x=cx+bp.fx0;x<=cx+bp.fx1;x++){ if(x<1||x>=W-1||y<=skyOff) return true; const id=world[y*W+x]; if(replaceable(id)) continue; if(y>=gy-BUILD_DIG&&digGround(id)) continue; return true; } return false; };
+// ---- 1. placing a building (0.9.96: back to the old rule, which only clears trees, grass and plants, plus the soft things that
+//      hang in the air where you cannot see them as blocks: mist clouds, bushes, ivy, hanging moss and roots. The 0.9.93 rule that also
+//      took any non-solid block and dug two rows of ground away was undone: it let buildings sink into bumps) ----
+const BUILD_SOFT=new Set([B.MIST,B.BUSH,B.IVY,B.VINE,B.ROOTS].filter(id=>id!=null));
+{ const _rp=replaceable; replaceable=function(id,...a){ return _rp(id,...a)||BUILD_SOFT.has(id); }; }
 
 // ---- 2. the Cancel button: small, at the bottom middle of the screen on phones ----
 function cancelStyle(){ try{ const b=$('#bldCancel'); if(!b) return; const touch=document.body.classList.contains('touch'); if(b._touch===touch) return; b._touch=touch;
