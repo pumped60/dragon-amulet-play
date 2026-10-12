@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791780168"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791780168"><link rel="manifest" href="manifest.webmanifest?v=1791780168"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791780841"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791780841"><link rel="manifest" href="manifest.webmanifest?v=1791780841"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.113</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.114</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.113</h3>
+    <h3>New in Beta 0.9.114</h3>
+    <p>Farmers bring you the crops they grow. A harvest goes into the farmhouse chest as that crop (tomatoes, corn, melons and the rest, with a seed or two), empty furrows are sown from the seeds in the farmhouse chest first, and each morning every farmer puts a few of the field's own crops into the chest beside the grow meal.</p>
+    <h3>Beta 0.9.113</h3>
     <p>Controller support is off for now.</p>
     <h3>Beta 0.9.112</h3>
     <p>The Near / Exact button sits to the right of the hotbar. Animals spawn on the ground, never inside a hill. Miners always get down the mine: the shaft is kept open (platforms on the ledges, nothing solid between), a miner starting a trip sinks straight down it to the floor, and whatever is left of a miner's daily quota at the end of the day is put into the miners' chest anyway.</p>
@@ -738,7 +740,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.113</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.114</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1001,7 +1003,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.113</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.114</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1020,7 +1022,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.113', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.114', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -14215,6 +14217,42 @@ function wildCrops(onlyUnexplored,R){ R=R||Math.random; if(!world) return 0; let
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ wildCrops(false,mulberry((seed|0)+8089)); if(home) home.wildCropsV=1; }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.wildCropsV&&!isGuest()){ home.wildCropsV=1; facRun(()=>wildCrops(true)); } }catch(e){ console.warn(e); } return r; }; }
 // wild crops grow without tilled soil only up to ripe ones placed by the world; on tilled soil they grow as usual
+// ===== Beta 0.9.114: farmers bring you the crops they plant, not only grow meal (Kinard, 2026-10-12) =====
+// Before: a farmer harvesting one of the six 0.9.88 crops (tomato, corn, strawberry, onion, cabbage, melon) carried
+// wheat home, every empty furrow was sown with wheat, and the only thing sure to turn up in the farmhouse chest each
+// morning was grow meal. Now a harvest yields that crop (and a seed or two), empty furrows are sown from the seeds in
+// the farmhouse chest first (then with whatever grows in the field already, then wheat), and each morning every farmer
+// puts a few of the field's own crops into the farmhouse chest, like the miners' quota.
+const FARM_DAILY=3;   // crops per farmer each morning, from the kinds growing in the field
+// ripe block -> what a farmer carries home
+function cropYield(id){ const R=()=>Math.random();
+  if(id===B.WHEAT_3) return {food:I.WHEAT,n:2+((R()*2)|0),seed:I.WHEAT_SEEDS,ns:1+((R()*2)|0)};
+  if(id===B.CARROT_2) return {food:I.CARROT,n:2+((R()*2)|0),seed:I.CARROT_SEEDS,ns:R()<0.5?1:0};
+  if(id===B.POTATO_3) return {food:460,n:2+((R()*3)|0),seed:461,ns:1+((R()*2)|0)};
+  if(id===B.PUMPKIN_2) return {food:I.PUMPKIN,n:1,seed:I.PUMPKIN_SEEDS,ns:1+((R()*2)|0)};
+  const c=Object.values(NEW_CROPS).find(c=>c.s3===id); if(c) return {food:c.food,n:c===NEW_CROPS.melon?1+((R()*2)|0):2+((R()*2)|0),seed:c.seed,ns:1+((R()*2)|0)};
+  return null; }
+// any stage of a crop -> the food it gives
+const CROP_FOOD={[B.WHEAT_1]:I.WHEAT,[B.WHEAT_2]:I.WHEAT,[B.WHEAT_3]:I.WHEAT,[B.CARROT_1]:I.CARROT,[B.CARROT_MID]:I.CARROT,[B.CARROT_2]:I.CARROT,[B.POTATO_1]:460,[B.POTATO_2]:460,[B.POTATO_3]:460,[B.PUMPKIN_1]:I.PUMPKIN,[B.PUMPKIN_MID]:I.PUMPKIN,[B.PUMPKIN_2]:I.PUMPKIN};
+for(const c of Object.values(NEW_CROPS)){ CROP_FOOD[c.s1]=c.food; CROP_FOOD[c.s2]=c.food; CROP_FOOD[c.s3]=c.food; }
+function cropFoodOf(id){ return CROP_FOOD[id]||(CROPS_STAGE[id]?I.WHEAT:null); }
+// 1. the harvest a farmer carries home is the crop it cut (plus seeds)
+{ const _va=villageWorkerAct; villageWorkerAct=function(e,dt,...a){ let crop=0; if(e&&e.vjob==='farmer'&&e.vphase==='work'&&e.vjt&&(e.vT||0)-dt<=0) crop=tileAt(e.vjt.x,e.vjt.y);
+    const r=_va(e,dt,...a);
+    if(crop&&ripeCrop(crop)&&e.load){ const y=cropYield(crop); if(y){ e.load=[y.food,y.n]; e.seedLoad=y.seed&&y.ns>0?[y.seed,y.ns]:null; } } return r; }; }
+{ const _vd=vDeliver; vDeliver=function(e,id,n,...a){ const r=_vd(e,id,n,...a); try{ if(e&&e.seedLoad){ const c=lodgeChest('farmer'); if(c) putInChest(c,{id:e.seedLoad[0],n:e.seedLoad[1]}); e.seedLoad=null; } }catch(err){} return r; }; }
+// 2. empty furrows: seeds from the farmhouse chest first, then a crop already in the field, then wheat
+function fieldCrops(){ const F=home&&home.farmhouse; if(!F||!F.field) return []; const out=[]; for(let x=F.field[0];x<=F.field[1];x++){ const id=tileAt(x,F.gy-1); if(cropFoodOf(id)) out.push(id); } return out; }
+function stageOne(id){ for(const c of Object.values(NEW_CROPS)) if(id===c.s1||id===c.s2||id===c.s3) return c.s1; return CROP_REPLANT[id]||{[B.WHEAT_1]:B.WHEAT_1,[B.WHEAT_2]:B.WHEAT_1,[B.WHEAT_3]:B.WHEAT_1,[B.CARROT_1]:B.CARROT_1,[B.CARROT_MID]:B.CARROT_1,[B.CARROT_2]:B.CARROT_1,[B.POTATO_1]:B.POTATO_1,[B.POTATO_2]:B.POTATO_1,[B.POTATO_3]:B.POTATO_1,[B.PUMPKIN_1]:B.PUMPKIN_1,[B.PUMPKIN_MID]:B.PUMPKIN_1,[B.PUMPKIN_2]:B.PUMPKIN_1}[id]||B.WHEAT_1; }
+function farmSeedPick(){ const c=lodgeChest('farmer'); if(c){ const slots=c.items.map((s,i)=>s&&ITEMS[s.id]&&ITEMS[s.id].kind==='seed'&&ITEMS[s.id].plant?i:-1).filter(i=>i>=0); if(slots.length){ const i=slots[(Math.random()*slots.length)|0], s=c.items[i]; const plant=ITEMS[s.id].plant; s.n--; if(s.n<=0) c.items[i]=null; return plant; } }
+  const grown=fieldCrops(); if(grown.length) return stageOne(grown[(Math.random()*grown.length)|0]); return B.WHEAT_1; }
+{ const _pt=plantTarget; plantTarget=function(e,...a){ const t=_pt(e,...a); try{ if(t&&e&&e.vjob==='farmer'&&t.plant===B.WHEAT_1&&!isGuest()) t.plant=farmSeedPick(); }catch(err){} return t; }; }
+// 3. each morning every farmer puts a few of the field's crops into the farmhouse chest
+function farmMorning(){ if(!home||!home.farmhouse||isGuest()) return 0; const farmers=ents.filter(e=>!e.dead&&e.kind==='villager'&&e.vjob==='farmer'&&e.team===(player&&player.team)); if(!farmers.length) return 0;
+  const kinds=[...new Set(fieldCrops().map(cropFoodOf))]; if(!kinds.length) kinds.push(I.WHEAT); let total=0;
+  for(const e of farmers){ const got={}; for(let k=0;k<FARM_DAILY;k++){ const id=kinds[(Math.random()*kinds.length)|0]; got[id]=(got[id]||0)+1; } for(const [id,n] of Object.entries(got)){ vDeliver(e,+id,n); total+=n; } }
+  return total; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ farmMorning(); }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.88: the storm rod, bait, and charms for the whole team (Kinard, 2026-10-11) =====
 
 // ---- 1. bait: found around the world; the next cast uses the first bait in your bag ----
