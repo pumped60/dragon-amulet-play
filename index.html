@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791825122"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791825122"><link rel="manifest" href="manifest.webmanifest?v=1791825122"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791852068"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791852068"><link rel="manifest" href="manifest.webmanifest?v=1791852068"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.126</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.127</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.126</h3>
+    <h3>New in Beta 0.9.127</h3>
+    <p>Cut a tree at any trunk block and the whole tree falls from the ground, bottom block included. A bee hive left hanging from nothing, under the leaves of a felled tree or below a block you broke, drops as an item, with 2 honey when it was full.</p>
+    <h3>Beta 0.9.126</h3>
     <p>Enemies never appear within 10 blocks of you or a friend, and on a friend's screen far enemies no longer blink away and pop back. A soldier who falls 15 blocks behind joins you again even while you can see him; only while you are up inside a building does he wait below.</p>
     <h3>Beta 0.9.125</h3>
     <p>The hills, trees and mountains in the distance stand on the ground you can see, so they stay in view above the earth on high land and on hilltops, and the clouds rise with them when you go a little underground.</p>
@@ -764,7 +766,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.126</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.127</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1027,7 +1029,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.126</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.127</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1046,7 +1048,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.126', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.127', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -15580,6 +15582,21 @@ $('#godList').addEventListener('click',e=>{ const b=e.target.closest('[data-gt]'
     else if(k==='claim') testClaim(); else if(k==='raid') testRaid(false); else if(k==='siege') testRaid(true); else if(k==='arrive') testArrive();
     else if(k==='dragon') testDragonRaid(); else if(k==='machines') testMachines(); else if(k==='monsters') testMonsters(); else if(k==='damage') testDamage(); }catch(err){ console.warn(err); toast('That did not work here',2); }
   renderGod(); },true);
+// ===== Beta 0.9.127: the whole tree falls from any cut, and bee hives drop =====
+// Cutting a trunk above its lowest block took the logs below the cut away without showing them (only the part at or
+// above the cut fell), so the bottom block seemed to vanish. Now the tree is felled from the bottom of the trunk you
+// cut, so every log falls together, pivoting on the ground. A bee hive left hanging from nothing (the leaves of a felled
+// tree, or a block you broke above it) drops as an item, with its honey when it was full.
+function trunkBase(x,y){ const logAt=(a,b)=>{ const id=tileAt(a,b); return LOG_IDS.has(id)||(id===B.WATER&&LOG_IDS.has(wetDeco.get(b*W+a))); };
+  let b=y; while(b+1<H&&logAt(x,b+1)) b++; return b; }
+function hiveHeld(x,y){ const up=tileAt(x,y-1); return !!up&&up>0&&(BLOCKS[up].solid||LEAF_IDS.has(up)); }
+function dropLooseHives(x0,x1,y0,y1){ const out=[]; for(let y=Math.max(1,y0);y<=Math.min(H-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++){ const id=tileAt(x,y); if(!isHive(id)||hiveHeld(x,y)) continue; out.push([x,y,id]); }
+  if(!out.length) return 0; const guest=typeof MP!=='undefined'&&MP.guest;
+  for(const [x,y,id] of out){ mpRun(()=>setTile(x,y,0)); const loot=[[B.BEEHIVE,1]]; if(id===B.BEEHIVE_FULL) loot.push([I.HONEY,2]);
+    for(const [it,n] of loot){ if(guest) give(it,n); else spawnDrop(x*T+8,y*T+8,it,n); } puff(x*T+8,y*T+8,'#d8a840',8,60); }
+  return out.length; }
+{ const _ft=fellTree; fellTree=function(x,y,...a){ const by=trunkBase(x,y); const r=_ft(x,by,...a); try{ dropLooseHives(x-14,x+14,by-40,by+2); }catch(e){ console.warn(e); } return r; }; }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const r=_bt(x,y,...a); try{ if(isHive(tileAt(x,y+1))) dropLooseHives(x,x,y+1,y+1); }catch(e){} return r; }; }
 // ===== Beta 0.9.120: fewer one-block-high tunnels, most 2-3 blocks high (Kinard, 2026-10-12) =====
 // The ribbon tunnels the cave noise carves are often a single block high. After carving, every crawlway of 3 or more
 // cells that is one block high is raised to two (TUNNEL_RAISE of them), and about TUNNEL_TALL of those, and of the
