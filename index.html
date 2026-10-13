@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791852068"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791852068"><link rel="manifest" href="manifest.webmanifest?v=1791852068"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1791862574"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791862574"><link rel="manifest" href="manifest.webmanifest?v=1791862574"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.127</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.129</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,11 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.127</h3>
+    <h3>New in Beta 0.9.129</h3>
+    <p>Marble pockets underground stay as dark as the rock around them; they no longer glow as if lit.</p>
+    <h3>Beta 0.9.128</h3>
+    <p>The Dragonborn is a red dragon-man: a horned dragon head with a long snout and a golden slit eye, scales with pale belly plates, tall bat wings and a thick spiked tail. Armour shows as shoulder guards, and a sash keeps your faction colour.</p>
+    <h3>Beta 0.9.127</h3>
     <p>Cut a tree at any trunk block and the whole tree falls from the ground, bottom block included. A bee hive left hanging from nothing, under the leaves of a felled tree or below a block you broke, drops as an item, with 2 honey when it was full.</p>
     <h3>Beta 0.9.126</h3>
     <p>Enemies never appear within 10 blocks of you or a friend, and on a friend's screen far enemies no longer blink away and pop back. A soldier who falls 15 blocks behind joins you again even while you can see him; only while you are up inside a building does he wait below.</p>
@@ -766,7 +770,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.127</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.129</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1029,7 +1033,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.127</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.129</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1048,7 +1052,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.127', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.129', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4800,7 +4804,7 @@ function drawHumanFig(g,o){
   const R=fig(g,SCX-8,SFY-30); const cu=o.cust; let col=FCOL[o.team]||FCOL.n, dk=FDARK[o.team]||FDARK.n, lt=FLIGHT[o.team]||FLIGHT.n;
   if(cu){ col=cu.o1; dk=shadeHex(cu.o1,-0.35); lt=shadeHex(cu.o1,0.35); }
   const sk0=cu?cu.skin:o.team==='m'?'#c8483a':'#f2c79b', skd0=shadeHex(sk0,-0.14), o2=cu?cu.o2:null; FACE_EYE=cu?cu.eyes:o.team==='m'?'#ffcf3a':'#1b1424'; FACE_SKIN=sk0;
-  const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; R(3,13,10,5,armorC[0]); R(3,13,10,1,armorC[1]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };
+  const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; if(o.look==='dragon'){ for(const x of [2,11]){ R(x,13,3,2,armorC[0]); R(x,13,3,1,armorC[1]); } return; }   /* 0.9.128: the Dragonborn shows his armour as shoulder guards, his scales stay in view */ R(3,13,10,5,armorC[0]); R(3,13,10,1,armorC[1]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };
   const hair=cu?cu.hc:'#7a4a2a', hairL=shadeHex(hair,0.25), bald=!!(cu&&cu.hair==='bald');
   const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0;
   const arms=(c,hand)=>{
@@ -4852,11 +4856,20 @@ function drawHumanFig(g,o){
       arms(col,sk0); face(R,3,4,11,sk0,skd0,7); R(1,0,14,4,'#8a6a4a'); R(1,4,2,8,'#8a6a4a'); R(2,-3,3,3,'#8a6a4a'); R(10,-3,3,3,'#8a6a4a'); R(3,-2,1,1,'#e8b8a0'); R(11,-2,1,1,'#e8b8a0'); if(!bald) R(4,4,10,1,cu?hair:'#6a4a2a'); if(cu&&(cu.hair==='long'||cu.hair==='ponytail')) R(3,5,1,6,hair); R(1,0,14,1,'#a88a6a'); break; }
     case 'miner': { legs(R,f,'#5a4a3a','#2a1d12'); R(3,13,10,9,'#8a8f98'); R(4,14,8,7,'#8a5a2e'); R(3,19,10,1,'#3a2a1a'); arms('#8a8f98',sk0);
       face(R,2,3,12,sk0,skd0,6); R(3,9,11,3,'#6b4422'); R(1,-1,14,4,'#ffcf3a'); R(0,2,16,1,'#c99a1a'); R(9,0,3,2,'#fff6b0'); R(1,-1,14,1,'#fff2a8'); break; }
-    case 'dragon': { const sc=cu?shadeHex(cu.o1,-0.15):'#b0442a', scd=shadeHex(sc,-0.4), scl=shadeHex(sc,0.3), bel='#e8b06a', horn='#ece4cc';
-      const tc=cu?cu.o2:col, tl=cu?shadeHex(cu.o2,0.35):lt, td=cu?shadeHex(cu.o2,-0.35):dk; legs(R,f,sc,scd); R(3,13,10,9,tc); R(3,13,10,1,tl); R(12,13,1,9,td); R(6,14,4,6,bel); R(6,16,4,1,shadeHex(bel,-0.2)); R(6,18,4,1,shadeHex(bel,-0.2)); R(3,19,10,1,'#3a2a1a'); R(7,19,2,1,'#ffcf3a');
-      arms(sc,scd);
-      FACE_EYE=cu?cu.eyes:'#ffcf3a'; FACE_SKIN=sc; face(R,2,3,12,sc,scd,6); R(13,7,3,3,sc); R(15,8,1,1,scd); R(2,3,12,1,scd); for(const [x,y] of [[4,5],[5,9],[7,10]]) R(x,y,1,1,scl);
-      R(1,0,14,3,scd); R(3,-1,1,1,scd); R(7,-1,1,1,scd); R(11,-1,1,1,scd);
+    case 'dragon': { /* 0.9.128: a red dragon-man: horned dragon head with a snout, jaw and slit eye, scales, pale belly plates */
+      const sc=DB_RED, scd=shadeHex(sc,-0.42), scl=shadeHex(sc,0.3), bel='#e8c08a', beld=shadeHex(bel,-0.22), horn='#ece4cc', hornd='#a89878', tc=cu?cu.o2:col;
+      legs(R,f,sc,scd);
+      R(3,13,10,9,sc); R(3,13,1,9,scd); R(12,13,1,9,scd); R(7,13,5,7,bel); for(const y of [15,17]) R(7,y,5,1,beld); for(const [x,y] of [[4,14],[5,16],[4,18]]) R(x,y,1,1,scl);
+      R(3,19,10,2,tc); R(3,19,10,1,shadeHex(tc,0.3)); R(8,19,2,2,'#ffcf3a');
+      arms(sc,scl);
+      R(5,9,6,4,sc); R(8,9,3,4,bel); R(8,10,3,1,beld);
+      R(4,0,6,1,sc); R(3,1,8,1,scl); R(2,2,10,6,sc); R(2,2,1,6,scd); R(3,8,9,1,sc);
+      R(12,3,4,3,sc); R(12,3,4,1,scl); R(16,4,1,2,sc); R(15,3,1,1,scd);
+      R(8,2,4,1,scd); R(9,3,2,2,'#ffcf3a'); R(10,3,1,2,'#2a0a00'); R(9,3,1,1,'#fff6b0');
+      R(10,6,7,1,scd); R(4,7,12,2,sc); R(5,8,10,1,scd); R(12,7,1,1,'#ffffff'); R(14,7,1,1,'#ffffff');
+      for(const [x,y] of [[4,3],[6,5],[4,5],[7,7]]) R(x,y,1,1,scl);
+      R(4,-1,2,1,horn); R(3,-2,2,1,horn); R(2,-3,2,1,hornd); R(7,-1,2,1,horn); R(6,-2,2,1,horn); R(6,-3,1,1,hornd); R(5,-4,1,1,hornd);
+      R(1,3,1,1,scd); R(0,4,2,1,horn); R(1,6,1,1,scd); R(0,7,2,1,horn); R(2,10,1,1,scd); R(1,11,2,1,horn);
       break; }
     case 'archmage': { const mg=o.team==='m'; const robe=mg?'#9a2a1a':'#5a2a9a', rl=mg?'#e0602a':'#8a5ac8', rd=mg?'#5a1410':'#3a1a6a';
       R(1,13,14,16,robe); R(0,20,16,9,robe); R(1+sw,28,14,1,'#ffcf3a'); R(7,13,2,15,rd); R(2,13,12,1,rl); for(const [x,y] of [[3,17],[11,22],[4,25],[12,16]]) R(x,y,1,1,'#ffe066');
@@ -8899,16 +8912,25 @@ function dbTallyAfter(grid){ const g=$(grid); if(!g) return; let t=g.nextElement
 // ===================== the Dragonborn's wings and tail; two-finger touch controls =====================
 
 // ---- red wings that beat like the white sky wings, and a tail that sways ----
-function dragonScale(e){ const cu=e.cust||(e===player&&player.cust); return cu&&cu.o1?shadeHex(cu.o1,-0.15):'#b0442a'; }
+var DB_RED='#b8322a';   // 0.9.128: the Dragonborn is always red
+function dragonScale(e){ return DB_RED; }
+function pxLine(x0,y0,x1,y1){ const n=Math.max(Math.abs(x1-x0),Math.abs(y1-y0))||1; for(let i=0;i<=n;i++) ctx.fillRect(Math.round(x0+(x1-x0)*i/n),Math.round(y0+(y1-y0)*i/n),1,1); }
+// bat wings: an arm bone up and back to the wrist, three finger bones fanning down, scalloped skin between them
+const WING_TOP=[0,-2,-5,-7,-9,-12,-14,-13,-12,-10,-9,-8,-7,-6], WING_BOT=[3,3,2,1,2,2,1,0,0,-1,-2,-3,-4,-5];
 function drawDragonWings(e){ const t=performance.now()/1000, sc=dragonScale(e); const flap=!e.grounded&&!e.inWater; const fl=flap?Math.sin(t*22):Math.sin(t*2)*0.15;
-  const cx=Math.round(cxOf(e))-e.facing*2, cy=Math.round(e.y+e.h)-21;
-  ctx.save(); for(const [off,c,edge] of [[1,shadeHex(sc,-0.35),shadeHex(sc,-0.55)],[0,shadeHex(sc,0.05),shadeHex(sc,-0.45)]]){ ctx.save(); ctx.translate(cx-e.facing*off,cy); ctx.scale(-e.facing*1.3,1.3); ctx.rotate(-0.35+fl*0.5);
-    ctx.fillStyle=c; ctx.fillRect(0,-1,9,3); ctx.fillRect(1,2,7,2); ctx.fillRect(2,4,4,2); ctx.fillStyle=edge; ctx.fillRect(0,-1,9,1); ctx.fillRect(3,0,1,5); ctx.fillRect(6,0,1,4); ctx.fillStyle='#ece4cc'; ctx.fillRect(8,-2,2,1); ctx.restore(); }
+  const cx=Math.round(cxOf(e))-e.facing*4, cy=Math.round(e.y+e.h)-17;
+  ctx.save(); for(const [off,skin,bone,rot] of [[2,shadeHex(sc,-0.38),shadeHex(sc,-0.62),0.18],[0,shadeHex(sc,0.02),shadeHex(sc,-0.5),0]]){ ctx.save(); ctx.translate(cx-e.facing*off,cy-off); ctx.scale(-e.facing,1); if(flap) ctx.rotate(-0.25+rot+fl*0.6); else if(off) ctx.translate(-1,-1);   /* folded and pixel-straight on the ground, beating in the air */
+    for(let x=0;x<WING_TOP.length;x++){ ctx.fillStyle=skin; ctx.fillRect(x,WING_TOP[x],1,WING_BOT[x]-WING_TOP[x]+1); }
+    ctx.fillStyle=shadeHex(skin,0.14); for(const [x,y] of [[2,-1],[3,-3],[5,-6],[7,-8],[9,-5],[10,-6]]) ctx.fillRect(x,y,1,1);
+    ctx.fillStyle=bone; pxLine(0,0,6,-14); pxLine(1,0,7,-14); pxLine(6,-14,3,1); pxLine(6,-14,8,0); pxLine(6,-14,13,-5);
+    ctx.fillStyle='#ece4cc'; ctx.fillRect(6,-15,1,1); ctx.fillRect(5,-16,1,1); ctx.restore(); }
   ctx.restore(); }
-function drawDragonTail(e){ const t=performance.now()/1000, sc=dragonScale(e), scd=shadeHex(sc,-0.4); const f=e.facing||1, bx=cxOf(e)-f*4, by=e.y+e.h-11; const run=Math.abs(e.vx)>8?2.2:1;
-  let px=bx, py=by; for(let k=0;k<7;k++){ const sway=Math.sin(t*4*run-k*0.8)*(k*0.45); const x=bx-f*(k*2), y=by+k*0.9+sway, w=k<3?3:2, h=k<4?3:2;
-    const X=Math.round(f>0?x-w+1:x), Y=Math.round(y); ctx.fillStyle=k>=4?scd:sc; ctx.fillRect(X,Y,w,h); if(k<4){ ctx.fillStyle=scd; ctx.fillRect(X,Y+h-1,w,1); } px=x; py=y; }
-  const X=Math.round(px-f*2), Y=Math.round(py); ctx.fillStyle=scd; ctx.fillRect(f>0?X-2:X,Y-1,3,2); ctx.fillRect(f>0?X-3:X+2,Y-2,1,1); }
+// a thick tail that tapers, with pale belly scales underneath and spikes along the top
+function drawDragonTail(e){ const t=performance.now()/1000, sc=dragonScale(e), scd=shadeHex(sc,-0.42), bel='#e8c08a'; const f=e.facing||1, bx=cxOf(e)-f*4, by=e.y+e.h-12; const run=Math.abs(e.vx)>8?2.2:1;
+  let px=bx, py=by; for(let k=0;k<9;k++){ const sway=Math.sin(t*4*run-k*0.8)*(k*0.4); const x=bx-f*(k*2), y=by+k*0.8+sway, w=k<3?4:k<6?3:2, h=k<3?4:k<6?3:2;
+    const X=Math.round(f>0?x-w+1:x), Y=Math.round(y); ctx.fillStyle=k>=6?scd:sc; ctx.fillRect(X,Y,w,h); if(k<6){ ctx.fillStyle=bel; ctx.fillRect(X,Y+h-1,w,1); }
+    if(k%2===0&&k<8){ ctx.fillStyle=k<4?'#ece4cc':scd; ctx.fillRect(X+(f>0?0:w-1),Y-1,1,1); } px=x; py=y; }
+  const X=Math.round(px-f*2), Y=Math.round(py); ctx.fillStyle=scd; ctx.fillRect(f>0?X-2:X,Y-1,3,3); ctx.fillRect(f>0?X-3:X+2,Y,1,1); ctx.fillStyle='#ece4cc'; ctx.fillRect(f>0?X-3:X+2,Y-1,1,1); }
 { const _de=drawEntity; drawEntity=function(e){ try{ if(lookOf(e)==='dragon'&&!(e.stealthT>0)){ drawDragonTail(e); drawDragonWings(e); } }catch(err){} return _de(e); }; }
 { const _sw=drawSkyWings; drawSkyWings=function(e){ if(e&&lookOf(e)==='dragon') return; return _sw(e); }; }
 
@@ -15430,10 +15452,11 @@ const ROCK_BG={};
 { const dark=src=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.55)'; g.fillRect(0,0,16,16); return c; };
   let next=45; while(BGTEX[next]) next++;
   const add=(id,wall)=>{ if(id==null||!TEX[id]) return; if(wall==null){ wall=next++; BGTEX[wall]=dark(TEX[id]); } ROCK_BG[id]=wall; };
-  add(B.STONE,2); add(B.DIRT,1); add(B.DEEPSTONE,6); add(B.SHALE,typeof SHALE_BG!=='undefined'?SHALE_BG:27); add(B.MAGMA_ROCK,13); add(B.MOSS,12); add(B.CRYSTAL_BLOCK,14); add(B.MARBLE,7);
+  add(B.STONE,2); add(B.DIRT,1); add(B.DEEPSTONE,6); add(B.SHALE,typeof SHALE_BG!=='undefined'?SHALE_BG:27); add(B.MAGMA_ROCK,13); add(B.MOSS,12); add(B.CRYSTAL_BLOCK,14);
   for(const k of ['JADE_STONE','ROSE_STONE','AZURE_STONE','DRIPSTONE','FOSSIL_STONE']) if(BIO[k]!=null&&BIO.bg&&BIO.bg[k]) add(BIO[k],BIO.bg[k]);
   if(BIO.GROVE_SOIL!=null) add(BIO.GROVE_SOIL,28);
-  for(const id of [B.STONE_RED,B.STONE_GREEN,B.GRANITE,B.SANDSTONE,B.SANDROCK,B.SCORIA,B.BASALT,B.EMBER_STONE,B.MAGMA_DIRT]) add(id); }
+  for(const id of [B.STONE_RED,B.STONE_GREEN,B.GRANITE,B.SANDSTONE,B.SANDROCK,B.SCORIA,B.BASALT,B.EMBER_STONE,B.MAGMA_DIRT]) add(id);
+  add(B.MARBLE); }   // 0.9.129: marble gets a dark rock wall of its own, added last so the walls above keep their numbers in saved worlds
 const NATURAL_BG=new Set([1,2,6,12,13,14,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,...Object.values(ROCK_BG)]);
 function wallBase(w){ for(const [b,vs] of Object.entries(WALL_VAR)) if(vs.includes(w)) return +b; return w; }
 function wallFor(x,y){ const id=world[y*W+x]; if(ROCK_BG[id]!=null) return ROCK_BG[id]; const r=rockFor(x,y); return r!=null&&ROCK_BG[r]!=null?ROCK_BG[r]:null; }
@@ -15443,6 +15466,21 @@ function matchRockWalls(onlyUnexplored){ if(!world||!surf||!bg) return 0; let n=
   return n; }
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ matchRockWalls(false); if(home) home.rockWallV=1; }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.rockWallV&&!isGuest()){ home.rockWallV=1; facRun(()=>{ matchRockWalls(true); }); } }catch(e){ console.warn(e); } return r; }; }
+
+// ===== Beta 0.9.129: no lit marble pockets underground =====
+// 0.9.119 gave marble the marble wall (7). The lighting treats every cell with a built wall (BUILD_BG) as indoors and
+// gives it room light, so marble deposits and the caves beside them glowed in the dark. Underground, a marble wall that
+// sits behind natural marble or beside it, outside any building, becomes marble's own dark rock wall.
+const MARBLE_BG=ROCK_BG[B.MARBLE];
+function fixMarbleWalls(){ if(!world||!bg||MARBLE_BG==null) return 0; let n=0; const boxes=typeof allyBoxes==='function'?allyBoxes():[];
+  const inBox=(x,y)=>boxes.some(b=>x>=b.x0-1&&x<=b.x1+1&&y>=b.y0-1&&y<=b.y1+1); const nat=NAT_ROCK();
+  for(let x=1;x<W-1;x++) for(let y=Math.max(skyOff+1,surf[x]+4);y<H-1;y++){ const i=y*W+x; if(bg[i]!==7) continue; const id=world[i];
+    if(id!==B.MARBLE&&BLOCKS[id].solid&&!nat.has(id)) continue;   // a built block in front: leave it
+    const near=id===B.MARBLE||world[i-1]===B.MARBLE||world[i+1]===B.MARBLE||world[i-W]===B.MARBLE||world[i+W]===B.MARBLE||rockFor(x,y)===B.MARBLE;
+    if(!near||inBox(x,y)) continue; bg[i]=MARBLE_BG; n++; }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ fixMarbleWalls(); if(home) home.marbleWallV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.marbleWallV&&!isGuest()){ home.marbleWallV=1; facRun(()=>{ fixMarbleWalls(); }); } }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.89: siege armies with cannons and trebuchets, and bigger explosions (Kinard, 2026-10-11) =====
 
 // ---- 1. explosions: cannonballs and trebuchet boulders burst in a fireball with a shock ring, flying debris, smoke and a shake ----
