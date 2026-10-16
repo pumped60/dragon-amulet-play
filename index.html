@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792122937"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792122937"><link rel="manifest" href="manifest.webmanifest?v=1792122937"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792127199"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792127199"><link rel="manifest" href="manifest.webmanifest?v=1792127199"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.131</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.132</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.131</h3>
+    <h3>New in Beta 0.9.132</h3>
+    <p>A dash with the Sprinter's anklet or the Shadow cloak kicks up a small cloud of dust at your feet that drifts away behind you.</p>
+    <h3>Beta 0.9.131</h3>
     <p>A thin strip of water three blocks wide dries up like any other thin puddle, instead of staying for good.</p>
     <h3>Beta 0.9.130</h3>
     <p>The Dragonborn's wings beat half as fast when he flies.</p>
@@ -774,7 +776,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.131</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.132</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1037,7 +1039,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.131</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.132</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1056,7 +1058,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.131', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.132', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4597,7 +4599,7 @@ function render(){
     else if(p.kind==='magic'){ const x=Math.round(p.x), y=Math.round(p.y); ctx.globalAlpha=0.35; ctx.fillStyle=p.col; ctx.fillRect(x-9,y-5,18,10); ctx.fillRect(x-5,y-9,10,18); ctx.globalAlpha=1; ctx.fillStyle='#17111f'; ctx.fillRect(x-6,y-6,12,12); ctx.fillStyle=p.col; ctx.fillRect(x-5,y-5,10,10); ctx.fillStyle='#ffffff'; ctx.fillRect(x-3,y-3,5,5); ctx.fillRect(x-1,y-7,2,2); }
     else if(p.kind==='fire'){ ctx.fillStyle=p.life>0.5?'#ffcf3a':'#ff7b1c'; const s=p.life>0.5?4:5; ctx.fillRect(Math.round(p.x-s/2),Math.round(p.y-s/2),s,s); }
     else { ctx.fillStyle='#ff7b1c'; ctx.fillRect(Math.round(p.x-7),Math.round(p.y-7),14,14); ctx.fillStyle='#ffd04a'; ctx.fillRect(Math.round(p.x-4),Math.round(p.y-4),8,8); ctx.fillStyle='#fff6b0'; ctx.fillRect(Math.round(p.x-2),Math.round(p.y-2),3,3); } }
-  for(const p of parts){ ctx.globalAlpha=p.blood?Math.min(1,p.life*1.5):1; ctx.fillStyle=p.col; ctx.fillRect(Math.round(p.x),Math.round(p.y),p.sz,p.sz); } ctx.globalAlpha=1;
+  for(const p of parts){ if(p.cloud){ p.l0=p.l0||p.life; const f=Math.max(0,p.life/p.l0); ctx.globalAlpha=0.6*f; ctx.fillStyle=p.col; ctx.beginPath(); ctx.arc(p.x,p.y,p.r0+(1-f)*4,0,Math.PI*2); ctx.fill(); continue; } ctx.globalAlpha=p.blood?Math.min(1,p.life*1.5):1; ctx.fillStyle=p.col; ctx.fillRect(Math.round(p.x),Math.round(p.y),p.sz,p.sz); } ctx.globalAlpha=1;   // 0.9.132: cloud puffs float, grow and fade
   { const t=performance.now()/1000;
     for(const o of xpOrbs){ const g=0.6+0.4*Math.sin(t*8+o.x); ctx.fillStyle=`rgba(141,255,122,${0.35*g})`; ctx.fillRect(Math.round(o.x)-3,Math.round(o.y)-3,6,6); ctx.fillStyle='#b8ff9e'; ctx.fillRect(Math.round(o.x)-1,Math.round(o.y)-1,3,3); }
     for(const d of drops){ const x=Math.round(d.x), y=Math.round(d.y-4+Math.sin(t*4+d.x)*1.5);
@@ -5686,7 +5688,7 @@ function update(dt){ if(!isFinite(time)) time=0.3; if(!isFinite(dayCount)||dayCo
     updateBurn(e,dt); shieldTick(e,dt); if(e.warlord) warlordAct(e,dt); if(e.mtype==='ghost'){ ghostAct(e,dt); continue; } if(e.kind==='machine'){ machineAct(e,dt); continue; } if(e.crewing){ e.atkCd-=dt; continue; }
     if(e.kind==='villager'||e.kind==='drifter') updateVillager(e,dt); else if(e.kind==='animal'){ breedTick(e,dt); updateAnimal(e,dt); } else if(e.kind==='sea') updateSea(e,dt); else if(e.kind==='captive'){ e.anim+=dt; physics(e,dt); } else { smartMoves(e,dt); updateAI(e,dt); } }catch(err){ if(!e._errSaid){ e._errSaid=true; console.warn('entity update failed',e.kind,e.mtype||e.cls,err); } if(e.target&&(e.target.dead||e.target.aboard)) e.target=null; } }
   updateProjs(dt);
-  for(const p of parts){ p.life-=dt; if(p.stuck) continue; p.vy+=500*dt; p.x+=p.vx*dt; p.y+=p.vy*dt; if(p.blood&&isSolid(Math.floor(p.x/T),Math.floor(p.y/T))){ p.stuck=true; p.y-=1; p.life=Math.max(p.life,2.5); } } parts=parts.filter(p=>p.life>0); if(parts.length>400) parts.splice(0,parts.length-400);
+  for(const p of parts){ p.life-=dt; if(p.stuck) continue; if(p.cloud){ const k=Math.pow(0.05,dt); p.vx*=k; p.vy*=k; p.x+=p.vx*dt; p.y+=p.vy*dt; continue; } p.vy+=500*dt; p.x+=p.vx*dt; p.y+=p.vy*dt; if(p.blood&&isSolid(Math.floor(p.x/T),Math.floor(p.y/T))){ p.stuck=true; p.y-=1; p.life=Math.max(p.life,2.5); } } parts=parts.filter(p=>p.life>0); if(parts.length>400) parts.splice(0,parts.length-400);
   for(const f of floats){ f.life-=dt; f.y-=22*dt; } floats=floats.filter(f=>f.life>0);
   if(!MP.guest){ spawnMonsters(dt); spawnSea(dt); spawnAnimals(dt); if(MP.host) mpSpawnAround(dt); } spawnScouts(dt); respawns(dt); spawnSkyKnights(dt); facRun(()=>growBases(dt)); updateMiners(dt); updateDrops(dt); updateBridge(dt); updateBurn(player,dt); partyUnstick(dt); if(!MP.guest){ krakenTick(dt); spawnForest(dt); facRun(()=>{ factionTick(dt); warCheck(dt); }); commanderTick(dt); scoutsReturn(dt); } hungerTick(dt); updateXp(dt); penPlayerTick(dt); questTick(dt); if(!MP.guest) captureOutposts(dt); mpSend(dt); spawnFrost(dt); engineerCheck(); if(player.slowT>0){ player.slowT-=dt; player.vx*=Math.pow(0.35,dt); } stepLava(dt); warlordEconomy(dt); shieldTick(player,dt);  sunBurn(dt); boatArchers(dt); navalTick(dt); deckGuns(dt); progressTick(dt); colonyTick(dt); spawnRuinNight(dt); updateFishing(dt); growPlants(dt); if(player.fx.amulet&&$('#btnFly').hidden&&!hotbarHidden) $('#btnFly').hidden=false;
   waterT-=dt; if(waterT<=0){ waterT=1/30; stepWater(2200); }
@@ -10523,13 +10525,17 @@ const accTier=slot=>(player&&player.gear&&player.gear[slot])||0;
 { const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player, w=accTier('ward'); if(p){ if(w>=1) p.burnT=0; if(w>=2) p.slowT=0; } const r=_up(dt,...a); if(p){ if(w>=1) p.burnT=0; if(w>=2) p.slowT=0; } return r; }; }
 { const _dm=damage; damage=function(t,amt,src,kb,...a){ if(t&&t===player){ const w=accTier('ward'); if(w>=3){ kb=0; if(!src&&inLava(player)) amt*=0.5; } } return _dm(t,amt,src,kb,...a); }; }
 // dashing: double-tap a direction
+// 0.9.132: a dash kicks up a small cloud at the feet that drifts back and fades (it used to spray pale specks up out of the
+// body, which looked like water from the hero's head); the shadow cloak's cloud is dusky violet
+function dashCloud(p,dir,tier,n){ const fy=p.y+p.h-3, col=tier>=2?'#8a7aa8':'#e4e0d6';
+  for(let i=0;i<n;i++) parts.push({x:cxOf(p)-dir*(4+Math.random()*6),y:fy+Math.random()*3-1,vx:-dir*(25+Math.random()*45)+(Math.random()-0.5)*20,vy:-(4+Math.random()*14),life:0.35+Math.random()*0.25,col,sz:2,cloud:1,r0:2+Math.random()*2}); }
 let dashState={prev:0,lastDir:0,lastT:-9,cd:0,t:0,dir:0};
 function moveDir(){ let d=(input.right?1:0)-(input.left?1:0); if(!d&&typeof stick!=='undefined'&&stick.l&&stick.l.on&&Math.abs(stick.l.x)>0.55) d=Math.sign(stick.l.x); return d; }
 { const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player, t=accTier('dash'), now=performance.now()/1000, D=dashState; D.cd-=dt;
     const d=p&&!p.dead&&state==='play'?moveDir():0;
-    if(t&&d&&!D.prev){ if(d===D.lastDir&&now-D.lastT<0.28&&D.cd<=0&&!p.riding&&!p.climb){ D.t=0.18; D.dir=d; D.cd=t>=2?0.7:1.2; if(t>=2) p.iframes=Math.max(p.iframes||0,0.3); puff(cxOf(p),cyOf(p),'#e8e4d8',8,80); if(typeof sfx==='function') sfx('swing'); D.lastT=-9; } else { D.lastDir=d; D.lastT=now; } }
+    if(t&&d&&!D.prev){ if(d===D.lastDir&&now-D.lastT<0.28&&D.cd<=0&&!p.riding&&!p.climb){ D.t=0.18; D.dir=d; D.cd=t>=2?0.7:1.2; if(t>=2) p.iframes=Math.max(p.iframes||0,0.3); dashCloud(p,d,t,7); if(typeof sfx==='function') sfx('swing'); D.lastT=-9; } else { D.lastDir=d; D.lastT=now; } }
     D.prev=d; const r=_up(dt,...a);
-    if(D.t>0&&p&&!p.dead){ D.t-=dt; const dist=(t>=2?9:6)*T; p.vx=D.dir*dist/0.18; const vy=p.vy; p.vy=Math.min(p.vy,0); physics(p,dt); p.vy=Math.min(vy,40); p.vx=0; p.facing=D.dir; if(Math.random()<0.6) parts.push({x:cxOf(p)-D.dir*6,y:cyOf(p)+Math.random()*8-4,vx:-D.dir*40,vy:0,life:0.25,col:t>=2?'#6a5a8a':'#e8e4d8',sz:2}); }
+    if(D.t>0&&p&&!p.dead){ D.t-=dt; const dist=(t>=2?9:6)*T; p.vx=D.dir*dist/0.18; const vy=p.vy; p.vy=Math.min(p.vy,0); physics(p,dt); p.vy=Math.min(vy,40); p.vx=0; p.facing=D.dir; if(Math.random()<0.5) dashCloud(p,D.dir,t,1); }
     return r; }; }
 // travel anywhere for free with the wayfinder stone
 { const _om=openMap; openMap=function(fromPortal,...a){ return _om(fromPortal||accTier('travel')>=1,...a); }; }
