@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1791918438"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1791918438"><link rel="manifest" href="manifest.webmanifest?v=1791918438"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792122937"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792122937"><link rel="manifest" href="manifest.webmanifest?v=1792122937"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.130</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.131</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,7 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.130</h3>
+    <h3>New in Beta 0.9.131</h3>
+    <p>A thin strip of water three blocks wide dries up like any other thin puddle, instead of staying for good.</p>
+    <h3>Beta 0.9.130</h3>
     <p>The Dragonborn's wings beat half as fast when he flies.</p>
     <h3>Beta 0.9.129</h3>
     <p>Marble pockets underground stay as dark as the rock around them; they no longer glow as if lit.</p>
@@ -772,7 +774,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.130</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.131</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1035,7 +1037,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.130</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.131</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1054,7 +1056,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.130', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.131', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -13031,9 +13033,9 @@ pivotOf=function(e){ const f=e.facing||1; return { x:cxOf(e)+f*5, y:e.y+e.h-17 }
 // ===================== Beta 0.9.79: water in slope cells; no tiny puddles or thin films; wet chests and furniture =====================
 // 1. A sloped or stepped block beside water shows the water in its open part, up to the level of the water next to it
 //    (full when water stands on top). Drawing only: the block itself is unchanged.
-// 2. Water that settles too thin is gone: a puddle of one or two eighths standing alone, and a thin film (a run of four or
-//    more cells at two eighths or less) when water spreads over ground too flat to pool. The open sea and water with more
-//    water above are never touched. Older worlds are swept once (home.filmV).
+// 2. Water that settles too thin is gone: a puddle of one or two eighths standing alone, and a thin film (a run of
+//    cells at two eighths or less, any length since 0.9.131) when water spreads over ground too flat to pool. The open sea and water with more
+//    water above are never touched. Older worlds are swept once (home.filmV; again at 2 for the three-cell films).
 // 3. A chest under water no longer pokes its lid through the water above it (its top is tinted like the rest), and a
 //    friend's half of a wide chest is tinted the same way.
 const SHAPE_OPEN={ 1:[[0,0,16,8]], 2:[[0,0,4,12],[4,0,4,8],[8,0,4,4]], 3:[[12,0,4,12],[8,0,4,8],[4,0,4,4]], 4:[[0,0,8,8]], 5:[[8,0,8,8]] };
@@ -13051,15 +13053,15 @@ function drawWetChestTops(){ if(!wetDeco.size) return; const tx0=Math.max(1,Math
       const pr=world[i+1]===B.PART||wetDeco.get(i+1)===B.PART; ctx.fillStyle=y-seaY>6?'rgba(22,70,160,0.8)':'rgba(38,98,200,0.66)'; ctx.fillRect(pr?x*T:x*T-16,y*T-4,32,4); } } }
 { const _wf=drawWaterFront; drawWaterFront=function(...a){ const r=_wf(...a); try{ drawSlopeWater(); drawWetChestTops(); }catch(e){} return r; }; }
 // ---- thin water is gone ----
-const FILM_LV=2, FILM_RUN=4;
+const FILM_LV=2;
 function thinRun(i){ const x=i%W, y=(i/W)|0; const ok=j=>world[j]===B.WATER&&liq[j]<=FILM_LV&&!(j-W>=0&&world[j-W]===B.WATER)&&supported(j)&&!(oceanCol[j%W]&&((j/W)|0)>=seaY);
   if(!ok(i)) return null; let a=i, b=i; while(a%W>0&&ok(a-1)) a--; while(b%W<W-1&&ok(b+1)) b++; const n=b-a+1;
   const edgeWater=(a%W>0&&world[a-1]===B.WATER)||(b%W<W-1&&world[b+1]===B.WATER);   // part of a bigger body: leave it
-  if(edgeWater) return null; if(n>=FILM_RUN||n<=2) return [a,b]; return null; }
+  if(edgeWater) return null; return [a,b]; }   // 0.9.131: a run of exactly three thin cells was skipped and stayed for good
 function dryThin(list){ let n=0; for(const i of list){ if(world[i]!==B.WATER) continue; const r=thinRun(i); if(!r) continue; for(let j=r[0];j<=r[1];j++){ setWater(j,0); wake(j%W,(j/W)|0); n++; } } return n; }
 { const _sw=stepWater; stepWater=function(budget,...a){ let before=null; if(wact&&wact.size){ const all=[...wact]; before=all.length>8000?all.slice(-4000):all; } const r=_sw(budget,...a); try{ if(before&&!genning) dryThin(before); }catch(e){} return r; }; }   // 0.9.82: every active cell is checked unless a flood is running (a long-active film was never reached before)
 function dryThinAll(){ const list=[]; for(let i=W;i<W*H-W;i++) if(world[i]===B.WATER&&liq[i]<=FILM_LV) list.push(i); return dryThin(list); }
-{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.filmV&&!isGuest()){ home.filmV=1; if(dryThinAll()) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&(home.filmV||0)<2&&!isGuest()){ home.filmV=2; if(dryThinAll()) try{ buildMap(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Bug B1 (docs/BUG_LOG.md): seeds plant on the farmland under your feet =====================
 // The aim used to be pushed at least 40 px away from the player (aimPoint), so the farmland right under or beside you
 // could never be hit. A seed now goes into the farmland you point at, or the farmland under you (or a soldier standing
