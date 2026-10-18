@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792250275"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792250275"><link rel="manifest" href="manifest.webmanifest?v=1792250275"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792343343"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792343343"><link rel="manifest" href="manifest.webmanifest?v=1792343343"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -344,7 +344,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.133</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.134</p><a id="appLink" class="ver" href="https://github.com/pumped60/dragon-amulet-play/releases/latest" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -401,6 +401,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.134</h3>
+    <p>Building next to your village no longer lifts or lowers the ground between the houses that are already there: only the gap beside the new building is levelled to meet it.</p>
+    <p>In a new world the fishing village never stands where the goblins put up their wooden lookout tower.</p>
     <h3>New in Beta 0.9.133</h3>
     <p>Beastmasters can tame cave creatures (bats, crabs, spiders, serpents, golems, cave bears and more) with 3 food: they follow you and fight at your side. They can tame bees too: a tamed bee buzzes around you and stings the next enemy with poison, then dies. In the Army window every tamed animal and creature has Release and Slaughter (tap twice).</p>
     <p>Your castle keeps its notice board, chest, weapon rack and feed trough: if one goes missing (the Quartermaster's repairs used to cover them), it is put back, so the recruiter keeps working.</p>
@@ -797,7 +800,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.133</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.134</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1060,7 +1063,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.133</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet</b><br>Beta 0.9.134</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Inspired by<br>Minecraft (Mojang Studios)<br>Terraria (Re-Logic)<br>King Arthur's Gold (Transhuman Design)</p><p>No art, code or assets from those games are used</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1079,7 +1082,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.133', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.134', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -11324,11 +11327,15 @@ function levelNear(x0,x1,gy){ if(!world||!home||isGuest()) return; const near=14
   let i0=runs.findIndex(r=>r.b>=x0&&r.a<=x1); if(i0<0) return; let i1=i0;
   while(i0>0&&runs[i0].a-runs[i0-1].b-1<=near) i0--; while(i1<runs.length-1&&runs[i1+1].a-runs[i1].b-1<=near) i1++;
   const C=runs.slice(i0,i1+1);
+  // only the gaps that touch the building being placed are levelled, to its floor (a door, else gy); gaps between buildings already
+  // standing were levelled when they went up (0.9.134: every gap in the chain took gy, so a keep on higher land raised the ground
+  // between the village houses, and gaps inside a keep between its back-wall columns were filled too)
+  const own=r=>r.b>=x0&&r.a<=x1;
   facRun(()=>{ const tops=new Map();
-    for(let i=0;i+1<C.length;i++){ const xa=C[i].b+1, xb=C[i+1].a-1; if(xb<xa) continue; const ga=floorAt(C[i].b,gy), gb=floorAt(C[i+1].a,gy);
+    for(let i=0;i+1<C.length;i++){ if(!own(C[i])&&!own(C[i+1])) continue; const xa=C[i].b+1, xb=C[i+1].a-1; if(xb<xa) continue; const ga=floorAt(C[i].b,gy), gb=floorAt(C[i+1].a,gy);
       for(let x=xa;x<=xb;x++){ const li=x-xa, ri=xb-x; let t; if(ga===gb) t=ga; else if(li<3) t=ga; else if(ri<3) t=gb; else t=ga+clamp(gb-ga,-(li-2),li-2); setGround(x,t); tops.set(x,t); } }
     if(tops.size) slopeCols(C[0].b+1,C[C.length-1].a-1,x=>tops.has(x)?tops.get(x):null);
-    doorRamp(C[0].a,-1,floorAt(C[0].a,gy),3); doorRamp(C[C.length-1].b,1,floorAt(C[C.length-1].b,gy),3); }); }
+    if(own(C[0])) doorRamp(C[0].a,-1,floorAt(C[0].a,gy),3); if(own(C[C.length-1])) doorRamp(C[C.length-1].b,1,floorAt(C[C.length-1].b,gy),3); }); }
 { const _bl=buildLodge; buildLodge=function(job,...a){ const had=home&&home[LODGE[job].key]; const r=_bl(job,...a); try{ if(r&&!had) levelNear(r.x0,r.field?r.field[1]:r.x1,r.gy); }catch(e){ console.warn(e); } return r; }; }
 { const _pb=placeBuilding; placeBuilding=function(bp,cx,gy,...a){ const r=_pb(bp,cx,gy,...a); try{ if(bp&&!(typeof MP!=='undefined'&&MP.guest)) levelNear(cx+(bp.fx0||-4),cx+(bp.fx1||4),gy); }catch(e){ console.warn(e); } return r; }; }
 
@@ -13990,7 +13997,8 @@ setInterval(()=>{ try{ const b=$('#bldCancel'), want=!!buildMode&&state==='play'
 function fishFeatures(is){ const F=[]; const add=(x,r)=>{ if(isFinite(x)) F.push([x-r,x+r]); };
   for(const g of gcamps||[]) add(g.x,g.war?24:14); for(const r of ruins||[]) add(r.x,22); for(const c of camps||[]) if(c.where!=='cave'&&c.where!=='castle') add(c.x,12);
   for(const f of is.feat||[]) add(f.x,f.type==='warcamp'?24:16); for(const c of is.orcCamps||[]) add(c.x,(c.half||6)+2); for(const t of is.orcTowers||[]) add(t.x,5);
-  for(const h of is.huts||[]) add(h.x,4); for(const l of [is.lookout,is.lookout2]) if(l) add(l.x??l.cx,5); if(tower&&tower.tx!=null) add(tower.tx,12); if(fort&&fort.tx!=null) add(fort.tx,16);
+  for(const h of is.huts||[]) add(h.x,4); for(const l of [is.lookout,is.lookout2]) if(l) add(l.x??l.cx,5);
+  if(is.forest&&!is.lookout){ add(is.s+14,5); add(is.e-14,5); }   // the goblins' wooden lookouts go up after the village (0.9.134: one stood inside it) if(tower&&tower.tx!=null) add(tower.tx,12); if(fort&&fort.tx!=null) add(fort.tx,16);
   return F; }
 function fishSpanClear(is,left){ const edge=left?is.s:is.e, dir=left?-1:1; const a=Math.min(edge-dir*50,edge+dir*22), b=Math.max(edge-dir*50,edge+dir*22);
   if(is.e-is.s<70) return false; return !fishFeatures(is).some(([x0,x1])=>x1>=a&&x0<=b); }
