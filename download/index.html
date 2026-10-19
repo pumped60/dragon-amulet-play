@@ -48,6 +48,7 @@ footer{margin-top:28px;color:var(--soft);font-size:13px;text-align:center}
   <section class="about" aria-label="About the game">
     <p class="lead">A dragon named <b>Vorthax</b> sleeps on a pile of gold, and the islands are full of monsters, rival armies and fearsome bosses.
       Start as a lone hero with a ruined village, grow it into a city, raise an army, and lead them into battle against the dragon.</p>
+    <p style="margin:0 0 14px"><a class="btn" id="getBtn" href="#pc" style="display:inline-block;padding:10px 22px">⬇️ Get the game</a></p>
     <div class="feats">
       <div class="feat"><h3>🛡️ Choose your hero</h3><p>Be an intrepid Knight with sword and shield, a quick Archer, a hard-hitting Macebearer, a Wizard who casts magic, or a Beastmaster who tames wild animals to fight beside you.</p></div>
       <div class="feat"><h3>⛏️ Mine and craft</h3><p>Dig deep through stone, gem caves and glowing caverns for iron, gold, diamonds and rarer ores, then forge better weapons, armor and tools.</p></div>
@@ -106,7 +107,7 @@ footer{margin-top:28px;color:var(--soft);font-size:13px;text-align:center}
 <script>
 // phones see their own steps first
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform))) {
-  const pc = document.getElementById('pc'), ph = document.getElementById('phone'); pc.parentNode.insertBefore(ph, pc);
+  const pc = document.getElementById('pc'), ph = document.getElementById('phone'); pc.parentNode.insertBefore(ph, pc); document.getElementById('getBtn').href = '#phone';
 }
 // the buttons download the newest release's files directly; if GitHub cannot be reached they open the release page instead
 const PICK = { mac: n => /-mac\.dmg$/i.test(n), setup: n => /setup.*\.exe$/i.test(n), portable: n => /portable.*\.exe$/i.test(n) };
