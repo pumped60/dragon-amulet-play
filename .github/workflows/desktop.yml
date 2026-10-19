@@ -58,6 +58,9 @@ jobs:
           name: Dragon Amulet Beta ${{ steps.v.outputs.ver }} for Mac and Windows
           make_latest: true
           body: |
+            ## ⬇️ Download page for players: https://pumped60.github.io/dragon-amulet-play/download/
+            The simplest page to send people: the Mac and Windows downloads, phone and tablet steps, the install guide and the wiki.
+
             ## 📄 First time installing? Read the install guide: [Dragon-Amulet-install-guide.pdf](https://pumped60.github.io/dragon-amulet-play/Dragon-Amulet-install-guide.pdf)
             It shows step by step how to get past the Mac and Windows warnings (the app is not signed yet), and how to put the game on a phone or tablet's Home Screen. The same guide is in the downloads below.
 

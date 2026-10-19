@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Download Dragon Amulet</title>
+<meta name="description" content="Download Dragon Amulet for Mac and Windows, put it on a phone or tablet, and find the install guide and the wiki.">
+<link rel="icon" href="../icon-192.png">
+<style>
+:root{--bg:#16121f;--card:#221b30;--line:#3a2f4f;--ink:#f3ecdc;--soft:#c9bfd8;--gold:#ffcf3a;--gold2:#b8862b;--blue:#8fc1ff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+header{display:flex;gap:16px;align-items:center;margin-bottom:20px}
+header img{width:72px;height:72px;border-radius:14px;image-rendering:pixelated}
+h1{margin:0;font-size:28px;color:var(--gold)}
+header p{margin:2px 0 0;color:var(--soft)}
+h2{font-size:20px;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}
+.btns{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:12px 0}
+.btn{display:block;text-decoration:none;background:var(--gold);color:#1c1408;border-radius:10px;padding:12px 14px;font-weight:700;text-align:center}
+.btn small{display:block;font-weight:500;opacity:.8;font-size:13px}
+.btn.alt{background:transparent;color:var(--gold);border:2px solid var(--gold)}
+.guide{display:flex;gap:12px;align-items:center;background:#2c2340;border-left:4px solid var(--gold);border-radius:10px;padding:12px 14px;margin-top:12px}
+.guide b{color:var(--gold)}
+ol{margin:6px 0 0;padding-left:22px}
+li{margin:4px 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.muted{color:var(--soft);font-size:14px}
+footer{margin-top:28px;color:var(--soft);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="../icon-192.png" alt="">
+    <div><h1>Dragon Amulet</h1><p>A 2D sandbox adventure by Kinard Sproles. Free to play.</p></div>
+  </header>
+
+  <div class="card" id="pc">
+    <h2>💻 Mac and Windows</h2>
+    <div class="btns">
+      <a class="btn dl" data-pick="mac" href="https://github.com/pumped60/dragon-amulet-play/releases/latest">Download for Mac<small>any Mac from 2017 on</small></a>
+      <a class="btn dl" data-pick="setup" href="https://github.com/pumped60/dragon-amulet-play/releases/latest">Download for Windows<small>installer, Windows 10 or 11</small></a>
+      <a class="btn alt dl" data-pick="portable" href="https://github.com/pumped60/dragon-amulet-play/releases/latest">Windows, no install<small>portable version</small></a>
+    </div>
+    <p class="muted" id="ver">The newest version, updated automatically.</p>
+    <div class="guide">📄<div><b>Read this first:</b> the app is not signed by Apple or Microsoft yet, so your computer warns you the first time.
+      The <a href="../Dragon-Amulet-install-guide.pdf" target="_blank" rel="noopener"><b>install guide (PDF)</b></a> shows each click to get past it. You only do it once.</div></div>
+  </div>
+
+  <div class="card" id="phone">
+    <h2>📱 Phone or tablet</h2>
+    <p class="muted">Nothing to download from a store: open the game in the browser once and put its icon on your Home Screen. It then opens full screen like an app and works offline.</p>
+    <div class="cols">
+      <div><b>iPhone or iPad</b><ol>
+        <li>Open <b>Safari</b> and go to the game: <a href="../">pumped60.github.io/dragon-amulet-play</a></li>
+        <li>Tap <b>Share</b> (the square with an arrow; on newer iPhones tap <b>•••</b> first)</li>
+        <li>Tap <b>Add to Home Screen</b>, then <b>Add</b></li>
+        <li>Start the game from the new icon and turn the phone sideways</li></ol></div>
+      <div><b>Android</b><ol>
+        <li>Open <b>Chrome</b> and go to the game: <a href="../">pumped60.github.io/dragon-amulet-play</a></li>
+        <li>Tap the <b>three dots</b> at the top right</li>
+        <li>Tap <b>Install app</b> (or <b>Add to Home screen</b>), then <b>Install</b></li>
+        <li>Start the game from the new icon and turn the phone sideways</li></ol></div>
+    </div>
+    <div class="guide">📄<div>The same steps, in more detail, are in the <a href="../Dragon-Amulet-install-guide.pdf" target="_blank" rel="noopener"><b>install guide (PDF)</b></a>.</div></div>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h2>📖 The wiki</h2>
+      <p class="muted">Every item, creature, boss, building and recipe. Add it to your Home Screen the same way as the game.</p>
+      <a class="btn" href="https://pumped60.github.io/dragon-amulet-wiki/">Open the Dragon Amulet wiki</a>
+    </div>
+    <div class="card">
+      <h2>🎮 Play in the browser</h2>
+      <p class="muted">No download at all: play on any computer, phone or tablet.</p>
+      <a class="btn" href="../">Play Dragon Amulet</a>
+    </div>
+  </div>
+
+  <footer>Your worlds are saved on the device you play on. Found a problem? Open the pause menu in the game and choose Report a bug.</footer>
+</div>
+<script>
+// phones see their own steps first
+if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Mac/.test(navigator.platform))) {
+  const pc = document.getElementById('pc'), ph = document.getElementById('phone'); pc.parentNode.insertBefore(ph, pc);
+}
+// the buttons download the newest release's files directly; if GitHub cannot be reached they open the release page instead
+const PICK = { mac: n => /-mac\.dmg$/i.test(n), setup: n => /setup.*\.exe$/i.test(n), portable: n => /portable.*\.exe$/i.test(n) };
+fetch('https://api.github.com/repos/pumped60/dragon-amulet-play/releases/latest').then(r => r.ok ? r.json() : null).then(d => {
+  if (!d || !d.assets) return;
+  for (const a of document.querySelectorAll('a.dl')) { const f = d.assets.find(x => PICK[a.dataset.pick](x.name)); if (f) a.href = f.browser_download_url; }
+  const v = (d.tag_name || '').replace(/^v/, ''); if (v) document.getElementById('ver').textContent = 'Beta ' + v + ', the newest version.';
+}).catch(() => {});
+</script>
+</body>
+</html>
