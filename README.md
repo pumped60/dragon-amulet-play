@@ -1,6 +1,8 @@
 # Dragon Amulet
 
-> **📄 Installing the Mac or Windows app? Read the [install guide (PDF)](https://pumped60.github.io/dragon-amulet-play/Dragon-Amulet-install-guide.pdf) first.** It shows how to get past the security warnings, step by step.
+> **📄 Installing the game on a computer, phone or tablet? Read the [install guide (PDF)](https://pumped60.github.io/dragon-amulet-play/Dragon-Amulet-install-guide.pdf) first.** It shows how to get past the security warnings, step by step, and how to put the game on a phone or tablet's Home Screen.
+>
+> **📖 The Dragon Amulet wiki: https://pumped60.github.io/dragon-amulet-wiki/** (every item, creature, boss, building and recipe; add it to your Home Screen as its own app)
 
 A 2D sandbox adventure by Kinard Sproles. Play it here: **https://pumped60.github.io/dragon-amulet-play/**
 
