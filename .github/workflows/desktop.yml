@@ -50,14 +50,19 @@ jobs:
         run: echo "ver=$(grep -o 'Beta [0-9.]*' index.html | head -1 | cut -d' ' -f2)" >> "$GITHUB_OUTPUT"
       - uses: actions/download-artifact@v4
         with: { path: out, merge-multiple: true }
+      - name: Add the install guide to the downloads
+        run: cp Dragon-Amulet-install-guide.pdf out/
       - uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.v.outputs.ver }}
           name: Dragon Amulet Beta ${{ steps.v.outputs.ver }} for Mac and Windows
           make_latest: true
           body: |
+            ## 📄 First time installing? Read the install guide: [Dragon-Amulet-install-guide.pdf](https://pumped60.github.io/dragon-amulet-play/Dragon-Amulet-install-guide.pdf)
+            It shows step by step how to get past the Mac and Windows warnings (the app is not signed yet). The same guide is in the downloads below.
+
             Dragon Amulet Beta ${{ steps.v.outputs.ver }} as a desktop app.
-            - Mac: download the .dmg, open it and drag Dragon Amulet into Applications. The first time, right-click the app and choose Open (it is not signed by Apple yet).
+            - Mac: download the .dmg, open it and drag Dragon Amulet into Applications. The first time, macOS blocks it: open System Settings > Privacy & Security and click Open Anyway (the guide has the steps for every macOS).
             - Windows: download Dragon-Amulet-Setup (installs with a Start menu icon) or the portable .exe (runs without installing). If Windows SmartScreen warns, choose More info, then Run anyway.
             F11 switches full screen. Saves stay on this computer.
           files: out/*
