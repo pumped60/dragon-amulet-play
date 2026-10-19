@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792438521"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792438521"><link rel="manifest" href="manifest.webmanifest?v=1792438521"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792453981"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792453981"><link rel="manifest" href="manifest.webmanifest?v=1792453981"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -196,6 +196,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 .lockrow{ display:grid; grid-template-columns:24px 1fr auto; gap:8px; align-items:center; font-size:8px; padding:4px 0; border-bottom:1px solid var(--edge-dim); } .lockrow img{ width:20px; height:20px; image-rendering:pixelated; } .lockrow .xbtn{ font-size:7px; padding:5px 6px; }
 .panel.title{ max-width:420px; text-align:center; }
 .panel.title h1{ margin-bottom:20px; }
+.tm{ font-size:.32em; vertical-align:top; letter-spacing:0; text-shadow:2px 2px 0 #8e1f22; margin-left:2px; }
 /* short landscape screens (phones): title on the left, buttons on the right, everything fits */
 @media (max-height:520px) and (orientation:landscape){
   .overlay{ padding:calc(var(--st) + 6px) calc(env(safe-area-inset-right,0px) + 8px) calc(var(--sb) + 6px) calc(env(safe-area-inset-left,0px) + 8px); }
@@ -344,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet</h1><p class="ver">Beta 0.9.138</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.139</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -393,7 +394,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>A / D</b> move, <b>W or Space</b> jump or swim up, <b>S</b> drop or dive</li>
       <li><b>Click and hold</b> to use the held item: mine, attack or place</li>
       <li><b>1–9 or wheel</b> pick a hotbar slot</li>
-      <li><b>Tab</b> bag, <b>E</b> grappling hook, <b>H</b> hide or show items, <b>R</b> army, <b>F</b> talk, trade, tame, cook or open chests, <b>L</b> aim lock, <b>K</b> quick save, <b>G</b> fly or walk in creative (and as the Dragonborn), hold <b>B</b> to breathe fire as the Dragonborn. You can change these in Settings.</li><li> <b>Q</b> change formation, <b>M</b> map, <b>F</b> trade or free a captive, <b>Esc</b> menu</li>
+      <li><b>Tab</b> bag, <b>E</b> grappling hook, <b>H</b> hide or show items, <b>R</b> army, <b>F</b> talk, trade, tame, cook or open chests, <b>L</b> aim lock, <b>K</b> quick save, <b>G</b> fly or walk in creative (and as the Scaleborn), hold <b>B</b> to breathe fire as the Scaleborn. You can change these in Settings.</li><li> <b>Q</b> change formation, <b>M</b> map, <b>F</b> trade or free a captive, <b>Esc</b> menu</li>
     </ul>
     <h3>Touch</h3>
     <ul class="keys">
@@ -401,6 +402,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.139</h3>
+    <p>The sixth class is called the Scaleborn (it was the Dragonborn), and his five weapons are the Scaleforged sword, bow, mace, staff and daggers. Nothing else about him changed: unlocks, saves and the weapons you already have carry over.</p>
+    <p>Seven items have new names and new pictures, with the same effects, recipes and shops: the Heart gem and Spirit gem (cut gems from the clusters in the magma realm; they were the life and mana crystals), the Bait pouch and Fisher's ring (fishing gear), the Fleetfoot sash (the dash), the Windstep boots, the Nautilus mask (breathe longer underwater) and the Merchant's charm (more coins). Anything you already own keeps working under its new name.</p>
     <h3>New in Beta 0.9.138</h3>
     <p>The Credits screen says what the game is made of: all its pictures and sounds come from its own code, the pixel font is Press Start 2P under the SIL Open Font License, and the libraries it uses are named.</p>
     <h3>New in Beta 0.9.137</h3>
@@ -437,15 +441,15 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Tab opens the bag and E fires the grappling hook (it was X), so the hook sits right by your movement keys. If you kept the old keys, they switch over by themselves; keys you picked yourself stay as they are.</p>
     <p>Saplings are planted in dirt: grass, dirt, farmland, sand or snow. They no longer go on stone or other hard blocks, where they never grew. Mushroom spores still go on cave stone.</p>
     <h3>Beta 0.9.132</h3>
-    <p>A dash with the Sprinter's anklet or the Shadow cloak kicks up a small cloud of dust at your feet that drifts away behind you.</p>
+    <p>A dash with the Fleetfoot sash or the Shadow cloak kicks up a small cloud of dust at your feet that drifts away behind you.</p>
     <h3>Beta 0.9.131</h3>
     <p>A thin strip of water three blocks wide dries up like any other thin puddle, instead of staying for good.</p>
     <h3>Beta 0.9.130</h3>
-    <p>The Dragonborn's wings beat half as fast when he flies.</p>
+    <p>The Scaleborn's wings beat half as fast when he flies.</p>
     <h3>Beta 0.9.129</h3>
     <p>Marble pockets underground stay as dark as the rock around them; they no longer glow as if lit.</p>
     <h3>Beta 0.9.128</h3>
-    <p>The Dragonborn is a red dragon-man: a horned dragon head with a long snout and a golden slit eye, scales with pale belly plates, tall bat wings and a thick spiked tail. Armour shows as shoulder guards, and a sash keeps your faction colour.</p>
+    <p>The Scaleborn is a red dragon-man: a horned dragon head with a long snout and a golden slit eye, scales with pale belly plates, tall bat wings and a thick spiked tail. Armour shows as shoulder guards, and a sash keeps your faction colour.</p>
     <h3>Beta 0.9.127</h3>
     <p>Cut a tree at any trunk block and the whole tree falls from the ground, bottom block included. A bee hive left hanging from nothing, under the leaves of a felled tree or below a block you broke, drops as an item, with 2 honey when it was full.</p>
     <h3>Beta 0.9.126</h3>
@@ -595,9 +599,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.9.57</h3>
     <p>Bombs throw up much more smoke, and smoke hangs in the air longer (about 45 seconds); rain, storms and snow clear it from the open air two to five times faster. A ballista, cannon or trebuchet can only be set up when a free soldier in your party is with you, and that soldier works it. Press F beside a crewed machine (or use the Army window) and choose Aim, then click or tap a spot: the crew fires at enemies near the mark, or at the mark itself. "Own targets" lets it choose again. War machines are drawn at close to their real size next to you. In the test world a soldier joins you to work a machine if none is free.</p>
     <h3>Beta 0.9.56</h3>
-    <p>Sugar bakes into sugar cake, berry tart, sugar cookies and candied apples at a furnace. Sea treasures make things: eight ancient coins and a gold bar make a Lucky coin charm, an old compass becomes a Dragon compass or an Astrolabe, two golden fish with pearls make the Lucky lure (or roast one into a golden fish feast), a sunken crown with pearls becomes the Tidecrown charm (+20 health, +20 mana, faster mana), Kraken ink with a black pearl makes the Shadow cloak, and coral presses into pink coral blocks. The Sage charm's faster mana refill works.</p>
+    <p>Sugar bakes into sugar cake, berry tart, sugar cookies and candied apples at a furnace. Sea treasures make things: eight ancient coins and a gold bar make a Merchant's charm, an old compass becomes a Dragon compass or an Astrolabe, two golden fish with pearls make the Lucky lure (or roast one into a golden fish feast), a sunken crown with pearls becomes the Tidecrown charm (+20 health, +20 mana, faster mana), Kraken ink with a black pearl makes the Shadow cloak, and coral presses into pink coral blocks. The Sage charm's faster mana refill works.</p>
     <h3>Beta 0.9.55</h3>
-    <p>Mana refills faster the more mana you have: a wizard gets back 12% of their maximum mana every second and everyone else 8% (never slower than before), so mana crystals and other mana upgrades also speed up the refill. Wizards start with 90 health. The Archmage tower has about half as many guards. Items that shared a name have their own now: the Kraken's treasure-chest daggers are Tidebond daggers, the chain-lightning staff is the Tempest staff, and the mushroom you eat is a Glowcap. Metal bars, gems, crystals, mana potions, farm goods and sea treasures all have descriptions.</p>
+    <p>Mana refills faster the more mana you have: a wizard gets back 12% of their maximum mana every second and everyone else 8% (never slower than before), so spirit gems and other mana upgrades also speed up the refill. Wizards start with 90 health. The Archmage tower has about half as many guards. Items that shared a name have their own now: the Kraken's treasure-chest daggers are Tidebond daggers, the chain-lightning staff is the Tempest staff, and the mushroom you eat is a Glowcap. Metal bars, gems, crystals, mana potions, farm goods and sea treasures all have descriptions.</p>
     <h3>Beta 0.9.54</h3>
     <p>The red faction's light roof tiles are a brighter red instead of pink.</p>
     <h3>Beta 0.9.53</h3>
@@ -637,7 +641,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.9.36</h3>
     <p>New worlds: the wizard tower stands alone on a small island of its own. Caves are richer: big caverns have rock pillars with ore in them, ledges with hanging stone and boulders; winding tunnels run from narrow crawlways to wide galleries; and small buildings with chests hide beside the caves: miners' camps, stone shrines, deep vaults and crystal grottos with gold chests, and mushroom huts. Worlds you already have keep their caves and tower exactly as they are.</p>
     <h3>Beta 0.9.35</h3>
-    <p>Grappling hooks fire straight where you aim the moment you press E (or let go of the Hook dial), bite the first wall, ceiling or ledge in their path and pull you there; each hook reaches farther (10, 16, 24 blocks) and has its own colors. New permanent accessories: a Tackle box, Angler's earring and Lucky lure for fishing; a Cooling band, Ward amulet and Dragon scale ward against burning, frost, knockback and lava; a Sprinter's anklet and Shadow cloak to dash by double-tapping left or right; the Swift and Windrunner boots are back; and a Wayfinder stone opens the travel map anywhere with free trips. Some are sold by the Jeweler and Fisher, some are crafted, and the best drop from bosses. Beating the Goblin Beastmaster opens a portal at his war camp, and beating Grukk one in the middle of the orc island.</p>
+    <p>Grappling hooks fire straight where you aim the moment you press E (or let go of the Hook dial), bite the first wall, ceiling or ledge in their path and pull you there; each hook reaches farther (10, 16, 24 blocks) and has its own colors. New permanent accessories: a Bait pouch, Fisher's ring and Lucky lure for fishing; a Cooling band, Ward amulet and Dragon scale ward against burning, frost, knockback and lava; a Fleetfoot sash and Shadow cloak to dash by double-tapping left or right; the Swift and Windstep boots are back; and a Wayfinder stone opens the travel map anywhere with free trips. Some are sold by the Jeweler and Fisher, some are crafted, and the best drop from bosses. Beating the Goblin Beastmaster opens a portal at his war camp, and beating Grukk one in the middle of the orc island.</p>
     <h3>Beta 0.9.34</h3>
     <p>Animals: boars give boar meat and beavers beaver meat, and hawks, eagles, owls and penguins each have their own meat, raw and cooked. Pigs live in the grasslands (pork when hunted). Birds of every kind go in a bird cage (crafted at a workbench), never a fenced pen, and lay eggs there each morning; use the cage to collect them or let a bird out. As pets, only birds gather; other animals produce or collect food in a pen: cows milk, sheep wool, pigs mushrooms and carrots, boars grass and seeds, rabbits berries and carrots. Piglets, beaver kits and fluffy chicks of hawks, eagles and owls join the other babies. Runes say exactly what they do at each level.</p>
     <h3>Beta 0.9.33</h3>
@@ -689,24 +693,24 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Beta 0.9.10</h3>
     <p>The Dragon Amulet wiki: a page for every item, recipe, class, monster, boss, animal, shop and crafting station, all linked together, with search. Open it from the title screen or at pumped60.github.io/dragon-amulet-wiki. The Multiplayer menu lists your recent shared worlds with their codes: tap Host again or Join to go straight back in. Arrows and spells shot by soldiers, enemies and bosses fly the right way on every player's screen.</p>
     <h3>Beta 0.9.9</h3>
-    <p>Silver gear: a silver sword, mace, daggers, bow, staff, pickaxe, axe, hoe, hammer and fishing rod sit between wood and iron. Smelt silver ore (found just below the surface, above iron) into silver bars at a furnace and craft them at a workbench, or buy them from the Blacksmith. Each is halfway between the wooden one and the iron one; the silver rod catches the same fish as the wooden rod with less junk and quicker bites. Shops sell crafted things for half of what their materials are worth, and there is more iron in the ground. Pickaxes clear grass and plants, a double jump breaks a fall, weather can be switched off (new world or Settings), the phone move stick sits on the left (Settings moves it right for left-handed players), friends see your grappling hook, and the Dragonborn's fire (hold B on a computer) stops at the ground.</p>
+    <p>Silver gear: a silver sword, mace, daggers, bow, staff, pickaxe, axe, hoe, hammer and fishing rod sit between wood and iron. Smelt silver ore (found just below the surface, above iron) into silver bars at a furnace and craft them at a workbench, or buy them from the Blacksmith. Each is halfway between the wooden one and the iron one; the silver rod catches the same fish as the wooden rod with less junk and quicker bites. Shops sell crafted things for half of what their materials are worth, and there is more iron in the ground. Pickaxes clear grass and plants, a double jump breaks a fall, weather can be switched off (new world or Settings), the phone move stick sits on the left (Settings moves it right for left-handed players), friends see your grappling hook, and the Scaleborn's fire (hold B on a computer) stops at the ground.</p>
     <h3>Beta 0.9.8</h3>
     <p>In a shared world everything matches for every player: a tree someone cuts falls for everyone, back walls and new village houses show up whole, a wanderer given a job by any player becomes the same shopkeeper, miner or soldier for all, and friends' arrows fly the way they were aimed. Water falls through platforms, slides down slopes and stairs, and is drawn in front of furniture standing in it. Rain and floods leave half as much water, and penned animals stay in until the water is three quarters of a block over the fence. On the surface a roof alone no longer makes it dark: only a space closed in on every side with a back wall is dark. Storms and rain last 12 hours of game time, and the water they leave drains away within the next 6. Mouse aim lock starts switched on (L or Settings turns it off). The Mac and Windows apps fetch the newest game each time they start.</p>
     <h3>Beta 0.9.7</h3>
-    <p>Every menu (bag, crafting, shops, chests, army, map, settings, help and the rest) has an X in the top right corner that stays put however far you scroll. On phones you always sprint while moving (switch it off in Settings), double-tap anywhere in the world to place a torch, and the Torch button switches your hand-held light. Joysticks are the starting touch controls again; "Stick and tap" puts a move stick on the right and lets you tap anywhere to mine, build or attack there. Every class button in the new world screen is the same size, with the Dragonborne weapon tally just under them.</p>
+    <p>Every menu (bag, crafting, shops, chests, army, map, settings, help and the rest) has an X in the top right corner that stays put however far you scroll. On phones you always sprint while moving (switch it off in Settings), double-tap anywhere in the world to place a torch, and the Torch button switches your hand-held light. Joysticks are the starting touch controls again; "Stick and tap" puts a move stick on the right and lets you tap anywhere to mine, build or attack there. Every class button in the new world screen is the same size, with the Scaleforged weapon tally just under them.</p>
     <h3>Beta 0.9.6</h3>
     <p>Play on a Mac or Windows computer in its own window: open pumped60.github.io/dragon-amulet-play in Chrome or Edge and press "Install on this computer" on the title screen (or the install icon in the address bar). It gets its own icon, works offline and updates itself. There are also downloadable Mac and Windows apps on the Releases page of the dragon-amulet-play project on GitHub. F11 switches full screen in the downloaded app.</p>
     <h3>Beta 0.9.5</h3>
-    <p>Fire: anything that can burn (wood, planks, furniture, leaves, plants, grass) catches fire and burns with flickering flames, spreading a little to what it touches before burning out to charred wood, ash or nothing. The Dragonborn's breath, fire bombs, lava, lightning, fire arrows and raiders all start it; water and rain put it out, and it never spreads into your own village. Standing in it burns.</p>
-    <p>Every kind of tree has its own sapling (oak, spruce, birch, palm, jungle and dark oak): a felled tree drops saplings of its own kind, the Herbalist sells the ones you have found, and each grows into its own tree. On phones, tapping an item shows its name and a few words about it, and new gear says what it does in a short line; choose Full in Settings for every detail. The test world skips the opening screen, and a Dragonborn there starts with all five dragonborne weapons.</p>
+    <p>Fire: anything that can burn (wood, planks, furniture, leaves, plants, grass) catches fire and burns with flickering flames, spreading a little to what it touches before burning out to charred wood, ash or nothing. The Scaleborn's breath, fire bombs, lava, lightning, fire arrows and raiders all start it; water and rain put it out, and it never spreads into your own village. Standing in it burns.</p>
+    <p>Every kind of tree has its own sapling (oak, spruce, birch, palm, jungle and dark oak): a felled tree drops saplings of its own kind, the Herbalist sells the ones you have found, and each grows into its own tree. On phones, tapping an item shows its name and a few words about it, and new gear says what it does in a short line; choose Full in Settings for every detail. The test world skips the opening screen, and a Scaleborn there starts with all five scaleforged weapons.</p>
     <h3>Beta 0.9.4</h3>
     <p>Phones: two-finger controls. The first finger you put on the game screen moves you wherever it lands: drag left or right to walk, up to jump or fly up, down to drop or dive. A second finger aims at the spot it touches and uses what you hold (attack, mine, build) for as long as it stays down; a quick tap still talks to villagers and opens chests. The Hook and Fire dials stay at the bottom right. You can switch back to joysticks or buttons in Settings.</p>
-    <p>The Dragonborn's red wings beat like the white sky wings when he is in the air, his tail sways as he moves, and on phones his fire breath has its own Fire dial next to the Hook dial: touch it to breathe, drag to aim the fire, let go to stop.</p>
+    <p>The Scaleborn's red wings beat like the white sky wings when he is in the air, his tail sways as he moves, and on phones his fire breath has its own Fire dial next to the Hook dial: touch it to breathe, drag to aim the fire, let go to stop.</p>
     <h3>Beta 0.9.3</h3>
-    <p>The Dragonborn can always be tried out in the test world. For new survival and creative games he stays greyed out until you defeat Vorthax in a survival world; wins in the test world or in creative never unlock him or the dragonborne weapons (Vorthax still drops the weapon there).</p>
+    <p>The Scaleborn can always be tried out in the test world. For new survival and creative games he stays greyed out until you defeat Vorthax in a survival world; wins in the test world or in creative never unlock him or the scaleforged weapons (Vorthax still drops the weapon there).</p>
     <h3>Beta 0.9.2</h3>
-    <p>The Dragonborn, a sixth class: half dragon, he flies whenever he likes and breathes fire (hold B, or the Fire dial on phones), burning enemies and scorching wood and grass, using mana. He has the most health, armor and mana of any class. He shows in the class list from the start, greyed out until you defeat Vorthax in survival; after that he is unlocked on this device for every new character.</p>
-    <p>Dragonborne weapons: defeating Vorthax drops the dragonborne weapon of your class (sword, bow, mace, staff or daggers), and every hit from it sets enemies burning. Each one you win is unlocked for good, and a new Dragonborn starts with all of them. Beat Vorthax with every class to collect all five; the tally under the Dragonborn shows which you have.</p>
+    <p>The Scaleborn, a sixth class: half dragon, he flies whenever he likes and breathes fire (hold B, or the Fire dial on phones), burning enemies and scorching wood and grass, using mana. He has the most health, armor and mana of any class. He shows in the class list from the start, greyed out until you defeat Vorthax in survival; after that he is unlocked on this device for every new character.</p>
+    <p>Scaleforged weapons: defeating Vorthax drops the scaleforged weapon of your class (sword, bow, mace, staff or daggers), and every hit from it sets enemies burning. Each one you win is unlocked for good, and a new Scaleborn starts with all of them. Beat Vorthax with every class to collect all five; the tally under the Scaleborn shows which you have.</p>
     <h3>Beta 0.9.1</h3>
     <p>Bombs: craft black powder (2 coal and a bone), small bombs and fire bombs at a workbench, and buy big and sticky bombs from the Demolitionist. A small bomb is thrown and bounces before it blows; a fire bomb bursts where it lands and sets everything around it burning; a sticky bomb sticks to the first wall or enemy it touches; a big bomb is set down at your feet, so get clear. Every bomb breaks blocks: they burst apart in pieces, some of which land as rubble that crumbles away after three days, and the blocks around the blast are left burnt. Your own bombs hurt you and your soldiers at half strength, and they never break anything in your own village.</p>
     <p>The Demolitionist moves into your village, with a house of his own, once the Goblin Beastmaster is beaten. Every shopkeeper's shop has three levels: talk to them to upgrade it with coins and building materials, and each level sells better goods. Level 2 needs a Town and level 3 a City. Upgraded houses get lanterns, then a red tile roof with turrets and a banner, and the shopkeeper shows gold pips over their head.</p>
@@ -769,7 +773,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Wings, lava and the deep</h3>
     <p>Sky wings let you fly up, steer and dive for 10 seconds. Once you have them, sky feathers from the sky realm raise that to 15, 20, 25 and 30 seconds, and the fifth feather gives endless flight. Lava now flows, slows you down and burns, unless you wear the top armor. The bottom of the world is unbreakable black bedrock. Diamond is a new tier between gold and mythril for every tool, weapon and armor.</p>
     <h3>Permanent upgrades</h3>
-    <p>Swiftness and sprint elixirs, life and mana crystals, and other permanent boosts are only found in the sky realm and the magma realm. The herbalist sells hearts of vigor and hearts of the arcane (+20 max health or mana), but each one costs much more than the last. The strongest sprint elixir makes sprinting 75% faster than normal sprinting.</p>
+    <p>Swiftness and sprint elixirs, heart and spirit gems, and other permanent boosts are only found in the sky realm and the magma realm. The herbalist sells hearts of vigor and hearts of the arcane (+20 max health or mana), but each one costs much more than the last. The strongest sprint elixir makes sprinting 75% faster than normal sprinting.</p>
     <h3>Armies, bows and staffs</h3>
     <p>Enemy castles hold about 15 soldiers led by a Warlord, who orders charges, retreats and raids. As a Beastmaster, each tamed companion (up to 3) boosts every ally's attack by 5%. Arrows fly straighter; the adamantite bow fires homing arrows, and the fire, blast and tri-shot bows fire burning, exploding and triple arrows. The adamantite staff fires homing bolts, the storm staff chains lightning, the ward staff shields you and your allies, and the ember staff burns.</p>
     <h3>Tools and farming</h3>
@@ -799,11 +803,11 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>Army</h3>
     <p>Open the army panel to choose a formation and where you stand in it, and to place soldiers into your party slots. Your soldiers follow you and fight; when you stop they take their places. Hire soldiers or change your own class at home. Free captives at bandit camps on wild islands to recruit them.</p>
     <h3>Upgrades and building</h3>
-    <p>Crafting or buying a better tool or weapon upgrades the one you have instead of adding another. Armor and accessories like swift boots, the cloud charm (double jump), the diving helmet, lanterns and mana rings are worn automatically and stay with you. Build chests to store things, and decorate with marble, red brick, dark planks, tiles, stained glass, lanterns, fences, bookshelves, doors and background walls.</p>
+    <p>Crafting or buying a better tool or weapon upgrades the one you have instead of adding another. Armor and accessories like swift boots, the cloud charm (double jump), the nautilus mask, lanterns and mana rings are worn automatically and stay with you. Build chests to store things, and decorate with marble, red brick, dark planks, tiles, stained glass, lanterns, fences, bookshelves, doors and background walls.</p>
     <h3>The dragon mountain</h3>
     <p>The dragon lives at the edge of the world, at the top of a tall mountain. Climb to the cave mouth near the summit.</p>
     <h3>Mining and magic</h3>
-    <p>Caves run deep. Better ores need better pickaxes: iron needs copper, gold and emerald need iron, ruby and mythril need gold, adamantite needs mythril. Life and mana crystals found in caves raise your maximum health and mana. Staffs use mana, and wizards cast the strongest spells.</p>
+    <p>Caves run deep. Better ores need better pickaxes: iron needs copper, gold and emerald need iron, ruby and mythril need gold, adamantite needs mythril. Heart and spirit gems found in caves raise your maximum health and mana. Staffs use mana, and wizards cast the strongest spells.</p>
     <h3>Trading</h3>
     <p>Villagers of your own faction trade with you from the start. Another faction's villagers only trade once every one of that faction's soldiers is defeated. Sell ore, bars and gems for coins.</p>
   </div>
@@ -811,7 +815,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet Beta 0.9.138</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.139</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1071,7 +1075,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet</b><br>Beta 0.9.138</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.139</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1090,7 +1094,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.138', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.139', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1182,8 +1186,8 @@ defB(B.LAVA,{name:'Lava',solid:false,hard:Infinity,drop:0,light:5,col:'#ff6a1a',
 defB(B.GOLDPILE,{name:'Dragon gold',solid:false,hard:0.6,drop:I.GOLD_BAR,col:'#ffd84a',place:false});
 defB(B.WATER,{name:'Water',solid:false,hard:Infinity,drop:0,col:'#2a64c8',place:false});
 defB(B.ROOF,{name:'Roof tiles',hard:0.6,col:'#a8452f'});
-defB(B.LIFE_CR,{name:'Life crystal',solid:false,hard:0.8,light:4,drop:I.LIFE_CRYSTAL,col:'#ff3f6c',place:false});
-defB(B.MANA_CR,{name:'Mana crystal',solid:false,hard:0.8,light:4,drop:I.MANA_CRYSTAL,col:'#4f8dff',place:false});
+defB(B.LIFE_CR,{name:'Heart gem cluster',solid:false,hard:0.8,light:4,drop:I.LIFE_CRYSTAL,col:'#ff3f6c',place:false});
+defB(B.MANA_CR,{name:'Spirit gem cluster',solid:false,hard:0.8,light:4,drop:I.MANA_CRYSTAL,col:'#4f8dff',place:false});
 defB(B.GLOWSHROOM,{name:'Glow mushroom',solid:false,hard:0.1,light:1,drop:225,col:'#5fd0ff',place:false});
 defB(B.CAGE,{name:'Cage bars',solid:false,hard:1,drop:0,col:'#6b6b73',place:false});
 defB(B.MARBLE,{name:'Marble',hard:1,col:'#e8e6f0'});
@@ -1328,7 +1332,7 @@ Object.assign(ITEMS, {
   [I.APPLE]:{name:'Apple',kind:'food',heal:15}, [I.BREAD]:{name:'Bread',kind:'food',heal:25},
   [I.STEW]:{name:'Hearty stew',kind:'food',heal:45}, [I.POTION]:{name:'Healing potion',kind:'food',heal:70},
   [I.MANA_POTION]:{name:'Mana potion',kind:'mana',mana:60},
-  [I.LIFE_CRYSTAL]:{name:'Life crystal',kind:'maxhp',add:20}, [I.MANA_CRYSTAL]:{name:'Mana crystal',kind:'maxmana',add:20},
+  [I.LIFE_CRYSTAL]:{name:'Heart gem',kind:'maxhp',add:20,desc:'A cut red gem from deep clusters. Use it to raise your greatest health by 20'}, [I.MANA_CRYSTAL]:{name:'Spirit gem',kind:'maxmana',add:20,desc:'A cut blue gem from deep clusters. Use it to raise your greatest mana by 20'},
   [I.IRON_ARMOR]:{name:'Iron armor',kind:'armor',def:6,m:'iron'}, [I.GOLD_ARMOR]:{name:'Gold armor',kind:'armor',def:12,m:'gold'},
   [I.MYTHRIL_ARMOR]:{name:'Mythril armor',kind:'armor',def:18,m:'mythril'}, [I.ADAMANT_ARMOR]:{name:'Adamantite armor',kind:'armor',def:25,m:'adamant'},
   [I.RAFT]:{name:'Raft',kind:'boat'}, [I.CANOE]:{name:'Canoe',kind:'boat'}, [I.ROWBOAT]:{name:'Rowboat',kind:'boat'},
@@ -1468,9 +1472,9 @@ Object.assign(ITEMS, {
   [I.MYTHRIL_SPEAR]:W_('Mythril spear','melee',{dmg:46,cd:0.44,reach:44,kb:140,m:'mythril',shape:'spear'}),
   [I.ADAMANT_SPEAR]:W_('Adamantite spear','melee',{dmg:62,cd:0.42,reach:46,kb:150,m:'adamant',shape:'spear'}),
   [I.SWIFT_BOOTS]:{name:'Swift boots',kind:'acc',slot:'boots',tier:1,desc:'Run 15% faster'},
-  [I.WIND_BOOTS]:{name:'Windrunner boots',kind:'acc',slot:'boots',tier:2,desc:'Run 30% faster'},
+  [I.WIND_BOOTS]:{name:'Windstep boots',kind:'acc',slot:'boots',tier:2,desc:'Run 30% faster'},
   [I.CLOUD_CHARM]:{name:'Cloud charm',kind:'acc',slot:'jump',tier:1,desc:'Jump again in midair'},
-  [I.DIVE_HELM]:{name:'Diving helmet',kind:'acc',slot:'dive',tier:1,desc:'Hold your breath 3 times longer'},
+  [I.DIVE_HELM]:{name:'Nautilus mask',kind:'acc',slot:'dive',tier:1,desc:'A mask shaped from a nautilus shell: hold your breath 3 times longer'},
   [I.MERMAID_CHARM]:{name:'Mermaid charm',kind:'acc',slot:'dive',tier:2,desc:'Breathe underwater and swim fast'},
   [I.LANTERN_ACC]:{name:'Miner lantern',kind:'acc',slot:'light',tier:1,desc:'Carry a brighter light'},
   [I.SUN_AMULET]:{name:'Sun amulet',kind:'acc',slot:'light',tier:2,desc:'Carry a very bright light'},
@@ -3969,7 +3973,7 @@ function krakenAct(k,dt){ const p=player; k.anim+=dt; k.hurtT=Math.max(0,k.hurtT
 
 // ================= levels, XP, skill tree =================
 const ITEM_LVL={ boots:[0,3,8], jump:[0,5], dive:[0,4,10], fall:[0,6], light:[0,3,9], ring:[0,4,11], wings:[0,15], amulet:[0,20] };
-const SKILLS=[ ['boots',1,'Swift feet','Run 15% faster'],['boots',2,'Windrunner','Run 30% faster'],['jump',1,'Cloud step','Jump again in midair'],['fall',1,'Feather fall','No fall damage'],
+const SKILLS=[ ['boots',1,'Swift feet','Run 15% faster'],['boots',2,'Windstep','Run 30% faster'],['jump',1,'Cloud step','Jump again in midair'],['fall',1,'Feather fall','No fall damage'],
   ['dive',1,'Deep lungs','Hold your breath 3 times longer'],['dive',2,'Gills','Breathe underwater and swim fast'],['light',1,"Miner's eye",'Carry a brighter light'],['light',2,'Sunsight','Carry a very bright light'],
   ['ring',1,'Mana flow','Mana refills 50% faster'],['ring',2,'Arcane flow','Mana refills twice as fast'],
   ['hp',1,'Vitality I','+20 maximum health',2],['hp',2,'Vitality II','+20 maximum health',6],['hp',3,'Vitality III','+20 maximum health',12],['mana',1,'Focus I','+20 maximum mana',3],['mana',2,'Focus II','+20 maximum mana',7],['mana',3,'Focus III','+20 maximum mana',13] ];
@@ -4843,7 +4847,7 @@ function drawHumanFig(g,o){
   const R=fig(g,SCX-8,SFY-30); const cu=o.cust; let col=FCOL[o.team]||FCOL.n, dk=FDARK[o.team]||FDARK.n, lt=FLIGHT[o.team]||FLIGHT.n;
   if(cu){ col=cu.o1; dk=shadeHex(cu.o1,-0.35); lt=shadeHex(cu.o1,0.35); }
   const sk0=cu?cu.skin:o.team==='m'?'#c8483a':'#f2c79b', skd0=shadeHex(sk0,-0.14), o2=cu?cu.o2:null; FACE_EYE=cu?cu.eyes:o.team==='m'?'#ffcf3a':'#1b1424'; FACE_SKIN=sk0;
-  const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; if(o.look==='dragon'){ for(const x of [2,11]){ R(x,13,3,2,armorC[0]); R(x,13,3,1,armorC[1]); } return; }   /* 0.9.128: the Dragonborn shows his armour as shoulder guards, his scales stay in view */ R(3,13,10,5,armorC[0]); R(3,13,10,1,armorC[1]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };
+  const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; if(o.look==='dragon'){ for(const x of [2,11]){ R(x,13,3,2,armorC[0]); R(x,13,3,1,armorC[1]); } return; }   /* 0.9.128: the Scaleborn shows his armour as shoulder guards, his scales stay in view */ R(3,13,10,5,armorC[0]); R(3,13,10,1,armorC[1]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };
   const hair=cu?cu.hc:'#7a4a2a', hairL=shadeHex(hair,0.25), bald=!!(cu&&cu.hair==='bald');
   const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0;
   const arms=(c,hand)=>{
@@ -5490,7 +5494,7 @@ function renderSettings(){
   $('#setSmart').innerHTML=opt('smart',true,'On','Mines the next block in that direction for you')+opt('smart',false,'Off','Only the exact block you point at');
   $('#setSword').innerHTML=opt('swordStyle','swing','Swing','A wide arc toward where you aim')+opt('swordStyle','stab','Stab','A long, quick thrust');
   $('#setRaids').innerHTML=opt('raids',true,'On','Enemy scouting parties roam the surface')+opt('raids',false,'Off','Only underground scouting parties');
-  const KEYNAMES={craft:'Crafting',bag:'Bag',army:'Army',map:'Map',use:'Talk, trade, tame, open',orders:'Cycle orders',items:'Hide items',aimlock:'Aim lock',save:'Quick save',fly:'Fly or walk (creative, Dragonborn)',grapple:'Grappling hook (hold, then let go)',breath:'Fire breath (Dragonborn, hold)'};
+  const KEYNAMES={craft:'Crafting',bag:'Bag',army:'Army',map:'Map',use:'Talk, trade, tame, open',orders:'Cycle orders',items:'Hide items',aimlock:'Aim lock',save:'Quick save',fly:'Fly or walk (creative, Scaleborn)',grapple:'Grappling hook (hold, then let go)',breath:'Fire breath (Scaleborn, hold)'};
   const kn=c=>!c?'(none)':c.replace(/^Key/,'').replace(/^Digit/,'').replace('Arrow','');
   $('#setKeys').innerHTML=Object.keys(STD_KEYS).map(k=>`<div class="keyrow"><span>${KEYNAMES[k]}</span><button class="xbtn" data-bind="${k}">${rebinding===k?'Press a key…':kn(settings.keys[k])}</button></div>`).join('');
   $('#setSound').innerHTML=opt('sound',true,'On','Music and sound effects')+opt('sound',false,'Off','Silent');
@@ -6913,7 +6917,7 @@ const CHARMS={
   543:{name:'Ironbark charm',fx:{def:3},desc:'+3 defense',col:'#8a6a3a',shop:1200},
   544:{name:'Vampire fang',fx:{leech:0.04},desc:'Heal 4% of the damage you deal',col:'#c81e3a'},
   545:{name:'Wind charm',fx:{speed:0.08},desc:'Move 8% faster',col:'#b8f0e8',shop:1500},
-  546:{name:'Lucky coin',fx:{coins:0.15},desc:'Enemies drop 15% more coins',col:'#ffd84a',shop:1800},
+  546:{name:"Merchant's charm",fx:{coins:0.15},desc:'Enemies drop 15% more coins',col:'#ffd84a',shop:1800},
   547:{name:'Sage charm',fx:{mana:25,regen:0.25},desc:'+25 maximum mana and mana refills 25% faster',col:'#8a7aff'},
   548:{name:'Hunter charm',fx:{beast:0.15},desc:'Deal 15% more damage to monsters and wild animals',col:'#6a9a3a'},
   549:{name:"Giant's belt",fx:{hp:25},desc:'+25 maximum health',col:'#a0522d'},
@@ -8865,22 +8869,22 @@ function decorShopHouse(h,lv){ if(!h||isGuest()) return; const hx=h.x0-1, gy=h.g
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()){
       if(!home.shopLvV){ home.shopLvV=1; const lv=Math.min(3,(home.tier||0)+1); home.shopLvBase=lv; if(lv>1) for(const h of home.houses) if(h.role) decorShopHouse(h,lv); }
       if(!home.demo&&gcamps.some(g=>g.war&&g.cleared)) demoArrive(true); } }catch(e){ console.warn(e); } return r; }; }
-// ===================== the Dragonborn and the dragonborne weapons =====================
-// Beating Vorthax unlocks the Dragonborn on this device for good, and the dragonborne weapon of the class that
-// slew him. The Dragonborn flies, breathes fire (hold B, or the Fire dial on phones) and is the strongest class.
-// In a new world only the Dragonborn starts with the dragonborne weapons unlocked so far.
-CLASSES.dragon={ name:'Dragonborn', hp:220, mana:160, npcHp:220, def:9, speed:104, weapon:I.IRON_SWORD, hire:0,
-  desc:'Half dragon: flies whenever he likes and breathes fire (hold B on a computer, or the Fire dial on phones). The most health, armor and mana of any class. Starts with every dragonborne weapon you have unlocked.' };
+// ===================== the Scaleborn and the scaleforged weapons =====================
+// Beating Vorthax unlocks the Scaleborn on this device for good, and the scaleforged weapon of the class that
+// slew him. The Scaleborn flies, breathes fire (hold B, or the Fire dial on phones) and is the strongest class.
+// In a new world only the Scaleborn starts with the scaleforged weapons unlocked so far.
+CLASSES.dragon={ name:'Scaleborn', hp:220, mana:160, npcHp:220, def:9, speed:104, weapon:I.IRON_SWORD, hire:0,
+  desc:'Half dragon: flies whenever he likes and breathes fire (hold B on a computer, or the Fire dial on phones). The most health, armor and mana of any class. Starts with every scaleforged weapon you have unlocked.' };
 const DB_W={ knight:640, archer:641, mace:642, wizard:643, beast:644 };
 const DB_OF=Object.fromEntries(Object.entries(DB_W).map(([k,v])=>[v,k]));
-ITEMS[640]=Object.assign(W_('Dragonborne sword','melee',{dmg:78,cd:0.3,reach:40,kb:220,m:'magma',shape:'sword',burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Sets enemies burning, and flies back to you when thrown'});
-ITEMS[641]=Object.assign(W_('Dragonborne bow','bow',{dmg:62,cd:0.38,speed:700,m:'magma',homing:true,burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Its arrows seek their target and set it burning'});
-ITEMS[642]=Object.assign(W_('Dragonborne mace','melee',{dmg:120,cd:0.7,reach:32,kb:480,m:'magma',shape:'mace',burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Swings on a chain like the Adamantite mace and sets enemies burning'});
-ITEMS[643]=Object.assign(W_('Dragonborne staff','magic',{dmg:58,cd:0.36,mana:9,speed:540,gem:'#ff7b1c',homing:true,burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Its bolts seek their target and set it burning'});
-ITEMS[644]=Object.assign(W_('Dragonborne daggers','melee',{dmg:46,cd:0.15,reach:28,kb:120,m:'magma',shape:'dagger',burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Thrown one after another like the Adamantite daggers, and set enemies burning'});
+ITEMS[640]=Object.assign(W_('Scaleforged sword','melee',{dmg:78,cd:0.3,reach:40,kb:220,m:'magma',shape:'sword',burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Sets enemies burning, and flies back to you when thrown'});
+ITEMS[641]=Object.assign(W_('Scaleforged bow','bow',{dmg:62,cd:0.38,speed:700,m:'magma',homing:true,burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Its arrows seek their target and set it burning'});
+ITEMS[642]=Object.assign(W_('Scaleforged mace','melee',{dmg:120,cd:0.7,reach:32,kb:480,m:'magma',shape:'mace',burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Swings on a chain like the Adamantite mace and sets enemies burning'});
+ITEMS[643]=Object.assign(W_('Scaleforged staff','magic',{dmg:58,cd:0.36,mana:9,speed:540,gem:'#ff7b1c',homing:true,burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Its bolts seek their target and set it burning'});
+ITEMS[644]=Object.assign(W_('Scaleforged daggers','melee',{dmg:46,cd:0.15,reach:28,kb:120,m:'magma',shape:'dagger',burn:true,rare:true}),{desc:'Forged in Vorthax\'s fire. Thrown one after another like the Adamantite daggers, and set enemies burning'});
 for(const id of Object.values(DB_W)) SELL[id]=900;
 THROW_SWORDS.add(640); CHAIN_MACES.add(642); THROW_DAGGERS.add(644);
-// the weapons' own fire: a hit from a dragonborne weapon (yours) sets the enemy burning
+// the weapons' own fire: a hit from a scaleforged weapon (yours) sets the enemy burning
 { const _dmg=damage; damage=function(t,amt,src,kb){ const r=_dmg(t,amt,src,kb); try{ if(t&&!t.dead&&amt>0&&player&&killerOf(src)===player&&t!==player&&t.team!==player.team){ const it=heldItem(); if(it&&DB_OF[it.id]) t.burnT=Math.max(t.burnT||0,2); } }catch(e){} return r; }; }
 
 // ---- unlocks, kept on this device for every world ----
@@ -8889,18 +8893,18 @@ function dbStore(){ try{ return Object.assign({unlocked:false,weapons:{}},JSON.p
 function dbSave(s){ try{ localStorage.setItem(DB_KEY,JSON.stringify(s)); }catch(e){} }
 const dbUnlocked=()=>dbStore().unlocked;
 const dbWeapons=()=>{ const w=dbStore().weapons; return CLS_KEYS.filter(k=>w[k]).map(k=>DB_W[k]); };
-// Vorthax falls: unlock the Dragonborn, unlock and drop the slayer's dragonborne weapon (once per world for each class)
+// Vorthax falls: unlock the Scaleborn, unlock and drop the slayer's scaleforged weapon (once per world for each class)
 function dbReward(){ if(!player||player.observer) return; home.dbGot=home.dbGot||{}; const cls=player.cls; if(home.dbGot[cls]) return; home.dbGot[cls]=true;
   const id=DB_W[cls]; if(id) spawnDrop(cxOf(player),player.y,id,1);
   /* only a survival win counts: the test world and creative worlds never unlock anything */
   const real=rules.mode==='survival'&&curSlot!==4;
   let first=false, newW=false; if(real){ const s=dbStore(); first=!s.unlocked; s.unlocked=true; newW=!!id&&!s.weapons[cls]; if(id) s.weapons[cls]=true; dbSave(s); }
-  const msg=[first?'The Dragonborn is unlocked: choose him for your next character, in survival or creative.':'', id?`Vorthax leaves the ${ITEMS[id].name.toLowerCase()}${newW?', and the Dragonborn can start with it from now on':''}.`:'', !real&&!dbUnlocked()?'Beat Vorthax in a survival world to unlock the Dragonborn.':''].filter(Boolean).join(' ');
+  const msg=[first?'The Scaleborn is unlocked: choose him for your next character, in survival or creative.':'', id?`Vorthax leaves the ${ITEMS[id].name.toLowerCase()}${newW?', and the Scaleborn can start with it from now on':''}.`:'', !real&&!dbUnlocked()?'Beat Vorthax in a survival world to unlock the Scaleborn.':''].filter(Boolean).join(' ');
   if(msg) setTimeout(()=>toast(msg,7),1500); }
 let dbSeen=null;
 { const _u=update; update=function(dt){ _u(dt); try{ if(dbSeen===null) dbSeen=!!dragonSlain; if(dragonSlain&&!dbSeen&&player&&lair&&Math.abs(cxOf(player)/T-(lair.rx0+lair.rx1)/2)<150){ dbSeen=true; dbReward(); } else if(!dragonSlain) dbSeen=false; breathTick(dt); dbUiTick(dt); }catch(e){ console.warn(e); } }; }
 { const _sp=startPlay; startPlay=function(...a){ dbSeen=null; return _sp(...a); }; }
-// a new Dragonborn starts with every dragonborne weapon unlocked so far
+// a new Scaleborn starts with every scaleforged weapon unlocked so far
 { const _fc=freshChar; freshChar=function(cls,...a){ const st=_fc(cls,...a); try{ if(cls==='dragon'&&st&&st.inv){ for(const id of dbWeapons()){ const i=st.inv.findIndex(x=>!x); if(i>=0) st.inv[i]={id,n:1}; } } }catch(e){ console.warn(e); } return st; }; }
 { const _ng=newGame; newGame=function(sk,fac,cls,...a){ const r=_ng(sk,fac,cls,...a); try{ if(cls==='dragon'&&player&&!(heroPick.state&&!heroPick.state.fresh)) for(const id of dbWeapons()) if(!countItem(id)) give(id,1); }catch(e){ console.warn(e); } return r; }; }
 
@@ -8938,9 +8942,9 @@ let dbUiT=0;
 function dbUiTick(dt){ if((dbUiT-=dt)>0) return; dbUiT=0.5; const dr=player&&player.cls==='dragon'; const b=$('#stick_f'); if(b&&b.hidden===!!dr) b.hidden=!dr;
   const f=$('#btnFly'); if(f&&dr&&f.hidden) f.hidden=false; }
 
-// ---- class choices: the Dragonborn is shown everywhere, dimmed until Vorthax has fallen ----
+// ---- class choices: the Scaleborn is shown everywhere, dimmed until Vorthax has fallen ----
 function dbTally(){ const w=dbStore().weapons; const n=CLS_KEYS.filter(k=>w[k]).length;
-  return `<div class="dbtally">Dragonborne weapons: ${n} of 5<br>${CLS_KEYS.map(k=>`<span style="opacity:${w[k]?1:0.35}">${w[k]?'✓':'·'} ${ITEMS[DB_W[k]].name.replace('Dragonborne ','')}</span>`).join(' ')}</div>`; }
+  return `<div class="dbtally">Scaleforged weapons: ${n} of 5<br>${CLS_KEYS.map(k=>`<span style="opacity:${w[k]?1:0.35}">${w[k]?'✓':'·'} ${ITEMS[DB_W[k]].name.replace('Scaleforged ','')}</span>`).join(' ')}</div>`; }
 function dbButton(attr,pressed,extra){ const ok=dbUnlocked();
   return `<button class="choice" ${attr} aria-pressed="${pressed}" ${ok?'':'disabled'} style="${ok?'':'opacity:.45;filter:grayscale(.6)'}">${CLASSES.dragon.name}<small>${ok?`${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana`:'Locked: beat Vorthax'}</small>${extra||''}</button>`; }
 // the weapon tally sits under the class grid, so every class button keeps the same size
@@ -8951,12 +8955,12 @@ function dbTallyAfter(grid){ const g=$(grid); if(!g) return; let t=g.nextElement
 { const _ra=renderArmy; renderArmy=function(...a){ const r=_ra(...a); try{ const cs=$('#classSwap'); if(cs&&dbUnlocked()){ const nc=!cs.querySelector('button[disabled]');
       cs.insertAdjacentHTML('beforeend',`<button class="choice" data-cls="dragon" aria-pressed="${player.cls==='dragon'}" ${nc?'':'disabled'}>${CLASSES.dragon.name}<small>${CLASSES.dragon.hp} hp, ${CLASSES.dragon.mana} mana</small></button>`); } }catch(e){ console.warn(e); } return r; }; }
 
-// on a computer, tell a Dragonborn which key breathes fire (it can be changed in Settings > Keys)
+// on a computer, tell a Scaleborn which key breathes fire (it can be changed in Settings > Keys)
 { const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(player&&player.cls==='dragon'&&!document.body.classList.contains('touch')){ const k=(settings.keys.breath||'KeyB').replace(/^Key|^Digit/,''); setTimeout(()=>toast(`Hold ${k} to breathe fire where your mouse points (G to fly). Change keys in Settings.`,5),1500); } }catch(e){} return r; }; }
-// ===================== the Dragonborn's wings and tail; two-finger touch controls =====================
+// ===================== the Scaleborn's wings and tail; two-finger touch controls =====================
 
 // ---- red wings that beat like the white sky wings, and a tail that sways ----
-var DB_RED='#b8322a';   // 0.9.128: the Dragonborn is always red
+var DB_RED='#b8322a';   // 0.9.128: the Scaleborn is always red
 function dragonScale(e){ return DB_RED; }
 function pxLine(x0,y0,x1,y1){ const n=Math.max(Math.abs(x1-x0),Math.abs(y1-y0))||1; for(let i=0;i<=n;i++) ctx.fillRect(Math.round(x0+(x1-x0)*i/n),Math.round(y0+(y1-y0)*i/n),1,1); }
 // bat wings: an arm bone up and back to the wrist, three finger bones fanning down, scalloped skin between them
@@ -8988,7 +8992,7 @@ if((settings.ctlV||0)<2){ settings.ctlV=2; settings.controls='sticks'; try{ save
 // ===================== living fire, saplings for every tree, short item tips =====================
 
 // ---- fire: anything that can burn catches, flickers, spreads a little, and burns out to char, ash or nothing ----
-// The Dragonborn's breath, fire bombs, lava, lightning, fire arrows and raiders' torches all light it.
+// The Scaleborn's breath, fire bombs, lava, lightning, fire arrows and raiders' torches all light it.
 const fires=new Map();   // tile index -> {x,y,t,life,id,hitT,sprT}
 const FIRE_MAX=180;
 function canBurn(id){ if(!id) return false; return WOODY.has(id)||PLANTS.has(id)||id===B.GRASS||isSapling(id); }
@@ -9038,7 +9042,7 @@ for(const [k,id] of Object.entries(SAP)){ if(id===B.SAPLING) continue; const w=W
   for(const S of [PLANTS,NEEDS_GROUND,GROUND_PLANTS]) S.add(id);
   SHOPS.herbalist.stock.push([id,2,9]); }
 
-// ---- the test world: no intro screen, and a Dragonborn starts with all his weapons ----
+// ---- the test world: no intro screen, and a Scaleborn starts with all his weapons ----
 { const _si=showIntro; showIntro=function(...a){ if(curSlot===4) return; return _si(...a); }; }
 { const _ng=newGame; newGame=function(sk,fac,cls,...a){ const r=_ng(sk,fac,cls,...a); try{ if(curSlot===4&&cls==='dragon'&&player) for(const id of Object.values(DB_W)) if(!countItem(id)) give(id,1); }catch(e){ console.warn(e); } return r; }; }
 
@@ -10543,13 +10547,13 @@ function addAcc(slot,tier,name,desc,col,src){ const id=newItem({name,kind:'acc',
     else if(slot==='travel'){ rect(3,3,10,10,col[0]); rect(4,4,8,8,col[1]); rect(7,5,2,6,'#ffffff'); rect(5,7,6,2,'#ffffff'); px(7,4,'#ffcf3a'); } });
   if(src.shop) SHOPS[src.shop].stock.push([id,1,src.price]); if(src.need) RECIPES.push({out:id,n:1,need:src.need,st:B.WORKBENCH,cat:'gear'}); return id; }
 const ACC_IDS={
-  tackle1:addAcc('tackle',1,'Tackle box','Fish bite 20% sooner',['#3a6a8a','#5a8aaa'],{shop:'fisher',price:300}),
-  tackle2:addAcc('tackle',2,"Angler's earring",'Fish bite 35% sooner, and you keep the better of two catches',['#c8a040','#ffe066'],{need:[[I.GOLD_BAR,3],[537,2],[538,1]]}),
+  tackle1:addAcc('tackle',1,'Bait pouch','A leather pouch of live bait: fish bite 20% sooner',['#3a6a8a','#5a8aaa'],{shop:'fisher',price:300}),
+  tackle2:addAcc('tackle',2,"Fisher's ring",'A gold ring set with sea glass: fish bite 35% sooner, and you keep the better of two catches',['#c8a040','#ffe066'],{need:[[I.GOLD_BAR,3],[537,2],[538,1]]}),
   tackle3:addAcc('tackle',3,'Lucky lure','Fish bite 50% sooner, you keep the better of two catches, and one catch in five comes in double',['#c8483a','#ff8a6a'],{drop:'kraken'}),
   ward1:addAcc('ward',1,'Cooling band','You never catch fire',['#3a8ad8','#9ad0ff'],{shop:'jeweler',price:400}),
   ward2:addAcc('ward',2,'Ward amulet','You never catch fire or get slowed by frost',['#6a4ad8','#b8a8ff'],{need:[[I.GOLD_BAR,3],[I.SAPPHIRE,2],[I.RUBY,2]]}),
   ward3:addAcc('ward',3,'Dragon scale ward','No burning, no frost slowing, no knockback, and lava hurts half as much',['#b0442a','#ff9a4a'],{drop:'magmaknight'}),
-  dash1:addAcc('dash',1,"Sprinter's anklet",'Double-tap left or right to dash 6 blocks (once every 1.2 seconds)',['#8a5a2e','#c8955a'],{shop:'jeweler',price:600}),
+  dash1:addAcc('dash',1,'Fleetfoot sash','Double-tap left or right to dash 6 blocks (once every 1.2 seconds)',['#8a5a2e','#c8955a'],{shop:'jeweler',price:600}),
   dash2:addAcc('dash',2,'Shadow cloak','Double-tap left or right to dash 9 blocks, untouchable while dashing (once every 0.7 seconds)',['#2a2238','#6a5a8a'],{drop:'goblin'}),
   travel1:addAcc('travel',1,'Wayfinder stone','Open the travel map anywhere (press M) and travel to any portal for free',['#2a6a5a','#4ac8a8'],{need:[[I.GOLD_BAR,2],[I.MANA_CRYSTAL,1],[I.EMERALD,2]]}) };
 // the swift and windrunner boots come back: one sold, one crafted
@@ -11794,7 +11798,7 @@ function catchUpNews(g){ if(!g) return; const L=[]; if(g.days) L.push(`${g.days}
     [338]:'A brass compass from a sunken ship. Sell it to a trader',
     [339]:'Dark ink from the deep sea. Sell it for a good price',
     [463]:'Pressed from sugar cane',
-    [483]:'Shorn from sheep. Makes beds, rugs, paintings, grappling hooks and windrunner boots',
+    [483]:'Shorn from sheep. Makes beds, rugs, paintings, grappling hooks and windstep boots',
   };
   for(const [id,d] of Object.entries(D)) if(ITEMS[id]&&!ITEMS[id].desc) ITEMS[id].desc=d;
   if(ITEMS[I.MUSHROOM]&&!ITEMS[I.MUSHROOM].desc) ITEMS[I.MUSHROOM].desc='A glowing mushroom picked in caves. Eat it raw or cook it into mushroom soup'; }
@@ -11808,7 +11812,7 @@ function thinTowerGuards(){ if(!tower||tower.cleared||tower.halfV||isGuest()) re
 { const _st=spawnTower; spawnTower=function(...a){ const r=_st(...a); try{ if(tower) tower.halfV=1; }catch(e){} return r; }; }
 // ===================== Beta 0.9.56: sugar sweets and uses for sea treasures =====================
 // Sugar bakes into cakes, tarts, cookies and candied apples at a furnace. Sea treasures that could only be sold now make
-// things: ancient coins a Lucky coin charm, an old compass a Dragon compass or an Astrolabe, golden fish a feast and (with
+// things: ancient coins a Merchant's charm, an old compass a Dragon compass or an Astrolabe, golden fish a feast and (with
 // pearls) the Lucky lure, a sunken crown the Tidecrown charm, Kraken ink the Shadow cloak, and coral a building block.
 // The Sage charm's faster mana refill works (charmFx('regen') in manaRegen).
 const SWEETS={};
@@ -11836,7 +11840,7 @@ const TIDECROWN=newItem({name:'Tidecrown',kind:'charm',desc:'+20 maximum health,
 CHARMS[TIDECROWN]={name:'Tidecrown',fx:{hp:20,mana:20,regen:0.15},desc:ITEMS[TIDECROWN].desc,col:'#3a9ad8'}; SELL[TIDECROWN]=300;
 customIcon(TIDECROWN,(rect,px)=>{ rect(2,8,12,5,'#ffd84a'); for(const x of [2,6,10,13]) rect(x,4,2,4,'#ffd84a'); rect(3,9,10,1,'#c99a1a'); px(5,10,'#3a9ad8'); px(8,10,'#ffffff'); px(11,10,'#3a9ad8'); px(3,4,'#f4f0f8'); px(14,4,'#f4f0f8'); });
 for(const r of [
-  { out:546, n:1, need:[[I.ANCIENT_COIN,8],[I.GOLD_BAR,1]] },                                   // Lucky coin charm
+  { out:546, n:1, need:[[I.ANCIENT_COIN,8],[I.GOLD_BAR,1]] },                                   // Merchant's charm
   { out:I.DRAGON_COMPASS, n:1, need:[[I.OLD_COMPASS,1],[I.GOLD_BAR,2],[I.RUBY,1]] },
   { out:I.ASTROLABE, n:1, need:[[I.OLD_COMPASS,1],[I.SILVER_BAR,1],[I.SAPPHIRE,1]] },
   { out:ACC_IDS.tackle3, n:1, need:[[I.GOLDEN_FISH,2],[I.PEARL,3],[I.GOLD_BAR,2]] },            // Lucky lure
@@ -11848,7 +11852,7 @@ for(const r of [
     [I.CORAL]:'Sea treasure pulled up while fishing. Two make four coral blocks',
     [I.PEARL]:'Sea treasure from fishing and sea expeditions. Used in the gold rod, the Lucky lure and the Tidecrown',
     [I.BLACK_PEARL]:'A rare sea treasure. Used in the mythril rod, the Shadow cloak and the Tidecrown',
-    [I.ANCIENT_COIN]:'An old coin from the seabed. Eight and a gold bar make a Lucky coin charm',
+    [I.ANCIENT_COIN]:"An old coin from the seabed. Eight and a gold bar make a Merchant's charm",
     [I.SUNKEN_CROWN]:'A jewelled crown lost at sea. With pearls it becomes the Tidecrown charm',
     [I.OLD_COMPASS]:'A brass compass from a sunken ship. Craft it into a Dragon compass or an Astrolabe',
     [I.KRAKEN_INK]:'Dark ink from the deep sea. Two, a black pearl and silver make the Shadow cloak' };
@@ -14466,8 +14470,8 @@ function dragonChaseOk(d,p){ if(!p||p.dead||p.observer) return false; const lx=(
 // a hint on the boss bar's name line while it chases you
 { const _uh=updateHUD; updateHUD=function(dt,...a){ const r=_uh(dt,...a); try{ const d=ents.find(e=>e.kind==='dragon'&&!e.dead&&!e.raid&&e.awake&&!e.homing); const bb=$('#bossname');
       if(d&&bb&&player&&!inLairRoom(player)&&Math.abs(cxOf(d)-cxOf(player))<60*T){ const bar=$('#bossbar'); if(bar) bar.hidden=false; const txt=`${d.name||'Vorthax'} · your army here: ${Math.min(lairArmyNow(),DRAGON_ARMY)}/${DRAGON_ARMY}`; if(bb.textContent!==txt) bb.textContent=txt; } }catch(e){} return r; }; }
-// ===== Beta 0.9.137: a more detailed Vorthax (Kinard, 2026-10-19: "like the Dragonborn") =====
-// The dragon was a few flat rectangles. It is now drawn in the Dragonborn's red (DB_RED) with shading, bat wings (arm and
+// ===== Beta 0.9.137: a more detailed Vorthax (Kinard, 2026-10-19: "like the Scaleborn") =====
+// The dragon was a few flat rectangles. It is now drawn in the Scaleborn's red (DB_RED) with shading, bat wings (arm and
 // finger bones, scalloped skin) that beat with d.flap, horns and a brow ridge, a glowing slit eye, pale belly scales, a row
 // of spikes down the back and a swaying tail with an arrow tip, clawed legs (hanging when it perches, tucked in flight),
 // and the pink amulet gem on its chest. Drawn once per pose at world-pixel size on a small canvas (alpha snapped to whole
@@ -14478,7 +14482,7 @@ function dragonPose(d){ const ph=((d.flap%(Math.PI*2))+Math.PI*2)%(Math.PI*2); r
 function dragonArt(pose,mode,white){ const key=pose+'|'+mode+(white?'|w':''); let c=dragonSprites.get(key); if(c) return c;
   c=document.createElement('canvas'); c.width=DRG_W; c.height=DRG_H; const g=c.getContext('2d'); g.translate(DRG_OX,DRG_OY);
   const ph=pose/DRAGON_POSES*Math.PI*2, f=Math.sin(ph), sway=Math.sin(ph-0.9);
-  // a touch softer than the Dragonborn's red (Kinard: "toned down just a tiny bit"): the red mixed a fifth toward a dusky brown, gentler highlights
+  // a touch softer than the Scaleborn's red (Kinard: "toned down just a tiny bit"): the red mixed a fifth toward a dusky brown, gentler highlights
   const R0=typeof DB_RED==='string'?DB_RED:'#b8322a', mix=(a,b,t)=>'#'+[1,3,5].map(i=>Math.round(parseInt(a.substr(i,2),16)*(1-t)+parseInt(b.substr(i,2),16)*t).toString(16).padStart(2,'0')).join('');
   const R=mix(R0,'#6e4a44',0.2), sh=(k)=>typeof shadeHex==='function'?shadeHex(R,k):R;
   const body=R, mid=sh(-0.2), dark=sh(-0.42), deep=sh(-0.62), hi=sh(0.14), belly='#d9b88e', bellyD='#b8916a', horn='#ddd6c4', hornD='#ada38c', memN=sh(-0.14), memF=sh(-0.48), bone=sh(-0.64);
@@ -16799,6 +16803,33 @@ function cropPatches(onlyUnexplored,R,put){ R=R||Math.random; put=put||setTile; 
 // ---- 4. gathering pets bring half as much ----
 { const _ta=tamedAct; tamedAct=function(e,dt,...a){ if(e&&e.mode==='gather'&&(e.gT??15)-dt<=0){ e.gHalf=!e.gHalf; if(e.gHalf){ e.gT=20; } }
     return _ta(e,dt,...a); }; }
+// ===== Beta 0.9.139: items renamed after the trademark review, with looks of their own (Kinard, 2026-10-19) =====
+// Names that matched another game's items word for word are gone: Life/Mana crystal -> Heart/Spirit gem (cut gems, and gem
+// clusters in the world), Tackle box -> Bait pouch, Angler's earring -> Fisher's ring, Sprinter's anklet -> Fleetfoot sash,
+// Windrunner boots -> Windstep boots, Diving helmet -> Nautilus mask, Lucky coin -> Merchant's charm. Ids, kinds and effects
+// are unchanged, so saves, recipes and shops carry over. This file only repaints the pictures.
+{ const gem=(a,b,d)=>(rect,px)=>{ rect(5,3,6,1,a); rect(3,4,10,3,a); rect(4,7,8,2,a); rect(5,9,6,2,a); rect(6,11,4,1,a); rect(7,12,2,1,a);
+    rect(4,4,3,2,b); px(5,3,b); px(6,4,'#ffffff'); rect(8,7,3,2,d); rect(7,9,3,1,d); rect(7,10,2,1,d); };
+  customIcon(I.LIFE_CRYSTAL, gem('#ff3f6c','#ffd0dc','#b8203f'));
+  customIcon(I.MANA_CRYSTAL, gem('#4f8dff','#dce8ff','#2b5fc0'));
+  // the clusters in the world: three shards rising from a rock base
+  const cluster=(id,a,b,d)=>{ const g=TEX[id].getContext('2d'); g.clearRect(0,0,16,16); const rect=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); };
+    rect(3,13,10,3,'#5c5c66'); rect(3,13,10,1,'#8c8c96');
+    rect(7,2,3,11,a); rect(6,5,5,8,a); rect(2,7,3,6,a); rect(11,6,3,7,a);
+    rect(7,2,1,6,b); rect(8,1,1,1,b); rect(2,7,1,4,b); rect(11,6,1,4,b); rect(9,6,1,7,d); rect(4,10,1,3,d); rect(13,9,1,4,d); };
+  cluster(B.LIFE_CR,'#ff3f6c','#ffd0dc','#b8203f'); cluster(B.MANA_CR,'#4f8dff','#dce8ff','#2b5fc0');
+  // bait pouch: a drawstring leather bag with a worm peeking out
+  customIcon(ACC_IDS.tackle1,(rect,px)=>{ rect(4,6,8,8,'#7a4a24'); rect(5,5,6,1,'#7a4a24'); rect(4,13,8,1,'#4a2a12'); rect(5,7,2,5,'#9a6a3a');
+    rect(6,3,4,2,'#c89a5a'); rect(5,4,6,1,'#5a3a1a'); px(10,2,'#c89a5a'); px(11,1,'#c89a5a'); rect(7,9,3,2,'#d88a8a'); px(10,9,'#d88a8a'); });
+  // fisher's ring: a gold band with a sea glass stone
+  customIcon(ACC_IDS.tackle2,(rect,px)=>{ for(let a=0;a<28;a++){ const t=a/28*Math.PI*2; px(8+Math.round(Math.cos(t)*5),9+Math.round(Math.sin(t)*5),'#c8a040'); px(8+Math.round(Math.cos(t)*4),9+Math.round(Math.sin(t)*4),'#ffe066'); }
+    rect(6,2,4,3,'#39d5c9'); rect(7,1,2,1,'#39d5c9'); px(7,2,'#c2fff9'); });
+  // fleetfoot sash: a red sash worn across the chest, tied with a gold knot
+  customIcon(ACC_IDS.dash1,(rect,px)=>{ for(let i=0;i<10;i++){ rect(3+i,2+i,3,1,'#b8322a'); px(3+i,2+i,'#e05a4a'); } rect(11,11,4,3,'#c8a040'); rect(12,14,2,1,'#c8a040'); px(13,10,'#ffe066'); });
+  // nautilus mask: a shell over the face with a glass window and a strap
+  customIcon(I.DIVE_HELM,(rect,px)=>{ rect(1,7,14,2,'#4a3a2a'); rect(3,3,10,10,'#e8d2b0'); rect(4,2,8,1,'#e8d2b0'); rect(4,13,8,1,'#e8d2b0');
+    rect(9,4,3,7,'#c8a070'); rect(10,5,2,5,'#a8804a'); rect(10,6,1,2,'#8a6030'); rect(4,5,5,5,'#8fd3ff'); rect(5,6,2,2,'#ffffff'); });
+}
 // ===== Beta 0.9.137: woodcutters always replant, and saplings grow into trees by themselves (Kinard, 2026-10-19) =====
 // 1. A woodcutter who fells a tree plants a sapling of the same wood where it stood (the nearest open soil within 2
 //    blocks of the stump, when the stump cell itself is taken), so the woods they cut keep coming back.
