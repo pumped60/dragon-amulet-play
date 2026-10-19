@@ -1,0 +1,89 @@
+# Builds the Steam copy of Dragon Amulet (Windows, Mac and Linux / Steam Deck) whenever a new version of the game is
+# pushed, and uploads it to a test branch on Steam. Players only get it after the build is set live on the default
+# branch in Steamworks (one button), so nothing reaches them by itself.
+# Needs, in this repo's Settings > Secrets and variables > Actions:
+#   variable STEAM_APP_ID      the game's App ID from Steamworks (the upload is skipped while it is empty)
+#   variable STEAM_BRANCH      optional: the Steam branch to upload to (default "beta"; it must exist in Steamworks)
+#   secret   STEAM_USERNAME    the builder account's login name
+#   secret   STEAM_CONFIG_VDF  that account's config.vdf, base64 (see docs/STEAM.md in the game repo)
+# Depots: Windows = App ID + 1, Mac = App ID + 2, Linux = App ID + 3.
+name: Steam
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'desktop/**', '.github/workflows/steam.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - { os: windows-latest, target: '--win dir --x64', out: win-unpacked, depot: windows }
+          - { os: macos-latest, target: '--mac dir --universal', out: mac-universal, depot: mac }
+          - { os: ubuntu-latest, target: '--linux dir --x64', out: linux-unpacked, depot: linux }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Put the game and icon into the app
+        shell: bash
+        run: |
+          mkdir -p desktop/app desktop/build
+          cp index.html desktop/app/index.html
+          cp icon-512.png desktop/build/icon.png
+      - name: Build the Steam copy
+        working-directory: desktop
+        shell: bash
+        env: { CSC_IDENTITY_AUTO_DISCOVERY: 'false' }
+        run: |
+          npm pkg set version="$(grep -o 'Beta [0-9.]*' ../index.html | head -1 | cut -d' ' -f2)"
+          npm install --no-audit --no-fund
+          npm install --no-audit --no-fund --save-exact steamworks.js@0.4.0
+          npx electron-builder --publish never ${{ matrix.target }} \
+            -c.directories.output=steam-release \
+            -c.extraMetadata.dragonSteam=true \
+            -c.extraMetadata.steamAppId="${{ vars.STEAM_APP_ID }}"
+      - name: Sign the Mac app for this computer only (Apple chips need at least this)
+        if: runner.os == 'macOS'
+        working-directory: desktop/steam-release/mac-universal
+        run: codesign --force --deep --sign - "Dragon Amulet.app"
+      - name: Pack the files for the depot (a tar keeps the "can run" marks that artifacts drop)
+        shell: bash
+        run: |
+          mkdir -p content && cp -R "desktop/steam-release/${{ matrix.out }}" "content/${{ matrix.depot }}"
+          tar -czf "steam-${{ matrix.depot }}.tgz" -C content "${{ matrix.depot }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: steam-${{ matrix.depot }}
+          path: steam-${{ matrix.depot }}.tgz
+          if-no-files-found: error
+  upload:
+    needs: build
+    if: ${{ vars.STEAM_APP_ID != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the game version
+        id: v
+        run: echo "ver=$(grep -o 'Beta [0-9.]*' index.html | head -1 | cut -d' ' -f2)" >> "$GITHUB_OUTPUT"
+      - uses: actions/download-artifact@v4
+        with: { path: packed, merge-multiple: true }
+      - name: Unpack the depot folders
+        run: |
+          mkdir -p steam-content
+          for d in windows mac linux; do tar -xzf "packed/steam-$d.tgz" -C steam-content; done
+          ls -la steam-content
+      - uses: game-ci/steam-deploy@v3
+        with:
+          username: ${{ secrets.STEAM_USERNAME }}
+          configVdf: ${{ secrets.STEAM_CONFIG_VDF }}
+          appId: ${{ vars.STEAM_APP_ID }}
+          buildDescription: Beta ${{ steps.v.outputs.ver }}
+          rootPath: steam-content
+          depot1Path: windows
+          depot2Path: mac
+          depot3Path: linux
+          releaseBranch: ${{ vars.STEAM_BRANCH || 'beta' }}
