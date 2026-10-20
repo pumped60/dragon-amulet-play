@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792473332"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792473332"><link rel="manifest" href="manifest.webmanifest?v=1792473332"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792506622"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792506622"><link rel="manifest" href="manifest.webmanifest?v=1792506622"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.142</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.143</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.143</h3>
+    <p>The scene editor: on the title screen, Test world, then Scene editor opens a flat, empty world where everything is a sticker. Press Stickers and pick a block, a back wall, a slope, a plant or piece of furniture, a hero or soldier of any side, a villager, an enemy, an animal, a boss, Vorthax, a whole building or tree, or an item, then tap the world to put it there. Drag to paint blocks, right-click or use Erase to take things away. Select drags a box; Copy, Cut and Paste move it anywhere, as many times as you like; Fill box fills it with the block you hold; Undo and Redo go back and forward. Everyone stands still like a sticker until you press Move, and Reset puts every one back where you set it. Pick the time of day from the list, press Photo to save a picture, and Flatten all to start over. Nothing spawns, grows or attacks by itself. The scene saves in slot 6 and is back under Continue. Keys on a computer: P place, X erase, V select, O move, I stickers, Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+Z, Ctrl+Y, Delete.</p>
     <h3>New in Beta 0.9.142</h3>
     <p>Report a bug sends your report straight to the game's designer from any copy of the game: the web page, the phone, the apps. Write a line about what happened and press Send; the window thanks you and you carry on playing. A report written while offline is sent by itself the next time the game starts.</p>
     <h3>New in Beta 0.9.141</h3>
@@ -821,7 +823,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.142</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.143</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1081,7 +1083,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.142</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.143</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1100,7 +1102,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.142', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.143', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17487,6 +17489,323 @@ function drawBuilderFlags(){ if(!world||!player||typeof camX==='undefined') retu
     const name=f.by||'Hero'; ctx.font='6px "Press Start 2P", monospace'; ctx.textAlign='center'; ctx.textBaseline='alphabetic'; const w=Math.ceil(ctx.measureText(name).width)+6; ctx.fillStyle='rgba(22,18,31,.72)'; ctx.fillRect(px-w/2,base-38,w,10); ctx.fillStyle='#f4e8c8'; ctx.fillText(name,px,base-30); ctx.restore(); } }
 { const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ if(state!=='title') drawBuilderFlags(); }catch(e){} return r; }; }
 { const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d&&d.bl) mpBuildsIn(r,d.bl); }catch(err){} return out; }; }
+// ===== Beta 0.9.143: the scene editor =====
+// Kinard: "an editor mode where I can click and paste to create the exact scenes I would like, as if all items and
+// individuals are just stickers". Test world menu > Scene editor opens a flat, empty world in save slot 6. Everything
+// is a sticker: pick one from the Stickers window (blocks, back walls, slopes, plants and furniture, heroes and soldiers
+// of every side, villagers, enemies, animals, bosses, whole buildings and trees, items on the ground), then tap the
+// world to put it there. Drag to paint blocks. Select a box, copy, cut, paste it anywhere, as often as you like. Undo
+// and redo. Everyone stands still like a sticker until you press Move; Reset puts every sticker back where you set it.
+// Nothing spawns, attacks, grows or changes by itself; the time of day is whatever you pick. Photo saves the view as a PNG.
+// The stickers are kept in home.editor.ents (so the scene survives Save and Continue); the world itself saves as usual.
+const ED_SLOT=6;
+const ED={ tool:'place', brush:null, clip:null, sel:null, hover:null, drag:null, undo:[], redo:[], cat:'blocks', q:'', frozen:true, time:0.3, photo:false, team:'g', nextId:1 };
+function edOn(){ return !!(world&&home&&home.editor&&player); }
+
+// ---- the blank world ----
+function makeEditorWorld(cls){ curSlot=ED_SLOT; heroPick.state=null; heroPick.newCls=null;
+  newGame('small','g',CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'creative',kit:'bare',death:'keep',wx:'off',seed:4242});
+  home.editor={ v:1, ents:[], drops:[], G:0, time:0.3, frozen:true, nextId:1 }; edFlatten();
+  Object.assign(player,{observer:true,godKill:true,godFly:true,godCraft:true,flyOn:true}); player.inv=player.inv.map(()=>null); player.coins=0;
+  edEnter(); saveLocal(); toast('Scene editor: pick stickers with the Stickers button, tap the world to place them. Drag to paint, right-click or Erase to remove.',6); }
+function edFlatten(){ const G=Math.max(skyOff+40,seaY-10); home.editor.G=G;
+  for(let x=0;x<W;x++){ for(let y=0;y<H;y++){ const i=y*W+x; world[i]=y<G?0:y===G?B.GRASS:y<=G+5?B.DIRT:B.STONE; bg[i]=0; shape[i]=0; liq[i]=0; explored[i]=1; } oceanCol[x]=0; surf[x]=G; updateSkyTop(x); }
+  wetDeco=new Map(); wact=new Set(); chests={}; try{ fires.clear(); }catch(e){} try{ HIVES.clear(); }catch(e){} openDoors=[]; drops=[]; projs=[]; parts=[]; floats=[]; myStructures=[]; home.claimed=false; dragon=null;
+  ents=[player]; player.party=new Array(PARTY_MAX).fill(null); player.x=Math.floor(W/2)*T; player.y=G*T-player.h; player.vx=player.vy=0; player.bed=null; buildMap(); }
+
+// ---- entering and leaving ----
+function edEnter(){ if(!edOn()) return; document.body.classList.add('edmode'); ED.frozen=home.editor.frozen!==false; ED.time=home.editor.time??0.3; time=ED.time; ED.nextId=home.editor.nextId||1; rules.wx='off';
+  $('#btnGod').hidden=false; $('#btnSpeed').hidden=true; $('#btnFly').hidden=false; $('#edBar').hidden=false; edBarSync(); player.observer=true; player.godKill=true; player.godFly=true; }
+function edLeave(){ document.body.classList.remove('edmode'); $('#edBar').hidden=true; ED.sel=null; ED.drag=null; ED.hover=null; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(edOn()){ edRespawnAll(); edEnter(); } else edLeave(); }catch(e){ console.warn(e); } return r; }; }
+{ const _tt=toTitle; toTitle=function(...a){ try{ edLeave(); }catch(e){} return _tt(...a); }; }
+{ const _si=showIntro; showIntro=function(...a){ if(curSlot===ED_SLOT) return; return _si(...a); }; }   // no story card over the empty world
+
+// ---- nothing happens by itself in the editor ----
+{ const quiet=(get,set)=>{ try{ const f=get(); if(typeof f!=='function') return; const w=function(...a){ if(edOn()) return; return f.apply(this,a); }; w.toString=()=>f.toString(); set(w); }catch(e){} };   // toString passes through: the smoke test reads some of these functions' source
+  quiet(()=>spawnMonsters,v=>{ spawnMonsters=v; }); quiet(()=>spawnAnimals,v=>{ spawnAnimals=v; }); quiet(()=>spawnSea,v=>{ spawnSea=v; }); quiet(()=>spawnUnder,v=>{ spawnUnder=v; });
+  quiet(()=>spawnForest,v=>{ spawnForest=v; }); quiet(()=>spawnDesert,v=>{ spawnDesert=v; }); quiet(()=>spawnScouts,v=>{ spawnScouts=v; }); quiet(()=>spawnSkyKnights,v=>{ spawnSkyKnights=v; });
+  quiet(()=>spawnRaptors,v=>{ spawnRaptors=v; }); quiet(()=>respawns,v=>{ respawns=v; }); quiet(()=>growBases,v=>{ growBases=v; }); quiet(()=>factionTick,v=>{ factionTick=v; });
+  quiet(()=>colonyTick,v=>{ colonyTick=v; }); quiet(()=>navalTick,v=>{ navalTick=v; }); quiet(()=>newDayEvents,v=>{ newDayEvents=v; }); quiet(()=>raidMorning,v=>{ raidMorning=v; });
+  quiet(()=>grassTick,v=>{ grassTick=v; }); quiet(()=>bugSpawnTick,v=>{ bugSpawnTick=v; }); quiet(()=>helperCheck,v=>{ helperCheck=v; }); quiet(()=>homesTick,v=>{ homesTick=v; });
+  quiet(()=>catchUp,v=>{ catchUp=v; }); quiet(()=>campRefillTick,v=>{ campRefillTick=v; }); quiet(()=>chiefBearTick,v=>{ chiefBearTick=v; }); quiet(()=>gobChiefTick,v=>{ gobChiefTick=v; });
+  quiet(()=>enemyBallistaTick,v=>{ enemyBallistaTick=v; }); quiet(()=>achTick,v=>{ achTick=v; }); quiet(()=>skinAll,v=>{ skinAll=v; }); quiet(()=>layAllPaths,v=>{ layAllPaths=v; });
+  quiet(()=>evenTorches,v=>{ evenTorches=v; }); quiet(()=>lightRooms,v=>{ lightRooms=v; }); quiet(()=>legacyFixes,v=>{ legacyFixes=v; }); quiet(()=>krakenTick,v=>{ krakenTick=v; });
+  quiet(()=>engineerCheck,v=>{ engineerCheck=v; }); quiet(()=>hiveMorning,v=>{ hiveMorning=v; }); quiet(()=>steamCheck,v=>{ steamCheck=v; }); quiet(()=>weatherSync,v=>{ weatherSync=v; });
+  quiet(()=>lodgeGrowTick,v=>{ lodgeGrowTick=v; }); quiet(()=>workerStuckTick,v=>{ workerStuckTick=v; }); quiet(()=>minerTripTick,v=>{ minerTripTick=v; }); quiet(()=>towerCapTick,v=>{ towerCapTick=v; });
+  quiet(()=>captureTick,v=>{ captureTick=v; }); quiet(()=>capTick,v=>{ capTick=v; }); quiet(()=>repairTick,v=>{ repairTick=v; }); quiet(()=>roofWaitTick,v=>{ roofWaitTick=v; });
+  quiet(()=>fixupTick,v=>{ fixupTick=v; }); quiet(()=>siegeDay,v=>{ siegeDay=v; });
+  quiet(()=>commanderTick,v=>{ commanderTick=v; }); quiet(()=>spawnFrost,v=>{ spawnFrost=v; }); quiet(()=>spawnRuinNight,v=>{ spawnRuinNight=v; }); quiet(()=>spawns,v=>{ spawns=v; });
+  quiet(()=>hungerTick,v=>{ hungerTick=v; }); quiet(()=>questTick,v=>{ questTick=v; }); quiet(()=>progressTick,v=>{ progressTick=v; }); quiet(()=>warCheck,v=>{ warCheck=v; }); quiet(()=>warlordEconomy,v=>{ warlordEconomy=v; });
+  quiet(()=>scoutsReturn,v=>{ scoutsReturn=v; }); quiet(()=>captureOutposts,v=>{ captureOutposts=v; }); quiet(()=>sunBurn,v=>{ sunBurn=v; }); quiet(()=>growPlants,v=>{ growPlants=v; }); quiet(()=>updateMiners,v=>{ updateMiners=v; });
+  quiet(()=>mpSpawnAround,v=>{ mpSpawnAround=v; }); quiet(()=>boatArchers,v=>{ boatArchers=v; }); quiet(()=>deckGuns,v=>{ deckGuns=v; }); }
+// stickers stand still: every creature is skipped like a passenger aboard a ship while the scene is frozen
+{ const _u=update; update=function(dt,...a){ if(!edOn()) return _u(dt,...a);
+    const fr=ED.frozen, held=[]; if(fr) for(const e of ents){ if(e===player||e.dead) continue; held.push([e,e.aboard]); e.aboard=true; }
+    const r=_u(dt,...a); for(const [e,ab] of held) e.aboard=ab; time=ED.time; if(fr) projs=projs.filter(p=>p.team===player.team||p.src===player); return r; }; }
+{ const _ud=updateDragon; updateDragon=function(d,dt,...a){ if(edOn()&&ED.frozen){ d.flap+=dt*6; d.t+=dt; d.vx=d.vy=0; return; } return _ud(d,dt,...a); }; }
+{ const _bp=bossPhaseTick; bossPhaseTick=function(...a){ if(edOn()&&ED.frozen) return; return _bp(...a); }; }
+{ const _ud=updateDrops; updateDrops=function(...a){ if(edOn()&&ED.frozen) return; return _ud(...a); }; }
+{ const _cc=typeof collapseCheck==='function'?collapseCheck:null; if(_cc) collapseCheck=function(...a){ if(edOn()) return; return _cc(...a); }; }
+
+// ---- the stickers that live in the scene (records in home.editor.ents, the creatures are their actors) ----
+const ED_BOSS={ skyranger:e=>({hp:5000,maxHp:5000,skyBoss:true,bigBoss:true,def:12,dmgMul:2.4,speed:e.speed*1.6,name:'The Sky Ranger'}),
+  magmalord:e=>({hp:6500,maxHp:6500,magmaLord:true,bigBoss:true,big:1.5,w:18,h:42,def:16,dmgMul:1.6,name:'The Magma Knight'}),
+  archmage:e=>({hp:3000,maxHp:3000,boss:true,dmgMul:3,name:'The Archmage'}), goblin_chief:e=>({hp:900,maxHp:900,name:'The Goblin Beastmaster'}), ogre_king:e=>({hp:13000,maxHp:13000,bigBoss:true,name:'Grukk the Ogre King'}) };
+function edMake(r){ let e=null; const team=r.team||'g';
+  try{
+    if(r.t==='human'){ e=makeHuman(team,r.k,0,0,'guard',{cx:0,gy:0,x0:0,x1:0,f:team},false,r.name); e.hold=true; e.hp=e.maxHp=Math.round(CLASSES[r.k].npcHp*1.1); }
+    else if(r.t==='villager'){ const tx=Math.floor(r.x/T), ty=Math.floor(r.y/T); e=makeVillager(team,{x0:tx-3,x1:tx+3,gy:ty,role:r.k}); e.name=r.name||(typeof villagerName==='function'?null:null);
+      if(r.k==='drifter'){ Object.assign(e,{kind:'drifter',cls:'drifter',team:'w',hx:tx,name:e.name||rname(),role:'drifter'}); } if(r.k==='miner'){ e.mi=0; e.minerT=1e9; e.phase='up'; } if(r.k==='woodcutter'||r.k==='farmer') e.vjob=r.k; }
+    else if(r.t==='monster'){ e=makeMonster(r.k,0,0); e.elite=false; e.hp=e.maxHp=Math.round(MON[r.k].hp); e.dmg=MON[r.k].dmg; e.speed=MON[r.k].speed; e.coins=MON[r.k].coins||0; }
+    else if(r.t==='animal'){ e=makeAnimal(r.k,0,0); if(r.baby) e.baby=true; if(r.tamed){ e.tamed=true; e.mode='stay'; } }
+    else if(r.t==='machine'){ e=makeMachine(r.k,0,0); e.team=player.team; }
+    else if(r.t==='dragon'){ e=makeDragon(30000); e.awake=true; e.raid=null; dragon=e; }
+  }catch(err){ console.warn('sticker failed',r,err); return null; }
+  if(!e) return null; const B=ED_BOSS[r.k]; if(B&&(r.t==='human'||r.t==='monster')) Object.assign(e,B(e));
+  e.ed=r; e.edId=r.id; e.facing=r.f||1; edPlaceAt(e,r.x,r.y); ents.push(e); return e; }
+function edPlaceAt(e,cx,fy){ e.x=cx-e.w/2; e.y=fy-e.h; e.vx=e.vy=0; e.grounded=true; }
+function edActor(id){ return ents.find(e=>e.edId===id&&!e.dead); }
+function edAddRecord(r){ r.id=ED.nextId++; home.editor.nextId=ED.nextId; home.editor.ents.push(r); return edMake(r); }
+function edRemoveRecord(id){ const L=home.editor.ents; const i=L.findIndex(r=>r.id===id); const r=i>=0?L.splice(i,1)[0]:null; const e=edActor(id); if(e){ e.dead=true; if(e===dragon) dragon=null; } return r; }
+function edRestoreRecord(r){ const L=home.editor.ents; if(!L.some(o=>o.id===r.id)) L.push(r); if(!edActor(r.id)) edMake(r); }
+function edRespawnAll(){ if(!edOn()) return; for(const e of ents) if(e!==player) e.dead=true; ents=ents.filter(e=>e===player); dragon=null; projs=[]; parts=[]; floats=[]; drops=[];
+  for(const r of home.editor.ents) edMake(r); for(const d of home.editor.drops||[]) drops.push({x:d.x,y:d.y,vx:0,vy:0,id:d.id,n:d.n||1,coins:d.coins||0,age:0}); }
+function edSaveDrops(){ if(edOn()) home.editor.drops=drops.map(d=>({x:Math.round(d.x),y:Math.round(d.y),id:d.id,n:d.n,coins:d.coins||0})); }
+{ const _sz=serialize; serialize=function(...a){ try{ if(edOn()){ edSaveDrops(); home.editor.frozen=ED.frozen; home.editor.time=ED.time; } }catch(e){} return _sz(...a); }; }
+
+// ---- cells: writing with undo ----
+function edCell(i){ return [i,world[i],bg[i],shape[i],liq[i]]; }
+function edWriteCell(i,id,bgv,sh,lq){ const x=i%W, y=(i-x)/W; if(world[i]!==id){ setTile(x,y,id); } bg[i]=bgv; shape[i]=sh; liq[i]=lq; if(wetDeco&&wetDeco.size&&!lq) wetDeco.delete(i); updateSkyTop(x); mapPixel(x,y); wake(x,y); }
+function edSnap(x0,y0,x1,y1){ const L=[]; for(let y=Math.max(0,y0);y<=Math.min(H-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++) L.push(edCell(y*W+x)); return L; }
+function edDiff(snap){ const out=[]; for(const c of snap){ const i=c[0]; if(world[i]!==c[1]||bg[i]!==c[2]||shape[i]!==c[3]||liq[i]!==c[4]) out.push([i,c[1],c[2],c[3],c[4],world[i],bg[i],shape[i],liq[i]]); } return out; }
+function edPush(op){ if(!op.cells.length&&!op.add.length&&!op.rem.length&&!op.addD.length&&!op.remD.length&&!op.chests) return; ED.undo.push(op); if(ED.undo.length>80) ED.undo.shift(); ED.redo=[]; edBarSync(); }
+function edOp(){ return { cells:[], add:[], rem:[], addD:[], remD:[], chests:null }; }
+function edApply(op,back){ for(const c of op.cells){ if(back) edWriteCell(c[0],c[1],c[2],c[3],c[4]); else edWriteCell(c[0],c[5],c[6],c[7],c[8]); }
+  if(back){ for(const r of op.add) edRemoveRecord(r.id); for(const r of op.rem) edRestoreRecord(r); for(const d of op.addD){ const k=drops.indexOf(d); if(k>=0) drops.splice(k,1); } for(const d of op.remD) if(!drops.includes(d)) drops.push(d); if(op.chests) for(const k in op.chests.before){ if(op.chests.before[k]) chests[k]=op.chests.before[k]; else delete chests[k]; } }
+  else { for(const r of op.rem) edRemoveRecord(r.id); for(const r of op.add) edRestoreRecord(r); for(const d of op.remD){ const k=drops.indexOf(d); if(k>=0) drops.splice(k,1); } for(const d of op.addD) if(!drops.includes(d)) drops.push(d); if(op.chests) for(const k in op.chests.after){ if(op.chests.after[k]) chests[k]=op.chests.after[k]; else delete chests[k]; } }
+  edSaveDrops(); }
+function edUndo(){ const op=ED.undo.pop(); if(!op){ toast('Nothing to undo',1); return; } edApply(op,true); ED.redo.push(op); edBarSync(); }
+function edRedo(){ const op=ED.redo.pop(); if(!op){ toast('Nothing to redo',1); return; } edApply(op,false); ED.undo.push(op); edBarSync(); }
+
+// ---- placing one sticker at a cell ----
+function edFeet(tx,ty){ return { x:tx*T+T/2, y:isSolid(tx,ty)?ty*T:(ty+1)*T }; }
+function edPutBlock(tx,ty,id){ if(tx<0||tx>=W||ty<0||ty>=H) return; const def=ITEMS[id]||{}; const ds=DOOR_SET_OF[id];
+  if(def.kind==='wall'){ const w=WALLS[id]; if(w==null) return; const i=ty*W+tx; bg[i]=w; mapPixel(tx,ty); return; }
+  if(def.kind==='shape'){ const rightSide=tx*T+8>cxOf(player); setTile(tx,ty,def.base); shape[ty*W+tx]=def.shape==='slab'?1:def.shape==='slope'?(rightSide?2:3):(rightSide?4:5); mapPixel(tx,ty); return; }   // the same sides as placing by hand: the slope faces away from you
+  if(ds&&ds.base===id){ setTile(tx,ty,id); setTile(tx,ty-1,ds.top); return; }
+  setTile(tx,ty,id); if(BIG_ST[id]) attachParts(tx,ty); }
+function edUseBrush(tx,ty){ const b=ED.brush; if(!b) return false; const op=edOp();
+  if(b.t==='block'){ const snap=edSnap(tx-2,ty-2,tx+2,ty+2); edPutBlock(tx,ty,b.id); op.cells=edDiff(snap); edPush(op); return true; }
+  if(b.t==='stamp'){ const box=b.box(tx,ty); const snap=edSnap(box[0],box[1],box[2],box[3]); const before={}; for(const k in chests) before[k]=chests[k]; try{ b.stamp(tx,ty); }catch(e){ console.warn(e); toast('That could not be built here',1.5); }
+    for(let x=box[0];x<=box[2];x++) if(x>=0&&x<W) updateSkyTop(x); for(let y=box[1];y<=box[3];y++) for(let x=box[0];x<=box[2];x++) if(x>=0&&x<W&&y>=0&&y<H){ mapPixel(x,y); wake(x,y); }
+    op.cells=edDiff(snap); const after={}; for(const k in chests) after[k]=chests[k]; if(JSON.stringify(Object.keys(before))!==JSON.stringify(Object.keys(after))) op.chests={before,after};
+    for(const e of ents) if(e!==player&&!e.dead&&!e.ed&&e.kind!=='machine'){ e.dead=true; }   // builders' own villagers or guards never come with a stamp
+    edPush(op); return true; }
+  if(b.t==='drop'){ const f=edFeet(tx,ty); const d={x:f.x,y:f.y-6,vx:0,vy:0,id:b.id,n:b.n||1,coins:0,age:0}; drops.push(d); op.addD.push(d); edSaveDrops(); edPush(op); return true; }
+  const f=edFeet(tx,ty); const r={t:b.t,k:b.k,team:b.team||ED.team,x:f.x,y:f.y,f:player&&f.x<cxOf(player)?1:-1,baby:b.baby||false,tamed:b.tamed||false}; if(b.team==='player') r.team=player.team;
+  const e=edAddRecord(r); if(!e){ edRemoveRecord(r.id); return false; } op.add.push(r); edPush(op); return true; }
+function edEntityAt(ax,ay){ let best=null, bd=1e9; for(const e of ents){ if(e===player||e.dead) continue; if(ax<e.x-3||ax>e.x+e.w+3||ay<e.y-3||ay>e.y+e.h+3) continue; const d=Math.hypot(cxOf(e)-ax,cyOf(e)-ay); if(d<bd){ bd=d; best=e; } } return best; }
+function edDropAt(ax,ay){ return drops.find(d=>Math.hypot(d.x-ax,d.y-ay)<10)||null; }
+function edEraseAt(tx,ty,ax,ay){ const op=edOp(); const e=edEntityAt(ax,ay);
+  if(e){ if(e.ed){ const r=edRemoveRecord(e.edId); if(r) op.rem.push(r); } else e.dead=true; edPush(op); return true; }
+  const d=edDropAt(ax,ay); if(d){ drops.splice(drops.indexOf(d),1); op.remD.push(d); edSaveDrops(); edPush(op); return true; }
+  if(tx<0||tx>=W||ty<0||ty>=H) return false; const i=ty*W+tx; const snap=edSnap(tx-2,ty-2,tx+2,ty+2);
+  if(world[i]){ const id=world[i]; if(DOOR_IDS.has(id)){ const by=doorBottom(tx,ty); setTile(tx,by,0); setTile(tx,by-1,0); openDoors=openDoors.filter(d=>!(d.x===tx&&d.y===by)); }
+    else if(id===B.PART){ for(const [dx,dy] of [[-1,0],[0,1],[-1,1],[1,0],[0,-1],[1,-1],[-1,-1],[1,1]]){ const sx=tx+dx, sy=ty+dy; const sid=tileAt(sx,sy); if(BIG_ST[sid]&&stationCells(sx,sy,sid).some(([a,b])=>a===tx&&b===ty)){ for(const [a,b] of stationCells(sx,sy,sid)) setTile(a,b,0); setTile(sx,sy,0); delete chests[sx+','+sy]; break; } } setTile(tx,ty,0); }
+    else { if(BIG_ST[id]) for(const [a,b] of stationCells(tx,ty,id)) if(tileAt(a,b)===B.PART) setTile(a,b,0); setTile(tx,ty,0); if(isChestId(id)) delete chests[tx+','+ty]; } }
+  else if(bg[i]){ bg[i]=0; mapPixel(tx,ty); } else if(liq[i]){ liq[i]=0; mapPixel(tx,ty); } else return false;
+  op.cells=edDiff(snap); edPush(op); return true; }
+
+// ---- selection, copy, cut, paste ----
+function edNormSel(a,b){ return { x0:Math.min(a.x,b.x), y0:Math.min(a.y,b.y), x1:Math.max(a.x,b.x), y1:Math.max(a.y,b.y) }; }
+function edCopy(){ const s=ED.sel; if(!s){ toast('Drag a box with Select first',1.5); return; } const w=s.x1-s.x0+1, h=s.y1-s.y0+1, cells=[];
+  for(let y=s.y0;y<=s.y1;y++) for(let x=s.x0;x<=s.x1;x++){ const i=y*W+x; cells.push([world[i],bg[i],shape[i],liq[i]]); }
+  const ch={}; for(const k in chests){ const [cx,cy]=k.split(',').map(Number); if(cx>=s.x0&&cx<=s.x1&&cy>=s.y0&&cy<=s.y1) ch[(cx-s.x0)+','+(cy-s.y0)]=JSON.parse(JSON.stringify(chests[k])); }
+  const px0=s.x0*T, py0=s.y0*T, px1=(s.x1+1)*T, py1=(s.y1+1)*T;
+  const es=home.editor.ents.filter(r=>r.x>=px0&&r.x<px1&&r.y>py0&&r.y<=py1).map(r=>Object.assign({},r,{id:0,x:r.x-px0,y:r.y-py0}));
+  const ds=drops.filter(d=>d.x>=px0&&d.x<px1&&d.y>=py0&&d.y<py1).map(d=>({x:d.x-px0,y:d.y-py0,id:d.id,n:d.n,coins:d.coins||0}));
+  ED.clip={w,h,cells,chests:ch,ents:es,drops:ds}; toast(`Copied ${w} by ${h} blocks, ${es.length} ${es.length===1?'creature':'creatures'}`,1.5); edBarSync(); }
+function edClearSel(cut){ const s=ED.sel; if(!s) return; const op=edOp(); const snap=edSnap(s.x0,s.y0,s.x1,s.y1); const px0=s.x0*T, py0=s.y0*T, px1=(s.x1+1)*T, py1=(s.y1+1)*T;
+  for(let y=s.y0;y<=s.y1;y++) for(let x=s.x0;x<=s.x1;x++){ const i=y*W+x; if(world[i]||bg[i]||shape[i]||liq[i]) edWriteCell(i,0,0,0,0); }
+  const before={}, after={}; let chg=false; for(const k in chests){ const [cx,cy]=k.split(',').map(Number); if(cx>=s.x0&&cx<=s.x1&&cy>=s.y0&&cy<=s.y1){ before[k]=chests[k]; after[k]=null; delete chests[k]; chg=true; } } if(chg) op.chests={before,after};
+  for(const r of home.editor.ents.slice()) if(r.x>=px0&&r.x<px1&&r.y>py0&&r.y<=py1){ edRemoveRecord(r.id); op.rem.push(r); }
+  for(const d of drops.slice()) if(d.x>=px0&&d.x<px1&&d.y>=py0&&d.y<py1){ drops.splice(drops.indexOf(d),1); op.remD.push(d); }
+  op.cells=edDiff(snap); edSaveDrops(); edPush(op); toast(cut?'Cut':'Cleared',1); }
+function edCut(){ if(!ED.sel) return; edCopy(); edClearSel(true); }
+function edPaste(tx,ty){ const c=ED.clip; if(!c){ toast('Nothing copied yet',1.5); return; } const op=edOp(); const snap=edSnap(tx,ty,tx+c.w-1,ty+c.h-1);
+  let k=0; for(let y=0;y<c.h;y++) for(let x=0;x<c.w;x++,k++){ const X=tx+x, Y=ty+y; if(X<0||X>=W||Y<0||Y>=H) continue; const v=c.cells[k]; edWriteCell(Y*W+X,v[0],v[1],v[2],v[3]); }
+  const before={}, after={}; let chg=false; for(const key in c.chests){ const [dx,dy]=key.split(',').map(Number); const kk=(tx+dx)+','+(ty+dy); before[kk]=chests[kk]||null; after[kk]=JSON.parse(JSON.stringify(c.chests[key])); chests[kk]=after[kk]; chg=true; } if(chg) op.chests={before,after};
+  for(const r0 of c.ents){ const r=Object.assign({},r0,{x:r0.x+tx*T,y:r0.y+ty*T}); const e=edAddRecord(r); if(e) op.add.push(r); else edRemoveRecord(r.id); }
+  for(const d0 of c.drops){ const d={x:d0.x+tx*T,y:d0.y+ty*T,vx:0,vy:0,id:d0.id,n:d0.n||1,coins:d0.coins||0,age:0}; drops.push(d); op.addD.push(d); }
+  op.cells=edDiff(snap); edSaveDrops(); edPush(op); ED.sel={x0:tx,y0:ty,x1:tx+c.w-1,y1:ty+c.h-1}; }
+function edFillSel(){ const s=ED.sel, b=ED.brush; if(!s) return; if(!b||b.t!=='block'){ toast('Pick a block sticker, then Fill',1.5); return; } const op=edOp(); const snap=edSnap(s.x0,s.y0,s.x1,s.y1);
+  for(let y=s.y0;y<=s.y1;y++) for(let x=s.x0;x<=s.x1;x++) edPutBlock(x,y,b.id); op.cells=edDiff(snap); edPush(op); }
+function edResetScene(){ for(const e of ents) if(e!==player&&!e.dead&&(e.ed||e.kind!=='machine')) e.dead=true; ents=ents.filter(e=>e===player||(!e.dead)); dragon=null; projs=[]; parts=[]; floats=[]; for(const r of home.editor.ents) edMake(r); drops=[]; for(const d of home.editor.drops||[]) drops.push({x:d.x,y:d.y,vx:0,vy:0,id:d.id,n:d.n||1,coins:d.coins||0,age:0}); toast('Every sticker is back in its place',1.5); }
+function edMoveRecord(e,cx,fy){ edPlaceAt(e,cx,fy); if(e.ed){ e.ed.x=Math.round(cx); e.ed.y=Math.round(fy); } }
+
+// ---- the catalogue ----
+function edIconOf(id){ try{ return iconUrl(id); }catch(e){ return ''; } }
+function edBlank(c){ try{ const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data; for(let i=3;i<d.length;i+=4) if(d[i]>40) return false; return true; }catch(e){ return false; } }
+const ED_GLYPH={ hawk:'🦅', eagle:'🦅', owl:'🦉', bird:'🐦', dragon:'🐉', ogre:'👹', ogre_king:'👹' };
+function edFigUrl(e){ try{ const o=specOf(e); const s=sprite(humanKey(o)+'|ed',SW,SH,g=>drawHumanFig(g,o)); const c=mkCanvas(28,40), g=c.getContext('2d'); g.drawImage(s.n,SCX-14,SFY-40,28,40,0,0,28,40); return edBlank(c)?'':c.toDataURL(); }catch(err){ return ''; } }
+function edAnimalUrl(k,baby){ try{ const e=makeAnimal(k,0,0); if(baby) e.baby=true; const s=animalSprite(e); const src=s.n; const c=mkCanvas(40,40), g=c.getContext('2d'); g.imageSmoothingEnabled=false; const sc=Math.min(40/src.width,40/src.height,2); const w=Math.round(src.width*sc), h=Math.round(src.height*sc); g.drawImage(src,(40-w)/2,40-h,w,h); return edBlank(c)?'':c.toDataURL(); }catch(err){ return ''; } }
+function edSeaUrl(k){ try{ const e=makeMonster(k,0,0); const s=seaSprite(e); const src=s.n; const c=mkCanvas(40,40), g=c.getContext('2d'); const sc=Math.min(40/src.width,40/src.height,2); const w=Math.round(src.width*sc), h=Math.round(src.height*sc); g.drawImage(src,(40-w)/2,(40-h)/2,w,h); return c.toDataURL(); }catch(err){ return ''; } }
+const ED_CATS=[['blocks','Blocks'],['decor','Plants, furniture'],['walls','Back walls'],['shapes','Slopes'],['people','People'],['villagers','Villagers'],['enemies','Enemies'],['animals','Animals'],['bosses','Bosses'],['buildings','Buildings, trees'],['items','Items']];
+const ED_TEAMS=[['player','Yours'],['g','Green'],['b','Blue'],['r','Red'],['s','Sky'],['m','Magma'],['a','Tower']];
+let edCatCache=null;
+function edCatalog(){ if(edCatCache) return edCatCache; const C={blocks:[],decor:[],walls:[],shapes:[],people:[],villagers:[],enemies:[],animals:[],bosses:[],buildings:[],items:[]};
+  const bossMon=new Set(['goblin_chief','ogre_king']);
+  for(const idS of Object.keys(ITEMS)){ const id=+idS, d=ITEMS[id]; if(!d||!d.name) continue;
+    if(d.kind==='block'){ if(id===B.PART) continue; const bl=BLOCKS[id]; (bl&&bl.solid&&!BIG_ST[id]&&!DOOR_SET_OF[id]?C.blocks:C.decor).push({t:'block',id,name:d.name,img:edIconOf(id)}); }
+    else if(d.kind==='wall'){ if(WALLS[id]!=null) C.walls.push({t:'block',id,name:d.name,img:edIconOf(id)}); }
+    else if(d.kind==='shape') C.shapes.push({t:'block',id,name:d.name,img:edIconOf(id)});
+    else if(!['open','machine'].includes(d.kind)&&!(typeof DB_OF!=='undefined'&&DB_OF[id])) C.items.push({t:'drop',id,name:d.name,img:edIconOf(id)}); }
+  for(const k of CLS_KEYS.concat(['dragon'])) if(CLASSES[k]) C.people.push({t:'human',k,name:CLASSES[k].name,look:CLASSES[k].look||k});
+  for(const [k,n] of [['skyarcher','Sky archer'],['skywizard','Sky wizard'],['skymace','Sky macebearer'],['magmaknight','Magma knight'],['magmaarcher','Magma archer'],['magmawizard','Magma wizard'],['magmamace','Magma macebearer']]) if(CLASSES[k]) C.people.push({t:'human',k,name:n,team:k.startsWith('sky')?'s':'m',look:LOOKMAP[k]||k});
+  for(const [k,n] of [['quarter','Quartermaster'],['smith','Blacksmith'],['cook','Cook'],['herbalist','Herbalist'],['fisher','Fisher'],['jeweler','Jeweler'],['trader','Shipwright'],['engineer','War engineer'],['demo','Demolitionist'],['trainer','Beast trainer'],['recruiter','Recruiter'],['foreman','Mine foreman'],['miner','Miner'],['woodcutter','Woodcutter'],['farmer','Farmer'],['forester','Head woodcutter'],['headfarmer','Head farmer'],['drifter','Wanderer']])
+    if(k==='demo'&&!SHOPS.demo) continue; else C.villagers.push({t:'villager',k,name:n});
+  for(const k of Object.keys(MON)){ const m=MON[k]; const row={t:'monster',k,name:k.replace(/_/g,' ').replace(/^./,c=>c.toUpperCase()),sea:!!m.sea}; (bossMon.has(k)?C.bosses:C.enemies).push(row); }
+  for(const k of Object.keys(ANIMALS)){ const n=k.replace(/_/g,' ').replace(/^./,c=>c.toUpperCase()); C.animals.push({t:'animal',k,name:n}); C.animals.push({t:'animal',k,name:'Baby '+n.toLowerCase(),baby:true}); }
+  for(const [k,n,team] of [['skyranger','The Sky Ranger','s'],['magmalord','The Magma Knight','m'],['archmage','The Archmage','a']]) if(CLASSES[k]) C.bosses.push({t:'human',k,name:n,team,look:LOOKMAP[k]||k});
+  C.bosses.push({t:'dragon',k:'dragon',name:'Vorthax the dragon'});
+  for(const k of Object.keys(MACHINES)) C.buildings.push({t:'machine',k,name:MACHINES[k].name,img:edIconOf(MACHINES[k].item)});
+  for(const bp of BLUEPRINTS) C.buildings.push({t:'stamp',k:'bp:'+bp.id,name:bp.name,img:BP_ICON[bp.id]||'',box:(x,y)=>[x+bp.fx0-2,y-bp.fh-3,x+bp.fx1+2,y+4],stamp:(x,y)=>{ const g=edGround(x,y); placeBuilding(bp,x,g); }});
+  C.buildings.push({t:'stamp',k:'castle',name:'Your castle',img:edIconOf(B.STONE_BLOCK),box:(x,y)=>[x-21,y-50,x+20,y+4],stamp:(x,y)=>{ const g=edGround(x,y); const put=(a,b,id)=>setTile(a,b,id), bput=(a,b,v)=>{ if(a>=0&&a<W&&b>=0&&b<H) bg[b*W+a]=v; }; buildCastle(player.team,x,put,bput,g); try{ buildCastleUpper(put,bput,x,g,player.team); }catch(e){} }});
+  for(const [f,n] of [['b','Blue castle'],['r','Red castle']]) C.buildings.push({t:'stamp',k:'castle:'+f,name:n,img:edIconOf(B.STONE_BLOCK),box:(x,y)=>[x-21,y-50,x+20,y+4],stamp:(x,y)=>{ const g=edGround(x,y); const put=(a,b,id)=>setTile(a,b,id), bput=(a,b,v)=>{ if(a>=0&&a<W&&b>=0&&b<H) bg[b*W+a]=v; }; buildCastle(f,x,put,bput,g); try{ buildCastleUpper(put,bput,x,g,f); }catch(e){} }});
+  for(const [role,n] of [['smith','Blacksmith house'],['cook','Cook house'],['herbalist','Herbalist house'],['fisher','Fisher house'],['jeweler','Jeweler house'],['trader','Shipwright house'],[null,'Plain house']]) C.buildings.push({t:'stamp',k:'house:'+role,name:n,img:edIconOf(B.PLANK),box:(x,y)=>[x-3,y-20,x+11,y+4],stamp:(x,y)=>{ const g=edGround(x,y); const put=(a,b,id)=>setTile(a,b,id), bput=(a,b,v)=>{ if(a>=0&&a<W&&b>=0&&b<H) bg[b*W+a]=v; }; buildHouse(x,g,role,banOf(player.team),put,bput); }});
+  C.buildings.push({t:'stamp',k:'watchtower',name:'Stone watchtower (wild)',img:edIconOf(B.STONE),box:(x,y)=>[x-7,y-30,x+7,y+4],stamp:(x,y)=>{ const g=edGround(x,y); surf[x]=g; buildWatchtower(x,B.STONE,18,1); }});
+  for(const k of Object.keys(WOODS)){ const n=k.replace(/^./,c=>c.toUpperCase()); for(const [sz,sn] of [[1,'small'],[2,''],[3,'big']]) C.buildings.push({t:'stamp',k:'tree:'+k+':'+sz,name:(n+' tree '+sn).trim(),img:edIconOf(WOODS[k].leaf),box:(x,y)=>[x-12,y-36,x+12,y+2],stamp:(x,y)=>{ const g=edGround(x,y); growTree(x,g,sz,Math.random,k); }}); }
+  C.buildings.push({t:'stamp',k:'pine',name:'Pine tree',img:edIconOf(B.SPRUCE_LOG),box:(x,y)=>[x-6,y-16,x+6,y+2],stamp:(x,y)=>{ const g=edGround(x,y); growPine(x,g,Math.random); }});
+  C.buildings.push({t:'stamp',k:'birch',name:'Birch tree',img:edIconOf(B.BIRCH_LOG),box:(x,y)=>[x-6,y-12,x+6,y+2],stamp:(x,y)=>{ const g=edGround(x,y); growBirch(x,g,Math.random); }});
+  for(const k in C) C[k].sort((a,b)=>a.name.localeCompare(b.name));
+  edCatCache=C; return C; }
+function edGround(tx,ty){ let y=ty; while(y<H-1&&!isSolid(tx,y)) y++; return y; }   // the first solid row at or under the tap: buildings stand on it
+function edThumb(s){ if(s.img!=null&&s.t!=='human'&&s.t!=='villager'&&s.t!=='monster'&&s.t!=='animal'&&s.t!=='dragon') return s.img?`<img alt="" src="${s.img}">`:'<span class="edq">?</span>';
+  if(!s.img){ try{
+    if(s.t==='human'){ const tm=s.team||(ED.team==='player'?player.team:ED.team); s.img=portraitUrl(s.look||s.k,tm,false); }
+    else if(s.t==='villager'){ const v=makeVillager(player.team,{x0:0,x1:0,gy:0,role:s.k}); if(s.k==='woodcutter'||s.k==='farmer') v.vjob=s.k; if(s.k==='drifter'){ v.kind='drifter'; v.cls='drifter'; } s.img=edFigUrl(v); }
+    else if(s.t==='monster'){ s.img=s.sea?edSeaUrl(s.k):edFigUrl(Object.assign(makeMonster(s.k,0,0),{elite:false})); }
+    else if(s.t==='animal') s.img=edAnimalUrl(s.k,s.baby);
+    else if(s.t==='dragon') s.img='';
+  }catch(e){ s.img=''; } }
+  if(s.t==='dragon') return '<span class="edq">🐉</span>'; return s.img?`<img alt="" src="${s.img}">`:`<span class="edq">${ED_GLYPH[s.k]||'?'}</span>`; }
+function edRenderList(){ const C=edCatalog(); const q=ED.q.toLowerCase(); let L=C[ED.cat]||[]; if(q) L=Object.values(C).flat().filter(s=>s.name.toLowerCase().includes(q));
+  L=L.slice(0,400); const teamRow=ED.cat==='people'&&!q?`<div class="edteams">${ED_TEAMS.map(([k,n])=>`<button class="xbtn" data-edteam="${k}" aria-pressed="${ED.team===k}">${n}</button>`).join('')}</div>`:'';
+  $('#edList').innerHTML=teamRow+`<div class="edtiles">${L.map((s,i)=>`<button class="edtile" data-edi="${i}" title="${s.name}">${edThumb(s)}<span>${s.name}</span></button>`).join('')||'<p>Nothing matches.</p>'}</div>`;
+  $('#edList')._list=L; for(const b of document.querySelectorAll('#edTabs [data-edcat]')) b.setAttribute('aria-pressed',b.dataset.edcat===ED.cat&&!q); }
+function edOpenPick(){ if(!edOn()||state!=='play') return; state='edpick'; $('#edSearch').value=ED.q; edRenderList(); show('scrEd'); $('#edBar').hidden=true; }
+function edClosePick(){ hide('scrEd'); if(state==='edpick') state='play'; if(edOn()) $('#edBar').hidden=false; }
+function edPick(s){ ED.brush=s; ED.tool=s.t==='block'&&ED.tool==='fill'?'fill':'place'; edClosePick(); edBarSync(); toast('Holding: '+s.name+'. Tap the world to place it.',1.5); }
+
+// ---- the toolbar ----
+const ED_TOOLS=[['place','Place','P'],['erase','Erase','X'],['select','Select','V'],['move','Move','O'],['paste','Paste','Ctrl+V']];
+function edBarSync(){ const bar=$('#edBar'); if(!bar) return; for(const b of bar.querySelectorAll('[data-edtool]')) b.setAttribute('aria-pressed',b.dataset.edtool===ED.tool);
+  const br=$('#edBrush'); br.innerHTML=ED.brush?`${edThumb(ED.brush)}<span>${ED.brush.name}</span>`:'<span>No sticker yet</span>';
+  $('#edFreeze').textContent=ED.frozen?'▶ Move':'❚❚ Still'; $('#edUndo').disabled=!ED.undo.length; $('#edRedo').disabled=!ED.redo.length; $('#edPasteB').disabled=!ED.clip; $('#edTime').value=String(ED.time); }
+function edSetTool(t){ ED.tool=t; if(t!=='select'&&t!=='fill') ED.drag=null; edBarSync(); }
+function edPhoto(){ if(!edOn()) return; const c0=settings.cursor; settings.cursor=false; ED.photo=true; try{ render(); }catch(e){} const url=cv.toDataURL('image/png'); ED.photo=false; settings.cursor=c0;
+  const name='dragon-amulet-scene-'+Date.now()+'.png'; (async()=>{ try{ if(window.claude&&window.claude.use){ const dl=await window.claude.use('downloads'); if(dl){ const blob=await (await fetch(url)).blob(); await dl.save({filename:name,data:blob}); toast('Photo saved',1.5); return; } } }catch(e){}
+    try{ const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove(); toast('Photo saved to your downloads',1.5); }catch(e){ toast('Take a screenshot of the screen instead',2); } })(); }
+document.body.insertAdjacentHTML('beforeend',`<div id="edBar" hidden>
+  <button class="xbtn" id="edStick">Stickers</button><span id="edBrush"></span>
+  ${ED_TOOLS.map(([k,n,key])=>`<button class="xbtn" data-edtool="${k}" title="${key}">${n}</button>`).join('')}
+  <button class="xbtn" id="edCopyB" title="Ctrl+C">Copy</button><button class="xbtn" id="edCutB" title="Ctrl+X">Cut</button><button class="xbtn" id="edPasteB" title="Ctrl+V">Paste here</button><button class="xbtn" id="edFillB">Fill box</button><button class="xbtn" id="edClearB" title="Delete">Clear box</button>
+  <button class="xbtn" id="edUndo" title="Ctrl+Z">Undo</button><button class="xbtn" id="edRedo" title="Ctrl+Y">Redo</button>
+  <button class="xbtn" id="edFreeze">▶ Move</button><button class="xbtn" id="edReset">Reset</button>
+  <select class="xbtn" id="edTime"><option value="0.06">Dawn</option><option value="0.3">Noon</option><option value="0.52">Dusk</option><option value="0.72">Night</option></select>
+  <button class="xbtn" id="edPhoto">Photo</button><button class="xbtn" id="edFlat">Flatten all</button>
+</div>
+<div class="overlay" id="scrEd" hidden><div class="panel wide">
+  <div class="phead"><h2>Stickers</h2><button class="xbtn" id="edClose">Close</button></div>
+  <div class="choices" id="edTabs" style="grid-template-columns:repeat(4,1fr);margin-bottom:8px">${ED_CATS.map(([k,n])=>`<button class="choice" data-edcat="${k}">${n}</button>`).join('')}</div>
+  <input id="edSearch" type="search" placeholder="Search every sticker…" autocomplete="off" style="width:100%;font-family:var(--font);font-size:10px;padding:8px;margin-bottom:8px">
+  <div id="edList" style="max-height:60vh;overflow:auto"></div>
+</div></div>`);
+{ const st=document.createElement('style'); st.textContent=`
+#edBar{ position:fixed; top:calc(var(--st,0px) + 6px); left:calc(env(safe-area-inset-left,0px) + 6px); z-index:31; display:flex; flex-wrap:wrap; gap:4px; max-width:min(78vw,760px); align-items:center; }
+#edBar .xbtn{ font-size:8px; padding:6px 7px; } #edBar [aria-pressed="true"]{ background:var(--gold); color:var(--ink); } #edBar button:disabled{ opacity:.4; }
+#edBrush{ display:inline-flex; align-items:center; gap:4px; font-size:8px; background:var(--panel2); border:3px solid var(--edge); padding:2px 6px; min-height:28px; max-width:170px; }
+#edBrush img,#edBrush .edq{ width:24px; height:24px; image-rendering:pixelated; object-fit:contain; } #edBrush span{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.edtiles{ display:grid; grid-template-columns:repeat(auto-fill,minmax(74px,1fr)); gap:6px; }
+.edtile{ display:flex; flex-direction:column; align-items:center; gap:4px; font-family:var(--font); font-size:7px; line-height:1.4; padding:5px 3px; border:2px solid var(--edge-dim); background:var(--panel2); color:var(--text); cursor:pointer; min-height:72px; overflow-wrap:anywhere; }
+.edtile img,.edtile .edq{ width:36px; height:36px; image-rendering:pixelated; object-fit:contain; } .edq{ font-size:22px; line-height:36px; text-align:center; }
+.edteams{ display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px; } .edteams .xbtn{ font-size:8px; padding:5px 7px; } .edteams [aria-pressed="true"]{ background:var(--gold); color:var(--ink); }
+body.edmode #hotbar,body.edmode #hpbar,body.edmode #xpbar,body.edmode #mpbar,body.edmode #foodbar,body.edmode #sub,body.edmode #coins,body.edmode #orderline,body.edmode #clock,body.edmode #ckList,body.edmode #aimTog,body.edmode #armyHide,body.edmode #stackNear,body.edmode #btnSpeed,body.edmode #bossbar{ display:none!important; }
+body.edmode #edBar{ pointer-events:auto; }
+body.touch #edBar{ max-width:60vw; } body.touch #edBar .xbtn{ font-size:7px; padding:5px 6px; } body.touch #edBrush{ max-width:120px; min-height:24px; }`; document.head.appendChild(st); }
+$('#edStick').addEventListener('click',edOpenPick); $('#edClose').addEventListener('click',edClosePick);
+$('#edTabs').addEventListener('click',ev=>{ const b=ev.target.closest('[data-edcat]'); if(!b) return; ED.cat=b.dataset.edcat; ED.q=''; $('#edSearch').value=''; edRenderList(); });
+$('#edSearch').addEventListener('input',ev=>{ ED.q=ev.target.value||''; edRenderList(); });
+$('#edList').addEventListener('click',ev=>{ const tb=ev.target.closest('[data-edteam]'); if(tb){ ED.team=tb.dataset.edteam; edRenderList(); return; } const b=ev.target.closest('[data-edi]'); if(!b) return; const s=$('#edList')._list[+b.dataset.edi]; if(!s) return; const pick=Object.assign({},s); if(pick.t==='human'&&!pick.team) pick.team=ED.team; if(pick.t==='human') pick.img=''; edPick(pick); });
+$('#edBar').addEventListener('click',ev=>{ const b=ev.target.closest('button'); if(!b||!edOn()) return;
+  if(b.dataset.edtool){ edSetTool(b.dataset.edtool); return; }
+  switch(b.id){ case 'edCopyB': edCopy(); break; case 'edCutB': edCut(); break; case 'edPasteB': if(ED.clip){ edSetTool('paste'); toast('Tap where the top left corner should go',1.5); } break; case 'edFillB': edFillSel(); break; case 'edClearB': edClearSel(false); break;
+    case 'edUndo': edUndo(); break; case 'edRedo': edRedo(); break; case 'edFreeze': ED.frozen=!ED.frozen; home.editor.frozen=ED.frozen; edBarSync(); toast(ED.frozen?'Everyone holds still':'Everyone moves and fights. Reset puts them back.',1.5); break;
+    case 'edReset': edResetScene(); break; case 'edPhoto': edPhoto(); break;
+    case 'edFlat': if(b.dataset.arm!=='1'){ b.dataset.arm='1'; b.textContent='Sure? Flatten all'; setTimeout(()=>{ b.dataset.arm=''; b.textContent='Flatten all'; },3000); return; } b.dataset.arm=''; b.textContent='Flatten all'; home.editor.ents=[]; home.editor.drops=[]; edFlatten(); ED.undo=[]; ED.redo=[]; ED.sel=null; edBarSync(); toast('A blank world again',1.5); break; } });
+$('#edTime').addEventListener('change',ev=>{ ED.time=+ev.target.value||0.3; home.editor.time=ED.time; time=ED.time; });
+try{ MENU_STATES.add('edpick'); }catch(e){}
+{ const _mc=typeof menuCloser==='function'?menuCloser:null; if(_mc) menuCloser=function(o,...a){ if(o&&o.id==='scrEd') return $('#edClose'); return _mc(o,...a); }; }
+
+// ---- the title screen: Test world > Scene editor ----
+{ const p=$('#scrTestCls .panel'); if(p) p.insertAdjacentHTML('beforeend',`<div style="margin-top:12px;border-top:2px solid var(--edge-dim);padding-top:10px"><p style="margin:0 0 8px">Or build scenes: a flat, empty world where blocks, people, creatures and buildings are stickers you tap into place, copy and paste. Saved in slot 6.</p><button class="btn" id="btnEditor">Scene editor</button></div>`);
+  const b=$('#btnEditor'); if(b) b.addEventListener('click',()=>{ hide('scrTestCls'); show('scrTitle'); $('#loading').hidden=false; $('#loading').textContent='Building the empty world…'; setTimeout(()=>{ try{ makeEditorWorld('knight'); }catch(e){ console.warn(e); toast('The editor could not start',2); } $('#loading').hidden=true; },30); }); }
+{ const _rs=renderSlots; renderSlots=function(...a){ const r=_rs(...a); try{ const si=slotInfo(ED_SLOT); if(si){ const d=si.meta.summary&&si.meta.summary.dayCount||1; $('#slotList').insertAdjacentHTML('beforeend',`<div class="saverow"><button class="savebig" data-edplay="${ED_SLOT}"><span><b>Scene editor (slot ${ED_SLOT})</b><br><span class="muted">Your scene, day ${d}</span></span></button><button class="savedel" data-wdel="${ED_SLOT}">Delete</button></div>`); } }catch(e){} return r; }; }
+{ const _as=anySave; anySave=function(...a){ return _as(...a)||!!slotInfo(ED_SLOT); }; }
+$('#slotList').addEventListener('click',async ev=>{ const b=ev.target.closest('[data-edplay]'); if(!b) return; ev.stopImmediatePropagation(); ev.preventDefault(); const n=+b.dataset.edplay; const si=slotInfo(n); if(!si) return; b.textContent='Loading…';
+  try{ const str=await loadLocal(n); if(!str) throw 0; curSlot=n; hide('scrSlots'); heroPick.state=null; deserialize(str); afterWorldReady(); startPlay(); toast('Welcome back to the editor',1.5); }catch(e){ console.warn(e); b.textContent='Could not load'; } },true);
+
+// ---- pointer and keys ----
+function edTile(){ return { tx:Math.floor(input.ax/T), ty:Math.floor(input.ay/T) }; }
+addEventListener('pointerdown',ev=>{ if(!edOn()||state!=='play'||ev.target!==cv||!player||player.dead) return; if(ev.pointerType==='touch'&&touches.size>=1) return;
+  if(ev.pointerType==='touch'){ try{ touches.set(ev.pointerId,{x:ev.clientX,y:ev.clientY}); }catch(e){} }
+  ev.stopImmediatePropagation(); ev.preventDefault(); setAim(ev); input.use=false; const {tx,ty}=edTile(); const right=ev.button===2;
+  ED.hover={tx,ty};
+  if(right){ edEraseAt(tx,ty,input.ax,input.ay); ED.drag={id:ev.pointerId,tool:'erase',last:tx+','+ty}; return; }
+  const tool=ED.tool;
+  if(tool==='place'){ if(!ED.brush){ edOpenPick(); return; } if(edUseBrush(tx,ty)&&ED.brush.t==='block') ED.drag={id:ev.pointerId,tool:'paint',last:tx+','+ty}; return; }
+  if(tool==='erase'){ edEraseAt(tx,ty,input.ax,input.ay); ED.drag={id:ev.pointerId,tool:'erase',last:tx+','+ty}; return; }
+  if(tool==='select'||tool==='fill'){ ED.drag={id:ev.pointerId,tool:'select',x0:tx,y0:ty}; ED.sel={x0:tx,y0:ty,x1:tx,y1:ty}; return; }
+  if(tool==='move'){ const e=edEntityAt(input.ax,input.ay); if(e){ ED.drag={id:ev.pointerId,tool:'move',e,dx:input.ax-cxOf(e),dy:input.ay-(e.y+e.h),from:{x:cxOf(e),y:e.y+e.h}}; } else { const d=edDropAt(input.ax,input.ay); if(d) ED.drag={id:ev.pointerId,tool:'moveDrop',d,dx:input.ax-d.x,dy:input.ay-d.y}; } return; }
+  if(tool==='paste'){ edPaste(tx,ty); return; } },true);
+addEventListener('pointermove',ev=>{ if(!edOn()||state!=='play'||!player) return; if(ev.target===cv||ED.drag){ setAim(ev); const {tx,ty}=edTile(); ED.hover={tx,ty}; }
+  const d=ED.drag; if(!d||d.id!==ev.pointerId) return; const {tx,ty}=edTile(); const key=tx+','+ty;
+  if(d.tool==='paint'){ if(key!==d.last){ d.last=key; edUseBrush(tx,ty); } }
+  else if(d.tool==='erase'){ if(key!==d.last){ d.last=key; edEraseAt(tx,ty,input.ax,input.ay); } }
+  else if(d.tool==='select'){ ED.sel=edNormSel({x:d.x0,y:d.y0},{x:tx,y:ty}); }
+  else if(d.tool==='move'){ edPlaceAt(d.e,input.ax-d.dx,input.ay-d.dy); }
+  else if(d.tool==='moveDrop'){ d.d.x=input.ax-d.dx; d.d.y=input.ay-d.dy; } },true);
+function edDragEnd(ev){ const d=ED.drag; if(!d||(ev&&d.id!==ev.pointerId)) return; ED.drag=null;
+  if(d.tool==='move'){ const e=d.e; const to={x:cxOf(e),y:e.y+e.h}; edMoveRecord(e,to.x,to.y); const op=edOp(); op.moved={e,from:d.from,to}; ED.undo.push({cells:[],add:[],rem:[],addD:[],remD:[],chests:null,move:{id:e.edId,e,from:d.from,to}}); ED.redo=[]; edBarSync(); }
+  else if(d.tool==='moveDrop'){ edSaveDrops(); }
+  else if(d.tool==='select'&&ED.tool==='fill'){ edFillSel(); } }
+addEventListener('pointerup',edDragEnd,true); addEventListener('pointercancel',edDragEnd,true);
+{ const _ap=edApply; edApply=function(op,back){ if(op.move){ const m=op.move; const e=edActor(m.id)||m.e; const p=back?m.from:m.to; if(e&&!e.dead) edMoveRecord(e,p.x,p.y); else { const r=home.editor.ents.find(r=>r.id===m.id); if(r){ r.x=p.x; r.y=p.y; } } edBarSync(); return; } return _ap(op,back); }; }
+cv.addEventListener('contextmenu',ev=>{ if(edOn()) ev.preventDefault(); });
+addEventListener('keydown',ev=>{ if(!edOn()||!player) return; if(state==='edpick'){ if(ev.key==='Escape'){ edClosePick(); ev.stopImmediatePropagation(); } return; } if(state!=='play') return;
+  const a=document.activeElement; if(a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.tagName==='SELECT')) return; const mod=ev.ctrlKey||ev.metaKey; let used=true;
+  if(mod&&ev.code==='KeyZ'){ if(ev.shiftKey) edRedo(); else edUndo(); } else if(mod&&ev.code==='KeyY') edRedo(); else if(mod&&ev.code==='KeyC') edCopy(); else if(mod&&ev.code==='KeyX') edCut();
+  else if(mod&&ev.code==='KeyV'){ if(ED.clip){ edSetTool('paste'); toast('Tap where the top left corner should go',1.5); } }
+  else if(!mod&&(ev.code==='Delete'||ev.code==='Backspace')){ if(ED.sel) edClearSel(false); else if(ED.hover){ edEraseAt(ED.hover.tx,ED.hover.ty,ED.hover.tx*T+8,ED.hover.ty*T+8); } }
+  else if(!mod&&ev.code==='KeyP') edSetTool('place'); else if(!mod&&ev.code==='KeyX') edSetTool('erase'); else if(!mod&&ev.code==='KeyV') edSetTool('select'); else if(!mod&&ev.code==='KeyO') edSetTool('move'); else if(!mod&&ev.code==='KeyI') edOpenPick();
+  else if(ev.code==='Escape'){ if(ED.tool==='paste'||ED.sel){ ED.sel=null; edSetTool('place'); } else used=false; } else used=false;
+  if(used){ ev.preventDefault(); ev.stopImmediatePropagation(); } },true);
+
+// ---- what you see: the hover cell, the selection, the paste preview ----
+function edDraw(){ if(!edOn()||ED.photo||state!=='play') return; ctx.save();
+  const h=ED.hover; if(h&&ED.tool!=='paste'&&ED.tool!=='move'){ const b=ED.brush; let drew=false;
+    if(ED.tool==='place'&&b&&b.t==='block'){ const def=ITEMS[b.id]||{}; const tex=def.kind==='wall'?(BGTEX[WALLS[b.id]]||null):(TEX[def.base||b.id]||iconTex(b.id)); if(tex){ ctx.globalAlpha=0.55; ctx.drawImage(tex,h.tx*T,h.ty*T,T,T); if(DOOR_SET_OF[b.id]&&DOOR_SET_OF[b.id].base===b.id&&TEX[DOOR_SET_OF[b.id].top]) ctx.drawImage(TEX[DOOR_SET_OF[b.id].top],h.tx*T,(h.ty-1)*T,T,T); ctx.globalAlpha=1; drew=true; } }
+    else if(ED.tool==='place'&&b&&(b.t==='human'||b.t==='villager'||b.t==='monster'||b.t==='animal'||b.t==='machine'||b.t==='dragon')){ const f=edFeet(h.tx,h.ty); const w=b.t==='dragon'?96:b.t==='machine'?(MSIZE[b.k]||[22,18])[0]:b.t==='monster'?MON[b.k].w:b.t==='animal'?ANIMALS[b.k].w:12, hh=b.t==='dragon'?56:b.t==='machine'?(MSIZE[b.k]||[22,18])[1]:b.t==='monster'?MON[b.k].h:b.t==='animal'?ANIMALS[b.k].h:28;
+      ctx.strokeStyle='rgba(255,224,102,.9)'; ctx.lineWidth=1; ctx.strokeRect(Math.round(f.x-w/2)+.5,Math.round(f.y-hh)+.5,w,hh); drew=true; }
+    else if(ED.tool==='place'&&b&&b.t==='stamp'){ const box=b.box(h.tx,edGround(h.tx,h.ty)); ctx.strokeStyle='rgba(255,224,102,.7)'; ctx.setLineDash([3,3]); ctx.strokeRect(box[0]*T+.5,box[1]*T+.5,(box[2]-box[0]+1)*T,(box[3]-box[1]+1)*T); ctx.setLineDash([]); drew=true; }
+    ctx.strokeStyle=ED.tool==='erase'?'rgba(255,90,90,.9)':'rgba(255,255,255,.7)'; ctx.lineWidth=1; ctx.strokeRect(h.tx*T+.5,h.ty*T+.5,T-1,T-1); }
+  if(ED.tool==='paste'&&ED.clip&&h){ const c=ED.clip; ctx.globalAlpha=0.5; let k=0; for(let y=0;y<c.h;y++) for(let x=0;x<c.w;x++,k++){ const v=c.cells[k]; const X=h.tx+x, Y=h.ty+y; if(v[1]&&BGTEX[v[1]]) ctx.drawImage(BGTEX[v[1]],X*T,Y*T,T,T); if(v[0]&&TEX[v[0]]) ctx.drawImage(TEX[v[0]],X*T,Y*T,T,T); }
+    ctx.globalAlpha=1; ctx.strokeStyle='rgba(120,220,255,.9)'; ctx.setLineDash([4,3]); ctx.strokeRect(h.tx*T+.5,h.ty*T+.5,c.w*T,c.h*T); ctx.setLineDash([]); for(const r of c.ents){ ctx.strokeStyle='rgba(255,224,102,.8)'; ctx.strokeRect(Math.round(h.tx*T+r.x-6)+.5,Math.round(h.ty*T+r.y-28)+.5,12,28); } }
+  const s=ED.sel; if(s){ ctx.strokeStyle='rgba(120,220,255,.95)'; ctx.lineWidth=1; ctx.setLineDash([4,3]); ctx.strokeRect(s.x0*T+.5,s.y0*T+.5,(s.x1-s.x0+1)*T,(s.y1-s.y0+1)*T); ctx.setLineDash([]); ctx.fillStyle='rgba(120,220,255,.12)'; ctx.fillRect(s.x0*T,s.y0*T,(s.x1-s.x0+1)*T,(s.y1-s.y0+1)*T); }
+  if(ED.tool==='move'||ED.tool==='erase'){ for(const e of ents){ if(e===player||e.dead) continue; ctx.strokeStyle=ED.tool==='erase'?'rgba(255,120,120,.35)':'rgba(255,224,102,.35)'; ctx.strokeRect(Math.round(e.x)+.5,Math.round(e.y)+.5,e.w,e.h); } }
+  ctx.restore(); }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ edDraw(); }catch(e){} return r; }; }
 })();
 </script>
 </body>
