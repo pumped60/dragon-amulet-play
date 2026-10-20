@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792455271"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792455271"><link rel="manifest" href="manifest.webmanifest?v=1792455271"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792459180"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792459180"><link rel="manifest" href="manifest.webmanifest?v=1792459180"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -322,7 +322,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
   </div>
   <div id="topbtns"><button class="hbtn ico" id="btnInv" title="Bag" aria-label="Bag">🎒</button><button class="hbtn ico" id="btnCraft" title="Craft" aria-label="Craft">🔨</button><button class="hbtn ico" id="btnArmy" title="Army" aria-label="Army">⚔️</button><button class="hbtn ico" id="btnBuild" title="Buildings" aria-label="Buildings"></button><button class="hbtn ico" id="btnMap" title="Map" aria-label="Map" hidden>🗺️</button><button class="hbtn" id="btnHoe" hidden>Hoe: Till</button><button class="hbtn" id="btnSpeed" hidden>Speed 1x</button><button class="hbtn" id="btnGod" hidden>God menu</button><button class="hbtn" id="mpBadge" hidden>Room</button><button class="hbtn" id="btnFly" hidden>Fly</button><button class="hbtn" id="btnQuickSave" hidden>Save</button><button class="hbtn ico" id="btnFull" title="Full screen" aria-label="Full screen">⛶</button><button class="hbtn ico" id="btnItems" aria-pressed="true" title="Hide items" aria-label="Hide items">👁</button><button class="hbtn ico" id="btnMenu" title="Menu" aria-label="Menu">⚙️</button><button class="hbtn ico" id="btnMin" title="Minimize" aria-label="Minimize the buttons and mini-map">▴</button></div>
   <canvas id="miniMap" width="150" height="96" title="Open the map" aria-label="Mini-map: click to open the map"></canvas><div id="miniZoom"><button class="mz" id="zoomInBtn" title="Bigger mini-map" aria-label="Make the mini-map bigger">+</button><button class="mz" id="zoomOutBtn" title="Smaller mini-map" aria-label="Make the mini-map smaller">−</button></div>
-  <div id="bossbar" hidden><div id="bossname">Vorthax, the ember wyrm</div><div id="bossouter"><div id="bossfill"></div></div><div id="bosshp"></div></div>
+  <div id="bossbar" hidden><div id="bossname">Vorthax, the ember dragon</div><div id="bossouter"><div id="bossfill"></div></div><div id="bosshp"></div></div>
   <div id="toast" role="status" aria-live="polite"></div>
   <button id="btnTalk" hidden>Trade</button>
 </div>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.140</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.141</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.141</h3>
+    <p>Fifty achievements. The new ones: mining each ore from coal to storm ore; crafting a workbench, a furnace, your first iron gear, a gem weapon, a bomb and 100 items in all; owning an adamantite piece and the top of every upgrade line; your first soldier, 10 and 20, a Veteran, 100 enemies defeated by your own hand, a war machine deployed, an enemy tower captured; a hut, watchtower, keep, pen and farmhouse built, 1,000 blocks placed, a shop at level 3; the sky realm, the magma realm, the deepstone and 10 world chests; 25 fish, an insect in the net, a tamed bird of prey. Worlds you already play count what you do from now on, and the ones that only look at the world (bosses, buildings standing, your army) count at once.</p>
     <h3>New in Beta 0.9.140</h3>
     <p>Achievements: thirteen of them, earned in every copy of the game and kept on this device. Rebuild the village, grow it into a town and a city, tame an animal, conquer a faction, and defeat each of the eight bosses. A toast and a sound mark a new one; the Achievements button on the title screen and in the pause menu shows them all as medals, grey until earned, with the day and the world. A world that already did these earns them when it loads. The test world never earns any.</p>
     <h3>New in Beta 0.9.139</h3>
@@ -817,7 +819,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.140</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.141</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1077,7 +1079,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.140</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.141</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1096,7 +1098,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.140', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.141', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3907,7 +3909,7 @@ const boosted=new Map();
 function engineerCheck(){ if(!home||!home.claimed||home.engineer) return; if(sky.castle.cleared&&magma.keep.cleared){ home.engineer=true; ents.push(makeHelper('engineer','War engineer',16)); toast('A war engineer has arrived at your village. He sells ballistas, cannons and trebuchets.',5); } }
 
 function showEnding(){ if(!player||state==='title') return; const nm=player.name||'Hero'; const nc=['g','b','r'].filter(f=>conquered[f]).length; const ng=rules.ngp||0;
-  $('#endText').innerHTML=`<p>The ember wyrm Vorthax crashes down in his mountain hall, and the Dragon Amulet is yours.</p><p>Word spreads from island to island: ${escapeHTML(nm)} has done what no one thought possible. ${nc?`The ${nc} rival faction${nc>1?'s':''} you conquered`:'The rival factions'} watch the mountain smoke clear for the first time in an age.</p><p>The village you rebuilt from ashes will tell this story for generations. It took you ${dayCount} day${dayCount>1?'s':''}${ng?` on new game plus ${ng}`:''}.</p>`;
+  $('#endText').innerHTML=`<p>The ember dragon Vorthax crashes down in his mountain hall, and the Dragon Amulet is yours.</p><p>Word spreads from island to island: ${escapeHTML(nm)} has done what no one thought possible. ${nc?`The ${nc} rival faction${nc>1?'s':''} you conquered`:'The rival factions'} watch the mountain smoke clear for the first time in an age.</p><p>The village you rebuilt from ashes will tell this story for generations. It took you ${dayCount} day${dayCount>1?'s':''}${ng?` on new game plus ${ng}`:''}.</p>`;
   for(const o of document.querySelectorAll('.overlay')) if(!o.hidden) o.hidden=true; show('scrEnd'); state='ending'; input.use=false; }
 $('#endKeep').addEventListener('click',()=>{ hide('scrEnd'); state='play'; toast('The world is still yours to explore. The amulet gives flight, speed and ten times the health.',5); });
 $('#endNGP').addEventListener('click',()=>{ if(typeof MP!=='undefined'&&MP.on){ toast('Leave multiplayer to start new game plus',3); return; } hide('scrEnd'); const ng=(rules.ngp||0)+1; charSave(); const st=charState(); const keepSlot=curSlot===4?1:curSlot; const sk=sizeKey, fac=player.team, cls=player.cls;
@@ -5205,7 +5207,7 @@ function updateHUD(dt){
   const bb=$('#bossbar'); const RX0=lair.rx0*T, RX1=(lair.rx1+1)*T;
   const showBoss=dragon&&!dragon.dead&&(dragon.hitT>0||(cxOf(player)>RX0&&cxOf(player)<RX1&&cyOf(player)>lair.ry0*T-2*T));
   const rb=!showBoss&&ents.find(e=>e.bigBoss&&!e.dead&&Math.hypot(cxOf(e)-cxOf(player),cyOf(e)-cyOf(player))<40*T);
-  if(rb){ bb.hidden=false; $('#bossname').textContent=rb.name; $('#bossfill').style.width=(100*rb.hp/rb.maxHp)+'%'; $('#bosshp').textContent=Math.ceil(rb.hp).toLocaleString()+' / '+rb.maxHp.toLocaleString(); } else if(showBoss){ $('#bossname').textContent='Vorthax, the ember wyrm'; bb.hidden=false; $('#bossfill').style.width=(100*dragon.hp/dragon.maxHp)+'%'; $('#bosshp').textContent=Math.ceil(dragon.hp).toLocaleString()+' / '+dragon.maxHp.toLocaleString(); } else bb.hidden=true;
+  if(rb){ bb.hidden=false; $('#bossname').textContent=rb.name; $('#bossfill').style.width=(100*rb.hp/rb.maxHp)+'%'; $('#bosshp').textContent=Math.ceil(rb.hp).toLocaleString()+' / '+rb.maxHp.toLocaleString(); } else if(showBoss){ $('#bossname').textContent='Vorthax, the ember dragon'; bb.hidden=false; $('#bossfill').style.width=(100*dragon.hp/dragon.maxHp)+'%'; $('#bosshp').textContent=Math.ceil(dragon.hp).toLocaleString()+' / '+dragon.maxHp.toLocaleString(); } else bb.hidden=true;
   { const hi=heldItem(); const hoe=!!(hi&&ITEMS[hi.id].kind==='hoe'); const hb=$('#btnHoe'); if(hb.hidden===hoe) hb.hidden=!hoe; }
   let v=state==='play'?nearestVillager(3.5*T):null; if(!v&&state==='play') v=nearestChest();
   if(!v&&state==='play'){ const a=nearestTameable(); if(a&&(player.cls==='beast'||hasWhistle())) v=tameCache.get(a)||(tameCache.set(a,{tame:a}),tameCache.get(a)); }
@@ -10431,7 +10433,7 @@ let NID=680; const newItem=(o)=>{ while(ITEMS[NID]) NID++; ITEMS[NID]=o; return 
 const MEATS={};
 for(const [k,nm,raw,cook,heal,ch] of [['boar','Boar meat','#a83a2a','#8a5a3a',7,22],['beaver','Beaver meat','#b0503a','#8a5c3a',6,18],['hawk','Hawk meat','#c86a5a','#a8724a',5,16],
   ['eagle','Eagle meat','#c05a4a','#a06a42',6,20],['owl','Owl meat','#c87a6a','#b08058',5,16],['penguin','Penguin meat','#a84a4a','#8a5a48',6,20]]){
-  const r=newItem({name:'Raw '+nm.toLowerCase(),kind:'food',heal,ing:[raw,'#f0b0a0'],desc:`Meat from a ${k==='penguin'?'penguin':k}. Cook it at a furnace`});
+  const r=newItem({name:'Raw '+nm.toLowerCase(),kind:'food',heal,ing:[raw,'#f0b0a0'],desc:`Meat from ${/^[aeiou]/.test(k)?'an':'a'} ${k==='penguin'?'penguin':k}. Cook it at a furnace`});
   const c=newItem({name:'Cooked '+nm.toLowerCase(),kind:'food',heal:ch,ing:[cook,'#e8b878'],desc:`Cooked ${nm.toLowerCase()}`});
   SELL[r]=2; SELL[c]=5; MEATS[k]={raw:r,cooked:c}; RECIPES.push({ out:c, n:1, need:[[r,1]], st:B.FURNACE, cat:'cook' });
   customIcon(r,(rect,px)=>{ rect(3,5,10,7,raw); rect(4,4,8,1,raw); rect(4,12,7,1,raw); rect(5,6,6,4,'#f0a0a0'); rect(11,4,3,2,'#f4f0e8'); px(13,6,'#f4f0e8'); px(6,7,'#ffffff'); });
@@ -11512,7 +11514,7 @@ const ROOF_TEAM={ tile:{ r:B.ROOF, b:B.SHINGLE_B }, iron:{}, clay:{ r:B.CLAY_TIL
 { const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
   const tint=(src,col,amt)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='color'; g.fillStyle=col; g.globalAlpha=amt; g.fillRect(0,0,16,16); g.globalCompositeOperation='destination-in'; g.globalAlpha=1; g.drawImage(src,0,0); return c; };
   const G=freeIdFrom(); defB(G,Object.assign({},BLOCKS[B.SHINGLE_B],{name:'Green roof tiles',col:'#4a8a3a',drop:G})); ITEMS[G]={name:'Green roof tiles',kind:'block',desc:'Roof tiles in the green faction\'s colour'}; TEX[G]=tint(TEX[B.SHINGLE_B],'#3a9a3a',1); ROOF_TEAM.tile.g=G;
-  RECIPES.push({ out:G, n:4, need:[[B.STONE,2],[B.LEAF||B.GRASS,1]], st:B.FURNACE, cat:'build' });
+  RECIPES.push({ out:G, n:4, need:[[B.STONE,2],[B.FERN,1]], st:B.FURNACE, cat:'build' });   /* 0.9.141: B.LEAF never existed, so this asked for block 1 (grass, not an item) and could not be crafted */
   for(const [t,nm,col] of [['r','Red','#c84a3a'],['g','Green','#4a9a3a'],['b','Blue','#3a6ac8']]){ const id=freeIdFrom(); defB(id,Object.assign({},BLOCKS[B.IRON_ROOF],{name:`${nm} iron roof`,col,drop:id}));
     ITEMS[id]={name:`${nm} iron roof`,kind:'block',desc:`Iron roofing painted in the ${nm.toLowerCase()} faction's colour`}; TEX[id]=tint(TEX[B.IRON_ROOF],col,0.75); ROOF_TEAM.iron[t]=id;
     RECIPES.push({ out:id, n:4, need:[[B.IRON_ROOF,4]], st:B.WORKBENCH, cat:'build' }); }
@@ -16635,7 +16637,7 @@ vTree=function(e){ const ox=Math.round(cxOf(e)/T), bad=e.vbad||new Set(), [a,b]=
 function woodMorning(){ if(!home||!home.lodge||isGuest()) return 0; const cut=ents.filter(e=>!e.dead&&e.kind==='villager'&&e.vjob==='woodcutter'&&e.team===(player&&player.team)); if(!cut.length) return 0;
   let total=0, kind=null; for(const e of cut){ const id=e.lastLog&&LOG_IDS.has(e.lastLog)?e.lastLog:(kind=kind||islandLog()); vDeliver(e,id,WOOD_DAILY); total+=WOOD_DAILY; } return total; }
 { const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ woodMorning(); }catch(e){ console.warn(e); } return r; }; }
-// ===== Beta 0.9.140: achievements in the game itself (Kinard, 2026-10-20) =====
+// ===== Beta 0.9.140/0.9.141: achievements in the game itself, fifty of them (Kinard, 2026-10-20) =====
 // The thirteen achievements the Steam copy reports (98zxz_steam.js, docs/STEAM.md) are now earned in every copy of the
 // game: the browser, claude.ai, the phone, the free apps. They are kept on this device (localStorage ACH_KEY, like the
 // Scaleborn unlock), checked every few seconds from the world's own record (so a world that beat a boss long ago earns it
@@ -16644,12 +16646,62 @@ function woodMorning(){ if(!home||!home.lodge||isGuest()) return 0; const cut=en
 // with the day it was earned and the world's name. The Steam copy still gets the same ones through steamAchieve. The test
 // world never earns any.
 const ACH_KEY='dragonamulet-achievements';
+// a per-world record for the counted ones lives on home.achS (saved with the world): kills by the player, blocks placed,
+// fish caught, chests opened, ores mined, items crafted, buildings placed, a war machine deployed, a tower captured, the
+// sky realm and the deep rock reached. Device-wide, any world that meets a mark earns it.
+function achS(){ if(!home) return {}; return home.achS=home.achS||{}; }
+const ACH_ORES=()=>({ coal:B.COAL, iron:B.IRON, silver:B.SILVER_ORE, gold:B.GOLD, diamond:B.DIAMOND_ORE, mythril:B.MYTHRIL_ORE, adamant:B.ADAMANT_ORE, storm:B.STORM_ORE });
+const achOre=k=>()=>!!(achS().ores&&achS().ores[ACH_ORES()[k]]);
+const achCrafted=f=>()=>{ const c=achS().crafted; return !!c&&Object.keys(c).some(id=>f(+id,ITEMS[id]||{})); };
+const achBuilt=id=>()=>!!(achS().built&&achS().built[id])||(typeof myStructures!=='undefined'&&myStructures.some(s=>s.kind===id&&!s.by));
+function achArmy(){ return player?player.party.filter(e=>e&&!e.dead).length:0; }
+function achIronId(id){ return Object.values(LINES).some(L=>L[1]===id)||id===I.IRON_ARMOR; }
+// every upgrade line at its top: tools, weapons, rods, armor (ownedTier reads the bag, the locker and worn armor)
+function achAllTop(){ if(!player) return false; const top={}, one={}; for(const [id,d] of Object.entries(ITEMS)){ if(!d||!d.line||!(d.tier>0)) continue; if(!(top[d.line]>=d.tier)){ top[d.line]=d.tier; one[d.line]=+id; } }
+  const lines=Object.keys(top); return lines.length>0&&lines.every(l=>ownedTier(one[l])>=top[l]); }
 const ACH=[
   ['VILLAGE_CLAIMED','Home Again','Rebuild the abandoned village with the Quartermaster','village',()=>!!(home&&home.claimed)],
   ['VILLAGE_TOWN','Growing Town','Grow your village into a town','village',()=>villageTier()>=1],
   ['VILLAGE_CITY','City of the Realm','Grow your village into a city','village',()=>villageTier()>=2],
+  ['SHOP_MASTER','Master Merchant','Raise a village shop to level 3','village',()=>!!(home&&home.shopLv&&Object.values(home.shopLv).some(v=>v>=3))],
   ['FIRST_TAME','Animal Friend','Tame your first animal','wild',()=>!!player&&ents.some(e=>!e.dead&&e.tamed&&e.team===player.team)],
+  ['FALCONER','Falconer','Tame a hawk, an eagle or an owl','wild',()=>!!player&&ents.some(e=>!e.dead&&e.tamed&&e.team===player.team&&e.kind==='animal'&&isBirdType(e.atype||e.type||e.animal))],
+  ['FISH_25','Angler','Catch 25 fish','wild',()=>(achS().fish||0)>=25],
+  ['BUG_CATCH','Bug Collector','Catch an insect with the bug net','wild',()=>!!(achS().bugs)],
+  ['ORE_COAL','First Spark','Mine coal','ore',achOre('coal')],
+  ['ORE_IRON','Iron Will','Mine iron ore','ore',achOre('iron')],
+  ['ORE_SILVER','Silver Lining','Mine silver ore','ore',achOre('silver')],
+  ['ORE_GOLD','Gold Rush','Mine gold ore','ore',achOre('gold')],
+  ['ORE_DIAMOND','Diamond in the Rough','Mine a diamond','ore',achOre('diamond')],
+  ['ORE_MYTHRIL','Mythril Deep','Mine mythril ore in the sky realm','ore',achOre('mythril')],
+  ['ORE_ADAMANT','Adamant','Mine adamantite ore in the magma realm','ore',achOre('adamant')],
+  ['ORE_STORM','Storm Catcher','Mine storm ore','ore',achOre('storm')],
+  ['CRAFT_WORKBENCH','Handy','Craft a workbench','craft',achCrafted(id=>id===B.WORKBENCH)],
+  ['CRAFT_FURNACE','Smelter','Craft a furnace','craft',achCrafted(id=>id===B.FURNACE)],
+  ['CRAFT_IRON','Iron Age','Craft an iron tool, weapon or armor','craft',achCrafted(id=>achIronId(id))],
+  ['CRAFT_100','Craftsman','Craft 100 items','craft',()=>(achS().craftN||0)>=100],
+  ['CRAFT_GEM','Gemsmith','Craft a gem weapon','craft',achCrafted(id=>!!GEM_WEAPONS[id])],
+  ['CRAFT_BOMB','Bombs Away','Craft a bomb','craft',achCrafted(id=>Object.values(BOMB).includes(id)&&id!==BOMB.POWDER)],
+  ['GEAR_ADAMANT','Adamant Arms','Own an adamantite tool, weapon or armor','gear',()=>!!player&&!!player.found&&Object.keys(player.found).some(id=>ITEMS[id]&&/^Adamantite /.test(ITEMS[id].name)&&ITEMS[id].kind!=='mat')],
+  ['GEAR_ALL','Master of Arms','Own the top of every upgrade line: tools, weapons, rods and armor','gear',achAllTop],
+  ['ARMY_1','Recruit','Hire your first soldier','war',()=>achArmy()>=1],
+  ['ARMY_10','Company','Have 10 soldiers in your army','war',()=>achArmy()>=10],
+  ['ARMY_20','Full Battalion','Have 20 soldiers in your army','war',()=>achArmy()>=20],
+  ['VETERAN','Veteran','A soldier of yours reaches Veteran rank','war',()=>!!player&&player.party.some(e=>e&&!e.dead&&rankIdx(e)>=1)],
+  ['KILLS_100','Hundred Foes','Defeat 100 enemies yourself','war',()=>(achS().kills||0)>=100],
+  ['MACHINE','Siege Engineer','Deploy a war machine','war',()=>!!(achS().machine)],
+  ['TOWER_TAKEN','Tower Taken','Capture an enemy watchtower, outpost or keep','war',()=>!!(achS().captured)],
   ['FACTION_CONQUERED','Conqueror','Conquer an enemy faction','war',()=>Object.values(conquered||{}).some(Boolean)],
+  ['BUILD_HUT','Homesteader','Build a wooden hut','build',achBuilt('hut')],
+  ['BUILD_TOWER','Watchman','Build a stone watchtower','build',achBuilt('tower')],
+  ['BUILD_KEEP','Keep Builder','Build a stone keep','build',achBuilt('keep')],
+  ['BUILD_PEN','Barn Raiser','Build an animal pen','build',achBuilt('pen')],
+  ['BUILD_FARM','Farmstead','Build a farmhouse','build',achBuilt('farm')],
+  ['PLACED_1000','Mason','Place 1,000 blocks','build',()=>(achS().placed||0)>=1000],
+  ['SKY','Sky Walker','Reach the sky realm','explore',()=>!!(achS().sky)],
+  ['MAGMA','Into the Fire','Reach the magma realm','explore',()=>!!(home&&home.magmaSeen)],
+  ['DEEP','Deep Delver','Dig down to the deepstone','explore',()=>!!(achS().deep)],
+  ['CHESTS_10','Treasure Hunter','Open 10 chests found in the world','explore',()=>Object.keys(achS().chests||{}).length>=10],
   ['BOSS_BEASTMASTER','Beast Tamer','Defeat the Goblin Beastmaster','boss',()=>!!(player&&player.bestiary&&player.bestiary.goblin_chief)||!!(home&&home.bossPortals&&home.bossPortals.camp)],
   ['BOSS_ARCHMAGE','Tower Breaker','Defeat the Archmage','boss',()=>!!(tower&&tower.cleared)],
   ['BOSS_MAGMA_WIZARD','Fire Quencher','Defeat the Magma Wizard','boss',()=>!!(fort&&fort.cleared)],
@@ -16658,7 +16710,7 @@ const ACH=[
   ['BOSS_SKY_RANGER','Above the Clouds','Defeat the Sky Ranger','boss',()=>!!(sky&&sky.castle&&sky.castle.cleared)],
   ['BOSS_MAGMA_KNIGHT','Heart of the Magma','Defeat the Magma Knight','boss',()=>!!(magma&&magma.keep&&magma.keep.cleared)],
   ['BOSS_VORTHAX','Dragon Slayer','Slay Vorthax the dragon','dragon',()=>!!dragonSlain]];
-const ACH_RIBBON={village:'#4caf50',wild:'#39d5c9',war:'#e05a4a',boss:'#8a5cff',dragon:'#ff7b1c'};
+const ACH_RIBBON={village:'#4caf50',wild:'#39d5c9',ore:'#8fa8c8',craft:'#b07a3a',gear:'#e0b030',war:'#e05a4a',build:'#6a9a3a',explore:'#4f8dff',boss:'#8a5cff',dragon:'#ff7b1c'};
 function achLoad(){ try{ const o=JSON.parse(localStorage.getItem(ACH_KEY)||'{}'); return o&&typeof o==='object'?o:{}; }catch(e){ return {}; } }
 let achDone=achLoad(), achT=2, achQuietUntil=0, achReturn='scrTitle';
 function achSave(){ try{ localStorage.setItem(ACH_KEY,JSON.stringify(achDone)); }catch(e){} }
@@ -16694,6 +16746,18 @@ function achButtons(){ const n=achCount(); for(const id of ['btnAchT','btnAchP']
 { const _u=update; update=function(dt,...a){ const r=_u(dt,...a); if((achT-=dt)<=0){ achT=4; try{ achTick(); }catch(e){} } return r; }; }
 // a boss kill shows at once
 { const _k=kill; kill=function(e,src,...a){ const key=e&&!e.dead&&curSlot!==4?bossKey(e):null; const r=_k(e,src,...a); try{ if(key&&e.dead&&STEAM_BOSS[key]) achGrant(STEAM_BOSS[key]); }catch(err){} return r; }; }
+// ----- 0.9.141: the records behind the counted achievements -----
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const id=world?tileAt(x,y):0; const r=_bt(x,y,...a); try{ if(id&&tileAt(x,y)!==id&&Object.values(ACH_ORES()).includes(id)){ const S=achS(); S.ores=S.ores||{}; S.ores[id]=1; } }catch(e){} return r; }; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ const before=world?tileAt(x,y):0; const r=_tp(x,y,id,...a); try{ if(world&&tileAt(x,y)!==before&&tileAt(x,y)!==0){ const S=achS(); S.placed=(S.placed||0)+1; } }catch(e){} return r; }; }
+{ const _co=craftOnce; craftOnce=function(rc,...a){ const r=_co(rc,...a); try{ if(r&&rc&&rc.out!=null){ const S=achS(); S.craftN=(S.craftN||0)+(rc.n||1); S.crafted=S.crafted||{}; S.crafted[rc.out]=1; } }catch(e){} return r; }; }
+{ const _rc=rollCatch; rollCatch=function(...a){ const r=_rc(...a); try{ if(player&&state==='play'){ const S=achS(); S.fish=(S.fish||0)+1; } }catch(e){} return r; }; }
+{ const _oc=openChest; openChest=function(x,y,...a){ const r=_oc(x,y,...a); try{ if(!$('#scrChest').hidden){ const S=achS(); S.chests=S.chests||{}; S.chests[x+','+y]=1; } }catch(e){} return r; }; }
+{ const _pb=placeBuilding; placeBuilding=function(bp,...a){ const r=_pb(bp,...a); try{ if(bp&&bp.id){ const S=achS(); S.built=S.built||{}; S.built[bp.id]=1; } }catch(e){} return r; }; }
+{ const _dm=deployMachine; deployMachine=function(...a){ const n=ents.filter(e=>e.kind==='machine'&&!e.dead).length; const r=_dm(...a); try{ if(ents.filter(e=>e.kind==='machine'&&!e.dead).length>n) achS().machine=1; }catch(e){} return r; }; }
+{ const _ct=captureTower; captureTower=function(...a){ const r=_ct(...a); try{ if(r) achS().captured=1; }catch(e){} return r; }; }
+{ const _bs=bugSwingTick; bugSwingTick=function(...a){ const n=BUGS.filter(b=>b.dead).length; const r=_bs(...a); try{ if(BUGS.filter(b=>b.dead).length>n&&heldItem()&&ITEMS[heldItem().id]&&ITEMS[heldItem().id].kind==='net') achS().bugs=1; }catch(e){} return r; }; }
+{ const _k=kill; kill=function(e,src,...a){ const mine=e&&!e.dead&&fromPlayer(src)&&(e.kind==='monster'||e.kind==='human'||e.kind==='sea')&&player&&e.team!==player.team&&!e.ghost; const r=_k(e,src,...a); try{ if(mine&&e.dead){ const S=achS(); S.kills=(S.kills||0)+1; } }catch(err){} return r; }; }
+{ const _t=achTick; achTick=function(...a){ try{ if(world&&player&&home){ const S=achS(), ty=player.y/T; if(ty<barrierY-1) S.sky=1; if(ty>deepYOf()&&ty<magmaY) S.deep=1; } }catch(e){} return _t(...a); }; }
 // ===== Beta 0.9.137: soldier posts at the castle's arrow slits (Kinard, 2026-10-19) =====
 // The castle's two corner towers have an arrow slit on every floor, but only watchtowers and keeps had posts. The castle
 // is now a building with posts of its own (myStructures kind 'castle', saved and respawned like a tower's): one inside
