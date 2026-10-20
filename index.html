@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792453981"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792453981"><link rel="manifest" href="manifest.webmanifest?v=1792453981"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792455271"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792455271"><link rel="manifest" href="manifest.webmanifest?v=1792455271"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.139</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.140</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.140</h3>
+    <p>Achievements: thirteen of them, earned in every copy of the game and kept on this device. Rebuild the village, grow it into a town and a city, tame an animal, conquer a faction, and defeat each of the eight bosses. A toast and a sound mark a new one; the Achievements button on the title screen and in the pause menu shows them all as medals, grey until earned, with the day and the world. A world that already did these earns them when it loads. The test world never earns any.</p>
     <h3>New in Beta 0.9.139</h3>
     <p>The sixth class is called the Scaleborn (it was the Dragonborn), and his five weapons are the Scaleforged sword, bow, mace, staff and daggers. Nothing else about him changed: unlocks, saves and the weapons you already have carry over.</p>
     <p>Seven items have new names and new pictures, with the same effects, recipes and shops: the Heart gem and Spirit gem (cut gems from the clusters in the magma realm; they were the life and mana crystals), the Bait pouch and Fisher's ring (fishing gear), the Fleetfoot sash (the dash), the Windstep boots, the Nautilus mask (breathe longer underwater) and the Merchant's charm (more coins). Anything you already own keeps working under its new name.</p>
@@ -815,7 +817,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.139</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.140</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1075,7 +1077,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.139</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.140</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1094,7 +1096,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.139', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.140', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -16633,6 +16635,65 @@ vTree=function(e){ const ox=Math.round(cxOf(e)/T), bad=e.vbad||new Set(), [a,b]=
 function woodMorning(){ if(!home||!home.lodge||isGuest()) return 0; const cut=ents.filter(e=>!e.dead&&e.kind==='villager'&&e.vjob==='woodcutter'&&e.team===(player&&player.team)); if(!cut.length) return 0;
   let total=0, kind=null; for(const e of cut){ const id=e.lastLog&&LOG_IDS.has(e.lastLog)?e.lastLog:(kind=kind||islandLog()); vDeliver(e,id,WOOD_DAILY); total+=WOOD_DAILY; } return total; }
 { const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ woodMorning(); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.140: achievements in the game itself (Kinard, 2026-10-20) =====
+// The thirteen achievements the Steam copy reports (98zxz_steam.js, docs/STEAM.md) are now earned in every copy of the
+// game: the browser, claude.ai, the phone, the free apps. They are kept on this device (localStorage ACH_KEY, like the
+// Scaleborn unlock), checked every few seconds from the world's own record (so a world that beat a boss long ago earns it
+// when loaded, quietly, with one summary toast), and shown with a toast and a sound when a new one is earned in play. An
+// Achievements button on the title screen and in the pause menu opens the list: a medal per achievement, grey until earned,
+// with the day it was earned and the world's name. The Steam copy still gets the same ones through steamAchieve. The test
+// world never earns any.
+const ACH_KEY='dragonamulet-achievements';
+const ACH=[
+  ['VILLAGE_CLAIMED','Home Again','Rebuild the abandoned village with the Quartermaster','village',()=>!!(home&&home.claimed)],
+  ['VILLAGE_TOWN','Growing Town','Grow your village into a town','village',()=>villageTier()>=1],
+  ['VILLAGE_CITY','City of the Realm','Grow your village into a city','village',()=>villageTier()>=2],
+  ['FIRST_TAME','Animal Friend','Tame your first animal','wild',()=>!!player&&ents.some(e=>!e.dead&&e.tamed&&e.team===player.team)],
+  ['FACTION_CONQUERED','Conqueror','Conquer an enemy faction','war',()=>Object.values(conquered||{}).some(Boolean)],
+  ['BOSS_BEASTMASTER','Beast Tamer','Defeat the Goblin Beastmaster','boss',()=>!!(player&&player.bestiary&&player.bestiary.goblin_chief)||!!(home&&home.bossPortals&&home.bossPortals.camp)],
+  ['BOSS_ARCHMAGE','Tower Breaker','Defeat the Archmage','boss',()=>!!(tower&&tower.cleared)],
+  ['BOSS_MAGMA_WIZARD','Fire Quencher','Defeat the Magma Wizard','boss',()=>!!(fort&&fort.cleared)],
+  ['BOSS_GRUKK','Ogre Slayer','Defeat Grukk the Ogre King in the orc cave','boss',()=>!!islands&&islands.some(i=>i.orcBossDead)],
+  ['BOSS_KRAKEN','Sea Legend','Defeat the Kraken','boss',()=>!!krakenSlain],
+  ['BOSS_SKY_RANGER','Above the Clouds','Defeat the Sky Ranger','boss',()=>!!(sky&&sky.castle&&sky.castle.cleared)],
+  ['BOSS_MAGMA_KNIGHT','Heart of the Magma','Defeat the Magma Knight','boss',()=>!!(magma&&magma.keep&&magma.keep.cleared)],
+  ['BOSS_VORTHAX','Dragon Slayer','Slay Vorthax the dragon','dragon',()=>!!dragonSlain]];
+const ACH_RIBBON={village:'#4caf50',wild:'#39d5c9',war:'#e05a4a',boss:'#8a5cff',dragon:'#ff7b1c'};
+function achLoad(){ try{ const o=JSON.parse(localStorage.getItem(ACH_KEY)||'{}'); return o&&typeof o==='object'?o:{}; }catch(e){ return {}; } }
+let achDone=achLoad(), achT=2, achQuietUntil=0, achReturn='scrTitle';
+function achSave(){ try{ localStorage.setItem(ACH_KEY,JSON.stringify(achDone)); }catch(e){} }
+function achCount(){ return ACH.filter(a=>achDone[a[0]]).length; }
+function achGrant(key,quiet){ if(achDone[key]) return false; const a=ACH.find(x=>x[0]===key); if(!a) return false;
+  achDone[key]={t:Date.now(),w:(home&&home.name)||''}; achSave();
+  if(!quiet){ toast(`Achievement earned: ${a[1]}. ${a[2]}`,5); try{ sfx('coin'); }catch(e){} }
+  try{ if(typeof steamAchieve==='function') steamAchieve(key); }catch(e){}
+  achButtons(); return true; }
+function achTick(){ if(!world||!player||curSlot===4) return 0; const quiet=performance.now()<achQuietUntil; let n=0;   // the test world never earns achievements
+  for(const a of ACH){ if(achDone[a[0]]) continue; let ok=false; try{ ok=a[4](); }catch(e){} if(ok&&achGrant(a[0],quiet)) n++; }
+  if(n&&quiet) toast(n===1?'This world has earned an achievement: see Achievements on the pause menu':`This world has earned ${n} achievements: see Achievements on the pause menu`,4);
+  return n; }
+// a medal: a ribbon in the group's colour and a gold disc with a star; grey when not yet earned
+function achMedal(a,done){ const c=mkCanvas(16,16), g=c.getContext('2d'); const R=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  const rib=done?ACH_RIBBON[a[3]]||'#c8a040':'#555560', gold=done?'#ffd84a':'#8a8a94', dark=done?'#c8a040':'#5c5c66', shine=done?'#fff2a8':'#a8a8b0';
+  R(4,0,3,7,rib); R(9,0,3,7,rib); R(5,5,6,2,rib); R(4,6,8,8,dark); R(5,7,6,6,gold); R(6,6,4,1,gold); R(6,14,4,1,dark); R(7,8,2,1,shine); R(6,9,1,1,shine); R(7,10,2,2,dark); R(9,9,1,1,dark); R(6,11,1,1,dark);
+  return c.toDataURL(); }
+function achDate(t){ try{ return new Date(t).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}); }catch(e){ return ''; } }
+function renderAch(){ const n=achCount(); $('#achCount').textContent=`${n} of ${ACH.length} earned`;
+  $('#achList').innerHTML=ACH.map(a=>{ const d=achDone[a[0]]; return `<div class="achrow${d?'':' locked'}"><img src="${achMedal(a,!!d)}" alt=""><div><b>${a[1]}</b><br><span>${a[2]}</span>${d?`<br><small>${achDate(d.t)}${d.w?' in '+esc(d.w):''}</small>`:'<br><small>Not yet</small>'}</div></div>`; }).join(''); }
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function openAch(from){ achReturn=from||'scrTitle'; hide(achReturn); renderAch(); show('scrAch'); }
+function closeAch(){ hide('scrAch'); show(achReturn); }
+function achButtons(){ const n=achCount(); for(const id of ['btnAchT','btnAchP']){ const b=$('#'+id); if(b) b.textContent=n?`Achievements (${n}/${ACH.length})`:'Achievements'; } }
+{ const st=document.createElement('style'); st.textContent=`.achrow{ display:flex; gap:12px; align-items:center; padding:8px 10px; margin:6px 0; border:2px solid var(--edge); background:rgba(0,0,0,.18); font-size:11px; line-height:1.5; }
+  .achrow img{ width:48px; height:48px; image-rendering:pixelated; flex:none; } .achrow.locked{ opacity:.5; } .achrow small{ color:var(--gold); font-size:9px; } #achList{ max-height:60vh; overflow:auto; }`; document.head.appendChild(st);
+  document.body.insertAdjacentHTML('beforeend',`<div class="overlay" id="scrAch" hidden><div class="panel"><div class="phead"><h2>Achievements</h2><button class="xbtn" id="achBack">Back</button></div><p id="achCount" class="desc"></p><div id="achList"></div></div></div>`);
+  const bt=document.createElement('button'); bt.className='btn'; bt.id='btnAchT'; bt.textContent='Achievements'; const refs=$('#btnRefs'); if(refs) refs.insertAdjacentElement('afterend',bt); else $('#scrTitle .tgrid').appendChild(bt);
+  const bp=document.createElement('button'); bp.className='btn'; bp.id='btnAchP'; bp.textContent='Achievements'; $('#btnHelpP').insertAdjacentElement('afterend',bp);
+  bt.addEventListener('click',()=>openAch('scrTitle')); bp.addEventListener('click',()=>openAch('scrPause')); $('#achBack').addEventListener('click',closeAch); achButtons(); }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); achQuietUntil=performance.now()+12000; achT=1; return r; }; }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); if((achT-=dt)<=0){ achT=4; try{ achTick(); }catch(e){} } return r; }; }
+// a boss kill shows at once
+{ const _k=kill; kill=function(e,src,...a){ const key=e&&!e.dead&&curSlot!==4?bossKey(e):null; const r=_k(e,src,...a); try{ if(key&&e.dead&&STEAM_BOSS[key]) achGrant(STEAM_BOSS[key]); }catch(err){} return r; }; }
 // ===== Beta 0.9.137: soldier posts at the castle's arrow slits (Kinard, 2026-10-19) =====
 // The castle's two corner towers have an arrow slit on every floor, but only watchtowers and keeps had posts. The castle
 // is now a building with posts of its own (myStructures kind 'castle', saved and respawned like a tower's): one inside
