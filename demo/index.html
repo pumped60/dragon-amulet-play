@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792620102"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792621554"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.152</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.154</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.154</h3>
+    <p>In the tutorial, the workbenches, furnaces and chests in the old village are their full size from the start, and digging into the ground shows a dirt or stone wall behind, as in a real world.</p>
+    <h3>New in Beta 0.9.153</h3>
+    <p>In the tutorial you meet Elder Rowan while the Quartermaster rebuilds the village. She asks for 5 stone from the little cave, so you mine it there and bring it back to her before you start building. The Tutorial screen fits a small phone, with every class in one row.</p>
     <h3>New in Beta 0.9.152</h3>
     <p>Dragon Amulet is played with the phone held sideways. Held upright, the game shows a card asking you to turn the phone and waits until you do. If you would rather play upright, Settings &gt; Controls &gt; Upright phone has Allow upright.</p>
     <h3>New in Beta 0.9.151</h3>
@@ -841,7 +845,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.152</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.154</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1102,7 +1106,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.152</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.154</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1121,7 +1125,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.152', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.154', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17307,7 +17311,9 @@ const TUT_STEPS=[
     at:()=>[HT().cx+8,HT().G-3], check:()=>{ const px=Math.floor(cxOf(player)/T); return player.grounded&&px>=HT().cx+7&&px<=HT().cx+9&&player.y+player.h<=(HT().G-2)*T+1; } },
   { id:'castle', pc:()=>`Walk left to the ruined castle and talk to the Quartermaster (${tutKey('use')}). Choose Fix up the castle: every new world starts with a village like this to rebuild.`, ph:()=>'Walk left to the ruined castle and talk to the Quartermaster (tap him, or the Talk button). Choose Fix up the castle: every new world starts with a village like this to rebuild.',
     at:()=>{ const q=ents.find(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead); return q?[Math.floor(cxOf(q)/T),Math.floor(q.y/T)-1]:[home.castleCx,HT().G-3]; }, check:()=>!!home.fixup||!!home.claimed },
-  { id:'rebuild', pc:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes about a minute, a tenth of the time it takes in a real world. Watch, or walk back to the right.', ph:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes about a minute, a tenth of the time it takes in a real world. Watch, or walk back to the right.',
+  { id:'talk', pc:()=>`While the Quartermaster rebuilds, talk to Elder Rowan in the first village house: stand by her and press ${tutKey('use')}. She has a job for you.`, ph:()=>'While the Quartermaster rebuilds, talk to Elder Rowan in the first village house: stand by her and tap her, or tap the Talk button. She has a job for you.',
+    at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().talked },
+  { id:'rebuild', pc:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes about a minute, a tenth of the time it takes in a real world. Wait here until it is done.', ph:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes about a minute, a tenth of the time it takes in a real world. Wait here until it is done.',
     at:()=>[home.castleCx,HT().G-3], check:()=>!!home.claimed&&!home.fixup },
   { id:'miners', enter:()=>tutWanderers(), pc:()=>`Two wanderers came to the village. Talk to each one (${tutKey('use')}) and choose Miner. The first becomes your mine foreman and builds the miners' hut with an ore cart; the second digs ore for you.`, ph:()=>'Two wanderers came to the village. Talk to each one (tap them, or the Talk button) and choose Miner. The first becomes your mine foreman and builds the miners\' hut with an ore cart; the second digs ore for you.',
     at:()=>tutDrifterAt(), check:()=>!!home.foreman&&(home.miners||0)>=1 },
@@ -17317,10 +17323,12 @@ const TUT_STEPS=[
     at:()=>[home.hx0+10,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2 },
   { id:'cave', pc:()=>'Explore the little cave in the hill on the right: walk in and go down to the chest at the bottom. Real caves go much deeper, with ore, chests and monsters.', ph:()=>'Explore the little cave in the hill on the right: walk in and go down to the chest at the bottom. Real caves go much deeper, with ore, chests and monsters.',
     at:()=>HT().v>=2?[HT().cx+39,HT().G-1]:null, check:()=>{ const H=HT(); if(H.v<2) return true; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); return px>=H.cx+24&&px<=H.cx+34&&py>=H.G+3&&py<=H.G+7; } },
-  { id:'mine', pc:()=>'Mine 5 stone from the cave walls: select the pickaxe (key 2), point at the stone and hold the left mouse button.', ph:()=>'Mine 5 stone from the cave walls: tap the pickaxe in the hotbar, then push the Aim and use stick toward the stone.',
-    at:()=>[HT().cx+31,HT().G+7], check:()=>countItem(B.STONE)>=5 },
+  { id:'mine', pc:()=>'Mine 8 stone from the cave walls: 5 for Elder Rowan and 3 to build with. Select the pickaxe (key 2), point at the stone and hold the left mouse button.', ph:()=>'Mine 8 stone from the cave walls: 5 for Elder Rowan and 3 to build with. Tap the pickaxe in the hotbar, then push the Aim and use stick toward the stone.',
+    at:()=>[HT().cx+31,HT().G+7], check:()=>countItem(B.STONE)>=8||(HT().quest&&countItem(B.STONE)>=3) },
   { id:'ore', pc:()=>'Mine the 3 coal in the cave ceiling (the dark blocks). Ore is how you get better gear.', ph:()=>'Mine the 3 coal in the cave ceiling (the dark blocks). Ore is how you get better gear.',
     at:()=>[HT().cx+29,HT().G+2], check:()=>countItem(B.COAL)>=3 },
+  { id:'quest', pc:()=>'Take the 5 stone back to Elder Rowan and talk to her again. Villagers trade with you and give work like this.', ph:()=>'Take the 5 stone back to Elder Rowan and talk to her again. Villagers trade with you and give work like this.',
+    at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().quest },
   { id:'place', pc:()=>'Build: select the stone in the hotbar and right-click where it should go. Place 3 blocks.', ph:()=>'Build: tap the stone in the hotbar, then tap the ground where it should go. Place 3 blocks.',
     check:()=>HT().placed>=3 },
   { id:'bench', pc:()=>`Craft a workbench: press ${tutKey('bag')}, open Crafting, pick Workbench and press Craft. It takes 10 planks.`, ph:()=>'Craft a workbench: tap the bag button, open Crafting, pick Workbench and tap Craft. It takes 10 planks.',
@@ -17343,17 +17351,13 @@ const TUT_STEPS=[
     at:()=>{ const a=ents.find(e=>e.tutAnimal&&!e.dead&&!e.tamed); return a?[Math.floor(cxOf(a)/T),Math.floor(a.y/T)-1]:null; }, check:()=>ents.some(e=>e.tutAnimal&&e.tamed&&!e.dead) },
   { id:'pen', pc:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.', ph:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.',
     at:()=>[HT().cx+45,HT().G-2], check:()=>ents.some(e=>e.tamed&&!e.dead&&e.fpen) },
-  { id:'talk',  pc:()=>`Talk to Elder Rowan in the first village house: stand by her and press ${tutKey('use')}.`, ph:()=>'Talk to Elder Rowan in the first village house: stand by her and tap her, or tap the Talk button.',
-    at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().talked },
-  { id:'quest', pc:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.', ph:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.',
-    at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().quest },
   { id:'fight', enter:()=>tutGoblins(), pc:()=>'Two goblins are coming from the right! Select your weapon (key 1) and click on them. Your soldier and your pet fight with you. Watch your health bar.', ph:()=>'Two goblins are coming from the right! Tap your weapon in the hotbar and push the Aim and use stick toward them. Your soldier and your pet fight with you. Watch your health bar.',
     at:()=>{ const g=ents.find(e=>e.tutGob&&!e.dead); return g?[Math.floor(cxOf(g)/T),Math.floor(g.y/T)-1]:null; }, check:()=>!!HT().gobs&&tutGobsLeft()===0 },
   { id:'done', final:true, pc:()=>`You are ready for the real world: mine deeper, grow the village, raise a bigger army and face Vorthax. ${tutKey('bag')} opens the bag, Esc the menu, ${tutKey('map')} the map.`, ph:()=>'You are ready for the real world: mine deeper, grow the village, raise a bigger army and face Vorthax. The bag, map and menu buttons are along the top.' } ];
 // ---- the world ----
 function makeTutorialWorld(cls){ curSlot=TUT_SLOT; heroPick.state=null; heroPick.newCls=null;
   newGame('small','g',CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'survival',kit:'standard',death:'keep',wx:'off',seed:TUT_SEED});
-  home.tutorial={ v:3, sv:3, step:0, G:0, cx:0, placed:0, talked:false, quest:false, gobs:false };
+  home.tutorial={ v:3, sv:4, step:0, G:0, cx:0, placed:0, talked:false, quest:false, gobs:false };
   tutFlatten(); tutBuild(); tutRespawn(); tutEnter(); try{ localStorage.setItem(TUT_ASK_KEY,'1'); }catch(e){} saveLocal(); }
 function tutFlatten(){ const G=Math.max(skyOff+40,seaY-10), cx=Math.floor(W/2); Object.assign(home.tutorial,{G,cx});
   for(let x=0;x<W;x++){ for(let y=0;y<H;y++){ const i=y*W+x; world[i]=y<G?0:y===G?B.GRASS:y<=G+5?B.DIRT:B.STONE; bg[i]=0; shape[i]=0; liq[i]=0; explored[i]=1; } oceanCol[x]=0; surf[x]=G; updateSkyTop(x); }
@@ -17377,7 +17381,11 @@ function tutBuild(){ const {G,cx}=HT(); const P=B.PLANK, S=B.STONE;
   for(let x=cx+7;x<=cx+9;x++){ wset(x,G-2,B.GRASS); wset(x,G-1,B.DIRT); wset(x,G,B.DIRT); }   // the ledge to jump onto: grass on top, plain dirt below and under it
   { const hx=home.hx0+10; wset(hx,G-1,B.CHEST); wset(hx+1,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:4}; c.items[2]={id:I.APPLE,n:2}; chests[hx+','+(G-1)]=c; }   // the tutorial chest between the first two village houses (0.9.146: the separate hut is gone)
   tutCave(); tutPenBuild(); { const R=mulberry(TUT_SEED+5); for(const dx of [-108,21,31]) growTree(cx+dx,surf[cx+dx],1,R,'oak'); }   // a few trees
+  try{ fixStations(); }catch(e){ console.warn(e); } tutBackWalls(); HT().stV=1; HT().bgV=1;   /* 0.9.154: stations and chests get their full size; dirt and stone keep back walls like a real world */
   for(let x=0;x<W;x++) updateSkyTop(x); }
+// 0.9.154: back walls under the ground, as in a real world: dirt under the topsoil, stone deeper (only where none is set)
+function tutBackWalls(){ const RB=(typeof ROCK_BG!=='undefined')?ROCK_BG:{}; const wall=id=>id===B.DIRT||id===B.GRASS||id===B.FARMLAND?1:id===B.SAND?(RB[B.SAND]!=null?RB[B.SAND]:1):(id===B.STONE||id===B.COAL||id===B.IRON)?2:0;
+  for(let x=0;x<W;x++){ const top=surf[x]; for(let y=top+1;y<H;y++){ const i=y*W+x; if(bg[i]) continue; const w=wall(world[i]); if(w) bg[i]=w; } } }
 // the mini cave: a sloping passage into the right hill, down to a lit room with ore and a chest
 function tutCave(){ const {G,cx}=HT(); const cl=(x,y)=>{ wset(x,y,0); if(x>=0&&x<W&&y>=0&&y<H){ shape[y*W+x]=0; bg[y*W+x]=2; } };
   for(let x=cx+34;x<=cx+39;x++){ const f=G+(cx+40-x); for(let y=f-3;y<f;y++) cl(x,y); wset(x,f,x===cx+39?B.DIRT:B.STONE); }
@@ -17394,7 +17402,7 @@ function tutWildKeep(){ const {cx}=HT(); for(const a of ents){ if(!a.tutAnimal||
 // the sea is the edge: you can wade and swim out a little, no further
 function tutBorder(){ const H=HT(); if((H.v||1)<3) return; const lo=(H.cx-112-30)*T, hi=(H.cx+52+30)*T; if(player.x<lo){ player.x=lo; player.vx=Math.max(0,player.vx); tutEdgeMsg(); } else if(player.x>hi){ player.x=hi; player.vx=Math.min(0,player.vx); tutEdgeMsg(); } }
 let tutEdgeT=0; function tutEdgeMsg(){ if(performance.now()<tutEdgeT) return; tutEdgeT=performance.now()+4000; toast('The open sea is the edge of the tutorial. Real worlds have islands across the water.',3); }
-function tutRespawn(){ if(!tutOn()) return; const {G,cx}=HT(); const keep=e=>e===player||(e.kind==='villager'&&e.team===player.team)||e.kind==='drifter'||(e.team===player.team&&(e.kind==='human'||e.tamed))||e.tutAnimal; for(const e of ents) if(!keep(e)) e.dead=true; ents=ents.filter(keep); dragon=null; projs=[];   // the village folk stay (the Quartermaster, helpers and wanderers come from the real village code)
+function tutRespawn(){ if(!tutOn()) return; const {G,cx}=HT(); try{ if(!HT().stV){ HT().stV=1; facRun(()=>fixStations()); } if(!HT().bgV){ HT().bgV=1; tutBackWalls(); } }catch(e){ console.warn(e); } const keep=e=>e===player||(e.kind==='villager'&&e.team===player.team)||e.kind==='drifter'||(e.team===player.team&&(e.kind==='human'||e.tamed))||e.tutAnimal; for(const e of ents) if(!keep(e)) e.dead=true; ents=ents.filter(keep); dragon=null; projs=[];   // the village folk stay (the Quartermaster, helpers and wanderers come from the real village code)
   if(!ents.some(e=>e.tut)){ const hx=home.hx0; const v=makeVillager(player.team,{x0:hx+1,x1:hx+7,gy:G,role:'herbalist'}); v.name='Elder Rowan'; v.tut=true; v.x=(hx+4)*T; ents.push(v); }   // she lives in the first village house
   if(!home.claimed&&!home.quarter&&!ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead)) ents.push(makeQuartermaster());
   const st=TUT_STEPS[HT().step]; if(st&&st.id==='fight'&&HT().gobs) tutGoblins(); if(HT().step<=TUT_STEPS.findIndex(s=>s.id==='tame')) tutWild(); }
@@ -17441,10 +17449,11 @@ function tutCard(){ const d=$('#tutCard'), tab=$('#tutTab'); if(!tutOn()||TUT.hi
   $('#tutStep').textContent=st.final?'Done!':`Step ${i+1} of ${TUT_STEPS.length-1}`; $('#tutText').textContent=(tutPhone()?st.ph:st.pc)(); $('#tutSkip').textContent=st.final?'Close':'Skip step'; $('#tutNew').hidden=!st.final; }
 const TUT_V1=['move','jump','castle','rebuild','chest','mine','ore','place','bench','placebench','pick','torch','eat','talk','quest','fight','done'];
 const TUT_V2=['move','jump','castle','rebuild','miner','soldier','chest','mine','ore','cave','place','bench','placebench','pick','torch','eat','tame','talk','quest','fight','done'];
+const TUT_V3=['move','jump','castle','rebuild','miners','recruit','chest','cave','mine','ore','place','bench','placebench','pick','torch','eat','hoe','till','plant','tame','pen','talk','quest','fight','done'];
 const TUT_ALIAS={ miner:'miners', soldier:'recruit' };
-function tutMigrate(){ const H=HT(); const sv=H.sv||(H.v||1); if(sv>=3) return; const list=sv>=2?TUT_V2:TUT_V1; let id=list[H.step]; id=TUT_ALIAS[id]||id;
+function tutMigrate(){ const H=HT(); const sv=H.sv||(H.v||1); if(sv>=4) return; const list=sv>=3?TUT_V3:sv>=2?TUT_V2:TUT_V1; let id=list[H.step]; id=TUT_ALIAS[id]||id;
   /* the steps added in between come before the one you were on only if they are earlier in the list; the cave step passes by itself in a world without a cave */
-  const n=TUT_STEPS.findIndex(s=>s.id===id); if(n>=0) H.step=n; H.sv=3; H.entered=false;
+  const n=TUT_STEPS.findIndex(s=>s.id===id); if(n>=0) H.step=n; H.sv=4; H.entered=false;
   try{ facRun(()=>tutPenBuild((x,y,id)=>setTile(x,y,id))); }catch(e){} }
 function tutEnter(){ try{ tutMigrate(); }catch(e){} TUT.hidden=false; TUT.t=0; rules.wx='off'; const st=TUT_STEPS[HT().step]; if(st&&st.enter&&!HT().entered) { try{ st.enter(); }catch(e){} HT().entered=true; } tutCard(); }
 function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) return; H.step++; H.entered=true; const st=TUT_STEPS[H.step]; try{ if(st.enter) st.enter(); }catch(e){ console.warn(e); }
@@ -17460,7 +17469,7 @@ function drawTutArrow(){ if(!tutOn()||state!=='play'||TUT.hidden) return; const 
 { const _tp=tryPlace; tryPlace=function(x,y,id,...a){ const before=tutOn()?countItem(id):0; const r=_tp(x,y,id,...a); try{ if(tutOn()&&id===B.STONE&&countItem(id)<before) HT().placed=(HT().placed||0)+1; }catch(e){} return r; }; }
 { const _i=interact; interact=function(v,...a){ if(v&&v.tut&&tutOn()){ tutTalk(v); talkTarget=undefined; return; } return _i(v,...a); }; }
 function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
-  if(!H.talked){ H.talked=true; toast('Elder Rowan: "Welcome, traveller. Bring me 5 stone and I will pay you for it."',4); return; }
+  if(!H.talked){ H.talked=true; toast('Elder Rowan: "Welcome, traveller. Bring me 5 stone from the little cave in the hill to the east, and I will pay you for it."',4.5); return; }
   if(!H.quest){ if(countItem(B.STONE)>=5){ takeItem(B.STONE,5); player.coins+=20; invDirty=true; H.quest=true; sfx('coin'); toast('Elder Rowan: "Good work. Here are 20 coins. Villagers trade with you and give you work like this."',4.5); } else toast('Elder Rowan: "Come back when you have 5 stone."',3); return; }
   toast('Elder Rowan: "Go on now. The goblins will not wait."',3); }
 { const _vn=villagerName; villagerName=function(v,...a){ if(v&&v.tut) return v.name||'Elder Rowan'; return _vn(v,...a); }; }
@@ -17495,6 +17504,7 @@ function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
 
 // 0.9.150: in the tutorial every wanderer becomes a miner (soldiers come from the Recruiter)
 { const _rr=renderRecruit; renderRecruit=function(...a){ const r=_rr(...a); try{ if(tutOn()) for(const b of document.querySelectorAll('#recruitList [data-job]')) if(b.dataset.job!=='miner') b.remove(); }catch(e){} return r; }; }
+{ const st=document.createElement('style'); st.textContent='@media (max-height:560px){ #scrTut #tutCls{ grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; } #scrTut #tutCls .choice{ padding:6px 4px; font-size:8px; } #scrTut #tutCls .choice img{ width:20px!important; height:29px!important; margin-bottom:2px!important; } #scrTut p{ margin:4px 0; line-height:1.5; } #tutContinue{ padding:8px; } } #scrTut .panel::-webkit-scrollbar{ width:8px; } #scrTut .panel::-webkit-scrollbar-thumb{ background:#c9a24a; border-radius:4px; } #scrTut .panel{ scrollbar-width:thin; scrollbar-color:#c9a24a transparent; }'; document.head.appendChild(st); }
 { const st=document.createElement('style'); st.textContent='#scrTut .panel, #scrTutAsk .panel{ max-height:calc(100dvh - 20px); overflow-y:auto; touch-action:pan-y; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }'; document.head.appendChild(st); }
 // ===== Beta 0.9.137: villagers and their job blocks, workers and their foreman, arrivals, house stages (Kinard, 2026-10-19) =====
 // 1. A villager works (sells, gathers) as soon as their job block (JOB_ITEM: the smith's anvil, the cook's pot...) is
