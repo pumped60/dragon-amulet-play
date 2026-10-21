@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792506622"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792506622"><link rel="manifest" href="manifest.webmanifest?v=1792506622"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792555525"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792555525"><link rel="manifest" href="manifest.webmanifest?v=1792555525"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.143</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.144</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.144</h3>
+    <p>Vorthax moves: his body rides each wing beat, his head nods against it, a wave runs down his tail, his legs swing in flight and he breathes when he perches. His teeth are a neat row, his legs have a thigh, a shin and clawed feet, and when he breathes fire a flickering plume pours from his open jaws while the fire bolts fly as flames with a tail. In the scene editor, pinch on a phone or press the − and + buttons to zoom out far enough to see a whole scene.</p>
     <h3>New in Beta 0.9.143</h3>
     <p>The scene editor: on the title screen, Test world, then Scene editor opens a flat, empty world where everything is a sticker. Press Stickers and pick a block, a back wall, a slope, a plant or piece of furniture, a hero or soldier of any side, a villager, an enemy, an animal, a boss, Vorthax, a whole building or tree, or an item, then tap the world to put it there. Drag to paint blocks, right-click or use Erase to take things away. Select drags a box; Copy, Cut and Paste move it anywhere, as many times as you like; Fill box fills it with the block you hold; Undo and Redo go back and forward. Everyone stands still like a sticker until you press Move, and Reset puts every one back where you set it. Pick the time of day from the list, press Photo to save a picture, and Flatten all to start over. Nothing spawns, grows or attacks by itself. The scene saves in slot 6 and is back under Continue. Keys on a computer: P place, X erase, V select, O move, I stickers, Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+Z, Ctrl+Y, Delete.</p>
     <h3>New in Beta 0.9.142</h3>
@@ -823,7 +825,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.143</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.144</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1083,7 +1085,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.143</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.144</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1102,7 +1104,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.143', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.144', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4642,7 +4644,9 @@ function render(){
     else if(p.kind==='bolt'){ const a=Math.atan2(p.vy,p.vx); ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(a); ctx.fillStyle='#3f3150'; ctx.fillRect(-14,-3,28,6); ctx.fillStyle='#8a5c2d'; ctx.fillRect(-13,-1,22,2); ctx.fillStyle='#dfe3e8'; ctx.fillRect(9,-3,6,6); ctx.fillRect(15,-1,3,2); ctx.fillStyle='#e5383b'; ctx.fillRect(-14,-4,5,2); ctx.fillRect(-14,2,5,2); ctx.restore(); }
     else if(p.kind==='ball'||p.kind==='boulder'){ const r=p.kind==='ball'?5:9; const x=Math.round(p.x), y=Math.round(p.y); ctx.fillStyle='#3f3150'; ctx.fillRect(x-r-1,y-r+1,2*r+2,2*r-2); ctx.fillRect(x-r+1,y-r-1,2*r-2,2*r+2); ctx.fillStyle=p.kind==='ball'?'#3a3a44':'#8a8a86'; ctx.fillRect(x-r,y-r+2,2*r,2*r-4); ctx.fillRect(x-r+2,y-r,2*r-4,2*r); ctx.fillStyle=p.kind==='ball'?'#6a6a74':'#b8b8b0'; ctx.fillRect(x-r+2,y-r+2,r,r-1); }
     else if(p.kind==='magic'){ const x=Math.round(p.x), y=Math.round(p.y); ctx.globalAlpha=0.35; ctx.fillStyle=p.col; ctx.fillRect(x-9,y-5,18,10); ctx.fillRect(x-5,y-9,10,18); ctx.globalAlpha=1; ctx.fillStyle='#17111f'; ctx.fillRect(x-6,y-6,12,12); ctx.fillStyle=p.col; ctx.fillRect(x-5,y-5,10,10); ctx.fillStyle='#ffffff'; ctx.fillRect(x-3,y-3,5,5); ctx.fillRect(x-1,y-7,2,2); }
-    else if(p.kind==='fire'){ ctx.fillStyle=p.life>0.5?'#ffcf3a':'#ff7b1c'; const s=p.life>0.5?4:5; ctx.fillRect(Math.round(p.x-s/2),Math.round(p.y-s/2),s,s); }
+    else if(p.kind==='fire'){ const s=p.life>0.5?4:5, fl=Math.sin(performance.now()/40+p.x)*0.8; const vl=Math.hypot(p.vx||0,p.vy||0)||1, ux=(p.vx||0)/vl, uy=(p.vy||0)/vl;   // 0.9.144: a flame bolt with a tail
+      ctx.fillStyle='rgba(255,64,24,0.55)'; ctx.beginPath(); ctx.ellipse(p.x-ux*4,p.y-uy*4,s+1.5+fl,s*0.7,Math.atan2(uy,ux),0,Math.PI*2); ctx.fill();
+      ctx.fillStyle='#ff7b1c'; ctx.beginPath(); ctx.arc(p.x,p.y,s/2+1+fl*0.5,0,Math.PI*2); ctx.fill(); ctx.fillStyle='#ffcf3a'; ctx.beginPath(); ctx.arc(p.x+ux,p.y+uy,s/2-0.5,0,Math.PI*2); ctx.fill(); }
     else { ctx.fillStyle='#ff7b1c'; ctx.fillRect(Math.round(p.x-7),Math.round(p.y-7),14,14); ctx.fillStyle='#ffd04a'; ctx.fillRect(Math.round(p.x-4),Math.round(p.y-4),8,8); ctx.fillStyle='#fff6b0'; ctx.fillRect(Math.round(p.x-2),Math.round(p.y-2),3,3); } }
   for(const p of parts){ if(p.cloud){ p.l0=p.l0||p.life; const f=Math.max(0,p.life/p.l0); ctx.globalAlpha=0.6*f; ctx.fillStyle=p.col; ctx.beginPath(); ctx.arc(p.x,p.y,p.r0+(1-f)*4,0,Math.PI*2); ctx.fill(); continue; } ctx.globalAlpha=p.blood?Math.min(1,p.life*1.5):1; ctx.fillStyle=p.col; ctx.fillRect(Math.round(p.x),Math.round(p.y),p.sz,p.sz); } ctx.globalAlpha=1;   // 0.9.132: cloud puffs float, grow and fade
   { const t=performance.now()/1000;
@@ -14498,6 +14502,10 @@ function dragonArt(pose,mode,white){ const key=pose+'|'+mode+(white?'|w':''); le
   const E=(x,y,rx,ry,col,rot)=>{ g.fillStyle=col; g.beginPath(); g.ellipse(x,y,rx,ry,rot||0,0,Math.PI*2); g.fill(); };
   const L=(x0,y0,x1,y1,w,col)=>{ g.strokeStyle=col; g.lineWidth=w; g.lineCap='round'; g.beginPath(); g.moveTo(x0,y0); g.lineTo(x1,y1); g.stroke(); };
   const perch=mode==='perch', breath=mode==='breath', dive=mode==='dive';
+  // 0.9.144 (Kinard: "more motion throughout his body"): the whole body rides the wing beat, the head nods against it,
+  // the tail runs a wave from the hips to the tip, the legs swing a little in flight, and a perched dragon breathes
+  const bob=perch?Math.sin(ph)*0.8:-f*2.2, nod=perch?Math.sin(ph+0.4)*1.2:Math.sin(ph+0.7)*1.8, swing=perch?0:Math.sin(ph-0.5)*0.22, breathe=perch?1+0.05*Math.sin(ph):1;
+  g.translate(0,bob);
   // a wing: shoulder (sx,sy); the up pose bends down as f falls; the far wing sits higher and darker
   const wing=(sx,sy,mem,far)=>{ const WS=1.45, yS=perch?0.35:0.2+0.8*f, xs=(far?0.86:1)*WS; const pt=(x,y)=>[sx+x*xs,sy+y*yS*WS-(far?3:0)];
     const el=pt(-6,-12), wr=pt(2,-31), t1=pt(-40,-14), t2=pt(-32,6), t3=pt(-18,15), t4=pt(-4,12);
@@ -14508,37 +14516,44 @@ function dragonArt(pose,mode,white){ const key=pose+'|'+mode+(white?'|w':''); le
     L(sx,sy,el[0],el[1],3,bone); L(el[0],el[1],wr[0],wr[1],3,bone); for(const t of [t1,t2,t3]) L(wr[0],wr[1],t[0],t[1],1.4,bone);
     g.fillStyle=horn; g.fillRect(Math.round(wr[0])-1,Math.round(wr[1])-3,2,3); };
   wing(6,16,memF,true);
-  // tail: tapering from the hips, swaying, spikes on top and an arrow tip
-  { let px=-26, py=30; const segs=14; for(let k=1;k<=segs;k++){ const t=k/segs, x=-26-t*42, y=30+t*6+Math.sin(ph*0.5+t*3)*0*0+sway*t*t*7, w=8.5*(1-t)+2.2;
+  // tail: tapering from the hips, a wave running down it, spikes on top and an arrow tip
+  { let px=-26, py=30; const segs=14; for(let k=1;k<=segs;k++){ const t=k/segs, x=-26-t*42, y=30+t*6+sway*t*t*9+Math.sin(ph*1.0-t*2.6)*2.2*t, w=8.5*(1-t)+2.2;
       E((px+x)/2,(py+y)/2,4.2,w/2,k%2?body:mid); E((px+x)/2,(py+y)/2+w/2-1.2,3.4,1.1,belly);
       if(k%2===0&&k<segs) P([[x+2,y-w/2+0.5],[x,y-w/2-3.2+t*1.5],[x-2,y-w/2+0.5]],hornD); px=x; py=y; }
     P([[px+1,py-1],[px-7,py-5],[px-4,py],[px-7,py+5],[px+1,py+1]],dark); }
-  // far legs (behind the body)
-  const leg=(x,y,col,claw)=>{ if(perch){ E(x,y+3,5,7,col); g.fillStyle=col; g.fillRect(x-3,y+8,6,9); g.fillStyle=claw; for(const dx of [-4,-1,2]) g.fillRect(x+dx,y+16,2,3); }
-      else { E(x-2,y+2,5,6,col,-0.6); P([[x-4,y+5],[x-13,y+11],[x-10,y+13],[x-1,y+8]],col); g.fillStyle=claw; g.fillRect(x-14,y+11,2,2); g.fillRect(x-12,y+13,2,2); } };
-  leg(-18,36,dark,hornD); leg(12,36,dark,hornD);
-  // body: a long chest and belly with shading and scale rows
-  E(-4,27,30,12,body); E(-4,22,26,6,hi); E(-2,33,26,6,belly); for(let i=-24;i<=20;i+=4){ g.fillStyle=bellyD; g.fillRect(i,32,1,6); }
+  // legs: a thigh, a shin and a clawed foot. Perched they stand under the body; in flight they tuck back and swing with the beat
+  const leg=(x,y,col,claw,shade)=>{ g.save(); g.translate(x,y); if(!perch) g.rotate(swing);   // 0.9.144: the knee bends forward and every foot points the way he faces (Kinard: the legs looked backwards)
+      const toes=(fx,fy)=>{ for(const dx of [0,3,6]) P([[fx+dx,fy],[fx+dx+2,fy],[fx+dx+1.5,fy+3]],claw); };
+      if(perch){ E(0,2,5.5,6.5,col); P([[-3,5],[3,5],[2,13],[-2,13]],col); g.fillStyle=shade; g.fillRect(-1,7,1,5);
+        P([[-3,12],[7,12],[8,15],[-3,15]],col); toes(1,15); }
+      else { E(1,2,5,5.5,col,0.5); P([[2,4],[6,7],[1,14],[-3,12]],col); g.fillStyle=shade; g.fillRect(1,8,1,4);   // thigh forward and down to a knee, the shin back under it
+        P([[-3,12],[8,12],[9,15],[-2,15]],col); toes(2,15); }   // the foot tucked under the body, pointing ahead
+      g.restore(); };
+  leg(-18,36,dark,hornD,deep); leg(12,36,dark,hornD,deep);
+  // body: a long chest and belly with shading and scale rows (the belly swells a touch as a perched dragon breathes)
+  E(-4,27,30,12,body); E(-4,22,26,6,hi); E(-2,33,26,6*breathe,belly); for(let i=-24;i<=20;i+=4){ g.fillStyle=bellyD; g.fillRect(i,32,1,6); }
   g.fillStyle=mid; for(let i=-26;i<=20;i+=6) for(let j=0;j<2;j++) g.fillRect(i+j*3,25+j*2,2,1);
   // spikes down the back
   for(let i=0;i<8;i++){ const x=-22+i*6, y=16-Math.sin(i/7*Math.PI)*2; P([[x-2.5,y+1],[x+0.5,y-5+(i%2)],[x+2.5,y+1]],i%2?horn:hornD); }
-  // neck up to the head
-  for(let k=0;k<=8;k++){ const t=k/8, x=20+t*18, y=24-t*13-(dive?-t*6:0); E(x,y,6.5-t*1.5,6-t*1.2,k%2?body:mid); E(x+1.5,y+3.5,3.6-t*1.2,2,belly); }
-  // head: skull, snout, jaw (open while it breathes fire), brow, horns, eye, nostril, teeth
-  { const hx=40, hy=dive?16:10, jaw=breath?5:1;
+  // neck up to the head, bending with the nod
+  const hx=40, hy=(dive?16:10)+nod;
+  for(let k=0;k<=8;k++){ const t=k/8, x=20+t*18, y=24+(hy+2-24)*t-Math.sin(t*Math.PI)*2; E(x,y,6.5-t*1.5,6-t*1.2,k%2?body:mid); E(x+1.5,y+3.5,3.6-t*1.2,2,belly); }
+  // head: skull, snout, jaw (open while it breathes fire), brow, horns, eye, nostril, a neat row of teeth, a small frill
+  { const jaw=breath?5+Math.round(1.5+1.5*Math.sin(ph*2)):1;
     P([[hx-6,hy-6],[hx+6,hy-8],[hx+16,hy-4],[hx+20,hy],[hx+19,hy+3],[hx+8,hy+4],[hx-4,hy+5]],body);
     P([[hx-4,hy+4],[hx+8,hy+4],[hx+18,hy+3+jaw],[hx+15,hy+6+jaw],[hx+2,hy+8],[hx-5,hy+7]],mid);
-    if(breath){ P([[hx+8,hy+4],[hx+19,hy+3],[hx+18,hy+3+jaw],[hx+9,hy+6]],'#4a0808'); g.fillStyle='#ff7b1c'; g.fillRect(hx+11,hy+5,7,2); }
-    g.fillStyle=horn; for(const x of [hx+10,hx+13,hx+16]) g.fillRect(x,hy+3,1,2);
+    if(breath){ P([[hx+8,hy+4],[hx+19,hy+3],[hx+18,hy+3+jaw],[hx+9,hy+6]],'#4a0808'); g.fillStyle='#ff7b1c'; g.fillRect(hx+11,hy+5,7,2); g.fillStyle='#ffcf3a'; g.fillRect(hx+13,hy+5,3,1); }
+    for(let i=0;i<4;i++){ const tx=hx+8+i*3; P([[tx,hy+4],[tx+2,hy+4],[tx+1,hy+6]],horn); }   // upper teeth: four small points hanging from the jaw line
+    if(breath) for(let i=0;i<3;i++){ const tx=hx+10+i*3; P([[tx,hy+4+jaw],[tx+2,hy+4+jaw],[tx+1,hy+2+jaw]],horn); }   // the lower row shows when the mouth is open
     P([[hx-2,hy-6],[hx+10,hy-8],[hx+12,hy-6],[hx,hy-4]],dark);
     P([[hx-4,hy-5],[hx-14,hy-12],[hx-19,hy-11],[hx-8,hy-3]],horn); P([[hx-14,hy-12],[hx-19,hy-11],[hx-16,hy-9]],hornD);
     P([[hx+1,hy-7],[hx-7,hy-16],[hx-10,hy-15],[hx-2,hy-5]],hornD);
     E(hx+7,hy-3,2.6,1.8,'#efd25a'); g.fillStyle='#200404'; g.fillRect(hx+7,hy-4,1,3); g.fillStyle=deep; g.fillRect(hx+17,hy-1,2,1);
-    g.fillStyle=horn; for(let i=0;i<4;i++) g.fillRect(hx-8-i*2,hy-1+i,2,2); }
+    for(let i=0;i<3;i++){ const fx=hx-6-i*2, fy=hy+1+i*2; P([[fx+2,fy-1],[fx-3,fy+1],[fx+2,fy+2]],i%2?hornD:horn); } }   // a small frill at the jaw hinge (the old row of squares read as loose teeth)
   // the amulet on its chest
   E(28,22,3.4,3.4,'#c99a1a'); E(28,22,2.2,2.2,'#c8245e'); g.fillStyle='#f0b8cc'; g.fillRect(27,21,1,1);
   // near legs, then the near wing in front
-  leg(-12,38,body,horn); leg(18,37,body,horn);
+  leg(-12,38,body,horn,mid); leg(18,37,body,horn,mid);
   wing(4,18,memN,false);
   // snap to whole pixels and add the dark outline every sprite has
   const im=g.getImageData(0,0,DRG_W,DRG_H), a=im.data; for(let i=3;i<a.length;i+=4) a[i]=a[i]>110?255:0;
@@ -14552,10 +14567,20 @@ drawDragon=function(d){ const mode=d.dstate==='perch'?'perch':d.dstate==='breath
   const c=dragonArt(dragonPose(d),mode,false);
   ctx.save(); ctx.translate(Math.round(cxOf(d)),Math.round(d.y)); if(d.facing<0) ctx.scale(-1,1); ctx.imageSmoothingEnabled=false;
   ctx.drawImage(c,-DRG_OX,-DRG_OY);
-  if(mode==='breath'){ const t=performance.now()/90; ctx.globalAlpha=0.55+0.25*Math.sin(t); ctx.fillStyle='#ffcf3a'; ctx.fillRect(58,15,4,3); ctx.globalAlpha=1; }
+  if(mode==='breath') drawDragonFlame(d);
   if(d.hurtT>0&&Math.floor(performance.now()/70)%2===0){ ctx.globalAlpha=0.3;   // a quick flicker, so steady arrow fire doesn't wash it out
     ctx.drawImage(dragonArt(dragonPose(d),mode,true),-DRG_OX,-DRG_OY); ctx.globalAlpha=1; }
   ctx.restore(); };
+
+// the flame plume while Vorthax breathes fire: three flickering tongues from the mouth (world space, drawn fresh each frame)
+function drawDragonFlame(d){ const t=performance.now()/1000; const ph=dragonPose(d)/DRAGON_POSES*Math.PI*2, bob=-Math.sin(ph)*2.2, nod=Math.sin(ph+0.7)*1.8, jaw=5+Math.round(1.5+1.5*Math.sin(ph*2));
+  const mx=60, my=10+nod+bob+3+jaw/2;   // the sprite's mouth: head at (40,10), the jaw hinge 20 to the right, the same bob and nod the cached pose was drawn with
+  const cols=['rgba(255,64,24,0.55)','rgba(255,123,28,0.7)','rgba(255,207,58,0.9)'], lens=[46,36,24], wids=[14,10,6];
+  for(let k=0;k<3;k++){ const len=lens[k]*(0.85+0.15*Math.sin(t*23+k*2)), w=wids[k]; ctx.fillStyle=cols[k]; ctx.beginPath(); ctx.moveTo(mx,my-2);
+    for(let i=1;i<=6;i++){ const u=i/6, jag=Math.sin(t*31+i*1.7+k)*w*0.35*u; ctx.lineTo(mx+len*u,my-w*u*0.9+jag-2); }
+    ctx.lineTo(mx+len*1.05,my+Math.sin(t*27+k)*2); for(let i=6;i>=1;i--){ const u=i/6, jag=Math.cos(t*29+i*1.3+k)*w*0.35*u; ctx.lineTo(mx+len*u,my+w*u*0.7+jag+2); }
+    ctx.closePath(); ctx.fill(); }
+  ctx.fillStyle='#fff3b0'; ctx.fillRect(mx-1,my-1,3,3); }
 // ===== Beta 0.9.88: ten crops (Kinard, 2026-10-11) =====
 // Six new crops join wheat, carrots, pumpkins and potatoes: tomatoes, corn, strawberries, onions, cabbage and melons.
 // They grow wild on grassy islands (break a ripe one for its crop and seeds) and on tilled soil like the others, feed
@@ -17714,6 +17739,7 @@ document.body.insertAdjacentHTML('beforeend',`<div id="edBar" hidden>
   <button class="xbtn" id="edUndo" title="Ctrl+Z">Undo</button><button class="xbtn" id="edRedo" title="Ctrl+Y">Redo</button>
   <button class="xbtn" id="edFreeze">▶ Move</button><button class="xbtn" id="edReset">Reset</button>
   <select class="xbtn" id="edTime"><option value="0.06">Dawn</option><option value="0.3">Noon</option><option value="0.52">Dusk</option><option value="0.72">Night</option></select>
+  <button class="xbtn" id="edZoomOut" title="Zoom out">−</button><button class="xbtn" id="edZoomIn" title="Zoom in">+</button>
   <button class="xbtn" id="edPhoto">Photo</button><button class="xbtn" id="edFlat">Flatten all</button>
 </div>
 <div class="overlay" id="scrEd" hidden><div class="panel wide">
@@ -17742,8 +17768,13 @@ $('#edBar').addEventListener('click',ev=>{ const b=ev.target.closest('button'); 
   if(b.dataset.edtool){ edSetTool(b.dataset.edtool); return; }
   switch(b.id){ case 'edCopyB': edCopy(); break; case 'edCutB': edCut(); break; case 'edPasteB': if(ED.clip){ edSetTool('paste'); toast('Tap where the top left corner should go',1.5); } break; case 'edFillB': edFillSel(); break; case 'edClearB': edClearSel(false); break;
     case 'edUndo': edUndo(); break; case 'edRedo': edRedo(); break; case 'edFreeze': ED.frozen=!ED.frozen; home.editor.frozen=ED.frozen; edBarSync(); toast(ED.frozen?'Everyone holds still':'Everyone moves and fights. Reset puts them back.',1.5); break;
-    case 'edReset': edResetScene(); break; case 'edPhoto': edPhoto(); break;
+    case 'edReset': edResetScene(); break; case 'edPhoto': edPhoto(); break; case 'edZoomOut': edZoom(-1); break; case 'edZoomIn': edZoom(1); break;
     case 'edFlat': if(b.dataset.arm!=='1'){ b.dataset.arm='1'; b.textContent='Sure? Flatten all'; setTimeout(()=>{ b.dataset.arm=''; b.textContent='Flatten all'; },3000); return; } b.dataset.arm=''; b.textContent='Flatten all'; home.editor.ents=[]; home.editor.drops=[]; edFlatten(); ED.undo=[]; ED.redo=[]; ED.sel=null; edBarSync(); toast('A blank world again',1.5); break; } });
+// zoom: the editor steps through its own levels (further out than the game allows, so a whole scene fits on a phone); the game's
+// pinch and Ctrl+wheel call zoomView, which comes here while the editor is on, so a pinch never opens the map at the far end
+const ED_ZOOM=[0.75,1,1.5,2,3,4,5,6];
+function edZoom(dir){ let i=0, bd=1e9; ED_ZOOM.forEach((z,k)=>{ const d=Math.abs(z-targetS); if(d<bd){ bd=d; i=k; } }); i=clamp(i+dir,0,ED_ZOOM.length-1); targetS=ED_ZOOM[i]; toast('Zoom '+ED_ZOOM[i]+'x',0.8); }
+{ const _zv=zoomView; zoomView=function(dir,...a){ if(edOn()&&state==='play') return edZoom(dir); return _zv(dir,...a); }; }
 $('#edTime').addEventListener('change',ev=>{ ED.time=+ev.target.value||0.3; home.editor.time=ED.time; time=ED.time; });
 try{ MENU_STATES.add('edpick'); }catch(e){}
 { const _mc=typeof menuCloser==='function'?menuCloser:null; if(_mc) menuCloser=function(o,...a){ if(o&&o.id==='scrEd') return $('#edClose'); return _mc(o,...a); }; }
@@ -17769,7 +17800,7 @@ addEventListener('pointerdown',ev=>{ if(!edOn()||state!=='play'||ev.target!==cv|
   if(tool==='select'||tool==='fill'){ ED.drag={id:ev.pointerId,tool:'select',x0:tx,y0:ty}; ED.sel={x0:tx,y0:ty,x1:tx,y1:ty}; return; }
   if(tool==='move'){ const e=edEntityAt(input.ax,input.ay); if(e){ ED.drag={id:ev.pointerId,tool:'move',e,dx:input.ax-cxOf(e),dy:input.ay-(e.y+e.h),from:{x:cxOf(e),y:e.y+e.h}}; } else { const d=edDropAt(input.ax,input.ay); if(d) ED.drag={id:ev.pointerId,tool:'moveDrop',d,dx:input.ax-d.x,dy:input.ay-d.y}; } return; }
   if(tool==='paste'){ edPaste(tx,ty); return; } },true);
-addEventListener('pointermove',ev=>{ if(!edOn()||state!=='play'||!player) return; if(ev.target===cv||ED.drag){ setAim(ev); const {tx,ty}=edTile(); ED.hover={tx,ty}; }
+addEventListener('pointermove',ev=>{ if(!edOn()||state!=='play'||!player) return; if(touches.size>=2){ ED.drag=null; return; }   /* two fingers: a pinch zoom, never a paint stroke */ if(ev.target===cv||ED.drag){ setAim(ev); const {tx,ty}=edTile(); ED.hover={tx,ty}; }
   const d=ED.drag; if(!d||d.id!==ev.pointerId) return; const {tx,ty}=edTile(); const key=tx+','+ty;
   if(d.tool==='paint'){ if(key!==d.last){ d.last=key; edUseBrush(tx,ty); } }
   else if(d.tool==='erase'){ if(key!==d.last){ d.last=key; edEraseAt(tx,ty,input.ax,input.ay); } }
