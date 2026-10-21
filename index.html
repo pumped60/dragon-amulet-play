@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792605759"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792605759"><link rel="manifest" href="manifest.webmanifest?v=1792605759"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792620102"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792620102"><link rel="manifest" href="manifest.webmanifest?v=1792620102"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.150</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.152</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.152</h3>
+    <p>Dragon Amulet is played with the phone held sideways. Held upright, the game shows a card asking you to turn the phone and waits until you do. If you would rather play upright, Settings &gt; Controls &gt; Upright phone has Allow upright.</p>
+    <h3>New in Beta 0.9.151</h3>
+    <p>Blocks that need a stronger pickaxe tell you which one: aim a weaker pickaxe at them and a label shows the tier, swinging at them says what you need and what you have, and their item text names it too. Pickaxes go from tier 1 (wooden, copper, silver) through iron 2, gold 3, diamond 4, storm 5 and mythril 6 to adamantite 7, and each pickaxe's text starts with its tier.</p>
     <h3>New in Beta 0.9.150</h3>
     <p>Trees only grow on flat ground: a sapling can't go on a slope. Choosing a miner always gives the miners' hut its ore cart, bed and chest, so your miners can work and talk. In the tutorial the sea on both sides is the edge, the castle is rebuilt in a tenth of the usual time, both wanderers become miners, your first soldier comes from the Recruiter, the cave holds the stone and coal to mine, and new steps show farming (a hoe, tilling, planting) and taming an animal in the wild and leading it into a pen.</p>
     <h3>New in Beta 0.9.149</h3>
@@ -837,7 +841,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.150</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.152</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -922,6 +926,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <h3>Movement stick side</h3><p class="desc" style="min-height:0">Left-handed players can put it on the right.</p><div class="choices" id="setSwap" style="grid-template-columns:repeat(2,1fr)"></div>
       <h3>Smart mining and building</h3><div class="choices" id="setSmart" style="grid-template-columns:repeat(2,1fr)"></div>
       <h3>Auto sprint</h3><div class="choices" id="setAutoSprint" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Upright phone</h3><div class="choices" id="setUpright" style="grid-template-columns:repeat(2,1fr)"></div>
       <h3>Sword attack</h3><p class="desc" style="min-height:0">Swords and maces hit in any direction you aim. Spears always stab, maces always swing.</p><div class="choices" id="setSword" style="grid-template-columns:repeat(2,1fr)"></div>
       <h3>Torches</h3><p class="desc" style="min-height:0">Torch button: what a tap does while it is on</p><div class="choices" id="setTorchTap" style="grid-template-columns:repeat(2,1fr)"></div>
       <p class="desc" style="min-height:0">Double-tap to place a torch</p><div class="choices" id="setTorchDbl" style="grid-template-columns:repeat(2,1fr)"></div>
@@ -1097,7 +1102,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.150</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.152</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1116,7 +1121,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.150', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.152', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17088,6 +17093,35 @@ const oreSkinCache=new Map(); let oreSkinWorld=null;
 { const _tt=tileTex; tileTex=function(x,y,id,...a){ if(!ORE_LOOK.has(id)||id===B.TORCH||(typeof VINE_IDS!=='undefined'&&VINE_IDS.has(id))) return _tt(x,y,id,...a);
     if(world!==oreSkinWorld){ oreSkinCache.clear(); oreSkinWorld=world; } const i=y*W+x; const c=oreSkinCache.get(i); if(c&&c.id===id) return c.tex;
     const tex=_tt(x,y,id,...a); oreSkinCache.set(i,{id,tex}); return tex; }; }
+// ===== Beta 0.9.151: say which pickaxe tier a block needs (Kinard: "any blocks that require a higher pickaxe level or higher item level to mine directly state what tier level is needed") =====
+// Pickaxe tiers are the pickaxe's power: 1 wood, copper, silver; 2 iron; 3 gold; 4 diamond; 5 storm; 6 mythril; 7 adamantite.
+// A block with minPow above 1 says so in three places: its item text ("Needs a Gold pickaxe (tier 3) or better to mine"),
+// a label over the block while you aim a weaker pickaxe at it (the aim box turns red), and a message when you swing at it.
+// Every pickaxe's text starts with its tier and what it opens up. Bedrock-hard blocks say they can't be mined.
+const PICK_TIER={};   // tier -> the pickaxe that first reaches it (not the wooden or silver one at tier 1)
+for(const [id,d] of Object.entries(ITEMS)) if(d&&d.kind==='pick'&&d.pow){ const n=d.pow, cur=PICK_TIER[n]; const plain=+id!==472&&!/silver/i.test(d.name); if(!cur||(plain&&!cur.plain)) PICK_TIER[n]={id:+id,name:d.name,plain}; }
+function pickTierName(n){ const t=PICK_TIER[n]; if(t) return t.name; const up=Object.keys(PICK_TIER).map(Number).filter(k=>k>=n).sort((a,b)=>a-b)[0]; return up?PICK_TIER[up].name:'stronger pickaxe'; }
+function pickNeedText(n){ if(n<=1) return 'any pickaxe'; const nm=pickTierName(n); return `${/^[AEIOU]/i.test(nm)?'an':'a'} ${nm} (tier ${n}) or better`; }
+function heldPickPow(){ const it=player&&heldItem(); const d=it&&ITEMS[it.id]; return d&&d.kind==='pick'?(d.pow||0):-1; }
+// item text
+{ const NATURAL=/ore$|^Obsidian$|^Magma rock$|^Crystal block$|^Basalt$|^Ember stone$/i;
+  for(const [id,b] of Object.entries(BLOCKS)){ const it=ITEMS[id]; if(!b||!it||(b.minPow||0)<2) continue; let d=it.desc||''; if(/tier \d/i.test(d)) continue; d=d.split(/(?<=\.)\s+/).map(t=>/pickaxe/i.test(t)?t.replace(/[,;]?\s*(and )?it takes an? \w+ pickaxe[^.]*/i,'').replace(/\s*\.$/,'.'):t).join(' ').trim();
+    it.desc=(d?d.replace(/\.?\s*$/,'. '):'')+`Needs ${pickNeedText(b.minPow)} to mine.`; }
+  for(const [id,d] of Object.entries(ITEMS)){ if(!d||d.kind!=='pick'||!d.pow) continue; const opens=[...new Set(Object.values(BLOCKS).filter(b=>b&&b.minPow===d.pow&&NATURAL.test(b.name||'')).map(b=>b.name.toLowerCase()))];
+    const lead=`Tier ${d.pow} pickaxe.`+(opens.length?` Mines ${opens.length>1?opens.slice(0,-1).join(', ')+' and '+opens[opens.length-1]:opens[0]}, and everything of a lower tier.`:' Mines every block in the game.');
+    if(!(d.desc||'').startsWith('Tier ')) d.desc=lead+(d.desc?' '+d.desc:''); } }
+// a red aim box over a block the held pickaxe can't break
+let pickTierMsgT=0, pickTierMsgId=0;
+{ const _up=updatePlayer; updatePlayer=function(...a){ const r=_up(...a); try{ const p=player; if(p&&p.aimTile){ p.aimTile.tier=0; const pw=heldPickPow(); if(pw>=0){ const id=tileAt(p.aimTile.x,p.aimTile.y), b=id&&BLOCKS[id];
+      if(b&&rules.mode!=='creative'&&(b.minPow||0)>pw){ p.aimTile.ok=false; p.aimTile.tier=b.minPow;
+        if(input.use){ const now=performance.now(); if(now>pickTierMsgT||pickTierMsgId!==id){ pickTierMsgT=now+2500; pickTierMsgId=id; toast(`${b.name} needs ${pickNeedText(b.minPow)}. Your ${ITEMS[heldItem().id].name.toLowerCase()} is tier ${pw}.`,3); } } }
+      else if(b&&b.hard===Infinity&&input.use){ const now=performance.now(); if(now>pickTierMsgT){ pickTierMsgT=now+2500; toast(`${b.name||'This block'} can't be mined by any pickaxe`,2.5); } } } } }catch(e){} return r; }; }
+// the label over the block: "Tier 3: Gold pickaxe"
+function drawPickTier(){ const p=player; if(!p||!p.aimTile||!p.aimTile.tier||state!=='play') return; const {x,y,tier}=p.aimTile; const txt=`Needs tier ${tier}: ${pickTierName(tier)}`;
+  ctx.save(); ctx.font='6px "Press Start 2P", monospace'; ctx.textAlign='center'; const w=ctx.measureText(txt).width+8, X=x*T+8, Y=y*T-6;
+  ctx.fillStyle='rgba(20,10,10,0.82)'; ctx.fillRect(X-w/2,Y-8,w,11); ctx.strokeStyle='#e05050'; ctx.lineWidth=1; ctx.strokeRect(X-w/2+0.5,Y-7.5,w-1,10);
+  ctx.fillStyle='#ffd0c0'; ctx.fillText(txt,X,Y); ctx.restore(); }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawPickTier(); }catch(e){} return r; }; }
 // ===== Beta 0.9.139: items renamed after the trademark review, with looks of their own (Kinard, 2026-10-19) =====
 // Names that matched another game's items word for word are gone: Life/Mana crystal -> Heart/Spirit gem (cut gems, and gem
 // clusters in the world), Tackle box -> Bait pouch, Angler's earring -> Fisher's ring, Sprinter's anklet -> Fleetfoot sash,
@@ -17213,6 +17247,32 @@ function slopedAt(x,y){ return x>=0&&x<W&&y>=0&&y<H&&!!shape[y*W+x]; }
 { const _gs=growSapling; growSapling=function(x,h,sz,...a){ try{ for(let k=0;k<Math.max(1,sz|0);k++) if(slopedAt(x+k,h)) shape[h*W+x+k]=0; }catch(e){} return _gs(x,h,sz,...a); }; }
 function flattenUnderTrees(){ let n=0; for(let y=1;y<H-1;y++){ const r=y*W; for(let x=0;x<W;x++){ const i=r+x; if(!LOG_IDS.has(world[i])) continue; const j=i+W; if(!LOG_IDS.has(world[j])&&shape[j]){ shape[j]=0; n++; } } } return n; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!home.treeFlatV&&!(typeof MP!=='undefined'&&MP.guest)){ home.treeFlatV=1; flattenUnderTrees(); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.152: play phones sideways (Kinard: "on mobile the game ... so the player has to turn their phone and aren't playing upright; sideways is the main way to play") =====
+// On a touch device held upright (taller than wide), a full screen card asks you to turn the phone sideways and the
+// game waits (single player pauses; a shared world keeps running for the others). Turning the phone hides it at once.
+// A tap on the card also tries full screen with the landscape lock (goFull; Android). The social media demo is built
+// for an upright phone, so it never shows the card. Settings > Controls > Upright phone: "Turn sideways" (default) or "Allow upright".
+const TURN_RATIO=1.05;
+function turnIsPhone(){ return document.body.classList.contains('touch')||(window.matchMedia&&matchMedia('(pointer:coarse)').matches&&matchMedia('(hover:none)').matches); }
+function turnNeeded(){ if(window.DA_DEMO||settings.allowUpright) return false; const w=(window.visualViewport&&visualViewport.width)||innerWidth, h=(window.visualViewport&&visualViewport.height)||innerHeight; return turnIsPhone()&&h>w*TURN_RATIO; }
+{ const st=document.createElement('style'); st.textContent=`#turnPhone{ position:fixed; inset:0; z-index:100000; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; padding:24px; box-sizing:border-box; background:#0d0f16; color:#f2ead8; font-family:var(--font); text-align:center; touch-action:none; }
+#turnPhone[hidden]{ display:none; } #turnPhone h2{ font-size:14px; line-height:1.6; color:#ffd84a; margin:0; } #turnPhone p{ font-size:9px; line-height:1.8; max-width:280px; margin:0; color:#c9c0ac; }
+#turnPhone .tp{ width:46px; height:80px; border:4px solid #f2ead8; border-radius:8px; position:relative; animation:tpTurn 2.4s ease-in-out infinite; box-shadow:0 0 0 3px #3a3020; }
+#turnPhone .tp::after{ content:''; position:absolute; left:50%; bottom:5px; width:10px; height:3px; margin-left:-5px; background:#f2ead8; border-radius:2px; }
+#turnPhone .tp i{ position:absolute; inset:8px 5px 14px; background:linear-gradient(#5aa0d8 0 55%,#6b9a4a 55% 70%,#7a5230 70%); }
+@keyframes tpTurn{ 0%,20%{ transform:rotate(0deg); } 55%,85%{ transform:rotate(-90deg); } 100%{ transform:rotate(0deg); } }`; document.head.appendChild(st);
+  const d=document.createElement('div'); d.id='turnPhone'; d.hidden=true; d.innerHTML='<div class="tp"><i></i></div><h2>Turn your phone sideways</h2><p>Dragon Amulet is played with the phone held sideways. The game waits until you turn it.</p>'; document.body.appendChild(d);
+  d.addEventListener('click',()=>{ try{ if(typeof goFull==='function') goFull(); }catch(e){} try{ if(screen.orientation&&screen.orientation.lock) screen.orientation.lock('landscape').catch(()=>{}); }catch(e){} }); }
+let turnShown=false;
+function turnCheck(){ const need=turnNeeded(); const d=$('#turnPhone'); if(!d) return; if(need!==turnShown){ turnShown=need; d.hidden=!need; if(need){ try{ input.use=false; input.left=input.right=input.jump=false; }catch(e){} } } }
+for(const ev of ['resize','orientationchange']) addEventListener(ev,()=>{ turnCheck(); setTimeout(turnCheck,300); });
+if(window.visualViewport) visualViewport.addEventListener('resize',turnCheck);
+addEventListener('touchstart',()=>setTimeout(turnCheck,0),{passive:true,capture:true});
+setInterval(turnCheck,1000); setTimeout(turnCheck,0);
+// single player waits while the card is up; a shared world keeps going for everyone else
+{ const _up=update; update=function(...a){ if(turnShown&&!(typeof MP!=='undefined'&&MP.on)) return; return _up(...a); }; }
+// Settings > Controls > Upright phone
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const el=$('#setUpright'); if(el){ const ok=!!settings.allowUpright; el.innerHTML=`<button class="choice" data-k="allowUpright" data-v="false" aria-pressed="${!ok}">Turn sideways<small>Ask to turn the phone when it is held upright</small></button><button class="choice" data-k="allowUpright" data-v="true" aria-pressed="${ok}">Allow upright<small>Play with the phone held upright too</small></button>`; } }catch(e){} setTimeout(turnCheck,0); return r; }; }
 // ===== Beta 0.9.145: the tutorial world (Kinard) =====
 // A tiny flat world in save slot 7 that walks a new player through moving, jumping, mining, placing blocks, a chest,
 // crafting, a torch at night, eating, a villager's errand and a fight with two goblins. A card at the top says one task
