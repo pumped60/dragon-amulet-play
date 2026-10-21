@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792555525"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792596034"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.144</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.145</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.145</h3>
+    <p>New to the game? A Tutorial button sits under Multiplayer on the title screen, and the first time you press New game on a device the game offers it once. Pick a class and a tiny world walks you through walking, jumping, rebuilding the ruined castle with the Quartermaster (in under a minute there; a real world takes until the next day), mining, placing blocks, a chest, crafting a workbench and an iron pickaxe, a torch when night falls, eating, an errand for Elder Rowan and a fight with two goblins. A card at the top, like the one shown while you place a building, says one task at a time in the words of your keyboard or your phone's sticks and buttons and ticks itself off; a yellow arrow points the way. Tamed animals on their Pet job now fight beside you like your soldiers: they go for enemies near you or them, jump up to reach one and bite until it is down, and come back once the fight moves too far. Ore blocks keep the rock they were first seen in, however you dig around them. On a phone the Torch button no longer stops your tools: with it on, the pickaxe, axe, hoe and hammer work and a tap mines or builds, while a double-tap still places a torch. Skip step and Leave are always there, and the tutorial is saved in slot 7 so you can come back to it. Vorthax watches you: his eye follows the nearest player wherever you move, and he blinks every few seconds, a little more often when he perches. Placing a building takes two taps: the first shows a see-through picture of the building where it would go, green when it fits and red when something is in the way, and a second tap on it builds it. A quick double tap never builds. Tap somewhere else to move the picture; it goes away when the mouse leaves it, when you walk away, or with Esc or Cancel. A trebuchet boulder or a cannonball crashes on through any animal in its path, a hawk crossing its arc included, and still lands where you aimed. People, monsters and bosses stop it as before.</p>
     <h3>New in Beta 0.9.144</h3>
     <p>Vorthax moves: his body rides each wing beat, his head nods against it, a wave runs down his tail, his legs swing in flight and he breathes when he perches. His teeth are a neat row, his legs have a thigh, a shin and clawed feet, and when he breathes fire a flickering plume pours from his open jaws while the fire bolts fly as flames with a tail. In the scene editor, pinch on a phone or press the − and + buttons to zoom out far enough to see a whole scene.</p>
     <h3>New in Beta 0.9.143</h3>
@@ -825,7 +827,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.144</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.145</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1085,7 +1087,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.144</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.145</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1104,7 +1106,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.144', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.145', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -14548,7 +14550,7 @@ function dragonArt(pose,mode,white){ const key=pose+'|'+mode+(white?'|w':''); le
     P([[hx-2,hy-6],[hx+10,hy-8],[hx+12,hy-6],[hx,hy-4]],dark);
     P([[hx-4,hy-5],[hx-14,hy-12],[hx-19,hy-11],[hx-8,hy-3]],horn); P([[hx-14,hy-12],[hx-19,hy-11],[hx-16,hy-9]],hornD);
     P([[hx+1,hy-7],[hx-7,hy-16],[hx-10,hy-15],[hx-2,hy-5]],hornD);
-    E(hx+7,hy-3,2.6,1.8,'#efd25a'); g.fillStyle='#200404'; g.fillRect(hx+7,hy-4,1,3); g.fillStyle=deep; g.fillRect(hx+17,hy-1,2,1);
+    g.fillStyle=deep; g.fillRect(hx+17,hy-1,2,1);   // the nostril; the eye is drawn fresh each frame by drawDragonEye (it looks at you and blinks), so it is not baked in here
     for(let i=0;i<3;i++){ const fx=hx-6-i*2, fy=hy+1+i*2; P([[fx+2,fy-1],[fx-3,fy+1],[fx+2,fy+2]],i%2?hornD:horn); } }   // a small frill at the jaw hinge (the old row of squares read as loose teeth)
   // the amulet on its chest
   E(28,22,3.4,3.4,'#c99a1a'); E(28,22,2.2,2.2,'#c8245e'); g.fillStyle='#f0b8cc'; g.fillRect(27,21,1,1);
@@ -14567,6 +14569,7 @@ drawDragon=function(d){ const mode=d.dstate==='perch'?'perch':d.dstate==='breath
   const c=dragonArt(dragonPose(d),mode,false);
   ctx.save(); ctx.translate(Math.round(cxOf(d)),Math.round(d.y)); if(d.facing<0) ctx.scale(-1,1); ctx.imageSmoothingEnabled=false;
   ctx.drawImage(c,-DRG_OX,-DRG_OY);
+  try{ drawDragonEye(d,mode); }catch(e){}
   if(mode==='breath') drawDragonFlame(d);
   if(d.hurtT>0&&Math.floor(performance.now()/70)%2===0){ ctx.globalAlpha=0.3;   // a quick flicker, so steady arrow fire doesn't wash it out
     ctx.drawImage(dragonArt(dragonPose(d),mode,true),-DRG_OX,-DRG_OY); ctx.globalAlpha=1; }
@@ -14581,6 +14584,31 @@ function drawDragonFlame(d){ const t=performance.now()/1000; const ph=dragonPose
     ctx.lineTo(mx+len*1.05,my+Math.sin(t*27+k)*2); for(let i=6;i>=1;i--){ const u=i/6, jag=Math.cos(t*29+i*1.3+k)*w*0.35*u; ctx.lineTo(mx+len*u,my+w*u*0.7+jag+2); }
     ctx.closePath(); ctx.fill(); }
   ctx.fillStyle='#fff3b0'; ctx.fillRect(mx-1,my-1,3,3); }
+
+// ===== Beta 0.9.145: the eye follows you and blinks (Kinard) =====
+// The twelve poses are cached pictures, so the eye is drawn over them each frame in the sprite's own space (mirrored with the
+// body): the pupil slides toward the nearest player, and a lid closes and opens over 0.15 s every few seconds, a little
+// more often when he is perched. The eye sits at (47, head row - 3) with the same bob and nod the cached pose was drawn with.
+let dragonSkinCache=null;
+function dragonSkin(){ if(dragonSkinCache) return dragonSkinCache; const R0=typeof DB_RED==='string'?DB_RED:'#b8322a';
+  const mix=(a,b,t)=>'#'+[1,3,5].map(i=>Math.round(parseInt(a.substr(i,2),16)*(1-t)+parseInt(b.substr(i,2),16)*t).toString(16).padStart(2,'0')).join('');
+  const R=mix(R0,'#6e4a44',0.2); return dragonSkinCache={skin:R,dark:typeof shadeHex==='function'?shadeHex(R,-0.42):R}; }
+const BLINK_T=0.15;
+function dragonBlink(d,perch){ const t=performance.now()/1000; const gap=()=>perch?1.4+Math.random()*2.4:2.5+Math.random()*4;
+  if(d.blinkNext==null||d.blinkNext>t+8) { d.blinkNext=t+gap(); d.blinkAt=-1; }
+  if(d.blinkAt<0&&t>=d.blinkNext){ d.blinkAt=t; d.blinkNext=t+BLINK_T+gap(); }
+  if(d.blinkAt>=0){ const u=(t-d.blinkAt)/BLINK_T; if(u>=1){ d.blinkAt=-1; return 0; } return 1-Math.abs(2*u-1); }   // closes then opens
+  return 0; }
+function drawDragonEye(d,mode){ const perch=mode==='perch', dive=mode==='dive', ph=dragonPose(d)/DRAGON_POSES*Math.PI*2, f=Math.sin(ph);
+  const bob=perch?Math.sin(ph)*0.8:-f*2.2, nod=perch?Math.sin(ph+0.4)*1.2:Math.sin(ph+0.7)*1.8;
+  const ex=47, ey=(dive?16:10)+nod-3+bob, m=d.facing<0?-1:1;
+  let px=0, py=0; const p=typeof nearestPlayerTo==='function'?nearestPlayerTo(cxOf(d)):player;   // in multiplayer the host's dragon watches whoever is closest
+  if(p&&!p.dead){ const dx=(cxOf(p)-cxOf(d))*m, dy=cyOf(p)-(d.y+ey), L=Math.hypot(dx,dy)||1; px=dx/L*1.3; py=dy/L*0.6; }
+  const close=dragonBlink(d,perch), C=dragonSkin();
+  ctx.save(); ctx.beginPath(); ctx.ellipse(ex,ey,2.6,1.8,0,0,Math.PI*2); ctx.fillStyle='#efd25a'; ctx.fill();
+  ctx.fillStyle='#200404'; ctx.fillRect(Math.round(ex+px),Math.round(ey+py-1.5),1,3);   // the slit pupil, shifted toward you
+  if(close>0){ ctx.clip(); ctx.fillStyle=C.skin; ctx.fillRect(ex-3,ey-2,6,3.6*close); ctx.fillStyle=C.dark; ctx.fillRect(ex-3,ey-2+3.6*close-0.6,6,0.6); }   // the lid comes down from the brow
+  ctx.restore(); }
 // ===== Beta 0.9.88: ten crops (Kinard, 2026-10-11) =====
 // Six new crops join wheat, carrots, pumpkins and potatoes: tomatoes, corn, strawberries, onions, cabbage and melons.
 // They grow wild on grassy islands (break a ripe one for its crop and seeds) and on tilled soil like the others, feed
@@ -16787,6 +16815,58 @@ function achButtons(){ const n=achCount(); for(const id of ['btnAchT','btnAchP']
 { const _bs=bugSwingTick; bugSwingTick=function(...a){ const n=BUGS.filter(b=>b.dead).length; const r=_bs(...a); try{ if(BUGS.filter(b=>b.dead).length>n&&heldItem()&&ITEMS[heldItem().id]&&ITEMS[heldItem().id].kind==='net') achS().bugs=1; }catch(e){} return r; }; }
 { const _k=kill; kill=function(e,src,...a){ const mine=e&&!e.dead&&fromPlayer(src)&&(e.kind==='monster'||e.kind==='human'||e.kind==='sea')&&player&&e.team!==player.team&&!e.ghost; const r=_k(e,src,...a); try{ if(mine&&e.dead){ const S=achS(); S.kills=(S.kills||0)+1; } }catch(err){} return r; }; }
 { const _t=achTick; achTick=function(...a){ try{ if(world&&player&&home){ const S=achS(), ty=player.y/T; if(ty<barrierY-1) S.sky=1; if(ty>deepYOf()&&ty<magmaY) S.deep=1; } }catch(e){} return _t(...a); }; }
+// ===== Beta 0.9.145: boulders and cannonballs crash on through animals =====
+// A trebuchet boulder used to stop dead on the first creature it touched, so a hawk crossing its arc took the whole shot and
+// the mark was never hit. A machine's boulder or cannonball now kills the animals in its path and keeps flying; people, monsters
+// and bosses still stop it (and take the splash) as before. The hit creature goes into the shot's hitSet, which updateProjs skips.
+{ const _up=updateProjs; updateProjs=function(dt,...a){ try{ for(const pr of projs){ if(!pr.mach||pr.dead||(pr.kind!=='boulder'&&pr.kind!=='ball')) continue;
+        const nx=pr.x+pr.vx*dt, ny=pr.y+(pr.vy+pr.grav*dt)*dt, box={x:nx-pr.r,y:ny-pr.r,w:pr.r*2,h:pr.r*2};
+        for(const o of ents){ if(o.kind!=='animal'||!targetable(o)||!hostile(pr.team,o.team)||(pr.hitSet&&pr.hitSet.has(o))||!overlap(box,o)) continue;
+          if(!pr.hitSet) pr.hitSet=new Set(); pr.hitSet.add(o);
+          damage(o,pr.dmg,{x:nx-pr.vx*0.01-o.w/2,w:o.w,team:pr.team,kind:'proj',owner:pr.src},110); puff(nx,ny,'#8a5c2d',4,70); } } }catch(e){}
+    return _up(dt,...a); }; }
+// ===== Beta 0.9.145: placing a building takes two deliberate taps, with a see-through picture of it (Kinard) =====
+// The first tap or click pins a spot and shows the building there, drawn faintly from a dry run of its builder (the world
+// arrays are swapped for copies while it runs, then put back). A second tap inside the box builds it, but only after
+// BUILD_CONFIRM_MS, so a double click is one click. The preview is thrown out when the mouse leaves the box, when you walk
+// BUILD_WALK_AWAY blocks from where you stood, or with Esc or Cancel. A tap anywhere else moves the preview. The 0.9.96
+// handler in 33_shared_enemies.js is pre-empted by a capture listener on the window.
+const BUILD_CONFIRM_MS=350, BUILD_WALK_AWAY=8, BUILD_GHOST_A=0.6, BUILD_GHOST_BAD=0.28;
+let bldGhost=null;   // {bp, x, gy, cells:[[x, y, block, back wall]]}
+function buildDryRun(bp,cx,gy){ const W0=world, B0=bg, S0=shape, L0=liq, surf0=surf.slice(), sky0=skyTop.slice(), keys=new Set(Object.keys(chests)), nE=ents.length, nS=myStructures.length;
+  const st=setTile, fr=facRun, mr=mpRun, us=updateSkyTop, cells=[];
+  world=W0.slice(); bg=B0.slice(); shape=S0.slice(); liq=L0.slice();
+  setTile=function(x,y,id){ if(x>=0&&x<W&&y>=0&&y<H){ world[y*W+x]=id; shape[y*W+x]=0; } }; facRun=fn=>fn(); mpRun=fn=>fn(); updateSkyTop=()=>{};
+  try{ bp.build?bp.build(cx,gy):bp.id==='pen'?buildPenAt(cx,gy):bp.id==='hut'?buildHutAt(cx,gy):bp.id==='wall'?buildWallAt(cx,gy):bp.id==='tower'?buildTowerAt(cx,gy):buildKeepAt(cx,gy);
+    const x0=Math.max(1,cx+bp.fx0-2), x1=Math.min(W-2,cx+bp.fx1+2), y0=Math.max(1,gy-bp.fh-3), y1=Math.min(H-2,gy+5);
+    for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x; if(world[i]!==W0[i]||bg[i]!==B0[i]) cells.push([x,y,world[i],bg[i]]); } }
+  catch(e){ console.warn(e); }
+  finally{ world=W0; bg=B0; shape=S0; liq=L0; surf.set(surf0); skyTop.set(sky0); for(const k of Object.keys(chests)) if(!keys.has(k)) delete chests[k]; ents.length=nE; myStructures.length=nS; setTile=st; facRun=fr; mpRun=mr; updateSkyTop=us; }
+  return cells; }
+function pinBuild(h,bp){ h.pin=true; h.bp=bp; h.pinAt=performance.now(); h.px=cxOf(player); bldHover=h; bldGhost={bp,x:h.x,gy:h.gy,cells:buildDryRun(bp,h.x,h.gy)}; }
+function unpinBuild(){ if(bldHover&&bldHover.pin) bldHover=null; bldGhost=null; }
+function drawBuildGhost(){ const bp=buildMode, h=bldHover, g=bldGhost; if(!bp||!h||!h.pin||!g||g.bp!==bp||g.x!==h.x||g.gy!==h.gy||state!=='play') return;
+  ctx.save(); ctx.imageSmoothingEnabled=false; ctx.globalAlpha=h.ok?BUILD_GHOST_A:BUILD_GHOST_BAD;
+  for(const [x,y,id,b] of g.cells){ const X=x*T, Y=y*T; if(b&&BGTEX[b]){ ctx.drawImage(BGTEX[b],X,Y,T,T); ctx.fillStyle='rgba(0,0,0,0.25)'; ctx.fillRect(X,Y,T,T); }
+    if(id){ const tex=TEX[id]||(typeof iconTex==='function'?iconTex(id):null); if(tex) ctx.drawImage(tex,X,Y,T,T); } }
+  ctx.restore(); }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawBuildGhost(); }catch(e){} return r; }; }
+addEventListener('pointerdown',ev=>{ if(!buildMode||state!=='play'||ev.target!==cv) return; ev.stopImmediatePropagation(); ev.preventDefault();
+  const h=bldAt(ev), bp=buildMode, now=performance.now(); const p=bldHover&&bldHover.pin&&bldHover.bp===bp?bldHover:null;
+  if(p&&h&&h.x>=p.x+bp.fx0&&h.x<=p.x+bp.fx1){ if(now-(p.pinAt||0)<BUILD_CONFIRM_MS) return;   // the same click again (a double click): nothing happens
+    if(p.ok){ const near=Math.abs(p.x-cxOf(player)/T)<=40, blocked=buildBlocked(bp,p.x,p.gy); p.near=near; p.blocked=blocked; p.ok=near&&!blocked;   // only a green box builds; check again, the ground may have changed
+      if(!p.ok){ toast(!near?'Too far away: pick a spot on the ground within 40 blocks of you':'Something is in the way now (red box). Pick another spot.',3); return; } }
+    else { pinBuild(h,bp); toast(h.ok?`Here is the ${bp.name.toLowerCase()}. Tap it again to build it, or tap somewhere else to move it.`:!h.near?'Too far away: pick a spot on the ground within 40 blocks of you':'Something is in the way (red box). Buildings only replace trees, grass and plants; clear the area or pick flatter ground.',3.5); return; }   // a tap on a red box looks again
+    if(!canPay(bp.cost)){ toast('Not enough materials',2); buildMode=null; bldHover=null; bldGhost=null; return; } if(!free()&&!testFree()) for(const [id,n] of bp.cost) takeNeed(id,n); invDirty=true;
+    const st=placeBuilding(bp,p.x,p.gy); buildMode=null; bldHover=null; bldGhost=null; toast(`${bp.name} built! Open Craft → Buildings to station soldiers at its ${st.posts.length} defense post${st.posts.length>1?'s':''}.`,4); return; }
+  if(!h){ unpinBuild(); toast('Tap the ground where the building should go',2); return; }
+  pinBuild(h,bp);
+  toast(!h.near?'Too far away: pick a spot on the ground within 40 blocks of you':h.blocked?'Something is in the way (red box). Buildings only replace trees, grass and plants; clear the area or pick flatter ground.':`Here is the ${bp.name.toLowerCase()}. Tap it again to build it, or tap somewhere else to move it.`,3.5); },true);
+addEventListener('pointermove',ev=>{ if(!buildMode||!bldHover||!bldHover.pin||ev.pointerType!=='mouse'||ev.target!==cv) return;   // a mouse that leaves the box drops the preview; a phone keeps it until you tap elsewhere
+  const h=bldAt(ev), bp=buildMode; if(!h||h.x<bldHover.x+bp.fx0||h.x>bldHover.x+bp.fx1) unpinBuild(); },true);
+function buildWalkCheck(){ if(!buildMode){ bldGhost=null; return; } const h=bldHover; if(h&&h.pin&&player&&Math.abs(cxOf(player)-h.px)>BUILD_WALK_AWAY*T){ unpinBuild(); toast('You moved away, so the preview is gone. Tap the ground again to place the building.',2.5); } }
+setInterval(()=>{ try{ buildWalkCheck(); }catch(e){} },100);
+{ const _cb=cancelBuild; cancelBuild=function(...a){ bldGhost=null; return _cb(...a); }; }
 // ===== Beta 0.9.137: soldier posts at the castle's arrow slits (Kinard, 2026-10-19) =====
 // The castle's two corner towers have an arrow slit on every floor, but only watchtowers and keeps had posts. The castle
 // is now a building with posts of its own (myStructures kind 'castle', saved and respawned like a tower's): one inside
@@ -16957,6 +17037,34 @@ function cropPatches(onlyUnexplored,R,put){ R=R||Math.random; put=put||setTile; 
 // ---- 4. gathering pets bring half as much ----
 { const _ta=tamedAct; tamedAct=function(e,dt,...a){ if(e&&e.mode==='gather'&&(e.gT??15)-dt<=0){ e.gHalf=!e.gHalf; if(e.gHalf){ e.gT=20; } }
     return _ta(e,dt,...a); }; }
+// ===== Beta 0.9.145: pets fight like soldiers; ore keeps the rock it was first seen in (Kinard) =====
+// Pets: tamedAct only fought under the Fight job; a pet (the default job) or a following pet walked beside you while
+// goblins hit you. Now a pet, follow or fight animal engages like a Follow soldier: enemies within 8 blocks of it or 10
+// of you (16 under Fight), closes in, jumps at walls and up to a higher foe, bites with a 0.9 s cooldown when the way is
+// clear, and never chases farther than 15 blocks from you (the old warp-back then brings it home). Gather, farm, pen
+// and cage animals keep to their work. Flying pets are unchanged.
+const PET_REACH=12, PET_CD=0.9, PET_KB=160;
+function petCanFight(e){ return !!e.tamed&&!e.fly&&!e.pen&&!e.fpen&&!e.baby&&(e.mode==null||e.mode==='pet'||e.mode==='fight'||e.mode==='follow'); }
+function petTarget(e){ const p=player; const far=e.mode==='fight'; let t=nearestHostile(e,(far?16:8)*T); if(!t) t=nearestHostile(e,(far?16:10)*T,cxOf(p),cyOf(p));
+  if(t&&Math.hypot(cxOf(t)-cxOf(p),cyOf(t)-cyOf(p))>18*T) t=null; return t; }
+function petFight(e,t,dt){ const tx=cxOf(t)-cxOf(e), adx=Math.abs(tx), dy=cyOf(t)-cyOf(e), reach=Math.max(PET_REACH,e.reach||0); e.angry=true;
+  let mv=0; if(adx>reach*0.6+e.w/2+t.w/2-4) mv=Math.sign(tx); e.facing=(mv||Math.sign(tx))||e.facing;
+  e.vx+=(mv*e.speed*1.1-e.vx)*Math.min(1,dt*8);
+  if(e.hitWall&&e.grounded&&mv) e.vy=-JUMP*0.85; if(t.y+t.h<e.y+e.h-20&&e.grounded&&adx<4*T&&Math.random()<0.08) e.vy=-JUMP*0.9;
+  if(adx<reach+t.w/2+e.w/2&&Math.abs(dy)<30&&e.atkCd<=0){ e.atkCd=PET_CD; e.atkT=0.25; if(meleeClear(cxOf(e),e.y+e.h*0.5,cxOf(t),cyOf(t))) damage(t,Math.max(8,Math.round(e.dmg*1.2))*(e.dmgUp||1),e,PET_KB); }
+  if(e.inWater) e.vy=Math.max(e.vy-1000*dt,-130); physics(e,dt); }
+{ const _ta=tamedAct; tamedAct=function(e,dt,...a){ try{ const p=player; if(p&&!p.dead&&petCanFight(e)&&!e.leftBehind&&!(p.riding||p.inWater)){
+      e.pThink=(e.pThink||0)-dt; if(e.pThink<=0){ e.pThink=0.35; const t=petTarget(e); if(t) e.target=t; else if(e.target&&(e.target.dead||!targetable(e.target))) e.target=null; }
+      const t=e.target&&!e.target.dead&&targetable(e.target)&&hostile(e.team,e.target.team)?e.target:null;
+      if(t&&Math.hypot(cxOf(p)-cxOf(e),cyOf(p)-cyOf(e))<15*T){ petFight(e,t,dt); return; } } }catch(err){}
+    return _ta(e,dt,...a); }; }
+// Ore: tileTex picked the host rock from the eight neighbours every frame, so digging beside an iron block flipped its
+// picture from iron-in-stone to iron-in-dirt (or moss, or shale) as the majority changed. The first picture drawn for a
+// cell is kept until that cell itself changes (or the world is reloaded), so a vein looks the same however you dig at it.
+const oreSkinCache=new Map(); let oreSkinWorld=null;
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(!ORE_LOOK.has(id)||id===B.TORCH||(typeof VINE_IDS!=='undefined'&&VINE_IDS.has(id))) return _tt(x,y,id,...a);
+    if(world!==oreSkinWorld){ oreSkinCache.clear(); oreSkinWorld=world; } const i=y*W+x; const c=oreSkinCache.get(i); if(c&&c.id===id) return c.tex;
+    const tex=_tt(x,y,id,...a); oreSkinCache.set(i,{id,tex}); return tex; }; }
 // ===== Beta 0.9.139: items renamed after the trademark review, with looks of their own (Kinard, 2026-10-19) =====
 // Names that matched another game's items word for word are gone: Life/Mana crystal -> Heart/Spirit gem (cut gems, and gem
 // clusters in the world), Tackle box -> Bait pouch, Angler's earring -> Fisher's ring, Sprinter's anklet -> Fleetfoot sash,
@@ -17042,6 +17150,11 @@ const slitShooter=(a,b)=>!!a&&!!b&&!a.post&&a!==b&&hostile(a.team,b.team)&&nearS
     try{ for(const pr of projs){ if(pr.dead||!pr.coverAt) continue; if(Math.hypot(pr.x-pr.coverAt.x,pr.y-pr.coverAt.y)>SLIT_WALL*T) continue;
         const gx=Math.floor(pr.x/T), gy=Math.floor(pr.y/T), id=tileAt(gx,gy); if(isSlitId(id)||(isSolid(gx,gy)&&!BLOCKS[id].platform)){ pr.dead=true; puff(pr.x,pr.y,'#9a9a94',4,40); } } }catch(e){}
     return r; }; }
+// ===== Beta 0.9.145: with the Torch button on, every tool and item works like the sword (Kinard) =====
+// 59_touch_extras.js rested the pickaxe, axe, hoe and hammer while the torch was lit and turned every tap into a torch.
+// Both now default the other way: torchTools 'work' and torchTap 'light' (a double-tap still places a torch). The
+// Settings > Torches choices are still there; a player who set them is left alone (settings.torchV marks the move).
+if(!settings.torchV){ settings.torchV=1; if(!settings.torchTools||settings.torchTools==='rest') settings.torchTools='work'; if(!settings.torchTap||settings.torchTap==='place') settings.torchTap='light'; try{ saveSettings(); }catch(e){} }
 // ===== Beta 0.9.137: evenly spaced torches in the castle and every building (Kinard, 2026-10-19) =====
 // Rooms got one torch each (lightRooms, 98w_village_tasks.js), which left long halls and upper floors dim. Every floor of
 // every room in your buildings (gameBoxes: the castle, houses, lodge, farmhouse, miners' hut, keeps) now gets wall torches
@@ -17066,6 +17179,135 @@ function evenTorches(){ if(!home||!home.claimed||isGuest()||home.fixup) return 0
 { const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ evenTorches(); }catch(e){ console.warn(e); } return r; }; }
 { const _fd=fixupDone; fixupDone=function(...a){ const r=_fd(...a); try{ evenTorches(); }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ evenTorches(); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.145: the tutorial world (Kinard) =====
+// A tiny flat world in save slot 7 that walks a new player through moving, jumping, mining, placing blocks, a chest,
+// crafting, a torch at night, eating, a villager's errand and a fight with two goblins. A card at the top says one task
+// at a time, worded for the keyboard or for the phone's sticks and buttons, ticks itself off when the task is done and
+// moves on; a glowing arrow points at the target. Skip step and Leave are always there. Reached from a Tutorial button
+// under Multiplayer on the title screen (class pick first; Continue when a tutorial is saved) and offered once on a
+// device the first time New game is pressed (TUT_ASK_KEY). Spawners, factions, weather and the story card stay off here.
+const TUT_SLOT=7, TUT_ASK_KEY='dragonamulet-tutasked', TUT_SEED=777, TUT_EVERY=0.15, TUT_FIX_SPEED=30;   // the repairs run 30x: under a minute instead of most of a day
+const TUT={t:0, hidden:false, saveT:0};
+function tutOn(){ return !!(world&&home&&home.tutorial&&player&&curSlot===TUT_SLOT); }
+function HT(){ return home.tutorial; }
+function tutPhone(){ return document.body.classList.contains('touch'); }
+function tutKey(k){ const c=(settings.keys||{})[k]||STD_KEYS[k]||''; return c.replace(/^Key/,'').replace(/^Digit/,'').replace('Escape','Esc'); }
+function tutBenchNear(){ const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); for(let y=py-8;y<=py+8;y++) for(let x=px-30;x<=px+30;x++) if(tileAt(x,y)===B.WORKBENCH) return true; return false; }
+function tutTorches(){ let n=0; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); for(let y=py-12;y<=py+12;y++) for(let x=px-30;x<=px+30;x++) if(tileAt(x,y)===B.TORCH) n++; return n; }
+function tutGobsLeft(){ return ents.filter(e=>e.tutGob&&!e.dead).length; }
+// the steps: pc and ph are the two wordings, at() the arrow's cell, enter() runs when the step starts, check() says when it is done
+const TUT_STEPS=[
+  { id:'move', pc:()=>'Walk: hold A and D, or the arrow keys.', ph:()=>'Walk: push the Move stick left and right.',
+    check:()=>Math.abs(player.x-HT().cx*T)>4*T },
+  { id:'jump', pc:()=>'Jump onto the ledge on the right: W or Space.', ph:()=>'Jump onto the ledge on the right: the Jump button.',
+    at:()=>[HT().cx+8,HT().G-3], check:()=>{ const px=Math.floor(cxOf(player)/T); return player.grounded&&px>=HT().cx+7&&px<=HT().cx+9&&player.y+player.h<=(HT().G-2)*T+1; } },
+  { id:'castle', pc:()=>`Walk left to the ruined castle and talk to the Quartermaster (${tutKey('use')}). Choose Fix up the castle: every new world starts with a village like this to rebuild.`, ph:()=>'Walk left to the ruined castle and talk to the Quartermaster (tap him, or the Talk button). Choose Fix up the castle: every new world starts with a village like this to rebuild.',
+    at:()=>{ const q=ents.find(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead); return q?[Math.floor(cxOf(q)/T),Math.floor(q.y/T)-1]:[home.castleCx,HT().G-3]; }, check:()=>!!home.fixup||!!home.claimed },
+  { id:'rebuild', pc:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes under a minute; in a real world it takes until the next day. Watch, or walk back to the right.', ph:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes under a minute; in a real world it takes until the next day. Watch, or walk back to the right.',
+    at:()=>[home.castleCx,HT().G-3], check:()=>!!home.claimed&&!home.fixup },
+  { id:'mine', pc:()=>'Mine 5 stone from the rock: select the pickaxe (key 2), point at the rock and hold the left mouse button.', ph:()=>'Mine 5 stone from the rock: tap the pickaxe in the hotbar, then push the Aim and use stick toward the rock.',
+    at:()=>[HT().cx+19,HT().G-4], check:()=>countItem(B.STONE)>=5 },
+  { id:'ore', pc:()=>'Mine the 3 coal in the rock (the dark blocks). Ore is how you get better gear.', ph:()=>'Mine the 3 coal in the rock (the dark blocks). Ore is how you get better gear.',
+    at:()=>[HT().cx+19,HT().G-4], check:()=>countItem(B.COAL)>=3 },
+  { id:'place', pc:()=>'Build: select the stone in the hotbar and right-click where it should go. Place 3 blocks.', ph:()=>'Build: tap the stone in the hotbar, then tap the ground where it should go. Place 3 blocks.',
+    check:()=>HT().placed>=3 },
+  { id:'chest', pc:()=>`Open the chest by the hut: stand next to it and press ${tutKey('use')}. Take the iron bars and the sticks.`, ph:()=>'Open the chest by the hut: stand next to it and tap it, or tap the Talk button. Take the iron bars and the sticks.',
+    at:()=>[HT().cx-8,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2 },
+  { id:'bench', pc:()=>`Craft a workbench: press ${tutKey('bag')}, open Crafting, pick Workbench and press Craft. It takes 10 planks.`, ph:()=>'Craft a workbench: tap the bag button, open Crafting, pick Workbench and tap Craft. It takes 10 planks.',
+    check:()=>countItem(B.WORKBENCH)>=1||tutBenchNear() },
+  { id:'placebench', pc:()=>'Place the workbench on the ground near you: select it in the hotbar and right-click.', ph:()=>'Place the workbench on the ground near you: tap it in the hotbar, then tap the ground.',
+    check:()=>tutBenchNear() },
+  { id:'pick', pc:()=>`Stand by the workbench and craft an Iron pickaxe (10 iron bars, 3 planks and 2 sticks). Press ${tutKey('bag')}, then Crafting.`, ph:()=>'Stand by the workbench and craft an Iron pickaxe (10 iron bars, 3 planks and 2 sticks): the bag button, then Crafting.',
+    check:()=>countItem(I.IRON_PICK)>=1 },
+  { id:'torch', enter:()=>{ time=NIGHT_AT+0.03; HT().torch0=tutTorches(); }, pc:()=>'Night has fallen. Place a torch: select the torches and right-click. Light keeps monsters away and shows the way.', ph:()=>'Night has fallen. Place a torch: tap the torches in the hotbar, then tap the wall or ground. Light keeps monsters away and shows the way.',
+    check:()=>tutTorches()>HT().torch0 },
+  { id:'eat', enter:()=>{ player.food=35; HT().apples0=countItem(I.APPLE); }, pc:()=>'You are hungry (the orange bar). Eat an apple: select it in the hotbar and click.', ph:()=>'You are hungry (the orange bar). Eat an apple: tap it in the hotbar, then push the Aim and use stick.',
+    check:()=>(player.food||0)>60||countItem(I.APPLE)<HT().apples0 },
+  { id:'talk', enter:()=>{ time=0.3; }, pc:()=>`Talk to Elder Rowan in the hut: stand by her and press ${tutKey('use')}.`, ph:()=>'Talk to Elder Rowan in the hut: stand by her and tap her, or tap the Talk button.',
+    at:()=>[HT().cx-14,HT().G-3], check:()=>!!HT().talked },
+  { id:'quest', pc:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.', ph:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.',
+    at:()=>[HT().cx-14,HT().G-3], check:()=>!!HT().quest },
+  { id:'fight', enter:()=>tutGoblins(), pc:()=>'Two goblins are coming from the right! Select your weapon (key 1) and click on them. Watch your health bar.', ph:()=>'Two goblins are coming from the right! Tap your weapon in the hotbar and push the Aim and use stick toward them. Watch your health bar.',
+    at:()=>{ const g=ents.find(e=>e.tutGob&&!e.dead); return g?[Math.floor(cxOf(g)/T),Math.floor(g.y/T)-1]:null; }, check:()=>!!HT().gobs&&tutGobsLeft()===0 },
+  { id:'done', final:true, pc:()=>`You are ready for the real world: mine deeper, claim the village, raise an army and face Vorthax. ${tutKey('bag')} opens the bag, Esc the menu, ${tutKey('map')} the map.`, ph:()=>'You are ready for the real world: mine deeper, claim the village, raise an army and face Vorthax. The bag, map and menu buttons are along the top.' } ];
+// ---- the world ----
+function makeTutorialWorld(cls){ curSlot=TUT_SLOT; heroPick.state=null; heroPick.newCls=null;
+  newGame('small','g',CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'survival',kit:'standard',death:'keep',wx:'off',seed:TUT_SEED});
+  home.tutorial={ v:1, step:0, G:0, cx:0, placed:0, talked:false, quest:false, gobs:false };
+  tutFlatten(); tutBuild(); tutRespawn(); tutEnter(); try{ localStorage.setItem(TUT_ASK_KEY,'1'); }catch(e){} saveLocal(); }
+function tutFlatten(){ const G=Math.max(skyOff+40,seaY-10), cx=Math.floor(W/2); Object.assign(home.tutorial,{G,cx});
+  for(let x=0;x<W;x++){ for(let y=0;y<H;y++){ const i=y*W+x; world[i]=y<G?0:y===G?B.GRASS:y<=G+5?B.DIRT:B.STONE; bg[i]=0; shape[i]=0; liq[i]=0; explored[i]=1; } oceanCol[x]=0; surf[x]=G; updateSkyTop(x); }
+  wetDeco=new Map(); wact=new Set(); chests={}; try{ fires.clear(); }catch(e){} try{ HIVES.clear(); }catch(e){} openDoors=[]; drops=[]; projs=[]; parts=[]; floats=[]; myStructures=[]; home.claimed=false; dragon=null;
+  home.startX=cx; home.startY=G; ents=[player]; player.party=new Array(PARTY_MAX).fill(null); player.x=cx*T; player.y=G*T-player.h; player.vx=player.vy=0; player.bed=null; buildMap(); }
+function tutBuild(){ const {G,cx}=HT(); const P=B.PLANK, S=B.STONE;
+  for(const x of [cx-112,cx+52]) for(let y=G-8;y<G;y++) wset(x,y,S);   // the yard's ends
+  { const vx=cx-60, ccx=vx-24, hx0=vx-2; const houses=ruinHome(ccx,hx0,G,Math.random); chests[(hx0+31)+','+(G-1)]={items:new Array(CHEST_N).fill(null),coins:5}; wset(hx0+31,G-1,B.CHEST);   // the abandoned village, laid out like a real one
+    Object.assign(home,{cx:vx,castleCx:ccx,hx0,gy:G,x0:ccx-19,x1:hx0+40,houses,drifters:2,claimed:false,quarter:false,fixup:null}); }
+  for(let x=cx+7;x<=cx+9;x++) for(let y=G-2;y<G;y++) wset(x,y,B.DIRT);   // the ledge to jump onto
+  for(let x=cx+15;x<=cx+23;x++) for(let y=G-5;y<G;y++) wset(x,y,S); for(const x of [cx+17,cx+19,cx+21]) wset(x,G-2,B.COAL); for(const x of [cx+18,cx+20]) wset(x,G-4,B.COAL);   // the rock with coal
+  for(let y=G-5;y<G;y++){ wset(cx-18,y,P); wset(cx-10,y,P); } for(let x=cx-18;x<=cx-10;x++) wset(x,G-6,P); wset(cx-10,G-1,0); wset(cx-10,G-2,0);   // the elder's hut with an open doorway
+  for(let x=cx-17;x<=cx-11;x++) for(let y=G-5;y<G;y++) bset(x,y,5); wset(cx-14,G-4,B.TORCH);
+  wset(cx-8,G-1,B.CHEST); wset(cx-7,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:2}; c.items[2]={id:I.APPLE,n:2}; chests[(cx-8)+','+(G-1)]=c;
+  for(let x=cx-40;x<=cx+52;x++) updateSkyTop(x); }
+function tutRespawn(){ if(!tutOn()) return; const {G,cx}=HT(); const keep=e=>e===player||(e.kind==='villager'&&e.team===player.team)||e.kind==='drifter'; for(const e of ents) if(!keep(e)) e.dead=true; ents=ents.filter(keep); dragon=null; projs=[];   // the village folk stay (the Quartermaster, helpers and wanderers come from the real village code)
+  if(!ents.some(e=>e.tut)){ const v=makeVillager(player.team,{x0:cx-17,x1:cx-11,gy:G,role:'herbalist'}); v.name='Elder Rowan'; v.tut=true; v.x=(cx-14)*T; ents.push(v); }
+  if(!home.claimed&&!home.quarter&&!ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead)) ents.push(makeQuartermaster());
+  const st=TUT_STEPS[HT().step]; if(st&&st.id==='fight'&&HT().gobs) tutGoblins(); }
+function tutGoblins(){ const {G,cx}=HT(); for(const dx of [38,42]){ const m=makeMonster('goblin',(cx+dx)*T,G*T); m.y=G*T-m.h; m.tutGob=true; m.hp=m.maxHp=Math.min(m.maxHp,28); m.dmg=Math.min(m.dmg,6); m.target=player; ents.push(m); } HT().gobs=true; }
+{ const _fa=fixupAdvance; fixupAdvance=function(dt,...a){ return _fa(tutOn()?dt*TUT_FIX_SPEED:dt,...a); }; }
+{ const _sf=startFixup; startFixup=function(...a){ const r=_sf(...a); try{ if(tutOn()&&home.fixup) toast('The Quartermaster rolls up his sleeves. Here the village is rebuilt in under a minute; in a real world it is ready the next day.',5); }catch(e){} return r; }; }
+// ---- the card and the arrow (styled like the Cancel building button at the top of the screen) ----
+{ const st=document.createElement('style'); st.textContent=`#tutCard{ position:fixed; top:calc(8px + env(safe-area-inset-top,0px)); left:50%; transform:translateX(-50%); z-index:60; width:clamp(360px,calc(100vw - 640px),600px); background:var(--panel2); color:var(--text); border:3px solid var(--edge); padding:10px 18px; font-size:11px; line-height:1.6; text-align:center; box-shadow:4px 4px 0 var(--ink); }
+#tutCard .tutc b{ color:#ffd84a; margin-right:6px; } #tutCard .tutb{ display:flex; gap:8px; justify-content:center; margin-top:6px; } #tutCard .tutb button{ font-family:var(--font); font-size:9px; padding:5px 10px; background:var(--panel2); color:var(--text); border:3px solid var(--edge); box-shadow:2px 2px 0 var(--ink); cursor:pointer; }
+body.touch #tutCard{ top:calc(var(--st) + 100px); left:calc(50% + 20px); font-size:9px; width:min(52vw,460px); padding:6px 10px; }   /* below the hotbar and the Near and Hide buttons, clear of the bars and the map */ body.touch #tutCard .tutb button{ font-size:8px; padding:6px 10px; }`; document.head.appendChild(st);
+  const d=document.createElement('div'); d.id='tutCard'; d.hidden=true; d.innerHTML='<div class="tutc"><b id="tutStep"></b><span id="tutText"></span></div><div class="tutb"><button id="tutSkip">Skip step</button><button id="tutNew" hidden>Start a new world</button><button id="tutLeave">Leave</button></div>'; document.body.appendChild(d);
+  $('#tutSkip').addEventListener('click',()=>{ if(!tutOn()) return; const st=TUT_STEPS[HT().step]; if(st&&st.final){ TUT.hidden=true; d.hidden=true; return; } tutAdvance(true); });
+  $('#tutLeave').addEventListener('click',async()=>{ if(!tutOn()) return; try{ await saveLocal(); }catch(e){} toTitle(); });
+  $('#tutNew').addEventListener('click',async()=>{ try{ await saveLocal(); }catch(e){} toTitle(); setTimeout(()=>$('#btnNew').click(),50); }); }
+function tutCard(){ const d=$('#tutCard'); if(!tutOn()||TUT.hidden||state==='title'){ d.hidden=true; return; } const i=HT().step, st=TUT_STEPS[Math.min(i,TUT_STEPS.length-1)]; d.hidden=false;
+  $('#tutStep').textContent=st.final?'Done!':`Step ${i+1} of ${TUT_STEPS.length-1}`; $('#tutText').textContent=(tutPhone()?st.ph:st.pc)(); $('#tutSkip').textContent=st.final?'Close':'Skip step'; $('#tutNew').hidden=!st.final; }
+function tutEnter(){ TUT.hidden=false; TUT.t=0; rules.wx='off'; const st=TUT_STEPS[HT().step]; if(st&&st.enter&&!HT().entered) { try{ st.enter(); }catch(e){} HT().entered=true; } tutCard(); }
+function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) return; H.step++; H.entered=true; const st=TUT_STEPS[H.step]; try{ if(st.enter) st.enter(); }catch(e){ console.warn(e); }
+  if(!skipped){ sfx('coin'); toast('Done! Next step.',1.5); } tutCard(); try{ saveLocal(); }catch(e){} }
+function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); const st=TUT_STEPS[H.step]; if(!st||st.final) return;
+  let ok=false; try{ ok=!!st.check(); }catch(e){} if(ok) tutAdvance(false); }
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ tutTick(dt); }catch(e){} return r; }; }
+function drawTutArrow(){ if(!tutOn()||state!=='play'||TUT.hidden) return; const st=TUT_STEPS[HT().step]; if(!st||!st.at) return; const at=st.at(); if(!at) return; const [tx,ty]=at, t=performance.now()/1000, X=tx*T+8, Y=ty*T+4+Math.sin(t*5)*3;
+  ctx.save(); ctx.fillStyle='#ffd84a'; ctx.strokeStyle='#5a3a00'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(X-7,Y-14); ctx.lineTo(X+7,Y-14); ctx.lineTo(X,Y-4); ctx.closePath(); ctx.fill(); ctx.stroke();
+  ctx.globalAlpha=0.35+0.25*Math.sin(t*4); ctx.strokeStyle='#ffd84a'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(X,ty*T+T,T*1.2,0,Math.PI*2); ctx.stroke(); ctx.restore(); }
+{ const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawTutArrow(); }catch(e){} return r; }; }
+// ---- hooks into the game ----
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ const before=tutOn()?countItem(id):0; const r=_tp(x,y,id,...a); try{ if(tutOn()&&id===B.STONE&&countItem(id)<before) HT().placed=(HT().placed||0)+1; }catch(e){} return r; }; }
+{ const _i=interact; interact=function(v,...a){ if(v&&v.tut&&tutOn()){ tutTalk(v); talkTarget=undefined; return; } return _i(v,...a); }; }
+function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
+  if(!H.talked){ H.talked=true; toast('Elder Rowan: "Welcome, traveller. Bring me 5 stone and I will pay you for it."',4); return; }
+  if(!H.quest){ if(countItem(B.STONE)>=5){ takeItem(B.STONE,5); player.coins+=20; invDirty=true; H.quest=true; sfx('coin'); toast('Elder Rowan: "Good work. Here are 20 coins. Villagers trade with you and give you work like this."',4.5); } else toast('Elder Rowan: "Come back when you have 5 stone."',3); return; }
+  toast('Elder Rowan: "Go on now. The goblins will not wait."',3); }
+{ const _vn=villagerName; villagerName=function(v,...a){ if(v&&v.tut) return v.name||'Elder Rowan'; return _vn(v,...a); }; }
+{ const _si=showIntro; showIntro=function(...a){ if(curSlot===TUT_SLOT) return; return _si(...a); }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(tutOn()){ tutRespawn(); tutEnter(); } else { $('#tutCard').hidden=true; } }catch(e){ console.warn(e); } return r; }; }
+{ const _tt=toTitle; toTitle=function(...a){ try{ $('#tutCard').hidden=true; }catch(e){} return _tt(...a); }; }
+// ---- the title screen: Tutorial button, class pick, Continue; the first-game prompt ----
+{ const mp=$('#btnMP'); if(mp&&!window.DA_DEMO) mp.insertAdjacentHTML('afterend','<button class="btn" id="btnTutorial">Tutorial</button>');
+  document.body.insertAdjacentHTML('beforeend',`<div class="overlay" id="scrTut" hidden><div class="panel"><div class="phead"><h2>Tutorial</h2><button class="xbtn" id="tutBack">Back</button></div>
+    <p>About five minutes in a tiny world: walking, mining, building, a chest, crafting, a torch at night, eating, a villager's errand and a fight. Saved in slot 7 so you can come back to it.</p><div id="tutCont"></div><p id="tutPickLbl" style="margin:8px 0 6px">Pick a class to start:</p><div class="choices" id="tutCls"></div></div></div>
+  <div class="overlay" id="scrTutAsk" hidden><div class="panel"><h2>First time?</h2><p>A five-minute tutorial teaches walking, mining, building, crafting and fighting in a tiny world. It is on the title screen under Tutorial whenever you want it.</p>
+    <button class="btn primary" id="tutAskYes">Play the tutorial</button><button class="btn" id="tutAskNo">Skip, start a new game</button></div></div>`);
+  function openTut(){ hide('scrTitle'); hide('scrTutAsk'); const si=slotInfo(TUT_SLOT); const cont=$('#tutCont');
+    cont.innerHTML=si?`<button class="btn primary" id="tutContinue">Continue the tutorial<small>${si.meta.summary&&si.meta.summary.name?si.meta.summary.name+', ':''}saved ${saveLabel(si.meta)}</small></button>`:''; $('#tutPickLbl').textContent=si?'Or start over as:':'Pick a class to start:';
+    $('#tutCls').innerHTML=CLS_KEYS.map(k=>`<button class="choice" data-tutc="${k}"><img alt="" src="${portraitUrl(CLASSES[k].look||k,'g',false)}" style="width:28px;height:40px;image-rendering:pixelated;display:block;margin:0 auto 4px">${CLASSES[k].name}<small>${CLASSES[k].hp} hp</small></button>`).join(''); show('scrTut'); }
+  const bt=$('#btnTutorial'); if(bt) bt.addEventListener('click',openTut);
+  $('#tutBack').addEventListener('click',()=>{ hide('scrTut'); show('scrTitle'); });
+  $('#tutCls').addEventListener('click',ev=>{ const b=ev.target.closest('[data-tutc]'); if(!b) return; const cls=b.dataset.tutc; hide('scrTut'); show('scrTitle'); $('#loading').hidden=false; $('#loading').textContent='Building the tutorial…';
+    setTimeout(()=>{ try{ makeTutorialWorld(cls); }catch(e){ console.warn(e); toast('The tutorial could not start',2); } $('#loading').hidden=true; },30); });
+  $('#tutCont').addEventListener('click',async ev=>{ const b=ev.target.closest('#tutContinue'); if(!b) return; b.textContent='Loading…';
+    try{ const str=await loadLocal(TUT_SLOT); if(!str) throw 0; curSlot=TUT_SLOT; hide('scrTut'); heroPick.state=null; deserialize(str); afterWorldReady(); startPlay(); }catch(e){ console.warn(e); b.textContent='Could not load'; } });
+  // the first time New game is pressed on this device (no saves yet), offer the tutorial once
+  $('#btnNew').addEventListener('click',ev=>{ let asked=null; try{ asked=localStorage.getItem(TUT_ASK_KEY); }catch(e){ asked='1'; } if(asked||window.DA_DEMO) return;
+    try{ localStorage.setItem(TUT_ASK_KEY,'1'); }catch(e){} if([1,2,3].some(n=>slotInfo(n))) return; ev.stopImmediatePropagation(); hide('scrTitle'); show('scrTutAsk'); },true);
+  $('#tutAskYes').addEventListener('click',openTut);
+  $('#tutAskNo').addEventListener('click',()=>{ hide('scrTutAsk'); show('scrTitle'); $('#btnNew').click(); }); }
+{ const _as=anySave; anySave=function(...a){ return _as(...a); }; }
 // ===== Beta 0.9.137: villagers and their job blocks, workers and their foreman, arrivals, house stages (Kinard, 2026-10-19) =====
 // 1. A villager works (sells, gathers) as soon as their job block (JOB_ITEM: the smith's anvil, the cook's pot...) is
 //    within JOB_NEAR blocks of them. They attach to that block (v.jobAt "x,y") and keep it however far they go (running
@@ -17547,7 +17789,7 @@ function edLeave(){ document.body.classList.remove('edmode'); $('#edBar').hidden
 { const _si=showIntro; showIntro=function(...a){ if(curSlot===ED_SLOT) return; return _si(...a); }; }   // no story card over the empty world
 
 // ---- nothing happens by itself in the editor ----
-{ const quiet=(get,set)=>{ try{ const f=get(); if(typeof f!=='function') return; const w=function(...a){ if(edOn()) return; return f.apply(this,a); }; w.toString=()=>f.toString(); set(w); }catch(e){} };   // toString passes through: the smoke test reads some of these functions' source
+{ const quiet=(get,set)=>{ try{ const f=get(); if(typeof f!=='function') return; const w=function(...a){ if(edOn()||(typeof tutOn==='function'&&tutOn())) return; /* 0.9.145: the tutorial world is just as quiet */ return f.apply(this,a); }; w.toString=()=>f.toString(); set(w); }catch(e){} };   // toString passes through: the smoke test reads some of these functions' source
   quiet(()=>spawnMonsters,v=>{ spawnMonsters=v; }); quiet(()=>spawnAnimals,v=>{ spawnAnimals=v; }); quiet(()=>spawnSea,v=>{ spawnSea=v; }); quiet(()=>spawnUnder,v=>{ spawnUnder=v; });
   quiet(()=>spawnForest,v=>{ spawnForest=v; }); quiet(()=>spawnDesert,v=>{ spawnDesert=v; }); quiet(()=>spawnScouts,v=>{ spawnScouts=v; }); quiet(()=>spawnSkyKnights,v=>{ spawnSkyKnights=v; });
   quiet(()=>spawnRaptors,v=>{ spawnRaptors=v; }); quiet(()=>respawns,v=>{ respawns=v; }); quiet(()=>growBases,v=>{ growBases=v; }); quiet(()=>factionTick,v=>{ factionTick=v; });
