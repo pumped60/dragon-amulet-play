@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792601690"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792601690"><link rel="manifest" href="manifest.webmanifest?v=1792601690"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792605759"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792605759"><link rel="manifest" href="manifest.webmanifest?v=1792605759"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.149</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.150</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.150</h3>
+    <p>Trees only grow on flat ground: a sapling can't go on a slope. Choosing a miner always gives the miners' hut its ore cart, bed and chest, so your miners can work and talk. In the tutorial the sea on both sides is the edge, the castle is rebuilt in a tenth of the usual time, both wanderers become miners, your first soldier comes from the Recruiter, the cave holds the stone and coal to mine, and new steps show farming (a hoe, tilling, planting) and taming an animal in the wild and leading it into a pen.</p>
     <h3>New in Beta 0.9.149</h3>
     <p>The tutorial world has rolling hills with trees, a beach and the ocean past each end, and a little cave in the hill to explore. New steps show you how to give two wanderers jobs (a miner and a soldier who joins your army) and how to tame an animal from the pen, and your soldier and pet help in the goblin fight.</p>
     <h3>New in Beta 0.9.148</h3>
@@ -835,7 +837,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.149</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.150</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1095,7 +1097,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.149</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.150</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1114,7 +1116,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.149', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.150', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17045,6 +17047,19 @@ function cropPatches(onlyUnexplored,R,put){ R=R||Math.random; put=put||setTile; 
 // ---- 4. gathering pets bring half as much ----
 { const _ta=tamedAct; tamedAct=function(e,dt,...a){ if(e&&e.mode==='gather'&&(e.gT??15)-dt<=0){ e.gHalf=!e.gHalf; if(e.gHalf){ e.gT=20; } }
     return _ta(e,dt,...a); }; }
+// ===== Beta 0.9.150: a miner always gets the miners' hut kit (Kinard: "across every game mode when a miner is chosen it will always build an ore cart and the blocks needed for the player to communicate with them") =====
+// The hut's bed, chest and ore cart (the miner's job block: without it the foreman and miners stop working and talking) were placed
+// once by furnishVillage (home.furn_mine). Now every time a miner is chosen (a wanderer's job, a hire, the head's first worker)
+// the hut is checked and anything missing goes back in; if furnishing finds no free spot, the cells beside the shaft are used.
+function ensureMineKit(){ if(!home||!home.mineX||isGuest()) return; const b=gameBoxes().find(b=>b.kind==='mine'); if(!b) return;
+  const need=[B.BED,B.CHEST,B.ORE_CART]; const miss=()=>{ const k=homeKit(boxCells(b)); return need.filter(id=>id===B.BED?!k.bed:id===B.CHEST?!k.chest:!k.jobs.has(id)); };
+  let m=miss(); if(!m.length) return; try{ furnishBox(b,m); }catch(e){ console.warn(e); } m=miss(); if(!m.length) return;
+  const mx=home.mineX, gy=home.gy; const spots=[mx+3,mx+4,mx-3,mx-1,mx+2,mx-2];
+  facRun(()=>{ for(const id of m){ const x=spots.find(x=>!tileAt(x,gy-1)&&isSolid(x,gy)); if(x==null) break; setTile(x,gy-1,id); if(id===B.CHEST&&!chests[x+','+(gy-1)]) chests[x+','+(gy-1)]={items:new Array(CHEST_N).fill(null),coins:0}; } });
+  try{ for(const e of ents) missCache.delete(e); }catch(e){} }
+{ const _bm=buildMineHut; buildMineHut=function(...a){ const r=_bm(...a); try{ ensureMineKit(); }catch(e){ console.warn(e); } return r; }; }
+{ const _am=addHomeMiner; addHomeMiner=function(...a){ const r=_am(...a); try{ ensureMineKit(); }catch(e){ console.warn(e); } return r; }; }
+{ const _wf=workerFromWanderer; workerFromWanderer=function(job,...a){ const r=_wf(job,...a); try{ if(job==='miner') ensureMineKit(); }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.145: pets fight like soldiers; ore keeps the rock it was first seen in (Kinard) =====
 // Pets: tamedAct only fought under the Fight job; a pet (the default job) or a following pet walked beside you while
 // goblins hit you. Now a pet, follow or fight animal engages like a Follow soldier: enemies within 8 blocks of it or 10
@@ -17187,6 +17202,17 @@ function evenTorches(){ if(!home||!home.claimed||isGuest()||home.fixup) return 0
 { const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ evenTorches(); }catch(e){ console.warn(e); } return r; }; }
 { const _fd=fixupDone; fixupDone=function(...a){ const r=_fd(...a); try{ evenTorches(); }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ evenTorches(); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.150: trees stand on flat ground (Kinard: "game wide make it so trees cannot be built on sloped terrain and must be on flat blocks") =====
+// A sapling can't be placed on a sloped block; a sapling that grows (any path: time, grow meal, woodcutters, the lodge) flattens
+// the slope under its trunk first; and every tree already in a world gets the slope under its trunk flattened once (home.treeFlatV).
+let treeFlatHintT=0;
+function slopedAt(x,y){ return x>=0&&x<W&&y>=0&&y<H&&!!shape[y*W+x]; }
+{ const _po=placeOK; placeOK=function(x,y,id,...a){
+    if(isSapling(id)&&x>=0&&x<W&&y>=0&&y+1<H&&!world[y*W+x]&&slopedAt(x,y+1)){ if(player&&performance.now()>treeFlatHintT){ treeFlatHintT=performance.now()+1500; toast('Trees need flat ground: plant the sapling on a flat block, not a slope',2.2); } return false; }
+    return _po(x,y,id,...a); }; }
+{ const _gs=growSapling; growSapling=function(x,h,sz,...a){ try{ for(let k=0;k<Math.max(1,sz|0);k++) if(slopedAt(x+k,h)) shape[h*W+x+k]=0; }catch(e){} return _gs(x,h,sz,...a); }; }
+function flattenUnderTrees(){ let n=0; for(let y=1;y<H-1;y++){ const r=y*W; for(let x=0;x<W;x++){ const i=r+x; if(!LOG_IDS.has(world[i])) continue; const j=i+W; if(!LOG_IDS.has(world[j])&&shape[j]){ shape[j]=0; n++; } } } return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!home.treeFlatV&&!(typeof MP!=='undefined'&&MP.guest)){ home.treeFlatV=1; flattenUnderTrees(); } }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.145: the tutorial world (Kinard) =====
 // A tiny flat world in save slot 7 that walks a new player through moving, jumping, mining, placing blocks, a chest,
 // crafting, a torch at night, eating, a villager's errand and a fight with two goblins. A card at the top says one task
@@ -17194,7 +17220,7 @@ function evenTorches(){ if(!home||!home.claimed||isGuest()||home.fixup) return 0
 // moves on; a glowing arrow points at the target. Skip step and Leave are always there. Reached from a Tutorial button
 // under Multiplayer on the title screen (class pick first; Continue when a tutorial is saved) and offered once on a
 // device the first time New game is pressed (TUT_ASK_KEY). Spawners, factions, weather and the story card stay off here.
-const TUT_SLOT=7, TUT_ASK_KEY='dragonamulet-tutasked', TUT_SEED=777, TUT_EVERY=0.15, TUT_FIX_SPEED=30;   // the repairs run 30x: under a minute instead of most of a day
+const TUT_SLOT=7, TUT_ASK_KEY='dragonamulet-tutasked', TUT_SEED=777, TUT_EVERY=0.15, TUT_FIX_SPEED=10;   // the repairs run 10x: a tenth of a real world's time, about a minute
 const TUT={t:0, hidden:false, saveT:0};
 function tutOn(){ return !!(world&&home&&home.tutorial&&player&&curSlot===TUT_SLOT); }
 function HT(){ return home.tutorial; }
@@ -17204,7 +17230,14 @@ function tutBenchNear(){ const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf
 function tutTorches(){ let n=0; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); for(let y=py-12;y<=py+12;y++) for(let x=px-30;x<=px+30;x++) if(tileAt(x,y)===B.TORCH) n++; return n; }
 function tutSoldiers(){ return ents.filter(e=>e.kind==='human'&&e.team===player.team&&!e.dead&&e!==player).length; }
 function tutDrifterAt(){ const d=ents.find(e=>e.kind==='drifter'&&!e.dead); return d?[Math.floor(cxOf(d)/T),Math.floor(d.y/T)-1]:null; }
-function tutWanderer(){ if(ents.some(e=>e.kind==='drifter'&&!e.dead)||!home.claimed) return; home.drifters=(home.drifters||0)+1; ents.push(makeDrifter(home.drifters-1)); }   // a wanderer is always there for these two steps
+// both wanderers become miners: the first is the mine foreman, the second a miner; enough wanderers wait for whatever is left
+function tutWanderers(){ if(!home.claimed||home.fixup) return; const need=2-(home.foreman?1:0)-Math.min(1,home.miners||0); let live=ents.filter(e=>e.kind==='drifter'&&!e.dead).length; while(live<need){ home.drifters=(home.drifters||0)+1; ents.push(makeDrifter(home.drifters-1)); live++; } }
+// the Recruiter is in the castle after the rebuild; the tutorial pays for the first soldier once
+function tutRecruiter(){ if(!ents.some(e=>e.kind==='villager'&&e.role==='recruiter'&&e.team===player.team&&!e.dead)) ents.push(makeHelper('recruiter','Recruiter',10)); if(!HT().coin){ HT().coin=1; player.coins+=60; } }
+function tutHasHoe(){ return player.inv.some(s=>s&&ITEMS[s.id]&&ITEMS[s.id].kind==='hoe'); }
+function tutFarmCells(f){ const {G,cx}=HT(); let n=0; for(let x=cx-111;x<=cx+57;x++) for(let y=G-6;y<=G+1;y++) if(tileAt(x,y)===B.FARMLAND&&f(x,y)) n++; return n; }
+function tutFarmland(){ return tutFarmCells(()=>true); }
+function tutCrops(){ return tutFarmCells((x,y)=>{ const id=tileAt(x,y-1); return !!id&&!BLOCKS[id].solid; }); }
 function tutGobsLeft(){ return ents.filter(e=>e.tutGob&&!e.dead).length; }
 // the steps: pc and ph are the two wordings, at() the arrow's cell, enter() runs when the step starts, check() says when it is done
 const TUT_STEPS=[
@@ -17214,20 +17247,20 @@ const TUT_STEPS=[
     at:()=>[HT().cx+8,HT().G-3], check:()=>{ const px=Math.floor(cxOf(player)/T); return player.grounded&&px>=HT().cx+7&&px<=HT().cx+9&&player.y+player.h<=(HT().G-2)*T+1; } },
   { id:'castle', pc:()=>`Walk left to the ruined castle and talk to the Quartermaster (${tutKey('use')}). Choose Fix up the castle: every new world starts with a village like this to rebuild.`, ph:()=>'Walk left to the ruined castle and talk to the Quartermaster (tap him, or the Talk button). Choose Fix up the castle: every new world starts with a village like this to rebuild.',
     at:()=>{ const q=ents.find(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead); return q?[Math.floor(cxOf(q)/T),Math.floor(q.y/T)-1]:[home.castleCx,HT().G-3]; }, check:()=>!!home.fixup||!!home.claimed },
-  { id:'rebuild', pc:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes under a minute; in a real world it takes until the next day. Watch, or walk back to the right.', ph:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes under a minute; in a real world it takes until the next day. Watch, or walk back to the right.',
+  { id:'rebuild', pc:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes about a minute, a tenth of the time it takes in a real world. Watch, or walk back to the right.', ph:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes about a minute, a tenth of the time it takes in a real world. Watch, or walk back to the right.',
     at:()=>[home.castleCx,HT().G-3], check:()=>!!home.claimed&&!home.fixup },
-  { id:'miner', enter:()=>tutWanderer(), pc:()=>`Two wanderers came to the village. Talk to one (${tutKey('use')}) and choose Miner: miners dig ore for you and bring it to the miners' chest.`, ph:()=>'Two wanderers came to the village. Talk to one (tap them, or the Talk button) and choose Miner: miners dig ore for you and bring it to the miners\' chest.',
-    at:()=>tutDrifterAt(), check:()=>!!(home.foreman||home.mineX||(home.miners||0)>0) },
-  { id:'soldier', enter:()=>tutWanderer(), pc:()=>`Talk to the other wanderer and pick a soldier (Knight, Archer, Wizard...). Soldiers join your army, follow you and fight beside you.`, ph:()=>'Talk to the other wanderer and pick a soldier (Knight, Archer, Wizard...). Soldiers join your army, follow you and fight beside you.',
-    at:()=>tutDrifterAt(), check:()=>tutSoldiers()>0 },
+  { id:'miners', enter:()=>tutWanderers(), pc:()=>`Two wanderers came to the village. Talk to each one (${tutKey('use')}) and choose Miner. The first becomes your mine foreman and builds the miners' hut with an ore cart; the second digs ore for you.`, ph:()=>'Two wanderers came to the village. Talk to each one (tap them, or the Talk button) and choose Miner. The first becomes your mine foreman and builds the miners\' hut with an ore cart; the second digs ore for you.',
+    at:()=>tutDrifterAt(), check:()=>!!home.foreman&&(home.miners||0)>=1 },
+  { id:'recruit', enter:()=>tutRecruiter(), pc:()=>`Soldiers come from the Recruiter in the castle. Talk to him (${tutKey('use')}) and hire one: they join your army, follow you and fight beside you. Here is some coin for it.`, ph:()=>'Soldiers come from the Recruiter in the castle. Talk to him (tap him, or the Talk button) and hire one: they join your army, follow you and fight beside you. Here is some coin for it.',
+    at:()=>{ const r=ents.find(e=>e.kind==='villager'&&e.role==='recruiter'&&e.team===player.team&&!e.dead); return r?[Math.floor(cxOf(r)/T),Math.floor(r.y/T)-1]:null; }, check:()=>tutSoldiers()>0 },
   { id:'chest', pc:()=>`Open the chest between the first two village houses: stand next to it and press ${tutKey('use')}. Take the iron bars and the sticks.`, ph:()=>'Open the chest between the first two village houses: stand next to it and tap it, or tap the Talk button. Take the iron bars and the sticks.',
     at:()=>[home.hx0+10,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2 },
-  { id:'mine', pc:()=>'Mine 5 stone from the rock: select the pickaxe (key 2), point at the rock and hold the left mouse button.', ph:()=>'Mine 5 stone from the rock: tap the pickaxe in the hotbar, then push the Aim and use stick toward the rock.',
-    at:()=>[HT().cx+19,HT().G-4], check:()=>countItem(B.STONE)>=5 },
-  { id:'ore', pc:()=>'Mine the 3 coal in the rock (the dark blocks). Ore is how you get better gear.', ph:()=>'Mine the 3 coal in the rock (the dark blocks). Ore is how you get better gear.',
-    at:()=>[HT().cx+19,HT().G-4], check:()=>countItem(B.COAL)>=3 },
   { id:'cave', pc:()=>'Explore the little cave in the hill on the right: walk in and go down to the chest at the bottom. Real caves go much deeper, with ore, chests and monsters.', ph:()=>'Explore the little cave in the hill on the right: walk in and go down to the chest at the bottom. Real caves go much deeper, with ore, chests and monsters.',
     at:()=>HT().v>=2?[HT().cx+39,HT().G-1]:null, check:()=>{ const H=HT(); if(H.v<2) return true; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); return px>=H.cx+24&&px<=H.cx+34&&py>=H.G+3&&py<=H.G+7; } },
+  { id:'mine', pc:()=>'Mine 5 stone from the cave walls: select the pickaxe (key 2), point at the stone and hold the left mouse button.', ph:()=>'Mine 5 stone from the cave walls: tap the pickaxe in the hotbar, then push the Aim and use stick toward the stone.',
+    at:()=>[HT().cx+31,HT().G+7], check:()=>countItem(B.STONE)>=5 },
+  { id:'ore', pc:()=>'Mine the 3 coal in the cave ceiling (the dark blocks). Ore is how you get better gear.', ph:()=>'Mine the 3 coal in the cave ceiling (the dark blocks). Ore is how you get better gear.',
+    at:()=>[HT().cx+29,HT().G+2], check:()=>countItem(B.COAL)>=3 },
   { id:'place', pc:()=>'Build: select the stone in the hotbar and right-click where it should go. Place 3 blocks.', ph:()=>'Build: tap the stone in the hotbar, then tap the ground where it should go. Place 3 blocks.',
     check:()=>HT().placed>=3 },
   { id:'bench', pc:()=>`Craft a workbench: press ${tutKey('bag')}, open Crafting, pick Workbench and press Craft. It takes 10 planks.`, ph:()=>'Craft a workbench: tap the bag button, open Crafting, pick Workbench and tap Craft. It takes 10 planks.',
@@ -17240,9 +17273,17 @@ const TUT_STEPS=[
     check:()=>tutTorches()>HT().torch0 },
   { id:'eat', enter:()=>{ player.food=35; HT().apples0=countItem(I.APPLE); }, pc:()=>'You are hungry (the orange bar). Eat an apple: select it in the hotbar and click.', ph:()=>'You are hungry (the orange bar). Eat an apple: tap it in the hotbar, then push the Aim and use stick.',
     check:()=>(player.food||0)>60||countItem(I.APPLE)<HT().apples0 },
-  { id:'tame', enter:()=>{ time=0.3; if(!hasWhistle()) obtain(I.WHISTLE); give(I.CARROT,3); invDirty=true; tutPen(); }, pc:()=>`Tame an animal in the pen on the right: stand next to the sheep or the rabbit and press ${tutKey('use')}. You have a taming whistle and carrots to feed it. Pets follow you and fight for you.`, ph:()=>'Tame an animal in the pen on the right: stand next to the sheep or the rabbit and tap the Talk button. You have a taming whistle and carrots to feed it. Pets follow you and fight for you.',
+  { id:'hoe', pc:()=>`Time to farm. Craft a Wooden hoe at the workbench (4 planks): press ${tutKey('bag')}, then Crafting.`, ph:()=>'Time to farm. Craft a Wooden hoe at the workbench (4 planks): the bag button, then Crafting.',
+    check:()=>tutHasHoe() },
+  { id:'till', enter:()=>{ HT().farm0=tutFarmland(); }, pc:()=>'Till 3 blocks of the grass by the hill: select the hoe and click the ground. Tilled soil (farmland) is where crops grow.', ph:()=>'Till 3 blocks of the grass by the hill: tap the hoe in the hotbar, then tap the ground. Tilled soil (farmland) is where crops grow.',
+    at:()=>[HT().cx+14,HT().G-1], check:()=>tutFarmland()>=(HT().farm0||0)+3 },
+  { id:'plant', enter:()=>{ give(I.CARROT_SEEDS,4); invDirty=true; HT().crop0=tutCrops(); }, pc:()=>'Plant carrot seeds on the tilled soil: select the seeds and click each tilled block. Plant 3. They grow by themselves, and ripe crops give food.', ph:()=>'Plant carrot seeds on the tilled soil: tap the seeds in the hotbar, then tap each tilled block. Plant 3. They grow by themselves, and ripe crops give food.',
+    at:()=>[HT().cx+14,HT().G-1], check:()=>tutCrops()>=(HT().crop0||0)+3 },
+  { id:'tame', enter:()=>{ time=0.3; if(!hasWhistle()) obtain(I.WHISTLE); give(I.CARROT,3); invDirty=true; tutWild(); }, pc:()=>`A sheep and a rabbit roam the meadow by the hill. Walk up to one and press ${tutKey('use')} to tame it: you have a taming whistle and carrots to feed it. Pets follow you and fight for you.`, ph:()=>'A sheep and a rabbit roam the meadow by the hill. Walk up to one and tap the Talk button to tame it: you have a taming whistle and carrots to feed it. Pets follow you and fight for you.',
     at:()=>{ const a=ents.find(e=>e.tutAnimal&&!e.dead&&!e.tamed); return a?[Math.floor(cxOf(a)/T),Math.floor(a.y/T)-1]:null; }, check:()=>ents.some(e=>e.tutAnimal&&e.tamed&&!e.dead) },
-  { id:'talk', enter:()=>{ time=0.3; }, pc:()=>`Talk to Elder Rowan in the first village house: stand by her and press ${tutKey('use')}.`, ph:()=>'Talk to Elder Rowan in the first village house: stand by her and tap her, or tap the Talk button.',
+  { id:'pen', pc:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.', ph:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.',
+    at:()=>[HT().cx+45,HT().G-2], check:()=>ents.some(e=>e.tamed&&!e.dead&&e.fpen) },
+  { id:'talk',  pc:()=>`Talk to Elder Rowan in the first village house: stand by her and press ${tutKey('use')}.`, ph:()=>'Talk to Elder Rowan in the first village house: stand by her and tap her, or tap the Talk button.',
     at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().talked },
   { id:'quest', pc:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.', ph:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.',
     at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().quest },
@@ -17252,7 +17293,7 @@ const TUT_STEPS=[
 // ---- the world ----
 function makeTutorialWorld(cls){ curSlot=TUT_SLOT; heroPick.state=null; heroPick.newCls=null;
   newGame('small','g',CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'survival',kit:'standard',death:'keep',wx:'off',seed:TUT_SEED});
-  home.tutorial={ v:2, step:0, G:0, cx:0, placed:0, talked:false, quest:false, gobs:false };
+  home.tutorial={ v:3, sv:3, step:0, G:0, cx:0, placed:0, talked:false, quest:false, gobs:false };
   tutFlatten(); tutBuild(); tutRespawn(); tutEnter(); try{ localStorage.setItem(TUT_ASK_KEY,'1'); }catch(e){} saveLocal(); }
 function tutFlatten(){ const G=Math.max(skyOff+40,seaY-10), cx=Math.floor(W/2); Object.assign(home.tutorial,{G,cx});
   for(let x=0;x<W;x++){ for(let y=0;y<H;y++){ const i=y*W+x; world[i]=y<G?0:y===G?B.GRASS:y<=G+5?B.DIRT:B.STONE; bg[i]=0; shape[i]=0; liq[i]=0; explored[i]=1; } oceanCol[x]=0; surf[x]=G; updateSkyTop(x); }
@@ -17270,31 +17311,33 @@ function tutLand(G,cx){ const L=cx-112, Rr=cx+52, floor=G+9;
     surf[x]=top; updateSkyTop(x); }
   try{ naturalSlopes(); }catch(e){} }
 function tutBuild(){ const {G,cx}=HT(); const P=B.PLANK, S=B.STONE;
-  for(const x of [cx-112,cx+52]) for(let y=G-8;y<G;y++) wset(x,y,S);   // the yard's ends
+  /* 0.9.150: no stone ends; the sea on both sides is the edge of the tutorial (tutBorder) */
   { const vx=cx-60, ccx=vx-24, hx0=vx-2; const houses=ruinHome(ccx,hx0,G,Math.random); chests[(hx0+31)+','+(G-1)]={items:new Array(CHEST_N).fill(null),coins:5}; wset(hx0+31,G-1,B.CHEST);   // the abandoned village, laid out like a real one
     Object.assign(home,{cx:vx,castleCx:ccx,hx0,gy:G,x0:ccx-19,x1:hx0+40,houses,drifters:2,claimed:false,quarter:false,fixup:null}); }
-  for(let x=cx+7;x<=cx+9;x++) for(let y=G-2;y<G;y++) wset(x,y,B.DIRT);   // the ledge to jump onto
-  for(let x=cx+15;x<=cx+23;x++) for(let y=G-5;y<G;y++) wset(x,y,S); for(const x of [cx+17,cx+19,cx+21]) wset(x,G-2,B.COAL); for(const x of [cx+18,cx+20]) wset(x,G-4,B.COAL);   // the rock with coal
-  { const hx=home.hx0+10; wset(hx,G-1,B.CHEST); wset(hx+1,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:2}; c.items[2]={id:I.APPLE,n:2}; chests[hx+','+(G-1)]=c; }   // the tutorial chest between the first two village houses (0.9.146: the separate hut is gone)
-  tutCave(); tutPenBuild(); { const R=mulberry(TUT_SEED+5); for(const dx of [-108,12,31]) growTree(cx+dx,surf[cx+dx],1,R,'oak'); }   // a few trees
+  for(let x=cx+7;x<=cx+9;x++){ wset(x,G-2,B.GRASS); wset(x,G-1,B.DIRT); wset(x,G,B.DIRT); }   // the ledge to jump onto: grass on top, plain dirt below and under it
+  { const hx=home.hx0+10; wset(hx,G-1,B.CHEST); wset(hx+1,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:4}; c.items[2]={id:I.APPLE,n:2}; chests[hx+','+(G-1)]=c; }   // the tutorial chest between the first two village houses (0.9.146: the separate hut is gone)
+  tutCave(); tutPenBuild(); { const R=mulberry(TUT_SEED+5); for(const dx of [-108,21,31]) growTree(cx+dx,surf[cx+dx],1,R,'oak'); }   // a few trees
   for(let x=0;x<W;x++) updateSkyTop(x); }
 // the mini cave: a sloping passage into the right hill, down to a lit room with ore and a chest
 function tutCave(){ const {G,cx}=HT(); const cl=(x,y)=>{ wset(x,y,0); if(x>=0&&x<W&&y>=0&&y<H){ shape[y*W+x]=0; bg[y*W+x]=2; } };
   for(let x=cx+34;x<=cx+39;x++){ const f=G+(cx+40-x); for(let y=f-3;y<f;y++) cl(x,y); wset(x,f,x===cx+39?B.DIRT:B.STONE); }
   for(let x=cx+24;x<=cx+33;x++){ for(let y=G+3;y<=G+6;y++) cl(x,y); wset(x,G+7,B.STONE); }
   for(let y=G+3;y<=G+6;y++){ wset(cx+23,y,y<G+6?B.IRON:B.STONE); }
-  wset(cx+33,G+2,B.COAL); wset(cx+30,G+2,B.COAL);
+  for(const x of [cx+26,cx+29,cx+32]) wset(x,G+2,B.COAL);   // the coal for the ore step, in the ceiling
   wset(cx+25,G+4,B.TORCH); wset(cx+36,G+2,B.TORCH);
   const k=(cx+27)+','+(G+6); wset(cx+27,G+6,B.CHEST); wset(cx+28,G+6,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:15}; c.items[0]={id:B.TORCH,n:6}; c.items[1]={id:I.CARROT,n:3}; chests[k]=c; }
-// the animal pen past the cave: a fence at each end, a sheep and a rabbit to tame
-function tutPenBuild(){ const {G,cx}=HT(); for(const x of [cx+41,cx+50]) wset(x,G-1,B.FENCE); }
-function tutPen(){ if(!tutOn()) return; const {G,cx}=HT(); if(ents.some(e=>e.tutAnimal&&!e.dead)) return; if(ents.some(e=>e.tutAnimal&&e.tamed)) return;
-  for(const [k,dx] of [['sheep',44],['rabbit',47]]){ const a=makeAnimal(k,(cx+dx)*T,0); a.y=G*T-a.h; a.tutAnimal=true; a.temper='good'; ents.push(a); } }
-function tutPenKeep(){ const {cx}=HT(); for(const a of ents){ if(!a.tutAnimal||a.tamed||a.dead) continue; const lo=(cx+42)*T, hi=(cx+50)*T-a.w; if(a.x<lo){ a.x=lo; a.vx=Math.abs(a.vx); a.wDir=1; } else if(a.x>hi){ a.x=hi; a.vx=-Math.abs(a.vx); a.wDir=-1; } } }
+// the animal pen past the cave: a row of 8 fence posts (a pen is 4 or more in a row); the animals to tame roam the meadow by the hill
+function tutPenBuild(put){ const {G,cx}=HT(); put=put||wset; for(let x=cx+42;x<=cx+49;x++) if(!tileAt(x,G-1)) put(x,G-1,B.FENCE); }
+function tutWild(){ if(!tutOn()) return; const {G,cx}=HT(); if(ents.some(e=>e.tutAnimal&&!e.dead)) return;
+  for(const [k,dx] of [['sheep',19],['rabbit',23]]){ const a=makeAnimal(k,(cx+dx)*T,0); a.y=(G-tutHillH(dx))*T-a.h; a.tutAnimal=true; a.temper='good'; ents.push(a); } }
+function tutWildKeep(){ const {cx}=HT(); for(const a of ents){ if(!a.tutAnimal||a.tamed||a.dead) continue; const lo=(cx+11)*T, hi=(cx+25)*T-a.w; if(a.x<lo){ a.x=lo; a.vx=Math.abs(a.vx); a.wDir=1; } else if(a.x>hi){ a.x=hi; a.vx=-Math.abs(a.vx); a.wDir=-1; } } }
+// the sea is the edge: you can wade and swim out a little, no further
+function tutBorder(){ const H=HT(); if((H.v||1)<3) return; const lo=(H.cx-112-30)*T, hi=(H.cx+52+30)*T; if(player.x<lo){ player.x=lo; player.vx=Math.max(0,player.vx); tutEdgeMsg(); } else if(player.x>hi){ player.x=hi; player.vx=Math.min(0,player.vx); tutEdgeMsg(); } }
+let tutEdgeT=0; function tutEdgeMsg(){ if(performance.now()<tutEdgeT) return; tutEdgeT=performance.now()+4000; toast('The open sea is the edge of the tutorial. Real worlds have islands across the water.',3); }
 function tutRespawn(){ if(!tutOn()) return; const {G,cx}=HT(); const keep=e=>e===player||(e.kind==='villager'&&e.team===player.team)||e.kind==='drifter'||(e.team===player.team&&(e.kind==='human'||e.tamed))||e.tutAnimal; for(const e of ents) if(!keep(e)) e.dead=true; ents=ents.filter(keep); dragon=null; projs=[];   // the village folk stay (the Quartermaster, helpers and wanderers come from the real village code)
   if(!ents.some(e=>e.tut)){ const hx=home.hx0; const v=makeVillager(player.team,{x0:hx+1,x1:hx+7,gy:G,role:'herbalist'}); v.name='Elder Rowan'; v.tut=true; v.x=(hx+4)*T; ents.push(v); }   // she lives in the first village house
   if(!home.claimed&&!home.quarter&&!ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead)) ents.push(makeQuartermaster());
-  const st=TUT_STEPS[HT().step]; if(st&&st.id==='fight'&&HT().gobs) tutGoblins(); if(HT().step<=TUT_STEPS.findIndex(s=>s.id==='tame')) tutPen(); }
+  const st=TUT_STEPS[HT().step]; if(st&&st.id==='fight'&&HT().gobs) tutGoblins(); if(HT().step<=TUT_STEPS.findIndex(s=>s.id==='tame')) tutWild(); }
 function tutGoblins(){ const {G,cx}=HT(); const px=Math.min(cx+34,Math.floor(cxOf(player)/T)); for(const dx of [12,16]){ const m=makeMonster('goblin',(px+dx)*T,G*T); /* from the right of wherever you stand, inside the yard */ m.y=G*T-m.h; m.tutGob=true; m.hp=m.maxHp=Math.min(m.maxHp,28); m.dmg=Math.min(m.dmg,6); m.target=player; ents.push(m); } HT().gobs=true; }
 { const _fa=fixupAdvance; fixupAdvance=function(dt,...a){ return _fa(tutOn()?dt*TUT_FIX_SPEED:dt,...a); }; }
 { const _sf=startFixup; startFixup=function(...a){ const r=_sf(...a); try{ if(tutOn()&&home.fixup) toast('The Quartermaster rolls up his sleeves. Here the village is rebuilt in under a minute; in a real world it is ready the next day.',5); }catch(e){} return r; }; }
@@ -17337,11 +17380,16 @@ function tutCard(){ const d=$('#tutCard'), tab=$('#tutTab'); if(!tutOn()||TUT.hi
   if(TUT.min==null) TUT.min=!!settings.tutMin; tab.hidden=!TUT.min; d.hidden=TUT.min; try{ tutWinApply(); }catch(e){} tab.textContent=st.final?'Tutorial: done':`Tutorial ${i+1}/${TUT_STEPS.length-1} ▸`; if(TUT.min) return;
   $('#tutStep').textContent=st.final?'Done!':`Step ${i+1} of ${TUT_STEPS.length-1}`; $('#tutText').textContent=(tutPhone()?st.ph:st.pc)(); $('#tutSkip').textContent=st.final?'Close':'Skip step'; $('#tutNew').hidden=!st.final; }
 const TUT_V1=['move','jump','castle','rebuild','chest','mine','ore','place','bench','placebench','pick','torch','eat','talk','quest','fight','done'];
-function tutMigrate(){ const H=HT(); if((H.v||1)>=2||H.migr) return; H.migr=1; const id=TUT_V1[H.step]; const n=TUT_STEPS.findIndex(s=>s.id===id); if(n>=0) H.step=n; }
+const TUT_V2=['move','jump','castle','rebuild','miner','soldier','chest','mine','ore','cave','place','bench','placebench','pick','torch','eat','tame','talk','quest','fight','done'];
+const TUT_ALIAS={ miner:'miners', soldier:'recruit' };
+function tutMigrate(){ const H=HT(); const sv=H.sv||(H.v||1); if(sv>=3) return; const list=sv>=2?TUT_V2:TUT_V1; let id=list[H.step]; id=TUT_ALIAS[id]||id;
+  /* the steps added in between come before the one you were on only if they are earlier in the list; the cave step passes by itself in a world without a cave */
+  const n=TUT_STEPS.findIndex(s=>s.id===id); if(n>=0) H.step=n; H.sv=3; H.entered=false;
+  try{ facRun(()=>tutPenBuild((x,y,id)=>setTile(x,y,id))); }catch(e){} }
 function tutEnter(){ try{ tutMigrate(); }catch(e){} TUT.hidden=false; TUT.t=0; rules.wx='off'; const st=TUT_STEPS[HT().step]; if(st&&st.enter&&!HT().entered) { try{ st.enter(); }catch(e){} HT().entered=true; } tutCard(); }
 function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) return; H.step++; H.entered=true; const st=TUT_STEPS[H.step]; try{ if(st.enter) st.enter(); }catch(e){ console.warn(e); }
   if(!skipped){ sfx('coin'); toast(TUT.min?`Done! Step ${H.step+1}: ${(tutPhone()?st.ph:st.pc)()}`:'Done! Next step.',TUT.min?5:1.5); } tutCard(); try{ saveLocal(); }catch(e){} }   // folded away, the next task comes as a toast
-function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); try{ tutPenKeep(); }catch(e){} const st=TUT_STEPS[H.step]; if(!st||st.final) return;
+function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); try{ tutWildKeep(); tutBorder(); if(TUT_STEPS[H.step]&&TUT_STEPS[H.step].id==='miners') tutWanderers(); }catch(e){} const st=TUT_STEPS[H.step]; if(!st||st.final) return;
   let ok=false; try{ ok=!!st.check(); }catch(e){} if(ok) tutAdvance(false); }
 { const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ tutTick(dt); }catch(e){} return r; }; }
 function drawTutArrow(){ if(!tutOn()||state!=='play'||TUT.hidden) return; const st=TUT_STEPS[HT().step]; if(!st||!st.at) return; const at=st.at(); if(!at) return; const [tx,ty]=at, t=performance.now()/1000, X=tx*T+8, Y=ty*T+4+Math.sin(t*5)*3;
@@ -17384,6 +17432,10 @@ function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
 // the village levelling would flatten the tutorial's hills (it reaches 30 blocks past the castle); the tutorial ground is laid by hand
 { const _lv=levelVillage; levelVillage=function(...a){ if(tutOn()) return; return _lv(...a); }; }
 { const _ln=levelNear; levelNear=function(...a){ if(tutOn()) return; return _ln(...a); }; }
+
+// 0.9.150: in the tutorial every wanderer becomes a miner (soldiers come from the Recruiter)
+{ const _rr=renderRecruit; renderRecruit=function(...a){ const r=_rr(...a); try{ if(tutOn()) for(const b of document.querySelectorAll('#recruitList [data-job]')) if(b.dataset.job!=='miner') b.remove(); }catch(e){} return r; }; }
+{ const st=document.createElement('style'); st.textContent='#scrTut .panel, #scrTutAsk .panel{ max-height:calc(100dvh - 20px); overflow-y:auto; touch-action:pan-y; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }'; document.head.appendChild(st); }
 // ===== Beta 0.9.137: villagers and their job blocks, workers and their foreman, arrivals, house stages (Kinard, 2026-10-19) =====
 // 1. A villager works (sells, gathers) as soon as their job block (JOB_ITEM: the smith's anvil, the cook's pot...) is
 //    within JOB_NEAR blocks of them. They attach to that block (v.jobAt "x,y") and keep it however far they go (running
