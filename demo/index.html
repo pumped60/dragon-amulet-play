@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792597064"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792599138"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.146</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.147</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.147</h3>
+    <p>Continue lists only your own worlds. The test world and your scenes are under Test world, the worlds you played with friends are under Multiplayer, and the tutorial is under Tutorial. The tutorial card is smaller, its task scrolls like a page inside a short box, and Hide folds it to a small tab at the left that opens it again. While it is folded, each finished step tells you the next task in a message.</p>
     <h3>New in Beta 0.9.146</h3>
     <p>The tutorial card sits at the left under your bars, so it never covers the middle of the screen. Elder Rowan lives in the first village house, her chest stands between the first two houses, and the chest is the first thing you do after the castle is rebuilt.</p>
     <h3>New in Beta 0.9.145</h3>
@@ -829,7 +831,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.146</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.147</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1089,7 +1091,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.146</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.147</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1108,7 +1110,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.146', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.147', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17257,18 +17259,25 @@ function tutGoblins(){ const {G,cx}=HT(); const px=Math.min(cx+34,Math.floor(cxO
 { const _fa=fixupAdvance; fixupAdvance=function(dt,...a){ return _fa(tutOn()?dt*TUT_FIX_SPEED:dt,...a); }; }
 { const _sf=startFixup; startFixup=function(...a){ const r=_sf(...a); try{ if(tutOn()&&home.fixup) toast('The Quartermaster rolls up his sleeves. Here the village is rebuilt in under a minute; in a real world it is ready the next day.',5); }catch(e){} return r; }; }
 // ---- the card and the arrow (styled like the Cancel building button at the top of the screen) ----
-{ const st=document.createElement('style'); st.textContent=`#tutCard{ position:fixed; top:calc(var(--st) + 180px); left:calc(env(safe-area-inset-left,0px) + 8px); z-index:60; width:min(330px,calc(100vw - 24px)); background:var(--panel2); color:var(--text); border:3px solid var(--edge); padding:8px 12px; font-size:11px; line-height:1.6; text-align:left; box-shadow:4px 4px 0 var(--ink); }
+{ const st=document.createElement('style'); st.textContent=`#tutCard{ position:fixed; top:calc(var(--st) + 180px); left:calc(env(safe-area-inset-left,0px) + 8px); z-index:60; width:min(300px,calc(100vw - 24px)); background:var(--panel2); color:var(--text); border:3px solid var(--edge); padding:6px 10px; font-size:10px; line-height:1.55; text-align:left; box-shadow:4px 4px 0 var(--ink); }
+#tutCard .tutc{ max-height:66px; overflow-y:auto; touch-action:pan-y; -webkit-overflow-scrolling:touch; padding-right:4px; }   /* the task scrolls like a page inside a short box */
+#tutTab{ position:fixed; top:calc(var(--st) + 180px); left:calc(env(safe-area-inset-left,0px) + 8px); z-index:60; background:var(--panel2); color:var(--text); border:3px solid var(--edge); padding:4px 10px; font-family:var(--font); font-size:9px; box-shadow:3px 3px 0 var(--ink); cursor:pointer; }
+body.touch #tutTab{ top:calc(var(--st) + 168px); left:calc(env(safe-area-inset-left,0px) + 10px); font-size:8px; padding:5px 10px; }
 #tutCard .tutc b{ color:#ffd84a; margin-right:6px; } #tutCard .tutb{ display:flex; gap:8px; justify-content:flex-start; margin-top:6px; } #tutCard .tutb button{ font-family:var(--font); font-size:9px; padding:5px 10px; background:var(--panel2); color:var(--text); border:3px solid var(--edge); box-shadow:2px 2px 0 var(--ink); cursor:pointer; }
-body.touch #tutCard{ top:calc(var(--st) + 158px); left:calc(env(safe-area-inset-left,0px) + 10px); font-size:8px; width:min(300px,38vw); padding:4px 8px; line-height:1.5; }   /* under the day line, above the Move stick */ body.touch #tutCard .tutb button{ font-size:8px; padding:4px 8px; } body.touch #tutCard .tutb{ margin-top:3px; }`; document.head.appendChild(st);
-  const d=document.createElement('div'); d.id='tutCard'; d.hidden=true; d.innerHTML='<div class="tutc"><b id="tutStep"></b><span id="tutText"></span></div><div class="tutb"><button id="tutSkip">Skip step</button><button id="tutNew" hidden>Start a new world</button><button id="tutLeave">Leave</button></div>'; document.body.appendChild(d);
+body.touch #tutCard{ top:calc(var(--st) + 168px); left:calc(env(safe-area-inset-left,0px) + 10px); font-size:8px; width:min(250px,34vw); padding:3px 7px; line-height:1.45; } body.touch #tutCard .tutc{ max-height:36px; }   /* under the day line, above the Move stick; about three lines show, the rest scrolls */ body.touch #tutCard .tutb button{ font-size:8px; padding:3px 8px; } body.touch #tutCard .tutb{ margin-top:2px; }`; document.head.appendChild(st);
+  const d=document.createElement('div'); d.id='tutCard'; d.hidden=true; d.innerHTML='<div class="tutc"><b id="tutStep"></b><span id="tutText"></span></div><div class="tutb"><button id="tutSkip">Skip step</button><button id="tutNew" hidden>Start a new world</button><button id="tutHide">Hide</button><button id="tutLeave">Leave</button></div>'; document.body.appendChild(d);
+  const tab=document.createElement('button'); tab.id='tutTab'; tab.hidden=true; tab.textContent='Tutorial'; document.body.appendChild(tab);   // the folded card: a small tab that opens it again
+  $('#tutHide').addEventListener('click',()=>{ TUT.min=true; settings.tutMin=true; try{ saveSettings(); }catch(e){} tutCard(); });
+  tab.addEventListener('click',()=>{ TUT.min=false; settings.tutMin=false; try{ saveSettings(); }catch(e){} tutCard(); });
   $('#tutSkip').addEventListener('click',()=>{ if(!tutOn()) return; const st=TUT_STEPS[HT().step]; if(st&&st.final){ TUT.hidden=true; d.hidden=true; return; } tutAdvance(true); });
   $('#tutLeave').addEventListener('click',async()=>{ if(!tutOn()) return; try{ await saveLocal(); }catch(e){} toTitle(); });
   $('#tutNew').addEventListener('click',async()=>{ try{ await saveLocal(); }catch(e){} toTitle(); setTimeout(()=>$('#btnNew').click(),50); }); }
-function tutCard(){ const d=$('#tutCard'); if(!tutOn()||TUT.hidden||state==='title'){ d.hidden=true; return; } const i=HT().step, st=TUT_STEPS[Math.min(i,TUT_STEPS.length-1)]; d.hidden=false;
+function tutCard(){ const d=$('#tutCard'), tab=$('#tutTab'); if(!tutOn()||TUT.hidden||state==='title'){ d.hidden=true; tab.hidden=true; return; } const i=HT().step, st=TUT_STEPS[Math.min(i,TUT_STEPS.length-1)];
+  if(TUT.min==null) TUT.min=!!settings.tutMin; tab.hidden=!TUT.min; d.hidden=TUT.min; tab.textContent=st.final?'Tutorial: done':`Tutorial ${i+1}/${TUT_STEPS.length-1} ▸`; if(TUT.min) return;
   $('#tutStep').textContent=st.final?'Done!':`Step ${i+1} of ${TUT_STEPS.length-1}`; $('#tutText').textContent=(tutPhone()?st.ph:st.pc)(); $('#tutSkip').textContent=st.final?'Close':'Skip step'; $('#tutNew').hidden=!st.final; }
 function tutEnter(){ TUT.hidden=false; TUT.t=0; rules.wx='off'; const st=TUT_STEPS[HT().step]; if(st&&st.enter&&!HT().entered) { try{ st.enter(); }catch(e){} HT().entered=true; } tutCard(); }
 function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) return; H.step++; H.entered=true; const st=TUT_STEPS[H.step]; try{ if(st.enter) st.enter(); }catch(e){ console.warn(e); }
-  if(!skipped){ sfx('coin'); toast('Done! Next step.',1.5); } tutCard(); try{ saveLocal(); }catch(e){} }
+  if(!skipped){ sfx('coin'); toast(TUT.min?`Done! Step ${H.step+1}: ${(tutPhone()?st.ph:st.pc)()}`:'Done! Next step.',TUT.min?5:1.5); } tutCard(); try{ saveLocal(); }catch(e){} }   // folded away, the next task comes as a toast
 function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); const st=TUT_STEPS[H.step]; if(!st||st.final) return;
   let ok=false; try{ ok=!!st.check(); }catch(e){} if(ok) tutAdvance(false); }
 { const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ tutTick(dt); }catch(e){} return r; }; }
@@ -17285,8 +17294,8 @@ function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
   toast('Elder Rowan: "Go on now. The goblins will not wait."',3); }
 { const _vn=villagerName; villagerName=function(v,...a){ if(v&&v.tut) return v.name||'Elder Rowan'; return _vn(v,...a); }; }
 { const _si=showIntro; showIntro=function(...a){ if(curSlot===TUT_SLOT) return; return _si(...a); }; }
-{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(tutOn()){ tutRespawn(); tutEnter(); } else { $('#tutCard').hidden=true; } }catch(e){ console.warn(e); } return r; }; }
-{ const _tt=toTitle; toTitle=function(...a){ try{ $('#tutCard').hidden=true; }catch(e){} return _tt(...a); }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(tutOn()){ tutRespawn(); tutEnter(); } else { $('#tutCard').hidden=true; $('#tutTab').hidden=true; } }catch(e){ console.warn(e); } return r; }; }
+{ const _tt=toTitle; toTitle=function(...a){ try{ $('#tutCard').hidden=true; $('#tutTab').hidden=true; }catch(e){} return _tt(...a); }; }
 // ---- the title screen: Tutorial button, class pick, Continue; the first-game prompt ----
 { const mp=$('#btnMP'); if(mp&&!window.DA_DEMO) mp.insertAdjacentHTML('afterend','<button class="btn" id="btnTutorial">Tutorial</button>');
   document.body.insertAdjacentHTML('beforeend',`<div class="overlay" id="scrTut" hidden><div class="panel"><div class="phead"><h2>Tutorial</h2><button class="xbtn" id="tutBack">Back</button></div>
@@ -18079,6 +18088,36 @@ function edDraw(){ if(!edOn()||ED.photo||state!=='play') return; ctx.save();
   if(ED.tool==='move'||ED.tool==='erase'){ for(const e of ents){ if(e===player||e.dead) continue; ctx.strokeStyle=ED.tool==='erase'?'rgba(255,120,120,.35)':'rgba(255,224,102,.35)'; ctx.strokeRect(Math.round(e.x)+.5,Math.round(e.y)+.5,e.w,e.h); } }
   ctx.restore(); }
 { const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ edDraw(); }catch(e){} return r; }; }
+// ===== Beta 0.9.147: each kind of world lives in its own place (Kinard) =====
+// Continue listed every slot: your worlds, the test world, the friend's copy, the scene editor and the copies of friends'
+// worlds, which got confusing. Continue now lists only your single-player worlds (slots 1 to 3) and the Continue button
+// only shows for them. The Test world screen gets "Continue a test world or scene" (slot 4 and the editor's slot 6), the
+// Multiplayer screen gets "Worlds with friends" (the friend's copy in slot 5 and the saved copies by code), and Host a
+// saved world keeps your worlds and the friends' copies. The tutorial already lives under Tutorial. One slot screen
+// serves all of these: slotsMode picks the rows to show, the title and where Back goes.
+let slotsMode='continue';
+const SLOT_MODES={ continue:{title:'Continue', keep:k=>k.kind==='slot'&&k.n>=1&&k.n<=3, back:'scrTitle', none:'Nothing saved yet.'},
+  host:{title:'Host a saved world', keep:k=>(k.kind==='slot'&&k.n!==4&&k.n!==6)||k.kind==='friend', back:'scrMP', none:'Nothing saved yet.'},
+  test:{title:'Test worlds', keep:k=>(k.kind==='slot'&&k.n===4)||k.kind==='editor', back:'scrTestCls', none:'No test world or scene saved yet.'},
+  mp:{title:'Worlds with friends', keep:k=>(k.kind==='slot'&&k.n===5)||k.kind==='friend', back:'scrMP', none:'No worlds with friends saved yet.'} };
+function slotRowKind(row){ const p=row.querySelector('[data-play]'); if(p) return {kind:'slot',n:+p.dataset.play}; if(row.querySelector('[data-edplay]')) return {kind:'editor'}; if(row.querySelector('[data-fplay]')) return {kind:'friend'};
+  const t=row.textContent||''; if(/Test world/.test(t)) return {kind:'slot',n:4}; if(/Friend's world/.test(t)) return {kind:'slot',n:5}; if(/Scene editor/.test(t)) return {kind:'editor'}; const m=/World (\d)/.exec(t); return {kind:'slot',n:m?+m[1]:0}; }
+{ const _rs=renderSlots; renderSlots=function(...a){ const r=_rs(...a); try{ const m=SLOT_MODES[slotsMode]||SLOT_MODES.continue; let shown=0;
+    for(const row of $('#slotList').querySelectorAll('.saverow')){ const ok=m.keep(slotRowKind(row)); row.hidden=!ok; if(ok) shown++; }
+    const h=$('#scrSlots h2'); if(h) h.textContent=m.title; if(!shown) $('#slotList').insertAdjacentHTML('beforeend',`<p class="muted">${m.none}</p>`); }catch(e){ console.warn(e); } return r; }; }
+{ const _as=anySave; anySave=function(...a){ return [1,2,3].some(n=>slotInfo(n)); }; }   // the Continue button is for your own worlds
+function openSlots(mode,from){ slotsMode=mode; if(from) hide(from); renderSlots(); show('scrSlots'); }
+$('#btnContinue').addEventListener('click',()=>{ slotsMode='continue'; },true);
+$('#mpHostSaved').addEventListener('click',()=>{ slotsMode='host'; },true);
+$('#slotsBack').addEventListener('click',ev=>{ const m=SLOT_MODES[slotsMode]; if(!m||m.back==='scrTitle') return; ev.stopImmediatePropagation(); if(typeof MP!=='undefined') MP.pendingHostSaved=false; hide('scrSlots'); show(m.back); },true);
+// the Test world screen: a way back into the test world and the scene
+{ const p=$('#scrTestCls .panel'); if(p){ p.insertAdjacentHTML('beforeend','<div id="testSavedWrap" style="margin-top:12px;border-top:2px solid var(--edge-dim);padding-top:10px" hidden><button class="btn" id="btnTestSaved">Continue a test world or scene</button></div>');
+    $('#btnTestSaved').addEventListener('click',()=>openSlots('test','scrTestCls')); }
+  const tb=$('#btnTestWorld'); if(tb) tb.addEventListener('click',()=>{ try{ $('#testSavedWrap').hidden=!(slotInfo(4)||slotInfo(6)); }catch(e){} },true); }
+// the Multiplayer screen: the worlds you played with friends
+{ const hs=$('#mpHostSaved'); if(hs){ hs.insertAdjacentHTML('afterend','<div id="mpFriendsWrap" hidden><p>Your copies of worlds you joined: play them on your own, or host one so your friends can come back to it.</p><button class="btn" id="mpFriends">Worlds with friends</button></div>');
+    $('#mpFriends').addEventListener('click',()=>openSlots('mp','scrMP')); }
+  const mb=$('#btnMP'); if(mb) mb.addEventListener('click',()=>{ try{ $('#mpFriendsWrap').hidden=!(slotInfo(5)||(typeof fwList==='function'&&fwList().length)); }catch(e){} },true); }
 })();
 </script>
 </body>
