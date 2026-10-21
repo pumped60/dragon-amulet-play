@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792596034"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792596034"><link rel="manifest" href="manifest.webmanifest?v=1792596034"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792597064"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792597064"><link rel="manifest" href="manifest.webmanifest?v=1792597064"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.145</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.146</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.146</h3>
+    <p>The tutorial card sits at the left under your bars, so it never covers the middle of the screen. Elder Rowan lives in the first village house, her chest stands between the first two houses, and the chest is the first thing you do after the castle is rebuilt.</p>
     <h3>New in Beta 0.9.145</h3>
     <p>New to the game? A Tutorial button sits under Multiplayer on the title screen, and the first time you press New game on a device the game offers it once. Pick a class and a tiny world walks you through walking, jumping, rebuilding the ruined castle with the Quartermaster (in under a minute there; a real world takes until the next day), mining, placing blocks, a chest, crafting a workbench and an iron pickaxe, a torch when night falls, eating, an errand for Elder Rowan and a fight with two goblins. A card at the top, like the one shown while you place a building, says one task at a time in the words of your keyboard or your phone's sticks and buttons and ticks itself off; a yellow arrow points the way. Tamed animals on their Pet job now fight beside you like your soldiers: they go for enemies near you or them, jump up to reach one and bite until it is down, and come back once the fight moves too far. Ore blocks keep the rock they were first seen in, however you dig around them. On a phone the Torch button no longer stops your tools: with it on, the pickaxe, axe, hoe and hammer work and a tap mines or builds, while a double-tap still places a torch. Skip step and Leave are always there, and the tutorial is saved in slot 7 so you can come back to it. Vorthax watches you: his eye follows the nearest player wherever you move, and he blinks every few seconds, a little more often when he perches. Placing a building takes two taps: the first shows a see-through picture of the building where it would go, green when it fits and red when something is in the way, and a second tap on it builds it. A quick double tap never builds. Tap somewhere else to move the picture; it goes away when the mouse leaves it, when you walk away, or with Esc or Cancel. A trebuchet boulder or a cannonball crashes on through any animal in its path, a hawk crossing its arc included, and still lands where you aimed. People, monsters and bosses stop it as before.</p>
     <h3>New in Beta 0.9.144</h3>
@@ -827,7 +829,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.145</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.146</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1087,7 +1089,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.145</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.146</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1106,7 +1108,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.145', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.146', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17205,14 +17207,14 @@ const TUT_STEPS=[
     at:()=>{ const q=ents.find(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead); return q?[Math.floor(cxOf(q)/T),Math.floor(q.y/T)-1]:[home.castleCx,HT().G-3]; }, check:()=>!!home.fixup||!!home.claimed },
   { id:'rebuild', pc:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes under a minute; in a real world it takes until the next day. Watch, or walk back to the right.', ph:()=>'The Quartermaster rebuilds the castle and the houses. Here it takes under a minute; in a real world it takes until the next day. Watch, or walk back to the right.',
     at:()=>[home.castleCx,HT().G-3], check:()=>!!home.claimed&&!home.fixup },
+  { id:'chest', pc:()=>`Open the chest between the first two village houses: stand next to it and press ${tutKey('use')}. Take the iron bars and the sticks.`, ph:()=>'Open the chest between the first two village houses: stand next to it and tap it, or tap the Talk button. Take the iron bars and the sticks.',
+    at:()=>[home.hx0+10,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2 },
   { id:'mine', pc:()=>'Mine 5 stone from the rock: select the pickaxe (key 2), point at the rock and hold the left mouse button.', ph:()=>'Mine 5 stone from the rock: tap the pickaxe in the hotbar, then push the Aim and use stick toward the rock.',
     at:()=>[HT().cx+19,HT().G-4], check:()=>countItem(B.STONE)>=5 },
   { id:'ore', pc:()=>'Mine the 3 coal in the rock (the dark blocks). Ore is how you get better gear.', ph:()=>'Mine the 3 coal in the rock (the dark blocks). Ore is how you get better gear.',
     at:()=>[HT().cx+19,HT().G-4], check:()=>countItem(B.COAL)>=3 },
   { id:'place', pc:()=>'Build: select the stone in the hotbar and right-click where it should go. Place 3 blocks.', ph:()=>'Build: tap the stone in the hotbar, then tap the ground where it should go. Place 3 blocks.',
     check:()=>HT().placed>=3 },
-  { id:'chest', pc:()=>`Open the chest by the hut: stand next to it and press ${tutKey('use')}. Take the iron bars and the sticks.`, ph:()=>'Open the chest by the hut: stand next to it and tap it, or tap the Talk button. Take the iron bars and the sticks.',
-    at:()=>[HT().cx-8,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2 },
   { id:'bench', pc:()=>`Craft a workbench: press ${tutKey('bag')}, open Crafting, pick Workbench and press Craft. It takes 10 planks.`, ph:()=>'Craft a workbench: tap the bag button, open Crafting, pick Workbench and tap Craft. It takes 10 planks.',
     check:()=>countItem(B.WORKBENCH)>=1||tutBenchNear() },
   { id:'placebench', pc:()=>'Place the workbench on the ground near you: select it in the hotbar and right-click.', ph:()=>'Place the workbench on the ground near you: tap it in the hotbar, then tap the ground.',
@@ -17223,10 +17225,10 @@ const TUT_STEPS=[
     check:()=>tutTorches()>HT().torch0 },
   { id:'eat', enter:()=>{ player.food=35; HT().apples0=countItem(I.APPLE); }, pc:()=>'You are hungry (the orange bar). Eat an apple: select it in the hotbar and click.', ph:()=>'You are hungry (the orange bar). Eat an apple: tap it in the hotbar, then push the Aim and use stick.',
     check:()=>(player.food||0)>60||countItem(I.APPLE)<HT().apples0 },
-  { id:'talk', enter:()=>{ time=0.3; }, pc:()=>`Talk to Elder Rowan in the hut: stand by her and press ${tutKey('use')}.`, ph:()=>'Talk to Elder Rowan in the hut: stand by her and tap her, or tap the Talk button.',
-    at:()=>[HT().cx-14,HT().G-3], check:()=>!!HT().talked },
+  { id:'talk', enter:()=>{ time=0.3; }, pc:()=>`Talk to Elder Rowan in the first village house: stand by her and press ${tutKey('use')}.`, ph:()=>'Talk to Elder Rowan in the first village house: stand by her and tap her, or tap the Talk button.',
+    at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().talked },
   { id:'quest', pc:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.', ph:()=>'Bring Elder Rowan 5 stone and talk to her again. Villagers trade with you and give work like this.',
-    at:()=>[HT().cx-14,HT().G-3], check:()=>!!HT().quest },
+    at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().quest },
   { id:'fight', enter:()=>tutGoblins(), pc:()=>'Two goblins are coming from the right! Select your weapon (key 1) and click on them. Watch your health bar.', ph:()=>'Two goblins are coming from the right! Tap your weapon in the hotbar and push the Aim and use stick toward them. Watch your health bar.',
     at:()=>{ const g=ents.find(e=>e.tutGob&&!e.dead); return g?[Math.floor(cxOf(g)/T),Math.floor(g.y/T)-1]:null; }, check:()=>!!HT().gobs&&tutGobsLeft()===0 },
   { id:'done', final:true, pc:()=>`You are ready for the real world: mine deeper, claim the village, raise an army and face Vorthax. ${tutKey('bag')} opens the bag, Esc the menu, ${tutKey('map')} the map.`, ph:()=>'You are ready for the real world: mine deeper, claim the village, raise an army and face Vorthax. The bag, map and menu buttons are along the top.' } ];
@@ -17245,21 +17247,19 @@ function tutBuild(){ const {G,cx}=HT(); const P=B.PLANK, S=B.STONE;
     Object.assign(home,{cx:vx,castleCx:ccx,hx0,gy:G,x0:ccx-19,x1:hx0+40,houses,drifters:2,claimed:false,quarter:false,fixup:null}); }
   for(let x=cx+7;x<=cx+9;x++) for(let y=G-2;y<G;y++) wset(x,y,B.DIRT);   // the ledge to jump onto
   for(let x=cx+15;x<=cx+23;x++) for(let y=G-5;y<G;y++) wset(x,y,S); for(const x of [cx+17,cx+19,cx+21]) wset(x,G-2,B.COAL); for(const x of [cx+18,cx+20]) wset(x,G-4,B.COAL);   // the rock with coal
-  for(let y=G-5;y<G;y++){ wset(cx-18,y,P); wset(cx-10,y,P); } for(let x=cx-18;x<=cx-10;x++) wset(x,G-6,P); wset(cx-10,G-1,0); wset(cx-10,G-2,0);   // the elder's hut with an open doorway
-  for(let x=cx-17;x<=cx-11;x++) for(let y=G-5;y<G;y++) bset(x,y,5); wset(cx-14,G-4,B.TORCH);
-  wset(cx-8,G-1,B.CHEST); wset(cx-7,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:2}; c.items[2]={id:I.APPLE,n:2}; chests[(cx-8)+','+(G-1)]=c;
+  { const hx=home.hx0+10; wset(hx,G-1,B.CHEST); wset(hx+1,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:2}; c.items[2]={id:I.APPLE,n:2}; chests[hx+','+(G-1)]=c; }   // the tutorial chest between the first two village houses (0.9.146: the separate hut is gone)
   for(let x=cx-40;x<=cx+52;x++) updateSkyTop(x); }
 function tutRespawn(){ if(!tutOn()) return; const {G,cx}=HT(); const keep=e=>e===player||(e.kind==='villager'&&e.team===player.team)||e.kind==='drifter'; for(const e of ents) if(!keep(e)) e.dead=true; ents=ents.filter(keep); dragon=null; projs=[];   // the village folk stay (the Quartermaster, helpers and wanderers come from the real village code)
-  if(!ents.some(e=>e.tut)){ const v=makeVillager(player.team,{x0:cx-17,x1:cx-11,gy:G,role:'herbalist'}); v.name='Elder Rowan'; v.tut=true; v.x=(cx-14)*T; ents.push(v); }
+  if(!ents.some(e=>e.tut)){ const hx=home.hx0; const v=makeVillager(player.team,{x0:hx+1,x1:hx+7,gy:G,role:'herbalist'}); v.name='Elder Rowan'; v.tut=true; v.x=(hx+4)*T; ents.push(v); }   // she lives in the first village house
   if(!home.claimed&&!home.quarter&&!ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead)) ents.push(makeQuartermaster());
   const st=TUT_STEPS[HT().step]; if(st&&st.id==='fight'&&HT().gobs) tutGoblins(); }
-function tutGoblins(){ const {G,cx}=HT(); for(const dx of [38,42]){ const m=makeMonster('goblin',(cx+dx)*T,G*T); m.y=G*T-m.h; m.tutGob=true; m.hp=m.maxHp=Math.min(m.maxHp,28); m.dmg=Math.min(m.dmg,6); m.target=player; ents.push(m); } HT().gobs=true; }
+function tutGoblins(){ const {G,cx}=HT(); const px=Math.min(cx+34,Math.floor(cxOf(player)/T)); for(const dx of [12,16]){ const m=makeMonster('goblin',(px+dx)*T,G*T); /* from the right of wherever you stand, inside the yard */ m.y=G*T-m.h; m.tutGob=true; m.hp=m.maxHp=Math.min(m.maxHp,28); m.dmg=Math.min(m.dmg,6); m.target=player; ents.push(m); } HT().gobs=true; }
 { const _fa=fixupAdvance; fixupAdvance=function(dt,...a){ return _fa(tutOn()?dt*TUT_FIX_SPEED:dt,...a); }; }
 { const _sf=startFixup; startFixup=function(...a){ const r=_sf(...a); try{ if(tutOn()&&home.fixup) toast('The Quartermaster rolls up his sleeves. Here the village is rebuilt in under a minute; in a real world it is ready the next day.',5); }catch(e){} return r; }; }
 // ---- the card and the arrow (styled like the Cancel building button at the top of the screen) ----
-{ const st=document.createElement('style'); st.textContent=`#tutCard{ position:fixed; top:calc(8px + env(safe-area-inset-top,0px)); left:50%; transform:translateX(-50%); z-index:60; width:clamp(360px,calc(100vw - 640px),600px); background:var(--panel2); color:var(--text); border:3px solid var(--edge); padding:10px 18px; font-size:11px; line-height:1.6; text-align:center; box-shadow:4px 4px 0 var(--ink); }
-#tutCard .tutc b{ color:#ffd84a; margin-right:6px; } #tutCard .tutb{ display:flex; gap:8px; justify-content:center; margin-top:6px; } #tutCard .tutb button{ font-family:var(--font); font-size:9px; padding:5px 10px; background:var(--panel2); color:var(--text); border:3px solid var(--edge); box-shadow:2px 2px 0 var(--ink); cursor:pointer; }
-body.touch #tutCard{ top:calc(var(--st) + 100px); left:calc(50% + 20px); font-size:9px; width:min(52vw,460px); padding:6px 10px; }   /* below the hotbar and the Near and Hide buttons, clear of the bars and the map */ body.touch #tutCard .tutb button{ font-size:8px; padding:6px 10px; }`; document.head.appendChild(st);
+{ const st=document.createElement('style'); st.textContent=`#tutCard{ position:fixed; top:calc(var(--st) + 180px); left:calc(env(safe-area-inset-left,0px) + 8px); z-index:60; width:min(330px,calc(100vw - 24px)); background:var(--panel2); color:var(--text); border:3px solid var(--edge); padding:8px 12px; font-size:11px; line-height:1.6; text-align:left; box-shadow:4px 4px 0 var(--ink); }
+#tutCard .tutc b{ color:#ffd84a; margin-right:6px; } #tutCard .tutb{ display:flex; gap:8px; justify-content:flex-start; margin-top:6px; } #tutCard .tutb button{ font-family:var(--font); font-size:9px; padding:5px 10px; background:var(--panel2); color:var(--text); border:3px solid var(--edge); box-shadow:2px 2px 0 var(--ink); cursor:pointer; }
+body.touch #tutCard{ top:calc(var(--st) + 158px); left:calc(env(safe-area-inset-left,0px) + 10px); font-size:8px; width:min(300px,38vw); padding:4px 8px; line-height:1.5; }   /* under the day line, above the Move stick */ body.touch #tutCard .tutb button{ font-size:8px; padding:4px 8px; } body.touch #tutCard .tutb{ margin-top:3px; }`; document.head.appendChild(st);
   const d=document.createElement('div'); d.id='tutCard'; d.hidden=true; d.innerHTML='<div class="tutc"><b id="tutStep"></b><span id="tutText"></span></div><div class="tutb"><button id="tutSkip">Skip step</button><button id="tutNew" hidden>Start a new world</button><button id="tutLeave">Leave</button></div>'; document.body.appendChild(d);
   $('#tutSkip').addEventListener('click',()=>{ if(!tutOn()) return; const st=TUT_STEPS[HT().step]; if(st&&st.final){ TUT.hidden=true; d.hidden=true; return; } tutAdvance(true); });
   $('#tutLeave').addEventListener('click',async()=>{ if(!tutOn()) return; try{ await saveLocal(); }catch(e){} toTitle(); });
