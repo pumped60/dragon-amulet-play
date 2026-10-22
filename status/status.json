@@ -1,0 +1,25 @@
+{
+  "updated": "2026-10-22",
+  "current": {
+    "state": "ok",
+    "text": "The game is up. Beta 0.9.156 is out with the fixes below."
+  },
+  "incidents": [
+    {
+      "date": "2026-10-22",
+      "state": "fixed",
+      "title": "Black screen on phones in the Claude app",
+      "what": "On a phone held upright, the game showed a dark screen instead of the title. Beta 0.9.152 added a card asking you to turn the phone sideways and paused the game until you did. The Claude app on a phone does not turn sideways, so the card never went away, and its small text was hard to see on the dark background.",
+      "fix": "Beta 0.9.155 gives that card a big Play upright button and larger text. If you still see a dark screen, close the game and open it again so the newest version loads.",
+      "versions": "Beta 0.9.152 to 0.9.154"
+    },
+    {
+      "date": "2026-10-22",
+      "state": "fixed",
+      "title": "Tutorial: the Quartermaster never finished rebuilding",
+      "what": "In the tutorial world, the Quartermaster started the repairs but never placed a block, so the village never finished, the wanderers never came and the Recruiter stood without his room. The tutorial turns off monsters and world events, and the rebuild was switched off with them by mistake.",
+      "fix": "Beta 0.9.156 lets the rebuild run in the tutorial (about a minute). A saved tutorial picks up where it left off.",
+      "versions": "Beta 0.9.145 to 0.9.155"
+    }
+  ]
+}

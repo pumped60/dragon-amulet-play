@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dragon Amulet status</title><link rel="icon" type="image/png" href="../icon-192.png"><meta name="theme-color" content="#16121f">
+<style>
+:root{ --bg:#16121f; --panel:#221b30; --edge:#5b4f7c; --text:#efe6d2; --muted:#b4a98f; --gold:#ffcf3a; --ok:#6fcf6f; --warn:#ffb347; --down:#ff6b5a; }
+*{ box-sizing:border-box; } body{ margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif; }
+main{ max-width:760px; margin:0 auto; padding:28px 16px 60px; } h1{ color:var(--gold); font-size:26px; margin:0 0 4px; } .sub{ color:var(--muted); margin:0 0 22px; }
+.now{ display:flex; gap:14px; align-items:flex-start; background:var(--panel); border:3px solid var(--edge); padding:16px; margin-bottom:26px; }
+.dot{ flex:none; width:16px; height:16px; border-radius:50%; margin-top:5px; } .ok{ background:var(--ok); } .warn{ background:var(--warn); } .down{ background:var(--down); } .fixed{ background:var(--ok); } .open{ background:var(--warn); }
+.now b{ display:block; font-size:18px; } h2{ font-size:18px; color:var(--gold); margin:0 0 12px; }
+.inc{ background:var(--panel); border-left:4px solid var(--edge); padding:12px 16px; margin:0 0 14px; } .inc h3{ margin:0 0 4px; font-size:16px; display:flex; gap:8px; align-items:center; } .inc h3 .dot{ margin:0; width:11px; height:11px; }
+.meta{ color:var(--muted); font-size:13px; margin-bottom:6px; } .inc p{ margin:6px 0; } .tag{ font-size:12px; padding:1px 8px; border:1px solid var(--edge); border-radius:10px; color:var(--muted); }
+a{ color:var(--gold); } footer{ color:var(--muted); font-size:13px; margin-top:30px; }
+</style></head><body><main>
+<h1>Dragon Amulet status</h1><p class="sub">Outages, crashes and known problems, and what was done about them. Updated <span id="upd"></span>.</p>
+<div class="now" id="now"></div>
+<h2>Recent problems</h2><div id="list"></div>
+<footer>Something wrong that is not listed here? Use <b>Report a bug</b> on the title screen or the pause menu.<br>
+<a href="../">Play Dragon Amulet</a> · <a href="https://pumped60.github.io/dragon-amulet-wiki/">Wiki</a> · <a href="../download/">Download</a></footer>
+</main>
+<script>
+const BAKED={
+  "updated": "2026-10-22",
+  "current": {
+    "state": "ok",
+    "text": "The game is up. Beta 0.9.156 is out with the fixes below."
+  },
+  "incidents": [
+    {
+      "date": "2026-10-22",
+      "state": "fixed",
+      "title": "Black screen on phones in the Claude app",
+      "what": "On a phone held upright, the game showed a dark screen instead of the title. Beta 0.9.152 added a card asking you to turn the phone sideways and paused the game until you did. The Claude app on a phone does not turn sideways, so the card never went away, and its small text was hard to see on the dark background.",
+      "fix": "Beta 0.9.155 gives that card a big Play upright button and larger text. If you still see a dark screen, close the game and open it again so the newest version loads.",
+      "versions": "Beta 0.9.152 to 0.9.154"
+    },
+    {
+      "date": "2026-10-22",
+      "state": "fixed",
+      "title": "Tutorial: the Quartermaster never finished rebuilding",
+      "what": "In the tutorial world, the Quartermaster started the repairs but never placed a block, so the village never finished, the wanderers never came and the Recruiter stood without his room. The tutorial turns off monsters and world events, and the rebuild was switched off with them by mistake.",
+      "fix": "Beta 0.9.156 lets the rebuild run in the tutorial (about a minute). A saved tutorial picks up where it left off.",
+      "versions": "Beta 0.9.145 to 0.9.155"
+    }
+  ]
+}
+;
+const NOW={ ok:'Everything is working', warn:'Some players may have problems', down:'The game is down' }, TAG={ fixed:'Fixed', open:'Being fixed', watching:'Watching' };
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])).replace(/https?:\/\/\S+/g,u=>`<a href="${u}">${u}</a>`);
+function show(s){ document.getElementById('upd').textContent=s.updated; const c=s.current||{state:'ok'};
+  document.getElementById('now').innerHTML=`<span class="dot ${esc(c.state)}"></span><div><b>${NOW[c.state]||NOW.ok}</b>${esc(c.text)}</div>`;
+  document.getElementById('list').innerHTML=(s.incidents||[]).map(i=>`<div class="inc"><h3><span class="dot ${esc(i.state)}"></span>${esc(i.title)} <span class="tag">${TAG[i.state]||esc(i.state)}</span></h3>
+    <div class="meta">${esc(i.date)}${i.versions?' · '+esc(i.versions):''}</div><p>${esc(i.what)}</p>${i.fix?`<p><b>What was done:</b> ${esc(i.fix)}</p>`:''}</div>`).join('')||'<p>Nothing to report.</p>'; }
+show(BAKED);
+fetch('status.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(s=>{ if(s) show(s); }).catch(()=>{});
+</script></body></html>
