@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792660892"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792716221"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.157</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.158</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.158</h3>
+    <p>Doors are always whole: a door is never half door and half stone, even in a ruined village. A chest set beside a door slides over to make room, and doors, workbenches, furnaces and chests always stand on level ground.</p>
     <h3>New in Beta 0.9.157</h3>
     <p>Workbenches, furnaces, chests and cupboards are always their full size, in every wood. Whatever sits in their space gives way: plants and loose pieces are cleared, and a block someone built comes out as an item to pick up. Doors, chests and other stations are never replaced.</p>
     <h3>New in Beta 0.9.156</h3>
@@ -851,7 +853,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.157</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.158</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1112,7 +1114,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.157</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.158</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1131,7 +1133,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.157', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.158', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4069,12 +4071,25 @@ function stationKeeps(t){ return t===B.PART||!!BIG_ST[t]||isChestId(t)||(typeof 
 // furniture in the way (a bed, a job block, a table) moves to the nearest free floor beside it instead of being replaced
 function isFurnPiece(t){ const b=typeof furnBase==='function'?furnBase(t):t; return (typeof JOB_IDS!=='undefined'&&JOB_IDS.has(b))||(typeof isBedId==='function'&&isBedId(t))||(typeof FURN_BASE!=='undefined'&&!!FURN_BASE[t])||(typeof FURN!=='undefined'&&FURN.includes(t)); }
 function moveAside(a,b,t,cs){ for(let d=1;d<=6;d++) for(const s of [1,-1]){ const X=a+s*d; if(X<1||X>=W-1||tileAt(X,b)!==0||cs.some(([p,q])=>p===X&&q===b)) continue; const u=tileAt(X,b+1); if(!u||!(BLOCKS[u].solid||u===B.PLATFORM)) continue; setTile(X,b,t); return true; } return false; }
-function attachParts(x,y){ const id=tileAt(x,y); if(!BIG_ST[id]) return; const cs=stationCells(x,y,id);
+// 0.9.158: a door, a chest or another station in the way never gives way, so the station slides one or two cells to free floor
+// instead (its chest and every place that remembers that chest move with it); with no room it stays and the pieces overlap
+function chestRefMove(from,to){ if(!home||from===to) return; const fix=o=>{ if(!o||typeof o!=='object') return; for(const k of Object.keys(o)) if(o[k]===from) o[k]=to; };
+  fix(home); fix(home.lodge); fix(home.farmhouse); for(const h of home.houses||[]) fix(h); }
+function stationSlide(x,y,id){ const own=new Set([[x,y],...stationCells(x,y,id)].map(([a,b])=>a+','+b));
+  const okCell=(a,b)=>{ if(own.has(a+','+b)) return true; const t=tileAt(a,b); return !t||(!stationKeeps(t)&&!BLOCKS[t].solid); };
+  const floorOk=(a,b)=>{ const u=tileAt(a,b); return !!u&&(u===B.PLATFORM||(BLOCKS[u].solid&&u!==B.PART&&!BIG_ST[u])); };
+  for(const dx of [-1,1,-2,2]){ const nx=x+dx, cs=[[nx,y],...stationCells(nx,y,id)]; if(nx<1||nx+1>=W-1) continue;
+    if(!cs.every(([a,b])=>okCell(a,b))) continue; const bottom=cs.filter(([a,b])=>!cs.some(([p,q])=>p===a&&q===b+1)); if(!bottom.every(([a,b])=>floorOk(a,b+1))) continue;
+    for(const [a,b] of stationCells(x,y,id)) if(tileAt(a,b)===B.PART) setTile(a,b,0);
+    const k=x+','+y, c=chests[k]; setTile(x,y,0); setTile(nx,y,id); if(c){ delete chests[k]; chests[nx+','+y]=c; chestRefMove(k,nx+','+y); } return nx; }
+  return null; }
+function attachParts(x,y){ const id=tileAt(x,y); if(!BIG_ST[id]) return; let cs=stationCells(x,y,id);
+  if(cs.some(([a,b])=>{ const t=tileAt(a,b); return t&&t!==B.PART&&stationKeeps(t); })){ const nx=stationSlide(x,y,id); if(nx!=null){ x=nx; cs=stationCells(x,y,id); } }
   for(const [a,b] of cs){ if(a<0||a>=W||b<0||b>=H) continue; const t=tileAt(a,b); if(t===B.PART||(t&&stationKeeps(t))) continue;
     if(t&&isFurnPiece(t)&&!moveAside(a,b,t,cs)) continue;
     if(t&&t!==B.WATER&&!GRASSY.has(t)&&!NATURAL.has(t)&&!(typeof STONEY!=='undefined'&&STONEY.has(t))&&BLOCKS[t].solid){ const d=BLOCKS[t].drop!=null?BLOCKS[t].drop:t; if(d) spawnDrop(a*T+4,b*T+4,d,1); }
     setTile(a,b,B.PART); } }
-function fixStations(){ for(let y=1;y<H-1;y++) for(let x=1;x<W-1;x++){ const id=world[y*W+x]; if(!BIG_ST[id]) continue; if(stationCells(x,y,id).some(([a,b])=>world[b*W+a]!==B.PART&&!stationKeeps(world[b*W+a]))) attachParts(x,y); } }
+function fixStations(){ for(let y=1;y<H-1;y++) for(let x=1;x<W-1;x++){ const id=world[y*W+x]; if(!BIG_ST[id]) continue; if(stationCells(x,y,id).some(([a,b])=>world[b*W+a]!==B.PART)) attachParts(x,y); } }
 { const _bt=breakTile; breakTile=function(x,y,...a){ const id=tileAt(x,y);
     if(id===B.PART){ for(const [ax,ay] of [[x-1,y],[x,y+1],[x-1,y+1]]){ const aid=tileAt(ax,ay); if(BIG_ST[aid]&&stationCells(ax,ay,aid).some(([a,b])=>a===x&&b===y)) return breakTile(ax,ay,...a); } setTile(x,y,0); return; }
     const r=_bt(x,y,...a); if(BIG_ST[id]&&tileAt(x,y)!==id) for(const [a,b] of stationCells(x,y,id)) if(tileAt(a,b)===B.PART) setTile(a,b,0); return r; };
@@ -17575,6 +17590,35 @@ function headHome(job){ const role=HEAD_OF[job]; if(!role) return true; const at
 
 // ---- 5. shop houses keep up with the castle ----
 { const _st=skinTargets; skinTargets=function(...a){ const L=_st(...a); try{ if(home&&home.claimed){ const vt=Math.min(2,villageTier()); for(const t of L) if(/^h\d+$/.test(t.key)&&t.tier<vt) t.tier=vt; } }catch(e){} return L; }; }
+// ===== Beta 0.9.158: every piece bigger than one block is whole and level (Kinard, 2026-10-22: "make it so that doors are always
+// their correct size; the tutorial has a door that is half a block of stone and half a door; recheck each block bigger than 1x1
+// so there are no issues such as sitting on a slope, being smaller than intended, etc") =====
+// A scan of new worlds found: ruined villages with half doors (the other half crumbled stone, moss, castle stone, a fern or air),
+// chests whose second cell was a door (16_crafting_stations.js now slides them), and cave chests on slopes. wholeDoors and
+// levelPieces run after every fixStations (world start, rebuilds, new buildings, the tutorial), and placing a station or a door
+// levels the ground under it.
+//   doors: a bottom half gets its top above unless the cell holds what must stay (stationKeeps); a lone top half gets its bottom
+//   below when that cell is not solid, else it moves up a cell; with no room the half goes. Open or closed follows the bottom.
+//   level: slope shapes in a door's or station's own cells and in the cells it stands on become flat.
+function doorPair(s,id){ return id===s.base?s.top:id===s.open?s.openTop:id===s.top?s.base:s.open; }
+function isDoorBase(s,id){ return id===s.base||id===s.open; }
+function canDoorTake(x,y){ const t=tileAt(x,y); if(x<1||x>=W-1||y<1||y>=H-1) return false; return !t||t===B.WATER||!(stationKeeps(t)||(typeof TRAP_OF!=='undefined'&&isTrap(t))); }
+function wholeDoors(){ let n=0; for(let y=2;y<H-2;y++) for(let x=1;x<W-1;x++){ const id=world[y*W+x], s=DOOR_SET_OF[id]; if(!s) continue;
+    if(isDoorBase(s,id)){ const up=world[(y-1)*W+x]; if(up===doorPair(s,id)) continue;
+      if(DOOR_SET_OF[up]===s&&!isDoorBase(s,up)){ setTile(x,y-1,doorPair(s,id)); n++; continue; }   // open bottom under a closed top: match the bottom
+      if(canDoorTake(x,y-1)){ setTile(x,y-1,doorPair(s,id)); n++; } else { setTile(x,y,0); n++; } continue; }
+    const dn=world[(y+1)*W+x]; if(DOOR_SET_OF[dn]===s&&isDoorBase(s,dn)) continue;
+    const ground=!!dn&&BLOCKS[dn].solid;   // a solid floor stays: the door moves up onto it
+    if(!ground&&canDoorTake(x,y+1)){ setTile(x,y+1,doorPair(s,id)); n++; }
+    else if(canDoorTake(x,y-1)){ const bot=doorPair(s,id); setTile(x,y,bot); setTile(x,y-1,id); n++; }
+    else { setTile(x,y,0); n++; } }
+  return n; }
+function levelCells(cells){ let n=0; for(const [a,b] of cells){ if(a<0||a>=W||b<0||b>=H) continue; const i=b*W+a; if(shape[i]){ shape[i]=0; n++; } } return n; }
+function pieceCells(x,y,id){ const s=DOOR_SET_OF[id]; if(s) return isDoorBase(s,id)?[[x,y],[x,y-1],[x,y+1]]:null;
+  if(!BIG_ST[id]) return null; const cs=[[x,y],...stationCells(x,y,id)]; const feet=cs.filter(([a,b])=>!cs.some(([p,q])=>p===a&&q===b+1)).map(([a,b])=>[a,b+1]); return cs.concat(feet); }
+function levelPieces(){ let n=0; for(let y=2;y<H-2;y++) for(let x=1;x<W-1;x++){ const id=world[y*W+x]; if(!id||!(BIG_ST[id]||DOOR_SET_OF[id])) continue; const c=pieceCells(x,y,id); if(c) n+=levelCells(c); } return n; }
+{ const _fs=fixStations; fixStations=function(...a){ const r=_fs(...a); try{ if(world){ wholeDoors(); levelPieces(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ const r=_tp(x,y,id,...a); try{ for(const [X,Y] of [[x,y],[x,y+1]]){ const t=tileAt(X,Y); if(BIG_ST[t]||(DOOR_SET_OF[t]&&isDoorBase(DOOR_SET_OF[t],t))){ const c=pieceCells(X,Y,t); if(c) levelCells(c); } } }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.156: bigger X buttons (Kinard: "fix the x buttons so the hit box is a little bigger as it's currently difficult to exit out of the various menus") =====
 // The X a phone shows at the top right (#menuX) grows from 42 to 52 px, a computer's window X (.panelx) from 30 to 38 px, and every
 // X and every button whose id ends in X gets an invisible frame (::after) that reaches 10-12 px past its edge, so a tap just beside it still closes.
