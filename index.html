@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1792717598"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792717598"><link rel="manifest" href="manifest.webmanifest?v=1792717598"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1792736727"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1792736727"><link rel="manifest" href="manifest.webmanifest?v=1792736727"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.159</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.160</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.160</h3>
+    <p>The tutorial ends with an army: after your miners arrive, the foreman shows you where their ore goes (the hut chest); you build on marked squares, raise a Small tower from the chest's stone, hire two soldiers, put them on the tower's posts, and then night falls and goblins raid. Trees in every world stand on flat ground, never on a slope.</p>
     <h3>New in Beta 0.9.159</h3>
     <p>The start screens are easier to use on phones and computers: every window has one close X, the title's buttons are bigger on phones held sideways, hints are easier to read, the room code box on the Multiplayer screen is wide again, and the wiki link is off the title screen (Help and the play site still have it).</p>
     <h3>New in Beta 0.9.158</h3>
@@ -855,7 +857,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.159</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.160</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1116,7 +1118,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.159</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.160</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1135,7 +1137,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.159', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.160', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17320,6 +17322,13 @@ function slopedAt(x,y){ return x>=0&&x<W&&y>=0&&y<H&&!!shape[y*W+x]; }
 { const _gs=growSapling; growSapling=function(x,h,sz,...a){ try{ for(let k=0;k<Math.max(1,sz|0);k++) if(slopedAt(x+k,h)) shape[h*W+x+k]=0; }catch(e){} return _gs(x,h,sz,...a); }; }
 function flattenUnderTrees(){ let n=0; for(let y=1;y<H-1;y++){ const r=y*W; for(let x=0;x<W;x++){ const i=r+x; if(!LOG_IDS.has(world[i])) continue; const j=i+W; if(!LOG_IDS.has(world[j])&&shape[j]){ shape[j]=0; n++; } } } return n; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!home.treeFlatV&&!(typeof MP!=='undefined'&&MP.guest)){ home.treeFlatV=1; flattenUnderTrees(); } }catch(e){ console.warn(e); } return r; }; }
+// 0.9.160 (Kinard: "make it so trees cannot form on sloped blocks"): new worlds too. Every grower flattens the ground cell under its
+// trunk, and once a world is made every trunk still standing on a slope gets flat ground (natural slopes are laid after the trees).
+function flatTrunk(x,h){ try{ if(slopedAt(x,h)&&world[h*W+x]) shape[h*W+x]=0; }catch(e){} }
+{ const _t=growTree; growTree=function(x,h,...a){ flatTrunk(x,h); return _t(x,h,...a); }; }
+{ const _p=growPine; growPine=function(x,h,...a){ flatTrunk(x,h); return _p(x,h,...a); }; }
+{ const _b=growBirch; growBirch=function(x,h,...a){ flatTrunk(x,h); return _b(x,h,...a); }; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ flattenUnderTrees(); }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.152: play phones sideways (Kinard: "on mobile the game ... so the player has to turn their phone and aren't playing upright; sideways is the main way to play") =====
 // On a touch device held upright (taller than wide), a full screen card asks you to turn the phone sideways and the
 // game waits (single player pauses; a shared world keeps running for the others). Turning the phone hides it at once.
@@ -17368,8 +17377,8 @@ function tutSoldiers(){ return ents.filter(e=>e.kind==='human'&&e.team===player.
 function tutDrifterAt(){ const d=ents.find(e=>e.kind==='drifter'&&!e.dead); return d?[Math.floor(cxOf(d)/T),Math.floor(d.y/T)-1]:null; }
 // both wanderers become miners: the first is the mine foreman, the second a miner; enough wanderers wait for whatever is left
 function tutWanderers(){ if(!home.claimed||home.fixup) return; const need=2-(home.foreman?1:0)-Math.min(1,home.miners||0); let live=ents.filter(e=>e.kind==='drifter'&&!e.dead).length; while(live<need){ home.drifters=(home.drifters||0)+1; ents.push(makeDrifter(home.drifters-1)); live++; } }
-// the Recruiter is in the castle after the rebuild; the tutorial pays for the first soldier once
-function tutRecruiter(){ if(!ents.some(e=>e.kind==='villager'&&e.role==='recruiter'&&e.team===player.team&&!e.dead)) ents.push(makeHelper('recruiter','Recruiter',10)); if(!HT().coin){ HT().coin=1; player.coins+=60; } }
+// the Recruiter is in the castle after the rebuild; the tutorial pays for two soldiers once
+function tutRecruiter(){ if(!ents.some(e=>e.kind==='villager'&&e.role==='recruiter'&&e.team===player.team&&!e.dead)) ents.push(makeHelper('recruiter','Recruiter',10)); if((HT().coin||0)<2){ player.coins+=HT().coin?60:120; HT().coin=2; } }
 function tutHasHoe(){ return player.inv.some(s=>s&&ITEMS[s.id]&&ITEMS[s.id].kind==='hoe'); }
 function tutFarmCells(f){ const {G,cx}=HT(); let n=0; for(let x=cx-111;x<=cx+57;x++) for(let y=G-6;y<=G+1;y++) if(tileAt(x,y)===B.FARMLAND&&f(x,y)) n++; return n; }
 function tutFarmland(){ return tutFarmCells(()=>true); }
@@ -17378,6 +17387,22 @@ function tutFixPct(){ const f=home.fixup; return f&&f.cells&&f.cells.length?Math
 function tutRebuildText(){ return home.fixup?`The Quartermaster is finishing the castle and the houses (${tutFixPct()}% done). Here it takes about a minute, a tenth of the time it takes in a real world. Wait by the castle until it is done.`:'The village is rebuilt.'; }
 // a skipped rebuild finishes at once, so the steps after it always find the castle, the Recruiter and his job block
 function tutFinishFix(){ try{ if(home.fixup){ for(let i=0;i<2000&&home.fixup;i++) fixupAdvance(5,true); } }catch(e){ console.warn(e); } }
+// 0.9.160: the marked build spot, the tower's ground, the foreman's demonstration (columns from the start)
+const TUT_PLACE=[2,3,4], TUT_TOWER=-5, TUT_RAID=[22,25,28,31];   // the miners' hut takes cx-21..cx-10, so the tower stands between it and the start
+function tutPlaceCells(){ const {G,cx}=HT(); return TUT_PLACE.map(d=>[cx+d,G-1]); }
+function tutPlaceLeft(){ return tutPlaceCells().filter(([x,y])=>{ const b=BLOCKS[tileAt(x,y)]; return !(b&&b.solid); }); }
+function tutForeman(){ return ents.find(e=>e.kind==='villager'&&e.role==='foreman'&&!e.dead); }
+function tutHutChest(){ const k=home.minerChest; return k&&chests[k]?k.split(',').map(Number):null; }
+function tutEntAt(e){ return e?[Math.floor(cxOf(e)/T),Math.floor(e.y/T)-1]:null; }
+// a miner comes straight up with a full pack and drops it in the hut chest, so the player sees where the ore goes
+function tutMinerDemo(){ if(HT().demo) return; const k=home.minerChest, c=k&&chests[k]; if(!c) return; HT().demo=1;
+  const m=ents.find(e=>e.kind==='villager'&&e.role==='miner'&&!e.dead&&e.team===player.team); const tgt=MINE_TARGETS[(m&&home.minerTargets&&home.minerTargets[m.mi])||home.mineTarget||'coal']||MINE_TARGETS.coal;
+  if(m){ m.qDay=dayCount; m.qLeft=99; m.load=4; try{ minerBack(m); }catch(e){ console.warn(e); } m.qLeft=Math.min(m.qLeft,2); }
+  else putInChest(c,{id:tgt[0],n:4});
+  toast(`${m?m.name||'Your miner':'Your miner'} climbs up with a pack of ${tgt[1].toLowerCase()} and drops it in the hut chest.`,4); }
+function tutTowerSt(){ return myStructures.find(s=>POST_ASK_KINDS.has(s.kind)&&s.posts&&s.posts.length); }
+// whatever the chest step missed, the tower step hands over (older tutorials, a skipped chest)
+function tutTowerKit(){ const bp=BLUEPRINTS.find(b=>b.id==='wall'); if(!bp) return; let gave=false; for(const [id,n] of bp.cost){ const have=countNeed(id); if(have<n){ give(id,n-have); gave=true; } } if(gave) invDirty=true; }
 function tutGobsLeft(){ return ents.filter(e=>e.tutGob&&!e.dead).length; }
 // the steps: pc and ph are the two wordings, at() the arrow's cell, enter() runs when the step starts, check() says when it is done
 const TUT_STEPS=[
@@ -17401,12 +17426,14 @@ const TUT_STEPS=[
     at:()=>[home.castleCx,HT().G-3], check:()=>!!home.claimed&&!home.fixup },
   { id:'miners', enter:()=>{ tutFinishFix(); tutWanderers(); }, pc:()=>`Two wanderers came to the village. Talk to each one (${tutKey('use')}) and choose Miner. The first becomes your mine foreman and builds the miners' hut with an ore cart; the second digs ore for you.`, ph:()=>'Two wanderers came to the village. Talk to each one (tap them, or the Talk button) and choose Miner. The first becomes your mine foreman and builds the miners\' hut with an ore cart; the second digs ore for you.',
     at:()=>tutDrifterAt(), check:()=>!!home.foreman&&(home.miners||0)>=1 },
-  { id:'recruit', enter:()=>{ tutFinishFix(); tutRecruiter(); }, pc:()=>`Soldiers come from the Recruiter in the castle. Talk to him (${tutKey('use')}) and hire one: they join your army, follow you and fight beside you. Here is some coin for it.`, ph:()=>'Soldiers come from the Recruiter in the castle. Talk to him (tap him, or the Talk button) and hire one: they join your army, follow you and fight beside you. Here is some coin for it.',
-    at:()=>{ const r=ents.find(e=>e.kind==='villager'&&e.role==='recruiter'&&e.team===player.team&&!e.dead); return r?[Math.floor(cxOf(r)/T),Math.floor(r.y/T)-1]:null; }, check:()=>tutSoldiers()>0 },
-  { id:'chest', pc:()=>`Open the chest between the first two village houses: stand next to it and press ${tutKey('use')}. Take the iron bars and the sticks.`, ph:()=>'Open the chest between the first two village houses: stand next to it and tap it, or tap the Talk button. Take the iron bars and the sticks.',
-    at:()=>[home.hx0+10,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2 },
-  { id:'place', pc:()=>'Build: select the stone in the hotbar and right-click where it should go. Place 3 blocks.', ph:()=>'Build: tap the stone in the hotbar, then tap the ground where it should go. Place 3 blocks.',
-    check:()=>HT().placed>=3 },
+  { id:'foreman', enter:()=>tutFinishFix(), pc:()=>`Talk to your mine foreman by the miners' hut (${tutKey('use')}). In his window you choose what each miner digs for: pick Coal, then close the window.`, ph:()=>'Talk to your mine foreman by the miners\' hut (tap him, or the Talk button). In his window you choose what each miner digs for: pick Coal, then close the window.',
+    at:()=>tutEntAt(tutForeman()), check:()=>!tutForeman()||(!!HT().foremanSeen&&state==='play') },
+  { id:'hutchest', enter:()=>tutMinerDemo(), pc:()=>`Your miner brought up what he dug and put it in the hut chest. Open that chest (${tutKey('use')}) to see it. Miners fill it by themselves every day; the foreman's window has an Open button for it too.`, ph:()=>'Your miner brought up what he dug and put it in the hut chest. Open that chest (tap it, or the Talk button) to see it. Miners fill it by themselves every day; the foreman\'s window has an Open button for it too.',
+    at:()=>tutHutChest(), check:()=>!tutHutChest()||!!HT().hutSeen },
+  { id:'chest', pc:()=>`Open the chest between the first two village houses: stand next to it and press ${tutKey('use')}. Take everything: iron bars and sticks for tools, and stone, a door and torches for a tower later.`, ph:()=>'Open the chest between the first two village houses: stand next to it and tap it, or tap the Talk button. Take everything: iron bars and sticks for tools, and stone, a door and torches for a tower later.',
+    at:()=>[home.hx0+10,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2&&countItem(B.DOOR)>=1 },
+  { id:'place', pc:()=>'Build: walk to the 3 glowing squares just right of where you started, select the stone in the hotbar and right-click each square.', ph:()=>'Build: walk to the 3 glowing squares just right of where you started, tap the stone in the hotbar, then tap each square.',
+    at:()=>tutPlaceLeft()[0]||null, check:()=>tutPlaceLeft().length===0 },
   { id:'bench', pc:()=>`Craft a workbench: press ${tutKey('bag')}, open Crafting, pick Workbench and press Craft. It takes 10 planks.`, ph:()=>'Craft a workbench: tap the bag button, open Crafting, pick Workbench and tap Craft. It takes 10 planks.',
     check:()=>countItem(B.WORKBENCH)>=1||tutBenchNear() },
   { id:'placebench', pc:()=>'Place the workbench on the ground near you: select it in the hotbar and right-click.', ph:()=>'Place the workbench on the ground near you: tap it in the hotbar, then tap the ground.',
@@ -17427,13 +17454,19 @@ const TUT_STEPS=[
     at:()=>{ const a=ents.find(e=>e.tutAnimal&&!e.dead&&!e.tamed); return a?[Math.floor(cxOf(a)/T),Math.floor(a.y/T)-1]:null; }, check:()=>ents.some(e=>e.tutAnimal&&e.tamed&&!e.dead) },
   { id:'pen', pc:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.', ph:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.',
     at:()=>[HT().cx+45,HT().G-2], check:()=>ents.some(e=>e.tamed&&!e.dead&&e.fpen) },
-  { id:'fight', enter:()=>tutGoblins(), pc:()=>'Two goblins are coming from the right! Select your weapon (key 1) and click on them. Your soldier and your pet fight with you. Watch your health bar.', ph:()=>'Two goblins are coming from the right! Tap your weapon in the hotbar and push the Aim and use stick toward them. Your soldier and your pet fight with you. Watch your health bar.',
+  { id:'tower', enter:()=>tutTowerKit(), pc:()=>'Build a Small tower by the arrow: press the Buildings button at the top, pick Small tower and press Build, click the flat ground by the arrow, then click the green box again. The stone, door and torch came from the chest.', ph:()=>'Build a Small tower by the arrow: tap the Buildings button at the top, pick Small tower and tap Build, tap the flat ground by the arrow, then tap the green box again. The stone, door and torch came from the chest.',
+    at:()=>[HT().cx+TUT_TOWER,HT().G-1], check:()=>!!tutTowerSt() },
+  { id:'recruit', enter:()=>{ tutFinishFix(); tutRecruiter(); }, pc:()=>`Soldiers come from the Recruiter in the castle. Talk to him (${tutKey('use')}) and hire two: they join your army, follow you and fight beside you. Here is some coin for them.`, ph:()=>'Soldiers come from the Recruiter in the castle. Talk to him (tap him, or the Talk button) and hire two: they join your army, follow you and fight beside you. Here is some coin for them.',
+    at:()=>tutEntAt(ents.find(e=>e.kind==='villager'&&e.role==='recruiter'&&e.team===player.team&&!e.dead)), check:()=>tutSoldiers()>=2 },
+  { id:'posts', pc:()=>`Put your soldiers on the tower: walk inside it, press ${tutKey('use')} and choose Place soldiers here (Buildings has a Place soldiers button too). Click a soldier, then a glowing post, or press Fill empty posts.`, ph:()=>'Put your soldiers on the tower: walk inside it, tap the Talk button and choose Place soldiers here (Buildings has a Place soldiers button too). Tap a soldier, then a glowing post, or tap Fill empty posts.',
+    at:()=>{ const t=tutTowerSt(); return t?[t.x,t.gy-2]:null; }, check:()=>{ const t=tutTowerSt(); return !t||t.posts.some(postWho); } },
+  { id:'fight', enter:()=>{ time=NIGHT_AT+0.03; tutGoblins(); }, pc:()=>'Night falls and goblins raid from the right! Your soldiers on the tower shoot through the slits. Fight beside them: select your weapon (key 1) and click on the goblins. Your pet fights too. Watch your health bar.', ph:()=>'Night falls and goblins raid from the right! Your soldiers on the tower shoot through the slits. Fight beside them: tap your weapon in the hotbar and push the Aim and use stick toward the goblins. Your pet fights too. Watch your health bar.',
     at:()=>{ const g=ents.find(e=>e.tutGob&&!e.dead); return g?[Math.floor(cxOf(g)/T),Math.floor(g.y/T)-1]:null; }, check:()=>!!HT().gobs&&tutGobsLeft()===0 },
   { id:'done', final:true, pc:()=>`You are ready for the real world: mine deeper, grow the village, raise a bigger army and face Vorthax. ${tutKey('bag')} opens the bag, Esc the menu, ${tutKey('map')} the map.`, ph:()=>'You are ready for the real world: mine deeper, grow the village, raise a bigger army and face Vorthax. The bag, map and menu buttons are along the top.' } ];
 // ---- the world ----
 function makeTutorialWorld(cls){ curSlot=TUT_SLOT; heroPick.state=null; heroPick.newCls=null;
   newGame('small','g',CLASSES[cls]&&(CLS_KEYS.includes(cls)||cls==='dragon')?cls:'knight',{mode:'survival',kit:'standard',death:'keep',wx:'off',seed:TUT_SEED});
-  home.tutorial={ v:3, sv:5, step:0, G:0, cx:0, placed:0, talked:false, quest:false, gobs:false };
+  home.tutorial={ v:3, sv:6, step:0, G:0, cx:0, talked:false, quest:false, gobs:false };
   tutFlatten(); tutBuild(); tutRespawn(); tutEnter(); try{ localStorage.setItem(TUT_ASK_KEY,'1'); }catch(e){} saveLocal(); }
 function tutFlatten(){ const G=Math.max(skyOff+40,seaY-10), cx=Math.floor(W/2); Object.assign(home.tutorial,{G,cx});
   for(let x=0;x<W;x++){ for(let y=0;y<H;y++){ const i=y*W+x; world[i]=y<G?0:y===G?B.GRASS:y<=G+5?B.DIRT:B.STONE; bg[i]=0; shape[i]=0; liq[i]=0; explored[i]=1; } oceanCol[x]=0; surf[x]=G; updateSkyTop(x); }
@@ -17455,8 +17488,8 @@ function tutBuild(){ const {G,cx}=HT(); const P=B.PLANK, S=B.STONE;
   { const vx=cx-60, ccx=vx-24, hx0=vx-2; const houses=ruinHome(ccx,hx0,G,Math.random); chests[(hx0+31)+','+(G-1)]={items:new Array(CHEST_N).fill(null),coins:5}; wset(hx0+31,G-1,B.CHEST);   // the abandoned village, laid out like a real one
     Object.assign(home,{cx:vx,castleCx:ccx,hx0,gy:G,x0:ccx-19,x1:hx0+40,houses,drifters:2,claimed:false,quarter:false,fixup:null}); }
   for(let x=cx+7;x<=cx+9;x++){ wset(x,G-2,B.GRASS); wset(x,G-1,B.DIRT); wset(x,G,B.DIRT); }   // the ledge to jump onto: grass on top, plain dirt below and under it
-  { const hx=home.hx0+10; wset(hx,G-1,B.CHEST); wset(hx+1,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:4}; c.items[2]={id:I.APPLE,n:2}; chests[hx+','+(G-1)]=c; }   // the tutorial chest between the first two village houses (0.9.146: the separate hut is gone)
-  tutCave(); tutPenBuild(); { const R=mulberry(TUT_SEED+5); for(const dx of [-108,21,31]) growTree(cx+dx,surf[cx+dx],1,R,'oak'); }   // a few trees
+  { const hx=home.hx0+10; wset(hx,G-1,B.CHEST); wset(hx+1,G-1,B.PART); const c={items:new Array(CHEST_N).fill(null),coins:5}; c.items[0]={id:I.IRON_BAR,n:10}; c.items[1]={id:480,n:4}; c.items[2]={id:I.APPLE,n:2}; c.items[3]={id:B.STONE,n:45}; c.items[4]={id:B.DOOR,n:1}; c.items[5]={id:B.TORCH,n:2}; chests[hx+','+(G-1)]=c; }   // the tutorial chest between the first two village houses (0.9.146: the separate hut is gone)
+  tutCave(); tutPenBuild(); { const R=mulberry(TUT_SEED+5); for(const dx of [21,51]) growTree(cx+dx,surf[cx+dx],1,R,'oak'); }   // two trees, both on flat ground (0.9.160: the old ones stood on the hills' slopes)
   try{ fixStations(); }catch(e){ console.warn(e); } tutBackWalls(); HT().stV=1; HT().bgV=1;   /* 0.9.154: stations and chests get their full size; dirt and stone keep back walls like a real world */
   for(let x=0;x<W;x++) updateSkyTop(x); }
 // 0.9.154: back walls under the ground, as in a real world: dirt under the topsoil, stone deeper (only where none is set)
@@ -17482,7 +17515,7 @@ function tutRespawn(){ if(!tutOn()) return; const {G,cx}=HT(); try{ if(!HT().stV
   if(!ents.some(e=>e.tut)){ const hx=home.hx0; const v=makeVillager(player.team,{x0:hx+1,x1:hx+7,gy:G,role:'herbalist'}); v.name='Elder Rowan'; v.tut=true; v.x=(hx+4)*T; ents.push(v); }   // she lives in the first village house
   if(!home.claimed&&!home.quarter&&!ents.some(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead)) ents.push(makeQuartermaster());
   const st=TUT_STEPS[HT().step]; if(st&&st.id==='fight'&&HT().gobs) tutGoblins(); if(HT().step<=TUT_STEPS.findIndex(s=>s.id==='tame')) tutWild(); }
-function tutGoblins(){ const {G,cx}=HT(); const px=Math.min(cx+34,Math.floor(cxOf(player)/T)); for(const dx of [12,16]){ const m=makeMonster('goblin',(px+dx)*T,G*T); /* from the right of wherever you stand, inside the yard */ m.y=G*T-m.h; m.tutGob=true; m.hp=m.maxHp=Math.min(m.maxHp,28); m.dmg=Math.min(m.dmg,6); m.target=player; ents.push(m); } HT().gobs=true; }
+function tutGoblins(){ const {G,cx}=HT(); const t=tutTowerSt(); const bx=t?t.x:Math.floor(cxOf(player)/T); for(const dx of TUT_RAID){ const x=Math.max(cx-20,Math.min(cx+40,bx+dx)); const m=makeMonster('goblin',x*T,G*T); /* from the right of the tower (or of you), inside the yard */ m.y=surf[x]*T-m.h; m.tutGob=true; m.hp=m.maxHp=Math.min(m.maxHp,28); m.dmg=Math.min(m.dmg,6); m.target=player; ents.push(m); } HT().gobs=true; }
 { const _fa=fixupAdvance; fixupAdvance=function(dt,...a){ return _fa(tutOn()?dt*TUT_FIX_SPEED:dt,...a); }; }
 { const _sf=startFixup; startFixup=function(...a){ const r=_sf(...a); try{ if(tutOn()&&home.fixup) toast('The Quartermaster rolls up his sleeves. Here the village is rebuilt in under a minute; in a real world it is ready the next day.',5); }catch(e){} return r; }; }
 // ---- the card and the arrow (styled like the Cancel building button at the top of the screen) ----
@@ -17534,12 +17567,15 @@ const TUT_V1=['move','jump','castle','rebuild','chest','mine','ore','place','ben
 const TUT_V2=['move','jump','castle','rebuild','miner','soldier','chest','mine','ore','cave','place','bench','placebench','pick','torch','eat','tame','talk','quest','fight','done'];
 const TUT_V3=['move','jump','castle','rebuild','miners','recruit','chest','cave','mine','ore','place','bench','placebench','pick','torch','eat','hoe','till','plant','tame','pen','talk','quest','fight','done'];
 const TUT_V4=['move','jump','castle','talk','rebuild','miners','recruit','chest','cave','mine','ore','quest','place','bench','placebench','pick','torch','eat','hoe','till','plant','tame','pen','fight','done'];
+const TUT_V5=['move','jump','castle','talk','cave','mine','ore','quest','rebuild','miners','recruit','chest','place','bench','placebench','pick','torch','eat','hoe','till','plant','tame','pen','fight','done'];
 const TUT_ALIAS={ miner:'miners', soldier:'recruit' };
-function tutMigrate(){ const H=HT(); const sv=H.sv||(H.v||1); if(sv>=5) return; const list=sv>=4?TUT_V4:sv>=3?TUT_V3:sv>=2?TUT_V2:TUT_V1; let id=list[H.step]; id=TUT_ALIAS[id]||id;
+function tutMigrate(){ const H=HT(); const sv=H.sv||(H.v||1); if(sv>=6) return; const list=sv>=5?TUT_V5:sv>=4?TUT_V4:sv>=3?TUT_V3:sv>=2?TUT_V2:TUT_V1; let id=list[H.step]; id=TUT_ALIAS[id]||id;
   /* 0.9.156: the errand runs during the rebuild; someone waiting on the rebuild (or past it) without the errand done goes to the cave */
-  if(!H.quest&&H.talked&&['rebuild','miners','recruit','chest'].includes(id)) id='cave';
+  if(sv<5&&!H.quest&&H.talked&&['rebuild','miners','recruit','chest'].includes(id)) id='cave';
+  /* 0.9.160: hiring moved near the end; whoever was on it goes to the foreman's demonstration that took its place */
+  if(id==='recruit') id='foreman';
   /* the steps added in between come before the one you were on only if they are earlier in the list; the cave step passes by itself in a world without a cave */
-  const n=TUT_STEPS.findIndex(s=>s.id===id); if(n>=0) H.step=n; H.sv=5; H.entered=false;
+  const n=TUT_STEPS.findIndex(s=>s.id===id); if(n>=0) H.step=n; H.sv=6; H.entered=false;
   try{ facRun(()=>tutPenBuild((x,y,id)=>setTile(x,y,id))); }catch(e){} }
 function tutEnter(){ try{ tutMigrate(); }catch(e){} try{ facRun(()=>fixStations()); }catch(e){ console.warn(e); } TUT.hidden=false; TUT.t=0; rules.wx='off'; const st=TUT_STEPS[HT().step]; if(st&&st.enter&&!HT().entered) { try{ st.enter(); }catch(e){} HT().entered=true; } tutCard(); }
 function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) return; H.step++; H.entered=true; const st=TUT_STEPS[H.step]; try{ if(st.enter) st.enter(); }catch(e){ console.warn(e); }
@@ -17547,12 +17583,16 @@ function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) retur
 function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); try{ tutWildKeep(); tutBorder(); if(TUT_STEPS[H.step]&&TUT_STEPS[H.step].id==='miners') tutWanderers(); }catch(e){} const st=TUT_STEPS[H.step]; if(!st||st.final) return;
   let ok=false; try{ ok=!!st.check(); }catch(e){} if(ok) tutAdvance(false); else if(st.id==='rebuild'&&!TUT.min&&$('#tutText').textContent!==tutRebuildText()) $('#tutText').textContent=tutRebuildText(); }
 { const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ tutTick(dt); }catch(e){} return r; }; }
-function drawTutArrow(){ if(!tutOn()||state!=='play'||TUT.hidden) return; const st=TUT_STEPS[HT().step]; if(!st||!st.at) return; const at=st.at(); if(!at) return; const [tx,ty]=at, t=performance.now()/1000, X=tx*T+8, Y=ty*T+4+Math.sin(t*5)*3;
+function drawTutArrow(){ if(!tutOn()||state!=='play'||TUT.hidden) return; const st=TUT_STEPS[HT().step]; if(st&&st.id==='place') drawTutSpots(); if(!st||!st.at) return; const at=st.at(); if(!at) return; const [tx,ty]=at, t=performance.now()/1000, X=tx*T+8, Y=ty*T+4+Math.sin(t*5)*3;
   ctx.save(); ctx.fillStyle='#ffd84a'; ctx.strokeStyle='#5a3a00'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(X-7,Y-14); ctx.lineTo(X+7,Y-14); ctx.lineTo(X,Y-4); ctx.closePath(); ctx.fill(); ctx.stroke();
   ctx.globalAlpha=0.35+0.25*Math.sin(t*4); ctx.strokeStyle='#ffd84a'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(X,ty*T+T,T*1.2,0,Math.PI*2); ctx.stroke(); ctx.restore(); }
+// the squares to build on glow until each holds a block
+function drawTutSpots(){ const t=performance.now()/1000; ctx.save(); ctx.strokeStyle='#ffd84a'; ctx.lineWidth=2; ctx.setLineDash([4,3]); ctx.lineDashOffset=-t*8;
+  for(const [x,y] of tutPlaceLeft()){ ctx.globalAlpha=0.18+0.12*Math.sin(t*4); ctx.fillStyle='#ffd84a'; ctx.fillRect(x*T,y*T,T,T); ctx.globalAlpha=0.9; ctx.strokeRect(x*T+1,y*T+1,T-2,T-2); } ctx.restore(); }
 { const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawTutArrow(); }catch(e){} return r; }; }
 // ---- hooks into the game ----
-{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ const before=tutOn()?countItem(id):0; const r=_tp(x,y,id,...a); try{ if(tutOn()&&id===B.STONE&&countItem(id)<before) HT().placed=(HT().placed||0)+1; }catch(e){} return r; }; }
+{ const _os=openShop; openShop=function(v,...a){ const r=_os(v,...a); try{ if(tutOn()&&v&&(v.role==='foreman'||v.role==='miner')&&state==='shop') HT().foremanSeen=true; }catch(e){} return r; }; }
+{ const _oc=openChest; openChest=function(x,y,...a){ const r=_oc(x,y,...a); try{ if(tutOn()&&state==='chest'&&x+','+y===home.minerChest) HT().hutSeen=true; }catch(e){} return r; }; }
 { const _i=interact; interact=function(v,...a){ if(v&&v.tut&&tutOn()){ tutTalk(v); talkTarget=undefined; return; } return _i(v,...a); }; }
 function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
   if(!H.talked){ H.talked=true; toast('Elder Rowan: "Welcome, traveller. Bring me 5 stone from the little cave in the hill to the east, and I will pay you for it."',4.5); return; }
@@ -17565,7 +17605,7 @@ function tutTalk(v){ const H=HT(); player.facing=cxOf(v)>cxOf(player)?1:-1;
 // ---- the title screen: Tutorial button, class pick, Continue; the first-game prompt ----
 { const mp=$('#btnMP'); if(mp&&!window.DA_DEMO) mp.insertAdjacentHTML('afterend','<button class="btn" id="btnTutorial">Tutorial</button>');
   document.body.insertAdjacentHTML('beforeend',`<div class="overlay" id="scrTut" hidden><div class="panel"><div class="phead"><h2>Tutorial</h2><button class="xbtn" id="tutBack">Back</button></div>
-    <p>About five minutes in a tiny world: walking, mining, building, a chest, crafting, a torch at night, eating, a villager's errand and a fight. Saved in slot 7 so you can come back to it.</p><div id="tutCont"></div><p id="tutPickLbl" style="margin:8px 0 6px">Pick a class to start:</p><div class="choices" id="tutCls"></div></div></div>
+    <p>About ten minutes in a tiny world: walking, mining, your village and miners, building, crafting, farming, a pet, a tower with soldiers and a goblin raid at night. Saved in slot 7 so you can come back to it.</p><div id="tutCont"></div><p id="tutPickLbl" style="margin:8px 0 6px">Pick a class to start:</p><div class="choices" id="tutCls"></div></div></div>
   <div class="overlay" id="scrTutAsk" hidden><div class="panel"><h2>First time?</h2><p>A five-minute tutorial teaches walking, mining, building, crafting and fighting in a tiny world. It is on the title screen under Tutorial whenever you want it.</p>
     <button class="btn primary" id="tutAskYes">Play the tutorial</button><button class="btn" id="tutAskNo">Skip, start a new game</button></div></div>`);
   function openTut(){ hide('scrTitle'); hide('scrTutAsk'); const si=slotInfo(TUT_SLOT); const cont=$('#tutCont');
