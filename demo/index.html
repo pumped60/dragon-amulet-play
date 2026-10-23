@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792716221"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1792717598"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.158</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="wikiLink" class="ver" href="https://pumped60.github.io/dragon-amulet-wiki/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Wiki: items, recipes, monsters and more</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.159</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.159</h3>
+    <p>The start screens are easier to use on phones and computers: every window has one close X, the title's buttons are bigger on phones held sideways, hints are easier to read, the room code box on the Multiplayer screen is wide again, and the wiki link is off the title screen (Help and the play site still have it).</p>
     <h3>New in Beta 0.9.158</h3>
     <p>Doors are always whole: a door is never half door and half stone, even in a ruined village. A chest set beside a door slides over to make room, and doors, workbenches, furnaces and chests always stand on level ground.</p>
     <h3>New in Beta 0.9.157</h3>
@@ -853,7 +855,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.158</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.159</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1114,7 +1116,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.158</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.159</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1133,7 +1135,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.158', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.159', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17083,6 +17085,46 @@ function cropPatches(onlyUnexplored,R,put){ R=R||Math.random; put=put||setTile; 
 // ---- 4. gathering pets bring half as much ----
 { const _ta=tamedAct; tamedAct=function(e,dt,...a){ if(e&&e.mode==='gather'&&(e.gT??15)-dt<=0){ e.gHalf=!e.gHalf; if(e.gHalf){ e.gT=20; } }
     return _ta(e,dt,...a); }; }
+// ===== Beta 0.9.159: the start screens on phones and computers (Kinard, 2026-10-23: "remove the wiki link from the main screen and
+// make it so that the mobile app fits correctly for the main screen; review all of the mobile and PC versions for the title screen,
+// multiplayer screens, new game screens etc and make them as user friendly as possible") =====
+// Found on a 1440x900 and a 1280x650 computer, phones held sideways (844x390, 667x375) and upright (390x844), and a tablet:
+//   every window had two ways to close: a small Back or Close in its header beside the X (computers: the window X; phones: the
+//   big X in the corner). The X clicks that same button (menuCloser), so the header one is hidden while an X shows (.dupx).
+//   on phones held sideways the title's six small buttons were 8 px text in short boxes, and every window ran under the corner X.
+//   hints and descriptions on the start screens were 7-9 px; the Multiplayer screen's "Copy bug report" looked like a main action.
+// The wiki link is gone from the title (the wiki is in Help and on the play site).
+const FRONT_IDS=['scrTitle','scrHeroes','scrNewHero','scrSetup','scrMP','scrSlots','scrTut','scrTestCls','scrChars','scrRefs','scrHelp','scrSettings','scrAch','scrReport','scrTutAsk'];
+{ const st=document.createElement('style'); const F=FRONT_IDS.map(i=>'#'+i).join(',');
+  st.textContent=`
+body.touch.menux .overlay:not([hidden]) .dupx, body:not(.touch) .overlay:not([hidden]) .panel:has(>.panelx) .dupx{ display:none !important; }
+/* readable hints and descriptions on the start screens */
+:is(${F}) .panel > p, :is(${F}) .desc{ font-size:10px; line-height:1.75; }
+body.touch :is(${F}) .panel > p, body.touch :is(${F}) .desc{ font-size:10px; }
+#mpRecent .muted{ font-size:10px !important; }
+:is(${F}) .panel p:not(.ver):not(#loading){ font-size:max(10px,var(--pfs,0px)); }
+/* the room code box and Join line up, and Join is as tall as the box */
+#mpJoin{ margin-top:0 !important; align-self:stretch; width:auto !important; flex:0 0 auto; min-width:96px; padding-left:18px; padding-right:18px; } #mpCode{ min-width:0; flex:1 1 auto; }
+/* Copy bug report is a small extra, not a main action */
+#mpReport{ display:block; width:auto; margin:10px auto 0 !important; padding:6px 12px !important; font-size:9px !important; background:transparent !important; box-shadow:none !important; border-width:2px !important; opacity:.85; }
+/* title on phones held sideways: bigger, easier buttons */
+@media (max-height:520px) and (orientation:landscape){
+  .panel.title .tright>.btn{ font-size:11px; padding:9px 8px; }
+  .panel.title .tgrid{ gap:0 6px; } .panel.title .tgrid .btn{ font-size:9px; padding:8px 2px; min-height:34px; line-height:1.3; }
+  .panel.title .ver{ font-size:9px; } .panel.title .tleft a{ font-size:9px !important; }
+  /* leave room for the corner X beside every window but the title */
+  body.touch.menux .overlay:not([hidden]):not(#scrTitle) > .panel{ max-width:calc(100vw - 2*66px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)); }
+}
+/* phones held upright and narrow windows: the title stays one column with big buttons */
+@media (max-width:480px) and (orientation:portrait){
+  .panel.title .btn{ font-size:11px; } .panel.title .tgrid .btn{ font-size:10px; }
+  body.touch.menux .overlay:not([hidden]):not(#scrTitle) > .panel{ margin-top:58px; }
+}`; document.head.appendChild(st); }
+function frontSync(){ for(const o of document.querySelectorAll('.overlay')){ const c=o.hidden?null:menuCloser(o);
+    for(const b of o.querySelectorAll('.dupx')) if(b!==c) b.classList.remove('dupx');
+    if(c&&c.classList.contains('xbtn')&&c.closest('.phead')) c.classList.add('dupx'); } }
+new MutationObserver(()=>{ try{ frontSync(); }catch(e){} }).observe(document.body,{subtree:true,attributes:true,attributeFilter:['hidden']});
+setInterval(()=>{ try{ frontSync(); }catch(e){} },700);
 // ===== Beta 0.9.150: a miner always gets the miners' hut kit (Kinard: "across every game mode when a miner is chosen it will always build an ore cart and the blocks needed for the player to communicate with them") =====
 // The hut's bed, chest and ore cart (the miner's job block: without it the foreman and miners stop working and talking) were placed
 // once by furnishVillage (home.furn_mine). Now every time a miner is chosen (a wanderer's job, a hire, the head's first worker)
