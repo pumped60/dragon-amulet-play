@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1793180810"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793180810"><link rel="manifest" href="manifest.webmanifest?v=1793180810"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1793337455"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793337455"><link rel="manifest" href="manifest.webmanifest?v=1793337455"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.162</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.163</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.163</h3>
+    <p>Fixes from a playtest: a ruined village always has doors at ground level, so you can walk in to the Quartermaster without digging. The Talk button reads "Talk to" instead of "Trade with", and inside a tower it offers "Place soldiers here". Buying and crafting show a short message. In the tutorial, the card moves off the move stick on phones, the item a step asks for is moved into your hotbar, and the chest and Elder Rowan are "in the village" (follow the arrow).</p>
     <h3>New in Beta 0.9.162</h3>
     <p>Upgrading a shop from the task list (or anywhere the shop window is closed) works without an error.</p>
     <h3>New in Beta 0.9.161</h3>
@@ -861,7 +863,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.162</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.163</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1122,7 +1124,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.162</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.163</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1141,7 +1143,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.162', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.163', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5284,7 +5286,7 @@ function updateHUD(dt){
   if(!v&&state==='play'&&nearestPortal()) v=PORTAL_T;
   if(state==='play'&&player.operating) v=OP_OFF; else if(!v&&state==='play'){ const m=nearestMachine(3*T); if(m) v=machCache.get(m)||(machCache.set(m,{machine:m}),machCache.get(m)); }
   if(!v&&state==='play'&&nearStation(B.FURNACE)) v=COOK_T; if(!v&&state==='play'&&MP.on&&heldItem()&&nearPlayers(5).length) v=GIVE_T; const tb=$('#btnTalk');
-  if(v!==talkTarget){ talkTarget=v; tb.hidden=!v; $('#toast').classList.toggle('talking',!!v); if(v) tb.textContent=(v===GIVE_T?'Give item':v===PORTAL_T?'Use portal':v.chest&&chestReq(v.x,v.y)?'Sealed: '+chestReq(v.x,v.y).toLowerCase():v.bed?'Sleep in bed':v===OP_OFF?`Step off the ${player.operating.name.toLowerCase()}`:v.machine?`Operate the ${v.machine.name.toLowerCase()}`:v.tame?`Tame the ${v.tame.atype}`:v.cook?'Recipe book':v.chest?'Open chest':v.kind==='drifter'?`Talk to ${v.name}`:`${v.kind==='captive'?'Free the':'Trade with'} ${v.kind==='captive'&&v.camp&&v.camp.villager?'captive villager':villagerName(v).toLowerCase()}`)+(document.body.classList.contains('touch')?'':' (F)'); }
+  if(v!==talkTarget){ talkTarget=v; tb.hidden=!v; $('#toast').classList.toggle('talking',!!v); if(v) tb.textContent=(v===GIVE_T?'Give item':v===PORTAL_T?'Use portal':v.chest&&chestReq(v.x,v.y)?'Sealed: '+chestReq(v.x,v.y).toLowerCase():v.bed?'Sleep in bed':v===OP_OFF?`Step off the ${player.operating.name.toLowerCase()}`:v.machine?`Operate the ${v.machine.name.toLowerCase()}`:v.tame?`Tame the ${v.tame.atype}`:v.cook?'Recipe book':v.chest?'Open chest':v.kind==='drifter'?`Talk to ${v.name}`:(v.kind==='captive'?`Free the ${v.camp&&v.camp.villager?'captive villager':villagerName(v).toLowerCase()}`:`Talk to ${v.name||villagerName(v).toLowerCase()}`))+(document.body.classList.contains('touch')?'':' (F)'); }
 }
 // bag
 let pickSlot=null, trashArm=false, craftQuery='', craftNow=false, craftShow='all';
@@ -5446,7 +5448,7 @@ $('#shopList').addEventListener('click',ev=>{ const tr=ev.target.closest('[data-
     if(bt.dataset.petup){ buyPetUp(bt.dataset.petup); renderShop(); return; }
     if(bt.dataset.whistle){ if(!free()){ if(player.coins<80) return; player.coins-=80; } obtain(I.WHISTLE,1); renderShop(); return; }
     if(bt.dataset.recruit){ const k=bt.dataset.recruit, c=CLASSES[k]; if(!free()){ if(player.coins<c.hire) return; player.coins-=c.hire; } const e=makeHuman(player.team,k,(home.castleCx+((Math.random()*10)|0)-5)*T,home.gy*T-29,'guard',home); ents.push(e); const sl=freeSlot(); if(sl>=0) putInSlot(e,sl); toast(`${e.name} the ${c.name.toLowerCase()} joins your army`,2); renderShop(); return; } } const up=ev.target.closest('[data-up]'); if(up){ buyArmyUp(up.dataset.up); renderShop(); return; } const b=ev.target.closest('button'); if(!b||b.disabled||!shopV) return;
-  if(b.dataset.buy!==undefined){ const [id,n,price0]=SHOPS[shopV.role].stock[+b.dataset.buy]; const price=ITEMS[id].kind==='heart'?heartPrice(id):price0; const bar=shopV.role==='smith'?BAR_OF(ITEMS[id]):0; if(bar&&!free()&&countItem(bar)<1) return; if((!free()&&player.coins<price)||!roomFor(id,n)||(isUpgradeItem(id)&&ownedTier(id)>=tierOf(id))) return; if(!free()){ player.coins-=price; if(bar) takeItem(bar,1); } obtain(id,n); if(ITEMS[id].kind==='heart'){ player.heartsBought=player.heartsBought||{}; player.heartsBought[id]=(player.heartsBought[id]||0)+1; }
+  if(b.dataset.buy!==undefined){ const [id,n,price0]=SHOPS[shopV.role].stock[+b.dataset.buy]; const price=ITEMS[id].kind==='heart'?heartPrice(id):price0; const bar=shopV.role==='smith'?BAR_OF(ITEMS[id]):0; if(bar&&!free()&&countItem(bar)<1) return; if((!free()&&player.coins<price)||!roomFor(id,n)||(isUpgradeItem(id)&&ownedTier(id)>=tierOf(id))) return; if(!free()){ player.coins-=price; if(bar) takeItem(bar,1); } obtain(id,n); toast(`Bought ${ITEMS[id].name}${n>1?' ×'+n:''}${free()?'':` for ${price} coins`}`,1.8); if(ITEMS[id].kind==='heart'){ player.heartsBought=player.heartsBought||{}; player.heartsBought[id]=(player.heartsBought[id]||0)+1; }
     if(shopV.role==='fisher'&&shopV.team==='w'&&home.claimed&&!shopV.joined){ const f=shopV; f.joined=true; setTimeout(()=>{ const h=home.houses.find(h=>!h.role)||newHomeHouse(); h.role='fisher'; const v=makeVillager(player.team,h); v.homeHouse=h; v.name=f.name; ents.push(v); f.dead=true; closeShop(); toast(`${f.name||'The fisher'} likes doing business with you and moves to your village`,4); },50); } }
   else if(b.dataset.sell){ const id=+b.dataset.sell, n=Math.min(+b.dataset.n,countItem(id)); if(n<=0) return; takeItem(id,n); player.coins+=n*sellPrice(id); }
   renderShop(); });
@@ -17202,6 +17204,23 @@ function drawPickTier(){ const p=player; if(!p||!p.aimTile||!p.aimTile.tier||sta
   ctx.fillStyle='rgba(20,10,10,0.82)'; ctx.fillRect(X-w/2,Y-8,w,11); ctx.strokeStyle='#e05050'; ctx.lineWidth=1; ctx.strokeRect(X-w/2+0.5,Y-7.5,w-1,10);
   ctx.fillStyle='#ffd0c0'; ctx.fillText(txt,X,Y); ctx.restore(); }
 { const _dl=drawLighting; drawLighting=function(...a){ const r=_dl(...a); try{ drawPickTier(); }catch(e){} return r; }; }
+// ===== Beta 0.9.163: fixes from Kayla's playtest (Kinard, 2026-10-29) =====
+// A ruined village kept no way in: a castle door was dropped where the ruin was heavy (its doorway stayed stone), and shoreUp
+// walled up every empty house doorway, so reaching the Quartermaster meant digging. Every ground-level doorway of a ruined
+// castle (L, L+5, R-5, R) and house (both sides) now holds a whole door; unclaimed villages in saved worlds get them once.
+function ruinDoorCols(ccx,hx0){ const xs=[ccx-17,ccx-12,ccx+11,ccx+16]; for(let k=0;k<3;k++) xs.push(hx0+k*13,hx0+k*13+8); return xs; }
+function ruinDoors(ccx,hx0,gy,put){ put=put||wset; for(const x of ruinDoorCols(ccx,hx0)){ if(x<1||x>=W-1) continue; put(x,gy-2,B.DOOR_T); put(x,gy-1,B.DOOR); } }
+{ const _rh=ruinHome; ruinHome=function(ccx,hx0,gy,...a){ const r=_rh(ccx,hx0,gy,...a); try{ ruinDoors(ccx,hx0,gy); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.ruinDoorV&&!isGuest()&&home.castleCx!=null&&home.hx0!=null){ home.ruinDoorV=1;
+      if(!home.claimed&&!home.fixup) facRun(()=>ruinDoors(home.castleCx,home.hx0,home.gy,(x,y,id)=>{ if(tileAt(x,y)!==id) setTile(x,y,id); })); } }catch(e){ console.warn(e); } return r; }; }
+
+// The Talk button only showed for people, chests and stations, so inside a tower on a phone there was no way to reach
+// "Place soldiers here". Standing inside a tower or keep with nothing else to talk to now shows that button.
+const POSTS_T={posts:true};
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ if(state==='play'&&!talkTarget&&player&&!player.dead&&postsHere()){ talkTarget=POSTS_T; const tb=$('#btnTalk'); tb.hidden=false; $('#toast').classList.add('talking'); tb.textContent='Place soldiers here'+(document.body.classList.contains('touch')?'':' (F)'); } }catch(e){} return r; }; }
+
+// Buying and crafting said nothing, so a tap that seemed to do nothing got pressed again (Kayla bought three of one thing).
+{ const _co=craftOnce; craftOnce=function(rc,...a){ const r=_co(rc,...a); try{ if(r&&rc&&ITEMS[rc.out]){ sfx('coin'); toast(`Crafted ${ITEMS[rc.out].name}${rc.n>1?' ×'+rc.n:''}`,1.6); } }catch(e){} return r; }; }
 // ===== Beta 0.9.139: items renamed after the trademark review, with looks of their own (Kinard, 2026-10-19) =====
 // Names that matched another game's items word for word are gone: Life/Mana crystal -> Heart/Spirit gem (cut gems, and gem
 // clusters in the world), Tackle box -> Bait pouch, Angler's earring -> Fisher's ring, Sprinter's anklet -> Fleetfoot sash,
@@ -17408,6 +17427,10 @@ function tutMinerDemo(){ if(HT().demo) return; const k=home.minerChest, c=k&&che
 function tutTowerSt(){ return myStructures.find(s=>POST_ASK_KINDS.has(s.kind)&&s.posts&&s.posts.length); }
 // whatever the chest step missed, the tower step hands over (older tutorials, a skipped chest)
 function tutTowerKit(){ const bp=BLUEPRINTS.find(b=>b.id==='wall'); if(!bp) return; let gave=false; for(const [id,n] of bp.cost){ const have=countNeed(id); if(have<n){ give(id,n-have); gave=true; } } if(gave) invDirty=true; }
+// 0.9.163 (Kayla): a step that says "select X in the hotbar" found X in the bag when the hotbar was full; X is moved into the hotbar
+const TUT_HOLD={ place:()=>B.STONE, placebench:()=>B.WORKBENCH, torch:()=>B.TORCH, eat:()=>I.APPLE, till:()=>{ const s=player.inv.find(s=>s&&ITEMS[s.id]&&ITEMS[s.id].kind==='hoe'); return s&&s.id; }, plant:()=>I.CARROT_SEEDS, tame:()=>I.CARROT };
+function tutToHotbar(id){ if(!id||!player) return; const inv=player.inv; let i=inv.findIndex(s=>s&&s.id===id); if(i<0||i<9) return;
+  let j=-1; for(let k=0;k<9;k++) if(!inv[k]){ j=k; break; } if(j<0) j=8; const t=inv[j]; inv[j]=inv[i]; inv[i]=t; invDirty=true; }
 function tutGobsLeft(){ return ents.filter(e=>e.tutGob&&!e.dead).length; }
 // the steps: pc and ph are the two wordings, at() the arrow's cell, enter() runs when the step starts, check() says when it is done
 const TUT_STEPS=[
@@ -17417,7 +17440,7 @@ const TUT_STEPS=[
     at:()=>[HT().cx+8,HT().G-3], check:()=>{ const px=Math.floor(cxOf(player)/T); return player.grounded&&px>=HT().cx+7&&px<=HT().cx+9&&player.y+player.h<=(HT().G-2)*T+1; } },
   { id:'castle', pc:()=>`Walk left to the ruined castle and talk to the Quartermaster (${tutKey('use')}). Choose Fix up the castle: every new world starts with a village like this to rebuild.`, ph:()=>'Walk left to the ruined castle and talk to the Quartermaster (tap him, or the Talk button). Choose Fix up the castle: every new world starts with a village like this to rebuild.',
     at:()=>{ const q=ents.find(e=>e.kind==='villager'&&e.role==='quarter'&&!e.dead); return q?[Math.floor(cxOf(q)/T),Math.floor(q.y/T)-1]:[home.castleCx,HT().G-3]; }, check:()=>!!home.fixup||!!home.claimed },
-  { id:'talk', pc:()=>`While the Quartermaster rebuilds, talk to Elder Rowan in the first village house: stand by her and press ${tutKey('use')}. She has a job for you.`, ph:()=>'While the Quartermaster rebuilds, talk to Elder Rowan in the first village house: stand by her and tap her, or tap the Talk button. She has a job for you.',
+  { id:'talk', pc:()=>`While the Quartermaster rebuilds, talk to Elder Rowan in the village (follow the arrow): stand by her and press ${tutKey('use')}. She has a job for you.`, ph:()=>'While the Quartermaster rebuilds, talk to Elder Rowan in the village (follow the arrow): stand by her and tap her, or tap the Talk button. She has a job for you.',
     at:()=>{ const v=ents.find(e=>e.tut&&!e.dead); return v?[Math.floor(cxOf(v)/T),Math.floor(v.y/T)-1]:[home.hx0+4,HT().G-3]; }, check:()=>!!HT().talked },
   { id:'cave', pc:()=>'While the village is rebuilt, do Elder Rowan\'s job: go to the little cave in the hill on the right, walk in and go down to the chest at the bottom. Real caves go much deeper, with ore, chests and monsters.', ph:()=>'While the village is rebuilt, do Elder Rowan\'s job: go to the little cave in the hill on the right, walk in and go down to the chest at the bottom. Real caves go much deeper, with ore, chests and monsters.',
     at:()=>HT().v>=2?[HT().cx+39,HT().G-1]:null, check:()=>{ const H=HT(); if(H.v<2) return true; const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); return px>=H.cx+24&&px<=H.cx+34&&py>=H.G+3&&py<=H.G+7; } },
@@ -17435,7 +17458,7 @@ const TUT_STEPS=[
     at:()=>tutEntAt(tutForeman()), check:()=>!tutForeman()||(!!HT().foremanSeen&&state==='play') },
   { id:'hutchest', enter:()=>tutMinerDemo(), pc:()=>`Your miner brought up what he dug and put it in the hut chest. Open that chest (${tutKey('use')}) to see it. Miners fill it by themselves every day; the foreman's window has an Open button for it too.`, ph:()=>'Your miner brought up what he dug and put it in the hut chest. Open that chest (tap it, or the Talk button) to see it. Miners fill it by themselves every day; the foreman\'s window has an Open button for it too.',
     at:()=>tutHutChest(), check:()=>!tutHutChest()||!!HT().hutSeen },
-  { id:'chest', pc:()=>`Open the chest between the first two village houses: stand next to it and press ${tutKey('use')}. Take everything: iron bars and sticks for tools, and stone, a door and torches for a tower later.`, ph:()=>'Open the chest between the first two village houses: stand next to it and tap it, or tap the Talk button. Take everything: iron bars and sticks for tools, and stone, a door and torches for a tower later.',
+  { id:'chest', pc:()=>`Open the chest in the village (follow the arrow): stand next to it and press ${tutKey('use')}. Take everything: iron bars and sticks for tools, and stone, a door and torches for a tower later.`, ph:()=>'Open the chest in the village (follow the arrow): stand next to it and tap it, or tap the Talk button. Take everything: iron bars and sticks for tools, and stone, a door and torches for a tower later.',
     at:()=>[home.hx0+10,HT().G-2], check:()=>countItem(I.IRON_BAR)>=10&&countItem(480)>=2&&countItem(B.DOOR)>=1 },
   { id:'place', pc:()=>'Build: walk to the 3 glowing squares just right of where you started, select the stone in the hotbar and right-click each square.', ph:()=>'Build: walk to the 3 glowing squares just right of where you started, tap the stone in the hotbar, then tap each square.',
     at:()=>tutPlaceLeft()[0]||null, check:()=>tutPlaceLeft().length===0 },
@@ -17561,6 +17584,14 @@ body.touch #tutTab{ top:calc(var(--st) + 168px); left:calc(env(safe-area-inset-l
   for(const el of [bar,grip]){ el.addEventListener('pointermove',move); el.addEventListener('pointerup',end); el.addEventListener('pointercancel',end); }
   addEventListener('resize',()=>{ try{ if(TUT.win) tutWinSet({}); }catch(e){} }); }
 const TUT_MIN_W=170, TUT_MIN_H=90;
+// 0.9.163 (Kayla): on a phone held sideways the card sat over the move stick. It moves right of the stick when they would overlap
+function tutAvoidSticks(){ const d=$('#tutCard'); if(!d||d.hidden||!tutPhone()) return; const r=d.getBoundingClientRect();
+  for(const id of ['stick_l','stick_r']){ const st=document.getElementById(id); if(!st||st.offsetParent===null) continue; const k=st.getBoundingClientRect(); if(!k.width) continue;
+    const over=r.left<k.right&&r.right>k.left&&r.top<k.bottom&&r.bottom>k.top; if(!over) continue;
+    const roomR=innerWidth-k.right-8, roomL=k.left-8;
+    if(k.left<innerWidth/2&&roomR>=TUT_MIN_W){ d.style.left=(k.right+6)+'px'; } else if(roomL>=TUT_MIN_W){ d.style.left=Math.max(4,k.left-6-r.width)+'px'; }
+    else { d.style.maxHeight=Math.max(TUT_MIN_H,k.top-r.top-6)+'px'; } } }
+setInterval(()=>{ try{ tutAvoidSticks(); }catch(e){} },400);
 function tutWinSet(p){ const d=$('#tutCard'); const r=d.getBoundingClientRect(); const w=TUT.win||(TUT.win={x:r.left,y:r.top,w:r.width,h:r.height}); Object.assign(w,p);
   w.w=Math.max(TUT_MIN_W,Math.min(innerWidth-16,w.w)); w.h=Math.max(TUT_MIN_H,Math.min(innerHeight-16,w.h)); w.x=Math.max(0,Math.min(innerWidth-w.w,w.x)); w.y=Math.max(0,Math.min(innerHeight-w.h,w.y));
   d.style.left=w.x+'px'; d.style.top=w.y+'px'; d.style.width=w.w+'px'; d.style.height=w.h+'px'; d.classList.add('sized'); const tab=$('#tutTab'); tab.style.left=w.x+'px'; tab.style.top=w.y+'px'; }
@@ -17585,7 +17616,7 @@ function tutMigrate(){ const H=HT(); const sv=H.sv||(H.v||1); if(sv>=6) return; 
 function tutEnter(){ try{ tutMigrate(); }catch(e){} try{ facRun(()=>fixStations()); }catch(e){ console.warn(e); } TUT.hidden=false; TUT.t=0; rules.wx='off'; const st=TUT_STEPS[HT().step]; if(st&&st.enter&&!HT().entered) { try{ st.enter(); }catch(e){} HT().entered=true; } tutCard(); }
 function tutAdvance(skipped){ const H=HT(); if(H.step>=TUT_STEPS.length-1) return; H.step++; H.entered=true; const st=TUT_STEPS[H.step]; try{ if(st.enter) st.enter(); }catch(e){ console.warn(e); }
   if(!skipped){ sfx('coin'); toast(TUT.min?`Done! Step ${H.step+1}: ${(tutPhone()?st.ph:st.pc)()}`:'Done! Next step.',TUT.min?5:1.5); } tutCard(); try{ saveLocal(); }catch(e){} }   // folded away, the next task comes as a toast
-function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); try{ tutWildKeep(); tutBorder(); if(TUT_STEPS[H.step]&&TUT_STEPS[H.step].id==='miners') tutWanderers(); }catch(e){} const st=TUT_STEPS[H.step]; if(!st||st.final) return;
+function tutTick(dt){ if(!tutOn()||state!=='play') return; TUT.t+=dt; if(TUT.t<TUT_EVERY) return; TUT.t=0; const H=HT(); try{ tutWildKeep(); tutBorder(); { const hs=TUT_STEPS[H.step], hf=hs&&TUT_HOLD[hs.id]; if(hf) tutToHotbar(hf()); } if(TUT_STEPS[H.step]&&TUT_STEPS[H.step].id==='miners') tutWanderers(); }catch(e){} const st=TUT_STEPS[H.step]; if(!st||st.final) return;
   let ok=false; try{ ok=!!st.check(); }catch(e){} if(ok) tutAdvance(false); else if(st.id==='rebuild'&&!TUT.min&&$('#tutText').textContent!==tutRebuildText()) $('#tutText').textContent=tutRebuildText(); }
 { const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ tutTick(dt); }catch(e){} return r; }; }
 function drawTutArrow(){ if(!tutOn()||state!=='play'||TUT.hidden) return; const st=TUT_STEPS[HT().step]; if(st&&st.id==='place') drawTutSpots(); if(!st||!st.at) return; const at=st.at(); if(!at) return; const [tx,ty]=at, t=performance.now()/1000, X=tx*T+8, Y=ty*T+4+Math.sin(t*5)*3;
