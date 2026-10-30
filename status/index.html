@@ -22,7 +22,7 @@ const BAKED={
  "updated": "2026-10-23",
  "current": {
   "state": "ok",
-  "text": "The game is up. Beta 0.9.163 is the newest version."
+  "text": "The game is up. Beta 0.9.164 is the newest version."
  },
  "incidents": [
   {
@@ -50,7 +50,8 @@ const BAKED={
    "versions": "Beta 0.9.145 to 0.9.155"
   }
  ]
-};
+}
+;
 const NOW={ ok:'Everything is working', warn:'Some players may have problems', down:'The game is down' }, TAG={ fixed:'Fixed', open:'Being fixed', watching:'Watching' };
 const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])).replace(/https?:\/\/\S+/g,u=>`<a href="${u}">${u}</a>`);
 function show(s){ document.getElementById('upd').textContent=s.updated; const c=s.current||{state:'ok'};
