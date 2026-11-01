@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1793526998"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1793574073"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.167</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.168</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.168</h3>
+    <p>Inside the Claude app on an iPhone, the sideways game reaches the bottom edge of the screen.</p>
     <h3>New in Beta 0.9.167</h3>
     <p>Playing sideways on a phone fills the whole screen, right down to the bottom edge.</p>
     <h3>New in Beta 0.9.166</h3>
@@ -871,7 +873,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.167</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.168</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1132,7 +1134,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.167</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.168</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1151,7 +1153,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.167', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.168', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -18192,7 +18194,10 @@ const realW=()=>RW.get.call(window);
 // stops short of the home-indicator strip, so the turned game ended above it. The full height is the larger of the
 // window and a 100lvh probe (the largest viewport), never more than the screen's own long side.
 const rotProbes=['top:0;height:100vh;height:100lvh','top:0;bottom:0'].map(css=>{ const d=document.createElement('div'); d.style.cssText='position:fixed;left:-9px;width:1px;visibility:hidden;pointer-events:none;'+css; document.documentElement.appendChild(d); return d; });   /* the largest viewport, and what a fixed full-page box fills (the page before 0.9.165) */
-function realH(){ const h=RH.get.call(window); let p=0; try{ for(const d of rotProbes) p=Math.max(p,d.offsetHeight||0); }catch(e){} const cap=Math.max(screen.width||0,screen.height||0)||h; return Math.round(Math.max(h,Math.min(p,cap))); }
+function realH(){ const h=RH.get.call(window); let p=0; try{ for(const d of rotProbes) p=Math.max(p,d.offsetHeight||0); }catch(e){} const cap=Math.max(screen.width||0,screen.height||0)||h; let best=Math.max(h,Math.min(p,cap));
+  /* 0.9.168: the Claude app on iPhone reports every height about 65 points short of the screen (the strip at the bottom stays empty), so a small gap to the screen's own long side is filled too */
+  if(ROT_FILL&&cap>best&&cap-best<=ROT_FILL_MAX&&realW()<cap) best=cap; return Math.round(best); }
+var ROT_FILL=true; const ROT_FILL_MAX=160;
 function rotWanted(){ try{ return !!(settings&&settings.rotateView&&!settings.allowUpright&&!window.DA_DEMO&&turnIsPhone()&&realH()>realW()*TURN_RATIO); }catch(e){ return false; } }
 // screen point -> sideways layout point, and back
 const toLay=(sx,sy)=>[sy,realW()-sx], toScr=(lx,ly)=>[realW()-ly,lx];
