@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1793438294"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793438294"><link rel="manifest" href="manifest.webmanifest?v=1793438294"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1793526128"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793526128"><link rel="manifest" href="manifest.webmanifest?v=1793526128"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.165</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.166</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.166</h3>
+    <p>Wings and the Scaleborn rise from a hover and slip through one-block holes. The Beastmaster's bear is twice a bear, fits the goblin tents, rears up to swipe and charges; the Beastmaster himself wears a feathered headdress, has his name over him and his health bar shows when you come near (the test world can call them both). A thrown sword never gets left behind. The desert has small pyramids, scarabs on the sand and scorpions in the caves. You can see down into the magma realm; its rock waits until the Magma Wizard falls. Lava is a smooth, glowing pool that settles flat and burns plants, and magma realm creatures do not mind it. Vorthax's lair is a great round hall, and soldiers you place for a boss wait for your first strike. The sky castle has thick walls, a prison, a fuller armory, the throne in the far corner and a treasury behind it; both realm throne rooms have ledges for your soldiers. Enemy villages sit on level ground, are lit inside, and their buildings never float or sink. The warship is three decks tall with soldiers at the windows, the canoe carries 3 soldiers, five new boats join the fleet (the fast Skiff and Cutter, the well-rounded Sloop, the heavy Galleon and Ironclad), crews stay aboard and fight, and the Kraken is twice as big and goes for a sailing boat. Beat the ghoul of a burned village and a restorer rebuilds it, with a portal and three villagers. On a computer, several windows can be open at once and each resizes from any edge. Your home posts have Quick fill, posted guards keep to their platforms, Investigate throne goes away when you step off, creative mode earns no achievements, and your soldiers stand still around you when you stop.</p>
     <h3>New in Beta 0.9.165</h3>
     <p>Play sideways on phones and apps whose screen does not turn: the card that asks you to turn the phone has a Play sideways button, and choosing it snaps the whole game to landscape at once. Hold the phone with its top to the left; taps, the sticks and every button line up with the turned picture. If the screen does turn by itself, the game simply follows it. On phones the game snaps sideways by default and stays that way, with a short card each time it snaps showing how to hold the phone. Settings &gt; Controls &gt; Upright phone has Play sideways, Turn sideways (asks you to turn the phone) and Allow upright.</p>
     <h3>New in Beta 0.9.164</h3>
@@ -867,7 +869,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.165</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.166</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1128,7 +1130,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.165</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.166</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1147,7 +1149,7 @@ const T = 16;
 const GRAV = 1500, JUMP = 470, MAXFALL = 720, REACH = 5.5 * T;
 const DAY_LEN = 840, NIGHT_AT = 5/7, PARTY_MAX = 20; // 10 minutes of day, 4 of night (Beta 0.9.53 doubled both)
 const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
-const GAME_VERSION='Beta 0.9.165', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.166', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -1581,7 +1583,7 @@ ITEMS[LINES.armor[LINES.armor.length-1]].desc='Top armor. Makes you immune to la
 // seats include you. "low" boats sit in the water, so sharks can still reach you.
 const BOATS = {
   [I.RAFT]:    { seats:1,  speed:140, low:true, len:24, desc:'Just you. Sits low, so sharks can still bite.' },
-  [I.CANOE]:   { seats:1,  speed:250, len:28, desc:'Just you. The fastest boat, and safe from sharks.' },
+  [I.CANOE]:   { seats:4,  speed:250, len:32, desc:'You and 3 soldiers. The fastest boat, and safe from sharks.' },   // 0.9.166: 3 soldiers (was just you)
   [I.ROWBOAT]: { seats:5,  speed:190, len:44, desc:'You and 4 soldiers.' },
   [I.LONGSHIP]:{ seats:12, speed:175, len:92, machines:1, desc:'You, 11 soldiers and 1 war machine.' },
   [I.WARSHIP]: { seats:21, speed:165, len:150, machines:3, desc:'You, 20 soldiers and 3 war machines.' },
@@ -3049,7 +3051,7 @@ function updatePlayer(dt){
         if(p.mine.p>=1){ const v=bg[aty*W+atx]; mpRun(()=>bset(atx,aty,0)); if(explored[aty*W+atx]) mapPixel(atx,aty); const wid=Object.keys(WALLS).find(k=>WALLS[k]===v); if(wid) give(+wid,1); p.mine={x:-1,y:-1,p:0}; } }
       else if(def.kind==='hammer'){ }
       else if(inReach&&isChestId(tid)&&chestHasStuff(atx,aty)){ if(p.useCd<=0){ toast('Empty the chest before breaking it'); p.useCd=1.5; } }
-      else if(inReach&&tid&&aty>=magmaY&&cyOf(p)<magmaY*T&&rules.mode!=='creative'){ }
+      else if(inReach&&tid&&aty>=magmaY&&cyOf(p)<magmaY*T&&rules.mode!=='creative'&&!magmaOpenAbove()){ if(p.useCd<=0){ toast('The magma realm is sealed: beat the Magma Wizard in his fortress first.',3); p.useCd=1.5; } }
       else if(inReach&&tid&&aty>=0){ const b=BLOCKS[tid];
         if(b.hard===Infinity){ }
         else if(def.kind==='pick'&&b.minPow>def.pow){ }
@@ -3125,7 +3127,7 @@ function aimPoint(def){ if(def&&(def.kind==='axe'||def.kind==='hoe')) def={...de
   return {x:direct.x,y:direct.y,tx:dtx,ty:dty}; }
 function headWet(e){ return !!e&&tileAt(Math.floor(cxOf(e)/T),Math.floor((e.y+3)/T))===B.WATER; }
 const TORCH_REPL=id=>!isSapling(id)&&(PLANTS.has(id)||GRASSY.has(id)||CROPS_STAGE[id]!=null)&&!LOG_IDS.has(id)&&!LEAF_IDS.has(id);
-function placeOK(x,y,id){ if(x<0||x>=W||y<0||y>=H) return false; if(y>=magmaY&&cyOf(player)<magmaY*T&&rules.mode!=='creative') return false; const cur=world[y*W+x]; if(ITEMS[id]&&ITEMS[id].kind==='wall') return !BLOCKS[cur].solid&&!bg[y*W+x];
+function placeOK(x,y,id){ if(x<0||x>=W||y<0||y>=H) return false; if(y>=magmaY&&cyOf(player)<magmaY*T&&rules.mode!=='creative'&&!magmaOpenAbove()) return false; const cur=world[y*W+x]; if(ITEMS[id]&&ITEMS[id].kind==='wall') return !BLOCKS[cur].solid&&!bg[y*W+x];
   const torchy=TORCH_REPL(cur)||cur===B.SNOW_LAYER||cur===B.MIST; if(cur!==0&&cur!==B.LEAVES&&cur!==B.WATER&&cur!==B.LAVA&&!torchy) return false; if((id===B.TORCH||id===B.BRIGHT_TORCH)&&(cur===B.WATER||cur===B.LAVA)) return false; if(y<=barrierY&&cyOf(player)>(barrierY+1)*T&&rules.mode!=='creative') return false;
   return [tileAt(x-1,y),tileAt(x+1,y),tileAt(x,y-1),tileAt(x,y+1)].some(t=>t!==0)||bg[y*W+x]!==0; } // lava holds a block up too, so you can build over it
 function chestHasStuff(x,y){ const c=chests[x+','+y]; return !!c&&(c.coins>0||c.items.some(Boolean)); }
@@ -3264,13 +3266,13 @@ function updateAI(e,dt){
   if(t&&((e.kind==='human'&&['g','b','r'].includes(e.team)&&player&&e.team!==player.team&&!e.worker)||(e.kind==='monster'&&!e.fly&&!e.bigBoss))&&Math.abs(cxOf(e)-cxOf(t))<40*T){ const hm=huntMove(e,t,dt); if(hm&&hm.idle){ mv=0; if(e.vy<-100) e.vy=0; } else if(hm){ mv=hm.mv; spd=e.speed; if(hm.jump&&e.grounded) e.vy=-JUMP; if(hm.drop&&e.grounded&&onPlatform(e)) e.dropping=true; if(mv) e.facing=mv; } }
   if(e.retreatT>0&&t){ mv=cxOf(e)<cxOf(t)?-1:1; spd=e.speed*0.9; }
   if(e.hitWall&&player&&e.team!==player.team&&e.kind==='human'){ const fx=Math.floor((cxOf(e)+(e.facing||1)*(e.w/2+4))/T), fy=Math.floor((e.y+e.h-2)/T); const id=tileAt(fx,fy); if(isClosedDoor(id)&&ownDoor(e,fx)) setDoor(fx,fy,true); }
-  if(e.hold&&!e.provoked){ mv=0; if(e.post){ const dx=e.post.x*T+8-cxOf(e); if(Math.abs(dx)>3) mv=Math.sign(dx); } }
+  if(e.hold&&(!e.provoked||e.post)){ mv=0; if(e.post){ const dx=e.post.x*T+8-cxOf(e); if(Math.abs(dx)>3) mv=Math.sign(dx); } }
   if(e.kbT<=0){ const target=mv*spd; const acc=1200*dt; e.vx=e.vx<target?Math.min(target,e.vx+acc):Math.max(target,e.vx-acc); }
   if(e.hitWall&&e.grounded&&mv) e.vy=-JUMP;
   if(e.inWater) e.vy=Math.max(e.vy-1000*dt,-150);
-  e.dropping=t?(t.y>e.y+T):false;
+  e.dropping=t&&!e.post?(t.y>e.y+T):false;   // 0.9.166: a guard at a post never drops through its platform
   physics(e,dt);
-  if(touchesTile(e,B.LAVA)){ e.hp-=30*dt; if(e.hp<=0) kill(e,null); }
+  if(touchesTile(e,B.LAVA)&&!lavaSafe(e)){ e.hp-=30*dt; if(e.hp<=0) kill(e,null); }
   if(e.kind==='monster'&&!e.camp&&!e.under&&!isNight()&&(e.mtype==='zombie'||e.mtype==='skeleton')){ const tx=Math.floor(cxOf(e)/T); if(Math.floor(e.y/T)<skyTop[tx]){ e.hp-=6*dt; if(Math.random()<0.1) puff(cxOf(e),e.y,'#ff9f43',1,30); if(e.hp<=0) kill(e,null); } }
 }
 function waterBox(x,y,e){ const pts=[[x+2,y+2],[x+e.w-2,y+2],[x+2,y+e.h-2],[x+e.w-2,y+e.h-2]];
@@ -3845,14 +3847,14 @@ const WING_MAX=[10,15,20,25,30,Infinity];
 function wingMax(p){ return WING_MAX[p.wingLvl||0]; }
 function wingStep(p,dt){ const drg=p.cls==='dragon'&&p.flyOn!==false&&!p.riding;   /* 0.9.164: the Scaleborn flies like wings: hold jump in the air to beat upward, let go to fall */
   if(drg&&!p.fly){ p.wingUp=false; if(p.grounded||p.inWater){ p.flapping=false; return; }
-    if(input.jump){ p.vy=Math.max(p.vy-1500*dt,-250); p.flapping=true; p.wingUp=true; p.peakY=p.y; }
+    if(input.jump){ p.vy=Math.max(p.vy-(GRAV+1100)*dt,-250); p.flapping=true; p.wingUp=true; p.peakY=p.y; }
     else if(input.down){ p.vy=Math.min(p.vy+600*dt,320); p.flapping=false; }
     else p.flapping=false;
     if(p.peakY!=null) p.peakY=Math.max(p.peakY,p.y-10*T);   /* a dragon always lands on its feet */
     return; }
   if(!p.fx.wings){ p.flapping=false; return; } const mx=wingMax(p); if(p.wingT==null||p.wingT>mx) p.wingT=Math.min(mx,1e9);
   if(p.grounded||p.inWater){ p.wingT=Math.min(mx,p.wingT+dt*6); p.flapping=false; return; }
-  if(input.jump&&p.wingT>0&&!p.fly){ p.vy=Math.max(p.vy-1500*dt,-220); if(mx!==Infinity) p.wingT-=dt; p.flapping=true; p.peakY=p.y; }
+  if(input.jump&&p.wingT>0&&!p.fly){ p.vy=Math.max(p.vy-(GRAV+1100)*dt,-220); if(mx!==Infinity) p.wingT-=dt; p.flapping=true; p.peakY=p.y; }
   else if(input.down&&p.flapping){ p.vy=Math.min(p.vy,160); p.peakY=p.y; }
   else if(p.wingT>0&&!input.jump&&p.vy>0&&p.flapping){ p.vy=Math.min(p.vy,70); p.peakY=p.y; if(mx!==Infinity) p.wingT-=dt*0.5; }
   else p.flapping=false; }
@@ -4021,15 +4023,15 @@ function krakenTick(dt){ if(!player||krakenSlain||!krakenX) return; const d=Math
   if(k&&d>150){ krakenHp=k.hp; k.dead=true; k.silent=true; } inkT=Math.max(0,inkT-dt); }
 let krakenHp=0;
 function krakenAct(k,dt){ const p=player; k.anim+=dt; k.hurtT=Math.max(0,k.hurtT-dt);
-  if(k.diveT>0){ k.diveT-=dt; k.peaceful=true; if(k.diveT<=0){ k.peaceful=false; k.x=clamp(cxOf(p)-40,(krakenX-30)*T,(krakenX+30)*T); puff(k.x+40,seaY*T,'#bfe6ff',24,160); if(Math.abs(cxOf(p)-(k.x+40))<5*T&&cyOf(p)<(seaY+8)*T){ damage(p,45,k,300); if(p.riding){ disembark(); p.riding=false; toast('The Kraken bursts up and overturns your boat!',2.5); } } } return; }
-  const near=Math.abs(cxOf(p)-(k.x+40))<40*T, deep=cyOf(p)>(seaY+6)*T; const tx=near?clamp(cxOf(p)-40,(krakenX-60)*T,(krakenX+60)*T):(krakenX+Math.sin(k.anim*0.15)*50)*T;
+  if(k.diveT>0){ k.diveT-=dt; k.peaceful=true; if(k.diveT<=0){ k.peaceful=false; k.x=clamp(cxOf(p)-k.w/2,(krakenX-30)*T,(krakenX+30)*T); puff(k.x+k.w/2,seaY*T,'#bfe6ff',24,160); if(Math.abs(cxOf(p)-(k.x+k.w/2))<5*T&&cyOf(p)<(seaY+8)*T){ damage(p,45,k,300); if(p.riding){ disembark(); p.riding=false; toast('The Kraken bursts up and overturns your boat!',2.5); } } } return; }
+  const near=Math.abs(cxOf(p)-(k.x+k.w/2))<40*T, deep=cyOf(p)>(seaY+6)*T; const tx=near?clamp(cxOf(p)-k.w/2,(krakenX-60)*T,(krakenX+60)*T):(krakenX+Math.sin(k.anim*0.15)*50)*T;
   const ty=near?(deep?clamp(cyOf(p)-30,(seaY+2)*T,(seaY+70)*T):(seaY-1)*T):(seaY+12+Math.sin(k.anim*0.23)*9)*T; k.x+=(tx-k.x)*Math.min(1,dt*0.6); k.y+=(ty-k.y)*Math.min(1,dt*0.7)+Math.sin(k.anim*1.5)*0.2;
   if(k.slam){ k.slam.t-=dt; if(k.slam.t<=0){ const sx=k.slam.x; for(const o of [p,...ents.filter(e=>!e.dead&&(e.kind==='human'||e.tamed)&&e.team===p.team)]){ if(Math.abs(cxOf(o)-sx)<2.5*T&&Math.abs(cyOf(o)-(k.slam.y||seaY*T))<3*T) damage(o,38,k,260); }
       if(p.riding&&Math.abs(cxOf(p)-sx)<3*T){ disembark(); p.riding=false; toast('A tentacle smashes your boat!',2); } puff(sx,seaY*T,'#bfe6ff',18,160); if(typeof sfx==='function') sfx('boom',sx,seaY*T); k.slam=null; } }
-  k.patT-=dt*(k.phase2?1.8:1); if(k.patT>0||Math.abs(cxOf(p)-(k.x+40))>40*T) return; const pats=['slam','slam','ink','slam','dive']; const pat=pats[k.pat++%pats.length];
+  k.patT-=dt*(k.phase2?1.8:1); if(k.patT>0||Math.abs(cxOf(p)-(k.x+k.w/2))>40*T) return; const pats=['slam','slam','ink','slam','dive']; const pat=pats[k.pat++%pats.length];
   if(pat==='slam'){ k.slam={x:cxOf(p),y:cyOf(p),t:0.9}; k.patT=1.8; }
   else if(pat==='ink'){ inkT=4; p.slowT=3; toast('Ink clouds the water!',1.5); k.patT=2.2; }
-  else { k.diveT=2.5; k.patT=3.5; puff(k.x+40,seaY*T,'#bfe6ff',20,140); } }
+  else { k.diveT=2.5; k.patT=3.5; puff(k.x+k.w/2,seaY*T,'#bfe6ff',20,140); } }
 
 // ================= levels, XP, skill tree =================
 const ITEM_LVL={ boots:[0,3,8], jump:[0,5], dive:[0,4,10], fall:[0,6], light:[0,3,9], ring:[0,4,11], wings:[0,15], amulet:[0,20] };
@@ -4694,7 +4696,7 @@ function render(){
     else if(id===B.FENCE){}
     else if(isChestId(id)&&!isSolid(x+1,y)&&!isChestId(tileAt(x+1,y))){ lateQ.push([wideChest(id),X,Y-4]); }
     else if(isChestId(id)&&!isSolid(x-1,y)&&!isChestId(tileAt(x-1,y))){ lateQ.push([wideChest(id),X-16,Y-4]); }
-    else if(id===B.LAVA){ const lv=liq[row+x]||8, full=lv>=8||world[row+x-W]===B.LAVA, h=full?T:Math.max(2,lv*2); ctx.drawImage(TEX[id],0,T-h,T,h,X,Y+T-h,T,h); }
+    else if(id===B.LAVA){ const lv=liq[row+x]||8, full=lv>=8||world[row+x-W]===B.LAVA, h=full?T:Math.max(2,lv*2); drawLavaCell(x,y,X,Y,h,world[row+x-W]!==B.LAVA); }
     else if(TROPHY_OF[id]&&TROPHY_ART[id]){ lateQ.push([TROPHY_ART[id],X,Y-16]); } // 2x2: drawn after the blocks so back walls beside it can't cover it
     else if(LOG_IDS.has(id)){ ctx.drawImage(TEX[id],X,Y); const lc=logCoverTex(x,y); if(lc) ctx.drawImage(lc,X,Y); } // drawn with the blocks, so you always walk in front of tree wood
     else if(id&&id!==B.WATER) ctx.drawImage(ORE_LOOK.has(id)?tileTex(x,y,id):TEX[id],X,Y);
@@ -5740,6 +5742,7 @@ addEventListener('keydown',e=>{
   if(document.activeElement&&document.activeElement.id==='craftSearch'){ if(e.key==='Enter'){ e.preventDefault(); document.activeElement.blur(); } else if(e.key==='Escape'){ document.activeElement.blur(); } e.stopPropagation(); return; }
   if(rebinding){ e.preventDefault(); e.stopPropagation(); if(e.code!=='Escape'){ for(const k in settings.keys) if(settings.keys[k]===e.code) settings.keys[k]=''; settings.keys[rebinding]=e.code; saveSettings(); } rebinding=null; renderSettings(); return; }
   const K=settings.keys;
+  if(typeof multiKey==='function'&&multiKey(e,K)) return;   // 0.9.166: several windows at once on a computer
   if(e.key==='Shift') input.sprint=true;
   if(typeof MENU_STATES!=='undefined'&&MENU_STATES.has(state)&&!(document.activeElement&&/INPUT|TEXTAREA/.test(document.activeElement.tagName))){ if(e.code==='KeyA'||e.code==='ArrowLeft') input.left=true; if(e.code==='KeyD'||e.code==='ArrowRight') input.right=true; if(e.code==='KeyW'||e.code==='Space'||e.code==='ArrowUp') input.jump=true; }
   if(state==='play'){
@@ -8336,7 +8339,7 @@ function stepLava2(budget){ if(!lavaAct.size) return; const list=[...lavaAct]; l
     // meeting water: the lava hardens
     if([i+W,i-1,i+1,i-W].some(j=>j>=0&&j<W*H&&world[j]===B.WATER)){ setTile(x,y,L>=4?B.OBSIDIAN:B.STONE); for(let k=0;k<4;k++) parts.push({x:x*T+8,y:y*T,vx:(Math.random()-.5)*30,vy:-40-Math.random()*40,life:0.8,col:'#e0e4ea',sz:2}); continue; }
     lavaBurn(x,y);
-    if(L<=1&&i-W>=0&&world[i-W]!==B.LAVA&&lavaSupported(i)&&Math.random()<0.02){ setLava(i,0); setTile(x,y,B.STONE); continue; } // a thin crust cools to stone
+    // (0.9.166: thin lava no longer cools into stone crusts by itself; they split pools and left steps. Only water hardens lava.)
     { const d=i+W, bd=world[d]; if(lavaOK(bd)||(bd===B.LAVA&&lavaLv(d)<8)){ const cur=lavaLv(d), mv=Math.min(L,8-cur); if(mv>0){ setLava(d,cur+mv); L-=mv; wakeLava(x,y+1); } } }
     if(L>0&&lavaSupported(i)) L=lavaLevelRow(i,x,y,L);
     else if(L>1){ for(const s of [-1,1]){ const X=x+s; if(X<0||X>=W) continue; const j=i+s, bj=world[j]; if(!(lavaOK(bj)||bj===B.LAVA)) continue; const lj=lavaLv(j); if(lj<L-1){ const mv=Math.max(1,Math.floor((L-lj)/2)); setLava(j,lj+mv); L-=mv; wakeLava(X,y); } } }
@@ -12032,7 +12035,7 @@ function flatUnderAll(){ if(!world||isGuest()) return 0; let n=0; for(const [x0,
 // ---- lava sets you alight and kills animals that wade in ----
 { const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player; if(p&&!p.dead&&touchesTile(p,B.LAVA)&&!((p.gear&&p.gear.ward)>0)){ if(!(p.burnT>0)) addFloat(cxOf(p),p.y-8,'on fire!','#ff7b1c'); p.burnT=Math.max(p.burnT||0,4); } }catch(e){} return r; }; }
 { const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ const r=_ua(e,dt,...a); try{ if(!e.dead&&touchesTile(e,B.LAVA)){ e.burnT=Math.max(e.burnT||0,4); e.hp-=Math.max(40,e.maxHp*0.6)*dt; e.hurtT=0.2; if(e.hp<=0) kill(e,null); } }catch(err){} return r; }; }
-{ const _ai=updateAI; updateAI=function(e,dt,...a){ const r=_ai(e,dt,...a); try{ if(!e.dead&&e.team!=='m'&&e.mtype!=='imp'&&touchesTile(e,B.LAVA)) e.burnT=Math.max(e.burnT||0,3); }catch(err){} return r; }; }
+{ const _ai=updateAI; updateAI=function(e,dt,...a){ const r=_ai(e,dt,...a); try{ if(!e.dead&&!lavaSafe(e)&&touchesTile(e,B.LAVA)) e.burnT=Math.max(e.burnT||0,3); }catch(err){} return r; }; }
 
 // ---- lava only underground, in puddles, pools and lakes of many sizes ----
 // Pools sit in rock at least 20 blocks under the surface (never on the surface): half are small puddles (2-4 across,
@@ -17877,7 +17880,7 @@ function testMaxGear(){ const lines=new Set(['pick','axe','hoe','hammer','rod'])
 { const _mt=makeTestWorld; makeTestWorld=function(...a){ const r=_mt(...a); try{ testMaxGear(); }catch(e){ console.warn(e); } return r; }; }
 
 // ---- the Beastmaster's bear: three times a bear's size, with its own health bar under the Beastmaster's ----
-const CHIEF_BEAR_SC=3;
+const CHIEF_BEAR_SC=2;   // 0.9.166: twice a bear (was 3), so he fits through the goblin tents
 function bigBear(e){ if(!e||!e.chiefPet||e.big3) return; const cx=cxOf(e), bot=e.y+e.h; e.w*=CHIEF_BEAR_SC; e.h*=CHIEF_BEAR_SC; e.x=cx-e.w/2; e.y=bot-e.h; e.big3=true; e.name=e.name||"Beastmaster's bear"; try{ if(collides(e)) unstick(e); }catch(err){} }
 { const _cb=chiefBearTick; chiefBearTick=function(...a){ const r=_cb(...a); try{ for(const e of ents) if(e.chiefPet&&!e.dead&&!e.big3) bigBear(e); }catch(err){} return r; }; }
 { const _da=drawAnimal; drawAnimal=function(e,...a){ if(!e||!e.big3) return _da(e,...a); const s={x:e.x,y:e.y,w:e.w,h:e.h}; const cx=cxOf(e), bot=e.y+e.h;
@@ -18253,6 +18256,530 @@ function turnHintHide(){ const d=$('#turnHint'); if(!d||d.hidden) return; clearT
 function turnHintShow(){ const d=$('#turnHint'); if(!d) return; d.classList.remove('fade'); d.hidden=false; clearTimeout(turnHintT); turnHintT=setTimeout(turnHintHide,3000); }
 { let was=false; const _ra=rotApply; rotApply=function(...a){ const r=_ra(...a); if(ROT.on&&!was) turnHintShow(); else if(!ROT.on&&was) turnHintHide(); was=ROT.on; return r; }; }
 setTimeout(()=>rotApply(),50);   /* the first snap shows the card too */
+// ===== Beta 0.9.166 (Kinard, 2026-11-01) =====
+// Wings and the Scaleborn through a one-block hole: the wing lift only matched gravity, so holding jump in a hover never
+// rose (12_war_machines.js wingStep now lifts with GRAV+1100). And flying up into a ceiling a few pixels off a one-block
+// hole slides you into it (HOLE_NUDGE pixels at most), the way Terraria steers you round a corner.
+const HOLE_NUDGE=7;
+function holeNudge(e,vy0){ if(!(vy0<0)||e.vy!==0) return; const x0=e.x; e.y-=2; const hit=collides(e); if(!hit){ e.y+=2; return; }
+  for(let d=1;d<=HOLE_NUDGE;d++) for(const s of [-1,1]){ e.x=x0+s*d; if(!collides(e)){ e.y+=2; e.vy=vy0; return; } }
+  e.x=x0; e.y+=2; }
+{ const _ph=physics; physics=function(e,dt,...a){ const vy0=e&&e.vy; const r=_ph(e,dt,...a); try{ if(e===player&&!e.grounded&&!e.riding) holeNudge(e,vy0); }catch(err){} return r; }; }
+
+// ---- the Beastmaster's bear: twice a bear, rears up to swipe, and charges ----
+// He is CHIEF_BEAR_SC (2) times a bear, about 2.75 blocks tall, so he walks into the goblin tents (3 blocks inside);
+// rearing up on his hind legs he stands 4 blocks high. Close in, he rears (BEAR_REAR s) and swipes a paw in front of
+// him; from BEAR_CHARGE_MIN to BEAR_CHARGE_MAX blocks away he digs in (BEAR_DIG s, dust) and charges at BEAR_CHARGE_SPD
+// until he hits someone (big knockback), a wall, or runs out of BEAR_CHARGE_T. Bears made 3x in 0.9.164 shrink once.
+const BEAR_REAR=0.45, BEAR_SWIPE_R=2.4, BEAR_SWIPE_CD=1.5, BEAR_CHARGE_MIN=5, BEAR_CHARGE_MAX=14, BEAR_DIG=0.6, BEAR_CHARGE_T=1.3, BEAR_CHARGE_SPD=330, BEAR_CHARGE_CD=6;
+function bearSize(e){ if(!e.big3) return; const want=ANIMALS.bear.w*CHIEF_BEAR_SC; if(Math.abs(e.w-want)<1) return; const cx=cxOf(e), bot=e.y+e.h; e.w=want; e.h=ANIMALS.bear.h*CHIEF_BEAR_SC; e.x=cx-e.w/2; e.y=bot-e.h; }
+function bearFoe(e){ const L=[]; if(player&&!player.dead) L.push(player); for(const o of ents) if(!o.dead&&o!==e&&(o.kind==='human'||o.tamed)&&player&&o.team===player.team) L.push(o);
+  let best=null, bd=BEAR_CHARGE_MAX*T; for(const o of L){ if(Math.abs(cyOf(o)-cyOf(e))>4*T) continue; const d=Math.abs(cxOf(o)-cxOf(e)); if(d<bd){ bd=d; best=o; } } return best; }
+function bearHit(e,o,amt,kb){ try{ damage(o,amt,e,kb); }catch(err){} try{ if(typeof sfx==='function') sfx('hit',cxOf(o),cyOf(o)); }catch(err){} }
+function bearAct(e,dt){ e.swCd=Math.max(0,(e.swCd||0)-dt); e.chCd=Math.max(0,(e.chCd==null?2:e.chCd)-dt);
+  if(e.bm==='rear'){ e.bmT-=dt; e.vx=0; physics(e,dt); if(e.bmT<=0&&!e.swung){ e.swung=true; e.swipeT=0.25; const R={x:e.facing>0?cxOf(e):cxOf(e)-BEAR_SWIPE_R*T,y:e.y-T,w:BEAR_SWIPE_R*T,h:e.h+T};
+      for(const o of ents) if(!o.dead&&o!==e&&o.team!==e.team&&(o.kind==='player'||o.kind==='human'||o.kind==='animal'&&o.tamed)&&overlap(R,o)) bearHit(e,o,Math.round((e.dmg||30)*1.3),260); }
+    if(e.bmT<=-0.35){ e.bm=null; e.swCd=BEAR_SWIPE_CD; } return true; }
+  if(e.bm==='dig'){ e.bmT-=dt; e.vx=0; physics(e,dt); if(Math.random()<0.5) parts.push({x:cxOf(e)-e.facing*e.w*0.3,y:e.y+e.h-2,vx:-e.facing*(40+Math.random()*60),vy:-30-Math.random()*40,life:0.5,col:'#8a6a44',sz:3});
+    if(e.bmT<=0){ e.bm='charge'; e.bmT=BEAR_CHARGE_T; e.hitSet=new Set(); } return true; }
+  if(e.bm==='charge'){ e.bmT-=dt; e.vx=e.facing*BEAR_CHARGE_SPD; physics(e,dt); if(Math.random()<0.6) parts.push({x:cxOf(e)-e.facing*e.w*0.5,y:e.y+e.h-2,vx:-e.facing*30,vy:-20,life:0.4,col:'#9a7a54',sz:3});
+    for(const o of ents) if(!o.dead&&o!==e&&o.team!==e.team&&!e.hitSet.has(o)&&(o.kind==='player'||o.kind==='human'||o.kind==='animal'&&o.tamed)&&overlap(e,o)){ e.hitSet.add(o); bearHit(e,o,Math.round((e.dmg||30)*1.6),520); }
+    if(e.bmT<=0||e.hitWall){ e.bm=null; e.vx=0; e.chCd=BEAR_CHARGE_CD; if(e.hitWall) puff(cxOf(e)+e.facing*e.w/2,cyOf(e),'#8a6a44',10,80); } return true; }
+  const f=bearFoe(e); if(!f) return false; const dx=cxOf(f)-cxOf(e), reach=Math.abs(dx)-(e.w+f.w)/2;
+  if(reach<BEAR_SWIPE_R*T*0.8&&e.swCd<=0){ e.facing=dx>0?1:-1; e.bm='rear'; e.bmT=BEAR_REAR; e.swung=false; return true; }
+  if(Math.abs(dx)>=BEAR_CHARGE_MIN*T&&Math.abs(dx)<=BEAR_CHARGE_MAX*T&&e.chCd<=0&&e.grounded){ e.facing=dx>0?1:-1; e.bm='dig'; e.bmT=BEAR_DIG; return true; }
+  return false; }
+{ const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ if(e&&e.chiefPet&&!e.dead&&!e.ghost&&!e.tamed){ try{ bearSize(e); if(bearAct(e,dt)) return; }catch(err){ console.warn(err); } } return _ua(e,dt,...a); }; }
+// drawing: rearing tips him up about his back feet (4 blocks tall), a swipe draws claw marks, a charge leans him in
+{ const _da=drawAnimal; drawAnimal=function(e,...a){ if(!e||!e.chiefPet||!e.bm) return _da(e,...a); const bot=e.y+e.h, back=e.facing>0?e.x:e.x+e.w;
+    ctx.save(); try{ if(e.bm==='rear'){ const k=Math.min(1,(BEAR_REAR-e.bmT)/BEAR_REAR*1.6); ctx.translate(back,bot); ctx.rotate(-e.facing*1.15*Math.max(0,Math.min(1,k))); ctx.translate(-back,-bot); }
+      else if(e.bm==='charge'){ ctx.translate(back,bot); ctx.rotate(e.facing*0.12); ctx.translate(-back,-bot); }
+      else if(e.bm==='dig'){ ctx.translate(Math.sin(performance.now()/40)*1.2,0); }
+      return _da(e,...a); } finally{ ctx.restore();
+      if(e.swipeT>0){ e.swipeT-=1/60; ctx.save(); ctx.strokeStyle='rgba(255,240,220,'+Math.min(1,e.swipeT*4)+')'; ctx.lineWidth=2; const sx=e.facing>0?e.x+e.w:e.x, sy=e.y-T*0.6;
+        for(let i=0;i<3;i++){ ctx.beginPath(); ctx.arc(sx,sy+i*7,BEAR_SWIPE_R*T*0.55,e.facing>0?-0.9:Math.PI-0.3,e.facing>0?0.3:Math.PI+0.9); ctx.stroke(); } ctx.restore(); } } }; }
+
+// ---- the Goblin Beastmaster stands out from the other goblins, and his bar shows when you are near ----
+// A third bigger, with a red war-paint stripe, a bone-and-feather headdress, a wolf-pelt cape and a whip of
+// braided leather; his name floats over him; his health bar (and his bear's) shows within CHIEF_BAR_R blocks.
+const CHIEF_SC=1.35, CHIEF_BAR_R=26;
+{ const _de=drawEntity; drawEntity=function(e,...a){ if(!e||e.mtype!=='goblin_chief'||!e.chief||e.dead) return _de(e,...a); const cx=cxOf(e), bot=e.y+e.h;
+    ctx.save(); try{ ctx.translate(cx,bot); ctx.scale(CHIEF_SC,CHIEF_SC); ctx.translate(-cx,-bot); return _de(e,...a); } finally{ ctx.restore();
+      if(!e.peaceful){ const top=bot-e.h*CHIEF_SC, f=e.facing||1; ctx.save();
+        ctx.fillStyle='#b8202a'; ctx.fillRect(cx-6,top+8,12,2);   // war paint
+        const fe=['#e04a2a','#f0c040','#3a8ad0','#e04a2a','#f0c040']; for(let i=0;i<5;i++){ ctx.fillStyle=fe[i]; ctx.fillRect(cx-9+i*4,top-9+Math.abs(i-2)*2,2,9-Math.abs(i-2)*2); } ctx.fillStyle='#ece8dc'; ctx.fillRect(cx-10,top-1,20,2);   // headdress
+        ctx.fillStyle='rgba(90,70,60,0.85)'; ctx.fillRect(f>0?cx-10:cx+4,top+10,6,e.h*CHIEF_SC-14);   // pelt cape
+        ctx.font='8px var(--font, monospace)'; ctx.textAlign='center'; ctx.fillStyle='#000'; ctx.fillText('Beastmaster',cx+1,top-12); ctx.fillStyle='#ffcf3a'; ctx.fillText('Beastmaster',cx,top-13); ctx.restore(); } } }; }
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ const bb=$('#bossbar'); if(!bb||!player||!bb.hidden) return r;
+      const c=ents.find(e=>!e.dead&&e.mtype==='goblin_chief'&&e.chief&&Math.hypot(cxOf(e)-cxOf(player),cyOf(e)-cyOf(player))<CHIEF_BAR_R*T); if(!c) return r;
+      bb.hidden=false; let txt=c.name||'The Goblin Beastmaster'; try{ const k=ladderKey(c); if(k&&BOSS_NEED[k]) txt+=` · your army: ${Math.min(bossArmyShown(c),BOSS_NEED[k])}/${BOSS_NEED[k]}`; }catch(e){}
+      if($('#bossname').textContent!==txt) $('#bossname').textContent=txt; $('#bossfill').style.width=(100*Math.max(0,c.hp)/c.maxHp)+'%'; $('#bosshp').textContent=Math.ceil(c.hp).toLocaleString()+' / '+c.maxHp.toLocaleString(); }catch(e){} return r; }; }
+// the test world: a button in the God menu's World tab brings the Beastmaster and his bear to you
+function testChief(){ if(!player) return; const x=Math.floor(cxOf(player)/T)+14, gy=surf[x]||Math.floor((player.y+player.h)/T); const gc={x,gy,war:true,test:true,cleared:false};
+  for(const o of ents) if(!o.dead&&(o.mtype==='goblin_chief'&&o.chief&&o.chief.test||o.chiefPet&&o.testPet)) o.dead=true;
+  const c=spawnChief(gc); c.y=(gy)*T-c.h-1; try{ freeSpotFor&&unstickSpawn&&unstickSpawn(c); }catch(e){}
+  const bear=makeAnimal('bear',cxOf(c)+3*T,c.y+c.h-24); Object.assign(bear,{temper:'bad',hp:900,maxHp:900,scar:true,team:'monster',dmg:30,chiefPet:true,testPet:true}); ents.push(bear); bigBear(bear);
+  toast('The Goblin Beastmaster and his bear are here',2.5); }
+{ const _rg=renderGod; renderGod=function(...a){ const r=_rg(...a); try{ if(godTab==='world'&&curSlot===4){ const box=$('#godList')||$('#godBody'); const at=document.querySelector('[data-gt="monsters"]');
+      if(at&&!document.querySelector('[data-gt="chief"]')){ const b=document.createElement('button'); b.className='xbtn'; b.dataset.gt='chief'; b.style.margin='3px'; b.textContent='Beastmaster and his bear'; at.after(b); } } }catch(e){} return r; }; }
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-gt="chief"]'); if(!b) return; ev.stopPropagation(); try{ testChief(); }catch(e){ console.warn(e); } },true);
+
+// ---- thrown swords and daggers never get left behind ----
+// Coming back, the blade moves with your hand as well as toward it, so running away never outpaces it; and wherever it
+// is, it stays within THROW_LEASH blocks of your hand (a normal throw reaches about 9), pulled along at your speed.
+const THROW_LEASH=9.5;
+{ const _bt=boomTick; boomTick=function(s,dt,...a){ let hx=null, hy=null; try{ [hx,hy]=handPt(); if(s.phase==='back'&&s.lh){ s.x+=hx-s.lh[0]; s.y+=hy-s.lh[1]; } }catch(e){}
+    const r=_bt(s,dt,...a); try{ if(r&&hx!=null){ const dx=s.x-hx, dy=s.y-hy, d=Math.hypot(dx,dy), L=THROW_LEASH*T; if(d>L){ s.x=hx+dx/d*L; s.y=hy+dy/d*L; } s.lh=[hx,hy]; } }catch(e){} return r; }; }
+
+// ---- everything that spawns in the magma realm is at home in lava ----
+// An enemy (not your side) first seen below magmaY keeps e.magmaBorn: lava neither burns nor hurts it (10_ai.js and
+// 98p_trees_ground.js ask lavaSafe). The magma team and imps always were.
+function lavaSafe(e){ if(!e) return false; if(e.team==='m'||e.mtype==='imp') return true; if(player&&e.team===player.team) return false;
+  if(e.magmaBorn==null) e.magmaBorn=typeof magmaY!=='undefined'&&e.y>=magmaY*T; if(e.magmaBorn&&e.burnT>0&&touchesTile(e,B.LAVA)) e.burnT=0; return e.magmaBorn; }
+
+// ---- the magma realm shows from above; its rock waits for the Magma Wizard ----
+// The dark veil over everything below magmaY is gone, so digging down to the bottom of the world shows the realm. Its
+// blocks cannot be broken (or built on) from above until the Magma Wizard's fortress falls (fort.cleared); swinging at
+// one says so (09_player.js). The portal down still opens when he falls.
+function magmaOpenAbove(){ return !!(fort&&fort.cleared); }
+drawMagmaVeil=function(){ if(world&&home&&!home.magmaSeen&&player&&player.y>=magmaY*T) home.magmaSeen=true; };
+
+// ---- Investigate throne only while you stand at the throne ----
+// The Talk button kept saying "Investigate throne" after you walked off (the button is only relabelled when something
+// new is near). Now it is hidden the moment no throne is within reach, and the next thing near you relabels it.
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ const b=$('#btnTalk'); if(b&&b.textContent==='Investigate throne'&&(!throneNear()||planPending())){ b.hidden=true; b.textContent='Talk'; talkTarget=undefined; } }catch(e){} return r; }; }
+
+// ---- the desert: mini pyramids for the mummies, scarabs on the sand, scorpions down in the sand caves ----
+// Camps on the desert island get small stepped sandstone pyramids (a room inside, a doorway facing the camp) where
+// their tents stood: new worlds, and unexplored desert camps of older worlds once (home.pyramidV). Scarabs (small,
+// hard-shelled beetles that come in twos and threes) live on the sand with the mummies; a dune scorpion that would
+// appear on the surface is a scarab instead, so scorpions are found only in the sand caves underground.
+MON.scarab={ w:12, h:8, hp:38, dmg:9, speed:96, def:6, reach:11, coins:1, drops:[[B.SAND,0.4,1,2],[I.GOLD_BAR,0.03,1,1]] };
+DESERT_MON.push('scarab'); DESERT_PACK.scarab=3;
+function miniPyramid(cx,gy,half,doorDir){ const put=(x,y,id)=>{ if(x>1&&x<W-1&&y>1&&y<H-1) wset(x,y,id); }, wall=(x,y)=>{ if(x>1&&x<W-1&&y>1&&y<H-1) bset(x,y,SAND_BG); };
+  for(let k=0;k<=half;k++){ const y=gy-1-k; for(let x=cx-(half-k);x<=cx+(half-k);x++){ put(x,y,B.SANDSTONE); wall(x,y); } }
+  for(let k=0;k<3;k++){ const y=gy-1-k; for(let x=cx-(half-k)+1;x<=cx+(half-k)-1;x++) put(x,y,0); }   // the room inside
+  const dx=doorDir>0?cx+half:cx-half; put(dx,gy-1,0); put(dx,gy-2,0); put(doorDir>0?cx+half-1:cx-half+1,gy-2,0);   // doorway
+  put(cx,gy-1,B.TORCH); put(cx,gy-1-half-1,0); }
+function tentClear(x0,x1,gy,rows){ for(let x=x0;x<=x1;x++) for(let y=gy-rows;y<gy;y++){ const id=world[y*W+x]; if(id===B.ROOF||id===B.LEAVES||id===B.TORCH) wset(x,y,0); bset(x,y,0); } }
+function pyramidCamps(onlyUnexplored){ let n=0; const fresh=(x,gy)=>!onlyUnexplored||!explored||!explored[(gy-2)*W+x];
+  for(const c of camps||[]){ if(!desertAt(c.x)||c.pyr||!fresh(c.x-7,c.gy)) continue; tentClear(c.x-10,c.x-3,c.gy,6); miniPyramid(c.x-7,c.gy,5,1); c.pyr=true; n++; }
+  for(const g of gcamps||[]){ if(!desertAt(g.x)||g.pyr||!fresh(g.x,g.gy)) continue; for(const o of g.war?[-15,-5,6,15]:[-5,5]){ tentClear(g.x+o-3,g.x+o+3,g.gy,7); miniPyramid(g.x+o,g.gy,4,o<0?1:-1); } g.pyr=true; n++; }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ pyramidCamps(false); if(home) home.pyramidV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.pyramidV&&!isGuest()){ home.pyramidV=1; facRun(()=>pyramidCamps(true)); } }catch(e){ console.warn(e); } return r; }; }
+{ const _np=nativePool; nativePool=function(x,why,...a){ try{ if(desertAt(x)) return why==='camp'?['mummy','scarab','mummy','scarab','sand_wraith']:why==='night'?['mummy','scarab','sand_wraith','jackal','mummy']:['scarab','jackal','vulture','sand_wraith']; }catch(e){} return _np(x,why,...a); }; }
+{ const _mm=makeMonster; makeMonster=function(type,x,y,...a){ try{ if(type==='dune_scorpion'&&world){ const tx=clamp(Math.floor(x/T),0,W-1); if(desertAt(tx)&&y/T<surf[tx]+4) type='scarab'; } }catch(e){} return _mm(type,x,y,...a); }; }
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ if(o&&o.look==='scarab'){ const R=fig(g,SCX-6,SFY-8), f=o.frame||0, s=f%2;
+      for(let k=0;k<3;k++){ R(2+k*3,6+(k+s)%2,1,2,'#1a1408'); R(3+k*3,6+(k+s+1)%2,1,2,'#1a1408'); }
+      R(1,2,10,4,'#1e5a6a'); R(2,1,8,1,'#2e8a9a'); R(3,2,2,1,'#6ad0d8'); R(6,1,1,5,'#0e3a44'); R(2,5,8,1,'#c8a040');   // shell, shine, split, gold rim
+      R(10,3,3,2,'#14303a'); R(12,2,1,1,'#c8a040'); R(13,3,1,1,'#ffcf3a'); if(o.atk){ R(13,1,2,1,'#c8a040'); R(13,5,2,1,'#c8a040'); } return; }
+    return _hf(g,o,...a); }; }
+{ const _bc=bleedColor; bleedColor=function(t){ if(t&&t.mtype==='scarab') return '#6ad0d8'; return _bc(t); }; }
+
+// ---- no achievements in creative mode (as in the test world): neither in the game's list nor on Steam ----
+const achBlocked=()=>!!((typeof rules!=='undefined'&&rules&&rules.mode==='creative')||curSlot===4);
+{ const _ag=achGrant; achGrant=function(...a){ if(achBlocked()) return false; return _ag(...a); }; }
+if(typeof steamAchieve==='function'){ const _sa=steamAchieve; steamAchieve=function(...a){ if(achBlocked()) return false; return _sa(...a); }; }
+
+// ---- Quick fill for every post at home, and small post icons once they are all held ----
+// Quick fill (in the posts window) fills every empty post of every building in your village (castle, houses, towers,
+// keeps and walls) with your party and then the soldiers waiting at home, archers and wizards first. When every post of
+// the building you are looking at is held, its big post icons shrink to small ones; tap one (or Change posts) to open
+// the big view again and move people around.
+function homeStructures(){ if(!home||!home.claimed) return []; const a=home.x0-30, b=home.x1+30;
+  return (myStructures||[]).filter(st=>{ if(!st.posts||!st.posts.length) return false; try{ const bx=stBox(st); return bx.x1>=a&&bx.x0<=b; }catch(e){ return false; } }); }
+function homeReserve(){ const party=new Set(player.party.filter(Boolean)); return ents.filter(e=>!e.dead&&e.kind==='human'&&player&&e.team===player.team&&!party.has(e)&&!e.stationed&&!e.worker&&!e.vjob&&!e.captive&&e.cls&&CLASSES[e.cls]&&home&&cxOf(e)>(home.x0-40)*T&&cxOf(e)<(home.x1+40)*T); }
+function quickFillHome(){ const pool=player.party.filter(e=>e&&!e.dead).concat(homeReserve()).sort((a,b)=>(isMeleeCls(a.cls)?1:0)-(isMeleeCls(b.cls)?1:0)); let n=0;
+  for(const st of homeStructures()) st.posts.forEach((p,i)=>{ if(postWho(p)||!pool.length) return; stationAt(st,i,pool.shift()); n++; });
+  toast(n?`${n} soldier${n>1?'s':''} took up posts around your village`:'Every post at home is already held, or nobody is free',2.5); return n; }
+let postsBig=false;
+{ const st=document.createElement('style'); st.textContent=`#postsPic.compact .pmark{width:12px!important;height:16px!important;border-width:1px!important} #postsPic.compact .pplus{font-size:9px} #postsBigBtn{margin-top:6px}`; document.head.appendChild(st); }
+{ const _rp=renderPosts; renderPosts=function(...a){ const r=_rp(...a); try{ const st=postSt; const full=!!st&&st.posts.length>0&&st.posts.every(postWho); const pic=$('#postsPic');
+      pic.classList.toggle('compact',full&&!postsBig);
+      let bb=$('#postsBigBtn'); if(!bb){ bb=document.createElement('button'); bb.id='postsBigBtn'; bb.className='btn'; pic.after(bb); bb.addEventListener('click',()=>{ postsBig=!postsBig; renderPosts(); }); }
+      bb.hidden=!full; bb.textContent=postsBig?'Make the icons small':'Change posts';
+      let qf=$('#postsQuick'); if(!qf){ qf=document.createElement('button'); qf.id='postsQuick'; qf.className='btn'; qf.textContent='Quick fill all home posts'; $('#postsFill').after(qf); qf.addEventListener('click',()=>{ quickFillHome(); postSel=null; renderPosts(); }); }
+      qf.hidden=!homeStructures().includes(st); } catch(e){ console.warn(e); } return r; }; }
+{ const _op=openPosts; openPosts=function(...a){ postsBig=false; return _op(...a); }; }
+// a tap on a small icon opens the big view instead of taking that soldier off the post
+document.addEventListener('click',ev=>{ const m=ev.target.closest&&ev.target.closest('#postsPic.compact [data-pm]'); if(!m) return; ev.stopPropagation(); ev.preventDefault(); postsBig=true; renderPosts(); },true);
+
+// ---- lava: one smooth, glowing body like water, settling dead flat ----
+// Drawing: every lava tile used to show its own texture with a bright top edge, and the glow was drawn as overlapping
+// squares added on top of each other, so lava looked like a grid of tiles. Now lava is a slightly see-through molten
+// body whose swirls follow world position (they run on across tiles), with a bright line only along the real surface
+// and a soft glow above it that never overlaps. Flow: a lava surface levels out across up to LAVA_SPAN blocks each step
+// (it crept one block at a time, so pools kept slopes), and an uneven remainder is dropped so the top always ends flat,
+// even when that lowers the whole pool below a full block. Lava that the world generator left unsettled (over air, or
+// higher than its neighbours) starts moving when the world loads, so it falls and spreads like water and burns plants.
+const LAVA_SPAN=14, LAVA_A=0.9, LAVA_QUIET=3;   // a pool is flattened once none of its row changed for LAVA_QUIET steps
+let lavaN=0; const lavaChg=new Map();
+{ const _s2=stepLava2; stepLava2=function(...a){ lavaN++; if(lavaChg.size>50000) lavaChg.clear(); return _s2(...a); }; }
+{ const _sl=setLava; setLava=function(i,...a){ lavaChg.set(i,lavaN); return _sl(i,...a); }; }
+const LAVA_COLS=['#c8361a','#d8461c','#e8601e','#f07c24','#f89a30','#ffc04a'];
+function drawLavaCell(x,y,X,Y,h,surface){ const t=performance.now()/1000; ctx.save(); ctx.globalAlpha=LAVA_A;
+  for(let sy=0;sy<2;sy++) for(let sx=0;sx<2;sx++){ const py=Y+sy*8, top=Math.max(py,Y+T-h); if(top>=py+8) continue; const wx=x*2+sx, wy=y*2+sy;
+    const v=Math.sin(wx*0.55+t*0.9)+Math.sin(wy*0.7-t*0.6)+Math.sin((wx+wy)*0.31+t*0.4); const k=clamp(Math.floor((v+3)/6*LAVA_COLS.length),0,LAVA_COLS.length-1);
+    ctx.fillStyle=LAVA_COLS[k]; ctx.fillRect(X+sx*8,top,8,py+8-top); }
+  if(surface){ ctx.globalAlpha=1; ctx.fillStyle='#ffd25a'; ctx.fillRect(X,Y+T-h,T,1); ctx.fillStyle='rgba(255,230,140,0.55)'; ctx.fillRect(X,Y+T-h+1,T,1); }
+  ctx.restore(); }
+drawLavaGlow=function(){ if(!world) return; const x0=Math.max(0,Math.floor(camX/T)), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)), y0=Math.max(1,Math.floor(camY/T)), y1=Math.min(H-1,Math.ceil((camY+viewH)/T)); const t=performance.now()/1000, a=0.16+0.05*Math.sin(t*1.4);
+  ctx.save(); ctx.globalCompositeOperation='lighter'; for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const i=y*W+x; if(world[i]!==B.LAVA||world[i-W]===B.LAVA) continue; const lv=liq[i]||8, top=y*T+T-Math.max(2,lv*2);
+      const g=ctx.createLinearGradient(0,top-14,0,top); g.addColorStop(0,'rgba(255,120,40,0)'); g.addColorStop(1,`rgba(255,140,50,${a})`); ctx.fillStyle=g; ctx.fillRect(x*T,top-14,T,14); } ctx.restore(); };
+// flow: level the whole surface row, flat
+lavaLevelRow=function(i,x,y,L){ const cells=[i], lv=new Map([[i,L]]), spill=[];
+  let walls=0; for(const dir of [-1,1]){ let X=x+dir, last=i; while(X>=0&&X<W&&Math.abs(X-x)<=LAVA_SPAN){ const j=y*W+X, id=world[j]; if(!(id===B.LAVA||lavaOK(id))){ walls++; break; }
+      if(!lavaSupported(j)){ if(id!==B.LAVA) spill.push([last,j]); break; } if(id!==B.LAVA&&Math.abs(X-x)>1&&lavaLv(last)===0) break; cells.push(j); lv.set(j,lavaLv(j)); last=j; X+=dir; } }
+  if(cells.length>1){ let total=0; for(const c of cells) total+=lv.get(c); const n=cells.length, avg=Math.floor(total/n); let rem=total-avg*n;
+    const settled=avg>=1&&cells.every(c=>Math.abs(lv.get(c)-avg)<=1);   // nearly flat: the remainder is dropped, so the top ends dead flat
+    if(settled&&walls===2&&!spill.length&&cells.every(c=>lavaSupported(c))){ if(cells.every(c=>lavaN-(lavaChg.get(c)??-99)>=LAVA_QUIET)) rem=0; else if(rem) lavaAct.add(i); }   // a still pool between two walls ends dead flat
+    const order=cells.slice().sort((a,b)=>lv.get(b)-lv.get(a)||Math.abs(a-i)-Math.abs(b-i));
+    for(const c of order){ const nl=avg+(rem>0?1:0); if(rem>0) rem--; if(c===i){ L=nl; continue; } if(nl!==lavaLv(c)){ setLava(c,nl); wakeLava(c%W,y); } } }
+  for(const [from,to] of spill){ const fl=from===i?L:lavaLv(from); if(fl<1) continue; const mv=Math.max(1,Math.floor(fl/2)); setLava(to,mv); wakeLava(to%W,y); if(from===i) L-=mv; else { setLava(from,fl-mv); wakeLava(from%W,y); } }
+  return L; };
+function lavaUnsettled(i){ const x=i%W; if(x<1||x>=W-1||i+W>=W*H) return false; const b=world[i+W]; if(lavaOK(b)||(b===B.LAVA&&lavaLv(i+W)<8)) return true; const L=lavaLv(i);
+  for(const j of [i-1,i+1]){ const id=world[j]; if(lavaOK(id)&&L>1&&lavaSupported(j)) return true; if(id===B.LAVA&&Math.abs(lavaLv(j)-L)>0&&world[i-W]!==B.LAVA) return true; }
+  for(const j of [i-W,i-1,i+1]){ const id=world[j]; if(id&&LAVA_EATS.has(id)) return true; } return false; }
+function wakeAllLava(){ if(!world||(typeof MP!=='undefined'&&MP.guest)) return 0; let n=0; for(let i=W;i<W*H-W;i++) if(world[i]===B.LAVA&&lavaUnsettled(i)){ lavaAct.add(i); n++; } return n; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ wakeAllLava(); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- hover names beside buttons that stand in a column ----
+// When the window is narrow the top buttons (Army, Buildings, Map...) stack in a column at the right, and a name shown
+// under a button covered the next one. A button with a neighbour straight above or below it shows its name to its left.
+function inColumn(el){ const r=el.getBoundingClientRect(); for(const s of el.parentElement?el.parentElement.children:[]){ if(s===el||s.hidden||!s.offsetParent) continue; const q=s.getBoundingClientRect(); if(Math.abs(q.left-r.left)<4&&Math.abs(q.top-r.top)>r.height*0.5) return true; } return false; }
+function tipLeftOf(ev){ const el=ev.target&&ev.target.closest&&ev.target.closest('[data-tip]'), tip=$('#itemTip'); if(!el||!tip||tip.hidden||!tip.classList.contains('btntip')||!inColumn(el)) return;
+  tip.style.left='0px'; const r=el.getBoundingClientRect(), w=tip.getBoundingClientRect().width||120; tip.style.left=Math.max(8,r.left-w-8)+'px'; tip.style.top=Math.max(4,r.top+r.height/2-(tip.offsetHeight||20)/2)+'px'; }
+for(const k of ['mouseover','mousemove']) document.addEventListener(k,tipLeftOf);
+
+// ---- enemy village buildings sit on the ground: never buried, never floating ----
+// Kinard's screenshots (2026-11-01): enemy houses half under a hill with dirt over the roof, a hill ledge hanging over a
+// house, and two watchtowers hanging in the air above lower ground. Houses were built at the ground height of one
+// column (colony builders) and the ground beside them was never shaped. For every house, colony house and watchtower of
+// an enemy village: natural ground is filled in under the footprint (down to the first solid block, so a floating
+// building gets a dirt plinth), natural rock and earth inside and over the building is dug out, and the ground beside it
+// slopes one block per column back to the floor height (ENEMY_RAMP columns each side). Only natural blocks (earth, sand,
+// snow and rock) are touched. Runs for new worlds, once for older ones (home.enemyGroundV), and after a colony builds.
+const ENEMY_RAMP=6;
+function natGround(id){ if(!id) return false; if(id===B.DIRT||id===B.GRASS||id===B.SAND||id===B.SNOW||id===B.SNOW_LAYER) return true; try{ return NAT_ROCK().includes?NAT_ROCK().includes(id):NAT_ROCK().has(id); }catch(e){ return id===B.STONE; } }
+function enemyBoxes(b){ const L=[]; const add=(x0,x1,gy,h)=>{ if(isFinite(x0)&&isFinite(x1)&&isFinite(gy)) L.push({x0,x1,gy,h}); };
+  for(const h of b.houses||[]) add(h.x0-1,h.x1+1,h.gy,16); try{ for(const h of colOf(b).houses||[]) add(h.x0-1,h.x1+1,h.gy,16); }catch(e){}
+  for(const t of (b.towers||[]).concat(b.outposts||[])) if(t&&isFinite(t.x)) add(t.x-5,t.x+5,t.gy,Math.max(16,(t.ht||16)+6)); return L; }
+function groundBox(bx,put){ const {x0,x1,gy,h}=bx; let n=0; const id=(x,y)=>(x>0&&x<W-1&&y>0&&y<H-1)?world[y*W+x]:-1;
+  for(let x=x0;x<=x1;x++){ for(let y=gy;y<gy+30&&y<H-2;y++){ const c=id(x,y); if(c===-1||BLOCKS[c].solid) break; if(c&&!footingFill(c)) break; put(x,y,y===gy?B.GRASS:y<gy+4?B.DIRT:B.STONE); n++; }   // fill under
+    for(let y=gy-1;y>=gy-h;y--) if(natGround(id(x,y))){ put(x,y,0); n++; } }   // dig out
+  for(const dir of [-1,1]) for(let k=1;k<=ENEMY_RAMP;k++){ const x=dir<0?x0-k:x1+k; if(x<2||x>=W-2) break; const top=gy-(k-1), low=gy+(k-1);   // the ground beside slopes back to the floor
+    for(let y=top-1;y>=gy-h;y--) if(natGround(id(x,y))){ put(x,y,0); n++; }
+    for(let y=low;y<low+30&&y<H-2;y++){ const c=id(x,y); if(c===-1||BLOCKS[c].solid||c&&!footingFill(c)) break; put(x,y,y===low?B.GRASS:B.DIRT); n++; } }
+  return n; }
+function groundEnemyVillages(live){ let n=0; const put=live?(x,y,v)=>setTile(x,y,v):(x,y,v)=>wset(x,y,v);
+  const run=()=>{ for(const b of bases||[]){ if(!b) continue; for(const bx of enemyBoxes(b)) n+=groundBox(bx,put); b._groundSig=enemySig(b); } };
+  if(live) facRun(run); else run(); return n; }
+function enemySig(b){ return enemyBoxes(b).map(x=>x.x0+':'+x.gy).join(','); }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ groundEnemyVillages(false); if(home) home.enemyGroundV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.enemyGroundV&&!isGuest()){ home.enemyGroundV=1; groundEnemyVillages(true); } }catch(e){ console.warn(e); } return r; }; }
+let enemyGroundT=8;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if((enemyGroundT-=dt)<=0&&world&&!isGuest()){ enemyGroundT=8; for(const b of bases||[]){ if(!b) continue; const s=enemySig(b); if(b._groundSig==null){ b._groundSig=s; continue; } if(s!==b._groundSig){ facRun(()=>{ for(const bx of enemyBoxes(b)) groundBox(bx,(x,y,v)=>setTile(x,y,v)); }); b._groundSig=s; } } } }catch(e){} return r; }; }
+
+// ---- Vorthax's lair: a round hall half as big again (new worlds) ----
+// The lair was a 64-block rectangle. New worlds carve a dome around it: about LAIR_W blocks across (as much as the
+// island allows) and LAIR_H tall, round at the top and flat underfoot, inside a 3-block obsidian shell; the old hoard,
+// chests and ledges stay where they were inside it.
+const LAIR_W=100, LAIR_H=28;
+{ const _bl=buildLair; buildLair=function(is,left,...a){ const r=_bl(is,left,...a); try{ if(!lair||!is.mtn) return r; const L=is.e-is.s+1, X=u=>left?is.e-u:is.s+u, u0=is.mtn.mouthU+1, u1=Math.min(u0+LAIR_W,L-12);
+      const ry1=lair.ry1, ry0=ry1-LAIR_H, uc=(u0+u1)/2, rx=(u1-u0)/2, ryr=LAIR_H*0.75, cy=ry1-LAIR_H*0.25;
+      const inside=(u,y)=>y<=ry1&&((u-uc)/rx)**2+((y-cy)/ryr)**2<=1;
+      for(let u=u0-4;u<=u1+4;u++) for(let y=ry0-4;y<=ry1+3;y++){ const x=X(u); if(x<1||x>=W-1||y<1) continue; if(inside(u,y)){ if(world[y*W+x]===B.OBSIDIAN||world[y*W+x]===B.STONE||world[y*W+x]===B.DIRT||world[y*W+x]===B.GRASS) wset(x,y,0); bset(x,y,4); continue; }
+        let near=false; for(let d=1;d<=3&&!near;d++) for(const [du,dy] of [[d,0],[-d,0],[0,d],[0,-d]]) if(inside(u+du,y+dy)) near=true;
+        if(near&&u>=u0) { if(!(u<u0+1&&y>ry1-12)) wset(x,y,B.OBSIDIAN); bset(x,y,4); } }
+      lair.rx0=Math.min(X(u0),X(u1)); lair.rx1=Math.max(X(u0),X(u1)); lair.ry0=ry0; lair.round=true; }catch(e){ console.warn(e); } return r; }; }
+
+// ---- soldiers placed for a boss battle hold still until you strike the boss ----
+// Ambush soldiers in Vorthax's lair and the realm throne rooms (stationed 'lair') neither move nor attack until you
+// (or something of yours) has hit the boss; then they all join in.
+function arenaStruck(){ try{ const b=lairPlan&&lairPlan.boss; return !b||!!b.youStruck; }catch(e){ return true; } }
+{ const _dm=damage; damage=function(t,amt,src,...a){ try{ if(t&&!t.youStruck&&src&&player&&(src===player||src.src===player||(src.team===player.team&&src.kind!=='human'))&&(t.kind==='dragon'||t.skyBoss||t.magmaLord)) t.youStruck=true; }catch(e){} return _dm(t,amt,src,...a); }; }
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ if(e&&e.stationed==='lair'&&!arenaStruck()){ e.target=null; e.vx=0; e.atkCd=Math.max(e.atkCd||0,0.3); try{ physics(e,dt); }catch(err){} return; } return _ua(e,dt,...a); }; }
+
+// ---- the sky castle: thick walls, a prison, a fuller armory, the throne in the far corner with the treasury behind ----
+// New worlds (Kinard, 2026-11-01): outer walls are two blocks thick; the gold dais the 0.9.164 pass turned to obsidian
+// is gone and the throne stands in the far back corner of the throne hall (away from the way up), with a walled
+// treasury behind it (gold piles, gold blocks and sealed sky chests that open once the Sky Ranger falls); the sky
+// garden is a prison of barred cells with bones; the armory holds racks, stands and barrels; the barracks keep their
+// beds and the library its shelves. The throne hall and the Magma Knight's throne room get ledges where your soldiers
+// can stand, and a battle plan offers as many spots as the boss's suggested army (BOSS_NEED x 1.5).
+function arenaLedges(x0,x1,gy,top,put,skip){ const rows=[gy-6,gy-12].filter(y=>y>top+3); const segs=[0.12,0.38,0.62,0.88]; let n=0;
+  rows.forEach((y,ri)=>{ for(const f of (ri?[0.25,0.75]:segs)){ const cx=Math.round(x0+(x1-x0)*f); for(let x=cx-2;x<=cx+2;x++){ if(x<=x0+1||x>=x1-1||(skip&&skip(x))) continue; if(!world[y*W+x]){ put(x,y,B.PLATFORM); n++; } } } }); return n; }
+{ const _bs=buildSkyTower; buildSkyTower=function(tx0,gy,entryLeft,R,put,bput,...a){ const c=_bs(tx0,gy,entryLeft,R,put,bput,...a); try{ skyRework(c,put,bput); }catch(e){ console.warn(e); } return c; }; }
+function skyRework(c,put,bput){ if(!c||c.v166) return; const S=B.SKY_BRICK, {x0,x1,top}=c, thF=c.gy, base=c.gate.gy, mid=c.cx; const RR=mulberry(((typeof seed!=='undefined'?seed:0)|0)+1660);
+  const at=(x,y)=>world[y*W+x];
+  // two-block outer walls
+  for(let y=top;y<base;y++) for(const [o,i] of [[x0,x0+1],[x1,x1-1]]){ const v=at(o,y); if(v===S) { if(!at(i,y)||at(i,y)===S) put(i,y,S); } else if(v===B.GLASS) put(i,y,B.GLASS); }
+  const gx=c.entryLeft?x0+1:x1-1; for(const y of [base-1,base-2,base-3]) put(gx,y,0);   // the doorway goes through both
+  for(let y=top+1;y<base;y++) for(let x=x0;x<=x1;x++) if(at(x,y)===B.OBSIDIAN) put(x,y,S);
+  // the dais and the old throne go; the throne moves to the far corner with the treasury behind it
+  for(let x=mid-13;x<=mid+13;x++) for(const y of [thF-1,thF-2,thF-3,thF-4]){ const v=at(x,y); if(v===B.THRONE||v===B.PART||v===B.GOLD_BLOCK||v===S&&y>=thF-2||v===B.OBSIDIAN) put(x,y,0); }
+  const farRight=c.entryLeft, inner=farRight?x1-2:x0+2, dv=farRight?inner-10:inner+10;
+  for(let y=top+1;y<thF;y++) put(dv,y,S); door(put,dv,thF);
+  for(let x=Math.min(dv,inner)+1;x<=Math.max(dv,inner)-1;x++) for(let y=top+1;y<thF;y++) if(at(x,y)!==S) { put(x,y,0); bput(x,y,7); }
+  const tA=Math.min(dv,inner)+1, tB=Math.max(dv,inner)-1; for(let x=tA;x<=tB;x++){ const h=1+Math.floor(RR()*3); for(let k=0;k<h;k++) put(x,thF-1-k,B.GOLDPILE); }
+  const cx1=Math.round((tA+tB)/2); for(const [dx,id] of [[-2,B.CHEST_SKY],[2,B.CHEST_GOLD]]){ const x=cx1+dx; for(let y=thF-4;y<thF;y++) put(x,y,0); put(x,thF-1,id); chests[x+','+(thF-1)]=lootFor(160,RR,3); }
+  put(cx1,thF-1,B.GOLD_BLOCK); put(cx1,thF-2,B.GOLD_BLOCK); put(farRight?tA+1:tB-1,thF-6,B.LANTERN);
+  const tx=farRight?dv-4:dv+3; placeThrone(put,tx,thF-1); c.thX=tx; c.treasury={x0:tA,x1:tB,gy:thF};
+  c.throne={x0:farRight?x0+2:dv+1,x1:farRight?dv-1:x1-2,gy:c.throne.gy}; c.cx=tx;
+  // ledges for your soldiers in the throne hall
+  arenaLedges(c.throne.x0,c.throne.x1,thF,top,put,null);
+  // the prison: barred cells with bones where the sky garden was
+  const pr=c.rooms.find(r=>r.name==='Sky garden'); if(pr){ pr.name='Prison'; for(let x=pr.x0;x<=pr.x1;x++){ const v=at(x,pr.gy-1); if(v&&!BLOCKS[v].solid&&v!==B.LANTERN&&v!==B.PLATFORM) put(x,pr.gy-1,0); }
+    const holeAt=x=>at(x,pr.gy)===B.PLATFORM||at(x,pr.gy-4)===B.PLATFORM||at(x,pr.gy-8)===B.PLATFORM;
+    for(let x=pr.x0+3;x+6<pr.x1-2;x+=8){ if([0,1,2,3,4,5,6].some(d=>holeAt(x+d))) continue; for(let y=pr.gy-4;y<pr.gy;y++){ put(x,y,B.CAGE); put(x+6,y,B.CAGE); } for(let xx=x;xx<=x+6;xx++) put(xx,pr.gy-5,S); put(x+6,pr.gy-1,0); put(x+6,pr.gy-2,0); door(put,x+6,pr.gy); put(x+2+((RR()*3)|0),pr.gy-1,B.BONE_PILE); } }
+  // a fuller armory
+  const ar=c.rooms.find(r=>r.name==='Armory'); if(ar){ const L=[B.ARMOR_STAND,B.WEAPON_RACK,B.BARREL,B.WEAPON_RACK,B.ARMOR_STAND,B.BARREL,B.WEAPON_RACK,B.ARMOR_STAND,B.WEAPON_RACK];
+    for(let x=ar.x0+2,k=0;x<ar.x1-1&&k<L.length;x+=3){ const v=at(x,ar.gy-1); if(v&&v!==B.ARMOR_STAND&&v!==B.WEAPON_RACK) continue; if(at(x,ar.gy)===B.PLATFORM) continue; put(x,ar.gy-1,L[k++]); } }
+  c.v166=true; }
+// the boss sits at the moved throne
+{ const _sc=spawnCastleFolk; spawnCastleFolk=function(c,...a){ const r=_sc(c,...a); try{ if(c&&c.thX!=null){ for(const e of ents) if(!e.dead&&(e.skyBoss&&c===(sky&&sky.castle))){ e.x=(c.thX+0.5)*T-e.w/2; e.y=(c.gy-1)*T-e.h-1; } } }catch(e){} return r; }; }
+// the Magma Knight's throne room gets ledges too (new worlds)
+{ const _bm=buildMagmaMaze; buildMagmaMaze=function(x0,gy,entryLeft,R,put,bput,...a){ const c=_bm(x0,gy,entryLeft,R,put,bput,...a); try{ if(c&&c.throne&&c.top!=null) arenaLedges(c.throne.x0,c.throne.x1,c.throne.gy+2,c.top,put,null); }catch(e){ console.warn(e); } return c; }; }
+// battle plans: realm throne rooms offer spots on the floor and the ledges, as many as the boss's suggested army
+function arenaSpotsAll(b,limit){ const L=[]; if(!b) return L; const open=(x,y)=>{ const k=BLOCKS[tileAt(x,y)]; return !k||!k.solid||k.platform; };
+  for(let x=b.x0+2;x<=b.x1-2;x+=2) for(let y=b.y0+3;y<=b.y1+1;y++){ const k=BLOCKS[tileAt(x,y)]; if(k&&(k.solid||k.platform)&&open(x,y-1)&&open(x,y-2)) L.push({x,gy:y,who:null,ledge:!!k.platform}); }
+  const led=L.filter(s=>s.ledge), fl=L.filter(s=>!s.ledge&&tileAt(s.x,s.gy)!==B.THRONE); const pick=(arr,n)=>{ if(arr.length<=n) return arr; const out=[]; for(let i=0;i<n;i++) out.push(arr[Math.floor(i*arr.length/n)]); return out; };
+  const nl=Math.min(led.length,Math.ceil(limit*0.6)); return pick(led,nl).concat(pick(fl,limit-nl)); }
+{ const _as=arenaStructure; arenaStructure=function(A,...a){ const st=_as(A,...a); try{ if(A&&A.key!=='dragon'&&st&&st.box){ const need=(BOSS_NEED&&(BOSS_NEED[A.key]||BOSS_NEED[A.key==='ranger'?'skyranger':A.key]))||6; const spots=arenaSpotsAll(st.box,Math.ceil(need*1.5)); if(spots.length) st.posts=spots; } }catch(e){ console.warn(e); } return st; }; }
+
+// ---- several windows at once on a computer ----
+// Kinard: the army and buildings windows should open like crafting and the rest, so a chest, crafting, the army and the
+// buildings can all be open together. On a computer (settings.multiWin, on by default) opening a window no longer closes
+// the one already open; the windows have no dark backdrop and only the window itself takes clicks; clicking a window
+// brings it to the front and makes it the one your keys work in; closing one hands over to the next window still open,
+// or back to play. Phones keep one window at a time.
+if(settings.multiWin==null) settings.multiWin=true;
+const multiOn=()=>isPC()&&settings.multiWin!==false;
+const WIN_STATE={scrInv:'inv',scrChest:'chest',scrShop:'shop',scrArmy:'army',scrMap:'map',scrGod:'god',scrPosts:'posts',scrTrade:'trade',scrRecruit:'recruit'};
+const MULTI_IDS=Object.keys(WIN_STATE).concat(['scrBuild']);
+let winZ=40;
+{ const st=document.createElement('style'); st.textContent=MULTI_IDS.map(id=>`body.multiwin #${id}`).join(',')+`{ background:transparent!important; pointer-events:none; } `+MULTI_IDS.map(id=>`body.multiwin #${id} .panel`).join(',')+`{ pointer-events:auto; box-shadow:0 6px 24px rgba(0,0,0,.55); }`; document.head.appendChild(st); }
+setInterval(()=>{ try{ document.body.classList.toggle('multiwin',multiOn()); }catch(e){} },500);
+const openWins=()=>MULTI_IDS.map(id=>$('#'+id)).filter(o=>o&&!o.hidden).sort((a,b)=>(+a.style.zIndex||0)-(+b.style.zIndex||0));
+function winFront(o){ if(!o) return; o.style.zIndex=String(++winZ); const s=WIN_STATE[o.id]; state=s||'play'; }
+// opening: on a computer, nothing already open is closed
+{ const _ml=menuLeave; menuLeave=function(...a){ if(multiOn()){ state='play'; return true; } return _ml(...a); }; }
+for(const name of ['openChest','openShop','openRecruit','openArmy','openInv','openMap']){ try{ const f=eval(name); if(typeof f!=='function') continue;
+  const w=function(...a){ if(multiOn()&&state!=='play'&&MENU_STATES.has(state)) state='play'; const r=f.apply(this,a); try{ const id=Object.keys(WIN_STATE).find(k=>WIN_STATE[k]===state); if(multiOn()&&id) winFront($('#'+id)); }catch(e){} return r; };
+  eval(name+'=w'); }catch(e){ console.warn(e); } }
+{ const _ob=openBuild; openBuild=function(...a){ const keep=multiOn()?openWins().filter(o=>o.id!=='scrBuild'):[]; const r=_ob(...a); for(const o of keep) o.hidden=false; if(multiOn()) winFront($('#scrBuild')); return r; }; }
+// a click on a window brings it forward
+document.addEventListener('pointerdown',ev=>{ if(!multiOn()) return; const o=ev.target.closest&&ev.target.closest('.overlay'); if(o&&MULTI_IDS.includes(o.id)&&!o.hidden&&(+o.style.zIndex||0)<winZ) winFront(o); },true);
+// closing: hand over to the next open window
+setInterval(()=>{ try{ if(!multiOn()) return; const L=openWins(); const cur=Object.keys(WIN_STATE).find(k=>WIN_STATE[k]===state);
+    if(cur&&$('#'+cur).hidden){ const top=L[L.length-1]; state=top?(WIN_STATE[top.id]||'play'):'play'; }
+    else if(state==='play'){ const top=L.filter(o=>WIN_STATE[o.id]).pop(); if(top) state=WIN_STATE[top.id]; } }catch(e){} },120);
+// menu keys on a computer: each opens or closes its own window, whatever else is open; Escape closes the front one
+function multiKey(e,K){ if(!multiOn()||!player||state==='play'||!(MENU_STATES.has(state)||state==='build')) return false; if(typeAhead()) return false;
+  const inv=$('#scrInv'), invOpen=inv&&!inv.hidden, craftMode=invOpen&&inv.classList.contains('craftmode');
+  const toggle=(id,open,close)=>{ e.preventDefault(); const o=$('#'+id); if(o&&!o.hidden){ winFront(o); close(); } else { state='play'; open(); } return true; };
+  if(e.code===K.bag||e.code==='Tab'){ if(invOpen&&!craftMode) return toggle('scrInv',()=>openInv(),()=>closeInv()); if(invOpen){ e.preventDefault(); inv.classList.remove('craftmode'); inv.classList.add('bagmode'); $('#invTitle').textContent='Bag'; renderInv(); winFront(inv); return true; } return toggle('scrInv',()=>openInv(),()=>closeInv()); }
+  if(e.code===K.craft){ if(invOpen&&craftMode) return toggle('scrInv',()=>openCraft(),()=>closeInv()); if(invOpen){ e.preventDefault(); winFront(inv); closeInv(); state='play'; openCraft(); return true; } e.preventDefault(); state='play'; openCraft(); return true; }
+  if(e.code===K.army) return toggle('scrArmy',()=>openArmy(),()=>closeArmy());
+  if(e.code===K.map) return toggle('scrMap',()=>openMap(),()=>closeMap());
+  if(e.code==='Escape'){ const L=openWins(); const top=L[L.length-1]; if(!top) return false; e.preventDefault(); winFront(top); const c=menuCloser(top); if(c&&c.click) c.click(); else top.hidden=true; return true; }
+  return false; }
+function typeAhead(){ const a=document.activeElement; return !!a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.isContentEditable); }
+// the top buttons open their window alongside the others too
+document.addEventListener('click',ev=>{ if(!multiOn()) return; const b=ev.target.closest&&ev.target.closest('#btnInv,#btnCraft,#btnArmy,#btnBuild,#btnMap'); if(!b) return;
+  const id={btnInv:'scrInv',btnCraft:'scrInv',btnArmy:'scrArmy',btnBuild:'scrBuild',btnMap:'scrMap'}[b.id], o=$('#'+id);
+  if(o&&!o.hidden&&b.id!=='btnCraft'&&b.id!=='btnInv'){ ev.stopImmediatePropagation(); winFront(o); const c=menuCloser(o); if(c&&c.click) c.click(); else o.hidden=true; return; }
+  if(state!=='play'&&(MENU_STATES.has(state)||state==='build')) state='play'; },true);
+
+// ---- the Kraken: twice as big, quicker, and it goes for a ship that keeps sailing ----
+// KRAKEN_SC times its old size (drawn and hit), its attacks come KRAKEN_FAST sooner, and while you sail past within
+// reach it slams where your boat is heading (a hit smashes the boat), every KRAKEN_CHASE seconds.
+const KRAKEN_SC=2, KRAKEN_FAST=0.75, KRAKEN_CHASE=2.4;
+function krakenBig(k){ if(!k||k.big2) return; const cx=k.x+k.w/2; k.w*=KRAKEN_SC; k.h*=KRAKEN_SC; k.x=cx-k.w/2; k.big2=true; }
+{ const _kt=krakenTick; krakenTick=function(...a){ const r=_kt(...a); try{ for(const k of ents) if(k.kind==='kraken'&&!k.dead) krakenBig(k); }catch(e){} return r; }; }
+{ const _ka=krakenAct; krakenAct=function(k,dt,...a){ const pt=k.patT, sl=k.slam; const r=_ka(k,dt,...a); try{ if(k.patT>pt+0.01) k.patT*=KRAKEN_FAST; if(k.slam&&k.slam!==sl) k.slam.t*=0.8;
+      const p=player; if(p&&p.riding&&!k.diveT&&Math.abs(cxOf(p)-(k.x+k.w/2))<40*T&&Math.abs(p.vx)>50){ k.chaseT=(k.chaseT??KRAKEN_CHASE)-dt; if(k.chaseT<=0&&!k.slam){ k.chaseT=KRAKEN_CHASE; k.slam={x:cxOf(p)+p.vx*0.75,y:cyOf(p),t:0.75}; addFloat(k.slam.x,(seaY-2)*T,'!','#ff8a8a'); } } else k.chaseT=KRAKEN_CHASE; }catch(e){} return r; }; }
+{ const _dk=drawKraken; drawKraken=function(k,...a){ if(k&&k.ghost&&!k.big2) krakenBig(k); if(!k||!k.big2) return _dk(k,...a); const s={x:k.x,w:k.w,h:k.h}, cx=k.x+k.w/2, ky=k.y; k.w=s.w/KRAKEN_SC; k.h=s.h/KRAKEN_SC; k.x=cx-k.w/2;
+    ctx.save(); try{ ctx.translate(cx,ky); ctx.scale(KRAKEN_SC,KRAKEN_SC); ctx.translate(-cx,-ky); return _dk(k,...a); } finally{ ctx.restore(); Object.assign(k,s); } }; }
+
+// ---- windows resize from any edge or corner, like a browser window ----
+// Every movable window (chest, bag, crafting, army, buildings, map, shops...) gets thin grips along its four edges and
+// four corners. Drag one to grow or shrink the window that way; the size and place are kept (settings.win).
+const GRIP=7, WIN_MIN_W=220, WIN_MIN_H=140;
+{ const st=document.createElement('style'); st.textContent=`.wgrip{ position:absolute; z-index:5; } .wgrip.n,.wgrip.s{ left:${GRIP}px; right:${GRIP}px; height:${GRIP}px; cursor:ns-resize; } .wgrip.n{ top:0; } .wgrip.s{ bottom:0; }
+.wgrip.e,.wgrip.w{ top:${GRIP}px; bottom:${GRIP}px; width:${GRIP}px; cursor:ew-resize; } .wgrip.e{ right:0; } .wgrip.w{ left:0; }
+.wgrip.ne,.wgrip.nw,.wgrip.se,.wgrip.sw{ width:${GRIP*2}px; height:${GRIP*2}px; } .wgrip.ne{ top:0; right:0; cursor:nesw-resize; } .wgrip.sw{ bottom:0; left:0; cursor:nesw-resize; } .wgrip.nw{ top:0; left:0; cursor:nwse-resize; } .wgrip.se{ bottom:0; right:0; cursor:nwse-resize; }
+body.touch .wgrip{ display:none; } .panel.winable:not([style*="position: absolute"]){ position:relative; }`; document.head.appendChild(st); }
+function winGrips(id){ const p=winPanel(id); if(!p||p.querySelector(':scope > .wgrip')) return;
+  for(const d of ['n','s','e','w','ne','nw','se','sw']){ const g=document.createElement('div'); g.className='wgrip '+d; p.appendChild(g); let s=null;
+    g.addEventListener('pointerdown',e=>{ if(!isPC()) return; const r=p.getBoundingClientRect(); s={id:e.pointerId,x:e.clientX,y:e.clientY,r}; p.style.position='absolute'; p.style.right='auto'; p.style.transform='none'; p.style.margin='0'; p.style.left=r.left+'px'; p.style.top=r.top+'px'; p.style.width=r.width+'px'; p.style.height=r.height+'px'; p.style.maxWidth='none'; p.style.maxHeight='none'; try{ g.setPointerCapture(e.pointerId); }catch(err){} e.preventDefault(); e.stopPropagation(); });
+    g.addEventListener('pointermove',e=>{ if(!s||e.pointerId!==s.id) return; const dx=e.clientX-s.x, dy=e.clientY-s.y, r=s.r; let L=r.left, Tp=r.top, Wd=r.width, Ht=r.height;
+      if(d.includes('e')) Wd=Math.max(WIN_MIN_W,Math.min(innerWidth-L,r.width+dx)); if(d.includes('s')) Ht=Math.max(WIN_MIN_H,Math.min(innerHeight-Tp,r.height+dy));
+      if(d.includes('w')){ const nw=Math.max(WIN_MIN_W,r.width-dx); L=Math.max(0,r.right-nw); Wd=r.right-L; } if(d.includes('n')){ const nh=Math.max(WIN_MIN_H,r.height-dy); Tp=Math.max(0,r.bottom-nh); Ht=r.bottom-Tp; }
+      Object.assign(p.style,{left:L+'px',top:Tp+'px',width:Wd+'px',height:Ht+'px'}); e.preventDefault(); });
+    const end=e=>{ if(!s||e.pointerId!==s.id) return; s=null; const r=p.getBoundingClientRect(); const w=settings.win[id]=settings.win[id]||{}; Object.assign(w,{x:Math.round(r.left),y:Math.round(r.top),w:Math.round(r.width),h:Math.round(r.height)}); try{ saveSettings(); }catch(err){} };
+    g.addEventListener('pointerup',end); g.addEventListener('pointercancel',end); } }
+{ const _show=show; show=function(id,...a){ const r=_show(id,...a); try{ if(WIN_IDS.has(id)&&isPC()) winGrips(id); }catch(e){} return r; }; }
+
+// ---- soldiers stay in the boat and fight from it ----
+// A hit that knocked you up out of your boat counted as getting off, and everyone aboard was put into the sea. While you
+// ride, hits no longer knock you about, so the crew stays put (only a Kraken's slam still smashes a boat). Soldiers
+// aboard fight from their seats: archers and wizards shoot at enemies within BOAT_FIGHT_R blocks, the others strike
+// anything that comes alongside.
+const BOAT_FIGHT_R=14;
+{ const _dm=damage; damage=function(t,amt,src,kb,...a){ if(t&&t===player&&player.riding&&src&&src.kind!=='kraken') kb=0; return _dm(t,amt,src,kb,...a); }; }
+function seatWorld(e){ const p=player, bt=BOATS[p.boat]; if(!bt) return null; const riders=player.party.filter(x=>x&&x.aboard).sort((a,b)=>a.seat-b.seat); const k=riders.indexOf(e); if(k<0) return null;
+  const pos=boatSeat(p,k,riders.length); return {x:cxOf(p)+pos.dx*(p.facing<0?-1:1),y:p.y+p.h-5+pos.dy}; }
+function boatFight(dt){ const p=player; if(!p||!p.riding||!BOATS[p.boat]) return; for(const e of p.party){ if(!e||e.dead||!e.aboard) continue; const s=seatWorld(e); if(!s) continue; e.x=s.x-e.w/2; e.y=s.y-e.h-2; e.vx=e.vy=0;
+    e.atkCd=(e.atkCd||0)-dt; if(e.atkCd>0) continue; let best=null, bd=BOAT_FIGHT_R*T; for(const o of ents){ if(o.dead||o===e||o.peaceful||o.team===p.team||o.kind==='animal'&&!o.temper||o.kind==='villager'||o.kind==='drifter'||o.kind==='machine'&&!o.enemy) continue; if(!(o.kind==='monster'||o.kind==='sea'||o.kind==='human'||o.kind==='kraken'||o.kind==='dragon'||o.kind==='ship')) continue; const d=Math.hypot(cxOf(o)-cxOf(e),cyOf(o)-cyOf(e)); if(d<bd){ bd=d; best=o; } }
+    if(!best) continue; const ranged=e.cls==='archer'||e.cls==='wizard';
+    if(ranged){ try{ npcShoot(e,best,e.cls==='wizard'?'magic':'arrow'); }catch(err){} e.atkCd=(CLASSES[e.cls]&&CLASSES[e.cls].cd)||1.1; e.atkT=0.25; }
+    else if(bd<3*T){ damage(best,Math.round((e.dmg||12)*(e.dmgMul||1)),e,120); e.atkCd=0.9; e.atkT=0.25; } } }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') boatFight(dt); }catch(e){} return r; }; }
+
+// ---- three decks on a warship, and seats by deck ----
+// The warship stands three decks tall: the top deck with a rail, an upper deck of windows and a lower deck of gun ports.
+// Your soldiers fill the top deck first, then stand at the windows and the gun ports, where you see them (and they
+// shoot) through the openings. The longship gets a raised stern deck. Seat 0 is you.
+const WAR_DECK=13, WAR_DECKS=3;
+function boatSeat(p,k,n){ const bt=BOATS[p.boat], L=bt.len;
+  if(p.boat===I.WARSHIP||p.boat===I.GALLEON||p.boat===I.IRONCLAD){ const top=Math.min(n,Math.round(8*BOATS[p.boat].len/150)), row=k<top?0:k<top+Math.ceil((n-top)/2)?1:2; const idx=row===0?k:row===1?k-top:k-top-Math.ceil((n-top)/2); const cnt=row===0?top:row===1?Math.ceil((n-top)/2):n-top-Math.ceil((n-top)/2);
+    const span=L-30, dx=cnt<=1?0:Math.round(-span/2+span*((idx+0.5)/cnt)), dy=row===0?-WAR_DECK*WAR_DECKS+2:row===1?-WAR_DECK*2+9:-WAR_DECK+9; return {dx,dy,row}; }
+  const span=L-14, m=n+1; return {dx:m<=1?0:Math.round(-span/2+span*((k+1)/(m-1))),dy:0,row:0}; }
+function drawWarship(p){ const bt=BOATS[p.boat], L=bt.len, cx=Math.round(cxOf(p)), wl=Math.round(p.y+p.h)-5, bob=Math.round(Math.sin(performance.now()/350)), f=p.facing<0?-1:1;
+  const r=(x,y,w,h,c)=>{ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); }; const H=WAR_DECK*WAR_DECKS, team=FCOL[p.team]||'#c03030';
+  const riders=player.party.filter(e=>e&&e.aboard).sort((a,b)=>a.seat-b.seat);
+  ctx.save(); ctx.translate(cx,wl+bob); if(f<0) ctx.scale(-1,1);
+  r(-2,-H-50,3,50,'#6b4422'); r(2,-H-46,L*0.3,30,'#f4ecd2'); r(2,-H-46,L*0.3,2,'#fff'); r(2,-H-34,L*0.3,3,team); r(-L*0.33,-H-34,2,34,'#6b4422'); r(-L*0.33+2,-H-32,16,18,'#f4ecd2'); r(-L*0.33+2,-H-26,16,2,team); r(1,-H-56,8,5,team);
+  ctx.restore();
+  riders.forEach((e,k)=>{ const s0=boatSeat(p,k,riders.length); if(s0.row!==0) return; drawRider(e,cx+s0.dx*f,wl+bob+s0.dy,f,p); });
+  ctx.save(); ctx.translate(cx,wl+bob); if(f<0) ctx.scale(-1,1);
+  r(-L/2,-H,L,H+4,'#a06a38'); r(-L/2,-H,L,3,'#e0ae76'); r(-L/2+2,-H+3,L-4,1,'#6b4422');   // hull, rail
+  for(let d=1;d<WAR_DECKS;d++) r(-L/2,-H+d*WAR_DECK,L,2,'#6b4422');   // deck lines
+  r(-L/2-6,-H+6,8,H-2,'#a06a38'); r(L/2-2,-H-6,8,H+8,'#c99258'); r(L/2,-H-8,6,3,'#e0ae76');   // bow and stern castle
+  r(-L/2+2,-2,L-4,4,'#6b4422'); r(-L/2,2,L,2,team);
+  ctx.restore();
+  riders.forEach((e,k)=>{ const s0=boatSeat(p,k,riders.length); if(s0.row===0) return; const wx=cx+s0.dx*f, wy=wl+bob+s0.dy; ctx.save(); ctx.beginPath(); ctx.rect(wx-6,wy-16,12,12); ctx.clip(); ctx.fillStyle='#2a1a10'; ctx.fillRect(wx-6,wy-16,12,12); drawRider(e,wx,wy,f,p); ctx.restore(); });
+  ctx.save(); ctx.translate(cx,wl+bob); if(f<0) ctx.scale(-1,1); for(const row of [1,2]){ const y=-WAR_DECK*(3-row)-WAR_DECK+3+(row===1?0:0); const span=L-30;   // window frames over the soldiers
+      for(let x=-span/2-6;x<span/2+6;x+=12){ r(x-1,-H+row*WAR_DECK+2,1,10,'#5a3a1c'); } } ctx.restore();
+  const pdx=boatSeat(p,0,riders.length+1).dx; const save={x:p.x,y:p.y}; p.y=save.y-H+2; drawEntity(p); Object.assign(p,save);
+  if(p===player){ const ms=ents.filter(m=>m.kind==='machine'&&m.aboard).sort((a,b)=>a.seat-b.seat); ms.forEach((m,k)=>{ const off=(k-(ms.length-1)/2)*34; drawMachineAt(m.mtype,cx+off*f,wl+bob-H+4,p.facing,0,false,null,1); }); } }
+function drawRider(e,x,y,f,p){ const o=specOf(e); o.frame=6; o.atk=(e.atkT||0)>0; const s=sprite(humanKey(o),SW,SH,g=>drawHumanFig(g,o)); ctx.save(); ctx.translate(x,0); if(f<0) ctx.scale(-1,1); ctx.drawImage(s.n,-SCX,y-SFY+6); ctx.restore(); }
+{ const _db=drawBoat; drawBoat=function(p,...a){ if(p&&p===player&&p.boat===I.WARSHIP) return drawWarship(p); return _db(p,...a); }; }
+
+// ---- enemy buildings are lit, so creatures do not spawn inside them ----
+// Every closed room of an enemy castle, house, watchtower and outpost gets wall torches about every ENEMY_LIGHT_GAP
+// blocks along its floor (a room that already has a light keeps it). Lit cells stop monster spawns (isLit). New worlds,
+// once for older worlds (home.enemyLitV), and whenever a colony finishes a building.
+const ENEMY_LIGHT_GAP=7;
+function lightEnemyBox(bx,put){ let n=0; const seen=new Set(); const y0=bx.y0, y1=bx.y1, x0=bx.x0, x1=bx.x1;
+  const room=(x,y)=>x>=x0&&x<=x1&&y>=y0&&y<=y1&&x>0&&x<W-1&&y>0&&y<H-1&&!BLOCKS[world[y*W+x]].solid&&!isOpenDoor(world[y*W+x])&&bg[y*W+x];
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ if(seen.has(y*W+x)||!room(x,y)) continue; const cells=[], st=[[x,y]]; seen.add(y*W+x);
+    while(st.length&&cells.length<4000){ const [cx,cy]=st.pop(); cells.push([cx,cy]); for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=cx+dx, ay=cy+dy, k=ay*W+ax; if(!seen.has(k)&&room(ax,ay)){ seen.add(k); st.push([ax,ay]); } } }
+    if(cells.length<6||cells.length>=4000) continue; const floor=cells.filter(([cx,cy])=>BLOCKS[world[(cy+1)*W+cx]].solid&&!world[cy*W+cx]).sort((a,b)=>a[0]-b[0]);
+    const lit=cells.filter(([cx,cy])=>BLOCKS[world[cy*W+cx]].light>=4); let last=-99;
+    for(const [fx,fy] of floor){ if(fx-last<ENEMY_LIGHT_GAP) continue; if(lit.some(([lx,ly])=>Math.abs(lx-fx)<ENEMY_LIGHT_GAP&&Math.abs(ly-fy)<5)){ last=fx; continue; }
+      const ty=world[(fy-1)*W+fx]===0&&room(fx,fy-1)?fy-1:fy; if(world[ty*W+fx]) continue; put(fx,ty,B.TORCH); last=fx; n++; } }
+  return n; }
+function enemyLightBoxes(b){ const L=[]; try{ L.push({x0:b.cx-19,x1:b.cx+18,y0:b.gy-40,y1:b.gy+2}); }catch(e){} for(const bx of enemyBoxes(b)) L.push({x0:bx.x0,x1:bx.x1,y0:bx.gy-bx.h,y1:bx.gy}); return L; }
+function lightEnemyVillages(live){ let n=0; const put=live?(x,y,v)=>setTile(x,y,v):(x,y,v)=>wset(x,y,v); const run=()=>{ for(const b of bases||[]) if(b&&isFinite(b.cx)) for(const bx of enemyLightBoxes(b)) n+=lightEnemyBox(bx,put); };
+  if(live) facRun(run); else run(); return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ lightEnemyVillages(false); if(home) home.enemyLitV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.enemyLitV&&!isGuest()){ home.enemyLitV=1; lightEnemyVillages(true); } }catch(e){ console.warn(e); } return r; }; }
+{ const _gb=groundBox; groundBox=function(bx,put,...a){ const r=_gb(bx,put,...a); try{ if(put&&world&&state==='play') lightEnemyBox({x0:bx.x0,x1:bx.x1,y0:bx.gy-bx.h,y1:bx.gy},put); }catch(e){} return r; }; }
+// dirt shelves over an enemy village (Kinard's third screenshot: houses sunk under a flat slab of earth at the old ground
+// height): across the village, from the castle to its last building, natural earth and rock that has nothing solid
+// under it and lies above the lowest house floor is removed, bottom row first, until none is left hanging.
+function villageSpan(b){ let a=b.x0, z=b.x1, low=b.gy; for(const bx of enemyBoxes(b)){ a=Math.min(a,bx.x0-ENEMY_RAMP); z=Math.max(z,bx.x1+ENEMY_RAMP); low=Math.max(low,bx.gy); } return {a:Math.max(2,a-4),z:Math.min(W-3,z+4),low}; }
+function shelfClear(b,put){ const {a,z,low}=villageSpan(b); let n=0;
+  for(let pass=0;pass<40;pass++){ let k=0; for(let y=low-1;y>=low-30;y--) for(let x=a;x<=z;x++){ const id=world[y*W+x]; if(!natGround(id)) continue; const below=world[(y+1)*W+x]; if(BLOCKS[below].solid||below===B.WATER) continue; put(x,y,0); k++; } n+=k; if(!k) break; }
+  return n; }
+{ const _gev=groundEnemyVillages; groundEnemyVillages=function(live,...a){ let n=_gev(live,...a); const put=live?(x,y,v)=>setTile(x,y,v):(x,y,v)=>wset(x,y,v); const run=()=>{ for(const b of bases||[]) if(b&&isFinite(b.x0)) n+=shelfClear(b,put); }; if(live) facRun(run); else run(); return n; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.enemyShelfV&&!isGuest()){ home.enemyShelfV=1; facRun(()=>{ for(const b of bases||[]) if(b&&isFinite(b.x0)) shelfClear(b,(x,y,v)=>setTile(x,y,v)); }); } }catch(e){ console.warn(e); } return r; }; }
+// and it keeps watching: every ENEMY_TIDY seconds the village you are near (within 160 blocks) is checked again
+const ENEMY_TIDY=20; let enemyTidyT=ENEMY_TIDY;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if((enemyTidyT-=dt)<=0&&world&&player&&!isGuest()){ enemyTidyT=ENEMY_TIDY; for(const b of bases||[]){ if(!b||!isFinite(b.cx)||Math.abs(b.cx-cxOf(player)/T)>160) continue;
+      facRun(()=>{ const put=(x,y,v)=>setTile(x,y,v); for(const bx of enemyBoxes(b)) groundBox(bx,put); shelfClear(b,put); }); } } }catch(e){} return r; }; }
+
+// ---- a haunted village set right: beat its ghoul and a restorer rebuilds it, with a portal and three villagers ----
+// When the ghoul of a burned village falls, a restorer of your side arrives at once and rebuilds its three houses
+// (cleared of ash, charred wood and rubble) block by block over RESTORE_T seconds, hammering as she goes; the village
+// then gets a portal (it shows on the map as "Restored village") and three villagers of yours who live in the houses.
+// No more ghosts or ghouls rise there. Kept in the save on the ruin (r.restore, r.restored).
+const RESTORE_T=60, RUIN_TRASH=new Set([B.ASH,B.CHAR_PLANK,B.RUBBLE,B.CRUMBLED_STONE,B.CRUMBLED_BRICK,B.BROKEN_PLANK,B.COBWEB_L,B.COBWEB_R,B.VINE,B.IVY].filter(v=>v!=null));
+const banOfTeam=t=>({g:B.BANNER_G,b:B.BANNER_B,r:B.BANNER_R})[t]||B.BANNER_G;
+function restorePlan(r){ const x=r.x, gy=r.gy, tw=new Map(), tb=new Map(); for(let k=0;k<3;k++) buildHouse(x-19+k*13,gy,k,banOfTeam(player.team),(a,b,id)=>tw.set(b*W+a,id),(a,b,v)=>tb.set(b*W+a,v));
+  const cells=[]; for(let y=gy-18;y<=gy;y++) for(let xx=x-22;xx<=x+22;xx++){ const i=y*W+xx; let want;
+    if(tw.has(i)) want=tw.get(i); else if(y===gy) want=(world[i]===B.ASH||world[i]===B.CHAR_PLANK)?B.GRASS:world[i]; else want=(natGround(world[i])||world[i]===B.WATER)?world[i]:(RUIN_TRASH.has(world[i])||BLOCKS[world[i]].solid||world[i])&&!isChestId(world[i])?0:world[i];
+    const wb=tb.has(i)?tb.get(i):(bg[i]===CHAR_BG?0:bg[i]); if(want!==world[i]||wb!==bg[i]) cells.push([i,want,wb]); }
+  cells.sort((a,b)=>b[0]/W-a[0]/W||a[0]-b[0]); return cells; }
+function startRestore(r){ if(!r||r.restored||r.restore||isGuest()) return; r.restore={cells:restorePlan(r),i:0,acc:0};
+  const v=makeVillager(player.team,{role:'restorer',x0:r.x-2,x1:r.x+2,gy:r.gy}); v.name='Mira the restorer'; v.restorer=r.x; v.x=r.x*T; v.y=r.gy*T-v.h-1; ents.push(v);
+  toast('A restorer arrives to rebuild the burned village',4); }
+function restoreTick(dt){ if(isGuest()) return; for(const r of ruins||[]){ const R=r.restore; if(!R) continue; R.acc+=dt*R.cells.length/RESTORE_T; let n=Math.floor(R.acc); R.acc-=n;
+    if(n>0) facRun(()=>{ while(n-->0&&R.i<R.cells.length){ const [i,id,b]=R.cells[R.i++]; setTile(i%W,(i/W)|0,id); bg[i]=b; } });
+    if(R.i%12===0&&R.i<R.cells.length){ const [i]=R.cells[R.i]; try{ sfx('hit',(i%W)*T,((i/W)|0)*T); puff((i%W)*T+8,((i/W)|0)*T+8,'#c8b090',3,40); }catch(e){} }
+    if(R.i>=R.cells.length){ r.restore=null; restoreDone(r); } } }
+function restoreDone(r){ r.restored=true; const px=r.x+3; facRun(()=>{ setTile(px,r.gy-1,B.PORTAL); setTile(px,r.gy-2,B.PORTAL); });
+  ruinFolk(r); toast('The village is rebuilt: a portal stands in it and three villagers have moved in',5); }
+function ruinFolk(r){ const have=ents.filter(e=>!e.dead&&e.ruinHome===r.x).length; for(let k=have;k<3;k++){ const hx=r.x-19+k*13; const v=makeVillager(player.team,{role:'villager',x0:hx+1,x1:hx+8,gy:r.gy}); v.ruinHome=r.x; ents.push(v); } }
+{ const _k=kill; kill=function(e,...a){ const was=e&&!e.dead&&e.mtype==='ghoul'&&e.camp&&!e.ghost; const r=_k(e,...a); try{ if(was&&e.dead){ const ru=(ruins||[]).find(q=>Math.abs(q.x-e.camp.x)<4); if(ru) startRestore(ru); } }catch(err){ console.warn(err); } return r; }; }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') restoreTick(dt); }catch(e){} return r; }; }
+{ const _pl=portalList; portalList=function(...a){ const L=_pl(...a); try{ for(const r of ruins||[]) if(r.restored) L.push({label:'Restored village',x:(r.x+1)*T,y:(r.gy)*T-29,fee:10,tx:r.x+3,ty:r.gy}); }catch(e){} return L; }; }
+// restored villages stay free of ghosts and ghouls
+{ const _sr=spawnRuinNight; spawnRuinNight=function(...a){ const saved=ruins; try{ ruins=(ruins||[]).filter(r=>!r.restored&&!r.restore); return _sr(...a); } finally{ ruins=saved; } }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(!isGuest()) for(const q of ruins||[]){ if(q.restored) ruinFolk(q); if(q.restore&&!ents.some(e=>!e.dead&&e.restorer===q.x)){ const v=makeVillager(player.team,{role:'restorer',x0:q.x-2,x1:q.x+2,gy:q.gy}); v.name='Mira the restorer'; v.restorer=q.x; ents.push(v); } } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- reports "from Kinard" go to the top of the list ----
+// A report whose words include "from Kinard" is marked urgent (rep.kinard, and "[from Kinard]" at the start of its
+// note), so the hourly check (a Claude routine on Kinard's account) works on it and releases the fix at once. The
+// claude.ai game page stores reports where that check can read them; the desktop app and the play site send them to
+// Kinard's report form.
+{ const _br=bugReport; bugReport=function(note,...a){ const r=_br(note,...a); try{ if(/from\s+kinard/i.test(String(note||''))){ r.kinard=true; if(!/^\[from Kinard\]/.test(r.note)) r.note='[from Kinard] '+r.note; } }catch(e){} return r; }; }
+{ const _bc=bugCloudStore; bugCloudStore=async function(rep,...a){ const ok=await _bc(rep,...a); try{ if(ok&&rep&&rep.kinard&&window.claude&&window.claude.use){ const db=await window.claude.use('db'); if(db) await db.doc('bugs/'+rep.id).update({kinard:true,status:'new'}); } }catch(e){} return ok; }; }
+// the top buttons stay above every window, and the window order numbers never run away
+{ const st=document.createElement('style'); st.textContent='body.multiwin #topbtns, body.multiwin #btnMore, body.multiwin #moreMenu{ z-index:900!important; }'; document.head.appendChild(st); }
+{ const _wf=winFront; winFront=function(o,...a){ if(winZ>800){ winZ=40; for(const w of openWins()) w.style.zIndex=String(++winZ); } return _wf(o,...a); }; }
+
+// ---- ten boats: fast, balanced and heavy ----
+// Boarding counts every soldier afresh each time (a soldier once left on shore used to stay "left behind" and never
+// boarded again). Five boats join the raft, canoe, rowboat, longship and warship:
+//  fast and light: the Skiff (you and 2, very fast) and the Cutter (you and 6, fast);
+//  well rounded: the Sloop (you and 8, 1 war machine);
+//  heavy and slow, with thick hulls (DEF: less damage to everyone aboard): the Galleon (you and 25, 4 machines) and the
+//  Ironclad (you and 31, 6 machines). The Shipwright sells them (the heavy ones at shop levels 2 and 3).
+{ const _bp=boardParty; boardParty=function(...a){ for(const e of player.party) if(e) e.leftBehind=false; return _bp(...a); }; }
+const BOAT_NEW=[
+  ['skiff','Skiff',{seats:3,speed:290,len:30,machines:1,cls:'fast',desc:'Fast and light: you and 2 soldiers. The quickest boat on the sea.'},I.CANOE,90,1],
+  ['cutter','Cutter',{seats:7,speed:235,len:58,machines:1,cls:'fast',desc:'Fast: you and 6 soldiers, quicker than a longship.'},I.ROWBOAT,380,1],
+  ['sloop','Sloop',{seats:9,speed:205,len:72,machines:1,cls:'balanced',desc:'Well rounded: you, 8 soldiers and 1 war machine.'},I.LONGSHIP,620,1],
+  ['galleon','Galleon',{seats:26,speed:140,len:172,machines:4,def:0.2,cls:'heavy',desc:'Heavy and slow: you, 25 soldiers and 4 war machines, behind a thick hull (a fifth less damage aboard).'},I.WARSHIP,1900,2],
+  ['ironclad','Ironclad',{seats:32,speed:115,len:196,machines:6,def:0.35,cls:'heavy',desc:'The heaviest ship: you, 31 soldiers and 6 war machines, iron-plated (a third less damage aboard).'},I.WARSHIP,2800,3]];
+const BOAT_BASE={};
+for(const [key,name,bt,base,price,lv] of BOAT_NEW){ const id=newItem({name,kind:'boat',desc:bt.desc}); I[key.toUpperCase()]=id; BOATS[id]=bt; ITEMS[id].boat=bt; BOAT_BASE[id]=base;
+  try{ SHOPS.trader.stock.push(lv>1?[id,1,price,lv]:[id,1,price]); }catch(e){} }
+for(const id of [I.RAFT,I.CANOE,I.ROWBOAT,I.LONGSHIP,I.WARSHIP]) if(BOATS[id]) BOATS[id].cls=BOATS[id].cls||({[I.RAFT]:'fast',[I.CANOE]:'fast',[I.ROWBOAT]:'balanced',[I.LONGSHIP]:'balanced',[I.WARSHIP]:'heavy'})[id];
+BOATS[I.WARSHIP].def=BOATS[I.WARSHIP].def||0.1;
+// ranks: which boat replaces which (the one you keep is the best)
+Object.assign(BOAT_RANK,{[I.RAFT]:1,[I.CANOE]:2,[I.SKIFF]:3,[I.ROWBOAT]:4,[I.CUTTER]:5,[I.SLOOP]:6,[I.LONGSHIP]:7,[I.WARSHIP]:8,[I.GALLEON]:9,[I.IRONCLAD]:10});
+// pictures: the new boats are drawn from the boat they are built like, at their own length
+{ const _it=iconTex; iconTex=function(id,...a){ if(BOAT_BASE[id]) return _it(BOAT_BASE[id],...a); return _it(id,...a); }; }
+{ const _db=drawBoat; drawBoat=function(p,...a){ const base=p&&BOAT_BASE[p.boat]; if(!base) return _db(p,...a); const real=p.boat, save=BOATS[base]; BOATS[base]=Object.assign({},save,{len:BOATS[real].len});
+    p.boat=base; try{ return _db(p,...a); } finally{ p.boat=real; BOATS[base]=save; } }; }
+{ const _dbw=drawBoat; drawBoat=function(p,...a){ if(p&&p===player&&(p.boat===I.GALLEON||p.boat===I.IRONCLAD)){ const real=p.boat, save=BOATS[I.WARSHIP]; BOATS[I.WARSHIP]=Object.assign({},save,{len:BOATS[real].len}); p.boat=I.WARSHIP; try{ return drawWarship(p); } finally{ p.boat=real; BOATS[I.WARSHIP]=save; } } return _dbw(p,...a); }; }
+// a heavy hull shields everyone aboard
+{ const _dm=damage; damage=function(t,amt,src,...a){ try{ if(t&&player&&player.riding&&BOATS[player.boat]&&BOATS[player.boat].def&&(t===player||t.aboard)&&src&&src.kind!=='kraken') amt=amt*(1-BOATS[player.boat].def); }catch(e){} return _dm(t,amt,src,...a); }; }
+
+// ---- soldiers stand still around you when you stop ("soldiers still moving") ----
+// Each soldier steered toward its spot and overshot it a little every few frames, so a stopped army kept stepping to and
+// fro in place. While you stand still, a soldier of your party that is at its spot (within STAND_NEAR blocks; in follow
+// mode, within STAND_FOLLOW blocks of you) with no enemy within STAND_SAFE blocks simply stands, facing the way you face.
+const STAND_NEAR=0.15, STAND_KEEP=0.6, STAND_FOLLOW=6, STAND_SAFE=9;
+function quietAround(e){ if(e._qT>performance.now()) return e._q; e._qT=performance.now()+300; let q=true; for(const o of ents){ if(o.dead||o.peaceful||o===e||o.team===e.team||o.kind==='villager'||o.kind==='drifter'||o.kind==='animal'&&o.temper!=='bad') continue; if(!(o.kind==='monster'||o.kind==='human'||o.kind==='animal'||o.kind==='dragon'||o.kind==='sea')) continue; if(Math.abs(cxOf(o)-cxOf(e))<STAND_SAFE*T&&Math.abs(cyOf(o)-cyOf(e))<STAND_SAFE*T){ q=false; break; } } return e._q=q; }
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ try{ const p=player; if(e&&p&&!e.dead&&!e.ghost&&p.party&&p.party.includes(e)&&!e.aboard&&!e.stationed&&e.grounded&&!e.inWater&&Math.abs(p.vx)<8&&p.grounded&&!(e.kbT>0)&&!(e.atkT>0)){
+      const anchor=e.lockX!=null?e.lockX:(typeof ordMode==='function'&&ordMode()==='form'&&e.holdX!=null)?e.holdX:null; const form=typeof ordMode==='function'&&ordMode()==='form'; const near=anchor!=null?Math.abs(cxOf(e)-anchor)<=(e.standing?STAND_KEEP:STAND_NEAR)*T:!form&&Math.abs(cxOf(e)-cxOf(p))<=STAND_FOLLOW*T;
+      if(near&&(!e.target||e.target.dead)&&quietAround(e)){ e.vx=0; if(anchor!=null){ const d=anchor-cxOf(e); if(Math.abs(d)>0.5) e.x+=Math.max(-0.5,Math.min(0.5,d)); }   /* settle onto the exact spot without a walk */ e.target=null; e.facing=p.facing||e.facing; e.anim=0; physics(e,dt); e.standing=true; return; } } e.standing=false; }catch(err){} return _ua(e,dt,...a); }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
