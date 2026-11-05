@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1793867219"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793867219"><link rel="manifest" href="manifest.webmanifest?v=1793867219"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1793870547"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793870547"><link rel="manifest" href="manifest.webmanifest?v=1793870547"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.175</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.176</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.176</h3>
+    <p>Sailing near a far shore shows a Land button that brings you and your army ashore. Shores curve gently into the sea, so you can always climb out. Anyone in lava sinks into it properly. Fountains run when you pour a bucket into them, every place has three kinds in different sizes, and running fountains at your village give you and your soldiers small bonuses. New worlds have a sky realm three times as tall and a magma realm three times as deep, fewer and lower sky fortresses, castle rooms built to match their walls, and prisoners to free in the sky prison. Make sixteen dyes and twenty kinds of stained glass, dye carpets, flags, tapestries and beds, and see stained glass in the wizard towers and in every castle, grander at each castle stage.</p>
     <h3>New in Beta 0.9.175</h3>
     <p>Bosses drop stuffed animals of themselves: hold one at your side, or put two on a bed for a 10% bonus each. Beds are three blocks wide, and there are straw, royal, double, king and bunk beds. The Beastmaster is Ograk Norlock and his bear is Wimbly; after Wimbly falls, a giant bear called Teddy may turn up in the far forest. Bosses wait to be woken: Ograk by his chest, the wizards by their mirrors, Grukk by his war drum, and the Kraken by A Sailor's Nightmare bait. On a computer W jumps and flies; on a phone hold the Wings button. Wings drop you soon after you let go. The woodcutter's lodge, farmhouse and miners' hut have two floors, village buildings have posts on both sides, and the village sells and shows vases, statues and fountains. Furnace fire stays behind you.</p>
     <h3>New in Beta 0.9.174</h3>
@@ -887,7 +889,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.175</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.176</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1148,7 +1150,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.175</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.176</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1170,7 +1172,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.175', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.176', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -21591,6 +21593,1182 @@ addEventListener('blur',()=>{ wingKeyW=false; wingBtnDown=false; spaceUpHeld=fal
 // the Sky wings' own text
 if(ITEMS[I.WINGS]) ITEMS[I.WINGS].desc='Hold W (on a phone, the Wings button) to fly up, steer left and right, hold down to dive. 10 seconds of flight; recharges on the ground. Let go and you fall';
 if(ITEMS[444]) ITEMS[444].desc='Wings fly as long as you hold W or the Wings button. Needs sky wings and the previous feather';
+// ===== Beta 0.9.191 (Kinard, 2026-11-05): a Land button at the far shore, rounded shores, characters under the lava =====
+
+// ---------- 1. rounded shores ----------
+// The ocean walls of world generation turned the air just above the water into sand for three blocks past every shore:
+// a one-block line of sand stuck out over the sea, and a swimmer under it could not climb out. Each shore now curves down
+// from the beach into the sea like a quarter circle (shoreArc): a few blocks of dry sand at the water line, then steps of
+// one block under the surface, getting steeper until it meets the deep sea floor. Ramps (shapes 6 and 7) smooth the dry
+// steps. New worlds get it after generation (a genWorld wrapper); older worlds once in legacyFixes (home.shoreV), a shore
+// at a time and only where none of its cells has been seen. Docks, chests and buildings in the way leave a shore alone.
+const SHORE_NAT=new Set([0,B.WATER,B.SAND,B.SNOW,B.STONE,B.DIRT,B.GRASS,B.SANDROCK,B.ICE].filter(v=>v!=null));
+const SHORE_L0=12, SHORE_LR=7;   // the curve is 12 to 18 blocks long and as deep as it is long
+function shoreSpots(){ const out=[]; if(!oceanCol) return out; for(let x=8;x<W-8;x++){ const a=!!oceanCol[x-1], b=!!oceanCol[x]; if(a===b) continue;
+    const dir=b?1:-1, o0=b?x:x-1, l0=o0-dir; if(skyTop[l0]>seaY) continue; let span=0; for(let c=o0;c>4&&c<W-5&&oceanCol[c]&&span<600;c+=dir) span++; out.push({o0,dir,l0,span}); } return out; }
+function shoreArcTop(k,L,D){ const f=Math.min(1,k/L); return seaY-1+Math.round(D*(1-Math.sqrt(1-f*f))); }
+// the cells one shore changes: [index, new block]; null when the shore is left alone
+function shoreArcPlan(s,R){ let L=SHORE_L0+Math.floor(R()*SHORE_LR); L=Math.min(L,Math.floor(s.span/2)-1); if(L<5) return null; const D=L;
+  const lt=world[skyTop[s.l0]*W+s.l0], mat=lt===B.SNOW||lt===B.ICE||islands.some(is=>is.ice&&s.o0>=is.s-30&&s.o0<=is.e+30)?B.SNOW:B.SAND;   // snow islands never keep sand
+  const odd=id=>!SHORE_NAT.has(id)&&(BLOCKS[id].solid||BLOCKS[id].platform||isChestId(id)||id===B.PORTAL||id===B.PLATFORM);
+  for(let k=0;k<=L+1;k++){ const c=s.o0+s.dir*k; for(let y=seaY-3;y<=seaY+1;y++) if(odd(world[y*W+c])) return null; }
+  const ch=[], tops=[];
+  for(let k=0;k<=L;k++){ const c=s.o0+s.dir*k; if(!oceanCol[c]) break; const top=shoreArcTop(k,L,D); tops.push([c,top]);
+    // above the curve: natural rock and sand go (the old line); anything else there (a torch on the dock) stays
+    for(let y=seaY-3;y<top;y++){ const i=y*W+c, id=world[i]; if(id===0||id===B.WATER) continue; if(wetDeco&&wetDeco.has(i)) return null;
+      if(!SHORE_NAT.has(id)){ if(BLOCKS[id].solid) return null; continue; } ch.push([i,y>=seaY?B.WATER:0]); }
+    // the curve and everything under it down to the old sea floor is sand (sand falls, so it needs the whole column)
+    for(let y=top;y<H-62;y++){ const i=y*W+c, id=world[i]; if(BLOCKS[id].solid){ if(y<seaY) continue; break; } if(id!==0&&id!==B.WATER) break; if(wetDeco&&wetDeco.has(i)) break; ch.push([i,mat]); } }
+  return {ch,tops,mat}; }
+// no back wall on the new shore: under one, a beach out of the sea lights as a room indoors
+function shoreArcApply(plan,put){ for(const [i,id] of plan.ch){ put(i%W,(i/W)|0,id); liq[i]=id===B.WATER?8:0; shape[i]=0; bg[i]=0; }
+  for(const [c,t] of plan.tops) for(let y=seaY-3;y<=t+1;y++){ const i=y*W+c; if(SHORE_NAT.has(world[i])) bg[i]=0; }
+  // ramps on the dry steps (never next to water)
+  const T2=plan.tops; for(let k=0;k<T2.length;k++){ const [c,t]=T2[k]; if(t>=seaY) continue; const i=t*W+c; if(world[i]!==plan.mat||world[i-W]!==0) continue;
+    const sea=T2[k+1]; if(!sea||sea[1]!==t+1||world[(sea[1]-1)*W+sea[0]]!==0) continue; shape[i]=sea[0]>c?7:6; }
+  for(const [c,t] of T2){ if(t<=seaY){ surf[c]=t; oceanCol[c]=0; } updateSkyTop(c); } }   // a column left under water keeps its sea floor in surf, as every sea column does
+// The fishing village's dock (planks at the water line on log piles) was turned into that same sand by the ocean walls,
+// a line of sand twenty blocks out to sea: it is a wooden dock again, standing in the water over the curved shore.
+function dockSpan(){ if(!fishv||!fishv.dock) return null; const [a,b]=fishv.dock; const dir=oceanCol[b]&&!oceanCol[a]?1:oceanCol[a]&&!oceanCol[b]?-1:(oceanCol[b]?1:-1); const edge=dir>0?a+2:b-2; return {a,b,dir,edge}; }
+function dockFix(onlyUnexplored,put){ const d=dockSpan(); if(!d) return 0; const y=seaY-1, cells=[];
+  const piles=new Set(); for(let k=0;k<22;k+=5) piles.add(d.edge+d.dir*(k-2));
+  for(let x=d.a;x<=d.b;x++){ if(x<2||x>=W-2) continue; const i=y*W+x, id=world[i]; if(id===0||id===B.WATER||((id===B.SAND||id===B.SNOW)&&(world[i+W]===B.WATER||world[i+W]===B.LOG||piles.has(x)&&oceanCol[x]))) cells.push([i,B.PLATFORM]); }
+  for(const x of piles){ if(x<2||x>=W-2) continue; for(let yy=seaY;yy<H-62;yy++){ const i=yy*W+x, id=world[i];
+      if(id===B.WATER){ cells.push([i,B.LOG]); continue; } if((id===B.SAND||id===B.SNOW)&&world[i-1]===B.WATER&&world[i+1]===B.WATER){ cells.push([i,B.LOG]); continue; } break; } }
+  if(!cells.length||onlyUnexplored&&cells.some(([i])=>explored[i])) return 0;
+  for(const [i,id] of cells){ put(i%W,(i/W)|0,id); liq[i]=0; bg[i]=0; shape[i]=0; } return cells.length; }
+// anything left of the old line (sand or rock at the water line with water under it) out at sea goes
+function loseLines(onlyUnexplored,put){ const d=dockSpan(); let n=0; for(let x=4;x<W-4;x++){ if(!oceanCol[x]||d&&x>=d.a&&x<=d.b) continue;
+    for(let y=seaY-1;y>=seaY-3;y--){ const i=y*W+x, id=world[i]; if(!SHORE_NAT.has(id)||!BLOCKS[id].solid) break; const bl=world[i+W]; if(!(bl===B.WATER||bl===0)) break; if(onlyUnexplored&&explored[i]) break;
+      put(x,y,0); bg[i]=0; shape[i]=0; liq[i]=0; n++; } } return n; }
+function roundShores(onlyUnexplored,put){ if(!world||!oceanCol||!seaY) return 0; let n=0; const R=mulberry(((typeof seed==='number'?seed:0)|0)+9191);
+  for(const s of shoreSpots()){ const plan=shoreArcPlan(s,R); if(!plan||!plan.ch.length) continue; if(onlyUnexplored&&plan.ch.some(([i])=>explored[i])) continue;
+    shoreArcApply(plan,put); n++; }
+  dockFix(onlyUnexplored,put); loseLines(onlyUnexplored,put); return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ roundShores(false,(x,y,id)=>{ world[y*W+x]=id; }); if(home) home.shoreV=1; }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.shoreV&&!isGuest()){ home.shoreV=1; facRun(()=>{ roundShores(true,(x,y,id)=>wset(x,y,id)); }); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---------- 2. Land: sail to the far shore and step ashore with everyone aboard ----------
+// While you sail over the ocean within LAND_R blocks of a shore that is not the island you set out from, a Land button
+// shows (the talk button: "Land (F)" on a computer, "Land" on a phone). It steers the boat to that shore for up to
+// LAND_SAIL seconds, then packs the boat away (as sailing onto land always did) and puts you, the soldiers aboard, the war
+// machines aboard and your following pets on dry ground in a row along the shore, nobody in a block or in the water.
+// Jumping or steering the other way stops it. Only your own player and allies move, so a friend in a shared world lands
+// the same way without changing the shared world.
+const LAND_R=25, LAND_SAIL=5;
+let landFromIs=-2, landGo=null, landWas=false;
+const LAND_T={landBtn:true};
+function landIslandIdx(c){ if(!islands) return -1; let b=-1, bd=1e9; islands.forEach((is,i)=>{ const d=c<is.s?is.s-c:c>is.e?c-is.e:0; if(d<bd){ bd=d; b=i; } }); return b; }
+// boarding at a shore sets out from that island; boarding out at sea (back onto a moored boat) keeps the old one
+function landBoardIsland(pc){ for(let d=0;d<=40;d++) for(const c of [pc-d,pc+d]) if(c>2&&c<W-3&&!oceanCol[c]) return landIslandIdx(c); return -2; }
+function landDryRow(c){ if(c<3||c>=W-3) return -1; const g=skyTop[c]; if(g>seaY||g<seaY-60) return -1; const up=world[(g-1)*W+c]; if(up===B.WATER||up===B.LAVA) return -1;
+  if(BLOCKS[world[(g-1)*W+c]].solid||BLOCKS[world[(g-2)*W+c]].solid) return -1; return g; }
+function landShore(p){ p=p||player; if(!p||!oceanCol) return null; const pc=Math.floor(cxOf(p)/T); if(pc<3||pc>=W-3||!oceanCol[pc]) return null;
+  const head=Math.abs(p.vx||0)>20?Math.sign(p.vx):(p.facing<0?-1:1);
+  for(const dir of [head,-head]) for(let d=1;d<=LAND_R;d++){ const c=pc+dir*d; if(c<3||c>=W-3) break; if(oceanCol[c]) continue; if(landDryRow(c)<0) continue; return {c,dir}; }
+  return null; }
+function landReady(){ const p=player; if(!p||p.dead||state!=='play'||!p.riding||!BOATS[p.boat]||p.passenger||p.operating||landGo) return null; const s=landShore(p); if(!s) return null;
+  if(landFromIs>=0&&landIslandIdx(s.c)===landFromIs) return null; return s; }
+function landStart(){ const s=landReady(); if(!s) return; landGo={c:s.c,dir:s.dir,t:0,lastX:cxOf(player),stillT:0}; toast('Sailing for the shore…',1.5); }
+function landAboard(){ const p=player; const crew=p.party.filter(e=>e&&!e.dead&&e.aboard&&!e.mooredOn), mach=ents.filter(m=>m.kind==='machine'&&!m.dead&&m.aboard&&!m.mooredOn&&!m.enemy);
+  const pets=ents.filter(e=>e&&!e.dead&&e.tamed&&!e.ghost&&!e.proxy&&e.team===p.team&&!e.pen&&!e.fpen&&e.mode!=='farm'&&!e.stationed&&!crew.includes(e)&&!p.party.includes(e)); return {crew,mach,pets}; }
+// columns of dry ground from the shore inland, for n people
+function landStrip(c,dir,n){ const out=[]; for(let k=0;k<60&&out.length<n;k++){ const x=c+dir*k; if(x<3||x>=W-3) break; if(oceanCol[x]) continue; const g=landDryRow(x); if(g>=0) out.push([x,g]); } return out; }
+function landWet(e){ const x0=Math.floor(e.x/T), x1=Math.floor((e.x+e.w-1)/T), y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-1)/T); for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=tileAt(x,y); if(id===B.WATER||id===B.LAVA) return true; } return false; }
+function landPut(e,spot,off){ const [x,g]=spot; e.x=x*T+T/2-e.w/2+(off||0); e.y=g*T-e.h-0.05; e.vx=e.vy=0; if(collides(e)) freeSpotFor(e); return !collides(e)&&!landWet(e); }
+function landFinish(){ const p=player, go=landGo; landGo=null; if(!p||p.dead) return false; const now=landAboard(), was=go.who||now, live=a=>a.filter(e=>e&&!e.dead);   // who was aboard before this frame (a boat that runs aground unloads them itself)
+  const who={crew:live(was.crew),mach:live(was.mach),pets:live(now.pets)};
+  if(p.riding){ p.riding=false; p.wasRiding=false; disembark(); } p.boatCd=Math.max(p.boatCd||0,1.2);
+  const need=1+Math.ceil((who.crew.length+who.pets.length)/2)+who.mach.length*2;
+  let strip=landStrip(go.c,go.dir,need+1); if(!strip.length){ const s=landShore(p)||go; strip=landStrip(s.c,s.dir,need+1); } if(!strip.length){ toast('There is no dry ground here to land on',2.5); return false; }
+  const at=k=>strip[Math.min(strip.length-1,k)];
+  // you step one block in from the water's edge; your soldiers and pets two to a block behind you, machines last
+  let k=strip.length>1?1:0; if(!landPut(p,at(k))){ for(const sp of strip) if(landPut(p,sp)) break; } p.peakY=p.y; p.grounded=false;
+  let j=0; for(const e of [...who.crew,...who.pets]){ e.aboard=false; e.leftBehind=false; e.target=null; e.seat=undefined; const idx=k+1+Math.floor(j/2), off=(j%2?4:-4); j++;
+    if(!landPut(e,at(idx),off)){ let ok=false; for(let q=0;q<strip.length&&!ok;q++) ok=landPut(e,strip[(idx+q)%strip.length],off); }
+    e.peakY=e.y; e.holdX=cxOf(e); e.stuckT=0; }
+  let mi=k+2+Math.ceil(j/2); for(const m of who.mach){ m.aboard=false; m.waiting=false; if(m.crew) m.crew.aboard=false; if(!landPut(m,at(mi))){ for(const sp of strip) if(landPut(m,sp)) break; } mi+=2; }
+  try{ if(typeof allyReset==='function') allyReset(); }catch(e){}
+  puff(cxOf(p),p.y+p.h,'#e8dcb0',10,90); const n=who.crew.length;
+  toast(n?`You step ashore with ${n} soldier${n>1?'s':''}`:'You step ashore',2.5); return true; }
+// boarding notes the island you set out from; while landing, the boat steers itself to the shore
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; if(!p) return _up(dt,...a);
+    let keep=null;
+    if(landGo&&p.riding&&!p.dead){ const go=landGo; if(input.jump||input.down||(go.dir>0?input.left:input.right)) landGo=null;
+      else { keep={l:input.left,r:input.right}; input.left=go.dir<0; input.right=go.dir>0; go.who=landAboard(); } }
+    let r; try{ r=_up(dt,...a); } finally{ if(keep){ input.left=keep.l; input.right=keep.r; } }
+    try{ if(p.riding&&!landWas){ const f=landBoardIsland(Math.floor(cxOf(p)/T)); if(f!==-2) landFromIs=f; } landWas=!!p.riding;
+      if(landGo){ const go=landGo; go.t+=dt; const cx=cxOf(p); if(Math.abs(cx-go.lastX)<0.5) go.stillT+=dt; else go.stillT=0; go.lastX=cx;
+        const L=(BOATS[p.boat]||{len:30}).len, near=Math.abs(cx-(go.c*T+T/2))<L/2+T*1.5;
+        if(p.dead) landGo=null; else if(!p.riding||near||go.stillT>0.6||go.t>LAND_SAIL) landFinish(); } }catch(e){ console.warn(e); landGo=null; }
+    return r; }; }
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ if(landReady()) o.unshift({label:'Land',direct:true,go:landStart}); }catch(e){} return o; }; }
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ const tb=$('#btnTalk'); if(!tb) return r;
+      if(landReady()){ const key=String((settings.keys&&settings.keys.use)||'KeyF').replace(/^Key|^Digit/,''), t='Land'+(isTouchUI()?'':` (${key})`);
+        if(!talkTarget||talkTarget===LAND_T){ talkTarget=LAND_T; tb.hidden=false; $('#toast').classList.add('talking'); if(tb.textContent!==t) tb.textContent=t; } }
+      else if(talkTarget===LAND_T){ talkTarget=undefined; tb.hidden=true; tb.textContent='Talk'; $('#toast').classList.remove('talking'); } }catch(e){} return r; }; }
+{ const _in=interact; interact=function(v,...a){ if(v===LAND_T){ landStart(); return; } return _in(v,...a); }; }
+// a new world, a load or a respawn starts with no landing on the way
+{ const _sp=startPlay; startPlay=function(...a){ landGo=null; landWas=false; landFromIs=-2; return _sp(...a); }; }
+
+// ---------- 3. everyone under the lava ----------
+// Lava used to be drawn with the blocks, and 0.9.173 painted a second layer only over the lava cells under a character's
+// box, so a tail, a wing or a weapon outside that box showed over the lava, and the second layer's square edge showed.
+// Now every lava cell is drawn once, after all the characters (the tile pass queues them: lavaQ), so anyone in lava is
+// under its surface wherever they reach. A character near lava is also clipped to the open cells around it, so no part
+// of it (a tail, a wing, a swing) is drawn over the rock beside or under the pool.
+let lavaDefer=false; const lavaQ=[];
+{ const _lc=drawLavaCell; drawLavaCell=function(...a){ if(lavaDefer){ lavaQ.push(a); return; } return _lc(...a); }; }
+drawLavaFront=function(){};
+function flushLava(){ lavaDefer=false; if(!lavaQ.length) return 0; const q=lavaQ.splice(0); for(const a of q) drawLavaCell(...a); return q.length; }
+{ const _r=render; render=function(...a){ lavaQ.length=0; lavaDefer=true; try{ return _r(...a); } finally{ lavaDefer=false; lavaQ.length=0; } }; }
+{ const _dl=drawLighting; drawLighting=function(...a){ if(lavaDefer||lavaQ.length){ try{ if(typeof flushLanes==='function') flushLanes(); }catch(e){} try{ flushLava(); }catch(e){ console.warn(e); } } return _dl(...a); }; }
+function lavaNearEnt(e){ if(!world||!e||!(e.w>0)||!(e.h>0)||!isFinite(e.x)||!isFinite(e.y)) return false; const x0=Math.floor(e.x/T)-2, x1=Math.floor((e.x+e.w)/T)+2, y0=Math.floor(e.y/T)-1, y1=Math.floor((e.y+e.h)/T)+1;
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) if(tileAt(x,y)===B.LAVA) return true; return false; }
+// a clip path: everything but the solid parts of the blocks around the character (not the cells its own box is in)
+function lavaClip(e){ const ex0=Math.floor(e.x/T), ex1=Math.floor((e.x+e.w-1)/T), ey0=Math.floor(e.y/T), ey1=Math.floor((e.y+e.h-1)/T); const x0=ex0-4, x1=ex1+4, y0=ey0-4, y1=ey1+2;
+  ctx.beginPath(); ctx.rect(camX-64,camY-64,viewW+128,viewH+128); let n=0;
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ if(x<0||x>=W||y<0||y>=H) continue; if(x>=ex0&&x<=ex1&&y>=ey0&&y<=ey1) continue; const i=y*W+x, b=BLOCKS[world[i]]; if(!b||!b.solid) continue;
+    const X=x*T, Y=y*T, sh=shape[i]; n++;
+    if(!sh) ctx.rect(X,Y,T,T);
+    else if(sh===6){ ctx.moveTo(X,Y+T); ctx.lineTo(X+T,Y); ctx.lineTo(X+T,Y+T); ctx.closePath(); }
+    else if(sh===7){ ctx.moveTo(X,Y); ctx.lineTo(X+T,Y+T); ctx.lineTo(X,Y+T); ctx.closePath(); }
+    else for(const [rx,ry,rw,rh] of (SHAPE_RECTS[sh]||[[0,0,16,16]])) ctx.rect(X+rx,Y+ry,rw,rh); }
+  if(n) ctx.clip('evenodd'); return n; }
+const lavaClipped=fn=>function(e,...a){ if(!e||e.kind==='dragon'||e.kind==='kraken'||!lavaNearEnt(e)) return fn(e,...a); ctx.save(); try{ lavaClip(e); return fn(e,...a); } finally{ ctx.restore(); } };
+drawEntity=lavaClipped(drawEntity);
+drawAnimal=lavaClipped(drawAnimal);
+// ===== Beta 0.9.192: fountains filled by bucket, three fountains for every place in small, medium and large, fountain bonuses,
+// and a check of how every bonus stacks (Kinard, 2026-11-05) =====
+// "Make it so clicking a water bucket with water (or lava for the lava fountains) will make the water move and so there doesn't
+// have to be a puddle there also make it so that there are 3 fountain types for each of the biomes and make them various sizes
+// with a small, medium and large but make it variably based off the types of fountains and make it so the fountains provide a
+// small bonus to the players army and the player for each type there is such as 2% speed for small, 5% for medium and 7% for
+// large or scale accordingly and review all items, abilities etc and scale all of them where necessary such as with the boats etc".
+//
+// 1. Buckets: a water bucket poured on any cell of a fountain fills it (a lava fountain takes a Lava bucket, the obsidian fountain
+//    and the rune well either). A filled fountain runs on its own. The filled state lives in the world itself: the fountain's
+//    anchor block is swapped for its "filled" twin (FZ_TWIN, same picture, same piece), so it is saved with the world, shared with
+//    friends through mpRun like any block, and breaking the fountain gives back the plain (empty) item. A puddle beside a
+//    fountain still works as before. The Obsidian bucket (new) scoops lava and becomes a Lava bucket.
+// 2. Three fountain kinds for every place (FZ_TYPES): meadow, forest, snow, desert, ocean, caves, deep caves, sky realm, magma
+//    realm (lava only) and the village; the golden dragon fountain stays the treasure of Vorthax's hoard. The 15 fountains of
+//    0.9.177 keep their ids and sizes; most kinds also come in other sizes. Size class by footprint: small 1x1 or 1x2,
+//    medium 2x2 or 2x3, large 3x3 or 3x4. Which sizes a kind has depends on the kind (a birdbath is only small, a volcano only
+//    large). Other sizes are the same picture redrawn at that size (fzScaled: every rectangle of the drawing is scaled and
+//    rounded, so the pixels stay crisp). Pieces can now be up to 4 tall (anchorOf scans 4 x 4).
+// 3. Bonuses: every different fountain kind that runs in your home village (on your home island once you have claimed it, or
+//    within FZ_NEAR blocks of anything you built) gives you and your soldiers its bonus: small 2%, medium 5%, large 7%. Each
+//    kind counts once (the biggest running one of that kind), and fountains of the same bonus add up to at most FZ_STAT_CAP
+//    (15%). Kinds differ by what they lift: speed, damage, less damage taken, health refill, attack speed, mana refill (you),
+//    fishing (you). Shown in #fountLine under the clock, in the Buildings window and in each fountain's description.
+// 4. Stacking: walking speed from charms, trophies on walls and fountains together is capped at +30% over what your boots and
+//    swiftness elixirs give (FZ_SPEED_CAP); the Beastmaster's aura and the Swift banner still add their 10% on top in a fight.
+//    Boats: the Skiff seats as many as the Canoe it replaces (it seated fewer), the Galleon and the Ironclad cost more than the
+//    Warship below them. Tool and weapon lines: a tier sold for more than the next better tier is priced between its
+//    neighbours (the storm tier cost more than mythril in every line). See docs/ITEM_AUDIT.md.
+//
+// Ids: a fixed range of their own (FZ_ITEM_BASE 1800 for items, FZ_TWIN_BASE 1900 for the filled twins), so files that use
+// freeIdFrom after this one (the wood chests of 98zzzzzzzzzzzzzzzzz_menu_themes.js) keep theirs. Append only: never reorder
+// FZ_TYPES or a kind's sizes, saves store these ids.
+
+const FZ_ITEM_BASE=1800, FZ_TWIN_BASE=1900;
+function fzFixedId(base,off){ let id=base+off; while((BLOCKS[id]&&BLOCKS[id].name)||ITEMS[id]){ console.warn('fountains: id taken',id); id+=300; } return id; }
+let fzItemN=0, fzTwinN=0;
+const fzItemId=()=>fzFixedId(FZ_ITEM_BASE,fzItemN++), fzTwinId=()=>fzFixedId(FZ_TWIN_BASE,fzTwinN++);
+
+// ---------------- buckets for lava ----------------
+const OBS_BUCKET=fzItemId(), LAVA_BUCKET=fzItemId();
+ITEMS[OBS_BUCKET]={name:'Obsidian bucket',kind:'bucket',desc:'A bucket lined with obsidian, the one thing that holds lava. Use it on lava to fill it'}; SELL[OBS_BUCKET]=20;
+ITEMS[LAVA_BUCKET]={name:'Lava bucket',kind:'bucket',full:true,lava:true,desc:'A bucket of lava. Pour it into a magma fountain (or any fountain that runs on lava) and it runs on its own'}; SELL[LAVA_BUCKET]=20;
+RECIPES.push({out:OBS_BUCKET,n:1,need:[[B.OBSIDIAN,3],[I.IRON_BAR,1]],st:B.WORKBENCH,cat:'tools'});
+[OBS_BUCKET,LAVA_BUCKET].forEach(id=>customIcon(id,(rect,px)=>{ const m='#4a3a6a', d='#22163c', h='#7a68b0';
+  for(let k=0;k<5;k++){ px(4+k,3+(k<2?2-k:0),'#7a808a'); px(11-k,3+(k<2?2-k:0),'#7a808a'); }
+  rect(3,6,10,1,d); rect(4,7,8,7,m); rect(4,7,1,7,d); rect(11,7,1,7,d); rect(5,14,6,1,d); rect(5,8,1,5,h);
+  if(id===LAVA_BUCKET){ rect(4,6,8,2,'#ff6a1a'); rect(5,6,3,1,'#ffe080'); } else rect(5,7,6,1,'#120a22'); }));
+try{ if(SHOPS.smith) SHOPS.smith.stock.push([OBS_BUCKET,1,60]); }catch(e){}
+
+// ---------------- palettes for the new kinds ----------------
+const FZP={ jungle:['#7a8a6a','#9aaa88','#56644a','#2e3826'], basalt:['#3a3a44','#56566a','#26262e','#121218'], coral:['#e8c8a8','#fbe2c8','#c09a7a','#7a5a40'],
+  slate:['#4a5a78','#6a7a9a','#33405a','#1a2236'], cave:['#8a7a6a','#a89888','#605446','#3a3028'], teal:['#6a9a9a','#8ac0c0','#4a7070','#284040'] };
+
+// ---------------- the drawings of the new kinds (design size; other sizes are scaled from these) ----------------
+const FZ_ART={};
+{ const S=FPAL.stone, M=FPAL.marble, SA=FPAL.sand, IC=FPAL.ice, G=FPAL.gold, MO=FPAL.moss, MA=FPAL.magma, CL=FPAL.cloud, GR=FPAL.granite, IR=FPAL.iron;
+  FZ_ART.garden={w:2,h:2, draw:r=>{ fBowl(r,1,18,30,14,S,0.15); for(const [x,c] of [[2,'#ff5a7a'],[6,'#ffd84a'],[24,'#ff5a7a'],[28,'#8ab0ff']]){ r(x,14,2,2,c); r(x,16,1,2,'#3a8a3a'); }
+      fCol(r,13,9,6,9,S); r(12,8,8,2,S[1]); r(14,6,4,2,S[0]); r(14,6,4,1,S[1]); },
+    pools:[[3,18,26,2]], spouts:[[16,6,10,-4,7,19],[16,6,22,-4,25,19],[16,6,16,-6,16,6]]};
+  FZ_ART.frog={w:2,h:2, draw:r=>{ const GN='#5aa83a', GD='#3a7a2a', GL='#8ad05a', BL='#c8e07a'; fBowl(r,0,20,32,12,MO,0.12);
+      r(2,17,16,3,'#3f8f3f'); r(3,17,14,1,'#5ab05a'); r(9,18,2,2,'#2a6a2a');
+      r(5,10,13,7,GN); r(5,10,13,1,GL); r(7,13,9,4,BL); r(3,14,3,3,GD); r(17,14,3,3,GD);
+      r(6,6,4,4,GN); r(13,6,4,4,GN); r(7,7,2,2,'#ffffff'); r(14,7,2,2,'#ffffff'); r(8,8,1,1,'#141414'); r(15,8,1,1,'#141414'); r(8,12,8,1,GD); r(16,11,2,2,'#2a5a2a'); },
+    pools:[[2,20,28,2]], spouts:[[17,12,25,8,27,21]]};
+  FZ_ART.stump={w:2,h:2, draw:r=>{ const bk='#6b4422', lt='#8a5c2d', dk='#4a2c14', rg='#c29460', ms='#5ab04a';
+      r(1,22,30,10,bk); r(1,22,30,1,lt); r(1,31,30,1,'#3a2410'); r(3,22,26,2,'#2a1a0c'); for(const x of [7,14,21]) r(x,25,1,5,dk); r(1,23,2,8,rg); r(29,23,2,8,rg); r(1,26,2,2,lt);
+      r(3,6,12,16,bk); r(3,6,1,16,lt); r(14,6,1,16,dk); r(3,4,12,2,rg); r(5,4,8,1,'#a07a48'); r(7,4,4,1,rg); for(const y of [9,14,18]) r(6,y,1,3,dk); r(10,11,1,4,dk);
+      r(2,20,3,2,'#3a2410'); r(13,20,3,2,'#3a2410'); r(3,6,4,2,ms); r(11,12,4,2,'#4aa04a'); r(4,19,3,1,ms); r(20,21,5,1,ms);
+      r(15,8,10,4,bk); r(15,8,10,1,lt); r(24,8,2,4,'#3a2410'); r(25,9,1,2,'#1a0c04'); r(17,6,2,2,'#4aa04a'); r(19,5,3,2,ms); },
+    pools:[[3,22,26,2]], spouts:[[25,10,30,12,27,23]]};
+  FZ_ART.idol={w:2,h:3, draw:r=>{ const P=FZP.jungle; fBowl(r,0,34,32,14,P,0.1);
+      r(7,6,18,28,P[0]); r(7,6,1,28,P[1]); r(24,6,1,28,P[2]); r(5,2,22,5,'#b88a3a'); r(5,2,22,1,'#e0b050');
+      for(const [x,c] of [[6,'#d04a3a'],[10,'#3a8ad0'],[15,'#e0c040'],[20,'#3a8ad0'],[24,'#d04a3a']]) r(x,0,2,3,c);
+      r(9,10,14,2,P[3]); r(10,13,4,3,P[3]); r(18,13,4,3,P[3]); r(11,14,2,1,'#e0c040'); r(19,14,2,1,'#e0c040'); r(15,15,2,6,P[2]); r(14,20,4,1,P[3]);
+      r(11,23,10,5,P[3]); for(let x=12;x<20;x+=2) r(x,23,1,2,'#e8e0c8'); r(9,30,14,2,P[2]); r(11,31,2,1,'#e0c040'); r(19,31,2,1,'#e0c040');
+      r(7,8,2,14,'#3a8a3a'); r(8,12,2,2,'#5ab04a'); r(23,16,2,16,'#3a8a3a'); r(22,22,2,2,'#5ab04a'); },
+    pools:[[2,34,28,2]], spouts:[[16,27,17,30,16,35]], sw:3};
+  FZ_ART.icicle={w:1,h:2, draw:r=>{ fBowl(r,0,20,16,12,IC,0.3); r(1,2,14,4,IC[0]); r(1,2,14,1,IC[1]); r(1,5,14,1,IC[2]); r(0,1,16,1,'#f0fbff');
+      r(3,6,2,6,IC[1]); r(3,12,1,2,IC[1]); r(7,6,3,8,IC[0]); r(7,6,1,8,'#ffffff'); r(8,14,1,2,IC[1]); r(12,6,2,4,IC[1]); r(12,10,1,2,IC[1]); },
+    pools:[[2,20,12,2]], spouts:[[8,16,8,18,8,21]], sw:1};
+  FZ_ART.queen={w:2,h:3, draw:r=>{ fBowl(r,0,34,32,14,IC,0.1); fBlk(r,9,30,14,4,IC);
+      for(let i=0;i<16;i++){ const hw=3+Math.floor(i/2.5); r(16-hw,14+i,2*hw,1,'#d8eeff'); r(16-hw,14+i,1,1,'#ffffff'); r(15+hw,14+i,1,1,IC[2]); } r(14,16,4,12,'#bfe6ff');
+      r(12,6,8,2,'#f0f8ff'); r(11,8,2,8,'#f0f8ff'); r(19,8,2,8,'#f0f8ff'); r(13,7,6,6,'#eef6ff'); r(13,7,6,1,'#ffffff'); r(14,9,1,1,'#4a7aa0'); r(17,9,1,1,'#4a7aa0');
+      r(12,3,8,3,'#cfd3d8'); r(12,2,1,1,'#cfd3d8'); r(15,1,2,2,'#cfd3d8'); r(19,2,1,1,'#cfd3d8'); r(15,4,2,1,'#7fd0ff');
+      r(9,13,4,2,'#d8eeff'); r(7,10,3,4,'#d8eeff'); r(19,13,4,2,'#d8eeff'); r(22,10,3,4,'#d8eeff'); r(6,8,3,3,'#ffffff'); r(23,8,3,3,'#ffffff'); },
+    pools:[[2,34,28,2]], spouts:[[7,9,1,8,3,35],[25,9,31,8,29,35]]};
+  FZ_ART.well={w:2,h:2, draw:r=>{ const P=SA; r(4,18,24,14,P[0]); r(4,18,24,1,P[1]); for(const y of [22,26,30]) r(4,y,24,1,P[2]); for(const [x,y] of [[9,19],[17,19],[13,23],[21,23],[9,27],[17,27]]) r(x,y,1,3,P[2]);
+      r(4,18,1,14,P[1]); r(27,18,1,14,P[2]); r(6,18,20,2,P[3]); r(5,5,2,13,'#8a5c2d'); r(25,5,2,13,'#8a5c2d');
+      for(let k=0;k<4;k++){ const hw=5+k*3; r(16-hw,1+k,2*hw,1,k%2?'#c8a050':'#b08a40'); } r(7,8,18,1,'#6b4422'); r(25,8,3,2,'#6b4422'); r(15,8,1,4,'#4a2c14');
+      r(13,12,6,4,'#8a5c2d'); r(13,12,6,1,'#c29460'); r(13,15,6,1,'#4a2c14'); },
+    pools:[[6,18,20,2]], spouts:[[18,13,21,15,20,19]]};
+  FZ_ART.conch={w:2,h:2, draw:r=>{ fBowl(r,0,22,32,10,FZP.coral,0.12); r(3,18,18,4,'#6a6a74'); r(3,18,18,1,'#9a9aa4');
+      r(6,8,16,10,'#f0b8a0'); r(6,8,16,1,'#ffd8c8'); r(4,10,3,6,'#e8a890'); r(2,12,2,2,'#d89880'); for(const x of [9,13,17]) r(x,9,1,8,'#d89070');
+      r(20,7,6,12,'#ffd0c0'); r(21,8,4,10,'#ff9a90'); r(22,10,2,6,'#e07070'); r(8,17,12,1,'#c08070'); },
+    pools:[[2,22,28,2]], spouts:[[24,12,30,13,28,23]]};
+  FZ_ART.mermaid={w:2,h:3, draw:r=>{ fBowl(r,0,36,32,12,FZP.teal,0.1); r(4,28,22,8,'#5a5a66'); r(4,28,22,1,'#8a8a96'); r(7,26,14,2,'#5a5a66');
+      r(9,22,12,6,'#2ab08a'); r(9,22,12,1,'#5ad0aa'); r(19,25,6,3,'#2ab08a'); r(24,22,3,4,'#2ab08a'); r(25,18,5,4,'#3ac09a'); r(27,17,3,2,'#5ad0aa'); for(const x of [11,14,17]) r(x,24,1,1,'#1a8a6a');
+      r(10,4,10,14,'#d0503a'); r(11,13,9,9,'#f0c8a0'); r(11,13,1,9,'#ffe0c0'); r(12,16,7,2,'#9a4aa0'); r(12,6,7,6,'#f0c8a0'); r(13,8,1,1,'#2a2a3a'); r(17,8,1,1,'#2a2a3a'); r(14,10,3,1,'#c86a60'); r(10,4,10,2,'#e06a4a');
+      r(19,10,2,5,'#f0c8a0'); r(20,6,2,5,'#f0c8a0'); r(20,3,7,4,'#ffe0e8'); r(20,3,7,1,'#ffffff'); r(24,4,2,2,'#ffc0d0'); },
+    pools:[[2,36,28,2]], spouts:[[26,5,31,8,28,37]]};
+  FZ_ART.dripstone={w:1,h:2, draw:r=>{ const P=FZP.cave; r(2,0,12,3,P[0]); r(2,2,12,1,P[2]); r(4,3,8,3,P[0]); r(4,3,1,3,P[1]); r(5,6,6,3,P[0]); r(6,9,4,3,P[0]); r(7,12,2,2,P[1]);
+      fBowl(r,1,22,14,10,P,0.25); r(3,20,2,2,P[1]); r(11,19,2,3,P[1]); },
+    pools:[[3,22,10,2]], spouts:[[8,14,8,17,8,23]], sw:1};
+  FZ_ART.rune={w:2,h:2, draw:r=>{ const P=GR; r(3,16,26,16,P[0]); r(3,16,26,1,P[1]); r(3,16,1,16,P[1]); r(28,16,1,16,P[2]); for(const y of [21,26]) r(3,y,26,1,P[2]); r(5,16,22,2,P[3]);
+      for(const [x,y] of [[7,23],[13,23],[19,23],[25,23],[10,28],[16,28],[22,28]]){ r(x,y,1,2,'#7fd0ff'); r(x+1,y,1,1,'#7fd0ff'); }
+      r(13,3,6,13,P[0]); r(13,3,1,13,P[1]); r(18,3,1,13,P[2]); r(14,1,4,2,P[1]); for(const y of [5,9,13]){ r(15,y,2,1,'#b066ff'); r(15,y+1,1,1,'#b066ff'); } },
+    pools:[[5,16,22,2]], spouts:[[16,1,9,-4,8,17],[16,1,23,-4,24,17]]};
+  FZ_ART.feather={w:1,h:2, draw:r=>{ fBowl(r,0,20,16,12,CL,0.3); r(1,19,4,1,'#ffffff'); r(11,19,4,1,'#ffffff'); r(7,4,2,16,G[2]); r(7,4,1,16,G[0]);
+      for(let i=0;i<10;i++){ const w=i<2?i+1:i>7?10-i:3; r(7-w,4+i,w,1,G[0]); r(9,4+i,w,1,G[1]); } r(7,1,2,3,G[1]); },
+    pools:[[2,20,12,2]], spouts:[[8,1,3,2,3,21],[8,1,13,2,13,21]], sw:1};
+  FZ_ART.storm={w:2,h:3, draw:r=>{ const P=FZP.slate; fBowl(r,0,34,32,14,P,0.1); fBlk(r,10,28,12,6,P);
+      r(13,8,6,20,P[0]); r(13,8,1,20,P[1]); r(18,8,1,20,P[2]); for(const y of [12,18,24]) r(12,y,8,2,IR[1]);
+      r(11,1,10,7,'#5a7aff'); r(12,0,8,1,'#8aa8ff'); r(13,2,3,2,'#c8d8ff'); r(11,7,10,1,'#3a4ac0'); r(16,9,1,3,'#ffe060'); r(15,12,1,3,'#ffe060'); r(16,15,1,3,'#ffe060'); r(15,18,1,2,'#ffe060'); },
+    pools:[[2,34,28,2]], spouts:[[11,4,3,6,4,35],[21,4,29,6,28,35]]};
+  FZ_ART.ember={w:2,h:2, draw:r=>{ const P=FZP.basalt; fBowl(r,2,10,28,10,P,0.25); for(const x of [6,23,14]){ const w=x===14?4:3; r(x,20,w,12,P[0]); r(x,20,1,12,P[1]); } r(3,30,26,2,P[2]);
+      for(const [x,y,w] of [[8,15,3],[20,16,4],[13,18,2]]) r(x,y,w,1,'#ff6a1a'); r(10,22,1,4,'#ff6a1a'); r(24,24,1,3,'#ff6a1a'); },
+    pools:[[4,10,24,2]], spouts:[[16,10,13,2,10,11],[16,10,19,2,22,11]]};
+  FZ_ART.volcano={w:3,h:3, draw:r=>{ fBowl(r,0,38,48,10,MA,0.05);
+      for(let i=0;i<30;i++){ const w=10+Math.floor(i*1.1), x0=24-Math.floor(w/2); r(x0,8+i,w,1,i%3?'#4a2a1c':'#5a321e'); r(x0,8+i,1,1,'#7a4a2a'); r(x0+w-1,8+i,1,1,'#2a1208'); }
+      r(19,6,10,3,'#ff7a1c'); r(20,6,8,1,'#ffe080'); r(20,9,2,6,'#ff6a1a'); r(18,15,2,6,'#ff6a1a'); r(16,21,2,8,'#e04a10'); r(27,10,2,8,'#ff6a1a'); r(29,18,2,10,'#e04a10');
+      for(const [x,y] of [[12,30],[33,27],[22,25]]) r(x,y,2,1,'#ff8a2a'); },
+    pools:[[2,38,44,2],[20,6,8,2]], spouts:[[24,6,14,-6,8,39],[24,6,34,-6,40,39],[24,6,24,-10,24,6]], sw:3};
+  FZ_ART.pump={w:1,h:2, draw:r=>{ fBowl(r,0,22,16,10,S,0.2); r(9,6,4,16,IR[0]); r(9,6,1,16,IR[1]); r(12,6,1,16,IR[2]); r(8,4,6,2,IR[1]); r(10,2,2,2,IR[2]);
+      r(3,9,6,2,IR[0]); r(3,9,6,1,IR[1]); r(3,11,1,2,IR[2]); r(13,4,3,1,IR[2]); r(15,1,1,3,IR[2]); },
+    pools:[[2,22,12,2]], spouts:[[4,12,4,16,5,23]]};
+}
+
+// ---------------- the kinds: three for every place ----------------
+// t: kind, g: place, stat: what it lifts, base: an existing 0.9.177 fountain (its own size stays), sizes: the sizes this kind
+// comes in (s/m/l; for a new kind the first size in `main` gets the plain name)
+const FZ_GROUPS={ meadow:'Meadow', forest:'Forest', snow:'Snow', desert:'Desert', ocean:'Ocean', cave:'Cave', deep:'Deep cave', sky:'Sky realm', magma:'Magma realm', village:'Village', hoard:'Dragon\'s hoard' };
+const FZ_STATS={ spd:'speed', atk:'damage', def:'less damage taken', regen:'faster health refill', haste:'faster attacks', mana:'faster mana refill', fish:'sooner fish bites' };
+const FZ_SOLO=new Set(['mana','fish']);   // only for you (soldiers have no mana and do not fish)
+const FZ_TYPES=[
+  {t:'birdbath',g:'meadow',stat:'regen',base:'birdbath'},
+  {t:'garden',g:'meadow',stat:'regen',name:'Garden spring',main:'m',sizes:['s','m','l'],sell:24,need:[[B.BRICK,8],[B.FLOWER_R,1],[B.FLOWER_Y,1]],shop:['herbalist',40,'s',1],
+    desc:'A round stone spring with a little jet in the middle, ringed by flowers'},
+  {t:'frog',g:'meadow',stat:'spd',name:'Frog fountain',main:'m',sizes:['s','m'],sell:22,need:[[B.BRICK,6],[B.MOSS,3],[I.EMERALD,1]],shop:['herbalist',45,'s',1],
+    desc:'A stone frog on a lily pad spits a stream into the pond'},
+  {t:'lion',g:'forest',stat:'atk',base:'lion',sizes:['s','l']},
+  {t:'stump',g:'forest',stat:'def',name:'Mossy stump fountain',main:'m',sizes:['s','m'],sell:18,need:[[B.LOG,10],[B.MOSS,3],[I.IRON_BAR,1]],
+    desc:'A hollow old stump pours water from a broken branch into a log trough'},
+  {t:'idol',g:'forest',stat:'haste',name:'Jungle idol fountain',main:'m',sizes:['m','l'],sell:70,need:[[B.STONE_BLOCK,14],[B.JUNGLE_LOG,4],[I.GOLD_BAR,2]],
+    desc:'A carved stone idol with golden eyes. Water runs from its open mouth'},
+  {t:'frost',g:'snow',stat:'def',base:'frost',sizes:['s']},
+  {t:'icicle',g:'snow',stat:'atk',name:'Icicle spring',main:'s',sizes:['s'],sell:16,need:[[B.ICE,6],[I.SILVER_BAR,1]],shop:['fisher',35,'s',1],
+    desc:'An icicle drips into a small ice bowl that never freezes over'},
+  {t:'queen',g:'snow',stat:'mana',name:'Snow queen fountain',main:'m',sizes:['m','l'],sell:110,need:[[B.ICE,16],[I.SILVER_BAR,4],[I.SAPPHIRE,2]],
+    desc:'A queen of ice with a silver crown. Water arcs from her raised hands'},
+  {t:'oasis',g:'desert',stat:'regen',base:'oasis',sizes:['l']},
+  {t:'pharaoh',g:'desert',stat:'mana',base:'pharaoh',sizes:['l']},
+  {t:'well',g:'desert',stat:'spd',name:'Desert well',main:'m',sizes:['s','m'],sell:26,need:[[B.SANDSTONE,10],[B.PALM_PLANK,4],[483,1]],shop:['trader',45,'s',1],
+    desc:'A sandstone well under a palm-thatch roof. Water spills from its hanging bucket'},
+  {t:'shell',g:'ocean',stat:'fish',base:'shell',sizes:['s']},
+  {t:'conch',g:'ocean',stat:'fish',name:'Conch fountain',main:'m',sizes:['s','m'],sell:30,need:[[B.SAND,6],[B.CORAL_BLOCK,4],[I.PEARL,1]],shop:['fisher',50,'s',1],
+    desc:'A great pink conch on a rock, the sea pouring from its mouth'},
+  {t:'mermaid',g:'ocean',stat:'spd',name:'Mermaid fountain',main:'m',sizes:['m','l'],sell:120,need:[[B.MARBLE,12],[B.CORAL_BLOCK,6],[I.PEARL,3],[I.GOLD_BAR,1]],
+    desc:'A mermaid on a rock holds up a shell that never runs dry'},
+  {t:'crystal',g:'cave',stat:'mana',base:'crystal',sizes:['s','l']},
+  {t:'grove',g:'cave',stat:'regen',base:'grove',sizes:['l']},
+  {t:'dripstone',g:'cave',stat:'def',name:'Dripstone fountain',main:'s',sizes:['s','m'],sell:14,need:[[B.STONE,12],[I.IRON_BAR,1]],
+    desc:'A stalactite drips into a basin cut in the stalagmite below it'},
+  {t:'obsidian',g:'deep',stat:'def',base:'obsidian',sizes:['s']},
+  {t:'mythril',g:'deep',stat:'atk',base:'mythril'},
+  {t:'rune',g:'deep',stat:'haste',name:'Rune well',main:'m',sizes:['s','m','l'],sell:60,fluid:'both',light:3,need:[[B.OBSIDIAN,6],[I.AMETHYST_GEM,2],[I.SILVER_BAR,2]],
+    desc:'A well of dark stone cut with glowing runes around a rune pillar'},
+  {t:'cloud',g:'sky',stat:'spd',base:'cloud',sizes:['l']},
+  {t:'feather',g:'sky',stat:'spd',name:'Golden feather fountain',main:'s',sizes:['s','m'],sell:40,need:[[B.CLOUD,8],[I.GOLD_BAR,2],[SWIFT_PLUME,1]],
+    desc:'A golden feather stands in a bowl of cloud, water falling from its tip'},
+  {t:'storm',g:'sky',stat:'haste',name:'Storm spire fountain',main:'m',sizes:['m','l'],sell:150,light:3,need:[[B.CLOUD,10],[STORM_ESSENCE,2],[I.SILVER_BAR,3]],
+    desc:'A slate spire banded with silver and crowned with a crackling storm orb'},
+  {t:'magma',g:'magma',stat:'atk',base:'magma',sizes:['s','l']},
+  {t:'ember',g:'magma',stat:'haste',name:'Ember bowl',main:'m',sizes:['s','m'],sell:50,fluid:'lava',light:4,hard:1.4,need:[[B.BASALT,8],[B.MAGMA_ROCK,4],[I.IRON_BAR,2]],
+    desc:'A basalt brazier on three legs where lava bubbles up and spills over'},
+  {t:'volcano',g:'magma',stat:'atk',name:'Volcano fountain',main:'l',sizes:['l'],sell:240,fluid:'lava',light:6,hard:1.6,found:true,where:'in the magma realm',
+    desc:'A little volcano that erupts lava into the moat around it'},
+  {t:'pump',g:'village',stat:'regen',name:'Village pump',main:'s',sizes:['s'],sell:12,need:[[I.IRON_BAR,3],[B.BRICK,4]],shop:['smith',45,'s',1],
+    desc:'An iron hand pump over a stone trough, the heart of every village street'},
+  {t:'maiden',g:'village',stat:'def',base:'maiden',sizes:['l']},
+  {t:'tiered',g:'village',stat:'spd',base:'tiered',sizes:['m']},
+  {t:'dragon',g:'hoard',stat:'atk',base:'dragon'} ];
+const FZ_TYPE={}; for(const k of FZ_TYPES) FZ_TYPE[k.t]=k;
+const FZ_SIZE_WORD={s:'Small',m:'Medium',l:'Large'}, FZ_PCT={s:0.02,m:0.05,l:0.07};
+const FZ_STAT_CAP=0.15, FZ_SPEED_CAP=0.30, FZ_NEAR=30;
+const fzSizeOf=(w,h)=>w*h<=2?'s':w*h<=6?'m':'l';
+const fzFoot=(sz,tall)=>sz==='s'?(tall?[1,2]:[1,1]):sz==='m'?(tall?[2,3]:[2,2]):(tall?[3,4]:[3,3]);
+
+// a drawing scaled to a footprint of w x h cells, standing on the bottom row and centred
+function fzScaled(base,w,h){ const bw=base.w*16, bh=base.h*16, s=Math.min(w*16/bw,h*16/bh), aw=Math.round(bw*s), ah=Math.round(bh*s), ox=Math.floor((w*16-aw)/2), oy=h*16-ah;
+  const X=v=>ox+Math.round(v*s), Y=v=>oy+Math.round(v*s);
+  const draw=r=>base.draw((x,y,ww,hh,c)=>{ const x0=X(x), y0=Y(y); r(x0,y0,Math.max(1,X(x+ww)-x0),Math.max(1,Y(y+hh)-y0),c); });
+  return { draw, pools:(base.pools||[]).map(([x,y,pw,ph])=>[X(x),Y(y),Math.max(1,X(x+pw)-X(x)),Math.max(1,Y(y+ph)-Y(y))]),
+    spouts:(base.spouts||[]).map(sp=>sp.map((v,i)=>i%2?oy+v*s:ox+v*s)), sw:Math.max(1,Math.round((base.sw||2)*s)) }; }
+const fzNeed=(need,f)=>(need||[]).filter(([n])=>n!=null&&ITEMS[n]).map(([n,c])=>[n,Math.max(1,Math.ceil(c*f))]);
+const FZ_NEED_F={s:0.5,m:1,l:1.75};
+// a fountain piece with a fixed id (the same steps as addPiece in 98zxz_zz177_decor.js)
+function fzAddPiece(o){ const id=fzItemId(); o.id=id; o.mount='floor'; o.flames=[]; o.lit=[];
+  defB(id,{name:o.name,solid:false,hard:o.hard||0.8,col:o.col||'#9a9aa4',light:o.light||0,place:true});
+  ITEMS[id]={name:o.name,kind:'block',desc:'',fountain:true,decor:false,fluid:o.fluid,found:!!o.found,biome:o.biome||null};
+  SELL[id]=o.sell||5;
+  if(o.need&&o.need.length) RECIPES.push({ out:id, n:1, need:o.need, st:o.st||B.WORKBENCH, cat2:'light' });
+  o.art=fCanvas(o.w,o.h,o.draw); o.icon=fIcon(o.art); { const t=mkCanvas(16,16), g=t.getContext('2d'); g.drawImage(o.icon,0,0,16,16); TEX[id]=t; } delete ICON_URL[id];
+  PIECES.push(o); PIECE[id]=o; PIECE_KEY[o.key]=o; PIECE_IDS.add(id); FOUNTAIN_IDS.push(id); ORE_LOOK.add(id); try{ LAVA_EATS.delete(id); }catch(e){}
+  return o; }
+const FZ_NEW=[];   // the pieces this file adds
+for(const k of FZ_TYPES){
+  if(k.base){ const b=PIECE_KEY[k.base]; if(!b) continue; b.ftype=k.t; b.fsize=fzSizeOf(b.w,b.h); const tall=b.h>b.w;
+    for(const sz of k.sizes||[]){ const [w,h]=fzFoot(sz,tall), sc=fzScaled(b,w,h), f=FZ_NEED_F[sz]/FZ_NEED_F[b.fsize];
+      const o=fzAddPiece(Object.assign({ key:`${k.base}_${sz}`, name:`${FZ_SIZE_WORD[sz]} ${b.name.charAt(0).toLowerCase()+b.name.slice(1)}`, w, h, fluid:b.fluid, biome:b.biome, found:b.found, where:b.where,
+        light:b.light||0, hard:BLOCKS[b.id].hard, col:BLOCKS[b.id].col, sell:Math.max(2,Math.round((SELL[b.id]||10)*f)), need:b.found?null:fzNeed(b.need,f), st:b.st, desc:b.desc, ftype:k.t, fsize:sz }, sc));
+      FZ_NEW.push(o); }
+    continue; }
+  const art=FZ_ART[k.t]; if(!art) continue; const tall=art.h>art.w;
+  for(const sz of k.sizes){ const [w,h]=art.w*art.h<=2&&sz==='s'?[art.w,art.h]:art.w===3&&sz==='l'?[3,3]:fzFoot(sz,tall), sc=fzScaled(art,w,h), f=FZ_NEED_F[sz]/FZ_NEED_F[k.main];
+    const nm=sz===k.main?k.name:`${FZ_SIZE_WORD[sz]} ${k.name.charAt(0).toLowerCase()+k.name.slice(1)}`;
+    const o=fzAddPiece(Object.assign({ key:sz===k.main?k.t:`${k.t}_${sz}`, name:nm, w, h, fluid:k.fluid||'water', biome:k.g, found:!!k.found, where:k.where, light:k.light||0, hard:k.hard,
+      sell:Math.max(2,Math.round(k.sell*f)), need:k.found?null:fzNeed(k.need,f), desc:k.desc, ftype:k.t, fsize:sz }, sc));
+    FZ_NEW.push(o);
+    if(k.shop&&k.shop[2]===sz&&SHOPS[k.shop[0]]){ SHOPS[k.shop[0]].stock.push([o.id,1,k.shop[1]]); try{ VIL_TIER[o.key]=k.shop[3]||1; }catch(e){} } } }
+// the village sells the smaller tiered fountain at level 2 (the jeweler already sells the big one)
+try{ const tm=PIECE_KEY.tiered_m; if(tm&&SHOPS.jeweler){ SHOPS.jeweler.stock.push([tm.id,1,280]); VIL_TIER.tiered_m=2; } }catch(e){}
+
+// ---------------- filled fountains: a twin of each anchor block ----------------
+const FZ_TWIN={}, FZ_FILL={};   // twin id -> {p, fl}; piece id -> {water: twin, lava: twin}
+{ const all=[...PIECES.filter(p=>p.fluid&&!FZ_NEW.includes(p)).sort((a,b)=>a.id-b.id), ...FZ_NEW];
+  for(const p of all){ const fls=p.fluid==='both'?['water','lava']:[p.fluid]; FZ_FILL[p.id]={};
+    for(const fl of fls){ const id=fzTwinId(); defB(id,Object.assign({},BLOCKS[p.id],{name:p.name,place:false,drop:0,light:Math.max(BLOCKS[p.id].light||0,fl==='lava'?4:0)}));
+      TEX[id]=TEX[p.id]; FZ_TWIN[id]={p,fl}; FZ_FILL[p.id][fl]=id; PIECE[id]=p; ORE_LOOK.add(id); try{ LAVA_EATS.delete(id); }catch(e){} } } }
+const fzFilled=id=>!!FZ_TWIN[id];
+const FZ_LUT=new Uint8Array(65536); for(const p of PIECES) if(p.fluid&&p.ftype) FZ_LUT[p.id]=1; for(const id of Object.keys(FZ_TWIN)) FZ_LUT[+id]=1;
+// a piece can now be up to 4 tall (the large 3 x 4 fountains)
+anchorOf=function(x,y){ const id=tileAt(x,y); if(PIECE[id]) return [x,y]; if(!isPiecePart(id)) return null;
+  for(let dy=0;dy<4;dy++) for(let dx=0;dx<4;dx++){ const p=PIECE[tileAt(x+dx,y+dy)]; if(p&&dx<p.w&&dy<p.h) return [x+dx,y+dy]; } return null; };
+// a filled fountain runs on its own
+{ const _pf=pieceFlow; pieceFlow=function(ax,ay,...a){ const tw=FZ_TWIN[tileAt(ax,ay)]; const r=_pf(ax,ay,...a); if(!tw) return r;
+    if(tw.p.fluid==='both') return r==='lava'||tw.fl==='lava'?'lava':'water'; return tw.fl; }; }
+// the fountain under the aim (or on the line from you toward it), within reach
+function fzAimFountain(p,aim){ const cx=cxOf(p), cy=cyOf(p)-4; const tx=Math.floor(aim.x/T), ty=Math.floor(aim.y/T);
+  const near=(x,y)=>Math.hypot(x*T+8-cx,y*T+8-cy)<=REACH+2*T; let an=near(tx,ty)?anchorOf(tx,ty):null;
+  if(an&&PIECE[tileAt(an[0],an[1])]&&PIECE[tileAt(an[0],an[1])].fluid) return an;
+  let dx=aim.x-cx, dy=aim.y-cy; const d=Math.hypot(dx,dy)||1; dx/=d; dy/=d; const L=Math.min(d,REACH+4);
+  for(let s=6;s<=L;s+=3){ const x=Math.floor((cx+dx*s)/T), y=Math.floor((cy+dy*s)/T); an=anchorOf(x,y); if(an){ const q=PIECE[tileAt(an[0],an[1])]; if(q&&q.fluid) return an; } if(isSolid(x,y)) break; }
+  return null; }
+const fzHint=(m,s)=>{ try{ pieceHint(m); }catch(e){ toast(m,s||2); } };
+function fillFountain(ax,ay,fl){ const id=tileAt(ax,ay), p=PIECE[id]; if(!p||!p.fluid) return false;
+  if(p.fluid!=='both'&&p.fluid!==fl){ fzHint(p.fluid==='lava'?`The ${p.name.toLowerCase()} only runs with lava: fill it with a Lava bucket`:`The ${p.name.toLowerCase()} runs with water, not lava`); return false; }
+  if(fzFilled(id)){ fzHint(`The ${p.name.toLowerCase()} is already full`); return false; }
+  const tw=FZ_FILL[p.id]&&FZ_FILL[p.id][fl]; if(!tw) return false;
+  mpRun(()=>setTile(ax,ay,tw)); if(tileAt(ax,ay)!==tw) return false;
+  const b=pieceBox(ax,ay,p); puff((b.x0+b.x1+1)*T/2,(b.y0+b.y1+1)*T/2,fl==='lava'?'#ff7a1c':'#6fb0ff',10,60); if(typeof sfx==='function') sfx('splash',ax*T,ay*T);
+  toast(`The ${p.name.toLowerCase()} runs now`,2); return true; }
+{ const _bu=bucketUse; bucketUse=function(p,aim,it,...a){ try{ if(it&&p===player){
+      if(it.id===OBS_BUCKET){ p.atkT=0.2; const t=bucketTarget(p,aim,false); const [tx,ty]=t||[-1,-1]; const cur=t?tileAt(tx,ty):0;
+        if(cur===B.LAVA){ mpRun(()=>setTile(tx,ty,0)); takeItem(OBS_BUCKET,1); give(LAVA_BUCKET,1); puff(tx*T+8,ty*T+8,'#ff7a1c',6,50); if(typeof sfx==='function') sfx('pickup'); invDirty=true; }
+        else toast(cur===B.WATER?'An iron bucket carries water; this one is for lava':'Aim the bucket at lava to fill it',1.5);
+        return; }
+      if(it.id===WATER_BUCKET||it.id===LAVA_BUCKET){ const an=fzAimFountain(p,aim);
+        if(an){ p.atkT=0.2; const fl=it.id===LAVA_BUCKET?'lava':'water';
+          if(fillFountain(an[0],an[1],fl)){ takeItem(it.id,1); give(it.id===LAVA_BUCKET?OBS_BUCKET:BUCKET,1); invDirty=true; } return; }
+        if(it.id===LAVA_BUCKET){ toast('Pour the lava into a fountain that runs on lava',1.8); return; } } } }catch(e){ console.warn(e); }
+    return _bu(p,aim,it,...a); }; }
+
+// ---------------- the world: the new kinds in their places ----------------
+const FZ_SITES=[['garden',1,'plain'],['frog_s',1,'plain'],['stump',1,'forest'],['idol',1,'forest'],['icicle',1,'ice'],['queen',1,'ice'],['well',1,'desert'],['pharaoh_l',1,'desert'],
+  ['shell_s',2,'ocean'],['conch',1,'ocean'],['mermaid',1,'ocean'],['dripstone',2,'gem'],['grove_l',1,'grove'],['rune',2,'deep'],['cloud_l',1,'sky'],['feather',1,'sky'],['storm',1,'sky'],
+  ['ember',2,'magma'],['volcano',1,'magma']];
+// seedFountains digs a little pool beside each one so it runs; these are placed already filled instead and the pool is put back
+function seedFountains2(only,put){ const keep=FOUNTAIN_SITES.splice(0); FOUNTAIN_SITES.push(...FZ_SITES.filter(s=>PIECE_KEY[s[0]])); const log=[];
+  const rec=(x,y,id)=>{ log.push([x,y,id,world[y*W+x]]); put(x,y,id); };
+  let n=0; try{ n=seedFountains(only,rec); } finally{ FOUNTAIN_SITES.splice(0); FOUNTAIN_SITES.push(...keep); }
+  for(const [x,y,id,prev] of log){ if(id===B.WATER||id===B.LAVA){ if(world[y*W+x]===id) put(x,y,prev); continue; }
+    const p=PIECE[id]; if(!p||!p.fluid||p.id!==id) continue; const fl=p.fluid==='water'?'water':'lava';   // the rune wells stand in the deep caves, by lava
+    const tw=FZ_FILL[p.id]&&FZ_FILL[p.id][fl]; if(tw) put(x,y,tw); fzSeeded.push(p.key); }
+  return n; }
+const fzSeeded=[];   // the kinds the last world generation placed (not saved; for the checks)
+// the sky realm's cloud fountains (0.9.177) stood by a pool dug into the cloud, sometimes under an overhang (a sky lake must stay
+// open): in a new world they are placed filled and the pool goes back to cloud
+function skyPoolsBack(){ for(let y=2;y<barrierY;y++) for(let x=2;x<W-2;x++){ const id=world[y*W+x], p=PIECE[id]; if(!p||p.id!==id||!p.fluid||p.found!==true) continue;
+    const b=pieceBox(x,y,p); for(const hx of [b.x0-1,b.x1+1]){ const i=(b.y1+1)*W+hx; if(world[i]===B.WATER) genPut(hx,b.y1+1,B.CLOUD); }
+    const tw=FZ_FILL[p.id]&&FZ_FILL[p.id].water; if(tw) genPut(x,y,tw); } }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(!fountainSkip()){ fzSeeded.length=0; try{ skyPoolsBack(); }catch(e){ console.warn(e); } seedFountains2(false,genPut); if(home) home.fountainV2=1; } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.fountainV2&&!isGuest()&&!fountainSkip()&&!home.tutorial&&!home.editor){ home.fountainV2=1; facRun(()=>seedFountains2(true,(x,y,id)=>setTile(x,y,id))); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---------------- the bonuses ----------------
+let FB={spd:0,atk:0,def:0,regen:0,haste:0,mana:0,fish:0}, fbList=[], fbKey='';
+const fzOff=()=>!world||!player||fountainSkip()||(typeof edOn==='function'&&edOn())||(typeof tutOn==='function'&&tutOn());
+// the boxes that count as your village: your home island once claimed, and the ground around anything you built
+function fzBoxes(){ const out=[]; const is=typeof homeIsland==='function'?homeIsland():null;
+  if(is) out.push({x0:Math.max(1,is.s),x1:Math.min(W-2,is.e),col:true});
+  for(const st of (typeof myStructures!=='undefined'?myStructures:[])){ if(!st||!isFinite(st.x)||!isFinite(st.gy)) continue; out.push({x0:Math.max(1,st.x-FZ_NEAR),x1:Math.min(W-2,st.x+FZ_NEAR),y0:Math.max(1,st.gy-FZ_NEAR),y1:Math.min(H-2,st.gy+12)}); }
+  return out; }
+function fzRunning(){ const seen=new Set(), out=[]; if(fzOff()) return out;
+  for(const b of fzBoxes()) for(let x=b.x0;x<=b.x1;x++){ const y0=b.col?Math.max(1,surf[x]-45):b.y0, y1=b.col?Math.min(H-2,surf[x]+30):b.y1;
+    for(let y=y0;y<=y1;y++){ const id=world[y*W+x]; if(!FZ_LUT[id]) continue; const p=PIECE[id]; const k=y*W+x; if(seen.has(k)) continue; seen.add(k);
+      if(pieceFlow(x,y)) out.push({p,x,y}); } }
+  return out; }
+function fountScan(){ const run=fzRunning(), best={}; for(const r of run){ const t=r.p.ftype, v=FZ_PCT[r.p.fsize]||0; if(!best[t]||v>best[t].v) best[t]={v,p:r.p}; }
+  const fb={spd:0,atk:0,def:0,regen:0,haste:0,mana:0,fish:0}; const list=[];
+  for(const [t,b] of Object.entries(best)){ const k=FZ_TYPE[t]; fb[k.stat]+=b.v; list.push({t,p:b.p,stat:k.stat,v:b.v}); }
+  for(const s of Object.keys(fb)) fb[s]=Math.min(FZ_STAT_CAP,Math.round(fb[s]*100)/100);
+  list.sort((a,b)=>b.v-a.v||a.p.name.localeCompare(b.p.name));
+  const key=JSON.stringify(fb); FB=fb; fbList=list; if(key!==fbKey){ fbKey=key; if(player) recompute(player); }
+  return fb; }
+const fbAny=()=>FB.spd||FB.atk||FB.def||FB.regen||FB.haste||FB.mana||FB.fish;
+function fbText(short){ const parts=Object.keys(FZ_STATS).filter(k=>FB[k]>0).map(k=>`+${Math.round(FB[k]*100)}% ${short?{spd:'speed',atk:'damage',def:'defense',regen:'healing',haste:'attack speed',mana:'mana',fish:'fishing'}[k]:FZ_STATS[k]}`); return parts.join(short?'  ':', '); }
+{ let t=1; const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if((t-=dt||0)<=0){ t=3; fountScan(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ fbKey=''; fountScan(); }catch(e){} return r; }; }
+
+// speed: fountains, and the cap on everything that lifts walking speed beyond boots and elixirs
+function gearSpeed(p){ const c=CLASSES[p.cls]||{speed:1}, g=p.fx||{}; return 1.25*c.speed*(1+[0,0.15,0.3][g.boots||0])*(1+0.1*(p.swiftLvl||0))*(g.amulet?1.5:1); }
+{ const _rc=recompute; recompute=function(p,...a){ const r=_rc(p,...a); try{ if(p&&p===player){ if(FB.spd) p.speed*=1+FB.spd; const base=gearSpeed(p); if(base>0&&p.speed>base*(1+FZ_SPEED_CAP)) p.speed=base*(1+FZ_SPEED_CAP); } }catch(e){} return r; }; }
+// damage dealt by you and your soldiers, damage taken by you and your soldiers
+const fzMine=e=>!!e&&!!player&&(e===player||(e.kind==='human'&&e.team===player.team&&!e.ghost&&!e.proxy));
+{ const _d=damage; damage=function(t,amt,src,...a){ try{ if((FB.atk||FB.def)&&typeof amt==='number'&&amt>0&&t&&!t.ghost&&!t.proxy&&player){ const k=src?(src.owner||src.src||src):null;
+      if(FB.atk&&fzMine(k)&&k!==t&&!fzMine(t)&&t.team!==player.team) amt*=1+FB.atk;
+      if(FB.def&&fzMine(t)&&!(k&&k.team===player.team)) amt*=1-FB.def; } }catch(e){} return _d(t,amt,src,...a); }; }
+// health refill and faster attacks for you
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; const cd0=p?(p.atkCd||0):0; const r=_up(dt,...a);
+    try{ if(p&&!p.dead){ if(FB.haste&&(p.atkCd||0)>cd0+0.01) p.atkCd=cd0+(p.atkCd-cd0)*(1-FB.haste);
+        if(FB.regen&&p.regenT<=0&&p.hp<p.maxHp&&(!hungerOn()||(p.food??100)>30)) p.hp=Math.min(p.maxHp,p.hp+3*dt*FB.regen); } }catch(e){} return r; }; }
+// ... and for your soldiers
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ if(!(FB.haste||FB.regen)||!fzMine(e)||e===player) return _ua(e,dt,...a); const cd0=e.atkCd||0; const r=_ua(e,dt,...a);
+    try{ if(!e.dead){ if(FB.haste&&(e.atkCd||0)>cd0+0.01) e.atkCd=cd0+(e.atkCd-cd0)*(1-FB.haste); if(FB.regen&&!e.target&&e.hurtT<-4&&e.hp<e.maxHp) e.hp=Math.min(e.maxHp,e.hp+e.maxHp*0.05*dt*FB.regen); } }catch(err){} return r; }; }
+// mana refill and fishing: you only
+{ const _mr=manaRegen; manaRegen=function(p,...a){ const v=_mr(p,...a); return p===player&&FB.mana?v*(1+FB.mana):v; }; }
+{ const _fu=fishUse; fishUse=function(p,aim,...a){ const had=bob; const r=_fu(p,aim,...a); try{ if(!had&&bob&&FB.fish) bob.t*=1-FB.fish; }catch(e){} return r; }; }
+
+// ---------------- showing them ----------------
+{ const sub=document.getElementById('sub'); if(sub){ const s=document.createElement('span'); s.id='fountLine'; s.hidden=true; s.style.color='#8fd0ff'; sub.appendChild(s); } }
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ const el=document.getElementById('fountLine'); if(el){ const txt=state==='play'&&fbAny()?'⛲ '+fbText(true):'';
+      if(el.dataset.t!==txt){ el.dataset.t=txt; el.textContent=txt; el.hidden=!txt; el.title=fbList.map(f=>`${f.p.name}: +${Math.round(f.v*100)}% ${FZ_STATS[f.stat]}`).join('\n'); } } }catch(e){} return r; }; }
+function fountHtml(){ const run=fbList; const lines=run.map(f=>`<div>⛲ ${f.p.name} (${FZ_SIZE_WORD[f.p.fsize].toLowerCase()}): +${Math.round(f.v*100)}% ${FZ_STATS[f.stat]}</div>`).join('');
+  return `<div class="fountBonus" style="margin-top:8px"><b>Fountains</b>${run.length?`<div style="opacity:.85">Running in your village, for you${Object.keys(FB).some(k=>FB[k]&&!FZ_SOLO.has(k))?' and your soldiers':''}: ${fbText(false)}</div>${lines}`
+    :'<div style="opacity:.85">No fountain runs in your village yet. Set one by water or pour a bucket of water into it: each kind gives you and your soldiers a small bonus (small 2%, medium 5%, large 7%).</div>'}</div>`; }
+{ const _vh=villageHtml; villageHtml=function(...a){ let h=_vh(...a); try{ if(typeof h==='string'&&home&&home.claimed) h+=fountHtml(); }catch(e){} return h; }; }
+// each fountain's description: its place, size and bonus, and the bucket
+for(const p of PIECES){ if(!p.fluid||!p.ftype) continue; const k=FZ_TYPE[p.ftype], d=ITEMS[p.id]; if(!d) continue;
+  if(!d.desc){ d.desc=`${p.desc}. ${p.w} wide and ${p.h} tall. ${FLUID_TXT[p.fluid]}${p.found?`. Only found ${p.where}; mine it to take it home`:''}`; }
+  const pct=Math.round(FZ_PCT[p.fsize]*100), who=FZ_SOLO.has(k.stat)?'you':'you and your soldiers';
+  d.desc+=`. Or pour a ${p.fluid==='lava'?'Lava bucket':p.fluid==='both'?'water or lava bucket':'water bucket'} into it and it runs on its own. ${FZ_GROUPS[k.g]} fountain, ${FZ_SIZE_WORD[p.fsize].toLowerCase()}: while it runs in your village it gives ${who} +${pct}% ${FZ_STATS[k.stat]} (each kind counts once, the biggest one; at most +${Math.round(FZ_STAT_CAP*100)}% of one bonus from fountains)`;
+  Object.assign(d,{fbiome:k.g,fsize:p.fsize,fstat:k.stat,fpct:pct}); }
+
+// ---------------- the item check: boats and upgrade lines ----------------
+const FZ_AUDIT=[];
+try{ const sk=BOATS[I.SKIFF], ca=BOATS[I.CANOE]; if(sk&&ca&&sk.seats<ca.seats){ FZ_AUDIT.push(`Skiff seats ${sk.seats} -> ${ca.seats}`); sk.seats=ca.seats; sk.desc=`Fast and light: you and ${sk.seats-1} soldiers. The quickest boat on the sea.`; if(ITEMS[I.SKIFF]) ITEMS[I.SKIFF].desc=sk.desc; } }catch(e){}
+try{ const at=id=>(SHOPS.trader.stock.find(s=>s[0]===id)||[])[2]; const set=(id,v)=>{ for(const s of SHOPS.trader.stock) if(s[0]===id){ FZ_AUDIT.push(`${ITEMS[id].name} price ${s[2]} -> ${v}`); s[2]=v; } };
+  const w=at(I.WARSHIP); if(w&&at(I.GALLEON)!=null&&at(I.GALLEON)<=w) set(I.GALLEON,Math.round(w*1.12/50)*50); const g=at(I.GALLEON); if(g&&at(I.IRONCLAD)!=null&&at(I.IRONCLAD)<=g*1.1) set(I.IRONCLAD,Math.round(g*1.3/50)*50); }catch(e){}
+// a tier sold for more than the next better tier of its line is priced between its neighbours
+try{ const shopPrice=id=>{ let best=null; for(const s of Object.values(SHOPS)) for(const st of s.stock) if(st[0]===id) best=best==null?st[2]:Math.min(best,st[2]); return best; };
+  for(const [ln,ids] of Object.entries(LINES)){ for(let i=0;i+1<ids.length;i++){ const a=shopPrice(ids[i]), b=shopPrice(ids[i+1]); if(a==null||b==null||a<=b) continue;
+    const lo=i>0?shopPrice(ids[i-1]):null; const v=Math.max(1,Math.round(lo!=null&&lo<b?(lo+b)/2:b*0.9));
+    for(const s of Object.values(SHOPS)) for(const st of s.stock) if(st[0]===ids[i]) st[2]=v; FZ_AUDIT.push(`${ITEMS[ids[i]].name} price ${a} -> ${v} (below ${ITEMS[ids[i+1]].name} ${b})`); } } }catch(e){ console.warn(e); }
+// ===== Beta 0.9.193: realms three times as tall, fewer sky fortresses sitting lower, castle blocks that match their rooms, and a
+//       real prison in the sky castle with prisoners in it =====
+// Kinard (2026-11-05): "Cut the amount of sky fortresses in the sky by 25% also make it so they appear a little lower by the
+// invisible barrier also make it so that the sky realm and the magma realm are 3x deeper/higher as the amount of space in those
+// realms feels tight currently also make it so that each type of room is noted in the wiki for the sky fortress and magma realm
+// and make it so that there are also blocks that are adjusted to match the background to make it meld better also enhance the
+// prison area and make it so that there are prisoners in the prison within the sky area".
+// 1. New worlds: the sky realm (top of the world down to the one-way barrier) is three times as tall (92 -> 276 rows) and the
+//    magma realm (magmaY to the bottom) three times as deep (58 -> 174 rows). Everything between the two (surface, sea, caves)
+//    is exactly as tall as before. genWorld still builds the world it always did: the sky rows are added by giving it a
+//    bigger skyOff (deepExtra is the hook: genWorld sets skyOff and barrierY just before it calls deepExtra, and the size's H is
+//    raised for the call so seaY moves down by the same amount), and the magma rows are added below the finished world
+//    (no coordinate above them changes) and carved into tall caverns, three winding galleries and shafts with ledges down
+//    from the old floor, with lava lakes at the bottom. The sky's extra height gets four more layers of wild islands at
+//    different heights, joined by cloud stepping stones along each layer and stairs of small clouds between layers.
+//    Older worlds keep their height (their skyOff, H and magmaY are in the save).
+// 2. Sky fortresses (the temples, houses and towers with sky soldiers on the small islands): a quarter of them are gone in
+//    new worlds (the island stays as a wild island with its chest), and the islands that hold them sit 20 rows lower, from
+//    12 to 28 rows over the barrier instead of 32 to 48. Older worlds keep theirs where they are.
+// 3. Blocks that match the back walls: every room theme of the sky castle and the magma keep has a block coloured from its
+//    back wall (MELD). The room's own walls (the inner face of the castle walls and the walls between rooms), the solid
+//    features under its ceiling and, in a few rooms, the floor are made of it, so walls and back wall read as one.
+// 4. The sky castle's prison: straw beds, shackles and tally marks in every cell, iron cell doors, a guard post with a
+//    table, a lever and a key rack, barred windows, and prisoners in half the cells (at most 5). Talk to a prisoner once the
+//    guards in the prison are down (or the Sky Ranger has fallen) and they are free: a captured soldier joins your party
+//    (or heads home if it is full), a captured villager heads to your village as a wanderer and gives you a few coins.
+// 5. The room themes get a description each (SKY_THEMES[k].what, MAGMA_THEMES[k].what) for the wiki's Castle rooms page.
+
+// ---------- 1. taller realms ----------
+const REALM_X=3, SKY_ADD=(SKY-4)*(REALM_X-1), MAGMA_ADD=58*(REALM_X-1), FORT_DROP=20, FORT_CUT=0.25;
+let tallGen=null;   // set while genWorld builds a new tall world
+function tallSky(){ return typeof skyOff!=='undefined'&&skyOff>=SKY+SKY_ADD; }
+function tallMagma(){ return typeof magmaY!=='undefined'&&magmaY<H&&H-magmaY>=58+MAGMA_ADD; }
+// genWorld: skyOff=SKY; barrierY=SKY-4; H=sz.H+SKY+deepExtra(sz) ... seaY=SKY+max(64,floor(sz.H*0.3)). During a tall build
+// sz.H is raised by k (so seaY moves down by exactly SKY_ADD) and deepExtra gives back what keeps H = old H + SKY_ADD.
+{ const _de=deepExtra; deepExtra=function(sz,...a){ if(tallGen&&sz===tallGen.sz){ skyOff=SKY+tallGen.dS; barrierY=skyOff-4; return tallGen.extra0+tallGen.dS-tallGen.k; } return _de(sz,...a); }; }
+{ const _gw=genWorld; genWorld=function(sk,sd,...a){ const sz=SIZES[sk]; if(!sz||sz.demo||!(SKY_ADD>0)) return _gw(sk,sd,...a);
+    const H0=sz.H, base=Math.max(64,Math.floor(H0*0.3)), dS=SKY_ADD, sea=k=>Math.max(64,Math.floor((H0+k)*0.3)); let k=Math.max(0,Math.floor(dS/0.3)-8); while(k<5000&&sea(k)<base+dS) k++;
+    if(sea(k)!==base+dS) return _gw(sk,sd,...a);
+    tallGen={sz,dS,k,extra0:deepExtra(sz)}; sz.H=H0+k; let r;
+    try{ r=_gw(sk,sd,...a); } finally{ sz.H=H0; tallGen=null; }
+    try{ magmaDeepen(); }catch(e){ console.warn(e); }
+    if(home) home.realm193=1; return r; }; }
+
+// ---- the magma realm, three times as deep: rows added under the finished world ----
+function magmaDeepen(){ if(!magma||!world||!(MAGMA_ADD>0)||magma.deep193) return 0; const H0=H, Hn=H0+MAGMA_ADD, N=W*Hn;
+  const grow=(a,Ty)=>{ const b=new Ty(N); b.set(a); return b; };
+  world=grow(world,Uint16Array); shape=grow(shape,Uint8Array); bg=grow(bg,Uint8Array); liq=grow(liq,Uint8Array); explored=grow(explored,Uint8Array); H=Hn;
+  const {mx0,mx1}=magma, R=mulberry((seed|0)+1931), sd=(seed|0)+1932, M=B.MAGMA_ROCK, inSpan=x=>x>=mx0&&x<=mx1;
+  const boxes=magmaKeepBoxes(), inBox=(x,y,m=2)=>boxes.some(([a,b,c,d])=>x>=a-m&&x<=c+m&&y>=b-m&&y<=d+m);
+  const rocky=id=>id===M||id===0||id===B.BEDROCK||id===B.LAVA||id===B.OBSIDIAN||id===B.MAGMA_DIRT||MAGMA_HOST.has(id)||id===B.BLACK_LAYER||(typeof B.BASALT==='number'&&id===B.BASALT);
+  // the old bottom (bedrock, lava at the very bottom) becomes rock to build on; the new rows start as rock
+  for(let y=H0-14;y<H0;y++) for(let x=0;x<W;x++){ const i=y*W+x, id=world[i]; if(id===B.BEDROCK||(id===B.LAVA&&y>=H0-4)){ world[i]=M; liq[i]=0; bg[i]=inSpan(x)?0:13; } }
+  for(let y=H0;y<Hn;y++) for(let x=0;x<W;x++){ const i=y*W+x; world[i]=M; bg[i]=inSpan(x)?0:13; }
+  const yA=H0-12, yB=Hn-7;
+  // tall caverns: noise stretched upward, thinner close to the old floor and the bottom
+  for(let x=mx0+3;x<=mx1-3;x++) for(let y=yA;y<yB;y++){ if(inBox(x,y)) continue; const i=y*W+x; if(!rocky(world[i])) continue;
+    const edge=Math.min(1,(y-yA)/12,(yB-y)/10), n=fbm(x/42,y/50,sd), m=noise2(x/15,y/10,sd+1);
+    world[i]=(n>0.47+(1-edge)*0.14||(n>0.42&&m>0.72&&edge>0.5))?0:M; liq[i]=0; }
+  // three winding galleries across the realm
+  for(const f of [0.28,0.55,0.82]){ const yc0=Math.round(yA+(yB-yA)*f);
+    for(let x=mx0+6;x<=mx1-6;x++){ const yc=yc0+Math.round((fbm(x/70,f*9,sd+3)-0.5)*30), r=2+Math.round(noise2(x/11,f*5,sd+4)*2);
+      for(let dy=-r;dy<=r+1;dy++){ const y=yc+dy; if(y<=yA+2||y>=yB-1||inBox(x,y)) continue; const i=y*W+x; if(rocky(world[i])){ world[i]=0; liq[i]=0; } } } }
+  // shafts from the old caverns down into the new ones: 5 wide, a platform every 4 rows (jump up through, drop down)
+  const shafts=[];
+  for(let x=mx0+50+((R()*40)|0);x<mx1-50;x+=110+((R()*70)|0)){ if(boxes.some(([a,,c])=>x>=a-14&&x<=c+14)) continue;
+    let y0=-1; for(let y=yA-1;y>Math.max((magma.top||magmaY)+6,yA-40);y--){ let open=0; for(let dx=-2;dx<=2;dx++) if(world[y*W+x+dx]===0) open++; if(open>=3){ y0=y; break; } }
+    if(y0<0) continue; let y1=-1; for(let y=yA+4;y<Math.min(yB-2,yA+70);y++){ let open=0; for(let dx=-2;dx<=2;dx++) if(world[y*W+x+dx]===0) open++; if(open>=4){ y1=y; break; } }
+    if(y1<0) y1=Math.min(yB-3,yA+40);
+    for(let y=y0;y<=y1;y++) for(let dx=-2;dx<=2;dx++){ const i=y*W+x+dx; world[i]=((y-y0)%4===3&&y<y1-1)?B.PLATFORM:0; liq[i]=0; }
+    shafts.push([x,y0,y1]); }
+  // lava lakes at the bottom, in bowls with a rock shell
+  const put=(x,y,id)=>{ if(x<1||x>=W-1||y<1||y>=Hn-1||inBox(x,y)) return; const i=y*W+x; world[i]=id===B.STONE?M:id; liq[i]=0; }, get=(x,y)=>(x<0||x>=W||y<0||y>=Hn)?M:world[y*W+x];
+  let lakes=0; for(let x=mx0+30+((R()*40)|0);x<mx1-30;x+=70+((R()*90)|0)){ let fy=-1; for(let y=yB-2;y>yB-40;y--) if(world[y*W+x]===0&&BLOCKS[world[(y+1)*W+x]].solid){ fy=y+1; break; } if(fy<0) continue;
+    if(shafts.some(([sx])=>Math.abs(sx-x)<16)) continue; const w=8+((R()*14)|0), h=2+((R()*3)|0); naturalPool(x,fy+h,w,h,B.LAVA,R,put,get); lakes++; }
+  // life and spirit crystals on the new floors
+  for(let x=mx0+8;x<mx1-8;x+=20+((R()*34)|0)) for(let y=yA+4;y<yB-1;y++){ const i=y*W+x; if(world[i]===0&&world[i+W]===M&&!inBox(x,y)&&R()<0.35){ world[i]=R()<0.5?B.LIFE_CR:B.MANA_CR; break; } }
+  // bedrock at the new bottom
+  for(let x=0;x<W;x++){ const dep=3+((R()*3)|0); for(let y=Hn-dep;y<Hn;y++){ world[y*W+x]=B.BEDROCK; liq[y*W+x]=0; } }
+  // the realm's rock, soil and plants in the new rows (the same passes the realm gets when it is made)
+  const top0=magma.top; try{ magma.top=yA-2; magmaVariety(false); magma.top=yA-6; magmaPlants(R,false); }catch(e){ console.warn(e); } finally{ magma.top=top0; }
+  // plants left without ground under them by the new caverns
+  for(let y=yA-20;y<Hn-1;y++) for(let x=mx0;x<=mx1;x++){ const i=y*W+x, id=world[i]; if(!id||BLOCKS[id].solid||!(NEEDS_GROUND.has(id)||MAGMA_FLORA.includes(id)||id===B.FIRE_FERN||id===B.EMBER_BLOOM||id===B.LIFE_CR||id===B.MANA_CR)) continue; const b=BLOCKS[world[i+W]]; if(!b||!b.solid) world[i]=0; }
+  try{ darkWalls(); }catch(e){}
+  magma.deep193={h0:H0,shafts:shafts.length,lakes}; return Hn-H0; }
+// the whole realm counts as the magma biome (the old test was the bottom 40 rows)
+{ const _ba=biomeAt; biomeAt=function(x,y){ if(y>=magmaY&&magmaY<H&&tallMagma()) return 'magma'; return _ba(x,y); }; }
+// adamantite once both realm bosses fall: also through the new depth
+{ const _sa=seedAdamant; seedAdamant=function(...a){ const r=_sa(...a); try{ if(r&&tallMagma()&&magma){ const R=mulberry((seed|0)+1935); let made=0; const x0=magma.mx0+4, x1=magma.mx1-4, y0=magmaY+50, y1=H-8;
+        for(let k=0;k<Math.floor((x1-x0)/5);k++){ let x=x0+Math.floor(R()*(x1-x0)), y=y0+Math.floor(R()*(y1-y0)); let n=4+Math.floor(R()*5);
+          for(let t=0;t<n*5&&n>0;t++){ const i=y*W+x; if(x>x0&&x<x1&&y>y0&&y<y1&&MAGMA_HOST.has(world[i])){ wset(x,y,B.ADAMANT_ORE); if(explored[i]) mapPixel(x,y); n--; made++; } const r2=R(); if(r2<0.25) x++; else if(r2<0.5) x--; else if(r2<0.75) y++; else y--; } }
+        return r+made; } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- the sky: fortresses lower and fewer, more islands higher up ----
+// buildSky sets the small islands' tops from skyOff (20+(skyOff-72)+0..15): a bigger skyOff while it runs puts them, and
+// the fortresses on them, lower. The castle sits on barrierY, which does not change.
+{ const _bsk=buildSky; buildSky=function(R0,...a){ if(!tallGen) return _bsk(R0,...a); const so=skyOff; skyOff=so+FORT_DROP; let s;
+    try{ s=_bsk(R0,...a); } finally{ skyOff=so; }
+    try{ fortCut(s); }catch(e){ console.warn(e); } return s; }; }
+const skyGenPut=(x,y,id)=>{ if(x<1||x>=W-1||y<1||y>=H-1) return; const k=y*W+x; world[k]=id; liq[k]=id===B.WATER?8:0; };
+// a quarter of the fortresses go: the island keeps its chest and becomes a wild island like zz176's
+function fortCut(s){ if(!s||!s.temples) return 0; const R=mulberry((seed|0)+1933), n0=s.temples.length, n=Math.round(n0*FORT_CUT); s.wild=s.wild||[];
+  const get=(x,y)=>world[y*W+x], bput=(x,y,v)=>{ bg[y*W+x]=v; }, ok=()=>true, pool=s.temples.slice();
+  for(let k=0;k<n&&pool.length;k++){ const t=pool.splice((R()*pool.length)|0,1)[0], is=s.isles.find(i=>i.cx===t.x&&!i.big);
+    clearSkyBuilding(t,skyGenPut,bput,get,ok); s.temples.splice(s.temples.indexOf(t),1);
+    if(is){ dressWild(is,R,skyGenPut,get,ok,false); s.wild.push({cx:is.cx,w:is.w,top:is.top}); } }
+  s.forts193={before:n0,after:s.temples.length}; return n0-s.temples.length; }
+// the extra height: four layers of wild islands (60, 104, 148 and 192 rows over the barrier), cloud steps along each layer
+// and stairs of small clouds between the layers; zz176's big islands, which sit high up, get stairs down too
+const SKY_TIERS=[60,104,148,192];
+function skyTiers(s){ if(!s||s.tiers193) return 0; const R=mulberry((seed|0)+1934), c=s.castle||{}, apx=s.arrive?s.arrive.px:-9999, get=(x,y)=>world[y*W+x];
+  const ok=(x,y)=>x>1&&x<W-2&&y>2&&y<barrierY-2, blocked=x=>(c.x0!=null&&x>=c.x0-34&&x<=c.x1+34)||Math.abs(x-apx)<34;
+  const emptyBox=(x0,x1,y0,y1)=>{ for(let y=Math.max(2,y0);y<=Math.min(barrierY-3,y1);y++) for(let x=Math.max(1,x0);x<=Math.min(W-2,x1);x++) if(get(x,y)!==0) return false; return true; };
+  const wetBelow=(x,y)=>{ for(let k=1;k<=7;k++){ const id=get(x,y+k); if(id===B.WATER) return true; } return false; };
+  const cloudAt=(x,y)=>{ if(ok(x,y)&&get(x,y)===0&&!wetBelow(x,y)&&!chests[x+','+y]) skyGenPut(x,y,B.CLOUD); };
+  const isleAt=(cx,w,top)=>{ for(let x=cx-w;x<=cx+w;x++){ const t=Math.abs(x-cx)/w, th=Math.max(1,Math.round((1-t*t)*6+noise2(x/5,1,seed+301)*2)), yt=top+Math.round(t*t*2); for(let y=yt;y<yt+th;y++) cloudAt(x,y); } };
+  const puff=(x,y,w)=>{ for(let xx=x-w;xx<=x+w;xx++){ if(xx!==x-w&&xx!==x+w) cloudAt(xx,y); else if(get(xx,y+1)===0) cloudAt(xx,y); } };
+  const tiers=[]; s.wild=s.wild||[];
+  SKY_TIERS.forEach((up,ti)=>{ const L=[], base=barrierY-up; if(base<16){ tiers.push(L); return; }
+    for(let x=s.sx0+40+((R()*50)|0);x<s.sx1-40;x+=92+((R()*70)|0)){ if(blocked(x)) continue; const w=12+((R()*16)|0), top=base+Math.round((R()-0.5)*14);
+      if(top<14||!emptyBox(x-w-6,x+w+6,top-24,top+12)) continue;
+      isleAt(x,w,top); if(R()<0.55) skyCloud(Math.round(x+(R()<0.5?-1:1)*w*(0.6+R()*0.3)),Math.max(3,Math.round(w*0.4)),top+1+Math.round((R()-0.5)*3),2+((R()*2)|0),c);
+      if(R()<0.35) skyCloud(x+Math.round((R()-0.5)*w*0.5),Math.round(w*0.5),top+4,3+((R()*3)|0),c);
+      const is={cx:x,w,top,tier:ti+1}; s.isles.push(is); dressWild(is,R,skyGenPut,get,ok,false); s.wild.push({cx:x,w,top,tier:ti+1});
+      if(R()<0.3){ for(let d=0;d<10;d++){ const xx=x+(d%2?d:-d), g=cloudTopAt(xx,top,get); if(g<0||get(xx,g-1)!==0||(is.lakes||[]).some(([a,b])=>xx>=a-1&&xx<=b+1)) continue; skyGenPut(xx,g-1,B.CHEST_SKY); chests[xx+','+(g-1)]=lootFor(150,R,2,true); break; } }
+      L.push(is); }
+    tiers.push(L); });
+  // steps along a layer
+  const hop=(a,b)=>{ const gap=(b.cx-b.w)-(a.cx+a.w); if(gap<10||gap>210) return; const n=Math.ceil(gap/9); for(let k=1;k<n;k++){ const f=k/n, x=Math.round(a.cx+a.w+gap*f), y=Math.round(a.top+2+(b.top-a.top)*f); puff(x,y,2); } };
+  for(const L of tiers){ const S=L.slice().sort((p,q)=>p.cx-q.cx); for(let i=0;i+1<S.length;i++) hop(S[i],S[i+1]); }
+  // stairs from an island on one layer up to an island on the next: steps at most 3 rows up and 6 across (a jump),
+  // zigzagging when the islands are almost over each other, ending just off the upper island's rim
+  const stairs=(lo,hi)=>{ const dir=Math.sign(hi.cx-lo.cx)||(R()<0.5?-1:1); const ax=lo.cx+dir*Math.max(2,lo.w-3); let ay=cloudTopAt(ax,lo.top,get); if(ay<0) ay=lo.top+2;
+    const bx=hi.cx-dir*(hi.w+3), by=hi.top+2, dy=ay-by; if(dy<5) return 0; const dx=bx-ax, n=Math.max(Math.ceil(dy/3),Math.ceil(Math.abs(dx)/6)), zig=Math.abs(dx)/n<5;
+    for(let k=1;k<n;k++){ const y=Math.round(ay-dy*k/n); let x=Math.round(ax+dx*k/n); if(zig) x+=(k%2?3:-3); puff(x,y,2); } return n; };
+  const near=(L,cx)=>{ let best=null, bd=260; for(const is of L){ const d=Math.abs(is.cx-cx); if(d<bd){ bd=d; best=is; } } return best; };
+  const low=s.isles.filter(i=>!i.tier&&!i.big&&i.w<60), layers=[low,...tiers]; let nst=0;
+  for(let li=1;li<layers.length;li++) for(const is of layers[li]){ const lo=near(layers[li-1],is.cx)||near(layers[li-2]||[],is.cx); if(lo&&stairs(lo,is)) nst++; }
+  const top=tiers.filter(L=>L.length).pop()||low;
+  for(const b of s.isles.filter(i=>i.big&&i.top<barrierY-SKY_TIERS[1])){ const lo=near(top,b.cx)||near(tiers[tiers.length-2]||low,b.cx); if(lo&&lo.top>b.top&&stairs(lo,b)) nst++; }
+  s.tiers193={islands:tiers.reduce((a,L)=>a+L.length,0),stairs:nst}; return s.tiers193.islands; }
+{ const _ds=densifySky; densifySky=function(...a){ const fresh=!!(tallGen&&sky&&!sky.dense); const r=_ds(...a); try{ if(fresh) skyTiers(sky); }catch(e){ console.warn(e); } return r; }; }
+// wild islands stand over each other now: the wild island of a column is the one nearest your height
+{ const _sw=skyWildAt; skyWildAt=function(tx,ty){ if(!tallSky()) return _sw(tx); if(!sky||!sky.wild) return null; const L=sky.wild.filter(w=>tx>=w.cx-w.w-8&&tx<=w.cx+w.w+8); if(!L.length) return null;
+    if(ty==null&&player&&player.y<barrierY*T) ty=Math.floor(cyOf(player)/T); if(ty==null) return L[0]; let best=null, bd=1e9; for(const w of L){ const d=Math.abs(w.top-ty); if(d<bd){ bd=d; best=w; } } return bd<=40?best:null; }; }
+// sky knights land on the clouds near your height (the scan from the top found the highest island of the column)
+{ const _sk=spawnSkyKnights; spawnSkyKnights=function(dt,...a){ if(!tallSky()||!sky) return _sk(dt,...a);
+    skyT-=dt; if(skyT>0) return; skyT=12; if(!player||player.dead||player.y>=skyOff*T) return;
+    const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); if(skyWildAt(px,py)) return;
+    if(ents.filter(e=>e.team==='s'&&!e.dead&&Math.abs(e.x-player.x)<60*T).length>=3) return;
+    for(let t=0;t<10;t++){ const x=px+(Math.random()<.5?-1:1)*(20+Math.floor(Math.random()*20)); if(x<2||x>=W-2||x<sky.sx0||x>sky.sx1) continue;
+      let best=-1; for(let y=Math.max(4,py-30);y<Math.min(barrierY,py+30);y++) if(tileAt(x,y)===B.CLOUD&&tileAt(x,y-1)===0&&tileAt(x,y-2)===0&&(best<0||Math.abs(y-py)<Math.abs(best-py))) best=y;
+      if(best<0||skyWildAt(x,best)) continue; const e=makeHuman('s',SKY_CLS[(Math.random()*4)|0],x*T,best*T-29,'scout',null); e.scout=true; ents.push(e); return; } }; }
+
+// ---------- 3. blocks that match the room's back wall ----------
+// Each block is coloured from the back wall it sits against: the wall's average colour, a little of the wall's own grain,
+// and a pattern of its own (brick, ashlar, panel or tile) so it still reads as a solid block.
+function meldTex(src,style,accent,sd){ const c=mkCanvas(16,16), g=c.getContext('2d'); let d=null; try{ d=src.getContext('2d').getImageData(0,0,16,16).data; }catch(e){}
+  let r=0,gg=0,b=0,n=0; if(d) for(let i=0;i<d.length;i+=4){ if(d[i+3]<128) continue; r+=d[i]; gg+=d[i+1]; b+=d[i+2]; n++; } if(!n){ r=gg=b=128; n=1; } r/=n; gg/=n; b/=n;
+  const R=mulberry(sd), cl=v=>Math.max(0,Math.min(255,Math.round(v)));
+  for(let y=0;y<16;y++) for(let x=0;x<16;x++){ const i=(y*16+x)*4; const sr=d?d[i]:r, sg=d?d[i+1]:gg, sb=d?d[i+2]:b; let k=1+(R()-0.5)*0.07;
+    if(style==='brick'){ const row=y>>2, xo=(x+(row%2)*4)&7; if(y%4===3||xo===7) k*=0.7; else if(y%4===0) k*=1.12; }
+    else if(style==='ashlar'){ const row=y>>3, xo=(x+(row%2)*4)&7; if(y%8===7||xo===7) k*=0.74; else if(y%8===0||xo===0) k*=1.1; }
+    else if(style==='panel'){ if(x%4===3) k*=0.72; else if(x%4===0) k*=1.1; if((x*7+y*3)%11===0) k*=0.9; }
+    else { if(x%8===7||y%8===7) k*=0.72; else if(x%8===0||y%8===0) k*=1.14; }
+    g.fillStyle=`rgb(${cl((r*0.6+sr*0.4)*k)},${cl((gg*0.6+sg*0.4)*k)},${cl((b*0.6+sb*0.4)*k)})`; g.fillRect(x,y,1,1); }
+  if(accent){ g.fillStyle=accent.col; if(accent.line!=null) g.fillRect(0,accent.line,16,1); else for(let k=0;k<5;k++) g.fillRect((R()*16)|0,(R()*16)|0,1,1); }
+  return { tex:c, col:'#'+[r,gg,b].map(v=>cl(v).toString(16).padStart(2,'0')).join('') }; }
+// ids: a fixed range of their own (2100-2199), like zz188's 1600 range: freeIdFrom here would take ids that later files
+// (the wood chests made in 98zzz..._menu_themes.js) already hand out in released saves
+const MELD_BASE=2100; let meldOff=0;
+function meldId(){ let id=MELD_BASE+(meldOff++); while(id<2200&&((BLOCKS[id]&&BLOCKS[id].name)||ITEMS[id])){ console.warn('matching blocks: id taken',id); id=MELD_BASE+(meldOff++); } return id<2200?id:null; }
+const MELD={}, MELD_SKY={}, MELD_MAGMA={}, MELD_IDS=new Set();
+{ const mk=(key,name,srcId,style,like,desc,accent)=>{ const src=BGTEX[srcId]; if(!src) return null; const id=meldId(); if(id==null) return null; const b0=BLOCKS[like]||{}; const {tex,col}=meldTex(src,style,accent,id*13+5);
+    B['MELD_'+key.toUpperCase()]=id; defB(id,{name,hard:b0.hard||1.2,minPow:b0.minPow||0,col}); TEX[id]=tex; ITEMS[id]={name,kind:'block',desc}; MELD[key]=id; MELD_IDS.add(id);
+    try{ STONEY.add(id); }catch(e){} return id; };
+  const G=SKY2_BGS, M=MAGMA_BGS, gold='#d8b048';
+  MELD_SKY.winds=mk('wind_marble','Wind marble',7,'ashlar',B.SKY_BRICK,'Cream marble with a gold line, the stone of the Hall of Winds in the sky castle',{line:7,col:gold});
+  MELD_SKY.garden=mk('garden_stone','Garden stone',G.trellis,'brick',B.SKY_BRICK,'Pale green stone from the sky castle\'s garden, the colour of its trellis walls');
+  MELD_SKY.library=mk('library_panel','Library panelling',G.wains,'panel',B.SKY_BRICK,'Dark oak panels from the sky castle\'s library');
+  MELD_SKY.armory=mk('steel_brick','Steel brick',G.steel,'brick',B.SKY_BRICK,'Steel-blue brick from the sky castle\'s armory');
+  MELD_SKY.quarters=mk('warm_plaster','Warm plaster',G.plaster,'ashlar',B.SKY_BRICK,'Soft cream plaster blocks from the sky soldiers\' quarters');
+  MELD_SKY.observatory=mk('starstone','Starstone',G.night,'ashlar',B.SKY_BRICK,'Deep blue stone with tiny stars in it, from the sky castle\'s observatory',{col:'#fff4c0'});
+  MELD_SKY.prison=mk('prison_stone','Prison stone',G.stone,'brick',B.SKY_BRICK,'Cold grey brick from the sky castle\'s prison');
+  MELD_SKY.vault=mk('gold_marble','Gold-veined marble',G.vgold,'ashlar',B.SKY_BRICK,'Marble veined with gold, from the treasure vault behind the Sky Ranger\'s throne',{col:gold});
+  MELD_MAGMA.keep=mk('keep_brick','Keep brick',8,'brick',B.OBSIDIAN,'Dark red brick of the Magma Knight\'s keep, the colour of its walls');
+  MELD_MAGMA.ruin=mk('cracked_keep','Cracked keep brick',M.cracked,'brick',B.OBSIDIAN,'Cracked brick from the collapsed hall of the magma keep');
+  MELD_MAGMA.forge=mk('soot_brick','Soot brick',M.soot,'brick',B.OBSIDIAN,'Blackened brick from the magma keep\'s smithy');
+  MELD_MAGMA.cells=mk('cell_stone','Cell stone',M.blocks,'ashlar',B.OBSIDIAN,'Heavy stone blocks from the magma keep\'s cell block');
+  MELD_MAGMA.shrine=mk('obsidian_panel','Obsidian panel',M.panel,'tile',B.OBSIDIAN,'Polished obsidian tiles from the magma keep\'s ember shrine',{col:'#ff8a2a'});
+  MELD_MAGMA.cistern=mk('basalt_brick','Basalt brick',M.basalt,'brick',B.OBSIDIAN,'Basalt cut into bricks, from the magma keep\'s cistern');
+  for(const k of ['arcade','armory','throne']) MELD_MAGMA[k]=MELD_MAGMA.keep; }
+// which floors a theme lays that the matching block replaces
+const MELD_FLOOR={ armory:B.STONE_BLOCK, observatory:B.MARBLE, prison:B.STONE_BLOCK };
+function meldSky(c,put,skip){ if(!c||!c.rooms||!c.boxes||c.meld193) return 0; let n=0; const th=c.skyThemes||c.rooms.map(r=>r.theme);
+  c.rooms.forEach((r,i)=>{ const t=th[i], id=MELD_SKY[t], b=c.boxes[i]; if(!id||!b||(skip&&skip(i))) return; const [a,bb,yt,yb]=b;
+    for(let y=yt;y<=yb;y++) for(let x=a-1;x<=bb+1;x++) if(tileAt(x,y)===B.SKY_BRICK){ put(x,y,id); n++; }   // its walls and the features under its ceiling
+    const f=MELD_FLOOR[t]; if(f!=null) for(let x=a;x<=bb;x++) if(tileAt(x,yb+1)===f){ put(x,yb+1,id); n++; } });
+  const t=c.treasury; if(t&&MELD_SKY.vault&&t.top!=null&&!(skip&&skip(-1))) for(let y=t.top;y<t.gy;y++) for(let x=t.x0-1;x<=t.x1+1;x++) if(tileAt(x,y)===B.SKY_BRICK){ put(x,y,MELD_SKY.vault); n++; }
+  c.meld193=1; return n; }
+function meldKeep(c,put,skip){ if(!c||!c.boxes||c.meld193) return 0; let n=0; const th=c.themes||[];
+  c.boxes.forEach((b,i)=>{ const id=MELD_MAGMA[th[i]]; if(!id||(skip&&skip(i))) return; const [a,bb,yt,yb]=b;
+    for(let y=yt;y<=yb;y++) for(let x=a-1;x<=bb+1;x++){ const v=tileAt(x,y); if(v===B.OBSIDIAN||v===B.RED_BRICK){ put(x,y,id); n++; } } });
+  c.meld193=1; return n; }
+
+// ---------- 4. the sky prison ----------
+// six back walls of the prison's grey stone (ids 242-247; bg is a Uint8Array): tally marks, a little barred window, a lever,
+// a key ring, a notice and straw heaped against the wall
+const PRISON_BGS=(()=>{ const o={}, ids=[242,243,244,245,246,247]; ['tally','window','lever','keys','notice','straw'].forEach((k,i)=>{ const id=ids[i]; if(BGTEX[id]){ console.warn('prison: back wall id taken',id); o[k]=SKY2_BGS.stone; } else o[k]=id; }); return o; })();
+{ const base=BGTEX[SKY2_BGS.stone], Q0='#5a5a62', Q3='#a8a8b0', S1='#7eb6ea', S2='#a8d4f6', IR='#3a3a42', IR2='#6a6a74', W1='#6b4422', W2='#8a5c2d', GO='#d8b048', ST='#d8b84a', ST2='#b8963a';
+  const mk=(k,draw)=>{ const id=PRISON_BGS[k]; if(id===SKY2_BGS.stone) return; const c=mkCanvas(16,16), g=c.getContext('2d'); if(base) g.drawImage(base,0,0); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); BGTEX[id]=c; SKY2_SET.add(id); BUILD_BG.add(id); };
+  mk('tally',r=>{ for(const [x0,y0] of [[2,3],[9,3],[2,10]]){ for(let k=0;k<4;k++) r(x0+k,y0,1,4,'#d8d8de'); for(let k=0;k<5;k++) r(x0+k,y0+3-Math.round(k*0.75),1,1,'#e8e8ee'); } r(10,10,1,4,'#d8d8de'); r(12,10,1,4,'#d8d8de'); });
+  mk('window',r=>{ r(3,3,10,9,Q0); r(4,4,8,7,S1); r(4,8,8,3,S2); r(6,5,3,1,'#ffffff'); for(const x of [5,7,9,11]) r(x,4,1,7,IR); r(4,7,8,1,IR); r(3,12,10,1,Q3); });
+  mk('lever',r=>{ r(5,9,6,5,IR); r(5,9,6,1,IR2); r(7,10,2,2,'#1a1a20'); for(let k=0;k<6;k++) r(8+Math.round(k*0.6),9-k,1,1,W2); r(11,2,3,2,'#c83a2a'); r(11,2,3,1,'#e85a4a'); });
+  mk('keys',r=>{ r(2,4,12,2,W1); r(2,4,12,1,W2); for(const [x,c] of [[4,GO],[8,IR2],[11,GO]]){ r(x,6,1,2,IR); r(x-1,8,3,3,c); r(x,9,1,1,'#2a2a2a'); r(x,11,1,3,c); r(x+1,12,1,1,c); } });
+  mk('notice',r=>{ r(3,2,10,12,'#e8dcb8'); r(3,2,10,1,'#f4ecd2'); r(7,1,2,2,IR); for(const y of [5,7,9,11]) r(5,y,6,1,'#8a7a5a'); r(5,3,6,1,'#a83a2a'); });
+  mk('straw',r=>{ for(let x=0;x<16;x++){ const h=3+((x*5)%4); r(x,16-h,1,h,(x%3)?ST:ST2); if(x%4===1) r(x,15-h,1,1,'#f0d878'); } }); }
+// a straw bed: two bed-part cells and the bed itself at the right (as zz188 places its beds)
+function prisonBed(put,ax,gy){ const b=typeof BED_KIND!=='undefined'&&BED_KIND.straw; if(!b) return false; for(let x=ax-b.w+1;x<ax;x++) put(x,gy-1,BED_PART); put(ax,gy-1,b.id); return true; }
+// the cells skyRework built: a cage-bar wall at x and x+6 (four high), a roof at gy-5, a door at x+6
+function prisonCells(c){ const i=(c.rooms||[]).findIndex(r=>r.name==='Prison'); if(i<0||!c.boxes||!c.boxes[i]) return null; const r=c.rooms[i], b=c.boxes[i], gy=r.gy, cells=[];
+  for(let x=b[0];x+6<=b[1];x++){ if(tileAt(x,gy-1)===B.CAGE&&tileAt(x,gy-4)===B.CAGE&&tileAt(x+6,gy-4)===B.CAGE&&DOOR_IDS.has(tileAt(x+6,gy-1))){ cells.push(x); x+=6; } }
+  return {i,r,b,gy,cells}; }
+function prisonDress(c,put,bput){ const P=prisonCells(c); if(!P||!P.cells.length) return null; const {b,gy}=P, G=SKY2_BGS, PB=PRISON_BGS, D=typeof METAL_DOORS!=='undefined'&&METAL_DOORS.iron; let cells=P.cells.slice();
+  // the guard post: the longest run of open floor outside the cells and away from the climbing holes; when there is
+  // none, the cell at the end with more room beside it becomes the guard room
+  const hole=x=>{ for(let dx=-1;dx<=1;dx++) for(let y=b[2];y<=gy;y++) if(tileAt(x+dx,y)===B.PLATFORM) return true; return false; };
+  const postRun=()=>{ const inCell=x=>cells.some(cx=>x>=cx-1&&x<=cx+7); let best=null, run=null; const close=()=>{ if(run&&(!best||run[1]-run[0]>best[1]-best[0])) best=run; run=null; };
+    for(let x=b[0]+1;x<=b[1]-1;x++){ const ok=!inCell(x)&&!hole(x)&&BLOCKS[tileAt(x,gy)].solid&&!BLOCKS[tileAt(x,gy-1)].solid; if(ok){ if(!run) run=[x,x]; else run[1]=x; } else close(); } close(); return best&&best[1]-best[0]>=3?best:null; };
+  let best=postRun();
+  if(!best&&cells.length>=4){ const first=cells[0], last=cells[cells.length-1], roomL=first-b[0], roomR=b[1]-(last+6), x=roomR>=roomL?last:first;
+    cells=cells.filter(cx=>cx!==x); for(let xx=x;xx<=x+6;xx++){ for(let y=gy-5;y<gy;y++){ const v=tileAt(xx,y); if(v&&v!==B.LANTERN) put(xx,y,0); } bput(xx,gy-5,G.stone); } best=postRun(); }
+  for(const x of cells){ for(let xx=x+1;xx<=x+5;xx++) for(let y=gy-4;y<gy;y++){ const v=tileAt(xx,y); if(v&&!BLOCKS[v].solid&&!DOOR_IDS.has(v)) put(xx,y,0); }
+    prisonBed(put,x+3,gy); if(D&&D.top&&D.base){ put(x+6,gy-2,D.top); put(x+6,gy-1,D.base); }
+    bput(x+1,gy-1,PB.straw); bput(x+2,gy-4,G.chain); bput(x+2,gy-3,G.chainEnd); bput(x+5,gy-3,G.ring); bput(x+4,gy-4,PB.window); if(((x>>3)&1)===0) bput(x+3,gy-4,PB.tally); else bput(x+5,gy-2,PB.tally); }
+  let post=null;
+  if(best){ const [p,q]=best, mid=Math.round((p+q)/2); put(mid,gy-1,B.TABLE); put(mid-1,gy-1,B.CHAIR); if(q-p>=5){ put(mid+2,gy-1,B.WEAPON_RACK); put(p,gy-1,B.BARREL); }
+    bput(mid,gy-3,PB.keys); bput(mid+1,gy-3,PB.lever); bput(mid-1,gy-4,PB.notice); post={x:mid,gy}; }
+  return {cells,post}; }
+function prisonFill(c,cells,R){ const list=cells.slice(), n=Math.min(5,Math.ceil(cells.length/2)), out=[], P=prisonCells(c), gy=P?P.gy:c.gy;
+  for(let k=0;k<n&&list.length;k++){ const x=list.splice((R()*list.length)|0,1)[0], vil=R()<0.4; out.push({x:x+4,gy,cls:vil?'knight':CLS_KEYS[(R()*CLS_KEYS.length)|0],villager:vil,skyPrison:true,freed:false}); }
+  return out.sort((p,q)=>p.x-q.x); }
+// new worlds: after the sky castle's rooms have their themes (zz174b)
+{ const _bs=buildSkyTower; buildSkyTower=function(tx0,gy,entryLeft,R,put,bput,...a){ const c=_bs(tx0,gy,entryLeft,R,put,bput,...a); try{ if(c&&!c.cleared){ const bp=bput||((x,y,v)=>{ bg[y*W+x]=v; });
+        const P=prisonDress(c,put,bp); if(P) c.prison193={cells:P.cells,post:P.post,folk:prisonFill(c,P.cells,mulberry(((typeof seed!=='undefined'?seed:0)|0)+1936))};
+        meldSky(c,put); } }catch(e){ console.warn(e); } return c; }; }
+{ const _bm=buildMagmaMaze; buildMagmaMaze=function(x0,gy,entryLeft,R,put,bput,...a){ const c=_bm(x0,gy,entryLeft,R,put,bput,...a); try{ if(c&&!c.cleared) meldKeep(c,put); }catch(e){ console.warn(e); } return c; }; }
+// prisoners stand in their cells (captives: peaceful, not saved as creatures; made again each time the world loads)
+function prisonFolk(){ const c=sky&&sky.castle, P=c&&c.prison193; if(!P||!P.folk||isGuest()) return 0; let n=0;
+  for(const p of P.folk){ if(p.freed||ents.some(e=>!e.dead&&e.kind==='captive'&&e.camp===p)) continue; if(!p.name) p.name=rname(); const e=makeCaptive(p); e.name=p.name; e.prisoner=true; ents.push(e); n++; } return n; }
+{ const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ prisonFolk(); }catch(e){ console.warn(e); } return r; }; }
+function prisonGuards(c){ const P=prisonCells(c); if(!P) return []; const [a,bb,yt,yb]=P.b; return ents.filter(e=>!e.dead&&e.kind==='human'&&e.team==='s'&&cxOf(e)/T>=a-1&&cxOf(e)/T<=bb+2&&cyOf(e)/T>=yt-1&&cyOf(e)/T<=yb+2); }
+function freePrisoner(cap){ const p=cap.camp, c=sky&&sky.castle; if(!p||p.freed) return;
+  if(isGuest()){ toast('The host can free the prisoners',3); return; }
+  if(c&&!c.cleared){ const g=prisonGuards(c); if(g.length){ toast(`Defeat the ${g.length} guard${g.length>1?'s':''} in the prison first`,3); return; } }
+  cap.dead=true; p.freed=true; if(typeof sfx==='function') sfx('door');
+  if(p.villager&&home){ const d=makeDrifter(ents.filter(e=>e.kind==='drifter'||e.kind==='villager').length+3); d.x=cap.x; d.y=cap.y; d.name=p.name||d.name; ents.push(d); const coins=15+((Math.random()*21)|0); addCoins(coins,cap.x,cap.y);
+    toast(`${d.name} thanks you, gives you ${coins} coins and heads to your village to find work`,4); return; }
+  const s=makeHuman(player.team,p.cls,cap.x,cap.y,'guard',home,false,p.name); ents.push(s); const slot=freeSlot();
+  if(slot>=0){ putInSlot(s,slot); toast(`${s.name} the ${CLASSES[s.cls].name.toLowerCase()} was a prisoner here and joins your party!`,4); }
+  else { const sp=spawnPoint(); s.x=sp.x; s.y=sp.y; toast(`${s.name} is free and heads to your village. Your party is full.`,4); } }
+{ const _rs=rescue; rescue=function(cap,...a){ if(cap&&cap.camp&&cap.camp.skyPrison) return freePrisoner(cap); return _rs(cap,...a); }; }
+{ const _vn=villagerName; villagerName=function(v,...a){ if(v&&v.prisoner) return 'Prisoner'; return _vn(v,...a); }; }
+
+// ---------- older worlds: once, only where nobody has looked ----------
+// The sky castle's prison gets its cells dressed and its prisoners while the castle stands and the prison has not been
+// seen; the matching blocks go into the rooms of both castles you have not seen. Fortresses, heights and islands stay.
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(!world||!home||isGuest()) return r;
+      const put=(x,y,id)=>{ if(x>=0&&x<W&&y>=0&&y<H&&world[y*W+x]!==id) setTile(x,y,id); }, bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored[y*W+x]) mapPixel(x,y); } };
+      const c=sky&&sky.castle; if(c&&c.rooms&&c.boxes&&!c.cleared&&!c.prison193&&!c.prisonV193){ c.prisonV193=1; const P=prisonCells(c);
+        if(P&&!(c.seen&&c.seen[P.i])){ facRun(()=>{ const D=prisonDress(c,put,bput); if(D) c.prison193={cells:D.cells,post:D.post,folk:prisonFill(c,D.cells,mulberry((seed|0)+1936))}; }); } }
+      prisonFolk();
+      if(c&&c.rooms&&c.boxes&&!c.cleared&&!c.meld193){ const vi=(c.boxes||[]).findIndex(b=>b[3]-b[2]>=14); facRun(()=>meldSky(c,put,i=>!!(c.seen&&c.seen[i>=0?i:vi]))); }
+      const k=magma&&magma.keep; if(k&&k.boxes&&!k.cleared&&!k.meld193&&k.themes) facRun(()=>meldKeep(k,put,i=>!!(k.seen&&k.seen[i])));
+    }catch(e){ console.warn(e); } return r; }; }
+
+// ---------- 5. the room themes, for the wiki ----------
+{ const S={ winds:'Tall windows full of sky and drifting cloud between paired cream columns, a coffered band under the ceiling and lanterns on the columns. Floor of marble and sky brick; walls of wind marble.',
+    garden:'A trellis wall hung with vines and flowers, vine-wrapped columns and vines trailing from the ceiling. Moss floor; walls of garden stone.',
+    library:'Bookcases from floor to ceiling, wood panelling, round windows onto the sky, timber beams and struts under the ceiling. Dark plank floor; walls of library panelling.',
+    armory:'Steel-blue stone with spear racks, kite shields and long blue banners between square piers, corbels over the piers, and racks, stands and barrels on the floor. Floor and walls of steel brick.',
+    quarters:'Warm plaster above wood panelling, curtained windows, shelves, timber columns and beams. Plank floor; walls of warm plaster.',
+    observatory:'A night sky with stars and constellations, a golden orrery and a domed ceiling over blue-and-gold columns. Floor and walls of starstone.',
+    prison:'Grey stone with chains and rings, an iron-beamed ceiling and a row of barred cells, each with a straw bed, shackles, tally marks, a little barred window and an iron door. A guard post with a table, a chair, a weapon rack, a key ring and a lever. Up to five prisoners wait in the cells. Floor and walls of prison stone.' };
+  for(const k in S) if(SKY_THEMES[k]){ SKY_THEMES[k].what=S[k]; SKY_THEMES[k].meld=MELD_SKY[k]; }
+  const M={ arcade:'A great arcade: round columns under pointed arches, deep recesses with tall glowing windows, hanging chains and a trim along the floor. Walls of keep brick.',
+    forge:'Soot-black walls, iron columns, tools on the wall, a glowing hearth set into the floor under an iron hood. Iron plate floor; walls of soot brick.',
+    cells:'Barred cells along the wall with riveted lintels and shackles, square piers and a low iron ceiling. Deep stone floor; walls of cell stone.',
+    shrine:'Obsidian panels, a great glowing sigil, a band of runes, veined columns under arches and stepped corbels in the corners. Floor of obsidian and ember stone; walls of obsidian panel.',
+    cistern:'Basalt walls streaked with water stains, drains in the floor, hexagonal columns and basalt drips from the ceiling, some glowing at the tip. Basalt floor; walls of basalt brick.',
+    ruin:'A collapsed hall: cracked walls with holes, broken columns, a ceiling coming down in scoria and ember stone, and rubble on the floor. Walls of cracked keep brick.',
+    armory:'Shields, crossed blades and hanging banners between piers under pointed arches, an iron ceiling with struts. Deep trim floor; walls of keep brick.' };
+  for(const k in M) if(MAGMA_THEMES[k]){ MAGMA_THEMES[k].what=M[k]; MAGMA_THEMES[k].meld=MELD_MAGMA[k]; } }
+// where each room is, for the wiki
+const CASTLE_ROOMS193={ sky:[['Entrance hall','The ground floor by the gate: the Hall of Winds or a sky garden.'],['Armory','The other half of the ground floor.'],['Library','The whole second floor.'],['Barracks','The third floor, split in two: two of quarters, observatory, garden and Hall of Winds.'],['Prison','The fourth floor, where the sky garden used to be.'],['Throne hall','The top floor: the Sky Ranger\'s throne in the far corner, ledges for your soldiers, and the treasure vault (gold-veined walls, coin shelves, an iron vault door) behind it.']],
+  magma:[['Upper halls','Six rooms on the upper level, each one of the themes below, never the same one twice side by side.'],['Main halls','Six rooms on the gate level, the same way.'],['Dungeon cells','Six low rooms under the main halls: mostly cell blocks, with cisterns, ruins, shrines and smithies.'],['Throne room','The Magma Knight\'s hall beside the maze, reached from the upper level: wide three-part columns, a high gallery, tall glowing windows, a great window behind the throne and ledges for your soldiers.']] };
+
+// ---------- 6. even ore, from above as well ----------
+// 0.9.108 tops every cave biome up to the plain caves' share of each ore but never takes any away, so a small biome close to
+// the surface (the root caverns, where the 0.9.83 upper-layer coal lands) could hold twice the plain caves' coal, depending
+// on the world. After the top-up, a biome with more than ORE_TRIM_HI times the plain caves' share of coal, iron or silver
+// gives the surplus back to its rock (unexplored cells only) down to ORE_TRIM_TO times.
+const ORE_TRIM_HI=1.45, ORE_TRIM_TO=1.3;
+function oreTrim(seedN,onlyUnexplored){ if(!world||!surf) return 0; const R=mulberry((seedN|0)+1937), ores=[B.COAL,B.IRON,B.SILVER_ORE].filter(v=>v!=null), isOre=new Set(ores), rock=evenRock(), allOre=new Set(EVEN_ORES());
+  const y0=Math.max(2,seaY-10), y1=(typeof magmaY!=='undefined'?magmaY:H)-2, by={}; const bucket=b=>by[b]||(by[b]={solid:0,ore:{},cells:{}});
+  for(let y=y0;y<y1;y++) for(let x=1;x<W-1;x++){ const i=y*W+x, id=world[i]; if(!id||y<surf[x]+4) continue; const o=isOre.has(id); if(!o&&!rock.has(id)&&!allOre.has(id)) continue;
+    const b=oreBiome(x,y); if(b==='surface') continue; const k=bucket(b); k.solid++; if(o){ k.ore[id]=(k.ore[id]||0)+1; if(!(onlyUnexplored&&explored[i])) (k.cells[id]=k.cells[id]||[]).push(i); } }
+  const ref=by.cave; if(!ref||ref.solid<5000) return 0; let n=0;
+  for(const b in by){ if(b==='cave') continue; const k=by[b]; if(k.solid<400) continue;
+    for(const ore of ores){ const want=(ref.ore[ore]||0)/ref.solid; if(!want) continue; const have=k.ore[ore]||0; if(have<=want*k.solid*ORE_TRIM_HI) continue;
+      let extra=Math.round(have-want*k.solid*ORE_TRIM_TO); const L=k.cells[ore]||[];
+      while(extra>0&&L.length){ const i=L.splice((R()*L.length)|0,1)[0], x=i%W, y=(i/W)|0; let r=rockFor(x,y); if(!rock.has(r)||isOre.has(r)) r=B.STONE; wset(x,y,r); if(explored[i]) mapPixel(x,y); extra--; n++; } } }
+  return n; }
+{ const _oe=oreEvenOut; oreEvenOut=function(seedN,onlyUnexplored,...a){ const r=_oe(seedN,onlyUnexplored,...a); try{ oreTrim(seedN,onlyUnexplored); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.194: dyes, stained glass, dyed carpets, flags, tapestries and beds; glass in the wizard towers and castles (Kinard, 2026-11-05) =====
+// "Also enhance the magma wizard and sky wizard so that the towers have stain glass and better blocks and background walls that
+// are enhanced also add the stain glass within the castles for the factions and the player with better stain glass being added
+// for each upgraded castle also add 20 types of stain glass into the game that can be built with the furnace, sand and dyes also
+// add a ton of color dyes that can be used to make colored rugs, beds, stained glass and other items that could use color dyes
+// such as tapestries or flags etc".
+//
+// 1. Dyes (DYES, DYE[key] = item id, newItem): sixteen colours, crushed at the workbench from flowers, crops, berries, coal,
+//    bone, gems, coral, shards, honey and the like (a few cooked at the furnace: cactus, seaweed, gems, gold), or mixed from
+//    two other dyes. The Herbalist sells every one.
+// 2. Stained glass (GLASS_KINDS, GLASS[key] = block id, freeIdFrom): twenty solid glass blocks, each its own colour or
+//    pattern, made at the furnace from sand and dyes (the star glass also takes a gold bar, the jewel glass a ruby). Red and
+//    blue stained glass (ids 43 and 44, from the start) can be made with dyes too. Glass panes (PANES): twelve back walls of
+//    stained glass (bg ids 231-239 and 250-252; daylight comes through them like the window wall).
+// 3. Dyed things: sixteen carpets (lying flat like the rugs), sixteen flags (non-solid like the banners, never a faction banner)
+//    and sixteen tapestries (2x3 wall pieces, addPiece); a bed is dyed where it stands: hold a dye and tap the bed (or use
+//    the Talk/use key beside it) and its blanket takes the colour (home.beds["x,y"].dye, no new ids for beds).
+// 4. Window pieces (WINP, addPiece: wall pieces drawn whole, like the tapestries): a lancet (1x2), a tracery window (1x3) and a rose window
+//    (3x3) in red, green and blue, and arcane and ember tracery and rose windows for the wizards. Crafted at the furnace from
+//    stained glass and iron or gold.
+// 5. The wizard tower (the Archmage's, that leads to the sky) and the magma wizard's fortress: arcane brick and arcane trim
+//    (gold bands at every floor), obsidian brick and ember trim (glowing at every floor), arcane and obsidian brick back
+//    walls (bg 253 and 254), stained glass in the outer walls on every floor and a rose or tracery window in each room. New
+//    worlds at generation; older worlds once (home.glassTowerV) for a tower or fortress nobody has seen yet, inside facRun.
+// 6. Castles (every faction castle and your castle once claimed): the window spots (the old arched windows, B.WINDOW) take
+//    stained glass in the castle's team colour by its stage: stone (stage 1) lancets, deep stone (stage 2) tracery windows,
+//    iron (stage 3) rose windows where a 3x3 fits (else the best that fits). A window spot that still holds the old window
+//    (a rebuilt castle) is filled again; a window you mined out stays out. Host and single player only, inside facRun;
+//    new worlds at generation, older worlds from legacyFixes, then after every skinAll (the castle's stage).
+// 7. Glow (g194Lift, from a drawLighting wrapper and lightCtx.putImageData): the night shade is lifted and tinted on and
+//    around stained glass blocks, panes and windows by how much daylight (or a torch within 3 blocks) is behind them.
+//
+// New ids: 16 dyes, 12 panes and 2 wall items via newItem; 20 glass blocks, 4 tower blocks, 16 carpets, 16 flags,
+// 16 tapestries and 13 windows via freeIdFrom (103 blocks and items). The wood chests of later woods are made first, exactly
+// as 98zzzzzzzzzzzzzzzzz_menu_themes.js makes them, so their released ids (0.9.174-0.9.175) do not move.
+
+// ---------------- 0. the later woods' chests keep their ids ----------------
+{ const rc=RECIPES.filter(r=>r.out===B.CHEST);
+  for(const [k,w] of Object.entries(WOODS)){ if(k==='oak'||WOOD_CHEST[k]) continue; const id=freeIdFrom(), nm=`${woodName(k)} chest`;
+    defB(id,Object.assign({},BLOCKS[B.CHEST],{name:nm,drop:id,col:w.plankCol[0]}));
+    ITEMS[id]=Object.assign({},ITEMS[B.CHEST]||{kind:'block'},{name:nm,kind:'block',desc:`A chest made of ${woodName(k).toLowerCase()} wood. It holds as much as any chest.`});
+    try{ TEX[id]=tintWood(TEX[B.CHEST],w.plankCol[0]); }catch(e){ TEX[id]=TEX[B.CHEST]; }
+    if(BIG_ST[B.CHEST]) BIG_ST[id]=BIG_ST[B.CHEST];
+    for(const r of rc) RECIPES.push(Object.assign({},r,{out:id,need:r.need.map(([nid,n])=>[nid===B.PLANK?w.plank:nid,n])}));
+    WOOD_CHEST[k]=id; WOOD_CHEST_OF[id]=k; } }
+
+// ---------------- helpers ----------------
+const g194rgb=h=>[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];
+const g194mix=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];
+const g194tint=(c,t)=>t>=0?g194mix(c,[255,255,255],t):g194mix(c,[0,0,0],-t);
+// a canvas painted pixel by pixel: fn(x,y) gives [r,g,b,a] or null (clear)
+function g194Paint(w,h,fn){ const c=mkCanvas(w,h), g=c.getContext('2d'), d=g.createImageData(w,h), p=d.data;
+  for(let y=0;y<h;y++) for(let x=0;x<w;x++){ const v=fn(x,y); if(!v) continue; const k=(y*w+x)*4; p[k]=v[0]|0; p[k+1]=v[1]|0; p[k+2]=v[2]|0; p[k+3]=v[3]==null?255:v[3]|0; }
+  g.putImageData(d,0,0); return c; }
+const G194_LEAD=[42,38,50,255];
+const g194h=(a,b)=>{ const s=Math.sin(a*127.1+b*311.7)*43758.5453; return s-Math.floor(s); };
+
+// ---------------- 1. dyes ----------------
+const DYES=[['red','Red','#c8302c'],['orange','Orange','#e8801e'],['yellow','Yellow','#f2cc2a'],['lime','Lime','#8ccf34'],['green','Green','#3a8a34'],
+  ['cyan','Cyan','#24aab4'],['lightblue','Light blue','#6eb0ec'],['blue','Blue','#2c50c8'],['purple','Purple','#7036b0'],['magenta','Magenta','#c03aa4'],
+  ['pink','Pink','#ee88ae'],['brown','Brown','#7a4a26'],['black','Black','#2a2630'],['white','White','#eeece6'],['grey','Grey','#8a8a94'],['gold','Gold','#e0b02a']];
+const DYE={}, DYE_OF={}, DYE_COL={}, DYE_NAME={};
+for(const [k,nm,col] of DYES){ const id=newItem({name:`${nm} dye`,kind:'mat',dye:k,ing:[col,shadeHex(col,0.35)],desc:`A little bottle of ${nm.toLowerCase()} dye. Used for stained glass, carpets, flags, tapestries, and to dye a bed's blanket (hold it and tap the bed)`});
+  DYE[k]=id; DYE_OF[id]=k; DYE_COL[k]=col; DYE_NAME[k]=nm; SELL[id]=k==='gold'?4:1;
+  const lt=shadeHex(col,0.4), dk=shadeHex(col,-0.35);
+  customIcon(id,(rect,px)=>{ rect(6,1,4,2,'#a8784a'); rect(6,1,4,1,'#c8986a'); rect(5,3,6,1,'#3a3448'); rect(6,4,4,2,'#cfe2ec'); rect(5,4,1,2,'#3a3448'); rect(10,4,1,2,'#3a3448');
+    rect(3,6,10,9,'#3a3448'); rect(4,6,8,1,'#3a3448'); rect(4,7,8,7,'#d8eaf2'); rect(4,9,8,5,col); rect(4,9,8,1,lt); rect(4,13,8,1,dk); px(5,7,'#ffffff'); px(5,8,'#ffffff'); px(5,10,shadeHex(lt,0.4)); rect(3,15,10,1,'rgba(0,0,0,0.25)'); }); }
+{ const D=DYE, W1=B.WORKBENCH, F=B.FURNACE, add=(out,n,need,st)=>{ need=need.filter(([i])=>i!=null&&(ITEMS[i]||BLOCKS[i])); if(need.length) RECIPES.push({ out, n, need, st:st||W1, cat2:'mat' }); };
+  const crop=k=>NEW_CROPS&&NEW_CROPS[k]?NEW_CROPS[k].food:null, bio=k=>typeof BIO!=='undefined'?BIO[k]:null;
+  add(D.red,2,[[B.FLOWER_R,1]]); add(D.red,1,[[crop('tomato'),2]]); add(D.red,1,[[crop('strawberry'),2]]); add(D.red,4,[[I.RUBY,1]],F);
+  add(D.orange,4,[[B.FLOWER_R,1],[B.FLOWER_Y,1]]); add(D.orange,2,[[I.PUMPKIN,1]]); add(D.orange,2,[[D.red,1],[D.yellow,1]]);
+  add(D.yellow,2,[[B.FLOWER_Y,1]]); add(D.yellow,1,[[crop('corn'),2]]);
+  add(D.lime,1,[[I.SEAWEED,1]],F); add(D.lime,2,[[D.green,1],[D.white,1]]); add(D.lime,1,[[crop('cabbage'),2]]);
+  add(D.green,2,[[B.CACTUS,1]],F); add(D.green,1,[[I.HERB,2]]); add(D.green,4,[[I.EMERALD,1]],F);
+  add(D.cyan,2,[[D.green,1],[D.blue,1]]); add(D.cyan,3,[[bio('JADE_SHARD'),1]]); add(D.cyan,2,[[537,1]]);
+  add(D.lightblue,2,[[D.blue,1],[D.white,1]]); add(D.lightblue,3,[[bio('AZURE_SHARD'),1]]);
+  add(D.blue,2,[[B.FLOWER_B,1]]); add(D.blue,4,[[I.SAPPHIRE,1]],F);
+  add(D.purple,1,[[I.BERRIES,2]]); add(D.purple,2,[[D.red,1],[D.blue,1]]); add(D.purple,4,[[I.AMETHYST_GEM,1]],F);
+  add(D.magenta,2,[[D.purple,1],[D.pink,1]]); add(D.magenta,1,[[crop('onion'),2]]);
+  add(D.pink,2,[[D.red,1],[D.white,1]]); add(D.pink,2,[[I.CORAL,1]]); add(D.pink,3,[[bio('ROSE_QUARTZ'),1]]);
+  add(D.brown,2,[[I.MUSHROOM,1]]); add(D.brown,1,[[B.LOG,1]]);
+  add(D.black,2,[[B.COAL,1]]); add(D.black,2,[[I.CHARCOAL,1]]); add(D.black,8,[[I.KRAKEN_INK,1]]);
+  add(D.white,3,[[I.BONE,1]]); add(D.white,4,[[I.PEARL,1]]);
+  add(D.grey,2,[[D.black,1],[D.white,1]]); add(D.grey,1,[[B.ASH,2]]);
+  add(D.gold,2,[[I.HONEY,1]]); add(D.gold,6,[[I.GOLD_BAR,1]],F);
+  // the Herbalist sells them all
+  const mixed=new Set(['cyan','lightblue','magenta','grey','lime']);
+  for(const [k] of DYES){ const price=k==='gold'?18:mixed.has(k)?9:6; SHOPS.herbalist.stock.push([D[k],1,price]); try{ MIN_BUY.set(D[k],price); }catch(e){} } }
+
+// ---------------- 2. stained glass ----------------
+// patterns: fn(x,y,c[]) gives a colour array, 'L' for lead, or null; every block has a lead frame
+const G194_PAT={
+  quarry:(x,y,c)=>{ if((x+y)%8===7||((x-y)%8+8)%8===0) return 'L'; const cell=Math.floor((x+y+1)/8)*5+Math.floor((x-y+16)/8); return g194tint(c[0],(g194h(cell,3)-0.5)*0.32); },
+  harlequin:(x,y,c)=>{ if((x+y)%8===7||((x-y)%8+8)%8===0) return 'L'; const a=Math.floor((x+y+1)/8), b=Math.floor((x-y+16)/8); return g194tint((a+b)%2?c[1]:c[0],(g194h(a,b)-0.5)*0.2); },
+  checker:(x,y,c)=>{ if(x%5===0||y%5===0) return 'L'; return g194tint((Math.floor(x/5)+Math.floor(y/5))%2?c[1]:c[0],(g194h(Math.floor(x/5),Math.floor(y/5))-0.5)*0.18); },
+  sunburst:(x,y,c)=>{ const dx=x-7.5, dy=15.5-y, r=Math.hypot(dx,dy); if(r<3.6) return c[2]; if(r<4.6) return 'L'; const a=Math.atan2(dy,dx), s=Math.PI/7, k=Math.round(a/s); if(Math.abs(a-k*s)*r<0.7) return 'L'; return g194tint(Math.floor(a/s)%2?c[1]:c[0],r>12?-0.12:0.06); },
+  leaf:(x,y,c)=>{ const u=(x+y-15)/2, v=(x-y)/2; const e=(u/6.2)**2+(v/2.9)**2; if(e<1){ if(Math.abs(v)<0.45&&Math.abs(u)<5.5) return g194tint(c[1],-0.45); return g194tint(c[1],(u/6)*0.25); } if(e<1.35) return 'L'; return g194tint(c[0],(g194h(x>>2,y>>2)-0.5)*0.14); },
+  star:(x,y,c)=>{ const dx=Math.abs(x-7.5), dy=Math.abs(y-7.5); const inS=(a,b)=>(a<1.3&&b<6.6)||(b<1.3&&a<6.6)||a+b<4.2; if(inS(dx,dy)) return g194tint(c[1],(dx+dy<2)?0.35:0); if(inS(dx-0.9,dy)||inS(dx,dy-0.9)) return 'L';
+    if(((x===3||x===12)&&(y===3||y===12))) return [255,255,255,220]; return g194tint(c[0],(g194h(x>>2,y>>2)-0.5)*0.16); },
+  rose:(x,y,c)=>{ const dx=x-7.5, dy=y-6.5, r=Math.hypot(dx,dy), a=Math.atan2(dy,dx), R=4.4+1.5*Math.cos(5*a); if(r<1.7) return [245,210,60,235]; if(r<R) return r<R*0.6?c[0]:c[1]; if(r<R+0.9) return 'L';
+    if(y>=11&&(x===7||x===8)) return c[2]; if(Math.hypot((x-10.5)/2.2,(y-12.5)/1.1)<1) return c[2]; if(Math.hypot((x-4.5)/2.2,(y-13)/1.1)<1) return g194tint(c[2],0.15); return g194tint(c[3],(g194h(x>>2,y>>2)-0.5)*0.1); },
+  wave:(x,y,c)=>{ const v=(y+2.2*Math.sin(x*Math.PI/8))/4+4, b=Math.floor(v), f=v-b; if(f<0.22) return 'L'; return g194tint(b%2?c[1]:c[0],(f-0.5)*0.3); },
+  jewel:(x,y,c)=>{ const P=[[3,3],[11,2],[7.5,8],[2,12],[12.5,11],[8,14.5],[14,6],[5,6.5]]; let a=1e9, b=1e9, ai=0; P.forEach(([px,py],i)=>{ const d=Math.hypot(x-px,y-py); if(d<a){ b=a; a=d; ai=i; } else if(d<b) b=d; });
+    if(b-a<0.9) return 'L'; if(ai===2) return a<1.2?[255,255,255,240]:g194tint(c[3],0.1-a*0.05); return g194tint(c[ai%3],(g194h(ai,7)-0.5)*0.3); } };
+function glassTex(pat,cols,alpha,frameCol){ const c=cols.map(g194rgb), L=frameCol||G194_LEAD; return g194Paint(16,16,(x,y)=>{ if(x===0||y===0||x===15||y===15) return L; const v=G194_PAT[pat](x,y,c); if(v==='L') return L; if(!v) return null; if(v.length===4) return v;
+    let col=v; if((x+2*y)%17===3&&x>2&&x<13) col=g194tint(col,0.4); if(x===2&&y>2&&y<7) col=g194tint(col,0.55); return [col[0],col[1],col[2],alpha]; }); }
+const GLASS_KINDS=[ // key, name, pattern, colours, recipe dyes, extra materials, glow colour
+  ['orange','Orange stained glass','quarry',['#e8801e'],['orange']], ['yellow','Yellow stained glass','quarry',['#f2cc2a'],['yellow']],
+  ['lime','Lime stained glass','quarry',['#8ccf34'],['lime']], ['green','Green stained glass','quarry',['#3a9a3a'],['green']],
+  ['cyan','Cyan stained glass','quarry',['#24b4be'],['cyan']], ['lightblue','Light blue stained glass','quarry',['#6eb0ec'],['lightblue']],
+  ['purple','Purple stained glass','quarry',['#8040c0'],['purple']], ['magenta','Magenta stained glass','quarry',['#c83aac'],['magenta']],
+  ['pink','Pink stained glass','quarry',['#f090b6'],['pink']], ['frosted','Frosted glass','quarry',['#e8eef4'],['white']],
+  ['smoky','Smoky glass','quarry',['#4a4652'],['black']], ['amber','Amber glass','quarry',['#c8862a'],['brown','yellow']],
+  ['harlequin','Harlequin glass','harlequin',['#c8302c','#f2cc2a'],['red','yellow']], ['checker','Checkered glass','checker',['#2c50c8','#eeece6'],['blue','white']],
+  ['sunburst','Sunburst glass','sunburst',['#e8801e','#f2cc2a','#ffe27a'],['orange','yellow','gold']], ['leaf','Leaf glass','leaf',['#a8e05a','#2f8a34'],['lime','green']],
+  ['star','Star glass','star',['#26409a','#f2c83a'],['blue','gold'],[[I.GOLD_BAR,1]]], ['rose','Rose glass','rose',['#c8302c','#ee88ae','#3a8a34','#f4e8ee'],['red','pink','green']],
+  ['wave','Wave glass','wave',['#24aab4','#2c50c8'],['cyan','blue']], ['jewel','Jewel glass','jewel',['#c8302c','#2c50c8','#3a9a3a','#f2cc2a'],['red','blue','green'],[[I.RUBY,1]]] ];
+const GLASS={}, GLASS_KEY={}, GLOW_COL={};
+for(const [k,nm,pat,cols,dyes,extra] of GLASS_KINDS){ const id=freeIdFrom(); defB(id,{name:nm,hard:0.3,col:cols[0],stained:true});
+  const single=dyes.length===1, many=pat!=='quarry'||dyes.length>1;
+  ITEMS[id]={name:nm,kind:'block',desc:`${pat==='quarry'?`Leaded panes of ${nm.toLowerCase().replace(' stained glass','').replace(' glass','')} glass`:`Stained glass with a ${({harlequin:'red and yellow diamond',checker:'blue and white chequer',sunburst:'rising sun',leaf:'green leaf',star:'golden star',rose:'red rose',wave:'blue wave',jewel:'jewel mosaic'})[pat]} pattern`}. Made at the furnace from sand and dye; it glows when light shines through it`};
+  TEX[id]=glassTex(pat,cols,pat==='quarry'?(k==='frosted'?150:k==='smoky'?200:175):205); SELL[id]=many?3:2;
+  RECIPES.push({ out:id, n:single?1:2, need:[[B.SAND,single?2:4],...dyes.map(d=>[DYE[d],1]),...(extra||[])], st:B.FURNACE, cat2:'build' });
+  GLASS[k]=id; GLASS_KEY[id]=k; GLOW_COL[id]=cols[pat==='rose'?0:pat==='star'?1:0]; }
+// red and blue stained glass (from the start) can be made with dyes too
+RECIPES.push({ out:B.STAINED_R, n:1, need:[[B.SAND,2],[DYE.red,1]], st:B.FURNACE, cat2:'build' }, { out:B.STAINED_B, n:1, need:[[B.SAND,2],[DYE.blue,1]], st:B.FURNACE, cat2:'build' });
+GLASS.red=B.STAINED_R; GLASS.blue=B.STAINED_B; GLOW_COL[B.STAINED_R]='#e5383b'; GLOW_COL[B.STAINED_B]='#3f7cff';
+for(const id of [B.STAINED_R,B.STAINED_B]) if(ITEMS[id]&&!/glows/.test(ITEMS[id].desc||'')) ITEMS[id].desc=`${ITEMS[id].name}, made at the furnace from glass and bricks or from sand and dye. It glows when light shines through it`;
+const GLASS_IDS=new Set(Object.values(GLASS));
+
+// ---- glass panes: back walls of stained glass (bg 231-239, 250-252); daylight comes through them like the window wall ----
+const PANE_BG_IDS=[231,232,233,234,235,236,237,238,239,250,251,252];
+const PANES=[['red','Red glass pane'],['orange','Orange glass pane'],['yellow','Yellow glass pane'],['green','Green glass pane'],['cyan','Cyan glass pane'],['blue','Blue glass pane'],
+  ['purple','Purple glass pane'],['pink','Pink glass pane'],['frosted','Frosted glass pane'],['harlequin','Harlequin glass pane'],['rose','Rose glass pane'],['star','Star glass pane']];
+const PANE={}, PANE_BG=new Set(), BG_GLOW={};
+PANES.forEach(([k,nm],i)=>{ const v=PANE_BG_IDS[i], gid=GLASS[k]; const kind=GLASS_KINDS.find(g=>g[0]===k);
+  const pat=kind?kind[2]:'quarry', cols=kind?kind[3]:(k==='red'?['#d8332e']:['#3a6ae0']);
+  BGTEX[v]=glassTex(pat,cols,pat==='quarry'?165:185,[58,46,40,255]); try{ BG_MAP[v]=cols[0]; }catch(e){}
+  const id=newItem({name:nm,kind:'wall',desc:`A back wall of ${(ITEMS[gid]?ITEMS[gid].name:nm).toLowerCase()}. Daylight comes through it in colour and it glows from behind`});
+  WALLS[id]=v; RECIPES.push({ out:id, n:4, need:[[gid,1],[480,1]], st:B.WORKBENCH, cat2:'build' }); PANE[k]=id; PANE_BG.add(v); BG_GLOW[v]=GLOW_COL[gid]||cols[0]; });
+// daylight passes through the panes (as openAirMask does for the window wall in 98b_woods_windows.js)
+{ const _oa=openAirMask; openAirMask=function(...a){ const keep=[]; const [tx0,tx1,ty0,ty1]=a, m=14;
+    for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++) for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){ const i=y*W+x; if(PANE_BG.has(bg[i])){ keep.push(i,bg[i]); bg[i]=0; } }
+    try{ return _oa(...a); } finally{ for(let k=0;k<keep.length;k+=2) bg[keep[k]]=keep[k+1]; } }; }
+
+// ---------------- 5a. the wizards' blocks and back walls ----------------
+const ARCANE_BG=253, OBSID_BG=254;
+B.ARCANE_BRICK=freeIdFrom(); B.ARCANE_TRIM=freeIdFrom(); B.OBSIDIAN_BRICK=freeIdFrom(); B.EMBER_TRIM=freeIdFrom();
+{ const brick=(base,mortar,hi,lo,extra)=>g194Paint(16,16,(x,y)=>{ const row=y>>2, off=row%2?4:0, bx=(x+off)&7; if(y%4===3||bx===7) return g194rgb(mortar);
+    let c=g194rgb(base); const h=g194h(((x+off)>>3)+row*9,row); c=g194tint(c,(h-0.5)*0.22); if(y%4===0||bx===0) c=g194rgb(hi); if(y%4===2&&bx===6) c=g194rgb(lo); const e=extra&&extra(x,y,bx,row); return e||c; });
+  TEX[B.ARCANE_BRICK]=brick('#3e3872','#22203e','#5a54a2','#2c2856',(x,y)=>(g194h(x,y)>0.985)?[170,140,255,255]:null);
+  TEX[B.ARCANE_TRIM]=brick('#3e3872','#22203e','#5a54a2','#2c2856',(x,y)=>y<2?(y===0?[255,226,122,255]:[200,150,40,255]):y>13?(y===15?[150,110,30,255]:[220,170,52,255]):(y===8&&x%4===1)?[255,214,90,255]:null);
+  TEX[B.OBSIDIAN_BRICK]=brick('#2a1e44','#120a1e','#4a3a78','#1c1430',(x,y)=>(x+y)%11===0&&y%4!==3?[86,70,140,255]:null);
+  TEX[B.EMBER_TRIM]=brick('#2a1e44','#120a1e','#4a3a78','#1c1430',(x,y,bx)=>{ if(y%4===3||bx===7) return (x*3+y)%5<2?[255,150,40,255]:[200,60,20,255]; if(y===0) return [255,190,70,255]; return null; });
+  defB(B.ARCANE_BRICK,Object.assign({},BLOCKS[B.STONE_BLOCK],{name:'Arcane brick',col:'#3e3872',drop:B.ARCANE_BRICK}));
+  defB(B.ARCANE_TRIM,Object.assign({},BLOCKS[B.STONE_BLOCK],{name:'Arcane trim',col:'#c8a040',drop:B.ARCANE_TRIM}));
+  defB(B.OBSIDIAN_BRICK,Object.assign({},BLOCKS[B.OBSIDIAN],{name:'Obsidian brick',col:'#2a1e44',drop:B.OBSIDIAN_BRICK}));
+  defB(B.EMBER_TRIM,Object.assign({},BLOCKS[B.OBSIDIAN],{name:'Ember trim',col:'#c8481a',light:2,drop:B.EMBER_TRIM}));
+  ITEMS[B.ARCANE_BRICK]={name:'Arcane brick',kind:'block',desc:'Deep violet brick from the wizard tower, flecked with old runes'};
+  ITEMS[B.ARCANE_TRIM]={name:'Arcane trim',kind:'block',desc:'Arcane brick banded with gold, as on every floor of the wizard tower'};
+  ITEMS[B.OBSIDIAN_BRICK]={name:'Obsidian brick',kind:'block',desc:'Cut and polished obsidian brick, as in the magma wizard\'s fortress'};
+  ITEMS[B.EMBER_TRIM]={name:'Ember trim',kind:'block',desc:'Obsidian brick with glowing ember seams. It gives a little light'};
+  RECIPES.push({ out:B.ARCANE_BRICK, n:4, need:[[B.STONE_BLOCK,4],[I.AMETHYST_GEM,1]], st:B.WORKBENCH, cat2:'build' }, { out:B.ARCANE_TRIM, n:2, need:[[B.ARCANE_BRICK,2],[DYE.gold,1]], st:B.WORKBENCH, cat2:'build' },
+    { out:B.OBSIDIAN_BRICK, n:1, need:[[B.OBSIDIAN,1]], st:B.WORKBENCH, cat2:'build' }, { out:B.EMBER_TRIM, n:2, need:[[B.OBSIDIAN_BRICK,2],[B.TORCH,1],[DYE.orange,1]], st:B.FURNACE, cat2:'build' });
+  for(const id of [B.ARCANE_BRICK,B.ARCANE_TRIM,B.OBSIDIAN_BRICK,B.EMBER_TRIM]) SELL[id]=2;
+  const dark=src=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(src,0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.55)'; g.fillRect(0,0,16,16); return c; };
+  BGTEX[ARCANE_BG]=dark(TEX[B.ARCANE_BRICK]); BGTEX[OBSID_BG]=dark(TEX[B.OBSIDIAN_BRICK]);
+  { const g=BGTEX[OBSID_BG].getContext('2d'); g.fillStyle='rgba(230,90,30,0.55)'; for(let x=0;x<16;x+=3) g.fillRect(x,7,2,1); }
+  try{ BG_MAP[ARCANE_BG]='#2e2a50'; BG_MAP[OBSID_BG]='#1e1430'; }catch(e){} BUILD_BG.add(ARCANE_BG); BUILD_BG.add(OBSID_BG);
+  const aw=newItem({name:'Arcane wall',kind:'wall',desc:'A back wall of arcane brick, as inside the wizard tower'}); WALLS[aw]=ARCANE_BG; RECIPES.push({ out:aw, n:4, need:[[B.ARCANE_BRICK,1]], st:B.WORKBENCH, cat2:'build' });
+  const ow=newItem({name:'Obsidian brick wall',kind:'wall',desc:'A back wall of obsidian brick with ember seams, as inside the magma wizard\'s fortress'}); WALLS[ow]=OBSID_BG; RECIPES.push({ out:ow, n:4, need:[[B.OBSIDIAN_BRICK,1]], st:B.WORKBENCH, cat2:'build' });
+  B.ARCANE_WALL=aw; B.OBSIDIAN_WALL=ow; }
+
+// ---------------- 4. window pieces (wall pieces drawn whole, like the tapestries) ----------------
+// art: arch (lancet, tracery) or circle (rose); c1 main glass, c2 second glass, gold centre; frame [main, light, dark]
+function winArt(shape,c1,c2,gold,frame){ const C1=g194rgb(c1), C2=g194rgb(c2), GD=g194rgb(gold), F=frame.map(g194rgb), L=G194_LEAD;
+  if(shape==='rose') return g194Paint(48,48,(x,y)=>{ const dx=x-23.5, dy=y-23.5, r=Math.hypot(dx,dy), a=Math.atan2(dy,dx);
+      if(r>23.6) return null; if(r>21) return g194tint(F[0],(dy<0?0.18:-0.18)+(r>22.8?-0.2:0)); if(r>20.2) return L;
+      if(r<3.4) return r<1.6?[255,248,200]:GD; if(r<4.3) return L;
+      if(r<10.2){ const sp=Math.abs(Math.sin(4*a))*r; if(sp<0.75) return L; const pet=r-4.3<(5.9)*(1-Math.abs(Math.sin(4*a))*0.25); return g194tint(pet?C2:C1,(r-7)*0.03); }
+      if(r<11.1) return L;
+      for(let k=0;k<16;k++){ const aa=(k+0.5)*Math.PI/8, ox=Math.cos(aa)*16, oy=Math.sin(aa)*16, d=Math.hypot(dx-ox,dy-oy); if(d<2.3) return d<1.5?GD:L; }
+      const sp=Math.abs(Math.sin(8*a))*r; if(sp<0.9) return L; const sec=Math.floor((a+Math.PI)/(Math.PI/8))%2;
+      return g194tint(sec?C1:g194tint(C1,0.22),(r-16)*-0.015+(g194h(sec,Math.floor(r/3))-0.5)*0.1); });
+  const h=shape==='lancet'?32:48, cx=7.5, top=2;
+  const half=y=>y<top?-1:y>=top+7?5.6:5.6*Math.sqrt(Math.max(0,(y-top)/7));
+  const inside=(x,y)=>y>=top&&y<=h-3&&Math.abs(x-cx)<=half(y);
+  return g194Paint(16,h,(x,y)=>{ if(y>=h-2) return g194tint(F[0],y===h-2?0.2:-0.2);
+    if(!inside(x,y)){ if(inside(x-1,y)||inside(x+1,y)||inside(x,y+1)||inside(x,y-1)||inside(x-1,y+1)||inside(x+1,y+1)) return g194tint(F[0],x<cx?0.18:-0.15); return null; }
+    if(!inside(x-1,y)||!inside(x+1,y)||!inside(x,y-1)) return L;   // lead next to the frame
+    if(!inside(x-2,y)||!inside(x+2,y)||!inside(x,y-2)) return C2;  // a coloured border strip
+    if(shape==='lancet'){ if((x+y)%6===5||((x-y)%6+6)%6===0) return L; const cell=Math.floor((x+y+1)/6)+Math.floor((x-y+30)/6)*7; return g194tint(C1,(g194h(cell,5)-0.5)*0.3+(y<9?0.12:0)); }
+    // tracery: a quatrefoil roundel at the top, two lights below with a diamond in each bay
+    const rx=x-cx, ry=y-12.5, rr=Math.hypot(rx,ry); if(rr<5.6){ if(rr>4.7) return L; if(rr<1.5) return GD; const a=Math.atan2(ry,rx); const lobe=rr<2.4+2.0*Math.abs(Math.cos(2*a)); return lobe?C2:g194tint(C1,0.15); }
+    if(y<19) return g194tint(C1,0.1); if(y===19) return L; if(x===7||x===8) return L; if((y-19)%7===0) return L;
+    const by=(y-19)%7, bx=x<7?x-4:x-11; if(Math.abs(bx)+Math.abs(by-3.5)<2.2) return GD; return g194tint(C1,(g194h(x<7?0:1,Math.floor((y-19)/7))-0.5)*0.25); }); }
+const WINP={}, GWIN_IDS=new Set(), CASTLE_WIN=new Set();
+{ const STONE=['#9a9aa4','#c4c4cc','#6a6a74'], DEEP=['#6a6478','#8a84a0','#433e52'], IRONF=['#8e939c','#cfd3d8','#5a5e66'], GOLDF=['#c99a1a','#ffd84a','#8a6a10'], ARC=['#4a4488','#7a70c8','#2a2650'], OBS=['#3a2860','#5a4890','#22163c'];
+  const TEAM={ r:['Red','#c8282a','#f2c83a','red','yellow'], g:['Green','#2f8a3a','#f2c83a','green','yellow'], b:['Blue','#2a4ec0','#e8eef8','blue','frosted'] };
+  const add=(key,name,shape,c1,c2,gold,frame,need,desc)=>{ const w=shape==='rose'?3:1, h=shape==='lancet'?2:3; const art=winArt(shape,c1,c2,gold,frame);
+    const id=addPiece({key,name,w,h,mount:'wall',sell:shape==='rose'?30:shape==='tracery'?12:5,need,st:B.FURNACE,desc,draw:(r,g)=>g.drawImage(art,0,0)});
+    GWIN_IDS.add(id); GLOW_COL[id]=c1; try{ PIECE_IDS.add(id); DECOR_IDS.push(id); ORE_LOOK.add(id); LAVA_EATS.delete(id); }catch(e){} return id; };
+  for(const [t,[nm,c1,c2,g1,g2]] of Object.entries(TEAM)){ WINP[t]={};
+    WINP[t].lancet=add('lancet_'+t,`${nm} lancet window`,'lancet',c1,c2,'#f2c83a',STONE,[[GLASS[g1],2],[I.IRON_BAR,1]],`A tall, narrow window of ${nm.toLowerCase()} stained glass in a pointed stone arch, as in a stone castle`);
+    WINP[t].tracery=add('tracery_'+t,`${nm} tracery window`,'tracery',c1,c2,'#ffd84a',DEEP,[[GLASS[g1],2],[GLASS[g2],1],[I.IRON_BAR,1],[DYE.gold,1]],`A tall arched window of ${nm.toLowerCase()} stained glass with a four-leaf roundel at the top, as in a deep stone castle`);
+    WINP[t].rose=add('rose_'+t,`${nm} rose window`,'rose',c1,c2,'#ffd84a',GOLDF,[[GLASS[g1],4],[GLASS[g2],3],[I.GOLD_BAR,1]],`A great round window of ${nm.toLowerCase()} stained glass, petals around a golden heart, as in an iron castle`);
+    for(const s of ['lancet','tracery','rose']) CASTLE_WIN.add(WINP[t][s]); }
+  WINP.arcane={ tracery:add('tracery_arcane','Arcane tracery window','tracery','#7038c0','#3a6ae0','#ffd84a',ARC,[[GLASS.purple,2],[GLASS.blue,1],[I.IRON_BAR,1],[DYE.gold,1]],'A tall arched window of violet and blue glass, as on the floors of the wizard tower'),
+    rose:add('rose_arcane','Arcane rose window','rose','#7038c0','#3a6ae0','#ffd84a',ARC,[[GLASS.purple,4],[GLASS.blue,3],[I.GOLD_BAR,1]],'A great round window of violet and blue glass, as in the wizard tower') };
+  WINP.ember={ tracery:add('tracery_ember','Ember tracery window','tracery','#d8401a','#f5a020','#ffe27a',OBS,[[GLASS.orange,2],[GLASS.yellow,1],[I.IRON_BAR,1],[DYE.gold,1]],'A tall arched window of fire-coloured glass, as in the magma wizard\'s fortress'),
+    rose:add('rose_ember','Ember rose window','rose','#d8401a','#f5a020','#ffe27a',OBS,[[GLASS.orange,4],[GLASS.red,3],[I.GOLD_BAR,1]],'A great round window of fire-coloured glass, as in the magma wizard\'s fortress') }; }
+
+// ---------------- 3. carpets, flags and tapestries in every dye ----------------
+const CARPET={}, FLAG={}, TAPESTRY={}, FLAG_IDS=new Set();
+DYES.forEach(([k,nm,col],i)=>{ const dark=['black','brown','purple','blue','green'].includes(k), trim=dark?'#e0b02a':k==='gold'?'#7a4a26':k==='white'?'#c8302c':'#f4ecd2', edge=shadeHex(col,0.35), lo=shadeHex(col,-0.3);
+  // carpet: lies flat like the rugs (RUG_SET, RUG_STRIP and RUG_ICON of 98s_rugs_gems.js; not in RUGS, the six rugs of 0.9.61)
+  { const id=freeIdFrom(), name=`${nm} carpet`; defB(id,{name,solid:false,hard:0.1,col}); ITEMS[id]={name,kind:'block',desc:`A ${nm.toLowerCase()} wool carpet that lies flat on the floor`};
+    RECIPES.push({ out:id, n:2, need:[[483,3],[DYE[k],1]], st:B.WORKBENCH, cat2:'light' }); SELL[id]=2;
+    const s=mkCanvas(16,4), g=s.getContext('2d'), r=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); }; r(0,0,16,4,col); r(0,0,16,1,edge); r(0,3,16,1,lo);
+    const m=i%4; if(m===0) for(let x=1;x<16;x+=4) r(x,1,2,1,trim); else if(m===1) for(let x=0;x<16;x+=2) r(x,1+(x>>1)%2,1,1,trim); else if(m===2){ r(0,1,16,1,trim); for(let x=2;x<16;x+=4) r(x,2,1,1,trim); } else for(let x=0;x<16;x+=4){ r(x,1,2,2,trim); }
+    const ic=mkCanvas(16,16), gi=ic.getContext('2d'), ri=(x,y,w,h,c)=>{ gi.fillStyle=c; gi.fillRect(x,y,w,h); }; ri(2,6,12,7,col); ri(2,6,12,1,edge); ri(2,12,12,1,lo); for(let x=3;x<14;x+=3) ri(x,9,1,1,trim); ri(1,7,1,5,trim); ri(14,7,1,5,trim);
+    RUG_SET.add(id); RUG_STRIP[id]=s; RUG_ICON[id]=ic; TEX[id]=mkCanvas(16,16); delete ICON_URL[id]; CARPET[k]=id; }
+  // flag: a pennant on a pole, never a faction banner
+  { const id=freeIdFrom(), name=`${nm} flag`; defB(id,Object.assign({},BLOCKS[B.BANNER_G],{name,col,drop:id})); ITEMS[id]={name,kind:'block',desc:`A ${nm.toLowerCase()} flag on a short pole. Only decoration: a faction banner is something else`};
+    RECIPES.push({ out:id, n:1, need:[[483,2],[480,1],[DYE[k],1]], st:B.WORKBENCH, cat2:'light' }); SELL[id]=2;
+    const em=i%4; TEX[id]=g194Paint(16,16,(x,y)=>{ if(x===2) return y===0?[255,214,90]:[106,106,110]; if(x===3&&y===0) return [200,150,40];
+      if(x>=3&&x<=13&&y>=1&&y<=9){ const notch=x>=11&&Math.abs(y-5)<=x-11; if(notch) return null; const C=g194rgb(col);
+        if(y===1) return g194rgb(edge); if(y===9||x===13) return g194rgb(lo);
+        const ex=x-7, ey=y-5; if(em===0&&Math.abs(ex)+Math.abs(ey)<=2) return g194rgb(trim); if(em===1&&(y===4||y===6)) return g194rgb(trim); if(em===2&&ex*ex+ey*ey<=3.5) return g194rgb(trim); if(em===3&&(x===5||x===9)) return g194rgb(trim);
+        return g194tint(C,x<5?0.08:0); } return null; });
+    FLAG[k]=id; FLAG_IDS.add(id); }
+  // tapestry: a 2x3 wall piece (addPiece in 98zxz_zz177_decor.js)
+  { const motif=i%8, emb=(r)=>{ const t=trim, d=shadeHex(col,-0.4);
+      if(motif===0){ for(let k2=0;k2<6;k2++){ r(16-k2,12+k2,2*k2+1,1,t); r(16-k2,30-k2,2*k2+1,1,t); } }
+      else if(motif===1){ for(let y=10;y<38;y+=8) for(let k2=0;k2<6;k2++){ r(8+k2,y+k2,2,1,t); r(22-k2,y+k2,2,1,t); } }
+      else if(motif===2){ r(15,24,3,13,'#6b4422'); r(12,35,9,2,'#6b4422'); for(let y=6;y<28;y++) for(let x=6;x<27;x++){ const dd=Math.hypot(x-16,y-16); if(dd<9.5) r(x,y,1,1,dd>8.5?shadeHex(t,-0.3):((x*3+y)%7===0?d:t)); } }
+      else if(motif===3){ r(12,14,9,9,t); for(const [a,b] of [[16,8],[16,26],[6,18],[25,18],[9,11],[22,11],[9,24],[22,24]]) r(a,b,2,3,t); }
+      else if(motif===4){ for(let y=8;y<32;y++) for(let x=6;x<28;x++){ if(Math.hypot(x-15,y-19)<9&&Math.hypot(x-19.5,y-16)>=7.5) r(x,y,1,1,t); } r(23,28,2,2,t); r(9,8,2,2,t); r(25,10,1,1,t); r(6,33,1,1,t); }
+      else if(motif===5){ r(9,20,15,8,t); for(const a of [9,15,21]) r(a,14,3,6,t); r(9,28,15,2,d); r(15,23,3,3,'#c8302c'); }
+      else if(motif===6){ r(9,10,15,14,t); r(10,24,13,4,t); r(12,28,9,3,t); r(15,31,3,3,t); r(15,12,3,18,d); r(11,17,11,3,d); }
+      else { for(let x=4;x<28;x+=6) r(x,4,3,38,t); } };
+    const id=addPiece({key:'dyetap_'+k,name:`${nm} tapestry`,w:2,h:3,mount:'wall',sell:12,need:[[483,6],[DYE[k],2],[DYE.gold,1]],st:B.WORKBENCH,
+      desc:`A ${nm.toLowerCase()} wall hanging`,
+      draw:(r)=>{ r(0,0,32,2,'#8a6a2a'); r(0,0,2,2,trim); r(30,0,2,2,trim); r(2,2,28,42,col); r(2,2,28,2,trim); r(2,2,2,42,trim); r(28,2,2,42,trim); r(2,42,28,2,trim);
+        for(let x=2;x<30;x+=4) r(x+1,44,2,3,trim); r(4,4,1,38,shadeHex(col,0.15)); emb(r); } });
+    try{ PIECE_IDS.add(id); DECOR_IDS.push(id); ORE_LOOK.add(id); LAVA_EATS.delete(id); }catch(e){} TAPESTRY[k]=id; } });
+// carpets and flags are covered by water and burned by lava like the rugs and banners (98zxg, 98zxz_lava_icons.js)
+for(const id of [...Object.values(CARPET),...FLAG_IDS]){ try{ FLOWABLE.delete(id); PASS.add(id); LAVA_EATS.add(id); }catch(e){} }
+
+// ---------------- beds take a dye ----------------
+// home.beds["x,y"].dye = dye key; drawn by swapping the bed kind's blanket colour inside bedArt while drawBedAt draws that bed
+let g194BedDye=null; const G194_BED_ART={};
+{ const _ba=bedArt; bedArt=function(key,tint,...a){ if(!g194BedDye||!DYE_COL[g194BedDye]||!BED_KIND[key]) return _ba(key,tint,...a); const ck=key+'|'+(tint||'')+'|'+g194BedDye;
+    if(G194_BED_ART[ck]) return G194_BED_ART[ck]; const b=BED_KIND[key], old=b.blk, ok=key+'|'+(tint||''), prev=BED_ART[ok]; delete BED_ART[ok]; b.blk=DYE_COL[g194BedDye];
+    try{ G194_BED_ART[ck]=_ba(key,tint,...a); } finally{ b.blk=old; if(prev) BED_ART[ok]=prev; else delete BED_ART[ok]; } return G194_BED_ART[ck]; };
+  const _db=drawBedAt; drawBedAt=function(ax,ay,...a){ const rec=home&&home.beds&&home.beds[ax+','+ay]; g194BedDye=rec&&rec.dye||null; try{ return _db(ax,ay,...a); } finally{ g194BedDye=null; } }; }
+function dyeBed(x,y,dyeId){ const k=DYE_OF[dyeId]; if(!k) return false; const an=bedAnchorAt(x,y); if(!an||!BED_BY_ID[tileAt(an.x,an.y)]) return false;
+  if(isGuest()){ toast('Beds are dyed in the host\'s world by the host',2.5); return true; }
+  if(countItem(dyeId)<1) return false; const rec=bedRec(an.x,an.y,true); if(!rec) return false; if(rec.dye===k){ toast(`That bed is already ${DYE_NAME[k].toLowerCase()}`,2); return true; }
+  rec.dye=k; takeItem(dyeId,1); invDirty=true; try{ sfx('pickup'); }catch(e){} puff(an.x*T,an.y*T,DYE_COL[k],8,60); toast(`The bed's blanket is ${DYE_NAME[k].toLowerCase()} now`,2.5); return true; }
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const hi=heldItem(); if(hi&&DYE_OF[hi.id]){ const bd=nearestBed(); const an=bd&&bedAnchorAt(bd.x,bd.y);
+      if(an&&BED_BY_ID[tileAt(an.x,an.y)]) o.push({label:`Dye the bed ${DYE_NAME[DYE_OF[hi.id]].toLowerCase()}`,direct:true,go:()=>dyeBed(an.x,an.y,hi.id)}); } }catch(e){ console.warn(e); } return o; }; }
+cv.addEventListener('pointerdown',ev=>{ try{ if(state!=='play'||!player||player.dead||touches.size>=2) return; const hi=heldItem(); if(!hi||!DYE_OF[hi.id]) return;
+    setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); const an=bedAnchorAt(tx,ty); if(!an||!BED_BY_ID[tileAt(an.x,an.y)]) return;
+    if(Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))>REACH) return; dyeBed(an.x,an.y,hi.id); ev.stopImmediatePropagation(); ev.preventDefault(); }catch(e){} },true);
+
+// ---------------- 5b. the wizard tower and the magma wizard's fortress ----------------
+// put(x,y,id) and bput(x,y,v) write the world (wset/bset while a world is made, setTile and bset in play inside facRun)
+function g194Fits(x0,y0,w,h,allow){ for(let y=y0;y<y0+h;y++) for(let x=x0;x<x0+w;x++){ if(x<1||x>=W-1||y<1||y>=H-1) return false; const v=world[y*W+x]; if(v!==0&&!(allow&&allow(x,y,v))) return false; }
+  let n=0; for(let y=y0;y<y0+h;y++) for(let x=x0;x<x0+w;x++) if(bg[y*W+x]) n++; return n*2>=w*h; }
+function g194Window(put,x0,y0,id,allow){ const p=PIECE[id]; if(!p||!g194Fits(x0,y0,p.w,p.h,allow)) return false; putPiece({x0,x1:x0+p.w-1,y0,y1:y0+p.h-1},id,put); return true; }
+function wizardGlass(t,kind,put,bput){ if(!t||t.tx==null||t.gy==null||t.top==null) return 0; const tx=t.tx, gy=t.gy, top=t.top; let n=0;
+  const arc=kind==='tower', WALL0=arc?B.STONE_BLOCK:B.OBSIDIAN, BRICK=arc?B.ARCANE_BRICK:B.OBSIDIAN_BRICK, TRIM=arc?B.ARCANE_TRIM:B.EMBER_TRIM, BG0=arc?11:13, BG1=arc?ARCANE_BG:OBSID_BG;
+  const X0=Math.max(1,tx-23), X1=Math.min(W-2,tx+23), Y0=Math.max(1,top-2), Y1=gy-1;
+  const plat=(x,y)=>{ const v=tileAt(x,y); return v===B.PLATFORM||(BLOCKS[v]&&BLOCKS[v].platform); };
+  const sw=[];   // walls, trims and back walls
+  for(let y=Y0;y<=Y1;y++) for(let x=X0;x<=X1;x++){ const i=y*W+x, v=world[i];
+    if(v===WALL0){ const trim=(y===top&&Math.abs(x-tx)<=(arc?5:12))||plat(x-1,y)||plat(x+1,y); sw.push([x,y,trim?TRIM:BRICK]); }
+    if(bg[i]===BG0) bput(x,y,BG1); }
+  for(const [x,y,v] of sw){ put(x,y,v); n++; }
+  const wallX=arc?[tx-5,tx+5]:[t.x0??tx-11,t.x1??tx+11], isWall=v=>v===BRICK||v===TRIM||v===WALL0;
+  const glassIn=(rows,cols)=>{ for(const x of wallX) rows.forEach((y,k)=>{ if(isWall(tileAt(x,y))){ put(x,y,cols[k%cols.length]); n++; } }); };
+  const oldWin=(x,y,v)=>v===B.WINDOW;
+  const W2=WINP[arc?'arcane':'ember'];
+  if(arc){ let k=0; for(let f=gy-6;f>top+8;f-=6,k++){ const rows=[f-4,f-3,f-2];
+      if(k%2===0){ if(!g194Window(put,tx-1,f-4,W2.rose,oldWin)) g194Window(put,tx,f-4,W2.tracery,oldWin); } else g194Window(put,tx,f-4,W2.tracery,oldWin);
+      glassIn(rows,k%2?[GLASS.purple,GLASS.blue,GLASS.purple]:[GLASS.blue,GLASS.purple,GLASS.blue]); }
+    g194Window(put,tx,gy-5,W2.tracery,oldWin);   // the entrance hall
+    g194Window(put,tx-1,top+2,W2.rose,oldWin); glassIn([top+2,top+3,top+4,top+5],[GLASS.purple,GLASS.blue,GLASS.blue,GLASS.purple]); }
+  else { for(const f of [gy,gy-8,gy-16]){ const r0=f-5; g194Window(put,tx-1,r0,W2.rose); for(const dx of [-6,6]) g194Window(put,tx+dx,r0,W2.tracery); glassIn([r0,r0+1,r0+2],[GLASS.orange,GLASS.red,GLASS.orange]); }
+    g194Window(put,tx-1,top+1,W2.rose); for(const dx of [-6,6]) g194Window(put,tx+dx,top+1,W2.tracery); glassIn([top+1,top+2,top+3],[GLASS.yellow,GLASS.orange,GLASS.yellow]); }
+  return n; }
+function g194Explored(x0,x1,y0,y1){ let n=0; for(let y=Math.max(0,y0);y<=Math.min(H-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++) if(explored[y*W+x]) n++; return n; }
+
+// ---------------- 6. castles: stained glass by the castle's stage ----------------
+function castleSlots(cx,gy){ return [[cx-9,gy-4,1],[cx-4,gy-4,1],[cx+4,gy-4,1],[cx+9,gy-4,1],[cx-9,gy-15,1],[cx-4,gy-15,1],[cx+4,gy-15,1],[cx+9,gy-15,1],[cx-15,gy-9,0],[cx+13,gy-9,0]]; }
+function castleList(){ const L=[]; for(const b of (typeof bases!=='undefined'&&bases)||[]){ if(!b||!isFinite(b.cx)||!isFinite(b.gy)) continue; L.push({key:'e'+b.f+'c',cx:b.cx,gy:b.gy,tier:enemyTier(b),team:WINP[b.f]?b.f:'r'}); }
+  if(home&&home.claimed&&!home.fixup&&isFinite(home.castleCx)&&isFinite(home.gy)){ let tier=0; try{ tier=Math.min(2,villageTier()); }catch(e){} const t=player&&player.team; L.push({key:'castle2',cx:home.castleCx,gy:home.gy,tier,team:WINP[t]?t:'g'}); }
+  return L; }
+// one castle: each window spot holding the old arched window (or one of these windows of another stage) gets the best that fits
+function castleGlass(c,put,force){ home.glassCastle=home.glassCastle||{}; const changed=home.glassCastle[c.key]!==c.tier||force; let n=0;
+  const want=c.tier>=2?['rose','tracery','lancet']:c.tier===1?['tracery','lancet']:['lancet'];
+  for(const [sx,sy,hall] of castleSlots(c.cx,c.gy)){ const v=tileAt(sx,sy); let clear=null;
+    if(v===B.WINDOW) clear=[[sx,sy,B.WINDOW]];
+    else if(changed){ const an=(PIECE[v]||isPiecePart(v))&&anchorOf(sx,sy); const id=an&&tileAt(an[0],an[1]); if(!id||!CASTLE_WIN.has(id)) continue;
+      const p=PIECE[id], b=pieceBox(an[0],an[1],p); const best=hall?want[0]:'lancet'; if(id===WINP[c.team][best]) continue; clear=[]; for(let y=b.y0;y<=b.y1;y++) for(let x=b.x0;x<=b.x1;x++) clear.push([x,y,tileAt(x,y)]); }
+    else continue;
+    for(const [x,y] of clear) put(x,y,0);
+    let done=false; for(const s of (hall?want:['lancet'])){ const id=WINP[c.team][s], p=PIECE[id]; const xs=p.w===3?[sx-1]:[sx], ys=p.h===2?[sy,sy-1]:[sy-1,sy,sy-2];
+      for(const x0 of xs){ for(const y0 of ys){ const x1=x0+p.w-1, y1=y0+p.h-1; let moves=null;
+          if(!g194Fits(x0,y0,p.w,p.h)){ if(!g194Fits(x0,y0,p.w,p.h,(x,y,t)=>t===B.TORCH)) continue;
+            // a torch in the way moves aside, to the nearest free spot on its row outside the window, so the windows stay level
+            moves=[]; const taken=new Set(); for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ if(tileAt(x,y)!==B.TORCH) continue; let to=null;
+              for(let d=1;d<=4&&!to;d++) for(const nx of [x0-d,x1+d]){ const k=y*W+nx; if(nx>0&&nx<W-1&&!taken.has(k)&&world[k]===0&&bg[k]&&tileAt(nx-1,y)!==B.TORCH&&tileAt(nx+1,y)!==B.TORCH){ to=nx; taken.add(k); break; } }
+              if(to==null){ moves=null; break; } moves.push([x,y,to]); } if(!moves) continue; }
+          if(moves) for(const [x,y,to] of moves){ put(x,y,0); put(to,y,B.TORCH); }
+          putPiece({x0,x1,y0,y1},id,put); done=true; n++; break; } if(done) break; } if(done) break; }
+    if(!done) for(const [x,y,id] of clear) put(x,y,id); }
+  home.glassCastle[c.key]=c.tier; return n; }
+function castleGlassAll(gen){ if(!world||!home||(!gen&&isGuest())) return 0; if(typeof tutOn==='function'&&tutOn()) return 0; if(typeof edOn==='function'&&edOn()) return 0; let n=0;
+  for(const c of castleList()){ home.glassCastle=home.glassCastle||{}; const need=home.glassCastle[c.key]!==c.tier||castleSlots(c.cx,c.gy).some(([x,y])=>tileAt(x,y)===B.WINDOW); if(!need) continue;
+    if(gen) n+=castleGlass(c,wset); else facRun(()=>{ n+=castleGlass(c,(x,y,id)=>{ if(tileAt(x,y)!==id) setTile(x,y,id); }); }); }
+  return n; }
+
+// ---------------- when they are made ----------------
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(home){ wizardGlass(tower,'tower',wset,bset); wizardGlass(fort,'fort',wset,bset); home.glassTowerV=1; castleGlassAll(true); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&world&&!isGuest()){
+      if(!home.glassTowerV){ home.glassTowerV=1; const bput=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bset(x,y,v); if(explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} } };
+        for(const [t,k] of [[tower,'tower'],[fort,'fort']]) if(t&&t.tx!=null&&t.top!=null&&!g194Explored(t.tx-23,t.tx+23,t.top-2,t.gy-1)) facRun(()=>wizardGlass(t,k,(x,y,id)=>{ if(tileAt(x,y)!==id) setTile(x,y,id); },bput)); }
+      castleGlassAll(false); } }catch(e){ console.warn(e); } return r; }; }
+{ const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ if(state==='play') castleGlassAll(false); }catch(e){ console.warn(e); } return r; }; }
+
+// ---------------- 7. light through the glass ----------------
+// The night shade (lightData in drawLighting) is lifted where light comes through glass: on the glass itself and in a pool
+// around it, tinted the glass's colour, so the window glows and lights the room and whoever stands in front of it. The light
+// behind is daylight above ground (moonlight at night is faint), the glow of the magma realm, or a torch within 3 blocks.
+// A faint coloured haze ('lighter') is added over the pool. G194_GLOW.n counts the lit pieces in the last frame.
+const G194_GLOW={n:0}, G194_HALO={}; let g194View=null;
+function g194Halo(col){ if(G194_HALO[col]) return G194_HALO[col]; const c=mkCanvas(64,64), g=c.getContext('2d'), [r,gg,b]=g194rgb(col), gr=g.createRadialGradient(32,32,0,32,32,32);
+  gr.addColorStop(0,`rgba(${r},${gg},${b},0.8)`); gr.addColorStop(0.5,`rgba(${r},${gg},${b},0.25)`); gr.addColorStop(1,`rgba(${r},${gg},${b},0)`); g.fillStyle=gr; g.fillRect(0,0,64,64); return G194_HALO[col]=c; }
+function g194Behind(x,y,day){ let v=0; if(y<=skyOff||(surf&&y<=surf[x]+2)) v=0.1+0.9*day; else if(typeof magmaY!=='undefined'&&y>=magmaY) v=0.55;
+  if(v<0.6) for(let yy=y-3;yy<=y+3&&v<0.6;yy++) for(let xx=x-3;xx<=x+3;xx++){ const id=tileAt(xx,yy); if(id&&BLOCKS[id]&&BLOCKS[id].light>=6){ v=0.6; break; } }
+  return v; }
+// the glass on screen: [x0,y0,w,h,colour]
+function g194Items(tx0,tx1,ty0,ty1){ const items=[], seen=new Set();
+  for(let y=Math.max(0,ty0);y<=Math.min(H-1,ty1);y++) for(let x=Math.max(0,tx0);x<=Math.min(W-1,tx1);x++){ const i=y*W+x, id=world[i];
+    if(GLASS_IDS.has(id)) items.push([x,y,1,1,GLOW_COL[id]]);
+    else if(id===0&&PANE_BG.has(bg[i])) items.push([x,y,1,1,BG_GLOW[bg[i]]]);
+    else if(GWIN_IDS.has(id)||isPiecePart(id)){ const an=GWIN_IDS.has(id)?[x,y]:anchorOf(x,y); if(!an) continue; const k=an[1]*W+an[0]; if(seen.has(k)) continue; seen.add(k); const aid=tileAt(an[0],an[1]); if(!GWIN_IDS.has(aid)) continue;
+      const p=PIECE[aid]; items.push([an[0]-p.w+1,an[1]-p.h+1,p.w,p.h,GLOW_COL[aid]]); } }
+  return items; }
+function g194Lift(data,v){ G194_GLOW.n=0; if(G194_GLOW.off||!world) return; const {tx0,ty0,tx1,ty1,dl}=v, lw=tx1-tx0+1, lh=ty1-ty0+1, dt=data.data; if(dt.length<lw*lh*4) return;
+  const day=clamp((dl-0.25)/0.75,0,1), lit=[]; v.lit=lit;
+  for(const [x0,y0,w,h,col] of g194Items(tx0,tx1,ty0,ty1)){ const bx=Math.round(x0+(w-1)/2), by=Math.round(y0+(h-1)/2), back=g194Behind(bx,by,day); if(back<0.05) continue;
+    const c=g194rgb(col||'#ffffff'), R=2.6+Math.max(w,h)*0.5, cx=x0+(w-1)/2, cy=y0+(h-1)/2; let dk=0;
+    for(let y=Math.floor(y0-R);y<=Math.ceil(y0+h-1+R);y++) for(let x=Math.floor(x0-R);x<=Math.ceil(x0+w-1+R);x++){ if(x<tx0||x>tx1||y<ty0||y>ty1) continue;
+      const inGlass=x>=x0&&x<x0+w&&y>=y0&&y<y0+h, dx=Math.max(0,x0-x,x-(x0+w-1)), dy=Math.max(0,y0-y,y-(y0+h-1)), d=Math.hypot(dx,dy); if(!inGlass&&d>R) continue;
+      const k=((y-ty0)*lw+(x-tx0))*4, a=dt[k+3]; if(a<8) continue; if(d<1.5) dk=Math.max(dk,a/238); const f=inGlass?back*0.88:back*0.5*(1-d/R); if(f<=0) continue;
+      dt[k+3]=Math.round(a*(1-f)); const tint=Math.min(1,f*1.4); dt[k]=Math.round(dt[k]+(c[0]*0.35-dt[k])*tint); dt[k+1]=Math.round(dt[k+1]+(c[1]*0.35-dt[k+1])*tint); dt[k+2]=Math.round(dt[k+2]+(c[2]*0.35-dt[k+2])*tint); }
+    lit.push([cx,cy,w,h,col,back*dk]); G194_GLOW.n++; } }
+{ const _pd=lightCtx.putImageData.bind(lightCtx); lightCtx.putImageData=function(d,...a){ try{ if(g194View&&d===lightData) g194Lift(d,g194View); }catch(e){ console.warn(e); } return _pd(d,...a); }; }
+{ const _dl=drawLighting; drawLighting=function(tx0,tx1,ty0,ty1,dl,...a){ const v={tx0,tx1,ty0,ty1,dl}; g194View=v; let r; try{ r=_dl(tx0,tx1,ty0,ty1,dl,...a); } finally{ g194View=null; }
+    try{ if(v.lit&&v.lit.length){ ctx.save(); ctx.globalCompositeOperation='lighter'; for(const [cx,cy,w,h,col,back] of v.lit){ const R=(Math.max(w,h)+2.6)*T; ctx.globalAlpha=Math.min(0.22,back*0.2); ctx.drawImage(g194Halo(col),(cx+0.5)*T-R,(cy+0.5)*T-R,2*R,2*R); } ctx.restore(); } }catch(e){ console.warn(e); }
+    return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
