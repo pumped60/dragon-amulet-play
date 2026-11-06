@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1793870547"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793870547"><link rel="manifest" href="manifest.webmanifest?v=1793870547"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1793928047"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1793928047"><link rel="manifest" href="manifest.webmanifest?v=1793928047"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.176</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.177</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>Tap and hold the world</b> to use the held item, or switch to joysticks in Settings</li>
       <li><b>Tap a villager</b> or the Trade button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.177</h3>
+    <p>Castle windows are part of the back wall: a castle at its first stage has plain glass windows, and once it is upgraded they become tall, straight stained glass in the castle's colour. Each hall has three windows, evenly spaced, and nothing round. Stained glass is see-through, so you can see the sky or the wall behind it; glass placed side by side joins into one window without lines between the blocks, and in daylight it glows with its colour. Stained glass sits behind you like a back wall, so you walk past it, and it blends into the wall with no shadow around it. There are no small beds: bunk beds are two blocks wide, the king bed four, and every other bed three; where a building had a small bed, its furniture moves aside to make room. The royal and king beds stand three blocks high under a canopy. Stand by a royal bed to choose its colour; a king bed always wears your faction's colour. Stuffed animals lie down on the blanket and are bigger, so they fill the bed: pick a spot for each (the pillow, the middle, the foot, a bunk) or pile up to five on top of each other. Turn a stuffed animal into a trophy plaque for a back wall (2 by 2, or 3 by 3 for the big bosses), make little stuffed keychains to clip to your belt, and show them all in a trophy case: your castle's upper floor has one with every achievement amulet you have earned, and you can build mini trophy cases. Each kind of achievement has its own amulet. On a phone, a bar at the top of the screen shows what you are typing in any box, above the keyboard.</p>
     <h3>New in Beta 0.9.176</h3>
     <p>Sailing near a far shore shows a Land button that brings you and your army ashore. Shores curve gently into the sea, so you can always climb out. Anyone in lava sinks into it properly. Fountains run when you pour a bucket into them, every place has three kinds in different sizes, and running fountains at your village give you and your soldiers small bonuses. New worlds have a sky realm three times as tall and a magma realm three times as deep, fewer and lower sky fortresses, castle rooms built to match their walls, and prisoners to free in the sky prison. Make sixteen dyes and twenty kinds of stained glass, dye carpets, flags, tapestries and beds, and see stained glass in the wizard towers and in every castle, grander at each castle stage.</p>
     <h3>New in Beta 0.9.175</h3>
@@ -889,7 +891,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.176</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.177</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1150,7 +1152,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.176</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.177</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1172,7 +1174,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.176', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.177', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -22769,6 +22771,660 @@ function g194Lift(data,v){ G194_GLOW.n=0; if(G194_GLOW.off||!world) return; cons
 { const _dl=drawLighting; drawLighting=function(tx0,tx1,ty0,ty1,dl,...a){ const v={tx0,tx1,ty0,ty1,dl}; g194View=v; let r; try{ r=_dl(tx0,tx1,ty0,ty1,dl,...a); } finally{ g194View=null; }
     try{ if(v.lit&&v.lit.length){ ctx.save(); ctx.globalCompositeOperation='lighter'; for(const [cx,cy,w,h,col,back] of v.lit){ const R=(Math.max(w,h)+2.6)*T; ctx.globalAlpha=Math.min(0.22,back*0.2); ctx.drawImage(g194Halo(col),(cx+0.5)*T-R,(cy+0.5)*T-R,2*R,2*R); } ctx.restore(); } }catch(e){ console.warn(e); }
     return r; }; }
+// ===== Kinard, 2026-11-05: "Add straight up and down stained glass in the main castle and regular windows for the starting
+// castle but make sure they aren't round and are all equally spaced within the castle as back walls" =====
+// Castle windows are back walls now (0.9.176 put lancet, tracery and rose window pieces in, some of them round):
+// - a castle at its starting stage (yours before the village grows, a faction's first stage) has plain glass windows
+//   (the Window wall, WINDOW_BG);
+// - once it is upgraded (stone stage 2 and up) the windows are tall, straight stained glass in the castle's team colour
+//   (back walls CW_BG: green, blue, red; leaded in vertical strips, no arches, no circles).
+// Each hall (the great hall and, once built, the upper hall) has three windows, 2 wide and 4 tall, equally spaced: the same
+// gap of 5 between them and 3 at the walls. Each corner tower has one 2x2 window between its ledges. The old arched window
+// blocks (B.WINDOW) and the 0.9.176 window pieces at those spots are taken out; a banner that would hang over a window moves
+// beside it. Furniture, torches, lanterns, slits and trap doors stay where they are (windows are only behind them).
+// Wizard towers keep their rose and tracery windows (98zxz_zz194_glass.js); only castles change.
+const CW_BG={g:164,b:165,r:166};
+const CW_COL={g:['#2f8a3a','#83d26e','#1c5a26'],b:['#2a56c0','#86b0f2','#1a3478'],r:['#b8282a','#f27a64','#741a1a']};
+function cwTex(c){ const cv=mkCanvas(16,16), g=cv.getContext('2d'); const lead='#3a2e28', gold='#e8c050';
+  g.fillStyle=lead; g.fillRect(0,0,16,16);
+  // two tall panes per block, each with a light strip down its left side; a thin gold bead every 8 rows keeps it from looking flat
+  for(const [x0,base] of [[1,c[0]],[9,c[0]]]){ g.fillStyle=base; g.fillRect(x0,0,6,16); g.fillStyle=c[1]; g.fillRect(x0,0,1,16); g.fillStyle=c[2]; g.fillRect(x0+5,0,1,16); }
+  g.fillStyle=gold; g.fillRect(3,7,2,1); g.fillRect(11,7,2,1); g.fillRect(3,15,2,1); g.fillRect(11,15,2,1);
+  return cv; }
+for(const [t,v] of Object.entries(CW_BG)){ BGTEX[v]=cwTex(CW_COL[t]); try{ BG_MAP[v]=CW_COL[t][0]; }catch(e){}
+  if(typeof PANE_BG!=='undefined'){ PANE_BG.add(v); BG_GLOW[v]=CW_COL[t][1]; } }   // daylight comes through and it glows from behind, like the glass panes
+// the window spots of one castle (buildCastle / buildCastleUpper): [x0, y0 (top row), w, h]
+const CW_HALL_X=[-8,-1,6];   // three windows 2 wide, gaps of 5 between them, 3 to each wall (hall inside: cx-11..cx+10)
+function castleWindowSpots(cx,gy){ const L=cx-17, Rr=cx+16, out=[];
+  for(const dx of CW_HALL_X) out.push([cx+dx,gy-6,2,4]);                        // great hall
+  if(isSolid(cx,gy-20)&&bg[(gy-15)*W+cx]) for(const dx of CW_HALL_X) out.push([cx+dx,gy-17,2,4]);   // upper hall, once it is there
+  for(const t0 of [L,Rr-5]) out.push([t0+2,gy-9,2,2]);                           // the two towers, between their ledges
+  return out; }
+function castleWindowBg(c){ return c.tier>=1?(CW_BG[c.team]||CW_BG.g):WINDOW_BG; }
+function castleWindows(c,put,bput){ const L=c.cx-17, Rr=c.cx+16, gy=c.gy, want=castleWindowBg(c); let n=0;
+  // the 0.9.176 window pieces and the old arched window blocks come out
+  for(const [sx,sy] of (typeof castleSlots==='function'?castleSlots(c.cx,gy):[])){ const v=tileAt(sx,sy);
+    if(v===B.WINDOW){ put(sx,sy,0); continue; }
+    if(typeof PIECE!=='undefined'&&(PIECE[v]||isPiecePart(v))){ const an=anchorOf(sx,sy), id=an&&tileAt(an[0],an[1]);
+      if(id&&CASTLE_WIN.has(id)){ const b=pieceBox(an[0],an[1],PIECE[id]); for(let y=b.y0;y<=b.y1;y++) for(let x=b.x0;x<=b.x1;x++) put(x,y,0); } } }
+  // a banner hanging over the right-hand hall window moves beside it (the left one already hangs in a gap)
+  for(const y of [gy-6,gy-7]){ const id=tileAt(c.cx+6,y); if(id&&BLOCKS[id]&&/banner/i.test(BLOCKS[id].name||'')&&tileAt(c.cx+5,y)===0){ put(c.cx+5,y,id); put(c.cx+6,y,0); } }
+  for(const [x0,y0,w,h] of castleWindowSpots(c.cx,gy)) for(let y=y0;y<y0+h;y++) for(let x=x0;x<x0+w;x++){
+    if(x<=L||x>=Rr) continue; const i=y*W+x; if(!bg[i]||isSolid(x,y)) continue;   // only inside, behind open space or furniture
+    if(bg[i]!==want){ bput(x,y,want); n++; } }
+  return n; }
+// every window spot of every castle that should have a window but has another one (or none yet)
+function castleWindowsAll(gen){ if(!world||!home||(!gen&&typeof isGuest==='function'&&isGuest())) return 0;
+  if(typeof tutOn==='function'&&tutOn()) return 0; if(typeof edOn==='function'&&edOn()) return 0;
+  home.cwin=home.cwin||{}; let n=0;
+  for(const c of (typeof castleList==='function'?castleList():[])){ const stamp=c.tier>=1?'s'+c.team:'w'; const spots=castleWindowSpots(c.cx,c.gy).length;
+    if(home.cwin[c.key]===stamp+spots&&!castleSlots(c.cx,c.gy).some(([x,y])=>tileAt(x,y)===B.WINDOW)) continue;
+    if(gen) n+=castleWindows(c,wset,bset);
+    else facRun(()=>{ n+=castleWindows(c,(x,y,id)=>{ if(tileAt(x,y)!==id) setTile(x,y,id); },(x,y,v)=>{ bset(x,y,v); if(explored[y*W+x]) mapPixel(x,y); }); });
+    home.cwin[c.key]=stamp+spots; }
+  return n; }
+// the 0.9.176 castle glass (lancet, tracery and rose pieces) is not put in any more; castles get these windows instead
+castleGlassAll=function(){ return 0; };
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ castleWindowsAll(true); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ castleWindowsAll(false); }catch(e){ console.warn(e); } return r; }; }
+{ const _sa=skinAll; skinAll=function(...a){ const r=_sa(...a); try{ if(state==='play') castleWindowsAll(false); }catch(e){ console.warn(e); } return r; }; }
+{ const _rh=raiseHome; raiseHome=function(...a){ const r=_rh(...a); try{ if(state==='play') castleWindowsAll(false); }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-05: "make the stained glass see through and has opacity so the background can be seen and it's not just
+// solid colours ... during the day it adds a glow based off the colour of the stained glass ... when it's placed next to each
+// other it doesn't look blocky with outlines" =====
+// 1. See-through: every stained glass block (the twenty of 0.9.176 and the old red and blue) is painted at about half
+//    opacity, its leading still dark. A glass block is drawn over the back wall of its cell (or over the sky and landscape
+//    behind when the cell has no back wall), so what is behind it shows through in its colour. The glass panes and the
+//    castle windows (back walls) are see-through the same way: the sky and landscape behind them show.
+// 2. No outlines between neighbours: a glass block only gets its lead frame on a side that does not touch other glass, so
+//    a wall of glass reads as one window; panes and castle windows have no outer frame at all (the wall around them frames them).
+// 3. Daytime glow: with daylight (or a lamp) behind it, every piece of glass on screen casts a soft glow of its colour
+//    around it (0.9.176 glowed only at night; that night glow stays).
+const SEE_ALPHA=118, SEE_LEAD=[42,38,50,228];
+const SEE_KIND={}; for(const [k,nm,pat,cols] of GLASS_KINDS) SEE_KIND[GLASS[k]]={pat,cols:cols.map(g194rgb)};
+SEE_KIND[B.STAINED_R]={pat:'quarry',cols:[g194rgb('#d8332e')]}; SEE_KIND[B.STAINED_B]={pat:'quarry',cols:[g194rgb('#3a6ae0')]};
+// paint one glass cell: lead on the sides in `edges` (1 top, 2 right, 4 bottom, 8 left), the pattern see-through
+function seePaint(pat,cols,edges,alpha){ return g194Paint(16,16,(x,y)=>{
+    if(((edges&1)&&y===0)||((edges&2)&&x===15)||((edges&4)&&y===15)||((edges&8)&&x===0)) return SEE_LEAD;
+    const v=G194_PAT[pat](x,y,cols); if(v==='L') return SEE_LEAD; if(!v) return null;
+    if(v.length===4) return [v[0],v[1],v[2],Math.min(v[3],alpha+60)];
+    let col=v, a=alpha; if((x+2*y)%17===3&&x>2&&x<13){ col=g194tint(col,0.5); a=alpha+50; } if(x===2&&y>2&&y<7){ col=g194tint(col,0.6); a=alpha+60; }
+    return [col[0],col[1],col[2],a]; }); }
+const SEE_CACHE={};
+function seeTex(id,x,y){ const k=SEE_KIND[id]; if(!k) return TEX[id];
+  const glassAt=(xx,yy)=>GLASS_IDS.has(tileAt(xx,yy));
+  const edges=(glassAt(x,y-1)?0:1)|(glassAt(x+1,y)?0:2)|(glassAt(x,y+1)?0:4)|(glassAt(x-1,y)?0:8);
+  const bv=(y>=0&&y<H&&x>=0&&x<W)?bg[y*W+x]:0, key=id+'|'+edges+'|'+bv;
+  if(SEE_CACHE[key]) return SEE_CACHE[key];
+  const glass=SEE_CACHE['g'+id+'|'+edges]||(SEE_CACHE['g'+id+'|'+edges]=seePaint(k.pat,k.cols,edges,SEE_ALPHA));
+  if(!bv||!BGTEX[bv]) return SEE_CACHE[key]=glass;
+  const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(BGTEX[bv],0,0); g.drawImage(glass,0,0); return SEE_CACHE[key]=c; }
+// the item pictures and the plain block picture use the framed, see-through glass
+for(const id of Object.keys(SEE_KIND).map(Number)){ const k=SEE_KIND[id]; TEX[id]=seePaint(k.pat,k.cols,15,SEE_ALPHA+20); ORE_LOOK.add(id); }
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(SEE_KIND[id]) return seeTex(id,x,y); return _tt(x,y,id,...a); }; }
+// panes: see-through and frameless, so a wall of panes is one window
+PANES.forEach(([k],i)=>{ const v=PANE_BG_IDS[i], kind=GLASS_KINDS.find(g=>g[0]===k); const pat=kind?kind[2]:'quarry';
+  const cols=(kind?kind[3]:(k==='red'?['#d8332e']:['#3a6ae0'])).map(g194rgb); BGTEX[v]=seePaint(pat,cols,0,SEE_ALPHA+12); });
+// the castle windows (0.9.177): tall leaded strips, see-through, lead only down the middle of each block
+if(typeof CW_BG!=='undefined') for(const [t,v] of Object.entries(CW_BG)){ const [c0,c1,c2]=CW_COL[t].map(g194rgb);
+  BGTEX[v]=g194Paint(16,16,(x,y)=>{ if(x===7||x===8) return SEE_LEAD; if((y===7||y===15)&&(x===3||x===4||x===11||x===12)) return [232,192,80,235];
+    const left=x<7, xi=left?x:x-9; const col=xi===0?c1:xi===5?c2:c0; return [col[0],col[1],col[2],xi===0?SEE_ALPHA+50:SEE_ALPHA+10]; }); }
+// daytime glow: a soft halo of each piece's colour wherever daylight or a lamp is behind it
+{ const _dl=drawLighting; drawLighting=function(tx0,tx1,ty0,ty1,dl,...a){ const r=_dl(tx0,tx1,ty0,ty1,dl,...a);
+    try{ const day=clamp(((dl==null?daylight():dl)-0.25)/0.75,0,1); if(day>0.15&&world){ const items=g194Items(tx0,tx1,ty0,ty1); if(items.length){ ctx.save(); ctx.globalCompositeOperation='lighter';
+        for(const [x0,y0,w,h,col] of items){ const cx=x0+(w-1)/2, cy=y0+(h-1)/2, back=g194Behind(Math.round(cx),Math.round(cy),day); if(back<0.2) continue;
+          const R=(Math.max(w,h)+2.2)*T; ctx.globalAlpha=Math.min(0.2,0.2*back*day); ctx.drawImage(g194Halo(col||'#ffffff'),(cx+0.5)*T-R,(cy+0.5)*T-R,2*R,2*R); }
+        ctx.restore(); } } }catch(e){ console.warn(e); }
+    return r; }; }
+// ===== Kinard, 2026-11-05: "Fix all beds in the game to create space for them within every building type so that there are NO
+// single sized beds and the smallest size is the 3 wide also make it so that the stain glass is a back wall that the player
+// can walk past in the foreground so it's not a block that is stopping him also remove the shadows from the stain glass" =====
+// 1. Beds: every 1-wide bed the world puts down (castles, village houses, shop houses, lodges, farmhouses, miners' huts, enemy
+//    villages, keeps, the test world) becomes a 3-wide wooden bed (98zxz_zz188_plush.js placeBed). If the two cells beside it
+//    are not free, the small furniture on that floor (chairs, stools, tables, benches, barrels, pots, vases, lamps and the like)
+//    slides along the floor to make room; chests, stations, doors, trap doors, job items and the walls never move. A bed that
+//    still finds no room on its floor moves to the nearest free 3-wide floor in the same building (within 12 blocks). It is
+//    done when a world is made, each time a world is opened, whenever one is on screen, and whenever a building puts a bed down during play
+//    (a setTile wrapper queues it). Host and single player; not in the scene editor.
+// 2. Stained glass you walk past: every stained glass block (98zxz_zz196_glass_see.js SEE_KIND) is no longer solid. It is drawn
+//    with the tiles, before anyone, so the hero, soldiers and creatures pass in front of it like a back wall. Water covers it.
+// 3. No shadows on glass: the soft shadow the tile pass draws onto a wall beside a solid block is covered by the glass cell's
+//    own picture (the wall behind with the glass over it), so the glass melds into the wall. Glass no longer casts shadows
+//    either (it is not solid).
+for(const id of Object.keys(SEE_KIND).map(Number)){ const b=BLOCKS[id]; if(!b) continue; b.solid=false; b.platform=false; PASS.add(id); }
+
+// ---------------- beds ----------------
+// every bed one block wide: wood of any kind, and the stone and iron beds of an upgraded castle or house (furniture stages)
+const isOneBed=id=>!!id&&id!==BED_PART&&!BED_BY_ID[id]&&isBedId(id);
+// the frame colour a widened bed keeps: the wood's planks, or the stone or iron of a castle bed
+function oneBedTint(id){ const wk=BED_VAR_WOOD[id]; try{ if(wk&&WOODS[wk]) return WOODS[wk].plankCol[0]; }catch(e){} if(id===B.BED) return null; return (BLOCKS[id]&&BLOCKS[id].col)||null; }
+const BED_FIXED=new Set([...CHEST_IDS,B.PART,B.PORTAL,B.LADDER,B.BIRD_CAGE,B.SIGN,B.BEEHIVE,B.BEEHIVE_FULL].filter(v=>v!=null));
+const BED_JOB=new Set(typeof JOB_ITEM!=='undefined'?Object.values(JOB_ITEM):[]);
+// what may never be moved to make room for a bed: walls and floors, chests and storage (their contents), stations, doors,
+// trap doors, job items, other beds, fountains and big decorations, cages, signs and hives
+function bedBlocker(x,y){ const id=tileAt(x,y); if(!id) return false; const b=BLOCKS[id]; if(!b) return true; if(b.solid||b.platform) return true;
+  if(BED_FIXED.has(id)||BED_JOB.has(id)||BIG_ST[id]||isBedId(id)||isOneBed(id)||id===BED_PART||BED_BY_ID[id]||DOOR_IDS.has(id)) return true;
+  if(typeof isTrap==='function'&&isTrap(id)) return true; if(PIECE[id]||isPiecePart(id)) return true; if(isDisp(id)) return true;   // trophy plaques and cases (98zxz_zz199)
+  if(CROPS_STAGE[id]!=null||(typeof isSapling==='function'&&isSapling(id))) return true;   // crops and saplings stay where they grow
+  if(storeKeyAt(x,y)||(home&&((home.cages&&home.cages[x+','+y])||(home.signs&&home.signs[x+','+y])))) return true;
+  return false; }
+// the stretch of floor a bed stands on: left and right until a wall, a missing floor or 12 blocks
+// indoors (a back wall behind the bed) the stretch stays indoors, so a bed in a ruin never reaches out over the grass
+function bedRun(x,y){ let a=x, b=x; const inside=!!bg[y*W+x]; const ok=xx=>floorCell(xx,y+1)&&!bedWall(xx,y)&&(!inside||!!bg[y*W+xx]);
+  while(a-1>x-13&&ok(a-1)) a--; while(b+1<x+13&&ok(b+1)) b++; return [a,b]; }
+const bedWall=(x,y)=>{ const t=tileAt(x,y); return !!t&&!!BLOCKS[t]&&(BLOCKS[t].solid||DOOR_IDS.has(t)||(typeof isTrap==='function'&&isTrap(t))); };
+// the best 3-wide spot on the bed's own floor: fewest pieces to move, then nearest
+function bedWindow(x,y,skip){ const [a,b]=bedRun(x,y); let best=null;
+  for(let s=a;s+2<=b;s++){ const cells=[s,s+1,s+2]; if(cells.some(c=>c!==skip&&bedBlocker(c,y))) continue;
+    const moves=cells.filter(c=>c!==skip&&tileAt(c,y)!==0).length, d=Math.min(...cells.map(c=>Math.abs(c-x)));
+    const sc=moves*10+d; if(!best||sc<best.sc) best={s,sc,a,b,y}; }
+  return best; }
+// no room on its floor: the nearest other floor in the same building (a back wall behind, within 12 across and 10 up or down)
+function bedElsewhere(x,y){ let best=null;
+  for(let dy=-10;dy<=10;dy++){ const yy=y+dy; if(yy<2||yy>=H-2||dy===0) continue;
+    for(let xx=x-12;xx<=x+12;xx++){ if(!floorCell(xx,yy+1)||!bg[yy*W+xx]) continue; if(bedWall(xx,yy)) continue;
+      const w=bedWindow(xx,yy,-1); if(!w) continue; const cells=[w.s,w.s+1,w.s+2]; if(cells.some(c=>!bg[yy*W+c])) continue;
+      const sc=w.sc+Math.abs(dy)*3+Math.abs(xx-x); if(!best||sc<best.sc) best={...w,sc}; } }
+  return best; }
+function bedMoveAside(w,skip,from){ const take=[]; for(let c=w.s;c<=w.s+2;c++) if(c!==skip&&tileAt(c,w.y)) take.push(tileAt(c,w.y));
+  for(let c=w.s;c<=w.s+2;c++) if(c!==skip&&tileAt(c,w.y)) setTile(c,w.y,0);
+  for(const t of take){ let put=false; for(let d=1;d<=12&&!put;d++) for(const c of [w.s-d,w.s+2+d]){ if(c<w.a||c>w.b) continue; if(tileAt(c,w.y)===0&&floorCell(c,w.y+1)){ setTile(c,w.y,t); put=true; break; } }
+    if(!put) spawnDrop(from[0]*T+8,from[1]*T+4,(BLOCKS[t]&&BLOCKS[t].drop)||t,1); } }
+// put a 3-wide bed in place of the 1-wide bed at (x,y)
+function bed3(x,y){ const id=tileAt(x,y); if(!isOneBed(id)) return false; if(oneBed(id)&&widenBed(y*W+x)) return true;
+  let w=bedWindow(x,y,x), here=true; if(!w){ w=bedElsewhere(x,y); here=false; } if(!w) return false;
+  const tint=oneBedTint(id);
+  const old=home.beds&&home.beds[x+','+y]; if(old) delete home.beds[x+','+y];
+  setTile(x,y,0); bedMoveAside(w,here?x:-1,[x,y]);
+  const ax=w.s+2; placeBed({ax,ay:w.y},'wood',id,tint); const r=bedRec(ax,w.y,true); if(old&&old.p){ r.p=old.p; if(old.at) r.at=old.at; } if(id===B.BED) delete r.it;
+  if(player&&player.bed&&player.bed.x===x&&player.bed.y===y) player.bed={x:ax,y:w.y};
+  return true; }
+const BED3_Q=new Set(); let bed3T=0, bed3Busy=false;
+function bed3Tick(dt){ if((bed3T-=dt)>0) return; bed3T=0.5; if(!BED3_Q.size||!world||!home||(typeof isGuest==='function'&&isGuest())||(typeof edOn==='function'&&edOn())) return;
+  const list=[...BED3_Q]; BED3_Q.clear(); bed3Busy=true;
+  try{ facRun(()=>{ for(const i of list){ try{ bed3(i%W,(i/W)|0); }catch(e){ console.warn(e); } } }); } finally{ bed3Busy=false; } }
+function bed3All(gen){ if(!world) return 0; let n=0; const L=[]; for(let i=0;i<world.length;i++) if(isOneBed(world[i])) L.push(i);
+  if(!L.length) return 0; bed3Busy=true;
+  try{ const run=()=>{ for(const i of L){ try{ if(bed3(i%W,(i/W)|0)) n++; }catch(e){ console.warn(e); } } }; if(gen) run(); else facRun(run); } finally{ bed3Busy=false; }
+  return n; }
+{ const _st=setTile; setTile=function(x,y,id,...a){ const r=_st(x,y,id,...a); try{ if(!bed3Busy&&isOneBed(id)&&tileAt(x,y)===id) BED3_Q.add(y*W+x); }catch(e){} return r; }; }
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ if(state==='play') bed3Tick(dt||0.016); }catch(e){ console.warn(e); } return r; }; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(home&&!(typeof edOn==='function'&&edOn())){ bed3All(true); home.bed3V=1; } }catch(e){ console.warn(e); } return r; }; }
+// every load (old worlds and beds a builder put down after the world was made); and any single bed drawn on screen
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&!(typeof edOn==='function'&&edOn())){ bed3All(false); home.bed3V=1; } }catch(e){ console.warn(e); } return r; }; }
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(isOneBed(id)) BED3_Q.add(y*W+x); return _tt(x,y,id,...a); }; }
+// ===== Kinard, 2026-11-05: "Make it so the king (4 blocks long but 3 high) and royal beds are 3 blocks long and have the canopy 3
+// blocks high and make it so that the player can choose whatever color they would like but the king bed is the same color of
+// what faction the player chose also make it so that the smallest bed is 2 blocks long for the double and triple bunk bed and
+// all other bed sizes are 3 blocks long. Fix how the typing works in mobile so that the player can see what they are typing in
+// the crafting and all other menus. Make it so when the stuffed animals are placed on the bed they are laid onto the bed and
+// don't have a gap how they currently do" =====
+// 1. Bed sizes: straw, wooden, double and royal beds are 3 wide; the king bed is 4 wide; the bunk bed (two beds) and the triple
+//    bunk are 2 wide. The royal and king beds stand 3 blocks high with a canopy over them. Beds already standing in a world are
+//    rebuilt at their new size once (home.bedSizeV); one that has no room is handed back as an item at its spot, with anything on it.
+// 2. Colours: the royal bed's colour is yours to pick (stand by it: "Choose the royal bed's colour", any of the sixteen dye
+//    colours, no dye needed). The king bed always wears your faction's colour (green, blue or red); a dye does not change it.
+// 3. Stuffed animals lie down on the bed, head on the pillow, resting right on the blanket (they stood upright with a gap),
+//    and are drawn bigger (up to 18 pixels long and 10 thick).
+// 4. Typing on a phone: while you type in any box (crafting search, item search, chest names, signs, names, room codes) a bar at
+//    the top of the visible screen shows what the box is for and what you have typed, with the cursor, above the keyboard.
+//    Done closes the keyboard.
+
+// ---------------- 1. sizes ----------------
+const BED_OLD_DIMS={royal:[3,1],double:[4,1],king:[5,2],bunk:[3,2],triple:[3,3]};
+const BED_NEW_DIMS={royal:[3,3],double:[3,1],king:[4,3],bunk:[2,2],triple:[2,3]};
+const BED_NEW_DESC={royal:'A gilded canopy bed, 3 blocks wide and 3 high. Choose its colour when it stands',
+  double:'A wide bed with two pillows, 3 blocks wide',
+  king:'A great canopy bed fit for a king, 4 blocks wide and 3 high, in your faction\'s colour',
+  bunk:'Two beds, one above the other, with a ladder. 2 blocks wide and 2 high',
+  triple:'Three beds stacked with a ladder. 2 blocks wide and 3 high'};
+for(const [k,[w,h]] of Object.entries(BED_NEW_DIMS)){ const b=BED_KIND[k]; if(!b) continue; b.w=w; b.h=h; b.desc=BED_NEW_DESC[k]; try{ if(ITEMS[b.id]) ITEMS[b.id].desc=BED_NEW_DESC[k]+'. Sleep in it, and set up to two stuffed animals on it'; }catch(e){} }
+for(const k of Object.keys(BED_ART)) delete BED_ART[k];
+try{ for(const k of Object.keys(G194_BED_ART)) delete G194_BED_ART[k]; }catch(e){}
+
+// ---------------- 2. colours and the canopy beds ----------------
+const BED_FAC_COL={g:'#2f8a3a',b:'#2a56c0',r:'#b8282a'};
+function bedFacCol(){ return BED_FAC_COL[player&&player.team]||BED_FAC_COL.g; }
+function bedPlHex(hex,t){ return plHex(hex,t); }
+const CANOPY_ART={};
+function canopyArt(key,tint,blk){ const ck=key+'|'+(tint||'')+'|'+blk; if(CANOPY_ART[ck]) return CANOPY_ART[ck];
+  const b=BED_KIND[key], Wd=b.w*16, Hd=b.h*16, c=mkCanvas(Wd,Hd), g=c.getContext('2d'); const R=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  const fr=tint||b.frame, frL=plHex(fr,0.3), frD=plHex(fr,-0.35), bk=blk, bkL=plHex(bk,0.3), bkD=plHex(bk,-0.3), bkDD=plHex(bk,-0.5), gold='#ffd84a', goldD='#c8a030';
+  const bot=Hd;
+  // headboard (left, tall) and footboard (right, low)
+  R(3,bot-22,4,14,fr); R(3,bot-22,4,1,frL); R(6,bot-21,1,13,frD); R(Wd-7,bot-14,4,6,fr); R(Wd-7,bot-14,4,1,frL);
+  // mattress, sheet, blanket, pillows
+  R(0,bot-8,Wd,4,fr); R(0,bot-8,Wd,1,frL); R(0,bot-5,Wd,1,frD); R(0,bot-8,Wd,1,gold);
+  R(3,bot-11,Wd-6,3,'#f4f0e0'); R(3,bot-11,Wd-6,1,'#ffffff');
+  const bx=key==='king'?22:15; R(bx,bot-12,Wd-bx-3,4,bk); R(bx,bot-12,Wd-bx-3,1,bkL); R(bx,bot-9,Wd-bx-3,1,bkD); R(bx,bot-12,2,4,'#f4f0e0');
+  for(let x=bx+4;x<Wd-6;x+=6) R(x,bot-11,2,1,gold);
+  for(const px of key==='king'?[6,14]:[6]){ R(px,bot-14,8,3,'#ffffff'); R(px,bot-12,8,1,'#d8d4c8'); R(px+7,bot-14,1,3,'#e8e4d8'); }
+  R(1,bot-4,2,4,frD); R(Wd-3,bot-4,2,4,frD);
+  // the four-poster frame, full height
+  R(0,0,3,Hd-4,fr); R(Wd-3,0,3,Hd-4,fr); R(1,0,1,Hd-4,frL); R(Wd-2,0,1,Hd-4,frL); R(0,0,3,3,gold); R(Wd-3,0,3,3,gold);
+  // the canopy: a cloth roof with a gold band and a scalloped valance
+  R(0,3,Wd,6,bk); R(0,3,Wd,1,bkL); R(0,8,Wd,1,gold); for(let x=2;x<Wd-2;x+=6){ R(x,9,4,2,bk); R(x+1,11,2,1,bk); R(x+1,9,2,1,bkD); }
+  // curtains gathered at both posts, tied with gold, falling to the mattress
+  for(const [dx,dir] of [[3,1],[Wd-10,-1]]){ for(let y=9;y<bot-12;y++){ const pinch=y>bot-26&&y<bot-20?2:0; const w=7-pinch, x0=dir>0?dx:dx+pinch;
+      R(x0,y,w,1,bk); R(x0+(dir>0?0:w-1),y,1,1,bkL); R(x0+(dir>0?w-2:1),y,1,1,bkD); if((y&3)===0) R(x0+3,y,1,1,bkDD); }
+    R(dx+(dir>0?0:2),bot-24,5,2,gold); R(dx+(dir>0?0:2),bot-23,5,1,goldD); }
+  if(key==='king'){ const mx=Wd/2; R(mx-4,12,8,7,bkD); R(mx-3,13,6,5,gold); R(mx-1,14,2,3,bk); }   // a crest on the canopy's back cloth
+  return CANOPY_ART[ck]=c; }
+// the colour a canopy bed is drawn in
+function canopyCol(key,dye){ if(key==='king') return bedFacCol(); return (dye&&DYE_COL[dye])||BED_KIND[key].blk; }
+{ const _ba=bedArt; bedArt=function(key,tint,...a){ if(key==='royal'||key==='king') return canopyArt(key,tint,canopyCol(key,g194BedDye)); return _ba(key,tint,...a); }; }
+// item and block pictures at the new sizes
+function bedIcon(b){ const art=bedArt(b.key), ic=mkCanvas(16,16), gi=ic.getContext('2d'); gi.imageSmoothingEnabled=false;
+  const k=Math.min(16/art.width,16/art.height), dw=Math.max(1,Math.round(art.width*k)), dh=Math.max(1,Math.round(art.height*k));
+  gi.drawImage(art,0,0,art.width,art.height,Math.round(8-dw/2),16-dh,dw,dh); TEX[b.id]=ic; ICON_TEX[b.id]=ic; try{ delete ICON_URL[b.id]; }catch(e){} }
+for(const k of Object.keys(BED_NEW_DIMS)) if(BED_KIND[k]) bedIcon(BED_KIND[k]);
+// a dye leaves the king bed in your faction's colour
+{ const _dy=dyeBed; dyeBed=function(x,y,dyeId,...a){ const an=bedAnchorAt(x,y), b=an&&BED_BY_ID[tileAt(an.x,an.y)];
+    if(b&&b.key==='king'){ toast('A king bed always wears your faction\'s colour',2.5); return true; } return _dy(x,y,dyeId,...a); }; }
+// choose the royal bed's colour, no dye needed
+function royalColour(ax,ay,k){ if(isGuest()){ toast('Beds are coloured in the host\'s world by the host',2.5); return; }
+  const rec=bedRec(ax,ay,true); if(!rec) return; if(k) rec.dye=k; else delete rec.dye; try{ sfx('pickup'); }catch(e){}
+  puff(ax*T,ay*T,k?DYE_COL[k]:BED_KIND.royal.blk,8,60); toast(`The royal bed is ${k?DYE_NAME[k].toLowerCase():'purple'} now`,2); }
+function royalColourMenu(ax,ay){ const sw=c=>`<span style="display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px;background:${c};border:1px solid #0008"></span>`;
+  showPickList([{label:sw(BED_KIND.royal.blk)+'Purple (as made)',go:()=>royalColour(ax,ay,null)},...DYES.map(([k,nm,c])=>({label:sw(c)+nm,go:()=>royalColour(ax,ay,k)}))]); }
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const bd=nearestBed(); const an=bd&&bedAnchorAt(bd.x,bd.y); const b=an&&BED_BY_ID[tileAt(an.x,an.y)];
+      if(b&&b.key==='royal') o.push({label:'Choose the royal bed\'s colour',direct:true,go:()=>royalColourMenu(an.x,an.y)}); }catch(e){ console.warn(e); } return o; }; }
+
+// ---------------- 3. stuffed animals lie on the blanket ----------------
+// where each one lies (x of its middle, y of the blanket it rests on), in the bed picture
+function bedRests(key){ const b=BED_KIND[key], Wd=b.w*16, Hd=b.h*16;
+  if(key==='straw') return [[13,Hd-6],[33,Hd-6]];
+  if(key==='bunk'||key==='triple') return [[13,Hd-11],[13,Hd-11-16*(b.h-1)]];
+  if(key==='king') return [[14,Hd-11],[38,Hd-11]];
+  return [[13,Hd-11],[33,Hd-11]]; }
+const PLUSH_TRIM={};
+function plushTrim(pid){ if(PLUSH_TRIM[pid]) return PLUSH_TRIM[pid]; const art=TROPHY_ART[pid]||iconTex(pid); if(!art) return null;
+  const w=art.width, h=art.height, d=art.getContext?art.getContext('2d').getImageData(0,0,w,h).data:null; let x0=w,y0=h,x1=-1,y1=-1;
+  if(d){ for(let y=0;y<h;y++) for(let x=0;x<w;x++) if(d[(y*w+x)*4+3]>40){ if(x<x0) x0=x; if(x>x1) x1=x; if(y<y0) y0=y; if(y>y1) y1=y; } }
+  if(x1<0){ x0=0; y0=0; x1=w-1; y1=h-1; } const c=mkCanvas(x1-x0+1,y1-y0+1); c.getContext('2d').drawImage(art,x0,y0,x1-x0+1,y1-y0+1,0,0,x1-x0+1,y1-y0+1);
+  return PLUSH_TRIM[pid]=c; }
+// one stuffed animal lying down: head toward the pillow (left), its side resting on the blanket at (cx, rest)
+function drawLyingPlush(pid,cx,rest,g=ctx){ const a=plushTrim(pid); if(!a) return;
+  g.save(); g.imageSmoothingEnabled=false;
+  if(a.width>a.height){   // a wide picture (a bear on all fours) already lies along the bed: as it is, up to 18 long and 10 high
+    const s=Math.min(18/a.width,10/a.height), w=Math.max(8,Math.round(a.width*s)), h=Math.max(5,Math.round(a.height*s));
+    g.drawImage(a,Math.round(cx-w/2),Math.round(rest-h)+1,w,h); g.restore(); return; }
+  const s=Math.min(18/a.height,10/a.width), L=Math.max(8,Math.round(a.height*s)), thick=Math.max(5,Math.round(a.width*s));   // at most 18 long and 10 thick
+  g.translate(Math.round(cx),Math.round(rest-thick/2)+1); g.rotate(-Math.PI/2);
+  g.drawImage(a,-thick/2,-L/2,thick,L); g.restore(); }
+{ const _db=drawBedAt; drawBedAt=function(ax,ay,...a){ const rec=home&&home.beds&&home.beds[ax+','+ay]; const keep=rec&&rec.p;
+    if(rec) rec.p=[0,0]; try{ _db(ax,ay,...a); } finally{ if(rec) rec.p=keep||[0,0]; }
+    try{ const b=BED_BY_ID[tileAt(ax,ay)]; if(b&&keep&&(keep[0]||keep[1])){ const X0=(ax-b.w+1)*T, Y0=(ay-b.h+1)*T, sl=bedRests(b.key);
+        keep.forEach((pid,i)=>{ if(pid&&sl[i]) drawLyingPlush(pid,X0+sl[i][0],Y0+sl[i][1]); }); } }catch(e){ console.warn(e); } }; }
+
+// ---------------- 1b. beds already standing are rebuilt at their new size ----------------
+function bedResizeOne(ax,ay,b){ const [ow,oh]=BED_OLD_DIMS[b.key]; const k=ax+','+ay, rec=home.beds&&home.beds[k];
+  for(let y=ay-oh+1;y<=ay;y++) for(let x=ax-ow+1;x<=ax;x++) if((x!==ax||y!==ay)&&tileAt(x,y)===BED_PART) setTile(x,y,0);
+  setTile(ax,ay,0); if(rec) delete home.beds[k];
+  let fit=null; for(let d=0;d<=6&&!fit;d++) for(const s of d?[-d,d]:[0]){ const f=bedFit(ax-b.w+1+s,ay,b.key); if(f&&f.ay===ay){ fit=f; break; } }
+  if(!fit) fit=bedFit(ax-b.w+1,ay,b.key);
+  if(fit){ placeBed(fit,b.key,null,rec&&rec.tint); const r=bedRec(fit.ax,fit.ay,true); if(rec){ for(const f of ['p','at','dye','it','tint']) if(rec[f]!=null) r[f]=rec[f]; }
+    if(player&&player.bed&&player.bed.x===ax&&player.bed.y===ay) player.bed={x:fit.ax,y:fit.ay}; return true; }
+  spawnDrop(ax*T+8,ay*T+4,(rec&&rec.it)||b.id,1); if(rec) for(const p of rec.p||[]) if(p) spawnDrop(ax*T+8,ay*T+4,p,1);
+  if(player&&player.bed&&player.bed.x===ax&&player.bed.y===ay) player.bed=null; return false; }
+function bedResizeAll(){ if(!world||!home) return 0; const L=[]; for(let i=0;i<world.length;i++){ const b=BED_BY_ID[world[i]]; if(b&&BED_OLD_DIMS[b.key]) L.push([i%W,(i/W)|0,b]); }
+  let n=0; if(L.length) facRun(()=>{ for(const [x,y,b] of L){ try{ bedResizeOne(x,y,b); n++; }catch(e){ console.warn(e); } } }); return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(home) home.bedSizeV=1; }catch(e){} return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ try{ if(home&&!home.bedSizeV&&!isGuest()&&!(typeof edOn==='function'&&edOn())){ bedResizeAll(); home.bedSizeV=1; } }catch(e){ console.warn(e); } return _lf(...a); }; }
+
+// ---------------- 4. typing on a phone ----------------
+const TYPE_ECHO=document.createElement('div'); TYPE_ECHO.id='typeEcho'; TYPE_ECHO.hidden=true;
+TYPE_ECHO.innerHTML='<div class="tlab"></div><div class="tval"></div><button type="button" class="tdone">Done</button>';
+document.body.appendChild(TYPE_ECHO);
+{ const st=document.createElement('style'); st.textContent=`#typeEcho{position:fixed;left:8px;top:8px;z-index:100000;box-sizing:border-box;display:grid;grid-template-columns:1fr auto;gap:2px 8px;align-items:center;
+  padding:6px 8px;background:#1d1a2b;border:2px solid var(--gold,#ffcf3a);border-radius:6px;box-shadow:0 4px 14px #000a;font-family:var(--font);color:#fff;pointer-events:auto}
+#typeEcho[hidden]{display:none}#typeEcho .tlab{grid-column:1;font-size:8px;color:#c8c0e0}#typeEcho .tval{grid-column:1;font-size:13px;line-height:18px;min-height:18px;white-space:pre;overflow:hidden;text-overflow:clip;direction:ltr}
+#typeEcho .tval .cur{display:inline-block;width:2px;height:15px;margin:0 1px;vertical-align:-2px;background:var(--gold,#ffcf3a);animation:tcur 1s steps(1) infinite}
+#typeEcho .tval .ph{color:#8a84a0}#typeEcho .tdone{grid-column:2;grid-row:1/3;font-family:var(--font);font-size:11px;padding:8px 10px;background:var(--gold,#ffcf3a);color:#1d1a2b;border:0;border-radius:4px}
+@keyframes tcur{50%{opacity:0}}`; document.head.appendChild(st); }
+let typeEl=null;
+function typeTouch(){ return document.body.classList.contains('touch')||(typeof recentTouch==='function'&&recentTouch())||(matchMedia&&matchMedia('(pointer:coarse)').matches); }
+function typeField(el){ if(!el||!el.tagName) return false; if(el.isContentEditable) return true; if(el.tagName==='TEXTAREA') return true;
+  return el.tagName==='INPUT'&&/^(text|search|number|email|password|tel|url|)$/i.test(el.getAttribute('type')||''); }
+function typeLabel(el){ let t=el.getAttribute('aria-label')||el.placeholder||''; if(!t&&el.id){ const lb=document.querySelector(`label[for="${el.id}"]`); if(lb) t=lb.textContent; }
+  if(!t){ const lb=el.closest('label'); if(lb) t=lb.textContent; } return (t||'Typing').trim().replace(/…$/,''); }
+const typeEsc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function typeRender(){ if(!typeEl) return; const v=typeEl.isContentEditable?typeEl.textContent:(typeEl.value||''); let at=v.length;
+  try{ if(typeof typeEl.selectionStart==='number') at=typeEl.selectionStart; }catch(e){}
+  TYPE_ECHO.querySelector('.tlab').textContent=typeLabel(typeEl);
+  const tv=TYPE_ECHO.querySelector('.tval'); tv.innerHTML=v?typeEsc(v.slice(0,at))+'<span class="cur"></span>'+typeEsc(v.slice(at)):'<span class="cur"></span><span class="ph">Type here</span>';
+  tv.scrollLeft=tv.scrollWidth; }
+function typePlace(){ if(TYPE_ECHO.hidden) return; const vv=window.visualViewport; const top=vv?vv.offsetTop:0, left=vv?vv.offsetLeft:0, w=vv?vv.width:innerWidth;
+  TYPE_ECHO.style.top=Math.round(top+8)+'px'; TYPE_ECHO.style.left=Math.round(left+8)+'px'; TYPE_ECHO.style.width=Math.round(Math.max(160,w-16))+'px'; }
+function typeShow(el){ typeEl=el; TYPE_ECHO.hidden=false; typeRender(); typePlace(); try{ el.scrollIntoView({block:'nearest',inline:'nearest'}); }catch(e){} }
+function typeHide(){ typeEl=null; TYPE_ECHO.hidden=true; }
+document.addEventListener('focusin',e=>{ try{ if(typeField(e.target)&&typeTouch()) typeShow(e.target); }catch(err){} },true);
+document.addEventListener('focusout',e=>{ setTimeout(()=>{ const a=document.activeElement; if(!(a&&typeField(a)&&typeTouch())) typeHide(); },60); },true);
+for(const ev of ['input','keyup','selectionchange','select','click']) document.addEventListener(ev,()=>{ if(typeEl&&document.activeElement===typeEl) typeRender(); },true);
+if(window.visualViewport){ visualViewport.addEventListener('resize',typePlace); visualViewport.addEventListener('scroll',typePlace); }
+addEventListener('resize',typePlace);
+// tapping the bar keeps the keyboard open; Done closes it
+TYPE_ECHO.addEventListener('pointerdown',e=>{ if(!e.target.closest('.tdone')){ e.preventDefault(); } },true);
+TYPE_ECHO.querySelector('.tdone').addEventListener('click',e=>{ e.preventDefault(); try{ if(typeEl) typeEl.blur(); }catch(err){} typeHide(); });
+
+// ---------------- 5. every wild crop and every place's fountains, in every new world ----------------
+// (found while checking this version: about one world in fifty had no wild cabbage, because the crop patches keep 40 blocks
+// apart and the flat spots ran out; about one in ten had no jungle idol or stump fountain, because a dense forest left no
+// flat spot within its 300 tries. Both came from world generation and were seen as checks failing now and then: BUG_LOG I20, I21.)
+// Crops: a crop still missing gets a patch of 3 on any flat grass of a wild or home island outside the village, 12 blocks from others.
+function cropPatchFill(R,put){ if(!world||!islands) return 0; const kinds=cropKinds(), inVillage=x=>home&&home.x0!=null&&x>=home.x0-8&&x<=home.x1+12;
+  const found=k=>{ for(let x=0;x<W;x++){ const s=surf[x]; for(let y=Math.max(1,s-3);y<=Math.min(H-1,s+1);y++) if(k.ids.includes(world[y*W+x])) return x; } return -1; };
+  const taken=[]; for(const k of kinds){ const x=found(k); if(x>=0) taken.push(x); } let n=0;
+  for(const k of kinds){ if(found(k)>=0) continue; const spots=[];
+    for(const is of islands){ if(!(is.kind==='wild'||is.kind==='home')||is.ice||is.desert) continue;
+      for(let x=is.s+4;x<is.e-6;x++){ if(inVillage(x)||(typeof inProtected==='function'&&inProtected(x))) continue; const h=surf[x]; if(h>=seaY-1) continue; let ok=true;
+        for(let d=0;d<3&&ok;d++){ const c=x+d, i=(surf[c]-1)*W+c; if(surf[c]!==h||world[surf[c]*W+c]!==B.GRASS||!(world[i]===0||GRASSY.has(world[i]))) ok=false; }
+        if(ok&&taken.every(t=>Math.abs(t-x)>=12)) spots.push(x); } }
+    if(!spots.length) continue; const x=spots[(R()*spots.length)|0]; for(let d=0;d<3;d++) put(x+d,surf[x+d]-1,k.ripe); taken.push(x); n++; }
+  return n; }
+// Fountains: a kind no spot was found for gets up to ten more rounds of tries, each with a different random stream; a forest
+// kind that still has none goes on an open wild island
+function fountainFill(){ if(typeof fountainSkip==='function'&&fountainSkip()) return 0; const want=FZ_SITES.filter(([k])=>PIECE_KEY[k]); let added=0;
+  for(let round=1;round<=10;round++){ const miss=want.filter(([k])=>!fzSeeded.includes(k)); if(!miss.length) break;
+    const keepSites=FZ_SITES.splice(0,FZ_SITES.length,...miss), keepSeed=seed; seed=keepSeed+round*7919;
+    try{ added+=seedFountains2(false,genPut); } finally{ seed=keepSeed; FZ_SITES.splice(0,FZ_SITES.length,...keepSites); } }
+  // a forest kind with still no place (a forest with no flat ground at all) stands on an open wild island instead
+  const forest=want.filter(([k,,w])=>w==='forest'&&!fzSeeded.includes(k)).map(([k])=>[k,1,'plain']);
+  if(forest.length){ const keepSites=FZ_SITES.splice(0,FZ_SITES.length,...forest); try{ added+=seedFountains2(false,genPut); } finally{ FZ_SITES.splice(0,FZ_SITES.length,...keepSites); } }
+  return added; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a);
+    try{ if(!(typeof fountainSkip==='function'&&fountainSkip())) cropPatchFill(mulberry((seed|0)+9161),wset); }catch(e){ console.warn(e); }
+    try{ fountainFill(); }catch(e){ console.warn(e); } return r; }; }
+
+// ---------------- 6. every workplace gets its loft ----------------
+// (also found while checking this version, BUG_LOG I23: a bee hive hanging in a tree over the lodge, or the natural earth wall of
+// a hillside beside the farmhouse, kept the upper floor from ever being built.) When nothing else is in the way, the hive comes
+// down (its honey to the ground) and the earth wall above ground level is cleared, then the loft goes up as usual.
+function loftObstacles(k){ const r=wpRec(k); if(!r) return null; const {x0,x1,gy}=r, hives=[], walls=[];
+  const ownRoof=(x,y)=>{ const s=gy-6-y; return s>=0&&s<=3&&x>=x0-1+s&&x<=x1+1-s; };
+  for(let y=gy-17;y<=gy-6;y++) for(let x=x0-2;x<=x1+2;x++){ if(x<1||x>=W-1||y<1) return null; const id=tileAt(x,y);
+    if(ownRoof(x,y)){ if(id&&!vilRoof(id)&&!VIL_SOFT(id)){ if(isHive(id)) hives.push([x,y]); else return null; } continue; }
+    if(!VIL_SOFT(id)){ if(isHive(id)) hives.push([x,y]); else return null; }
+    const v=bg[y*W+x]; if(v&&y<gy-6){ if(NATURAL_BG.has(v)) walls.push([x,y]); else return null; } }
+  return {hives,walls}; }
+{ const _al=addLoft; addLoft=function(k,...a){
+    try{ if(vil184On()&&home&&!(home.loftV&&home.loftV[k])&&wpRec(k)&&wpLevel(k)<2&&!loftRoom(k)&&!isGuest()){ const o=loftObstacles(k);
+        if(o&&(o.hives.length||o.walls.length)) facRun(()=>{ for(const [x,y] of o.hives){ setTile(x,y,0); spawnDrop(x*T+8,y*T+8,I.HONEY,1); }
+          for(const [x,y] of o.walls){ bset(x,y,0); if(explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} } }); } }catch(e){ console.warn(e); }
+    return _al(k,...a); }; }
+// ===== Kinard, 2026-11-06: "Make it so there are specific placement options on the bed for the stuffed animals so they can be
+// stacked into a pile and also make it so they can be turned into a trophy by being added to a trophy plaque and make it so that
+// each is a different size such as the smaller ones being a 2x2 and the bigger being a 3x3. Make it so the achievements have
+// different looks based off of the type of achievement it is also make it so that on the second floor of the castle there is a
+// trophy case that displays each achievement the player has and the player can either place the defeated bosses into the trophy
+// case alongside the achievement amulets or they can create their own mini trophy case to add a plaque as well as the beds and
+// the keychain options" (answers: keychains are small stuffed keychains; pick a spot on the bed, a pile holds up to 5; the big
+// bosses get 3x3 plaques) =====
+// 1. Beds: each stuffed animal goes on a spot you pick: on the pillow, in the middle, at the foot (bunk beds: lower bunk, middle
+//    bunk, top bunk) or on the pile. A bed holds up to five, and the pile stacks them on top of each other. The bed bonus counts
+//    the first two set on a bed, as before.
+// 2. Trophy plaques (workbench: the stuffed animal, 6 planks, a gold bar): hung on a back wall. Vorthax, the Kraken, Grukk, Teddy and
+//    Ograk & Wimbly together are 3 by 3; the wizards, the Sky Ranger, the Magma Knight, Ograk and Wimbly are 2 by 2. Hung in your
+//    village a plaque gives the boss's trophy bonus. Breaking it gives the plaque back.
+// 3. Stuffed keychains (workbench: a wool and an iron bar, once you have had that stuffed animal): clip one to your belt (bag:
+//    Clip to your belt) or put it in a trophy case.
+// 4. Trophy cases: the castle's upper floor gets a big glass trophy case (6 by 3) once it has an upper floor. It shows every
+//    achievement amulet you have earned, and has 11 shelf places for stuffed animals, plaques and keychains. A mini trophy case
+//    (2 by 2, workbench: 8 planks, 4 glass, a gold bar) has 4 places. Stand by one to open it. A stuffed animal or plaque in a
+//    case in your village gives its trophy bonus too.
+// 5. Achievement amulets: each kind of achievement has its own shape and colour (village a house, wild a leaf, ore a gem, crafting
+//    a gear, gear a shield, war a star, building a tower, exploring a compass, bosses a crown, the dragon a flame), on a chain.
+// Fixed ids (the id rule): plaques 2200-2210, the display part 2211, keychains 2220-2230, castle case 2240, mini case 2241.
+
+const DISP_PART=2211, CASE_BIG=2240, CASE_MINI=2241;
+const PLAQUE_BIG=new Set(['dragon','kraken','grukk','teddy','goblin']);
+const PLAQUE={}, PLAQUE_OF={}, KEYCHAIN={}, KEYCHAIN_OF={};
+const plushName=t=>(ITEMS[t.id]&&ITEMS[t.id].name||t.name).replace(/^Stuffed /,'');
+TROPHIES.forEach((t,i)=>{ if(i>10) return; const pid=2200+i, kid=2220+i, big=PLAQUE_BIG.has(t.key), n=big?3:2, nm=plushName(t);
+  defB(pid,{name:`${nm} plaque`,solid:false,hard:0.5,col:'#7a4e27'}); ITEMS[pid]={name:`${nm} plaque`,kind:'block',
+    desc:`A ${n} by ${n} trophy plaque of ${nm}. Hang it on a back wall; in your village it gives the trophy bonus (${t.buff.toLowerCase()})`};
+  RECIPES.push({out:pid,n:1,need:[[t.id,1],[B.PLANK,6],[I.GOLD_BAR,1]],st:B.WORKBENCH}); SELL[pid]=Math.max(20,(SELL[t.id]||10)+15);
+  PLAQUE[pid]={t,w:n,h:n}; PLAQUE_OF[t.id]=pid;
+  ITEMS[kid]={name:`${nm} keychain`,kind:'mat',desc:`A little stuffed ${nm} on a key ring. Clip it to your belt, or put it in a trophy case`};
+  RECIPES.push({out:kid,n:1,need:[[483,1],[I.IRON_BAR,1]],st:B.WORKBENCH,keychain:t.id}); SELL[kid]=6; KEYCHAIN[kid]={t}; KEYCHAIN_OF[t.id]=kid; });
+defB(DISP_PART,{name:'Trophy case',solid:false,hard:0.5,col:'#7a4e27',place:false,drop:0});
+defB(CASE_BIG,{name:'Castle trophy case',solid:false,hard:0.6,col:'#6b4422'}); ITEMS[CASE_BIG]={name:'Castle trophy case',kind:'block',desc:'A tall glass case, 6 by 3, that shows every achievement amulet you have earned and holds 11 stuffed animals, plaques or keychains'};
+defB(CASE_MINI,{name:'Mini trophy case',solid:false,hard:0.5,col:'#8a5c2d'}); ITEMS[CASE_MINI]={name:'Mini trophy case',kind:'block',desc:'A small glass case, 2 by 2, for four stuffed animals, plaques or keychains'};
+RECIPES.push({out:CASE_MINI,n:1,need:[[B.PLANK,8],[B.GLASS,4],[I.GOLD_BAR,1]],st:B.WORKBENCH}); SELL[CASE_MINI]=30; SELL[CASE_BIG]=60;
+const CASE_DIM={[CASE_BIG]:[6,3,11],[CASE_MINI]:[2,2,4]};
+for(const id of [DISP_PART,CASE_BIG,CASE_MINI,...Object.keys(PLAQUE).map(Number)]){ TEX[id]=BLANK16; try{ ORE_LOOK.add(id); PASS.add(id); LAVA_EATS.delete(id); }catch(e){} }
+const isDisp=id=>id===DISP_PART||id===CASE_BIG||id===CASE_MINI||!!PLAQUE[id];
+const caseItemOK=id=>!!(PLUSH[id]||PLAQUE[id]||KEYCHAIN[id]);
+
+// ---------------- pictures ----------------
+const DISP_ART={};
+function plaqueArt(pid){ const p=PLAQUE[pid], art=TROPHY_ART[p.t.id]; const ck='p'+pid+(art?'a':''); if(DISP_ART[ck]) return DISP_ART[ck];
+  const Wd=p.w*16, Hd=p.h*16, c=mkCanvas(Wd,Hd), g=c.getContext('2d'); g.imageSmoothingEnabled=false; const R=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  // a shield-shaped wooden board with a gold rim and green felt, the boss on it and a brass name plate
+  R(1,1,Wd-2,Hd-5,'#7a4e27'); R(2,2,Wd-4,Hd-7,'#5a3818'); R(1,1,Wd-2,1,'#a87444'); R(1,Hd-5,Wd-2,1,'#3a2410');
+  R(Math.round(Wd/2)-3,Hd-4,6,3,'#7a4e27'); R(Math.round(Wd/2)-2,Hd-2,4,1,'#5a3818');
+  R(3,3,Wd-6,Hd-9,'#e8c050'); R(4,4,Wd-8,Hd-11,'#2a4a32'); R(4,4,Wd-8,1,'#3a6a46');
+  if(art){ const box=Wd-10, k=box/32; g.drawImage(art,0,0,32,32,5,4,box,Math.round(32*k)>Hd-12?Hd-12:Math.round(32*k)); }
+  R(Math.round(Wd/2)-5,Hd-8,10,2,'#f2d070'); R(Math.round(Wd/2)-5,Hd-7,10,1,'#b88a30');
+  if(art) DISP_ART[ck]=c; return c; }
+function keychainArt(kid){ const t=KEYCHAIN[kid].t, art=TROPHY_ART[t.id]; const ck='k'+kid+(art?'a':''); if(DISP_ART[ck]) return DISP_ART[ck];
+  const c=mkCanvas(16,16), g=c.getContext('2d'); g.imageSmoothingEnabled=false; const R=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  R(6,0,4,1,'#c8c8d0'); R(5,1,1,3,'#c8c8d0'); R(10,1,1,3,'#c8c8d0'); R(6,4,4,1,'#c8c8d0'); R(7,5,2,2,'#a8a8b4');   // the ring and its link
+  if(art) g.drawImage(art,0,0,32,32,3,6,10,10); else R(4,7,8,8,t.col||'#c8a070');
+  if(art) DISP_ART[ck]=c; return c; }
+function caseIcon(id){ const ck='i'+id; if(DISP_ART[ck]) return DISP_ART[ck]; const c=mkCanvas(16,16), g=c.getContext('2d'); const R=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  const big=id===CASE_BIG; R(1,big?4:2,14,big?11:13,'#6b4422'); R(2,big?5:3,12,big?9:11,'#3a2030'); R(2,big?5:3,12,1,'#8a5c2d'); R(2,big?9:8,12,1,'#8a5c2d');
+  R(3,big?6:4,2,2,'#ffd84a'); R(7,big?6:4,2,2,'#8a5cff'); R(11,big?6:4,2,2,'#39d5c9'); R(4,big?11:10,3,2,'#c8a070'); R(9,big?11:10,3,2,'#6b4a2a');
+  g.fillStyle='rgba(190,230,255,0.25)'; g.fillRect(2,big?5:3,12,big?9:11); R(3,big?5:3,1,big?5:6,'rgba(255,255,255,0.5)');
+  return DISP_ART[ck]=c; }
+function dispIcon(id){ if(PLAQUE[id]){ const a=plaqueArt(id), c=mkCanvas(16,16), g=c.getContext('2d'); g.imageSmoothingEnabled=false; g.drawImage(a,0,0,a.width,a.height,0,0,16,16); return c; }
+  if(KEYCHAIN[id]) return keychainArt(id); if(id===CASE_BIG||id===CASE_MINI) return caseIcon(id); return null; }
+{ const _it=iconTex; iconTex=function(id,...a){ try{ if(PLAQUE[id]||KEYCHAIN[id]||id===CASE_BIG||id===CASE_MINI){ const c=dispIcon(id); if(c) return c; } }catch(e){} return _it(id,...a); }; }
+// once the bosses' pictures are painted, the plaque and keychain pictures are redrawn with them
+{ const _mt=makeTrophyArt; makeTrophyArt=function(...a){ const r=_mt(...a); try{ if(r){ for(const k of Object.keys(DISP_ART)) if(k[0]==='p'||k[0]==='k') delete DISP_ART[k];
+      for(const id of [...Object.keys(PLAQUE),...Object.keys(KEYCHAIN)].map(Number)){ ICON_TEX[id]=dispIcon(id); try{ delete ICON_URL[id]; }catch(e){} } invDirty=true; } }catch(e){ console.warn(e); } return r; }; }
+for(const id of [CASE_BIG,CASE_MINI]){ ICON_TEX[id]=caseIcon(id); }
+
+// ---------------- 5. achievement amulets ----------------
+const ACH_SHAPE={
+  village:(dx,dy)=>(dy>=-1&&dy<=4&&Math.abs(dx)<=4)||(dy<-1&&dy>=-5&&Math.abs(dx)<=dy+6),
+  wild:(dx,dy)=>{ const u=(dx+dy)/1.41, v=(dx-dy)/1.41; return u*u/30+v*v/7<=1; },
+  ore:(dx,dy)=>(dy>=-4&&dy<=-1&&Math.abs(dx)<=4)||(dy>=0&&dy<=5&&Math.abs(dx)<=4-dy*0.8),
+  craft:(dx,dy)=>{ const r=Math.hypot(dx,dy); if(r<=3.6) return true; if(r>5.2) return false; return Math.floor((Math.atan2(dy,dx)+Math.PI)/(Math.PI/4))%2===0; },
+  gear:(dx,dy)=>(dy>=-4&&dy<=1&&Math.abs(dx)<=4)||(dy>1&&dy<=5&&Math.abs(dx)<=4-(dy-1)),
+  war:(dx,dy)=>(Math.abs(dx)<=1&&Math.abs(dy)<=5)||(Math.abs(dy)<=1&&Math.abs(dx)<=5)||(Math.abs(Math.abs(dx)-Math.abs(dy))<=0.5&&Math.abs(dx)<=3),
+  build:(dx,dy)=>(Math.abs(dx)<=3&&dy>=-3&&dy<=5)||(dy>=-5&&dy<-3&&Math.abs(dx)<=4&&(dx+4)%3!==2),
+  explore:(dx,dy)=>Math.hypot(dx,dy)<=5.2,
+  boss:(dx,dy)=>(dy>=0&&dy<=4&&Math.abs(dx)<=5)||(dy<0&&dy>=-4&&(Math.abs(dx)<=1||(Math.abs(dx)>=4&&Math.abs(dx)<=5&&dy>=-3))),
+  dragon:(dx,dy)=>dy<=5&&dy>=-5&&Math.abs(dx)<=(dy<1?(dy+5)*0.75:Math.sqrt(Math.max(0,20-dy*dy*0.9))) };
+const AMULET_CACHE={};
+function achAmulet(group,done){ const ck=group+'|'+(done?1:0); if(AMULET_CACHE[ck]) return AMULET_CACHE[ck];
+  const c=mkCanvas(16,16), g=c.getContext('2d'); const P=(x,y,col)=>{ g.fillStyle=col; g.fillRect(x,y,1,1); };
+  const shape=ACH_SHAPE[group]||ACH_SHAPE.explore, base=done?(ACH_RIBBON[group]||'#c8a040'):'#6a6a74';
+  const rim=done?'#ffd84a':'#8a8a94', light=done?plHex(base,0.35):'#8a8a94', dark=done?plHex(base,-0.3):'#55555e', chain=done?'#e8c050':'#7a7a84';
+  for(let i=0;i<4;i++){ P(3+i,i,chain); P(12-i,i,chain); } P(7,4,chain); P(8,4,chain);
+  const In=(x,y)=>x>=0&&x<16&&y>=0&&y<16&&shape(x-7.5,y-10);
+  for(let y=4;y<16;y++) for(let x=0;x<16;x++){ if(!In(x,y)) continue; const edge=!In(x-1,y)||!In(x+1,y)||!In(x,y-1)||!In(x,y+1);
+    P(x,y,edge?rim:(x<7&&y<9?light:(x>9||y>12?dark:base))); }
+  if(done){ if(group==='explore'){ P(7,7,'#e8302c'); P(8,7,'#e8302c'); P(7,8,'#e8302c'); P(8,8,'#e8302c'); P(7,11,'#ffffff'); P(8,11,'#ffffff'); P(7,12,'#ffffff'); }
+    if(group==='craft'){ P(7,10,dark); P(8,10,dark); P(7,9,dark); P(8,9,dark); }
+    if(group==='boss'){ P(7,12,'#e8302c'); P(4,12,'#39d5c9'); P(11,12,'#39d5c9'); }
+    if(group==='dragon'){ P(7,11,'#ffe27a'); P(8,12,'#ffe27a'); P(7,12,'#fff2a8'); } }
+  return AMULET_CACHE[ck]=c; }
+achMedal=function(a,done){ return achAmulet(a[3],!!done).toDataURL(); };
+
+// ---------------- 1. beds: spots and the pile ----------------
+const BED_PILE_MAX=5;
+function bedSpotList(key){ if(key==='bunk') return ['pillow','top','pile']; if(key==='triple') return ['pillow','middle','top','pile']; return ['pillow','middle','foot','pile']; }
+function bedSpotName(key,s){ const bunk=key==='bunk'||key==='triple';
+  return {pillow:bunk?'On the lower bunk':'On the pillow',middle:bunk?'On the middle bunk':'In the middle',foot:'At the foot of the bed',top:'On the top bunk',pile:'On the pile'}[s]||s; }
+function bedSpotXY(key,s){ const b=BED_KIND[key], Wd=b.w*16, Hd=b.h*16, rest=key==='straw'?Hd-6:Hd-11, bunk=key==='bunk'||key==='triple';
+  if(s==='pillow') return [13,rest]; if(s==='top') return [13,rest-16*(b.h-1)]; if(s==='middle') return bunk?[13,rest-16]:[Math.round(Wd/2),rest];
+  if(s==='foot') return [Wd-13,rest]; return [bunk?Math.round(Wd/2)+2:Math.round(Wd/2)+4,rest]; }
+// older beds keep two places by number: the first on the pillow, the second at the foot (bunks: the top bunk)
+function bedTidy(rec,key){ if(!rec) return rec; const p=rec.p||[], at=rec.at||[], bunk=key==='bunk'||key==='triple'; const ids=[], spots=[];
+  p.forEach((id,i)=>{ if(!id) return; ids.push(id); spots.push(at[i]||(i===0?'pillow':(bunk?'top':'foot'))); });
+  const ok=bedSpotList(key); for(let i=0;i<spots.length;i++) if(!ok.includes(spots[i])) spots[i]='pile';
+  rec.p=ids; rec.at=spots; return rec; }
+function bedKeyAt(x,y){ const b=BED_BY_ID[tileAt(x,y)]; return b?b.key:'wood'; }
+function bedFreeSpots(x,y){ const key=bedKeyAt(x,y), r=bedTidy(bedRec(x,y,true),key); if(r.p.length>=BED_PILE_MAX) return [];
+  return bedSpotList(key).filter(s=>s==='pile'||!r.at.includes(s)); }
+function putPlushAt(x,y,id,spot){ if(!PLUSH[id]||countItem(id)<1) return false; if(isGuest()){ toast('Stuffed animals go on beds in the host\'s world by the host',2.5); return false; }
+  const key=bedKeyAt(x,y), r=bedTidy(bedRec(x,y,true),key); if(!r) return false;
+  if(r.p.length>=BED_PILE_MAX){ toast(`This bed already holds ${BED_PILE_MAX} stuffed animals`,2.5); return false; }
+  if(spot!=='pile'&&r.at.includes(spot)){ toast('Something already sits there',2); return false; }
+  takeItem(id,1); r.p.push(id); r.at.push(spot); invDirty=true; plushDirty(); plushScan();
+  const counts=r.p.indexOf(id)<2; toast(`${PLUSH[id].name}: ${bedSpotName(key,spot).toLowerCase()}${counts?'':' (the first two on a bed give their bonus)'}`,3); try{ sfx('pickup'); }catch(e){} return true; }
+function askSpot(x,y,id){ const key=bedKeyAt(x,y), free=bedFreeSpots(x,y); if(!free.length){ toast(`This bed already holds ${BED_PILE_MAX} stuffed animals`,2.5); return; }
+  const r=bedRec(x,y,true), pileN=(r.at||[]).filter(s=>s==='pile').length;
+  showPickList(free.map(s=>({label:bedSpotName(key,s)+(s==='pile'&&pileN?` (${pileN} there)`:''),go:()=>putPlushAt(x,y,id,s)}))); }
+putPlush=function(x,y,id){ if(!PLUSH[id]||countItem(id)<1) return false; askSpot(x,y,id); return true; };
+takePlush=function(x,y,i){ const key=bedKeyAt(x,y), r=bedTidy(bedRec(x,y),key); if(!r||!r.p[i]) return false; const id=r.p[i];
+  r.p.splice(i,1); r.at.splice(i,1); give(id,1); invDirty=true; plushDirty(); plushScan(); toast(`You take ${PLUSH[id]?PLUSH[id].name:'it'} off the bed`,2); return true; };
+bedOptions=function(){ const bd=nearestBed(); if(!bd) return []; const o=[], key=bedKeyAt(bd.x,bd.y), r=home&&home.beds&&home.beds[bd.x+','+bd.y]; const held=heldItem();
+  if(r){ bedTidy(r,key); r.p.forEach((pid,i)=>o.push({label:`Take ${PLUSH[pid]?PLUSH[pid].name:'it'} off (${bedSpotName(key,r.at[i]).toLowerCase()})`,direct:true,go:()=>takePlush(bd.x,bd.y,i)})); }
+  const room=!r||r.p.length<BED_PILE_MAX, bag=bagPlushes();
+  if(room&&held&&PLUSH[held.id]) o.push({label:`Put ${PLUSH[held.id].name} on the bed…`,direct:true,go:()=>askSpot(bd.x,bd.y,held.id)});
+  else if(room&&bag.length) o.push({label:'Put a stuffed animal on the bed…',direct:true,go:()=>showPickList(bag.map(id=>({label:PLUSH[id].name,go:()=>setTimeout(()=>askSpot(bd.x,bd.y,id),30)})))});
+  return o; };
+// the bonus: the first two on each bed
+plushScan=function(recomp=true){ const s=new Set(), n={}; if(home&&home.beds) for(const [k,rec] of Object.entries(home.beds)){ const [x,y]=k.split(',').map(Number); if(!isBedId(tileAt(x,y))) continue;
+    for(const id of (rec.p||[]).filter(Boolean).slice(0,2)) if(PLUSH[id]) for(const kk of PLUSH[id].keys){ s.add(kk); n[kk]=(n[kk]||0)+1; } }
+  const changed=s.size!==plushKeySet.size||[...s].some(k=>!plushKeySet.has(k)); plushKeySet=s; plushCounts=n; plushStale=false; if(recomp&&changed&&player) recompute(player); };
+// drawn at their spots; the pile stacks, each one a little higher and nudged left and right
+{ const _db=drawBedAt; drawBedAt=function(ax,ay,...a){ const rec=home&&home.beds&&home.beds[ax+','+ay]; const keep=rec&&rec.p, keepAt=rec&&rec.at;
+    if(rec) rec.p=[]; try{ _db(ax,ay,...a); } finally{ if(rec){ rec.p=keep||[]; rec.at=keepAt; } }
+    try{ const b=BED_BY_ID[tileAt(ax,ay)]; if(b&&rec&&rec.p.some(Boolean)){ bedTidy(rec,b.key); const X0=(ax-b.w+1)*T, Y0=(ay-b.h+1)*T; let pile=0;
+        rec.p.forEach((pid,i)=>{ if(rec.at[i]==='pile') return; const [sx,sy]=bedSpotXY(b.key,rec.at[i]); drawLyingPlush(pid,X0+sx,Y0+sy); });
+        rec.p.forEach((pid,i)=>{ if(rec.at[i]!=='pile') return; const [sx,sy]=bedSpotXY(b.key,'pile'); drawLyingPlush(pid,X0+sx+(pile%2?-3:2),Y0+sy-pile*6); pile++; }); } }catch(e){ console.warn(e); } }; }
+
+// ---------------- 2-4. plaques and cases in the world ----------------
+// home.disp["x,y"] (top-left cell) = {id, w, h, slots (cases)}; the top-left cell holds the id, the rest DISP_PART
+function dispDims(id){ if(PLAQUE[id]) return [PLAQUE[id].w,PLAQUE[id].h]; const d=CASE_DIM[id]; return d?[d[0],d[1]]:null; }
+let DISP_CELL=null;
+function dispIndex(){ DISP_CELL=new Map(); if(!home||!home.disp) return; for(const [k,r] of Object.entries(home.disp)){ const [x,y]=k.split(',').map(Number);
+    for(let yy=y;yy<y+r.h;yy++) for(let xx=x;xx<x+r.w;xx++) DISP_CELL.set(yy*W+xx,k); } }
+function dispAt(x,y){ if(!DISP_CELL) dispIndex(); const k=DISP_CELL.get(y*W+x); if(!k||!home.disp[k]) return null; const [ax,ay]=k.split(',').map(Number); return {k,ax,ay,r:home.disp[k]}; }
+const dispSoft=(x,y)=>{ const t=tileAt(x,y); return t===0||t===B.SNOW_LAYER||t===B.MIST||(!!t&&TORCH_REPL(t)&&CROPS_STAGE[t]==null&&!isDisp(t)); };
+// where it goes: the aimed cell is its bottom left; plaques need a back wall behind at least half of it, cases a floor under them
+function dispFit(x,y,id){ const d=dispDims(id); if(!d) return null; const [w,h]=d, wall=!!PLAQUE[id];
+  const ok=(x0,y1)=>{ const y0=y1-h+1; if(x0<1||x0+w>=W-1||y0<2||y1>=H-2) return false; let backs=0;
+    for(let yy=y0;yy<=y1;yy++) for(let xx=x0;xx<x0+w;xx++){ if(!dispSoft(xx,yy)||dispAt(xx,yy)) return false; if(bg[yy*W+xx]) backs++; }
+    if(wall) return backs*2>=w*h; for(let xx=x0;xx<x0+w;xx++) if(!floorCell(xx,y1+1)) return false; return true; };
+  for(const y1 of [y,y+1,y-1]) for(let k=0;k<w;k++) if(ok(x-k,y1)) return {x0:x-k,y0:y1-h+1,w,h}; return null; }
+function dispPut(f,id,slots){ facRun(()=>{ for(let yy=f.y0;yy<f.y0+f.h;yy++) for(let xx=f.x0;xx<f.x0+f.w;xx++){ if(tileAt(xx,yy)) setTile(xx,yy,0); setTile(xx,yy,(xx===f.x0&&yy===f.y0)?id:DISP_PART); } });
+  home.disp=home.disp||{}; const r=home.disp[f.x0+','+f.y0]={id,w:f.w,h:f.h}; if(CASE_DIM[id]) r.slots=slots||new Array(CASE_DIM[id][2]).fill(0); DISP_CELL=null; dispTrophies(); return r; }
+function dispRemove(d,toGround){ const {ax,ay,r,k}=d; facRun(()=>{ for(let yy=ay;yy<ay+r.h;yy++) for(let xx=ax;xx<ax+r.w;xx++) if(isDisp(tileAt(xx,yy))) setTile(xx,yy,0); });
+  const out=it=>toGround?spawnDrop(ax*T+8,ay*T+8,it,1):give(it,1); out(r.id); for(const s of r.slots||[]) if(s) out(s);
+  delete home.disp[k]; DISP_CELL=null; dispTrophies(); invDirty=true; puff(ax*T+r.w*8,ay*T+r.h*8,'#c8a070',8,60); }
+// a plaque in your village, or a stuffed animal or plaque in a case there, counts as a mounted trophy
+function dispTrophies(){ if(!home) return; home.trophies=home.trophies||{}; const want={};
+  for(const [k,r] of Object.entries(home.disp||{})){ const [x,y]=k.split(',').map(Number); if(!inHomeVillage(x,y)) continue;
+    const ids=PLAQUE[r.id]?[r.id]:(r.slots||[]); for(const id of ids){ const t=PLAQUE[id]?PLAQUE[id].t:(PLUSH[id]?TROPHY_OF[id]:null); if(t&&!want[t.key]) want[t.key]={x,y,disp:1}; } }
+  let changed=false; for(const [key,v] of Object.entries(home.trophies)) if(v&&v.disp&&!want[key]){ delete home.trophies[key]; changed=true; }
+  for(const [key,v] of Object.entries(want)) if(!home.trophies[key]){ home.trophies[key]=v; changed=true; }
+  if(changed&&player) recompute(player); }
+let dispHintT=0; const dispSay=m=>{ if(performance.now()>dispHintT){ dispHintT=performance.now()+2500; toast(m,2.5); } return false; };
+{ const _po=placeOK; placeOK=function(x,y,id,...a){ if(PLAQUE[id]||id===CASE_BIG||id===CASE_MINI) return !!dispFit(x,y,id); if(dispAt(x,y)) return false; return _po(x,y,id,...a); }; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ if(PLAQUE[id]||id===CASE_BIG||id===CASE_MINI){ if(countItem(id)<1) return;
+      if(isGuest()) return dispSay('Plaques and trophy cases go up in the host\'s world by the host');
+      const f=dispFit(x,y,id); if(!f){ const [w,h]=dispDims(id); return dispSay(PLAQUE[id]?`A plaque needs a clear ${w} by ${h} space on a back wall`:`A trophy case needs a clear ${w} by ${h} space on a flat floor`); }
+      takeItem(id,1); dispPut(f,id); invDirty=true; player.placeCd=0.25; puff((f.x0+f.w/2)*T,(f.y0+f.h/2)*T,'#c8a070',10,70); try{ sfx('mine'); }catch(e){} return; }
+    if(dispAt(x,y)) return; return _tp(x,y,id,...a); }; }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ const d=isDisp(tileAt(x,y))?dispAt(x,y):null;
+    if(d){ if(isGuest()){ dispSay('Plaques and trophy cases come down in the host\'s world by the host'); return; } dispRemove(d,false); return; }
+    if(tileAt(x,y)===DISP_PART){ setTile(x,y,0); return; } return _bt(x,y,...a); }; }
+// nothing falls apart quietly: a part with no record is cleared, a record whose cells were lost gives its things back
+let dispT=0;
+function dispTick(dt){ if((dispT-=dt)>0||!home||!world||isGuest()) return; dispT=2;
+  for(const [k,r] of Object.entries(home.disp||{})){ const [x,y]=k.split(',').map(Number); if(tileAt(x,y)!==r.id){ for(const s of r.slots||[]) if(s) spawnDrop(x*T+8,y*T+8,s,1); delete home.disp[k]; DISP_CELL=null; dispTrophies(); } }
+  for(const t of TROPHIES) if(countItem(t.id)>0){ home.plushSeen=home.plushSeen||{}; home.plushSeen[t.id]=1; }
+  try{ castleCase(); }catch(e){ console.warn(e); } }
+
+// drawing: the whole piece at its last visible cell (the tile pass goes row by row, left to right)
+function drawDisp(ax,ay,r){ const X=ax*T, Y=ay*T;
+  if(PLAQUE[r.id]){ ctx.drawImage(plaqueArt(r.id),X,Y); return; }
+  const Wd=r.w*T, Hd=r.h*T, big=r.id===CASE_BIG; const R=(x,y,w,h,col)=>{ ctx.fillStyle=col; ctx.fillRect(X+x,Y+y,w,h); };
+  R(0,0,Wd,Hd,'#6b4422'); R(1,1,Wd-2,1,'#9a6a3a'); R(2,2,Wd-4,Hd-5,'#3a2030'); R(0,Hd-3,Wd,3,'#4a2c14'); R(2,Hd-2,2,2,'#2a1a0c'); R(Wd-4,Hd-2,2,2,'#2a1a0c');
+  if(big){ R(0,0,Wd,2,'#c8a040');
+    // the amulets: every one you have earned, in rows
+    const earned=ACH.filter(a=>achDone[a[0]]); let i=0; for(const a of earned){ const cx=4+(i%13)*7, cy=4+Math.floor(i/13)*8; if(cy>26) break; ctx.drawImage(achAmulet(a[3],true),0,3,16,13,X+cx,Y+cy,7,6); i++; }
+    R(2,30,Wd-4,1,'#8a5c2d'); R(2,31,Wd-4,1,'#5a3818');
+    (r.slots||[]).forEach((id,j)=>{ if(!id) return; const ic=PLUSH[id]?(TROPHY_ART[id]||iconTex(id)):iconTex(id); if(ic) ctx.drawImage(ic,0,0,ic.width,ic.height,X+3+j*8,Y+Hd-12,8,8); }); }
+  else { R(2,Math.round(Hd/2)-1,Wd-4,1,'#8a5c2d');
+    (r.slots||[]).forEach((id,j)=>{ if(!id) return; const ic=PLUSH[id]?(TROPHY_ART[id]||iconTex(id)):iconTex(id); if(ic) ctx.drawImage(ic,0,0,ic.width,ic.height,X+3+(j%2)*13,Y+3+Math.floor(j/2)*13,11,11); }); }
+  ctx.fillStyle='rgba(180,220,255,0.16)'; ctx.fillRect(X+2,Y+2,Wd-4,Hd-5); ctx.fillStyle='rgba(255,255,255,0.35)'; ctx.fillRect(X+4,Y+3,1,Hd-8); ctx.fillRect(X+6,Y+3,1,Math.round((Hd-8)/2)); }
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(isDisp(id)){ try{ const d=dispAt(x,y); if(d){ const tx1=Math.min(W-1,Math.floor((camX+viewW)/T)), ty1=Math.min(H-1,Math.floor((camY+viewH)/T));
+          const bx=d.ax+d.r.w-1, by=d.ay+d.r.h-1; if(x===Math.min(bx,tx1)&&y===Math.min(by,ty1)) drawDisp(d.ax,d.ay,d.r); } }catch(e){} return BLANK16; } return _tt(x,y,id,...a); }; }
+
+// ---------------- the castle's trophy case ----------------
+function castleCase(){ if(!home||!home.claimed||!home.tall||home.caseAt||(typeof tutOn==='function'&&tutOn())||(typeof edOn==='function'&&edOn())) return false;
+  const cx=home.castleCx, gy=home.gy, up=gy-11; if(cx==null||!isSolid(cx,gy-20)) return false;
+  const tries=[]; for(let d=0;d<=14;d++) for(const s of d?[d,-d]:[0]) tries.push(cx+3+s);   // the whole hall, nearest the middle first
+  for(const x0 of tries){ const f={x0,y0:up-2,w:6,h:3}; let ok=x0>cx-12&&x0+6<=cx+11;
+    for(let yy=f.y0;ok&&yy<=up;yy++) for(let xx=x0;xx<x0+6;xx++) if(!dispSoft(xx,yy)||dispAt(xx,yy)){ ok=false; break; }
+    for(let xx=x0;ok&&xx<x0+6;xx++) if(!floorCell(xx,up+1)) ok=false;
+    if(ok){ dispPut(f,CASE_BIG); home.caseAt={x:f.x0,y:f.y0}; return true; } }
+  return false; }
+
+// ---------------- the case window ----------------
+document.body.insertAdjacentHTML('beforeend',`<div class="overlay" id="scrCase" hidden><div class="panel"><div class="phead"><h2 id="caseTitle">Trophy case</h2><button class="xbtn" id="caseClose">Close</button></div>
+  <div id="caseAch"></div><h3 id="caseShelfH" style="margin:10px 0 4px">On the shelves</h3><div id="caseSlots"></div><div id="casePick"></div></div></div>`);
+{ const st=document.createElement('style'); st.textContent=`#caseAch{display:grid;grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:8px 6px;max-height:34vh;overflow:auto}
+#caseAch .am{display:flex;flex-direction:column;align-items:center;font-size:7px;line-height:1.3;text-align:center;color:#d8d0e8;overflow-wrap:anywhere;hyphens:auto}#caseAch .am img{width:32px;height:32px;image-rendering:pixelated}
+#caseSlots{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}#caseSlots button,#casePick button{display:flex;flex-direction:column;align-items:center;gap:2px;font-family:var(--font);font-size:8px;padding:6px 4px;background:rgba(0,0,0,.25);border:2px solid var(--edge,#5a4a3a);color:#fff;min-height:58px}
+#caseSlots img,#casePick img{width:32px;height:32px;image-rendering:pixelated}#caseSlots .empty{color:#9a90b0}#casePick{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px;margin-top:8px}#casePick:empty{display:none}
+#scrCase .cnote{font-size:9px;color:#c8c0e0;margin:4px 0}`; document.head.appendChild(st); }
+MENU_STATES.add('case');
+let caseOpenAt=null, caseSel=null;
+function openCase(k){ if(!home||!home.disp||!home.disp[k]) return; caseOpenAt=k; caseSel=null; state='case'; input.use=false; renderCase(); show('scrCase'); }
+function closeCase(){ hide('scrCase'); caseOpenAt=null; caseSel=null; if(state==='case') state='play'; }
+function renderCase(){ const r=home&&home.disp&&home.disp[caseOpenAt]; if(!r){ closeCase(); return; } const big=r.id===CASE_BIG;
+  $('#caseTitle').textContent=big?'Castle trophy case':'Mini trophy case';
+  if(big){ const earned=ACH.filter(a=>achDone[a[0]]);
+    $('#caseAch').innerHTML=`<p class="cnote" style="grid-column:1/-1">Achievement amulets: ${earned.length} of ${ACH.length}${earned.length?'':'. Earn achievements and their amulets appear here'}</p>`+earned.map(a=>`<div class="am" title="${esc(a[2])}"><img alt="" src="${achMedal(a,true)}"><span>${esc(a[1])}</span></div>`).join(''); }
+  else $('#caseAch').innerHTML='';
+  $('#caseShelfH').textContent=big?'On the shelves (stuffed animals, plaques, keychains)':'In the case (stuffed animals, plaques, keychains)';
+  $('#caseSlots').innerHTML=r.slots.map((id,i)=>id?`<button data-cslot="${i}"><img alt="" src="${iconUrl(id)}"><span>${esc(ITEMS[id]?ITEMS[id].name:'')}</span><small>Take out</small></button>`:`<button data-cslot="${i}" class="empty"><span>Empty</span><small>${caseSel===i?'Pick below':'Put in…'}</small></button>`).join('');
+  if(caseSel!=null){ const have=[...new Set(player.inv.filter(s=>s&&caseItemOK(s.id)).map(s=>s.id))];
+    $('#casePick').innerHTML=have.length?have.map(id=>`<button data-cput="${id}"><img alt="" src="${iconUrl(id)}"><span>${esc(ITEMS[id].name)}</span></button>`).join(''):'<p class="cnote">You carry no stuffed animals, plaques or keychains.</p>'; }
+  else $('#casePick').innerHTML=''; }
+$('#scrCase').addEventListener('click',ev=>{ const r=home&&home.disp&&home.disp[caseOpenAt]; if(!r) return;
+  if(ev.target.closest('#caseClose')){ closeCase(); return; }
+  const s=ev.target.closest('[data-cslot]'); if(s){ const i=+s.dataset.cslot;
+    if(r.slots[i]){ if(isGuest()){ toast('Trophy cases are filled in the host\'s world by the host',2.5); return; } give(r.slots[i],1); r.slots[i]=0; dispTrophies(); invDirty=true; try{ sfx('pickup'); }catch(e){} caseSel=null; }
+    else caseSel=caseSel===i?null:i; renderCase(); return; }
+  const p=ev.target.closest('[data-cput]'); if(p&&caseSel!=null){ const id=+p.dataset.cput; if(isGuest()){ toast('Trophy cases are filled in the host\'s world by the host',2.5); return; }
+    if(countItem(id)<1) return; takeItem(id,1); r.slots[caseSel]=id; caseSel=null; dispTrophies(); invDirty=true; try{ sfx('pickup'); }catch(e){} renderCase(); } });
+addEventListener('keydown',e=>{ if(state==='case'&&(e.key==='Escape'||e.code===(settings.keys&&settings.keys.use))){ e.preventDefault(); e.stopImmediatePropagation(); closeCase(); } },true);
+// the phones' fixed X finds #caseClose by itself (menuCloser looks for an id ending in Close)
+// stand by a case to open it, or tap it
+function caseNear(){ if(!player||!home||!home.disp) return null; const px=cxOf(player)/T, py=cyOf(player)/T; let best=null, bd=1e9;
+  for(const [k,r] of Object.entries(home.disp)){ if(!CASE_DIM[r.id]) continue; const [x,y]=k.split(',').map(Number); const dx=Math.max(x-px,0,px-(x+r.w)), dy=Math.max(y-py,0,py-(y+r.h)); const d=Math.hypot(dx,dy); if(d<2.5&&d<bd){ bd=d; best=k; } }
+  return best; }
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const k=caseNear(); if(k) o.push({label:`Open the ${home.disp[k].id===CASE_BIG?'castle trophy case':'trophy case'}`,direct:true,go:()=>openCase(k)}); }catch(e){ console.warn(e); } return o; }; }
+cv.addEventListener('pointerdown',ev=>{ try{ if(state!=='play'||!player||player.dead||touches.size>=2) return; const hi=heldItem(); if(hi&&(ITEMS[hi.id]&&/pick|axe|hammer/.test(ITEMS[hi.id].kind))) return;
+    setAim(ev); const tx=Math.floor(input.ax/T), ty=Math.floor(input.ay/T); const d=dispAt(tx,ty); if(!d||!CASE_DIM[d.r.id]) return;
+    if(Math.hypot(tx*T+8-cxOf(player),ty*T+8-cyOf(player))>REACH) return; openCase(d.k); ev.stopImmediatePropagation(); ev.preventDefault(); }catch(e){} },true);
+
+// ---------------- keychains: learned once you have had the stuffed animal; clipped to your belt ----------------
+{ const _ok=showOk; showOk=function(rc,...a){ if(rc&&rc.keychain&&!free()&&!(home&&home.plushSeen&&home.plushSeen[rc.keychain])&&countItem(rc.keychain)<1) return false; return _ok(rc,...a); }; }
+function beltKey(){ const p=player; if(!p||!p.gear) return 0; const id=p.gear.keychain; return id&&KEYCHAIN[id]&&countItem(id)>0?id:0; }
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ const info=$('#invInfo'), s=pickSlot!==null&&player?player.inv[pickSlot]:null;
+      if(info&&s&&KEYCHAIN[s.id]&&!info.querySelector('.keybtns')){ const on=player.gear&&player.gear.keychain===s.id;
+        info.insertAdjacentHTML('beforeend',`<div class="keybtns" style="display:flex;gap:4px;margin-top:4px"><button class="xbtn" data-keyclip="1">${on?'Unclip it':'Clip to your belt'}</button></div>`); } }catch(e){} return r; }; }
+$('#invInfo').addEventListener('click',ev=>{ const b=ev.target.closest('[data-keyclip]'); if(!b||pickSlot===null||!player) return; ev.stopPropagation(); const s=player.inv[pickSlot]; if(!s) return;
+  player.gear=player.gear||{}; if(player.gear.keychain===s.id){ delete player.gear.keychain; toast('Unclipped',1.5); } else { player.gear.keychain=s.id; toast(`${ITEMS[s.id].name} clipped to your belt`,2); }
+  pickSlot=null; renderInv(); },true);
+{ const _de=drawEntity; drawEntity=function(e,...a){ const r=_de(e,...a); try{ if(e&&e===player&&!e.riding&&!e.dead){ const id=beltKey(); if(id){ const art=keychainArt(id), f=e.facing||1;
+        const sw=Math.sin(performance.now()/(Math.abs(e.vx)>8?80:400))*1.5; const X=Math.round(cxOf(e)+f*2-4+sw), Y=Math.round(e.y+e.h*0.55);
+        ctx.save(); ctx.imageSmoothingEnabled=false; ctx.drawImage(art,0,0,16,16,X,Y,8,8); ctx.restore(); } } }catch(err){} return r; }; }
+
+// ---------------- wiring ----------------
+{ const _up=update; update=function(dt,...a){ const r=_up(dt,...a); try{ if(state==='play') dispTick(dt||0.016); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ DISP_CELL=null; if(home&&!isGuest()){ castleCase(); dispTrophies(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); DISP_CELL=null; return r; }; }
+{ const _rh=raiseHome; raiseHome=function(...a){ const r=_rh(...a); try{ if(state==='play'&&!isGuest()) castleCase(); }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
