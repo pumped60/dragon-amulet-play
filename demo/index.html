@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794080586"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794198977"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.182</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.183</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.183</h3>
+    <p>Typing on a phone held sideways: when you can see the box you are typing in, the words go straight into it with nothing over it. When the keyboard covers the box, a bar shows what you type beside the box instead of on top of it.</p>
     <h3>New in Beta 0.9.182</h3>
     <p>On a phone held sideways, the crafting window's Search recipes box has a full row of its own under the Show filters, so it is easy to find and tap.</p>
     <h3>New in Beta 0.9.181</h3>
@@ -902,7 +904,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.182</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.183</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1163,7 +1165,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.182</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.183</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1185,7 +1187,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.182', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.183', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -26030,6 +26032,28 @@ function statuesAll(keys){ if(!world||!home||isGuest()||home.statueV) return 0; 
 @media (orientation:landscape){
   body.touch #craftBar #craftSearch{ order:98; flex:0 0 100% !important; width:100% !important; max-width:none !important; min-height:30px; box-sizing:border-box; margin:2px 0 0 0 !important; }
 }`; document.head.appendChild(st); }
+// ===== Kinard, 2026-11-09 (screenshot: naming a world on an iPhone held sideways): "Please make it so the top text box is a little
+// lower because on the mobile it is currently blocked or make a way that there is an in game keyboard that opens instead of the
+// phone keyboard or what is another work around?" =====
+// The 0.9.177 typing bar (#typeEcho) always sat at the top of the screen, so on a phone held sideways it lay right over the box
+// you were typing in. Sideways only (upright keeps the bar as it was):
+// - when the box you are typing in can be seen above the keyboard, there is no bar: you type straight into the box;
+// - when the keyboard covers it, the bar shows in the free space beside it (under the box when the box is in the top half, over
+//   it otherwise), never on top of it, and clear of the phone's own bar of arrows and the tick (TB_ACC px above the keyboard).
+// The phone's keyboard stays: it brings autocorrect, voice typing and other languages, which a keyboard drawn by the game would not.
+const TB_ACC=60;
+function typeSide(){ return innerWidth>innerHeight&&document.body.classList.contains('touch'); }
+function typeView(){ const vv=window.visualViewport; return {top:vv?vv.offsetTop:0, left:vv?vv.offsetLeft:0, w:vv?vv.width:innerWidth, h:vv?vv.height:innerHeight}; }
+function typeVisible(el){ const v=typeView(), r=el.getBoundingClientRect(); return r.height>0&&r.top>=v.top-2&&r.bottom<=v.top+v.h-TB_ACC; }
+{ const _tp=typePlace; typePlace=function(...a){ if(!typeEl) return _tp(...a); if(!typeSide()){ TYPE_ECHO.hidden=false; return _tp(...a); }
+    if(typeVisible(typeEl)){ TYPE_ECHO.hidden=true; return; }
+    TYPE_ECHO.hidden=false; const v=typeView(), r=typeEl.getBoundingClientRect(), bh=TYPE_ECHO.offsetHeight||50, free=v.top+v.h-TB_ACC;
+    let y; if(r.bottom<v.top||r.top>v.top+v.h) y=v.top+8;   // the box is off the screen
+    else if(r.top+r.height/2<v.top+(v.h-TB_ACC)/2) y=r.bottom+6; else y=r.top-bh-6;
+    y=Math.max(v.top+4,Math.min(y,free-bh-4));
+    TYPE_ECHO.style.top=Math.round(y)+'px'; TYPE_ECHO.style.left=Math.round(v.left+8)+'px'; TYPE_ECHO.style.width=Math.round(Math.max(160,v.w-16))+'px'; }; }
+if(window.visualViewport){ visualViewport.addEventListener('resize',()=>typePlace()); visualViewport.addEventListener('scroll',()=>typePlace()); }
+addEventListener('resize',()=>typePlace());
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
