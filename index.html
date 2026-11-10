@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1794198977"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794198977"><link rel="manifest" href="manifest.webmanifest?v=1794198977"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1794304414"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794304414"><link rel="manifest" href="manifest.webmanifest?v=1794304414"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.183</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.184</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.184</h3>
+    <p><b>The magma realm, made again.</b> You arrive by a portal right outside the Magma Knight's keep, which now sits inside the rock. The realm is solid ground with its own places: lava lakes in their basins, the magma forest, the gem caverns and the Burning fields, where Burning shrubs and Flame stalks never stop burning beside small lava pools. Magma bases stand on the ground far apart, platforms are Basalt ledges, ash wolves are lava hounds with burning manes and a burning bite, and there is half as much lava again at the bottom of the world. Lava slows you a lot, even with wings.</p>
+    <p><b>The realm bosses.</b> The keep's gate stays shut until you tap it or press Talk beside it, with the Battle plan sign just outside. The Sky Ranger's sign is in the prison room below his hall. Each boss hides behind the throne until you investigate it, so your soldiers never attack the throne early. The Magma Knight has half the guards, and the two knights he used to call are already in the room. Both bosses have a treasure vault that stays locked until they fall.</p>
+    <p><b>Also:</b> wings flap as you fly sideways, Space flies with wings, holding Down slows a winged fall and wings stop fall damage. Every door has a back wall, and you can place one behind a door. Prisoners and their bars are drawn behind everyone else. Towers never float, castle fog shows from every side, lava veins light Vorthax's lair, and nothing sits under his gold heap. The Pile of bones is a heap of broken bones.</p>
     <h3>New in Beta 0.9.183</h3>
     <p>Typing on a phone held sideways: when you can see the box you are typing in, the words go straight into it with nothing over it. When the keyboard covers the box, a bar shows what you type beside the box instead of on top of it.</p>
     <h3>New in Beta 0.9.182</h3>
@@ -904,7 +908,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.183</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.184</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1165,7 +1169,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.183</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.184</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1187,7 +1191,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.183', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.184', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -4854,6 +4858,7 @@ function drawLighting(tx0,tx1,ty0,ty1,dl){
   const addLight=(lx,ly,r,inten)=>{ const x0=Math.max(tx0,Math.floor(lx-r)), x1=Math.min(tx1,Math.ceil(lx+r)), y0=Math.max(ty0,Math.floor(ly-r)), y1=Math.min(ty1,Math.ceil(ly+r));
     for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const dd=Math.hypot(x+0.5-lx,y+0.5-ly); if(dd>=r) continue; const v=inten*(1-dd/r); const k=(y-ty0)*lw+(x-tx0); if(v>Lg[k]) Lg[k]=v; } };
   const m=8; for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++) for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){ const id=world[y*W+x], b=BLOCKS[id]; if(b.light){ addLight(x+0.5,y+0.5,b.light,0.98); } }
+  if(typeof extraLights==='function') try{ extraLights(addLight,tx0,tx1,ty0,ty1); }catch(e){}   // lights in back walls (0.9.184: the lava veins of Vorthax's lair)
   if(player&&!player.dead){ let [lr,li]=playerLight(); const hi=heldItem(); const ptx=clamp(Math.floor(cxOf(player)/T),0,W-1); const under=Math.floor(cyOf(player)/T)>skyTop[ptx]+2;
     if(under&&!player.fx.light){ lr=1.6; li=0.12; } if(((hi&&hi.id===B.TORCH)||(((input.sprint&&settings.torchShift!==false)||(typeof torchMode!=='undefined'&&torchMode))&&countItem(B.TORCH)>0))&&!headWet(player)){ lr=Math.max(lr,10); li=Math.max(li,0.95); } if(player.fx.amulet){ lr=Math.max(lr,7); li=Math.max(li,0.7); } addLight(cxOf(player)/T,cyOf(player)/T,lr,li); }
   for(const p of projs) if(p.kind!=='arrow') addLight(p.x/T,p.y/T,p.kind==='fireball'?5:3,0.9);
@@ -16168,7 +16173,7 @@ const FOG_PUFF=new Map();
 function fogPuff(col){ let c=FOG_PUFF.get(col); if(c) return c; c=mkCanvas(64,64); const g=c.getContext('2d'); const gr=g.createRadialGradient(32,32,0,32,32,32); gr.addColorStop(0,`rgba(${col},1)`); gr.addColorStop(0.45,`rgba(${col},0.55)`); gr.addColorStop(1,`rgba(${col},0)`); g.fillStyle=gr; g.fillRect(0,0,64,64); FOG_PUFF.set(col,c); return c; }
 const FOG_SPILL=2.5;   /* blocks of fog past the walls */
 drawDarkRooms=function(){ if(!player) return; const px=cxOf(player)/T, py=cyOf(player)/T, t=performance.now()/1000;
-  for(const c of [sky&&sky.castle,magma&&magma.keep]){ if(!c||c.cleared||!c.rooms) continue; if(Math.abs(px-c.cx)>220) continue; c.seen=c.seen||{}; const sk=c===(sky&&sky.castle);
+  for(const c of [sky&&sky.castle,magma&&magma.keep]){ if(!c||c.cleared||!c.rooms) continue; if(!fogCastleNear(c)) continue;   /* 0.9.184: any part of the castle near the screen (the keep is wider than 220 blocks from its centre mark) */ c.seen=c.seen||{}; const sk=c===(sky&&sky.castle);
     const col=sk?'236,240,248':'150,30,14', sp=fogPuff(col), M=FOG_SPILL*T;
     castleBoxes(c).forEach(([x0,x1,y0,y1],i)=>{ if(c.seen[i]) return; if(px>=x0-0.2&&px<=x1+1.2&&py>=y0-0.5&&py<=y1+1.2){ c.seen[i]=1; if(typeof sfx==='function') sfx('ward'); return; }
       const X0=x0*T-M, Y0=y0*T-M, w=(x1-x0+1)*T+2*M, h=(y1-y0+1)*T+2*M; if(X0>camX+viewW||X0+w<camX||Y0>camY+viewH||Y0+h<camY) return;
@@ -24242,7 +24247,7 @@ function fogSeenRoom(g,X,Y,w,h){ const mx=Math.max(T,w*FOG_SEEN_EDGE), my=Math.m
 let fogLayer=null, fogLayerG=null;
 { const _dd=drawDarkRooms;   // the 0.9.178 wrapper (holes by clipping) is replaced: the original fog drawing is called with ctx pointed at the layer
   drawDarkRooms=function(...a){ if(!player) return;
-    const castles=[sky&&sky.castle,magma&&magma.keep].filter(c=>c&&!c.cleared&&c.rooms&&Math.abs(cxOf(player)/T-c.cx)<=220);
+    const castles=[sky&&sky.castle,magma&&magma.keep].filter(c=>c&&!c.cleared&&c.rooms&&fogCastleNear(c));
     if(!castles.length) return;
     // is any unseen room on screen? if not, only the seen marking matters, which the fog pass below also does
     const w=cv.width, h=cv.height; if(!fogLayer||fogLayer.width!==w||fogLayer.height!==h){ fogLayer=mkCanvas(w,h); fogLayerG=fogLayer.getContext('2d'); }
@@ -26054,6 +26059,587 @@ function typeVisible(el){ const v=typeView(), r=el.getBoundingClientRect(); retu
     TYPE_ECHO.style.top=Math.round(y)+'px'; TYPE_ECHO.style.left=Math.round(v.left+8)+'px'; TYPE_ECHO.style.width=Math.round(Math.max(160,v.w-16))+'px'; }; }
 if(window.visualViewport){ visualViewport.addEventListener('resize',()=>typePlace()); visualViewport.addEventListener('scroll',()=>typePlace()); }
 addEventListener('resize',()=>typePlace());
+// ===== Kinard, 2026-11-10 =====
+// "Make it so the soldiers don't continue attacking the throne before it is clicked and also add a sign before fighting the sky
+// realm wizard that will allow the player to choose his soldiers to be placed in an ambush position before entering into their
+// room also make it so that the doors in the world have backwalls that can be placed behind them and fix all instances where
+// doors currently do not have backwalls so that they don't just have the sky behind them also make it so the skyrealm bosses
+// chest room is locked until the boss is defeated and make it so that there is a chest room that is positioned the same in the
+// magma realm"; "Move the battle sign so that it's not placed inside the chest room and is placed in the prison room below also
+// make it so that the metal bars and the chracter that is imprisoned is in the background and not foreground"; "Make it so that
+// moving left and right while in the sky moves the players wings and also make it so that spacebar activates the wings for
+// flight and not just jumping".
+// 1. A realm boss still hidden behind its throne is no target at all (observer) until you press Investigate throne, so your
+//    soldiers no longer stand swinging at the throne. Targets already picked are dropped.
+// 2. The sky castle's Battle plan sign stands in the prison room below the throne hall, by the climb up (it was placed in the
+//    treasure vault). Older worlds move it once (c.signV184).
+// 3. Doors and back walls: every door cell without a back wall gets the wall most used around it (wood, stone or iron by the
+//    door's kind when there is none), when a world is made, on every start and every few seconds near you (doors new
+//    buildings or a door you place yourself); a back wall shows behind a closed door too (its see-through parts showed the sky); and you can
+//    place a back wall item on a door cell.
+// 4. The sky vault stays locked until the Sky Ranger falls: its iron door will not open and its walls, door, gold and chests
+//    cannot be broken or blown up. The magma keep gets a vault in the same place (the throne room's far corner, behind the
+//    throne): iron door, gold, two chests sealed until the Magma Knight falls, locked the same way (c.vault184).
+// 5. Prisoners and the bars over them are drawn before anyone else, so the player and soldiers walk in front of the cells.
+// 6. Wings flap while you move left or right in the air, and Space beats the wings like W.
+
+// ---------------- 1. the hidden boss is no target ----------------
+function hideBossTick(){ for(const e of ents){ if(!(e.skyBoss||e.magmaLord)) continue; const h=!e.dead&&bossHidden(e);
+    if(h){ if(!e.observer){ e.observer=true; e._hideObs=true; } } else if(e.observer){ e.observer=false; delete e._hideObs; } }   // a realm boss is never an observer otherwise
+  for(const e of ents){ const t=e.target; if(t&&t._hideObs) e.target=null; } }
+{ const _u=update; update=function(...a){ const r=_u(...a); try{ if(world&&ents) hideBossTick(); }catch(e){} return r; }; }
+{ const _it=investigateThrone; investigateThrone=function(...a){ const r=_it(...a); try{ hideBossTick(); }catch(e){} return r; }; }
+
+// ---------------- 2. the sky sign in the prison ----------------
+function skyHatchX(c){ const L=[]; for(let x=c.x0+1;x<c.x1;x++){ const id=tileAt(x,c.gy); if(!id||(BLOCKS[id]&&(!BLOCKS[id].solid||BLOCKS[id].platform))) L.push(x); } return L; }
+function prisonSignSpot(c){ const P=typeof prisonCells==='function'?prisonCells(c):null; if(!P) return null; const b=P.b, gy=P.gy, cells=(c.prison193&&c.prison193.cells)||P.cells||[];
+  const hx=skyHatchX(c); const near=x=>hx.length?Math.min(...hx.map(h=>Math.abs(h-x))):Math.abs(x-(b[0]+b[1])/2);
+  let best=null, bd=1e9;
+  for(let x=b[0]+1;x<=b[1]-1;x++){ if(cells.some(cx=>x>=cx-1&&x<=cx+7)) continue; const id=tileAt(x,gy-1), up=tileAt(x,gy-2), dn=tileAt(x,gy);
+    if(id!==0||up!==0||!(BLOCKS[dn]&&BLOCKS[dn].solid)||BLOCKS[dn].platform) continue; const d=near(x); if(d<2) continue; if(d<bd){ bd=d; best={x,y:gy-1}; } }
+  return best; }
+{ const _ps=planSignSpot; planSignSpot=function(c,...a){ try{ if(sky&&c===sky.castle){ const s=prisonSignSpot(c); if(s) return s; } }catch(e){ console.warn(e); }
+    const r=_ps(c,...a); if(r&&vaultAt(r.x,r.y)) return null; return r; }; }
+function moveSkySign(){ const c=sky&&sky.castle; if(!c||c.cleared||c.signV184) return; c.signV184=1; const s=c.planSign;
+  if(s){ const want=prisonSignSpot(c); if(want&&want.x===s.x&&want.y===s.y) return; if(tileAt(s.x,s.y)===B.SIGN) setTile(s.x,s.y,0); try{ delete home.signs[s.x+','+s.y]; }catch(e){} delete c.planSign; }
+  placePlanSigns((x,y,id)=>setTile(x,y,id)); }
+
+// ---------------- 3. back walls behind doors ----------------
+const DOOR_BG_FALL={ wood:5, stone:3, iron:15 };
+function doorBgFor(x,y,strict){ const cnt=new Map(); for(let dy=-2;dy<=2;dy++) for(let dx=-3;dx<=3;dx++){ const xx=x+dx, yy=y+dy; if(xx<0||xx>=W||yy<0||yy>=H) continue; if(DOOR_IDS.has(world[yy*W+xx])) continue;
+    const v=bg[yy*W+xx]; if(!v||v===WINDOW_BG||(typeof PANE_BG!=='undefined'&&PANE_BG.has&&PANE_BG.has(v))||(typeof CW_BG!=='undefined'&&(Array.isArray(CW_BG)?CW_BG.includes(v):CW_BG&&CW_BG.has&&CW_BG.has(v)))) continue;
+    cnt.set(v,(cnt.get(v)||0)+1); }
+  let best=0, bn=0; for(const [v,n] of cnt) if(n>bn){ bn=n; best=v; } if(best) return best; if(strict) return 0;
+  const s=DOOR_SET_OF[world[y*W+x]]; const k=s&&s.metal?s.wood:'wood'; return BGTEX[DOOR_BG_FALL[k]]?DOOR_BG_FALL[k]:5; }
+function doorBgFill(x0,x1,y0,y1,strict,put){ let n=0; for(let y=Math.max(0,y0);y<=Math.min(H-1,y1);y++) for(let x=Math.max(0,x0);x<=Math.min(W-1,x1);x++){ const i=y*W+x;
+    if(!DOOR_IDS.has(world[i])||bg[i]) continue; const v=doorBgFor(x,y,strict); if(v){ put(x,y,v); n++; } } return n; }
+const bgPut=(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H){ bg[y*W+x]=v; if(explored&&explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} } };
+// a back wall shows behind a closed door (closed doors are solid, and the renderer skips the wall behind solid blocks)
+for(const id of DOOR_IDS) ORE_LOOK.add(id);
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(DOOR_IDS.has(id)){ const v=bg[y*W+x]; if(v&&BLOCKS[id].solid&&BGTEX[v]) try{ ctx.drawImage(BGTEX[v],x*T,y*T); }catch(e){} return TEX[id]; } return _tt(x,y,id,...a); }; }
+// placing a back wall item on a door
+{ const _po=placeOK; placeOK=function(x,y,id,...a){ try{ if(ITEMS[id]&&ITEMS[id].kind==='wall'&&x>=0&&x<W&&y>=0&&y<H&&DOOR_IDS.has(world[y*W+x])) return !bg[y*W+x]; }catch(e){} return _po(x,y,id,...a); }; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; const r=_up(dt,...a);
+    try{ if(!p||p.dead||!input.use||state!=='play') return r; const it=heldItem(), def=it&&ITEMS[it.id]; if(!def||def.kind!=='wall'||WALLS[it.id]==null||(p.placeCd||0)>0) return r;
+      const at=p.aimTile; if(!at) return r; const x=at.x, y=at.y; if(!DOOR_IDS.has(tileAt(x,y))||bg[y*W+x]) return r;
+      if(Math.hypot(x*T+8-cxOf(p),y*T+8-cyOf(p))>REACH+2||countItem(it.id)<1) return r;
+      mpRun(()=>bset(x,y,WALLS[it.id])); if(explored[y*W+x]) mapPixel(x,y); takeItem(it.id,1); p.placeCd=0.08; invDirty=true; }catch(e){ console.warn(e); } return r; }; }
+
+// ---------------- 4. the realm vaults ----------------
+function vaults(){ const L=[]; const sc=sky&&sky.castle;
+  if(sc&&sc.treasury&&sc.vaultV&&sc.treasury.top!=null){ const t=sc.treasury, dv=sc.entryLeft?t.x0-1:t.x1+1; L.push({c:sc,x0:Math.min(t.x0-1,dv),x1:Math.max(t.x1+1,dv),y0:t.top,y1:t.gy,dv,gy:t.gy,boss:'the Sky Ranger'}); }
+  const mk=magma&&magma.keep; if(mk&&mk.vault184) L.push(Object.assign({c:mk,boss:'the Magma Knight'},mk.vault184));
+  return L; }
+const vaultLocked=v=>!!v&&!v.c.cleared&&!(typeof rules!=='undefined'&&rules.mode==='creative');
+function vaultAt(x,y){ for(const v of vaults()) if(x>=v.x0&&x<=v.x1&&y>=v.y0&&y<=v.y1) return v; return null; }
+let vaultToastT=0;
+function vaultNote(v){ const now=performance.now(); if(now<vaultToastT) return; vaultToastT=now+2500; toast(`The vault is locked. Defeat ${v.boss} to open it`,3); }
+{ const _sd=setDoor; setDoor=function(x,y,open,...a){ try{ if(open){ const v=vaultAt(x,y); if(v&&x===v.dv&&vaultLocked(v)){
+          if(player&&Math.hypot(x*T+8-cxOf(player),y*T-cyOf(player))<5*T) vaultNote(v); return false; } } }catch(e){ console.warn(e); } return _sd(x,y,open,...a); }; }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ try{ const v=vaultAt(x,y); if(v&&vaultLocked(v)&&tileAt(x,y)){ vaultNote(v); return; } }catch(e){} return _bt(x,y,...a); }; }
+{ const _bb=blastBreakable; blastBreakable=function(x,y,...a){ try{ const v=vaultAt(x,y); if(v&&vaultLocked(v)) return false; }catch(e){} return _bb(x,y,...a); }; }
+{ const _cr=chestReq; chestReq=function(x,y,...a){ const r=_cr(x,y,...a); if(r) return r; try{ const c=chests[x+','+y]; if(c&&c.magmaVault&&!(magma&&magma.keep&&magma.keep.cleared)&&rules.mode!=='creative') return 'Defeat the Magma Knight to unseal it'; }catch(e){} return null; }; }
+// the magma keep's vault: the throne room's far corner (away from the way in), as in the sky castle
+function magmaVault(c,put,bput,R){ if(!c||c.cleared||c.vault184||!c.throne) return false; const th=c.throne, tp=c.thronePos||{x:Math.round((th.x0+th.x1)/2),y:c.gy-1};
+  let F=tp.y+1; while(F<tp.y+8&&!(BLOCKS[tileAt(tp.x,F)]&&BLOCKS[tileAt(tp.x,F)].solid)) F++; if(!(BLOCKS[tileAt(tp.x,F)]&&BLOCKS[tileAt(tp.x,F)].solid)) return false;
+  const farRight=!!c.entryLeft, VH=6, IW=9;
+  const x0=farRight?th.x1-IW+1:th.x0, x1=x0+IW-1, dv=farRight?x0-1:x1+1, bx0=Math.min(x0,dv), bx1=Math.max(x1,dv), top=F-VH-1;
+  if(tp.x>=bx0-2&&tp.x<=bx1+2) return false;
+  for(let y=top;y<=F-1;y++) for(let x=bx0;x<=bx1;x++){ const id=tileAt(x,y); if(id==null) return false; if((typeof isThroneId==='function'&&isThroneId(id))||id===B.SIGN||isChestId(id)||id===B.PORTAL) return false; }
+  const wallId=(()=>{ const id=tileAt(farRight?th.x1+1:th.x0-1,F-3); return id&&BLOCKS[id]&&BLOCKS[id].solid&&!DOOR_IDS.has(id)?id:B.OBSIDIAN; })();
+  const G=typeof SKY2_BGS!=='undefined'?SKY2_BGS:{}; const cx=Math.round((x0+x1)/2);
+  for(let x=bx0;x<=bx1;x++){ put(x,top,wallId); if(!(BLOCKS[tileAt(x,F)]&&BLOCKS[tileAt(x,F)].solid)) put(x,F,wallId); }
+  for(let y=top+1;y<=F-1;y++){ for(let x=x0;x<=x1;x++){ put(x,y,0); const j=y-top-1; const v=j===0?G.vtrim:j===2&&Math.abs(x-cx)>1?G.vshelf:G.vgold; if(v) bput(x,y,v); }
+    if(y<F-2) put(dv,y,wallId); }
+  if(G.varch) bput(cx,F-3,G.varch);
+  const D=typeof METAL_DOORS!=='undefined'&&METAL_DOORS.iron; if(D){ put(dv,F-2,D.top); put(dv,F-1,D.base); } else { put(dv,F-2,0); put(dv,F-1,0); }
+  put(dv,F-3,B.GOLD_BLOCK); bput(dv,F-1,bg[(F-1)*W+cx]||bg[(F-1)*W+dv]||3); bput(dv,F-2,bg[(F-2)*W+cx]||bg[(F-2)*W+dv]||3);
+  for(const [dx,id] of [[-2,B.CHEST_GOLD],[2,B.CHEST_GOLD]]){ const x=cx+dx; put(x,F-1,id); const L=lootFor(160,R,3); L.magmaVault=true; for(const it of L.items||[]) if(it&&it.id===I.DIAMOND&&it.n>2) it.n=2;   /* diamonds in twos, as everywhere (0.9.82) */ chests[x+','+(F-1)]=L; }
+  put(cx,F-1,B.GOLD_BLOCK); put(cx,F-2,B.GOLD_BLOCK); if(B.GOLDPILE!=null){ put(x0,F-1,B.GOLDPILE); put(x1,F-1,B.GOLDPILE); }
+  put(farRight?x1:x0,top+1,B.LANTERN);
+  c.vault184={x0:bx0,x1:bx1,y0:top,y1:F,dv,gy:F}; return true; }
+
+// ---------------- new worlds and older worlds ----------------
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())){
+        const mk=magma&&magma.keep; if(mk) magmaVault(mk,wset,(x,y,v)=>{ if(x>=0&&x<W&&y>=0&&y<H) bg[y*W+x]=v; },mulberry(((typeof seed!=='undefined'?seed:0)|0)+1840));
+        doorBgFill(0,W-1,0,H-1,false,(x,y,v)=>{ bg[y*W+x]=v; }); if(home) home.doorBgV=1; } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!isGuest()&&!(typeof edOn==='function'&&edOn())){
+        home.doorBgV=1; doorBgFill(0,W-1,0,H-1,false,bgPut);   // every start: doors the start-up passes add (furnishing, repairs) get theirs too
+        const mk=magma&&magma.keep; if(mk&&!mk.vault184&&!mk.cleared&&!mk.vault184V&&!(typeof tutOn==='function'&&tutOn())){ mk.vault184V=1;
+          facRun(()=>magmaVault(mk,(x,y,id)=>setTile(x,y,id),bgPut,mulberry(((typeof seed!=='undefined'?seed:0)|0)+1840))); }
+        facRun(()=>moveSkySign()); } }catch(e){ console.warn(e); } return r; }; }
+// doors that new buildings bring: every few seconds near you
+{ let t=6; const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&world&&player&&!isGuest()&&(t-=dt||0)<=0){ t=6;
+        const px=Math.floor(cxOf(player)/T), py=Math.floor(cyOf(player)/T); doorBgFill(px-70,px+70,py-40,py+40,false,bgPut); } }catch(e){} return r; }; }
+
+// ---------------- 5. prisoners behind everyone ----------------
+let prisFrame=-1;
+const isPris=e=>!!e&&e.kind==='captive'&&e.prisoner&&!e.dead&&!e.freed;
+{ const _de=drawEntity; drawEntity=function(e,...a){
+    try{ if(prisFrame!==frameN&&ents&&ents.indexOf(e)>=0){ prisFrame=frameN;
+        for(const p of ents){ if(!isPris(p)||p.aboard||p.proxy) continue; if(p.x+p.w<camX-40||p.x>camX+viewW+40||p.y+p.h<camY-40||p.y>camY+viewH+40) continue; p._prisDrawn=frameN; _de(p); } } }catch(err){}
+    if(isPris(e)&&e._prisDrawn===frameN) return; return _de(e,...a); }; }
+
+// ---------------- 6. wings: flap while moving sideways in the air; Space beats them like W ----------------
+const flyingSide=e=>!!e&&!e.grounded&&!e.inWater&&!e.riding&&Math.abs(e.vx||0)>25;
+{ const _sw=drawSkyWings; drawSkyWings=function(e,...a){ if(!e||e.flapping||!flyingSide(e)) return _sw(e,...a); e.flapping=true; try{ return _sw(e,...a); } finally{ e.flapping=false; } }; }
+{ const _dw=drawDragonWings; drawDragonWings=function(e,...a){ if(!e||e.wingUp||!flyingSide(e)) return _dw(e,...a); const w=e.wingUp; e.wingUp=true; try{ return _dw(e,...a); } finally{ e.wingUp=w; } }; }
+let wHeld184=false, spHeld184=false;
+addEventListener('keydown',e=>{ if(e.code==='KeyW') wHeld184=true; if(e.code==='Space') spHeld184=true; if(e.code==='KeyW'||e.code==='Space') wingKeyW=wHeld184||spHeld184; },true);
+addEventListener('keyup',e=>{ if(e.code==='KeyW') wHeld184=false; if(e.code==='Space') spHeld184=false; if(e.code==='KeyW'||e.code==='Space') wingKeyW=wHeld184||spHeld184; },true);
+addEventListener('blur',()=>{ wHeld184=false; spHeld184=false; });
+// Kinard, same day: "with the wings they add a slower fall bonus if the player holds the down key so that they don't fall as
+// quickly". With wings (sky wings, or the Scaleborn's own), holding Down in the air caps the fall at WING_SLOW_FALL (a falling
+// player otherwise speeds up to several times that), the wings stay spread, and a slow glide like this never hurts on landing.
+const WING_SLOW_FALL=90;
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; const r=_up(dt,...a);
+    try{ p.wingSlow=false; if(p&&!p.dead&&!p.fly&&!p.godFly&&input.down&&hasWingsNow(p)&&!p.grounded&&!p.inWater&&!p.riding&&!(typeof hook!=='undefined'&&hook&&hook.phase&&hook.phase!=='idle')){
+        if(p.vy>WING_SLOW_FALL) p.vy=WING_SLOW_FALL; if(p.vy>0){ p.peakY=p.y; p.wingSlow=true; } } }catch(e){} return r; }; }
+{ const _sw=drawSkyWings; drawSkyWings=function(e,...a){ if(!e||!e.wingSlow||e.flapping) return _sw(e,...a); e.flapping=true; try{ return _sw(e,...a); } finally{ e.flapping=false; } }; }
+// the battle area (ambush spots, Waves, the room check) stops at the vault wall, so no soldier is ever posted inside a locked vault
+for(const A of ARENAS) if(A.key==='ranger'||A.key==='magmaknight'){ const _bx=A.box; A.box=(...a)=>{ const b=_bx(...a); if(!b) return b; try{ for(const v of vaults()){ if(v.y1<b.y0||v.y0>b.y1) continue;
+        if(v.x0<=b.x0+1&&v.x1>=b.x0) return Object.assign({},b,{x0:v.x1+1}); if(v.x1>=b.x1-1&&v.x0<=b.x1) return Object.assign({},b,{x1:v.x0-1}); } }catch(e){} return b; }; }
+// Kinard, same day: "make it so that wings remove fall damage once the player receives them". With wings (sky wings or the
+// Scaleborn's own) no fall ever hurts: the height you fall from is reset every frame.
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player; if(p&&!p.dead&&hasWingsNow(p)) p.peakY=p.y; }catch(e){} return r; }; }
+// ===== Kinard, 2026-11-10 (screenshot: the magma realm portal with a floating lump of rock and a tall rock column beside it):
+// "Fix this so that there is not these near the portal in the magma realm and make it so that the player spawns right outside of
+// the magma fortress still also make it so that lava slows the player even more still with flight or jumping etc" and "Make it so
+// that there is more lava at the bottom of the world by 50% at the lowest layer" =====
+// 1. Since the keep moved to the middle of the realm (0.9.178) you still arrived where it used to stand, among the rock it left.
+//    The arrival (magma.arrive) and its portal now stand right outside the keep's gate, on a cleared plaza (ARRIVE_W blocks
+//    long, ARRIVE_H high, solid floor, no lava over it), and loose lumps of rock near it (pieces of at most LUMP_MAX blocks
+//    touching nothing) are cleared. The old portal goes. New worlds, and older worlds whose keep was moved, once (magma.arrive184).
+// 2. Lava slows you more, whatever you do: walking, jumping, flying with wings, the Scaleborn's wings or the test world's Fly.
+//    Sideways at most LAVA_SIDE (LAVA_SIDE_OUT with your head out), rising at most LAVA_RISE, sinking at most LAVA_SINK. The hop
+//    out at the surface still works, so you can always climb out.
+// 3. Half as much lava again at the bottom of the world: the lowest LAVA_BASE_ROWS rows of the magma realm get lava basins until
+//    their lava is 1.5 times what it was. New worlds, and older worlds once in parts nobody has seen (magma.lava184).
+const ARRIVE_W=22, ARRIVE_H=8, LUMP_MAX=40;
+const keepCell=id=>id===B.OBSIDIAN||id===B.RED_BRICK||id===B.PORTAL||id===B.GOLD_BLOCK||isChestId(id)||DOOR_IDS.has(id)||(typeof isThroneId==='function'&&isThroneId(id));
+function magmaArrivePlaza(put,get){ const c=magma&&magma.keep; if(!c||!c.gate||!magma.keepMid) return false;
+  const g=c.gate, dir=g.x>=c.x1?1:-1, gy=g.gy, xa=g.x+dir*2, xb=g.x+dir*(ARRIVE_W+1), lo=Math.min(xa,xb), hi=Math.max(xa,xb), M=B.MAGMA_ROCK;
+  // the old portal goes
+  const a0=magma.arrive; if(a0) for(let y=a0.py-4;y<=a0.py+2;y++) for(let x=a0.px-12;x<=a0.px+12;x++) if(get(x,y)===B.PORTAL) put(x,y,0);
+  // the plaza: open rows over a solid floor, rock in place of any lava above or at its far end
+  for(let x=lo;x<=hi;x++){ for(let y=gy-ARRIVE_H;y<gy;y++){ const id=get(x,y); if(id&&!keepCell(id)) put(x,y,0); } const f=get(x,gy); if(!f||!BLOCKS[f].solid) put(x,gy,M);
+    const up=get(x,gy-ARRIVE_H-1); if(up===B.LAVA||up===B.WATER) put(x,gy-ARRIVE_H-1,M); }
+  const endX=g.x+dir*(ARRIVE_W+2); for(let y=gy-ARRIVE_H;y<gy;y++){ const id=get(endX,y); if(id===B.LAVA||id===B.WATER) put(endX,y,M); }
+  // the portal near the far end, the arrival a few blocks nearer the gate
+  const px=g.x+dir*(ARRIVE_W-2); put(px,gy-1,B.PORTAL); put(px,gy-2,B.PORTAL); put(g.x+dir*4,gy-1,B.TORCH);
+  const ax=g.x+dir*(ARRIVE_W-7); magma.arrive={x:ax*T,y:gy*T-30,px,py:gy-1};
+  // loose lumps of rock near the arrival
+  clearLumps(Math.min(lo,px)-20,Math.max(hi,px)+20,gy-36,gy+6,put,get);
+  magma.arrive184=1; return true; }
+function clearLumps(x0,x1,y0,y1,put,get){ const seen=new Set(); let n=0; const solidAt=(x,y)=>{ const id=get(x,y); return !!id&&id!==B.LAVA&&id!==B.WATER&&BLOCKS[id]&&BLOCKS[id].solid; };
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const k=y*W+x; if(seen.has(k)||!solidAt(x,y)) continue; const comp=[[x,y]]; seen.add(k); let big=false, keep=false;
+    for(let i=0;i<comp.length;i++){ const [cx,cy]=comp[i]; if(keepCell(get(cx,cy))) keep=true; if(comp.length>LUMP_MAX){ big=true; break; }
+      for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const nx=cx+dx, ny=cy+dy; if(nx<x0-10||nx>x1+10||ny<y0-10||ny>y1+10){ big=true; continue; } const nk=ny*W+nx; if(seen.has(nk)||!solidAt(nx,ny)) continue; seen.add(nk); comp.push([nx,ny]); } }
+    if(big||keep) continue; for(const [cx,cy] of comp){ put(cx,cy,0); const a=get(cx,cy-1); if(a&&BLOCKS[a]&&!BLOCKS[a].solid&&a!==B.LAVA&&a!==B.WATER&&a!==B.PORTAL) put(cx,cy-1,0); } n+=comp.length; }
+  return n; }
+// ---- 3. more lava at the bottom ----
+const LAVA_MORE184=0.5;
+function magmaBottomLava(onlyUnexplored,put,get){ if(!magma||typeof magmaY==='undefined'||magma.lava184) return 0; const R=mulberry((seed|0)+1841), y0=Math.max(magmaY,H-LAVA_BASE_ROWS-4), y1=H-4;
+  const boxes=typeof magmaKeepBoxes==='function'?magmaKeepBoxes():[]; const inBox=(x,y)=>boxes.some(([a,b,c,d])=>x>=a-4&&x<=c+4&&y>=b-6&&y<=d+6);
+  const ok=(x,y)=>!(onlyUnexplored&&explored[y*W+x])&&!inBox(x,y)&&!(typeof keepNearPlayer==='function'&&player&&keepNearPlayer(x,y));
+  let base=0; for(let y=y0;y<=y1;y++) for(let x=magma.mx0;x<=magma.mx1;x++) if(world[y*W+x]===B.LAVA) base++;
+  const goal=Math.round(base*LAVA_MORE184); let added=0, tries=0;
+  while(added<goal&&tries++<4000){ const x=magma.mx0+8+((R()*(magma.mx1-magma.mx0-16))|0); let fy=-1;
+    for(let y=y1;y>y0;y--){ if(get(x,y)===0&&get(x,y+1)!==0&&BLOCKS[get(x,y+1)]&&BLOCKS[get(x,y+1)].solid){ fy=y+1; break; } }
+    if(fy<0||!ok(x,fy-1)) continue; added+=lavaBasin(x,fy,2+((R()*4)|0),10+((R()*22)|0),put,get,ok); }
+  magma.lava184=[base,added]; return added; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(magma&&!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())){
+        const put=(x,y,id)=>{ if(x<0||x>=W||y<0||y>=H) return; world[y*W+x]=id; liq[y*W+x]=id===B.LAVA?8:0; }, get=(x,y)=>(x<0||x>=W||y<0||y>=H)?B.BEDROCK:world[y*W+x];
+        if(!magma.arrive184) magmaArrivePlaza(put,get); magmaBottomLava(false,put,get); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(magma&&!isGuest()&&home&&!home.tutorial&&!home.editor){ const put=(x,y,id)=>setTile(x,y,id), get=(x,y)=>tileAt(x,y);
+        if(!magma.arrive184&&magma.keepMid){ magma.arrive184=1; facRun(()=>magmaArrivePlaza(put,get)); }
+        if(!magma.lava184) facRun(()=>magmaBottomLava(true,put,get)); } }catch(e){ console.warn(e); } return r; }; }
+// ---- 2. lava slows you more ----
+const LAVA_SIDE=30, LAVA_SIDE_OUT=50, LAVA_RISE=55, LAVA_SINK=22;
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player; if(p&&!p.dead&&!p.godFly&&inLava(p)){
+        const headOut=tileAt(Math.floor(cxOf(p)/T),Math.floor((p.y+2)/T))!==B.LAVA, sx=headOut?LAVA_SIDE_OUT:LAVA_SIDE; p.vx=clamp(p.vx,-sx,sx);
+        if(!(p.lavaHopT>0)) p.vy=clamp(p.vy,-LAVA_RISE,LAVA_SINK); p.flapping=false; } }catch(e){} return r; }; }
+// ===== Kinard, 2026-11-10 (screenshot: magma bases standing on little floating ledges in a huge empty cavern, square slabs
+// hanging from the ceiling): "make it so the magma realm bases are more spread out, but so they aren't floating islands like this
+// rework the entire magma realm if needed with all the current updates etc so that there aren't weird structures or shapes and
+// so that there are biomes that are entirely magma lakes, magma forests etc" =====
+// The realm is made again around the keep, as one long cavern:
+// - A rugged ceiling (rolling, with stalactites tapering to points), never square slabs.
+// - Rolling ground at the keep's floor level (flat for MR_FLAT columns either side of the keep and the arrival plaza), with
+//   winding tunnels and pockets in the rock below and lava filling the lowest caves.
+// - Whole biomes across the realm's width, MB_SEG columns each (the same stretches as 0.9.179, so the creatures and insects
+//   match): Lava lakes (most of the stretch is lava basins with ash rock shores, lava reeds, a few rock islands), Magma forest
+//   (ash soil, ember trees close together, cinder ferns), Magma gem (gem crust rock, fire opal veins, fire crystals on floors
+//   and ceilings) and, in the plain stretches, the Burning fields (scorched ground, lava pools, plants that never stop burning).
+// - The magma bases stand on the ground, MR_HUT_GAP columns apart or more (they were 55-90 apart on a ledge), never in a lava
+//   lake, near the keep or by the arrival portal; two guards each.
+// - The ore that was there is put back as veins in the new rock (same kinds and amounts), and cave chests are set on the new
+//   floors with what they held.
+// New worlds when the realm is made. Older worlds once (magma.rework184): only stretches of MR_CHUNK columns nobody has looked
+// into (under 2% seen), so nothing you have seen or built changes; bases in those stretches move, with their guards.
+const MR_CHUNK=64, MR_FLAT=34, MR_HUT_GAP=150, MR_BAND=26;
+const MR_ROCK=()=>B.MAGMA_ROCK;
+function mrKeepBox(){ const k=magma&&magma.keep; if(!k) return null; let y1=k.gy+2; for(const b of k.boxes||[]) y1=Math.max(y1,b[3]+3); return [k.x0-3,k.x1+3,(k.top??k.gy-40)-4,y1]; }
+function mrPlazaBox(){ const k=magma&&magma.keep, a=magma&&magma.arrive; if(!k||!k.gate||!a) return null; const g=k.gate; const lo=Math.min(g.x,a.px)-4, hi=Math.max(g.x,a.px)+4; return [lo,hi,g.gy-ARRIVE_H-2,g.gy+1]; }
+function magmaRework(colOk,raw){
+  const m=magma, k=m.keep, sd=(seed|0)+1843, R=mulberry((seed|0)+1842), top=(m.top??magmaY), KB=mrKeepBox(), PB=mrPlazaBox();
+  const g0=k?k.gy:Math.round((top+H)/2), gMin=top+MR_BAND+22, gMax=H-34;
+  const inBox=(b,x,y,pad=0)=>b&&x>=b[0]-pad&&x<=b[1]+pad&&y>=b[2]-pad&&y<=b[3]+pad;
+  const keepX=x=>KB?Math.max(0,KB[0]-x,x-KB[1]):999, plazaX=x=>PB?Math.max(0,PB[0]-x,x-PB[1]):999;
+  const cols=[]; for(let x=m.mx0;x<=m.mx1;x++) if(colOk(x)) cols.push(x); if(!cols.length) return 0;
+  const colSet=new Set(cols);
+  const protect=(x,y)=>inBox(KB,x,y,1)||inBox(PB,x,y,1);
+  // the bottom: rows of bedrock (and the black layer at the top) stay
+  const bedTop=x=>{ let y=H-1; while(y>top&&world[y*W+x]===B.BEDROCK) y--; return y+1; };
+  // what was there: ores (kinds and amounts) and chests
+  const ores=new Map(), oldChests=[]; const oreIds=new Set([...ORE_SET,B.FIRE_OPAL_ORE,B.DIAMOND_ORE,B.STORM_ORE].filter(v=>v!=null));
+  for(const x of cols) for(let y=top+4;y<H;y++){ if(protect(x,y)) continue; const id=world[y*W+x]; if(oreIds.has(id)) ores.set(id,(ores.get(id)||0)+1); }
+  for(const key of Object.keys(chests)){ const [x,y]=key.split(',').map(Number); if(colSet.has(x)&&y>top&&y<H&&!protect(x,y)){ oldChests.push(chests[key]); delete chests[key]; } }
+  // the old bases in these columns go (their guards too)
+  const gone=[]; m.huts=(m.huts||[]).filter(h=>{ const drop=colSet.has(h.x); if(drop) gone.push(h); return !drop; });
+  if(!raw) for(const e of ents) if(!e.dead&&e.team==='m'&&e.home&&gone.some(h=>Math.abs((e.home.cx??-999)-h.x)<3)) e.dead=true;
+  // heights
+  const rawG=x=>g0+Math.round((fbm(x/110,0.5,sd)-0.5)*34+(fbm(x/28,3.3,sd+1)-0.5)*10);
+  const lakeLevel=new Map(); const lakeG=x=>{ const s0=m.mx0+Math.floor((x-m.mx0)/MB_SEG)*MB_SEG; if(!lakeLevel.has(s0)){ let t=0, n=0; for(let xx=s0;xx<s0+MB_SEG;xx+=4){ t+=rawG(xx); n++; } lakeLevel.set(s0,Math.round(t/n)); } return lakeLevel.get(s0); };
+  const gsOf=x=>{ let g=rawG(x); if(magmaBiomeAt(x)==='lakes'){ const s=(x-m.mx0)%MB_SEG, edge=Math.min(s,MB_SEG-1-s), t=Math.min(1,edge/6); g=Math.round(lakeG(x)*t+g*(1-t)); }   // a lake stretch lies level, so its lava does too
+    const d=Math.min(keepX(x),plazaX(x));
+    if(d<MR_FLAT) g=g0; else if(d<MR_FLAT+30){ const t=(d-MR_FLAT)/30; g=Math.round(g0*(1-t)+g*t); } return Math.max(gMin,Math.min(gMax,g)); };
+  const cbOf=(x,g)=>{ let c=top+4+18+Math.round((fbm(x/60,7.7,sd+2)-0.5)*18); const sp=noise2(x/4.5,11.3,sd+3); if(sp>0.6) c+=Math.round((sp-0.6)*55);
+    c=Math.min(c,g-MR_BAND); if(KB&&keepX(x)<12) c=Math.min(c,KB[2]-3); if(PB&&plazaX(x)<10) c=Math.min(c,PB[2]-3); return Math.max(top+5,c); };
+  const GS=new Map(), CB=new Map(); for(const x of cols){ const g=gsOf(x); GS.set(x,g); CB.set(x,cbOf(x,g)); }
+  // lava lakes: basins over most of each lakes stretch, rock islands between
+  const depthOf=x=>{ if(magmaBiomeAt(x)!=='lakes') return 0; const s=(x-m.mx0)%MB_SEG, edge=Math.min(s,MB_SEG-1-s); if(edge<6||Math.min(keepX(x),plazaX(x))<MR_FLAT+30) return 0;
+    const n=fbm(x/26,9.1,sd+8); let d=Math.round(3+(n-0.42)*22); if(edge<16) d=Math.min(d,Math.round((edge-6)*0.8)); return Math.max(0,Math.min(9,d)); };
+  const put=(x,y,id)=>{ const i=y*W+x; world[i]=id; liq[i]=id===B.LAVA?8:0; shape[i]=0; };
+  for(const x of cols){ const g=GS.get(x), c=CB.get(x), bt=bedTop(x), dep=depthOf(x), biome=magmaBiomeAt(x);
+    for(let y=top+4;y<bt;y++){ if(protect(x,y)) continue; const i=y*W+x;
+      const rock=magmaBiomeAt(x+Math.round((fbm(y/9,x/50,sd+9)-0.5)*28))==='gem'?B.GEM_CRUST:MR_ROCK();   // a ragged edge, never a straight line
+      let id;
+      if(y<=c) id=rock;                                   // the ceiling
+      else if(y<g) id=0;                                  // the cavern
+      else if(y<g+dep) id=B.LAVA;                         // a lava lake: a basin in the ground, its surface level with the ground
+      else {                                              // under the ground: rock with tunnels and pockets, lava in the lowest caves
+        id=rock; if(y>g+dep+5&&y<bt-1){ const w=Math.abs(fbm(x/42,y/15,sd+5)-0.5), pk=fbm(x/24,y/11,sd+6); if(w<0.03||pk>0.74) id=y>bt-26?B.LAVA:0; } }
+      put(x,y,id); bg[i]=0; }
+    // the surface of the ground by biome
+    const surf0=g; if(dep===0){ const top1=biome==='forest'?B.ASH_SOIL:biome==='lakes'?B.ASH_ROCK:biome==='gem'?B.GEM_CRUST:B.MAGMA_DIRT; if(!protect(x,surf0)) put(x,surf0,top1); if(biome==='forest'&&!protect(x,surf0+1)) put(x,surf0+1,B.ASH_SOIL); }
+    else for(let y=g+dep;y<=g+dep+1;y++) if(!protect(x,y)) put(x,y,B.ASH_ROCK); }   // the lake bed
+  // shores: lava reeds, and no lava touching open air at a lake's side (rock lip)
+  for(const x of cols){ const dep=depthOf(x); if(dep>0) continue; const g=GS.get(x); for(const dx of [-1,1]){ const nx=x+dx; if(!colSet.has(nx)) continue; if(depthOf(nx)>0&&R()<0.5&&world[(g-1)*W+x]===0) put(x,g-1,B.LAVA_REED); } }
+  // the rock variety (scoria, basalt, obsidian pockets, ember stone) and the biomes' own blocks
+  // gem stretches: fire opal veins, fire crystals on floors and hanging from the ceiling
+  for(const x of cols){ if(magmaBiomeAt(x)!=='gem') continue; const g=GS.get(x), c=CB.get(x);
+    if(R()<0.16&&world[(g-1)*W+x]===0) put(x,g-1,B.FIRE_CRYSTAL); if(R()<0.1&&world[(c+1)*W+x]===0) put(x,c+1,B.FIRE_CRYSTAL);
+    if(R()<0.08){ const y=g+3+((R()*30)|0); for(let v=0;v<4;v++){ const xx=x+((R()*3)|0)-1, yy=y+((R()*3)|0)-1; if(colSet.has(xx)&&yy<H-6&&world[yy*W+xx]===B.GEM_CRUST&&!protect(xx,yy)) put(xx,yy,B.FIRE_OPAL_ORE); } } }
+  // forest stretches: ember trees close together, cinder ferns between
+  for(let i=0;i<cols.length;){ const x=cols[i]; if(magmaBiomeAt(x)!=='forest'||Math.min(keepX(x),plazaX(x))<12){ i++; continue; }
+    const g=GS.get(x); if(world[(g-1)*W+x]===0&&world[g*W+x]===B.ASH_SOIL&&typeof growEmberTree==='function'){ try{ growEmberTree(x,g,R()<0.3?2:1,R); }catch(e){} }
+    for(let s=2;s<5;s++){ const xx=cols[i+s]; if(xx!=null&&R()<0.35&&world[(GS.get(xx)-1)*W+xx]===0) put(xx,GS.get(xx)-1,B.CINDER_FERN); }
+    i+=5+((R()*4)|0); }
+  // the plain stretches: the Burning fields (0.9.184, 98zxz_zz243_burning_fields.js)
+  if(typeof burningDress==='function') try{ burningDress(cols,GS,depthOf,put,R,protect); }catch(e){ console.warn(e); }
+  // ores back as veins in the new rock under the ground (same kinds and amounts)
+  const rockCell=id=>id===B.MAGMA_ROCK||id===B.GEM_CRUST||(typeof MAGMA_HOST!=='undefined'&&MAGMA_HOST.has(id));
+  for(const [id,n] of ores){ let left=n, tries=0; while(left>0&&tries++<n*20){ const x=cols[(R()*cols.length)|0], g=GS.get(x), y=g+3+((R()*Math.max(4,H-g-12))|0);
+      const vn=Math.min(left,2+((R()*4)|0)); let px=x, py=y; for(let v=0;v<vn;v++){ if(colSet.has(px)&&py<H-4&&rockCell(world[py*W+px])&&!protect(px,py)){ put(px,py,id); left--; } px+=((R()*3)|0)-1; py+=((R()*3)|0)-1; } } }
+  // heart and spirit crystals on some floors
+  for(let i=20;i<cols.length;i+=40+((R()*40)|0)){ const x=cols[i], g=GS.get(x); if(depthOf(x)===0&&world[(g-1)*W+x]===0&&Math.min(keepX(x),plazaX(x))>8) put(x,g-1,R()<0.5?B.LIFE_CR:B.MANA_CR); }
+  // the bases: on the ground, spread out
+  const huts=[]; const hutOk=x=>{ for(let dx=-9;dx<=9;dx++){ const xx=x+dx; if(!colSet.has(xx)||depthOf(xx)>0||Math.min(keepX(xx),plazaX(xx))<40) return false; } return !(m.huts||[]).some(h=>Math.abs(h.x-x)<MR_HUT_GAP); };
+  for(let i=30;i<cols.length-30;){ const x=cols[i]; if(!hutOk(x)){ i+=6; continue; } const gy=GS.get(x);
+    for(let xx=x-8;xx<=x+8;xx++){ for(let y=CB.get(xx)+1;y<gy;y++) if(y>gy-12) put(xx,y,0); for(let y=gy;y<gy+4;y++) if(!BLOCKS[world[y*W+xx]].solid) put(xx,y,MR_ROCK()); put(xx,gy,B.MAGMA_DIRT); }
+    for(let y=gy-6;y<gy;y++){ put(x-5,y,B.RED_BRICK); put(x+5,y,B.RED_BRICK); for(let xx=x-4;xx<=x+4;xx++) bg[y*W+xx]=8; } for(let xx=x-6;xx<=x+6;xx++) put(xx,gy-7,B.OBSIDIAN);
+    door((a,b,id)=>put(a,b,id),x-5,gy); put(x,gy-4,B.TORCH); const h={x,gy}; huts.push(h); m.huts.push(h); i+=MR_HUT_GAP+((R()*60)|0); }
+  // chests that stood in these columns: on new floors, with what they held
+  for(const c of oldChests){ for(let t=0;t<40;t++){ const x=cols[(R()*cols.length)|0], g=GS.get(x); if(depthOf(x)>0||world[(g-1)*W+x]!==0||Math.min(keepX(x),plazaX(x))<12||m.huts.some(h=>Math.abs(h.x-x)<10)) continue; put(x,g-1,B.CHEST); chests[x+','+(g-1)]=c; break; } }
+  // guards for the new bases in a world already played
+  if(!raw) for(const h of huts) for(let q=0;q<2;q++) ents.push(makeHuman('m',MAGMA_CLS[(Math.random()*4)|0],(h.x-2+q*4)*T,h.gy*T-29,'guard',{cx:h.x,gy:h.gy,x0:h.x-8,x1:h.x+8}));
+  return cols.length; }
+function magmaReworkAll(raw){ if(!magma||!magma.keep||magma.rework184) return 0; magma.rework184=1; const top=magma.top??magmaY;
+  let colOk;
+  if(raw) colOk=()=>true;
+  else { const ok=new Set(); for(let x0=magma.mx0;x0<=magma.mx1;x0+=MR_CHUNK){ let n=0, seen=0; const x1=Math.min(magma.mx1,x0+MR_CHUNK-1);
+      for(let x=x0;x<=x1;x++) for(let y=top+4;y<H;y+=2){ n++; if(explored[y*W+x]) seen++; } if(seen/n<0.02) for(let x=x0;x<=x1;x++) ok.add(x); }
+    colOk=x=>ok.has(x); }
+  const n=magmaRework(colOk,raw);
+  // the rock variety, plants, the arrival plaza and the lava at the bottom are made again over the new ground
+  try{ if(typeof magmaVariety==='function') magmaVariety(!raw); }catch(e){ console.warn(e); }
+  try{ if(typeof magmaPlants==='function') magmaPlants(mulberry((seed|0)+1844),!raw); }catch(e){ console.warn(e); }
+  try{ const put=(x,y,id)=>{ if(x<0||x>=W||y<0||y>=H) return; world[y*W+x]=id; liq[y*W+x]=id===B.LAVA?8:0; }, get=(x,y)=>(x<0||x>=W||y<0||y>=H)?B.BEDROCK:world[y*W+x];
+    magma.arrive184=0; magmaArrivePlaza(put,get); magma.lava184=0; magmaBottomLava(!raw,put,get); }catch(e){ console.warn(e); }
+  if(!raw){ for(const e of ents){ if(e.dead||e.kind==='player') continue; const tx=Math.floor(cxOf(e)/T), ty=Math.floor(cyOf(e)/T); if(tx<magma.mx0||tx>magma.mx1||ty<top) continue; try{ if(inSolidBlock(e)) freeSpotFor(e); }catch(err){} }
+    for(let x=magma.mx0;x<=magma.mx1;x++) for(let y=top;y<H;y++) if(explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(magma&&magma.keep&&!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())) magmaReworkAll(true); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(magma&&magma.keep&&!magma.rework184&&home&&!isGuest()&&!home.tutorial&&!home.editor) magmaReworkAll(false); }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-10 (screenshot: fire crystals floating in the magma realm): "Fix these emeralds so they are placed
+// correctly and also make it so that there is an area that is a "burning" area that has a bunch of fire that just burns
+// alongside the lava and make these like burning plants essentially" =====
+// 1. Fire crystals: one under a ceiling hangs point down (it was drawn standing up, so it looked like it floated under the rock);
+//    one with rock neither under nor over it is gone (pieces left when caves were carved later), on every start. The same tidy
+//    for the realm's other ground plants (cinder ferns, lava reeds, the burning plants) that lost their ground.
+// 2. The Burning fields: the magma realm's plain stretches (between the lava lakes, the magma forest and the gem caverns) are
+//    scorched ground dotted with small lava pools, and Burning shrubs and Flame stalks that are always on fire grow all over it,
+//    thickest along the lava. They glow, lava does not hurt them, and walking through one sets you burning (a fire ward stops
+//    it). You can dig them up and plant them anywhere; they keep burning but never spread fire. Fixed ids 2387-2388.
+B.BURN_SHRUB=2387; B.FLAME_STALK=2388;
+defB(B.BURN_SHRUB,{name:'Burning shrub',solid:false,hard:0.3,col:'#c8541a',light:6,place:true});
+defB(B.FLAME_STALK,{name:'Flame stalk',solid:false,hard:0.2,col:'#ff8a2a',light:6,place:true});
+TEX[B.BURN_SHRUB]=obsTex((r,p)=>{ r(3,10,10,6,'#3a2420'); r(2,12,12,4,'#2a1a18'); for(const [x,y] of [[4,9],[7,8],[10,9],[5,12],[9,11],[12,12]]){ p(x,y,'#ff7a2a'); p(x,y-1,'#ffd27a'); } r(0,15,16,1,'#1a1010'); });
+TEX[B.FLAME_STALK]=obsTex((r,p)=>{ r(7,5,2,11,'#3a2420'); r(7,5,1,11,'#5a3428'); for(const [x,y] of [[5,9],[10,7],[5,12],[10,11]]){ r(x,y,2,1,'#3a2420'); p(x+(x<7?0:1),y-1,'#ff7a2a'); } p(7,4,'#ffd27a'); p(8,4,'#ff9a3a'); });
+const BURN_PLANTS=new Set([B.BURN_SHRUB,B.FLAME_STALK]);
+for(const [id,nm,desc,sell] of [[B.BURN_SHRUB,'Burning shrub','A charred shrub that never stops burning, from the Burning fields of the magma realm. Lava cannot hurt it, it never spreads fire, and walking through it sets you alight',6],
+  [B.FLAME_STALK,'Flame stalk','A thin stalk crowned with a flame that never goes out, from the Burning fields of the magma realm. It lights the dark and burns anyone who walks through it',6]]){ ITEMS[id]={name:nm,kind:'block',desc}; SELL[id]=sell; }
+for(const id of BURN_PLANTS){ for(const S of [PLANTS,NEEDS_GROUND,PASS]) try{ S.add(id); }catch(e){} try{ LAVA_IMMUNE.add(id); LAVA_EATS.delete(id); }catch(e){} }
+try{ if(SHOPS.herbalist) SHOPS.herbalist.stock.push([B.BURN_SHRUB,1,30]); }catch(e){}
+// their flames, drawn over the plants every frame
+function drawBurnPlants(){ if(!world) return; const tx0=Math.max(0,Math.floor(camX/T)-1), tx1=Math.min(W-1,Math.floor((camX+viewW)/T)+1), ty0=Math.max(0,Math.floor(camY/T)-1), ty1=Math.min(H-1,Math.floor((camY+viewH)/T)+1), t=performance.now()/1000;
+  for(let y=ty0;y<=ty1;y++) for(let x=tx0;x<=tx1;x++){ const id=world[y*W+x]; if(!BURN_PLANTS.has(id)) continue; const X=x*T, Y=y*T;
+    const pts=id===B.BURN_SHRUB?[[4,8],[8,6],[12,8]]:[[8,3]];
+    for(const [fx,fy] of pts){ const f=Math.sin(t*11+x*1.7+fx)*0.6+Math.sin(t*7.1+y+fx*0.5)*0.4, h=id===B.FLAME_STALK?7:6;
+      ctx.fillStyle='rgba(255,170,60,0.22)'; ctx.fillRect(X+fx-3,Y+fy-h-1,7,h+3);
+      ctx.fillStyle='#ff5a14'; ctx.fillRect(X+fx-2,Y+fy-h+2+(f>0.2?-1:0),4,h-1);
+      ctx.fillStyle='#ffb43a'; ctx.fillRect(X+fx-1,Y+fy-h+3+(f>0?0:1),2,h-3);
+      ctx.fillStyle='#fff2a8'; ctx.fillRect(X+fx,Y+fy-2,1,2); } } }
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ drawBurnPlants(); }catch(e){} return r; }; }
+// walking through one sets you burning
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const r=_up(dt,...a); try{ const p=player; if(p&&!p.dead&&!(p.gear&&p.gear.ward)){ const x0=Math.floor((p.x+2)/T), x1=Math.floor((p.x+p.w-2)/T), y0=Math.floor(p.y/T), y1=Math.floor((p.y+p.h-1)/T);
+        for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) if(BURN_PLANTS.has(tileAt(x,y))){ p.burnT=Math.max(p.burnT||0,1.5); y=y1+1; break; } } }catch(e){} return r; }; }
+// fire crystals under a ceiling hang point down
+const CRYSTAL_DOWN=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.translate(0,16); g.scale(1,-1); g.drawImage(TEX[B.FIRE_CRYSTAL],0,0); return c; })();
+ORE_LOOK.add(B.FIRE_CRYSTAL);
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(id===B.FIRE_CRYSTAL){ const dn=tileAt(x,y+1), up=tileAt(x,y-1); return !(BLOCKS[dn]&&BLOCKS[dn].solid)&&BLOCKS[up]&&BLOCKS[up].solid?CRYSTAL_DOWN:TEX[id]; } return _tt(x,y,id,...a); }; }
+// tidy: realm plants with nothing to stand on (or, for a crystal, nothing to hang from) go
+const REALM_GROUND=new Set([B.FIRE_CRYSTAL,B.CINDER_FERN,B.LAVA_REED,...BURN_PLANTS]);
+function realmPlantTidy(put){ if(!world||typeof magmaY==='undefined') return 0; let n=0; for(let y=magmaY;y<H-1;y++) for(let x=1;x<W-1;x++){ const i=y*W+x, id=world[i]; if(!REALM_GROUND.has(id)) continue;
+    const dn=world[i+W], up=world[i-W], sDn=BLOCKS[dn]&&BLOCKS[dn].solid, sUp=BLOCKS[up]&&BLOCKS[up].solid;
+    if(sDn||(id===B.FIRE_CRYSTAL&&sUp)||(id===B.LAVA_REED&&dn===B.LAVA)) continue; put(x,y,0); n++; } return n; }
+// ---- the Burning fields (called by the realm's rework, 0.9.184) ----
+function burningDress(cols,GS,depthOf,put,R,protect){ const isPlain=x=>!magmaBiomeAt(x); const ok=x=>GS.has(x)&&isPlain(x)&&depthOf(x)===0;
+  for(const x of cols){ if(!ok(x)) continue; const g=GS.get(x); if(!protect(x,g)) put(x,g,B.SCORCHED); }
+  // small lava pools
+  for(let i=0;i<cols.length;){ const x=cols[i]; if(!ok(x)||!ok(x-3)||!ok(x+8)){ i++; continue; } const w=3+((R()*5)|0), g=GS.get(x); let flat=true; for(let dx=-1;dx<=w;dx++) if(GS.get(x+dx)!==g) flat=false;
+    if(flat&&R()<0.6){ for(let dx=0;dx<w;dx++){ const d=dx===0||dx===w-1?1:2; for(let k=0;k<d;k++) if(!protect(x+dx,g+k)) put(x+dx,g+k,B.LAVA); if(!protect(x+dx,g+d)) put(x+dx,g+d,B.SCORCHED); } }
+    i+=12+((R()*14)|0); }
+  // burning plants, thickest by the lava
+  for(const x of cols){ if(!ok(x)) continue; const g=GS.get(x); if(world[(g-1)*W+x]!==0||world[g*W+x]===B.LAVA) continue;
+    let nearLava=false; for(let dx=-3;dx<=3;dx++) if(world[g*W+x+dx]===B.LAVA) nearLava=true;
+    if(R()<(nearLava?0.6:0.2)) put(x,g-1,R()<0.6?B.BURN_SHRUB:B.FLAME_STALK); } }
+// older worlds: the tidy every start (the rework dresses the burning fields in the stretches it makes again)
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&!isGuest()) realmPlantTidy((x,y,id)=>{ world[y*W+x]=id; if(explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} }); }catch(e){ console.warn(e); } return r; }; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ realmPlantTidy((x,y,id)=>{ world[y*W+x]=id; }); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.184, second half (Kinard, 2026-11-10) =====
+// "Make sure the smoke appears at any angle for the player to see it ... make it so that platforms down there are made of magma
+// stone or another natural block in the magma realm also make it so that the magma dogs or animals are more lava inspired and have
+// some distinct differences from the other animals", "Please fix the towers so they are not floating like this", "Make it so that
+// vorthax lair is lit up (by a natural source in the background wall)", "fix the design for the pile of bones so they don't have a
+// face on them", "Make it so that torches and bones do not spawn under the gold pile".
+// 1. Castle fog: the keep's and the sky castle's fog is drawn whenever any part of the castle is on screen (fogCastleNear), not
+//    only within 220 blocks of the castle's middle: from the far end of the magma keep the fog was missing.
+// 2. Basalt ledges (fixed id 2389): every wood platform in the magma realm is a ledge of basalt. They work like platforms (stand on
+//    them, drop through them), lava never burns them, and digging one gives a Basalt ledge you can place anywhere. New worlds at the
+//    end of making the world, older worlds once (magma.ledge184).
+// 3. Ash wolves are lava hounds: black basalt hide split by glowing lava cracks, a burning mane and a flaming tail, yellow eyes,
+//    glowing jaws and embers rising off them. They glow in the dark, their bite sets you burning, and they (with every other
+//    creature of the magma realm) swim through lava unharmed.
+// 4. Towers never float: every enemy watchtower, lookout and outpost tower gets solid stone under its whole footprint down to the
+//    ground (logs and plants in the way go). On every start, each morning and every few seconds for towers near you.
+// 5. Vorthax's lair is lit by lava veins: glowing cracks of lava run through the rock wall behind the cavern (back wall 248) and
+//    light it. New worlds and older worlds once (lair.glow184).
+// 6. The Pile of bones is a heap of broken, weathered bones lying on the ground, no skull.
+// 7. No torch or pile of bones under or against Vorthax's gold heap; the gold settles into the gap.
+
+// ---- 1. fog for any castle on screen ----
+function fogCastleNear(c){ if(!c) return false; const x0=c.x0??(c.cx-130), x1=c.x1??(c.cx+130), y0=(c.top??(c.gy-60))-30, y1=(c.gy??0)+30;
+  const v0=camX/T-30, v1=(camX+viewW)/T+30, w0=camY/T-30, w1=(camY+viewH)/T+30; return x1>=v0&&x0<=v1&&y1>=w0&&y0<=w1; }
+
+// ---- 2. basalt ledges ----
+B.BASALT_LEDGE=2389;
+defB(B.BASALT_LEDGE,{name:'Basalt ledge',solid:false,platform:true,hard:0.6,col:'#2a2a30'});
+TEX[B.BASALT_LEDGE]=obsTex((r,p)=>{ r(0,0,16,4,'#2c2c32'); r(0,0,16,1,'#4a4a54'); r(0,3,16,1,'#18181c'); for(const x of [0,5,10,15]) r(x,1,1,2,'#1a1a1e');
+  p(3,1,'#3c3c44'); p(8,2,'#3c3c44'); p(12,1,'#3c3c44'); r(2,4,3,1,'#202024'); r(3,5,1,1,'#18181c'); r(11,4,3,1,'#202024'); r(12,5,1,1,'#18181c'); });
+ITEMS[B.BASALT_LEDGE]={name:'Basalt ledge',kind:'block',desc:'A thin shelf of basalt from the magma realm. Stand on it or drop through it like a platform; lava never burns it'}; SELL[B.BASALT_LEDGE]=1;
+RECIPES.push({out:B.BASALT_LEDGE,n:2,need:[[B.BASALT,1]],cat:'build'});
+try{ for(const S of [PASS,WET_SHOW]) if(S&&S.has&&S.has(B.PLATFORM)) S.add(B.BASALT_LEDGE); }catch(e){}
+try{ LAVA_EATS.delete(B.BASALT_LEDGE); LAVA_IMMUNE.add(B.BASALT_LEDGE); }catch(e){}
+function magmaLedges(put){ if(!world||typeof magmaY==='undefined'||!magma) return 0; let n=0; for(let y=magmaY;y<H;y++) for(let x=0;x<W;x++) if(world[y*W+x]===B.PLATFORM){ put(x,y,B.BASALT_LEDGE); n++; } magma.ledge184=1; return n; }
+
+// ---- 3. lava hounds ----
+const MAGMA_KINDS=new Set(['ash_wolf','char_treant','lava_serpent','cinder_crab','ruby_golem','opal_scorpion','magma_salamander','ash_wraith','obsidian_beetle']);
+{ const _ls=lavaSafe; lavaSafe=function(e,...a){ if(e&&e.kind==='monster'&&MAGMA_KINDS.has(e.mtype)) return true; return _ls(e,...a); }; }
+{ const _mm=makeMonster; makeMonster=function(type,...a){ const m=_mm(type,...a); if(m&&type==='ash_wolf') m.glow=2.5; return m; }; }
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ const r=_dmg(t,amt,src,kb,...a); try{ if(src&&src.mtype==='ash_wolf'&&t&&!t.dead&&!(t.gear&&t.gear.ward)){ if(!(t.burnT>0)&&t===player) addFloat(cxOf(t),t.y-10,'burning bite','#ff8a2a'); t.burnT=Math.max(t.burnT||0,2); } }catch(e){} return r; }; }
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ if(o.look!=='ash_wolf') return _hf(g,o,...a);
+    const R=fig(g,SCX-11,SFY-14), f=o.frame||0, s=f%2, atk=o.atk, hide='#24201f', hide2='#3a3230', crack='#ff6a1a', hot='#ffd23a';
+    // flaming tail (flicks with the stride)
+    R(-4,2+s,5,3,'#c8401a'); R(-5,1+s,3,2,'#ff7a2a'); R(-6,0+s,2,1,hot); R(-3,3+s,2,1,'#fff2a8'); R(0,4,4,2,hide);
+    // legs: basalt with glowing paws
+    for(const [x,k] of [[4,s],[8,1-s],[15,s],[18,1-s]]){ R(x,10,2,4-k,hide); R(x,13-k,2,1,crack); }
+    // body: dark hide split by lava cracks
+    R(3,4,17,7,hide); R(3,10,17,1,'#181414'); R(4,4,14,1,hide2);
+    R(5,6,3,1,crack); R(7,7,1,2,crack); R(10,8,4,1,crack); R(13,7,1,1,crack); R(15,5,1,3,crack); R(16,8,2,1,crack); R(6,9,2,1,'#c8401a'); R(15,6,1,1,hot); R(11,8,1,1,hot);
+    // burning mane along the back
+    R(4,2,3,2,'#c8401a'); R(8,1,3,3,'#ff6a1a'); R(12,2,3,2,'#ff5a14'); R(16,1,3,3,'#ff7a2a'); R(9,0,1,1,hot); R(17,0,1,1,hot); R(5,1,1,1,'#ff9a3a'); R(13,1,1,1,'#ff9a3a');
+    // head: ears, burning eye, molten jaw
+    R(18,2,6,6,hide); R(18,2,6,1,hide2); R(19,0,2,2,hide); R(22,0,2,2,hide); R(19,0,1,1,crack); R(23,0,1,1,crack);
+    R(21,3,2,1,'#ffe066'); R(22,3,1,1,'#ffffff'); R(24,5,2,2,hide); R(23,7+(atk?1:0),3,1,crack); R(19,6,1,1,'#c8401a');
+    if(atk){ R(26,5,2,3,hot); R(28,6,2,1,'#ff7a2a'); }
+    return; }; }
+// embers rising off a hound, drawn every frame
+{ const _de=drawEntity; drawEntity=function(e,...a){ const r=_de(e,...a); try{ if(e&&!e.dead&&e.mtype==='ash_wolf'){ const t=performance.now()/1000, x=cxOf(e), y=e.y;
+        for(let k=0;k<3;k++){ const ph=(t*0.9+k/3+((e.nid||0)%7)*0.13)%1; ctx.globalAlpha=1-ph; ctx.fillStyle=k===1?'#ffd23a':'#ff7a2a';
+          ctx.fillRect(Math.round(x-6+k*6+Math.sin(t*3+k)*2),Math.round(y+2-ph*12),1,1); } ctx.globalAlpha=1; } }catch(err){ ctx.globalAlpha=1; } return r; }; }
+
+// ---- 4. towers on solid ground ----
+const FOOT_ROWS=48;
+function towerList(){ const L=[]; try{ for(const t of allEnemyTowers()) L.push(t); }catch(e){} for(const b of bases||[]) for(const o of b.outposts||[]) if(o&&o.x!=null&&o.gy!=null) L.push(o); return L; }
+const footOpen=id=>!id||(BLOCKS[id]&&!BLOCKS[id].solid&&id!==B.LAVA)||id===B.WATER||(typeof TREEISH!=='undefined'&&TREEISH.has(id));
+function towerFoot(t,get,put){ if(!t||t.x==null||t.gy==null) return 0; const x=t.x, gy=t.gy; const wall=get(x-3,gy-3); const mat=BLOCKS[wall]&&BLOCKS[wall].solid&&!DOOR_IDS.has(wall)?wall:B.STONE_BLOCK;
+  // the first row of the tower's own floor that is open, then down to the ground; skip a tower over the sea or a chasm
+  const plan=[]; for(let dx=-4;dx<=4;dx++){ let y=gy; while(y<gy+3&&!footOpen(get(x+dx,y))) y++; if(y>=gy+3){ y=gy+3; } let k=y, n=0; while(n<FOOT_ROWS&&k<H-1&&footOpen(get(x+dx,k))){ k++; n++; }
+    if(n>=FOOT_ROWS) return 0; if(n) plan.push([x+dx,y,k]); }
+  let c=0; for(const [xx,y0,y1] of plan) for(let y=y0;y<y1;y++){ put(xx,y,mat); c++; }
+  return c; }
+function towersFootAll(near){ if(!world||isGuest()) return 0; const px=player?cxOf(player)/T:0; let n=0;
+  const get=(x,y)=>tileAt(x,y), put=(x,y,id)=>setTile(x,y,id);
+  facRun(()=>{ for(const t of towerList()){ if(near&&Math.abs(t.x-px)>110) continue; n+=towerFoot(t,get,put); } }); return n; }
+let footT=0;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&world&&!isGuest()&&(footT-=dt)<=0){ footT=5; towersFootAll(true); } }catch(e){ console.warn(e); } return r; }; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ towersFootAll(false); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 5. lava veins in the lair's back wall ----
+const EMBER_BG=248;
+if(BGTEX[EMBER_BG]) console.warn('lair: back wall 248 taken');
+function emberWallTex(base){ const c=mkCanvas(16,16), g=c.getContext('2d'); if(base) g.drawImage(base,0,0); else { g.fillStyle='#2a1c1a'; g.fillRect(0,0,16,16); }
+  const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  // a crack of lava that meets the next block's crack at both sides (row 7), with a short branch
+  for(const [x,y,w,h,col] of [[0,6,16,3,'rgba(20,6,4,0.55)'],[0,7,4,1,'#ff6a1a'],[3,6,3,1,'#ff6a1a'],[5,5,1,1,'#ffb02a'],[6,5,4,1,'#ff6a1a'],[9,6,1,1,'#ff6a1a'],[10,7,6,1,'#ff6a1a'],
+      [7,5,1,1,'#ffe08a'],[12,7,1,1,'#ffe08a'],[9,7,1,3,'#c8401a'],[8,10,1,2,'#c8401a'],[2,7,1,1,'#ffb02a']]) r(x,y,w,h,col);
+  return c; }
+BGTEX[EMBER_BG]=emberWallTex(null);
+function lairVeinBase(){ if(!lair||lair.rx0==null) return 0; const cnt=new Map(); for(let y=lair.ry0;y<=lair.ry1;y+=2) for(let x=lair.rx0;x<=lair.rx1;x+=2){ const v=bg[y*W+x]; if(v&&v!==EMBER_BG) cnt.set(v,(cnt.get(v)||0)+1); }
+  let best=0, bn=0; for(const [v,n] of cnt) if(n>bn){ bn=n; best=v; } return best; }
+function emberWallSync(){ try{ if(!lair) return; if(!lair.veinBase) lair.veinBase=lairVeinBase(); BGTEX[EMBER_BG]=emberWallTex(BGTEX[lair.veinBase]||null); }catch(e){ console.warn(e); } }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); emberWallSync(); return r; }; }
+function lairVeinCell(x,y){ const n=noise2(x/9,y/6,(seed|0)+2480); return Math.abs(n-0.5)<0.035; }
+function lairGlow(){ if(!lair||lair.rx0==null) return 0; let n=0; lair.veinBase=lair.veinBase||lairVeinBase(); const sd=(seed|0)+2481;
+  for(let y=lair.ry0-2;y<=lair.ry1+1;y++) for(let x=lair.rx0-2;x<=lair.rx1+2;x++){ const i=y*W+x; if(!bg[i]||bg[i]===EMBER_BG) continue; if(world[i]&&BLOCKS[world[i]]&&BLOCKS[world[i]].solid) continue;
+      if(lairVeinCell(x,y)||noise2(x/2.3,y/2.3,sd)>0.86){ bg[i]=EMBER_BG; n++; } }
+  lair.glow184=1; emberWallSync(); return n; }
+function extraLights(addLight,tx0,tx1,ty0,ty1){ const m=4; for(let y=Math.max(0,ty0-m);y<=Math.min(H-1,ty1+m);y++){ const row=y*W; for(let x=Math.max(0,tx0-m);x<=Math.min(W-1,tx1+m);x++){
+      if(bg[row+x]!==EMBER_BG) continue; const id=world[row+x]; if(id&&BLOCKS[id]&&BLOCKS[id].solid) continue; addLight(x+0.5,y+0.5,4,0.62); } } }
+
+// ---- 6. a pile of bones without a face ----
+TEX[B.BONE_PILE]=obsTex((r,p)=>{ const b='#e2d8bc', d='#b0a486', s='#7e735c', k='#5a5242';
+  r(1,15,14,1,'#4a4236');
+  // a long bone lying flat, knobbed at both ends
+  r(2,13,10,2,b); r(2,14,10,1,d); r(0,12,3,4,b); r(0,15,3,1,d); p(1,13,d); r(11,12,3,3,b); r(11,14,3,1,d); p(12,12,d); p(6,13,k); p(9,14,s);
+  // a broken bone across it, the snapped end jagged
+  for(let i=0;i<7;i++){ r(4+i,11-i,2,1,b); p(4+i,12-i,d); } r(11,3,3,3,b); p(13,4,d); p(12,5,d); p(3,11,b); p(2,12,s); p(4,10,d); p(5,11,k);
+  // rib fragments and chips
+  p(14,9,b); p(15,10,b); p(15,11,d); p(13,10,d); p(12,9,b); r(13,14,2,1,d); p(7,15,d); p(15,14,b); p(1,11,d); p(8,8,s); });
+
+// ---- 7. nothing under the gold heap ----
+function lairGoldTidy(put){ if(!lair||lair.rx0==null) return 0; let n=0; const isGold=(x,y)=>tileAt(x,y)===B.GOLDPILE;
+  for(let y=lair.ry0-2;y<=lair.ry1+2;y++) for(let x=lair.rx0-2;x<=lair.rx1+2;x++){ const id=tileAt(x,y); if(id!==B.TORCH&&id!==B.BONE_PILE&&!(B.FENCE_TORCH&&id===B.FENCE_TORCH)) continue;
+      let under=isGold(x-1,y)||isGold(x+1,y); for(let k=1;k<=16&&!under;k++){ const a=tileAt(x,y-k); if(a===B.GOLDPILE) under=true; else if(a&&BLOCKS[a]&&BLOCKS[a].solid) break; }
+      if(under){ put(x,y,0); n++; } }
+  return n; }
+let goldTidyT=0;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&lair&&player&&!isGuest()&&(goldTidyT-=dt)<=0){ goldTidyT=3; const tx=cxOf(player)/T, ty=cyOf(player)/T;
+        if(tx>lair.rx0-60&&tx<lair.rx1+60&&ty>lair.ry0-40&&ty<lair.ry1+30) facRun(()=>lairGoldTidy((x,y,id)=>setTile(x,y,id))); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- new worlds and older worlds ----
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())){
+        const get=(x,y)=>(x<0||x>=W||y<0||y>=H)?B.BEDROCK:world[y*W+x], put=(x,y,id)=>{ if(x>=0&&x<W&&y>=0&&y<H){ world[y*W+x]=id; liq[y*W+x]=0; } };
+        for(const t of towerList()) towerFoot(t,get,put);
+        lairGlow(); lairGoldTidy(put); magmaLedges(put); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&!isGuest()&&home&&!home.tutorial&&!home.editor){
+        towersFootAll(false);
+        facRun(()=>{ if(lair&&!lair.glow184) lairGlow(); lairGoldTidy((x,y,id)=>setTile(x,y,id)); if(magma) magmaLedges((x,y,id)=>setTile(x,y,id));   /* every start: a keep rebuilt later is built with wood platforms */ }); } }catch(e){ console.warn(e); } return r; }; }
+
+// ---- 8. lava near you flows first; the realm's lava settles when the world is made ----
+// The reworked magma realm starts with thousands of lava cells still finding their level. Lava steps bottom first with a budget,
+// so that lava kept lava near you (a pool you dug into, a lava fall) waiting. Lava within LAVA_NEAR_X x LAVA_NEAR_Y blocks of a
+// player now steps first, the rest with what is left; and a new world lets the realm's lava settle first (LAVA_SETTLE steps, at
+// most LAVA_SETTLE_MS), older worlds once after their realm was reworked (magma.settle184).
+const LAVA_NEAR_X=90, LAVA_NEAR_Y=60, LAVA_SETTLE=160, LAVA_SETTLE_MS=1500;
+function lavaPlayers(){ const L=[]; if(player&&!player.dead) L.push([cxOf(player)/T,cyOf(player)/T]); try{ if(typeof MP!=='undefined'&&MP.on&&MP.remote) for(const r of Object.values(MP.remote)) if(r&&r.x!=null) L.push([r.x/T,r.y/T]); }catch(e){} return L; }
+{ const _s2=stepLava2; stepLava2=function(budget,...a){ if(state!=='play'||lavaAct.size<=budget) return _s2(budget,...a); const ps=lavaPlayers(); if(!ps.length) return _s2(budget,...a);
+    const near=[], far=[]; for(const i of lavaAct){ const x=i%W, y=(i/W)|0; (ps.some(([px,py])=>Math.abs(x-px)<=LAVA_NEAR_X&&Math.abs(y-py)<=LAVA_NEAR_Y)?near:far).push(i); }
+    if(!near.length) return _s2(budget,...a);
+    lavaAct=new Set(near); _s2(budget,...a); const kept=lavaAct; lavaAct=new Set(far); const left=budget-near.length; if(left>100) _s2(left,...a); for(const i of kept) lavaAct.add(i); }; }
+function lavaSettle(){ if(!world||!lavaAct) return 0; try{ wakeAllLava(); }catch(e){} const t0=performance.now(); let k=0; while(lavaAct.size&&k<LAVA_SETTLE&&performance.now()-t0<LAVA_SETTLE_MS){ stepLava2(100000); k++; } return k; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(magma&&!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())){ const st=state; state='gen'; try{ lavaSettle(); } finally{ state=st; } magma.settle184=1; } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(magma&&!magma.settle184&&!isGuest()&&home&&!home.tutorial&&!home.editor){ magma.settle184=1; facRun(()=>lavaSettle()); } }catch(e){ console.warn(e); } return r; }; }
+{ const _rb=rebuildCastle; rebuildCastle=function(realm,...a){ const r=_rb(realm,...a); try{ if(realm==='magma'&&!isGuest()) facRun(()=>magmaLedges((x,y,id)=>setTile(x,y,id))); }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-10: "Make it so that the battle plan option is at the entrance and so that there is a door or trap door the
+// player must interact with prior to getting into the enemies fortress make it so that next to that there is the sign so that the
+// player can choose how he would like to tackle the battle also decrease the other enemies that spawn with the magma king by 50% and
+// make the soldiers that normally spawn with him already be placed there to fight also make it so that the magma base is surrounded
+// by natural structures so it looks like it's solidly inside of blocks vs just a floating fortress" =====
+// 1. The Magma Knight's keep has a shut gate: walking into it no longer opens it (for you or your soldiers). Tap it, or stand by it
+//    and press Talk (F), to open it; after that it opens like any door. The Battle plan sign stands just outside the gate, so you
+//    choose Ambush, Waves or Charge before you go in. New worlds, and older worlds once (c.signV184m).
+// 2. Half the guards that stand with the Magma Knight in his throne room (3 in place of 6), and the two knights he used to call at
+//    half health are in the room from the start (held with the others until you investigate the throne); he no longer calls more.
+// 3. The keep sits inside the rock: the open cavern around it is filled with the realm's own rock (scoria, basalt, magma rock) in a
+//    rounded mass from its sides and roof out to KEEP_ROCK_X / KEEP_ROCK_Y blocks, leaving the gate's passage and the arrival plaza
+//    open as a cave mouth. New worlds, and older worlds once (c.rock184).
+const KEEP_ROCK_X=40, KEEP_ROCK_Y=28, GATE_PASS_H=8;
+function keepGateInfo(){ const c=magma&&magma.keep; if(!c||!c.gate) return null; const g=c.gate, dir=g.x>=c.x1?1:-1; return {c,g,dir}; }
+// ---- 1. the gate and the sign ----
+function isKeepGate(x,y){ const k=keepGateInfo(); if(!k) return false; return x===k.g.x&&y>=k.g.gy-3&&y<=k.g.gy; }
+function gateShut(){ const k=keepGateInfo(); return !!k&&!k.c.cleared&&!k.c.gateOpened&&rules.mode!=='creative'; }
+let gateHintT=0;
+{ const _td=tryDoorAhead; tryDoorAhead=function(e,dir,...a){ try{ if(e&&(e===player||(player&&e.team===player.team))&&gateShut()){ const k=keepGateInfo(); const col=dir>0?Math.floor((e.x+e.w+1)/T):Math.floor((e.x-1)/T);
+        if(col===k.g.x&&Math.abs((e.y+e.h)/T-k.g.gy)<4){ if(e===player&&performance.now()>gateHintT){ gateHintT=performance.now()+4000; toast((document.body.classList.contains('touch'))?'The gate is shut: tap it to open it':'The gate is shut: click it or press Talk to open it',3); } return false; } } }catch(err){} return _td(e,dir,...a); }; }
+{ const _sd=setDoor; setDoor=function(x,y,open,...a){ const r=_sd(x,y,open,...a); try{ if(r&&open&&isKeepGate(x,doorBottom(x,y))){ const k=keepGateInfo(); if(player&&Math.abs(cxOf(player)/T-k.g.x)<6) k.c.gateOpened=1; } }catch(e){} return r; }; }
+function gateNear(){ const k=keepGateInfo(); if(!k||!gateShut()||!player||player.dead) return null; const tx=cxOf(player)/T, ty=(player.y+player.h)/T;
+  if(Math.abs(tx-(k.g.x+0.5))>3.5||Math.abs(ty-k.g.gy)>3) return null; return k; }
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const k=gateNear(); if(k) o.push({label:'Open the gate',direct:true,go:()=>{ k.c.gateOpened=1; setDoor(k.g.x,k.g.gy-1,true); sfx('door'); }}); }catch(e){} return o; }; }
+function keepSignSpot(get){ const k=keepGateInfo(); if(!k) return null; for(const d of [2,3,1,4]){ const x=k.g.x+k.dir*d, y=k.g.gy-1; const id=get(x,y), below=get(x,y+1);
+    if((id===0||id===B.SIGN)&&BLOCKS[below]&&BLOCKS[below].solid&&!BLOCKS[below].platform) return {x,y}; } return null; }
+{ const _ps=planSignSpot; planSignSpot=function(c,...a){ try{ if(magma&&c===magma.keep){ const s=keepSignSpot((x,y)=>tileAt(x,y)); if(s) return s; } }catch(e){ console.warn(e); } return _ps(c,...a); }; }
+function moveKeepSign(get,put){ const k=keepGateInfo(); if(!k||k.c.cleared) return false; const c=k.c; const want=keepSignSpot(get); if(!want) return false; c.signV184m=1; home.signs=home.signs||{};
+  const s=c.planSign; if(s&&!(s.x===want.x&&s.y===want.y)){ if(get(s.x,s.y)===B.SIGN) put(s.x,s.y,0); try{ delete home.signs[s.x+','+s.y]; }catch(e){} }
+  put(want.x,want.y,B.SIGN); home.signs[want.x+','+want.y]={t:PLAN_SIGN_TEXT}; c.planSign=want; return true; }
+// ---- 2. the throne room's guards ----
+function keepGuardTrim(){ const c=magma&&magma.keep; if(!c||c.cleared||!c.throne||isGuest()) return; const inKeep=e=>{ const x=cxOf(e)/T; return x>=c.x0-2&&x<=c.x1+2; };
+  const fresh=ents.filter(e=>!e.dead&&e.throneGuard&&e.team==='m'&&!e.trim184&&inKeep(e)); fresh.forEach((e,i)=>{ if(i%2) e.dead=true; else e.trim184=true; });
+  if(fresh.length){ for(let i=ents.length-1;i>=0;i--) if(ents[i].dead&&ents[i].throneGuard&&ents[i].team==='m'&&!ents[i].trim184) ents.splice(i,1); }
+  const boss=ents.find(e=>e.magmaLord&&!e.dead&&!e.ghost); if(!boss||boss.phase2) return;
+  const have=ents.filter(e=>!e.dead&&e.reinf184).length;
+  for(let k=have;k<2;k++){ const x=c.cx+(k?8:-8); const e=makeHuman('m','magmaknight',x*T,c.gy*T-30,'guard',{cx:c.cx,gy:c.gy,x0:c.throne.x0+1,x1:c.throne.x1-1}); e.throneGuard=true; e.reinf184=true; e.trim184=true; ents.push(e); try{ unstickSpawn(e); }catch(err){} } }
+{ const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ keepGuardTrim(); }catch(e){ console.warn(e); } return r; }; }
+{ const _sc=spawnCastleFolk; spawnCastleFolk=function(realm,...a){ const r=_sc(realm,...a); try{ if(realm==='magma') keepGuardTrim(); }catch(e){ console.warn(e); } return r; }; }
+{ const _bp=bossPhaseTick; bossPhaseTick=function(e,dt,...a){ const n0=ents.length, was=e&&e.phase2; const r=_bp(e,dt,...a);
+    try{ if(e&&e.magmaLord&&!was&&e.phase2) for(let i=ents.length-1;i>=n0;i--){ const o=ents[i]; if(o&&o.kind==='human'&&o.team==='m'&&!o.reinf184) ents.splice(i,1); } }catch(err){} return r; }; }
+// ---- 3. rock all around the keep ----
+function keepRockId(x,y){ const sd=(seed|0)+2450, n=noise2(x/7,y/5,sd), m=noise2(x/4,y/4,sd+3); return m>0.8?B.MAGMA_ROCK:n>0.64?B.BASALT:n<0.28&&m<0.4?B.EMBER_STONE:B.SCORIA; }
+function keepRock(get,put,avoid){ const k=keepGateInfo(); if(!k) return 0; const {c,g,dir}=k; const top=c.top??(c.gy-40), sd=(seed|0)+2451; let n=0;
+  const huts=(magma.huts||[]).map(h=>[h.x-10,h.x+10,h.gy-9,h.gy+1]); const plaza=[Math.min(g.x+dir,g.x+dir*(KEEP_ROCK_X+ARRIVE_W+8)),Math.max(g.x+dir,g.x+dir*(KEEP_ROCK_X+ARRIVE_W+8))];
+  const fillable=id=>!id||(BLOCKS[id]&&!BLOCKS[id].solid&&id!==B.LAVA&&id!==B.WATER&&id!==B.PORTAL&&id!==B.SIGN&&!DOOR_IDS.has(id)&&!isChestId(id)&&!(BLOCKS[id].light>0)&&!BLOCKS[id].platform)||(typeof TREEISH!=='undefined'&&TREEISH.has(id));
+  const x0=c.x0-KEEP_ROCK_X-14, x1=c.x1+KEEP_ROCK_X+14, y0=Math.max(magmaY+2,top-KEEP_ROCK_Y-14), y1=c.gy+6;
+  for(let x=Math.max(magma.mx0+2,x0);x<=Math.min(magma.mx1-2,x1);x++){ const My=KEEP_ROCK_Y*(0.75+0.5*noise2(x/23,0.5,sd));
+    for(let y=y0;y<=y1;y++){ if(x>=c.x0&&x<=c.x1&&y>=top&&y<=c.gy) continue; const dx=x<c.x0?c.x0-x:x>c.x1?x-c.x1:0, dy=y<top?top-y:0; if(!dx&&!dy) continue;
+      const Mx=KEEP_ROCK_X*(0.75+0.5*noise2(0.5,y/13,sd+1)); if((dx/Mx)**2+(dy/My)**2>0.85+0.3*noise2(x/4,y/4,sd+2)) continue;
+      if(x>=plaza[0]&&x<=plaza[1]&&y>=g.gy-GATE_PASS_H&&y<g.gy) continue;   // the passage to the gate stays open
+      if(huts.some(([a,b,p,q])=>x>=a&&x<=b&&y>=p&&y<=q)) continue; if(avoid&&avoid(x,y)) continue;
+      const id=get(x,y); if(!fillable(id)) continue; const up=get(x,y-1); if(DOOR_IDS.has(up)||isChestId(up)) continue;
+      put(x,y,keepRockId(x,y)); n++; } }
+  c.rock184=1; c.rockGate=[g.x,g.gy]; return n; }
+// ---- new worlds and older worlds ----
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(magma&&magma.keep&&!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())){
+        const get=(x,y)=>(x<0||x>=W||y<0||y>=H)?B.BEDROCK:world[y*W+x], put=(x,y,id)=>{ if(x>=0&&x<W&&y>=0&&y<H){ world[y*W+x]=id; liq[y*W+x]=0; } };
+        keepRock(get,put); moveKeepSign(get,put); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ const c=magma&&magma.keep; if(c&&!isGuest()&&home&&!home.tutorial&&!home.editor){ const get=(x,y)=>tileAt(x,y), put=(x,y,id)=>setTile(x,y,id);
+        if(c.rock184&&c.rockGate&&c.gate&&(c.rockGate[0]!==c.gate.x||c.rockGate[1]!==c.gate.gy)) c.rock184=0;   // the keep was moved or rebuilt elsewhere: rock round it again
+        if(!c.rock184){ const P=player, near=(x,y)=>P&&Math.abs(x+0.5-cxOf(P)/T)<3&&Math.abs(y+0.5-cyOf(P)/T)<4;
+          facRun(()=>keepRock(get,put,near)); try{ for(const e of ents) if(e.kind==='human'||e.kind==='monster') unstickSpawn(e); }catch(e){} }
+        const sg=c.planSign, g=c.gate; if(!c.cleared&&g&&(!c.signV184m||!sg||Math.abs(sg.x-g.x)>4||sg.y!==g.gy-1||get(sg.x,sg.y)!==B.SIGN)) facRun(()=>moveKeepSign(get,put)); } }catch(e){ console.warn(e); } return r; }; }
+// a keep rebuilt (older worlds) keeps its sign by the gate
+{ const _rb=rebuildCastle; rebuildCastle=function(realm,...a){ const r=_rb(realm,...a); try{ if(realm==='magma'&&!isGuest()&&magma.keep&&!magma.keep.cleared) facRun(()=>moveKeepSign((x,y)=>tileAt(x,y),(x,y,id)=>setTile(x,y,id))); }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
