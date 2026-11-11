@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1794377732"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794377732"><link rel="manifest" href="manifest.webmanifest?v=1794377732"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1794380147"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794380147"><link rel="manifest" href="manifest.webmanifest?v=1794380147"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.185</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.186</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.186</h3>
+    <p><b>Chest rooms:</b> every chest under the ground stands in a room of its own: a cellar near the top, a crypt in the shale, a hall below that and a treasure vault in the deepest layers, each with patterned back walls, paintings, furniture and lights, some with a bed and some with a second floor. The deeper the room, the rarer what is in it, down to the Ancient urn and the Gilded reliquary. The sky castle has a Star harp and the magma keep an Ember idol.</p>
+    <p><b>The sea:</b> the sea floor is sand at least ten blocks deep, and on it stand the sunken halls of Atlantis, dry inside, with two chests of sunken treasure each. Trident guards, sirens whose song slows you and reef golems swim around them until the treasure is taken. With a strong rod and good bait you may, very rarely, catch an Ocean emerald; three make an Ocean rune. Set in a weapon, it gives a second rune socket and lets its runes work underwater (without one, runes do nothing in water, and water puts out fire).</p>
+    <p><b>War banners</b> stand on a pole three blocks tall and lift your side within 15 blocks. Use one to carry it, plant it where you stand or give it to a soldier beside you; nobody holds more than one. If whoever carries it falls, the enemy that killed them takes it, until you win it back. <b>Crafting:</b> potions, elixirs and dyes are brewed at a Cauldron, gold, mythril, adamantite and storm weapons, armour and tools are forged at an Anvil, things woven from wool at a Loom, and sweets baked at a Brazier. Fossil stone makes bones, Polished fossil and a Fossil display. Plants on a slope sit down on it, and a dragged item is shown held as it goes into its new slot.</p>
     <h3>New in Beta 0.9.185</h3>
     <p><b>Windows:</b> every window can be dragged bigger or smaller from any edge or corner, on a computer and now with a finger too; gold marks show the grips, they stay at the edges while a list scrolls, and two quick taps on a corner put a window back to its first size. <b>Villagers:</b> each wanderer has one Reassign button that opens the list of jobs, and every shopkeeper has a Reassign button in their shop. The Tailor is a job like the other shopkeepers, with a look of his own. Talk (F) beside a workbench or furnace opens the crafting window.</p>
     <p><b>Chests:</b> pointing at an item in a chest shows its name. Chests out in the world are spread at least 75 blocks apart, and fewer are found high up. <b>Your village:</b> one bed in each villager's home, upstairs; the castle's beds stand upstairs and its floors are carpeted in your colour; furniture can stand on a rug; buried hollows and walls missing under the village are filled in. <b>Nature:</b> leaves must touch a tree, beehives need something beside them, and hanging moss, glow vines and roots fall when what holds them is broken. Gem ores show the wall of the rock around them.</p>
@@ -912,7 +916,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.185</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.186</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1173,7 +1177,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.185</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.186</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1195,7 +1199,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.185', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.186', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3445,7 +3449,7 @@ function spawnMonsters(dt){
 function spawnSea(dt){
   seaTimer-=dt; if(seaTimer>0) return; seaTimer=0.6; for(let tries=0;tries<4;tries++) if(trySea()) break; }
 function trySea(){
-  for(const e of ents) if(e.kind==='sea'&&farAll(e,110)) e.dead=true;
+  for(const e of ents) if(e.kind==='sea'&&e.atlBase==null&&farAll(e,110)) e.dead=true;   // 0.9.186: Atlantean guards stay at their hall
   if(player.dead) return true;
   const near=ents.filter(e=>e.kind==='sea'&&!e.dead&&Math.abs(e.x-player.x)<90*T).length;
   if(near>={small:22,medium:26,large:30}[sizeKey]) return true;
@@ -27026,6 +27030,424 @@ try{ for(const id of [B.EMERALD_ORE,B.SAPPHIRE_ORE,B.AMETHYST]){ const d=ITEMS[i
   for(const d of Object.values(ITEMS)){ if(!d||d.kind!=='pick'||!d.pow||!/^Tier \d pickaxe\./.test(d.desc||'')) continue; const opens=[...new Set(Object.values(BLOCKS).filter(b=>b&&b.minPow===d.pow&&NATURAL.test(b.name||'')).map(b=>b.name.toLowerCase()))];
     const lead=`Tier ${d.pow} pickaxe.`+(opens.length?` Mines ${opens.length>1?opens.slice(0,-1).join(', ')+' and '+opens[opens.length-1]:opens[0]}, and everything of a lower tier.`:' Mines every block in the game.');
     d.desc=d.desc.replace(/^Tier \d pickaxe\.( Mines [^.]*\.)?/,lead); } }catch(e){ console.warn(e); }
+// ===== Beta 0.9.186 (Kinard, 2026-11-11) =====
+// "Make it so that the fossil biome and blocks have a purpose as far as crafting" and "Fix all flowers and any items plants etc that
+// can be placed on a slanted block so that it works similar to the torch with a different animation that makes sense and does not
+// leave a gap"
+// 1. Fossil stone crafts (workbench): 2 bones from 1 fossil stone (bones make Grow meal and bone blocks), Polished fossil (a pale
+//    building block with a fossil set in it, fixed id 2395), and a Fossil display (2 x 2, a dinosaur skull on a stand, fixed id
+//    2396) from fossil stone and a gold bar. The fossil biome's creatures and chest rooms show them off.
+// 2. A plant, flower, sapling, mushroom or crop standing on a slope sits down on the slope's surface and leans a little with it
+//    (half as much as a torch), so there is no gap under it.
+// Fixed-id decorations (the 0.9.176 rule: released ids never move): pieceAt(id, {...}) builds one like the hundred decorations.
+function pieceAt(id,o){ if((BLOCKS[id]&&BLOCKS[id].name)||ITEMS[id]){ console.warn('decoration id taken',id); return null; }
+  o.id=id; o.mount=o.mount||'floor'; o.found=!o.need; o.pools=[]; o.spouts=[]; o.flames=o.flames||[]; o.lit=o.lit||[];
+  defB(id,{name:o.name,solid:false,hard:o.hard||0.6,col:o.col||'#8a6a4a',light:o.light||0,place:true});
+  ITEMS[id]={name:o.name,kind:'block',decor:true,desc:`${o.desc}. ${o.w} wide and ${o.h} tall${o.mount==='ceil'?', hangs from a ceiling':o.mount==='wall'?', hangs on a back wall':''}`};
+  SELL[id]=o.sell||4; if(o.need) RECIPES.push({out:id,n:1,need:o.need.filter(([n])=>n!=null&&ITEMS[n]),st:o.st||B.WORKBENCH,cat2:'light'});
+  o.art=fCanvas(o.w,o.h,o.draw); o.icon=fIcon(o.art); { const t=mkCanvas(16,16), g=t.getContext('2d'); g.drawImage(o.icon,0,0,16,16); TEX[id]=t; } try{ delete ICON_URL[id]; }catch(e){}
+  PIECES.push(o); PIECE[id]=o; PIECE_KEY[o.key]=o; PIECE_IDS.add(id); ORE_LOOK.add(id); try{ LAVA_EATS.delete(id); PASS.add(id); }catch(e){}
+  DK[o.key]=o; return o; }
+// ---- 1. fossils ----
+const FOSSIL=BIO.FOSSIL_STONE;
+B.POLISHED_FOSSIL=2395;
+defB(B.POLISHED_FOSSIL,{name:'Polished fossil',hard:1.2,col:'#e8dcc0'});
+TEX[B.POLISHED_FOSSIL]=obsTex((r,p)=>{ r(0,0,16,16,'#e4d6b4'); r(0,0,16,1,'#f4ecd4'); r(0,15,16,1,'#b8a880'); r(15,0,1,16,'#c8b890'); r(0,0,1,16,'#f0e6cc');
+  // a curled shell set in the stone
+  r(5,5,6,6,'#cbb88e'); r(6,6,4,4,'#e4d6b4'); r(7,7,2,2,'#cbb88e'); p(8,7,'#e4d6b4'); r(4,7,1,3,'#cbb88e'); r(11,6,1,3,'#cbb88e'); for(const [x,y] of [[2,2],[13,3],[3,13],[12,12]]) p(x,y,'#d4c4a0'); });
+ITEMS[B.POLISHED_FOSSIL]={name:'Polished fossil',kind:'block',desc:'Fossil stone cut and polished smooth, an ancient shell set in each block'}; SELL[B.POLISHED_FOSSIL]=4;
+if(FOSSIL!=null){ RECIPES.push({out:B.POLISHED_FOSSIL,n:2,need:[[FOSSIL,2]],st:B.WORKBENCH,cat:'build'});
+  RECIPES.push({out:I.BONE,n:2,need:[[FOSSIL,1]],st:B.WORKBENCH});
+  if(ITEMS[FOSSIL]) ITEMS[FOSSIL].desc=(ITEMS[FOSSIL].desc||'Pale stone full of old bones and shells').replace(/\.?\s*$/,'.')+' Craft it at a workbench into bones, Polished fossil or a Fossil display'; }
+pieceAt(2396,{key:'fossilshow',name:'Fossil display',w:2,h:2,hard:0.8,sell:30,need:[[FOSSIL,4],[I.GOLD_BAR,1]],desc:'The skull of a great beast from the fossil caves, on a polished stand',
+  draw:r=>{ r(2,26,28,6,'#6a4a2a'); r(2,26,28,1,'#8a6a3a'); r(4,24,24,2,'#c89040');
+    r(6,9,18,12,'#e8e0c8'); r(4,13,4,6,'#e8e0c8'); r(22,12,6,8,'#e8e0c8'); r(24,18,6,3,'#e8e0c8');   // the skull and its jaw
+    r(10,12,4,4,'#3a2a1a'); r(18,13,2,3,'#3a2a1a'); r(24,20,1,2,'#fff'); r(26,20,1,2,'#fff'); r(28,20,1,2,'#fff'); r(7,10,14,1,'#c8bca0'); r(6,20,18,1,'#b8ac90');
+    for(const [x,y] of [[8,7],[12,6],[16,7]]) r(x,y,2,3,'#d8d0b8'); }});
+// ---- 2. plants on slopes ----
+const SLOPE_PLANTS=new Set([...PLANTS,...NEEDS_GROUND].filter(id=>id!=null&&id!==B.TORCH&&BLOCKS[id]&&!BLOCKS[id].solid&&!DOOR_IDS.has(id)&&!PIECE_IDS.has(id)));
+try{ for(const id of Object.keys(SAP_KIND).map(Number)) SLOPE_PLANTS.add(id); }catch(e){}
+try{ for(const id of Object.keys(CROPS_STAGE).map(Number)) if(BLOCKS[id]&&!BLOCKS[id].solid) SLOPE_PLANTS.add(id); }catch(e){}
+function plantOnSlope(x,y){ const s=torchOnSlope(x,y); if(!s) return null; return {dx:s.dx,drop:s.drop,tilt:s.tilt*0.5}; }
+let plantBaseTex=null;
+{ for(const id of SLOPE_PLANTS) ORE_LOOK.add(id);
+  const _tt=tileTex; plantBaseTex=_tt; tileTex=function(x,y,id,...a){ if(SLOPE_PLANTS.has(id)&&y+1<H&&shape[(y+1)*W+x]&&plantOnSlope(x,y)) return BLANK_TEX; return _tt(x,y,id,...a); }; }
+function drawSlopePlants(){ if(!world) return; const x0=Math.max(0,Math.floor(camX/T)), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)), y0=Math.max(0,Math.floor(camY/T)), y1=Math.min(H-2,Math.ceil((camY+viewH)/T)); const t=performance.now()/900;
+  for(let y=y0;y<=y1;y++){ const row=y*W; for(let x=x0;x<=x1;x++){ const id=world[row+x]; if(!SLOPE_PLANTS.has(id)||!shape[row+W+x]) continue; const s=plantOnSlope(x,y); if(!s) continue;
+      const tex=plantBaseTex(x,y,id)||TEX[id]; if(!tex) continue; const sway=Math.sin(t+x*0.7)*0.03;   // a gentle sway, like the wind on a hillside
+      ctx.save(); ctx.translate(x*T+8+s.dx,y*T+16+s.drop); ctx.rotate(s.tilt+sway); ctx.drawImage(tex,-8,-16); ctx.restore(); } } }
+let slopePlantFrame=-1;
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ if(slopePlantFrame!==frameN){ slopePlantFrame=frameN; drawSlopePlants(); } }catch(e){} return _dl(...a); }; }
+// ===== Beta 0.9.186 (Kinard, 2026-11-11) =====
+// "add underwater bases in the oceans also make it so that there is at least a layer of 10 sand blocks at the bottom of the oceans
+// and add new enemies that are atlantis based enemies that will spawn to protect the underwater chests" and "Make it so there are
+// rare fishing runes the player can craft from "ocean emeralds" that allows the player to add two runes at once the ocean rune
+// allows any of the other runes the player has on to work underwater such as fire damage etc make this ultra rare though and only
+// accessible at higher levels of fishing poles and bait"
+// 1. The sea floor is sand at least SAND_DEPTH blocks deep everywhere in the oceans (new worlds; older worlds once, home.oceanSandV).
+// 2. Atlantean ruins: a domed hall of Atlantean brick and pillars on the sea floor, dry inside behind a door on each side, with
+//    sea lamps, amphoras, a mezzanine and two gold chests of sunken treasure (pearls, coral, gold, sometimes an Ocean emerald).
+//    ATL_PER_SEA in each ocean wide and deep enough. New worlds, and older worlds once in seas nobody has seen (home.atlV).
+// 3. Atlantean guards swim around each ruin while its chests are unopened: trident guards, sirens (their song slows you) and reef
+//    golems (slow, armoured, hit hard). They stay near their ruin and come back each morning until the treasure is taken.
+// 4. Ocean emerald (fixed id 2390): ultra rare, caught only with a strong rod and good bait together (rod and bait tiers adding up
+//    to OCEAN_TIER or more: about 1 cast in OCEAN_ODDS) or found in an Atlantean chest. Three make an Ocean rune (2391) at a workbench.
+// 5. Ocean rune: set it in a weapon (its own socket, beside the weapon's rune). That weapon can then hold a second rune, and its
+//    runes work underwater. Without an Ocean rune, runes do nothing while you or the one you hit are in water, and water puts out
+//    burning; a fire rune with an Ocean rune burns even underwater.
+const SAND_DEPTH=10, ATL_PER_SEA=1, ATL_MAX={small:3,medium:4,large:5}, OCEAN_TIER=6, OCEAN_ODDS=250;
+const OCEAN_EMERALD=2390, OCEAN_RUNE=2391;
+B.ATL_BRICK=2392; B.ATL_PILLAR=2393; B.SEA_LAMP=2394;
+const ATL_BG=249, CORAL_BG=255;
+// ---- blocks and walls ----
+defB(B.ATL_BRICK,{name:'Atlantean brick',hard:1.6,minPow:2,col:'#3a8a8a'});
+defB(B.ATL_PILLAR,{name:'Atlantean pillar',hard:1.6,minPow:2,col:'#d8e8e0'});
+defB(B.SEA_LAMP,{name:'Sea lamp',hard:0.8,light:9,col:'#8ae8e0'});
+TEX[B.ATL_BRICK]=obsTex((r,p)=>{ r(0,0,16,16,'#2e7a7c'); for(const [y,o] of [[0,0],[5,4],[10,0]]){ r(0,y,16,1,'#1e5658'); for(let x=o;x<16;x+=8) r(x,y,1,5,'#1e5658'); } r(0,15,16,1,'#1e5658');
+  for(const [x,y] of [[3,2],[11,7],[5,12],[13,13]]) p(x,y,'#5ab0a8'); p(8,3,'#e8d070'); p(2,8,'#e8d070'); });
+TEX[B.ATL_PILLAR]=obsTex((r,p)=>{ r(0,0,16,16,'#c8d8d0'); for(const x of [3,7,11]) r(x,0,1,16,'#a0b4ac'); r(0,0,16,2,'#e8f0ea'); r(0,14,16,2,'#e8f0ea'); r(0,2,16,1,'#d8b860'); r(0,13,16,1,'#d8b860'); });
+TEX[B.SEA_LAMP]=obsTex((r,p)=>{ r(0,0,16,16,'#2e7a7c'); r(3,3,10,10,'#5ad8d0'); r(5,5,6,6,'#c8fff8'); r(7,7,2,2,'#ffffff'); r(3,3,10,1,'#e8d070'); r(3,12,10,1,'#e8d070'); });
+for(const [id,nm,desc,sell] of [[B.ATL_BRICK,'Atlantean brick','Sea-green brick from the sunken halls of Atlantis, flecked with gold',5],[B.ATL_PILLAR,'Atlantean pillar','A fluted column of pale stone banded with gold, from the halls of Atlantis',6],[B.SEA_LAMP,'Sea lamp','A glass globe of glowing sea water set in Atlantean stone. It lights even under the waves',10]]){ ITEMS[id]={name:nm,kind:'block',desc}; SELL[id]=sell; }
+RECIPES.push({out:B.SEA_LAMP,n:1,need:[[B.ATL_BRICK,1],[I.PEARL,1],[B.GLASS,1]],st:B.WORKBENCH,cat:'build'});
+{ const mk=(draw)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }; draw(r); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(6,10,20,0.45)'; g.fillRect(0,0,16,16); return c; };
+  if(!BGTEX[ATL_BG]) BGTEX[ATL_BG]=mk(r=>{ r(0,0,16,16,'#2a6a6c'); for(const [y,o] of [[0,0],[8,4]]){ r(0,y,16,1,'#1a4a4c'); for(let x=o;x<16;x+=8) r(x,y,1,8,'#1a4a4c'); } r(6,3,4,2,'#d8b860'); });
+  if(!BGTEX[CORAL_BG]) BGTEX[CORAL_BG]=mk(r=>{ r(0,0,16,16,'#2a6a6c'); const C=['#e07070','#f0b060','#5ad0c0','#c86ad0','#f0e090']; let k=0; for(let y=0;y<16;y+=4) for(let x=(y%8?2:0);x<16;x+=4){ r(x,y,3,3,C[(k++)%C.length]); } }); }
+// ---- the Ocean emerald and the Ocean rune ----
+ITEMS[OCEAN_EMERALD]={name:'Ocean emerald',kind:'mat',treasure:true,desc:'A sea-green gem that holds the tide. Ultra rare: caught only with a strong rod and good bait together, or found in the sunken halls of Atlantis. Three make an Ocean rune'}; SELL[OCEAN_EMERALD]=400;
+customIcon(OCEAN_EMERALD,(rect,px)=>{ rect(5,2,6,2,'#2ac8a0'); rect(3,4,10,6,'#18a888'); rect(5,10,6,2,'#0e7a64'); rect(7,12,2,2,'#0e5a4a'); rect(5,4,3,3,'#8af0d8'); px(6,5,'#ffffff'); rect(9,7,3,1,'#5ad8f0'); rect(4,8,3,1,'#5ad8f0'); });
+ITEMS[OCEAN_RUNE]={name:'Ocean rune',kind:'rune',rune:'ocean',col:'#2ac8a0',desc:'Set it in a weapon beside its rune: that weapon can hold a second rune, and its runes work underwater (a fire rune burns even in the sea). Without one, runes do nothing in water'}; SELL[OCEAN_RUNE]=900;
+customIcon(OCEAN_RUNE,(rect,px)=>{ rect(3,2,10,12,'#2a5a6a'); rect(4,3,8,10,'#18a888'); for(let x=4;x<12;x+=2){ px(x,8,'#c8fff0'); px(x+1,7,'#c8fff0'); } rect(6,4,4,2,'#8af0d8'); rect(7,10,2,2,'#e8d070'); });
+RECIPES.push({out:OCEAN_RUNE,n:1,need:[[OCEAN_EMERALD,3]],st:B.WORKBENCH});
+{ const _rc=rollCatch; rollCatch=function(tier,where,...a){ try{ if((tier||0)>=OCEAN_TIER&&(where==='sea'||where==='ocean'||/sea|ocean/.test(String(where)))&&Math.random()<1/OCEAN_ODDS){ toast('An Ocean emerald! The sea has given up one of its rarest gems.',4); return OCEAN_EMERALD; } }catch(e){} return _rc(tier,where,...a); }; }
+// ---- the sea floor: sand ----
+function seaFloorAt(x){ if(!oceanCol||!oceanCol[x]) return -1; for(let y=Math.max(1,seaY);y<H-2;y++){ const id=world[y*W+x]; if(id!==0&&id!==B.WATER&&!(BLOCKS[id]&&!BLOCKS[id].solid)) return y; } return -1; }
+function oceanSand(onlyUnseen,put){ if(!world||!oceanCol) return 0; let n=0; const soft=id=>id!==B.BEDROCK&&id!==B.LAVA&&id!==B.PORTAL&&!isChestId(id)&&!DOOR_IDS.has(id)&&id!==B.ATL_BRICK&&id!==B.ATL_PILLAR&&id!==B.SEA_LAMP&&!(typeof PIECE_IDS!=='undefined'&&PIECE_IDS.has(id));
+  for(let x=0;x<W;x++){ const f=seaFloorAt(x); if(f<0) continue; for(let k=0;k<SAND_DEPTH;k++){ const y=f+k; if(y>=H-2) break; const i=y*W+x; if(onlyUnseen&&explored[i]) continue; const id=world[i]; if(id===B.SAND) continue; if(!soft(id)) break; put(x,y,B.SAND); n++; } }
+  return n; }
+// ---- Atlantean ruins ----
+B.AMPHORA=2397;
+pieceAt(B.AMPHORA,{key:'amphora',name:'Atlantean amphora',w:1,h:2,hard:0.6,sell:15,desc:'A tall jar from the sunken halls of Atlantis, painted with waves',
+  draw:r=>{ r(5,2,6,2,'#c86a3a'); r(4,4,8,2,'#a04a2a'); r(3,6,10,16,'#c86a3a'); r(4,22,8,4,'#a04a2a'); r(5,26,6,4,'#c86a3a'); r(4,30,8,2,'#8a3a1a'); for(let x=3;x<13;x+=2){ r(x,12,1,1,'#2a8a8a'); r(x+1,13,1,1,'#2a8a8a'); } r(3,16,10,1,'#e8d070'); r(1,7,2,6,'#a04a2a'); r(13,7,2,6,'#a04a2a'); }});
+function atlSpots(R){ const L=[]; if(!oceanCol) return L; let x=0; while(x<W){ if(!oceanCol[x]){ x++; continue; } let e=x; while(e+1<W&&oceanCol[e+1]) e++;
+    if(e-x>=60){ const n=Math.min(ATL_PER_SEA,Math.floor((e-x)/120)+1); for(let k=0;k<n;k++){ const cx=x+20+Math.floor(((k+0.5)/n)*(e-x-40)); const f=seaFloorAt(cx); if(f<0||f-seaY<18) continue; L.push({cx,gy:f}); } } x=e+1; }
+  const ok=L.filter(s=>!(typeof krakenX!=='undefined'&&krakenX&&Math.abs(s.cx-krakenX)<80)&&!(fishv&&fishv.x0!=null&&s.cx>=fishv.x0-40&&s.cx<=fishv.x1+40));
+  // a few, spread over the world
+  const max=ATL_MAX[sizeKey]||4; if(ok.length<=max) return ok; const pick=[]; for(let k=0;k<max;k++) pick.push(ok[Math.floor((k+0.5)*ok.length/max)]); return pick; }
+function buildAtlantis(cx,gy,R,put,bput,raw){ const HW=11, HT=9; const at=(x,y)=>world[y*W+x];
+  // level the floor and the shell, then a dry hall inside
+  for(let x=cx-HW-1;x<=cx+HW+1;x++){ for(let y=gy;y<gy+3;y++) put(x,y,y===gy?B.ATL_BRICK:B.SAND); }
+  for(let x=cx-HW;x<=cx+HW;x++) for(let y=gy-HT;y<gy;y++){ const edge=x===cx-HW||x===cx+HW; put(x,y,edge?B.ATL_BRICK:0); if(!edge) bput(x,y,((x-cx)%5===0)?ATL_BG:(y>=gy-6&&y<=gy-4?CORAL_BG:ATL_BG)); }
+  for(let x=cx-HW;x<=cx+HW;x++) put(x,gy-HT-1,B.ATL_BRICK);
+  for(const [w,yy] of [[8,gy-HT-2],[5,gy-HT-3],[2,gy-HT-4]]) for(let x=cx-w;x<=cx+w;x++) put(x,yy,B.ATL_BRICK);
+  put(cx,gy-HT-5,B.SEA_LAMP);
+  // pillars on the front, doors on both sides
+  for(const x of [cx-HW-1,cx+HW+1]) for(let y=gy-HT;y<gy;y++) put(x,y,B.ATL_PILLAR);
+  for(const x of [cx-HW-1,cx-HW,cx+HW,cx+HW+1]) for(const y of [gy-1,gy-2]) put(x,y,0);
+  for(const x of [cx-HW,cx+HW]){ put(x,gy-1,B.STONE_DOOR||B.DOOR); put(x,gy-2,(DOOR_SET_OF[B.STONE_DOOR]&&DOOR_SET_OF[B.STONE_DOOR].top)||B.DOOR_T); }
+  for(const x of [cx-HW-1,cx+HW+1]){ put(x,gy-1,0); put(x,gy-2,0); }
+  // a mezzanine on both sides, lamps, amphoras
+  for(let x=cx-HW+1;x<=cx-4;x++) put(x,gy-5,B.PLATFORM); for(let x=cx+4;x<=cx+HW-1;x++) put(x,gy-5,B.PLATFORM);
+  for(const x of [cx-HW+1,cx+HW-1]) put(x,gy-7,B.SEA_LAMP); put(cx-3,gy-8,B.SEA_LAMP); put(cx+3,gy-8,B.SEA_LAMP);
+  for(const [x,y] of [[cx-2,gy-1],[cx+2,gy-1],[cx-HW+3,gy-6],[cx+HW-3,gy-6]]){ putPiece({x0:x,x1:x,y0:y-1,y1:y},B.AMPHORA,put); put(x,y,B.AMPHORA); }
+  // two gold chests of sunken treasure
+  const keys=[]; for(const x of [cx-6,cx+6]){ put(x,gy-1,B.CHEST_GOLD); const l=lootFor(160,R,3); l.items=l.items||[]; const add=(id,n)=>{ const s=l.items.findIndex(v=>!v); const it={id,n}; if(s>=0) l.items[s]=it; else l.items.push(it); };
+    add(I.PEARL,2+((R()*4)|0)); add(I.CORAL,3+((R()*5)|0)); if(R()<0.5) add(I.BLACK_PEARL,1); if(R()<0.3) add(OCEAN_EMERALD,1); add(B.ATL_BRICK,8);
+    l.items=l.items.map(v=>v&&v.id===I.DIAMOND?{id:I.PEARL,n:v.n}:v); l.atlantis=true; chests[x+','+(gy-1)]=l; keys.push(x+','+(gy-1)); }
+  return {cx,gy,keys,x0:cx-HW-1,x1:cx+HW+1,y0:gy-HT-5,y1:gy}; }
+function atlantisAll(onlyUnseen,raw){ if(!world||!home) return 0; home.atlBases=home.atlBases||[]; const R=mulberry((seed|0)+2560); let n=0;
+  const put=raw?(x,y,id)=>{ world[y*W+x]=id; liq[y*W+x]=0; }:(x,y,id)=>{ setTile(x,y,id); if(id!==B.WATER) liq[y*W+x]=0; };
+  const bput=raw?(x,y,v)=>{ bg[y*W+x]=v; }:(x,y,v)=>{ bset(x,y,v); };
+  for(const s of atlSpots(R)){ if(home.atlBases.some(b=>Math.abs(b.cx-s.cx)<60)) continue;
+    if(onlyUnseen){ let seen=false; for(let x=s.cx-14;x<=s.cx+14&&!seen;x++) for(let y=s.gy-16;y<=s.gy;y++) if(explored[y*W+x]){ seen=true; break; } if(seen) continue; }
+    const b=buildAtlantis(s.cx,s.gy,R,put,bput,raw); home.atlBases.push(b); n++; }
+  return n; }
+// ---- the guards ----
+const ATL_MON={ atl_guard:{ w:16, h:20, hp:180, dmg:22, speed:100, def:6, coins:6, sea:true, range:18, drops:[[I.PEARL,0.4,1,1],[B.ATL_BRICK,0.5,1,3]] },
+  atl_siren:{ w:14, h:18, hp:120, dmg:14, speed:120, def:3, coins:6, sea:true, range:16, drops:[[I.PEARL,0.5,1,2],[I.CORAL,0.5,1,2]] },
+  atl_golem:{ w:24, h:24, hp:360, dmg:32, speed:55, def:12, coins:10, sea:true, range:18, drops:[[I.CORAL,0.8,2,4],[I.BLACK_PEARL,0.08,1,1]] } };
+Object.assign(MON,ATL_MON);
+const ATL_KINDS=Object.keys(ATL_MON);
+function atlBaseOpen(b){ return (b.keys||[]).some(k=>chests[k]&&!chests[k].opened); }
+function atlGuardsFor(b){ if(!b||!atlBaseOpen(b)) return 0; const have=ents.filter(e=>!e.dead&&e.atlBase===b.cx).length; let n=0; const want=4+(b.cx%2);
+  for(let k=have;k<want;k++){ const t=ATL_KINDS[k%3===2?2:k%2]; const x=b.cx+(k%2?1:-1)*(8+((k*5)%10)), y=b.gy-12-(k%3)*2; if(tileAt(x,y)!==B.WATER) continue;
+    const m=makeMonster(t,x*T,y*T); m.atlBase=b.cx; m.atlY=b.gy; ents.push(m); n++; } return n; }
+{ const _pop=populate; populate=function(...a){ const r=_pop(...a); try{ if(!isGuest()) for(const b of (home&&home.atlBases)||[]) atlGuardsFor(b); }catch(e){ console.warn(e); } return r; }; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ if(!isGuest()) for(const b of (home&&home.atlBases)||[]) atlGuardsFor(b); }catch(e){ console.warn(e); } return r; }; }
+// guards are not saved: a loaded world gets them back
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(!isGuest()) for(const b of (home&&home.atlBases)||[]) atlGuardsFor(b); }catch(e){ console.warn(e); } return r; }; }
+// they stay near their hall
+{ const _us=updateSea; updateSea=function(e,dt,...a){ if(e&&e.atlBase!=null&&!e.target){ const bx=e.atlBase*T, d=cxOf(e)-bx; if(Math.abs(d)>20*T){ e.wDir=d>0?-1:1; e.wT=2; } } return _us(e,dt,...a); }; }
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ const r=_dmg(t,amt,src,kb,...a); try{ if(src&&src.mtype==='atl_siren'&&t&&!t.dead){ t.slowT=Math.max(t.slowT||0,1.5); if(t===player) addFloat(cxOf(t),t.y-10,'siren song','#c8a0ff'); } }catch(e){} return r; }; }
+// their looks: merfolk with tridents, sirens with long hair, golems of coral and stone
+{ const _ss=seaSprite; seaSprite=function(e,...a){ if(!ATL_MON[e.mtype]) return _ss(e,...a); const f=Math.floor(e.anim*6)%2, at=e.atkT>0?1:0; const key=`s|${e.mtype}|${f}|${at}`;
+    const dims={atl_guard:[34,26],atl_siren:[30,24],atl_golem:[32,30]}[e.mtype];
+    return sprite(key,dims[0],dims[1],g=>{ const R=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); };
+      if(e.mtype==='atl_guard'){ const tb=f?1:-1; R(2,12+tb,6,6,'#2a8a7a'); R(0,10+tb,3,4,'#5ad0b0'); R(0,16+tb,3,4,'#5ad0b0'); R(7,12,10,6,'#2a9a8a'); R(8,13,8,1,'#5ad0b0');   // the tail
+        R(16,7,7,11,'#7ab0c8'); R(16,7,7,3,'#c89040'); R(17,9,5,1,'#e8d070');   // body in a bronze breastplate
+        R(22,1,7,7,'#7ab0c8'); R(21,0,9,3,'#c89040'); R(25,-1,1,2,'#e05a3a'); R(26,3,2,1,'#ffffff'); R(27,3,1,1,'#1a2a3a');   // helmet and face
+        const ty=at?6:9; R(20,ty,14,1,'#d8d0b8'); R(32,ty-2,1,5,'#d8d0b8'); R(30,ty-2,1,2,'#d8d0b8'); R(30,ty+2,1,2,'#d8d0b8'); R(22,ty-1,2,3,'#7ab0c8'); }   // the trident
+      else if(e.mtype==='atl_siren'){ const tb=f?1:-1; R(2,12+tb,6,5,'#e07090'); R(0,10+tb,3,4,'#f0a0c0'); R(0,15+tb,3,4,'#f0a0c0'); R(7,12,10,5,'#e07090'); for(let x=8;x<16;x+=2) R(x,13,1,1,'#ffd0e0');
+        R(16,6,6,10,'#b8e0e8'); R(17,10,4,2,'#c86ad0'); R(21,1,6,6,'#b8e0e8'); R(18,0,10,3,'#8a3ab0'); R(16,2,4,10,'#8a3ab0'); R(24,3,2,1,'#2a1a3a');   // pale skin, long purple hair
+        if(at){ for(const [x,y] of [[28,2],[30,0],[29,5]]) R(x,y,2,1,'#e8c8ff'); } }   // her song
+      else { R(4,8,24,18,'#7a6a5a'); R(4,8,24,3,'#9a8a7a'); for(const [x,y,c] of [[6,12,'#e07070'],[12,16,'#f0b060'],[20,11,'#5ad0c0'],[24,18,'#c86ad0'],[9,21,'#f0e090']]) R(x,y,3,3,c);
+        R(20,3,10,9,'#6a5a4a'); R(25,6,2,2,'#5ad8f0'); R(28,6,1,2,'#5ad8f0'); R(0,12+(at?-3:0),5,8,'#6a5a4a'); R(27,16+(at?-3:0),5,8,'#6a5a4a'); R(8,26,5,4,'#5a4a3a'); R(19,26,5,4,'#5a4a3a'); } }); }; }
+// ---- runes: the ocean socket, a second rune, and water ----
+function weaponLineHeld(){ const it=heldItem(); const d=it&&ITEMS[it.id]; if(!d||d.kind!=='weapon') return null; return d.line||('w'+it.id); }
+const oceanOn=ln=>!!(ln&&player&&player.runes&&player.runes['o:'+ln]);
+const wetNow=e=>!!e&&(touchesTile(e,B.WATER)||!!e.inWater);
+{ const _ro=runeOf; runeOf=function(...a){ const r=_ro(...a); try{ if(r&&(wetNow(player))&&!oceanOn(weaponLineHeld())) return null; }catch(e){} return r; }; }
+function runeFx(kind,lv,t,dealt){ const i=lv-1, F=RUNE_FX[kind]; if(!F) return; if(kind==='fire'&&!t.dead&&Math.random()<F.p[i]){ t.burnT=Math.max(t.burnT||0,F.t[i]); t.seaFireT=F.t[i]; }
+  else if(kind==='frost'&&!t.dead&&Math.random()<F.p[i]) t.slowT=Math.max(t.slowT||0,F.t[i]);
+  else if(kind==='life'){ player.hp=Math.min(player.maxHp,player.hp+dealt*F.p[i]); }
+  else if(kind==='mana'){ player.mana=Math.min(player.maxMana,(player.mana||0)+F.p[i]); } }
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ if(!t||t.dead||!player||!fromPlayer(src)) return _dmg(t,amt,src,kb,...a);
+    const ln=weaponLineHeld(), oc=oceanOn(ln); const b=oc&&player.runes['b:'+ln]; const bk=b&&ITEMS[b]&&ITEMS[b].rune, blv=b?Math.max(1,((player.runeLv||{})['b:'+ln]||{}).lv||1):0;
+    if(bk==='keen'&&RUNE_FX.keen) amt*=1+RUNE_FX.keen.p[blv-1];
+    const hp0=t.hp; const r=_dmg(t,amt,src,kb,...a);
+    try{ if(oc&&!t.ghost&&!t.proxy){ if(bk&&bk!=='keen') runeFx(bk,blv,t,Math.max(0,hp0-(t.dead?0:t.hp))); if(t.burnT>0) t.seaFireT=Math.max(t.seaFireT||0,t.burnT); } }catch(e){ console.warn(e); }
+    return r; }; }
+// water puts out a fire, unless it came from an Ocean rune weapon
+{ const _ub=updateBurn; updateBurn=function(e,dt,...a){ if(e&&e.burnT>0){ if(e.seaFireT>0) e.seaFireT-=dt; else if(touchesTile(e,B.WATER)){ e.burnT=0; try{ puff(cxOf(e),e.y+4,'#e8f0f8',4,40); }catch(err){} return; } } return _ub(e,dt,...a); }; }
+// setting runes: the Ocean rune goes in its own socket; a weapon with one takes a second rune
+{ const _ur=useRune; useRune=function(it,...a){ const d=ITEMS[it.id]; const L=weaponLinesOwned();
+    if(it.id===OCEAN_RUNE){ if(!L.length){ toast('You need a weapon to set a rune in',2.5); return; } player.runes=player.runes||{};
+      showPickList(L.map(([ln,id])=>({ label:oceanOn(ln)?`Your ${ITEMS[id].name.toLowerCase()} already has an Ocean rune`:`Set it in your ${ITEMS[id].name.toLowerCase()}: a second rune socket, and its runes work underwater`,
+        go:()=>{ if(oceanOn(ln)){ toast('That weapon already has an Ocean rune',2); return; } if(countItem(OCEAN_RUNE)<1) return; takeItem(OCEAN_RUNE,1); player.runes['o:'+ln]=OCEAN_RUNE; invDirty=true; puff(cxOf(player),cyOf(player),'#2ac8a0',18,100); try{ sfx('ward'); }catch(e){} toast(`The Ocean rune is set in your ${ITEMS[id].name.toLowerCase()}: it can hold a second rune, and its runes work underwater`,4.5); } }))); return; }
+    // the usual choices, and for a weapon with an Ocean rune a second socket too
+    let opts=null; const sp=showPickList; showPickList=o=>{ opts=o; }; try{ _ur(it,...a); } finally{ showPickList=sp; }
+    if(!opts) return; const extra=[]; for(const [ln,id] of L){ if(!oceanOn(ln)) continue; const cur=player.runes['b:'+ln], wn=ITEMS[id].name.toLowerCase(); const same=cur===it.id; const st=(player.runeLv||{})['b:'+ln]||{lv:1,n:0};
+      extra.push({ label:same?`Add it to the second rune in your ${wn} (level ${ROMAN[st.lv]})`:`Set it as the second rune in your ${wn}${cur?` (replaces its ${ITEMS[cur].name.toLowerCase()})`:''}`,
+        go:()=>{ if(countItem(it.id)<1) return; takeItem(it.id,1); player.runeLv=player.runeLv||{}; if(same){ const r=player.runeLv['b:'+ln]={lv:st.lv,n:(st.n||0)+1}; if(r.lv<RUNE_MAX&&r.n>=RUNE_NEED(r.lv)){ r.lv++; r.n=0; toast(`The second rune in your ${wn} is now level ${ROMAN[r.lv]}`,3.5); } else toast(`Second rune: ${r.n} of ${RUNE_NEED(r.lv)} toward the next level`,3); }
+          else { player.runes['b:'+ln]=it.id; player.runeLv['b:'+ln]={lv:1,n:0}; toast(`${d.name} set as the second rune in your ${wn}`,3.5); } invDirty=true; puff(cxOf(player),cyOf(player),d.col||'#fff',12,80); } }); }
+    showPickList(opts.concat(extra)); }; }
+// the bag's rune list: the extra sockets have their own rows
+{ const _rh=runesHtml; runesHtml=function(...a){ const keep=player.runes||{}; const main={}, extra=[]; for(const [k,v] of Object.entries(keep)){ if(/^[ob]:/.test(k)) extra.push([k,v]); else main[k]=v; }
+    player.runes=main; let h; try{ h=_rh(...a); } finally{ player.runes=keep; }
+    const rows=extra.filter(([k,v])=>ITEMS[v]).map(([k,v])=>{ const ln=k.slice(2), w=LINES[ln]?ITEMS[LINES[ln][Math.max(0,lineTier(ln)-1)]]:ITEMS[+ln.slice(1)]; const lv=k[0]==='b'?(((player.runeLv||{})[k]||{}).lv||1):0;
+      return `<div class="lockrow"><img alt="" src="${iconUrl(v)}"><span>${k[0]==='o'?'Ocean rune':ITEMS[v].name+' level '+ROMAN[lv]+' (second rune)'} in your ${(w?w.name:'weapon').toLowerCase()}</span><span></span></div>`; }).join('');
+    return h.replace(/(<h3[^>]*>Runes<\/h3>)/,'$1'+rows); }; }
+// ---- new worlds and older worlds ----
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())&&!(typeof window!=='undefined'&&window.DA_DEMO)){
+        oceanSand(false,(x,y,id)=>{ world[y*W+x]=id; liq[y*W+x]=0; }); atlantisAll(false,true); if(home){ home.oceanSandV=1; home.atlV=1; } } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&!home.tutorial&&!home.editor){
+        if(!home.oceanSandV){ home.oceanSandV=1; facRun(()=>oceanSand(true,(x,y,id)=>setTile(x,y,id))); }
+        if(!home.atlV){ home.atlV=1; facRun(()=>atlantisAll(true,false)); try{ for(const b of home.atlBases||[]) atlGuardsFor(b); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.186 (Kinard, 2026-11-11): "Make it so the underground chest ALWAYS spawn in a chest room and so that the chest
+// rooms are more intricate with some artwork, some having two floors, beds, or other rare decorations (make the decorations more
+// rare the deeper the player goes and special decorations in the buildings of the sky realm and the magma realm) add as many new
+// items or reuse other items as needed to complete this make it so that the backwalls are also intricate" =====
+// 1. Every chest under the ground (above the magma realm, not in a village, castle, camp, the lair or a vault) stands in a chest
+//    room built round it when the world is made: a cellar near the top, a crypt in the shale, a hall below that, a treasure vault
+//    in the deepest layers. Walls, floors and lights of its style, a door-sized opening and a short passage on both sides, a back
+//    wall with pillars, a frieze under the ceiling and wainscot along the floor, rugs, paintings and furniture from its style's
+//    list, a bed in some, a second floor (with a hatch) in some (more the deeper they are). The deeper the room, the rarer what is
+//    in it: statues, golden armour, the Ancient urn (2398) and, deepest, the Gilded reliquary (2399); fossil rooms get a Fossil
+//    display. Older worlds once, for chests in places nobody has seen (home.chestRoomV).
+// 2. The sky castle and the magma keep get decorations of their own: the Star harp (2510) and the Ember idol (2511), with their
+//    other realm decorations. New worlds and older worlds once (home.realmDeco186).
+pieceAt(2398,{key:'urn',name:'Ancient urn',w:1,h:2,hard:0.6,sell:40,desc:'A tall urn of the old kings, banded in gold. Found only deep under the world',
+  draw:r=>{ r(4,4,8,2,'#5a4a3a'); r(3,6,10,18,'#6a5a48'); r(4,24,8,4,'#5a4a3a'); r(3,28,10,4,'#4a3a2a'); r(3,10,10,2,'#d8b040'); r(3,18,10,2,'#d8b040'); for(let x=4;x<12;x+=3) r(x,13,2,4,'#3a8a8a'); r(6,2,4,2,'#d8b040'); }});
+pieceAt(2399,{key:'reliquary',name:'Gilded reliquary',w:1,h:1,hard:0.8,sell:90,light:3,desc:'A golden casket set with gems, still glowing. Found only in the deepest treasure rooms',
+  draw:r=>{ r(1,7,14,8,'#d8a020'); r(1,7,14,2,'#f0d060'); r(2,4,12,3,'#c89020'); r(5,2,6,2,'#f0d060'); r(7,1,2,1,'#fff6c0'); r(3,10,2,2,'#e0115f'); r(7,10,2,2,'#2ecc71'); r(11,10,2,2,'#3a6ad8'); r(1,14,14,1,'#8a6010'); }});
+pieceAt(2510,{key:'starharp',name:'Star harp',w:1,h:2,hard:0.6,sell:60,light:2,need:[[I.GOLD_BAR,2],[I.SAPPHIRE,1]],desc:'A golden harp strung with starlight, from the sky castle',
+  draw:r=>{ r(3,2,3,26,'#d8b040'); r(3,2,10,3,'#d8b040'); r(10,4,3,24,'#c89020'); r(2,28,12,4,'#a07020'); for(let x=6;x<10;x++) r(x,5,1,22,'#e8f4ff'); for(const [x,y] of [[7,8],[8,14],[6,20]]) r(x,y,1,1,'#ffffff'); }});
+pieceAt(2511,{key:'emberidol',name:'Ember idol',w:1,h:2,hard:0.8,sell:60,light:3,need:[[B.OBSIDIAN,3],[I.RUBY,1]],desc:'An idol of black glass with a burning heart, from the magma keep',
+  draw:r=>{ r(3,28,10,4,'#2a1a2a'); r(4,8,8,20,'#1a1220'); r(5,2,6,6,'#1a1220'); r(6,4,1,1,'#ff7a1a'); r(9,4,1,1,'#ff7a1a'); r(6,14,4,6,'#ff5a14'); r(7,15,2,4,'#ffd23a'); r(3,10,2,8,'#1a1220'); r(11,10,2,8,'#1a1220'); }});
+// themes for the rooms: each deeper style adds rarer pieces to the lists
+Object.assign(DECO_THEMES,{
+  cellar:{ wall:['sf_jars','sf_plates','sc_iron','pt_meadow','pt_forest','mp_island','clock'], floor:['br_oak','cr_oak','sk_grain','sk_flour','bucket','firewood','trunk','po_bush'], ceil:['hg_herbs','hg_garlic','hl_paper','webs2'] },
+  crypt:{ wall:['sc_bone','sh_iron','pt_night','pt_portrait','sf_books','rk_spear','mp_realm'], floor:['tb_books','cr_dark','as_iron','an_owl','cauldron','st_gargoyle','brazier'], ceil:['chains','hl_iron','webs2'] },
+  hall:{ wall:['pt_castle','pt_dragon','pt_portrait','sh_gold','rk_sword','sc_silver','mirror','mp_star'], floor:['as_gold','st_eagle','st_wizard','globe2','tb_scrolls','an_wolf','urn','cu_indigo'], ceil:['chandsmall','hl_crystal','hl_iron'] },
+  vault:{ wall:['pt_dragon','sh_gold','sc_silver','mirror','pt_castle'], floor:['as_gold','st_queen','st_hero','urn','reliquary','globe2','st_serpent'], ceil:['chandsmall','hl_crystal'] },
+  fossil:{ wall:['sc_bone','mp_realm','sf_jars'], floor:['fossilshow','urn','tb_scrolls','an_owl'], ceil:['chains','hl_iron'] } });
+DECO_THEMES.sky&&DECO_THEMES.sky.floor.push('starharp'); DECO_THEMES.magma&&DECO_THEMES.magma.floor.push('emberidol');
+DECO_THEMES.skyspecial={ wall:['mp_star','pt_peak'], floor:['starharp','telescope','globe2'], ceil:['hl_crystal'] };
+DECO_THEMES.magmaspecial={ wall:['sc_bone','pt_dragon'], floor:['emberidol','brazier','as_gold'], ceil:['hl_green','chains'] };
+const ROOM_STYLE={
+  cellar:{wall:B.TIMBER,floor:B.PLANK,roof:B.PLANK,bg:5,pillar:10,frieze:9,wains:9,light:B.TORCH,twoFloor:0.15,bed:0.2},
+  crypt:{wall:B.STONE_BLOCK,floor:B.STONE_BLOCK,roof:B.STONE_BLOCK,bg:11,pillar:3,frieze:10,wains:3,light:B.LANTERN,twoFloor:0.3,bed:0.2},
+  hall:{wall:B.STONE_BLOCK,floor:B.DEEP_TRIM||B.STONE_BLOCK,roof:B.STONE_BLOCK,bg:3,pillar:21,frieze:11,wains:21,light:B.LANTERN,twoFloor:0.45,bed:0.3},
+  vault:{wall:B.DEEP_STONE||B.STONE_BLOCK,floor:B.GOLD_BLOCK,roof:B.DEEP_STONE||B.STONE_BLOCK,bg:21,pillar:3,frieze:11,wains:8,light:B.LANTERN,twoFloor:0.6,bed:0.25},
+  fossil:{wall:B.POLISHED_FOSSIL,floor:B.POLISHED_FOSSIL,roof:B.POLISHED_FOSSIL,bg:26,pillar:10,frieze:11,wains:26,light:B.TORCH,twoFloor:0.3,bed:0.15} };
+function roomStyleAt(x,y){ try{ if(typeof biome2At==='function'&&biome2At(x,y)==='fossil') return 'fossil'; }catch(e){}
+  const top=surf[x]||seaY, bot=typeof magmaY!=='undefined'?magmaY:H, f=(y-top)/Math.max(1,bot-top); return f<0.22?'cellar':f<0.45?'crypt':f<0.72?'hall':'vault'; }
+const roomKeep=id=>id===B.BEDROCK||isChestId(id)||DOOR_IDS.has(id)||id===B.PORTAL||id===B.LAVA||(typeof PIECE_IDS!=='undefined'&&PIECE_IDS.has(id))||id===B.ATL_BRICK;
+function buildChestRoom(cx,cy,R,put,bput,small){ const kind=roomStyleAt(cx,cy), S=ROOM_STYLE[kind]; const hw=small?3:4+((R()*3)|0), two=!small&&R()<S.twoFloor, hh=two?10:5, gy=cy+1, x0=cx-hw, x1=cx+hw, pass=small?2:6;
+  // never over another chest, a door or a structure
+  for(let y=gy-hh-2;y<=gy+1;y++) for(let x=x0-pass;x<=x1+pass;x++){ if(x<2||x>=W-2||y<2||y>=H-2) return null; const id=world[y*W+x]; if(x===cx&&y===cy) continue; if(roomKeep(id)) return null; }
+  const chest=world[cy*W+cx], loot=chests[cx+','+cy];
+  // shell: floor, walls, ceiling
+  for(let x=x0-1;x<=x1+1;x++){ put(x,gy,x===x0-1||x===x1+1?S.wall:S.floor); put(x,gy-hh-1,S.roof); }
+  for(let y=gy-hh;y<gy;y++){ put(x0-1,y,S.wall); put(x1+1,y,S.wall); }
+  // inside: open, with an intricate back wall
+  for(let y=gy-hh;y<gy;y++) for(let x=x0;x<=x1;x++){ put(x,y,0); const fromTop=y-(gy-hh), fromBot=gy-1-y;
+    bput(x,y,(x-x0)%4===0?S.pillar:fromTop===0?S.frieze:fromBot===0?S.wains:S.bg); }
+  // a second floor: a plank floor with a hatch of platforms
+  if(two){ const fy=gy-6; for(let x=x0;x<=x1;x++) put(x,fy,(x===x0+1||x===x0+2)?B.PLATFORM:B.PLANK); }
+  // openings and short passages on both sides
+  for(const s of [-1,1]){ const ex=s<0?x0-1:x1+1; for(let k=0;k<6;k++){ const X=ex+s*k; let opened=false; for(const dy of [1,2]){ const i=(gy-dy)*W+X; if(world[i]===B.BEDROCK) continue; if(world[i]===0&&k>0) opened=true; put(X,gy-dy,0); }
+      if(k>0&&!BLOCKS[world[gy*W+X]].solid) put(X,gy,S.floor); if(opened&&k>1) break; } }
+  // the chest back in its place, lights, a bed sometimes
+  put(cx,cy,chest); if(loot) chests[cx+','+cy]=loot;
+  put(x0,gy-3,S.light); put(x1,gy-3,S.light); if(two){ put(x0,gy-9,S.light); put(x1,gy-9,S.light); }
+  if(R()<S.bed){ const bx=cx>(x0+x1)/2?x0+1:x1-1, by=two?gy-7:gy-1; if(world[by*W+bx]===0&&!isChestId(world[by*W+bx])) put(bx,by,B.BED); }
+  // rugs on the floor
+  const rug=RUGS[(R()*RUGS.length)|0]; for(let x=x0+1;x<=x1-1;x++) if(world[(gy-1)*W+x]===0&&x!==cx&&R()<0.6) put(x,gy-1,rug);
+  return {kind,x0,x1,y0:gy-hh,y1:gy-1}; }
+function chestRoomsAll(onlyUnseen,raw){ if(!world||!chests) return 0; const R=mulberry((seed|0)+2570); let n=0;
+  const put=raw?(x,y,id)=>{ world[y*W+x]=id; liq[y*W+x]=0; if(typeof shape!=='undefined'&&shape) shape[y*W+x]=0; }:(x,y,id)=>{ setTile(x,y,id); try{ shape[y*W+x]=0; }catch(e){} };
+  const bput=raw?(x,y,v)=>{ bg[y*W+x]=v; }:(x,y,v)=>{ bset(x,y,v); if(explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} };
+  const boxes=placeBoxes(), refs=chestRefs(); const inPlace=(x,y)=>boxes.some(([a,b,c,d])=>x>=a&&x<=b&&y>=c&&y<=d);
+  const rooms=[];
+  for(const k of Object.keys(chests)){ const [x,y]=k.split(',').map(Number), c=chests[k]||{}; if(!isChestId(world[y*W+x])) continue;
+    if(y<=(surf[x]||0)+6||y<skyOff+2||(typeof magmaY!=='undefined'&&y>=magmaY-2)) continue; if(c.atlantis||c.magmaVault||c.kraken||c.wingCache||c.opened) continue;
+    if(refs.has(k)||inPlace(x,y)) continue; if(onlyUnseen){ let seen=false; for(let dy=-6;dy<=2&&!seen;dy++) for(let dx=-8;dx<=8;dx++) if(explored[(y+dy)*W+x+dx]){ seen=true; break; } if(seen) continue; }
+    let r=buildChestRoom(x,y,R,put,bput,false); if(!r) r=buildChestRoom(x,y,R,put,bput,true);
+    if(!r){ if(!onlyUnseen||!c.opened){ put(x,y,0); delete chests[k]; } continue; }   // no room for a room: the chest goes (an underground chest is always in a room)
+    c.room=r.kind; rooms.push(r); n++; }
+  // decorations by style, after every room is built
+  for(const r of rooms){ try{ decorateBox({x0:r.x0,x1:r.x1,y0:r.y0,y1:r.y1},r.kind,raw?(x,y,v)=>{ world[y*W+x]=v; }:(x,y,v)=>setTile(x,y,v),(seed|0)*7+r.x0); }catch(e){ console.warn(e); } }
+  return n; }
+function realmSpecials(raw){ if(!home) return 0; let n=0; const put=raw?(x,y,v)=>{ world[y*W+x]=v; }:(x,y,v)=>setTile(x,y,v);
+  for(const [c,th] of [[sky&&sky.castle,'skyspecial'],[magma&&magma.keep,'magmaspecial']]){ if(!c||!isFinite(c.x0)) continue; try{ n+=decorateBox({x0:c.x0,x1:c.x1,y0:(c.top??c.gy-60),y1:c.gy},th,put,(seed|0)*13+c.x0); }catch(e){ console.warn(e); } }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ if(!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())&&!(typeof window!=='undefined'&&window.DA_DEMO)){
+        const n=chestRoomsAll(false,true); realmSpecials(true); if(home){ home.chestRoomV=1; home.realmDeco186=1; home.chestRooms=n; } try{ if(typeof bed3All==='function') bed3All(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&!home.tutorial&&!home.editor){
+        if(!home.chestRoomV){ home.chestRoomV=1; facRun(()=>chestRoomsAll(true,false)); }
+        if(!home.realmDeco186){ home.realmDeco186=1; facRun(()=>realmSpecials(false)); } } }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-11 (screenshot: the Cauldron, "A black iron cauldron, something green inside. 1 wide and 1 tall"): "For
+// all of the items make sure that it doesn't just say what size they are in the description ... and also make it so that the
+// various blocks for the villagers such as the cauldron, brazier, etc all add new crafting recipes from already made crafting
+// recipes so the player must use those to craft various items" =====
+// 1. Work stations (stand within a few blocks, like a workbench or furnace):
+//    Cauldron: every potion and elixir, and every dye.
+//    Anvil: weapons, armour and tools made with gold, mythril, adamantite or storm metal (copper, iron and silver stay at the
+//    workbench and furnace, so a new hero can still get started).
+//    Loom: everything woven from wool (rugs, beds, banners, nets, cushions and the rest).
+//    Brazier: the sweets (cakes, tarts, cookies, candied apples, the golden fish feast).
+// 2. No item's text is only its size any more: decorations say where they go (on a floor, on a back wall, from a ceiling) and what
+//    they are for; the four stations say what is made at them.
+const STATION_RULES=[];
+function stationId(key){ return DK[key]&&DK[key].id; }
+{ const C=stationId('cauldron'), A=stationId('anvil'), L=stationId('loom'), Z=stationId('brazier');
+  const hardMetal=new Set([I.GOLD_BAR,I.MYTHRIL_BAR,I.ADAMANT_BAR].filter(v=>v!=null)); try{ for(const k of Object.keys(ITEMS)){ const d=ITEMS[k]; if(d&&d.kind==='mat'&&/storm (bar|ingot)|stormsteel/i.test(d.name||'')) hardMetal.add(+k); } }catch(e){}
+  const dyeIds=new Set(Object.values(typeof DYE!=='undefined'?DYE:{}));
+  const sweetIds=new Set(Object.keys(typeof SWEETS!=='undefined'?SWEETS:{}).map(Number).concat(Object.values(typeof SWEETS!=='undefined'?SWEETS:{}).filter(v=>typeof v==='number')));
+  const isGear=d=>['weapon','armor','pick','axe','hammer','hoe'].includes(d.kind);
+  const moved={cauldron:0,anvil:0,loom:0,brazier:0};
+  for(const r of RECIPES){ const d=ITEMS[r.out]; if(!d||!r.need) continue; const ids=r.need.map(n=>n[0]);
+    if(C&&(d.kind==='potion'||d.kind==='elixir'||/\b(potion|elixir|tonic)\b/i.test(d.name||'')||dyeIds.has(r.out))){ r.st=C; r.cook=false; moved.cauldron++; continue; }
+    if(A&&isGear(d)&&ids.some(id=>hardMetal.has(id))){ r.st=A; moved.anvil++; continue; }
+    if(Z&&sweetIds.has(r.out)){ r.st=Z; moved.brazier++; continue; }
+    if(L&&ids.includes(483)&&(!r.st||r.st===B.WORKBENCH)&&r.out!==L){ const wool=(r.need.find(n=>n[0]===483)||[0,0])[1], most=Math.max(...r.need.filter(n=>n[0]!==483).map(n=>n[1]),0);
+      const woven=wool>=most||(typeof isBedId==='function'&&isBedId(r.out))||(typeof BED_BY_ID!=='undefined'&&BED_BY_ID[r.out])||(typeof RUG_SET!=='undefined'&&RUG_SET.has(r.out))||/banner|cushion|rug|tapestry|pennant/i.test(d.name||'');
+      if(woven&&d.kind!=='grapple'&&!/hook/i.test(d.name||'')){ r.st=L; moved.loom++; continue; } } }
+  const say=(id,t)=>{ if(id&&ITEMS[id]) ITEMS[id].desc=t; };
+  say(C,'A black iron cauldron on a little fire. Stand by it to brew every potion and elixir, and to mix dyes');
+  say(A,'A heavy smith\'s anvil. Stand by it to forge weapons, armour and tools of gold, mythril, adamantite and storm metal');
+  say(L,'A weaver\'s loom. Stand by it to weave anything made from wool: rugs, beds, banners, cushions and nets');
+  say(Z,'A brazier of glowing coals. Stand by it to bake sweets: cakes, tarts, cookies and candied fruit');
+  for(const id of [C,A,L,Z]) if(id&&ITEMS[id]) ITEMS[id].station=true;
+  STATION_RULES.push(moved); }
+// stations are found like the workbench: anywhere within reach, their parts included
+// ---- item text: where a decoration goes and what it is, not only its size ----
+{ const where=m=>m==='ceil'?'Hang it from a ceiling.':m==='wall'?'Hang it on a back wall.':'Stand it on a floor.';
+  for(const [k,d] of Object.entries(ITEMS)){ if(!d||typeof d.desc!=='string') continue; const p=typeof PIECE!=='undefined'&&PIECE[+k];
+    const m=d.desc.match(/\.?\s*(\d+) wide and (\d+) tall(, hangs from a ceiling|, hangs on a back wall)?\.?$/); if(!m) continue;
+    let base=d.desc.slice(0,m.index).trim(); if(base&&!/[.!?]$/.test(base)) base+='.';
+    const mount=p?p.mount:(m[3]&&/ceiling/.test(m[3])?'ceil':m[3]?'wall':'floor');
+    const kindTxt=d.station?'':(p&&p.fluid?'':' A decoration for any room.');
+    d.desc=`${base}${kindTxt} ${where(mount)} It takes ${m[1]} by ${m[2]} blocks.`.replace(/\s+/g,' ').trim(); } }
+// ===== Kinard, 2026-11-11: "make it so when dragging an item the item is seen as being held and then placed with the other item" =====
+// While you drag an item in the bag, a chest or the hotbar, it is shown held: bigger, tilted a little, with its count, and on a
+// phone it floats above your finger (it was under the finger, out of sight). The slot it would land in lights up (green when it
+// joins a stack of the same item), and when you let go the item drops into that slot with a little pop.
+{ const st=document.createElement('style'); st.textContent=`#dragGhost.held{ width:44px; height:44px; transform:rotate(-8deg); filter:drop-shadow(3px 4px 0 rgba(0,0,0,.45)); opacity:1; }
+#dragGhost.held img{ width:44px; height:44px; } #dragGhost .dn{ position:absolute; right:-4px; bottom:-2px; font-family:var(--font); font-size:9px; color:#fff; text-shadow:1px 1px 0 #000,-1px -1px 0 #000; }
+.slot.droptarget{ outline:3px solid var(--gold); outline-offset:-3px; } .slot.dropjoin{ outline:3px solid #8af07a; outline-offset:-3px; }
+@keyframes slotPop{ 0%{ transform:scale(1.25); } 100%{ transform:scale(1); } } .slot.droppop{ animation:slotPop .22s ease-out; }`; document.head.appendChild(st); }
+const DRAG_SEL='#invGrid .slot[data-i], .slot[data-ci], #chestBag .slot[data-bi], #hotbar .slot';
+let dragTouch=false, dragOn=false, dragFrom=null, dragHover=null;
+function dragItemOf(el){ if(!el) return null; if(el.dataset.ci!=null){ const c=chestAt&&chests[chestAt]; return c&&c.items?c.items[+el.dataset.ci]:null; } const i=el.dataset.i!=null?+el.dataset.i:el.dataset.bi!=null?+el.dataset.bi:el.parentElement&&el.parentElement.id==='hotbar'?[...el.parentElement.children].indexOf(el):null; return i==null?null:player&&player.inv[i]; }
+function dragPlace(x,y){ const g=$('#dragGhost'); if(!g||g.hidden) return; if(dragTouch){ g.style.left=(x-22)+'px'; g.style.top=(y-70)+'px'; } else { g.style.left=(x-14)+'px'; g.style.top=(y-14)+'px'; } }
+document.addEventListener('pointerdown',e=>{ const s=e.target.closest&&e.target.closest(DRAG_SEL); dragFrom=s||null; dragTouch=e.pointerType!=='mouse'; dragOn=false; },true);
+document.addEventListener('pointermove',e=>{ try{ const g=$('#dragGhost'); if(!g||g.hidden){ if(dragHover){ dragHover.classList.remove('droptarget','dropjoin'); dragHover=null; } return; }
+    if(!dragOn){ dragOn=true; g.classList.add('held'); const it=dragItemOf(dragFrom); let dn=g.querySelector('.dn'); if(!dn){ dn=document.createElement('span'); dn.className='dn'; g.appendChild(dn); } dn.textContent=it&&it.n>1?'×'+it.n:''; }
+    dragPlace(e.clientX,e.clientY);
+    // the slot under the pointer (the picture floats above the finger, the finger still points at the slot)
+    g.style.visibility='hidden'; const el=document.elementFromPoint(e.clientX,e.clientY); g.style.visibility='';
+    const t=el&&el.closest(DRAG_SEL); if(t!==dragHover){ if(dragHover) dragHover.classList.remove('droptarget','dropjoin'); dragHover=t&&t!==dragFrom?t:null;
+      if(dragHover){ const a=dragItemOf(dragFrom), b=dragItemOf(dragHover); dragHover.classList.add(a&&b&&a.id===b.id?'dropjoin':'droptarget'); } } }catch(err){} },{passive:true});
+document.addEventListener('pointerup',e=>{ try{ const t=dragHover; if(dragHover){ dragHover.classList.remove('droptarget','dropjoin'); dragHover=null; } const g=$('#dragGhost'); if(g) g.classList.remove('held'); dragOn=false;
+    if(t) setTimeout(()=>{ try{ // the slot was redrawn: find it again by its place
+        const sel=t.dataset.ci!=null?`.slot[data-ci="${t.dataset.ci}"]`:t.dataset.i!=null?`#invGrid .slot[data-i="${t.dataset.i}"]`:t.dataset.bi!=null?`#chestBag .slot[data-bi="${t.dataset.bi}"]`:null;
+        const n=sel?document.querySelector(sel):t; if(n){ n.classList.remove('droppop'); void n.offsetWidth; n.classList.add('droppop'); setTimeout(()=>n.classList.remove('droppop'),260); } }catch(err){} },30); }catch(err){} },true);
+document.addEventListener('pointercancel',()=>{ if(dragHover){ dragHover.classList.remove('droptarget','dropjoin'); dragHover=null; } const g=$('#dragGhost'); if(g) g.classList.remove('held'); dragOn=false; },true);
+// ===== Kinard, 2026-11-11: "Make it so that the banners are placed by the player and are 3 blocks tall with a pole also increase
+// their range to be 15 blocks away and make it so the player can also choose to carry a banner or give it to one of his teammates
+// to hold and there is a distinct new animation for the player or his teammate holding the banner make it so that each character can
+// only hold one banner at a time though and if someone who is holding a banner dies it is lost to the enemy who killed them" =====
+// The four war banners (War, Swift, Shield, Mending) are no longer worn like charms. Use one and choose:
+//   Carry it: you hold it high on a pole three blocks tall, its flag streaming as you go.
+//   Plant it here: it stands on its pole where you are.
+//   Give it to <soldier>: that soldier carries it into battle.
+// Each one lifts everyone on your side within BANNER_R blocks. Nobody holds more than one banner. Whoever carries a banner and
+// dies loses it to the enemy that killed them: that enemy carries it (and its lift goes to their side) until it is killed, and
+// then the banner falls where they stood for you to take back. Talk (F) beside a planted banner picks it up; with a banner in
+// hand you can plant it, give it to a soldier beside you or put it away. A banner worn as a charm in an older world is carried.
+const BANNER_R=15, BANNER_POLE=48;
+function bannerState(){ if(!home) return {held:0,planted:[],sol:{}}; const b=home.banners=home.banners||{}; b.held=b.held||0; b.planted=b.planted||[]; b.sol=b.sol||{}; return b; }
+const isWarBanner=id=>!!(typeof TEAM_CHARMS!=='undefined'&&TEAM_CHARMS[id]);
+function bannerName(id){ return (CHARMS[id]&&CHARMS[id].name)||(ITEMS[id]&&ITEMS[id].name)||'banner'; }
+function bannerOf(e){ if(!e||e.dead) return 0; const s=bannerState(); if(e===player) return s.held||0; if(e.bannerHeld) return e.bannerHeld; if(e.kind==='human'&&player&&e.team===player.team&&e.name&&s.sol[e.name]) return s.sol[e.name]; return 0; }
+function soldiersNear(r){ return ents.filter(e=>!e.dead&&e.kind==='human'&&player&&e.team===player.team&&e.name&&Math.abs(cxOf(e)-cxOf(player))<r*T&&Math.abs(cyOf(e)-cyOf(player))<4*T); }
+// ---- the lift: every banner reaches BANNER_R blocks ----
+auraTick=function(dt){ auraT-=dt; if(auraT>0) return; auraT=AURA_EVERY; const B_=auraBearers();
+  for(const e of ents){ if(e.dead||!(e.kind==='player'||e.kind==='human'||(e.kind==='animal'&&e.tamed))){ if(e.aura) e.aura=null; continue; }
+    let a=null; const x=cxOf(e), y=cyOf(e);
+    for(const b of B_){ const [bx,by,tm,k]=b, R=(b[4]||AURA_R)*T; if(tm!==e.team||(a&&a[k])) continue; if(Math.abs(bx-x)<=R&&Math.abs(by-y)<=R) (a=a||{})[k]=1; }
+    e.aura=a; } };
+{ const _ab=auraBearers; auraBearers=function(...a){ let L=_ab(...a); try{ const s=bannerState();
+      if(player&&!player.dead&&s.held&&TEAM_CHARMS[s.held]) L.push([cxOf(player),cyOf(player),player.team,TEAM_CHARMS[s.held],BANNER_R]);
+      for(const p of s.planted) if(TEAM_CHARMS[p.id]&&player) L.push([p.x*T+8,(p.y-1)*T,player.team,TEAM_CHARMS[p.id],BANNER_R]);
+      for(const e of ents){ if(e===player||e.dead) continue; const id=bannerOf(e); if(id&&TEAM_CHARMS[id]) L.push([cxOf(e),cyOf(e),e.team,TEAM_CHARMS[id],BANNER_R]); } }catch(e){ console.warn(e); } return L; }; }
+// ---- using a banner ----
+function bannerChoices(id){ const s=bannerState(), nm=bannerName(id), opts=[];
+  opts.push({label:s.held?`Carry the ${nm.toLowerCase()} (your ${bannerName(s.held).toLowerCase()} goes back in your bag)`:`Carry the ${nm.toLowerCase()}`,go:()=>{ if(countItem(id)<1) return; takeItem(id,1); if(s.held) give(s.held,1); s.held=id; invDirty=true; toast(`You carry the ${nm.toLowerCase()}: everyone on your side within ${BANNER_R} blocks is lifted`,3.5); }});
+  opts.push({label:`Plant the ${nm.toLowerCase()} here`,go:()=>{ const p=bannerSpot(); if(!p){ toast('Stand on solid ground with room above you to plant a banner',2.5); return; } if(countItem(id)<1) return; takeItem(id,1); s.planted.push({x:p.x,y:p.y,id}); invDirty=true; try{ sfx('place'); }catch(e){} toast(`The ${nm.toLowerCase()} stands here: it lifts your side within ${BANNER_R} blocks`,3.5); }});
+  for(const e of soldiersNear(6).slice(0,4)) opts.push({label:`Give the ${nm.toLowerCase()} to ${e.name}${bannerOf(e)?` (${bannerName(bannerOf(e)).toLowerCase()} comes back to you)`:''}`,go:()=>{ if(countItem(id)<1) return; takeItem(id,1); const old=s.sol[e.name]; if(old) give(old,1); s.sol[e.name]=id; invDirty=true; toast(`${e.name} carries the ${nm.toLowerCase()}`,3); }});
+  return opts; }
+function bannerSpot(){ const p=player; const x=Math.floor(cxOf(p)/T), y=Math.floor((p.y+p.h-1)/T); const f=tileAt(x,y+1); if(!(BLOCKS[f]&&BLOCKS[f].solid)) return null;
+  for(let k=0;k<3;k++){ const id=tileAt(x,y-k); if(id&&BLOCKS[id]&&BLOCKS[id].solid) return null; } if(bannerState().planted.some(b=>Math.abs(b.x-x)<2&&Math.abs(b.y-y)<3)) return null; return {x,y}; }
+{ const _wc=wearCharm; wearCharm=function(id,...a){ if(isWarBanner(+id)){ showPickList(bannerChoices(+id)); return; } return _wc(id,...a); }; }
+// talking beside a planted banner, or with a banner in hand
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const s=bannerState(); if(!player||player.dead) return o; const px=cxOf(player)/T, py=(player.y+player.h)/T;
+      s.planted.forEach((b,i)=>{ if(Math.abs(b.x+0.5-px)<2.5&&Math.abs(b.y+1-py)<3) o.push({label:`Pick up the ${bannerName(b.id).toLowerCase()}`,direct:true,go:()=>{ const j=s.planted.indexOf(b); if(j>=0) s.planted.splice(j,1); give(b.id,1); invDirty=true; }}); });
+      if(s.held){ const id=s.held, nm=bannerName(id).toLowerCase();
+        o.push({label:`Plant your ${nm} here`,go:()=>{ const p=bannerSpot(); if(!p){ toast('Stand on solid ground with room above you to plant a banner',2.5); return; } s.planted.push({x:p.x,y:p.y,id}); s.held=0; }});
+        for(const e of soldiersNear(4).slice(0,3)) if(!bannerOf(e)) o.push({label:`Give your ${nm} to ${e.name}`,go:()=>{ s.sol[e.name]=id; s.held=0; toast(`${e.name} carries the ${nm}`,3); }});
+        o.push({label:`Put your ${nm} away`,go:()=>{ give(id,1); s.held=0; invDirty=true; }}); } }catch(e){ console.warn(e); } return o; }; }
+// ---- lost in battle ----
+{ const _k=kill; kill=function(e,src,...a){ let id=0, wasPlayer=false; try{ if(e&&!e.dead){ id=bannerOf(e); wasPlayer=e===player; } }catch(err){} const r=_k(e,src,...a);
+    try{ if(id&&e&&e.dead){ const s=bannerState(); if(wasPlayer) s.held=0; else if(e.bannerHeld) e.bannerHeld=0; else if(e.name&&s.sol[e.name]===id) delete s.sol[e.name];
+        const k=killerOf(src); const enemy=k&&!k.dead&&(k.kind==='human'||k.kind==='monster')&&player&&k.team!==player.team&&!k.ghost;
+        if(enemy&&!bannerOf(k)){ k.bannerHeld=id; toast(`${wasPlayer?'You':e.name||'Your soldier'} lost the ${bannerName(id).toLowerCase()} to the enemy! Defeat its new bearer to win it back`,4); }
+        else { try{ spawnDrop(cxOf(e),cyOf(e),id,1); }catch(err){} } } }catch(err){ console.warn(err); } return r; }; }
+// older worlds: a banner worn as a charm is carried instead (the first; any others go back to the bag)
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ const s=bannerState(); for(const id of wornCharms(player).filter(isWarBanner)){ takeOffCharm(id); if(!s.held&&countItem(id)>0){ takeItem(id,1); s.held=id; } } }catch(e){ console.warn(e); } return r; }; }
+// ---- drawing: a pole three blocks tall and a flag that streams ----
+function drawBannerPole(x,yb,id,face,sway,t){ const col=(CHARMS[id]&&CHARMS[id].col)||'#c83a3a'; ctx.save(); ctx.translate(x,yb); ctx.rotate(sway);
+  ctx.fillStyle='#6a4422'; ctx.fillRect(-1,-BANNER_POLE,2,BANNER_POLE); ctx.fillStyle='#d8b040'; ctx.fillRect(-2,-BANNER_POLE-3,4,3); ctx.fillRect(-1,-BANNER_POLE-5,2,2);
+  const fw=14, fh=11, dir=-face; for(let i=0;i<fw;i++){ const wv=Math.round(Math.sin(t*6+i*0.6)*1.5*(i/fw)); ctx.fillStyle=i%5===0?'rgba(0,0,0,0.18)':col; ctx.fillRect(dir>0?1+i:-2-i,-BANNER_POLE+1+wv,1,fh-(i>fw-4?(i-(fw-4))*2:0)); }
+  ctx.fillStyle='#f0e0c0'; ctx.fillRect(dir>0?5:-9,-BANNER_POLE+4+Math.round(Math.sin(t*6+3)*0.8),4,4); ctx.restore(); }
+{ const _de=drawEntity; drawEntity=function(e,...a){ const id=bannerOf(e); if(!id) return _de(e,...a); const t=performance.now()/1000, face=e.facing||1, run=Math.abs(e.vx||0)>8;
+    const step=run?Math.sin((e.anim||0)*10):0;   // the pole bobs with each stride and leans into the wind as they run
+    drawBannerPole(Math.round(cxOf(e))-face*2,Math.round(e.y+e.h-8),id,face,-face*Math.min(0.25,Math.abs(e.vx||0)/500)+step*0.04,t);
+    return _de(e,...a); }; }
+{ const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ const s=home&&home.banners; if(s&&s.planted){ const t=performance.now()/1000; for(const b of s.planted){ const X=b.x*T+8, Y=(b.y+1)*T; if(X<camX-40||X>camX+viewW+40||Y<camY-60||Y>camY+viewH+60) continue; drawBannerPole(X,Y,b.id,1,Math.sin(t*0.8+b.x)*0.02,t); } } }catch(e){} return r; }; }
+for(const id of Object.keys(TEAM_CHARMS)){ const d=ITEMS[id]; if(d){ const k=TEAM_CHARMS[id]; const what={atk:'deals 15% more damage',spd:'moves 10% faster',def:'takes 15% less damage',regen:'heals 2% of their health each second out of battle'}[k]||'is lifted';
+  d.desc=`A war banner on a pole three blocks tall. Carry it, plant it, or give it to a soldier: everyone on your side within ${BANNER_R} blocks ${what}. Whoever carries it and falls loses it to the enemy`; } }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
