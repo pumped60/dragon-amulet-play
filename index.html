@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1794380147"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794380147"><link rel="manifest" href="manifest.webmanifest?v=1794380147"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1794463197"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794463197"><link rel="manifest" href="manifest.webmanifest?v=1794463197"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.186</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.187</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,13 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.187</h3>
+    <p><b>Carpet</b> lies on any block, trap doors and platforms included, and follows a slope or a stair with no gap; it falls when the block under it is broken. The castle's main hall is carpeted wall to wall on both floors in your colour, and its bed stands upstairs between the hatch and the portal. Beds in your village's buildings face the way in.</p>
+    <p><b>Arrow slits:</b> wooden buildings get the new Wooden arrow slit, stone ones stone slits and iron ones iron slits. Standing at a slit shelters you: wood stops 30% of the shots aimed at you and takes 5% off the damage, stone 45% and 10%, dark slate 55% and 15%, iron 65% and 20%. A village house has its slits on its top floor only, one in each side wall. Doors show their building's back wall: wood, then stone, then iron.</p>
+    <p><b>Villagers:</b> one Reassign button opens the list of jobs. Talk passes over the farm workers to the Head farmer. The Cauldron, Anvil, Loom and Brazier open with Talk like the workbench. The torch is held out in your far hand, behind you, the way you hold a tool. The Fountains box is the size of the rows round it. Older worlds get all of this when they load.</p>
+    <p><b>Underground:</b> a third of the chest rooms are abandoned, crumbling and full of cobwebs, and half of those are overgrown with moss, vines and ferns; rooms have doors and more furniture, beds stand inside, and vault rooms have marble floors. Gold blocks are kept for treasure and thrones, not building. Cave chests hold few seeds and seldom a weapon or tool: most gear is made. Farmers only bring crops you have found yourself.</p>
+    <p><b>Decorations:</b> statues and paintings are only found, in chests and in the world's buildings and ruins; other decorations cost more, by size. The Queen statue is carved in more detail. At the village's second stage every building is dark slate like the castle, with dark slate doors, furniture and arrow slits. Item names show when you point at or tap an item in any chest, barrel, cupboard or the bag, and the word and picture when you pick something up are half the size.</p>
+    <p><b>Homes:</b> no one-block beds are left anywhere. A villager's bed follows their building's level: straw at level 1, a wooden bed at level 2, a royal bed at level 3. Every floor of a building matches its stage, and the shop level row is always first in a villager's window; the lodge, farmhouse and miners' hut show theirs in their head worker's window. The farmhouse has a small paddock: set a farmer to Animals and they feed the animals and bring wool, milk and eggs. <b>The sea:</b> sea creatures glow a little, the Glowstick lights the water, each sunken site has 1 to 5 Atlantean buildings, chests in water are under the water all over, and rain stops at the water's surface.</p>
     <h3>New in Beta 0.9.186</h3>
     <p><b>Chest rooms:</b> every chest under the ground stands in a room of its own: a cellar near the top, a crypt in the shale, a hall below that and a treasure vault in the deepest layers, each with patterned back walls, paintings, furniture and lights, some with a bed and some with a second floor. The deeper the room, the rarer what is in it, down to the Ancient urn and the Gilded reliquary. The sky castle has a Star harp and the magma keep an Ember idol.</p>
     <p><b>The sea:</b> the sea floor is sand at least ten blocks deep, and on it stand the sunken halls of Atlantis, dry inside, with two chests of sunken treasure each. Trident guards, sirens whose song slows you and reef golems swim around them until the treasure is taken. With a strong rod and good bait you may, very rarely, catch an Ocean emerald; three make an Ocean rune. Set in a weapon, it gives a second rune socket and lets its runes work underwater (without one, runes do nothing in water, and water puts out fire).</p>
@@ -916,7 +923,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.186</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.187</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1177,7 +1184,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.186</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.187</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1199,7 +1206,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.186', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.187', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2931,7 +2938,7 @@ function spawnDrop(x,y,id,n,coins){ if(!coins&&!ITEMS[id]) return; drops.push({x
 function dropCoins(x,y,total){ while(total>0){ const c=Math.min(total,total>40?25:total>8?5:1); spawnDrop(x,y,0,0,c); total-=c; } }
 function updateDrops(dt){ if(!player) return; const px=cxOf(player), py=cyOf(player);
   for(const d of drops){ d.age+=dt; const near=!player.dead&&Math.hypot(d.x-px,d.y-py)<2*T+8;
-    if(near&&d.age>0.35&&(d.coins||roomFor(d.id,d.n))){ if(d.ghost&&typeof MP!=='undefined'){ (MP.picks=MP.picks||[]).push(d.did); (MP.picked=MP.picked||new Set()).add(d.did); d.dead=true; continue; }   /* a friend's world: the host hands it over if nobody got it first */ d.vx=(px-d.x)*8; d.vy=(py-d.y)*8; d.x+=d.vx*dt; d.y+=d.vy*dt; if(Math.hypot(d.x-px,d.y-py)<10){ d.dead=true; if(typeof sfx==='function') sfx(d.coins?'coin':'pickup'); if(d.coins) addCoins(d.coins,px,player.y); else obtain(d.id,d.n,true); } continue; }
+    if(near&&d.age>0.35&&(d.coins||roomFor(d.id,d.n))){ if(d.ghost&&typeof MP!=='undefined'){ (MP.picks=MP.picks||[]).push(d.did); (MP.picked=MP.picked||new Set()).add(d.did); d.dead=true; continue; }   /* a friend's world: the host hands it over if nobody got it first */ d.pulling=true; d.vx=(px-d.x)*8; d.vy=(py-d.y)*8; d.x+=d.vx*dt; d.y+=d.vy*dt; if(Math.hypot(d.x-px,d.y-py)<10){ d.dead=true; if(typeof sfx==='function') sfx(d.coins?'coin':'pickup'); if(d.coins) addCoins(d.coins,px,player.y); else obtain(d.id,d.n,true); } continue; }
     d.vy=Math.min(d.vy+GRAV*dt,500); const nx=d.x+d.vx*dt, ny=d.y+d.vy*dt;
     if(isSolid(Math.floor(nx/T),Math.floor(d.y/T))) d.vx*=-0.3; else d.x=nx;
     { const tx=Math.floor(d.x/T), ty=Math.floor((ny+3)/T), b=BLOCKS[tileAt(tx,ty)]; if(isSolid(tx,ty)||(b&&b.platform&&d.vy>=0&&(d.y+3)<=ty*T+2)){ d.vy=0; d.vx*=0.8; d.y=Math.min(ny,ty*T-3); } else d.y=ny; }
@@ -2974,7 +2981,7 @@ function give(id,n){ markFound(id);
   for(let i=0;i<inv.length&&left>0;i++){ const s=inv[i]; if(s&&s.id===id){ s.n+=left; left=0; } }
   if(inv.length>INV_N){ for(let k=INV_N;k<inv.length;k++) if(inv[k]) spawnDrop(cxOf(player),player.y,inv[k].id,inv[k].n); inv.length=INV_N; } while(inv.length<INV_N) inv.push(null);
   if(left>0){ let i=inv.indexOf(null); if(i>=0){ inv[i]={id,n:left}; left=0; } else { spawnDrop(cxOf(player),player.y,id,left); left=0; if(!player.fullWarn||time-player.fullWarn>0.01){ player.fullWarn=time; toast('Your bag is full; the item stays on the ground',2); } return n; } }
-  if(left<n) addFloat(cxOf(player),player.y-10,'+'+(n-left)+' '+ITEMS[id].name,'#b8f5a0');
+  if(left<n){ addFloat(cxOf(player),player.y-6,'+'+(n-left)+' '+ITEMS[id].name,'#b8f5a0'); floats[floats.length-1].pick=true; }   // 0.9.187: the pickup word is half size
   if(left>0) toast('Your bag is full');
   invDirty=true; return n-left;
 }
@@ -4786,7 +4793,7 @@ function render(){
       // dropped things float just above the ground with a soft shadow beneath, no box around them
       const sh=Math.round(d.y+5); ctx.fillStyle='rgba(0,0,0,0.25)'; ctx.fillRect(x-3,sh,7,1); ctx.fillRect(x-2,sh+1,5,1);
       if(d.coins){ ctx.fillStyle='#b8860b'; ctx.fillRect(x-2,y-3,5,1); ctx.fillRect(x-3,y-2,1,5); ctx.fillRect(x+2,y-2,1,5); ctx.fillRect(x-2,y+2,5,1); ctx.fillStyle='#ffcf3a'; ctx.fillRect(x-2,y-2,4,4); ctx.fillStyle='#fff6c8'; ctx.fillRect(x-1,y-2,1,2); if(d.coins>=5){ ctx.fillStyle='#ffcf3a'; ctx.fillRect(x+2,y-6,3,3); ctx.fillStyle='#b8860b'; ctx.fillRect(x+2,y-3,3,1); } }
-      else if(ITEMS[d.id]){ ctx.drawImage(iconTex(d.id),x-6,y-6,12,12); } else d.dead=true; }
+      else if(ITEMS[d.id]){ const z=d.pulling?6:12; ctx.drawImage(iconTex(d.id),x-z/2,y-z/2,z,z); }   /* 0.9.187: half size as it flies into you */ else d.dead=true; }
     for(let y=ty0;y<=ty1;y++) for(let x=tx0;x<=tx1;x++){ if(world[y*W+x]!==B.PORTAL) continue; const on=tower.cleared||rules.mode==='creative'||y<skyOff; ctx.globalAlpha=on?0.9:0.35;
       for(let k=0;k<6;k++){ const a=t*3+k*1.05; ctx.fillStyle=k%2?'#f0e0ff':'#b066ff'; ctx.fillRect(Math.round(x*T+8+Math.cos(a)*5)-1,Math.round(y*T+8+Math.sin(a)*7)-1,2,2); } ctx.globalAlpha=1; }
     const by=(barrierY+1)*T; if(by>camY&&by<camY+viewH){ for(let x=Math.floor(camX/8)*8;x<camX+viewW;x+=8){ const a=0.25+0.2*Math.sin(t*2+x*0.05); ctx.fillStyle=`rgba(200,170,255,${a})`; ctx.fillRect(x,by-1+Math.round(Math.sin(t*3+x*0.1)),5,1); } } }
@@ -4835,7 +4842,7 @@ function render(){
     else if(input.mouse){ const ax=Math.floor(input.ax/T), ay=Math.floor(input.ay/T); const ok=Math.hypot(ax*T+8-cxOf(player),ay*T+8-cyOf(player))<=REACH;
       ctx.strokeStyle=ok?'rgba(255,255,255,0.8)':'rgba(255,120,120,0.5)'; ctx.lineWidth=1; ctx.strokeRect(ax*T+0.5,ay*T+0.5,T-1,T-1); } }
   ctx.font='8px "Press Start 2P", monospace'; ctx.textAlign='center';
-  for(const fl of floats){ ctx.globalAlpha=Math.min(1,fl.life*2); ctx.fillStyle='#000'; ctx.fillText(fl.text,fl.x+1,fl.y+1); ctx.fillStyle=fl.col; ctx.fillText(fl.text,fl.x,fl.y); }
+  for(const fl of floats){ const sm=fl.pick; if(sm) ctx.font='4px "Press Start 2P", monospace'; ctx.globalAlpha=Math.min(1,fl.life*2); ctx.fillStyle='#000'; ctx.fillText(fl.text,fl.x+(sm?0.5:1),fl.y+(sm?0.5:1)); ctx.fillStyle=fl.col; ctx.fillText(fl.text,fl.x,fl.y); if(sm) ctx.font='8px "Press Start 2P", monospace'; }
   ctx.globalAlpha=1;
 }
 let savedMpCode=null, lastCharSlot=1; let lightData=null, liqShow=null, BGW={ice:0,forest:0,lair:0}, bgFade={t:1}, bgFx={ice:0,forest:0,lair:0}; const ATTACH=new Set([B.AMETHYST,B.GLOWSHROOM,B.SHROOM_G,B.SHROOM_R,B.SHROOM_O,B.LIFE_CR,B.MANA_CR,B.FIRE_FERN,B.EMBER_BLOOM]);
@@ -5176,7 +5183,7 @@ function drawCarry(e){ const x=Math.round(cxOf(e)-e.facing*8-4), y=Math.round(e.
   ctx.fillStyle='#17111f'; ctx.fillRect(x-1,y-1,10,11); ctx.fillStyle=wood?'#8a5c2d':'#b8a888'; ctx.fillRect(x,y,8,9); ctx.fillStyle=wood?'#c99258':'#d8ccb0'; ctx.fillRect(x+1,y+1,6,2);
   if(wood){ ctx.fillStyle='#6b4422'; ctx.fillRect(x-1,y-3,4,4); ctx.fillRect(x+5,y-4,4,5); } else { ctx.fillStyle='#8a8a94'; ctx.fillRect(x+1,y-2,3,3); ctx.fillStyle='#d8a77c'; ctx.fillRect(x+4,y-2,3,3); } }
 function drawEntity(e){ if(e.carry&&e.kind==='human') drawCarry(e);
-  if(e.kind==='player'){ const hi=heldItem(); e._torch=!!(hi&&(hi.id===B.TORCH||hi.id===B.BRIGHT_TORCH)&&!e.riding&&!headWet(e)); }
+  if(e.kind==='player'){ const hi=heldItem(); e._torch=!!(hi&&(hi.id===B.TORCH||hi.id===B.BRIGHT_TORCH)&&!e.riding&&!headWet(e))||(!e.dead&&shiftTorchShow()); }
   if(e.shield>0&&!e.dead){ const a=0.25+0.15*Math.sin(performance.now()/150); ctx.strokeStyle=`rgba(184,245,160,${a})`; ctx.lineWidth=2; ctx.strokeRect(Math.round(e.x)-4,Math.round(e.y)-4,e.w+8,e.h+6); }
   if(e.mtype==='ogre'){ drawOgre(e); return; }
   if(e.mtype==='ogre_king'){ const cx=Math.round(cxOf(e)), bot=Math.round(e.y+e.h); ctx.save(); ctx.translate(cx,bot); ctx.scale(2,2); ctx.translate(-cx,-bot); drawOgre(Object.assign({},e,{x:cx-11,y:bot-46,w:22,h:46})); ctx.restore();
@@ -5186,9 +5193,9 @@ function drawEntity(e){ if(e.carry&&e.kind==='human') drawCarry(e);
   const md=meleeActive(e); if(md){ o.wpn=0; o.atk=true; o.melee=true; }
   const s=sprite(humanKey(o)+(o.elite?'|e':''),SW,SH,g=>drawHumanFig(g,o));
   const img=e.hurtT>0?flashOf(s):s.n; const cx=Math.round(cxOf(e)), top=Math.round(e.y+e.h)-SFY+(o.frame===1||o.frame===3?1:0);
+  if(e._torch) drawHandTorch(e);   // 0.9.187: in the far hand, behind the body (drawn first, like a tool)
   ctx.save(); ctx.translate(cx,0); if(e.big){ const fy=e.y+e.h; ctx.translate(0,fy); ctx.scale(e.big,e.big); ctx.translate(0,-fy); } if(e.facing<0) ctx.scale(-1,1); ctx.drawImage(img,-SCX,top); ctx.restore();
   if(md) drawSwing(e,md);
-  if(e._torch) drawHandTorch(e);
   if(e.kind==='player'&&e.atkT>0){ const hi=heldItem(); const d=hi&&ITEMS[hi.id]; if(d&&['pick','axe','hoe','hammer','net'].includes(d.kind)){ const ang=stick.r.on&&stick.r.mag>0.2?Math.atan2(stick.r.y,stick.r.x):Math.atan2((input.ay||cyOf(e))-cyOf(e),(input.ax||cxOf(e))-cxOf(e)); const ph=clamp(e.atkT/0.25,0,1); const sw=ang+(ph-0.5)*1.8*(Math.cos(ang)>=0?-1:1);
       ctx.save(); ctx.translate(Math.round(cxOf(e)),Math.round(e.y+13)); if(Math.cos(ang)<0){ ctx.rotate(sw-Math.PI/4); ctx.scale(1,-1); } else ctx.rotate(sw+Math.PI/4); ctx.drawImage(iconTex(hi.id),2,-14,14,14); ctx.restore(); } }
   if(e.kind==='player'){ const y=Math.round(e.y)-12-Math.round(Math.sin(e.anim*4)); ctx.fillStyle='#17111f'; ctx.fillRect(cx-3,y-1,7,4); ctx.fillStyle='#ffe066'; ctx.fillRect(cx-2,y,5,2); ctx.fillRect(cx-1,y+2,3,1); }
@@ -5879,7 +5886,7 @@ function update(dt){ if(!isFinite(time)) time=0.3; if(!isFinite(dayCount)||dayCo
     if(e.kind==='villager'||e.kind==='drifter') updateVillager(e,dt); else if(e.kind==='animal'){ breedTick(e,dt); updateAnimal(e,dt); } else if(e.kind==='sea') updateSea(e,dt); else if(e.kind==='captive'){ e.anim+=dt; physics(e,dt); } else { smartMoves(e,dt); updateAI(e,dt); } }catch(err){ if(!e._errSaid){ e._errSaid=true; console.warn('entity update failed',e.kind,e.mtype||e.cls,err); } if(e.target&&(e.target.dead||e.target.aboard)) e.target=null; } }
   updateProjs(dt);
   for(const p of parts){ p.life-=dt; if(p.stuck) continue; if(p.cloud){ const k=Math.pow(0.05,dt); p.vx*=k; p.vy*=k; p.x+=p.vx*dt; p.y+=p.vy*dt; continue; } p.vy+=500*dt; p.x+=p.vx*dt; p.y+=p.vy*dt; if(p.blood&&isSolid(Math.floor(p.x/T),Math.floor(p.y/T))){ p.stuck=true; p.y-=1; p.life=Math.max(p.life,2.5); } } parts=parts.filter(p=>p.life>0); if(parts.length>400) parts.splice(0,parts.length-400);
-  for(const f of floats){ f.life-=dt; f.y-=22*dt; } floats=floats.filter(f=>f.life>0);
+  for(const f of floats){ f.life-=dt; f.y-=(f.pick?11:22)*dt; } floats=floats.filter(f=>f.life>0);
   if(!MP.guest){ spawnMonsters(dt); spawnSea(dt); spawnAnimals(dt); if(MP.host) mpSpawnAround(dt); } spawnScouts(dt); respawns(dt); spawnSkyKnights(dt); facRun(()=>growBases(dt)); updateMiners(dt); updateDrops(dt); updateBridge(dt); updateBurn(player,dt); partyUnstick(dt); if(!MP.guest){ krakenTick(dt); spawnForest(dt); facRun(()=>{ factionTick(dt); warCheck(dt); }); commanderTick(dt); scoutsReturn(dt); } hungerTick(dt); updateXp(dt); penPlayerTick(dt); questTick(dt); if(!MP.guest) captureOutposts(dt); mpSend(dt); spawnFrost(dt); engineerCheck(); if(player.slowT>0){ player.slowT-=dt; player.vx*=Math.pow(0.35,dt); } stepLava(dt); warlordEconomy(dt); shieldTick(player,dt);  sunBurn(dt); boatArchers(dt); navalTick(dt); deckGuns(dt); progressTick(dt); colonyTick(dt); spawnRuinNight(dt); updateFishing(dt); growPlants(dt); if(player.fx.amulet&&$('#btnFly').hidden&&!hotbarHidden) $('#btnFly').hidden=false;
   waterT-=dt; if(waterT<=0){ waterT=1/30; stepWater(2200); }
   claimHomeCheck(); updateDoors(dt);
@@ -7496,7 +7503,7 @@ function weatherWorldTick(dt){ if(!player||!world||state!=='play'||!isHostSide()
 drawWeather=function(){ if(!player||weather==='clear') return; if(player.y<skyOff*T||player.y>magmaY*T) return; const pc=clamp(Math.floor(cxOf(player)/T),0,W-1), py=Math.floor(cyOf(player)/T); if(!skyInView()) return;   // 0.9.83: rain shows wherever the view reaches open sky, even from inside a building
   const outside=exposedAt(pc,py); const k=wxK(); const n=Math.round((weather==='storm'?150:weather==='rain'?80:100)*(0.7+0.3*k)); while(wParts.length<n) wParts.push({x:camX+Math.random()*viewW,y:camY+Math.random()*viewH,s:Math.random()}); if(wParts.length>n) wParts.length=n; const dt=1/60;
   for(const p of wParts){ if(weather==='snow'){ p.y+=(28+p.s*30)*dt; p.x+=Math.sin((p.y+p.s*99)/30)*0.4; } else { p.x+=(weather==='storm'?-150:-40)*dt; p.y+=(520+p.s*220)*dt; }
-    const c=Math.floor(p.x/T); const roof=c>=0&&c<W?skyTop[c]*T:1e9;
+    const c=Math.floor(p.x/T); let roof=c>=0&&c<W?skyTop[c]*T:1e9; if(c>=0&&c<W){ if(oceanCol&&oceanCol[c]) roof=Math.min(roof,seaY*T); const ry=Math.floor(p.y/T); if(ry>=0&&ry<H&&world[ry*W+c]===B.WATER) roof=Math.min(roof,ry*T); }   // 0.9.187: rain stops at the water, never falls underwater
     if(p.y>=roof){ if(weather!=='snow'&&p.y<roof+12&&Math.random()<0.5){ ctx.fillStyle='rgba(190,215,255,0.7)'; ctx.fillRect(p.x-1,roof-1,3,1); } p.y=camY-10-Math.random()*40; p.x=camX+Math.random()*(viewW+80); continue; }
     if(weather==='snow'){ ctx.fillStyle='rgba(255,255,255,0.85)'; const z=p.s<0.5?1:2; ctx.fillRect(p.x,p.y,z,z); } else { ctx.fillStyle='rgba(170,200,255,0.5)'; ctx.fillRect(p.x,p.y,1,6+p.s*5); }
     if(p.y>camY+viewH||p.x<camX-30||p.x>camX+viewW+40){ p.y=camY-10-Math.random()*40; p.x=camX+Math.random()*(viewW+80); } }
@@ -12196,7 +12203,11 @@ const RUGS=[], RUG_STRIP={}, RUG_ICON={};
 const RUG_SET=new Set(RUGS);
 { const _it=iconTex; iconTex=function(id){ return RUG_ICON[id]||_it(id); }; }
 { const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ const x0=Math.max(0,Math.floor(camX/T)-1), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)+1), y0=Math.max(1,Math.floor(camY/T)-1), y1=Math.min(H-2,Math.ceil((camY+viewH)/T)+1);
-    for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x]; if(RUG_SET.has(id)&&RUG_STRIP[id]) ctx.drawImage(RUG_STRIP[id],x*T,(y+1)*T); } }catch(e){} return r; }; }
+    for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++){ const id=world[y*W+x]; if(RUG_SET.has(id)&&RUG_STRIP[id]) rugDraw(RUG_STRIP[id],x,y); } }catch(e){} return r; }; }
+// 0.9.187: a rug follows the top of the block under it: flat, a slope, a stair or a half block (column by column); on an open trap
+// door it is lifted away with the door and not drawn
+function rugDraw(s,x,y){ const i=(y+1)*W+x, fid=world[i]; if(typeof trapOpen==='function'&&trapOpen(fid)) return; const sh=shape?shape[i]:0, X=x*T, Y=(y+1)*T;
+  if(!sh){ ctx.drawImage(s,X,Y); return; } for(let c=0;c<16;c++){ const t=slopeSurfaceAt(sh,c), h=Math.min(4,16-t); if(h>0) ctx.drawImage(s,c,0,1,h,X+c,Y+t,1,h); } }
 
 // ---- jade, rose quartz and azure crystals hang from ceilings and grow out of walls like amethyst ----
 // They join ATTACH (drawn turned toward the block that holds them). New worlds and unexplored ground of older ones also
@@ -17385,7 +17396,7 @@ const slitShooter=(a,b)=>!!a&&!!b&&!a.post&&a!==b&&hostile(a.team,b.team)&&nearS
 { const _los=lineOfSight; lineOfSight=function(a,b,...r){ const ok=_los(a,b,...r); if(ok) return ok; try{ if(slitShooter(a,b)&&slitLine(a,b)==='slit') return true; }catch(e){} return ok; }; }
 { const _ns=npcShoot; npcShoot=function(e,t,...r){ const n0=projs.length; const out=_ns(e,t,...r);
     try{ if(slitShooter(e,t)&&slitLine(e,t)==='slit') for(let i=n0;i<projs.length;i++){ const pr=projs[i]; if(pr.src!==e) continue;
-        if(Math.random()<SLIT_COVER) pr.coverAt={x:cxOf(t),y:cyOf(t)};   // this one hits the stonework
+        if(Math.random()<slitCoverOf(t)) pr.coverAt={x:cxOf(t),y:cyOf(t)};   // this one hits the stonework
         else { pr.thru=SLIT_WALL*T; pr.ox=cxOf(t); pr.oy=cyOf(t); } } }catch(err){}   // this one finds the opening: the wall beside the target lets it by
     return out; }; }
 { const _up=updateProjs; updateProjs=function(dt,...a){ const r=_up(dt,...a);
@@ -26778,15 +26789,18 @@ function chestSpread(onlyUnseen,R,put){ if(!world||!chests) return 0; R=R||Math.
 // ---- 3. the name of a chest item ----
 { const st=document.createElement('style'); st.textContent=`#slotName{ position:fixed; z-index:70; pointer-events:none; background:#1b1530; border:2px solid var(--gold); color:#fff; font-family:var(--font); font-size:9px; padding:4px 7px; white-space:nowrap; box-shadow:2px 2px 0 var(--ink); }`; document.head.appendChild(st);
   const lab=document.createElement('div'); lab.id='slotName'; lab.hidden=true; document.body.appendChild(lab); }
-const SLOT_NAME_SEL='#scrChest .slot[data-ci], #scrChest .slot[data-bi]';
-function slotItem(b){ const c=chestAt&&chests[chestAt]; if(b.dataset.ci!=null) return c&&c.items?c.items[+b.dataset.ci]:null; if(b.dataset.bi!=null) return player&&player.inv?player.inv[+b.dataset.bi]:null; return null; }
+const SLOT_NAME_SEL='#scrChest .slot[data-ci], #scrChest .slot[data-bi], #invGrid .slot[data-i]';   // 0.9.187: the bag too
+function slotItem(b){ const c=chestAt&&chests[chestAt]; if(b.dataset.ci!=null) return c&&c.items?c.items[+b.dataset.ci]:null; if(b.dataset.bi!=null) return player&&player.inv?player.inv[+b.dataset.bi]:null; if(b.dataset.i!=null) return player&&player.inv?player.inv[+b.dataset.i]:null; return null; }
+// 0.9.187: shown for a slot in any open window (a chest, a barrel, a cupboard, a desk, a shelf, the bag), however it was opened
+const slotNameOpen=b=>{ const ov=b&&b.closest('.overlay'); return !!ov&&!ov.hidden; };
 let slotNameT=0;
 function slotNameShow(b,x,y,ms){ const lab=$('#slotName'); const s=slotItem(b); if(!lab) return; if(!s||!ITEMS[s.id]){ lab.hidden=true; return; } lab.textContent=ITEMS[s.id].name; lab.hidden=false;
   const r=lab.getBoundingClientRect(); lab.style.left=Math.max(4,Math.min(innerWidth-r.width-4,x+14))+'px'; lab.style.top=Math.max(4,Math.min(innerHeight-r.height-4,y-30))+'px';
   clearTimeout(slotNameT); if(ms) slotNameT=setTimeout(()=>{ lab.hidden=true; },ms); }
-document.addEventListener('mousemove',e=>{ try{ const lab=$('#slotName'); if(!lab) return; if(state!=='chest'||recentTouch()){ if(!lab.hidden) lab.hidden=true; return; } const b=e.target.closest&&e.target.closest(SLOT_NAME_SEL); if(!b){ if(!lab.hidden) lab.hidden=true; return; } slotNameShow(b,e.clientX,e.clientY,0); }catch(err){} });
-document.addEventListener('pointerdown',e=>{ try{ if(state!=='chest'||e.pointerType==='mouse') return; const b=e.target.closest&&e.target.closest(SLOT_NAME_SEL); if(b) slotNameShow(b,e.clientX,e.clientY,1500); }catch(err){} },true);
+document.addEventListener('mousemove',e=>{ try{ const lab=$('#slotName'); if(!lab) return; if(recentTouch()){ if(!lab.hidden) lab.hidden=true; return; } const b=e.target.closest&&e.target.closest(SLOT_NAME_SEL); if(!b||!slotNameOpen(b)){ if(!lab.hidden) lab.hidden=true; return; } slotNameShow(b,e.clientX,e.clientY,0); }catch(err){} });
+document.addEventListener('pointerdown',e=>{ try{ if(e.pointerType==='mouse') return; const b=e.target.closest&&e.target.closest(SLOT_NAME_SEL); if(b&&slotNameOpen(b)) slotNameShow(b,e.clientX,e.clientY,1500); }catch(err){} },true);
 { const _cc=closeChest; closeChest=function(...a){ try{ $('#slotName').hidden=true; }catch(e){} return _cc(...a); }; }
+{ const _ci=closeInv; closeInv=function(...a){ try{ $('#slotName').hidden=true; }catch(e){} return _ci(...a); }; }
 // ===== Kinard, 2026-11-11: "Make sure the tailor works the same as all the other villagers and does not spawn until he is chosen
 // he also is not currently generating and may need a sprite made" =====
 // 1. The Tailor no longer moves in by himself when the village is claimed. Like the Blacksmith, Cook, Shipwright, Herbalist and
@@ -26949,17 +26963,21 @@ let holeFixT=10, oneBedT=20;
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ leafTidyAll((x,y,id)=>{ world[y*W+x]=id; }); hiveTidyAll((x,y,id)=>{ world[y*W+x]=id; }); }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&!isGuest()&&home&&!home.editor){ facRun(()=>{ const put=(x,y,id)=>setTile(x,y,id); leafTidyAll(put); hiveTidyAll(put); }); holesAll(); oneBedAll(); } }catch(e){ console.warn(e); } return r; }; }
 // ---- the torch in your hand ----
+// 0.9.187 (Kinard: "holding it away from his body ... behind the players body on his other hand"): the torch is in the far hand,
+// held out in front and a little down, drawn before the body like a tool, so the body covers the arm and the near end of the handle
 drawHandTorch=function(e){ const run=Math.abs(e.vx||0), moving=e.grounded!==false&&run>8, sp=run>60?10:7;
   const sw=moving?Math.sin((e.anim||0)*sp*Math.PI/2):0, f=e.facing||1;
-  const hx=Math.round(cxOf(e))+f*(5+Math.round(sw*2)), hy=Math.round(e.y)+15-Math.round(Math.abs(sw));
-  const tilt=f*(0.32*sw)-f*Math.min(0.55,run/320);   // the arm's swing, and leaning back as you run
+  const sx=Math.round(cxOf(e))+f*2, sy=Math.round(e.y)+12;                       // the far shoulder
+  const hx=sx+f*(9+Math.round(sw*2)), hy=sy+5-Math.round(Math.abs(sw));          // the hand, out from the body
+  const tilt=f*(0.38+0.18*sw)-f*Math.min(0.45,run/360);                          // held leaning out, swinging, pulled back as you run
   const t=performance.now()/80, fl=Math.sin(t);
+  ctx.fillStyle='#e8b48a'; ctx.save(); ctx.translate(sx,sy); ctx.rotate(Math.atan2(hy-sy,hx-sx)); ctx.fillRect(0,-1,Math.hypot(hx-sx,hy-sy),3); ctx.restore();   // the arm
   ctx.save(); ctx.translate(hx,hy); ctx.rotate(tilt);
-  ctx.fillStyle='#7a4e27'; ctx.fillRect(-1,-8,2,9); ctx.fillStyle='#5a3418'; ctx.fillRect(-1,-1,2,2);
-  ctx.fillStyle='#ff7b1c'; ctx.fillRect(-2,-12,4,4); ctx.fillStyle='#ffcf3a'; ctx.fillRect(-1,-13+(fl>0?1:0),2,3);
-  ctx.fillStyle='#e8b48a'; ctx.fillRect(-2,-3,4,3);   // the hand round the handle
+  ctx.fillStyle='#7a4e27'; ctx.fillRect(-1,-9,2,11); ctx.fillStyle='#5a3418'; ctx.fillRect(-1,1,2,1);
+  ctx.fillStyle='#ff7b1c'; ctx.fillRect(-2,-13,4,4); ctx.fillStyle='#ffcf3a'; ctx.fillRect(-1,-14+(fl>0?1:0),2,3);
+  ctx.fillStyle='#d8a07a'; ctx.fillRect(-2,-2,4,3);   // the hand round the handle
   ctx.restore();
-  if(run>40){ ctx.globalAlpha=0.7; for(let k=1;k<=3;k++){ ctx.fillStyle=k===1?'#ff9a2a':'#ff7b1c'; ctx.fillRect(hx-f*(2+k*2)-1,hy-12+k+Math.round(Math.sin(t+k)),2,2); } ctx.globalAlpha=1; } };
+  if(run>40){ ctx.globalAlpha=0.7; const fx=hx+Math.round(Math.sin(tilt)*12), fy=hy-12; for(let k=1;k<=3;k++){ ctx.fillStyle=k===1?'#ff9a2a':'#ff7b1c'; ctx.fillRect(fx-f*(2+k*2)-1,fy+k+Math.round(Math.sin(t+k)),2,2); } ctx.globalAlpha=1; } };
 // ===== Kinard, 2026-11-11 (screenshot: the castle hall, a bed on the ground floor, a short strip of carpet): "Make sure the beds
 // always spawn upstairs in the castle and so that when the carpet is placed other items can be placed on top of it and add carpet
 // within the entire main castle area just not in the doorways" =====
@@ -26970,7 +26988,8 @@ drawHandTorch=function(e){ const run=Math.abs(e.vx||0), moving=e.grounded!==fals
 //    furniture too, but never in a doorway or under a hatch. When the castle is claimed or reaches a new stage (home.castleRugK).
 // 3. Beds in the castle stand upstairs: a bed on the castle's ground floor moves to a free spot on a floor above.
 function rugLay(){ if(!home) return {}; return home.rugLay=home.rugLay||{}; }
-const rugFloor=(x,y)=>{ const id=tileAt(x,y); return !!(BLOCKS[id]&&BLOCKS[id].solid&&!BLOCKS[id].platform&&!DOOR_IDS.has(id)); };
+// 0.9.187: a rug lies on any block: solid ones of any shape (it follows a slope or stair), platforms and trap doors, not a door
+const rugFloor=(x,y)=>{ const id=tileAt(x,y); const d=BLOCKS[id]; return !!(id&&d&&id!==B.WATER&&id!==B.LAVA&&!DOOR_IDS.has(id)&&!RUG_SET.has(id)&&(d.solid||d.platform||(typeof isTrap==='function'&&isTrap(id)))); };
 const rugUnder=id=>!!id&&!RUG_SET.has(id)&&BLOCKS[id]&&!BLOCKS[id].solid&&id!==B.WATER&&id!==B.LAVA&&!PLANTS.has(id)&&!DOOR_IDS.has(id)&&!(typeof isTrap==='function'&&isTrap(id));
 // placing over a rug, or a rug under furniture
 { const _tp=tryPlace; tryPlace=function(x,y,id,...a){ if(!world||!home) return _tp(x,y,id,...a); const L=rugLay(), k0=x+','+y;
@@ -26982,16 +27001,18 @@ const rugUnder=id=>!!id&&!RUG_SET.has(id)&&BLOCKS[id]&&!BLOCKS[id].solid&&id!==B
 // a piece taken off a rug shows the rug again; a rug without its floor falls
 { const _st=setTile; setTile=function(x,y,id,...a){ const r=_st(x,y,id,...a); try{ if(home&&home.rugLay){ const L=home.rugLay, k=x+','+y;
         if(id===0&&L[k]){ const rug=L[k]; delete L[k]; if(rugFloor(x,y+1)) _st(x,y,rug); else try{ spawnDrop(x*T+8,y*T+8,rug,1); }catch(e){} }
-        const ka=x+','+(y-1); if(L[ka]&&!rugFloor(x,y)){ const rug=L[ka]; delete L[ka]; try{ spawnDrop(x*T+8,(y-1)*T+8,rug,1); }catch(e){} } } }catch(e){ console.warn(e); } return r; }; }
+        const ka=x+','+(y-1); if(L[ka]&&!rugFloor(x,y)){ const rug=L[ka]; delete L[ka]; try{ spawnDrop(x*T+8,(y-1)*T+8,rug,1); }catch(e){} } }
+      // 0.9.187: a rug lying on a block that is taken away falls as an item
+      if(y>0&&world&&RUG_SET.has(world[(y-1)*W+x])&&!rugFloor(x,y)){ const rug=world[(y-1)*W+x]; _st(x,y-1,0); try{ spawnDrop(x*T+8,(y-1)*T+8,rug,1); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
 { const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ const L=home&&home.rugLay; if(L){ const x0=camX/T-2, x1=(camX+viewW)/T+2, y0=camY/T-2, y1=(camY+viewH)/T+2;
-        for(const k in L){ const c=k.indexOf(','), x=+k.slice(0,c), y=+k.slice(c+1); if(x<x0||x>x1||y<y0||y>y1) continue; const s=RUG_STRIP[L[k]]; if(s) ctx.drawImage(s,x*T,(y+1)*T); } } }catch(e){} return r; }; }
+        for(const k in L){ const c=k.indexOf(','), x=+k.slice(0,c), y=+k.slice(c+1); if(x<x0||x>x1||y<y0||y>y1) continue; const s=RUG_STRIP[L[k]]; if(s) rugDraw(s,x,y); } } }catch(e){} return r; }; }
 // ---- the castle carpet ----
 const TEAM_RUG=()=>{ const t=player&&player.team; return t==='g'?RUGS[2]:t==='b'?RUGS[1]:RUGS[0]; };
 function castleBox(){ try{ return gameBoxes().find(b=>b.kind==='castle')||null; }catch(e){ return null; } }
 function doorNear(x,y){ for(let dy=-2;dy<=1;dy++) for(let dx=-1;dx<=1;dx++){ const id=tileAt(x+dx,y+dy); if(DOOR_IDS.has(id)||(typeof isTrap==='function'&&isTrap(id))) return true; } return rugHatch(x,y); }
 function rugHatch(x,y){ for(let k=1;k<=5;k++){ const id=tileAt(x,y-k); if(!id) continue; return !!(BLOCKS[id]&&BLOCKS[id].platform); } return false; }
 function castleRugs(){ const b=castleBox(); if(!b||!world) return 0; const rug=TEAM_RUG(); if(rug==null) return 0; const L=rugLay(); let n=0;
-  for(let y=b.y0;y<=b.y1;y++) for(let x=b.x0;x<=b.x1;x++){ const i=y*W+x; if(!bg[i]||!rugFloor(x,y+1)||(liq&&liq[i])) continue; if(doorNear(x,y)) continue; const cur=world[i];
+  for(let y=b.y0;y<=b.y1;y++) for(let x=b.x0;x<=b.x1;x++){ const i=y*W+x; const fl=BLOCKS[tileAt(x,y+1)]; if(!bg[i]||!rugFloor(x,y+1)||(fl&&fl.platform)||(liq&&liq[i])) continue;   // 0.9.187: the castle's own carpet stays off ledges and platforms if(doorNear(x,y)) continue; const cur=world[i];
     if(cur===0){ setTile(x,y,rug); n++; } else if(rugUnder(cur)&&!L[x+','+y]&&!(BLOCKS[cur]&&BLOCKS[cur].light)){ L[x+','+y]=rug; n++; } }
   return n; }
 function castleBedsUp(){ const b=castleBox(); if(!b||!world||typeof bedMoveOff!=='function') return 0; let n=0; const ground=b.y1-2;
@@ -27290,7 +27311,11 @@ function buildChestRoom(cx,cy,R,put,bput,small){ const kind=roomStyleAt(cx,cy), 
   // the chest back in its place, lights, a bed sometimes
   put(cx,cy,chest); if(loot) chests[cx+','+cy]=loot;
   put(x0,gy-3,S.light); put(x1,gy-3,S.light); if(two){ put(x0,gy-9,S.light); put(x1,gy-9,S.light); }
-  if(R()<S.bed){ const bx=cx>(x0+x1)/2?x0+1:x1-1, by=two?gy-7:gy-1; if(world[by*W+bx]===0&&!isChestId(world[by*W+bx])) put(bx,by,B.BED); }
+  // 0.9.187: the whole bed inside the room, on the side away from the chest, clear of the doorways (a one-block bed was widened
+  // later and could reach out through the opening into the passage)
+  if(R()<S.bed){ const b=(typeof BED_KIND!=="undefined"&&BED_KIND.wood)||BED_BY_ID[B.BED]||{w:1,h:1,id:B.BED}, by=two?gy-7:gy-1, left=cx>(x0+x1)/2, ax=left?x0+b.w:x1-1, bx0=ax-b.w+1;
+    let ok=bx0>=x0+1&&ax<=x1-1&&!(by===cy&&cx>=bx0&&cx<=ax); for(let x=bx0;x<=ax&&ok;x++) for(let y=by-b.h+1;y<=by;y++) if(world[y*W+x]!==0) ok=false;
+    if(ok){ if(b.w>1||b.h>1) for(const [qx,qy] of bedCellsOf(ax,by,b)) put(qx,qy,BED_PART); put(ax,by,b.id); } }
   // rugs on the floor
   const rug=RUGS[(R()*RUGS.length)|0]; for(let x=x0+1;x<=x1-1;x++) if(world[(gy-1)*W+x]===0&&x!==cx&&R()<0.6) put(x,gy-1,rug);
   return {kind,x0,x1,y0:gy-hh,y1:gy-1}; }
@@ -27304,7 +27329,7 @@ function chestRoomsAll(onlyUnseen,raw){ if(!world||!chests) return 0; const R=mu
     if(refs.has(k)||inPlace(x,y)) continue; if(onlyUnseen){ let seen=false; for(let dy=-6;dy<=2&&!seen;dy++) for(let dx=-8;dx<=8;dx++) if(explored[(y+dy)*W+x+dx]){ seen=true; break; } if(seen) continue; }
     let r=buildChestRoom(x,y,R,put,bput,false); if(!r) r=buildChestRoom(x,y,R,put,bput,true);
     if(!r){ if(!onlyUnseen||!c.opened){ put(x,y,0); delete chests[k]; } continue; }   // no room for a room: the chest goes (an underground chest is always in a room)
-    c.room=r.kind; rooms.push(r); n++; }
+    c.room=r.kind; c.roomBox={x0:r.x0,x1:r.x1,y0:r.y0,y1:r.y1}; rooms.push(r); n++; }
   // decorations by style, after every room is built
   for(const r of rooms){ try{ decorateBox({x0:r.x0,x1:r.x1,y0:r.y0,y1:r.y1},r.kind,raw?(x,y,v)=>{ world[y*W+x]=v; }:(x,y,v)=>setTile(x,y,v),(seed|0)*7+r.x0); }catch(e){ console.warn(e); } }
   return n; }
@@ -27448,6 +27473,518 @@ function drawBannerPole(x,yb,id,face,sway,t){ const col=(CHARMS[id]&&CHARMS[id].
 { const _df=drawFires; drawFires=function(...a){ const r=_df(...a); try{ const s=home&&home.banners; if(s&&s.planted){ const t=performance.now()/1000; for(const b of s.planted){ const X=b.x*T+8, Y=(b.y+1)*T; if(X<camX-40||X>camX+viewW+40||Y<camY-60||Y>camY+viewH+60) continue; drawBannerPole(X,Y,b.id,1,Math.sin(t*0.8+b.x)*0.02,t); } } }catch(e){} return r; }; }
 for(const id of Object.keys(TEAM_CHARMS)){ const d=ITEMS[id]; if(d){ const k=TEAM_CHARMS[id]; const what={atk:'deals 15% more damage',spd:'moves 10% faster',def:'takes 15% less damage',regen:'heals 2% of their health each second out of battle'}[k]||'is lifted';
   d.desc=`A war banner on a pole three blocks tall. Carry it, plant it, or give it to a soldier: everyone on your side within ${BANNER_R} blocks ${what}. Whoever carries it and falls loses it to the enemy`; } }
+// ===== Kinard, 2026-11-12 (screenshots: the castle hall with a red circle on the upper floor and blue and teal rings round both
+// floors; a village house with its bed upstairs and two arrow slits stacked in its left wall):
+// "Put the bed where the red circle is and make it so that there is carpet based off the faction color on the entire floor where
+// the blue is" / "make it so that the buildings with the villagers have the beds always facing towards the entrance" / "make it so
+// that there are wooden slits that can be shot from and rework all the castles and buildings as needed" / "make it so doors always
+// have the correct backwall" / "the wooden slits, vs the stone slits, vs dark slate slits etc all have various defense bonuses" /
+// "fix the housing building so that the slits are ALWAYS on the top floor and not doubled up" =====
+// 1. Beds in your village's buildings (houses, the castle, the lodge, the farmhouse, the miners' hut) face the way in: the foot of
+//    the bed points to the hatch or door of the room, the headboard against the far wall. A bed on the right of the way in is
+//    mirrored (home.beds[k].flip).
+// 2. The castle's main hall is carpeted wall to wall on both floors in your faction's colour, over the trap doors of the hatch and
+//    under the furniture too (other rugs there turn to your colour); doorways stay bare. The castle bed stands on the upper floor
+//    between the hatch and the portal (home.castleBed187).
+// 3. Doors take the back wall of their building's stage: wood for a wooden building, stone once it is stone, iron for iron (and the
+//    castle's own stages).
+// 4. The Wooden arrow slit (fixed id 2512): wooden buildings get wooden slits, stone ones stone slits, iron ones iron slits.
+// 5. Slits protect whoever stands at them (within SLIT_WALL blocks): shots aimed at them are stopped by the wall around the slit
+//    and the damage that gets through is lowered, more for stronger slits (SLIT_DEF).
+// 6. A village house has its arrow slits on its top floor only: one in each side wall, never stacked on the floors below.
+B.SLIT_WOOD=2512;
+defB(B.SLIT_WOOD,Object.assign({},BLOCKS[B.ARROW_SLIT],{name:'Wooden arrow slit',hard:0.7,minPow:0,col:'#8a5c2d'}));
+TEX[B.SLIT_WOOD]=obsTex((r,p)=>{ r(0,0,16,16,'#9a6a36'); r(0,5,16,1,'#6e4822'); r(0,10,16,1,'#6e4822'); for(const [x,y] of [[2,2],[13,8],[1,13],[14,3]]) p(x,y,'#b8844a');
+  r(4,0,1,16,'#5a3818'); r(11,0,1,16,'#5a3818'); r(5,1,6,14,'#3a2614'); r(6,1,4,14,'#16110c'); r(3,6,10,3,'#3a2614'); r(4,7,8,1,'#16110c'); });
+ITEMS[B.SLIT_WOOD]={name:'Wooden arrow slit',kind:'block',desc:'A narrow window in a timber wall. Your archers and mages shoot out through it, and it shelters whoever stands at it'};
+SELL[B.SLIT_WOOD]=3; RECIPES.push({out:B.SLIT_WOOD,n:1,need:[[B.PLANK,3]],st:B.WORKBENCH,cat:'build'});
+try{ delete ICON_URL[B.SLIT_WOOD]; }catch(e){}
+SLITS.push(B.SLIT_WOOD);   // after stone, dark slate and iron: the castle's stage list SLITS[0..2] is unchanged
+// ---- 5. what each slit gives ----
+const SLIT_DEF={ [B.SLIT_WOOD]:{cover:0.3,def:0.05}, [B.ARROW_SLIT]:{cover:0.45,def:0.1}, [B.SLIT_DEEP]:{cover:0.55,def:0.15}, [B.SLIT_IRON]:{cover:0.65,def:0.2} };
+function slitAt(t){ if(!t) return null; const cx=Math.floor(cxOf(t)/T), cy=Math.floor(cyOf(t)/T); let best=null;
+  for(let dy=-SLIT_WALL;dy<=SLIT_WALL;dy++) for(let dx=-SLIT_WALL;dx<=SLIT_WALL;dx++){ const s=SLIT_DEF[tileAt(cx+dx,cy+dy)]; if(s&&(!best||s.def>best.def)) best=s; } return best; }
+function slitCoverOf(t){ const s=slitAt(t); return s?s.cover:SLIT_COVER; }
+for(const [id,s] of Object.entries(SLIT_DEF)){ const d=ITEMS[id]; if(d) d.desc=`${d.desc.replace(/\.?\s*Shelter:.*$/,'')}. Shelter: ${Math.round(s.cover*100)}% of shots at whoever stands at it hit the wall, and they take ${Math.round(s.def*100)}% less damage`; }
+{ const _dmg=damage; damage=function(t,amt,src,kb,...a){ try{ if(t&&!t.dead&&(t.kind==='player'||t.kind==='human')&&amt>0){ const s=slitAt(t); if(s) amt*=1-s.def; } }catch(e){} return _dmg(t,amt,src,kb,...a); }; }
+// ---- 1. beds face the way in ----
+function bedWayIn(ax,ay,b,box){ const bx0=ax-b.w+1; let plat=0; for(let x=box.x0;x<=box.x1;x++){ const d=BLOCKS[tileAt(x,ay+1)]; if(d&&d.platform) plat++; }
+  let best=null; const mid=(bx0+ax)/2, take=x=>{ if(best==null||Math.abs(x-mid)<Math.abs(best-mid)) best=x; };
+  for(let x=box.x0;x<=box.x1;x++){ if(x>=bx0&&x<=ax) continue; const f=tileAt(x,ay+1), d=BLOCKS[f];
+    if(isTrap(f)||(plat<=6&&d&&d.platform)) take(x); for(const yy of [ay,ay-1]) if(DOOR_IDS.has(tileAt(x,yy))) take(x); }
+  return best==null?(box.x0+box.x1)/2:best; }
+function bedFaceAll(){ if(!world||!home||!home.claimed) return 0; let n=0;
+  for(const box of gameBoxes()) for(let y=Math.max(1,box.y0);y<=Math.min(H-2,box.y1);y++) for(let x=Math.max(1,box.x0);x<=Math.min(W-2,box.x1);x++){
+    const b=BED_BY_ID[world[y*W+x]]; if(!b||b.w<2) continue; const way=bedWayIn(x,y,b,box), flip=way<(x-b.w+1+x)/2; const rec=bedRec(x,y,true); if(!!rec.flip!==flip){ rec.flip=flip; n++; } }
+  return n; }
+{ const _db=drawBedAt; drawBedAt=function(ax,ay,...a){ const rec=home&&home.beds&&home.beds[ax+','+ay], b=BED_BY_ID[tileAt(ax,ay)];
+    if(!rec||!rec.flip||!b) return _db(ax,ay,...a); const X0=(ax-b.w+1)*T; ctx.save(); ctx.translate(2*X0+b.w*T,0); ctx.scale(-1,1); try{ return _db(ax,ay,...a); } finally{ ctx.restore(); } }; }
+// ---- 2. the castle hall: carpet on both floors, the bed between the hatch and the portal ----
+function hallRow(y){ const cx=home.castleCx; let x0=cx, x1=cx; const edge=x=>{ const id=tileAt(x,y); return DOOR_IDS.has(id)||(isSolid(x,y)&&!(BLOCKS[id]&&BLOCKS[id].platform)&&!RUG_SET.has(id)); };
+  while(x0>cx-20&&!edge(x0-1)) x0--; while(x1<cx+20&&!edge(x1+1)) x1++; return {y,x0,x1}; }
+function hallFloors(){ if(!home||!home.claimed) return []; const cx=home.castleCx, gy=home.gy, out=[hallRow(gy-1)];
+  for(let y=gy-3;y>=gy-30;y--){ let n=0, m=0; for(let x=cx-8;x<=cx+8;x++){ m++; if(rugFloor(x,y+1)&&!(isSolid(x,y)&&!RUG_SET.has(tileAt(x,y)))) n++; } if(n>=m*0.6){ out.push(hallRow(y)); break; } }
+  return out; }
+function hallCarpet(){ if(!world||!home||!home.claimed) return 0; const rug=TEAM_RUG(); if(rug==null) return 0; const L=rugLay(); let n=0;
+  for(const f of hallFloors()) for(let x=f.x0;x<=f.x1;x++){ const y=f.y, i=y*W+x, cur=world[i], k=x+','+y; if(DOOR_IDS.has(cur)||!rugFloor(x,y+1)||(liq&&liq[i]&&cur===B.WATER)) continue;
+    if(cur===0||(RUG_SET.has(cur)&&cur!==rug)){ setTile(x,y,rug); n++; }
+    else if(!RUG_SET.has(cur)&&rugUnder(cur)&&!(BLOCKS[cur]&&BLOCKS[cur].light)&&L[k]!==rug){ L[k]=rug; n++; } }
+  return n; }
+{ const _cr=castleRugs; castleRugs=function(...a){ const r=_cr(...a); let m=0; try{ m=hallCarpet(); }catch(e){ console.warn(e); } return (r||0)+m; }; }
+function castleBedSpot(){ const F=hallFloors(); if(F.length<2) return null; const up=F[F.length-1], y=up.y; let hatch=-1, portal=null;
+  for(let x=up.x0;x<=up.x1;x++){ const f=tileAt(x,y+1); if(isTrap(f)||(BLOCKS[f]&&BLOCKS[f].platform)) hatch=Math.max(hatch,x); for(let yy=y-3;yy<=y;yy++) if(tileAt(x,yy)===B.PORTAL&&portal==null) portal=x; }
+  return {y,x0:hatch>=0?hatch+2:up.x0,x1:portal!=null?portal-1:Math.round((up.x0+up.x1)/2),up}; }
+function castleBedMove(){ const S=castleBedSpot(); if(!S) return false; const {y,up}=S; let bed=null;
+  for(let yy=y-2;yy<=y&&!bed;yy++) for(let x=up.x0;x<=up.x1;x++){ const b=BED_BY_ID[tileAt(x,yy)]; if(b){ bed={x,y:yy,b}; break; } }
+  if(!bed) return false; const b=bed.b; if(bed.y===y&&bed.x-b.w+1>=S.x0&&bed.x<=S.x1) return true;   // already there
+  const own=new Set(bedCellsOf(bed.x,bed.y,b).map(([cx,cy])=>cy*W+cx)); own.add(bed.y*W+bed.x);
+  const free=(cx,cy)=>{ const i=cy*W+cx, t=world[i]; return t===0||RUG_SET.has(t)||own.has(i); };
+  let ax=null; for(let a=S.x0+b.w-1;a<=S.x1&&ax==null;a++){ let ok=true; for(let cx=a-b.w+1;cx<=a&&ok;cx++){ if(!rugFloor(cx,y+1)) ok=false; for(let cy=y-b.h+1;cy<=y&&ok;cy++) if(!free(cx,cy)) ok=false; } if(ok) ax=a; }
+  if(ax==null) return false;
+  const k=bed.x+','+bed.y, rec=home.beds&&home.beds[k]?Object.assign({},home.beds[k]):null;
+  for(const [cx,cy] of bedCellsOf(bed.x,bed.y,b)) if(tileAt(cx,cy)===BED_PART) setTile(cx,cy,0); setTile(bed.x,bed.y,0); if(home.beds) delete home.beds[k];
+  const L=rugLay(); for(let cx=ax-b.w+1;cx<=ax;cx++) for(let cy=y-b.h+1;cy<=y;cy++){ const i=cy*W+cx; if(RUG_SET.has(world[i])){ L[cx+','+cy]=world[i]; world[i]=0; } }   // the carpet stays under the bed
+  placeBed({ax,ay:y},b.key,rec&&rec.it,rec&&rec.tint); const nr=bedRec(ax,y,true); if(rec) for(const f of ['p','at','dye','tint','it','k']) if(rec[f]!=null) nr[f]=rec[f];
+  return true; }
+// ---- 3. doors take their building's back wall; 4. slits of the building's stage ----
+function stageSlit(t){ return t.set===CASTLE_SKIN?null:[B.SLIT_WOOD,B.ARROW_SLIT,B.SLIT_IRON][Math.max(0,Math.min(2,t.tier|0))]; }
+function stageTidy(t){ const K=t.set||SKIN, wbg=K.bg[Math.max(0,Math.min(2,t.tier|0))], want=stageSlit(t); let n=0;
+  for(let y=Math.max(0,t.y0);y<=Math.min(H-1,t.y1);y++) for(let x=Math.max(0,t.x0);x<=Math.min(W-1,t.x1);x++){ const i=y*W+x, id=world[i];
+    if(DOOR_IDS.has(id)&&wbg&&bg[i]!==wbg){ bset(x,y,wbg); n++; if(explored[i]) try{ mapPixel(x,y); }catch(e){} }
+    else if(want&&id!==want&&SLITS.includes(id)){ setTile(x,y,want); n++; } }
+  return n; }
+{ const _sb=skinBuilding; skinBuilding=function(t,...a){ const r=_sb(t,...a); try{ if(t) stageTidy(t); }catch(e){ console.warn(e); } return r; }; }
+function stageTidyAll(){ if(!world||!home||isGuest()) return 0; let n=0; facRun(()=>{ for(const t of skinTargets()){ if(t.tier==null) continue; n+=stageTidy(t); } }); return n; }
+// ---- 6. house slits on the top floor only ----
+{ const _hs=housePostSpots; housePostSpots=function(h,...a){ const out=_hs(h,...a); try{ if(!h||h.gy==null||!out.length) return out; const cx=Math.round(((h.x0??h.hx)+(h.x1??(h.hx+8)))/2), top={};
+      for(const p of out){ const s=p.x<cx?-1:1; if(top[s]==null||p.gy<top[s]) top[s]=p.gy; } return out.filter(p=>p.gy===top[p.x<cx?-1:1]); }catch(e){ console.warn(e); return out; } }; }
+function houseSlitTidy(){ if(!world||!home||!home.claimed||isGuest()) return 0; let n=0;
+  (home.houses||[]).forEach(h=>{ if(!h||h.gy==null) return; const keep=new Set(); for(const p of housePostSpots(h)){ keep.add(p.wx+','+p.wy); keep.add(p.wx+','+(p.wy-1)); }
+    const x0=(h.x0??h.hx)-2, x1=(h.x1??(h.hx+8))+2;
+    for(let y=h.gy-24;y<h.gy;y++) for(let x=x0;x<=x1;x++){ const id=tileAt(x,y); if(!SLITS.includes(id)||keep.has(x+','+y)) continue;
+      let w=0; for(let d=1;d<=6&&!w;d++) for(const yy of [y-d,y+d]){ const t=tileAt(x,yy); if(t&&isSolid(x,yy)&&!SLITS.includes(t)&&!DOOR_IDS.has(t)&&!(BLOCKS[t]&&BLOCKS[t].platform)){ w=t; break; } }
+      if(w){ facRun(()=>setTile(x,y,w)); if(home.houseSlit) delete home.houseSlit[x+','+y]; n++; } } });
+  return n; }
+// ---- when it all runs ----
+function bedsSlitsTick(){ if(!world||!home||!home.claimed||isGuest()||home.editor||(typeof tutOn==='function'&&tutOn())) return; try{ bedFaceAll(); houseSlitTidy(); stageTidyAll(); }catch(e){ console.warn(e); } }
+let bedsSlitsT=5;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&(bedsSlitsT-=dt)<=0){ bedsSlitsT=5; bedsSlitsTick(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&home.claimed&&!isGuest()&&!home.editor&&!home.fixup){
+        if(home.hall187!==1){ home.hall187=1; facRun(()=>hallCarpet()); }
+        if(home.castleBed187!==1){ home.castleBed187=1; facRun(()=>castleBedMove()); }
+        if(home.stage187!==1){ home.stage187=1; stageTidyAll(); }
+        bedsSlitsTick(); } }catch(e){ console.warn(e); } return r; }; }
+// a castle claimed or grown later gets the same
+{ const _ct=castleTidy; castleTidy=function(...a){ const r=_ct(...a); try{ if(world&&home&&home.claimed&&!home.fixup&&!isGuest()&&!home.editor&&home.castleBed187!==1){ home.castleBed187=1; facRun(()=>castleBedMove()); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12 (screenshot: the Mine foreman's window with a long "Give this villager a different job" row of eight
+// job buttons): "Rework all the villages so the 'give this villager a different job' is a consolidated button that just says
+// 'reassign' and when clicked it opens the options to reassign the villager so that this menu is more consolidated" =====
+// Every villager's window (your village and villages you conquered) has one Reassign button in place of the row of jobs; it opens
+// the list of jobs to choose from. In a conquered village the button says how many changes that village has left. The 0.9.185
+// Reassign row above the shop tabs is folded into the same button, so there is only ever one.
+const REJOB_OPTS=[['smith','Blacksmith'],['cook','Cook'],['trader','Shipwright'],['herbalist','Herbalist'],['fisher','Fisher'],['tailor','Tailor'],['recruiter','Recruiter'],['quarter','Quartermaster'],['trainer','Beast trainer']];
+function rejobLeft(v){ if(!v||!player) return 0; if(v.team===player.team) return Infinity; const b=bases.find(x=>x.f===v.team); return b?5-(b.reassigned||0):0; }
+function rejobChoices(v){ const has=k=>typeof JOBS==='undefined'||JOBS.some(j=>j[0]===k)||['recruiter','quarter','trainer'].includes(k);
+  return REJOB_OPTS.filter(([k])=>k!==v.role&&has(k)); }
+function rejobDo(v,k){ if(!v||v.dead||!player) return; const own=v.team===player.team, base=own?null:bases.find(x=>x.f===v.team);
+  if(!own&&(!base||(base.reassigned||0)>=5)) return; if(typeof MP!=='undefined'&&MP.on&&MP.guest){ toast('Only the host can give a villager another job',2.5); return; }
+  if(v.role===k) return; setVillagerRole(v,k,true); if(!own) base.reassigned=(base.reassigned||0)+1;
+  toast(`${v.name||'The villager'} is now your ${villagerName(v).toLowerCase()}`,2.5); }
+function rejobOpen(v){ if(!v) return; const opts=rejobChoices(v).map(([k,l])=>({label:l,go:()=>{ rejobDo(v,k); try{ if(state==='shop'&&shopV===v) renderShop(); }catch(e){} }}));
+  if(!opts.length) return; showPickList(opts); }
+{ const _rs=renderShop; renderShop=function(...a){ const r=_rs(...a); try{ const list=$('#shopList'); const old=list&&list.querySelector('[data-rejob]');
+      if(old){ const row=old.closest('.recipe'); const left=rejobLeft(shopV); if(row) row.outerHTML=`<div id="rejobRow" style="display:flex;align-items:center;gap:10px;margin:6px 0"><button class="btn" data-rejobopen="1">Reassign</button>${isFinite(left)?`<span class="ing">${left} change${left===1?'':'s'} left in this village</span>`:''}</div>`; }
+      const rr=$('#reassignRow'); if(rr&&list&&list.querySelector('[data-rejobopen]')&&!rr.hidden) rr.hidden=true; }catch(e){ console.warn(e); } return r; }; }
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-rejobopen]'); if(!b) return; ev.stopPropagation(); ev.preventDefault(); rejobOpen(shopV); },true);
+// ===== Kinard, 2026-11-12: "the farmers when there are more then 1 become very difficult to talk to make it so that the player
+// only talks to the farmer foreman and change the foremans name from Greta to a higher ranking farmer" =====
+// Talk (F) passes over the farm workers and finds the head farmer, who runs the farm (its chest, what the farmers gather). The
+// head farmer is called the Head farmer (it took the name of the wanderer who first became one, such as Greta). Older worlds are
+// renamed on load.
+const HEAD_FARMER_NAME='Head farmer';
+const farmWorker=e=>!!e&&e.kind==='villager'&&(e.vjob==='farmer'||e.role==='farmer')&&e.role!=='headfarmer';
+{ const _nv=nearestVillager; nearestVillager=function(range,...a){ const hide=[]; try{ for(const e of ents) if(farmWorker(e)&&!e.dead){ e.dead=true; hide.push(e); } } catch(err){}
+    try{ return _nv(range,...a); } finally{ for(const e of hide) e.dead=false; } }; }
+if(LODGE.farmer) LODGE.farmer.headName=HEAD_FARMER_NAME;
+function headFarmerName(){ for(const e of ents) if(!e.dead&&e.kind==='villager'&&e.role==='headfarmer'&&e.name!==HEAD_FARMER_NAME) e.name=HEAD_FARMER_NAME; }
+{ const _vn=villagerName; villagerName=function(v,...a){ if(v&&v.role==='headfarmer') return HEAD_FARMER_NAME; return _vn(v,...a); }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ headFarmerName(); }catch(e){} return r; }; }
+let headFarmerT=3;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if((headFarmerT-=dt)<=0){ headFarmerT=3; headFarmerName(); } }catch(e){} return r; }; }
+// ===== Kinard, 2026-11-12: "Make it so the player can open the brazier and all the new crafting blocks the same as a furnace, and
+// crafting table" =====
+// Standing by a Cauldron, Anvil, Loom or Brazier, Talk (F, or the Talk button on a phone) offers "Use the cauldron" (and so on),
+// which opens the crafting window at that station, the same as the workbench and the furnace.
+const OPEN_STATIONS=[['cauldron','Use the cauldron'],['anvil','Use the anvil'],['loom','Use the loom'],['brazier','Use the brazier']];
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ if(!player||player.dead) return o;
+      for(const [k,label] of OPEN_STATIONS){ const id=stationId(k); if(id&&nearStation(id)&&!o.some(op=>op&&op.label===label)) o.unshift({label,direct:true,go:()=>openCraft()}); } }catch(e){ console.warn(e); } return o; }; }
+// ===== Kinard, 2026-11-12 (screenshot: the Fountains box in the Buildings window in big letters above the Army upgrades rows):
+// "Make it so the font size of the fountains are the exact same size and look as the other items in this group" =====
+// The Fountains box is drawn like the rows round it (.recipe): the same panel colour, border and padding, its title the size of a
+// row's name and its lines the size and colour of a row's small text (smaller again on a sideways phone, as the rows are).
+{ const st=document.createElement('style'); st.textContent=`.fountFold{ background:var(--panel2); border:2px solid #5b4f7c; padding:6px; margin-top:6px; font-size:9px; line-height:1.6; }
+.fountFold summary b{ font-size:9px; } .fountFold summary .fsum{ font-size:8px; } .fountFold summary .fopen{ font-size:8px; }
+.fountFold .frow{ font-size:8px; line-height:1.9; } .fountFold .fnote{ font-size:8px; color:var(--muted); opacity:1; line-height:1.9; margin-top:4px; }
+@media (max-height:520px) and (orientation:landscape){ .fountFold{ padding:4px; font-size:8px; } .fountFold summary b{ font-size:8px; } .fountFold summary .fsum, .fountFold summary .fopen, .fountFold .frow, .fountFold .fnote{ font-size:7px; line-height:1.7; } }`; document.head.appendChild(st); }
+// ===== Kinard, 2026-11-12: "Make it so that the farmers CANNOT collect seeds that have not been found by the player and limit the
+// amount found in cave chests I'm not sure which is occuring the most also adjust the underground areas so that if they have a bed
+// it is within the underground area also make it so that there are some abandoned buildings underground so they aren't all
+// perfectly made and some are overgrown" =====
+// 1. Farmers only bring crops and seeds you have found yourself: a crop of a kind you have not found (wheat is always known) never
+//    goes into the farmhouse chest, and a farmer never sows one. (Both could happen: the farm field kept whatever grew in it, and
+//    every cut crop sent its seeds to the chest.)
+// 2. Cave chests hold far fewer seeds: at most one stack of 1 or 2, and seeds come up a third as often.
+// 3. A bed in an underground chest room stands wholly inside the room (98zxz_zz257_chest_rooms.js places the full bed; beds that
+//    reached out through a doorway in older worlds are moved inside or taken out).
+// 4. About a third of the underground chest rooms are abandoned: some of the walls, roof and floor have crumbled or fallen in,
+//    cobwebs hang in the corners and the patterned back wall has broken away in places; half of those are overgrown too, with
+//    moss on the walls, vines hanging from the roof, ivy and ferns and grass on the floor. New worlds, and older worlds once in
+//    rooms nobody has seen (home.room187).
+// ---- 1. found crops only ----
+function cropKindOfItem(id){ try{ return cropKinds().find(k=>k.food===id||k.seed===id)||null; }catch(e){ return null; } }
+const unfoundCrop=id=>{ const k=cropKindOfItem(id); return !!k&&!cropFound(k); };
+{ const _pc=putInChest; putInChest=function(c,it,...a){ try{ if(c&&it&&home&&home.farmhouse&&c===chests[home.farmhouse.chest]&&unfoundCrop(it.id)) return true; }catch(e){} return _pc(c,it,...a); }; }
+{ const _fs=farmSeedPick; farmSeedPick=function(...a){ for(let k=0;k<4;k++){ const p=_fs(...a); const ck=cropKindOf(p); if(!ck||cropFound(ck)) return p; } return B.WHEAT_1; }; }
+// ---- 2. fewer seeds in cave chests ----
+for(const tab of LOOT_TABLE) for(const row of tab) if(row[0]==='seed'){ row[1]=Math.min(row[1],1); row[2]=1; row[3]=2; }
+{ const _le=lootExtra; lootExtra=function(c,R,...a){ const out=_le(c,R,...a); let seen=false; try{ const P=new Set((lootPools().seed)||[]); return out.filter(it=>{ if(!P.has(it.id)) return true; if(seen) return false; seen=true; return true; }); }catch(e){ return out; } }; }
+// ---- 3 and 4. rooms ----
+const ROOM_CRUMBLE=()=>{ const m={}; try{ m[B.STONE_BLOCK]=RUIN_B.stone; m[B.DEEP_STONE]=RUIN_B.stone; m[B.BRICK]=RUIN_B.brick; m[B.PLANK]=RUIN_B.plank; m[B.TIMBER]=RUIN_B.plank; }catch(e){} return m; };
+function roomBoxOf(k){ const c=chests[k]; if(!c) return null; if(c.roomBox) return c.roomBox; if(!c.room||!ROOM_STYLE[c.room]) return null;
+  const [cx,cy]=k.split(',').map(Number), S=ROOM_STYLE[c.room], inner=new Set([S.bg,S.pillar,S.frieze,S.wains]); const isIn=(x,y)=>inner.has(bg[y*W+x])&&!(isSolid(x,y)&&!BLOCKS[world[y*W+x]].platform);
+  let x0=cx, x1=cx; while(x0>cx-12&&isIn(x0-1,cy)) x0--; while(x1<cx+12&&isIn(x1+1,cy)) x1++; let y0=cy; while(y0>cy-12&&inner.has(bg[(y0-1)*W+cx])) y0--;
+  return c.roomBox={x0,x1,y0,y1:cy}; }
+function roomBedsInside(box,put){ let n=0; for(let y=box.y0-1;y<=box.y1;y++) for(let x=box.x0-4;x<=box.x1+4;x++){ const b=BED_BY_ID[world[y*W+x]]; if(!b) continue;
+    const cells=bedCellsOf(x,y,b).concat([[x,y]]); if(cells.every(([qx,qy])=>qx>=box.x0&&qx<=box.x1&&qy>=box.y0&&qy<=box.y1)) continue;
+    for(const [qx,qy] of cells) if(world[qy*W+qx]===BED_PART||world[qy*W+qx]===b.id) put(qx,qy,0);
+    // back inside, against the far wall from the chest, if it fits
+    const ax=x<(box.x0+box.x1)/2?box.x0+b.w:box.x1-1, bx0=ax-b.w+1; let ok=bx0>=box.x0&&ax<=box.x1;
+    for(let qx=bx0;qx<=ax&&ok;qx++) for(let qy=y-b.h+1;qy<=y;qy++) if(world[qy*W+qx]!==0) ok=false;
+    if(ok){ for(const [qx,qy] of bedCellsOf(ax,y,b)) put(qx,qy,BED_PART); put(ax,y,b.id); } n++; }
+  return n; }
+function ruinRoom(box,R,put,bput,green){ const C=ROOM_CRUMBLE(); let n=0; const {x0,x1,y0,y1}=box;
+  const natural=bg[(y1)*W+Math.max(1,x0-3)]||bg[(y1)*W+Math.min(W-2,x1+3)]||2;
+  // the shell crumbles and gives way in places
+  for(let y=y0-1;y<=y1+1;y++) for(let x=x0-1;x<=x1+1;x++){ const edge=y===y0-1||y===y1+1||x===x0-1||x===x1+1; if(!edge) continue; const i=y*W+x, id=world[i]; if(!id||!BLOCKS[id]||!BLOCKS[id].solid) continue;
+    const r=R(); if(r<0.08&&y!==y1+1){ put(x,y,0); n++; } else if(r<0.4&&C[id]){ put(x,y,C[id]); n++; } }
+  // the back wall broken away in patches, cobwebs in the top corners
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) if(R()<0.22){ bput(x,y,natural); n++; }
+  try{ if(world[y0*W+x0]===0) put(x0,y0,RUIN_B.webL); if(world[y0*W+x1]===0) put(x1,y0,RUIN_B.webR); }catch(e){}
+  if(!green) return n;
+  // overgrown: moss on the walls, vines from the roof, ivy and plants on the floor
+  for(let y=y0-1;y<=y1+1;y++) for(const x of [x0-1,x1+1]){ const id=world[y*W+x]; if(id&&BLOCKS[id]&&BLOCKS[id].solid&&R()<0.35){ put(x,y,B.MOSS); n++; } }
+  for(let x=x0;x<=x1;x++){ if(R()<0.4&&world[y0*W+x]===0&&isSolid(x,y0-1)){ const len=1+((R()*3)|0); for(let k=0;k<len;k++){ if(world[(y0+k)*W+x]!==0) break; put(x,y0+k,B.VINE); } n++; } }
+  for(let x=x0;x<=x1;x++){ if(world[y1*W+x]!==0||!isSolid(x,y1+1)) continue; if(R()<0.45){ put(x,y1,RUIN_PLANTS[(R()*RUIN_PLANTS.length)|0]); n++; } }
+  for(const x of [x0,x1]) for(let y=y0+1;y<y1;y++) if(world[y*W+x]===0&&R()<0.3) put(x,y,B.IVY);
+  return n; }
+const roomRuined=k=>{ let h=0; for(const ch of k) h=(h*31+ch.charCodeAt(0))|0; h=(h^((seed|0)*2654435761))>>>0; return h%3===0?(h%6===0?2:1):0; };   // 1 abandoned, 2 abandoned and overgrown
+function ruinRoomsAll(onlyUnseen,raw){ if(!world||!chests) return 0; let n=0; const R=mulberry((seed|0)+2575);
+  const put=raw?(x,y,id)=>{ world[y*W+x]=id; liq[y*W+x]=0; }:(x,y,id)=>setTile(x,y,id), bput=raw?(x,y,v)=>{ bg[y*W+x]=v; }:(x,y,v)=>bset(x,y,v);
+  for(const k of Object.keys(chests)){ const c=chests[k]; if(!c||!c.room||c.ruin187!=null) continue; const box=roomBoxOf(k); if(!box) continue;
+    if(onlyUnseen){ let seen=false; for(let y=box.y0-1;y<=box.y1+1&&!seen;y++) for(let x=box.x0-1;x<=box.x1+1;x++) if(explored[y*W+x]){ seen=true; break; } if(seen){ c.ruin187=0; roomBedsInside(box,put); continue; } }
+    roomBedsInside(box,put); const r=roomRuined(k); c.ruin187=r; if(r){ ruinRoom(box,R,put,bput,r===2); n++; } }
+  return n; }
+{ const _cra=chestRoomsAll; chestRoomsAll=function(onlyUnseen,raw,...a){ const r=_cra(onlyUnseen,raw,...a); try{ ruinRoomsAll(onlyUnseen,raw); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!isGuest()&&!home.editor&&home.room187!==1){ home.room187=1; facRun(()=>ruinRoomsAll(true,false)); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12: "Decrease the amount of weapons and tools found within the underground chests as most should be made
+// vs found" =====
+// 5. An underground chest (below the surface, above the magma realm; not the lair, the Kraken's, Atlantis, the realm vaults, the
+//    wing caches or the grove's gold caches) keeps a weapon or tool only now and then: when it is first opened, each weapon,
+//    pickaxe, axe, hoe, hammer or rod in it stays with a 1 in 5 chance (at most one per chest) and the rest become 10 coins each.
+const CAVE_TOOL_KINDS=new Set(['weapon','pick','axe','hoe','hammer','rod']), CAVE_TOOL_KEEP=0.2;
+function caveToolChest(k,c){ if(!c||!Array.isArray(c.items)||c.opened||c.tools187) return false; if(c.kraken||c.atlantis||c.magmaVault||c.wingCache||c.grove||c.sky||c.lair) return false;
+  const [x,y]=k.split(',').map(Number); if(!(x>=0&&x<W)) return false; if(y<=(surf[x]||0)+6||y<=skyOff||(typeof magmaY!=='undefined'&&y>=magmaY)) return false; return true; }
+function caveToolsTrim(k,c){ let h=0; for(const ch of k) h=(h*31+ch.charCodeAt(0))|0; const R=mulberry(((seed|0)+2577+h)|0); let kept=false, n=0;
+  c.items=c.items.map(s=>{ if(!s) return s; const d=ITEMS[s.id]; if(!d||!CAVE_TOOL_KINDS.has(d.kind)) return s; if(!kept&&R()<CAVE_TOOL_KEEP){ kept=true; return s; } n++; c.coins=(c.coins||0)+10*(s.n||1); return null; });
+  c.tools187=1; return n; }
+{ const _oc=openChest; openChest=function(x,y,...a){ try{ if(!isGuest()){ const k=x+','+y, c=chests[k]; if(caveToolChest(k,c)&&caveToolsTrim(k,c)) try{ chestChanged(k); }catch(e){} else if(c&&!c.opened) c.tools187=1; } }catch(e){ console.warn(e); } return _oc(x,y,...a); }; }
+// ===== Kinard, 2026-11-12 (screenshot: an underground vault room with a floor of gold blocks, a queen statue, two archers):
+// "Remove the gold blocks on the ground of this and make it so that the gold blocks aren't used as common building materials in
+// the world also enhance the queen statue and add more items as well as doors for the underground houses" =====
+// 1. Gold blocks are kept for treasure: the underground vault rooms have marble floors, the old cave vault rooms marble floors and
+//    no gold block ornaments, and the sky realm's houses and the sky castle's roof spires are Wind marble (cream with a gold line).
+//    Boss thrones keep their gold daises and the realm treasure vaults keep their gold. New worlds, and older worlds once where
+//    nobody has been (home.gold187).
+// 2. The Queen statue is carved again in more detail: a flowing gown with folds and a gold hem, a cape, a jewelled crown and
+//    necklace, braided hair, a face, and a sceptre topped with a ruby orb, on a plinth with a gold inlay.
+// 3. Underground chest rooms are furnished more fully (a second pass of their style's pieces) and have a door in each opening:
+//    wooden doors in cellars, stone doors deeper down; an abandoned room has lost some of its doors. Older worlds once in rooms
+//    nobody has seen.
+// ---- 1. gold blocks ----
+if(typeof ROOM_STYLE!=='undefined'&&ROOM_STYLE.vault) ROOM_STYLE.vault.floor=B.MARBLE;
+function goldKept(x,y){ try{ if(typeof vaultAt==='function'&&vaultAt(x,y)) return true; }catch(e){}
+  for(let dy=-7;dy<=7;dy++) for(let dx=-16;dx<=16;dx++){ const id=tileAt(x+dx,y+dy); if(id&&typeof isThroneId==='function'&&isThroneId(id)) return true; } return false; }
+function goldTidy(onlyUnseen,put){ if(!world) return 0; let n=0; const sky=typeof barrierY!=='undefined'?barrierY:0, skyStone=B.MELD_WIND_MARBLE||B.SKY_BRICK||B.MARBLE;
+  for(let i=0;i<world.length;i++){ if(world[i]!==B.GOLD_BLOCK) continue; if(onlyUnseen&&explored[i]) continue; const x=i%W, y=(i/W)|0; if(goldKept(x,y)) continue;
+    put(x,y,y<sky?skyStone:B.MARBLE); n++; }
+  return n; }
+{ const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ goldTidy(false,(x,y,id)=>{ world[y*W+x]=id; }); if(home) home.gold187=1; }catch(e){ console.warn(e); } return r; }; }
+// ---- 2. the queen ----
+rePiece('st_queen',r=>{ const k=pk(r), M=SP.marble, G='#e0c060', Gd='#a88a2a', RUBY='#e0115f', SAPH='#3a6ad0';
+  plinth(k,1,41,14,7,M); k.R(3,44,10,1,G); k.px(8,45,RUBY);
+  k.poly([[4,15],[12,15],[15,41],[1,41]],M[2]); k.line(2,40,4,17,M[3]); k.line(14,40,12,17,M[3]);                       // the cape behind
+  k.poly([[5,16],[11,16],[13,41],[3,41]],M[0]); k.R(5,16,2,25,M[1]);                                                     // the gown
+  for(const [a,b] of [[6,4],[8,8],[10,12]]) k.line(a+1,24,b,40,M[2]); k.line(7,24,6,40,M[1]);                             // its folds
+  k.R(3,39,10,1,G); k.R(3,40,10,1,Gd); for(let x=4;x<13;x+=2) k.px(x,39,'#fff2a8');                                      // the gold hem
+  k.R(5,16,6,6,M[0]); k.R(6,17,4,1,M[1]); k.R(5,22,6,1,G); k.px(8,22,RUBY);                                               // bodice and belt
+  k.line(5,17,3,25,M[0]); k.line(4,17,2,25,M[2]); k.disc(3,26,1.2,M[0]);                                                  // the near arm, holding the gown
+  k.line(11,17,12,20,M[0]); k.R(11,20,2,2,M[0]);                                                                          // the far arm up to the sceptre
+  k.R(6,14,4,2,M[0]); for(const x of [6,7,8,9]) k.px(x,15,G); k.px(8,16,RUBY);                                           // neck and necklace
+  k.R(5,8,1,9,M[2]); k.R(10,8,1,9,M[2]); for(let y=10;y<17;y+=2){ k.px(5,y,M[3]); k.px(10,y,M[3]); }                      // braids
+  k.ell(8,10.5,2.5,3.1,M[0]); k.px(7,10,M[3]); k.px(9,10,M[3]); k.px(8,11,M[2]); k.px(8,12,'#c8a0a8'); k.R(6,8,5,1,M[2]);  // the face
+  k.R(5,6,6,2,G); k.R(5,7,6,1,Gd); for(const x of [5,7,9,10]) k.px(x,5,G); k.px(8,4,G); k.px(8,5,G); k.px(8,6,RUBY); k.px(6,6,SAPH); k.px(10,6,SAPH);   // the crown
+  k.R(12,6,1,16,'#c8a040'); k.R(12,6,1,16,G); k.px(12,12,'#fff2a8'); k.disc(12.5,4.5,1.6,G); k.px(12,4,RUBY); k.px(13,4,'#ff7a9a'); k.px(12,1,G); k.R(11,2,3,1,G); }   // the sceptre
+  );
+// ---- 3. doors and more furnishings in the chest rooms ----
+function roomDoorsAndDecor(k,put,bput,raw){ const c=chests[k]; if(!c||!c.room||c.door187) return 0; const box=(typeof roomBoxOf==='function')?roomBoxOf(k):c.roomBox; if(!box) return 0; const S=ROOM_STYLE[c.room]||{};
+  let h=0; for(const ch of k) h=(h*31+ch.charCodeAt(0))|0; const R=mulberry(((seed|0)+2581+h)|0); let n=0;
+  for(const x of [box.x0-1,box.x1+1]){ const y=box.y1; if(world[y*W+x]!==0||world[(y-1)*W+x]!==0) continue; if(!isSolid(x,y+1)) continue; if(c.ruin187&&R()<0.5) continue;
+    if(c.room==='cellar'||!(typeof METAL_DOORS!=='undefined'&&METAL_DOORS.stone)) door(put,x,y+1); else { const D=METAL_DOORS.stone; put(x,y-1,D.top); put(x,y,D.base); }
+    if(S.bg){ bput(x,y,S.bg); bput(x,y-1,S.bg); } n++; }
+  try{ n+=decorateBox({x0:box.x0,x1:box.x1,y0:box.y0,y1:box.y1},c.room,raw?(x,y,v)=>{ world[y*W+x]=v; }:(x,y,v)=>setTile(x,y,v),(seed|0)*13+box.x0+7); }catch(e){ console.warn(e); }
+  c.door187=1; return n; }
+function roomDoorsAll(onlyUnseen,raw){ if(!world||!chests) return 0; let n=0; const put=raw?(x,y,id)=>{ world[y*W+x]=id; liq[y*W+x]=0; }:(x,y,id)=>setTile(x,y,id), bput=raw?(x,y,v)=>{ bg[y*W+x]=v; }:(x,y,v)=>bset(x,y,v);
+  for(const k of Object.keys(chests)){ const c=chests[k]; if(!c||!c.room||c.door187) continue; const box=(typeof roomBoxOf==='function')?roomBoxOf(k):c.roomBox; if(!box) continue;
+    if(onlyUnseen){ let seen=false; for(let y=box.y0-1;y<=box.y1+1&&!seen;y++) for(let x=box.x0-1;x<=box.x1+1;x++) if(explored[y*W+x]){ seen=true; break; } if(seen){ c.door187=0; continue; } }
+    n+=roomDoorsAndDecor(k,put,bput,raw); }
+  return n; }
+{ const _cra=chestRoomsAll; chestRoomsAll=function(onlyUnseen,raw,...a){ const r=_cra(onlyUnseen,raw,...a); try{ roomDoorsAll(onlyUnseen,raw); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!isGuest()&&!home.editor){
+        if(home.gold187!==1){ home.gold187=1; facRun(()=>goldTidy(true,(x,y,id)=>setTile(x,y,id))); }
+        if(home.door187!==1){ home.door187=1; facRun(()=>roomDoorsAll(true,false)); } } }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12: "make it so that statues that need emeralds etc require 10x the current amount and rework the scaling of
+// the crafting items for decorations as most appear to be made much easier then they should be" =====
+// Decorations cost more, by size: every ingredient of a decoration's recipe is multiplied by DECOR_MULT for its size (one block x2,
+// up to four blocks x3, up to six x4, bigger x5). Gems in a statue's recipe (emeralds, rubies, sapphires, amethysts, diamonds and
+// the rest) are multiplied by 10 instead. The crafting stations (Cauldron, Anvil, Loom, Brazier, Easel) and the fountains keep
+// their costs, as they do a job.
+const DECOR_MULT=a=>a<=1?2:a<=4?3:a<=6?4:5, STATUE_GEM_X=10;
+const isGemItem=id=>{ const d=ITEMS[id]; return !!d&&(!!d.gem||[I.RUBY,I.SAPPHIRE,I.EMERALD,I.AMETHYST_GEM,I.DIAMOND,I.FIRE_OPAL].includes(id)); };
+const isStatuePiece=p=>!!p&&(/^st_/.test(p.key||'')||(typeof STATUES!=='undefined'&&(Array.isArray(STATUES)?STATUES.includes(p.id):STATUES.has&&STATUES.has(p.id))));
+{ let n=0; const done=new Set();
+  for(const r of RECIPES){ const p=PIECE[r.out]; const d=ITEMS[r.out]; if(!p||!d||done.has(r)||p.fluid||d.station||!r.need) continue;
+    const m=DECOR_MULT((p.w||1)*(p.h||1)), st=isStatuePiece(p);
+    r.need=r.need.map(([id,q])=>[id,Math.max(1,Math.round(q*(st&&isGemItem(id)?STATUE_GEM_X:m)))]); done.add(r); n++; }
+  STATION_RULES.push({decorScaled:n}); }
+// ===== Kinard, 2026-11-12: "make it so that statues and pictures cannot actually be crafted and must be found in chests, abandoned
+// buildings, etc throughout the world" =====
+// Statues and paintings (every statue, every framed painting and the plain Painting) have no recipe and no shop sells them. They are
+// found: now and then in a chest (more often the better the chest), and standing or hanging in the world's buildings, castles,
+// chest rooms and abandoned buildings, where breaking one gives it to you.
+const ART_IDS=new Set(); try{ for(const p of PIECES) if(/^(st|pt)_/.test(p.key||'')) ART_IDS.add(p.id); for(const id of (typeof STATUES!=='undefined'?STATUES:[])) ART_IDS.add(id.id??id); if(B.PAINTING!=null) ART_IDS.add(B.PAINTING); }catch(e){ console.warn(e); }
+for(let i=RECIPES.length-1;i>=0;i--) if(ART_IDS.has(RECIPES[i].out)) RECIPES.splice(i,1);
+for(const id of ART_IDS){ const p=PIECE[id]; if(p) p.found=true; const d=ITEMS[id]; if(d&&typeof d.desc==='string'&&!/Found only/.test(d.desc)) d.desc=d.desc.replace(/\.?\s*$/,'.')+' Found only: in chests and in the buildings and ruins of the world'; }
+try{ for(const s of Object.values(SHOPS)) if(s&&Array.isArray(s.stock)) s.stock=s.stock.filter(e=>!ART_IDS.has(Array.isArray(e)?e[0]:e)); }catch(e){ console.warn(e); }
+// a chance of a statue or a painting in a chest
+{ const _lp=lootPools; lootPools=function(...a){ const P=_lp(...a); if(!P.art) P.art=[...ART_IDS].filter(id=>ITEMS[id]); return P; }; lootPools.p=null; }
+try{ LOOT_TABLE[0].push(['art',0.4,1,1]); LOOT_TABLE[1].push(['art',0.8,1,1]); LOOT_TABLE[2].push(['art',1.2,1,1]); }catch(e){ console.warn(e); }
+// ===== Kinard, 2026-11-12 (screenshot: the castle at its dark slate stage with pale stone doors): "Make it so that these doors are
+// upgraded to the same color and stone type as the rest of the castle" =====
+// The Dark slate door (fixed ids 2513-2516: closed bottom, closed top, open bottom, open top) is the castle's door at its dark slate
+// stage (CASTLE_SKIN.door[1]), so the castle's doors match its walls at every stage: stone, then dark slate, then iron. Doors of a
+// building follow its stage on every check (stageTidy), except doors you placed yourself (home.myDoors). Made at a workbench from
+// dark slate. Older worlds swap their castle's doors when they load.
+{ const ids=[2513,2514,2515,2516], nm='Dark slate door', col='#4a4a54', hard=1.6, minPow=0;
+  if(ids.every(id=>!(BLOCKS[id]&&BLOCKS[id].name)&&!ITEMS[id])){
+    defB(ids[0],{name:nm,hard,minPow,col}); defB(ids[1],{name:nm,hard,minPow,drop:ids[0],col,place:false});
+    defB(ids[2],{name:nm,solid:false,hard,minPow,drop:ids[0],col,place:false}); defB(ids[3],{name:nm,solid:false,hard,minPow,drop:ids[0],col,place:false});
+    const set={wood:'deep',metal:true,base:ids[0],top:ids[1],open:ids[2],openTop:ids[3],plank:B.DEEP_STONE||B.DEEPSTONE}; DOOR_SETS.push(set); METAL_DOORS.deep=set;
+    for(const id of ids){ DOOR_SET_OF[id]=set; DOOR_IDS.add(id); try{ NO_BEVEL.add(id); }catch(e){} try{ LAVA_EATS.delete(id); }catch(e){} try{ ORE_LOOK.add(id); }catch(e){} }
+    try{ PASS.add(ids[2]); PASS.add(ids[3]); }catch(e){}
+    ITEMS[ids[0]]={name:nm,kind:'block',desc:'A heavy door of dark slate, the stone of the castle\'s second stage. It cannot burn'}; SELL[ids[0]]=6;
+    RECIPES.push({ out:ids[0], n:1, need:[[B.DEEP_STONE||B.DEEPSTONE,6]], st:B.WORKBENCH, cat:'build' });
+    B.DEEP_DOOR=ids[0];
+    const L={ body:'#4a4a54', hi:'#6c6c78', dark:'#2a2a32', frame:'#1e1e24', knob:'#d8c890', win:'#121018' };
+    const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,cl)=>{ g.fillStyle=cl; g.fillRect(x,y,w,h); }); return c; };
+    TEX[set.top]=tex(r=>{ r(2,0,12,16,L.body); r(2,0,12,2,L.frame); r(2,0,1,16,L.frame); r(13,0,1,16,L.frame); r(3,0,1,16,L.hi); r(5,4,6,4,L.win); for(const x of [6,8,10]) r(x,4,1,4,L.dark); r(4,10,8,1,L.dark); r(3,13,10,1,L.dark); });
+    TEX[set.base]=tex(r=>{ r(2,0,12,16,L.body); r(2,0,1,16,L.frame); r(13,0,1,16,L.frame); r(3,0,1,16,L.hi); r(2,15,12,1,L.frame); r(3,4,10,1,L.dark); r(3,9,10,1,L.dark); r(7,0,1,4,L.dark); r(9,5,1,4,L.dark); r(6,10,1,5,L.dark); r(10,6,2,2,L.knob); });
+    for(const id of [set.open,set.openTop]) TEX[id]=tex(r=>{ r(2,0,1,16,L.frame); r(13,0,1,16,L.frame); if(id===set.openTop) r(2,0,12,2,L.frame); r(3,0,3,16,L.body); r(3,0,1,16,L.hi); r(5,0,1,16,L.dark); });
+    try{ delete ICON_URL[ids[0]]; delete ICON_TEX[ids[0]]; }catch(e){}
+    CASTLE_SKIN.door[1]='deep'; } else console.warn('dark slate door ids taken'); }
+// doors follow the building's stage on every check, except the ones you placed
+{ const _st=stageTidy; stageTidy=function(t,...a){ let n=_st(t,...a); try{ const K=t.set||SKIN, kind=K.door?K.door[Math.max(0,Math.min(2,t.tier|0))]:undefined; if(kind===undefined) return n; const mine=home&&home.myDoors||{};
+      for(let y=Math.max(0,t.y0);y<=Math.min(H-1,t.y1);y++) for(let x=Math.max(0,t.x0);x<=Math.min(W-1,t.x1);x++){ const id=world[y*W+x]; if(!DOOR_SET_OF[id]) continue; if(mine[x+','+y]||mine[x+','+(y+1)]) continue;
+        const to=doorSwap(id,kind); if(to!==id){ setTile(x,y,to); n++; } } }catch(e){ console.warn(e); } return n; }; }
+// ---- the magma keep's Battle plan sign stays by the gate (found while testing 0.9.187: lava flowing by the gate could burn it) ----
+// Signs do not burn in lava, and while the Magma Knight stands, a missing plan sign by the keep's gate is put back.
+try{ LAVA_EATS.delete(B.SIGN); if(typeof LAVA_IMMUNE!=='undefined'&&LAVA_IMMUNE.add) LAVA_IMMUNE.add(B.SIGN); }catch(e){}
+let keepSignT=4;
+function keepSignGuard(){ const c=magma&&magma.keep; if(!c||c.cleared||!c.planSign||isGuest()) return false; const sg=c.planSign, id=tileAt(sg.x,sg.y); if(id===B.SIGN) return false;
+  if(id&&BLOCKS[id]&&BLOCKS[id].solid) return false; if(!isSolid(sg.x,sg.y+1)) return false; facRun(()=>setTile(sg.x,sg.y,B.SIGN)); return true; }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&(keepSignT-=dt)<=0){ keepSignT=4; keepSignGuard(); } }catch(e){} return r; }; }
+// ===== Kinard, 2026-11-12: "Make it so that the second stage of the castle does the exact same thing for all buildings with the
+// black stone instead of the regular stone so that it is uniform" =====
+// Every building of the village (houses, shop houses, the lodge, the farmhouse, the miners' hut and the buildings you place) is
+// dark slate at its second stage, like the castle: dark slate walls and trim, the dark slate back wall, dark slate doors,
+// furniture and arrow slits. Older worlds re-skin their second-stage buildings once (home.deepSkinV).
+SKIN.wall[1]=B.DEEP_STONE; SKIN.beam[1]=B.DEEP_TRIM; SKIN.bg[1]=21; SKIN.door[1]='deep'; SKIN.furn[1]='deep';
+try{ TIER_WORD[1]='dark slate'; }catch(e){}
+{ const _ss=stageSlit; stageSlit=function(t,...a){ if(t&&t.set!==CASTLE_SKIN&&(t.tier|0)===1&&B.SLIT_DEEP!=null) return B.SLIT_DEEP; return _ss(t,...a); }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&home.claimed&&!isGuest()&&!home.editor&&home.deepSkinV!==1){ home.deepSkinV=1; const S=home.skin||{};
+        for(const k of Object.keys(S)) if(k!=='castle2'&&S[k]===1) delete S[k]; try{ skinAll(); }catch(e){} } }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12: "make sure that ANY iteration of the old beds is removed so they are always the new size of beds also
+// make it so that the villagers have different level of beds so the first level is the straw, second is a normal bed and the final
+// upgrade is a bigger bed but make it based off of the upgraded level of the house also make it so level 1 can be achieved while the
+// castle is level 1 then level 2 upgrade at level 2 and level 3 at level three" =====
+// 1. No one-block bed is left anywhere: a one-block bed (the old Bed, the wood, stone and iron furniture beds) that has no room to
+//    widen in place moves to the nearest room for a 3-wide bed, and if there is none it is taken up and dropped as an item.
+// 2. A villager's bed follows the level of their building: a Straw bed at level 1, a Wooden bed at level 2, and at level 3 a Royal
+//    canopy bed (a Double bed where the canopy does not fit). For a shop house that is the shop's level; for a plain house the
+//    village's stage; for the lodge, farmhouse and miners' hut their own level.
+// 3. Levels follow the castle: a building reaches level 2 only once the castle is at its second stage, and level 3 at its third
+//    (as shopUpRow/upgradeShop and upgradeWorkplace already cap them).
+const BED_BY_LEVEL={1:['straw'],2:['wood'],3:['royal','double']};
+// ---- 1. one-block beds ----
+{ const _b3=bed3; bed3=function(x,y,...a){ const r=_b3(x,y,...a); try{ const id=tileAt(x,y); if(r||!isOneBed(id)) return r;
+      const old=home&&home.beds&&home.beds[x+','+y]; setTile(x,y,0); if(old) delete home.beds[x+','+y];
+      const fit=bedNewSpot(x,y,'wood'); if(fit){ placeBed(fit,'wood'); return true; }
+      try{ spawnDrop(x*T+8,y*T+4,B.BED,1); }catch(e){} return true; }catch(e){ console.warn(e); return r; } }; }
+// ---- 2. beds by level ----
+function villagerBedBoxes(){ const L=[]; if(!home||!home.claimed) return L; const vt=villageTier();
+  for(const g of gameBoxes()){ if(g.kind==='house'&&g.h){ const h=g.h, shop=h.role&&SHOPS[h.role]; const lv=shop?((home.shopLv&&home.shopLv['home:'+h.role])||home.shopLvBase||1):vt+1; L.push({box:g,lv:Math.max(1,Math.min(3,lv))}); }
+    else if(g.kind==='lodge'||g.kind==='farmhouse'||g.kind==='mine'){ L.push({box:g,lv:wpLevel(g.kind)}); } }
+  return L; }
+function bedLevelFix(box,lv){ const want=BED_BY_LEVEL[lv]||['wood']; let n=0;
+  // a home with no bed gets one of its level, on its highest solid floor inside; if the floors are full, small pieces make room
+  const movable=id=>!id||RUG_SET.has(id)||(!!BLOCKS[id]&&!BLOCKS[id].solid&&!isChestId(id)&&!DOOR_IDS.has(id)&&!BED_BY_ID[id]&&id!==BED_PART&&id!==B.PART&&!BIG_ST[id]&&!(PIECE[id]&&(PIECE[id].w>1||PIECE[id].h>1))&&id!==B.PORTAL);
+  const makeRoom=key=>{ const k=BED_KIND[key]; if(!k||k.h>1) return null; for(let y=Math.max(2,box.y0+1);y<=Math.min(H-3,box.y1);y++) for(let s=box.x0+1;s+k.w-1<=box.x1-1;s++){ let ok=true;
+      for(let cx=s;cx<s+k.w&&ok;cx++){ const f=BLOCKS[tileAt(cx,y+1)]; if(!f||!f.solid||f.platform||!bg[y*W+cx]||!movable(tileAt(cx,y))) ok=false; }
+      if(ok){ try{ bedMoveAside({s,y,a:box.x0+1,b:box.x1-1},-1,[s,y]); }catch(e){ for(let cx=s;cx<s+k.w;cx++){ const t=tileAt(cx,y); if(t&&!RUG_SET.has(t)){ setTile(cx,y,0); try{ spawnDrop(cx*T+8,y*T+4,(BLOCKS[t]&&BLOCKS[t].drop)||t,1); }catch(err){} } } }
+        for(let cx=s;cx<s+k.w;cx++) if(tileAt(cx,y)&&!RUG_SET.has(tileAt(cx,y))) ok=false; if(ok) return {ax:s+k.w-1,ay:y}; } }
+    return null; };
+  { let has=false; for(let y=Math.max(1,box.y0);y<=Math.min(H-2,box.y1)&&!has;y++) for(let x=Math.max(1,box.x0);x<=Math.min(W-2,box.x1);x++) if(BED_BY_ID[world[y*W+x]]){ has=true; break; }   // a real bed (station parts can read as bed parts)
+    if(!has) for(const key of [...new Set(want.concat(['wood','straw']))]){ if(has) break; for(let y=Math.max(2,box.y0+1);y<=Math.min(H-3,box.y1)&&!has;y++){ const fit=bedFitIn(box.x0+1,y,key,box,true); if(fit){ placeBed(fit,key); n++; has=true; break; } } }   // the level's bed, else a smaller one that fits
+    if(!has) for(const key of [...new Set(want.concat(['wood','straw']))]){ const fit=makeRoom(key); if(fit){ placeBed(fit,key); n++; has=true; break; } } }
+  for(let y=Math.max(1,box.y0);y<=Math.min(H-2,box.y1);y++) for(let x=Math.max(1,box.x0);x<=Math.min(W-2,box.x1);x++){ const b=BED_BY_ID[world[y*W+x]]; if(!b||want[0]===b.key||(want.includes(b.key)&&b.key!==want[0]&&!bedRoomFor(x,y,b,box,want[0]))) continue;
+    if(!['straw','wood','double','royal'].includes(b.key)) continue;   // a bed of another kind someone chose stays
+    const k=x+','+y, rec=home.beds&&home.beds[k]?Object.assign({},home.beds[k]):null, cells=bedCellsOf(x,y,b).concat([[x,y]]);
+    for(const [qx,qy] of cells) setTile(qx,qy,0); if(home.beds) delete home.beds[k];
+    let placed=null; for(const key of want){ const fit=bedFitIn(x-b.w+1,y,key,box); if(fit){ placeBed(fit,key); placed=fit; break; } }
+    if(!placed){ placeBed({ax:x,ay:y},b.key); }   // nothing fits: the old one goes back
+    else { const nr=bedRec(placed.ax,placed.ay,true); if(rec) for(const f of ['p','at','dye','tint','flip']) if(rec[f]!=null) nr[f]=rec[f]; n++; } }
+  return n; }
+// a spot for a bed of `key` on the floor row y inside the box, nearest x0 first
+function bedFitIn(x0,y,key,box,inside){ const b=BED_KIND[key]; if(!b) return null; const free=(cx,cy)=>{ const t=tileAt(cx,cy); return (t===0||RUG_SET.has(t))&&(!inside||!!bg[cy*W+cx]); };
+  for(let d=0;d<=box.x1-box.x0;d++) for(const s of [x0-d,x0+d]){ const ax=s+b.w-1; if(s<box.x0||ax>box.x1) continue; let ok=true;
+      for(let cx=s;cx<=ax&&ok;cx++){ if(!floorCell(cx,y+1)||(inside&&BLOCKS[tileAt(cx,y+1)]&&BLOCKS[tileAt(cx,y+1)].platform)) ok=false; for(let cy=y-b.h+1;cy<=y&&ok;cy++) if(!free(cx,cy)||cy<box.y0) ok=false; }
+      if(ok){ const L=rugLay(); for(let cx=s;cx<=ax;cx++) for(let cy=y-b.h+1;cy<=y;cy++){ const t=tileAt(cx,cy); if(RUG_SET.has(t)){ L[cx+','+cy]=t; world[cy*W+cx]=0; } } return {ax,ay:y}; } }
+  return null; }
+function bedRoomFor(x,y,b,box,key){ const k=BED_KIND[key]; if(!k) return false; return !!(k.w<=b.w+1&&k.h<=b.h+2); }
+function bedLevelsAll(){ if(!world||!home||!home.claimed||isGuest()||home.editor||home.fixup||(typeof tutOn==='function'&&tutOn())) return 0; let n=0;
+  facRun(()=>{ for(const {box,lv} of villagerBedBoxes()) n+=bedLevelFix(box,lv); }); return n; }
+let bedLevelT=6;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&(bedLevelT-=dt)<=0){ bedLevelT=6; bedLevelsAll(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ bed3All(); bedLevelsAll(); }catch(e){ console.warn(e); } return r; }; }
+for(const f of ['upgradeShop','growVillage','upgradeWorkplace']){ try{ const _f=globalThis[f]; }catch(e){} }
+{ const _us=upgradeShop; upgradeShop=function(...a){ const r=_us(...a); try{ bedLevelT=0.5; }catch(e){} return r; }; }
+{ const _uw=upgradeWorkplace; upgradeWorkplace=function(...a){ const r=_uw(...a); try{ bedLevelT=0.5; }catch(e){} return r; }; }
+{ const _gv=growVillage; growVillage=function(...a){ const r=_gv(...a); try{ bedLevelT=0.5; }catch(e){} return r; }; }
+// ===== Kinard, 2026-11-12 (screenshot: an iron shop house whose top floor kept its timber posts and half-timber back wall): "make
+// sure the top half of the building is the same type as the bottom when upgraded at higher levels" =====
+// A building was re-skinned only when its stage changed, so floors added later (a shop house's third floor, a loft) kept the
+// materials they were built with. Every building is now brought to its stage each time a world loads, and a shop house straight
+// after its new floor is built.
+function skinForceAll(){ if(!world||!home||isGuest()||home.editor||home.fixup) return 0; let n=0; facRun(()=>{ for(const t of skinTargets()){ if(t.tier==null) continue; try{ n+=skinBuilding(t)||0; }catch(e){ console.warn(e); } } }); return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ skinForceAll(); }catch(e){ console.warn(e); } return r; }; }
+{ const _ds=decorShopHouse; decorShopHouse=function(h,...a){ const r=_ds(h,...a); try{ const i=(home.houses||[]).indexOf(h); const t=skinTargets().find(q=>q.key==='h'+i); if(t) facRun(()=>skinBuilding(t)); }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12 (screenshot: the Shipwright's window, the shop level row far down under the boats): "make sure the 'shop
+// level' ALWAYS appears at the top of the villagers icon" =====
+// The shop's level row (Shop level n of 3, Upgrade, Checklist) is always the first row of a villager's window.
+{ const _rs=renderShop; renderShop=function(...a){ const r=_rs(...a); try{ const list=$('#shopList'); const b=list&&(list.querySelector('[data-shopup]')||[...list.querySelectorAll('.recipe .nm')].find(n=>/^Shop level/.test(n.textContent))); const row=b&&b.closest('.recipe');
+      if(row&&list.firstElementChild!==row) list.insertBefore(row,list.firstElementChild); }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12: "make it so that the farmer, miner and woodcutters villages can be leveled up similar to the other homes
+// and make it so that the villagers now also have someone who is an animal herder and is able to take care of animals with a small
+// farm this could be the farmers if that is simplest" =====
+// 1. The Woodcutter's lodge, the Farmhouse and the Miners' hut level up like the shop houses (level 2 at the castle's second
+//    stage, level 3 at its third): their level row (cost, Upgrade, Checklist) is the first row of their head worker's window, the
+//    Forester, the Head farmer and the Mine foreman, as well as in the Buildings window.
+// 2. Herding: the Farmhouse gets a small fenced paddock beside it with a sheep, a cow and two chickens (home.herdPen). In the Head
+//    farmer's window a farmer can be set to Animals: that farmer walks to the paddock, feeds the animals (fed animals breed, up to
+//    eight) and brings their produce (wool, milk, eggs) to the farmhouse chest. If every animal there is gone, two chickens are
+//    bought in each morning.
+const WP_HEAD={ forester:'lodge', headfarmer:'farmhouse', foreman:'mine', miner:'mine' };
+{ const _rs=renderShop; renderShop=function(...a){ const r=_rs(...a); try{ const k=shopV&&WP_HEAD[shopV.role]; const list=$('#shopList'); if(!k||!list||!wpRec(k)) return r;
+      if(!list.querySelector('[data-wprow]')){ const div=document.createElement('div'); div.setAttribute('data-wprow',k); div.innerHTML=wpRow(k); list.insertBefore(div,list.firstElementChild); } }catch(e){ console.warn(e); } return r; }; }
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('#shopList [data-wkup]'); if(!b) return; setTimeout(()=>{ try{ if(state==='shop') renderShop(); }catch(e){} },30); },true);
+// ---- herding ----
+FARM_TARGETS.herd=[I.EGG,'Animals'];
+{ const _fo=farmTargetOk; farmTargetOk=function(t,...a){ if(t==='herd') return !!(home&&home.herdPen); return _fo(t,...a); }; }
+const HERD_START=['sheep','cow','bird','bird'], HERD_MAX=8;
+function herdAnimals(){ const P=home&&home.herdPen; if(!P) return []; return ents.filter(e=>!e.dead&&e.kind==='animal'&&e.tamed&&cxOf(e)>=P.x0*T&&cxOf(e)<=(P.x1+1)*T&&Math.abs(e.y+e.h-P.gy*T)<4*T); }
+function herdSpawn(kind,P){ const x=(P.x0+2+((Math.random()*(P.x1-P.x0-3))|0))*T, a=makeAnimal(kind,x,(P.gy-2)*T); Object.assign(a,{tamed:true,team:player.team,mode:'farm',temper:'good',herd:true}); ents.push(a); return a; }
+function herdPenBuild(){ const F=home&&home.farmhouse; if(!F||home.herdPen||isGuest()||!player) return false; const gy=F.gy, fc=F.field?(F.field[0]+F.field[1])/2:F.x1+20, left=fc>(F.x0+F.x1)/2;
+  const tree=id=>LOG_IDS.has(id)||LEAF_IDS.has(id)||(typeof LEAF_ALL!=='undefined'&&LEAF_ALL.has(id));
+  const clearable=id=>!id||tree(id)||(BLOCKS[id]&&!BLOCKS[id].solid&&!isChestId(id)&&!DOOR_IDS.has(id)&&!BED_BY_ID[id]&&!(typeof PIECE_IDS!=='undefined'&&PIECE_IDS.has(id))&&!BIG_ST[id]&&id!==B.PART)||id===B.DIRT||id===B.GRASS||id===B.STONE||id===B.SAND;
+  const boxes=gameBoxes();
+  for(let off=3;off<=40;off++) for(const sd of [left?-1:1,left?1:-1]){ const x0=sd<0?F.x0-off-8:F.x1+off, x1=x0+8; let ok=x0>2&&x1<W-3;
+    for(let x=x0;x<=x1&&ok;x++){ let g=-1; for(let y=gy-2;y<=gy+2;y++) if(isSolid(x,y)&&!tree(tileAt(x,y))){ g=y; break; } if(g<0) ok=false;   // ground within two blocks of the farmhouse floor
+      for(let y=gy-4;y<gy&&ok;y++) if(!clearable(tileAt(x,y))) ok=false; if(boxes.some(b=>x>=b.x0-1&&x<=b.x1+1&&gy-1>=b.y0&&gy-1<=b.y1)) ok=false; if(oceanCol&&oceanCol[x]) ok=false; }
+    if(!ok) continue;
+    facRun(()=>{ for(let x=x0;x<=x1;x++){ for(let y=gy-4;y<gy;y++) if(tileAt(x,y)) setTile(x,y,0); for(let y=gy;y<=gy+2;y++) if(!isSolid(x,y)) setTile(x,y,y===gy?B.GRASS:B.DIRT); }
+      for(const x of [x0,x1]) for(const y of [gy-1,gy-2]) setTile(x,y,B.FENCE); });
+    home.herdPen={x0,x1,gy}; for(const k of HERD_START) herdSpawn(k,home.herdPen); return true; }
+  return false; }
+{ const _gs=gatherSpot; gatherSpot=function(e,t,...a){ if(t==='herd'&&home&&home.herdPen){ const P=home.herdPen; return {x:Math.round((P.x0+P.x1)/2),y:P.gy-1,real:false}; } return _gs(e,t,...a); }; }
+{ const _gi=gatherItem; gatherItem=function(t,...a){ if(t!=='herd') return _gi(t,...a); const L=herdAnimals(); if(!L.length) return null; for(const x of L) x.fed=true;   // fed animals breed in the morning
+    const an=L[(Math.random()*L.length)|0], Y=FARM_YIELD[an.atype]||[[I.EGG,1]], y=Y[(Math.random()*Y.length)|0]; return [y[0],y[1]]; }; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ if(home&&home.herdPen&&!isGuest()){ const L=herdAnimals(); if(!L.length){ herdSpawn('bird',home.herdPen); herdSpawn('bird',home.herdPen); }
+        else if(L.length>HERD_MAX) for(const e of L.slice(HERD_MAX)) e.fed=false; } }catch(e){ console.warn(e); } return r; }; }
+let herdT=8;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&(herdT-=dt)<=0){ herdT=8; if(home&&home.claimed&&home.farmhouse&&!home.herdPen&&!home.editor&&!(typeof tutOn==='function'&&tutOn())) herdPenBuild(); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-12: "make it so that underwater enemies have a small glow and so that there are underwater glowsticks or torch
+// types the player can use to see underwater also make it so there can be anywhere from 1-5 buildings that spawn in the oceans (keep
+// the amount of places they spawn the same)" / (screenshot: a chest in a flooded cellar, half of it under the water): "Fix this chest
+// so it entirely appears underwater" / "Make it so there is not a rain animation underwater" (40_weather.js) =====
+// 1. Sea creatures (sharks, the Atlantean guards and the rest) give off a small glow, so you can see them coming in the dark water.
+// 2. The Glowstick (fixed id 2517): a light that works underwater. Placed, it stays lit under water (it is not washed away); held,
+//    it lights the water round you. 4 from a glowcap and a glass at a workbench; the Fisher sells them.
+// 3. A chest standing in water is drawn under the water all over (water fills its second cell, and is painted over the first).
+// 4. Each place in the sea with a sunken hall now has from 1 to 5 Atlantean buildings: the hall and up to four smaller domed houses
+//    beside it on the sea floor, dry inside behind stone doors, with a sea lamp, an amphora and sometimes a chest. Older worlds get
+//    them once where nobody has been (home.atl187).
+// ---- 2. the glowstick ----
+const GLOWSTICK=2517;
+if(!(BLOCKS[GLOWSTICK]&&BLOCKS[GLOWSTICK].name)&&!ITEMS[GLOWSTICK]){
+  defB(GLOWSTICK,{name:'Glowstick',solid:false,hard:0.1,light:8,col:'#7af0c8',place:true});
+  TEX[GLOWSTICK]=obsTex((r,p)=>{ r(7,4,2,10,'#3aa888'); r(7,4,2,1,'#c8fff0'); r(6,5,4,8,'rgba(122,240,200,0.35)'); r(7,6,2,6,'#7af0c8'); p(8,7,'#e8fff8'); r(6,13,4,2,'#2a6a5a'); });
+  ITEMS[GLOWSTICK]={name:'Glowstick',kind:'block',desc:'A stick of sea-green light that keeps glowing under water. Place it anywhere, in the sea too, or hold it to light the water round you'};
+  SELL[GLOWSTICK]=2; RECIPES.push({out:GLOWSTICK,n:4,need:[[225,1],[B.GLASS,1]].filter(([i])=>ITEMS[i]),st:B.WORKBENCH,cat:'light'});
+  try{ PASS.add(GLOWSTICK); WATER_BREAKS.delete(GLOWSTICK); LAVA_EATS.delete(GLOWSTICK); }catch(e){}
+  try{ if(SHOPS.fisher) SHOPS.fisher.stock.push([GLOWSTICK,4,20]); }catch(e){}
+  try{ delete ICON_URL[GLOWSTICK]; }catch(e){} }
+// ---- 1 and 2: the light ----
+{ const _el=extraLights; extraLights=function(addLight,tx0,tx1,ty0,ty1,...a){ const r=_el(addLight,tx0,tx1,ty0,ty1,...a); try{
+      for(const e of ents){ if(e.dead||e.kind!=='sea') continue; const x=cxOf(e)/T, y=cyOf(e)/T; if(x<tx0-4||x>tx1+4||y<ty0-4||y>ty1+4) continue; addLight(x,y,e.w>30?4:3,0.5); }
+      if(player&&!player.dead){ const hi=heldItem(); if(hi&&hi.id===GLOWSTICK) addLight(cxOf(player)/T,cyOf(player)/T,7,0.9); }
+      // glowsticks under water are kept in wetDeco (the cell itself is water)
+      if(wetDeco&&wetDeco.size) for(let y=Math.max(0,ty0-8);y<=Math.min(H-1,ty1+8);y++) for(let x=Math.max(0,tx0-8);x<=Math.min(W-1,tx1+8);x++){ if(wetDeco.get(y*W+x)===GLOWSTICK) addLight(x+0.5,y+0.5,8,0.95); }
+    }catch(e){} return r; }; }
+// ---- 3. a chest in water ----
+function drawChestsInWater(){ if(!world||!liq) return; const tx0=Math.max(1,Math.floor(camX/T)), tx1=Math.min(W-2,Math.ceil((camX+viewW)/T)), ty0=Math.max(1,Math.floor(camY/T)), ty1=Math.min(H-2,Math.ceil((camY+viewH)/T));
+  for(let y=ty0;y<=ty1;y++){ const row=y*W; for(let x=tx0;x<=tx1;x++){ const i=row+x; if(!isChestId(world[i])) continue; const lv=Math.max(world[i+1]===B.WATER?liq[i+1]:0, world[i-1]===B.WATER?liq[i-1]:0); if(lv<=0) continue;
+      const full=world[i-W]===B.WATER; const top=full?0:T-Math.max(1,Math.round(lv*2)); ctx.fillStyle=y-seaY>6?'rgba(22,70,160,0.8)':'rgba(38,98,200,0.66)'; ctx.fillRect(x*T,y*T+top,T,T-top);
+      if(!full){ ctx.fillStyle='rgba(170,220,255,0.85)'; ctx.fillRect(x*T,y*T+top,T,1); } } } }
+{ const _wf=drawWaterFront; drawWaterFront=function(...a){ const r=_wf(...a); try{ drawChestsInWater(); }catch(e){} return r; }; }
+// ---- 4. more Atlantean buildings ----
+function buildAtlHouse(cx,gy,R,put,bput){ const HW=4, HT=6;
+  for(let x=cx-HW-1;x<=cx+HW+1;x++){ put(x,gy,B.ATL_BRICK); put(x,gy+1,B.SAND); }
+  for(let x=cx-HW;x<=cx+HW;x++) for(let y=gy-HT;y<gy;y++){ const edge=x===cx-HW||x===cx+HW; put(x,y,edge?B.ATL_BRICK:0); if(!edge) bput(x,y,(x-cx)%4===0?ATL_BG:(y===gy-3?CORAL_BG:ATL_BG)); }
+  for(let k=0;k<3;k++) for(let x=cx-HW+k;x<=cx+HW-k;x++) put(x,gy-HT-1-k,B.ATL_BRICK);
+  for(const x of [cx-HW,cx+HW]){ put(x,gy-1,B.STONE_DOOR||B.DOOR); put(x,gy-2,(DOOR_SET_OF[B.STONE_DOOR]&&DOOR_SET_OF[B.STONE_DOOR].top)||B.DOOR_T); bput(x,gy-1,ATL_BG); bput(x,gy-2,ATL_BG); }
+  put(cx,gy-5,B.SEA_LAMP); try{ putPiece({x0:cx-2,x1:cx-2,y0:gy-2,y1:gy-1},B.AMPHORA,put); put(cx-2,gy-1,B.AMPHORA); }catch(e){}
+  if(R()<0.5){ put(cx+2,gy-1,B.CHEST); const l=lootFor(120,R,2); l.atlantis=true; l.items=(l.items||[]).map(v=>v&&v.id===I.DIAMOND?{id:I.PEARL,n:v.n}:v); chests[(cx+2)+','+(gy-1)]=l; return (cx+2)+','+(gy-1); }
+  return null; }
+function atlExtras(b,R,put,bput,onlyUnseen){ if(!b||b.extra187!=null) return 0; const want=((R()*5)|0);   // 0 to 4 more: 1 to 5 buildings at this place
+  let made=0, side=R()<0.5?-1:1; b.extra187=0;
+  for(let k=0;k<want;k++){ side=-side; const cx=b.cx+side*(19+12*Math.floor(k/2)); const f=seaFloorAt(cx); if(f<0||Math.abs(f-b.gy)>4||!oceanCol[cx-6]||!oceanCol[cx+6]) continue;   // clear of the hall (half width 12): 19 and 31 blocks out, both sides
+    if(onlyUnseen){ let seen=false; for(let y=f-10;y<=f+1&&!seen;y++) for(let x=cx-6;x<=cx+6;x++) if(explored[y*W+x]){ seen=true; break; } if(seen) continue; }
+    const key=buildAtlHouse(cx,f,R,put,bput); if(key) b.keys.push(key); made++; }
+  b.extra187=made; return made; }
+function atlExtrasAll(onlyUnseen,raw){ if(!world||!home||!home.atlBases) return 0; const R=mulberry((seed|0)+2587); let n=0;
+  const put=raw?(x,y,id)=>{ world[y*W+x]=id; liq[y*W+x]=0; }:(x,y,id)=>{ setTile(x,y,id); if(id!==B.WATER) liq[y*W+x]=0; }, bput=raw?(x,y,v)=>{ bg[y*W+x]=v; }:(x,y,v)=>bset(x,y,v);
+  for(const b of home.atlBases) n+=atlExtras(b,R,put,bput,onlyUnseen); return n; }
+{ const _aa=atlantisAll; atlantisAll=function(onlyUnseen,raw,...a){ const r=_aa(onlyUnseen,raw,...a); try{ atlExtrasAll(onlyUnseen,raw); }catch(e){ console.warn(e); } return r; }; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(world&&home&&!isGuest()&&!home.editor&&home.atlV&&home.atl187!==1){ home.atl187=1; facRun(()=>atlExtrasAll(true,false)); } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
