@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794547446"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794548356"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.194</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.195</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.195</h3>
+    <p><b>Placing with a controller:</b> holding a torch or any block, a box shows where the right stick points: green where it fits, red where it does not. It stays where you leave the stick, and R2 puts the torch or block in the box.</p>
     <h3>New in Beta 0.9.194</h3>
     <p><b>The torch</b> is held close at your side in your front hand, over your body, with two arms in every pose, jumping too.</p>
     <h3>New in Beta 0.9.191</h3>
@@ -934,7 +936,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.194</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.195</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1205,7 +1207,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.194</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.195</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1227,7 +1229,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.194', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.195', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -28341,6 +28343,18 @@ const padTextBox=el=>!!el&&((el.tagName==='INPUT'&&!['checkbox','radio','range',
 // other, and on claude.ai the host's link must be the same one (rooms belong to one game link). =====
 function mpWhereText(){ return (window.claude&&window.claude.use)?'the claude.ai game link':'the play website or the downloaded app'; }
 { const _ms=mpStatus; mpStatus=function(t,...a){ try{ if(typeof t==='string'&&/^No host found with that game ID/.test(t)) t=`No host found with that game ID. You are on ${mpWhereText()}: the host must be on the same one (the claude.ai link and the website or app cannot see each other's games${window.claude&&window.claude.use?', and on claude.ai it must be the very same link the host uses':''}). Check the ID, and make sure the host is in their world with the game open.`; }catch(e){} return _ms(t,...a); }; }
+// ===== Kinard, 2026-11-13: "the other player can click and choose with a box where he wants to place a torch" with a controller.
+// The right stick moves the aim and R2 places there, but the box was only drawn for a mouse, the touch aim stick or while using.
+// With a controller in hand the box now always shows on the cell the right stick points at (green where the block fits, red where
+// it does not, yellow for a pickaxe), and stays there when the stick is let go, so R2 puts the torch or block in that box. =====
+const PAD_BOX_KINDS=['pick','block','wall','hammer','shape'];
+function padAiming(){ return settings.pad!==false&&GP.on&&GP.used&&!!GP.aimOff&&!input.mouse; }
+{ const _up=updatePlayer; updatePlayer=function(...a){ const r=_up(...a);
+    try{ const p=player; if(p&&!p.aimTile&&padAiming()){ const it=heldItem(), def=it?ITEMS[it.id]:null;
+        if(def&&PAD_BOX_KINDS.includes(def.kind)){ const aim=aimPoint(def), atx=aim.tx, aty=aim.ty;
+          if(Math.hypot(atx*T+8-cxOf(p),aty*T+8-cyOf(p))<=REACH+2){ p.aimTile={x:atx,y:aty,kind:def.kind==='hammer'?'pick':def.kind};
+            if(def.kind!=='pick'&&def.kind!=='hammer') p.aimTile.ok=placeOK(atx,aty,it.id); else { const t=tileAt(atx,aty); p.aimTile.ok=!!t&&BLOCKS[t].hard!==Infinity&&t!==B.WATER; } } } } }catch(e){ console.warn(e); }
+    return r; }; }
 // ===== Kinard, 2026-11-13 (his brother, on the downloaded app, could not join his game: the join waited 12 s and gave up; "It use
 // to work from this version that we had before") =====
 // On the website and the downloaded app, two computers connect directly (WebRTC through PeerJS). Some routers and firewalls block
