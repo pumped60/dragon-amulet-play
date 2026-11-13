@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1794545081"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794545081"><link rel="manifest" href="manifest.webmanifest?v=1794545081"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1794546184"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794546184"><link rel="manifest" href="manifest.webmanifest?v=1794546184"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.189</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.190</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.190</h3>
+    <p><b>Controller and multiplayer fixes:</b> the grappling hook goes where the right stick aims (R3 throws it). When no host is found, the message says which copy of the game you are on: a game hosted on the claude.ai link and one on the play website or the app cannot see each other, and on claude.ai everyone uses the same link. To get back into a world you hosted, use Host a saved world; Join needs someone hosting right now.</p>
     <h3>New in Beta 0.9.189</h3>
     <p><b>Play with a controller.</b> A PlayStation, Xbox, Switch Pro or other controller plays the whole game on a computer, a Steam Deck or a tablet: the left stick moves, the right stick aims, R2 uses what you hold, the bottom button jumps (and flies with wings), L1 and R1 pick from the item bar, the left button talks and opens what you aim at, the top button opens the bag, the right button crafting, Options pauses and Select the map. D-pad down opens the Controller menu with everything on the top bar (Army, Buildings, Map, Save, Settings and more). In every window a gold frame moves between the buttons with the stick or d-pad. Settings &gt; Controller turns it on or off, swaps the buttons for a Nintendo layout, sets vibration, aim distance and the stick dead zone, and shows every button. The jump button on a text box opens an on-screen keyboard, and left and right move sliders. Moving the mouse hands control back to it.</p>
     <h3>New in Beta 0.9.188</h3>
@@ -928,7 +930,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.189</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.190</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1199,7 +1201,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.189</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.190</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1221,7 +1223,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.189', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.190', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -28326,6 +28328,15 @@ const padTextBox=el=>!!el&&((el.tagName==='INPUT'&&!['checkbox','radio','range',
           if(dx){ if(now>(GP.slideT||0)){ GP.slideT=now+140; const st=+f.step||1, v=Math.max(+f.min,Math.min(+f.max,(+f.value)+dx*st)); f.value=v; f.dispatchEvent(new Event('input',{bubbles:true})); f.dispatchEvent(new Event('change',{bubbles:true})); }
             GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); return; } } } }catch(e){ console.warn(e); }
     return _gt(...a); }; }
+// ===== Kinard, 2026-11-13: "Grappling hook does not work for the controller" (and "Fix the grappling hook so it's directional") =====
+// The hook took its direction from the mouse or a finger only; with a controller it always went up on the side you face. It now
+// goes where the right stick aims (R3 throws it); with the stick at rest it goes up and forward as before.
+{ const _ga=grappleAim; grappleAim=function(...a){ try{ if(settings.pad!==false&&GP.on&&GP.used&&GP.aimOff&&!input.mouse){ const [x,y]=GP.aimOff, m=Math.hypot(x,y); if(m>1) return [x/m,y/m]; } }catch(e){} return _ga(...a); }; }
+// ===== Kinard, 2026-11-13 (his brother could not join room UYFRU: "No host found with that game ID"): the message now says which
+// copy of the game you are on, since a game hosted on the claude.ai link and one on the play website or the app cannot see each
+// other, and on claude.ai the host's link must be the same one (rooms belong to one game link). =====
+function mpWhereText(){ return (window.claude&&window.claude.use)?'the claude.ai game link':'the play website or the downloaded app'; }
+{ const _ms=mpStatus; mpStatus=function(t,...a){ try{ if(typeof t==='string'&&/^No host found with that game ID/.test(t)) t=`No host found with that game ID. You are on ${mpWhereText()}: the host must be on the same one (the claude.ai link and the website or app cannot see each other's games${window.claude&&window.claude.use?', and on claude.ai it must be the very same link the host uses':''}). Check the ID, and make sure the host is in their world with the game open.`; }catch(e){} return _ms(t,...a); }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
