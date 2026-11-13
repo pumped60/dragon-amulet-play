@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794466821"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794544944"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.188</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.189</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.189</h3>
+    <p><b>Play with a controller.</b> A PlayStation, Xbox, Switch Pro or other controller plays the whole game on a computer, a Steam Deck or a tablet: the left stick moves, the right stick aims, R2 uses what you hold, the bottom button jumps (and flies with wings), L1 and R1 pick from the item bar, the left button talks and opens what you aim at, the top button opens the bag, the right button crafting, Options pauses and Select the map. D-pad down opens the Controller menu with everything on the top bar (Army, Buildings, Map, Save, Settings and more). In every window a gold frame moves between the buttons with the stick or d-pad. Settings &gt; Controller turns it on or off, swaps the buttons for a Nintendo layout, sets vibration, aim distance and the stick dead zone, and shows every button. The jump button on a text box opens an on-screen keyboard, and left and right move sliders. Moving the mouse hands control back to it.</p>
     <h3>New in Beta 0.9.188</h3>
     <p><b>Fifty animals.</b> Birds: sparrows, robins, crows, seagulls, parrots and ptarmigans fly; ducks, flamingos and puffins walk and wade. On land: foxes and badgers at night, goats, horses, squirrels, hedgehogs and frogs, moose and lynxes on the ice islands, camels, lizards and tortoises in the desert. In the sea, dolphins, sea turtles, whales and manta rays swim and never attack, while octopuses, crabs, seals and walruses leave you alone until you hit them. Skylarks and sky gliders live on the sky realm's wild islands; fire toads and ember hares live in the magma realm and do not burn in lava. Sea animals cannot be tamed.</p>
     <p><b>Drops that fit.</b> No creature drops apples any more: apples come from trees and chests. Zombies, skeletons, goblins, cave bats and the small fish drop coins and one thing each (zombies drop Rotten flesh, good as bait or for Grow meal); every other enemy can drop at least two things, and none drops building blocks unless it is made of them, like the golems and the obsidian beetle. Now and then a fishing line brings up a painting, a statue or another found-only piece: about 0.4% a cast with the Wooden rod, up to 2% with the Storm rod.</p>
@@ -926,7 +928,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.188</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.189</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1002,7 +1004,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrSettings" hidden>
   <div class="panel">
-    <div class="phead"><h2>Settings</h2><div id="setTabs"><button class="chip" data-st="controls">Controls</button><button class="chip" data-st="screen">Screen</button><button class="chip" data-st="sound">Sound</button><button class="chip" data-st="world">World</button><button class="chip" data-st="computer">Computer</button></div><button class="xbtn" id="settingsBack">Back</button></div>
+    <div class="phead"><h2>Settings</h2><div id="setTabs"><button class="chip" data-st="controls">Controls</button><button class="chip" data-st="controller">Controller</button><button class="chip" data-st="screen">Screen</button><button class="chip" data-st="sound">Sound</button><button class="chip" data-st="world">World</button><button class="chip" data-st="computer">Computer</button></div><button class="xbtn" id="settingsBack">Back</button></div>
     <section class="stab" data-tab="controls">
       <p class="desc stip">How you move, mine and fight on a phone or tablet.</p>
       <h3>Touch controls</h3><div class="choices" id="setControls" style="grid-template-columns:repeat(3,1fr)"></div>
@@ -1016,6 +1018,15 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <h3>Torches</h3><p class="desc" style="min-height:0">Torch button: what a tap does while it is on</p><div class="choices" id="setTorchTap" style="grid-template-columns:repeat(2,1fr)"></div>
       <p class="desc" style="min-height:0">Double-tap to place a torch</p><div class="choices" id="setTorchDbl" style="grid-template-columns:repeat(2,1fr)"></div>
       <p class="desc" style="min-height:0">Tools while the Torch button is on</p><div class="choices" id="setTorchTools" style="grid-template-columns:repeat(2,1fr)"></div>
+    </section>
+    <section class="stab" data-tab="controller">
+      <p class="desc stip">Play with a PlayStation, Xbox, Switch Pro or other controller on a computer, a Steam Deck or a tablet.</p>
+      <p class="desc" id="padStatus" style="min-height:0"></p>
+      <h3>Controller</h3><div class="choices" id="setPad" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Button layout</h3><p class="desc" style="min-height:0">Which button jumps and picks things in menus.</p><div class="choices" id="setPadLayout" style="grid-template-columns:repeat(2,1fr)"></div>
+      <h3>Vibration</h3><div class="choices" id="setPadRumble" style="grid-template-columns:repeat(2,1fr)"></div>
+      <div class="uiSliders" style="margin-top:10px"><label>Aim distance <span id="padAimV">4.5 blocks</span><input type="range" id="padAim" min="2" max="8" step="0.5"></label><label>Stick dead zone <span id="padDeadV">28%</span><input type="range" id="padDead" min="0.1" max="0.5" step="0.02"></label></div>
+      <h3>Buttons</h3><div id="padChart"></div>
     </section>
     <section class="stab" data-tab="screen">
       <p class="desc stip">What you see on screen and where it sits.</p>
@@ -1187,7 +1198,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.188</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.189</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1209,7 +1220,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.188', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.189', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -13823,9 +13834,9 @@ document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ const el=$('#scrR
 // L2 is the second action, Cross/A jumps, L1/R1 pick the hotbar slot, Square/X talks or uses (F), Triangle/Y opens the bag,
 // Circle/B crafting, Touchpad/Select the map, Options/Start pauses, L3 sprints, R3 the grappling hook.
 // In menus: d-pad or left stick moves a gold frame between buttons and slots, Cross/A presses, Circle/B closes.
-const GAMEPAD_ON=false;   /* 0.9.113: controller support is off for now (Kinard); set to true to bring it back */
+const GAMEPAD_ON=true;   /* 0.9.113 turned controller support off; 0.9.189 brings it back (Kinard: "I need this new option ASAP"), with Settings > Controller */
 const GP={ on:false, prev:[], aimOff:null, navT:0, focus:null, used:false, idx:null };
-const GP_DEAD=0.28, GP_AIM_R=4.5;
+let GP_DEAD=0.28, GP_AIM_R=4.5;   /* set from Settings > Controller (98zxz_zz278_controller.js) */
 const GPB={ A:0, B:1, X:2, Y:3, L1:4, R1:5, L2:6, R2:7, SEL:8, START:9, L3:10, R3:11, UP:12, DOWN:13, LEFT:14, RIGHT:15 };
 function gpKey(code,up){ try{ const ev=new KeyboardEvent(up?'keyup':'keydown',{code,key:code==='Escape'?'Escape':code.replace(/^Key/,'').toLowerCase(),bubbles:true,cancelable:true}); (document.activeElement&&document.activeElement!==document.body?document.activeElement:document).dispatchEvent(ev); }catch(e){} }
 function gpPad(){ const list=navigator.getGamepads?navigator.getGamepads():[]; if(GP.idx!=null&&list[GP.idx]&&list[GP.idx].connected) return list[GP.idx]; for(const p of list) if(p&&p.connected&&p.buttons.some(b=>b.pressed||b.value>0.5)){ GP.idx=p.index; return p; } for(const p of list) if(p&&p.connected){ GP.idx=p.index; return p; } return null; }
@@ -13841,7 +13852,7 @@ function gpTick(){ const pad=gpPad(); if(!pad){ if(GP.on){ GP.on=false; input.le
   if(!GP.on){ GP.on=true; try{ toast('Controller connected',2); }catch(e){} }
   const ax=pad.axes, lx=ax[0]||0, ly=ax[1]||0, rx=ax[2]||0, ry=ax[3]||0, now=performance.now();
   const any=pad.buttons.some(b=>b.pressed)||Math.hypot(lx,ly)>GP_DEAD||Math.hypot(rx,ry)>GP_DEAD; if(any) GP.used=true;
-  const ov=gpOverlay(), menu=!!ov&&state!=='play';
+  const ov=gpOverlay(), menu=!!ov&&(state!=='play'||!!(ov.dataset&&ov.dataset.gpPop));   /* 0.9.189: pop-up lists in play (Talk choices, More, Show) are menus too */
   if(menu||(ov&&state==='title')){
     if(GP.wasPlay){ input.left=input.right=input.jump=input.down=input.use=false; input.alt=false; GP.wasPlay=false; }
     const dx=(gpPress(GPB.RIGHT,pad)||lx>0.6?1:0)-(gpPress(GPB.LEFT,pad)||lx<-0.6?1:0), dy=(gpPress(GPB.DOWN,pad)||ly>0.6?1:0)-(gpPress(GPB.UP,pad)||ly<-0.6?1:0);
@@ -28194,6 +28205,122 @@ function a50Tick(dt){ if((a50T-=dt)>0) return; a50T=6; if(!player||player.dead||
     else pool=night?['fox','badger','hedgehog','crow']:['sparrow','robin','crow','squirrel','hedgehog','horse','goat','duck','parrot'];
     const k=a50Pick(pool); if(!k) return; a50Spawn(k,c,cy,herd(k)); return; } }
 { const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') a50Tick(dt); }catch(e){ console.warn(e); } return r; }; }
+// ===== Kinard, 2026-11-13: "can you push an update for the controller accessibility and adjust the settings accordingly? I need this
+// new option ASAP" =====
+// Controller support (98zxw_gamepad.js, off since 0.9.113) is on again, with its own Settings tab:
+//  - Controller: On (default) or Off. Off ignores every controller.
+//  - Button layout: Standard (the bottom button jumps and picks, the right one goes back: PlayStation and Xbox) or Swapped
+//    (the right button jumps and picks: Nintendo Switch); X/Y swap with them.
+//  - Vibration: a short rumble when you are hurt (On by default, where the controller can).
+//  - Aim distance (2 to 8 blocks, 4.5) and stick dead zone (10% to 50%, 28%).
+//  - A chart of every button, and a line saying whether a controller is connected.
+const PAD_STD={A:0,B:1,X:2,Y:3};
+function padSync(){ const on=settings.pad!==false; GP_DEAD=Math.max(0.1,Math.min(0.5,+settings.padDead||0.28)); GP_AIM_R=Math.max(2,Math.min(8,+settings.padAim||4.5));
+  const sw=settings.padLayout==='swap'; GPB.A=sw?PAD_STD.B:PAD_STD.A; GPB.B=sw?PAD_STD.A:PAD_STD.B; GPB.X=sw?PAD_STD.Y:PAD_STD.X; GPB.Y=sw?PAD_STD.X:PAD_STD.Y;
+  return on; }
+{ const _gt=gpTick; gpTick=function(...a){ if(!padSync()){ if(GP.on){ GP.on=false; GP.used=false; GP.aimOff=null; try{ input.left=input.right=input.jump=input.down=input.use=false; input.alt=false; gpSetFocus(null); }catch(e){} } return; } return _gt(...a); }; }
+// a short rumble when you are hurt
+function padRumble(ms,strong){ try{ if(settings.pad===false||settings.padRumble===false||!GP.on) return; const pad=gpPad(); const v=pad&&pad.vibrationActuator; if(v&&v.playEffect) v.playEffect('dual-rumble',{duration:ms||140,strongMagnitude:strong||0.5,weakMagnitude:0.35}); }catch(e){} }
+{ const _dm=damage; damage=function(t,amt,...a){ const hp0=t&&t.hp; const r=_dm(t,amt,...a); try{ if(t===player&&player&&player.hp<hp0) padRumble(player.hp<=0?400:140,player.hp<=0?1:0.5); }catch(e){} return r; }; }
+// the Settings tab
+const PAD_CHART=[['Left stick or d-pad','Move (down drops through platforms)'],['Right stick','Aim'],['R2 / RT','Use what you hold: attack, dig, build'],['L2 / LT','Second action'],
+  ['jump','Jump; in menus, press'],['back','Crafting; in menus, back'],['use','Talk, trade, tame, open'],['bag','Bag'],['L1 / R1 (LB / RB)','Item bar left and right'],
+  ['Options / Start','Pause'],['Touchpad / Select (View)','Map'],['L3 (press the left stick)','Sprint'],['R3 (press the right stick)','Grappling hook'],['D-pad up','Fly (creative, Scaleborn)']];
+function padChartHtml(){ const sw=settings.padLayout==='swap'; const name={ jump:sw?'Right button (A on Switch, Circle, B on Xbox)':'Bottom button (Cross, A on Xbox, B on Switch)', back:sw?'Bottom button (Cross, A on Xbox, B on Switch)':'Right button (Circle, B on Xbox, A on Switch)',
+    use:sw?'Top button (Triangle, Y on Xbox, X on Switch)':'Left button (Square, X on Xbox, Y on Switch)', bag:sw?'Left button (Square, X on Xbox, Y on Switch)':'Top button (Triangle, Y on Xbox, X on Switch)' };
+  return `<table class="rt padchart"><tbody>${PAD_CHART.map(([b,w])=>`<tr><td>${name[b]||b}</td><td>${w}</td></tr>`).join('')}</tbody></table><p class="desc" style="min-height:0">In menus the stick or d-pad moves a gold frame between buttons. Moving the mouse hands control back to it.</p>`; }
+function padStatus(){ try{ const list=navigator.getGamepads?[...navigator.getGamepads()].filter(p=>p&&p.connected):[]; if(settings.pad===false) return 'Controllers are off.'; if(!navigator.getGamepads) return 'This browser cannot use controllers.';
+    return list.length?`Connected: ${list[0].id.replace(/\s*\(.*\)\s*$/,'').slice(0,48)||'a controller'}.`:'No controller found yet: connect one, then press any button on it.'; }catch(e){ return ''; } }
+{ const _rs=renderSettings; renderSettings=function(...a){ const r=_rs(...a); try{ const o=(k,v,cur,l,sm)=>`<button class="choice" data-k="${k}" data-v="${v}" aria-pressed="${String(cur)===String(v)}">${l}<small>${sm}</small></button>`;
+      $('#setPad').innerHTML=o('pad',true,settings.pad!==false,'On','Play with a controller')+o('pad',false,settings.pad!==false,'Off','Ignore controllers');
+      $('#setPadLayout').innerHTML=o('padLayout','std',settings.padLayout||'std','Standard','Bottom button jumps (PlayStation, Xbox)')+o('padLayout','swap',settings.padLayout||'std','Swapped','Right button jumps (Nintendo Switch)');
+      $('#setPadRumble').innerHTML=o('padRumble',true,settings.padRumble!==false,'On','A short rumble when you are hurt')+o('padRumble',false,settings.padRumble!==false,'Off','No rumble');
+      const aim=+settings.padAim||4.5, dead=+settings.padDead||0.28; const ai=$('#padAim'), de=$('#padDead'); if(ai){ ai.value=aim; $('#padAimV').textContent=aim+' blocks'; } if(de){ de.value=dead; $('#padDeadV').textContent=Math.round(dead*100)+'%'; }
+      $('#padChart').innerHTML=padChartHtml(); $('#padStatus').textContent=padStatus(); }catch(e){ console.warn(e); } return r; }; }
+for(const [id,key,fmt] of [['padAim','padAim',v=>v+' blocks'],['padDead','padDead',v=>Math.round(v*100)+'%']]){ const el=document.getElementById(id); if(el) el.addEventListener('input',()=>{ const v=+el.value; settings[key]=v; const lab=document.getElementById(id+'V'); if(lab) lab.textContent=fmt(v); try{ saveSettings(); }catch(e){} padSync(); }); }
+addEventListener('gamepadconnected',()=>{ try{ const s=$('#padStatus'); if(s) s.textContent=padStatus(); }catch(e){} });
+{ const st=document.createElement('style'); st.textContent='.padchart td{ padding:4px 6px; font-size:9px } .padchart td:first-child{ color:var(--gold); width:46% }'; document.head.appendChild(st); }
+// ===== Kinard, 2026-11-13: "HOLD all other functions and make it controller accessible" =====
+// Everything in the game reachable from a controller:
+//  - D-pad down opens the Controller menu: Bag, Crafting, Army, Buildings, Map, Achievements, Orders, Fly or walk, Trade, Save,
+//    Settings, Help, Report a bug, Pause; the gold frame picks one, the jump button opens it, back closes the menu.
+//  - Pop-up lists (the Talk choices, More, Show on screen) take the gold frame like any window.
+//  - The jump button also flies with wings (it is Space and W for the wings); L2 breathes fire for the Scaleborn (held).
+//  - Placing a building: the right stick aims the outline, R2 pins it and R2 again builds (the two taps of a mouse or finger).
+//  - The use button opens or works what you aim at when it is a chest, a barrel or cupboard, a trap door, a bee hive or a cobweb;
+//    otherwise it talks, trades and tames as before.
+const GP_POPS=['#pickList','#moreMenu','#eyePop'];
+{ const _go=gpOverlay; gpOverlay=function(...a){ for(const sel of GP_POPS){ const el=document.querySelector(sel); if(el&&!el.hidden&&el.getClientRects().length&&getComputedStyle(el).display!=='none'){ el.dataset.gpPop='1'; return el; } } return _go(...a); }; }
+// a tap at the aim point on the canvas (the mouse and finger handlers read it as a real one)
+function padTapAt(wx,wy,type){ try{ const rc=cv.getBoundingClientRect(); const cx=rc.left+(wx-camX)*rc.width/viewW, cy=rc.top+(wy-camY)*rc.height/viewH;
+    const ev=new PointerEvent(type||'pointerdown',{clientX:cx,clientY:cy,bubbles:true,cancelable:true,pointerId:91,pointerType:'mouse',button:0,buttons:type==='pointerup'?0:1,isPrimary:true}); cv.dispatchEvent(ev); return ev.defaultPrevented; }catch(e){ return false; } }
+function padAimCell(){ return {x:Math.floor(input.ax/T), y:Math.floor(input.ay/T)}; }
+function padInteractive(x,y){ const id=tileAt(x,y); try{ if(typeof storeKeyAt==='function'&&storeKeyAt(x,y)) return true; }catch(e){} if(isChestId(id)||(id===B.PART&&isChestId(tileAt(x-1,y)))) return true;
+  try{ if(typeof isTrap==='function'&&isTrap(id)) return true; }catch(e){} try{ if(typeof isHive==='function'&&isHive(id)) return true; }catch(e){} try{ if(typeof isWeb==='function'&&isWeb(id)) return true; }catch(e){} return false; }
+// the Controller menu
+const PAD_MENU=[['Bag',()=>clickId('btnInv')],['Crafting',()=>clickId('btnCraft')],['Army',()=>clickId('btnArmy')],['Buildings',()=>clickId('btnBuild')],['Map',()=>gpKey(settings.keys.map||'KeyM')],
+  ['Achievements',()=>{ if(typeof openAch==='function'){ state='paused'; openAch('scrPause'); } }],['Orders: next formation',()=>gpKey(settings.keys.orders||'KeyO')],['Fly or walk',()=>gpKey(settings.keys.fly||'KeyG')],
+  ['Trade with a friend',()=>gpKey(settings.keys.trade||'KeyT')],['Save',()=>gpKey(settings.keys.save||'F5')],['Settings',()=>{ gpKey('Escape'); setTimeout(()=>{ if(state==='paused') openSettings('scrPause'); },60); }],
+  ['Help',()=>{ gpKey('Escape'); setTimeout(()=>{ const b=document.getElementById('btnHelpP'); if(b) b.click(); },60); }],['Report a bug',()=>{ if(typeof openBugReport==='function') openBugReport(); }],['Pause',()=>gpKey('Escape')]];
+function clickId(id){ const b=document.getElementById(id); if(b) b.click(); }
+function padMenuEl(){ let el=document.getElementById('scrPad'); if(el) return el; el=document.createElement('div'); el.className='overlay'; el.id='scrPad'; el.hidden=true;
+  el.innerHTML=`<div class="panel" style="max-width:420px"><div class="phead"><h2>Controller menu</h2><button class="xbtn" id="padClose">Close</button></div><div id="padGrid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px"></div><p class="desc" style="min-height:0">D-pad down opens this menu. Back closes it.</p></div>`;
+  document.body.appendChild(el); el.querySelector('#padClose').addEventListener('click',padMenuClose);
+  el.querySelector('#padGrid').addEventListener('click',ev=>{ const b=ev.target.closest('[data-pm]'); if(!b) return; const f=PAD_MENU[+b.dataset.pm]; padMenuClose(); if(f) setTimeout(()=>{ try{ f[1](); }catch(e){ console.warn(e); } },30); });
+  return el; }
+function padMenuOpen(){ if(state!=='play') return; const el=padMenuEl(); el.querySelector('#padGrid').innerHTML=PAD_MENU.map(([l],i)=>`<button class="xbtn" data-pm="${i}">${l}</button>`).join(''); el.hidden=false; state='padmenu'; GP.navT=performance.now()+400; GP.held=true; try{ gpSetFocus(el.querySelector('[data-pm]')); }catch(e){} }
+function padMenuClose(){ const el=document.getElementById('scrPad'); if(el) el.hidden=true; if(state==='padmenu') state='play'; }
+try{ MENU_STATES.add('padmenu'); }catch(e){}
+addEventListener('keydown',e=>{ if(e.code==='Escape'&&state==='padmenu'){ padMenuClose(); e.stopImmediatePropagation(); e.preventDefault(); } },true);
+// play-time extras around the original tick
+const PAD_HOLD={ wing:false, breath:false };
+{ const _gt=gpTick; gpTick=function(...a){ const pad=(settings.pad!==false)?gpPad():null; const pre=pad&&state==='play'&&!(gpOverlay()&&gpOverlay().dataset.gpPop)?{ x:gpEdge(GPB.X,pad), r2:gpEdge(GPB.R2,pad), down:gpEdge(GPB.DOWN,pad) }:null;
+    // D-pad down: the Controller menu (the stick still drops through platforms)
+    if(pre&&pre.down){ GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); padMenuOpen(); return; }
+    // use on a chest, storage piece, trap door, hive or cobweb: a tap there
+    if(pre&&pre.x&&player&&GP.used){ const c=padAimCell(); if(padInteractive(c.x,c.y)&&Math.hypot(c.x*T+8-cxOf(player),c.y*T+8-cyOf(player))<=REACH){ padTapAt(c.x*T+8,c.y*T+8,'pointerdown'); padTapAt(c.x*T+8,c.y*T+8,'pointerup'); GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); return; } }
+    // placing a building: the outline follows the aim, R2 taps
+    if(pre&&typeof buildMode!=='undefined'&&buildMode&&GP.used){ padTapAt(input.ax,input.ay,'pointermove'); if(pre.r2){ padTapAt(input.ax,input.ay,'pointerdown'); padTapAt(input.ax,input.ay,'pointerup'); GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); input.use=false; return; } }
+    const r=_gt(...a);
+    try{ if(pad&&state==='play'){ const jump=gpPress(GPB.A,pad); if(jump!==PAD_HOLD.wing){ PAD_HOLD.wing=jump; wingKeyW=jump; try{ spaceKey=jump; spaceUpHeld=jump||upKey; }catch(e){} }
+        const br=player&&player.cls==='dragon'&&gpPress(GPB.L2,pad); if(br!==PAD_HOLD.breath){ PAD_HOLD.breath=br; gpKey(settings.keys.breath||'KeyB',!br); } if(br){ input.use=false; input.alt=false; }
+        if(typeof buildMode!=='undefined'&&buildMode) input.use=false; }
+      else if(PAD_HOLD.wing||PAD_HOLD.breath){ if(PAD_HOLD.wing){ wingKeyW=false; try{ spaceKey=false; spaceUpHeld=upKey; }catch(e){} } if(PAD_HOLD.breath) gpKey(settings.keys.breath||'KeyB',true); PAD_HOLD.wing=PAD_HOLD.breath=false; } }catch(e){}
+    return r; }; }
+// the chart lists the menu and the new buttons
+PAD_CHART.splice(PAD_CHART.findIndex(r=>r[0]==='D-pad up'),1,['D-pad up','Fly (creative, Scaleborn)'],['D-pad down','The Controller menu: Bag, Crafting, Army, Buildings, Map, Save, Settings and the rest']);
+PAD_CHART.splice(PAD_CHART.findIndex(r=>r[0]==='L2 / LT')+1,0,['L2 / LT (Scaleborn)','Fire breath, held']);
+// ===== Kinard, 2026-11-13: "Push a quick update for the controller settings in the multiplayer that are already in the single
+// player" (then: "DO NOT do the multiplayer windows or anything that is not related to the controller itself") =====
+//  - Typing with a controller: the jump button on a text box (a room code, a world name, a chest name) opens an on-screen
+//    keyboard: the gold frame picks letters, Done (or the back button) closes it.
+//  - Sliders (aim distance, dead zone, volume, screen sizes) move with left and right on the d-pad or stick.
+// the on-screen keyboard
+let padKbTarget=null;
+function padKbEl(){ let el=document.getElementById('scrPadKb'); if(el) return el; el=document.createElement('div'); el.className='overlay'; el.id='scrPadKb'; el.hidden=true; el.style.zIndex='60';
+  const keys='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+  el.innerHTML=`<div class="panel" style="max-width:520px"><div class="phead"><h2>Type</h2><button class="xbtn" id="padKbClose">Done</button></div><div id="padKbText" style="font-size:14px;padding:8px;border:2px solid var(--gold);border-radius:6px;min-height:22px;margin-bottom:8px;word-break:break-all"></div>
+    <div id="padKbKeys" style="display:grid;grid-template-columns:repeat(9,1fr);gap:4px">${keys.map(k=>`<button class="xbtn" data-kb="${k}">${k}</button>`).join('')}<button class="xbtn" data-kb=" " style="grid-column:span 3">Space</button><button class="xbtn" data-kb="⌫" style="grid-column:span 3">Delete</button><button class="xbtn" data-kb="⏎" style="grid-column:span 3">Done</button></div></div>`;
+  document.body.appendChild(el); el.querySelector('#padKbClose').addEventListener('click',padKbClose);
+  el.querySelector('#padKbKeys').addEventListener('click',ev=>{ const b=ev.target.closest('[data-kb]'); if(!b||!padKbTarget) return; const t=padKbTarget, k=b.dataset.kb;
+    if(k==='⏎'){ padKbClose(); return; } let v=t.value||''; if(k==='⌫') v=v.slice(0,-1); else if(!t.maxLength||t.maxLength<0||v.length<t.maxLength) v+=(t.id==='mpCode'?k.toUpperCase():(v.length?k.toLowerCase():k));
+    t.value=v; t.dispatchEvent(new Event('input',{bubbles:true})); padKbShow(); });
+  return el; }
+function padKbShow(){ const el=padKbEl(); el.querySelector('#padKbText').textContent=(padKbTarget&&padKbTarget.value)||' '; }
+function padKbOpen(input){ padKbTarget=input; const el=padKbEl(); padKbShow(); el.hidden=false; try{ gpSetFocus(el.querySelector('[data-kb]')); }catch(e){} GP.navT=performance.now()+300; }
+function padKbClose(){ const el=document.getElementById('scrPadKb'); if(el) el.hidden=true; const t=padKbTarget; padKbTarget=null; if(t){ try{ t.dispatchEvent(new Event('change',{bubbles:true})); }catch(e){} try{ gpSetFocus(t); }catch(e){} } }
+const padTextBox=el=>!!el&&((el.tagName==='INPUT'&&!['checkbox','radio','range','button','submit','color','file'].includes((el.type||'text').toLowerCase()))||el.tagName==='TEXTAREA');
+{ const _gt=gpTick; gpTick=function(...a){ try{ const pad=settings.pad!==false?gpPad():null; const ov=pad&&gpOverlay();
+      if(pad&&ov&&(state!=='play'||ov.dataset.gpPop||ov.id==='scrPadKb')){
+        // the back button closes the keyboard first
+        if(ov.id==='scrPadKb'&&gpEdge(GPB.B,pad)){ GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); padKbClose(); return; }
+        // the jump button on a text box types with the keyboard
+        if(gpEdge(GPB.A,pad)&&padTextBox(GP.focus)&&ov.id!=='scrPadKb'){ GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); padKbOpen(GP.focus); return; }
+        // left and right move a slider
+        const f=GP.focus; if(f&&f.tagName==='INPUT'&&f.type==='range'){ const lx=pad.axes[0]||0, dx=(gpPress(GPB.RIGHT,pad)||lx>0.6?1:0)-(gpPress(GPB.LEFT,pad)||lx<-0.6?1:0); const now=performance.now();
+          if(dx){ if(now>(GP.slideT||0)){ GP.slideT=now+140; const st=+f.step||1, v=Math.max(+f.min,Math.min(+f.max,(+f.value)+dx*st)); f.value=v; f.dispatchEvent(new Event('input',{bubbles:true})); f.dispatchEvent(new Event('change',{bubbles:true})); }
+            GP.prev=pad.buttons.map(b=>b.pressed||b.value>0.5); return; } } } }catch(e){ console.warn(e); }
+    return _gt(...a); }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
