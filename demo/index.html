@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794547041"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794547207"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.192</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.193</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,8 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
-    <h3>New in Beta 0.9.192</h3>
-    <p><b>The torch</b> is held in your back hand, behind you, with two arms (there were three).</p>
+    <h3>New in Beta 0.9.193</h3>
+    <p><b>The torch</b> is held out in front of you in your front hand, over your body, with two arms (there were three).</p>
     <h3>New in Beta 0.9.191</h3>
     <p><b>Joining a friend on the website or the app:</b> when a router or firewall blocks a direct connection between your computers, the game now passes the game through a relay server instead, and waits longer for it. If the host is found but cannot be reached, the message says so and what to try.</p>
     <h3>New in Beta 0.9.190</h3>
@@ -934,7 +934,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.192</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.193</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1205,7 +1205,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.192</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.193</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1227,7 +1227,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.192', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.193', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -28362,26 +28362,30 @@ function daPeerWrap(){ const P=window.Peer; if(!P||P.__da) return; const W=funct
 // animation and push that and keep everything else qued") =====
 // The torch is held in the back arm: the figure's own back arm is taken off the picture while you hold a torch, and that arm is drawn
 // reaching out a little behind you with the torch upright in its hand, in your sleeve's colour. Two arms, never three.
-// ---- 1. the torch in the back arm ----
+// Kinard (same day, after 0.9.192): "Fix the torch so it's held and infront of the player and not behind the player": the FRONT arm
+// holds it, drawn over the body (after it), reaching forward with the torch upright; the figure's own front arm is taken off the
+// picture while you hold a torch, so there are still two arms.
 const TORCH_COL={};
-{ const _hk=humanKey; humanKey=function(o,...a){ return _hk(o,...a)+(o&&o.torchArm?'|ta':''); }; }
-{ const _so=specOf; specOf=function(e,...a){ const o=_so(e,...a); if(e&&e._torch&&!e.dead) o.torchArm=true; return o; }; }
+{ const _hk=humanKey; humanKey=function(o,...a){ return _hk(o,...a)+(o&&o.torchArm?'|ta2':''); }; }
+{ const _so=specOf; specOf=function(e,...a){ const o=_so(e,...a); if(e&&e._torch&&!e.dead&&!o.work) o.torchArm=true; return o; }; }
 { const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const r=_hf(g,o,...a); if(!o||!o.torchArm) return r;
-    try{ const f=o.frame||0; if(f>=5) return r; const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0; const x=1-sw, y=14+ay, w=2, h=8;   // the back arm and hand (24_sprites.js arms())
+    try{ const f=o.frame||0; if(f>=5) return r; const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0; const x=13+sw, y=14-ay, w=2, h=8;   // the front arm and hand (24_sprites.js arms())
       const px=SCX-8+x, py=SFY-30+y; const pick=yy=>{ const d=g.getImageData(px,yy,1,1).data; return d[3]?`rgb(${d[0]},${d[1]},${d[2]})`:null; };
       TORCH_COL[humanKey(o)]={ sleeve:pick(py+1)||pick(py+2)||'#6b4a2a', hand:pick(py+h-1)||'#f2c79b' }; g.clearRect(px,py,w,h); }catch(e){} return r; }; }
-drawHandTorch=function(e){ const f=e.facing||1, run=Math.abs(e.vx||0), moving=e.grounded!==false&&run>8, sp=run>60?10:7;
+function drawTorchFront(e){ const f=e.facing||1, run=Math.abs(e.vx||0), moving=e.grounded!==false&&run>8, sp=run>60?10:7;
   const sw=moving?Math.sin((e.anim||0)*sp*Math.PI/2):0;
-  let col={sleeve:'#6b4a2a',hand:'#f2c79b'}; try{ const o=specOf(e); const k=humanKey(o)+(o.elite?'|e':''); col=TORCH_COL[humanKey(o)]||TORCH_COL[k]||col; }catch(err){}
-  const sx=Math.round(cxOf(e))-f*6, sy=Math.round(e.y)+12;                             // the back shoulder
-  const hx=sx-f*(3+Math.round(sw*1.5)), hy=sy+6;                                        // the hand, a little out behind
+  let col={sleeve:'#6b4a2a',hand:'#f2c79b'}; try{ const o=specOf(e); col=TORCH_COL[humanKey(o)]||col; }catch(err){}
+  const sx=Math.round(cxOf(e))+f*5, sy=Math.round(e.y)+12;                              // the front shoulder
+  const hx=sx+f*(5+Math.round(sw)), hy=sy+4;                                             // the hand, held out in front
   ctx.save(); ctx.translate(sx,sy); ctx.rotate(Math.atan2(hy-sy,hx-sx)-Math.PI/2); ctx.fillStyle=col.sleeve; ctx.fillRect(-1,0,2,Math.round(Math.hypot(hx-sx,hy-sy))); ctx.restore();   // the arm
   const fl=Math.sin(performance.now()/80);
-  ctx.save(); ctx.translate(hx,hy); ctx.rotate(-f*(0.12+0.1*sw));
+  ctx.save(); ctx.translate(hx,hy); ctx.rotate(f*(0.12+0.08*sw));
   ctx.fillStyle='#7a4e27'; ctx.fillRect(-1,-9,2,11); ctx.fillStyle='#5a3418'; ctx.fillRect(-1,1,2,1);
   ctx.fillStyle='#ff7b1c'; ctx.fillRect(-2,-13,4,4); ctx.fillStyle='#ffcf3a'; ctx.fillRect(-1,-14+(fl>0?1:0),2,3);
   ctx.fillStyle=col.hand; ctx.fillRect(-2,-2,4,3);   // the hand round the handle
-  ctx.restore(); };
+  ctx.restore(); }
+drawHandTorch=function(e){};   // 24_sprites.js calls it before the body; the torch is drawn after the body instead
+{ const _de=drawEntity; drawEntity=function(e,...a){ const r=_de(e,...a); try{ if(e&&e.kind==='player'&&e._torch&&!e.dead&&!e._work) drawTorchFront(e); }catch(err){} return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
