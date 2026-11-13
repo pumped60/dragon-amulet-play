@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794544944"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794545081"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -1130,6 +1130,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 <div class="overlay" id="scrMP" hidden>
   <div class="panel">
     <div class="phead"><h2>Multiplayer</h2><button class="xbtn" id="mpBack">Back</button></div>
+    <button class="btn" id="mpSettings" style="margin-bottom:8px">Settings: play with a controller or not</button>
     <p>Play together in one world. Everyone who opens this game's link can join with the room code. Everyone plays on the host's side, and the host's world is the one that is saved.</p>
     <h3>Recent worlds</h3><div id="mpRecent" style="display:flex;flex-direction:column;gap:6px"></div>
     <h3>Host a game</h3><p>Set up a new world as usual; you get a room code to share.</p><button class="btn primary" id="mpHost">Host a new game</button>
@@ -28215,6 +28216,7 @@ function a50Tick(dt){ if((a50T-=dt)>0) return; a50T=6; if(!player||player.dead||
 //  - Aim distance (2 to 8 blocks, 4.5) and stick dead zone (10% to 50%, 28%).
 //  - A chart of every button, and a line saying whether a controller is connected.
 const PAD_STD={A:0,B:1,X:2,Y:3};
+try{ if(!SET_TABS.includes('controller')) SET_TABS.splice(1,0,'controller'); }catch(e){}   // the Controller tab can be shown (66_ui_settings.js only knew the first five)
 function padSync(){ const on=settings.pad!==false; GP_DEAD=Math.max(0.1,Math.min(0.5,+settings.padDead||0.28)); GP_AIM_R=Math.max(2,Math.min(8,+settings.padAim||4.5));
   const sw=settings.padLayout==='swap'; GPB.A=sw?PAD_STD.B:PAD_STD.A; GPB.B=sw?PAD_STD.A:PAD_STD.B; GPB.X=sw?PAD_STD.Y:PAD_STD.X; GPB.Y=sw?PAD_STD.X:PAD_STD.Y;
   return on; }
@@ -28295,6 +28297,9 @@ PAD_CHART.splice(PAD_CHART.findIndex(r=>r[0]==='L2 / LT')+1,0,['L2 / LT (Scalebo
 //  - Typing with a controller: the jump button on a text box (a room code, a world name, a chest name) opens an on-screen
 //    keyboard: the gold frame picks letters, Done (or the back button) closes it.
 //  - Sliders (aim distance, dead zone, volume, screen sizes) move with left and right on the d-pad or stick.
+// Kinard (same day): "finish the settings button make sure that's added so people can click to play with a controller or not as
+// they wish": the Multiplayer screen has a Settings button that opens Settings on the Controller tab (On or Off and the rest).
+{ const b=document.getElementById('mpSettings'); if(b) b.addEventListener('click',()=>{ settings.setTab='controller'; try{ saveSettings(); }catch(e){} openSettings('scrMP'); try{ if(typeof showSetTab==='function') showSetTab(); }catch(e){} }); }
 // the on-screen keyboard
 let padKbTarget=null;
 function padKbEl(){ let el=document.getElementById('scrPadKb'); if(el) return el; el=document.createElement('div'); el.className='overlay'; el.id='scrPadKb'; el.hidden=true; el.style.zIndex='60';
