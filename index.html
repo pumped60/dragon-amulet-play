@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1794546184"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794546184"><link rel="manifest" href="manifest.webmanifest?v=1794546184"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1794546586"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794546586"><link rel="manifest" href="manifest.webmanifest?v=1794546586"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.190</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.191</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.191</h3>
+    <p><b>Joining a friend on the website or the app:</b> when a router or firewall blocks a direct connection between your computers, the game now passes the game through a relay server instead, and waits longer for it. If the host is found but cannot be reached, the message says so and what to try.</p>
     <h3>New in Beta 0.9.190</h3>
     <p><b>Controller and multiplayer fixes:</b> the grappling hook goes where the right stick aims (R3 throws it). When no host is found, the message says which copy of the game you are on: a game hosted on the claude.ai link and one on the play website or the app cannot see each other, and on claude.ai everyone uses the same link. To get back into a world you hosted, use Host a saved world; Join needs someone hosting right now.</p>
     <h3>New in Beta 0.9.189</h3>
@@ -930,7 +932,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.190</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.191</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1201,7 +1203,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.190</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.191</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1223,7 +1225,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.190', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.191', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -6063,7 +6065,7 @@ async function mpOpen(code,isHost){ const api=await mpRoomApi();
   // outside claude.ai (the downloaded file): connect computer-to-computer through PeerJS
   mpStatus(isHost?'Opening your game to other players…':'Connecting to the host…');
   try{ const room=await peerRoom(code,isHost); MP.room=room; MP.code=code.toUpperCase(); MP.myKey=mpKeyOf(room.myId); room.onPeers(ch=>mpOnPeers(ch)); return room; }
-  catch(e){ const m=String(e&&e.message||e); mpStatus(m.includes('peer-unavailable')?'No host found with that game ID. Check the ID, and make sure the host is in their world with the game open.':m.includes('load')?'Could not reach the multiplayer service. Check your internet connection and try again.':'Could not connect ('+m+'). Try again in a moment.'); return null; } }
+  catch(e){ const m=String(e&&e.message||e); mpStatus(m.includes('peer-unavailable')?'No host found with that game ID. Check the ID, and make sure the host is in their world with the game open.':m.includes('connect-timeout')?'The host\'s game was found, but your two computers could not connect. A router or firewall may be blocking it: try again, try another network (a phone hotspot works), or both play on the claude.ai game link.':m.includes('load')?'Could not reach the multiplayer service. Check your internet connection and try again.':'Could not connect ('+m+'). Try again in a moment.'); return null; } }
 // A small stand-in for the claude.ai room, built on PeerJS: the host is the hub; everyone sends their live state
 // to the host, and the host passes each player's state on to everyone else.
 function loadPeerJS(){ if(window.Peer) return Promise.resolve(); return new Promise((res,rej)=>{ const sc=document.createElement('script'); sc.src='https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js'; sc.onload=()=>res(); sc.onerror=()=>rej(new Error('could not load the multiplayer service')); document.head.appendChild(sc); }); }
@@ -6082,7 +6084,7 @@ async function peerRoom(code,isHost){ await loadPeerJS(); const PID=id=>'dragona
   me=peer.id;
   const wire=c=>{ conns.set(c.peer,c); c.on('data',m=>onData(c.peer,m)); c.on('close',()=>{ conns.delete(c.peer); dropPeer(c.peer); if(isHost) for(const [,o] of conns) send(o,{t:'bye',from:c.peer}); }); c.on('error',()=>{}); };
   if(isHost){ peer.on('connection',c=>{ if(c.label==='w'){ c.on('data',async m=>{ if(m&&m.t==='wreq'){ try{ const z=await mpSnapshotZ(); c.send({t:'world',z}); }catch(e){} } }); return; } wire(c); c.on('open',()=>{ send(c,{t:'p',from:me,d:mine}); for(const [id,p] of peersMap) if(id!==c.peer) send(c,{t:'p',from:id,d:p.presence}); }); }); }
-  else { await new Promise((res,rej)=>{ const c=peer.connect(PID(code),{reliable:false}); const to=setTimeout(()=>rej(new Error('peer-unavailable')),12000);
+  else { await new Promise((res,rej)=>{ const c=peer.connect(PID(code),{reliable:false}); const to=setTimeout(()=>rej(new Error('connect-timeout')),25000);   /* 0.9.191: 25 s (a relayed connection takes longer) and its own reason */
       peer.on('error',e=>{ clearTimeout(to); rej(new Error(e&&e.type||'error')); }); c.on('open',()=>{ clearTimeout(to); wire(c); res(); }); }); }
   let closing=false; peer.on('disconnected',()=>{ if(closing||peer.destroyed) return; try{ peer.reconnect(); }catch(e){} });   // a deliberate leave must not reconnect (it re-took the host's ID, so hosting again failed with unavailable-id)
   const fetchWorld=isHost?null:()=>new Promise(res=>{ let done=false; const fin=v=>{ if(!done){ done=true; res(v); } }; try{ const c=peer.connect(PID(code),{reliable:true,label:'w'}); c.on('open',()=>c.send({t:'wreq'})); c.on('data',m=>{ if(m&&m.t==='world'){ fin(m.z); try{ c.close(); }catch(e){} } }); c.on('error',()=>fin(null)); }catch(e){ fin(null); } setTimeout(()=>fin(null),30000); });
@@ -28337,6 +28339,22 @@ const padTextBox=el=>!!el&&((el.tagName==='INPUT'&&!['checkbox','radio','range',
 // other, and on claude.ai the host's link must be the same one (rooms belong to one game link). =====
 function mpWhereText(){ return (window.claude&&window.claude.use)?'the claude.ai game link':'the play website or the downloaded app'; }
 { const _ms=mpStatus; mpStatus=function(t,...a){ try{ if(typeof t==='string'&&/^No host found with that game ID/.test(t)) t=`No host found with that game ID. You are on ${mpWhereText()}: the host must be on the same one (the claude.ai link and the website or app cannot see each other's games${window.claude&&window.claude.use?', and on claude.ai it must be the very same link the host uses':''}). Check the ID, and make sure the host is in their world with the game open.`; }catch(e){} return _ms(t,...a); }; }
+// ===== Kinard, 2026-11-13 (his brother, on the downloaded app, could not join his game: the join waited 12 s and gave up; "It use
+// to work from this version that we had before") =====
+// On the website and the downloaded app, two computers connect directly (WebRTC through PeerJS). Some routers and firewalls block
+// a direct line; then a relay server (TURN) passes the game along. The game now offers more ways to connect: several STUN servers
+// to find a way through, and two free relays (PeerJS's own and the Open Relay project), and waits 25 s for a relayed connection
+// (31_multiplayer.js). A host found but not reached gets its own message instead of "No host found".
+const DA_ICE=[
+  { urls:['stun:stun.l.google.com:19302','stun:stun1.l.google.com:19302','stun:stun2.l.google.com:19302'] },
+  { urls:'stun:stun.cloudflare.com:3478' },
+  { urls:['turn:eu-0.turn.peerjs.com:3478','turn:us-0.turn.peerjs.com:3478'], username:'peerjs', credential:'peerjsp' },
+  { urls:['turn:openrelay.metered.ca:80','turn:openrelay.metered.ca:443','turn:openrelay.metered.ca:443?transport=tcp'], username:'openrelayproject', credential:'openrelayproject' } ];
+function daPeerWrap(){ const P=window.Peer; if(!P||P.__da) return; const W=function(id,opts){ if(id&&typeof id==='object'){ opts=id; id=undefined; } opts=Object.assign({},opts||{});
+    if(!opts.host&&!opts.config) opts.config={ iceServers:DA_ICE, sdpSemantics:'unified-plan' };   // the public PeerJS service (a local test server sets host)
+    return id!==undefined?new P(id,opts):new P(opts); };
+  W.prototype=P.prototype; W.__da=1; for(const k of Object.keys(P)) try{ W[k]=P[k]; }catch(e){} window.Peer=W; }
+{ const _lp=loadPeerJS; loadPeerJS=function(...a){ return Promise.resolve(_lp(...a)).then(r=>{ try{ daPeerWrap(); }catch(e){} return r; }); }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
