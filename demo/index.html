@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794555364"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794649027"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -345,7 +345,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.196</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.197</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -402,6 +402,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
       <li><b>The right stick</b> aims and uses the held item, or switch to Stick and tap in Settings and tap the world instead</li>
       <li><b>Tap a villager</b> or the Talk button to shop</li>
     </ul>
+    <h3>New in Beta 0.9.197</h3>
+    <p><b>Wild crops:</b> every kind of crop grows wild somewhere in every world, smaller worlds included, so you can always find its seeds. Older worlds that were missing one get it on ground you have not explored yet.</p>
     <h3>New in Beta 0.9.196</h3>
     <p><b>Helmets, leggings and boots:</b> wear them with your armor, in every metal from wood to adamantite. Each piece adds a little defense (a full set adds a bit less than half of what the matching chestplate gives) and shows on your hero. Your soldiers show their upgrades too: their armor turns copper, iron, gold, mythril and then adamantite, and their weapons look better at each weapon level (their stats stay the same).</p>
     <p><b>Held in the hand:</b> your hero holds whatever is in hand out front, tools gripped with the head up and forward, and soldiers and village workers hold theirs the same way. The axe shows a yellow box on the log you are cutting, like the pickaxe, and target boxes only show on a block you can dig, cut or build on. The workbench stands in front of everyone, so you walk behind it.</p>
@@ -945,7 +947,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.196</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.197</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -1216,7 +1218,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.196</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.197</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -1238,7 +1240,7 @@ const SAVE_KEY = 'dragonamulet-slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.196', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.197', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -17211,11 +17213,15 @@ function cropPatches(onlyUnexplored,R,put){ R=R||Math.random; put=put||setTile; 
       for(let d=0;d<5&&ok;d++){ const c=x+d, i=(surf[c]-1)*W+c; if(surf[c]!==h||world[surf[c]*W+c]!==B.GRASS||!(world[i]===0||GRASSY.has(world[i]))||(onlyUnexplored&&explored[i])) ok=false; }
       if(ok) spots.push(x); } }
   let n=0;
-  for(const k of kinds){ if(have.get(k).length) continue; const free=spots.filter(x=>taken.every(t=>Math.abs(t-x)>=PATCH_GAP)); if(!free.length) break;
+  for(const k of kinds){ if(have.get(k).length) continue; let free=spots.filter(x=>taken.every(t=>Math.abs(t-x)>=PATCH_GAP));
+    if(!free.length){ /* 0.9.197: no spot far enough from the other patches (smaller worlds): take the spot farthest from them, so every crop still grows wild somewhere */
+      const far=x=>taken.length?Math.min(...taken.map(t=>Math.abs(t-x))):1e9; let best=null, bd=5; for(const x of spots){ const d=far(x); if(d>=bd){ bd=d; best=x; } } if(best==null) break; free=[best]; }
     const x=free[(R()*free.length)|0], len=3+((R()*3)|0); for(let d=0;d<len;d++){ const c=x+d; if(surf[c]!==surf[x]) continue; put(c,surf[c]-1,k.ripe); n++; } taken.push(x); }
   return n; }
 { const _gw=genWorld; genWorld=function(...a){ const r=_gw(...a); try{ cropPatches(false,mulberry((seed|0)+9157),wset); if(home) home.cropPatchV=1; }catch(e){ console.warn(e); } return r; }; }
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.cropPatchV&&!isGuest()){ home.cropPatchV=1; facRun(()=>cropPatches(true)); } }catch(e){ console.warn(e); } return r; }; }
+/* 0.9.197: worlds where a crop never grew wild (cropPatches stopped when its spots ran out) get the missing ones once, on unexplored ground */
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&home.cropPatchV===1&&home.cropPatch197!==1&&!isGuest()&&!(typeof edOn==='function'&&edOn())){ home.cropPatch197=1; facRun(()=>cropPatches(true)); } }catch(e){ console.warn(e); } return r; }; }
 
 // ---- 3. woodcutters bring half as many logs ----
 { const _vd=vDeliver; vDeliver=function(e,id,n,...a){ if(e&&e.vjob==='woodcutter'&&LOG_IDS.has(id)) n=Math.max(1,n*WOOD_SHARE); return _vd(e,id,n,...a); }; }
