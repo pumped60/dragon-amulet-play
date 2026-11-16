@@ -51,7 +51,8 @@ async function createWindow() {
   });
   win.loadFile(await newestGame());
   // links to other sites open in the normal browser, not inside the game
-  win.webContents.setWindowOpenHandler(({ url }) => { shell.openExternal(url); return { action: 'deny' }; });
+  // only https links: nothing in the game can ask the computer to open a file, a program or another kind of address
+  win.webContents.setWindowOpenHandler(({ url }) => { try { if (new URL(url).protocol === 'https:') shell.openExternal(url); } catch (e) {} return { action: 'deny' }; });
   win.webContents.on('before-input-event', (e, input) => {
     if (input.type === 'keyDown' && input.key === 'F11') { win.setFullScreen(!win.isFullScreen()); e.preventDefault(); }
   });

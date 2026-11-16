@@ -1,10 +1,18 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-15",
  "current": {
   "state": "ok",
-  "text": "The game is up. Beta 0.9.197 is the newest version."
+  "text": "The game is up. Beta 0.9.198 is the newest version."
  },
  "incidents": [
+  {
+   "date": "2026-11-15",
+   "state": "fixed",
+   "title": "A saved character could be replaced",
+   "what": "Opening the scene editor, the tutorial or the test world could save that world's hero over Character 1, and a new character entering another character's world got a copy of that character's things.",
+   "fix": "Beta 0.9.198 keeps the heroes of those three worlds to themselves and gives a newcomer the starting kit.",
+   "versions": "Beta 0.9.197 and earlier"
+  },
   {
    "date": "2026-11-13",
    "state": "watching",
