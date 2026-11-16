@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="apple-touch-icon" href="icon-180.png?v=1794798350"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794798350"><link rel="manifest" href="manifest.webmanifest?v=1794798350"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
+<head><link rel="apple-touch-icon" href="icon-180.png?v=1794808714"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=1794808714"><link rel="manifest" href="manifest.webmanifest?v=1794808714"><meta name="apple-mobile-web-app-title" content="Dragon Amulet"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#16121f"><script>if(location.protocol.startsWith("http")&&"serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});let daInstall=null; addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); daInstall=e; const b=document.getElementById("daInstallBtn"); if(b) b.hidden=false; });addEventListener("DOMContentLoaded",()=>{ const t=document.querySelector("#scrTitle .panel")||document.getElementById("scrTitle"); if(!t) return; const b=document.createElement("button"); b.id="daInstallBtn"; b.className="btn"; b.hidden=!daInstall; b.textContent="Install on this computer"; b.style.marginTop="8px"; b.onclick=async()=>{ if(!daInstall) return; daInstall.prompt(); await daInstall.userChoice; daInstall=null; b.hidden=true; }; t.appendChild(b); });addEventListener("appinstalled",()=>{ const b=document.getElementById("daInstallBtn"); if(b) b.hidden=true; });</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.198</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.199</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.199</h3>
+    <p><b>Selling:</b> sticks sell for 1 coin again, worms sell for 1 coin to the Fisher, and every dye sells to the Tailor (1 coin for the plain colours). To keep that fair, the Shipwright's planks cost 40 coins for 20, the Fisher's worms 10 coins for 5, and the Herbalist's red and yellow flowers 6 coins for 3.</p>
+    <p><b>Breakdown bench:</b> it breaks down anything you found or made yourself. It only refuses things you bought from a shop that sells them for less than their materials are worth.</p>
+    <p><b>The Dragon Amulet</b> belongs to the hero who slew Vorthax. A world gives it back only to that hero, so a new character cannot walk into a finished world and pick one up.</p>
     <h3>New in Beta 0.9.198</h3>
     <p><b>Bigger words:</b> the smallest words in windows and on the screen are larger, and Settings &gt; Screen &gt; Menu text size makes the words in windows bigger still (Large or Larger). Small buttons inside windows are easier to hit with a finger, and things you cannot afford yet stay easy to read. On a big computer screen the hotbar, bars, buttons and mini-map grow with the window; move any size slider in Settings &gt; Screen to choose your own sizes. The pixel font is part of the game file, so it looks the same with no internet.</p>
     <p><b>Safer saves:</b> opening the scene editor, the tutorial or the test world never changes your saved characters, and new game plus always stays in the world you are playing. A world that cannot be loaded takes you back to the title screen and leaves your save as it was. A slot saved by another version of the game is shown as that, not as Empty. The demo keeps its own saves. A new character who enters a world that belongs to one of your other characters starts with the starting kit; your other character keeps their things.</p>
@@ -519,7 +523,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.198</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.199</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -790,7 +794,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.198</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.199</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -815,7 +819,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.198', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.199', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -5881,7 +5885,7 @@ function mpReceive(){ const peers=MP.room.peers()||[]; const now=performance.now
     if(MP.gone&&MP.gone[pe.peer]!=null&&MP.gone[pe.peer]===d.tk) continue;   /* a player who left: their last message stays in the room, ignore it */
     let r=MP.remote.get(pe.peer); if(!r){ r={peer:pe.peer,kind:'human',remote:true,w:12,h:29,x:d.x,y:d.y,team:d.team||player.team,cls:CLASSES[d.cls]?d.cls:'knight',facing:1,anim:0,hp:1,maxHp:1,hurtT:0,atkT:0,role:'guard',soldiers:[]}; MP.remote.set(pe.peer,r); }
     r.fa=d.fa||0; r.nm=mpName(d.nm); r.isHost=!!d.host; r.mine=d.mine||0; r.dl=!!d.dl; r.tx=d.x; r.ty=d.y; mpFromPeer(r,d,pe.peer); r.facing=d.f||1; r.cls=CLASSES[d.cls]?d.cls:'knight'; r.team=d.team||player.team; r.weapon=d.tw&&!THROW_DAGGERS.has(d.w)?0:(d.w||0); r.tw=d.tw||0; r.vx=d.vx||0; r.anim=d.an||0; r.hp=d.hp||1; r.maxHp=d.mhp||1; r.upArmor=0; r.by=pe.by; if(d.tk==null||d.tk!==r.tk){ r.tk=d.tk; r.seen=now; }   /* only a message that has moved on counts: a player who left stops ticking */ r.riding=!!d.rd&&!!BOATS[d.rd]; r.boat=d.rd||0; r.grounded=!((d.st||0)&2); r.inWater=!!((d.st||0)&1); r.fly=!!((d.st||0)&4);
-    for(const [sq,to,id,n] of (d.gv||[])){ if(to!==MP.myKey||!ITEMS[id]||!mpFresh('gv',pe.peer,sq,MP.giveSeen[pe.peer]||0)) continue; MP.giveSeen[pe.peer]=Math.max(MP.giveSeen[pe.peer]||0,sq); const gn=mpGiftN(n); obtain(id,gn,true); invDirty=true; toast(`${r.nm||'A friend'} gave you ${gn>1?gn+' × ':''}${ITEMS[id].name}`,3); if(typeof sfx==='function') sfx('pickup'); }
+    for(const [sq,to,id,n] of (d.gv||[])){ if(to!==MP.myKey||!ITEMS[id]||!mpFresh('gv',pe.peer,sq,MP.giveSeen[pe.peer]||0)) continue; MP.giveSeen[pe.peer]=Math.max(MP.giveSeen[pe.peer]||0,sq); const gn=mpGiftN(n); obtain(id,gn,true); bdNoteGot(id,gn); invDirty=true; toast(`${r.nm||'A friend'} gave you ${gn>1?gn+' × ':''}${ITEMS[id].name}`,3); if(typeof sfx==='function') sfx('pickup'); }
     if((MP.host&&!d.cq)||(MP.guest&&d.host)) for(const c of (d.ch||[])) mpApplyChest(c);
     if(d.host&&MP.applied[pe.peer]==null&&MP.hostEdSeq) MP.applied[pe.peer]=MP.hostEdSeq;
     if(MP.guest&&d.host&&d.fl!=null){ tower.cleared=d.fl.includes('t'); fort.cleared=d.fl.includes('f'); if(d.fl.includes('s')) sky.castle.cleared=true; if(d.fl.includes('m')) magma.keep.cleared=true; if(d.fl.includes('d')&&!dragonSlain){ dragonSlain=true; if(dragon) dragon.dead=true; } if(d.fl.includes('k')) krakenSlain=true; }
@@ -9836,7 +9840,7 @@ $('#tradeClose').addEventListener('click',()=>closeTrade());
 
 // ---- the swap: each player hands over their own side and takes the other, once both accepted the same two offers ----
 function tradeSwap(th){ for(const o of TR.offer) takeItem(o.id,Math.min(o.n,countItem(o.id))); if(TR.coins) player.coins=Math.max(0,player.coins-TR.coins);
-  for(const [id,n] of th.offer) obtain(id,n,true); if(th.coins) player.coins+=th.coins; TR.done=performance.now(); tradeAccs=[]; invDirty=true;
+  for(const [id,n] of th.offer){ obtain(id,n,true); bdNoteGot(id,n); /* 0.9.199: a traded item counts as bought for the breakdown bench */ } if(th.coins) player.coins+=th.coins; TR.done=performance.now(); tradeAccs=[]; invDirty=true;
   const got=th.offer.map(([id,n])=>`${n>1?n+' × ':''}${ITEMS[id].name}`).concat(th.coins?[th.coins+' coins']:[]);
   toast(`Trade done with ${TR.nm}${got.length?': you got '+got.slice(0,3).join(', ')+(got.length>3?' and more':''):''}`,3.5); if(typeof sfx==='function') sfx('pickup');
   hide('scrTrade'); if(state==='trade') state='play'; }
@@ -29129,6 +29133,71 @@ var GZ_LAST=0;   /* pieces the last save was gzipped in (0: in one go) */
       await w.close(); const u=new Uint8Array(await got); let s=''; for(let i=0;i<u.length;i+=0x8000) s+=String.fromCharCode.apply(null,u.subarray(i,i+0x8000)); out=btoa(s); GZ_LAST=Math.ceil(bytes.length/GZ_STEP);
     }catch(e){ console.warn(e); out=null; }
     return out!=null?out:_gz(str,...a); }; }
+// ===== Beta 0.9.199: Kinard's answers to the 0.9.198 choices (2026-11-16) =====
+// 1. "Sell planks at a price that will allows sticks for 1 gold, make dyes sell for 1 gold only to the dye trader and worms
+//    sell for 1 gold only to the fisher."
+// 2. The breakdown bench: "Can this be adjusted such as some of the items being unlocked after the player finds them?"
+// 3. The Dragon Amulet: "make it so only one amulet is retrieved every time."
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// 1. prices
+// ---------------------------------------------------------------------------------------------------------------------------
+// The selling rules stay as they are (an item sells for at most half of the lowest shop price, and never for more than it
+// costs to make from shop goods), so the shop prices move instead:
+//   planks 20 for 40 (2 each): two planks make four sticks, so a stick costs 1 and sells for 1;
+//   worms 5 for 10 (2 each): a worm sells for 1;
+//   red and yellow flowers 3 for 6 (2 each): one flower makes two bottles of dye, so red, orange and yellow dye cost 1 and
+//   sell for 1 like the other plain dyes.
+// Dyes are bought by the Tailor only, worms by the Fisher only.
+function priceSet199(role,id,n,price){ const sh=SHOPS[role]; if(!sh||id==null) return false; let hit=false; for(const st of sh.stock) if(st[0]===id&&st[1]===n){ st[2]=price; hit=true; } return hit; }
+const WORM_ID=(typeof baitOf==='function'&&baitOf('worm'))||0;
+priceSet199('trader',B.PLANK,20,40); priceSet199('fisher',WORM_ID,5,10); priceSet199('herbalist',B.FLOWER_R,3,6); priceSet199('herbalist',B.FLOWER_Y,3,6);
+try{ MIN_BUY.clear(); minBuySig=''; }catch(e){}   /* filled again from the final tables on the next sale */
+const isDyeId=id=>!!(ITEMS[id]&&ITEMS[id].dye);
+{ const _bi=buysItem; buysItem=function(role,id,...a){ if(isDyeId(id)) return role==='tailor'; if(WORM_ID&&+id===WORM_ID) return role==='fisher'; return _bi(role,id,...a); }; }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// 2. the breakdown bench takes what you found or made, not what you bought
+// ---------------------------------------------------------------------------------------------------------------------------
+// 0.9.198 refused every item a shop sells for less than its materials are worth (buying, breaking and selling the pieces made
+// coins). Now the bench only refuses the ones you bought: the game counts how many of such an item you have bought from a
+// shop or been handed by a friend (player.gear.bought, saved with the hero), takes them off again when you sell them back,
+// and breaks down only what you hold beyond that count. Anything you found in the world or crafted yourself breaks down.
+function bdBought(){ if(!player) return {}; const g=player.gear=player.gear||{}; if(!g.bought||typeof g.bought!=='object') g.bought={}; return g.bought; }
+function bdGuarded(id){ try{ const r=breakRecipe(+id); return !!(r&&breakBlocked(+id,r)); }catch(e){ return false; } }
+function bdNoteGot(id,n){ try{ if(!(n>0)||!bdGuarded(id)) return; const b=bdBought(); b[id]=(b[id]||0)+n; }catch(e){ console.warn(e); } }
+function bdNoteSold(id,n){ try{ const b=bdBought(); if(!(b[id]>0)||!(n>0)) return; b[id]-=n; if(!(b[id]>0)) delete b[id]; }catch(e){ console.warn(e); } }
+function bdFree(id){ const b=bdBought(); return Math.max(0,countItem(+id)-(b[id]||0)); }   /* how many of this item the bench will take */
+let bdBuying=null;
+{ const _ob=obtain; obtain=function(id,n,...a){ const r=_ob(id,n,...a); try{ if(bdBuying&&+bdBuying===+id) bdNoteGot(+id,n||1); }catch(e){} return r; }; }
+// a shop's Buy button: the purchase itself happens in the shop's own click handler, which runs after this one
+document.addEventListener('click',ev=>{ try{ const b=ev.target&&ev.target.closest&&ev.target.closest('#shopList button[data-buy], #shopList button[data-sell]'); if(!b||!shopV||!player) return;
+    if(b.dataset.buy!==undefined){ const st=SHOPS[shopV.role]&&SHOPS[shopV.role].stock[+b.dataset.buy]; if(!st) return; bdBuying=st[0]; setTimeout(()=>{ bdBuying=null; },0); }
+    else if(b.dataset.sell){ const id=+b.dataset.sell, before=countItem(id); setTimeout(()=>{ try{ bdNoteSold(id,before-countItem(id)); }catch(e){} },0); } }catch(e){ console.warn(e); } },true);
+breakDown=function(slot){ const s=player.inv[slot]; if(!s) return false; const r=breakRecipe(s.id); if(!r) return false; const n=r.n||1, nm=ITEMS[s.id].name;
+  if(s.n<n){ toast(`It takes ${n} ${nm.toLowerCase()} to break down (they are made ${n} at a time)`,3); return false; }
+  if(breakBlocked(s.id,r)&&bdFree(s.id)<n){ toast(`The bench breaks down ${nm.toLowerCase()} you found or made, not ones from a shop: shops sell it for less than its materials are worth`,4.5); return false; }
+  s.n-=n; if(s.n<=0) player.inv[slot]=null; for(const [nid,k] of r.need) if(ITEMS[nid]) give(nid,k); toast(`${nm} broken down into ${r.need.map(([nid,k])=>k+' '+ITEMS[nid].name.toLowerCase()).join(', ')}`,3); invDirty=true; return true; };
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// 3. one Dragon Amulet for each time Vorthax is slain
+// ---------------------------------------------------------------------------------------------------------------------------
+// 0.9.198 gave the amulet back to any hero who opened a finished world without one, so a brand-new character walked in and
+// got flight and ten times the health. The amulet belongs to the hero who slew Vorthax in that world (home.amuletOwner, their
+// character id); only that hero is given it back if it is missing. Worlds finished before this was recorded take the hero who
+// has the amulet, else the hero the world last saved, else whoever opens the world first (an older world may have lost its
+// amulet to the old bugs, and its hero must be able to get it back). (The Scaleborn unlocks never came from the amulet: they come from the kill itself, once for each
+// class in each world, home.dbGot.)
+function heroNowId(){ try{ return heroFree()?'world':charCid(curChar); }catch(e){ return 'world'; } }
+function amuletOwnerGuess(){ const me=heroNowId(); try{ if((player.gear&&player.gear.amulet)||countItem(I.AMULET)>0||heroFree()) return me; if(home.heroId) return home.heroId; }catch(e){ console.warn(e); } return me; }
+// the kill names the owner: watched from the main loop (like the Scaleborn reward), so every way Vorthax can fall is covered
+let amuletSeen=null;
+function amuletOwnerTick(){ if(amuletSeen===null){ amuletSeen=!!dragonSlain; return; } if(dragonSlain&&!amuletSeen){ amuletSeen=true; if(home&&player&&!isGuest()) home.amuletOwner=heroNowId(); } else if(!dragonSlain) amuletSeen=false; }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ amuletOwnerTick(); }catch(e){ console.warn(e); } return r; }; }
+{ const _sp=startPlay; startPlay=function(...a){ amuletSeen=null; return _sp(...a); }; }   /* another world: start from what it says */
+amuletBack=function(){ if(!dragonSlain||!player||!home||isGuest()) return false; if(!home.amuletOwner) home.amuletOwner=amuletOwnerGuess();
+  if(home.amuletOwner!==heroNowId()||amuletAround()) return false; obtain(I.AMULET,1,true); invDirty=true;
+  setTimeout(()=>{ try{ toast('The Dragon Amulet finds its way back to you: Vorthax is slain and it is yours',6); }catch(e){} },1800); return true; };
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
