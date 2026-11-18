@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794810981"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794986007"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.200</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.201</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,11 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.201</h3>
+    <p><b>Daggers:</b> a pair of daggers is held one in each hand, and a strike is one blade while the other hand keeps its own. The arm that holds your item keeps one color while you walk.</p>
+    <p><b>Animals by biome:</b> goats live only in the mountains and on the dragon's island. Deer, squirrels, robins and boars live in forests; cows, sheep, horses, pigs and sparrows on open grassland; bears and wolves in forests and mountains. Ice, desert, shore and sea animals are where they were.</p>
+    <p><b>Buildings:</b> the ground under a building on filled land is dark like any other ground (it used to glow in the shape of the old hillside). Arrow slits take the look of the wall they are set in, whatever it is made of. Walking through a doorway, you pass under the wall above it.</p>
+    <p><b>Windows:</b> an item's name shows once when you point at it. In the Villagers window a new wanderer's jobs are open under Assign; someone who already has a job keeps Reassign in their own window.</p>
     <h3>New in Beta 0.9.200</h3>
     <p><b>Sieges that grow with you:</b> the first siege still comes on day 15, but after that each one follows how the last went. Hold your village with ease and the next army is bigger and comes in 5 days. A real fight keeps the next one the same size, 6 days off. If a siege costs you dearly (you fall, or lose half your soldiers), the next is smaller and 8 days off. A siege army is never more than 2 soldiers bigger than your own, and trebuchets only come once sieges have grown twice. Ordinary raids are never bigger than three quarters of your soldiers plus 2.</p>
     <p><b>American spelling:</b> the game, its rules and the wiki use American English throughout (color, gray, armor, center, neighbor). Six things changed their names with it: Gray dye, Gray carpet, Gray flag, Gray tapestry, Library paneling and the Omelet.</p>
@@ -519,14 +524,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>Joining a friend on the website or the app:</b> when a router or firewall blocks a direct connection between your computers, the game now goes through a relay server instead, and waits longer for it. If the host is found but cannot be reached, the message says so and what to try.</p>
     <h3>New in Beta 0.9.190</h3>
     <p><b>Controller and multiplayer fixes:</b> the grappling hook goes where the right stick aims (R3 throws it). When no host is found, the message says which copy of the game you are on: a game hosted on the claude.ai link and one on the play website or the app cannot see each other, and on claude.ai everyone uses the same link. To get back into a world you hosted, use Host a saved world; Join needs someone hosting right now.</p>
-    <h3>New in Beta 0.9.189</h3>
-    <p><b>Play with a controller.</b> A PlayStation, Xbox, Switch Pro or other controller plays the whole game on a computer, a Steam Deck or a tablet: the left stick moves, the right stick aims, R2 uses what you hold, the bottom button jumps (and flies with wings), L1 and R1 pick from the hotbar, the left button talks and opens what you aim at, the top button opens the bag, the right button crafting, Options pauses and Select the map. D-pad down opens the Controller menu with everything on the top bar (Army, Buildings, Map, Save, Settings and more). In every window a gold frame moves between the buttons with the stick or d-pad. Settings &gt; Controller turns it on or off, swaps the buttons for a Nintendo layout, sets vibration, aim distance and the stick dead zone, and shows every button. The jump button on a text box opens an on-screen keyboard, and left and right move sliders. Moving the mouse hands control back to it.</p>
-  </div>
+</div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.200</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.201</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -664,7 +667,6 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 <div class="overlay" id="scrRecruit" hidden>
   <div class="panel wide">
     <div class="phead"><h2>Villagers</h2><button class="xbtn" id="recruitClose">Later</button></div>
-    <p>These wanderers were waiting in the abandoned village and want to join you. Make each one a shopkeeper, a woodcutter, farmer or miner (the first of each becomes the head of a lodge, farmhouse or mine), or a soldier for your army. You can come back and talk to them later.</p>
     <div id="recruitList" style="display:flex;flex-direction:column;gap:8px"></div>
   </div>
 </div>
@@ -797,7 +799,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.200</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.201</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -822,7 +824,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.200', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.201', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3140,12 +3142,13 @@ function updateAnimal(e,dt){
   if(e.inWater) e.vy=Math.max(e.vy-1000*dt,-120);
   physics(e,dt); }
 let animalT=4;
+function animalTypeAt(tx,isl){ const r=Math.random(); return isl&&isl.ice?(r<0.7?'penguin':'polarbear'):isNight()?(r<0.45?'wolf':r<0.7?'bear':r<0.85?'boar':'rabbit'):(r<0.34?'bird':r<0.46?'rabbit':r<0.56?'deer':r<0.66?'cow':r<0.76?'sheep':r<0.86?'boar':r<0.95?'bear':'wolf'); }
 function spawnAnimals(dt){ animalT-=dt; if(animalT>0) return; animalT=5;
   for(const e of ents) if(e.kind==='animal'&&!e.tamed&&!e.chiefPet&&farAll(e,100)) e.dead=true;   // the Beastmaster's bear stays with him
   if(player.dead) return; const near=ents.filter(e=>e.kind==='animal'&&!e.dead&&Math.abs(e.x-player.x)<80*T).length; if(near>=9) return;   /* 0.9.100: 9 animals near you, up from 6 */
   let tx=-1, ty=0; for(let k=0;k<8;k++){ const c=Math.floor(cxOf(player)/T)+(Math.random()<.5?-1:1)*(26+Math.floor(Math.random()*20)); if(c<2||c>=W-2||inProtected(c)) continue; const cy=skyTop[c]; if(cy>seaY||tileAt(c,cy-1)===B.WATER) continue; const gid=tileAt(c,cy); if(BASE_IDS.has(gid)||gid===B.ROOF||gid===B.SHINGLE_B||gid===B.GLASS||bg[(cy-1)*W+c]) continue; tx=c; ty=cy; break; }
   if(tx<0) return;
-  const isl=islands.find(is=>tx>=is.s&&tx<=is.e); const r=Math.random(); const type=isl&&isl.ice?(r<0.7?'penguin':'polarbear'):isNight()?(r<0.45?'wolf':r<0.7?'bear':r<0.85?'boar':'rabbit'):(r<0.34?'bird':r<0.46?'rabbit':r<0.56?'deer':r<0.66?'cow':r<0.76?'sheep':r<0.86?'boar':r<0.95?'bear':'wolf');
+  const isl=islands.find(is=>tx>=is.s&&tx<=is.e); const type=animalTypeAt(tx,isl);   /* 0.9.201: by the biome of the spot (98zxz_zz293_biome_animals.js) */
   const a=ANIMALS[type]; const n=(type==='cow'||type==='sheep')?(2+Math.floor(Math.random()*2)):type==='penguin'?(2+Math.floor(Math.random()*3)):type==='wolf'?2:type==='bird'?(2+Math.floor(Math.random()*4)):1;
   for(let k=0;k<n;k++) ents.push(makeAnimal(type,(tx+k*2)*T,a.fly?(ty-8-Math.random()*6)*T:ty*T-a.h-1)); }
 function respawnPlayer(){ const p=player; p.dead=false; recompute(p); p.hp=p.maxHp; starveT=0; p.burnT=0; p.slowT=0; p.food=100; p.hungryWarned=false; p.mana=p.maxMana; p.breath=10; const sp=spawnPoint(); p.x=sp.x; p.y=sp.y; p.vx=p.vy=0; p.iframes=2; hide('scrDeath'); state='play'; if(!ents.includes(p)) ents.push(p);
@@ -4551,11 +4554,16 @@ function openAirMask(tx0,tx1,ty0,ty1){ const lw=tx1-tx0+1, lh=ty1-ty0+1, M=new U
     if(!air(x,y)&&zone(x,y)) for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){ const ax=x+dx, ay=y+dy; if(ax<X0||ax>X1||ay<Y0||ay>Y1) continue; const l2=lab[(ay-Y0)*ww+ax-X0]; if(l2&&open[l2]){ M[k]=2; break; } } }
   return M; }
 const INDOOR_DIM=0.3;   // how much daylight reaches a closed room without a torch
+function lightGroundLine(x){ let y=Math.max(skyTop[x],skyOff+1); const end=Math.min(H-2,surf[x]); while(y<end&&!NATURAL.has(world[y*W+x])) y++; return Math.min(y,surf[x]); }   /* the first natural ground block of the column, never below surf[] */
 function drawLighting(tx0,tx1,ty0,ty1,dl){
   const lw=tx1-tx0+1, lh=ty1-ty0+1; if(lightCv.width!==lw||lightCv.height!==lh||!lightData){ lightCv.width=lw; lightCv.height=lh; lightData=lightCtx.createImageData(lw,lh); }
   const Lg=new Float32Array(lw*lh); const skyL=0.35+0.65*((dl-0.25)/0.75);
   const openM=openAirMask(tx0,tx1,ty0,ty1);
-  for(let cy=0;cy<lh;cy++) for(let cx=0;cx<lw;cx++){ const x=tx0+cx, y=ty0+cy; const d=y-skyTop[x]; let v=d<0?skyL:skyL*Math.max(0,1-d/3); { const top=oceanCol&&oceanCol[x]?seaY:Math.min(surf[x],skyTop[x]); const dd=y-top; if(y>skyOff&&dd>7) v*=Math.max(0,1-(dd-7)/4); } if(d>=0&&bg[y*W+x]&&y>skyOff&&(BUILD_BG.has(bg[y*W+x])||y<=surf[x]+1&&!(oceanCol&&oceanCol[x]))) v=skyL*INDOOR_DIM;   // indoors: torches and lamps light the room, daylight only through windows and openings
+  /* 0.9.201: where the ground of this column really starts. surf[] is the land as the world was made; ground filled in later
+     (under a village on a slope, under a building's footing) lies above it, and every filled block with a back wall then counted
+     as a room above the ground and was lit like one: a glowing patch in the shape of the old hillside under the building. */
+  const gl=new Int32Array(lw).fill(-1); const groundLine=x=>{ const k=x-tx0; let g=gl[k]; if(g<0) g=gl[k]=lightGroundLine(x); return g; };
+  for(let cy=0;cy<lh;cy++) for(let cx=0;cx<lw;cx++){ const x=tx0+cx, y=ty0+cy; const d=y-skyTop[x]; let v=d<0?skyL:skyL*Math.max(0,1-d/3); { const top=oceanCol&&oceanCol[x]?seaY:Math.min(surf[x],skyTop[x]); const dd=y-top; if(y>skyOff&&dd>7) v*=Math.max(0,1-(dd-7)/4); } if(d>=0&&bg[y*W+x]&&y>skyOff&&(BUILD_BG.has(bg[y*W+x])||y<=groundLine(x)+1&&!(oceanCol&&oceanCol[x]))) v=skyL*INDOOR_DIM;   // indoors: torches and lamps light the room, daylight only through windows and openings
     if(d<0&&y>skyOff&&forestCol&&forestCol[x]){ let cov=0; for(let dx=-6;dx<=6;dx++){ for(let k=1;k<=22;k++){ const id=world[(y-k)*W+x+dx]; if(LEAF_IDS.has(id)){ cov++; break; } } } v*=Math.max(0,1-cov/10); }
     { const om=openM[cy*lw+cx]; if(om) v=Math.max(v,skyL*(om===2?0.85:1)); }
     if(world[y*W+x]===B.WATER) v*=Math.max(0.3,1-(y-seaY)/34); if(y>magmaY+3&&typeof MAGMA_AMB!=='undefined') v=Math.max(v,MAGMA_AMB); Lg[cy*lw+cx]=v; }
@@ -4685,6 +4693,7 @@ function drawWeapon(R0,id,atk,frame){ const [bx,by]=HOLD_SWAY[frame]||HOLD_SWAY[
   if(atk){ R(17,17,2,2,'#5b3819'); R(19,14,1,8,'#8a5c2d'); R(19,14,1,1,'#ffcf3a'); R(20,16,len,2,m[0]); R(20,16,len,1,m[1]); R(20+len,17,2,1,m[0]); R(21,18,len-2,1,m[2]); }
   else { R(15,5,2,13,m[0]); R(15,5,1,13,m[1]); R(16,4,1,1,m[0]); R(12,18,7,1,'#8a5c2d'); R(12,18,1,1,'#ffcf3a'); R(18,18,1,1,'#ffcf3a'); R(15,19,2,3,'#5b3819'); R(15,22,2,1,'#ffcf3a'); }
 }
+const ARM_LAST={c:null,h:null};
 function humanKey(o){ const c=o.cust; return `h|${o.look}|${o.team}|${o.frame}|${o.atk?1:0}|${o.wpn||0}|${o.cap?1:0}|${o.armor||''}|${o.elite?1:0}`+(c?`|${c.skin}${c.hair}${c.hc}${c.o1}${c.o2}${c.eyes}${c.face}`:''); }
 function humanSprite(o){ return sprite(humanKey(o),SW,SH,g=>drawHumanFig(g,o)); }
 function drawHumanFig(g,o){
@@ -4694,7 +4703,7 @@ function drawHumanFig(g,o){
   const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; if(o.look==='dragon'){ for(const x of [2,11]){ R(x,13,3,2,armorC[0]); R(x,13,3,1,armorC[1]); } return; }   /* 0.9.128: the Scaleborn shows his armor as shoulder guards, his scales stay in view */ R(3,13,10,5,armorC[0]); R(3,13,10,1,armorC[1]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };
   const hair=cu?cu.hc:'#7a4a2a', hairL=shadeHex(hair,0.25), bald=!!(cu&&cu.hair==='bald');
   const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0;
-  const arms=(c,hand)=>{
+  const arms=(c,hand)=>{ ARM_LAST.c=c; ARM_LAST.h=hand;   /* 0.9.201: the sleeve and hand colors of this figure, for the arms drawn over it (held item, torch, work, swing) */
     if(f>=6){ const k=f===7?1:0; R(1,14,2,5,c); R(12,13+k,4,2,c); R(15,13+k,2,2,hand); R(3,18,2,2,hand); for(let i=0;i<11;i++) R(16+Math.round(i*(k?0.9:0.35))-(k?0:2),14+k+i,1,1,i<9?'#8a5c2d':'#6b4422'); R(k?24:16,24+k,3,4,'#b7834a'); return; }
     if(f===5){ R(-1,11,2,6,c); R(-1,9,2,2,hand); } else { R(1-sw,14+ay,2,6,c); R(1-sw,20+ay,2,2,hand); }
     if(atk&&o.melee){ R(13,16,4,2,c); R(17,16,2,2,hand); }
@@ -12889,7 +12898,7 @@ function workState(e){ if(!e||e.kind!=='player'||e.riding||e.dead||e.passenger) 
 { const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const r=_hf(g,o,...a); if(!o||!o.work) return r;
     try{ const f=o.frame||0; if(f>=6) return r; let x,y,w,h; if(f===5){ x=14; y=10; w=3; h=8; } else { const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0; x=13+sw; y=14-ay; w=2; h=8; }
       const px=SCX-8+x, py=SFY-30+y; const pick=(yy)=>{ const d=g.getImageData(px,yy,1,1).data; return d[3]?`rgb(${d[0]},${d[1]},${d[2]})`:null; };
-      const sleeve=pick(py+1)||pick(py+2)||'#6b4a2a', hand=pick(py+h-1)||'#f2c79b'; WORK_COL[humanKey(o)]={sleeve,hand}; g.clearRect(px,py,w,h); }catch(e){} return r; }; }
+      const sleeve=ARM_LAST.c||pick(py+1)||pick(py+2)||'#6b4a2a', hand=ARM_LAST.h||pick(py+h-1)||'#f2c79b'; WORK_COL[humanKey(o)]={sleeve,hand}; g.clearRect(px,py,w,h); }catch(e){} return r; }; }
 { const _de=drawEntity; drawEntity=function(e,...a){ const ws=workState(e); if(!ws){ if(e) e._work=false; return _de(e,...a); }
     const ang=workAim(e), dir=Math.cos(ang)>=0?1:-1; const at=e.atkT, pc=e.placeCd; e._work=true; e.atkT=0; e.placeCd=0;
     const fx=Math.round(cxOf(e)), fy=Math.round(e.y+e.h); const lean=0, dip=0;   // 0.9.81: the body stays still; only the arm and the tool move
@@ -20600,7 +20609,7 @@ drawSwing=function(e,d){
     ctx.translate(reachOut,0);
     if(d.shape==='spear'){ const L=Math.max(10,d.reach-SWING_ARM); r(-6,-1,L+6,2,'#7a4e27'); r(L,-3,6,6,m[0]); r(L+6,-1,3,2,m[0]); r(L,-3,6,1,m[1]); }
     else if(d.shape==='mace'){ r(-2,-1,13,3,'#7a4e27'); r(11,-5,9,10,m[0]); r(11,-5,9,2,m[1]); r(14,-8,3,3,m[0]); r(14,5,3,3,m[0]); r(20,-1,3,3,m[0]); }
-    else if(d.shape==='dagger'){ const L=Math.max(5,d.reach-6-SWING_ARM+4); for(const [off,a2] of [[0,1],[-0.6,0.75]]){ ctx.save(); ctx.rotate(off*(dir>0?1:-1)); ctx.globalAlpha=a2; r(-1,-1,3,3,'#5b3819'); r(2,-3,1,7,'#8a5c2d'); r(3,-1,L,3,m[0]); r(3,-1,L,1,m[1]); r(3+L,0,2,1,m[0]); ctx.restore(); } ctx.globalAlpha=1; }
+    else if(d.shape==='dagger'){ const L=Math.max(5,d.reach-6-SWING_ARM+4); r(-1,-1,3,3,'#5b3819'); r(2,-3,1,7,'#8a5c2d'); r(3,-1,L,3,m[0]); r(3,-1,L,1,m[1]); r(3+L,0,2,1,m[0]); }   /* 0.9.201: one dagger in the striking hand; the other stays in the back hand (98zxz_zz292_daggers_arm.js) */
     else { const L=Math.max(8,d.reach+2-SWING_ARM); r(-2,-1,4,3,'#5b3819'); r(2,-5,2,11,'#8a5c2d'); r(2,-5,2,1,'#ffcf3a'); r(4,-2,L,4,m[0]); r(4,-2,L,1,m[1]); r(4,1,L,1,m[2]); r(4+L,-1,3,2,m[0]); r(7+L,0,1,1,m[0]); }
   } finally{ ctx.restore(); } };
 // drawEntity marks a swinging figure as attacking (o.atk, o.melee), which draws its forearm straight out; the swing above
@@ -26626,16 +26635,17 @@ try{ if(typeof spriteCache!=='undefined'&&spriteCache.clear) spriteCache.clear()
 //    shop. It opens the same list: pick another job and they leave the shop (their house is free again) and take it up, a new
 //    shop or a place in your army. Only the host of a shared world can reassign.
 const RE_ROLES=['smith','cook','trader','herbalist','fisher','tailor'];
-let reOpen=null;   // the wanderer whose list of jobs is open
+let reOpen=null;   // (0.9.185: the wanderer whose list of jobs is open)
+const reClosed=new Set();   /* 0.9.201 (Kinard): a new wanderer's row says Assign and its list of jobs is open from the start; tapping Assign folds it away. Reassign is for someone who already has a job (their own window). */
 { const st=document.createElement('style'); st.textContent=`#recruitList .reassign{ display:inline-block; margin:8px 0 2px; padding:7px 12px; font-size:9px; background:var(--gold); color:var(--ink); border:2px solid var(--ink); box-shadow:2px 2px 0 var(--ink); }
 #recruitList .rrow .jobs.fold{ display:none; } #reassignRow .btn{ margin:0; }`; document.head.appendChild(st); }
 { const _rr=renderRecruit; renderRecruit=function(...a){ const r=_rr(...a); try{ const ds=ents.filter(e=>e.kind==='drifter'&&!e.dead);
       for(const row of document.querySelectorAll('#recruitList .rrow')){ const jobs=row.querySelector('.jobs'); if(!jobs) continue; const b0=jobs.querySelector('[data-d]'); const i=b0?+b0.dataset.d:-1; const d=ds[i]; if(!d) continue;
-        const open=reOpen===d.name; jobs.classList.toggle('fold',!open);
+        const open=!reClosed.has(d.name); jobs.classList.toggle('fold',!open);
         if(!row.querySelector('.reassign')){ const b=document.createElement('button'); b.className='reassign'; b.dataset.reas=String(i); jobs.before(b); }
-        const rb=row.querySelector('.reassign'); const t=open?'Close the list':'Reassign'; if(rb.textContent!==t) rb.textContent=t; } }catch(e){ console.warn(e); } return r; }; }
+        const rb=row.querySelector('.reassign'); const t='Assign'; if(rb.textContent!==t) rb.textContent=t; rb.setAttribute('aria-expanded',String(open)); } }catch(e){ console.warn(e); } return r; }; }
 $('#recruitList').addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-reas]'); if(!b) return; ev.stopPropagation(); const ds=ents.filter(e=>e.kind==='drifter'&&!e.dead); const d=ds[+b.dataset.reas]; if(!d) return;
-  reOpen=reOpen===d.name?null:d.name; renderRecruit(); },true);
+  if(reClosed.has(d.name)) reClosed.delete(d.name); else reClosed.add(d.name); renderRecruit(); },true);
 // ---- a shopkeeper takes another job ----
 function reassignable(v){ return !!(v&&!v.dead&&v.kind==='villager'&&player&&v.team===player.team&&RE_ROLES.includes(v.role)&&home&&!v.capOf); }
 function reassignJobs(v){ const taken=r=>ents.some(e=>e!==v&&!e.dead&&e.kind==='villager'&&e.team===player.team&&e.role===r)||(home.houses||[]).some(h=>h.role===r&&h!==(v.homeHouse||v.house));
@@ -27856,21 +27866,21 @@ function chestItemFix(c){ if(!c||!Array.isArray(c.items)) return 0; let n=0;
 // the shore, foxes and badgers come out at night. Swimmers cannot be tamed.
 const RABBIT_M=I.RABBIT_MEAT, BIRD_M=I.BIRD_MEAT;
 const A50={
-  sparrow:  { name:'Sparrow', w:10,h:8, hp:6, dmg:0, speed:120, temper:'good', fly:true, meat:1, meatId:BIRD_M, where:'Grassy islands by day', home:'day', n:[2,3] },
-  robin:    { name:'Robin', w:10,h:8, hp:6, dmg:0, speed:115, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[I.BERRIES,0.3], where:'Grassy islands and forests by day', home:'day', n:[1,2] },
-  crow:     { name:'Crow', w:12,h:9, hp:10, dmg:0, speed:125, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[820,0.25], where:'Grassy islands, by day and at night', home:'any', n:[2,4] },
+  sparrow:  { name:'Sparrow', w:10,h:8, hp:6, dmg:0, speed:120, temper:'good', fly:true, meat:1, meatId:BIRD_M, where:'Open grassland by day', home:'day', n:[2,3] },
+  robin:    { name:'Robin', w:10,h:8, hp:6, dmg:0, speed:115, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[I.BERRIES,0.3], where:'Forests by day', home:'day', n:[1,2] },
+  crow:     { name:'Crow', w:12,h:9, hp:10, dmg:0, speed:125, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[820,0.25], where:'Grassland, forests, mountains and the dragon\'s island, by day and at night', home:'any', n:[2,4] },
   seagull:  { name:'Seagull', w:14,h:9, hp:10, dmg:0, speed:130, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[I.RAW_FISH,0.3], where:'Over the shore and the open sea', home:'shore', n:[2,3] },
-  parrot:   { name:'Parrot', w:12,h:10, hp:10, dmg:0, speed:120, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[I.BERRIES,0.4], where:'Warm islands and the edges of the desert by day', home:'warm', n:[1,2] },
+  parrot:   { name:'Parrot', w:12,h:10, hp:10, dmg:0, speed:120, temper:'good', fly:true, meat:1, meatId:BIRD_M, extra:[I.BERRIES,0.4], where:'The desert by day', home:'warm', n:[1,2] },
   ptarmigan:{ name:'Ptarmigan', w:12,h:10, hp:10, dmg:0, speed:110, temper:'good', fly:true, meat:1, meatId:BIRD_M, where:'Ice islands', home:'ice', n:[2,3] },
   duck:     { name:'Duck', w:14,h:11, hp:12, dmg:0, speed:60, temper:'good', meat:1, meatId:BIRD_M, extra:[I.EGG,0.4], where:'By the shore and on ponds; it swims', home:'shore', n:[2,3] },
   flamingo: { name:'Flamingo', w:12,h:22, hp:16, dmg:0, speed:55, temper:'good', meat:1, meatId:BIRD_M, extra:[818,0.4], where:'Shores of warm islands and the desert', home:'warm', n:[2,3] },
   puffin:   { name:'Puffin', w:10,h:12, hp:10, dmg:0, speed:55, temper:'good', meat:1, meatId:BIRD_M, extra:[I.RAW_FISH,0.5], where:'The shores of ice islands', home:'ice', n:[2,3] },
-  fox:      { name:'Fox', w:16,h:10, hp:30, dmg:6, speed:110, temper:'neutral', meat:0, extra:[I.BERRIES,0.25], where:'Grassy islands and forests at night', home:'night', n:[1,1] },
-  goat:     { name:'Goat', w:16,h:14, hp:40, dmg:8, speed:70, temper:'neutral', meat:1, meatId:482, where:'Hills and the edges of ice islands', home:'day', n:[1,3] },
+  fox:      { name:'Fox', w:16,h:10, hp:30, dmg:6, speed:110, temper:'neutral', meat:0, extra:[I.BERRIES,0.25], where:'Grassland and forests at night', home:'night', n:[1,1] },
+  goat:     { name:'Goat', w:16,h:14, hp:40, dmg:8, speed:70, temper:'neutral', meat:1, meatId:482, where:'Mountains and the dragon\'s island', home:'day', n:[1,3] },
   horse:    { name:'Horse', w:22,h:18, hp:70, dmg:0, speed:125, temper:'good', meat:0, where:'Open grassland by day', home:'day', n:[1,2] },
   squirrel: { name:'Squirrel', w:9,h:8, hp:8, dmg:0, speed:120, temper:'good', meat:1, meatId:RABBIT_M, extra:[I.BERRIES,0.3], where:'Forests by day', home:'day', n:[1,2] },
-  hedgehog: { name:'Hedgehog', w:9,h:7, hp:10, dmg:0, speed:40, temper:'good', meat:0, extra:[742,0.3], where:'Grassy islands, mostly at dusk and at night', home:'any', n:[1,1] },
-  badger:   { name:'Badger', w:16,h:9, hp:45, dmg:10, speed:70, temper:'neutral', meat:0, extra:[741,0.4], where:'Grassy islands at night', home:'night', n:[1,1] },
+  hedgehog: { name:'Hedgehog', w:9,h:7, hp:10, dmg:0, speed:40, temper:'good', meat:0, extra:[742,0.3], where:'Grassland and forests', home:'any', n:[1,1] },
+  badger:   { name:'Badger', w:16,h:9, hp:45, dmg:10, speed:70, temper:'neutral', meat:0, extra:[741,0.4], where:'Grassland, forests and mountains at night', home:'night', n:[1,1] },
   moose:    { name:'Moose', w:26,h:24, hp:150, dmg:22, speed:70, temper:'neutral', meat:2, meatId:I.VENISON, extra:[781,0.3], where:'Ice islands', home:'ice', n:[1,1] },
   lynx:     { name:'Lynx', w:16,h:12, hp:45, dmg:12, speed:115, temper:'mixed', meat:0, where:'Ice islands, mostly at night', home:'ice', n:[1,1] },
   camel:    { name:'Camel', w:22,h:22, hp:80, dmg:0, speed:60, temper:'good', meat:2, meatId:481, where:'The desert', home:'desert', n:[1,2] },
@@ -27968,13 +27978,9 @@ function a50Tick(dt){ if((a50T-=dt)>0) return; a50T=6; if(!player||player.dead||
     if(oceanCol&&oceanCol[c]){ const fl=typeof seaFloorAt==='function'?seaFloorAt(c):-1; if(fl<0) continue; const depth=fl-seaY; if(depth<4) continue;
       const k=depth>12&&Math.random()<0.15?'whale':Math.random()<0.15?'seagull':a50Pick(['dolphin','dolphin','turtle','manta','octopus']); const y=k==='seagull'?seaY-4:seaY+2+Math.floor(Math.random()*Math.max(1,depth-4-(k==='whale'?2:0)));
       if(k==='whale'&&depth<10) continue; a50Spawn(k,c,y,herd(k)); return; }
-    if(typeof inProtected==='function'&&inProtected(c)) continue; const cy=skyTop[c]; if(cy>seaY||tileAt(c,cy-1)===B.WATER) continue; const gid=tileAt(c,cy); if(BASE_IDS.has(gid)||bg[(cy-1)*W+c]) continue;
+    if(typeof inProtected==='function'&&inProtected(c)&&!(typeof lairGoatSpot==='function'&&lairGoatSpot(c))) continue; const cy=skyTop[c]; if(cy>seaY||tileAt(c,cy-1)===B.WATER) continue; const gid=tileAt(c,cy); if(BASE_IDS.has(gid)||bg[(cy-1)*W+c]) continue;
     const isl=islands.find(is=>c>=is.s&&c<=is.e); let shore=false; for(let d=1;d<=8&&!shore;d++) if((oceanCol[c-d])||(oceanCol[c+d])) shore=true;
-    let pool; const night=isNight();
-    if(isl&&isl.ice) pool=shore?['puffin','seal','walrus','ptarmigan']:['ptarmigan','moose','lynx','goat'];
-    else if(isl&&isl.desert) pool=shore?['flamingo','tortoise','crab']:['camel','lizard','tortoise','parrot','flamingo'];
-    else if(shore) pool=night?['crab','frog','seal'].filter(k=>k!=='seal'):['crab','duck','seagull','frog','turtle'].filter(k=>k!=='turtle');
-    else pool=night?['fox','badger','hedgehog','crow']:['sparrow','robin','crow','squirrel','hedgehog','horse','goat','duck','parrot'];
+    const night=isNight(), pool=a50PoolAt(c,isl,shore,night);   /* 0.9.201: by biome (98zxz_zz293_biome_animals.js) */
     const k=a50Pick(pool); if(!k) return; a50Spawn(k,c,cy,herd(k)); return; } }
 { const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') a50Tick(dt); }catch(e){ console.warn(e); } return r; }; }
 // ===== Kinard, 2026-11-13 ===== (the torch part of this batch went out on its own in 0.9.192-0.9.194: 98zxz_zz280_torch_arm.js)
@@ -28264,7 +28270,7 @@ const TORCH_COL={};
     try{ const f=o.frame||0; if(f>=6) return r; const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0;
       const rects=f===5?[[14,9,3,10]]:[[13+sw,14-ay,2,8]]; if(o.atk&&o.melee) rects.push([13,15,7,4]);   // 24_sprites.js arms(): jump pose, walk and stand, melee swing
       const [x0,y0,,h0]=rects[0], px=SCX-8+x0, py=SFY-30+y0; const pick=yy=>{ const d=g.getImageData(px,yy,1,1).data; return d[3]?`rgb(${d[0]},${d[1]},${d[2]})`:null; };
-      TORCH_COL[humanKey(o)]={ sleeve:pick(py+(f===5?4:1))||pick(py+2)||'#6b4a2a', hand:pick(f===5?py+1:py+h0-1)||'#f2c79b' };
+      TORCH_COL[humanKey(o)]={ sleeve:ARM_LAST.c||pick(py+(f===5?4:1))||pick(py+2)||'#6b4a2a', hand:ARM_LAST.h||pick(f===5?py+1:py+h0-1)||'#f2c79b' };
       for(const [x,y,w,h] of rects) g.clearRect(SCX-8+x,SFY-30+y,w,h); }catch(e){} return r; }; }
 function drawTorchFront(e){ const f=e.facing||1, run=Math.abs(e.vx||0), moving=e.grounded!==false&&run>8, sp=run>60?10:7;
   const sw=moving?Math.sin((e.anim||0)*sp*Math.PI/2):0;
@@ -28327,7 +28333,7 @@ function holdArmRect(o){ const f=o.frame||0, dx=o.look==='dragon'?-1:0; if(f===5
 { const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ if(o&&o.holdArm&&((o.frame||0)>=6||o.atk)) return _hf(g,Object.assign({},o,{holdArm:false,wpn:o.holdId}),...a);   /* a caller changed the pose afterward: the plain figure */
     const r=_hf(g,o,...a); if(!o||!o.holdArm) return r;
     try{ const [x,y,w,h]=holdArmRect(o), px=SCX-8+x, py=SFY-30+y; const pick=yy=>{ const d=g.getImageData(px+(w>2?1:0),yy,1,1).data; return d[3]?`rgb(${d[0]},${d[1]},${d[2]})`:null; };
-      HOLD_COL[humanKey(o)]={ sleeve:pick(py+(o.frame===5?4:1))||pick(py+2)||'#6b4a2a', hand:pick(o.frame===5?py+1:py+h-1)||'#f2c79b' };
+      HOLD_COL[humanKey(o)]={ sleeve:ARM_LAST.c||pick(py+(o.frame===5?4:1))||pick(py+2)||'#6b4a2a', hand:ARM_LAST.h||pick(o.frame===5?py+1:py+h-1)||'#f2c79b' };   /* 0.9.201: the figure's own arm colors (a pixel read off the picture hit the tunic on some walking frames, so the arm changed color as you walked) */
       g.clearRect(px,py,w,h); }catch(err){} return r; }; }
 function holdDraw(e){ if(!e||(e.kind!=='player'&&e.kind!=='human'&&e.kind!=='villager')||e.dead) return; const o=specOf(e); if(!o||!o.holdArm) return;
   const id=o.holdId, d=ITEMS[id]; if(!d) return; const f=e.facing||1, fr=o.frame||0, f13=fr===1||fr===3;
@@ -29228,6 +29234,120 @@ function amuletOwnerTick(){ if(amuletSeen===null){ amuletSeen=!!dragonSlain; ret
 amuletBack=function(){ if(!dragonSlain||!player||!home||isGuest()) return false; if(!home.amuletOwner) home.amuletOwner=amuletOwnerGuess();
   if(home.amuletOwner!==heroNowId()||amuletAround()) return false; obtain(I.AMULET,1,true); invDirty=true;
   setTimeout(()=>{ try{ toast('The Dragon Amulet finds its way back to you: Vorthax is slain and it is yours',6); }catch(e){} },1800); return true; };
+// ===== Beta 0.9.201: one dagger in each hand; the arm keeps its color while you walk (Kinard, 2026-11-18) =====
+// 1. "Fix the daggers so that there is one held in each hand for the player and not two at once." Since 0.9.196 the thing in
+//    your hand is drawn from its bag picture, and the picture of a pair of daggers is two crossed daggers, so the front hand
+//    held both and the back hand none. A pair of daggers is now drawn as one dagger in the front hand and one in the back hand,
+//    standing, walking, jumping and while striking (the strike is one blade from the striking arm). Soldiers the same.
+// 2. "When the player is moving the animation for his arm remains the same color." The arm drawn over the figure took its
+//    sleeve color from one pixel of the figure's picture; on some walking frames that pixel was the tunic, so the arm went
+//    brown, green, light brown as you walked. 24_sprites.js now hands over the colors it painted the arms with (ARM_LAST).
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ ARM_LAST.c=null; ARM_LAST.h=null; return _hf(g,o,...a); }; }   /* a figure with no arms() call leaves them empty: the pixel read stays as the fallback */
+
+const isDaggerId=id=>!!(ITEMS[id]&&ITEMS[id].kind==='weapon'&&ITEMS[id].shape==='dagger');
+function daggerMetal(id){ const d=ITEMS[id]; return METAL[(d&&d.m)||'iron']||METAL.iron; }
+// one dagger with its grip at (0,0), blade up: drawn in a rotated frame
+function daggerBlade(m,len){ const r=(x,y,w,h,c)=>{ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); }; r(-1,-len-1,2,len,m[0]); r(-1,-len-1,1,len,m[1]); r(-1,-len-2,1,1,m[0]); r(-2,-1,4,1,'#8a5c2d'); r(-1,0,2,2,'#5b3819'); }
+// the back hand of the figure in the world (24_sprites.js arms(): the back arm hangs at the rear edge and swings against the front one)
+function daggerBackHand(e,o){ const f=e.facing||1, fr=o.frame||0, dx=o.look==='dragon'?1:0, sw=fr===1?2:fr===3?-2:0, ay=fr===1||fr===3?-1:0;
+  const cx=cxOf(e), top=Math.round(e.y+e.h)-30; const [rx,ry]=fr===5?[0,10]:[2-sw,21+ay]; return [Math.round(cx+f*(rx+dx-8)),Math.round(top+ry)]; }
+function daggerHeldId(e){ if(e.wpnOverride) return e.wpnOverride; if(e.kind==='player'){ const it=e===player?heldItem():null; return it?it.id:0; } return e.weapon||0; }
+function daggerPairDraw(e){ if(!e||e.dead||(e.kind!=='player'&&e.kind!=='human')) return; const o=specOf(e); if(!o) return; const swing=!!e._swingArm, id=o.holdId||o.wpn||(swing?daggerHeldId(e):0); if(!isDaggerId(id)) return;
+  if(!(o.holdArm||o.atk||swing)||(o.frame||0)>=6||e.riding||e.big||!HOLD_LOOKS.has(o.look)) return;   /* other poses keep the figure's own drawing, which has a dagger at each hand */
+  const m=daggerMetal(id), f=e.facing||1, [bx,by]=daggerBackHand(e,o);
+  ctx.save(); try{ ctx.translate(bx,by); if(f<0) ctx.scale(-1,1); ctx.rotate((o.frame||0)===5?0.2:-0.25); daggerBlade(m,6); } finally{ ctx.restore(); } }
+// the front hand: holdDraw (98zxz_zz282_held_targets.js) draws the bag picture; for a pair of daggers it draws one dagger instead
+{ const _it=iconTex; let DAG_ONE=null;
+  holdDraw=(function(_hd){ return function(e,...a){ let o=null; try{ o=specOf(e); }catch(err){} const id=o&&o.holdArm?o.holdId:0;
+      if(!isDaggerId(id)) return _hd(e,...a);
+      DAG_ONE=id; try{ return _hd(e,...a); } finally{ DAG_ONE=null; } }; })(holdDraw);
+  const ONE={};   /* id -> a 16x16 picture of one dagger, laid out like the other tools' pictures (grip low left, point up right) */
+  function oneDaggerTex(id){ if(ONE[id]) return ONE[id]; const c=document.createElement('canvas'); c.width=16; c.height=16; const g=c.getContext('2d'), m=daggerMetal(id);
+    const px=(x,y,col)=>{ g.fillStyle=col; g.fillRect(x,y,1,1); };
+    for(let i=0;i<8;i++){ px(6+i,11-i,m[1]); px(7+i,11-i,m[0]); } px(14,3,m[0]); px(5,11,'#8a5c2d'); px(6,12,'#8a5c2d'); px(7,13,'#8a5c2d'); px(5,12,'#5b3819'); px(4,13,'#5b3819'); px(3,14,'#5b3819'); return ONE[id]=c; }
+  iconTex=function(id,...a){ if(DAG_ONE&&id===DAG_ONE) return oneDaggerTex(id); return _it(id,...a); }; }
+{ const _dh=drawHealth; drawHealth=function(e,...a){ try{ daggerPairDraw(e); }catch(err){} return _dh(e,...a); }; }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// 3. an item's name shows once (Kinard: "it only says the items that are being hovered over once as it currently says it twice")
+// ---------------------------------------------------------------------------------------------------------------------------
+// A bag or chest slot has its own pop-up (#itemTip: the name, or more with Settings > item taps) and since 0.9.185 the small
+// name label (#slotName) too, so the name was on screen twice. While the pop-up is showing, the small label stays away.
+function nameOnce(){ const lab=$('#slotName'), tip=$('#itemTip'); if(!lab||!tip||lab.hidden||tip.hidden) return; if(!tip.getClientRects().length||!tip.textContent.trim()) return; lab.hidden=true; }
+{ const lab=$('#slotName'), tip=$('#itemTip'); const run=()=>{ try{ nameOnce(); }catch(e){} };
+  if(lab) new MutationObserver(run).observe(lab,{attributes:true,attributeFilter:['hidden'],childList:true,characterData:true,subtree:true});
+  if(tip) new MutationObserver(run).observe(tip,{attributes:true,attributeFilter:['hidden','class','style'],childList:true}); }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// 4. arrow slits take the look of the wall they are in (Kinard: "make the window slits the same color ... so that they are
+//    more uniform and create more choices as needed")
+// ---------------------------------------------------------------------------------------------------------------------------
+// A slit was its own picture (plank brown, stone grey, dark slate, iron) whatever wall it sat in, so a wooden slit in a house's
+// timber posts was a brown block in a mauve column. Every slit is now drawn as the wall block of its own column (the nearest
+// wall block above or below it) with the opening cut in, so it matches any wall, the ones built later included. The blocks in
+// the world and what they do (cover, defense) are unchanged; a slit with no wall above or below keeps its own picture.
+const SLIT_SKIN={};
+function slitHost(x,y){ for(let d=1;d<=6;d++) for(const yy of [y-d,y+d]){ if(yy<0||yy>=H) continue; const t=world[yy*W+x]; if(!t||SLITS.includes(t)||DOOR_IDS.has(t)) continue; const b=BLOCKS[t]; if(b&&b.solid&&!b.platform&&TEX[t]) return t; } return 0; }
+function slitSkin(host){ if(SLIT_SKIN[host]) return SLIT_SKIN[host]; const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[host],0,0);
+  const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  r(5,0,6,16,'rgba(0,0,0,0.45)'); r(6,0,4,16,'#16110c'); r(7,0,2,16,'#221c28'); r(5,0,1,16,'rgba(255,255,255,0.16)'); r(10,0,1,16,'rgba(0,0,0,0.3)');   /* the opening runs the whole height, so a slit two blocks tall is one tall window */
+  return SLIT_SKIN[host]=c; }
+try{ for(const id of SLITS) if(id) ORE_LOOK.add(id); }catch(e){ console.warn(e); }
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ try{ if(SLITS.includes(id)){ const h=slitHost(x,y); if(h){ const up=y>0&&SLITS.includes(world[(y-1)*W+x]), dn=y<H-1&&SLITS.includes(world[(y+1)*W+x]); const key=h*4+(up?1:0)+(dn?2:0);
+          if(!SLIT_SKIN['e'+key]){ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(slitSkin(h),0,0); g.fillStyle='rgba(0,0,0,0.45)'; if(!up){ g.drawImage(TEX[h],5,0,6,2,5,0,6,2); g.fillRect(5,2,6,1); } if(!dn){ g.drawImage(TEX[h],5,14,6,2,5,14,6,2); g.fillRect(5,13,6,1); } SLIT_SKIN['e'+key]=c; }   /* the ends of the window are closed with the wall */
+          return SLIT_SKIN['e'+key]; } } }catch(e){} return _tt(x,y,id,...a); }; }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// 5. walking through a doorway (Kinard: "the frame on the top ... make it appear as if the player is entering a normal doorway")
+// ---------------------------------------------------------------------------------------------------------------------------
+// A figure is a little taller than it looks: a hood's ears, a helmet's plume or a hat reach past the two blocks of a doorway,
+// and were drawn over the wall above the door. The wall block over an open door is drawn again in front of everyone, and the
+// frame's top bar (98zxr_beta083b.js draws it right after) lies on it, so whoever stands in a doorway is under the lintel.
+function drawDoorLintels(){ if(!world||typeof DOOR_SET_OF==='undefined') return; const x0=Math.max(0,Math.floor(camX/T)), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)), y0=Math.max(2,Math.floor(camY/T)), y1=Math.min(H-1,Math.ceil((camY+viewH)/T)+2);
+  for(let y=y0;y<=y1;y++){ const row=y*W; for(let x=x0;x<=x1;x++){ const id=world[row+x], ds=DOOR_SET_OF[id]; if(!ds||id!==ds.open||world[row-W+x]!==ds.openTop) continue;
+      const up=world[row-2*W+x], b=BLOCKS[up]; if(!up||!b||!b.solid||b.platform||shape[row-2*W+x]||DOOR_SET_OF[up]) continue; let t=null; try{ t=ORE_LOOK.has(up)?tileTex(x,y-2,up):TEX[up]; }catch(e){ t=TEX[up]; }
+      if(t) ctx.drawImage(t,x*T,(y-2)*T); } } }
+let lintelFrame=-1;
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ if(lintelFrame!==frameN){ lintelFrame=frameN; drawDoorLintels(); } }catch(e){} return _dl(...a); }; }
+// ===== Beta 0.9.201: animals belong to their biome (Kinard, 2026-11-18) =====
+// "Make it so that there are animals specific to certain biomes such as the goats being specific biomes such as in the
+// mountains or the dragons area." Every spot of land has a biome, and each kind of animal appears only in its own:
+//   mountains (ground 20 blocks or more above the sea) and the dragon's island: goats and crows; bears and wolves in the mountains;
+//   forests (the forest island and forest columns): deer, squirrels, robins, boars, bears, hedgehogs; wolves, foxes and badgers at night;
+//   open grassland: cows, sheep, horses, rabbits, pigs, sparrows, ducks; rabbits, wolves, boars, foxes and badgers at night;
+//   shores, ice islands and the desert as before (goats no longer on the ice, parrots only in the desert).
+// Animals already in the world, tamed or penned, stay as they are. Sea, sky and magma creatures are unchanged.
+const MOUNTAIN_H=20;
+function landBiome(c){ c=clamp(c|0,0,W-1); const isl=islands.find(is=>c>=is.s&&c<=is.e); if(!isl) return 'sea';
+  if(isl.ice) return 'ice'; if(isl.desert) return 'desert'; if(isl.kind==='lair') return 'lair';
+  if(seaY-surf[c]>=MOUNTAIN_H) return 'mountain';   /* surf: the land itself, not a tree top or a roof */
+  if(isl.forest||(forestCol&&forestCol[c])) return 'forest'; return 'plains'; }
+const pickW=L=>{ let t=0; for(const [,w] of L) t+=w; let r=Math.random()*t; for(const [k,w] of L){ if((r-=w)<0) return k; } return L[L.length-1][0]; };
+const BASE_ANIMALS={
+  ice:      { day:[['penguin',70],['polarbear',30]], night:[['penguin',70],['polarbear',30]] },
+  plains:   { day:[['cow',22],['sheep',22],['bird',22],['rabbit',16],['boar',12],['deer',6]], night:[['rabbit',35],['wolf',30],['boar',25],['bear',10]] },
+  forest:   { day:[['deer',30],['bird',20],['boar',18],['rabbit',12],['bear',12],['wolf',8]], night:[['wolf',45],['bear',30],['boar',15],['rabbit',10]] },
+  mountain: { day:[['bear',35],['bird',30],['wolf',20],['deer',15]], night:[['wolf',50],['bear',50]] },
+  lair:     { day:[['bird',60],['wolf',20],['bear',20]], night:[['wolf',50],['bear',50]] },
+  desert:   { day:[['rabbit',50],['bird',50]], night:[['rabbit',100]] } };
+animalTypeAt=function(tx,isl){ const b=BASE_ANIMALS[landBiome(tx)]||BASE_ANIMALS.plains; return pickW(isNight()?b.night:b.day); };
+const A50_ANIMALS={
+  mountain: { day:['goat','goat','goat','crow'], night:['goat','crow','badger'] },
+  lair:     { day:['goat','goat','goat','crow'], night:['goat','crow'] },
+  forest:   { day:['squirrel','squirrel','robin','robin','hedgehog'], night:['fox','badger','hedgehog','crow'] },
+  plains:   { day:['sparrow','sparrow','crow','horse','horse','duck','hedgehog'], night:['fox','badger','hedgehog','crow'] } };
+function a50PoolAt(c,isl,shore,night){ const b=landBiome(c);
+  if(b==='ice') return shore?['puffin','seal','walrus','ptarmigan']:['ptarmigan','moose','lynx'];
+  if(b==='desert') return shore?['flamingo','tortoise','crab']:['camel','lizard','tortoise','parrot','flamingo'];
+  if(b==='lair'||b==='mountain') return night?A50_ANIMALS[b].night:A50_ANIMALS[b].day;
+  if(shore) return night?['crab','frog']:['crab','duck','seagull','frog'];
+  const p=A50_ANIMALS[b]||A50_ANIMALS.plains; return night?p.night:p.day; }
+// the dragon's island is a protected place (nothing else appears there); goats and crows live on its slopes, away from the cave mouth
+function lairGoatSpot(c){ const isl=islands.find(is=>c>=is.s&&c<=is.e); if(!isl||isl.kind!=='lair'||!lair) return false; return !(lair.x0>=0)||Math.abs(c-lair.x0)>12; }
+// where each of the older animals lives, for the wiki and anything else that reads it
+for(const [k,w] of Object.entries({ cow:'Open grassland by day', sheep:'Open grassland by day', pig:'Open grassland by day', rabbit:'Grassland and forests; the desert too', bird:'Everywhere on land by day',
+    deer:'Forests, and a few on grassland and in the mountains', boar:'Forests and grassland', bear:'Forests and mountains', wolf:'Forests and mountains, and grassland at night', penguin:'Ice islands', polarbear:'Ice islands' }))
+  if(ANIMALS[k]&&!ANIMALS[k].where) ANIMALS[k].where=w;
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
