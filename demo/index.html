@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795061011"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795067480"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.202</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.203</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.203</h3>
+    <p><b>Daggers:</b> both daggers strike when you attack. On a slash the two blades sweep across each other, and on a stab the second follows right behind the first. Soldiers with daggers do the same.</p>
     <h3>New in Beta 0.9.202</h3>
     <p><b>Pickaxes:</b> no message names or hints at the pickaxe a block needs. When a block is too hard for the pickaxe you hold, the aim box turns red and the block stays.</p>
     <h3>New in Beta 0.9.201</h3>
@@ -522,14 +524,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>Placing with a controller:</b> holding a torch or any block, a box shows where the right stick points: green where it fits, red where it does not. It stays where you leave the stick, and R2 puts the torch or block in the box.</p>
     <h3>New in Beta 0.9.194</h3>
     <p><b>The torch</b> is held close at your side in your front hand, over your body, with two arms in every pose, jumping too.</p>
-    <h3>New in Beta 0.9.191</h3>
-    <p><b>Joining a friend on the website or the app:</b> when a router or firewall blocks a direct connection between your computers, the game now goes through a relay server instead, and waits longer for it. If the host is found but cannot be reached, the message says so and what to try.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.202</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.203</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -799,7 +799,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.202</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.203</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -824,7 +824,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.202', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.203', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -20610,7 +20610,7 @@ drawSwing=function(e,d){
     ctx.translate(reachOut,0);
     if(d.shape==='spear'){ const L=Math.max(10,d.reach-SWING_ARM); r(-6,-1,L+6,2,'#7a4e27'); r(L,-3,6,6,m[0]); r(L+6,-1,3,2,m[0]); r(L,-3,6,1,m[1]); }
     else if(d.shape==='mace'){ r(-2,-1,13,3,'#7a4e27'); r(11,-5,9,10,m[0]); r(11,-5,9,2,m[1]); r(14,-8,3,3,m[0]); r(14,5,3,3,m[0]); r(20,-1,3,3,m[0]); }
-    else if(d.shape==='dagger'){ const L=Math.max(5,d.reach-6-SWING_ARM+4); r(-1,-1,3,3,'#5b3819'); r(2,-3,1,7,'#8a5c2d'); r(3,-1,L,3,m[0]); r(3,-1,L,1,m[1]); r(3+L,0,2,1,m[0]); }   /* 0.9.201: one dagger in the striking hand; the other stays in the back hand (98zxz_zz292_daggers_arm.js) */
+    else if(d.shape==='dagger'){ const L=Math.max(5,d.reach-6-SWING_ARM+4); r(-1,-1,3,3,'#5b3819'); r(2,-3,1,7,'#8a5c2d'); r(3,-1,L,3,m[0]); r(3,-1,L,1,m[1]); r(3+L,0,2,1,m[0]); }   /* 0.9.201: one dagger in the striking hand; 0.9.203: the back arm swings the other (98zxz_zz294_dagger_both.js) */
     else { const L=Math.max(8,d.reach+2-SWING_ARM); r(-2,-1,4,3,'#5b3819'); r(2,-5,2,11,'#8a5c2d'); r(2,-5,2,1,'#ffcf3a'); r(4,-2,L,4,m[0]); r(4,-2,L,1,m[1]); r(4,1,L,1,m[2]); r(4+L,-1,3,2,m[0]); r(7+L,0,1,1,m[0]); }
   } finally{ ctx.restore(); } };
 // drawEntity marks a swinging figure as attacking (o.atk, o.melee), which draws its forearm straight out; the swing above
@@ -29239,7 +29239,7 @@ amuletBack=function(){ if(!dragonSlain||!player||!home||isGuest()) return false;
 // 1. "Fix the daggers so that there is one held in each hand for the player and not two at once." Since 0.9.196 the thing in
 //    your hand is drawn from its bag picture, and the picture of a pair of daggers is two crossed daggers, so the front hand
 //    held both and the back hand none. A pair of daggers is now drawn as one dagger in the front hand and one in the back hand,
-//    standing, walking, jumping and while striking (the strike is one blade from the striking arm). Soldiers the same.
+//    standing, walking and jumping. Soldiers the same. (0.9.203: on a strike both arms swing, 98zxz_zz294_dagger_both.js.)
 // 2. "When the player is moving the animation for his arm remains the same color." The arm drawn over the figure took its
 //    sleeve color from one pixel of the figure's picture; on some walking frames that pixel was the tunic, so the arm went
 //    brown, green, light brown as you walked. 24_sprites.js now hands over the colors it painted the arms with (ARM_LAST).
@@ -29254,7 +29254,8 @@ function daggerBackHand(e,o){ const f=e.facing||1, fr=o.frame||0, dx=o.look==='d
   const cx=cxOf(e), top=Math.round(e.y+e.h)-30; const [rx,ry]=fr===5?[0,10]:[2-sw,21+ay]; return [Math.round(cx+f*(rx+dx-8)),Math.round(top+ry)]; }
 function daggerHeldId(e){ if(e.wpnOverride) return e.wpnOverride; if(e.kind==='player'){ const it=e===player?heldItem():null; return it?it.id:0; } return e.weapon||0; }
 function daggerPairDraw(e){ if(!e||e.dead||(e.kind!=='player'&&e.kind!=='human')) return; const o=specOf(e); if(!o) return; const swing=!!e._swingArm, id=o.holdId||o.wpn||(swing?daggerHeldId(e):0); if(!isDaggerId(id)) return;
-  if(!(o.holdArm||o.atk||swing)||(o.frame||0)>=6||e.riding||e.big||!HOLD_LOOKS.has(o.look)) return;   /* other poses keep the figure's own drawing, which has a dagger at each hand */
+  if(swing) return;   /* 0.9.203: during a strike the back arm swings its own dagger (98zxz_zz294_dagger_both.js) */
+  if(!(o.holdArm||o.atk)||(o.frame||0)>=6||e.riding||e.big||!HOLD_LOOKS.has(o.look)) return;   /* other poses keep the figure's own drawing, which has a dagger at each hand */
   const m=daggerMetal(id), f=e.facing||1, [bx,by]=daggerBackHand(e,o);
   ctx.save(); try{ ctx.translate(bx,by); if(f<0) ctx.scale(-1,1); ctx.rotate((o.frame||0)===5?0.2:-0.25); daggerBlade(m,6); } finally{ ctx.restore(); } }
 // the front hand: holdDraw (98zxz_zz282_held_targets.js) draws the bag picture; for a pair of daggers it draws one dagger instead
@@ -29349,6 +29350,33 @@ function lairGoatSpot(c){ const isl=islands.find(is=>c>=is.s&&c<=is.e); if(!isl|
 for(const [k,w] of Object.entries({ cow:'Open grassland by day', sheep:'Open grassland by day', pig:'Open grassland by day', rabbit:'Grassland and forests; the desert too', bird:'Everywhere on land by day',
     deer:'Forests, and a few on grassland and in the mountains', boar:'Forests and grassland', bear:'Forests and mountains', wolf:'Forests and mountains, and grassland at night', penguin:'Ice islands', polarbear:'Ice islands' }))
   if(ANIMALS[k]&&!ANIMALS[k].where) ANIMALS[k].where=w;
+// ===== Beta 0.9.203: both daggers strike (Kinard, 2026-11-19: "Make it so that both daggers swing when attacking still") =====
+// 0.9.201 put one dagger in each hand and drew a strike as one blade from the front arm while the other dagger hung still in
+// the back hand. Now the back arm strikes too: on a slash it sweeps the other way, so the two blades cross in front of you; on
+// a stab it follows a moment behind the first. The far arm comes out from behind the body a little darker, and the figure's
+// hanging back arm is taken out of the picture for the length of the strike. Looks only: reach, damage and timing are the same.
+function daggerSwinging(e){ if(!e||!e._swingArm) return false; try{ const md=meleeActive(e); return !!(md&&md.shape==='dagger'); }catch(err){ return false; } }
+{ const _so=specOf; specOf=function(e,...a){ const o=_so(e,...a); try{ if(daggerSwinging(e)) o.dag2=true; }catch(err){} return o; }; }
+{ const _hk=humanKey; humanKey=function(o,...a){ return _hk(o,...a)+(o&&o.dag2?'|d2':''); }; }
+// the back arm of the cached figure (24_sprites.js arms(): two wide at the rear edge, eight tall with the hand)
+function daggerBackArmRect(o){ const f=o.frame||0, dx=o.look==='dragon'?1:0; if(f===5) return [-1+dx,9,2,8]; const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0; return [1-sw+dx,14+ay,2,8]; }
+{ const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const r=_hf(g,o,...a); if(!o||!o.dag2||(o.frame||0)>=6) return r;
+    try{ const [x,y,w,h]=daggerBackArmRect(o); g.clearRect(SCX-8+x,SFY-30+y,w,h); }catch(e){} return r; }; }
+const DAG2_LAG=0.25, DAG2_DARK='rgba(0,0,0,0.24)';
+function daggerBackSwing(e,d){ const m=METAL[d.m||'iron']||METAL.iron, dir=e.facing||1; const k=clamp(1-Math.max(0,e.atkT)/(e.atkDur||0.3),0,1);
+  const sx=Math.round(cxOf(e))+dir*2, sy=Math.round(e.y)+13;   // the far shoulder: just inside the near one and a pixel lower
+  let ang=e.atkAng, reachOut=SWING_ARM;
+  if(e.atkMode==='stab'){ const k2=clamp((k-DAG2_LAG)/(1-DAG2_LAG),0,1); ang=e.atkAng+(Math.cos(e.atkAng)>=0?1:-1)*0.2; reachOut=SWING_ARM+Math.sin(k2*Math.PI)*6-3; }
+  else { const a=swingAngle(e); ang=2*e.atkAng-a.cur;   /* the mirror of the front arm's sweep */
+    const L=d.reach+SWING_ARM-6, a0=2*e.atkAng-a.start, lo=Math.min(a0,ang), hi=Math.max(a0,ang);
+    ctx.lineCap='butt'; ctx.strokeStyle='rgba(255,255,255,0.28)'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(sx,sy,L,Math.max(lo,ang-(ang>a0?1.1:0)),Math.min(hi,ang+(ang<a0?1.1:0))); ctx.stroke(); }
+  let col={sleeve:'#6b4a2a',hand:'#f2c79b'}; try{ const key=humanKey(Object.assign(specOf(e),{work:true,wpn:0,atk:false,melee:false})); if(WORK_COL[key]) col=WORK_COL[key]; }catch(err){}
+  const r=(x,y,w,h,c)=>{ ctx.fillStyle=c; ctx.fillRect(x,y,w,h); ctx.fillStyle=DAG2_DARK; ctx.fillRect(x,y,w,h); };
+  ctx.save(); try{ ctx.translate(sx,sy); ctx.rotate(ang);
+    r(0,-1,reachOut,3,col.sleeve); r(reachOut-1,-1,3,3,col.hand); ctx.translate(reachOut,0);
+    const L=Math.max(5,d.reach-6-SWING_ARM+4); r(-1,-1,3,3,'#5b3819'); r(2,-3,1,7,'#8a5c2d'); r(3,-1,L,3,m[0]); r(3,-1,L,1,m[1]); r(3+L,0,2,1,m[0]);
+  } finally{ ctx.restore(); } }
+{ const _ds=drawSwing; drawSwing=function(e,d,...a){ try{ if(d&&d.shape==='dagger') daggerBackSwing(e,d); }catch(err){ console.warn(err); } return _ds(e,d,...a); }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
