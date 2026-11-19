@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1794986007"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795061011"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.201</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.202</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,8 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.202</h3>
+    <p><b>Pickaxes:</b> no message names or hints at the pickaxe a block needs. When a block is too hard for the pickaxe you hold, the aim box turns red and the block stays.</p>
     <h3>New in Beta 0.9.201</h3>
     <p><b>Daggers:</b> a pair of daggers is held one in each hand, and a strike is one blade while the other hand keeps its own. The arm that holds your item keeps one color while you walk.</p>
     <p><b>Animals by biome:</b> goats live only in the mountains and on the dragon's island. Deer, squirrels, robins and boars live in forests; cows, sheep, horses, pigs and sparrows on open grassland; bears and wolves in forests and mountains. Ice, desert, shore and sea animals are where they were.</p>
@@ -522,14 +524,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>The torch</b> is held close at your side in your front hand, over your body, with two arms in every pose, jumping too.</p>
     <h3>New in Beta 0.9.191</h3>
     <p><b>Joining a friend on the website or the app:</b> when a router or firewall blocks a direct connection between your computers, the game now goes through a relay server instead, and waits longer for it. If the host is found but cannot be reached, the message says so and what to try.</p>
-    <h3>New in Beta 0.9.190</h3>
-    <p><b>Controller and multiplayer fixes:</b> the grappling hook goes where the right stick aims (R3 throws it). When no host is found, the message says which copy of the game you are on: a game hosted on the claude.ai link and one on the play website or the app cannot see each other, and on claude.ai everyone uses the same link. To get back into a world you hosted, use Host a saved world; Join needs someone hosting right now.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.201</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.202</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -799,7 +799,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.201</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.202</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -824,7 +824,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.201', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.202', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -10746,7 +10746,7 @@ defB(B.IRON_BEAM,{name:'Iron beam',hard:2.2,minPow:2,col:'#5a6068'});
 defB(B.IRON_ROOF,{name:'Iron roof',hard:2,minPow:2,col:'#4e5a6e'});
 defB(B.DEEP_STONE,{name:'Deep stone brick',hard:1.8,minPow:1,col:'#3e4252'});
 defB(B.DEEP_TRIM,{name:'Deep stone trim',hard:1.8,minPow:1,col:'#2c2f3c'});
-for(const [id,desc] of [[B.THATCH,'Bundled straw for roofs. It catches fire easily'],[B.IRON_PLATE,'Riveted iron for walls. Fire cannot burn it; it takes an iron pickaxe to break'],[B.IRON_BEAM,'A dark iron beam for frames and trim'],[B.IRON_ROOF,'Iron roofing that shrugs off fire and storms'],[B.DEEP_STONE,'Dark, heavy bricks cut from the deep stone; a Town castle is built of them'],[B.DEEP_TRIM,'Dark dressed stone for corners and beams']])
+for(const [id,desc] of [[B.THATCH,'Bundled straw for roofs. It catches fire easily'],[B.IRON_PLATE,'Riveted iron for walls. Fire cannot burn it'],[B.IRON_BEAM,'A dark iron beam for frames and trim'],[B.IRON_ROOF,'Iron roofing that shrugs off fire and storms'],[B.DEEP_STONE,'Dark, heavy bricks cut from the deep stone; a Town castle is built of them'],[B.DEEP_TRIM,'Dark dressed stone for corners and beams']])
   ITEMS[id]={name:BLOCKS[id].name,kind:'block',desc};
 RECIPES.push({ out:B.THATCH, n:4, need:[[I.WHEAT,3]], st:B.WORKBENCH, cat:'build' },
   { out:B.IRON_PLATE, n:4, need:[[I.IRON_BAR,1],[B.STONE_BLOCK,2]], st:B.WORKBENCH, cat:'build' },
@@ -11166,7 +11166,7 @@ function porch3(hx,gy){ if(tileAt(hx+9,gy-10)!==B.PLATFORM) return; const set=(x
 // skinBuilding in 98_building_tiers.js); the castle is stone from the start.
 const testFree=()=>typeof curSlot!=='undefined'&&curSlot===4;   // the test world: buildings and upgrades cost nothing
 const METAL_DOORS={};
-for(const [k,nm,col,hard,minPow,desc] of [['stone','Stone door','#8e8e88',1.2,0,'A heavy door of stone slabs. It cannot burn'],['iron','Iron door','#6f7d90',2.0,2,'A riveted iron door. It cannot burn, and it takes an iron pickaxe to break']]){
+for(const [k,nm,col,hard,minPow,desc] of [['stone','Stone door','#8e8e88',1.2,0,'A heavy door of stone slabs. It cannot burn'],['iron','Iron door','#6f7d90',2.0,2,'A riveted iron door. It cannot burn']]){
   const ids=[freeIdFrom(),freeIdFrom(),freeIdFrom(),freeIdFrom()], base=ids[0];
   defB(base,{name:nm,hard,minPow,col}); defB(ids[1],{name:nm,hard,minPow,drop:base,col,place:false});
   defB(ids[2],{name:nm,solid:false,hard,minPow,drop:base,col,place:false}); defB(ids[3],{name:nm,solid:false,hard,minPow,drop:base,col,place:false});
@@ -12388,7 +12388,7 @@ function roundOldPools(){ const seen=new Uint8Array(W*H); let n=0; const R=mulbe
 // it once: it never refills, and it is marked opened the first time someone looks inside.
 const SHALE_BG=27;   // 22-26 are the cave biome walls (98k_biomes_roofs.js)
 B.SHALE=freeIdFrom(); defB(B.SHALE,{name:'Shale',hard:1,col:'#5e5a68'});
-ITEMS[B.SHALE]={name:'Shale',kind:'block',desc:'Layered purple-gray rock, the middle of the three rock layers: below the stone near the surface and above the deepstone. Any pickaxe mines it.'};
+ITEMS[B.SHALE]={name:'Shale',kind:'block',desc:'Layered purple-gray rock, the middle of the three rock layers: below the stone near the surface and above the deepstone.'};
 { const tex=draw=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); draw((x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); }); return c; };
   TEX[B.SHALE]=tex(r=>{ r(0,0,16,16,'#5e5a68'); for(const [y,x0,x1] of [[2,0,11],[3,13,16],[6,3,16],[9,0,7],[10,9,16],[13,0,16]]) r(x0,y,x1-x0,1,'#4a4654'); for(const [x,y] of [[1,4],[6,0],[12,7],[4,11],[14,14],[9,15],[7,5]]) r(x,y,1,1,'#6e6a78'); for(const [x,y] of [[8,3],[2,8],[13,11]]) r(x,y,2,1,'#3e3a48'); });
   BGTEX[SHALE_BG]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); g.drawImage(TEX[B.SHALE],0,0); g.globalCompositeOperation='source-atop'; g.fillStyle='rgba(8,6,14,0.5)'; g.fillRect(0,0,16,16); return c; })(); }
@@ -17069,6 +17069,8 @@ const oreSkinCache=new Map(); let oreSkinWorld=null;
 // a label over the block while you aim a weaker pickaxe at it (the aim box turns red), and a message when you swing at it.
 // Every pickaxe's text starts with its tier and what it opens up. Bedrock-hard blocks say they can't be mined.
 // 0.9.196: all of that is gone again (Kinard): no tier in any text, no label, and the message only says the block is too hard.
+// 0.9.202 (Kinard: "Remove the words that say 'requires this level of pickaxe' for different blocks"): that message is gone
+// too. The red aim box is the whole signal; the wiki no longer lists which pickaxe mines what either.
 const PICK_TIER={};   // tier -> the pickaxe that first reaches it (not the wooden or silver one at tier 1)
 for(const [id,d] of Object.entries(ITEMS)) if(d&&d.kind==='pick'&&d.pow){ const n=d.pow, cur=PICK_TIER[n]; const plain=+id!==472&&!/silver/i.test(d.name); if(!cur||(plain&&!cur.plain)) PICK_TIER[n]={id:+id,name:d.name,plain}; }
 function pickTierName(n){ const t=PICK_TIER[n]; if(t) return t.name; const up=Object.keys(PICK_TIER).map(Number).filter(k=>k>=n).sort((a,b)=>a-b)[0]; return up?PICK_TIER[up].name:'stronger pickaxe'; }
@@ -17082,8 +17084,7 @@ function heldPickPow(){ const it=player&&heldItem(); const d=it&&ITEMS[it.id]; r
 // a red aim box over a block the held pickaxe can't break
 let pickTierMsgT=0, pickTierMsgId=0;
 { const _up=updatePlayer; updatePlayer=function(...a){ const r=_up(...a); try{ const p=player; if(p&&p.aimTile){ p.aimTile.tier=0; const pw=heldPickPow(); if(pw>=0){ const id=tileAt(p.aimTile.x,p.aimTile.y), b=id&&BLOCKS[id];
-      if(b&&rules.mode!=='creative'&&(b.minPow||0)>pw){ p.aimTile.ok=false;   /* 0.9.196: no tier label (aimTile.tier stays 0) */
-        if(input.use){ const now=performance.now(); if(now>pickTierMsgT||pickTierMsgId!==id){ pickTierMsgT=now+2500; pickTierMsgId=id; toast('This is too hard for your pickaxe',2.5); } } }
+      if(b&&rules.mode!=='creative'&&(b.minPow||0)>pw){ p.aimTile.ok=false; }   /* 0.9.196: no tier label (aimTile.tier stays 0); 0.9.202: no message either */
       else if(b&&b.hard===Infinity&&input.use){ const now=performance.now(); if(now>pickTierMsgT){ pickTierMsgT=now+2500; toast(`${b.name||'This block'} can't be mined by any pickaxe`,2.5); } } } } }catch(e){} return r; }; }
 // the label over the block: "Tier 3: Gold pickaxe"
 function drawPickTier(){ const p=player; if(!p||!p.aimTile||!p.aimTile.tier||state!=='play') return; const {x,y,tier}=p.aimTile; const txt=`Needs tier ${tier}: ${pickTierName(tier)}`;
