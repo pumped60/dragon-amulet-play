@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795079481"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795101868"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.206</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.207</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,13 +484,17 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.207</h3>
+    <p><b>Fences hold:</b> monsters, hostile animals and enemy soldiers can no longer get past a fence at all. The Fence gate (4 planks) is a fence for them too, and it swings open for you, your soldiers, villagers and tamed animals.</p>
+    <p><b>Helmets, leggings and boots:</b> they are made at the same place as the armor of their metal (a workbench for wood, silver, iron and diamond, the Old anvil for gold, storm, mythril and adamantite), and the crafting window now lists each one right after its armor.</p>
+    <p><b>Shepherd's charm:</b> a Beastmaster starts with it in the bag instead of wearing it. Use it from the bag to put it on.</p>
     <h3>New in Beta 0.9.206</h3>
     <p><b>Bookshelf ladder:</b> make one at a workbench (8 planks and an iron bar), hold it and tap a bookshelf. It stands against that column of shelves from the floor to the top. Climb it with up and down, and once you are up on it, left and right roll it along the shelves with you on it. It stops where the shelves end. Break any part of it to take it back.</p>
     <p><b>Growing your village:</b> when you grow the village, the Quartermaster builds it. Your village counts as grown at once, and the new walls, roofs and houses go up block by block from the ground, in about half the time the first rebuild took. Sleeping moves the work on. Another growth or a shop upgrade waits until the work is done.</p>
     <h3>New in Beta 0.9.205</h3>
     <p><b>Fifteen chests of stone:</b> Stone, Stone brick, Shale, Deepstone, Marble, Granite and Sandstone chests, Cloud, Sky brick and Starstone chests from the sky, and Magma rock, Basalt, Ember stone, Scoria and Obsidian chests from the magma realm. Each is made at a workbench from 8 of its block and an iron bar, and each opens with its own look inside.</p>
     <p><b>Stack:</b> the Stack button in a chest pulls every item from your bag that the chest already holds some of. Your hotbar row stays where it is.</p>
-    <p><b>Fences:</b> a torch stands on a fence post: hold a torch and tap the fence. A plant and a fence can share a spot, so you can sow right up to the rails. Monsters and hostile animals cannot get past a fence; enemy soldiers have to hack it down first, which takes them about four seconds. You, your soldiers, villagers and peaceful animals pass as before.</p>
+    <p><b>Fences:</b> a torch stands on a fence post: hold a torch and tap the fence. A plant and a fence can share a spot, so you can sow right up to the rails. Monsters, hostile animals and enemy soldiers cannot get past a fence. You, your soldiers, villagers and peaceful animals pass as before.</p>
     <p><b>Shepherd's charm:</b> wear it and your own blows pass by peaceful animals, so you never hurt one by mistake. An animal that attacks you can still be fought. The Beast trainer sells it, a Beastmaster starts wearing one, and you take it off in your bag to hunt.</p>
     <p><b>Rain:</b> rain slowly turns bare stone mossy, and grass spreads three times as fast while it falls. Your castle, your village and the buildings you place stay clean.</p>
     <p><b>Village ground:</b> ground your village fills in has a dirt wall behind it, so no sky shows where you dig. Torches left under it are filled over, and where the raised ground ended in a cliff it slopes down to the land beside it.</p>
@@ -530,14 +534,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>The Dragon Amulet</b> cannot be lost: it never fades or burns, and a world where Vorthax is slain gives it back. New game plus is in the pause menu once Vorthax is slain, and the Scaleborn is unlocked by the kill wherever you stand.</p>
     <p><b>Also fixed:</b> the Mending banner heals everyone on your side again. A building you place moves you and your soldiers out of its walls. The Quartermaster cannot be hurt before the village is yours. In the test world the God switches stay on after Continue, Ripen grows every crop and the time buttons land on noon, dusk and midnight.</p>
     <p><b>How to play:</b> this window starts with a short guide to getting started, then the controls for keyboard, phone and controller, then one section for each part of the game. Older release notes moved to the version history on the wiki.</p>
-    <h3>New in Beta 0.9.197</h3>
-    <p><b>Wild crops:</b> every kind of crop grows wild somewhere in every world, smaller worlds included, so you can always find its seeds. Older worlds that were missing one get it on ground you have not explored yet.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.206</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.207</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -807,7 +809,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.206</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.207</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -832,7 +834,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.206', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.207', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -29729,9 +29731,9 @@ try{ const ANT=typeof ANTLER!=='undefined'?ANTLER:itemNamed('Deer antlers');
 //    (home.fenceOver "x,y": the plant is the cell's block, the fence rides over it; breaking the plant leaves the fence).
 // 3. "...and fence posts will keep the enemies out of the farms." Monsters, hostile animals and enemy soldiers cannot walk or
 //    jump past a fence: it stops them for FENCE_GUARD blocks above its top rail (they jump four blocks, and a lower stop was a ledge they landed on and walked across). You, your soldiers, villagers and tamed
-//    animals pass as before. Enemy soldiers (raiders and war parties) hack a fence down after FENCE_HACK seconds at it, so a
-//    fence slows an army and stops the night's monsters, but it is not a wall.
-const FENCE_GUARD=8, FENCE_HACK=4, FENCE_REACH=6;
+//    animals pass as before. Since 0.9.207 enemy soldiers cannot break through either (they hacked a fence down in 4 s in
+//    0.9.205-0.9.206); the Fence gate (98zxz_zz310) opens for your side.
+const FENCE_GUARD=8, FENCE_REACH=6;
 function fenceOverMap(){ if(!home) return null; if(!home.fenceOver||typeof home.fenceOver!=='object') home.fenceOver={}; return home.fenceOver; }
 /* looked up for every enemy every step, so the cells are kept as a set of indexes (rebuilt when the map changes hands or size) */
 let fenceOverIdx=new Set(), fenceOverOf=null, fenceOverN=-1;
@@ -29768,16 +29770,8 @@ function fenceFoe(e){ if(!e||e.dead||e.fly||e.bigBoss||e.boss||e.tameMon||e.tame
 function fenceBarrier(x,y){ if(x<0||x>=W) return false; for(let k=0;k<=FENCE_GUARD;k++){ const yy=y+k; if(yy<0||yy>=H) break; if(fenceAt(x,yy)) return true; if(isSolid(x,yy)) return false; } return false; }
 function fenceTouch(e){ const tx0=Math.floor(e.x/T), tx1=Math.floor((e.x+e.w-0.001)/T), ty0=Math.floor(e.y/T), ty1=Math.floor((e.y+e.h-0.001)/T); for(let x=tx0;x<=tx1;x++) for(let y=ty0;y<=ty1;y++) if(fenceBarrier(x,y)) return x; return -1; }
 { const _c=collides; collides=function(e,...a){ if(_c(e,...a)) return true; if(!e||e.fenceFree||!fenceFoe(e)) return false; return fenceTouch(e)>=0; }; }
-// one already standing in a fence line (it was built around it) is not held there; a soldier pushing at a fence hacks it down
-{ const _ua=updateAI; updateAI=function(e,dt,...a){ try{ if(fenceFoe(e)){ e.fenceFree=fenceTouch(e)>=0;
-        if(!e.fenceFree&&e.kind==='human'&&!isGuest()){ /* a fence between this soldier and whoever it is after, within a block and a half */
-          const tg=e.target&&!e.target.dead?e.target:null; let col=-1;
-          if(tg){ const dir=Math.sign(cxOf(tg)-cxOf(e))||e.facing||1; for(const d of [6,T+8]){ col=fenceTouch({x:e.x+dir*d,y:e.y,w:e.w,h:e.h}); if(col>=0) break; } }
-          if(col>=0){ e.fenceT=(e.fenceT||0)+dt; if(e.fenceT>=FENCE_HACK){ e.fenceT=0; e.atkT=0.25; const y0=Math.floor(e.y/T), y1=Math.min(H-2,Math.floor((e.y+e.h-0.001)/T)+FENCE_GUARD);
-              facRun(()=>{ for(let y=y0;y<=y1;y++){ if(isSolid(col,y)) break; if(tileAt(col,y)===B.FENCE){ if(tileAt(col,y-1)===B.FENCE_TORCH) setTile(col,y-1,0); setTile(col,y,0); } else if(home&&home.fenceOver&&home.fenceOver[col+','+y]){ delete home.fenceOver[col+','+y]; fenceOverSetT=0; } } });
-              try{ puff(col*T+8,e.y+e.h-10,'#b7834a',10,80); sfx('hit',col*T,e.y); }catch(err){} } }
-          else e.fenceT=Math.max(0,(e.fenceT||0)-dt*0.25); } } }catch(err){ console.warn(err); }
-    return _ua(e,dt,...a); }; }
+// one already standing in a fence line (it was built around it) is not held there, so it can walk out
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ try{ if(fenceFoe(e)) e.fenceFree=fenceTouch(e)>=0; }catch(err){} return _ua(e,dt,...a); }; }
 { const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ try{ if(e&&e.kind==='animal'&&!e.tamed) e.fenceFree=fenceFoe(e)?fenceTouch(e)>=0:false; }catch(err){} return _ua(e,dt,...a); }; }
 // ===== Beta 0.9.205: raised village ground has a back wall, no torch pockets, and slopes down at its ends (Kinard: "Create the
 // same mechanics where it will fill in over plants here as well so that it will built over the torchs also make it so that there
@@ -29884,8 +29878,8 @@ function mossTick(dt){ if(!world||!player||state!=='play'||isGuest()||!rainOn())
 // the beast master starts with this ability") =====
 // A charm (worn and taken off in the bag like every charm). While you wear it, your own blows, arrows and spells pass by any wild
 // animal that is not attacking: no damage, and the animal is not startled. An animal that hunts you (a bad-tempered one, or one
-// something angered) can be fought as always. The Beast trainer sells it for GENTLE_COST coins, and a Beastmaster starts wearing
-// one (heroes made before this version get theirs the next time they play). Fixed id 2585.
+// something angered) can be fought as always. The Beast trainer sells it for GENTLE_COST coins, and a Beastmaster starts with
+// one in the bag (heroes made before this version get theirs the next time they play). Fixed id 2585.
 const GENTLE_CHARM=2585, GENTLE_COST=60;
 ITEMS[GENTLE_CHARM]={name:"Shepherd's charm",kind:'charm',desc:'Your own blows pass by peaceful animals while you wear it, so you never hurt one by mistake. An animal that attacks you can still be fought. Take it off in your bag to hunt.'};
 CHARMS[GENTLE_CHARM]={name:"Shepherd's charm",fx:{gentle:1},desc:'Your blows pass by peaceful animals',col:'#8fd08a'}; SELL[GENTLE_CHARM]=30;
@@ -29906,9 +29900,12 @@ let gentleSaidT=0;
         d.innerHTML=`<img alt="" src="${iconUrl(GENTLE_CHARM)}"><div><div class="nm">Shepherd's charm</div><div class="ing">${GENTLE_COST} coins. Your own blows pass by peaceful animals while you wear it. Take it off in your bag to hunt</div></div><div class="acts"><button data-gentle="1" ${can?'':'disabled'}>${have?'Owned':'Buy'}</button></div>`; L.appendChild(d); } } }catch(e){ console.warn(e); } return r; }; }
 document.addEventListener('click',ev=>{ const b=ev.target&&ev.target.closest&&ev.target.closest('[data-gentle]'); if(!b||b.disabled) return; ev.preventDefault(); ev.stopPropagation();
   try{ if(!free()){ if(player.coins<GENTLE_COST) return; player.coins-=GENTLE_COST; } give(GENTLE_CHARM,1); sfx('coin'); toast("Shepherd's charm bought. Use it from your bag to wear it.",2.5); invDirty=true; renderShop(); }catch(e){ console.warn(e); } },true);
-// ---- a Beastmaster starts wearing one ----
-function gentleStart(){ const p=player; if(!p||p.cls!=='beast'||!p.gear||p.gear.gentleV) return; p.gear.gentleV=1; if(wornCharms(p).includes(GENTLE_CHARM)||countItem(GENTLE_CHARM)>0) return;
-  if(!p.charm) p.charm=GENTLE_CHARM; else (p.charms=p.charms||[]).push(GENTLE_CHARM); try{ recompute(p); }catch(e){} invDirty=true; }
+// ---- a Beastmaster starts with one in the bag ----
+/* 0.9.207 (Kinard: "Just in the bag"): a Beastmaster starts with the charm in the bag, not worn. gearV 1 heroes (0.9.205-0.9.206)
+   that had it put on for them take it off into the bag once */
+function gentleStart(){ const p=player; if(!p||p.cls!=='beast'||!p.gear) return; const v=p.gear.gentleV|0; if(v>=2) return; p.gear.gentleV=2;
+  if(v===1){ if(wornCharms(p).includes(GENTLE_CHARM)){ if(p.charm===GENTLE_CHARM) p.charm=(p.charms||[]).shift()||0; else p.charms=(p.charms||[]).filter(c=>c!==GENTLE_CHARM); give(GENTLE_CHARM,1); try{ recompute(p); }catch(e){} invDirty=true; } return; }
+  if(wornCharms(p).includes(GENTLE_CHARM)||countItem(GENTLE_CHARM)>0) return; give(GENTLE_CHARM,1); invDirty=true; }
 { const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(!(typeof heroFree==='function'&&heroFree()&&curSlot!==4)) gentleStart(); }catch(e){ console.warn(e); } return r; }; }
 // ===== Beta 0.9.205: shelves and every other wall piece can stand on the ground (Kinard: "Make it so that book shelves and all
 // other items can be placed on the ground") =====
@@ -30013,6 +30010,49 @@ function growDone(){ const f=home.fixup; home.fixup=null; try{ fixStations(); }c
 // how far the work is, for the Buildings window
 function growPct(){ const f=home&&home.fixup; return f&&f.kind==='grow'&&f.cells&&f.cells.length?Math.min(99,Math.floor(100*f.i/f.cells.length)):-1; }
 { const _vh=villageHtml; villageHtml=function(...a){ let h=_vh(...a); try{ const p=growPct(); if(p>=0) h=`<div class="recipe no"><img alt="" src="${iconUrl(B.BRICK)}"><div><div class="nm">The Quartermaster is building</div><div class="ing">${p}% done. Sleeping moves the work on.</div></div></div>`+h.replace(/data-vgrow="1"(?! disabled)/g,'data-vgrow="1" disabled'); }catch(e){} return h; }; }
+// ===== Beta 0.9.207: fences hold enemies, the Fence gate lets your side through (Kinard, asked whether fences should stop enemy
+// soldiers completely: "Make it so they can walk through the gate") =====
+// Enemy soldiers no longer hack through a fence (98zxz_zz303_fences.js): monsters, hostile animals and enemy soldiers never get
+// past one. The Fence gate (fixed id 2588; 4 planks, no station) is a fence for them as well. You, your soldiers, villagers, your
+// tamed animals and friends in a shared world walk through it, and it swings open while one of them stands in it. Plain fences
+// still let your side by, as before; the gate is the way in that looks like one. A gate counts as fence for pens.
+const FENCE_GATE=2588;
+if(!(BLOCKS[FENCE_GATE]&&BLOCKS[FENCE_GATE].name)&&!ITEMS[FENCE_GATE]){
+  defB(FENCE_GATE,{name:'Fence gate',solid:false,hard:0.3,col:'#b7834a'});
+  ITEMS[FENCE_GATE]={name:'Fence gate',kind:'block',desc:'A gate for a fence. Enemies cannot pass it, and it swings open for you, your soldiers, villagers and tamed animals'}; SELL[FENCE_GATE]=2;
+  RECIPES.push({ out:FENCE_GATE, n:1, need:[[B.PLANK,4]] });
+  const art=(open)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    r(0,2,2,14,'#8a5f32'); r(14,2,2,14,'#8a5f32'); r(0,2,1,14,'#a57440'); r(14,2,1,14,'#a57440');   /* posts */
+    if(!open){ for(const y of [4,10]){ r(2,y,12,2,'#b7834a'); r(2,y,12,1,'#d6a26a'); } r(5,4,2,8,'#a57440'); r(9,4,2,8,'#a57440'); r(7,7,2,2,'#5a4a3a'); }   /* rails, slats, latch */
+    else { r(2,3,3,10,'#b7834a'); r(2,3,1,10,'#d6a26a'); r(3,4,2,1,'#a57440'); r(3,10,2,1,'#a57440'); }   /* the leaf swung back against its post */
+    return c; };
+  TEX[FENCE_GATE]=art(false); TEX.gateOpen=art(true);
+}
+try{ ORE_LOOK.add(FENCE_GATE); }catch(e){}
+try{ if(typeof PASS!=='undefined') PASS.add(FENCE_GATE); }catch(e){}
+{ const _fa=fenceAt; fenceAt=function(x,y,...a){ return _fa(x,y,...a)||(x>=0&&x<W&&y>=0&&y<H&&world&&world[y*W+x]===FENCE_GATE); }; }
+// who opens it, and which gates stand open this frame
+function gateFriend(e){ if(!e||e.dead) return false; if(e===player||e.kind==='player'||e.remote||e.proxy) return true; if(e.kind==='villager'||e.kind==='drifter') return true;
+  if(e.tamed||e.tameMon) return true; if(e.kind==='human'&&player&&e.team===player.team) return true; return false; }
+let gateOpenSet=new Set(), gateT=0;
+function gateTick(dt){ if((gateT-=dt)>0||!world) return; gateT=0.1; const S=new Set(); const mark=e=>{ const x0=Math.floor(e.x/T), x1=Math.floor((e.x+e.w-0.001)/T), y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-0.001)/T);
+    for(let x=x0;x<=x1;x++) for(let y=y0;y<=y1;y++) if(x>=0&&x<W&&y>=0&&y<H&&world[y*W+x]===FENCE_GATE) S.add(y*W+x); };
+  for(const e of ents) if(gateFriend(e)) mark(e);
+  try{ if(typeof MP!=='undefined'&&MP.on&&MP.remote) for(const r of MP.remote.values()) if(r&&isFinite(r.x)) mark({x:r.x,y:r.y,w:r.w||12,h:r.h||28}); }catch(e){}
+  gateOpenSet=S; }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ gateTick(dt); }catch(e){} return r; }; }
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(id===FENCE_GATE) return gateOpenSet.has(y*W+x)?TEX.gateOpen:TEX[FENCE_GATE]; return _tt(x,y,id,...a); }; }
+// ===== Beta 0.9.207: helmets, leggings and boots beside their armor in the crafting window (Kinard: "Where can they be made?
+// Currently the chest plate can be made in a regular furnace still but all other armor cannot") =====
+// Every piece has always been made at the same station as the armor of its metal (a workbench for wood, silver, iron and
+// diamond; the Old anvil for gold, storm, mythril and adamantite), but the crafting window listed them far down, after every
+// charm and accessory, so they looked missing. Each piece now comes right after its armor, and its text says where it is made.
+{ const _cg=craftGroups; craftGroups=function(...a){ const L=_cg(...a); try{ const pos=new Map(); L.forEach((g,i)=>pos.set(g.out,i));
+      const key=new Map(); L.forEach((g,i)=>{ let k=i; const d=ITEMS[g.out]; if(d&&d.piece&&d.ptier){ const chest=LINES.armor[d.ptier-1]; const c=pos.get(chest);
+          if(c!=null&&L[c].rank===g.rank) k=c+0.1*(1+['helmet','legs','feet'].indexOf(d.piece)); } key.set(g,k); });
+      L.sort((x,y)=>x.rank-y.rank||key.get(x)-key.get(y)); }catch(e){ console.warn(e); } return L; }; }
+try{ for(const id of ARMOR_PIECES){ const d=ITEMS[id], rc=RECIPES.find(r=>r.out===id); if(!d||!rc) continue; const st=rc.st&&BLOCKS[rc.st]?BLOCKS[rc.st].name:'';
+    if(st&&!/Made at/.test(d.desc)) d.desc+=`. Made at ${/^[AEIOU]/i.test(st)?'an':'a'} ${st.toLowerCase()}, like the armor of the same metal`; } }catch(e){ console.warn(e); }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
