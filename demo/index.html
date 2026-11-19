@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795067480"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795071905"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.203</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.204</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,15 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.204</h3>
+    <p><b>Ten kinds of horses:</b> Chestnut, Bay, Palomino and Pinto on open grassland, the Black horse and the Dapple gray in forests, the Mountain pony and the Red roan in the mountains, the Dune runner in the desert and the Snow draft on ice islands. Each has its own look, health and speed, a tamed horse keeps its kind, and a foal takes after one of its parents.</p>
+    <p><b>Taming food:</b> every animal is tamed with the food it eats: raw meat for wolves, bears, foxes and owls, raw fish for hawks, eagles, penguins and polar bears, vegetables for rabbits, boars and pigs, fruit for deer, wheat, corn or bread for cows, sheep and goats, seeds for small birds, insects for frogs and hedgehogs, and fruit or vegetables for horses. The game tells you what an animal wants when you try. A Beastmaster still tames with a touch.</p>
+    <p><b>Pets heal:</b> tamed animals and tamed cave creatures get their health back a few seconds after a fight ends. An animal on the Fight job is attacked by enemies and can die; the Pet and Farm jobs keep it safe.</p>
+    <p><b>Animals stay out of villages:</b> wild animals no longer appear between the houses, turn back at the edge of a village and walk out if they end up inside.</p>
+    <p><b>Grappling hooks pull faster:</b> the first hook pulls half again as fast as before, the second twice as fast as the first and the best three times as fast.</p>
+    <p><b>Windows:</b> the bar you drag a window by stays at the top while you scroll, so you can move the window at any time. On phones and tablets a window's header stays at the top too, and dragging it moves the window.</p>
+    <p><b>Broken blocks:</b> crumbled stone, crumbled brick and broken planks no longer show what is behind them through their gaps, and each comes in five looks.</p>
+    <p><b>Chests:</b> the chest window has a line that names the item you point at or tap and says what it is. Chests in the world no longer hold staffs. The bag-full message is gone: an item that does not fit simply lies on the ground.</p>
     <h3>New in Beta 0.9.203</h3>
     <p><b>Daggers:</b> both daggers strike when you attack. On a slash the two blades sweep across each other, and on a stab the second follows right behind the first. Soldiers with daggers do the same.</p>
     <h3>New in Beta 0.9.202</h3>
@@ -522,14 +531,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>Windows and words:</b> each save slot on the New world screen shows the world it would replace, or Empty. Hover over any item in any window (or tap it on a phone) to see its name. Floating words like "Caught in a web" or a caught worm are the size of the words you see when you pick something up. In a shared world, friends see your pet bees, and bees hide in the dark and the castle fog like everyone else.</p>
     <h3>New in Beta 0.9.195</h3>
     <p><b>Placing with a controller:</b> holding a torch or any block, a box shows where the right stick points: green where it fits, red where it does not. It stays where you leave the stick, and R2 puts the torch or block in the box.</p>
-    <h3>New in Beta 0.9.194</h3>
-    <p><b>The torch</b> is held close at your side in your front hand, over your body, with two arms in every pose, jumping too.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.203</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.204</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -799,7 +806,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.203</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.204</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -824,7 +831,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.203', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.204', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -2593,9 +2600,8 @@ function give(id,n){ markFound(id);
   if(!player) return 0; const inv=player.inv; let left=n;
   for(let i=0;i<inv.length&&left>0;i++){ const s=inv[i]; if(s&&s.id===id){ s.n+=left; left=0; } }
   if(inv.length>INV_N){ for(let k=INV_N;k<inv.length;k++) if(inv[k]) spawnDrop(cxOf(player),player.y,inv[k].id,inv[k].n); inv.length=INV_N; } while(inv.length<INV_N) inv.push(null);
-  if(left>0){ let i=inv.indexOf(null); if(i>=0){ inv[i]={id,n:left}; left=0; } else { spawnDrop(cxOf(player),player.y,id,left); left=0; if(!player.fullWarn||time-player.fullWarn>0.01){ player.fullWarn=time; toast('Your bag is full; the item stays on the ground',2); } return n; } }
+  if(left>0){ let i=inv.indexOf(null); if(i>=0){ inv[i]={id,n:left}; left=0; } else { spawnDrop(cxOf(player),player.y,id,left); left=0; return n; }   /* 0.9.204 (Kinard: "Remove some of the words at the bottom such as 'your inventory is full items will be dropped'"): no message; the item lies on the ground where you can see it */ }
   if(left<n){ addFloat(cxOf(player),player.y-6,'+'+(n-left)+' '+ITEMS[id].name,'#b8f5a0'); floats[floats.length-1].pick=true; }   // 0.9.187: the pickup word is half size
-  if(left>0) toast('Your bag is full');
   invDirty=true; return n-left;
 }
 function lineTier(line){ let t=0; for(const s of player.inv) if(s&&ITEMS[s.id].line===line&&ITEMS[s.id].tier>t) t=ITEMS[s.id].tier; for(const id of player.locker||[]) if(ITEMS[id]&&ITEMS[id].line===line&&ITEMS[id].tier>t) t=ITEMS[id].tier; return t; }
@@ -3218,7 +3224,7 @@ function populate(dragonHp,roster,pets){
       if(!is.orcBossDead){ const b=at('ogre_king',cv.boss.x-2,cv.boss.gy,{x:cv.boss.x,gy:cv.boss.gy}); b.elite=false; b.hp=b.maxHp=13000; b.bigBoss=true; b.name='Grukk the Ogre King'; b.orcIsland=is; } }
     for(const tw of is.orcTowers||[]) snapGuards(tw,3,(k,x,gy)=>{ const m=makeMonster('orc_xbow',x*T,gy*T-MON.orc_xbow.h-1); m.camp={x,gy}; return m; }); }
   for(const t of sky.temples) for(let k=0;k<2;k++){ const e=makeHuman('s',SKY_CLS[(Math.random()*4)|0],(t.x-3+k*6)*T,t.gy*T-29,'guard',{cx:t.x,gy:t.gy,x0:t.x-7,x1:t.x+7}); e.hp=e.maxHp=320; ents.push(e); }
-  for(const pt of (pets||[])){ const a=makeAnimal(pt.atype,(pt.pen||pt.fpen)&&pt.px!=null?pt.px:player.x+(Math.random()*40-20),(pt.pen||pt.fpen)&&pt.py!=null?pt.py:player.y); Object.assign(a,{tamed:true,team:player.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp,pen:pt.pen||null,fpen:pt.fpen||null}); applyPetUp(a); ents.push(a); }
+  for(const pt of (pets||[])){ const a=makeAnimal(pt.atype,(pt.pen||pt.fpen)&&pt.px!=null?pt.px:player.x+(Math.random()*40-20),(pt.pen||pt.fpen)&&pt.py!=null?pt.py:player.y); Object.assign(a,{tamed:true,team:player.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp,pen:pt.pen||null,fpen:pt.fpen||null}); petLook(a,pt); applyPetUp(a); ents.push(a); }
 }
 // the wizard's tower garrison
 function spawnTower(){ const t=tower; const room={cx:t.tx,gy:t.gy,x0:t.tx-4,x1:t.tx+4};
@@ -3314,8 +3320,8 @@ function hasWhistle(){ return !!player&&(!!(player.gear&&player.gear.whistle)||c
 function canTameNow(){ return player&&(player.cls==='beast'||hasWhistle()); }
 function nearestTameable(){ if(!player||player.dead) return null; let best=null, bd=3.5*T; for(const e of ents){ if(e.kind!=='animal'||e.dead||e.tamed||e.fly) continue; const d=Math.hypot(cxOf(e)-cxOf(player),cyOf(e)-cyOf(player)); if(d<bd){ bd=d; best=e; } } return best; }
 function tryTame(a){ const beast=player.cls==='beast'; if(!beast&&!hasWhistle()){ toast('You need a taming whistle, or play as a Beastmaster',3); return; }
-  let chance=1; if(!beast){ const need=TAME_SIZE[a.atype]||2; const have=TAME_FOOD.reduce((s,id)=>s+countItem(id),0); if(have<need){ toast(`Taming ${/^[aeiou]/i.test(a.atype)?'an':'a'} ${a.atype} takes ${need} food (apples, meat, bread, carrots or fish). You have ${have}.`,3.5); return; }
-    let left=need; for(const id of TAME_FOOD){ const k=Math.min(left,countItem(id)); if(k>0){ takeItem(id,k); left-=k; } if(left<=0) break; } }
+  let chance=1; if(!beast){ const need=TAME_SIZE[a.atype]||2; const have=dietHave(a.atype); if(have<need){ toast(`The ${a.atype} wants ${dietLabel(a.atype)}: taming it takes ${need}, and you have ${have}.`,4); return; }   /* 0.9.204: its own food (98zxz_zz299_tame_diet.js) */
+    dietTake(a.atype,need); }
   if(Math.random()<chance){ Object.assign(a,{tamed:true,team:player.team,mode:'pet',temper:'good',angry:false,target:null}); a.hp=a.maxHp; applyPetUp(a); puff(cxOf(a),a.y,'#ff9ac8',10,80); toast(`You tamed the ${a.atype}${beast?' with a Beastmaster\'s touch':''}! Set its job in the Army window.`,3.5); }
   else { puff(cxOf(a),a.y,'#9aa0a8',6,60); toast(`The ${a.atype} ate the food but isn't tamed yet. Try again.`,3); } }
 function tamedAct(e,dt){ const p=player; if(!p||p.dead){ physics(e,dt); return; }
@@ -4250,7 +4256,7 @@ function serialize(){
   const obj={ myStructures:(typeof myStructures!=='undefined'?myStructures:[]).map(st=>({folk:st.folk||null,id:st.id,kind:st.kind,name:st.name,x:st.x,gy:st.gy,posts:st.posts.map(p=>({x:p.x,gy:p.gy,cls:p.who&&!p.who.dead?p.who.cls:null,name:p.who&&!p.who.dead?p.who.name:null}))})), v:SAVE_V, charSlot:(typeof curChar!=='undefined'?curChar:1), mpCode:(typeof MP!=='undefined'&&MP.host&&MP.code)?MP.code:(savedMpCode||null), savedAt, sizeKey, seed, W, H, seaY, time, dayCount, lairWarned, dragonSlain, conquered, dragonHp:dragon?Math.round(dragon.hp):0,
     kraken:{x:krakenX,chest:krakenChest,slain:krakenSlain,hp:krakenHp}, bases:bases.map(b=>({tall:!!b.tall,peakAll:b.peakAll||0,peakIsl:b.peakIsl||0,colony:b.colony||null,stamped:b.stamped||[],farm:b.farm||null,keeps:b.keeps||[],cmd:b.cmd||null,eco:b.eco||null,outposts:b.outposts||[],wars:(b.wars||[]).filter(w=>!w.done).map(w=>({x:w.x,gy:w.gy,base:null,baseF:w.base?w.base.f:null,since:w.since||0})),towers:b.towers||[],f:b.f,cx:b.cx,gy:b.gy,x0:b.x0,x1:b.x1,houses:b.houses,isl:b.isl,lvl:b.lvl||0,growT:b.growT,mineDepth:b.mineDepth})), lair, islands, camps, ruins, gcamps, fort, magma, magmaY, skyOff, fishv, ghoulNext, petUp:p.petUp, armyUp:p.armyUp, order:p.order, tower, sky,
     machines:ents.filter(e=>e.kind==='machine'&&!e.dead&&!e.enemy).map(m=>({mtype:m.mtype,hp:Math.round(m.hp),crew:m.crew?m.crew.name:null})),
-    pets:ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,pen:e.pen||null,fpen:e.fpen||null,px:(e.pen||e.fpen)?Math.round(e.x):null,py:(e.pen||e.fpen)?Math.round(e.y):null})),
+    pets:ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,variant:e.variant|0,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,pen:e.pen||null,fpen:e.fpen||null,px:(e.pen||e.fpen)?Math.round(e.x):null,py:(e.pen||e.fpen)?Math.round(e.y):null})),
     chests, roster:mySoldiers().map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e),kills:e.kills||0})),
     player:{ bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, stormV:p.stormV||0, silverArmV:p.silverArmV||0, charm:p.charm||0, charms:p.charms||[], checklists:p.checklists||[], boatMods:p.boatMods||{}, locker:p.locker||[], quests:p.quests||[], godCraft:!!p.godCraft, godKill:!!p.godKill, godFly:!!p.godFly, godObs:!!p.observer, level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, recent:p.recent||[], found:p.found||{}, wingLvl:p.wingLvl||0, swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, heartsBought:p.heartsBought||{}, extraJumps:p.extraJumps||0, bed:p.bed, cust:p.cust, name:p.name, flyOn:p.flyOn, team:p.team, cls:p.cls, x:p.x, y:p.y, hp:Math.max(1,Math.round(p.hp)), mana:Math.round(p.mana), gear:p.gear, bonusHp:p.bonusHp, bonusMana:p.bonusMana, armorDef:p.armorDef, inv:p.inv, sel:p.sel, coins:p.coins },
     surf:Array.from(surf), wet:[...wetDeco], ores:{sky:!!oresSky,magma:!!oresMagma,big:!!oresBig}, home, rules };
@@ -5268,7 +5274,7 @@ function renderTravel(){ const sp=fisherSpots(); $('#travelPanel').innerHTML=sp.
 function renderVillages(){ renderTravel(); const shops=home.houses.filter(h=>h.role&&['smith','cook','trader','herbalist','fisher'].includes(h.role)); const won=bases.filter(b=>conquered[b.f]);
   $('#villagePanel').innerHTML=!shops.length?'<p>Assign villagers to shop jobs to place them here.</p>':(won.length?'':'<p>Conquer an enemy village to open a second place for your shopkeepers.</p>')+shops.map((h,i)=>`<div class="keyrow"><span>${({smith:'Blacksmith',cook:'Cook',trader:'Shipwright',herbalist:'Herbalist',fisher:'Fisher'})[h.role]}</span><span class="jobs" style="display:flex;gap:4px">${[['home','Home'],...won.map(b=>[b.f,FNAME[b.f]+' village'])].map(([k,n])=>`<button class="choice" data-vh="${home.houses.indexOf(h)}" data-at="${k}" aria-pressed="${(h.at||'home')===k}">${n}</button>`).join('')}</span></div>`).join(''); }
 function renderPets(){ renderMachines(); const pets=ents.filter(e=>e.tamed&&!e.dead);
-  $('#petList').innerHTML=pets.length?pets.map((a,i)=>`<div class="rrow" style="grid-template-columns:1fr;cursor:default"><span><b>${a.atype[0].toUpperCase()+a.atype.slice(1)}</b> ${Math.ceil(a.hp)}/${a.maxHp} health<br><span style="color:var(--muted)">${a.fpen?'In a fenced pen: stays there and produces goods each morning. Choose another job to let it out':{pet:'Pet: follows you, fights enemies close by and cannot be hurt',fight:'Fighter: goes after enemies farther away. If it dies it is gone for good',gather:'Gatherer: collects resources within 10 blocks of you',farm:'Farm: follows you until it walks into a fenced pen (a row of 4 or more fences), then stays there and produces goods'}[a.mode]||''}</span></span>
+  $('#petList').innerHTML=pets.length?pets.map((a,i)=>`<div class="rrow" style="grid-template-columns:1fr;cursor:default"><span><b>${petTitle(a)}</b> ${Math.ceil(a.hp)}/${a.maxHp} health<br><span style="color:var(--muted)">${a.fpen?'In a fenced pen: stays there and produces goods each morning. Choose another job to let it out':{pet:'Pet: follows you, fights enemies close by and cannot be hurt',fight:'Fighter: goes after enemies farther away. If it dies it is gone for good',gather:'Gatherer: collects resources within 10 blocks of you',farm:'Farm: follows you until it walks into a fenced pen (a row of 4 or more fences), then stays there and produces goods'}[a.mode]||''}</span></span>
     <div class="jobs" style="margin-top:4px">${['pet','fight','gather','farm'].map(m=>`<button class="choice" data-pet="${i}" data-mode="${m}" aria-pressed="${a.mode===m}">${{pet:'Pet',fight:'Fight',gather:'Gather',farm:'Farm'}[m]}</button>`).join('')}</div></div>`).join(''):'<p>No animals yet. Beastmasters tame animals without food; other classes need a taming whistle and food.</p>'; }
 function renderArmy(){ renderPets(); try{ $('#facReport').innerHTML=facReportHtml(); }catch(e){}
   $('#orders').innerHTML=Object.entries(ORDERS).map(([k,v])=>`<button class="choice" data-o="${k}" aria-pressed="${player.order===k}">${v.name}</button>`).join('');
@@ -5793,13 +5799,13 @@ function mpGuestRead(sd){ try{ return JSON.parse(localStorage.getItem(mpKey(sd))
 function mpGuestSave(){ if(!MP.guest||!player) return; const p=player;
   const st={ v:1, krakenBond:!!p.krakenBond, cls:p.cls, cust:p.cust||null, inv:p.inv, gear:p.gear, coins:p.coins, armyUp:p.armyUp, petUp:p.petUp, bonusHp:p.bonusHp||0, bonusMana:p.bonusMana||0, swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, wingLvl:p.wingLvl||0, extraJumps:p.extraJumps||0, heartsBought:p.heartsBought||{}, found:p.found||{}, recent:p.recent||[],
     soldiers:p.party.map((e,i)=>e&&!e.dead?{name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:i,kills:e.kills||0}:null).filter(Boolean),
-    pets:ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp})) };
+    pets:ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,variant:e.variant|0,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp})) };
   try{ localStorage.setItem(mpKey(seed),JSON.stringify(st)); }catch(e){} }
 function mpGuestLoad(){ const st=mpGuestRead(seed); if(!st) return false; const p=player;
   for(const k of ['inv','gear','coins','armyUp','petUp','bonusHp','bonusMana','swiftLvl','sprintLvl','wingLvl','extraJumps','heartsBought','found','recent']) if(st[k]!=null) p[k]=st[k];
   if(st.cust) p.cust=st.cust; recompute(p); p.hp=p.maxHp; p.mana=p.maxMana; invDirty=true;
   for(const sd of st.soldiers||[]){ const e=makeHuman(p.team,sd.cls,p.x+(Math.random()*40-20),p.y-4,'guard',home); e.name=sd.name; e.kills=sd.kills||0; e.maxHp=Math.max(e.maxHp,sd.maxHp||e.maxHp); e.hp=Math.min(e.maxHp,sd.hp||e.maxHp); ents.push(e); if(p.party[sd.slot]==null&&sd.slot<partyCap()) putInSlot(e,sd.slot); else { const sl=freeSlot(); if(sl>=0) putInSlot(e,sl); } }
-  for(const pt of st.pets||[]){ const a=makeAnimal(pt.atype,p.x+(Math.random()*40-20),p.y); Object.assign(a,{tamed:true,team:p.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp}); applyPetUp(a); ents.push(a); }
+  for(const pt of st.pets||[]){ const a=makeAnimal(pt.atype,p.x+(Math.random()*40-20),p.y); Object.assign(a,{tamed:true,team:p.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp}); petLook(a,pt); applyPetUp(a); ents.push(a); }
   return true; }
 let mpSaveT=15; addEventListener('visibilitychange',()=>{ if(document.hidden&&MP.guest) charSave(); }); addEventListener('pagehide',()=>{ if(MP.guest) charSave(); });
 function mpBadge(){ const b=$('#mpBadge'); b.hidden=true; const pi=$('#mpPauseInfo'); if(pi){ pi.hidden=!MP.on; if(MP.on){ const n=MP.room?(MP.room.peers()||[]).filter(p=>p.kind==='viewer').length:1; pi.textContent=MP.host?`Multiplayer room code: ${MP.code} (${Math.max(1,n)} playing). Friends choose Multiplayer, then Join, and enter this code.`:`Multiplayer room code: ${MP.code} (${Math.max(1,n)} playing).`; } } if(false){ if(MP.on){ const n=MP.room?(MP.room.peers()||[]).filter(p=>p.kind==='viewer').length:1; b.textContent=`Room ${MP.code} · ${Math.max(1,n)}`; } } }
@@ -5838,7 +5844,7 @@ async function mpReadWorldDb(){ const db=cloud.db||(window.claude&&window.claude
 async function mpSyncWorld(){ if(!MP.guest) return; let z=null; try{ z=MP.room&&MP.room.fetchWorld?await MP.room.fetchWorld():await mpReadWorldDb(); }catch(e){ console.warn(e); }
   if(!z){ mpRestorePos(); toast("Could not copy the host's saved changes; you see the world as it was first made",4); return; } try{ applySnapshot(JSON.parse(await gunz(z))); toast("You are in the host's world",2.5); }catch(e){ console.warn('snapshot',e); mpRestorePos(); } }
 function mpRestorePos(){ try{ const pos=JSON.parse(localStorage.getItem(DA_NS+'mppos-'+seed)||'null'); if(pos&&isFinite(pos.x)&&isFinite(pos.y)){ player.x=pos.x; player.y=pos.y; player.vx=player.vy=0; freeSpotFor(player); for(const e of player.party) if(e&&!e.dead){ e.x=player.x+(Math.random()*30-15); e.y=player.y; } for(const a of ents) if(a.tamed&&!a.dead&&!a.fpen){ a.x=player.x; a.y=player.y-4; } revealAround(); toast('Back where you left off',2); } }catch(e){} }
-function applySnapshot(o){ const p=player; const roster=p.party.filter(e=>e&&!e.dead).map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e),kills:e.kills||0}));   /* your own party, with its veterans' kills */ const pets=ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp}));
+function applySnapshot(o){ const p=player; const roster=p.party.filter(e=>e&&!e.dead).map(e=>({name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:p.party.indexOf(e),kills:e.kills||0}));   /* your own party, with its veterans' kills */ const pets=ents.filter(e=>e.tamed&&!e.dead).map(e=>({atype:e.atype,variant:e.variant|0,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp}));
   W=o.W; H=o.H; seaY=o.seaY; skyOff=o.skyOff||72; barrierY=skyOff-4; if(o.dayCount) dayCount=o.dayCount; if(o.time!=null) time=o.time; dragonSlain=!!o.dragonSlain; conquered=o.conquered||{};
   world=rleDec(o.world,W*H,Uint16Array); shape=o.shape?rleDec(o.shape,W*H):new Uint8Array(W*H); bg=rleDec(o.bg,W*H); liq=rleDec(o.liq,W*H); oceanCol=rleDec(o.ocean,W); wetDeco=new Map(o.wet||[]); wact=new Set();
   if(!explored||explored.length!==W*H) explored=new Uint8Array(W*H); if(o.explored){ try{ const he=rleDec(o.explored,W*H); for(let i=0;i<he.length;i++) if(he[i]) explored[i]=he[i]; }catch(e){ console.warn(e); } } skyTop=new Int16Array(W); for(let x=0;x<W;x++) updateSkyTop(x); surf=new Int16Array(W); if(Array.isArray(o.surf)&&o.surf.length===W) surf.set(o.surf); else rebuildSurf();
@@ -5952,7 +5958,7 @@ function charRead(n){ try{ return JSON.parse(localStorage.getItem(charKey(n))||'
 function charState(){ const p=player; return { v:1, bestiary:p.bestiary||{}, runes:p.runes||{}, runeLv:p.runeLv||{}, charm:p.charm||0, charms:p.charms||[], checklists:p.checklists||[], boatMods:p.boatMods||{}, stormV:p.stormV||0, locker:p.locker||[], quests:p.quests||[], level:p.level||1, xp:p.xp||0, skillPts:p.skillPts||0, skills:p.skills||{}, food:p.food??100, krakenBond:!!p.krakenBond, savedAt:Date.now(), name:p.name||'', cls:p.cls, cust:p.cust||null, inv:p.inv, gear:p.gear, coins:p.coins, armyUp:p.armyUp, petUp:p.petUp, bonusHp:p.bonusHp||0, bonusMana:p.bonusMana||0,
   swiftLvl:p.swiftLvl||0, sprintLvl:p.sprintLvl||0, wingLvl:p.wingLvl||0, extraJumps:p.extraJumps||0, heartsBought:p.heartsBought||{}, found:p.found||{}, recent:p.recent||[],
   soldiers:p.party.map((e,i)=>e&&!e.dead?{name:e.name,cls:e.cls,hp:Math.round(e.hp),maxHp:e.maxHp,slot:i,kills:e.kills||0}:null).filter(Boolean),
-  pets:ents.filter(e=>e.tamed&&!e.dead&&!e.pen&&!e.fpen).map(e=>({atype:e.atype,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp})) }; }
+  pets:ents.filter(e=>e.tamed&&!e.dead&&!e.pen&&!e.fpen).map(e=>({atype:e.atype,variant:e.variant|0,mode:e.mode,hp:Math.round(e.hp),maxHp:e.maxHp,baseMax:e.baseMax||e.maxHp})) }; }
 // Beta 0.9.198: the test world, the scene editor and the tutorial (heroFree) never write a character; a hero that was picked
 // but is not in the world yet is never written over by the new world's starting hero; every character carries an id (cid)
 // and the world remembers whose hero it last saved (home.heroId), see worldHeroOwner in 98zxz_zz287_save_guards.js.
@@ -5964,7 +5970,7 @@ function charApply(st){ if(!st) return; let p=player;
   for(const k of ['inv','gear','coins','armyUp','petUp','bonusHp','bonusMana','swiftLvl','sprintLvl','wingLvl','extraJumps','heartsBought','found','recent','krakenBond','level','xp','skillPts','skills','food','locker','quests','bestiary','runes','runeLv','charm','charms','checklists','boatMods','stormV']) if(st[k]!=null) p[k]=JSON.parse(JSON.stringify(st[k]));
   if(st.cust) p.cust=st.cust; if(st.name) p.name=st.name; while(p.inv.length<INV_N) p.inv.push(null); if(!Array.isArray(p.locker)) p.locker=[]; recompute(p); p.hp=p.maxHp; p.mana=p.maxMana; invDirty=true;
   for(const sd of st.soldiers||[]){ const e=makeHuman(p.team,sd.cls,p.x+(Math.random()*40-20),p.y-4,'guard',home); e.name=sd.name; e.kills=sd.kills||0; e.maxHp=Math.max(e.maxHp,sd.maxHp||e.maxHp); e.hp=Math.min(e.maxHp,sd.hp||e.maxHp); ents.push(e); const sl=sd.slot<partyCap()&&!p.party[sd.slot]?sd.slot:freeSlot(); if(sl>=0) putInSlot(e,sl); }
-  for(const pt of st.pets||[]){ const a=makeAnimal(pt.atype,p.x+(Math.random()*40-20),p.y); Object.assign(a,{tamed:true,team:p.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp}); applyPetUp(a); ents.push(a); } }
+  for(const pt of st.pets||[]){ const a=makeAnimal(pt.atype,p.x+(Math.random()*40-20),p.y); Object.assign(a,{tamed:true,team:p.team,mode:pt.mode,temper:'good',hp:pt.hp,maxHp:pt.maxHp,baseMax:pt.baseMax||pt.maxHp}); petLook(a,pt); applyPetUp(a); ents.push(a); } }
 function freshChar(cls){ const c=CLASSES[cls]; const typed=($('#heroName').value||'').trim().slice(0,16); const inv=new Array(INV_N).fill(null); inv[0]={id:c.weapon,n:1}; inv[1]={id:472,n:1}; inv[2]={id:473,n:1}; inv[3]={id:B.TORCH,n:12}; inv[4]={id:B.PLANK,n:30}; inv[5]={id:I.APPLE,n:3};
   return { v:1, fresh:true, name:typed||c.name, cls, cust:(+setup.char>=0&&chars[+setup.char])?{...chars[+setup.char]}:null, inv, gear:{armor:1,boots:0,jump:0,dive:0,light:0,ring:0}, coins:20, armyUp:{armor:0,weapon:0,vit:0}, petUp:{vit:0,claw:0}, soldiers:[], pets:[] }; }
 function heroCls(){ return (heroPick.state&&heroPick.state.cls)||heroPick.newCls||setup.cls||'knight'; }
@@ -7552,10 +7558,11 @@ function raptorAct(e,dt){ const p=player; e.anim+=dt; e.hurtT-=dt; e.atkCd-=dt; 
     if(e.fly&&!e.tamed&&!e.pen&&!e.fpen){ try{ if(birdLanding(e,dt)) return; }catch(err){ console.warn(err); } }
     if(isRaptor(e)&&e.tamed&&!e.pen&&!e.fpen) return raptorAct(e,dt);
     if(e.glow) e.glow=0; return _ua(e,dt); }; }
-// click a landed bird with the right food: raw meat for hawks, eagles and owls, wheat seeds for small birds
+// click a landed bird with the right food: fish for hawks and eagles, raw meat for owls, and what each small bird eats (0.9.204: TAME_DIET)
 function tryTameBird(){ const p=player, it=heldItem(); if(!it) return false; let best=null, bd=1e9; for(const a of ents){ if(a.kind!=='animal'||a.dead||a.tamed||!a.fly) continue; const d=Math.hypot(cxOf(a)-input.ax,cyOf(a)-input.ay); if(d<Math.max(a.w,a.h)/2+10&&d<bd){ bd=d; best=a; } }
-  if(!best||Math.hypot(cxOf(best)-cxOf(p),cyOf(best)-cyOf(p))>REACH*1.2) return false; const raptor=isRaptor(best), ok=raptor?isRawMeat(it.id):it.id===I.WHEAT_SEEDS; if(!ok) return false;
-  if(!best.landed){ toast(`Wait for the ${best.atype} to land, then offer it ${raptor?'raw meat':'seeds'}`,2.2); return true; }
+  if(!best||Math.hypot(cxOf(best)-cxOf(p),cyOf(best)-cyOf(p))>REACH*1.2) return false; const raptor=isRaptor(best), beastOk=p.cls==='beast'&&(raptor?isRawMeat(it.id):it.id===I.WHEAT_SEEDS), ok=beastOk||dietFits(best.atype,it.id);   /* 0.9.204: each bird its own food (a Beastmaster's old offerings still work) */
+  if(!ok){ const d=ITEMS[it.id]; if(best.landed&&d&&(d.kind==='food'||d.kind==='seed'||d.insect)){ toast(`The ${best.atype} wants ${dietLabel(best.atype)}`,2.5); return true; } return false; }
+  if(!best.landed){ toast(`Wait for the ${best.atype} to land, then offer it ${dietLabel(best.atype)}`,2.2); return true; }
   const need=TAME_SIZE[best.atype]||1; if(countItem(it.id)<need){ toast(`The ${best.atype} wants ${need} pieces`,2); return true; } takeItem(it.id,need);
   if(Math.random()<(raptor?0.6:0.8)){ Object.assign(best,{tamed:true,team:player.team,mode:'pet',temper:'good',angry:false,target:null,landed:false,landing:false}); best.hp=best.maxHp; if(typeof applyPetUp==='function') applyPetUp(best); puff(cxOf(best),best.y,'#ff9ac8',10,80);
     toast(raptor?`You tamed the ${best.atype}! Put it on the Fight job in the Army window to have it hunt${best.atype==='owl'?' at night. Owls also light the dark around you':''}.`:`The ${best.atype} trusts you now and follows you`,4); }
@@ -7952,7 +7959,7 @@ function rebuildCastle(realm){ const old=castleOf(realm); if(!needsRebuild(realm
 // A permanent upgrade worn like an accessory (gear slot 'grapple'). Hold the hook button (X, or the Hook joystick on phones)
 // to wind up, let go to throw toward where you aim. The hook flies until it bites into the first solid block, then pulls you there.
 // Better hooks fly farther and pull faster.
-const GRAPPLE=[630,631,632], GRAPPLE_REACH=[0,10,16,24], GRAPPLE_PULL=[0,320,400,480];
+const GRAPPLE=[630,631,632], GRAPPLE_REACH=[0,10,16,24], GRAPPLE_PULL=[0,480,960,1440];   /* 0.9.204 (Kinard): the first hook pulls half again as fast as it did (320 before), the best one 200% faster than the first (three times its speed), the middle one between; before: 320, 400, 480 */
 ITEMS[630]={name:'Grappling hook',kind:'acc',slot:'grapple',tier:1,desc:'Hold the hook key (X) or the Hook joystick, then let go to toss it up to 10 blocks. It pulls you to a wall or ledge it hits and holds you there until you press again; if it lands on the ground, press again to reel it in'};
 ITEMS[631]={name:'Iron grappling hook',kind:'acc',slot:'grapple',tier:2,desc:'Throws up to 16 blocks and pulls you faster'};
 ITEMS[632]={name:'Mythril grappling hook',kind:'acc',slot:'grapple',tier:3,desc:'Throws up to 24 blocks and pulls you fastest'};
@@ -8025,7 +8032,9 @@ function grappleTick(dt){ if(!hook) return; const p=player; if(!p||p.dead||state
   if(hook.phase==='pull'){ const tx=hook.ax-cxOf(p), ty=hook.ay-(p.y+p.h*0.5), d=Math.hypot(tx,ty);
     if(d<14){ hook.phase='hang'; hook.hx=p.x; hook.hy=p.y; p.vx=p.vy=0; return true; }
     hook.t=(hook.t||0)+dt; if(d>hook.lastD-0.5){ hook.stuckT+=dt; if(hook.stuckT>0.35){ hook.phase='hang'; hook.hx=p.x; hook.hy=p.y; p.vx=p.vy=0; return true; } } else hook.stuckT=0; hook.lastD=d;
-    const sp=GRAPPLE_PULL[grappleTier()]||320; p.vx=tx/d*sp; p.vy=ty/d*sp; const fl=p.fly; p.fly=true; physics(p,dt); p.fly=fl; p.facing=Math.sign(tx)||p.facing; p.grounded=false;
+    const sp=GRAPPLE_PULL[grappleTier()]||GRAPPLE_PULL[1]; const fl=p.fly; p.fly=true; const steps=Math.max(1,Math.ceil(sp*dt/6));   /* 0.9.204: in steps of at most 6 pixels, so a fast pull never skips through a block or past the hook */
+    for(let i=0;i<steps;i++){ const ax=hook.ax-cxOf(p), ay=hook.ay-(p.y+p.h*0.5), dd=Math.hypot(ax,ay); if(dd<14) break; p.vx=ax/dd*sp; p.vy=ay/dd*sp; physics(p,dt/steps); }
+    p.fly=fl; p.facing=Math.sign(tx)||p.facing; p.grounded=false;
     hook.len=Math.hypot(hook.ax-hx,hook.ay-hy); ropeTick(dt); return true; } }
 { const _up=updatePlayer; updatePlayer=function(dt){ let pulled=false; if(player&&player.climb){ try{ climbTick(player,dt); }catch(e){ player.climb=null; } player.iframes-=dt; player.atkCd-=dt; return; } try{ pulled=grappleTick(dt); }catch(e){ console.warn(e); hook=null; } if(pulled){ hookedUpdate(_up,dt); return; } return _up(dt); }; }
 // 0.9.133: while the hook holds you (pulled in or hanging), everything else still works: mining, attacking, placing,
@@ -17369,7 +17378,7 @@ const TUT_STEPS=[
     at:()=>[HT().cx+14,HT().G-1], check:()=>tutFarmland()>=(HT().farm0||0)+3 },
   { id:'plant', enter:()=>{ give(I.CARROT_SEEDS,4); invDirty=true; HT().crop0=tutCrops(); }, pc:()=>'Plant carrot seeds on the tilled soil: select the seeds and click each tilled block. Plant 3. They grow by themselves, and ripe crops give food.', ph:()=>'Plant carrot seeds on the tilled soil: tap the seeds in the hotbar, then tap each tilled block. Plant 3. They grow by themselves, and ripe crops give food.',
     at:()=>[HT().cx+14,HT().G-1], check:()=>tutCrops()>=(HT().crop0||0)+3 },
-  { id:'tame', enter:()=>{ time=0.3; if(!hasWhistle()) obtain(I.WHISTLE); give(I.CARROT,3); invDirty=true; tutWild(); }, pc:()=>`A sheep and a rabbit roam the meadow by the hill. Walk up to one and press ${tutKey('use')} to tame it: you have a taming whistle and carrots to feed it. Pets follow you and fight for you.`, ph:()=>'A sheep and a rabbit roam the meadow by the hill. Walk up to one and tap the Talk button to tame it: you have a taming whistle and carrots to feed it. Pets follow you and fight for you.',
+  { id:'tame', enter:()=>{ time=0.3; if(!hasWhistle()) obtain(I.WHISTLE); give(I.CARROT,3); give(I.WHEAT,4); invDirty=true; tutWild(); }, pc:()=>`A sheep and a rabbit roam the meadow by the hill. Walk up to one and press ${tutKey('use')} to tame it. Every animal wants its own food: you have a taming whistle, carrots for the rabbit and wheat for the sheep. Pets follow you and fight for you.`, ph:()=>'A sheep and a rabbit roam the meadow by the hill. Walk up to one and tap the Talk button to tame it. Every animal wants its own food: you have a taming whistle, carrots for the rabbit and wheat for the sheep. Pets follow you and fight for you.',
     at:()=>{ const a=ents.find(e=>e.tutAnimal&&!e.dead&&!e.tamed); return a?[Math.floor(cxOf(a)/T),Math.floor(a.y/T)-1]:null; }, check:()=>ents.some(e=>e.tutAnimal&&e.tamed&&!e.dead) },
   { id:'pen', pc:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.', ph:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.',
     at:()=>[HT().cx+45,HT().G-2], check:()=>ents.some(e=>e.tamed&&!e.dead&&e.fpen) },
@@ -29377,6 +29386,281 @@ function daggerBackSwing(e,d){ const m=METAL[d.m||'iron']||METAL.iron, dir=e.fac
     const L=Math.max(5,d.reach-6-SWING_ARM+4); r(-1,-1,3,3,'#5b3819'); r(2,-3,1,7,'#8a5c2d'); r(3,-1,L,3,m[0]); r(3,-1,L,1,m[1]); r(3+L,0,2,1,m[0]);
   } finally{ ctx.restore(); } }
 { const _ds=drawSwing; drawSwing=function(e,d,...a){ try{ if(d&&d.shape==='dagger') daggerBackSwing(e,d); }catch(err){ console.warn(err); } return _ds(e,d,...a); }; }
+// ===== Beta 0.9.204: ten kinds of horses (Kinard, 2026-11-19: "Create a system for horses ... make it so there are 10
+//       different types of horses") =====
+// A horse was one animal in three coat colors that changed every time a world was opened. There are now ten kinds, each with
+// its own look, home, health and speed (HORSES; the kind is the animal's `variant`, 0-9):
+//   open grassland: Chestnut, Bay, Palomino, Pinto      forests: Black horse, Dapple gray
+//   mountains: Mountain pony, Red roan                  the desert: Dune runner        ice islands: Snow draft
+// A horse is the kind of the place it was born in. Tamed horses keep their kind in the save, with your hero and in shared
+// worlds (every tamed animal keeps its coat now), a foal takes the kind of one of its parents, and the kind's name is what
+// the game calls it when you tame it and in the Army window. Riding them, with saddles and armor, comes after launch (it is
+// on the release plan); speed and health are per kind already so that riding has something to stand on.
+const HORSES=[
+  { key:'chestnut', name:'Chestnut horse', home:'plains',   hp:70,  speed:125, coat:'#8a5a2a', mane:'#2a1a10', legs:'#3a2414', look:'Red-brown with a dark mane', where:'Open grassland' },
+  { key:'bay',      name:'Bay horse',      home:'plains',   hp:75,  speed:130, coat:'#7a3a1a', mane:'#16100c', legs:'#16100c', look:'Deep brown with a black mane, tail and legs', where:'Open grassland' },
+  { key:'dapple',   name:'Dapple gray',    home:'forest',   hp:80,  speed:120, coat:'#a8a8b2', mane:'#4e4e58', legs:'#62626c', spots:'#d8d8e2', look:'Gray with pale rings on its coat', where:'Forests' },
+  { key:'palomino', name:'Palomino',       home:'plains',   hp:65,  speed:135, coat:'#d8a850', mane:'#f4ecd8', legs:'#b88838', socks:'#f4ecd8', look:'Gold with a cream mane and tail', where:'Open grassland' },
+  { key:'pinto',    name:'Pinto',          home:'plains',   hp:70,  speed:125, coat:'#f0e8dc', mane:'#3a2414', legs:'#c8c0b4', patch:'#7a4a22', look:'White with big brown patches', where:'Open grassland' },
+  { key:'black',    name:'Black horse',    home:'forest',   hp:70,  speed:140, coat:'#26222c', mane:'#0e0c12', legs:'#121016', blaze:'#f4f4f0', look:'Black with a white mark on its face', where:'Forests' },
+  { key:'pony',     name:'Mountain pony',  home:'mountain', hp:95,  speed:105, coat:'#6a4a2a', mane:'#d8c8a8', legs:'#4a3018', short:true, shag:true, look:'Small and sturdy, with a shaggy pale mane', where:'Mountains' },
+  { key:'roan',     name:'Red roan',       home:'mountain', hp:85,  speed:115, coat:'#a86a5a', mane:'#5a2218', legs:'#5a2218', spots:'#d8b0a4', look:'Red coat flecked with white, dark red mane', where:'Mountains' },
+  { key:'dune',     name:'Dune runner',    home:'desert',   hp:55,  speed:155, coat:'#dcc48e', mane:'#8a6a3a', legs:'#a88a52', slim:true, look:'Sand-colored and lean', where:'The desert' },
+  { key:'draft',    name:'Snow draft',     home:'ice',      hp:120, speed:100, coat:'#f4f4f8', mane:'#c8d0e0', legs:'#d8dce8', big:true, feather:true, nose:'#8a8a94', look:'A big white horse with tufted hooves', where:'Ice islands' } ];
+const HORSE_HOME={ plains:[0,1,3,4], forest:[5,2], mountain:[6,7], lair:[5], desert:[8], ice:[9] };
+const isHorse=e=>!!(e&&e.kind==='animal'&&e.atype==='horse');
+const horseOf=e=>HORSES[(e&&e.variant)|0]||HORSES[0];
+function horseBreedAt(col){ let b='plains'; try{ b=landBiome(clamp(col|0,0,W-1)); }catch(e){} const L=HORSE_HOME[b]||HORSE_HOME.plains; return L[(Math.random()*L.length)|0]; }
+function horseSpeed(e){ if(isHorse(e)) e.speed=horseOf(e).speed; return e; }
+function horseSetup(e,v){ if(!isHorse(e)) return e; e.variant=clamp(v|0,0,HORSES.length-1); const h=horseOf(e); e.maxHp=e.hp=h.hp; e.speed=h.speed; return e; }
+// what the game calls a tamed animal: a horse by its kind
+function petTitle(a){ if(isHorse(a)) return horseOf(a).name; const k=(a&&a.atype)||'animal'; try{ return ANIMAL_NAME(k); }catch(e){ return k[0].toUpperCase()+k.slice(1); } }
+// a saved or carried pet comes back with the coat it had (every animal), and a horse with its kind's speed
+function petLook(a,pt){ try{ if(a&&pt&&pt.variant!=null&&isFinite(pt.variant)) a.variant=pt.variant|0; if(isHorse(a)){ a.variant=clamp(a.variant|0,0,HORSES.length-1); horseSpeed(a); } }catch(e){} return a; }
+{ const _ma=makeAnimal; makeAnimal=function(type,x,y,...a){ const e=_ma(type,x,y,...a); try{ if(type==='horse'&&e) horseSetup(e,horseBreedAt(Math.floor((x+(e.w||22)/2)/T))); }catch(err){ console.warn(err); } return e; }; }
+// ---- where they live: forests, mountains, the desert and the ice get horses too (plains already had them) ----
+try{ A50_ANIMALS.forest.day.push('horse'); A50_ANIMALS.mountain.day.push('horse'); }catch(e){ console.warn(e); }
+{ const _pa=a50PoolAt; a50PoolAt=function(c,isl,shore,night,...a){ const L=_pa(c,isl,shore,night,...a); try{ const b=landBiome(c); if(!night&&!shore&&(b==='ice'||b==='desert')&&Array.isArray(L)&&!L.includes('horse')) return [...L,'horse']; }catch(e){} return L; }; }
+try{ ANIMALS.horse.where='Grassland, forests, mountains, the desert and ice islands by day: ten kinds, each in its own place'; }catch(e){}
+// ---- the picture ----
+A50_DRAW.horse=function(R,x,y,l,f,e){ const h=horseOf(e), c=h.coat, m=h.mane, d=h.legs, s=h.short?2:0, b=h.big?1:0, by=y+5+s, bh=(h.slim?6:7)+b, top=by-b+(h.slim?1:0);
+  R(x+2,top,16,bh,c);                                                          // body
+  R(x+15,y+1+s,4,7,c); R(x+17,y-1+s,6,4,c); R(x+16,y-2+s,1,2,c);               // neck, head, ear
+  if(h.patch) for(const [px,py,pw,ph] of [[4,0,4,3],[10,2,5,4],[3,4,3,3]]) R(x+px,by+py,pw,ph,h.patch);
+  if(h.patch) R(x+16,y+3+s,2,3,h.patch);
+  if(h.spots) for(const [px,py] of [[4,1],[7,3],[10,1],[13,4],[5,5],[11,5],[15,2],[9,3],[16,-2]]) R(x+px,by+py,1,1,h.spots);
+  if(h.blaze) R(x+20,y-1+s,1,3,h.blaze);
+  R(x+21,y+1+s,1,1,EYE); R(x+22,y+2+s,2,1,h.nose||'#23232b');
+  R(x+14,y+s,2,7,m); if(h.shag){ R(x+13,y+1+s,1,6,m); R(x+18,y-2+s,2,2,m); }   // mane (a shaggy forelock on the pony)
+  R(x-2,by,4,2,m); R(x-3,by+2,2,6-s,m); if(h.shag) R(x-4,by+3,1,4-s,m);          // tail
+  const ly=y+12+s, lh=6-s, w=h.big?3:2;
+  for(const lx of [x+3+l,x+6-l,x+14+l,x+17-l]){ R(lx,ly,w,lh,d); if(h.socks) R(lx,y+15,w,2,h.socks); if(h.feather) R(lx-1,y+15,w+2,2,'#ffffff'); }
+  R(x+3+l,y+17,w,1,'#1a1a1a'); R(x+17-l,y+17,w,1,'#1a1a1a'); };
+// ---- a foal takes the kind of one of its parents (bred by hand, in a pen or by the farmers) ----
+function foalKind(e){ let best=[], bd=8*T; for(const o of ents){ if(o===e||o.dead||o.baby||!isHorse(o)) continue; const d=Math.abs(cxOf(o)-cxOf(e))+Math.abs(cyOf(o)-cyOf(e)); if(d<bd) best.push([d,o]); }
+  best.sort((a,b)=>a[0]-b[0]); const two=best.slice(0,2).map(p=>p[1]); if(!two.length) return; const par=two[(Math.random()*two.length)|0]; const hp=e.hp/Math.max(1,e.maxHp); horseSetup(e,par.variant); e.hp=Math.max(1,Math.round(e.maxHp*hp)); }
+let foalT=0;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&(foalT-=dt)<=0&&!isGuest()){ foalT=0.5; for(const e of ents) if(e.baby&&!e.foalSet&&isHorse(e)&&!e.dead){ e.foalSet=true; foalKind(e); } } }catch(e){ console.warn(e); } return r; }; }
+// ---- its kind in the words: taming, letting go, the pen ----
+let horseSay=null;
+{ const _t=toast; toast=function(msg,...a){ try{ if(horseSay&&typeof msg==='string') msg=msg.replace(/\b(the|your|baby) horse\b/g,(m0,w)=>w+' '+horseSay.toLowerCase()); }catch(e){} return _t(msg,...a); }; }
+function horseSaid(a,fn){ if(!isHorse(a)) return fn(); horseSay=horseOf(a).name; try{ return fn(); } finally{ horseSay=null; } }
+{ const _tt=tryTame; tryTame=function(a,...r){ return horseSaid(a,()=>_tt(a,...r)); }; }
+if(typeof releasePet==='function'){ const _rp=releasePet; releasePet=function(a,...r){ return horseSaid(a,()=>_rp(a,...r)); }; }
+// ---- shared worlds: the host tells friends which kind each horse is ----
+{ const _mc=mpCode; mpCode=function(e,...a){ const c=_mc(e,...a); return c&&isHorse(e)?c+':'+((e.variant|0)):c; }; }
+{ const _mg=mpGhosts; mpGhosts=function(list,...a){ const r=_mg(list,...a); try{ if(Array.isArray(list)) for(const m of list){ const code=m&&m[1]; if(typeof code!=='string'||code.slice(0,8)!=='a:horse:') continue; const v=+code.split(':')[2]; const g=MP.ghosts.get(m[0]); if(g&&isFinite(v)&&g.variant!==v){ g.variant=clamp(v|0,0,HORSES.length-1); g.speed=horseOf(g).speed; } } }catch(e){} return r; }; }
+// ===== Beta 0.9.204: no wild animals between the houses (Kinard, 2026-11-19: "again make it so that animals DO NOT spawn
+//       between the houses as there are currently a lot of animals spawning there and becoming stuck") =====
+// The animal spawners kept clear of enemy villages, ruins, the fort and the lair (inProtected), but never of your own village
+// or of anything you built, and a herd was placed column by column from its first spot, so cows and boars landed in the
+// streets between the houses and stayed there. Three rules now, for every wild animal that walks:
+//   1. No spawning in a village: your village from end to end, every house, shop house, workplace, pen and building of
+//      yours, and every enemy village, each with VILLAGE_PAD columns to spare. Whatever spawner made it, a wild animal that
+//      starts there (and not right beside a player, which is a deliberate one from the test tools) is taken away at once.
+//   2. Wandering animals turn back at the edge of a village, and one that is inside (chased in, or there from before) walks
+//      out the nearer way.
+//   3. One that still cannot get out after VILLAGE_STUCK seconds is taken away: quietly when nobody is near, with a puff of
+//      dust after VILLAGE_STUCK_SEEN seconds when someone is.
+// Tamed animals, penned and herded ones, the Beastmaster's bear, Teddy, the tutorial's animals and birds in flight are not
+// touched. Host and single player only (a friend's game shows what the host runs).
+const VILLAGE_PAD=5, VILLAGE_STUCK=20, VILLAGE_STUCK_SEEN=75, VILLAGE_MASK_EVERY=4;
+let villageMask=null, villageOut=null, villageMaskT=0, villageMaskW=0;
+function villageSpans(){ const L=[]; const add=(a,b)=>{ if(isFinite(a)&&isFinite(b)) L.push([Math.min(a,b)-VILLAGE_PAD,Math.max(a,b)+VILLAGE_PAD]); };
+  try{ if(home&&isFinite(home.x0)&&isFinite(home.x1)) add(home.x0,home.x1); }catch(e){}
+  try{ for(const b of buildingBoxes(false)) add(b[0],b[1]); }catch(e){}
+  try{ if(home&&home.herdPen) add(home.herdPen.x0,home.herdPen.x1); }catch(e){}
+  try{ for(const b of bases){ if(!b||!isFinite(b.x0)) continue; const h=b.houses&&b.houses.length?b.houses[b.houses.length-1]:null; add(b.x0-3,Math.max(b.x1||b.x0,h&&isFinite(h.x1)?h.x1:b.x0)+5); } }catch(e){}
+  return L; }
+function villageMaskBuild(){ if(!world||!W) return; const m=new Uint8Array(W), o=new Int8Array(W); for(const [a,b] of villageSpans()) for(let c=Math.max(0,a);c<=Math.min(W-1,b);c++) m[c]=1;
+  // the nearer way out of each masked run
+  for(let c=0;c<W;){ if(!m[c]){ c++; continue; } let e=c; while(e+1<W&&m[e+1]) e++; for(let k=c;k<=e;k++) o[k]=(c<=1)?1:(e>=W-2)?-1:((k-c)<=(e-k)?-1:1); c=e+1; }
+  villageMask=m; villageOut=o; villageMaskW=W; }
+function inVillageCol(c){ if(!villageMask||villageMaskW!==W) villageMaskBuild(); c|=0; return !!(villageMask&&c>=0&&c<W&&villageMask[c]); }
+// only on the surface: the same columns far above (the sky realm) and below (caves, the magma realm) are not the village
+function villageLevel(e){ const row=Math.floor((e.y+e.h)/T), top=(typeof barrierY==='number'?barrierY:0)+2; return row>top&&row<=seaY+8; }
+function villageWild(e){ if(!e||e.dead||e.kind!=='animal'||e.tamed||e.pen||e.fpen||e.chiefPet||e.teddy||e.tutAnimal||e.ghost||e.remote||e.fly||e.aboard) return false; const A=ANIMALS[e.atype]; return !(A&&A.swim)&&villageLevel(e); }
+function villageQuiet(){ return !world||!player||isGuest()||(typeof edOn==='function'&&edOn())||(typeof tutOn==='function'&&tutOn()); }
+function villageNearPlayer(e,blocks){ try{ for(const p of playerSpots()) if(Math.abs(cxOf(p)-cxOf(e))<blocks*T&&Math.abs(cyOf(p)-cyOf(e))<blocks*T) return true; }catch(err){} return false; }
+// 1. a wild animal that starts inside a village is taken away (makeAnimal marks it; the check runs once it is in the world)
+{ const _ma=makeAnimal; makeAnimal=function(...a){ const e=_ma(...a); if(e) e.bornNew=true; return e; }; }
+function villageSpawnSweep(){ if(villageQuiet()) return; for(const e of ents){ if(!e.bornNew) continue; e.bornNew=false; if(!villageWild(e)) continue; if(!inVillageCol(Math.floor(cxOf(e)/T))) continue; if(villageNearPlayer(e,12)) continue; e.dead=true; } }
+// 2. and 3. turning back, walking out, giving up
+{ const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ try{ if(villageWild(e)&&!villageQuiet()){ const c=Math.floor(cxOf(e)/T), inside=inVillageCol(c), busy=!!e.target||e.fleeT>0||e.angry;
+        if(inside){ e.zoneT=(e.zoneT||0)+dt; if(!busy){ e.wDir=villageOut[c]||1; e.wT=Math.max(e.wT||0,0.6); }
+          if(e.zoneT>VILLAGE_STUCK&&!busy){ const seen=villageNearPlayer(e,40); if(!seen){ e.dead=true; return; } if(e.zoneT>VILLAGE_STUCK_SEEN){ try{ puff(cxOf(e),cyOf(e),'#cfc6b0',10,60); }catch(err){} e.dead=true; return; } } }
+        else { e.zoneT=0; if(!busy&&e.wDir&&inVillageCol(c+e.wDir*2)){ e.wDir=-e.wDir; e.wT=Math.max(e.wT||0,1.5); } } } }catch(err){ console.warn(err); }
+    return _ua(e,dt,...a); }; }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'){ if((villageMaskT-=dt)<=0){ villageMaskT=VILLAGE_MASK_EVERY; villageMaskBuild(); } villageSpawnSweep(); } }catch(e){ console.warn(e); } return r; }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ villageMask=null; villageMaskT=0; }catch(e){} return r; }; }
+// ===== Beta 0.9.204: the grab bar stays at the top of a window (Kinard, 2026-11-19: "Make it so that the 'grab' portion of
+//       each menu moves when scrolling down and is similar to a mac or other computer type menu where the player can drag it
+//       at any time from the top section") =====
+// The bar you drag a window by was a thin strip at the top of the window's contents, so it scrolled away with them: halfway
+// down a long list there was nothing to take hold of. It is now a title bar across the whole top of the window that stays
+// there while the contents scroll under it, the window's X sits in its right end, and the window can be dragged by it at any
+// time. On phones and tablets the window's own header row does the same job: it stays at the top while the window scrolls and
+// dragging it moves the window (their windows had corner and edge grips to resize but nothing to move them by).
+const WBAR_H=24, WBAR_GAP=8, WBAR_TOUCH_H=22, WBAR_TOUCH_W=110, WBAR_TOUCH_TOP=5;
+{ const st=document.createElement('style'); st.textContent=`
+.panel > .winbar{ position:sticky; top:0; z-index:6; flex:none; }
+body:not(.touch) .panel > .winbar{ height:${WBAR_H}px; opacity:1; background:var(--panel); background-image:linear-gradient(rgba(255,255,255,.10),rgba(0,0,0,.22)); border-bottom:3px solid var(--edge); color:var(--edge); font-size:10px; letter-spacing:3px; }
+body:not(.touch) .panel > .winbar:hover{ color:var(--gold); } body:not(.touch) .panel > .winbar:active{ cursor:grabbing; }
+body:not(.touch) .panel > .winbar span{ pointer-events:none; }
+body:not(.touch) .overlay:not([hidden]) .panel.hasbar > .panelx{ top:var(--wbt,0px); margin-top:var(--wbx,-32px); margin-right:var(--wbr,-20px); width:${WBAR_H+3}px; height:${WBAR_H}px; border-width:0 0 0 3px; box-shadow:none; font-size:13px; z-index:7; background:transparent; }
+body.touch .panel.hasgrip > .phead.wbhead{ position:sticky; top:var(--wbht,0px); z-index:4; background:var(--panel); box-shadow:0 -14px 0 var(--panel); touch-action:none; }
+body.touch .panel.hasgrip:has(> .phead.wbhead) > .wgrip.n{ height:10px; }   /* the corner and edge grips (z-index 5) stay on top of the header; the top edge grip is a thin strip, so the rest of the header moves the window */
+body.touch .panel.hasgrip > .winbar.wbpill{ display:flex; justify-content:center; align-items:center; z-index:7; width:${WBAR_TOUCH_W}px; height:${WBAR_TOUCH_H}px; border-radius:${WBAR_TOUCH_H/2}px; background:var(--edge); color:var(--ink); opacity:.85; font-size:11px; letter-spacing:3px; cursor:move; user-select:none; -webkit-user-select:none; touch-action:none; box-shadow:0 2px 0 rgba(0,0,0,.4); }
+body.touch .panel.hasgrip > .winbar.wbpill:active{ opacity:1; background:var(--gold); }
+`; document.head.appendChild(st); }
+// the bar spans the window from edge to edge whatever padding the window has, and is always its first piece
+function barFit(id){ const p=winPanel(id); if(!p) return; const bar=p.querySelector(':scope > .winbar'); if(!bar) return; if(p.firstElementChild!==bar) p.prepend(bar);
+  const cs=getComputedStyle(p), pt=parseFloat(cs.paddingTop)||0, pl=parseFloat(cs.paddingLeft)||0, pr=parseFloat(cs.paddingRight)||0;
+  // a sticky piece is held inside the window's padding, so its resting line is moved up by that padding to reach the top edge
+  if(isPC()){ bar.style.margin=`${-pt}px ${-pr}px ${WBAR_GAP}px ${-pl}px`; bar.style.top=(-pt)+'px'; bar.style.width=''; p.style.setProperty('--wbx',-(WBAR_H+3+WBAR_GAP)+'px'); p.style.setProperty('--wbr',-pr+'px'); p.style.setProperty('--wbt',(-pt)+'px'); p.classList.add('hasbar'); }
+  else { bar.style.margin=`${WBAR_TOUCH_TOP-pt}px auto 4px`; bar.style.top=(WBAR_TOUCH_TOP-pt)+'px'; p.classList.remove('hasbar'); } }
+function barHeadFit(id){ const p=winPanel(id); if(!p) return; const pt=parseFloat(getComputedStyle(p).paddingTop)||0; p.style.setProperty('--wbht',(-pt)+'px'); }
+// phones and tablets: the window's own header row is the handle (drag it by the title or the empty part; the buttons still
+// work), and it stays at the top while the window scrolls. A window with no header row gets a short handle of its own.
+// Nothing is added to the window's layout: a phone has no room to spare above a chest or the crafting list.
+const WBAR_DRAG_PX=8;
+function barDragWire(p,id,grip,isHeader){ if(grip._wbWired) return; grip._wbWired=true; let d=null;
+  const inter=t=>!!(t&&t.closest&&t.closest('button, input, select, textarea, a, label, .choice, .xbtn, [data-tip]'));
+  grip.addEventListener('pointerdown',e=>{ if(isPC()||(isHeader&&inter(e.target))) return; const r=p.getBoundingClientRect(); d={id:e.pointerId,x:e.clientX,y:e.clientY,dx:e.clientX-r.left,dy:e.clientY-r.top,w:r.width,h:r.height,on:false}; if(!isHeader){ e.preventDefault(); e.stopPropagation(); } });
+  const move=e=>{ if(!d||e.pointerId!==d.id) return; if(!d.on){ if(Math.hypot(e.clientX-d.x,e.clientY-d.y)<WBAR_DRAG_PX) return; d.on=true; try{ grip.setPointerCapture(e.pointerId); }catch(err){}
+      Object.assign(p.style,{position:'absolute',right:'auto',transform:'none',margin:'0',left:(d.x-d.dx)+'px',top:(d.y-d.dy)+'px',width:d.w+'px',height:d.h+'px',maxWidth:'none',maxHeight:'none'}); }
+    const x=Math.max(60-d.w,Math.min(e.clientX-d.dx,innerWidth-60)), y=Math.max(0,Math.min(e.clientY-d.dy,innerHeight-40)); p.style.left=x+'px'; p.style.top=y+'px'; e.preventDefault(); };
+  const end=e=>{ if(!d||e.pointerId!==d.id) return; const was=d.on; d=null; if(!was) return; const r=p.getBoundingClientRect(); const w=settings.win[id]=settings.win[id]||{}; Object.assign(w,{x:Math.round(r.left),y:Math.round(r.top),w:Math.round(r.width),h:Math.round(r.height)}); try{ saveSettings(); }catch(err){} };
+  grip.addEventListener('pointermove',move); grip.addEventListener('pointerup',end); grip.addEventListener('pointercancel',end); }
+function barTouchMake(id){ const p=winPanel(id); if(!p) return; const head=p.querySelector(':scope > .phead');
+  if(head){ head.classList.add('wbhead'); barDragWire(p,id,head,true); const old=p.querySelector(':scope > .winbar.wbpill'); if(old) old.remove(); return; }
+  if(p.querySelector(':scope > .winbar')) return; const bar=document.createElement('div'); bar.className='winbar wbpill'; bar.innerHTML='<span>⋮⋮⋮</span>'; p.prepend(bar); barDragWire(p,id,bar,false); }
+function barAll(){ try{ for(const o of document.querySelectorAll('.overlay')){ if(o.hidden||!o.id) continue; const touchOk=!isPC()&&typeof gripTouchOk==='function'&&gripTouchOk(o.id); if(touchOk){ barTouchMake(o.id); barHeadFit(o.id); } if(touchOk||(isPC()&&WIN_IDS.has(o.id))) barFit(o.id); } }catch(e){} }
+{ const _show=show; show=function(id,...a){ const r=_show(id,...a); try{ barAll(); }catch(e){} return r; }; }
+setInterval(barAll,500);   /* the window X and other pieces are added after a window opens: the bar stays first */
+// ===== Beta 0.9.204: broken blocks are whole, in five looks each (Kinard, 2026-11-19: "Make it so that the broken blocks do
+//       not show the outside area also make it so that when placed the broken blocks have 5 different types to add more
+//       variety with how they appear") =====
+// Crumbled stone, Crumbled brick and Broken plank were drawn with pieces cut clean out of the picture, so the sky, the sea or
+// a cave wall showed through every one (blue corners on the bricks of a ruined room underground). The missing pieces are now
+// dark gaps inside the block, with a little rubble in them: nothing behind shows. Each of the three has five layouts of gaps
+// and cracks, and a block takes one by where it stands (tileTex), so a ruined wall and a wall you build from them no longer
+// repeat one picture. The blocks themselves are unchanged (same ids, same drops); the bag picture is the first layout.
+const BROKEN_LAYOUT={
+  crumble:[
+    { holes:[[0,0,6,3],[13,0,3,5],[0,12,4,4],[11,13,5,3],[15,7,1,3]], cracks:[[6,3],[7,4],[7,5],[8,6],[9,7],[9,8],[10,9],[10,10],[4,11],[5,10],[3,9],[12,5],[12,6],[11,7]] },
+    { holes:[[10,0,6,4],[0,5,2,4],[0,13,6,3],[14,11,2,5]], cracks:[[9,4],[8,5],[8,6],[7,7],[6,8],[6,9],[5,10],[4,11],[3,12],[11,8],[12,9],[13,10]] },
+    { holes:[[0,0,3,6],[6,0,4,2],[12,12,4,4],[0,14,5,2],[15,3,1,4]], cracks:[[3,6],[4,7],[5,7],[6,8],[7,9],[8,9],[9,10],[10,11],[11,11],[9,3],[9,4],[10,5]] },
+    { holes:[[4,0,8,2],[0,7,3,3],[13,6,3,4],[5,13,7,3]], cracks:[[8,2],[8,3],[7,4],[7,5],[8,6],[8,7],[9,8],[8,9],[8,10],[7,11],[7,12],[3,8],[4,8],[12,7],[11,7]] },
+    { holes:[[0,0,4,4],[12,0,4,3],[0,11,3,5],[12,12,4,4],[7,7,2,2]], cracks:[[4,4],[5,5],[6,6],[9,9],[10,10],[11,11],[9,6],[10,5],[11,4],[6,9],[5,10],[4,11]] } ],
+  plank:[
+    { holes:[[0,9,16,2],[5,0,2,9],[12,11,4,5],[0,11,2,2]], cracks:[[9,3],[9,4],[10,5],[3,13],[4,14]] },
+    { holes:[[0,5,16,2],[10,7,2,9],[0,0,3,5],[14,13,2,3]], cracks:[[6,2],[7,3],[4,10],[5,11],[5,12]] },
+    { holes:[[0,11,16,2],[3,0,2,11],[11,0,2,4],[13,13,3,3]], cracks:[[7,4],[8,5],[8,6],[7,14],[8,15]] },
+    { holes:[[0,7,9,2],[9,3,2,6],[9,3,7,2],[4,9,2,7],[0,0,2,3]], cracks:[[13,8],[13,9],[12,10],[1,12],[2,13]] },
+    { holes:[[7,0,2,16],[0,4,7,2],[9,10,7,2],[0,13,3,3],[13,0,3,3]], cracks:[[3,9],[4,10],[12,5],[11,6],[12,14]] } ] };
+function brokenTexOf(base,lay,dark,rub,crack){ const c=mkCanvas(16,16), g=c.getContext('2d'); if(base) g.drawImage(base,0,0); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  for(const [x,y,w,h] of lay.holes){ r(x,y,w,h,dark); r(x,y,w,1,'rgba(0,0,0,0.35)');                       // the gap, darker under its top edge
+    if(w>=3&&h>=3){ r(x+1,y+h-1,1,1,rub); r(x+w-2,y+h-2,1,1,rub); }                                          // a little rubble at the bottom of a big gap
+    if(y+h<16) r(x,y+h,w,1,'rgba(255,255,255,0.10)'); if(x+w<16) r(x+w,y,1,h,'rgba(0,0,0,0.22)'); }         // the broken edge of what is left
+  for(const [x,y] of lay.cracks) r(x,y,1,1,crack);
+  return c; }
+const BROKEN_VAR={};
+try{ const mk=(id,base,kind,dark,rub,crack)=>{ if(id==null||!TEX[base]) return; BROKEN_VAR[id]=BROKEN_LAYOUT[kind].map(l=>brokenTexOf(TEX[base],l,dark,rub,crack)); TEX[id]=BROKEN_VAR[id][0]; try{ ORE_LOOK.add(id); }catch(e){} };
+  mk(RUIN_B.stone,B.STONE_BLOCK,'crumble','#24222a','#4a4852','#3a3842');
+  mk(RUIN_B.brick,B.BRICK,'crumble','#2a1c18','#5a4038','#4a3028');
+  mk(RUIN_B.plank,B.PLANK,'plank','#22160c','#4a3418','#3a2812'); }catch(e){ console.warn(e); }
+function brokenVarAt(x,y){ return (((x*73856093)^(y*19349663))>>>0)%5; }
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ const V=BROKEN_VAR[id]; if(V) return V[brokenVarAt(x,y)]; return _tt(x,y,id,...a); }; }
+// ===== Beta 0.9.204: every animal is tamed with its own food (Kinard, 2026-11-19: "Make it so each animal needs a different
+//       type of food for them to be tamed such as hawks needing fish, bears needing meat sources, rabbits needing vegetables,
+//       etc for all animals in the game except for the beast tamer") =====
+// Any food tamed any animal (apples, meat, bread, carrots or fish, whatever was in the bag first). Each animal now takes only
+// what it eats (TAME_DIET, in food groups): raw meat for the hunters, raw fish for the fishers, vegetables, fruit, grain,
+// seeds or insects for the rest. The amount is what it was (TAME_SIZE). The Beastmaster still tames with a touch and needs no
+// food, and the cave creatures only a Beastmaster can tame keep their rule. Birds are offered their food from the hand, as
+// before (hawks and eagles fish, owls raw meat, small birds what they eat).
+const FOOD_GROUP={ meat:{label:'raw meat',one:'piece of raw meat'}, fish:{label:'raw fish',one:'raw fish'}, veg:{label:'vegetables',one:'vegetable'}, fruit:{label:'fruit',one:'piece of fruit'},
+  grain:{label:'wheat, corn or bread',one:'wheat, corn or bread'}, seeds:{label:'seeds',one:'seed'}, insects:{label:'insects or worms',one:'insect or worm'}, honey:{label:'honey',one:'jar of honey'} };
+const FOOD_IDS={};
+function foodGroupIds(g){ if(FOOD_IDS[g]) return FOOD_IDS[g]; const S=new Set(), add=id=>{ if(id!=null&&ITEMS[id]) S.add(+id); }, nm=id=>(ITEMS[id]&&ITEMS[id].name)||'';
+  if(g==='meat'){ for(const id of Object.keys(ITEMS)){ const d=ITEMS[id]; if(d&&d.kind==='food'&&(isRawMeat(+id)||/^Raw (?!fish)/.test(d.name))) add(id); } for(const id of [I.RABBIT_MEAT,I.BIRD_MEAT,I.VENISON,I.PORK,I.WOLF_MEAT,I.BEAR_MEAT]) add(id); }
+  else if(g==='fish'){ add(I.RAW_FISH); for(const id of Object.keys(ITEMS)){ const d=ITEMS[id]; if(d&&d.kind==='food'&&/^(Salmon|Trout|Bass|Cod|Tuna|Pufferfish|Swordfish|Anglerfish|Reef shark|Great white shark|Thunderfin|Tempest marlin)$/.test(d.name)) add(id); } }
+  else if(g==='veg'){ add(I.CARROT); for(const id of Object.keys(ITEMS)) if(ITEMS[id]&&ITEMS[id].kind==='food'&&/^(Potato|Tomato|Onion|Cabbage)$/.test(nm(id))) add(id); try{ if(B.PUMPKIN!=null&&ITEMS[B.PUMPKIN]) add(B.PUMPKIN); }catch(e){} }
+  else if(g==='fruit'){ add(I.APPLE); add(I.BERRIES); for(const id of Object.keys(ITEMS)) if(ITEMS[id]&&ITEMS[id].kind==='food'&&/^(Strawberry|Melon)$/.test(nm(id))) add(id); }
+  else if(g==='grain'){ add(I.WHEAT); add(I.BREAD); for(const id of Object.keys(ITEMS)) if(ITEMS[id]&&ITEMS[id].kind==='food'&&/^Corn$/.test(nm(id))) add(id); }
+  else if(g==='seeds'){ for(const id of Object.keys(ITEMS)) if(ITEMS[id]&&ITEMS[id].kind==='seed') add(id); }
+  else if(g==='insects'){ for(const id of Object.keys(ITEMS)) if(ITEMS[id]&&ITEMS[id].insect) add(id); try{ if(typeof WORM_ID!=='undefined'&&WORM_ID) add(WORM_ID); }catch(e){} }
+  else if(g==='honey'){ add(I.HONEY); }
+  return FOOD_IDS[g]=S; }
+const TAME_DIET={
+  wolf:['meat'], bear:['meat','honey'], fox:['meat'], lynx:['meat'], owl:['meat'], crow:['meat'],
+  hawk:['fish'], eagle:['fish'], polarbear:['fish'], penguin:['fish'], seagull:['fish'], puffin:['fish'], flamingo:['fish'], crab:['fish'], seal:['fish'], walrus:['fish'],
+  rabbit:['veg'], hare:['veg'], boar:['veg'], pig:['veg'], beaver:['veg'], moose:['veg'], tortoise:['veg'],
+  deer:['fruit'], parrot:['fruit'], glider:['fruit'], horse:['fruit','veg'],
+  cow:['grain'], sheep:['grain'], goat:['grain'], camel:['grain'], cloud_ram:['grain'], duck:['grain'],
+  bird:['seeds'], sparrow:['seeds'], ptarmigan:['seeds'], skylark:['seeds'], zephyr:['seeds'], squirrel:['seeds'],
+  robin:['insects'], hedgehog:['insects'], badger:['insects'], lizard:['insects'], frog:['insects'], toad:['insects'] };
+const DIET_ANY=['fruit','veg','grain'];   /* an animal added later without a line above */
+function dietOf(k){ return TAME_DIET[k]||DIET_ANY; }
+function dietFits(k,id){ id=+id; return dietOf(k).some(g=>foodGroupIds(g).has(id)); }
+function dietLabel(k){ const L=dietOf(k).map(g=>FOOD_GROUP[g].label); return L.length>1?L.slice(0,-1).join(', ')+' or '+L[L.length-1]:L[0]; }
+function dietIds(k){ const out=[]; for(const g of dietOf(k)) for(const id of foodGroupIds(g)) if(!out.includes(id)) out.push(id); return out; }
+function dietHave(k){ let n=0; for(const id of dietIds(k)) n+=countItem(id); return n; }
+function dietTake(k,n){ let left=n; for(const id of dietIds(k)){ const c=Math.min(left,countItem(id)); if(c>0){ takeItem(id,c); left-=c; } if(left<=0) break; } return n-left; }
+// ===== Beta 0.9.204: your animals and creatures heal (Kinard, 2026-11-19: "Make it so that the players pets regenerate
+//       health as the moss fly does not appear to heal") =====
+// Soldiers got their health back when the fighting stopped (10_ai.js); tamed animals and the cave creatures a Beastmaster
+// tames never did, so one that came out of a fight hurt stayed hurt for good. Every tamed animal and tamed creature now
+// heals PET_HEAL of its full health each second once it has gone PET_HEAL_WAIT seconds without losing any and has nothing
+// left to fight; poison and fire hold the healing back. (A pet on the Fight job is attacked by enemies, loses health and can
+// die, as before; the Pet and Farm jobs keep an animal out of harm.)
+const PET_HEAL=0.05, PET_HEAL_WAIT=4;
+const isPetEnt=e=>!!e&&!e.dead&&!e.ghost&&!e.remote&&((e.kind==='animal'&&e.tamed)||!!e.tameMon);
+function petHealTick(dt){ for(const e of ents){ if(!isPetEnt(e)) continue; const seen=e.hpSeen==null?e.hp:e.hpSeen;
+    if(e.hp<seen-0.001) e.calmT=0; else e.calmT=(e.calmT||0)+dt;
+    if(e.hp<e.maxHp&&e.calmT>=PET_HEAL_WAIT&&!(e.target&&!e.target.dead)&&!(e.poisonT>0)&&!(e.burnT>0)) e.hp=Math.min(e.maxHp,e.hp+e.maxHp*PET_HEAL*dt);
+    e.hpSeen=e.hp; } }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') petHealTick(dt); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.204: what an item is, inside the chest window; no staffs in chests; a quieter full bag =====
+// 1. Kinard, 2026-11-19: "Make it so that when the player is inside of a chest it will show what his items are similar to
+//    how the bag does when in this menu it is not showing the names of items." The bag has a place that says what the item
+//    you picked is; the chest window only had the small pop-up. The chest window has its own line now, under the buttons,
+//    that names the item you point at or tap (in the chest or in your bag), how many there are and what it is for. It stays
+//    until you point at another one.
+{ const st=document.createElement('style'); st.textContent=`#chestInfo{ display:flex; align-items:center; gap:8px; min-height:26px; margin:0 0 8px; padding:4px 8px; border:2px solid var(--edge); background:rgba(0,0,0,.28); font-size:9px; line-height:1.5; color:var(--muted); }
+#chestInfo img{ width:20px; height:20px; image-rendering:pixelated; flex:none; } #chestInfo b{ color:var(--gold); font-weight:normal; white-space:nowrap; } #chestInfo .cin{ color:#fff; white-space:nowrap; } #chestInfo .cid{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0; }
+body.touch #chestInfo{ position:sticky; bottom:0; z-index:5; pointer-events:none; margin:0; background:rgba(12,9,22,.94); } body.touch #chestInfo.hint{ display:none; }`; document.head.appendChild(st); }
+const CHEST_INFO_HINT='Point at an item, or tap it, to see what it is';
+function chestInfoEl(){ let el=$('#chestInfo'); if(el) return el; const p=document.querySelector('#scrChest .panel'); if(!p) return null; el=document.createElement('div'); el.id='chestInfo'; el.textContent=CHEST_INFO_HINT;
+  chestInfoPlace(el); return el; }
+// on a computer it sits under the buttons; on a phone it is a strip along the bottom of the window that only shows once an
+// item is picked, so the chest keeps all its room
+function chestInfoPlace(el){ const p=document.querySelector('#scrChest .panel'); if(!p||!el) return; const touch=document.body.classList.contains('touch'), wrap=$('#chestWrap');
+  if(touch){ const after=wrap&&wrap.parentElement===p?wrap.nextSibling:null; if(el.previousElementSibling!==wrap||el.parentElement!==p) p.insertBefore(el,after); }
+  else { const before=(wrap&&wrap.parentElement===p)?wrap:($('#chestCoins')||null); if(before&&before.parentElement===p){ if(el.nextElementSibling!==before) p.insertBefore(el,before); } else if(el.parentElement!==p) p.appendChild(el); } }
+let chestInfoKey='';
+function chestInfoShow(s,where){ const el=chestInfoEl(); if(!el) return; const d=s&&ITEMS[s.id]; const key=d?s.id+':'+s.n+':'+where:''; if(key===chestInfoKey) return; chestInfoKey=key;
+  chestInfoPlace(el); el.classList.toggle('hint',!d); if(!d){ el.textContent=CHEST_INFO_HINT; return; }
+  let text=''; try{ text=String(d.desc||'').split(/(?<=[.!?])\s+/)[0]||''; }catch(e){ text=String(d.desc||''); }
+  let src=''; try{ src=iconUrl(s.id)||''; }catch(e){}
+  const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  el.innerHTML=`${src?`<img alt="" src="${src}">`:''}<b>${esc(d.name)}</b><span class="cin">×${s.n||1}</span><span class="cin">${where==='chest'?'in the chest':'in your bag'}</span>${text?`<span class="cid">${esc(text)}</span>`:''}`; }
+function chestInfoFrom(t){ try{ if(state!=='chest'||!t||!t.closest) return; const b=t.closest('#scrChest .slot[data-ci], #scrChest .slot[data-bi]'); if(!b) return; const s=slotItem(b); if(s) chestInfoShow(s,b.dataset.ci!=null?'chest':'bag'); }catch(e){} }
+document.addEventListener('mousemove',e=>chestInfoFrom(e.target));
+document.addEventListener('pointerdown',e=>chestInfoFrom(e.target),true);
+{ const _oc=openChest; openChest=function(...a){ const r=_oc(...a); try{ if(state==='chest'){ chestInfoKey='?'; chestInfoShow(null,''); } }catch(e){} return r; }; }
+
+// 2. "also remove the staffs from the chests even at deeper layers": no chest in the world holds a staff. Loot is made
+//    without them (lootFor), and a chest nobody has opened yet (older worlds, and the loot a chest makes the first time it is
+//    opened) has its staffs taken out as it opens, with a few coins in their place. A chest you have opened before is yours
+//    and is left alone. Staffs come from crafting, the Blacksmith and bosses.
+const STAFF_COINS=15;
+const isStaffItem=id=>{ const d=ITEMS[id]; return !!(d&&d.kind==='weapon'&&(d.type==='magic'||/\bstaff\b/i.test(d.name||''))); };
+{ const _lf=lootFor; lootFor=function(...a){ const c=_lf(...a); try{ if(c&&Array.isArray(c.items)){ const n=c.items.length; c.items=c.items.filter(s=>!(s&&isStaffItem(s.id))); if(c.items.length<n) c.coins=(c.coins||0)+STAFF_COINS*(n-c.items.length); } }catch(e){ console.warn(e); } return c; }; }
+function chestNoStaffs(c){ if(!c||!Array.isArray(c.items)) return 0; let n=0; for(let i=0;i<c.items.length;i++){ const s=c.items[i]; if(s&&isStaffItem(s.id)){ c.items[i]=null; n++; } } if(n) c.coins=(c.coins||0)+STAFF_COINS*n; return n; }
+{ const _oc=openChest; openChest=function(x,y,...a){ let fresh=false, c=null, k=x+','+y; try{ c=chests[k]; fresh=!!(c&&!c.opened&&c.tier!=null&&!c.name&&!isGuest()); }catch(e){}
+    const r=_oc(x,y,...a); try{ if(fresh&&chests[k]===c&&chestNoStaffs(c)){ try{ chestChanged(k); }catch(e){} if(state==='chest'&&typeof renderChest==='function') renderChest(); } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
