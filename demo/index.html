@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795076723"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795079481"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.205</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.206</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,9 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.206</h3>
+    <p><b>Bookshelf ladder:</b> make one at a workbench (8 planks and an iron bar), hold it and tap a bookshelf. It stands against that column of shelves from the floor to the top. Climb it with up and down, and once you are up on it, left and right roll it along the shelves with you on it. It stops where the shelves end. Break any part of it to take it back.</p>
+    <p><b>Growing your village:</b> when you grow the village, the Quartermaster builds it. Your village counts as grown at once, and the new walls, roofs and houses go up block by block from the ground, in about half the time the first rebuild took. Sleeping moves the work on. Another growth or a shop upgrade waits until the work is done.</p>
     <h3>New in Beta 0.9.205</h3>
     <p><b>Fifteen chests of stone:</b> Stone, Stone brick, Shale, Deepstone, Marble, Granite and Sandstone chests, Cloud, Sky brick and Starstone chests from the sky, and Magma rock, Basalt, Ember stone, Scoria and Obsidian chests from the magma realm. Each is made at a workbench from 8 of its block and an iron bar, and each opens with its own look inside.</p>
     <p><b>Stack:</b> the Stack button in a chest pulls every item from your bag that the chest already holds some of. Your hotbar row stays where it is.</p>
@@ -529,21 +532,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>How to play:</b> this window starts with a short guide to getting started, then the controls for keyboard, phone and controller, then one section for each part of the game. Older release notes moved to the version history on the wiki.</p>
     <h3>New in Beta 0.9.197</h3>
     <p><b>Wild crops:</b> every kind of crop grows wild somewhere in every world, smaller worlds included, so you can always find its seeds. Older worlds that were missing one get it on ground you have not explored yet.</p>
-    <h3>New in Beta 0.9.196</h3>
-    <p><b>Helmets, leggings and boots:</b> wear them with your armor, in every metal from wood to adamantite. Each piece adds a little defense (a full set adds a bit less than half of what the matching chestplate gives) and shows on your hero. Your soldiers show their upgrades too: their armor turns copper, iron, gold, mythril and then adamantite, and their weapons look better at each weapon level (their stats stay the same).</p>
-    <p><b>Held in the hand:</b> your hero holds whatever is in hand out front, tools gripped with the head up and forward, and soldiers and village workers hold theirs the same way. The axe shows a yellow box on the log you are cutting, like the pickaxe, and target boxes only show on a block you can dig, cut or build on. The workbench stands in front of everyone, so you walk behind it.</p>
-    <p><b>Your bed is your spawn:</b> any bed you use, anywhere, becomes the place you come back to, and the Mirror takes you there too. Tamed animals, creatures and bees keep up with you when you run.</p>
-    <p><b>Torches over plants:</b> place a torch on any plant, saplings and crops included, and the plant goes into your bag.</p>
-    <p><b>Ore:</b> the top rock layer holds half as much iron and half again as much silver. Where two ore veins meet, a block shows both ores and gives you both. Blocks and pickaxes no longer say which pickaxe you need: if yours is too weak, the block simply will not break.</p>
-    <p><b>Solid ground at home:</b> the ground beside your village houses and fields is solid all the way down, with no hollow hills of old grass and sky under it. Ground you dig under your castle stays dug, and open spaces under your base get a dirt back wall.</p>
-    <p><b>Your village:</b> the castle hall carpet runs under the furnace and the portal, every underground room is carpeted wall to wall, and a rug can go under a chest. At the dark slate stage a dark slate walkway runs between every home. Tree trunks always reach the ground (cut the tree before digging under it), and stalactites and stalagmites fall when nothing holds them.</p>
-    <p><b>Windows and words:</b> each save slot on the New world screen shows the world it would replace, or Empty. Hover over any item in any window (or tap it on a phone) to see its name. Floating words like "Caught in a web" or a caught worm are the size of the words you see when you pick something up. In a shared world, friends see your pet bees, and bees hide in the dark and the castle fog like everyone else.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.205</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.206</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -813,7 +807,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.205</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.206</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -838,7 +832,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.205', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.206', INV_N=63, CHEST_N=81;
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -12934,8 +12928,9 @@ function workState(e){ if(!e||e.kind!=='player'||e.riding||e.dead||e.passenger) 
     catch(err){ if(!drawEntity.poseWarnT||performance.now()-drawEntity.poseWarnT>60000){ drawEntity.poseWarnT=performance.now(); console.warn('working pose',err); } }
     finally{ if(d0!=null){ while(ctxDepth>d0) ctx.restore(); } else while(open-->0) ctx.restore(); } }; }
 // ---- 2. and 3. repairs while you sleep; the Quartermaster alone until they are done ----
-function fixupAdvance(dt,quiet){ const f=home&&home.fixup; if(!f||isGuest()||!f.cells) return; const n=f.cells.length; f.acc=(f.acc||0)+n/(DAY_LEN*FIXUP_DAYS)*dt; let k=Math.floor(f.acc); if(k<1) return; f.acc-=k;
-  facRun(()=>{ while(k-->0&&f.i<n){ const [x,y,id,b]=f.cells[f.i++]; if(world[y*W+x]!==id) setTile(x,y,id); if(bg[y*W+x]!==b){ bg[y*W+x]=b; if(facCap) facCap.push([x,y,b,1]); if(explored[y*W+x]) mapPixel(x,y); }
+function fixupAdvance(dt,quiet){ const f=home&&home.fixup; if(!f||isGuest()||!f.cells) return; const n=f.cells.length; f.acc=(f.acc||0)+n/(DAY_LEN*(f.days||FIXUP_DAYS))*dt; let k=Math.floor(f.acc); if(k<1) return; f.acc-=k;
+  facRun(()=>{ while(k-->0&&f.i<n){ const [x,y,id,b,was]=f.cells[f.i++]; if(was!=null&&world[y*W+x]!==was&&world[y*W+x]!==id) continue;   /* 0.9.206: a block you (or anything) changed while the work was going on stays as it is */
+      if(world[y*W+x]!==id) setTile(x,y,id); if(bg[y*W+x]!==b){ bg[y*W+x]=b; if(facCap) facCap.push([x,y,b,1]); if(explored[y*W+x]) mapPixel(x,y); }
       if(!quiet&&f.i%5===0){ puff(x*T+8,y*T+8,'#d8c8a0',3,50); if(player&&Math.abs(x*T-cxOf(player))<30*T) sfx('hit',x*T,y*T); } } });
   if(f.i>=n) fixupDone(); }
 function fixupDone(){ home.fixup=null; try{ ruinSweep(); fixStations(); for(let x=home.castleCx-20;x<=home.castleCx+20;x++) updateSkyTop(x); }catch(e){ console.warn(e); } try{ buildMap(); }catch(e){}
@@ -12945,7 +12940,7 @@ function fixupDone(){ home.fixup=null; try{ ruinSweep(); fixStations(); for(let 
   if(home.drifters>0) setTimeout(()=>openRecruit(),600); }
 fixupTick=function(dt){ fixupAdvance(dt,false); };
 { const _si=sleepIn; sleepIn=function(x,y,...a){ const t0=time, d0=dayCount; const r=_si(x,y,...a); try{ if(home&&home.fixup&&(dayCount>d0||time<t0)){ const f=home.fixup, n=f.cells.length; fixupAdvance(((dayCount-d0)+time-t0)*DAY_LEN,true);
-        if(home.fixup) toast(`The Quartermaster worked through the night: the village is ${Math.round(100*home.fixup.i/n)}% rebuilt.`,4); } }catch(e){ console.warn(e); } return r; }; }
+        if(home.fixup) toast(home.fixup.kind==='grow'?`The Quartermaster worked through the night: the building work is ${Math.round(100*home.fixup.i/n)}% done.`:`The Quartermaster worked through the night: the village is ${Math.round(100*home.fixup.i/n)}% rebuilt.`,4); } }catch(e){ console.warn(e); } return r; }; }
 let fixupHold=false;
 // wanderers keep away from the ruin: they come when the village is rebuilt
 function hideDrifters(){ let n=0; for(const e of ents) if(e.kind==='drifter'&&!e.dead){ e.dead=true; n++; } return n; }
@@ -29923,6 +29918,101 @@ function gentleStart(){ const p=player; if(!p||p.cls!=='beast'||!p.gear||p.gear.
 // keep their own rule (a back wall).
 { const _ps=pieceSupported; pieceSupported=function(b,p,...a){ if(_ps(b,p,...a)) return true; if(!p||p.mount!=='wall') return false;
     for(let x=b.x0;x<=b.x1;x++) if(!holdsUp(x,b.y1+1)) return false; return true; }; }
+// ===== Beta 0.9.206: the bookshelf ladder (Kinard: "make it so that there is a 'book shelf ladder' that can be built and placed onto a
+// book shelf that the player can step onto that will roll side to side and the player can walk up and down") =====
+// Workbench: 8 planks and an iron bar. Hold it and tap a Bookshelf: the ladder stands against that column of shelves, from the
+// floor to the top shelf. Stand on it and press up or down to climb (as on a vine); once you are up on it, left and right roll it
+// one block at a time along the shelves, taking you with it, as far as the bookshelves and the floor go on. Breaking any part of it takes
+// the whole ladder back into your bag and leaves the shelves as they were.
+// It is made of real blocks, so it is saved with the world and friends see it: SHELF_RUNG (2587) is a bookshelf with the ladder
+// in front (it drops a Bookshelf), SHELF_LADDER (2586, also the item) is the open ladder between the lowest shelf and the floor.
+const SHELF_LADDER=2586, SHELF_RUNG=2587, LADDER_DROP=6, LADDER_STEP=0.16;
+if(!(BLOCKS[SHELF_LADDER]&&BLOCKS[SHELF_LADDER].name)&&!ITEMS[SHELF_LADDER]&&!ITEMS[SHELF_RUNG]){
+  defB(SHELF_LADDER,{name:'Bookshelf ladder',solid:false,hard:0.3,col:'#a9783c'}); defB(SHELF_RUNG,{name:'Bookshelf with a ladder',solid:false,hard:0.4,col:'#8a5c2d',drop:B.BOOKSHELF,place:false});
+  ITEMS[SHELF_LADDER]={name:'Bookshelf ladder',kind:'block',desc:'A rolling library ladder. Hold it and tap a bookshelf to stand it there. Climb it with up and down, and press left or right to roll it along the shelves'}; SELL[SHELF_LADDER]=6;
+  RECIPES.push({ out:SHELF_LADDER, n:1, need:[[B.PLANK,8],[I.IRON_BAR,1]], st:B.WORKBENCH });
+  const ladderArt=g=>{ const r=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); };
+    r(3,0,2,16,'#6b4a22'); r(11,0,2,16,'#6b4a22'); r(4,0,1,16,'#b88a4a'); r(12,0,1,16,'#b88a4a');          /* rails */
+    for(const y of [2,7,12]){ r(5,y,6,2,'#a9783c'); r(5,y+1,6,1,'#7a5628'); } };                               /* rungs */
+  { const c=mkCanvas(16,16), g=c.getContext('2d'); ladderArt(g); g.fillStyle='#3a3a44'; g.fillRect(2,14,4,2); g.fillRect(10,14,4,2); TEX[SHELF_LADDER]=c; }
+  { const c=mkCanvas(16,16), g=c.getContext('2d'); try{ g.drawImage(TEX[B.BOOKSHELF],0,0); }catch(e){} ladderArt(g); TEX[SHELF_RUNG]=c; }
+}
+const isLadderId=id=>id===SHELF_LADDER||id===SHELF_RUNG;
+function ladderSpan(x,y){ if(!isLadderId(tileAt(x,y))) return null; let t=y, b=y; while(t>1&&isLadderId(tileAt(x,t-1))) t--; while(b<H-2&&isLadderId(tileAt(x,b+1))) b++; return [t,b]; }
+/* where a ladder would stand against the bookshelf at (x,y): the run of shelves in that column and the open cells down to the floor */
+function ladderSpot(x,y){ if(tileAt(x,y)!==B.BOOKSHELF) return null; let t=y, b=y; while(t>1&&tileAt(x,t-1)===B.BOOKSHELF) t--; while(b<H-2&&tileAt(x,b+1)===B.BOOKSHELF) b++;
+  let f=b+1; while(f<=b+LADDER_DROP&&f<H-1&&tileAt(x,f)===0) f++; if(!isSolid(x,f)&&!(BLOCKS[tileAt(x,f)]&&BLOCKS[tileAt(x,f)].platform)) return null; return { x, top:t, bot:b, floor:f }; }
+function ladderPut(x,y){ const s=ladderSpot(x,y); if(!s) return false; mpRun(()=>{ for(let yy=s.top;yy<=s.bot;yy++) setTile(x,yy,SHELF_RUNG); for(let yy=s.bot+1;yy<s.floor;yy++) setTile(x,yy,SHELF_LADDER); }); return true; }
+function ladderTake(x,y){ const sp=ladderSpan(x,y); if(!sp) return false; mpRun(()=>{ for(let yy=sp[0];yy<=sp[1];yy++) setTile(x,yy,tileAt(x,yy)===SHELF_RUNG?B.BOOKSHELF:0); }); return true; }
+let ladderHintT=0;
+{ const _po=placeOK; placeOK=function(x,y,id,...a){ if(id===SHELF_LADDER) return !!ladderSpot(x,y); return _po(x,y,id,...a); }; }
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ if(id!==SHELF_LADDER) return _tp(x,y,id,...a);
+    try{ if(countItem(SHELF_LADDER)<1) return; if(Math.hypot(x*T+8-cxOf(player),y*T+8-cyOf(player))>REACH+T) return;
+      if(ladderPut(x,y)){ takeItem(SHELF_LADDER,1); player.placeCd=0.25; invDirty=true; try{ sfx('place'); }catch(e){} }
+      else if(player.useEdge&&performance.now()>ladderHintT){ ladderHintT=performance.now()+2500; toast(tileAt(x,y)===B.BOOKSHELF?'The ladder needs a floor under those shelves, at most '+LADDER_DROP+' blocks down':'Stand the ladder against a bookshelf',2.5); } }catch(e){ console.warn(e); } }; }
+{ const _bt=breakTile; breakTile=function(x,y,...a){ try{ if(world&&isLadderId(tileAt(x,y))){ if(ladderTake(x,y)){ give(SHELF_LADDER,1); invDirty=true; try{ sfx('break',x*T,y*T); }catch(e){} } return; } }catch(e){ console.warn(e); } return _bt(x,y,...a); }; }
+// ---- climbing ----
+function onLadder(e){ if(!e||!world) return false; const cx=Math.floor(cxOf(e)/T); for(let y=Math.floor((e.y+4)/T);y<=Math.floor((e.y+e.h-2)/T);y++) if(isLadderId(tileAt(cx,y))) return true; return false; }
+{ const _ov=onVine; onVine=function(e,...a){ return _ov(e,...a)||onLadder(e); }; }
+// ---- rolling ----
+function ladderCol(e){ const cx=Math.floor(cxOf(e)/T); for(let y=Math.floor((e.y+4)/T);y<=Math.floor((e.y+e.h-2)/T);y++) if(isLadderId(tileAt(cx,y))) return [cx,y]; return null; }
+function ladderCanRoll(x,y,dir){ const sp=ladderSpan(x,y); if(!sp) return false; const nx=x+dir; if(nx<2||nx>W-3) return false; let shelf=0;
+  for(let yy=sp[0];yy<=sp[1];yy++){ const d=tileAt(nx,yy); if(d===B.BOOKSHELF) shelf++; else if(d!==0) return false; }
+  const f=sp[1]+1; return shelf>0&&(isSolid(nx,f)||!!(BLOCKS[tileAt(nx,f)]&&BLOCKS[tileAt(nx,f)].platform)); }
+function ladderRoll(x,y,dir){ const sp=ladderSpan(x,y); if(!sp||!ladderCanRoll(x,y,dir)) return false; const nx=x+dir;
+  mpRun(()=>{ for(let yy=sp[0];yy<=sp[1];yy++){ const here=tileAt(x,yy), there=tileAt(nx,yy); setTile(x,yy,here===SHELF_RUNG?B.BOOKSHELF:0); setTile(nx,yy,there===B.BOOKSHELF?SHELF_RUNG:SHELF_LADDER); } }); return true; }
+let ladderAcc=0;
+/* The ladder rolls only while you are up on it (feet off the floor): on the floor you walk past it as past any furniture. Up on
+   it, left and right never walk you off: they roll the ladder, and at the end of the shelves you simply stay put. Climb down or
+   jump to get off. */
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; let at=null, x0=0; try{ if(p&&!p.dead&&world&&state==='play'&&(input.left!==input.right)&&!p.fly){ at=ladderCol(p); x0=p.x; if(at){ const sp=ladderSpan(at[0],at[1]); if(!sp||p.y+p.h>=(sp[1]+1)*T-3) at=null; } } }catch(e){ at=null; }   /* feet at the floor: walk */
+    const r=_up(dt,...a);
+    try{ if(at&&!p.dead){ const dir=input.right?1:-1; p.x=x0; p.vx=0; if(ladderCanRoll(at[0],at[1],dir)){ ladderAcc+=dt; if(ladderAcc>=LADDER_STEP){ ladderAcc=0; if(ladderRoll(at[0],at[1],dir)){ p.x=x0+dir*T; try{ sfx('place'); }catch(e){} } } } else ladderAcc=0; } else ladderAcc=0; }catch(e){ console.warn(e); }
+    return r; }; }
+// ===== Beta 0.9.206: growing the village is built over time (Kinard: "Make it so that upgrading the castle works the same as
+// finding the abandoned castle where the quartermaster will begin building, but make it so that it takes half the time as the
+// abandoned village to build") =====
+// When you buy a village growth by hand (the Grow button, or its checklist line), the growth is paid for and counted at once
+// (the tier, the people limit, what the shops sell), but the new walls, floors, roofs and houses go up block by block, from the
+// ground up, over GROW_DAYS of a day: half of what the abandoned village takes. It is the same machinery (home.fixup, with
+// kind 'grow' and its own length): the game makes the growth, notes every block and back wall that changed, puts the old ones
+// back and replays the difference. Sleeping moves the work on, a save keeps it, and the village's tidy-up passes wait for the
+// end as they do for the first rebuild. While the work goes on, another growth or a shop upgrade has to wait.
+// Growth started any other way (a friend's request to the host, the test world's tools, catching up after time away) is still
+// made at once. Host and single player only; never in the tutorial, the scene editor or the test world.
+const GROW_DAYS=FIXUP_DAYS/2, GROW_SIDE=40, GROW_UP=48, GROW_DOWN=14, GROW_MIN=20, GROW_HAND_MS=600;
+let growHandAt=-1e9;
+window.addEventListener('click',ev=>{ try{ const t=ev.target&&ev.target.closest&&ev.target.closest('[data-vgrow], [data-ckk^="vg:"], [data-ck^="vg:"]'); if(t) growHandAt=performance.now(); }catch(e){} },true);
+const growByHand=()=>performance.now()-growHandAt<GROW_HAND_MS;
+function growBuildOn(){ try{ return !!(world&&home&&home.claimed&&!home.fixup&&!isGuest()&&curSlot!==4&&!(typeof edOn==='function'&&edOn())&&!(typeof tutOn==='function'&&tutOn())&&isFinite(home.x0)&&isFinite(home.gy)); }catch(e){ return false; } }
+function growBox(){ return { x0:Math.max(2,Math.min(home.x0,home.castleCx-30)-GROW_SIDE), x1:Math.min(W-3,Math.max(home.x1,home.castleCx+30)+GROW_SIDE), y0:Math.max(2,home.gy-GROW_UP), y1:Math.min(H-3,home.gy+GROW_DOWN) }; }
+function growSnap(bx){ const w=bx.x1-bx.x0+1, h=bx.y1-bx.y0+1, W0=new Uint16Array(w*h), B0=new Uint8Array(w*h); for(let y=bx.y0;y<=bx.y1;y++) for(let x=bx.x0;x<=bx.x1;x++){ const i=y*W+x, j=(y-bx.y0)*w+(x-bx.x0); W0[j]=world[i]; B0[j]=bg[i]; } return { W0, B0, w }; }
+function growStart(bx,sn){ const cells=[]; for(let y=bx.y0;y<=bx.y1;y++) for(let x=bx.x0;x<=bx.x1;x++){ const i=y*W+x, j=(y-bx.y0)*sn.w+(x-bx.x0); if(world[i]!==sn.W0[j]||bg[i]!==sn.B0[j]) cells.push([x,y,world[i],bg[i],sn.W0[j],sn.B0[j]]); }
+  if(cells.length<GROW_MIN) return 0;
+  // the old blocks come back for now; the work replays the difference from the ground up
+  facRun(()=>{ for(const [x,y,nw,nb,ow,ob] of cells){ if(world[y*W+x]!==ow) setTile(x,y,ow); if(bg[y*W+x]!==ob){ bg[y*W+x]=ob; if(facCap) facCap.push([x,y,ob,1]); if(explored[y*W+x]) try{ mapPixel(x,y); }catch(e){} } } });
+  cells.sort((a,b)=>b[1]-a[1]||a[0]-b[0]);
+  home.fixup={ cells:cells.map(c=>[c[0],c[1],c[2],c[3],c[4]]), i:0, acc:0, days:GROW_DAYS, kind:'grow', to:villageTier() };
+  try{ hideDrifters(); }catch(e){} try{ for(let x=bx.x0;x<=bx.x1;x++) updateSkyTop(x); }catch(e){}
+  return cells.length; }
+const growHours=()=>Math.max(1,Math.round(GROW_DAYS*24));
+{ const _gv=growVillage; growVillage=function(...a){ try{ if(home&&home.fixup&&!isGuest()){ toast(home.fixup.kind==='grow'?'The Quartermaster is still building. Ask again when the work is done.':'The Quartermaster is still rebuilding the village.',3); return; } }catch(e){}
+    if(!growByHand()||!growBuildOn()) return _gv(...a);
+    const t0=villageTier(), bx=growBox(), sn=growSnap(bx), said=[], _t=toast; let r; toast=function(...x){ said.push(x); };
+    try{ r=_gv(...a); } finally{ toast=_t; }
+    let n=0; try{ if(villageTier()>t0&&!home.fixup) n=growStart(bx,sn); }catch(e){ console.warn(e); }
+    if(n){ const nm=(VILLAGE_TIERS[villageTier()]||{}).name||'village'; toast(`Your village is a ${nm} now. The Quartermaster starts building: the work takes about ${growHours()} hours, or a night's sleep.`,5); }
+    else for(const x of said) toast(...x);
+    return r; }; }
+{ const _us=upgradeShop; upgradeShop=function(...a){ try{ if(home&&home.fixup&&home.fixup.kind==='grow'&&!isGuest()){ toast('The Quartermaster is busy building. Ask again when the work is done.',3); return; } }catch(e){} return _us(...a); }; }
+// the end of the work: the growth has no helpers to greet and no ruin to sweep
+function growDone(){ const f=home.fixup; home.fixup=null; try{ fixStations(); }catch(e){ console.warn(e); } try{ const bx=growBox(); for(let x=bx.x0;x<=bx.x1;x++) updateSkyTop(x); }catch(e){}
+  try{ showDrifters(); }catch(e){} try{ if(typeof groundFixAll==='function') groundFixAll(); }catch(e){ console.warn(e); } try{ if(typeof evenTorches==='function') evenTorches(); }catch(e){} try{ buildMap(); }catch(e){}
+  const nm=(VILLAGE_TIERS[(f&&f.to)||villageTier()]||{}).name||'village'; toast(`The Quartermaster has finished: your ${nm} is built.`,4); try{ sfx('levelup'); }catch(e){} }
+{ const _fd=fixupDone; fixupDone=function(...a){ if(home&&home.fixup&&home.fixup.kind==='grow') return growDone(); return _fd(...a); }; }
+// how far the work is, for the Buildings window
+function growPct(){ const f=home&&home.fixup; return f&&f.kind==='grow'&&f.cells&&f.cells.length?Math.min(99,Math.floor(100*f.i/f.cells.length)):-1; }
+{ const _vh=villageHtml; villageHtml=function(...a){ let h=_vh(...a); try{ const p=growPct(); if(p>=0) h=`<div class="recipe no"><img alt="" src="${iconUrl(B.BRICK)}"><div><div class="nm">The Quartermaster is building</div><div class="ing">${p}% done. Sleeping moves the work on.</div></div></div>`+h.replace(/data-vgrow="1"(?! disabled)/g,'data-vgrow="1" disabled'); }catch(e){} return h; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
