@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795101868"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795401519"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.207</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.208</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,10 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.208</h3>
+    <p><b>Gates:</b> on your own land, fences stop your people too: you, your soldiers, villagers and animals go through a Fence gate. The gate swings open by itself as you come near, away from you, and shuts behind you. The fences the game built for your village (the farm field and the herding pen) got a gate.</p>
+    <p><b>Broken gates:</b> monsters can't get past a fence or a gate, but enemy soldiers can break a gate down in about four seconds. A gate broken on your land is put back by the Quartermaster's repairs. Animals in a pen with a broken gate wander out, and they're back inside as soon as the pen is mended.</p>
+    <p><b>Raids later:</b> enemy raids begin on day 10 instead of day 5. Every other attack moves back by five days too: small raids from day 8, enemy war machines from day 20, sieges from day 20.</p>
     <h3>New in Beta 0.9.207</h3>
     <p><b>Fences hold:</b> monsters, hostile animals and enemy soldiers can no longer get past a fence at all. The Fence gate (4 planks) is a fence for them too, and it swings open for you, your soldiers, villagers and tamed animals.</p>
     <p><b>Helmets, leggings and boots:</b> they are made at the same place as the armor of their metal (a workbench for wood, silver, iron and diamond, the Old anvil for gold, storm, mythril and adamantite), and the crafting window now lists each one right after its armor.</p>
@@ -525,21 +529,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p><b>Selling:</b> sticks sell for 1 coin again, worms sell for 1 coin to the Fisher, and every dye sells to the Tailor (1 coin for the plain colors). To keep that fair, the Shipwright's planks cost 40 coins for 20, the Fisher's worms 10 coins for 5, and the Herbalist's red and yellow flowers 6 coins for 3.</p>
     <p><b>Breakdown bench:</b> it breaks down anything you found or made yourself. It only refuses things you bought from a shop that sells them for less than their materials are worth.</p>
     <p><b>The Dragon Amulet</b> belongs to the hero who slew Vorthax. A world gives it back only to that hero, so a new character cannot walk into a finished world and pick one up.</p>
-    <h3>New in Beta 0.9.198</h3>
-    <p><b>Bigger words:</b> the smallest words in windows and on the screen are larger, and Settings &gt; Screen &gt; Menu text size makes the words in windows bigger still (Large or Larger). Small buttons inside windows are easier to hit with a finger, and things you cannot afford yet stay easy to read. On a big computer screen the hotbar, bars, buttons and mini-map grow with the window; move any size slider in Settings &gt; Screen to choose your own sizes. The pixel font is part of the game file, so it looks the same with no internet.</p>
-    <p><b>Safer saves:</b> opening the scene editor, the tutorial or the test world never changes your saved characters, and new game plus always stays in the world you are playing. A world that cannot be loaded takes you back to the title screen and leaves your save as it was. A slot saved by another version of the game is shown as that, not as Empty. The demo keeps its own saves. A new character who enters a world that belongs to one of your other characters starts with the starting kit; your other character keeps their things.</p>
-    <p><b>Same seed, same world:</b> a world seed always makes the same world, chests and villages included, and new worlds are made faster.</p>
-    <p><b>Coins:</b> buying from a shop, crafting and selling back can no longer make coins. The Shipwright's planks cost 30 coins for 20, and sticks, fences, worms and the plain dyes no longer sell. The breakdown bench refuses a few things that shops sell for less than their materials are worth.</p>
-    <p><b>Trading with friends:</b> an offer cannot be changed for a moment after you press Accept, and both sides always end up with the same swap.</p>
-    <p><b>The Dragon Amulet</b> cannot be lost: it never fades or burns, and a world where Vorthax is slain gives it back. New game plus is in the pause menu once Vorthax is slain, and the Scaleborn is unlocked by the kill wherever you stand.</p>
-    <p><b>Also fixed:</b> the Mending banner heals everyone on your side again. A building you place moves you and your soldiers out of its walls. The Quartermaster cannot be hurt before the village is yours. In the test world the God switches stay on after Continue, Ripen grows every crop and the time buttons land on noon, dusk and midnight.</p>
-    <p><b>How to play:</b> this window starts with a short guide to getting started, then the controls for keyboard, phone and controller, then one section for each part of the game. Older release notes moved to the version history on the wiki.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.207</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.208</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -809,7 +804,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.207</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.208</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -834,7 +829,8 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.207', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.208', INV_N=63, CHEST_N=81;
+const RAID_SMALL_START=8;   /* 0.9.208 (Kinard): raids pushed back 5 days: the small faction raids and marches on your village from day 8 (was 3), village raids and dragon raids from day 10 (RAID_START, was 5), sieges from day 20 (was 15) */
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
 const FCOL = { m:'#c84a2a', g:'#6fa04a', b:'#4a74b8', r:'#b8483f', n:'#9a9aa4', w:'#f4f2ea', a:'#8a5ac8', s:'#e8e0c0' };
@@ -3346,7 +3342,7 @@ function tamedAct(e,dt){ const p=player; if(!p||p.dead){ physics(e,dt); return; 
         if(found){ let y=found[1]; while(tileAt(found[0],y+1)===B.LOG) y++; fellTree(found[0],y); addFloat(cxOf(e),e.y-8,'chop!','#c8a870'); } }
       else if(f){ const [id,n]=f[(Math.random()*f.length)|0]; give(id,n); addFloat(cxOf(e),e.y-8,'found '+ITEMS[id].name.toLowerCase(),'#b8f5a0'); } } } }
 // once a day: maybe a raid, maybe a new villager
-function newDayEvents(){ raidAt=(settings.raids&&dayCount>=3&&Math.random()<0.2)?0.08+Math.random()*0.5:null;
+function newDayEvents(){ raidAt=(settings.raids&&dayCount>=RAID_SMALL_START&&Math.random()<0.2)?0.08+Math.random()*0.5:null;
   if(home&&home.claimed&&!(typeof MP!=='undefined'&&MP.guest)&&Math.random()<WANDER_CHANCE){ home.drifters++; ents.push(makeDrifter(home.drifters-1)); toast('A wanderer has arrived at your village and wants to help. Talk to them.',4); } }
 
 const KITS={ standard:'Standard: your weapon, a wooden pickaxe and axe, torches, planks, apples and 20 coins', recall:'Standard plus a recall mirror',
@@ -3593,7 +3589,7 @@ function warlordAct(w,dt){ if(w.retreatT>0) w.retreatT-=dt; const b=w.cmdBase||w
   w.charge=near&&!hurt; if(hurt&&foe) w.retreatT=1.6;
   if(hurt&&foe&&!w.retreatSaid){ w.retreatSaid=true; toast(`${w.name} is wounded and calls his soldiers to defend him!`,3); }
   if(near&&!w.chargeSaid){ w.chargeSaid=true; toast(`${w.name} orders the ${FNAME[b.f].toLowerCase()} army to charge!`,3); } if(!near) w.chargeSaid=false;
-  w.raidT=(w.raidT??200)-2; if(w.raidT<=0){ w.raidT=240+Math.random()*120; if(!near&&settings.raids&&dayCount>=3&&troops.length>6&&Math.abs(px-b.cx)<200&&!isNight()) raidAt=time; } }
+  w.raidT=(w.raidT??200)-2; if(w.raidT<=0){ w.raidT=240+Math.random()*120; if(!near&&settings.raids&&dayCount>=RAID_SMALL_START&&troops.length>6&&Math.abs(px-b.cx)<200&&!isNight()) raidAt=time; } }
 
 // enemy villages have the same helpers you do; warlords earn gold and buy more troops
 function spawnEnemyHelpers(b){ const roles=[['recruiter','Recruiter'],['quarter','Quartermaster'],['trainer','Beast trainer']]; roles.forEach(([r,n],k)=>{ const v=makeVillager(b.f,{x0:b.cx-8+k*6,x1:b.cx-5+k*6,gy:b.gy,role:r}); v.name=n; ents.push(v); }); }
@@ -3889,7 +3885,7 @@ function checkPlayerConquest(){ for(const is of islands){ if(is.kind!=='wild'||i
 // war: retake a castle you conquered, or march on your village
 function facWar(b){ const px=cxOf(player)/T; const won=bases.filter(o=>conquered[o.f]); let tgt=null, what='';
   if(won.length){ won.sort((a,c)=>Math.abs(a.cx-b.cx)-Math.abs(c.cx-b.cx)); tgt={x:won[0].cx,gy:won[0].gy,base:won[0]}; what=`is marching to retake the ${FNAME[won[0].f].toLowerCase()} castle`; }
-  else if(home&&home.claimed&&dayCount>=3){ tgt={x:Math.floor((home.x0+home.x1)/2),gy:home.gy}; what='is marching on your village'; }
+  else if(home&&home.claimed&&dayCount>=RAID_SMALL_START){ tgt={x:Math.floor((home.x0+home.x1)/2),gy:home.gy}; what='is marching on your village'; }
   if(!tgt) return false; const side=tgt.x<b.cx?1:-1; let sx=tgt.x+side*38; if(Math.abs(px-sx)<30) sx=tgt.x+side*55; sx=clamp(sx,5,W-6);
   const e0=facOf(b); if((e0.food??200)<40) return false; const party=spareTroops(b,6+Math.floor(Math.random()*5)); if(party.length<4) return false; e0.food-=40; const n=party.length;
   // the army marches from its castle and sails across the sea in its own ships
@@ -7115,7 +7111,7 @@ function goldTick(dt){ if(!lair||!player||player.dead||!inLair()) return; goldCd
 { const _u=update; update=function(dt){ _u(dt); if(state==='play'){ try{ goldTick(dt); }catch(e){} } }; }
 
 // dragon raids: every 5th day there is a 1 in 4 chance the dragon flies out for a minute to attack one faction, you included
-function dragonRaidDay(){ if(!dragon||dragon.dead||dragonSlain||dayCount%5!==0||Math.random()>=0.25||(typeof MP!=='undefined'&&MP.guest)) return; const opts=[];
+function dragonRaidDay(){ if(!dragon||dragon.dead||dragonSlain||dayCount%5!==0||dayCount<RAID_START||Math.random()>=0.25||(typeof MP!=='undefined'&&MP.guest)) return; const opts=[];
   if(home&&home.claimed) opts.push({f:player.team,cx:home.castleCx,gy:home.gy,name:'your village'}); for(const b of bases) if(!conquered[b.f]) opts.push({f:b.f,cx:b.cx,gy:b.gy,name:`the ${FNAME[b.f].toLowerCase()} faction`});
   if(!opts.length) return; const o=opts[(Math.random()*opts.length)|0]; dragon.raid={...o,t:60,startT:2}; if(!dragon.lairPos) dragon.lairPos={x:dragon.x,y:dragon.y};
   toast(o.f===player.team?'The dragon Vorthax has left his lair and is flying toward your village!':`The dragon Vorthax flies out to attack ${o.name}!`,6); if(typeof sfx==='function') sfx('roar'); }
@@ -9737,7 +9733,7 @@ RECIPES.push({ out:CHARCOAL, n:1, need:[[B.LOG,1]], st:B.FURNACE });
 // from day 5 there is a small chance each morning (RAID_CHANCE) that one enemy faction sends a raid of 1 to 3 soldiers,
 // and every 5 days after that raids grow by 1 or 2 soldiers (home.raidAdd). Factions still go to war to win back
 // castles you conquered. Raiders never land on a roof or inside your walls: they are put down on open ground outside.
-const RAID_START=5, RAID_CHANCE=0.2, RAID_MAX=24;
+const RAID_START=10,   /* 0.9.208 (Kinard): no raids until day 10, every later raid kind pushed back 5 days */ RAID_CHANCE=0.2, RAID_MAX=24;
 const _facWarAuto=facWar;
 facWar=function(b,size){ const won=bases.filter(o=>conquered[o.f]);
   if(size==null) return won.length?_facWarAuto(b):false;   // on their own, factions only march to retake a castle
@@ -15474,7 +15470,7 @@ machineAct=function(m,dt){ m.atkCd-=dt; m.atkT-=dt; m.hurtT-=dt; m.anim+=Math.ab
   if(m.crew){ const c=m.crew; c.x=cxOf(m)-m.facing*(m.w/2+3)-c.w/2; c.y=m.y+m.h-c.h; c.vx=c.vy=0; c.facing=m.facing; } };
 
 // ---- 6. enemy ballistas: from day 15 an attack on your village can bring one; a warning comes on day 10 ----
-const ENEMY_BALLISTA_DAY=15, ENEMY_BALLISTA_WARN=10;
+const ENEMY_BALLISTA_DAY=20, ENEMY_BALLISTA_WARN=15;
 function makeEnemyMachine(f,mt,x,gy){ const m=makeMachine(mt,x*T,0); m.team=f; m.enemy=true; m.y=gy*T-m.h-1; const c=makeHuman(f,'archer',m.x-12,gy*T-30,'guard',null); c.manning=m; m.crew=c; c.hold=true; ents.push(m,c); return m; }   // an enemy crew can be shot (yours are kept safe at their posts)
 function enemyMachineAct(m,dt){ m.vx*=Math.pow(0.02,dt); physics(m,dt); const R=MACHINES[m.mtype].range*T;
   if(m.crew&&m.atkCd<=0){ const t=nearestHostile(m,R,cxOf(m),cyOf(m)); if(t) fireMachine(m,cxOf(t),cyOf(t)); }
@@ -16188,7 +16184,7 @@ function machineScar(px,py,r,team){ if(!player||!team||!['g','b','r'].includes(t
 // A siege brings 4 soldiers plus 2 for each level, and never more than 2 more than you have soldiers yourself (siegeCap), so
 // an army you cannot match never comes; trebuchets come from level 2. The first siege is still on day 15.
 // The other mornings keep the raid rule (from day 5, a 1 in 5 chance of a raid); raids from day 15 bring a ballista only.
-const SIEGE_START=15, SIEGE_EVERY=5, SIEGE_GAP={easy:5,even:6,hard:8}, SIEGE_BASE=4, SIEGE_STEP=2, SIEGE_TREB_LV=2;
+const SIEGE_START=20, SIEGE_EVERY=5, SIEGE_GAP={easy:5,even:6,hard:8}, SIEGE_BASE=4, SIEGE_STEP=2, SIEGE_TREB_LV=2;
 function siegeState(){ if(!home) return {lv:0,next:SIEGE_START}; let st=home.siege;
   if(!st||typeof st!=='object'){ const d=dayCount||1;   /* a world from before 0.9.200: about one level for every two sieges it has seen, and the next one on the old schedule */
     st=home.siege={ lv:d>SIEGE_START?Math.min(4,Math.floor((d-SIEGE_START)/(2*SIEGE_EVERY))):0, next:d<=SIEGE_START?SIEGE_START:d+(SIEGE_EVERY-((d-SIEGE_START)%SIEGE_EVERY)) };
@@ -30053,6 +30049,91 @@ function gateTick(dt){ if((gateT-=dt)>0||!world) return; gateT=0.1; const S=new 
       L.sort((x,y)=>x.rank-y.rank||key.get(x)-key.get(y)); }catch(e){ console.warn(e); } return L; }; }
 try{ for(const id of ARMOR_PIECES){ const d=ITEMS[id], rc=RECIPES.find(r=>r.out===id); if(!d||!rc) continue; const st=rc.st&&BLOCKS[rc.st]?BLOCKS[rc.st].name:'';
     if(st&&!/Made at/.test(d.desc)) d.desc+=`. Made at ${/^[AEIOU]/i.test(st)?'an':'a'} ${st.toLowerCase()}, like the armor of the same metal`; } }catch(e){ console.warn(e); }
+// ===== Beta 0.9.208: only the gate lets your side through, it swings open like a door, enemy soldiers can break it, and the
+// Quartermaster's repairs bring the pen and its animals back (Kinard: "Make it so only the gate lets them through but it opens
+// outwards like a door automatically like a door so that enemy players can destroy the gate (when repairing with the
+// quartermaster the pen will refresh and the animals will return to the pen)") =====
+// 1. On your home island and on islands you have claimed, plain fences stop your side too: you, your soldiers, villagers and
+//    your animals go through a Fence gate. Elsewhere (goblin camps, enemy farms) fences only stop enemies, as before. Anyone
+//    already standing in a fence line when it is built can walk out (e.fenceIn). The fences the game built for your village
+//    (the farmhouse field, the herding pen, the tutorial and test world pens) get a gate in place of one post (gateHomeFences).
+// 2. A gate swings open by itself when one of your side comes within GATE_NEAR of it, the leaf swinging away from them, with
+//    the door sound, and shuts once they have gone. Penned animals and wild ones never open it.
+// 3. Enemy soldiers pushing at a gate break it down after GATE_HACK seconds (plain fences still hold). A gate broken on your
+//    land is remembered as damage (home.dmg.home), so the Quartermaster puts it back with his repairs.
+// 4. A fenced pen with a gap (its gate broken) lets its animals wander out (e.penLoose, at most PEN_ROAM blocks); as soon as
+//    the pen is whole again, after the repairs or a gate you place, they are back inside it.
+const GATE_NEAR=1.5, GATE_HACK=4, PEN_ROAM=30;
+{ const art=(dir)=>{ const c=mkCanvas(16,16), g=c.getContext('2d'), r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+    r(0,2,2,14,'#8a5f32'); r(14,2,2,14,'#8a5f32'); r(0,2,1,14,'#a57440'); r(14,2,1,14,'#a57440');
+    const lx=dir>0?11:2; r(lx,3,3,10,'#b7834a'); r(lx,3,1,10,'#d6a26a'); r(lx+1,4,2,1,'#a57440'); r(lx+1,10,2,1,'#a57440'); return c; };
+  TEX.gateOpenL=art(-1); TEX.gateOpenR=art(1); }
+// ---- where your side is fenced in ----
+let terrT=0, terrSpans=[];
+function homeTerritory(){ const now=performance.now(); if(now-terrT<1000) return terrSpans; terrT=now; const L=[];
+  try{ if(home&&home.claimed&&isFinite(home.castleCx)){ const is=islandAt(home.castleCx); if(is) L.push([is.s-20,is.e+20]); else L.push([home.x0-60,home.x1+60]); }
+    if(home&&isFinite(home.castleCx)&&typeof tutOn==='function'&&tutOn()) L.push([0,W]);
+    for(const is of islands||[]) if(is&&player&&is.claimedBy===player.team) L.push([is.s-20,is.e+20]); }catch(e){}
+  terrSpans=L; return L; }
+const ownLand=x=>{ for(const [a,b] of homeTerritory()) if(x>=a&&x<=b) return true; return false; };
+const isGateId=id=>id===FENCE_GATE;
+/* who the fence stops on your land besides enemies: everyone that walks, except flyers and other players' copies */
+function fenceSide(e){ if(!e||e.dead||e.fly||e.ghost||e.proxy||e.remote||e.bigBoss||e.boss) return false; if(fenceFoe(e)) return false;
+  return e===player||e.kind==='player'||e.kind==='human'||e.kind==='villager'||e.kind==='drifter'||e.kind==='animal'; }
+const gatePasser=e=>gateFriend(e)&&!e.fpen&&!e.pen&&!e.penLoose;
+function sideBarrier(x,y,e){ if(x<0||x>=W||!ownLand(x)) return false; const pass=gatePasser(e);
+  for(let k=0;k<=FENCE_GUARD;k++){ const yy=y+k; if(yy<0||yy>=H) break; const id=world[yy*W+x];
+    if(id===B.FENCE||fenceOverAt(x,yy)||(id===B.WATER&&wetDeco.get(yy*W+x)===B.FENCE)) return true;
+    if(isGateId(id)){ if(pass) continue; return true; }
+    if(isSolid(x,yy)) return false; } return false; }
+function sideTouch(e){ const tx0=Math.floor(e.x/T), tx1=Math.floor((e.x+e.w-0.001)/T), ty0=Math.floor(e.y/T), ty1=Math.floor((e.y+e.h-0.001)/T);
+  for(let x=tx0;x<=tx1;x++) for(let y=ty0;y<=ty1;y++) if(sideBarrier(x,y,e)) return true; return false; }
+{ const _ph=physics; physics=function(e,dt,...a){ try{ e.fenceIn=fenceSide(e)&&ownLand(Math.floor(cxOf(e)/T))?sideTouch(e):false; }catch(err){ e.fenceIn=false; } return _ph(e,dt,...a); }; }
+{ const _c=collides; collides=function(e,...a){ if(_c(e,...a)) return true; try{ if(!e||e.fenceIn||!fenceSide(e)) return false; return sideTouch(e); }catch(err){ return false; } }; }
+// ---- the gate swings open toward the far side of whoever comes through ----
+let gateDir=new Map(), gateWas=new Set();
+gateTick=function(dt){ if((gateT-=dt)>0||!world) return; gateT=0.08; const S=new Set(), D=new Map();
+  const mark=(e,vx)=>{ const cx=(e.x+e.w/2)/T, y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-0.001)/T), x0=Math.floor(e.x/T-GATE_NEAR), x1=Math.floor((e.x+e.w)/T+GATE_NEAR);
+    for(let x=x0;x<=x1;x++) for(let y=y0;y<=y1+1;y++){ if(x<0||x>=W||y<0||y>=H) continue; const i=y*W+x; if(!isGateId(world[i])) continue; S.add(i);
+      if(!D.has(i)){ const side=Math.sign((x+0.5)-cx)||Math.sign(vx||0)||1; D.set(i,side); } } };
+  for(const e of ents) if(gatePasser(e)) mark(e,e.vx);
+  try{ if(typeof MP!=='undefined'&&MP.on&&MP.remote) for(const r of MP.remote.values()) if(r&&isFinite(r.x)) mark({x:r.x,y:r.y,w:r.w||12,h:r.h||28},0); }catch(e){}
+  try{ for(const i of S) if(!gateWas.has(i)){ const x=i%W, y=(i/W)|0; if(player&&Math.abs(x*T-cxOf(player))<20*T&&!S.has(i-W)) sfx('door',x*T+8,y*T+8); } }catch(e){}
+  gateWas=S; gateOpenSet=S; gateDir=D; };
+{ const _tt=tileTex; tileTex=function(x,y,id,...a){ if(id===FENCE_GATE){ const i=y*W+x; if(!gateOpenSet.has(i)) return TEX[FENCE_GATE]; return (gateDir.get(i)||1)>0?TEX.gateOpenR:TEX.gateOpenL; } return _tt(x,y,id,...a); }; }
+// ---- enemy soldiers break gates; a broken gate on your land is damage the Quartermaster repairs ----
+function noteGateDmg(x,y){ if(!home||!home.claimed||!ownLand(x)) return; const D=home.dmg=home.dmg||{}, L=D.home=D.home||{}, k=x+','+y; if(k in L) return; const i=y*W+x; L[k]=[world[i],bg[i],shape?shape[i]:0]; home.dmgN=home.dmgN||{}; home.dmgN.home=(home.dmgN.home||0)+1; }
+function breakGateAt(col,y0,y1){ let n=0; facRun(()=>{ for(let y=y0;y<=y1;y++){ if(y<0||y>=H) continue; if(!isGateId(world[y*W+col])) continue; noteGateDmg(col,y); setTile(col,y,0); n++; } }); return n; }
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ try{ if(e&&e.kind==='human'&&!e.dead&&!isGuest()&&fenceFoe(e)){ const tg=e.target&&!e.target.dead?e.target:null; let col=-1;
+        { /* a gate it is pressed against, on the side of its target first, then the other */ const y0=Math.floor(e.y/T)-1, y1=Math.floor((e.y+e.h-0.001)/T), d0=tg?(Math.sign(cxOf(tg)-cxOf(e))||e.facing||1):(e.facing||1);
+          for(const dir of [d0,-d0]){ for(const d of [0.5,1.1]){ const x=Math.floor((cxOf(e)+dir*(e.w/2+d*T))/T); for(let y=y0;y<=y1+FENCE_GUARD;y++){ if(x<0||x>=W||y<0||y>=H) break; if(isGateId(world[y*W+x])){ col=x; break; } if(y>y1&&isSolid(x,y)) break; }   /* down to the gate under a soldier jumping at it */ if(col>=0) break; } if(col>=0) break; } }
+        if(col>=0){ e.gateT=(e.gateT||0)+dt; e.atkT=Math.max(e.atkT||0,0.2); if(e.gateT>=GATE_HACK){ e.gateT=0; const yb=Math.floor((e.y+e.h-0.001)/T); if(breakGateAt(col,yb-FENCE_GUARD,yb+1)){ try{ puff(col*T+8,e.y+e.h-10,'#b7834a',14,90); sfx('break',col*T,e.y); }catch(err){} } } }
+        else e.gateT=Math.max(0,(e.gateT||0)-dt*0.25); } }catch(err){ console.warn(err); }
+    return _ua(e,dt,...a); }; }
+// ---- penned animals: out through a gap, back in when the pen is whole ----
+function penWhole(p){ for(let x=p.x0;x<=p.x1;x++) if(!fenceAt(x,p.ty)) return false; return true; }
+function penEmpty(p){ for(let x=p.x0;x<=p.x1;x++) if(fenceAt(x,p.ty)) return false; return true; }
+let penBackSaid=0;
+{ const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ try{ if(e&&e.tamed&&e.fpen&&!e.dead){ const p=e.fpen;
+        if(!penWhole(p)&&!penEmpty(p)){ e.penLoose=true; e.anim+=dt; e.hurtT-=dt; e.wT=(e.wT||0)-dt; if(e.wT<=0){ e.wT=1.5+Math.random()*3; e.wDir=Math.random()<0.3?0:(Math.random()<.5?-1:1); }
+          const mid=(p.x0+p.x1+1)/2*T; if(Math.abs(cxOf(e)-mid)>PEN_ROAM*T) e.wDir=Math.sign(mid-cxOf(e)); e.vx=(e.wDir||0)*26; if(e.wDir) e.facing=e.wDir; physics(e,dt); return; }
+        if(e.penLoose&&penWhole(p)){ e.penLoose=false; e.x=(p.x0+0.5+Math.random()*Math.max(0,p.x1-p.x0))*T-e.w/2; e.x=clamp(e.x,p.x0*T,(p.x1+1)*T-e.w); e.y=p.gy*T-e.h-1; e.vx=e.vy=0;
+          try{ puff(cxOf(e),e.y+e.h-4,'#e8dcc0',6,40); }catch(err){} const now=performance.now(); if(now-penBackSaid>4000){ penBackSaid=now; toast('The pen is mended and your animals are back inside it',3); } } } }catch(err){ console.warn(err); }
+    return _ua(e,dt,...a); }; }
+// ---- the game's own fences in your village get a gate ----
+function gateColumn(x,y0,y1){ let n=0; for(let y=y0;y<=y1;y++){ const id=tileAt(x,y); if(id===B.FENCE){ setTile(x,y,FENCE_GATE); n++; } } return n; }
+function gateHomeFences(){ if(!world||!home||isGuest()) return 0; let n=0;
+  facRun(()=>{ const P=home.herdPen; if(P&&isFinite(P.x0)) n+=gateColumn(P.x0,P.gy-2,P.gy-1);
+    // the farmhouse field: the fence post at the field's far end
+    const F=home.farmhouse; if(F&&isFinite(F.x0)){ for(let x=F.x0-3;x<=F.x0+2;x++){ if(tileAt(x,F.gy-1)===B.FENCE&&(tileAt(x+1,F.gy)===B.FARMLAND||tileAt(x-1,F.gy)===B.FARMLAND)){ n+=gateColumn(x,F.gy-2,F.gy-1); break; } } }
+    // the test world farm and the tutorial pen: one post of each row becomes the gate
+    const rowGate=(x0,x1,y)=>{ for(let x=x0;x<=x1;x++) if(isGateId(tileAt(x,y))) return; for(let x=x0;x<=x1;x++) if(tileAt(x,y)===B.FENCE){ setTile(x,y,FENCE_GATE); n++; return; } };
+    try{ if(home.testFarm&&home.testFarmAt){ const t=home.testFarmAt; if(isFinite(t.x0)&&isFinite(t.gy)) rowGate(t.x0,t.x1??t.x0+12,t.gy-1); } }catch(e){}
+    try{ if(typeof tutOn==='function'&&tutOn()&&typeof HT==='function'){ const {G,cx}=HT(); rowGate(cx+42,cx+49,G-1); } }catch(e){} });
+  return n; }
+const gateAfter=f=>function(...a){ const r=f.apply(this,a); try{ if(typeof state!=='undefined'&&state!=='title') gateHomeFences(); }catch(e){} return r; };
+herdPenBuild=gateAfter(herdPenBuild); buildLodge=gateAfter(buildLodge); if(typeof tutPenBuild==='function') tutPenBuild=gateAfter(tutPenBuild); if(typeof buildTestFarm==='function') buildTestFarm=gateAfter(buildTestFarm);
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&home.gate208!==1){ home.gate208=1; const n=gateHomeFences(); if(n&&home.claimed) toast('Fences on your land now stop your people too: they go through a Fence gate. The farm field and the herding pen got one.',6); } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
