@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795401519"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
+<head><link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png?v=1795416757"><meta name="theme-color" content="#16121f"><script>window.DA_DEMO=1</script>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable=no">
 <title>Dragon Amulet demo</title>
@@ -347,7 +347,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
 
 <div class="overlay" id="scrTitle">
   <div class="panel title">
-    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.208</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
+    <div class="tleft"><h1>Dragon Amulet<span class="tm">™</span></h1><p class="ver">Beta 0.9.209</p><a id="appLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/download/" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:var(--gold,#ffcf3a);font-size:9px" hidden>Get the Mac and Windows app</a><a id="statusLink" class="ver" href="https://pumped60.github.io/dragon-amulet-play/status/" target="_blank" rel="noopener" style="display:block;margin-top:4px;color:var(--gold,#ffcf3a);font-size:9px">Game status: outages and known problems</a></div><div class="tright">
     <button class="btn primary" id="btnContinue" hidden>Continue<small id="continueInfo"></small></button><button id="btnContinueOld" hidden></button>
     <button class="btn" id="btnNew">New game</button>
     <button class="btn" id="btnMP">Multiplayer</button>
@@ -484,6 +484,48 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <p>Test world (on the title screen) starts a world of its own with a God menu: give yourself any item, upgrade gear, recruit soldiers, spawn enemies or animals and change the speed of the world. It starts with a farm nearby, and the God menu's World tab builds more farms, ripens crops, sets the time of day and the weather, and starts raids and sieges. Buildings and upgrades cost nothing there. The Scene editor, also under Test world, is a flat world for placing blocks, creatures and buildings by hand.</p>
     <h3>What changed lately</h3>
     <p>The newest changes. Everything older is in the version history on the wiki.</p>
+    <h3>New in Beta 0.9.209</h3>
+    <p><b>Birds stay outside:</b> wild birds no longer fly into rooms through arrow slits and doorways. A bird that is already inside a room flies back out within a couple of seconds.</p>
+    <p><b>Both daggers stab:</b> when you stab with twin daggers, the second dagger thrusts out on its own line just below the first, so you can see both blades strike.</p>
+    <p><b>Bigger horses:</b> every horse is half again as big as before, all ten kinds.</p>
+    <p><b>Winter snow:</b> in winter the tops of the trees and every plant, bush and flower out in the open slowly turn white with snow, and grass under a pile of snow turns white too. It all melts in spring.</p>
+    <p><b>Torches keep you warm:</b> no snow piles up within five blocks of a torch, and snow already there melts once a torch is lit nearby. A torch can also be placed right where a Snow block is: the block goes into your bag.</p>
+    <p><b>Ten chandeliers:</b> a wooden candle ring, a hanging lantern, antler, wagon wheel, silver tiered, grand golden, crystal cascade, glowcap, ember and jeweled chandeliers, each its own size. Make them at a workbench and hang them from a ceiling.</p>
+    <p><b>Full chest plates:</b> armor covers your whole shirt and sleeves, and leggings and boots cover your legs and feet.</p>
+    <p><b>Gates for your pens:</b> pens you built in an older world, with animals in them, get a Fence gate at the end nearest your castle.</p>
+    <p><b>Banners from the bag:</b> to give a banner to one of your soldiers or a friend, open your bag. Use a banner there to carry it, plant it or give it away, and the banner you carry shows at the top of the bag with a Choose button. The Talk list only picks up a banner that stands nearby.</p>
+    <p><b>Doors keep enemies out:</b> an open door stops monsters and enemy soldiers just like a shut one, so nothing slips in behind you.</p>
+    <p><b>Hide sends your army home:</b> while Hide is on, your soldiers and pets are away at your base: out of sight, out of your way while you build, and their banners with them. Tap Show and they are back beside you.</p>
+    <p><b>Crafting by nearness:</b> Talk is for people now: the workbench, furnace, anvil, cauldron, loom and brazier no longer show up in its list. Open your crafting window anywhere, and every station near you adds its recipes. The window takes the look of the closest one: wood by a workbench, gray stone by a furnace, dark iron by an anvil, and so on.</p>
+    <p><b>Friends see banners:</b> in a shared world, the banner a friend carries shows over their head on everyone's screen, and so do the banners their soldiers carry.</p>
+    <p><b>Item names in front:</b> the name of an item you point at in a chest, the bag or a shop always shows on top. After opening several windows it used to slip behind them.</p>
+    <p><b>Armor in a row:</b> your armor, helmet, leggings and boots sit side by side at the top of the bag, with your defense below. Tap one for its full name.</p>
+    <p><b>Trapdoors:</b> going through a trapdoor in a shared world no longer drops a trapdoor (or a door, gate or ladder) on the ground.</p>
+    <p><b>Winter seas:</b> in winter the ice reaches only 5 to 10 blocks out from each shore. Out past it the sea stays open, so you swim or sail across.</p>
+    <p><b>Raw meat:</b> eating raw meat has a 1 in 5 chance to make you sick: you lose a little health for 5 seconds and don't heal meanwhile. Cook it first to be safe.</p>
+    <p><b>Towers you capture stay yours:</b> every enemy watchtower can be captured once its guards are gone, the goblin lookouts and orc towers on the islands included. Its banners turn to your colors and your flag flies over it. No new guards appear in it, until a raiding party of its old owners stands in it with none of your people there: then they take it back.</p>
+    <p><b>Burned trees:</b> a tree that burns down no longer leaves a dark tree-shaped wall in the sky, and the ones left in your world are gone.</p>
+    <p><b>Your troops shield you:</b> an enemy arrow that flies through or just over two of your soldiers sticks in the second one, so the soldiers in front protect the people behind them, friends included.</p>
+    <p><b>Hidden bosses for friends:</b> a boss that waits for its chest, mirror or war drum to be investigated stays hidden on a friend's screen too, and a friend can investigate it to wake the boss for everyone.</p>
+    <p><b>Bosses go home:</b> when you die, a boss that was fighting you goes back to its spot, healed, instead of following you to where you come back. A boss never chases anyone far from its home.</p>
+    <p><b>Shared worlds, loot for everyone:</b> when an enemy falls, every friend nearby gets its coins too, and every player gets their own copy of what a boss drops. Friends see the boss health bar at the bottom of the screen. Items on the ground near a friend always show up for them (the nearest first), and an item a friend could not pick up can be picked up again.</p>
+    <p><b>Boats on the sea:</b> your boat only comes out on the open sea; in lakes and pools you swim.</p>
+    <p><b>Safe arrival:</b> there is never lava within 10 blocks of where you arrive in the magma realm.</p>
+    <p><b>Tame with V:</b> on a computer, taming has its own key, V (you can change it in Settings). Talk (F) no longer tames. On a phone the Tame button works as before.</p>
+    <p><b>Three birds at a time:</b> you can keep up to three tamed birds out of their cages. Put one in a bird cage to tame another.</p>
+    <p><b>Friends' keychains:</b> you see the keychain and stuffed animal at a friend's belt.</p>
+    <p><b>The sea fills in:</b> a dry hollow beside the sea, open to the sky, fills with sea water.</p>
+    <p><b>Ride together:</b> any number of friends can ride in the same boat: jump or swim onto it. Friends see each other's fishing lines too.</p>
+    <p><b>Messages in bottles:</b> fifty different hints and riddles about gems, bosses and hidden places. Every one you read is kept in Settings > World under Messages in bottles.</p>
+    <p><b>Fishing:</b> a fish bites 3 to 15 seconds after you cast (better rods lean toward the short end), and ten more fish live in lakes and the sea: perch, carp, catfish, rainbow trout, pike, mackerel, sardine, red snapper, mahi-mahi and marlin. Coral is a plain material now, not a treasure.</p>
+    <p><b>Smoke for everyone:</b> the smoke of fires, cannons and blasts shows on every player's screen in a shared world, and thins everyone's shots the same way.</p>
+    <p><b>Steady chests:</b> the chest window no longer jumps when you point at an item.</p>
+    <p><b>No flowers in mid-air:</b> plants with nothing under them are gone, the magma realm's flowers included.</p>
+    <p><b>Boss fights keep your army count:</b> a boss counts the soldiers you start the fight with and keeps that count until the fight is over, so it does not start healing as your soldiers fall. The boss bar shows that count.</p>
+    <p><b>Played time:</b> your hero's played time counts all your play, menus included, in single player and shared worlds, and an update never sets it back. Time from before it was counted is added from your worlds' days. Each world's own played time shows on its row in Continue.</p>
+    <p><b>Friends and thrones:</b> a realm lord stays hidden for everyone until someone investigates the throne, and a friend can investigate it too.</p>
+    <p><b>Magma platforms:</b> platforms and basalt ledges in the magma realm have a bright rim, so they stand out from the dark walls.</p>
+    <p><b>Reassign at the bottom:</b> in a villager's window the Reassign button is always the last row, below everything the villager sells.</p>
     <h3>New in Beta 0.9.208</h3>
     <p><b>Gates:</b> on your own land, fences stop your people too: you, your soldiers, villagers and animals go through a Fence gate. The gate swings open by itself as you come near, away from you, and shuts behind you. The fences the game built for your village (the farm field and the herding pen) got a gate.</p>
     <p><b>Broken gates:</b> monsters can't get past a fence or a gate, but enemy soldiers can break a gate down in about four seconds. A gate broken on your land is put back by the Quartermaster's repairs. Animals in a pen with a broken gate wander out, and they're back inside as soon as the pen is mended.</p>
@@ -525,16 +567,12 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h3>New in Beta 0.9.200</h3>
     <p><b>Sieges that grow with you:</b> the first siege still comes on day 15, but after that each one follows how the last went. Hold your village with ease and the next army is bigger and comes in 5 days. A real fight keeps the next one the same size, 6 days off. If a siege costs you dearly (you fall, or lose half your soldiers), the next is smaller and 8 days off. A siege army is never more than 2 soldiers bigger than your own, and trebuchets only come once sieges have grown twice. Ordinary raids are never bigger than three quarters of your soldiers plus 2.</p>
     <p><b>American spelling:</b> the game, its rules and the wiki use American English throughout (color, gray, armor, center, neighbor). Six things changed their names with it: Gray dye, Gray carpet, Gray flag, Gray tapestry, Library paneling and the Omelet.</p>
-    <h3>New in Beta 0.9.199</h3>
-    <p><b>Selling:</b> sticks sell for 1 coin again, worms sell for 1 coin to the Fisher, and every dye sells to the Tailor (1 coin for the plain colors). To keep that fair, the Shipwright's planks cost 40 coins for 20, the Fisher's worms 10 coins for 5, and the Herbalist's red and yellow flowers 6 coins for 3.</p>
-    <p><b>Breakdown bench:</b> it breaks down anything you found or made yourself. It only refuses things you bought from a shop that sells them for less than their materials are worth.</p>
-    <p><b>The Dragon Amulet</b> belongs to the hero who slew Vorthax. A world gives it back only to that hero, so a new character cannot walk into a finished world and pick one up.</p>
 </div>
 </div>
 
 <div class="overlay" id="scrPause" hidden>
   <div class="panel">
-    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.208</p>
+    <h2 style="margin-bottom:6px">Paused</h2><p class="ver" style="text-align:left">Dragon Amulet™ Beta 0.9.209</p>
     <p id="saveStatus" style="margin-top:10px"></p>
     <p id="mpPauseInfo" hidden style="color:var(--gold)"></p>
     <button class="btn primary" id="btnResume">Resume</button>
@@ -804,7 +842,7 @@ body:not(.hudmin):not(.minioff) #topright{ top:calc(var(--st) + 60px + var(--mmh
     <h1>The Dragon Falls</h1>
     <div id="endText"></div>
     <div class="credits"><div class="roll">
-      <p><b>Dragon Amulet™</b><br>Beta 0.9.208</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
+      <p><b>Dragon Amulet™</b><br>Beta 0.9.209</p><p>Game design<br><b>Kinard Sproles</b></p><p>Built with<br><b>Claude</b></p>
       <p>Pixel art, music and sound<br>made by the game itself</p><p>Pixel font<br>Press Start 2P by CodeMan38<br>SIL Open Font License 1.1</p><p>Inspired by the classics of<br>mining, building and<br>side-view adventure</p><p>Thank you for playing</p></div></div>
     <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" id="endKeep" style="flex:1">Keep playing</button><button class="btn" id="endNGP" style="flex:1">New game plus<small>A new world with tougher enemies. You keep your character, gear, soldiers and pets.</small></button></div>
   </div>
@@ -829,7 +867,7 @@ const SAVE_KEY = DA_NS+'slot1', SAVE_V = 14;
 // Beta 0.9.173 (Kinard: "removes all lines for blocks so that they meld better"): no dark outline where a block meets
 // open air (23_rendering.js) and no bevel edge inside the block pictures (makeTex in 03_block_textures.js), so ground reads as one mass.
 var BLOCK_OUTLINES=false, BLOCK_BEVEL=false;
-const GAME_VERSION='Beta 0.9.208', INV_N=63, CHEST_N=81;
+const GAME_VERSION='Beta 0.9.209', INV_N=63, CHEST_N=81;
 const RAID_SMALL_START=8;   /* 0.9.208 (Kinard): raids pushed back 5 days: the small faction raids and marches on your village from day 8 (was 3), village raids and dragon raids from day 10 (RAID_START, was 5), sieges from day 20 (was 15) */
 const SKY = 96; // rows of sky realm above the normal world (worlds made before Beta 0.9 have 72, kept in their save)
 let skyOff = SKY, barrierY = SKY-4;
@@ -4705,10 +4743,10 @@ function drawHumanFig(g,o){
   const R=fig(g,SCX-8,SFY-30); const cu=o.cust; let col=FCOL[o.team]||FCOL.n, dk=FDARK[o.team]||FDARK.n, lt=FLIGHT[o.team]||FLIGHT.n;
   if(cu){ col=cu.o1; dk=shadeHex(cu.o1,-0.35); lt=shadeHex(cu.o1,0.35); }
   const sk0=cu?cu.skin:o.team==='m'?'#c8483a':'#f2c79b', skd0=shadeHex(sk0,-0.14), o2=cu?cu.o2:null; FACE_EYE=cu?cu.eyes:o.team==='m'?'#ffcf3a':'#1b1424'; FACE_SKIN=sk0;
-  const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; if(o.look==='dragon'){ for(const x of [2,11]){ R(x,13,3,2,armorC[0]); R(x,13,3,1,armorC[1]); } return; }   /* 0.9.128: the Scaleborn shows his armor as shoulder guards, his scales stay in view */ R(3,13,10,5,armorC[0]); R(3,13,10,1,armorC[1]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };
+  const armorC=o.armor?METAL[o.armor]:null; const f=o.frame, atk=o.atk; const plate=()=>{ if(!armorC||o.look==='knight'||o.look==='mace') return; if(o.look==='dragon'){ for(const x of [2,11]){ R(x,13,3,2,armorC[0]); R(x,13,3,1,armorC[1]); } return; }   /* 0.9.128: the Scaleborn shows his armor as shoulder guards, his scales stay in view */ R(3,13,10,9,armorC[0]); R(3,13,10,1,armorC[1]); R(4,14,1,6,armorC[1]); R(11,14,1,7,armorC[2]); R(3,17,10,1,armorC[2]); R(3,21,10,1,armorC[2]); R(2,13,2,3,armorC[2]); R(12,13,2,3,armorC[2]); R(7,14,2,2,FCOL[o.team]||'#9a9aa4'); R(7,14,2,1,'#fff6'); };   /* 0.9.209 (Kinard: "the chest plate covers the players entire shirt"): the whole shirt, rows 13-21, with a seam and a lower edge; the sleeves are drawn in the plate's metal (arms below) */
   const hair=cu?cu.hc:'#7a4a2a', hairL=shadeHex(hair,0.25), bald=!!(cu&&cu.hair==='bald');
   const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0;
-  const arms=(c,hand)=>{ ARM_LAST.c=c; ARM_LAST.h=hand;   /* 0.9.201: the sleeve and hand colors of this figure, for the arms drawn over it (held item, torch, work, swing) */
+  const arms=(c,hand)=>{ if(armorC&&o.look!=='dragon') c=armorC[0]; ARM_LAST.c=c; ARM_LAST.h=hand;   /* 0.9.201: the sleeve and hand colors of this figure, for the arms drawn over it (held item, torch, work, swing) */
     if(f>=6){ const k=f===7?1:0; R(1,14,2,5,c); R(12,13+k,4,2,c); R(15,13+k,2,2,hand); R(3,18,2,2,hand); for(let i=0;i<11;i++) R(16+Math.round(i*(k?0.9:0.35))-(k?0:2),14+k+i,1,1,i<9?'#8a5c2d':'#6b4422'); R(k?24:16,24+k,3,4,'#b7834a'); return; }
     if(f===5){ R(-1,11,2,6,c); R(-1,9,2,2,hand); } else { R(1-sw,14+ay,2,6,c); R(1-sw,20+ay,2,2,hand); }
     if(atk&&o.melee){ R(13,16,4,2,c); R(17,16,2,2,hand); }
@@ -5023,7 +5061,7 @@ function drawAnimal0(e){ const s=animalSprite(e); const img=e.hurtT>0?flashOf(s)
 const MON_WPN={ orc_dagger:I.IRON_DAGGERS, orc_hammer:I.IRON_MACE, orc_xbow:I.SHORT_BOW, goblin_dagger:I.BONE_DAGGERS, goblin_archer:I.SHORT_BOW };
 // ================= settings =================
 const SETTINGS_KEY='dragonhold-settings';
-const STD_KEYS={ craft:'KeyC', bag:'Tab', army:'KeyR', map:'KeyM', use:'KeyF', orders:'KeyQ', items:'KeyH', aimlock:'KeyL', save:'KeyK', fly:'KeyG', grapple:'KeyE', breath:'KeyB' };
+const STD_KEYS={ craft:'KeyC', bag:'Tab', army:'KeyR', map:'KeyM', use:'KeyF', orders:'KeyQ', items:'KeyH', aimlock:'KeyL', save:'KeyK', fly:'KeyG', grapple:'KeyE', breath:'KeyB', tame:'KeyV' };   /* 0.9.209: tame on V */
 const settings=Object.assign({ keys:{...STD_KEYS}, aimLock:true, controls:'sticks', stickSize:'m', swap:false, smart:true, cursor:true, swordStyle:'swing', raids:true, sound:true, vol:0.7, uiHot:1, uiBars:1, uiInfo:1 }, (()=>{ try{ return JSON.parse(localStorage.getItem(SETTINGS_KEY)||'{}'); }catch(e){ return {}; } })());
 settings.keys=Object.assign({...STD_KEYS},settings.keys||{});
 function saveSettings(){ if(master) master.gain.value=settings.sound?settings.vol:0; if(settings.sound) audioInit(); try{ localStorage.setItem(SETTINGS_KEY,JSON.stringify(settings)); }catch(e){} }
@@ -5358,7 +5396,7 @@ function renderSettings(){
   $('#setSmart').innerHTML=opt('smart',true,'On','Mines the next block in that direction for you')+opt('smart',false,'Off','Only the exact block you point at');
   $('#setSword').innerHTML=opt('swordStyle','swing','Swing','A wide arc toward where you aim')+opt('swordStyle','stab','Stab','A long, quick thrust');
   $('#setRaids').innerHTML=opt('raids',true,'On','Enemy scouting parties roam the surface')+opt('raids',false,'Off','Only underground scouting parties');
-  const KEYNAMES={craft:'Crafting',bag:'Bag',army:'Army',map:'Map',use:'Talk, trade, tame, open',orders:'Change formation',items:'Hide items',aimlock:'Aim lock',save:'Quick save',fly:'Fly or walk (creative, Scaleborn)',grapple:'Grappling hook (hold, then let go)',breath:'Fire breath (Scaleborn, hold)'};
+  const KEYNAMES={craft:'Crafting',bag:'Bag',army:'Army',map:'Map',use:'Talk, trade, open',tame:'Tame an animal',orders:'Change formation',items:'Hide items',aimlock:'Aim lock',save:'Quick save',fly:'Fly or walk (creative, Scaleborn)',grapple:'Grappling hook (hold, then let go)',breath:'Fire breath (Scaleborn, hold)'};
   const kn=c=>!c?'(none)':c.replace(/^Key/,'').replace(/^Digit/,'').replace('Arrow','');
   $('#setKeys').innerHTML=Object.keys(STD_KEYS).map(k=>`<div class="keyrow"><span>${KEYNAMES[k]}</span><button class="xbtn" data-bind="${k}">${rebinding===k?'Press a key…':kn(settings.keys[k])}</button></div>`).join('');
   $('#setSound').innerHTML=opt('sound',true,'On','Music and sound effects')+opt('sound',false,'Off','Silent');
@@ -5867,7 +5905,13 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   if(MP.guest){ pr.joining=null; pr.fa=MP.facApplied; MP.gLog=MP.gLog.filter(e=>e[0]>MP.gAck); pr.ge=MP.gLog.slice(0,80); if(MP.rsSeq) pr.rs=MP.rsSeq; }
   try{ if(typeof mpBuildsOut==='function'){ const bl=mpBuildsOut(); if(bl) pr.bl=bl; } }catch(e){}   /* 0.9.115: flagged structures */
   try{ if(typeof mpBeesOut==='function'){ const pb=mpBeesOut(); if(pb) pr.pb=pb; } }catch(e){}   /* 0.9.195: your pet bees, seen by friends */
-  try{ if(typeof mpPiecesOut==='function'){ const ap=mpPiecesOut(); if(ap) pr.ap=ap; } }catch(e){}   /* 0.9.196: helmet, leggings, boots and your soldiers' weapon level, seen by friends */
+  try{ if(typeof mpPiecesOut==='function'){ const ap=mpPiecesOut(); if(ap) pr.ap=ap; } }catch(e){}
+  try{ if(typeof mpBannersOut==='function'){ const bn=mpBannersOut(); if(bn) pr.bn=bn; } }catch(e){}
+  try{ if(typeof mpSitesOut==='function'){ const ps=mpSitesOut(); if(ps) pr.ps=ps; } if(typeof mpWakeOut==='function'){ const wb=mpWakeOut(); if(wb) pr.wb=wb; } }catch(e){}   /* 0.9.209: bosses waiting to be investigated, and a friend's wake request */
+  try{ if(typeof mpBossesOut==='function'){ const bs=mpBossesOut(); if(bs) pr.bs=bs; } }catch(e){}   /* 0.9.209: the bosses that are fighting, for friends' boss bars */
+  try{ if(typeof mpKeysOut==='function'){ const kc=mpKeysOut(); if(kc) pr.kc=kc; } }catch(e){}   /* 0.9.209: your keychain and stuffed animal, seen by friends */
+  try{ if(typeof mpBobOut==='function'){ const fb=mpBobOut(); if(fb) pr.fb=fb; } }catch(e){}   /* 0.9.209: your fishing bobber, seen by friends */
+  try{ if(typeof mpSmokeOut==='function'){ const sm=mpSmokeOut(); if(sm) pr.sm=sm; } }catch(e){}   /* 0.9.209: smoke around each friend (host) */   /* 0.9.209: the banners you and your soldiers carry, seen by friends */   /* 0.9.196: helmet, leggings, boots and your soldiers' weapon level, seen by friends */
   pr.ts=Math.round(performance.now()); if(MP.host){ pr.hr=(MP.hitRes||[]).slice(-20); pr.ca=Object.entries(MP.cqSeen||{}).slice(0,20); pr.cx=(MP.cxOut||[]).slice(-20); }
   if(MP.host){ pr.host=true; pr.seed=seed; pr.size=sizeKey; pr.pf=player.team; pr.t=Math.round(time*1000)/1000; pr.ws=MP.wsId||null; pr.fl=(tower.cleared?'t':'')+(fort.cleared?'f':'')+(sky.castle.cleared?'s':'')+(magma.keep.cleared?'m':'')+(dragonSlain?'d':'')+(krakenSlain?'k':''); }
   if(MP.guest){ MP.posT=(MP.posT||0)-0.1; if(MP.posT<=0){ MP.posT=5; try{ localStorage.setItem(DA_NS+'mppos-'+seed,JSON.stringify({x:Math.round(p.x),y:Math.round(p.y)})); }catch(e){} } }
@@ -5877,12 +5921,12 @@ function mpSend(dt){ if(!MP.on||!MP.room||!player) return; if(MP.guest){ mpSaveT
   // (`MP.lean`); only a second refusal falls back to the bare core. Sizes are counted per key, not by re-encoding everything.
   const BUDGET=MP.budget||3600, sz={}; let total=2; const measure=k=>{ const v=pr[k]; const n=v===undefined?0:k.length+4+(typeof v==='string'?v.length+2:JSON.stringify(v).length); total+=n-(sz[k]||0); sz[k]=n; }; for(const k in pr) measure(k);
   const size=()=>total;
-  if(MP.lean>0){ MP.lean--; for(const k of ['pb','fi','fx','bm','sh','cr','vh','dr','wk','cg','tw']) if(pr[k]!==undefined){ pr[k]=null; measure(k); } if(Array.isArray(pr.mobs)&&pr.mobs.length>16){ pr.mobs=pr.mobs.slice(0,16); measure('mobs'); } }
+  if(MP.lean>0){ MP.lean--; for(const k of ['sm','fb','kc','bn','bs','pb','fi','fx','bm','sh','cr','vh','dr','wk','cg','tw']) if(pr[k]!==undefined){ pr[k]=null; measure(k); } if(Array.isArray(pr.mobs)&&pr.mobs.length>16){ pr.mobs=pr.mobs.slice(0,16); measure('mobs'); } }
   // lists of numbered events (block edits, hits, hurts, gifts) send the older and the newer half by turns, so nothing waits forever;
   // the logs that must arrive in order (ge, fe) and the enemies (nearest first) always keep their first part
   MP.trimFlip=!MP.trimFlip; const TURNS=new Set(['ed','hits','hurt','hr','gv','ch','sh','fx','cx']);
   const halve=k=>{ while(size()>BUDGET&&Array.isArray(pr[k])&&pr[k].length>0){ const h=Math.floor(pr[k].length/2); pr[k]=TURNS.has(k)&&MP.trimFlip?pr[k].slice(pr[k].length-h):pr[k].slice(0,h); measure(k); } };
-  if(size()>BUDGET){ for(const k of ['pb','fi','fx','bm','sh','cr','vh','dr','wk','ch','gv','ga','ca','cx','ed','sold','cq','hr','hits','hurt','ge','fe','mobs']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; measure('bh'); } }
+  if(size()>BUDGET){ for(const k of ['sm','pb','fi','fx','bm','sh','cr','vh','dr','wk','ch','gv','ga','ca','cx','ed','sold','cq','hr','hits','hurt','ge','fe','mobs']) if(size()>BUDGET) halve(k); if(size()>BUDGET){ delete pr.bh; measure('bh'); } }
   if(MP.coreOnly>0||size()>BUDGET){ MP.coreOnly=Math.max(0,(MP.coreOnly||0)-1); const core={}; for(const k of ['tk','ts','x','y','f','cls','team','ar','w','an','vx','hp','mhp','a','aa','tw','nm','md','host','seed','size','pf','t','fa','fs','rd','st','ws','fl']) if(pr[k]!==undefined) core[k]=pr[k]; core.joining=null; for(const k in pr) if(!(k in core)) pr[k]=null; Object.assign(pr,core); }
   try{ MP.room.presence(pr).then(()=>{ MP.err=''; MP.refusedAt=0; }).catch(e=>{ const m=(e&&(e.code||e.message))||'error'; const now=performance.now(); if(MP.refusedAt&&now-MP.refusedAt<4000) MP.coreOnly=20; else MP.lean=20; MP.refusedAt=now; if(MP.err!==m){ MP.err=m; console.warn('presence refused',m); } }); }catch(e){ MP.lean=20; }
   mpReceive(); }
@@ -17378,7 +17422,7 @@ const TUT_STEPS=[
     at:()=>[HT().cx+14,HT().G-1], check:()=>tutFarmland()>=(HT().farm0||0)+3 },
   { id:'plant', enter:()=>{ give(I.CARROT_SEEDS,4); invDirty=true; HT().crop0=tutCrops(); }, pc:()=>'Plant carrot seeds on the tilled soil: select the seeds and click each tilled block. Plant 3. They grow by themselves, and ripe crops give food.', ph:()=>'Plant carrot seeds on the tilled soil: tap the seeds in the hotbar, then tap each tilled block. Plant 3. They grow by themselves, and ripe crops give food.',
     at:()=>[HT().cx+14,HT().G-1], check:()=>tutCrops()>=(HT().crop0||0)+3 },
-  { id:'tame', enter:()=>{ time=0.3; if(!hasWhistle()) obtain(I.WHISTLE); give(I.CARROT,3); give(I.WHEAT,4); invDirty=true; tutWild(); }, pc:()=>`A sheep and a rabbit roam the meadow by the hill. Walk up to one and press ${tutKey('use')} to tame it. Every animal wants its own food: you have a taming whistle, carrots for the rabbit and wheat for the sheep. Pets follow you and fight for you.`, ph:()=>'A sheep and a rabbit roam the meadow by the hill. Walk up to one and tap the Talk button to tame it. Every animal wants its own food: you have a taming whistle, carrots for the rabbit and wheat for the sheep. Pets follow you and fight for you.',
+  { id:'tame', enter:()=>{ time=0.3; if(!hasWhistle()) obtain(I.WHISTLE); give(I.CARROT,3); give(I.WHEAT,4); invDirty=true; tutWild(); }, pc:()=>`A sheep and a rabbit roam the meadow by the hill. Walk up to one and press ${tutKey('tame')} to tame it. Every animal wants its own food: you have a taming whistle, carrots for the rabbit and wheat for the sheep. Pets follow you and fight for you.`, ph:()=>'A sheep and a rabbit roam the meadow by the hill. Walk up to one and tap the Talk button to tame it. Every animal wants its own food: you have a taming whistle, carrots for the rabbit and wheat for the sheep. Pets follow you and fight for you.',
     at:()=>{ const a=ents.find(e=>e.tutAnimal&&!e.dead&&!e.tamed); return a?[Math.floor(cxOf(a)/T),Math.floor(a.y/T)-1]:null; }, check:()=>ents.some(e=>e.tutAnimal&&e.tamed&&!e.dead) },
   { id:'pen', pc:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.', ph:()=>'Lead your pet to the pen past the cave (the row of fence posts) and walk in: choose Let it stay in this pen. Penned animals give milk, wool, eggs and more each morning.',
     at:()=>[HT().cx+45,HT().G-2], check:()=>ents.some(e=>e.tamed&&!e.dead&&e.fpen) },
@@ -27254,10 +27298,7 @@ function bannerSpot(){ const p=player; const x=Math.floor(cxOf(p)/T), y=Math.flo
 // talking beside a planted banner, or with a banner in hand
 { const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ const s=bannerState(); if(!player||player.dead) return o; const px=cxOf(player)/T, py=(player.y+player.h)/T;
       s.planted.forEach((b,i)=>{ if(Math.abs(b.x+0.5-px)<2.5&&Math.abs(b.y+1-py)<3) o.push({label:`Pick up the ${bannerName(b.id).toLowerCase()}`,direct:true,go:()=>{ const j=s.planted.indexOf(b); if(j>=0) s.planted.splice(j,1); give(b.id,1); invDirty=true; }}); });
-      if(s.held){ const id=s.held, nm=bannerName(id).toLowerCase();
-        o.push({label:`Plant your ${nm} here`,go:()=>{ const p=bannerSpot(); if(!p){ toast('Stand on solid ground with room above you to plant a banner',2.5); return; } s.planted.push({x:p.x,y:p.y,id}); s.held=0; }});
-        for(const e of soldiersNear(4).slice(0,3)) if(!bannerOf(e)) o.push({label:`Give your ${nm} to ${e.name}`,go:()=>{ s.sol[e.name]=id; s.held=0; toast(`${e.name} carries the ${nm}`,3); }});
-        o.push({label:`Put your ${nm} away`,go:()=>{ give(id,1); s.held=0; invDirty=true; }}); } }catch(e){ console.warn(e); } return o; }; }
+      /* 0.9.209: what to do with the banner you carry is chosen in the bag (98zxz_zz318_banner_bag.js), not here */ }catch(e){ console.warn(e); } return o; }; }
 // ---- lost in battle ----
 { const _k=kill; kill=function(e,src,...a){ let id=0, wasPlayer=false; try{ if(e&&!e.dead){ id=bannerOf(e); wasPlayer=e===player; } }catch(err){} const r=_k(e,src,...a);
     try{ if(id&&e&&e.dead){ const s=bannerState(); if(wasPlayer) s.held=0; else if(e.bannerHeld) e.bannerHeld=0; else if(e.name&&s.sol[e.name]===id) delete s.sol[e.name];
@@ -28498,14 +28539,14 @@ for(const id of ARMOR_PIECES){ const d=ITEMS[id], c=METAL[d.m]||METAL.iron, [c0,
 
 // ---- the bag: what you wear, and the gear list ----
 { const bar=document.createElement('div'); bar.id='armorBar'; const g=$('#invGrid'); if(g) g.before(bar);
-  const s=document.createElement('style'); s.textContent=`#armorBar{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:0 0 8px; font-size:9px; }
-#armorBar .apc{ display:inline-flex; align-items:center; gap:4px; padding:3px 6px; border:1px solid var(--line,#5a4a6a); border-radius:6px; font-size:8px; }
-#armorBar .apc.off{ opacity:.45; border-style:dashed; } #armorBar img{ width:16px; height:16px; image-rendering:pixelated; } #armorBar .apdef{ font-size:8px; color:var(--muted,#b8a8c8); }`;
+  const s=document.createElement('style'); s.textContent=`#armorBar{ display:flex; flex-direction:column; align-items:flex-start; gap:4px; align-items:center; margin:0 0 8px; font-size:9px; }
+#armorBar .apc{ display:inline-flex; align-items:center; gap:3px; padding:3px 5px; white-space:nowrap; flex:none; border:1px solid var(--line,#5a4a6a); border-radius:6px; font-size:8px; }
+#armorBar .aprow{ display:flex; flex-wrap:nowrap; gap:4px; max-width:100%; overflow-x:auto; } #armorBar .apc.off{ opacity:.45; border-style:dashed; } #armorBar img{ width:16px; height:16px; image-rendering:pixelated; } #armorBar .apdef{ font-size:8px; color:var(--muted,#b8a8c8); white-space:nowrap; flex:none; }`;
   document.head.appendChild(s); }
-function armorBarHtml(){ const G=player.gear||{}, out=[]; const tile=(id,label)=>id&&ITEMS[id]?`<span class="apc" title="${escapeHTML(ITEMS[id].name)}"><img src="${iconUrl(id)}" alt="">${escapeHTML(ITEMS[id].name)}</span>`:`<span class="apc off">${label}</span>`;
+function armorBarHtml(){ const G=player.gear||{}, out=[]; const tile=(id,label)=>id&&ITEMS[id]?`<span class="apc" title="${escapeHTML(ITEMS[id].name)}" data-apid="${id}"><img src="${iconUrl(id)}" alt="">${label}</span>`:`<span class="apc off">${label}</span>`;   /* 0.9.209 (Kinard: "all the armor shows up next to each other"): one row, the piece's word beside its picture; the full name on hover or tap */
   out.push(tile(G.armor?LINES.armor[G.armor-1]:0,'Armor'));
   for(const [slot,,label] of PIECE_SLOTS) out.push(tile(pieceTierItem(slot,G[slot]|0),label));
-  return out.join('')+`<span class="apdef">Defense ${player.def}</span>`; }
+  return `<span class="aprow">${out.join('')}</span><span class="apdef">Defense ${player.def}</span>`; }
 { const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ const bar=$('#armorBar'); if(bar&&player) bar.innerHTML=armorBarHtml(); }catch(e){} return r; }; }
 { const _gs=gearSummary; gearSummary=function(...a){ const r=_gs(...a); try{ if(Array.isArray(r)&&player){ const G=player.gear||{}; const i=r.findIndex(x=>x&&x[0]==='Armor');
       const rows=PIECE_SLOTS.map(([slot,,label])=>{ const t=G[slot]|0, id=pieceTierItem(slot,t); return [label,id?`${ITEMS[id].name} (+${ITEMS[id].def} defense, tier ${t} of ${LINES.armor.length})`:'none']; });
@@ -28514,6 +28555,8 @@ function armorBarHtml(){ const G=player.gear||{}, out=[]; const tile=(id,label)=
 // ---- friends see your pieces and your army's weapon level (presence `ap`, sent from mpSend) ----
 function mpPiecesOut(){ if(!player||!player.gear) return 0; const G=player.gear, w=(player.armyUp&&player.armyUp.weapon)|0; const ap=[G.helmet|0,G.legs|0,G.feet|0,w]; return ap.some(v=>v)?ap:0; }
 { const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d&&d.ap!==undefined) r.ap=Array.isArray(d.ap)?d.ap.slice(0,4).map(v=>clamp(v|0,0,LINES.armor.length)):null; }catch(e){} return out; }; }
+// 0.9.209: a tap on a piece in the armor row says its full name (the row shows only the piece's word)
+document.addEventListener('click',ev=>{ const b=ev.target&&ev.target.closest&&ev.target.closest('#armorBar [data-apid]'); if(!b) return; const d=ITEMS[+b.dataset.apid]; if(d) toast(d.name,1.4); });
 // ===== Beta 0.9.196: solid ground under raised village ground; what you dig stays dug (Kinard: "Fix this spawn issue on the
 // other side as well ... any animals, plants etc are killed that are underneath; also fix the ground underneath the castle as it
 // keeps regenerating ... a dirt back wall ... within 10 blocks deep of the main base") =====
@@ -29371,11 +29414,14 @@ function daggerSwinging(e){ if(!e||!e._swingArm) return false; try{ const md=mel
 function daggerBackArmRect(o){ const f=o.frame||0, dx=o.look==='dragon'?1:0; if(f===5) return [-1+dx,9,2,8]; const sw=f===1?2:f===3?-2:0, ay=f===1||f===3?-1:0; return [1-sw+dx,14+ay,2,8]; }
 { const _hf=drawHumanFig; drawHumanFig=function(g,o,...a){ const r=_hf(g,o,...a); if(!o||!o.dag2||(o.frame||0)>=6) return r;
     try{ const [x,y,w,h]=daggerBackArmRect(o); g.clearRect(SCX-8+x,SFY-30+y,w,h); }catch(e){} return r; }; }
-const DAG2_LAG=0.25, DAG2_DARK='rgba(0,0,0,0.24)';
+// 0.9.209 (Kinard: "fix the daggers so that both attack when attacking"): on a stab the second blade went out 0.2 radians
+// under the first and was hidden behind it, so a stab still looked like one dagger. It now thrusts on its own line, DAG2_SPREAD
+// radians below the first, a little less behind in time and less shaded, so the two blades show as a pair.
+const DAG2_LAG=0.15, DAG2_DARK='rgba(0,0,0,0.14)', DAG2_SPREAD=0.5;
 function daggerBackSwing(e,d){ const m=METAL[d.m||'iron']||METAL.iron, dir=e.facing||1; const k=clamp(1-Math.max(0,e.atkT)/(e.atkDur||0.3),0,1);
   const sx=Math.round(cxOf(e))+dir*2, sy=Math.round(e.y)+13;   // the far shoulder: just inside the near one and a pixel lower
   let ang=e.atkAng, reachOut=SWING_ARM;
-  if(e.atkMode==='stab'){ const k2=clamp((k-DAG2_LAG)/(1-DAG2_LAG),0,1); ang=e.atkAng+(Math.cos(e.atkAng)>=0?1:-1)*0.2; reachOut=SWING_ARM+Math.sin(k2*Math.PI)*6-3; }
+  if(e.atkMode==='stab'){ const k2=clamp((k-DAG2_LAG)/(1-DAG2_LAG),0,1); ang=e.atkAng+(Math.cos(e.atkAng)>=0?1:-1)*DAG2_SPREAD; reachOut=SWING_ARM+Math.sin(k2*Math.PI)*7-2; }
   else { const a=swingAngle(e); ang=2*e.atkAng-a.cur;   /* the mirror of the front arm's sweep */
     const L=d.reach+SWING_ARM-6, a0=2*e.atkAng-a.start, lo=Math.min(a0,ang), hi=Math.max(a0,ang);
     ctx.lineCap='butt'; ctx.strokeStyle='rgba(255,255,255,0.28)'; ctx.lineWidth=2; ctx.beginPath(); ctx.arc(sx,sy,L,Math.max(lo,ang-(ang>a0?1.1:0)),Math.min(hi,ang+(ang<a0?1.1:0))); ctx.stroke(); }
@@ -29879,7 +29925,7 @@ function mossTick(dt){ if(!world||!player||state!=='play'||isGuest()||!rainOn())
 const GENTLE_CHARM=2585, GENTLE_COST=60;
 ITEMS[GENTLE_CHARM]={name:"Shepherd's charm",kind:'charm',desc:'Your own blows pass by peaceful animals while you wear it, so you never hurt one by mistake. An animal that attacks you can still be fought. Take it off in your bag to hunt.'};
 CHARMS[GENTLE_CHARM]={name:"Shepherd's charm",fx:{gentle:1},desc:'Your blows pass by peaceful animals',col:'#8fd08a'}; SELL[GENTLE_CHARM]=30;
-try{ customIcon(GENTLE_CHARM,(g)=>{ const p=(x,y,w,h,c)=>{ g.fillStyle=c; g.fillRect(x,y,w,h); };
+try{ customIcon(GENTLE_CHARM,(rect)=>{ const p=(x,y,w,h,c)=>rect(x,y,w,h,c);   /* 0.9.209: customIcon hands over its rect painter, not a canvas */
   p(7,1,2,1,'#c9b27a'); p(6,2,1,2,'#c9b27a'); p(9,2,1,2,'#c9b27a'); p(7,4,2,1,'#c9b27a');            /* cord loop */
   p(4,5,8,1,'#2e5a34'); p(3,6,10,6,'#3f7d47'); p(4,12,8,1,'#2e5a34'); p(5,13,6,1,'#2e5a34');           /* green leaf-shaped stone */
   p(4,7,8,4,'#58a862'); p(7,6,2,7,'#8fd08a'); p(5,8,2,1,'#8fd08a'); p(9,9,2,1,'#8fd08a');             /* vein */
@@ -30134,6 +30180,835 @@ function gateHomeFences(){ if(!world||!home||isGuest()) return 0; let n=0;
 const gateAfter=f=>function(...a){ const r=f.apply(this,a); try{ if(typeof state!=='undefined'&&state!=='title') gateHomeFences(); }catch(e){} return r; };
 herdPenBuild=gateAfter(herdPenBuild); buildLodge=gateAfter(buildLodge); if(typeof tutPenBuild==='function') tutPenBuild=gateAfter(tutPenBuild); if(typeof buildTestFarm==='function') buildTestFarm=gateAfter(buildTestFarm);
 { const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!isGuest()&&home.gate208!==1){ home.gate208=1; const n=gateHomeFences(); if(n&&home.claimed) toast('Fences on your land now stop your people too: they go through a Fence gate. The farm field and the herding pen got one.',6); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: birds stay out of rooms; Reassign at the bottom of a villager's window =====
+// Kinard (2026-11-23, a screenshot of the top room of the castle's left tower with a flock packed under its ceiling): "Why are
+// so many birds stuck here?" A wild bird is half a block tall and an arrow slit is an open gap two blocks tall, so birds flew in
+// through the slits (and open doorways). Inside, they turned round at every wall and never found the slit again, and when you
+// came near they flew up and away from you, into the ceiling. Two rules now, for wild birds in flight (not tamed, penned or
+// landed ones):
+//   1. They never fly into a cell with a back wall, so rooms, towers and houses stay closed to them.
+//   2. One that is already inside (from an older game, or put there by a spawn) flies out after BIRD_OUT seconds: it is set
+//      above the roof of the nearest open column with a small puff of feathers.
+// Host and single player only (a friend's game shows what the host runs).
+const BIRD_OUT=1.5, BIRD_OUT_SEARCH=24;
+function wildFlyer(e){ return !!e&&e.kind==='animal'&&e.fly&&!e.tamed&&!e.pen&&!e.fpen&&!e.ghost&&!e.remote&&!e.dead; }
+function backWallAt(x,y){ return x>=0&&x<W&&y>=0&&y<H&&!!bg[y*W+x]; }
+function birdIndoors(e){ return backWallAt(Math.floor(cxOf(e)/T),Math.floor(cyOf(e)/T)); }
+function birdWallTouch(e){ const x0=Math.floor(e.x/T), x1=Math.floor((e.x+e.w-1)/T), y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-1)/T);
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) if(backWallAt(x,y)) return true; return false; }
+{ const _c=collides; collides=function(e,...a){ if(_c(e,...a)) return true; try{ if(wildFlyer(e)&&!e.birdIn&&world&&bg) return birdWallTouch(e); }catch(err){} return false; }; }
+/* the open sky over the nearest column, outside any building */
+function birdOutSpot(c){ for(let d=0;d<=BIRD_OUT_SEARCH;d++) for(const s of d?[-1,1]:[1]){ const x=c+s*d; if(x<2||x>W-3) continue; const top=skyTop[x];
+      if(!(top>2)) continue; const y=top-4; if(y<2) continue; let ok=true; for(let yy=y-1;yy<=y+1&&ok;yy++) if(backWallAt(x,yy)||world[yy*W+x]) ok=false; if(ok) return [x,y]; } return null; }
+function birdLetOut(e){ const s=birdOutSpot(Math.floor(cxOf(e)/T)); if(!s){ e.dead=true; return; }
+  try{ puff(cxOf(e),cyOf(e),'#d8d2c0',6,40); }catch(err){} e.x=s[0]*T+8-e.w/2; e.y=s[1]*T; e.vx=0; e.vy=-60; e.landed=false; e.landing=false; e.wT=0; e.birdIn=false; e.birdInT=0; }
+{ const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ try{ if(wildFlyer(e)&&!isGuest()&&world&&bg){
+        if(birdIndoors(e)){ e.birdIn=true; e.birdInT=(e.birdInT||0)+dt; if(e.birdInT>=BIRD_OUT) birdLetOut(e); }
+        else if(e.birdIn&&!birdWallTouch(e)){ e.birdIn=false; e.birdInT=0; } } }catch(err){ console.warn(err); }
+    return _ua(e,dt,...a); }; }
+
+// Kinard (2026-11-23, a screenshot of the Beast trainer's window with Reassign between the upgrades and the Shears): "Make it so
+// the 'reassign' is ALWAYS at the bottom of the menu". Rows that later code adds to a shop (the Shears, the Shepherd's charm,
+// workplace rows and the rest) were appended after it. Whenever the list changes, the Reassign row is moved to the end, below
+// every other row (above a Close button if the list has one at its foot).
+function rejobToBottom(){ const list=$('#shopList'); if(!list) return; const row=list.querySelector('#rejobRow'); if(!row) return;
+  let foot=null; const last=list.lastElementChild; if(last&&last!==row&&last.matches&&last.matches('button')&&/^(close|back)$/i.test((last.textContent||'').trim())) foot=last;
+  const want=foot?foot.previousElementSibling:list.lastElementChild; if(want===row) return; if(foot) list.insertBefore(row,foot); else list.appendChild(row); }
+try{ const list=$('#shopList'); if(list) new MutationObserver(()=>{ try{ rejobToBottom(); }catch(e){} }).observe(list,{childList:true}); }catch(e){ console.warn(e); }
+{ const _rs=renderShop; renderShop=function(...a){ const r=_rs(...a); try{ rejobToBottom(); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: horses half again as big (Kinard, 2026-11-23: "Make the horses 1.5 times bigger") =====
+// Every grown horse, wild or tamed, of all ten kinds, is drawn HORSE_SC times as big and takes that much room (33 x 27 pixels
+// in place of 22 x 18). The drawing in 98zxz_zz295_horses.js is kept as it is and scaled about its top-left corner, so each kind
+// keeps its own coat, mane and markings. Horses from older games grow to the new size the first time they move, standing on
+// the same ground. Foals keep their own small drawing (46_babies.js); like every foal they take a grown one's room.
+const HORSE_SC=1.5, HORSE_W0=22, HORSE_H0=18, HORSE_W=Math.round(HORSE_W0*HORSE_SC), HORSE_H=Math.round(HORSE_H0*HORSE_SC);
+try{ if(ANIMALS.horse){ ANIMALS.horse.w=HORSE_W; ANIMALS.horse.h=HORSE_H; } }catch(e){ console.warn(e); }
+{ const _hd=A50_DRAW.horse; A50_DRAW.horse=function(R,x,y,l,f,e,...a){ const s=HORSE_SC;
+    const R2=(px,py,w,h,c)=>{ const x0=Math.round(x+(px-x)*s), y0=Math.round(y+(py-y)*s), x1=Math.round(x+(px+w-x)*s), y1=Math.round(y+(py+h-y)*s); R(x0,y0,Math.max(1,x1-x0),Math.max(1,y1-y0),c); };
+    return _hd(R2,x,y,l,f,e,...a); }; }
+function horseResize(e){ if(!e||e.atype!=='horse'||(e.w===HORSE_W&&e.h===HORSE_H)) return; const bot=e.y+e.h, cx=e.x+e.w/2; e.w=HORSE_W; e.h=HORSE_H; e.x=cx-e.w/2; e.y=bot-e.h; }
+{ const _ma=makeAnimal; makeAnimal=function(type,...a){ const e=_ma(type,...a); try{ if(type==='horse') horseResize(e); }catch(err){} return e; }; }
+{ const _ua=updateAnimal; updateAnimal=function(e,dt,...a){ try{ if(e&&e.atype==='horse') horseResize(e); }catch(err){} return _ua(e,dt,...a); }; }
+// ===== Beta 0.9.209: snow on trees, grass and plants in winter; torches keep snow away (Kinard, 2026-11-23: "Make a snow
+// animation for the trees so that when it's winter the trees get snow and also so that there is a snow animation for the grass
+// so that the grass changes to a white color when there is a pile snow on it do the same for all bushes etc, but also make it
+// so that the ground snow is only formed if there is not a torch a torch will heat up 5 blocks away from its original source";
+// "Make it so that torches can also be placed and will replace the snow blocks") =====
+// 1. Snow cover (snowAmt, 0 to 1) builds up through winter (faster while it snows) and melts away in spring. The top leaves of
+//    every tree, and every plant, bush, flower and crop that stands under the open sky, get a white cap of that much snow. The
+//    caps follow each picture's own outline (the first coloured pixels of each column), so a bush gets snow on its own top.
+// 2. Grass with a pile of snow on it (a Snow layer in the cell above) turns white along its top and speckled down its sides.
+// 3. Heat: no snow piles up within TORCH_HEAT (5) blocks of a torch, and piles already there melt within a second or so of a
+//    torch being lit. Trees and plants within that reach keep no snow either.
+// 4. A torch can be placed where a Snow block is: the block comes into your bag and the torch takes its place (if a torch can
+//    stand there; otherwise the block stays).
+// The snow on trees and plants is only a picture, worked out on each player's own screen from the season; the piles and the
+// melting are world changes, made by the host (or in single player) inside facRun.
+const TORCH_HEAT=5, SNOW_IN=120, SNOW_IN_FALLING=30, SNOW_OUT=90, HEAT_EVERY=1;
+const HEAT_IDS=new Set(); { for(const k in BLOCKS){ const b=BLOCKS[k]; if(b&&b.name&&/torch/i.test(b.name)&&!/unlit|holder/i.test(b.name)) HEAT_IDS.add(+k); } HEAT_IDS.add(B.TORCH); if(typeof FENCE_TORCH!=='undefined') HEAT_IDS.add(FENCE_TORCH); }
+let snowAmt=0, snowAmtSet=false;
+function snowTarget(){ return typeof curSeason!=='undefined'&&curSeason==='winter'?1:0; }
+function snowAmtTick(dt){ const t=snowTarget(); if(!snowAmtSet){ snowAmt=t; snowAmtSet=true; return; }
+  if(t>snowAmt) snowAmt=Math.min(t,snowAmt+dt/(weather==='snow'?SNOW_IN_FALLING:SNOW_IN)); else if(t<snowAmt) snowAmt=Math.max(t,snowAmt-dt/SNOW_OUT); }
+// ---- heat around torches ----
+function torchesNear(x0,y0,x1,y1){ const L=[]; x0=Math.max(0,x0); x1=Math.min(W-1,x1); y0=Math.max(0,y0); y1=Math.min(H-1,y1);
+  for(let y=y0;y<=y1;y++){ const r=y*W; for(let x=x0;x<=x1;x++) if(HEAT_IDS.has(world[r+x])) L.push(x,y); } return L; }
+function heatedBy(L,x,y){ const R2=TORCH_HEAT*TORCH_HEAT; for(let i=0;i<L.length;i+=2){ const dx=L[i]-x, dy=L[i+1]-y; if(dx*dx+dy*dy<=R2) return true; } return false; }
+function torchWarm(x,y){ return heatedBy(torchesNear(x-TORCH_HEAT,y-TORCH_HEAT,x+TORCH_HEAT,y+TORCH_HEAT),x,y); }
+// snow that falls (40_weather.js snowTick) is not laid down where a torch warms the ground
+let snowFalling=false;
+{ const _sn=snowTick; snowTick=function(...a){ snowFalling=true; try{ return _sn(...a); } finally{ snowFalling=false; } }; }
+{ const _st=setTile; setTile=function(x,y,id,...a){ if(snowFalling&&id===B.SNOW_LAYER){ try{ if(torchWarm(x,y)) return; }catch(e){} } return _st(x,y,id,...a); }; }
+// and piles already there melt
+let heatT=HEAT_EVERY;
+function heatTick(dt){ if((heatT-=dt)>0) return; heatT=HEAT_EVERY; if(!world||!player||isGuest()) return; const spots=[];
+  const at=p=>{ if(!p||!isFinite(p.x)) return; const cx=Math.floor((p.x+6)/T), cy=Math.floor((p.y+10)/T), X0=cx-45, X1=cx+45, Y0=cy-25, Y1=cy+25;
+    const L=torchesNear(X0-TORCH_HEAT,Y0-TORCH_HEAT,X1+TORCH_HEAT,Y1+TORCH_HEAT); if(!L.length) return;
+    for(let i=0;i<L.length;i+=2){ const tx=L[i], ty=L[i+1]; for(let y=ty-TORCH_HEAT;y<=ty+TORCH_HEAT;y++) for(let x=tx-TORCH_HEAT;x<=tx+TORCH_HEAT;x++){
+        if(x<0||x>=W||y<0||y>=H) continue; if(world[y*W+x]!==B.SNOW_LAYER) continue; const dx=x-tx, dy=y-ty; if(dx*dx+dy*dy<=TORCH_HEAT*TORCH_HEAT) spots.push(x,y); } } };
+  at(player); try{ if(typeof MP!=='undefined'&&MP.on&&MP.remote) for(const r of Object.values(MP.remote)) at(r); }catch(e){}
+  if(spots.length) facRun(()=>{ for(let i=0;i<spots.length;i+=2){ const x=spots[i], y=spots[i+1]; if(world[y*W+x]===B.SNOW_LAYER) setTile(x,y,0); } }); }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&world){ snowAmtTick(dt); heatTick(dt); } }catch(e){ console.warn(e); } return r; }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); snowAmtSet=false; heatT=0.3; return r; }; }
+// ---- a torch in place of a Snow block ----
+{ const _tp=tryPlace; tryPlace=function(x,y,id,...a){ if(!HEAT_IDS.has(id)||!world||tileAt(x,y)!==B.SNOW) return _tp(x,y,id,...a);
+    try{ if(countItem(id)<1||Math.hypot(x*T+8-cxOf(player),y*T+8-cyOf(player))>REACH+T) return; }catch(e){}
+    const sh=shape[y*W+x]; let placed=false;
+    mpRun(()=>{ setTile(x,y,0); shape[y*W+x]=0; _tp(x,y,id,...a); placed=HEAT_IDS.has(tileAt(x,y)); if(!placed){ setTile(x,y,B.SNOW); shape[y*W+x]=sh; } });
+    if(placed){ try{ const d=BLOCKS[B.SNOW]&&BLOCKS[B.SNOW].drop; give(d!=null?d:B.SNOW,1); invDirty=true; }catch(e){} } }; }
+// ---- the pictures ----
+const SNOW_CAP=new Map(), SNOW_W='#f4f8ff', SNOW_S='#d3deec';
+function snowHash(a,b){ let h=(a*374761393+b*668265263)|0; h=(h^(h>>>13))*1274126177|0; return ((h^(h>>>16))>>>0)/4294967296; }
+/* the white cap for a picture: on each column, from its first coloured pixel down `deep` pixels (one more or less by column) */
+function snowCapOf(id,deep,speck){ const key=id+':'+deep+':'+(speck?1:0); if(SNOW_CAP.has(key)) return SNOW_CAP.get(key); let out=null;
+  try{ const src=TEX[id]; if(src&&src.width){ const w=src.width, h=src.height, c=mkCanvas(w,h), g=c.getContext('2d'); g.drawImage(src,0,0); const im=g.getImageData(0,0,w,h), d=im.data; const o=g.createImageData(w,h), q=o.data;
+      const put=(x,y,col)=>{ const i=(y*w+x)*4; q[i]=parseInt(col.slice(1,3),16); q[i+1]=parseInt(col.slice(3,5),16); q[i+2]=parseInt(col.slice(5,7),16); q[i+3]=255; };
+      for(let x=0;x<w;x++){ let y0=-1; for(let y=0;y<h;y++) if(d[(y*w+x)*4+3]>60){ y0=y; break; } if(y0<0) continue;
+        const dd=Math.max(1,deep+(snowHash(id*31+x,deep)<0.33?-1:snowHash(x,id)<0.5?0:1)); let n=0;
+        for(let y=y0;y<h&&n<dd;y++){ if(d[(y*w+x)*4+3]<=60) continue; put(x,y,n===dd-1?SNOW_S:SNOW_W); n++; }
+        if(speck) for(let y=y0+dd;y<Math.min(h,y0+dd+6);y++) if(d[(y*w+x)*4+3]>60&&snowHash(x*7+y,id)<0.3-(y-y0-dd)*0.05) put(x,y,SNOW_W); }
+      g.clearRect(0,0,w,h); g.putImageData(o,0,0); out=c; } }catch(e){ out=null; }
+  SNOW_CAP.set(key,out); return out; }
+const isLeafId=id=>(typeof LEAF_ALL!=='undefined'&&LEAF_ALL.has(id))||id===B.LEAVES;
+function snowPlant(id){ if(!id||id===B.SNOW_LAYER||HEAT_IDS.has(id)) return false; const b=BLOCKS[id]; if(!b||b.solid) return false;
+  return NEEDS_GROUND.has(id)||(typeof GRASSY!=='undefined'&&GRASSY.has&&GRASSY.has(id)); }
+let snowHeatL=[], snowHeatT=0;
+function drawSnowCover(){ if(!world||!player||state==='title') return; const tx0=Math.max(0,Math.floor(camX/T)), tx1=Math.min(W-1,Math.floor((camX+viewW)/T)), ty0=Math.max(1,Math.floor(camY/T)), ty1=Math.min(H-2,Math.floor((camY+viewH)/T));
+  if(ty0>seaY+10) return; const now=performance.now(); if(now-snowHeatT>500){ snowHeatT=now; snowHeatL=torchesNear(tx0-TORCH_HEAT,ty0-TORCH_HEAT,tx1+TORCH_HEAT,ty1+TORCH_HEAT); }
+  const cover=snowAmt; const sky=typeof barrierY==='number'?barrierY:0;
+  for(let y=Math.max(ty0,sky+1);y<=Math.min(ty1,seaY+10);y++){ const r=y*W; for(let x=tx0;x<=tx1;x++){ const id=world[r+x]; if(!id) continue;
+      let cap=null, a=cover;
+      if(id===B.GRASS){ if(world[r-W+x]!==B.SNOW_LAYER) continue; cap=snowCapOf(id,6,true); a=1; }
+      else if(cover>0.02){ if(y>skyTop[x]+1&&!(isLeafId(id)&&y<=skyTop[x]+1)) { if(!isLeafId(id)) continue; }
+        const up=world[r-W+x]; if(isLeafId(id)){ if(isLeafId(up)||(BLOCKS[up]&&BLOCKS[up].solid)) continue; if(y>skyTop[x]){ let roof=false; for(let k=1;k<=24&&y-k>0;k++){ const u=world[(y-k)*W+x]; if(u&&!isLeafId(u)&&BLOCKS[u]&&BLOCKS[u].solid){ roof=true; break; } } if(roof) continue; } cap=snowCapOf(id,5,true); }
+        else if(snowPlant(id)){ if(BLOCKS[up]&&BLOCKS[up].solid&&!isLeafId(up)) continue; if(y>skyTop[x]){ let roof=false; for(let k=1;k<=24&&y-k>0;k++){ const u=world[(y-k)*W+x]; if(u&&BLOCKS[u]&&BLOCKS[u].solid&&!isLeafId(u)){ roof=true; break; } } if(roof) continue; } if(bg[r+x]) continue; cap=snowCapOf(id,2,false); }
+        else continue; }
+      else continue;
+      if(!cap) continue; if(snowHeatL.length&&heatedBy(snowHeatL,x,y)) continue;
+      ctx.globalAlpha=a; ctx.drawImage(cap,x*T,y*T,T,T); } }
+  ctx.globalAlpha=1; }
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ drawSnowCover(); }catch(e){ ctx.globalAlpha=1; } return _dl(...a); }; }
+// ===== Beta 0.9.209: pens you built in older worlds get a gate (Kinard, 2026-11-23, answering "should fence pens players built
+// in older worlds get a gate automatically?": "Also, yes push all updates to former worlds") =====
+// Since 0.9.208 a plain fence on your own land stops you, your soldiers and your animals, and only a Fence gate lets them
+// through. The pens the game built got a gate then; pens you built yourself did not. Once per world, every pen of yours that
+// holds animals (on your own land and with no gate yet) has the fence post at its end nearer your castle turned into a gate.
+function penGatesOld(){ if(!world||!home||isGuest()||home.gate209) return 0; home.gate209=1; let n=0; const seen=new Set();
+  facRun(()=>{ for(const e of ents){ if(!e||e.dead||!e.tamed||!e.fpen) continue; const k=e.fpen.key; if(seen.has(k)) continue; seen.add(k);
+      const p=fenceRun(e.fpen.x0,e.fpen.ty); if(!p) continue; if(typeof ownLand==='function'&&!ownLand(p.x0)) continue;
+      let has=false; for(let x=p.x0;x<=p.x1&&!has;x++) if(isGateId(tileAt(x,p.ty))) has=true; if(has) continue;
+      const cx=isFinite(home.castleCx)?home.castleCx:cxOf(player)/T; const x=Math.abs(p.x0-cx)<=Math.abs(p.x1-cx)?p.x0:p.x1;
+      n+=gateColumn(x,p.ty,Math.max(p.ty,p.gy-1)); } });
+  return n; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(!(typeof edOn==='function'&&edOn())) penGatesOld(); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: ten chandeliers (Kinard, 2026-11-23: "Make 10 different sizes and types of chandeliers that can be
+// placed") =====
+// Ten more chandeliers, from a one-block candle ring to a five-wide grand chandelier, all made at a workbench and hung from a
+// ceiling like the Iron, Golden and Crystal chandeliers (98zxz_zz177_decor.js) and the Small chandelier (98zxz_zz234_decor100.js):
+// they use the same decoration pieces (PIECE, the ceiling mount, candle flames that flicker, light). Fixed ids 2589-2598.
+const CHAND_BASE=2589;
+function chandPiece(n,o){ const id=CHAND_BASE+n; if((BLOCKS[id]&&BLOCKS[id].name)||ITEMS[id]){ console.warn('chandelier id taken',id); return null; }
+  o.id=id; o.mount='ceil'; o.pools=[]; o.spouts=[]; o.flames=o.flames||[]; o.lit=o.lit||[[Math.floor(o.w/2),o.h-1]];
+  defB(id,{name:o.name,solid:false,hard:0.6,col:o.col||'#c8a040',light:o.light||0,place:true});
+  ITEMS[id]={name:o.name,kind:'block',decor:true,desc:`${o.desc}. ${o.w} wide and ${o.h} tall, hangs from a ceiling`};
+  SELL[id]=o.sell||4; RECIPES.push({out:id,n:1,need:o.need.filter(([k])=>k!=null&&ITEMS[k]),st:B.WORKBENCH,cat2:'light'});
+  o.art=fCanvas(o.w,o.h,o.draw); o.icon=fIcon(o.art); { const t=mkCanvas(16,16), g=t.getContext('2d'); g.drawImage(o.icon,0,0,16,16); TEX[id]=t; } delete ICON_URL[id];
+  PIECES.push(o); PIECE[id]=o; PIECE_KEY[o.key]=o; try{ PIECE_IDS.add(id); }catch(e){} ORE_LOOK.add(id); try{ LAVA_EATS.delete(id); PASS.add(id); }catch(e){}
+  return o; }
+{ const IR=FPAL.iron, GD=FPAL.gold, WD=FPAL.wood, OB=FPAL.obs, CL=FPAL.cloud, SV=['#c8ccd4','#eef0f4','#8a8e98'];
+  const WAX='#f4ecd2', WAXL='#ffffff';
+  // pieces drawn into an r(x,y,w,h,color) painter: chains, candles (the flame sits one pixel above the candle's top)
+  const chain=(r,x,y0,y1,P)=>{ for(let y=y0;y<y1;y++) r(x,y,2,1,y%2?P[2]:P[0]); };
+  const candle=(r,F,x,y,h=5)=>{ r(x,y,2,h,WAX); r(x,y,1,h,WAXL); F.push([x+1,y-1]); };
+  const cup=(r,x,y,P)=>{ r(x-1,y,4,1,P[2]); };
+  const drop=(r,x,y,len,c,hi)=>{ for(let k=0;k<len;k++) r(x,y+k,1,1,k===len-1?hi:c); };
+  const defs=[
+    { key:'candlering', name:'Wooden candle ring', w:1,h:1, light:8, sell:6, need:[[B.PLANK,4],[B.TORCH,2]], desc:'A plain wooden hoop with three candles, the first light of many a cottage',
+      draw:(r,F)=>{ chain(r,7,0,5,IR); r(1,8,14,2,WD[0]); r(1,8,14,1,WD[1]); r(1,10,14,1,WD[2]); for(const x of [2,7,12]) candle(r,F,x,4,4); } },
+    { key:'hanglantern', name:'Hanging lantern', w:1,h:2, light:9, sell:8, need:[[I.IRON_BAR,2],[B.TORCH,1]], desc:'An iron lantern on a long chain, with a candle behind its glass',
+      draw:(r,F)=>{ chain(r,7,0,15,IR); r(4,15,8,2,IR[0]); r(5,14,6,1,IR[1]); r(4,17,8,10,IR[2]); r(5,18,6,8,'#ffd27a'); r(6,19,4,6,'#fff0b8'); r(7,17,2,10,IR[0]); r(4,27,8,2,IR[0]); r(6,29,4,1,IR[2]); candle(r,F,7,21,4); } },
+    { key:'antlerchand', name:'Antler chandelier', w:2,h:2, light:10, sell:24, need:[[typeof ANTLER!=='undefined'?ANTLER:I.BONE,2],[B.TORCH,4]], desc:'Deer antlers bound in a ring, a candle on every tine. A hunting lodge favorite',
+      draw:(r,F)=>{ chain(r,15,0,8,IR); const A='#e8dcc0', Ad='#b8a88a'; r(8,16,16,3,A); r(8,18,16,1,Ad);
+        for(const s of [-1,1]){ const cx=16+s*8; r(cx-1,11,3,6,A); r(cx+s*3,9,2,8,A); r(cx+s*6,12,2,6,A); r(cx-s*3,8,2,4,Ad); }
+        for(const x of [4,10,21,27]) candle(r,F,x,7,4); r(15,19,2,4,Ad); } },
+    { key:'wheelchand', name:'Wagon wheel chandelier', w:3,h:2, light:11, sell:30, need:[[B.PLANK,8],[I.IRON_BAR,2],[B.TORCH,5]], desc:'An old cart wheel hung flat on three chains, ringed with candles. Made for a long tavern table',
+      draw:(r,F)=>{ chain(r,23,0,6,IR); for(const [x0,x1] of [[8,22],[25,39]]) for(let k=0;k<12;k++) r(Math.round(x0+(x1-x0)*k/11),6+k,2,1,k%2?IR[2]:IR[0]);
+        r(4,18,40,4,WD[0]); r(4,18,40,1,WD[1]); r(4,21,40,1,WD[2]); for(const x of [4,14,23,33,42]) r(x,17,2,6,IR[2]); r(21,16,6,8,WD[2]); r(22,17,4,6,WD[0]);
+        for(const x of [6,15,28,37]) { cup(r,x,17,IR); candle(r,F,x,12,5); } } },
+    { key:'silverchand', name:'Silver tiered chandelier', w:3,h:3, light:12, sell:44, need:[[I.SILVER_BAR,6],[B.TORCH,7]], desc:'Two rings of silver arms, one above the other, with seven candles',
+      draw:(r,F)=>{ chain(r,23,0,8,SV); r(21,8,6,26,SV[0]); r(21,8,2,26,SV[1]); r(10,18,28,2,SV[0]); r(10,18,28,1,SV[1]); r(3,32,42,2,SV[0]); r(3,32,42,1,SV[1]);
+        for(const x of [10,36]) r(x,14,2,4,SV[2]); for(const x of [3,13,33,43]) r(x,28,2,4,SV[2]);
+        for(const x of [10,23,36]) { cup(r,x,17,SV); candle(r,F,x,12,5); } for(const x of [3,13,33,43]) { cup(r,x,27,SV); candle(r,F,x,22,5); } r(22,34,4,6,SV[2]); r(23,40,2,3,SV[1]); } },
+    { key:'grandchand', name:'Grand golden chandelier', w:5,h:3, light:14, sell:120, need:[[I.GOLD_BAR,10],[429,1],[B.TORCH,9]], desc:'Three tiers of gilded arms and nine candles, with gold drops all round. The centerpiece of a great hall',
+      draw:(r,F)=>{ chain(r,39,0,6,GD); r(37,6,6,34,GD[0]); r(37,6,2,34,GD[1]); r(28,14,24,2,GD[0]); r(14,24,52,2,GD[0]); r(3,34,74,2,GD[0]); r(28,14,24,1,GD[1]); r(14,24,52,1,GD[1]); r(3,34,74,1,GD[1]);
+        for(const x of [28,50]) r(x,10,2,4,GD[2]); for(const x of [14,64]) r(x,20,2,4,GD[2]); for(const x of [3,23,56,75]) r(x,30,2,4,GD[2]);
+        for(const x of [28,50]) { cup(r,x,13,GD); candle(r,F,x,8,5); } for(const x of [14,39,64]) { cup(r,x,23,GD); candle(r,F,x,18,5); } for(const x of [3,23,56,75]) { cup(r,x,33,GD); candle(r,F,x,28,5); }
+        for(let x=6;x<76;x+=5) drop(r,x,36,3,GD[2],'#fff0a0'); r(36,40,8,4,GD[0]); r(38,44,4,3,GD[1]); } },
+    { key:'cascadechand', name:'Crystal cascade chandelier', w:3,h:4, light:13, sell:80, need:[[B.CRYSTAL_BLOCK,6],[I.SILVER_BAR,2],[B.TORCH,4]], desc:'A silver ring with strands of crystal falling from it like rain, catching every flicker of the candles',
+      draw:(r,F)=>{ chain(r,23,0,8,SV); r(8,12,32,3,SV[0]); r(8,12,32,1,SV[1]); for(const x of [8,40]) r(x,8,2,4,SV[2]);
+        for(const x of [9,19,28,38]) { cup(r,x,11,SV); candle(r,F,x,6,5); }
+        for(let x=9;x<40;x+=3){ const len=14+((x*7)%17)+(Math.abs(x-24)<8?14:0); drop(r,x,15,len,'#c8e8ff','#ffffff'); } r(22,50,4,6,'#c8e8ff'); r(23,56,2,4,'#ffffff'); } },
+    { key:'glowchand', name:'Glowcap chandelier', w:2,h:3, light:10, sell:20, need:[[225,6],[B.PLANK,2]], desc:'Glowing cave mushrooms tied to a wooden ring on a long cord. No flame, so it is safe in any room',
+      draw:(r,F)=>{ const oy=14; chain(r,15,0,9+oy,WD); r(4,12+oy,24,2,WD[0]); r(4,12+oy,24,1,WD[1]);
+        for(const [x,y,s] of [[5,14,6],[12,15,8],[21,14,6],[16,22,5],[8,21,4]]){ const yy=y+oy; r(x+Math.floor(s/2)-1,yy,2,4,'#d8d0b0'); r(x,yy+4,s,3,'#4ad8c8'); r(x+1,yy+3,s-2,1,'#4ad8c8'); r(x+1,yy+4,s-2,1,'#b8fff4'); r(x+1,yy+7,s-2,1,'#2a9a90'); } } },
+    { key:'emberchand', name:'Ember lantern', w:1,h:3, light:11, sell:30, need:[[B.OBSIDIAN,4],[B.EMBER_STONE,3]], desc:'A tall obsidian cage on a chain, holding stones that glow with the heat of the magma realm',
+      draw:(r,F)=>{ chain(r,7,0,14,OB); r(3,14,10,2,OB[0]); r(3,14,10,1,OB[1]); r(5,13,6,1,OB[2]); r(3,16,2,24,OB[0]); r(11,16,2,24,OB[0]); r(7,16,2,24,OB[2]); r(3,26,10,1,OB[2]); r(2,40,12,3,OB[0]); r(2,40,12,1,OB[1]); r(6,43,4,3,OB[0]);
+        for(const [x,y] of [[5,18],[9,21],[5,29],[9,33],[6,36]]){ r(x-1,y,3,3,'#c83a1a'); r(x,y+1,1,1,'#ffb040'); } r(5,22,6,3,'#ff7a2a'); r(6,23,4,1,'#fff0a0'); } },
+    { key:'gemchand', name:'Jeweled chandelier', w:4,h:3, light:13, sell:90, need:[[I.GOLD_BAR,6],[I.RUBY,1],[I.SAPPHIRE,1],[I.EMERALD,1],[B.TORCH,6]], desc:'A gold frame hung with ruby, sapphire and emerald drops that throw colored light about the room',
+      draw:(r,F)=>{ chain(r,31,0,8,GD); r(29,8,6,22,GD[0]); r(29,8,2,22,GD[1]); r(10,18,44,2,GD[0]); r(10,18,44,1,GD[1]); r(2,28,60,2,GD[0]); r(2,28,60,1,GD[1]);
+        for(const x of [10,52]) r(x,14,2,4,GD[2]); for(const x of [2,61]) r(x,24,2,4,GD[2]);
+        for(const x of [10,22,41,52]) { cup(r,x,17,GD); candle(r,F,x,12,5); } for(const x of [2,61]) { cup(r,x,27,GD); candle(r,F,x,22,5); }
+        const G=[['#c82a3a','#ff8a9a'],['#2a5ac8','#8ab0ff'],['#2a9a4a','#8aeaa0']]; let k=0; for(let x=5;x<60;x+=6){ const [c,h]=G[k++%3]; r(x,30,2,3,c); r(x,31,1,1,h); r(x,33,2,1,c); }
+        r(28,30,8,5,'#c82a3a'); r(29,31,3,2,'#ff8a9a'); r(30,35,4,3,GD[0]); } }];
+  defs.forEach((d,i)=>{ const F=[]; const draw=d.draw; d.draw=r=>{ F.length=0; draw(r,F); }; fCanvas(d.w,d.h,d.draw); d.flames=F.slice(); chandPiece(i,d); }); }
+// ===== Beta 0.9.209: banners are handed out from the bag (Kinard, 2026-11-23, a screenshot of the Talk list with "Plant your
+// mending banner here", "Give your mending banner to Jora", "... to Cedric" and "Put your mending banner away" among the shop,
+// chest and bed choices): "Make it so that giving a banner to another teammate is not in the open world menu area like this but
+// so that when the player is in the "tab" menu/bag that you can click and the option appears to give it to yourself or your
+// allies" =====
+// The Talk list keeps only "Pick up" beside a planted banner. Everything else is in the bag:
+//   - a banner in the bag: tap it and Use it, and the list offers Carry it yourself, Plant it here, or Give it to one of your
+//     soldiers (the BANNER_ALLIES nearest within BANNER_GIVE_R blocks) or to a friend beside you (multiplayer);
+//   - the banner you carry: a row at the top of the bag, "You carry the ...", with Choose: plant it, give it to a soldier or a
+//     friend, or put it back in the bag.
+const BANNER_GIVE_R=15, BANNER_ALLIES=6;
+function bannerAllies(){ if(!player) return []; return ents.filter(e=>!e.dead&&e.kind==='human'&&e.team===player.team&&e.name&&!e.ghost&&Math.hypot(cxOf(e)-cxOf(player),cyOf(e)-cyOf(player))<BANNER_GIVE_R*T)
+  .sort((a,b)=>Math.hypot(cxOf(a)-cxOf(player),cyOf(a)-cyOf(player))-Math.hypot(cxOf(b)-cxOf(player),cyOf(b)-cyOf(player))).slice(0,BANNER_ALLIES); }
+function bannerFriends(){ try{ return typeof MP!=='undefined'&&MP.on&&typeof nearPlayers==='function'?nearPlayers(5):[]; }catch(e){ return []; } }
+/* give the banner `id` (in the bag) to a soldier; one they already carry comes back to the bag */
+function bannerToSoldier(id,e){ const s=bannerState(), nm=bannerName(id).toLowerCase(); if(countItem(id)<1||!e||e.dead) return; takeItem(id,1); const old=s.sol[e.name]; if(old) give(old,1); s.sol[e.name]=id; invDirty=true; toast(`${e.name} carries the ${nm}`,3); }
+function bannerToFriend(id,r){ const slot=player.inv.findIndex(it=>it&&it.id===id); if(slot<0) return; try{ giveToPlayer(r.key,slot); }catch(e){ console.warn(e); } invDirty=true; }
+function bannerAllyChoices(id,fromHand){ const s=bannerState(), nm=bannerName(id).toLowerCase(), opts=[];
+  const ready=()=>{ if(fromHand&&s.held===id){ s.held=0; give(id,1); } return countItem(id)>0; };
+  for(const e of bannerAllies()){ const has=bannerOf(e); opts.push({label:`Give the ${nm} to ${e.name}${has?` (the ${bannerName(has).toLowerCase()} comes back to you)`:''}`,go:()=>{ if(ready()) bannerToSoldier(id,e); try{ renderInv(); }catch(err){} }}); }
+  for(const r of bannerFriends()) opts.push({label:`Give the ${nm} to ${r.nm||'your friend'}`,go:()=>{ if(ready()) bannerToFriend(id,r); try{ renderInv(); }catch(err){} }});
+  return opts; }
+bannerChoices=function(id){ const s=bannerState(), nm=bannerName(id), opts=[];
+  opts.push({label:s.held?`Carry the ${nm.toLowerCase()} yourself (your ${bannerName(s.held).toLowerCase()} goes back in your bag)`:`Carry the ${nm.toLowerCase()} yourself`,go:()=>{ if(countItem(id)<1) return; takeItem(id,1); if(s.held) give(s.held,1); s.held=id; invDirty=true; toast(`You carry the ${nm.toLowerCase()}: everyone on your side within ${BANNER_R} blocks is lifted`,3.5); try{ renderInv(); }catch(e){} }});
+  opts.push({label:`Plant the ${nm.toLowerCase()} here`,go:()=>{ const p=bannerSpot(); if(!p){ toast('Stand on solid ground with room above you to plant a banner',2.5); return; } if(countItem(id)<1) return; takeItem(id,1); s.planted.push({x:p.x,y:p.y,id}); invDirty=true; try{ sfx('place'); }catch(e){} toast(`The ${nm.toLowerCase()} stands here: it lifts your side within ${BANNER_R} blocks`,3.5); try{ renderInv(); }catch(e){} }});
+  opts.push(...bannerAllyChoices(id,false));
+  if(opts.length===2) opts.push({label:`No soldier of yours within ${BANNER_GIVE_R} blocks to give it to`,go:()=>{}});
+  return opts; };
+function heldBannerChoices(){ const s=bannerState(), id=s.held; if(!id) return []; const nm=bannerName(id).toLowerCase(), opts=[];
+  opts.push({label:`Plant your ${nm} here`,go:()=>{ const p=bannerSpot(); if(!p){ toast('Stand on solid ground with room above you to plant a banner',2.5); return; } s.planted.push({x:p.x,y:p.y,id}); s.held=0; invDirty=true; try{ sfx('place'); }catch(e){} try{ renderInv(); }catch(e){} }});
+  opts.push(...bannerAllyChoices(id,true));
+  opts.push({label:`Put your ${nm} back in your bag`,go:()=>{ give(id,1); s.held=0; invDirty=true; try{ renderInv(); }catch(e){} }});
+  return opts; }
+// the row in the bag
+{ const s=document.createElement('style'); s.textContent=`#bannerHeld{ display:flex; align-items:center; gap:8px; margin:0 0 8px; font-size:9px; } #bannerHeld[hidden]{ display:none; }
+#bannerHeld img{ width:16px; height:16px; image-rendering:pixelated; } #bannerHeld .btn{ padding:4px 8px; font-size:8px; margin:0; }`; document.head.appendChild(s); }
+{ const _ri=renderInv; renderInv=function(...a){ const r=_ri(...a); try{ let row=$('#bannerHeld'); if(!row){ const g=$('#invGrid'); if(!g) return r; row=document.createElement('div'); row.id='bannerHeld'; g.before(row); }
+      const id=bannerState().held; row.hidden=!id; if(id){ const key='b'+id; if(row.dataset.k!==key){ row.dataset.k=key; let src=''; try{ src=iconUrl(id)||''; }catch(e){}
+          row.innerHTML=`${src?`<img alt="" src="${src}">`:''}<span>You carry the ${bannerName(id).toLowerCase()}</span><button class="btn" data-bheld="1">Choose</button>`; } } else row.dataset.k=''; }catch(e){ console.warn(e); } return r; }; }
+document.addEventListener('click',ev=>{ const b=ev.target&&ev.target.closest&&ev.target.closest('[data-bheld]'); if(!b) return; ev.preventDefault(); ev.stopPropagation(); const o=heldBannerChoices(); if(o.length) showPickList(o); },true);
+// ===== Beta 0.9.209: enemies stay out of your doors; Hide sends your army home =====
+// Kinard (2026-11-23): "Make it so that the enemies cannot enter the doors as it appears they are currently". Enemies only ever
+// opened the doors of their own villages (canOpenDoors in 06_entities.js), but an open door is no barrier: a door you had just
+// walked through stood open for a moment (and stayed open while anyone stood in it), and an enemy close behind walked in. Now an
+// open door is as solid as a shut one to any enemy that could not have opened it: monsters, hostile animals and enemy soldiers
+// away from their own village. One already standing in the doorway when it opened can step out of it.
+function doorFoe(e){ if(!e||e.dead||e.ghost||e.remote||e.proxy||!player) return false; if(e.kind==='monster') return !e.tamed&&!e.tameMon;
+  if(e.kind==='animal') return !e.tamed&&(e.temper==='bad'||!!e.angry); if(e.kind==='human') return e.team!==player.team&&(typeof hostile!=='function'||hostile(e.team,player.team)); return false; }
+function openDoorTouch(e){ const x0=Math.floor(e.x/T), x1=Math.floor((e.x+e.w-0.001)/T), y0=Math.floor(e.y/T), y1=Math.floor((e.y+e.h-0.001)/T);
+  for(let y=y0;y<=y1;y++) for(let x=x0;x<=x1;x++) if(isOpenDoor(tileAt(x,y))&&!canOpenDoors(e,x)) return true; return false; }
+{ const _ph=physics; physics=function(e,...a){ try{ e.doorIn=doorFoe(e)&&openDoorTouch(e); }catch(err){} return _ph(e,...a); }; }
+{ const _c=collides; collides=function(e,...a){ if(_c(e,...a)) return true; try{ if(e&&!e.doorIn&&world&&doorFoe(e)) return openDoorTouch(e); }catch(err){} return false; }; }
+
+// Kinard (2026-11-23): "Make it so when the player clicks 'hide' it will hide the teammates and make it so that they are
+// 'technically' back at the base so that the player can build and does not need to worry about them being in the way and make it
+// so the banners are also hidden". Hide used to only stop drawing them; they still walked, fought and stood where you built. Now
+// the soldiers and pets that follow you are taken out of the world while Hide is on, the way soldiers are while they ride a ship
+// (`aboard`): not drawn, not moved, not targeted, never in the way of a block, and their banners go with them. Your own carried
+// banner is not drawn either (its lift stays). Show brings them all back beside you.
+let hideArmyT=0;
+function hideCandidate(e){ return !!e&&e!==player&&!e.dead&&!e.ghost&&!e.stationed&&!e.post&&!e.crewing&&player&&e.team===player.team&&((player.party||[]).includes(e)||(e.tamed&&!e.pen&&!e.fpen&&e.mode!=='stay'&&e.mode!=='farm')||(!!e.tameMon&&!e.fpen)); }
+function armyHideTick(){ if(!player||!world) return; const on=!!settings.hideArmy&&!player.dead;
+  for(const e of ents){ if(e.armyHid){ if(!on||e.dead||!hideCandidate(e)){ e.armyHid=false; e.aboard=false; e.x=player.x+player.w/2-e.w/2; e.y=player.y+player.h-e.h; e.vx=e.vy=0; try{ freeSpotFor(e); }catch(err){} } else { e.x=player.x+player.w/2-e.w/2; e.y=player.y+player.h-e.h; e.target=null; } }
+    else if(on&&!e.aboard&&hideCandidate(e)){ e.aboard=true; e.armyHid=true; e.target=null; } }
+  if(!on) try{ allyReset(); }catch(e){} }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'||state==='inv'){ if((hideArmyT-=dt)<=0){ hideArmyT=0.25; armyHideTick(); } } }catch(e){ console.warn(e); } return r; }; }
+// the button says what it does now
+{ const _ah=armyHideRender; armyHideRender=function(...a){ const r=_ah(...a); try{ const b=$('#armyHide'); if(b) b.title=settings.hideArmy?'Your soldiers and pets are back home while you build. Tap to bring them back':'Send your soldiers and pets home while you build, out of your way'; }catch(e){} hideArmyT=0; return r; }; }
+// your own banner pole is not drawn while your army is hidden
+{ const _de=drawEntity; drawEntity=function(e,...a){ if(e!==player||!settings.hideArmy||typeof bannerState!=='function') return _de(e,...a); const s=bannerState(), id=s.held; if(!id) return _de(e,...a); s.held=0; try{ return _de(e,...a); } finally{ s.held=id; } }; }
+// saving while they are away: they are written beside you and come back (or stay hidden) when the world opens
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); hideArmyT=0; return r; }; }
+// ===== Beta 0.9.209: crafting stations by nearness only (Kinard, 2026-11-23: "Remove the option to always click into the furnace
+// or the anvil etc make it so that it only pops up for the players talking to NPCs make it so that instead it is all based on
+// proximity so when a player is near a crafting area it will open for his crafting menu and whichever the player is closest to will
+// show as the animation (for example next to a furnace shows the grey, a crafting table the wood a chest etc)") =====
+// 1. Talk (F) no longer offers "Use the workbench / furnace / anvil / cauldron / loom / brazier": the Talk list is for people
+//    (and the chest, bed, portal and machine choices it always had). Open your crafting window anywhere; every station within
+//    reach (6 blocks across, 5 up or down) already adds its recipes.
+// 2. The crafting window takes the look and the name of the CLOSEST station: wood for a workbench (in that workbench's wood),
+//    gray stone for a furnace or blast furnace, dark iron for an anvil, a green-black pot for a cauldron, woven wool for a loom,
+//    glowing embers for a brazier. Nothing near: the plain "Crafting" window. It changes as you walk from one to another.
+const STATION_TALK=/^Use the (workbench|furnace|blast furnace|cauldron|anvil|loom|brazier)\b/i;
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ return o.filter(op=>!(op&&typeof op.label==='string'&&STATION_TALK.test(op.label))); }catch(e){ return o; } }; }
+function stationKindOf(id){ if(!id) return ''; try{ if(isBenchId(id)) return 'bench'; }catch(e){} if(FURNACE_STS().includes(id)) return 'furnace';
+  for(const k of ['anvil','cauldron','loom','brazier']){ try{ if(stationId(k)===id) return k; }catch(e){} } return ''; }
+function nearestStationKind(){ if(!player||!world) return 'hand';
+  const cx=cxOf(player)/T, cy=cyOf(player)/T, px=Math.floor(cx), py=Math.floor(cy); let best='hand', bd=1e9;
+  for(let y=py-5;y<=py+5;y++) for(let x=px-6;x<=px+6;x++){ const k=stationKindOf(tileAt(x,y)); if(!k) continue; const d=Math.hypot(x+0.5-cx,y+0.5-cy); if(d<bd){ bd=d; best=k; } }
+  return best; }
+Object.assign(CRAFT_PLACE,{ anvil:'Anvil', cauldron:'Cauldron', loom:'Loom', brazier:'Brazier' });
+craftPlace=function(){ return nearestStationKind(); };
+{ const st=document.createElement('style'); st.textContent=`
+#scrInv[data-station="anvil"] .panel{ --panel:#2a2c33; --panel2:#3a3d46; --edge-dim:#6c707c; background:var(--panel); background-image:linear-gradient(180deg,rgba(255,255,255,.05),transparent 40%),repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 16px); }
+#scrInv[data-station="anvil"] #invTitle{ color:#c8ccd8; }
+#scrInv[data-station="cauldron"] .panel{ --panel:#1f2a22; --panel2:#2c3a2f; --edge-dim:#5a7a5e; background:var(--panel); background-image:radial-gradient(circle at 50% 0,rgba(120,220,120,.10),transparent 60%); }
+#scrInv[data-station="cauldron"] #invTitle{ color:#a8e8a0; }
+#scrInv[data-station="loom"] .panel{ --panel:#4a3a4e; --panel2:#5c4a60; --edge-dim:#b09ab8; background:var(--panel); background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 2px,transparent 2px 6px),repeating-linear-gradient(0deg,rgba(0,0,0,.10) 0 2px,transparent 2px 6px); }
+#scrInv[data-station="loom"] #invTitle{ color:#f0d8f4; }
+#scrInv[data-station="brazier"] .panel{ --panel:#3a2420; --panel2:#4c2e28; --edge-dim:#c0704a; background:var(--panel); background-image:radial-gradient(circle at 50% 100%,rgba(255,120,40,.18),transparent 65%); }
+#scrInv[data-station="brazier"] #invTitle{ color:#ffc090; }`; document.head.appendChild(st); }
+// ===== Beta 0.9.209: friends see banners (Kinard, 2026-11-23: "The banners are not showing at the top of the players heads for all
+// players") =====
+// Who carries which banner was kept only in the carrier's own game (home.banners), so in a shared world nobody else saw the pole
+// over a friend's head or over their soldiers. Each player's presence now carries `bn`: [the banner they hold (0 for none, or while
+// their army is hidden), [[soldier uid, banner], ...]] for the soldiers listed in `sold`. The receiver sets `bannerHeld` on the
+// friend and on each of their soldiers, which is what bannerOf (98zxz_zz260_banners.js) reads, so the pole is drawn over them as
+// over your own people. Looks only: the lift of a friend's banner is worked out on their own game.
+function mpBannersOut(){ try{ if(!player||typeof bannerState!=='function') return 0; const s=bannerState(); const held=settings.hideArmy?0:(s.held|0); const L=[];
+    for(const e of ents){ if(e.dead||e===player||e.ghost||e.aboard||!e.mpUid) continue; if(e.team!==player.team) continue; const id=bannerOf(e); if(id) L.push([e.mpUid,id]); if(L.length>=8) break; }
+    return held||L.length?[held,L]:0; }catch(e){ return 0; } }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d){ const bn=Array.isArray(d.bn)?d.bn:null; const ok=id=>(id|0)&&typeof TEAM_CHARMS!=='undefined'&&TEAM_CHARMS[id|0]?id|0:0;
+        r.bannerHeld=bn?ok(bn[0]):0; const m=new Map(); if(bn&&Array.isArray(bn[1])) for(const p of bn[1].slice(0,8)) if(Array.isArray(p)) m.set(p[0],ok(p[1]));
+        for(const o of r.soldiers||[]) o.bannerHeld=m.get(o.uid)||0; } }catch(e){} return out; }; }
+// ===== Beta 0.9.209: item names stay in front of every window (Kinard, 2026-11-23: "The hovering over an item is not working in a
+// chest or any other areas currently and is not showing what item is in the chest at all again") =====
+// With several windows open (98zxz_zz166.js), each window brought to the front gets the next number up (winZ, from 40 up to 800).
+// The item pop-up (#itemTip) sat at 50 and the name label (#slotName) at 70, so after about ten openings or switches the chest,
+// bag or shop window covered them: the pop-up was there, behind the window, and the label was hidden because the pop-up was
+// "showing". They now sit above every window, with the pick list and the dragged item.
+{ const st=document.createElement('style'); st.textContent=`#itemTip{ z-index:1000!important; } #slotName{ z-index:1001!important; } #dragGhost{ z-index:1002!important; } #pickList{ z-index:990!important; }`; document.head.appendChild(st); }
+// ===== Beta 0.9.209: winter ice along the shores only; raw meat can make you sick (Kinard, 2026-11-23: "Make it so that when it's
+// winter the ice only goes 5-10 blocks out on either end so that the player still has to swim accross the ocean also make it so
+// if the player eats raw meats there is a 20% chance they get sick where they will lose health slowly for 5 seconds") =====
+// 1. In winter the sea froze from shore to shore. Now each shore's ice reaches ICE_MIN to ICE_MAX blocks out (its own width,
+//    fixed by the world's seed, so every player in a shared world sees the same ice) and the open sea beyond it stays water:
+//    you swim or sail across. Columns past the ice are marked oceanCol 3 for the winter (isSolid and seaIceAt only take 1 as
+//    ice; every other use of oceanCol only asks whether a column is sea), and back to 1 when spring comes. Holes broken in the
+//    ice (2) are left alone. Boats sail on the open water in winter (seaFrozenAt is the ice only).
+// 2. Eating raw meat (any animal's raw meat, not fish) has a RAW_SICK_CHANCE (20%) chance to make you sick: you lose SICK_DPS
+//    health a second for SICK_TIME (5) seconds and does not heal meanwhile, never below 1.
+const ICE_MIN=5, ICE_MAX=10;
+function iceWidth(side,x){ let h=((seed|0)*374761393+x*668265263+side*2246822519)|0; h=(h^(h>>>13))*1274126177|0; h=(h^(h>>>16))>>>0; return ICE_MIN+(h%(ICE_MAX-ICE_MIN+1)); }
+function iceLimit(){ if(!oceanCol||!world||!W) return; if(!seaIce){ for(let x=0;x<W;x++) if(oceanCol[x]===3) oceanCol[x]=1; return; }
+  for(let x=0;x<W;){ if(!oceanCol[x]){ x++; continue; } let b=x; while(b+1<W&&oceanCol[b+1]) b++;
+    const L=x>0?iceWidth(0,x):-1, R=b<W-1?iceWidth(1,b):-1;
+    for(let c=x;c<=b;c++){ if(oceanCol[c]===2) continue; const near=(L>=0&&c-x<L)||(R>=0&&b-c<R); oceanCol[c]=near?1:3; }
+    x=b+1; } }
+seaFrozenAt=function(x){ x=Math.round(x); return seaIce&&x>=0&&x<W&&oceanCol[x]===1; };
+drawSeaIce=function(){ if(!seaIce||!TEX[B.ICE]) return; const x0=Math.max(0,Math.floor(camX/T)-1), x1=Math.min(W-1,Math.ceil((camX+viewW)/T)+1); if(seaY*T<camY-T||seaY*T>camY+viewH+T) return;
+  for(let x=x0;x<=x1;x++) if(oceanCol[x]===1&&world[seaY*W+x]===B.WATER) ctx.drawImage(TEX[B.ICE],x*T,seaY*T); };
+{ const _ws=weatherSync; weatherSync=function(...a){ const r=_ws(...a); try{ iceLimit(); }catch(e){ console.warn(e); } return r; }; }
+{ const _if=iceForms; iceForms=function(...a){ try{ iceLimit(); }catch(e){} let r; const p=player, c=p?Math.floor(cxOf(p)/T):-1;
+    if(p&&c>=0&&c<W&&oceanCol[c]&&oceanCol[c]!==1){ const keep={y:p.y,vy:p.vy,riding:p.riding}; r=_if(...a); Object.assign(p,keep); } else r=_if(...a);   /* out on open water you stay in the water */
+    try{ iceLimit(); }catch(e){} return r; }; }
+{ const _nd=newDayEvents; newDayEvents=function(...a){ const r=_nd(...a); try{ iceLimit(); }catch(e){} return r; }; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ iceLimit(); }catch(e){ console.warn(e); } return r; }; }
+
+// ---- raw meat ----
+const RAW_SICK_CHANCE=0.2, SICK_TIME=5, SICK_DPS=2;
+let RAW_MEAT_IDS=null;
+function rawMeatIds(){ if(RAW_MEAT_IDS) return RAW_MEAT_IDS; const S=new Set(); const add=id=>{ if(id!=null&&ITEMS[id]&&ITEMS[id].kind==='food') S.add(+id); };
+  add(I.MEAT); add(I.RABBIT_MEAT); add(I.BIRD_MEAT); try{ for(const a of Object.values(ANIMALS)) add(a.meatId); }catch(e){} try{ for(const m of Object.values(MEATS)) add(m.raw); }catch(e){}
+  for(const id of [...S]) if(/fish/i.test(ITEMS[id].name||'')) S.delete(id); return RAW_MEAT_IDS=S; }
+function getSick(p){ p.sickT=SICK_TIME; try{ addFloat(cxOf(p),p.y-14,'sick','#9ad04a'); }catch(e){} try{ toast('That raw meat made you sick',2.5); }catch(e){} }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; let id=0, n0=0, cd0=0; const hpB=p?p.hp:0;
+    try{ const it=p&&heldItem(); if(it&&rawMeatIds().has(it.id)){ id=it.id; n0=countItem(id); cd0=p.eatCd||0; } }catch(e){ id=0; }
+    const r=_up(dt,...a);
+    try{ if(id&&p&&!p.dead&&countItem(id)===n0-1&&(p.eatCd||0)>cd0&&Math.random()<RAW_SICK_CHANCE) getSick(p);
+      if(p&&p.sickT>0&&!p.dead){ p.sickT-=dt; p.hp=Math.max(1,Math.min(p.hp,hpB)-SICK_DPS*dt);   /* no healing while sick */ p.sickPuff=(p.sickPuff||0)-dt; if(p.sickPuff<=0){ p.sickPuff=0.6; try{ puff(cxOf(p),p.y+6,'#9ad04a',3,20); }catch(e){} } } }catch(e){ console.warn(e); }
+    return r; }; }
+// ===== Beta 0.9.209: a captured tower stays yours until a raiding party takes it back (Kinard, 2026-11-23: "The captures are
+// not working and I had the enemies return after capturing their tower make it so once they are captures the banner colors change
+// to my colors and it becomes my tower until they have a raiding party that attacks") =====
+// What went wrong: the goblin lookouts and the orc towers on the islands could not be captured at all, and every time a world
+// was opened their guards were put back on top of them (populate); a faction tower that was captured kept the faction's
+// banners and showed no sign of being yours.
+// Now:
+//   1. Every enemy watchtower can be captured once nobody hostile is left in it: faction towers, outposts and keeps (as
+//      before, 98zxy_beta085.js captureTower) and the islands' goblin lookouts and orc towers. Standing in one that is empty of
+//      enemies offers "Capture this watchtower".
+//   2. A tower you hold is kept in home.capTowers ({x, gy, top, f: who held it, list: where it came from, rec: its record}).
+//      Its banner blocks turn to your colors and your flag flies over it (drawBuilderFlags reads flagList). No guards are put
+//      back on it when the world opens, and no camp refills it.
+//   3. It stays yours until a raiding party takes it: when enemies of the side that held it stand inside it for RETAKE_S
+//      seconds with none of your people there (you, your soldiers or pets), it goes back to them: their banners, their list,
+//      a message to say so.
+const RETAKE_S=10, HOLD_EVERY=1;
+function capList(){ return home?(home.capTowers=home.capTowers||[]):[]; }
+function towerKey(t){ const x=t.x??t.cx; return x+','+t.gy; }
+function towerTop(t){ const x=t.x??t.cx; return t.top!=null?t.top:(t.gy!=null?t.gy-20:surf[x]-20); }
+function towerBox(t){ const x=t.x??t.cx; return {x0:x-5,x1:x+5,y0:towerTop(t)-3,y1:t.gy+1}; }
+function heldTower(t){ const k=towerKey(t); return capList().find(c=>towerKey(c)===k); }
+const BANNER_IDS=()=>[B.BANNER_G,B.BANNER_B,B.BANNER_R];
+function recolorTower(t,team){ const bx=towerBox(t), ban=banOf(team), set=new Set(BANNER_IDS()); facRun(()=>{ for(let y=Math.max(1,bx.y0);y<=Math.min(H-2,bx.y1);y++) for(let x=Math.max(1,bx.x0);x<=Math.min(W-2,bx.x1);x++){ const id=tileAt(x,y); if(set.has(id)&&id!==ban) setTile(x,y,ban); } }); }
+function towerIn(e,bx){ const cx=cxOf(e)/T, fy=(e.y+e.h-1)/T; return cx>=bx.x0&&cx<=bx.x1+1&&fy>=bx.y0&&fy<=bx.y1+1; }
+function hostileTo(e){ if(!e||e.dead||e.ghost||e.proxy||!player) return false; if(e.kind==='monster') return !e.tamed&&!e.tameMon&&!e.bigBoss; if(e.kind==='human') return e.team!==player.team&&(typeof hostile!=='function'||hostile(e.team,player.team)); return false; }
+function mineHere(e){ return !!e&&!e.dead&&!e.ghost&&(e===player||(e.kind==='human'&&e.team===player.team)||(e.kind==='animal'&&e.tamed)); }
+// ---- the island towers: lookouts and orc towers ----
+function isleTowers(){ const L=[]; for(const is of islands||[]){ for(const k of ['lookout','lookout2']) if(is[k]) L.push({t:is[k],is,list:k,f:'goblin'}); (is.orcTowers||[]).forEach((t,i)=>L.push({t,is,list:'orcTowers',i,f:'orc'})); } return L; }
+function holdTower(t,f,list,rec){ const x=t.x??t.cx; const c={x,gy:t.gy,top:towerTop(t),f,list,day:dayCount}; if(rec) c.rec=rec; capList().push(c);
+  recolorTower(t,player.team); for(const e of ents) if(hostileTo(e)&&!e.bigBoss&&e.camp&&Math.abs(e.camp.x-x)<=5) e.camp=null; return c; }
+let holdAskT=2;
+function isleCapTick(){ if(!player||player.dead||state!=='play'||isGuest()) return; const px=cxOf(player)/T, py=(player.y+player.h)/T;
+  for(const it of isleTowers()){ const t=it.t, x=t.x??t.cx; if(x==null||t.gy==null||heldTower(t)) continue; const bx=towerBox(t);
+    const near=px>=bx.x0-1&&px<=bx.x1+1&&py>=bx.y0&&py<=bx.y1+2; if(!near){ if(Math.abs(px-x)>20) t._asked=false; continue; } if(t._asked) continue;
+    if(ents.some(e=>hostileTo(e)&&towerIn(e,bx))) continue; t._asked=true;
+    showPickList([{label:'Capture this watchtower',go:()=>{ const posts=(typeof towerPosts==='function'&&t.top!=null?towerPosts(t):[{x,gy:t.gy}]).map(p=>({x:p.x,gy:p.gy}));
+        const st={id:Date.now()+'_'+((Math.random()*1e4)|0),kind:'tower',name:'Captured watchtower',x,gy:t.gy,posts,top:t.top}; myStructures.push(st); holdTower(t,it.f,it.list,null).st=st.id;
+        toast(`You captured the ${it.f==='orc'?'orc':'goblin'} watchtower! It is yours until a raiding party takes it back.`,4.5); try{ sfx('coin'); }catch(e){} try{ if(player.party.some(e=>e&&!e.dead)) openPosts(st); }catch(e){} }},{label:'Leave it for now',go:()=>{}}]); return; } }
+// ---- faction towers, outposts and keeps through captureTower ----
+{ const _ct=captureTower; captureTower=function(b,list,o,...a){ const st=_ct(b,list,o,...a); try{ if(st&&o){ const rec={x:o.x,gy:o.gy,top:o.top,floors:o.floors||null,posts:o.posts||null}; holdTower(o.top!=null?o:{x:o.x,gy:st.gy,top:o.top},b.f,list,rec).st=st.id; } }catch(e){ console.warn(e); } return st; }; }
+// ---- a raiding party takes it back ----
+function retake(c){ const L=capList(), i=L.indexOf(c); if(i>=0) L.splice(i,1); const f=c.f;
+  try{ const j=myStructures.findIndex(s=>s.id===c.st||(s.x===c.x&&s.gy===c.gy&&/Captured/.test(s.name||''))); if(j>=0){ for(const e of ents) if(e.post&&e.post.st===myStructures[j].id) e.post=null; myStructures.splice(j,1); } }catch(e){}
+  try{ if(['g','b','r'].includes(f)){ const b=bases.find(q=>q.f===f); if(b&&c.rec&&c.list){ (b[c.list]=b[c.list]||[]).push(Object.assign({},c.rec)); } recolorTower(c,f); } }catch(e){ console.warn(e); }
+  const who=['g','b','r'].includes(f)?(FNAME[f]||'The enemy'):f==='orc'?'The orcs':'The goblins';
+  toast(`${who} took back the watchtower you held!`,4.5); try{ sfx('hurt'); }catch(e){} }
+let towerHoldT=HOLD_EVERY;
+function holdTick(dt){ if((towerHoldT-=dt)>0) return; towerHoldT=HOLD_EVERY; if(!world||!player||isGuest()) return;
+  for(const c of capList().slice()){ const bx=towerBox(c); const foes=ents.filter(e=>hostileTo(e)&&towerIn(e,bx)); const mine=ents.some(e=>mineHere(e)&&towerIn(e,bx))||(player&&!player.dead&&towerIn(player,bx));
+    if(foes.length&&!mine){ c.raidT=(c.raidT||0)+HOLD_EVERY; if(c.raidT>=RETAKE_S) retake(c); } else c.raidT=0; } }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'){ if((holdAskT-=dt)<=0){ holdAskT=1; isleCapTick(); } holdTick(dt); } }catch(e){ console.warn(e); } return r; }; }
+// ---- when the world opens: no guards on the towers you hold ----
+{ const _pp=populate; populate=function(...a){ const r=_pp(...a); try{ const L=capList(); if(L.length) for(const e of ents){ if(!hostileTo(e)||e.bigBoss) continue; for(const c of L){ if(towerIn(e,towerBox(c))||(e.camp&&Math.abs(e.camp.x-c.x)<=5&&Math.abs(e.camp.gy-c.gy)<=24)){ e.dead=true; break; } } } }catch(e){ console.warn(e); } return r; }; }
+// ---- your flag over it ----
+{ const _fl=flagList; flagList=function(...a){ const out=_fl(...a); try{ for(const c of capList()) out.push({kind:'tower',x:c.x,gy:c.gy,top:c.top,by:(player&&player.name)||'You',team:player.team}); }catch(e){} return out; }; }
+// ===== Beta 0.9.209: burned trees leave no charred wall (Kinard, 2026-11-23, a screenshot of a tree-shaped charred wall standing in
+// the sky: "Make it so that when tree leaves burn they do not do this") =====
+// Since 0.9.83 (98zxr_beta083b.js charTree) a tree that caught fire painted a charred-wood back wall behind every log and leaf it
+// had, so the burnt pieces would not hang in the air; once the tree was gone the wall stayed, a dark tree shape against the sky.
+// A burning tree now leaves nothing behind it, and the charred walls older trees left are taken away once in each world
+// (home.charTreeV): every charred back wall that is not part of a burned village (`ruins`) or a building box.
+charTree=function(){ return 0; };
+function charTreeWalls(){ if(!world||!bg||isGuest()) return 0; if(typeof CHAR_BG==='undefined') return 0; const keep=[];
+  for(const rn of (typeof ruins!=='undefined'&&ruins)||[]) if(rn&&isFinite(rn.x)) keep.push([rn.x-26,rn.x+26,(rn.gy||surf[rn.x])-24,(rn.gy||surf[rn.x])+3]);
+  try{ for(const b of gameBoxes()) keep.push([b.x0-2,b.x1+2,b.y0-2,b.y1+2]); }catch(e){}
+  const kept=(x,y)=>keep.some(([a,b,c,d])=>x>=a&&x<=b&&y>=c&&y<=d); let n=0;
+  facRun(()=>{ for(let i=0;i<bg.length;i++){ if(bg[i]!==CHAR_BG) continue; const x=i%W, y=(i/W)|0; if(kept(x,y)) continue; bset(x,y,0); n++; if(explored[i]) try{ mapPixel(x,y); }catch(e){} } });
+  return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.charTreeV&&!isGuest()){ home.charTreeV=1; charTreeWalls(); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: your troops stop enemy arrows (Kinard, 2026-11-23: "Currently when in multiplayer my brother is getting
+// killed by the enemy archers and they will shoot through all my troops make it so that the bullets get stuck after the first two
+// and don't go through and hit him every time") =====
+// An enemy shot only stopped on a body it touched, and archers shoot in an arc: most arrows flew just over the soldiers' heads and
+// came down on the player they aimed at, however many soldiers stood in front. Now an enemy shot (arrow, bolt, magic, fire) that
+// passes through or just over (SHIELD_OVER pixels above the head) one of your side's troops counts it, and at the second one it
+// sticks: that troop takes the hit and the shot is gone. Your side: soldiers, tamed animals, and a friend's soldiers (their
+// stand-ins on the host's game), never a player. Every game in a shared world runs it on its own shots, the host on the shots
+// that hurt friends.
+const SHIELD_OVER=20, SHIELD_AT=2;
+function shieldTroop(o,team){ if(!o||o.dead||o.ghost&&!o.proxy) return false; if(o.kind==='player'||o.remote&&!o.proxy&&o.kind!=='human'&&o.kind!=='animal') return false;
+  if(o.aboard||o.armyHid) return false; if(o.kind==='human') return !o.worker&&(!hostile||hostile(team,o.team)); if(o.kind==='animal') return !!o.tamed&&hostile(team,o.team); return false; }
+function shieldStep(pr){ if(!pr||pr.dead||pr.visual||!pr.team||!player) return; if(!hostile(pr.team,player.team)) return;
+  const L=[]; for(const o of ents){ if(!shieldTroop(o,pr.team)) continue; if(pr.x<o.x-2||pr.x>o.x+o.w+2) continue; if(pr.y<o.y-SHIELD_OVER||pr.y>o.y+o.h) continue; L.push(o); }
+  if(!L.length) return; const S=pr.shield||(pr.shield=new Set());
+  for(const o of L){ if(S.has(o)) continue; S.add(o); if(S.size>=SHIELD_AT){ const s={x:pr.x-pr.vx*0.01-o.w/2,w:o.w,team:pr.team,kind:'proj',owner:pr.src};
+      try{ damage(o,pr.dmg,s,90); }catch(e){} pr.dead=true; pr.life=-1;   /* updateProjs skips it by its life */ try{ if(pr.kind==='arrow'||pr.kind==='bolt') parts.push({x:pr.x,y:pr.y,vx:0,vy:0,life:0.4,col:'#c8a060',sz:2}); else puff(pr.x,pr.y,pr.col||'#ff9f43',3,60); }catch(e){} return; } } }
+{ const _up=updateProjs; updateProjs=function(dt,...a){ try{ for(const pr of projs) shieldStep(pr); }catch(e){ console.warn(e); } return _up(dt,...a); }; }
+// ===== Beta 0.9.209: a boss waits for its chest, mirror or drum on a friend's screen too (Kinard, 2026-11-23: "The other multiplayer
+// character has the enemy player immediately spawn when he sees instead of having it so that there is a vase to click to spawn him") =====
+// The host keeps a boss hidden and asleep until someone investigates its object (98zxz_zz188_plush.js plushHidden: the Goblin
+// Beastmaster's chest, the Archmage's and the Magma Wizard's mirrors, Grukk's war drum; 98zxz_zz164c_bosses.js bossHidden: the realm
+// bosses until their throne is investigated). But the host still listed the boss among the enemies it sends, and a friend's game,
+// which only sees a copy, drew it standing there at once. And a friend who found the object was told only the host could wake it.
+//   1. The host leaves hidden bosses (and the Beastmaster's hidden bear) out of the enemies it sends.
+//   2. The host sends the objects waiting to be investigated (presence `ps`: [key, x, y, label]); a friend's game offers them as
+//      the host's does, and a friend's choice goes to the host (presence `wb`: [seq, key, x, y]), which wakes the boss for everyone.
+function bossStillHidden(e){ try{ return !!e&&!e.dead&&((typeof plushHidden==='function'&&plushHidden(e))||(typeof bossHidden==='function'&&bossHidden(e))); }catch(err){ return false; } }
+{ const _ml=mpMobList; mpMobList=function(...a){ const out=_ml(...a); try{ const hide=new Set(); for(const e of ents) if(e.nid!=null&&bossStillHidden(e)) hide.add(e.nid); if(hide.size) return out.filter(m=>!hide.has(m[0])); }catch(e){} return out; }; }
+function mpSitesOut(){ try{ if(!(typeof MP!=='undefined'&&MP.host)) return 0; const L=plushActs().filter(a=>!a.sea).slice(0,8).map(a=>[a.key,a.x,a.y,String(a.label||'Investigate').slice(0,40)]); return L.length?L:0; }catch(e){ return 0; } }
+function mpWakeOut(){ return (typeof MP!=='undefined'&&MP.guest&&MP.wakeReq&&MP.wakeReq.length)?MP.wakeReq.slice(-4):0; }
+let wakeSeq=0;
+{ const _pa=plushActs; plushActs=function(...a){ if(!(typeof MP!=='undefined'&&MP.on&&MP.guest)) return _pa(...a);
+    return (MP.hostSites||[]).map(([key,x,y,label])=>({key,x,y,label,go:()=>{ (MP.wakeReq=MP.wakeReq||[]).push([++wakeSeq+Math.round(performance.now()),key,x,y]); toast('You investigate it...',2); }})); }; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(!r||!d) return out;
+      if(r.isHost&&MP.guest) MP.hostSites=Array.isArray(d.ps)?d.ps.slice(0,8):[];
+      if(MP.host&&Array.isArray(d.wb)){ r.wbSeen=r.wbSeen||new Set(); for(const q of d.wb.slice(0,4)){ if(!Array.isArray(q)||r.wbSeen.has(q[0])) continue; r.wbSeen.add(q[0]);
+          const s=plushActs().find(a=>a.key===q[1]&&a.x===q[2]&&a.y===q[3]); if(s) try{ s.go(); }catch(e){ console.warn(e); } } } }catch(e){ console.warn(e); } return out; }; }
+// ===== Beta 0.9.209: bosses stay at home when you die (Kinard, 2026-11-23: "Make it so that the enemy bosses cannot spawn and follow
+// you if you die") =====
+// A boss that was fighting you kept its target when you died and walked or flew after you to where you came back, so it turned up at
+// your bed or your village. Now:
+//   1. Every boss (isBossEnt, plus the goblin and orc chiefs; not Vorthax, who has his own lair rules, nor the Kraken) remembers the
+//      spot it was first seen at (e.bossHome).
+//   2. When you come back to life, every boss that was after you forgets you and goes home: put back on its spot (healed, the fight
+//      starts over) if no player is within BOSS_SEEN blocks of it, else it just stops chasing. Vorthax flies back to his lair.
+//   3. A boss never chases anyone more than BOSS_LEASH blocks from its spot: past that it gives up and returns, so a friend's death
+//      (whose respawn the host's game does not see) cannot draw it out either.
+const BOSS_LEASH=70, BOSS_SEEN=40;
+const bossKind=e=>!!e&&!e.dead&&!e.ghost&&!e.proxy&&e.kind!=='dragon'&&e.kind!=='kraken'&&(isBossEnt(e)||e.mtype==='goblin_chief'||e.mtype==='ogre_king');
+function bossHomeNote(e){ if(!e.bossHome) e.bossHome={x:e.x,y:e.y}; }
+function bossGoHome(e,heal){ const h=e.bossHome; if(!h) return; e.target=null; e.provoked=false; e.angry=false; e.charge=false; e.vx=0; e.vy=0;
+  const seen=playerSpots().some(p=>p&&!p.dead&&Math.hypot(cxOf(p)-cxOf(e),cyOf(p)-cyOf(e))<BOSS_SEEN*T&&Math.hypot(cxOf(p)-(h.x+e.w/2),cyOf(p)-(h.y+e.h/2))>8*T);
+  if(!seen){ e.x=h.x; e.y=h.y; if(heal) e.hp=e.maxHp; } else e.goingHome=true; }
+{ const _ua=updateAI; updateAI=function(e,dt,...a){ try{ if(bossKind(e)&&!isGuest()){ bossHomeNote(e); const h=e.bossHome;
+        if(Math.hypot(e.x-h.x,e.y-h.y)>BOSS_LEASH*T){ bossGoHome(e,false); }
+        if(e.goingHome){ e.target=null; if(Math.hypot(e.x-h.x,e.y-h.y)<3*T){ e.goingHome=false; } else { const dir=Math.sign(h.x-e.x); e.facing=dir||e.facing; e.vx=dir*(e.speed||80)*0.8; if(!playerSpots().some(p=>p&&!p.dead&&Math.abs(cxOf(p)-cxOf(e))<BOSS_SEEN*T)){ e.x=h.x; e.y=h.y; e.goingHome=false; } } } } }catch(err){ console.warn(err); }
+    return _ua(e,dt,...a); }; }
+{ const _rp=respawnPlayer; respawnPlayer=function(...a){ const r=_rp(...a); try{ if(!isGuest()){ for(const e of ents){ if(!bossKind(e)) continue; bossHomeNote(e); if(e.target===player||e.provoked||e.angry) bossGoHome(e,true); }
+        if(typeof dragon!=='undefined'&&dragon&&!dragon.dead&&!dragon.ghost&&(dragon.awake||dragon.target)){ dragon.homing=true; dragon.target=null; } } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: every player sees the boss bar and gets the loot (Kinard, 2026-11-23: "Make sure that the coins are dorpping for all
+// the players and not just the main player"; "Make it so that ALL players see the bosses health bar at the bottom as well as they
+// receive a boss item drop the same") =====
+// 1. Coins: when an enemy falls on the host's game, the coins it drops are the host's to pick up, and every friend within COIN_SHARE_R
+//    blocks of it gets the same coins straight into their purse (presence `pg`, 98j_loot_smoke.js). A friend's own game no longer
+//    makes up a few coins of its own when an enemy it hit disappears (that was the only way a friend got any).
+// 2. The boss bar: a friend's copy of a boss carries no name or fight state, so their game never showed the bar. The host sends the
+//    bosses that are fighting (presence `bs`: [name, x, y, hp, max]); a friend's game shows the nearest within 40 blocks at the bottom
+//    of the screen, as the host's does.
+// 3. Boss items: every player already gets their own copy of what a boss drops (98j), but only for bosses isBossEnt knows; the goblin
+//    Beastmaster and the other chiefs (bossKind, 98zxz_zz328_boss_home.js) now share theirs the same way.
+const COIN_SHARE_R=40;
+{ const _k=kill; kill=function(e,src,...a){ const host=typeof MP!=='undefined'&&MP.on&&MP.host, live=e&&!e.dead, n0=drops.length; const r=_k(e,src,...a);
+    try{ if(host&&live&&e.dead){ const fresh=drops.slice(n0); const coins=fresh.reduce((s,d)=>s+(d.coins||0),0);
+        const near=[...MP.remote.values()].filter(rm=>rm.key&&rm.proxy&&Math.hypot(rm.proxy.x-cxOf(e),rm.proxy.y-cyOf(e))<COIN_SHARE_R*T);
+        if(coins>0) for(const rm of near) mpGrant(rm.key,0,0,coins);
+        if(bossKind(e)&&!isBossEnt(e)){ const items=fresh.filter(d=>!d.coins&&d.id&&!d.ghost); for(const d of items) for(const rm of MP.remote.values()) if(rm.key) mpGrant(rm.key,d.id,d.n,0); } } }catch(err){ console.warn(err); }
+    return r; }; }
+// a friend's game makes no coins of its own when a ghost vanishes (the host hands them over)
+let ghostSweep=false;
+{ const _mg=mpGhosts; mpGhosts=function(...a){ ghostSweep=true; try{ return _mg(...a); } finally{ ghostSweep=false; } }; }
+{ const _dc=dropCoins; dropCoins=function(...a){ if(ghostSweep&&typeof MP!=='undefined'&&MP.guest) return; return _dc(...a); }; }
+// the boss bar for friends
+function mpBossesOut(){ try{ if(!(typeof MP!=='undefined'&&MP.host)) return 0; const L=[];
+    for(const e of ents){ if(e.dead||e.ghost||e.proxy) continue; const boss=bossKind(e)||e.kind==='dragon'||e.kind==='kraken'; if(!boss||bossStillHidden(e)) continue;
+      if(!(e.bigBoss||e.awake||e.target||e.provoked||e.hp<e.maxHp)) continue; L.push([String(e.name||(MON[e.mtype]&&MON[e.mtype].name)||'Boss').slice(0,40),Math.round(cxOf(e)),Math.round(cyOf(e)),Math.ceil(e.hp),Math.round(e.maxHp)]); if(L.length>=4) break; }
+    return L.length?L:0; }catch(e){ return 0; } }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d&&r.isHost&&MP.guest){ MP.hostBosses=Array.isArray(d.bs)?d.bs.slice(0,4):[]; MP.hostBossAt=performance.now(); } }catch(e){} return out; }; }
+{ const _uh=updateHUD; updateHUD=function(...a){ const r=_uh(...a); try{ if(typeof MP!=='undefined'&&MP.on&&MP.guest&&player){ const bb=$('#bossbar'); if(!bb) return r; const L=(performance.now()-(MP.hostBossAt||0)<3000)?(MP.hostBosses||[]):[];
+        let best=null, bd=40*T; for(const q of L){ const dd=Math.hypot(q[1]-cxOf(player),q[2]-cyOf(player)); if(dd<bd){ bd=dd; best=q; } }
+        if(best){ bb.hidden=false; bb.dataset.mpb='1'; if($('#bossname').textContent!==best[0]) $('#bossname').textContent=best[0]; $('#bossfill').style.width=(100*best[3]/Math.max(1,best[4]))+'%'; $('#bosshp').textContent=best[3].toLocaleString()+' / '+best[4].toLocaleString(); }
+        else if(bb.dataset.mpb){ bb.hidden=true; delete bb.dataset.mpb; } } }catch(e){} return r; }; }
+// ===== Beta 0.9.209: the boat only on the ocean; no lava by the magma realm's arrival (Kinard, 2026-11-23: "make it so that the boat ONLY
+// spawns if you are in the ocean make it so that there is NEVER lava within 10 blocks of the spawn to the magma realm") =====
+// 1. Your boat came out under you in any water two blocks deep: lakes, cave pools, cloud lakes. It now comes out only on the open
+//    sea (an ocean column at sea level); anywhere else you swim. Riding off the sea onto a lake sets you down in the water.
+// 2. The magma realm's arrival spot: no lava within ARRIVE_SAFE (10) blocks of it, ever. Once in each world the lava there turns to
+//    scoria (home.arriveSafeV), and lava that flows in later is cooled every second while a player is in the magma realm.
+const ARRIVE_SAFE=10;
+function onOpenSea(p){ const col=Math.floor(cxOf(p)/T); if(col<0||col>=W||!oceanCol||!oceanCol[col]) return false; const fy=Math.floor((p.y+p.h)/T); return Math.abs(fy-seaY)<=3; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player; const r=_up(dt,...a);
+    try{ if(p&&p.riding&&!onOpenSea(p)&&!p.passenger){ p.riding=false; p.boatCd=Math.max(p.boatCd||0,0.5); } }catch(e){} return r; }; }
+function arriveSpot(){ try{ if(magma&&magma.arrive&&isFinite(magma.arrive.x)) return {x:Math.floor((magma.arrive.x+6)/T),y:Math.floor((magma.arrive.y+20)/T)}; }catch(e){} return null; }   /* magma.arrive is in pixels (a player's top-left) */
+function coolArrival(){ const a=arriveSpot(); if(!a||!world) return 0; const rock=B.SCORIA||B.MAGMA_ROCK; let n=0; const cells=[];
+  for(let y=a.y-ARRIVE_SAFE;y<=a.y+ARRIVE_SAFE;y++) for(let x=a.x-ARRIVE_SAFE;x<=a.x+ARRIVE_SAFE;x++){ if(x<1||x>=W-1||y<1||y>=H-1) continue; if((x-a.x)**2+(y-a.y)**2>ARRIVE_SAFE*ARRIVE_SAFE) continue; if(world[y*W+x]===B.LAVA) cells.push([x,y]); }
+  if(cells.length) facRun(()=>{ for(const [x,y] of cells){ setTile(x,y,rock); try{ if(liq) liq[y*W+x]=0; }catch(e){} n++; } }); return n; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.arriveSafeV&&!isGuest()){ home.arriveSafeV=1; coolArrival(); } }catch(e){ console.warn(e); } return r; }; }
+let arriveT=1;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&world&&!isGuest()&&(arriveT-=dt)<=0){ arriveT=1; const a=arriveSpot(); if(a&&playerSpots().some(p=>p&&cyOf(p)/T>=magmaY)) coolArrival(); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: friends see and pick up drops (Kinard, 2026-11-23: "the other player is not seeing anything drop"; "There are these
+// items that are not disappearing and my brother cannot pick up items") =====
+// 1. The host sends each friend the items on the ground near them, but the list (98j_loot_smoke.js mpDropList) stopped at 24 items
+//    taken in the order they were dropped, not the nearest: with a few dozen old items lying about (food, wood, meat), a fresh drop
+//    beside a friend was never sent. Now the DROPS_SENT nearest to any friend go first.
+// 2. A friend's pickup hides the item at once and asks the host for it (presence `pk`). If that request was lost the friend's game
+//    kept the item hidden for good while it stayed on the host's ground, so it could never be picked up. A pickup the host has not
+//    answered within PICK_RETRY seconds shows the item again, so it can be picked up again.
+const DROPS_SENT=30, PICK_RETRY=4;
+mpDropList=function(){ const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return []; const L=[];
+  for(const d of drops){ if(d.ghost||d.mine||d.dead) continue; let best=1e18; for(const r of gs){ const dx=d.x-r.proxy.x, dy=d.y-r.proxy.y; if(Math.abs(dx)<40*T&&Math.abs(dy)<25*T){ const q=dx*dx+dy*dy; if(q<best) best=q; } } if(best<1e18) L.push([best,d]); }
+  L.sort((a,b)=>a[0]-b[0]); const out=[];
+  for(const [,d] of L.slice(0,DROPS_SENT)){ if(!d.did) d.did=++mpDid; out.push([d.did,d.coins?0:d.id,d.coins?0:d.n,Math.round(d.x),Math.round(d.y),d.coins||0]); } return out; };
+{ const _ud=updateDrops; updateDrops=function(dt,...a){ const before=MP&&MP.picked?MP.picked.size:0; const r=_ud(dt,...a);
+    try{ if(typeof MP!=='undefined'&&MP.guest&&MP.picked){ const now=performance.now(); MP.pickedAt=MP.pickedAt||new Map(); for(const did of MP.picked) if(!MP.pickedAt.has(did)) MP.pickedAt.set(did,now);
+        for(const [did,t] of MP.pickedAt) if(now-t>PICK_RETRY*1000){ MP.picked.delete(did); MP.pickedAt.delete(did); } } }catch(e){} return r; }; }
+// ===== Beta 0.9.209: the sea fills the hollows beside it (Kinard, 2026-11-23, a screenshot of the sea ending in a straight wall of
+// water beside an empty step of the shore, a bear standing in it below sea level: "I'm not sure what happened to the water right
+// here") =====
+// Water only moves while it is awake, and the sea is asleep away from changes; when the shore beside it was reshaped (a dug or
+// smoothed beach, a step cut by world tidying) the cells left open below sea level stayed dry. Now, every SEA_FILL_EVERY seconds,
+// around each player, an empty cell at or below sea level that is open to the sky (nothing solid above it) and sits beside full
+// sea water, or on top of it, fills with water. Caves and rooms (anything with a roof) are left alone. Host and single player.
+const SEA_FILL_EVERY=1, SEA_FILL_R=50, SEA_FILL_DEEP=40;
+let seaFillT=0.5;
+function seaFillTick(dt){ if((seaFillT-=dt)>0) return; seaFillT=SEA_FILL_EVERY; if(!world||!player||isGuest()||!liq) return;
+  const cells=[]; const full=(x,y)=>x>=0&&x<W&&y>=0&&y<H&&world[y*W+x]===B.WATER&&liq[y*W+x]>=7;
+  const scan=p=>{ if(!p||!isFinite(p.x)) return; const cx=Math.floor(cxOf(p)/T); if(Math.abs(cyOf(p)/T-seaY)>60) return;
+    for(let x=Math.max(1,cx-SEA_FILL_R);x<=Math.min(W-2,cx+SEA_FILL_R);x++){ const top=skyTop[x]; for(let y=seaY;y<=Math.min(H-2,seaY+SEA_FILL_DEEP);y++){ const i=y*W+x; const id=world[i];
+        if(BLOCKS[id]&&BLOCKS[id].solid) break; if(id!==0||bg[i]) continue; if(top<y&&BLOCKS[world[top*W+x]]&&BLOCKS[world[top*W+x]].solid&&top>seaY-1) break;   /* under a roof */
+        if(full(x-1,y)||full(x+1,y)||(y>seaY&&full(x,y-1))) cells.push(i); } } };
+  scan(player); try{ if(typeof MP!=='undefined'&&MP.on&&MP.remote) for(const r of MP.remote.values()) scan(r.proxy||r); }catch(e){}
+  if(cells.length) facRun(()=>{ for(const i of cells.slice(0,200)){ const x=i%W, y=(i/W)|0; if(world[i]!==0) continue; setTile(x,y,B.WATER); liq[i]=8; } }); }
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play') seaFillTick(dt); }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: friends see your keychain and stuffed animal (Kinard, 2026-11-23, a screenshot of a friend with no keychain at the
+// belt: "Make it so that I can see the other players keychains as I cannot right here") =====
+// The keychain clipped to your belt (98zxz_zz199_trophy_cases.js) and the stuffed animal held at your hip (98zxz_zz188_plush.js) were
+// drawn only on your own hero. Each player now sends them (presence `kc`: [keychain, stuffed animal]) and a friend's game draws them
+// on that player the same way.
+function mpKeysOut(){ try{ if(!player) return 0; const k=beltKey()|0, p=plushShown()|0; return k||p?[k,p]:0; }catch(e){ return 0; } }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d){ const kc=Array.isArray(d.kc)?d.kc:[0,0]; r.kcId=KEYCHAIN[kc[0]|0]?kc[0]|0:0; r.plushId=PLUSH[kc[1]|0]?kc[1]|0:0; } }catch(e){} return out; }; }
+{ const _de=drawEntity; drawEntity=function(e,...a){ const r=_de(e,...a); try{ if(e&&e!==player&&!e.riding&&!e.dead&&(e.kcId||e.plushId)&&MP.remote&&[...MP.remote.values()].includes(e)){ const f=e.facing||1;
+        if(e.plushId){ const art=TROPHY_ART[e.plushId]||iconTex(e.plushId); if(art){ const S=12, X=Math.round(cxOf(e)-f*(e.w/2+1)-S/2), Y=Math.round(e.y+e.h*0.66-S/2);
+            ctx.save(); ctx.imageSmoothingEnabled=false; if(f<0){ ctx.translate(X+S,Y); ctx.scale(-1,1); ctx.drawImage(art,0,0,S,S); } else ctx.drawImage(art,X,Y,S,S); ctx.restore(); } }
+        if(e.kcId){ const art=keychainArt(e.kcId); if(art){ const sw=Math.sin(performance.now()/400)*1.5, X=Math.round(cxOf(e)+f*2-4+sw), Y=Math.round(e.y+e.h*0.6);
+            ctx.save(); ctx.imageSmoothingEnabled=false; ctx.drawImage(art,0,0,16,16,X,Y,8,8); ctx.restore(); } } } }catch(err){} return r; }; }
+// ===== Beta 0.9.209: tame with V; at most three birds out of their cages (Kinard, 2026-11-23: "Change the key to tame animals to 'V'";
+// "Make it so that max birds a player can have uncaged is 3 otherwise the player will not get more birds") =====
+// 1. On a computer, taming is its own key, V (settings.keys.tame, in Settings > Keys): beside an animal or creature you can tame it, or
+//    with bait in hand aimed at a bird. Talk (F) no longer tames. On a phone the button over the animal still says Tame and tames it.
+// 2. A player keeps at most BIRDS_OUT (3) tamed birds out of cages (hawks, eagles, owls and the other flying birds). With three out, a
+//    fourth is not tamed and a cage will not let one out ("You already have 3 birds with you; put one in a bird cage first").
+const BIRDS_OUT=3;
+const isBirdAnimal=e=>!!e&&e.kind==='animal'&&(e.fly||(typeof isBirdType==='function'&&isBirdType(e.atype))||(ANIMALS[e.atype]&&ANIMALS[e.atype].fly));
+function birdsOut(){ if(!player) return 0; return ents.filter(e=>!e.dead&&e.tamed&&!e.ghost&&!e.proxy&&e.team===player.team&&isBirdAnimal(e)).length; }
+const BIRD_FULL=()=>`You already have ${BIRDS_OUT} birds with you; put one in a bird cage first`;
+let birdSaidT=0; const birdSay=()=>{ const n=performance.now(); if(n>birdSaidT){ birdSaidT=n+2500; toast(BIRD_FULL(),3); } };
+{ const _tt=tryTame; tryTame=function(a,...r){ if(isBirdAnimal(a)&&birdsOut()>=BIRDS_OUT){ birdSay(); return; } return _tt(a,...r); }; }
+{ const _tb=tryTameBird; tryTameBird=function(...a){ if(birdsOut()>=BIRDS_OUT){ try{ const near=ents.some(b=>b.kind==='animal'&&!b.dead&&!b.tamed&&b.fly&&Math.hypot(cxOf(b)-input.ax,cyOf(b)-input.ay)<3*T); if(near) birdSay(); }catch(e){} return false; } return _tb(...a); }; }
+// a cage lets a bird out only while there is room
+{ const _io=interactOptions; interactOptions=function(...a){ const o=_io(...a); try{ if(birdsOut()>=BIRDS_OUT) for(const op of o) if(op&&/out of the cage$/.test(op.label||'')){ op.go=()=>birdSay(); } }catch(e){} return o; }; }
+// ---- the Tame key ----
+function tameTarget(){ if(typeof talkTarget!=='undefined'&&talkTarget&&talkTarget.tame) return talkTarget; const a=nearestTameable(); return a&&(player.cls==='beast'||hasWhistle())?{tame:a}:null; }
+document.addEventListener('keydown',e=>{ try{ if(state!=='play'||!player||player.dead) return; const tg=e.target; if(tg&&(tg.tagName==='INPUT'||tg.tagName==='TEXTAREA'||tg.isContentEditable)) return;
+    if(e.code===settings.keys.tame){ e.preventDefault(); e.stopPropagation(); const v=tameTarget(); if(v){ interact(v); return; } let done=false; try{ done=tryTameBird(); }catch(err){} if(!done&&performance.now()>birdSaidT) toast('Nothing to tame here',1.2); return; }
+    if(e.code===settings.keys.use&&typeof talkTarget!=='undefined'&&talkTarget&&talkTarget.tame&&interactOptions().length<=1){ e.preventDefault(); e.stopPropagation(); toast(`Press ${(settings.keys.tame||'KeyV').replace(/^Key/,'')} to tame`,1.5); } }catch(err){ console.warn(err); } },true);
+// ===== Beta 0.9.209: ride in a friend's boat; see each other fish (Kinard, 2026-11-23, a screenshot of his longship with a friend
+// standing in the water beside it: "Make it so that other players can all be in the same boat also make it so players can see each
+// others casting when fishing") =====
+// 1. Riding along (83_shared_boats.js) broke at once: standing on a friend's deck puts your feet at the waterline, so your own boat
+//    came out under you, and riding your own boat ends the ride. While you ride along your own boat stays put away, and if it came
+//    out right beside a friend's boat you step across into theirs. Any number of friends can ride in the same boat.
+// 2. Fishing: each player sends their bobber (presence `fb`: [x, y, bite]) and a friend's game draws the line from their rod to it,
+//    the same line, bobber and bite mark as your own.
+function friendBoatAt(p){ if(typeof MP==='undefined'||!MP.on||!p) return null; for(const r of MP.remote.values()){ const bt=boatOf(r); if(!bt||!isFinite(r.x)) continue;
+    if(Math.abs(cxOf(p)-(r.x+6))<=bt.len/2&&Math.abs((p.y+p.h)-(deckY(r)+p.h))<T*2) return r; } return null; }
+{ const _up=updatePlayer; updatePlayer=function(dt,...a){ const p=player;
+    try{ if(p&&!p.dead){ if(p.passenger) p.boatCd=Math.max(p.boatCd||0,0.3);   /* your own boat stays away while you ride along */
+        else if(p.riding&&friendBoatAt(p)){ p.riding=false; p.boatCd=0; } } }catch(e){}   /* your boat came out beside a friend's: step across */
+    return _up(dt,...a); }; }
+// ---- fishing lines ----
+function mpBobOut(){ try{ return bob&&isFinite(bob.x)?[Math.round(bob.x),Math.round(bob.y),bob.state==='bite'?1:0]:0; }catch(e){ return 0; } }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d){ r.fb=Array.isArray(d.fb)?d.fb:null; if(!r.fb) r.fbs=null; } }catch(e){} return out; }; }
+function drawFriendLine(r){ const f=r.fb; if(!f) return; const s=r.fbs=r.fbs||{x:f[0],y:f[1]}; s.x+=(f[0]-s.x)*0.3; s.y+=(f[1]-s.y)*0.3;
+  const sx=cxOf(r)+(r.facing||1)*12, sy=r.y+2, ex=s.x, ey=s.y+(f[2]?3:0), sag=f[2]?2:Math.min(26,Math.abs(ex-sx)*0.25+8);
+  ctx.save(); ctx.strokeStyle='rgba(232,232,232,0.8)'; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(sx,sy); ctx.quadraticCurveTo((sx+ex)/2,Math.max(sy,ey)+sag,ex,ey); ctx.stroke();
+  const by=Math.round(s.y+(f[2]?3:Math.sin(performance.now()/300)*1)); ctx.fillStyle='#3f3150'; ctx.fillRect(s.x-3,by-3,6,6); ctx.fillStyle='#e5383b'; ctx.fillRect(s.x-2,by-2,4,2); ctx.fillStyle='#ffffff'; ctx.fillRect(s.x-2,by,4,2);
+  if(f[2]){ ctx.fillStyle='#ffe066'; ctx.fillRect(s.x-1,by-12,2,6); ctx.fillRect(s.x-1,by-5,2,2); } ctx.restore(); }
+{ const _de=drawEntity; drawEntity=function(e,...a){ const r=_de(e,...a); try{ if(e&&e!==player&&e.fb&&MP.remote&&[...MP.remote.values()].includes(e)) drawFriendLine(e); }catch(err){} return r; }; }
+// ===== Beta 0.9.209: fifty messages in bottles, coral, fishing (Kinard, 2026-11-23: "Make it so that there are 50 different hints that can
+// come from the messages in the bottles such as what gems can be mined underground, where the bosses can be found in a minor riddle etc and
+// make it so that once they are found they are logged in the menu to be found if the player would like as a drop down menu that is closed in
+// the settings"; "Make it so that the coral is not considered a treasure item at this moment"; "Make it so that the fish will bite between
+// 3-15 seconds and there is more variety") =====
+// 1. A Message in a bottle holds one of BOTTLE_HINTS (50 short hints and riddles about gems, bosses, realms and hidden places), one you have
+//    not read yet while any are left, along with the few coins it always had. Every hint read is kept with your hero
+//    (player.gear.hints) and listed in Settings > World under "Messages in bottles", a list that starts closed.
+// 2. Coral is a plain material (no "treasure!" when it comes up on a line; same price).
+// 3. A fish bites FISH_BITE_MIN to FISH_BITE_MAX seconds after the cast (better rods lean toward the short end), and again that long
+//    after one gets away. Ten more fish (fixed ids 2599-2608) live in fresh water and the sea, each with its own colors.
+const BOTTLE_HINTS=[
+  'Red as fire and deep as night: rubies sleep where the stone turns dark.',
+  'Green gems hide among the moss-covered caves below the shale.',
+  'Blue as the sky yet buried far from it: sapphires wait in the deep rock.',
+  'Purple stones glitter in the gem caverns, where the walls themselves shine.',
+  'Diamonds are found deepest of all, just above the black stone.',
+  'The goblins have a chief who sleeps until his chest is opened.',
+  'A mirror in the wizard tower shows a face that is not your own.',
+  'Fire burns in a second mirror, far below, in the magma fort.',
+  'On the orc island a great drum waits. Strike it, and the Ogre King answers.',
+  'The dragon sleeps at the top of the mountain. Follow the signs to his door.',
+  'Bones by the shore point the way to the dragon\'s lair.',
+  'A sailor\'s worst dream, dropped into the deep sea, calls the Kraken.',
+  'Above the clouds stands a castle. Its throne hides the Sky Ranger.',
+  'Below the black stone the ground glows red: the magma realm.',
+  'In the heart of the magma realm stands a keep, and in it a knight of fire.',
+  'Mythril shines on the islands of the sky.',
+  'Adamantite grows only where lava flows.',
+  'Some caverns are grown over with giant plants. Gold is hidden among them.',
+  'Sand that falls hides old pyramids, and scarabs guard them.',
+  'Under the sea lie the halls of Atlantis. Its guards keep emeralds and runes.',
+  'Black glass rock means the obsidian deep: strong ore, stronger beasts.',
+  'Old bones in the stone can be dug up as fossils.',
+  'Bees bring honey to their hive when flowers grow nearby.',
+  'Catch a hundred fireflies and a fountain of light is yours.',
+  'A glowstick shines even under water.',
+  'Moths gather in hidden caves, and so do wings.',
+  'Every boss you defeat may leave a pair of wings behind.',
+  'A goblin war camp keeps its loot in a golden chest.',
+  'Coal is common near the surface. Iron and silver lie close beneath it.',
+  'Gold veins thin out near the top and grow richer below.',
+  'Ice islands are cold, and the ptarmigan lives there.',
+  'Seagulls fly over the open sea; fish follow the boats.',
+  'A rope with a hook can pull you to the top of any wall.',
+  'The wise sleep in their own bed: you wake where you last slept.',
+  'Torches keep the snow away, five blocks in every direction.',
+  'The Wizard tower stands on its own island, and its guards watch from the top.',
+  'A goblin lookout can be taken, and once taken it flies your flag.',
+  'Raw meat can make you sick. Cook it first.',
+  'Glowcaps grow in the dark and light the way.',
+  'Crystals hang from the ceilings of the gem caves.',
+  'The sky barrier lets you up but never down again on foot.',
+  'The Wayfinder stone takes you back to places you have been.',
+  'Deer drop antlers, and antlers make a fine fishing rod.',
+  'A storm is the best time to fish for eels.',
+  'Pearls come from the sea; black pearls from its deepest waters.',
+  'The Kraken\'s treasure holds daggers that bind a Beastmaster to his pets.',
+  'Captured castles keep their portals. Use them.',
+  'An abandoned village waits for someone to claim it.',
+  'Sealed chests pop open with gold for whoever finds them.',
+  'Every chest in the world belongs to whoever reaches it first.'];
+function hintsRead(){ if(!player) return []; player.gear=player.gear||{}; return player.gear.hints=Array.isArray(player.gear.hints)?player.gear.hints:[]; }
+function nextHint(){ const got=new Set(hintsRead()); const left=BOTTLE_HINTS.map((_,i)=>i).filter(i=>!got.has(i)); const pool=left.length?left:BOTTLE_HINTS.map((_,i)=>i); return pool[(Math.random()*pool.length)|0]; }
+{ const _ot=openTreasure; openTreasure=function(id,...a){ if(id!==I.MESSAGE_BOTTLE) return _ot(id,...a);
+    takeItem(id,1); const i=nextHint(), L=hintsRead(); if(!L.includes(i)) L.push(i); const c=5+Math.floor(Math.random()*20); addCoins(c,cxOf(player),player.y);
+    toast(`"${BOTTLE_HINTS[i]}" (message ${L.length} of ${BOTTLE_HINTS.length}, kept in Settings > World)`,7); try{ hintLogRender(); }catch(e){} invDirty=true; }; }
+// the list in Settings > World
+{ const sec=document.querySelector('section.stab[data-tab="world"]'); if(sec){ const d=document.createElement('details'); d.id='hintLog'; d.innerHTML='<summary>Messages in bottles</summary><ol id="hintList"></ol>'; sec.appendChild(d);
+    d.addEventListener('toggle',()=>{ try{ hintLogRender(); }catch(e){} }); }
+  const st=document.createElement('style'); st.textContent=`#hintLog{ margin-top:12px; } #hintLog summary{ cursor:pointer; font-size:11px; color:var(--gold); padding:6px 0; } #hintList{ margin:6px 0 0 18px; padding:0; font-size:9px; line-height:1.7; } #hintList li{ margin-bottom:4px; } #hintList .none{ list-style:none; margin-left:-18px; color:var(--muted); }`; document.head.appendChild(st); }
+function hintLogRender(){ const ol=$('#hintList'); if(!ol) return; const L=player?hintsRead():[]; const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const sum=$('#hintLog summary'); if(sum) sum.textContent=`Messages in bottles (${L.length} of ${BOTTLE_HINTS.length})`;
+  ol.innerHTML=L.length?L.map(i=>`<li>${esc(BOTTLE_HINTS[i])}</li>`).join(''):'<li class="none">None yet. Messages in bottles come up when you fish in the sea.</li>'; }
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ hintLogRender(); }catch(e){} return r; }; }
+// ---- coral ----
+try{ if(ITEMS[I.CORAL]){ delete ITEMS[I.CORAL].treasure; ITEMS[I.CORAL].desc=ITEMS[I.CORAL].desc||'A piece of coral from the sea floor. Used to make coral blocks and sea charms'; } }catch(e){}
+// ---- bites ----
+const FISH_BITE_MIN=3, FISH_BITE_MAX=15;
+function biteWait(tier){ const k=Math.pow(Math.random(),1+0.25*Math.max(0,(tier||1)-1)); return FISH_BITE_MIN+(FISH_BITE_MAX-FISH_BITE_MIN)*k; }
+{ const _uf=updateFishing; updateFishing=function(dt,...a){ try{ if(bob&&!bob.wait9){ bob.wait9=true; if(bob.state==='wait') bob.t=biteWait(bob.tier); } }catch(e){} const was=bob&&bob.state; const r=_uf(dt,...a);
+    try{ if(bob&&was==='bite'&&bob.state==='wait') bob.t=biteWait(bob.tier); }catch(e){} return r; }; }
+// ---- ten more fish ----
+const NEW_FISH=[ [2599,'Perch','f',1,5,8,4,['#6a8a3a','#e0c040']], [2600,'Carp','f',1,5,9,4,['#a07a3a','#e0b060']], [2601,'Catfish','f',2,3,12,6,['#6a6a72','#b8b0a0']],
+  [2602,'Rainbow trout','f',2,3,12,7,['#c8c8d8','#ff8aa8']], [2603,'Pike','f',2,2.5,14,8,['#4a7a3a','#c8d870']], [2604,'Mackerel','o',1,5,9,4,['#3a6aa8','#c8d8e8']],
+  [2605,'Sardine','o',1,6,6,3,['#a8b8c8','#e8eef4']], [2606,'Red snapper','o',2,3,13,7,['#c8403a','#ffb0a0']], [2607,'Mahi-mahi','o',3,2,18,12,['#3aa860','#f0d040']], [2608,'Marlin','o',3,1.5,22,16,['#2a3a7a','#8ab0e8']] ];
+for(const [id,name,where,tier,wt,heal,sell,ing] of NEW_FISH){ if(ITEMS[id]||(BLOCKS[id]&&BLOCKS[id].name)){ console.warn('fish id taken',id); continue; }
+  ITEMS[id]={name,kind:'food',heal,ing,desc:`A fish from ${where==='f'?'lakes and rivers':'the sea'}. Eat it raw or cook it at a furnace`}; SELL[id]=sell; CATCH.push([id,tier,where,wt]);
+  RECIPES.push({ out:I.GRILLED_FISH, n:1, need:[[id,1]], st:B.FURNACE, cat:'cook' });
+  try{ customIcon(id,(rect,px)=>{ const [a,b]=ing; rect(3,6,9,5,a); rect(4,5,7,1,a); rect(4,11,7,1,a); rect(12,5,3,7,a); rect(4,9,8,2,b); px(5,7,'#1b1424'); if(name==='Marlin') rect(0,7,3,1,'#c8d8f0'); if(name==='Catfish'){ rect(2,8,2,1,'#3a3a40'); rect(2,10,2,1,'#3a3a40'); } if(name==='Mackerel') for(let x=5;x<11;x+=2) rect(x,6,1,3,'#1a3a6a'); if(name==='Rainbow trout') rect(4,8,8,1,'#ff8aa8'); }); }catch(e){ console.warn(e); } }
+// ===== Beta 0.9.209: everyone sees the smoke (Kinard, 2026-11-23: "Make it so all players can see the smoke effect") =====
+// Smoke (98j_loot_smoke.js) is made by fires, cannon shots and blasts on the game that runs them, the host's; a friend's game only has
+// copies of those fires and shots, which make no smoke, so a friend saw clear air in the middle of a battle (only the big siege blasts,
+// replayed as effects, left any). The host now sends the smoke around each friend (presence `sm`: [[cell, thickness x100], ...], the
+// SMOKE_SENT thickest cells within SMOKE_NEAR cells of any friend, every other message) and a friend's game shows at least that much.
+// It also thins their shots the same way. Smoke is a cosmetic: when a message runs long it is the first thing left out.
+const SMOKE_SENT=48, SMOKE_NEAR=16;
+let smokeSendN=0;
+function mpSmokeOut(){ try{ if(!(typeof MP!=='undefined'&&MP.host)||!smoke||!smokeOn.size) return 0; if((smokeSendN++)%2) return 0; const gs=[...MP.remote.values()].filter(r=>r.proxy); if(!gs.length) return 0;
+    const L=[]; for(const i of smokeOn){ const v=smoke[i]; if(v<0.06) continue; const x=i%smokeW, y=(i/smokeW)|0; if(!gs.some(r=>Math.abs(x-r.proxy.x/T/SMK)<=SMOKE_NEAR&&Math.abs(y-r.proxy.y/T/SMK)<=SMOKE_NEAR)) continue; L.push([i,Math.min(160,Math.round(v*100))]); }
+    if(!L.length) return 0; L.sort((a,b)=>b[1]-a[1]); return L.slice(0,SMOKE_SENT); }catch(e){ return 0; } }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(r&&d&&r.isHost&&MP.guest&&Array.isArray(d.sm)&&smokeGrid()){ for(const p of d.sm.slice(0,SMOKE_SENT)){ if(!Array.isArray(p)) continue; const i=p[0]|0, v=Math.min(1.6,(p[1]|0)/100); if(i<0||i>=smoke.length) continue; if(smoke[i]<v){ smoke[i]=v; smokeOn.add(i); } } } }catch(e){} return out; }; }
+// ===== Beta 0.9.209: the chest window holds still (Kinard, 2026-11-23: "it appears to glitch on my brother computer so when he looks at
+// an item it will start to kind of spazz out and will change the frame of the chest") =====
+// The line at the top of the chest window (98zxz_zz301_chest_info_loot.js #chestInfo) was 26 pixels tall with its hint and 32 with an
+// item's picture in it, so pointing at an item pushed the whole chest down 3 to 6 pixels; on some screens that moved a different slot,
+// or a gap, under the mouse, the line went back, and round it went. A long description (Shale, Grow meal) also made the window wider
+// (his video). The line now has one height whatever it shows, on one row, and takes its width from the window (width 0, at least the
+// full width), never from its text; what does not fit is cut off with an ellipsis.
+{ const st=document.createElement('style'); st.textContent=`#chestInfo{ width:0; min-width:100%; height:32px; min-height:32px; max-height:32px; box-sizing:border-box; overflow:hidden; white-space:nowrap; flex-wrap:nowrap; }
+#chestInfo > *{ flex-shrink:0; } #chestInfo .cid{ flex-shrink:1; } body.touch #chestInfo{ height:auto; max-height:none; }`; document.head.appendChild(st); }
+// ===== Beta 0.9.209: no flowers in mid-air (Kinard, 2026-11-23, a screenshot of magma realm flowers standing on nothing: "Make it so
+// that the flowers in the magma realm don't let them spawn without a bottom block like all other plants") =====
+// Plants that grow on the ground (NEEDS_GROUND: grass, flowers, bushes, saplings, glow plants, the magma realm's lilies, puffs, shrubs
+// and stalks) fall away when the block under them is broken, but the magma realm's planting (and its later reshaping, which carved
+// caverns and lowered floors) left some standing over air. Now a ground plant with nothing solid (or no platform) under it is taken away:
+// once through the whole magma realm (home.magmaFloraV), and from then on around every player every PLANT_SUPPORT_EVERY seconds. Hanging
+// plants (vines, roots) and things players set down (signs, sewing baskets) are left alone.
+const PLANT_SUPPORT_EVERY=2, PLANT_SUPPORT_R=45;
+let PLANT_KEEP=null;
+function groundPlant(id){ if(!id||!NEEDS_GROUND.has(id)) return false; if(!PLANT_KEEP){ PLANT_KEEP=new Set([B.SIGN,B.BONE_PILE,B.SNOW_LAYER].filter(v=>v!=null)); try{ for(const h of HANG_IDS) PLANT_KEEP.add(h); }catch(e){} try{ PLANT_KEEP.add(SEWING_BASKET); }catch(e){} } return !PLANT_KEEP.has(id); }
+function plantHeld(x,y){ if(y+1>=H) return true; const b=tileAt(x,y+1); const d=BLOCKS[b]; return !!(d&&(d.solid||d.platform))||NEEDS_GROUND.has(b)||(typeof TREEISH!=="undefined"&&TREEISH.has(b)); }   /* a stack (bamboo, cane) stands on its lower piece; the bottom goes first */
+function floatingPlants(x0,x1,y0,y1){ const L=[]; x0=Math.max(1,x0); x1=Math.min(W-2,x1); y0=Math.max(1,y0); y1=Math.min(H-2,y1);
+  for(let y=y0;y<=y1;y++){ const r=y*W; for(let x=x0;x<=x1;x++){ const id=world[r+x]; if(!groundPlant(id)) continue; if(!plantHeld(x,y)) L.push([x,y]); } } return L; }
+function dropPlants(L){ if(L.length) facRun(()=>{ for(const [x,y] of L) if(groundPlant(tileAt(x,y))&&!plantHeld(x,y)) setTile(x,y,0); }); return L.length; }
+{ const _lf=legacyFixes; legacyFixes=function(...a){ const r=_lf(...a); try{ if(home&&!home.magmaFloraV&&!isGuest()&&typeof magmaY!=='undefined'){ home.magmaFloraV=1; dropPlants(floatingPlants(1,W-2,magmaY,H-2)); } }catch(e){ console.warn(e); } return r; }; }
+let plantSupT=1;
+{ const _u=update; update=function(dt,...a){ const r=_u(dt,...a); try{ if(state==='play'&&world&&!isGuest()&&(plantSupT-=dt)<=0){ plantSupT=PLANT_SUPPORT_EVERY; const L=[];
+        for(const p of playerSpots()){ if(!p) continue; const cx=Math.floor(cxOf(p)/T), cy=Math.floor(cyOf(p)/T); L.push(...floatingPlants(cx-PLANT_SUPPORT_R,cx+PLANT_SUPPORT_R,cy-25,cy+25)); }
+        dropPlants(L.slice(0,300)); } }catch(e){ console.warn(e); } return r; }; }
+// ===== Beta 0.9.209: platforms stand out in the magma realm (Kinard, 2026-11-23, a screenshot of the magma keep's hall where the
+// platforms between floors could hardly be told from the dark brick behind them: "Make it so that these platforms are more distinct") =====
+// In the realm's dim red light a wood platform's thin plank and a Basalt ledge were nearly the color of the dark keep walls. Below the
+// magma line every platform now has a bright rim along its top and a dark shadow under it, drawn before the light (so it is lit like
+// everything else and stays hidden in rooms you have not seen), and the Basalt ledge's own picture has a lighter, ember-flecked top.
+const PLAT_RIM='#f0b070', PLAT_RIM2='#a8683a', PLAT_SHADE='rgba(0,0,0,0.55)';
+try{ TEX[B.BASALT_LEDGE]=(()=>{ const c=mkCanvas(16,16), g=c.getContext('2d'); const r=(x,y,w,h,col)=>{ g.fillStyle=col; g.fillRect(x,y,w,h); };
+  r(0,0,16,5,'#4a4a56'); r(0,0,16,1,'#9a9aa8'); r(0,1,16,1,'#6e6e7c'); r(0,4,16,1,'#1a1a20'); for(const x of [2,7,12]) r(x,2,1,1,'#ff9a4a'); for(const x of [0,5,10,15]) r(x,2,1,2,'#2a2a32'); return c; })(); delete ICON_URL[B.BASALT_LEDGE]; }catch(e){ console.warn(e); }
+function drawMagmaPlatforms(){ if(!world||typeof magmaY==='undefined'||camY+viewH<magmaY*T) return; const tx0=Math.max(0,Math.floor(camX/T)), tx1=Math.min(W-1,Math.floor((camX+viewW)/T)), ty0=Math.max(magmaY,Math.floor(camY/T)), ty1=Math.min(H-1,Math.floor((camY+viewH)/T));
+  for(let y=ty0;y<=ty1;y++){ const row=y*W; for(let x=tx0;x<=tx1;x++){ const id=world[row+x]; if(id!==B.PLATFORM&&id!==B.BASALT_LEDGE) continue; const X=x*T, Y=y*T;
+      ctx.fillStyle=PLAT_RIM; ctx.fillRect(X,Y,T,1); ctx.fillStyle=PLAT_RIM2; ctx.fillRect(X,Y+1,T,1); ctx.fillStyle=PLAT_SHADE; ctx.fillRect(X,Y+(id===B.PLATFORM?4:5),T,2); } } }
+{ const _dl=drawLighting; drawLighting=function(...a){ try{ drawMagmaPlatforms(); }catch(e){} return _dl(...a); }; }
+// ===== Beta 0.9.209: the realm lords wait for the throne in shared worlds too (Kinard, 2026-11-23: "Make it so that all players cannot see
+// the enemy until AFTER the throne is activated for him to appear as he currently shows up and can attack the other players in
+// multiplayer") =====
+// The sky castle's and the magma keep's lords stay hidden behind their thrones until someone investigates (98zxz_zz164c_bosses.js
+// bossHidden). The host's game kept them hidden, but sent them to friends, whose games showed them and let them fight; and a friend
+// could not investigate the throne, because the choice only showed while the lord stood in their own game. Now:
+//   - a hidden lord is never sent to friends (98zxz_zz327_mp_hidden_boss.js leaves out every bossStillHidden boss);
+//   - the host lists each throne still waiting (presence `ps`, key "throne:sky" or "throne:magma") beside the chests, mirrors and drums,
+//     so a friend near it is offered "Investigate throne", and their choice wakes the lord on the host's game, facing that friend.
+function throneSites(){ const L=[]; for(const [key,c] of [['throne:sky',sky&&sky.castle],['throne:magma',magma&&magma.keep]]){ if(!c||c.cleared||c.investigated||!c.throne) continue;
+    if(!ents.some(e=>!e.dead&&realmCastleOf(e)===c)) continue; const t=c.throne, x=Math.round(t.x!=null?t.x:((t.x0+t.x1)/2)), y=Math.round((t.gy!=null?t.gy:t.y)-1);
+    L.push({key,x,y,label:'Investigate throne',c}); } return L; }
+{ const _so=mpSitesOut; mpSitesOut=function(...a){ let L=_so(...a)||[]; try{ if(typeof MP!=='undefined'&&MP.host) for(const s of throneSites()) L.push([s.key,s.x,s.y,s.label]); }catch(e){} return L.length?L.slice(0,10):0; }; }
+function wakeThroneFor(key,who){ const s=throneSites().find(q=>q.key===key); if(!s) return false; const c=s.c; c.investigated=true; const b=ents.find(e=>!e.dead&&realmCastleOf(e)===c); if(!b) return false;
+  b.woke=true; b.provoked=true; b.target=who||player; try{ puff(cxOf(b),cyOf(b),b.skyBoss?'#e8f4ff':'#ff6a2a',30,160); sfx('roar',cxOf(b),cyOf(b)); }catch(e){} toast(`${b.name||'The lord of this castle'} rises from the shadows behind the throne!`,4); return true; }
+{ const _fp=mpFromPeer; mpFromPeer=function(r,d,...a){ const out=_fp(r,d,...a); try{ if(MP.host&&r&&d&&Array.isArray(d.wb)){ r.wbT=r.wbT||new Set(); for(const q of d.wb.slice(0,4)){ if(!Array.isArray(q)||typeof q[1]!=='string'||!q[1].startsWith('throne:')||r.wbT.has(q[0])) continue; r.wbT.add(q[0]); wakeThroneFor(q[1],r.proxy||null); } } }catch(e){ console.warn(e); } return out; }; }
+try{ PLUSH_LABELS.add('Investigate throne'); }catch(e){}   /* the Talk button goes back to Talk when you walk away from a throne listed by the host */
+// ===== Beta 0.9.209: a boss fight keeps the army it started with; played time that counts all your play =====
+// Kinard (2026-11-23): "Make it so that when a player starts a boss fight it counts the amount of players the characters starts with and
+// not the amount during the battle so that the boss does not start regaining health mid battle as the player will lose soldiers".
+// The count was already taken at the first blow (98zxz_zz182_bossarmy.js, 50_army.js), but it was dropped mid-fight: Vorthax forgot it
+// after 30 seconds out of his lair room (he chases you out of it since 0.9.179, so that happened in the middle of the fight) and then
+// counted only the soldiers still standing; the ladder bosses forgot it after 60 seconds without a blow. Now the count you started with is
+// kept for as long as the boss is hurt or awake, and only a boss back at full health and at rest starts a new count. The boss bar shows
+// that count.
+{ let dragonKeep=0; const _ud=updateDragon; updateDragon=function(d,...a){ const r=_ud(d,...a); try{ if(d&&!d.raid&&!d.dead&&!d.ghost){
+        if(d.awake||d.homing||d.hp<d.maxHp){ dragonKeep=Math.max(dragonKeep,lairPeak); lairPeak=dragonKeep; } else dragonKeep=0; } }catch(e){} return r; }; }
+{ const _bs=bossShare; bossShare=function(e,...a){ const r=_bs(e,...a); try{ const k=ladderKey(e); if(!k) return r;
+      if(e.hp<e.maxHp||e.woke||e.provoked){ e._peakKeep=Math.max(e._peakKeep||0,e._peak||0); e._peak=e._peakKeep; return Math.min(1,e._peak/BOSS_NEED[k]); } e._peakKeep=0; }catch(err){} return r; }; }
+// Kinard (2026-11-23): "Fix the time that is tracked for a player for how long they have played in any world (single and multiplayer count
+// as well) currently my player says 11 minutes, but I have played for a lot longer then that and make it so it does not reset each update".
+// Played time (98zxz_zz302, gear.playedS) only ran while the game screen itself was up, so time in the bag, chests, shops, the map and the
+// other windows was lost, and it only began in 0.9.205. Now it runs in every window while a world is open (not on the title screen, not
+// while the game is paused or hidden), in single player and shared worlds alike, and a copy is kept on the device per hero
+// (localStorage PLAYED_KEY): when a world opens the larger of the two is used, so nothing an update does can set it back. For play before
+// 0.9.205 each world adds what its days show (a game day is DAY_LEN seconds) once, for the hero playing it.
+const PLAYED_KEY='dragonamulet-played';
+function playedStore(){ try{ return JSON.parse(localStorage.getItem((typeof DA_NS!=='undefined'?DA_NS:'')+PLAYED_KEY)||'{}')||{}; }catch(e){ return {}; } }
+function playedSave(){ try{ if(!player||!player.gear) return; const id=heroNowId(); if(!id||id==='world') return; const s=playedStore(); s[id]=Math.max(s[id]||0,Math.round(player.gear.playedS||0)); localStorage.setItem((typeof DA_NS!=='undefined'?DA_NS:'')+PLAYED_KEY,JSON.stringify(s)); }catch(e){} }
+let playAt2=0, playSaveT=0;
+playedTick=function(){ const now=performance.now(), dt=playAt2?(now-playAt2)/1000:0; playAt2=now; if(!player||document.hidden||!(dt>0)||dt>2) return; if(!(state==='play'||MENU_STATES.has(state)||state==='trade'||state==='edpick'||state==='padmenu')) return;
+  const g=player.gear=player.gear||{}; g.playedS=(g.playedS||0)+dt; if(home) home.playedS=(home.playedS||0)+dt; if((playSaveT-=dt)<=0){ playSaveT=30; playedSave(); } };
+{ const _sp=startPlay; startPlay=function(...a){ const r=_sp(...a); try{ if(player){ const g=player.gear=player.gear||{}; const id=heroNowId(); const s=playedStore(); if(id&&id!=='world'&&s[id]>(g.playedS||0)) g.playedS=s[id];
+        if(!home.playedWV){ home.playedWV=1; home.playedS=Math.max(home.playedS||0,Math.max(0,(dayCount||1)-1)*DAY_LEN); }   /* the world's own time, from its days once */
+        home.playedFor=home.playedFor||{}; if(id&&!home.playedFor[id]&&typeof dayCount==='number'&&dayCount>1){ home.playedFor[id]=1; const est=(dayCount-1)*DAY_LEN; if(est>(g.playedS||0)) g.playedS=est; } playedSave(); } }catch(e){ console.warn(e); } return r; }; }
+window.addEventListener('pagehide',()=>{ try{ playedSave(); }catch(e){} });
+setInterval(()=>{ try{ playedTick(); }catch(e){} },1000);   /* windows can stop the game's update; this keeps the clock going (both measure time since the last count) */
+
+// Kinard (2026-11-23): "Please add the amount of time retroactively for the players and also make it so that it shows up on the world maps so
+// I can assess the amount of play time it takes". Each world keeps its own played time (home.playedS: every player's time in it,
+// single player and shared, starting from what its days show the first time it opens in this version) and the Continue list shows it on
+// each world's row ("played 3 h 20 min"), from the save's summary, without opening the world. A hero's time also starts from the
+// days of the world it plays (above), so heroes from before 0.9.205 show about what they have played.
+{ const _se=serialize; serialize=function(...a){ const r=_se(...a); try{ if(r&&r.summary&&home) r.summary.played=Math.round(home.playedS||0); }catch(e){} return r; }; }
+function slotPlayed(n){ try{ const si=slotInfo(n), s=si&&si.meta&&si.meta.summary; if(!s) return 0; if(s.played) return s.played; const d=s.dayCount||s.day; return d?Math.max(0,(d-1)*DAY_LEN):0;   /* worlds saved before 0.9.209: from their days */ }catch(e){ return 0; } }
+{ const _rs=renderSlots; renderSlots=function(...a){ const r=_rs(...a); try{ for(const b of document.querySelectorAll('#slotList [data-play]')){ const n=+b.dataset.play, t=b.querySelector('b'); if(!t||t.querySelector('.wplayed')) continue; const sec=slotPlayed(n); if(!sec) continue;
+        t.insertAdjacentHTML('beforeend',` <span class="muted wplayed" style="font-weight:normal">· played ${playedText(sec)}</span>`); } }catch(e){ console.warn(e); } return r; }; }
 // ===================== Beta 0.9.69: chests in shared worlds are changed by operations, not copies =====================
 // (step 11 of docs/MULTIPLAYER_REVIEW.md) Before, every player sent whole chests and the newest copy won, so two players
 // at one chest lost items. Now the host owns every chest:
@@ -30485,8 +31360,16 @@ MP.syncing=false; MP.syncT=0;
 // edits (MP.applyingG), a solid block that is about to be replaced by a different block pops out as an item at that cell,
 // so whichever block ends up standing, nothing is lost. Chests and storage are never replaced this way (storeFull keeps
 // them). Regression: tests/mp_real_conflict_test.py.
+// 0.9.209 (Kinard: "going through a trapdoor gives you a trapdoor"): a friend opening or shutting a trapdoor, a door or a fence
+// gate, or rolling the bookshelf ladder, changes a cell from one state of a thing to another; that is no new block replacing an
+// old one, so nothing pops out. Two blocks are the same thing when they drop the same item, or are two states of one trapdoor,
+// door or ladder.
+function sameThing(a,b){ try{ const da=BLOCKS[a]&&BLOCKS[a].drop!==undefined?BLOCKS[a].drop:a, db=BLOCKS[b]&&BLOCKS[b].drop!==undefined?BLOCKS[b].drop:b; if(da===db) return true;
+    if(typeof TRAP_OF!=='undefined'&&TRAP_OF[a]&&TRAP_OF[b]&&TRAP_OF[a].kind===TRAP_OF[b].kind) return true;
+    if(typeof DOOR_SET_OF!=='undefined'&&DOOR_SET_OF[a]&&DOOR_SET_OF[a]===DOOR_SET_OF[b]) return true;
+    if(typeof isLadderId==='function'&&(isLadderId(a)||isLadderId(b))&&(isLadderId(a)||a===B.BOOKSHELF)&&(isLadderId(b)||b===B.BOOKSHELF)) return true; }catch(e){} return false; }
 { const _st=setTile; setTile=function(x,y,id,...a){ try{ if(MP.host&&MP.applyingG&&id&&id!==B.WATER&&x>=0&&x<W&&y>=0&&y<H){ const cur=world[y*W+x];
-      if(cur&&cur!==id&&cur!==B.WATER&&BLOCKS[cur]&&BLOCKS[cur].solid&&!(typeof CHEST_IDS!=='undefined'&&CHEST_IDS.has(cur))&&!(typeof isStoreId==='function'&&isStoreId(cur))){ const dr=BLOCKS[cur].drop===undefined?cur:BLOCKS[cur].drop; if(dr&&ITEMS[dr]) spawnDrop(x*T+8,y*T+8,dr,1); } } }catch(e){}
+      if(cur&&cur!==id&&cur!==B.WATER&&BLOCKS[cur]&&BLOCKS[cur].solid&&!sameThing(cur,id)&&!(typeof CHEST_IDS!=='undefined'&&CHEST_IDS.has(cur))&&!(typeof isStoreId==='function'&&isStoreId(cur))){ const dr=BLOCKS[cur].drop===undefined?cur:BLOCKS[cur].drop; if(dr&&ITEMS[dr]) spawnDrop(x*T+8,y*T+8,dr,1); } } }catch(e){}
     return _st(x,y,id,...a); }; }
 // Beta 0.9.82 (B8): "Save and quit to title" left the multiplayer session running. The host's room stayed open under the
 // old game ID, so "Host a saved world" in the same page failed with "unavailable-id" (PeerJS) or opened a second room
